@@ -1,4 +1,2 @@
 
-### Hi
-
-http://haoxins.github.io
+### Hi, I'm haoxin

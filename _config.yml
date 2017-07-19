@@ -1,1 +1,19 @@
-theme: cayman
+theme: jekyll-theme-cayman
+
+encoding: utf-8
+
+author:
+  name: haoxin
+  github: haoxins
+  email: haoxins@icloud.com
+
+highlighter: rouge
+
+markdown: kramdown
+
+defaults:
+- scope:
+    path: articles
+    type: pages
+  values:
+    sectionid: articles
