@@ -11,3 +11,6 @@
 * [基于 loopback 和 angular, 快速搭建 admin 系统](articles/2017-loopback-and-angular-admin.md)
 * [前端应用的数据流和状态管理](articles/2017-front-end-data-flow-and-state-management.md)
 * [hello, ARKit](articles/2017-arkit-hello-world.md)
+
+### License
+MIT
