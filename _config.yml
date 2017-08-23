@@ -5,6 +5,9 @@ description: 莫听穿林打叶声, 何妨吟啸且徐行. 竹杖芒鞋轻胜马
 
 encoding: utf-8
 
+gems:
+  - jekyll-seo-tag
+
 author:
   name: haoxin
   github: haoxins
