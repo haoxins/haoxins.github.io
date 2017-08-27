@@ -1,11 +1,9 @@
 ---
 layout: default
-title: loopback-next, 现代化的 node.js web 框架
-description: null
+title: 初识 loopback
+description: 现代化的 node.js web 框架
 date: 2017-08-27
 ---
-
-## loopback: 现代化的 node.js web 框架
 
 * 注: 由于 `loopback-next (v4)` 尚在快速迭代, 文中涉及的技术细节可能会与当前实现不匹配.
 
