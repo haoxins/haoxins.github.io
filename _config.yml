@@ -1,12 +1,15 @@
 theme: jekyll-theme-cayman
 
 title: haoxin 的小窝
-description: haoxin's blog, this blog has a related topic about node.js, loopback, rxjs, typescript and so on.
+description: 莫听穿林打叶声, 何妨吟啸且徐行. 竹杖芒鞋轻胜马, 谁怕? 一蓑烟雨任平生.
 
 encoding: utf-8
 
 gems:
   - jekyll-seo-tag
+
+page_meta:
+  description: haoxin's blog, this blog has a related topic about node.js, loopback, rxjs, typescript and so on.
 
 author:
   name: haoxin
