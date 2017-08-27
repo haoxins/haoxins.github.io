@@ -1,5 +1,8 @@
 ---
-title: loopback: 现代化的 node.js web 框架
+layout: page
+title: loopback-next, 现代化的 node.js web 框架
+description: null
+date: 2017-08-27
 ---
 
 ## loopback: 现代化的 node.js web 框架
@@ -15,8 +18,9 @@ title: loopback: 现代化的 node.js web 框架
 后面会有一篇文章再论述 [loopback的前端快速整合方案](articles/2017-loopback-and-angular-admin.md).
 
 * 特点
-  - 快速开发, 简单的命令行操作便可产出完整的 `API service`
+  - 快速开发, 高效实现业务逻辑
   - 高度可配置, 可扩展
+  - 强大的命令行工具, 简单的命令便可产出完整的 `API service`, 定义 `model` 等
   - 便于测试
   - 完善的周边生态, 丰富的组件库
   - 现代化的 JS(TS) 语法, 灵活使用语言特性
