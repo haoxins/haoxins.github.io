@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: loopback-next, 现代化的 node.js web 框架
 description: null
 date: 2017-08-27
