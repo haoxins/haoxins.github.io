@@ -8,7 +8,7 @@ date: 2017-08-31
 ## 概述
 
 [loopback-next][lb-repo-url] 是 [strongloop][sl-org-url] 团队打造的新一代 node.js APIs 框架.
-原本的 `loopback v3` 基于 [express][exp-repo-url], 而在 `next` 当中则不再依赖.
+原本的 `loopback v3` 基于 [express][express-url], 而在 `next` 当中则不再依赖.
 
 相较于 `rails`, `django`, `meteor` 等框架, `loopback` 最大的差异在于: 仅提供 `API service`.
 后面会有一篇文章再论述 [loopback的前端快速整合方案](articles/2017-loopback-and-angular-admin.md).
@@ -40,6 +40,6 @@ date: 2017-08-31
 MIT
 
 [lb-repo-url]: https://github.com/strongloop/loopback-next
-[exp-repo-url]: https://github.com/expressjs/express
+[express-url]: https://github.com/expressjs/express
 [sl-org-url]: https://github.com/strongloop
 [open-api-url]: https://www.openapis.org
