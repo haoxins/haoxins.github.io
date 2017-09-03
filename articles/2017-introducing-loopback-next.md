@@ -36,6 +36,10 @@ date: 2017-08-31
 
 ## 核心概念
 
+## 更多特性
+
+* [gRPC集成](https://github.com/strongloop/loopback-next/issues/521)
+
 ## License
 MIT
 
