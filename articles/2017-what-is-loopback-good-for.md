@@ -1,7 +1,7 @@
 ---
 layout: default
 title: why loopback
-description: loopback 解决的什么 ?
+description: loopback 提供了什么 ? 解决了什么 ?
 date: 2017-09-03
 ---
 
@@ -35,6 +35,10 @@ date: 2017-09-03
 ### 我不认为 TypeScript 多么神奇, 但物尽其用
 
 * 再次强调, `TypeScript` 真的代替不了 `tests`
+
+### 所有的优秀项目, 都是想法的集合
+
+* 仅: 抛砖引玉 ~
 
 ## 题外
 
