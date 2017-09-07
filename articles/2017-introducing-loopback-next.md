@@ -28,17 +28,190 @@ date: 2017-08-31
   - `model, data`: 支持各种主流的和非主流的数据库, 可靠的 `类ORM` 实现
   - `client SDK`: 可以直接生成各平台SDK, `web`, `ios`, `android` 等
 
+## Hello, world!
+
+```ts
+import {Application} from '@loopback/core'
+
+const app = new Application()
+
+app.handler(async (sequence, request, response) => {
+  sequence.send(response, `hello, world`)
+})
+
+app.start()
+```
+
+## 10min 简单概览
+
+### 添加一个 Route
+
+```ts
+import {
+  OperationObject,
+  ParameterObject,
+  ResponseObject,
+  Application,
+  Route
+} from '@loopback/core'
+
+const app = new Application()
+
+const spec = <OperationObject> {
+  parameters: [<ParameterObject> {
+    name: 'name',
+    type: 'string',
+    // 可以是: formData, body, query, header, path
+    in: 'query'
+  }],
+  responses: {
+    '200': <ResponseObject> {
+      description: 'greeting',
+      schema: {
+        type: 'string'
+      }
+    }
+  }
+}
+
+function hello(name: string) {
+  return `hello, ${name}`
+}
+
+const route = new Route('get', '/', spec, hello)
+
+app.route(route)
+
+app.start()
+```
+
+### 也可以通过定义 OpenApiSpec 来添加 APIs
+
+```ts
+import {
+  OperationObject,
+  ParameterObject,
+  ResponseObject,
+  Application,
+  OpenApiSpec,
+  PathsObject
+} from '@loopback/core'
+
+const app = new Application()
+
+const spec = <OpenApiSpec> {
+  basePath: '/',
+  paths: <PathsObject> {
+    '/': {
+      get: <OperationObject> {
+        'x-operation': hello,
+        parameters: [<ParameterObject> {
+          name: 'name',
+          type: 'string',
+          in: 'query' // 可以是: formData, body, query, header, path
+        }],
+        responses: {
+          '200': <ResponseObject> {
+            description: 'greeting',
+            schema: {
+              type: 'string'
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+function hello(name: string) {
+  return `hello, ${name}`
+}
+
+app.api(spec)
+
+app.start()
+```
+
+### 引入 Controller
+
+```ts
+import {
+  OperationObject,
+  ParameterObject,
+  ResponseObject,
+  Application,
+  OpenApiSpec,
+  PathsObject,
+  api
+} from '@loopback/core'
+
+const app = new Application()
+
+const spec = <OpenApiSpec> {
+  basePath: '/',
+  paths: <PathsObject> {
+    '/': {
+      get: <OperationObject> {
+        'x-operation-name': 'hello',
+        parameters: [<ParameterObject> {
+          name: 'name',
+          type: 'string',
+          in: 'query'
+        }],
+        responses: {
+          '200': <ResponseObject> {
+            description: 'greeting',
+            schema: {
+              type: 'string'
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@api(spec)
+class MyController {
+  hello(name: string) {
+    return `hello, ${name}`
+  }
+}
+
+app.controller(MyController)
+
+app.start()
+```
+
+### 上下文: Context
+
+### 依赖注入: Dependency Injection
+
+## 核心概念
+
+### Sequence
+
+https://github.com/strongloop/loopback-next/wiki/Sequence
+
+* `Application` 与 `Sequence` 一一对应
+
+* `Elements`
+
 ## Thinking in LoopBack
 
 * [官方Wiki地址](https://github.com/strongloop/loopback-next/wiki/Thinking-in-LoopBack)
 
-### 定义 APIs
+## 相关文章
 
-## 核心概念
+## 其他特性
 
-## 更多特性
+* [gRPC 集成](https://github.com/strongloop/loopback-next/issues/521)
+* [Serverless 支持](https://github.com/strongloop/loopback-next/issues/257)
 
-* [gRPC集成](https://github.com/strongloop/loopback-next/issues/521)
+## 题外
+
+* 对我个人而言, 看着一个不错的项目 `从 0 到 1 到 N 再到 N + X`,
+* 并能参与其中, `有所思考`, `有所贡献`, `有所收获`, 实属快意之事 ~
 
 ## License
 MIT
