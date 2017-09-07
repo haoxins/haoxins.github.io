@@ -187,6 +187,126 @@ app.start()
 
 ### 依赖注入: Dependency Injection
 
+### Repository
+
+* 配置数据源
+
+```ts
+import {
+  DataSourceConstructor
+} from '@loopback/repository'
+
+const db = new DataSourceConstructor({
+  connector: 'memory',
+  name: 'db'
+})
+```
+
+* 定义 model
+
+```ts
+import {
+  property,
+  Entity,
+  model
+} from '@loopback/repository'
+
+@model()
+class User extends Entity {
+  @property({type: 'number', id: true})
+  id: number
+
+  @property({type: 'string'})
+  name: string
+}
+```
+
+* 定义 Repository
+
+```ts
+import {
+  DefaultCrudRepository
+} from '@loopback/repository'
+
+class UserRepository extends DefaultCrudRepository<User, typeof User.prototype.id> {
+  constructor() {
+    super(User, db)
+  }
+}
+```
+
+* 定义 Controller, 并绑定 Repository
+
+```ts
+import {
+  repository
+} from '@loopback/repository'
+
+import {
+  Application,
+  inject,
+  api
+} from '@loopback/core'
+
+const app = new Application()
+
+const spec = {
+  basePath: '/',
+  paths: {
+    '/': {
+      get: {
+        'x-operation-name': 'query',
+        responses: {
+          '200': {
+            description: 'user list',
+            schema: {
+              type: 'array',
+              users: '#/definitions/User'
+            }
+          }
+        }
+      },
+      post: {
+        'x-operation-name': 'create',
+        parameters: [{
+          name: 'userInstance',
+          type: 'object',
+          in: 'body'
+        }],
+        responses: {
+          '200': {
+            description: 'created',
+            schema: {
+              userInstance: '#/definitions/User'
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@api(spec)
+class UserController {
+  constructor(
+    @repository('user')
+    public repository: UserRepository
+  ) {}
+  async create(userInstance: User) {
+    return await this.repository.create(userInstance)
+  }
+  async query() {
+    return await this.repository.find()
+  }
+}
+
+app.bind('repositories.user').toClass(UserRepository)
+
+app.controller(UserController)
+
+app.start()
+```
+
 ## 核心概念
 
 ### Sequence
@@ -202,6 +322,13 @@ https://github.com/strongloop/loopback-next/wiki/Sequence
 * [官方Wiki地址](https://github.com/strongloop/loopback-next/wiki/Thinking-in-LoopBack)
 
 ## 相关文章
+
+* [详解 Loopback Sequence](articles/todo.md)
+* [详解 Loopback Route And Controller](articles/todo.md)
+* [详解 Loopback Context](articles/todo.md)
+* [详解 Loopback Dependency Injection](articles/todo.md)
+* [详解 Loopback Repository](articles/todo.md)
+* [详解 Loopback Component](articles/todo.md)
 
 ## 其他特性
 
