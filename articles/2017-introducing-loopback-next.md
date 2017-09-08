@@ -334,6 +334,7 @@ https://github.com/strongloop/loopback-next/wiki/Sequence
 
 * [gRPC 集成](https://github.com/strongloop/loopback-next/issues/521)
 * [Serverless 支持](https://github.com/strongloop/loopback-next/issues/257)
+* [UML generator](https://github.com/strongloop/loopback-next/issues/345)
 
 ## 题外
 
