@@ -1,5 +1,4 @@
 ---
-layout: default
 title: why loopback
 description: loopback 能做什么 ? 解决了什么 ?
 date: 2017-09-03

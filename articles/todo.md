@@ -1,5 +1,4 @@
 ---
-layout: default
 title: TODO TODO
 description: haoxin 是个懒鬼 ~
 date: 2017-09-07

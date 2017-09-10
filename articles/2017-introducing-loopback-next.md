@@ -1,5 +1,4 @@
 ---
-layout: default
 title: 初识 loopback
 description: 现代化的 node.js API 框架
 date: 2017-08-31
