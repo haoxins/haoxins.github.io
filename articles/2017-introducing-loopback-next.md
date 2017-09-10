@@ -341,6 +341,10 @@ https://github.com/strongloop/loopback-next/wiki/Sequence
 * 对我个人而言, 看着一个不错的项目 `从 0 到 1 到 N 再到 N + X`,
 * 并能参与其中, `有所思考`, `有所贡献`, `有所收获`, 实属快意之事 ~
 
+## 参考文章
+
+* [Crafting LoopBack Next](https://github.com/strongloop/loopback-next/wiki/Crafting-LoopBack-Next)
+
 ## License
 MIT
 
