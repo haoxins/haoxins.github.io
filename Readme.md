@@ -1,6 +1,15 @@
 
 料峭春风吹酒醒, 微冷, 山头斜照却相迎. 回首向来萧瑟处, 归去, 也无风雨也无晴.
 
+### author
+
+* `haoxin`, `码农` :)
+* [Github 1](https://github.com/coderhaoxin)
+* [Github 2](https://github.com/haoxins)
+* [medium](https://medium.com/@haoxin)
+
+### 2018
+
 ### 2017
 
 * [初识 loopback: 现代化的 node.js API 框架](articles/2017-introducing-loopback-next.md)
