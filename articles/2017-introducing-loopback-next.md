@@ -49,53 +49,30 @@ app.start()
 
 ## 10min 简单概览
 
-* 说明: `loopback` 的写法比较多样灵活, 此处为了减少篇幅, 会使用我个人偏好的方式
+* 说明: `loopback` 的写法比较灵活多样, 此处为了减少篇幅, 会使用我个人偏好的方式
 
-### 添加一个 Route
+### 定义 Controller
 
 ```ts
 import {
-  OperationObject,
-  ParameterObject,
-  ResponseObject,
   Application,
-  Route
+  param,
+  get
 } from '@loopback/core'
 
 const app = new Application()
 
-const spec = <OperationObject> {
-  parameters: [<ParameterObject> {
-    name: 'name',
-    type: 'string',
-    // 可以是: formData, body, query, header, path
-    in: 'query'
-  }],
-  responses: {
-    '200': <ResponseObject> {
-      description: 'greeting',
-      schema: {
-        type: 'string'
-      }
-    }
+class MyController {
+  @get('/')
+  @param.query.string('name')
+  hello(name: string) {
+    return `hello, ${name}`
   }
 }
 
-function hello(name: string) {
-  return `hello, ${name}`
-}
-
-const route = new Route('get', '/', spec, hello)
-
-app.route(route)
+app.controller(MyController)
 
 app.start()
-```
-
-### 引入 Controller
-
-```ts
-
 ```
 
 ### 上下文: Context
@@ -117,7 +94,7 @@ const db = new DataSourceConstructor({
 })
 ```
 
-* 定义 model
+* 定义 Model
 
 ```ts
 import {
@@ -160,56 +137,24 @@ import {
 import {
   Application,
   inject,
-  api
+  param,
+  post,
+  get
 } from '@loopback/core'
 
 const app = new Application()
 
-const spec = {
-  basePath: '/',
-  paths: {
-    '/': {
-      get: {
-        'x-operation-name': 'query',
-        responses: {
-          '200': {
-            description: 'user list',
-            schema: {
-              type: 'array',
-              users: '#/definitions/User'
-            }
-          }
-        }
-      },
-      post: {
-        'x-operation-name': 'create',
-        parameters: [{
-          name: 'userInstance',
-          type: 'object',
-          in: 'body'
-        }],
-        responses: {
-          '200': {
-            description: 'created',
-            schema: {
-              userInstance: '#/definitions/User'
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@api(spec)
 class UserController {
   constructor(
     @repository('user')
     public repository: UserRepository
   ) {}
+  @post('/')
+  @param.body('userInstance', {type: 'object'})
   async create(userInstance: User) {
     return await this.repository.create(userInstance)
   }
+  @get('/')
   async query() {
     return await this.repository.find()
   }
@@ -244,6 +189,7 @@ https://github.com/strongloop/loopback-next/wiki/Sequence
 * [详解 Loopback Dependency Injection](articles/todo.md)
 * [详解 Loopback Repository](articles/todo.md)
 * [详解 Loopback Component](articles/todo.md)
+* [详解 Loopback Extension](articles/todo.md)
 
 ## 其他特性
 
