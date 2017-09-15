@@ -6,8 +6,8 @@ date: 2017-08-31
 
 ## 概述
 
-[loopback-next][lb-repo-url] 是 [strongloop][sl-org-url] 团队打造的新一代 node.js APIs 框架.
-原本的 `loopback v3` 基于 [express][express-url], 而在 `next` 当中则不再依赖.
+[loopback v4][lb-repo-url] 是 [strongloop][sl-org-url] 团队打造的新一代 node.js APIs 框架.
+原本的 `loopback v3` 基于 [express][express-url], 而在 `v4` 当中则不再依赖.
 
 相较于 `rails`, `django`, `meteor` 等框架, `loopback` 最大的差异在于: 仅提供 `API service`.
 后面会有一篇文章再论述 [loopback的前端快速整合方案](articles/2017-loopback-and-angular-admin.md).
@@ -21,11 +21,17 @@ date: 2017-08-31
   - 充分利用 `TypeScript` 语法特性
   - 符合 [OpenAPI][open-api-url] 规范
 
-* 核心功能
+* 功能
   - `代码即文档`: 不是说好的代码就是文档, 而是直接根据代码定义输出完备的 APIs 文档
   - `角色, 权限`: 自带强大的, 灵活的 `role`, `permission` 功能
-  - `model, data`: 支持各种主流的和非主流的数据库, 可靠的 `类ORM` 实现
+  - `model, schema`: 支持各种主流的和非主流的数据库, 可靠的 `类ORM` 实现
   - `client SDK`: 可以直接生成各平台SDK, `web`, `ios`, `android` 等
+
+* 生态
+  - [extensions](https://github.com/strongloop/loopback-next/issues/512)
+
+* 门槛
+  - 会有一定的学习成本
 
 ## Hello, world!
 
@@ -42,6 +48,8 @@ app.start()
 ```
 
 ## 10min 简单概览
+
+* 说明: `loopback` 的写法比较多样灵活, 此处为了减少篇幅, 会使用我个人偏好的方式
 
 ### 添加一个 Route
 
@@ -84,102 +92,10 @@ app.route(route)
 app.start()
 ```
 
-### 也可以通过定义 OpenApiSpec 来添加 APIs
-
-```ts
-import {
-  OperationObject,
-  ParameterObject,
-  ResponseObject,
-  Application,
-  OpenApiSpec,
-  PathsObject
-} from '@loopback/core'
-
-const app = new Application()
-
-const spec = <OpenApiSpec> {
-  basePath: '/',
-  paths: <PathsObject> {
-    '/': {
-      get: <OperationObject> {
-        'x-operation': hello,
-        parameters: [<ParameterObject> {
-          name: 'name',
-          type: 'string',
-          in: 'query' // 可以是: formData, body, query, header, path
-        }],
-        responses: {
-          '200': <ResponseObject> {
-            description: 'greeting',
-            schema: {
-              type: 'string'
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-function hello(name: string) {
-  return `hello, ${name}`
-}
-
-app.api(spec)
-
-app.start()
-```
-
 ### 引入 Controller
 
 ```ts
-import {
-  OperationObject,
-  ParameterObject,
-  ResponseObject,
-  Application,
-  OpenApiSpec,
-  PathsObject,
-  api
-} from '@loopback/core'
 
-const app = new Application()
-
-const spec = <OpenApiSpec> {
-  basePath: '/',
-  paths: <PathsObject> {
-    '/': {
-      get: <OperationObject> {
-        'x-operation-name': 'hello',
-        parameters: [<ParameterObject> {
-          name: 'name',
-          type: 'string',
-          in: 'query'
-        }],
-        responses: {
-          '200': <ResponseObject> {
-            description: 'greeting',
-            schema: {
-              type: 'string'
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@api(spec)
-class MyController {
-  hello(name: string) {
-    return `hello, ${name}`
-  }
-}
-
-app.controller(MyController)
-
-app.start()
 ```
 
 ### 上下文: Context
