@@ -1,21 +1,20 @@
 
 料峭春风吹酒醒, 微冷, 山头斜照却相迎. 回首向来萧瑟处, 归去, 也无风雨也无晴.
 
-### About me
+## About me
 
 * `haoxin`, `码农` :)
-* [Github 1](https://github.com/coderhaoxin)
-* [Github 2](https://github.com/haoxins)
-* [medium](https://medium.com/@haoxin)
+* [github: @coderhaoxin](https://github.com/coderhaoxin)
+* [github: @haoxins](https://github.com/haoxins)
+* [medium: @haoxin](https://medium.com/@haoxin)
 
-### 2018
+## 专题
 
-### 2017
+* [loopback 相关](articles/loopback-article-list.md)
 
-* [初识 loopback: 现代化的 node.js API 框架](articles/2017-introducing-loopback-next.md)
-* [基于 loopback 和 angular, 快速搭建 admin 系统](articles/2017-loopback-and-angular-admin.md)
+## 2018
+
+## 2017
+
 * [前端应用的数据流和状态管理](articles/2017-front-end-data-flow-and-state-management.md)
 * [hello, ARKit](articles/2017-arkit-hello-world.md)
-
-### License
-MIT

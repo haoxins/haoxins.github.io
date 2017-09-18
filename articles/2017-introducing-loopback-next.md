@@ -206,9 +206,6 @@ https://github.com/strongloop/loopback-next/wiki/Sequence
 
 * [Crafting LoopBack Next](https://github.com/strongloop/loopback-next/wiki/Crafting-LoopBack-Next)
 
-## License
-MIT
-
 [lb-repo-url]: https://github.com/strongloop/loopback-next
 [express-url]: https://github.com/expressjs/express
 [sl-org-url]: https://github.com/strongloop

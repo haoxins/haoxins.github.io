@@ -6,8 +6,5 @@ date: 2017-08-31
 
 ## 概述
 
-## License
-MIT
-
 [ngx-admin-url]: https://github.com/ngx-plus/ngx-admin
 [colmena-url]: https://github.com/colmena/colmena
