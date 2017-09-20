@@ -10,7 +10,7 @@ date: 2017-08-31
 原本的 `loopback v3` 基于 [express][express-url], 而在 `v4` 当中则不再依赖.
 
 相较于 `rails`, `django`, `meteor` 等框架, `loopback` 最大的差异在于: 仅提供 `API service`.
-后面会有一篇文章再论述 [loopback的前端快速整合方案](articles/2017-loopback-and-angular-admin.md).
+后面会有一篇文章再论述 [loopback的前端快速整合方案](2017-loopback-and-angular-admin.md).
 
 * 特点
   - 快速开发, 高效实现业务逻辑
@@ -183,13 +183,13 @@ https://github.com/strongloop/loopback-next/wiki/Sequence
 
 ## 相关文章
 
-* [详解 Loopback Sequence](articles/todo.md)
-* [详解 Loopback Route And Controller](articles/todo.md)
-* [详解 Loopback Context](articles/todo.md)
-* [详解 Loopback Dependency Injection](articles/todo.md)
-* [详解 Loopback Repository](articles/todo.md)
-* [详解 Loopback Component](articles/todo.md)
-* [详解 Loopback Extension](articles/todo.md)
+* [详解 Loopback Sequence](todo.md)
+* [详解 Loopback Route And Controller](todo.md)
+* [详解 Loopback Context](todo.md)
+* [详解 Loopback Dependency Injection](todo.md)
+* [详解 Loopback Repository](todo.md)
+* [详解 Loopback Component](todo.md)
+* [详解 Loopback Extension](todo.md)
 
 ## 其他特性
 

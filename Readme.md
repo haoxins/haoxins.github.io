@@ -3,7 +3,6 @@
 
 ## About me
 
-* `haoxin`, `码农` :)
 * [github: @coderhaoxin](https://github.com/coderhaoxin)
 * [github: @haoxins](https://github.com/haoxins)
 * [medium: @haoxin](https://medium.com/@haoxin)
@@ -13,6 +12,8 @@
 * [loopback 相关](articles/loopback-article-list.md)
 
 ## 2018
+
+* 敬请期待
 
 ## 2017
 
