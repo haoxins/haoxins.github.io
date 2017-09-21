@@ -17,5 +17,5 @@
 
 ## 2017
 
-* [前端应用的数据流和状态管理](articles/2017-front-end-data-flow-and-state-management.md)
+* [常见的前端数据管理场景在 Angular 中的实现](articles/2017-front-end-data-management-in-angular.md)
 * [hello, ARKit](articles/2017-arkit-hello-world.md)
