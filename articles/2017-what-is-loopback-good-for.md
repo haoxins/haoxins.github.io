@@ -1,5 +1,5 @@
 ---
-title: why loopback
+title: why loopback next(v4)
 description: loopback 能做什么 ? 解决了什么 ?
 date: 2017-09-03
 ---
@@ -21,6 +21,8 @@ date: 2017-09-03
   - 如果技术痛点可以解决, 但推进缓慢, 只能是因为: `推动力` 不够 (业务场景不够)
 * 但也不要对 `loopback next` 期望过高. 毕竟, 这是很难玩出新姿势的领域
 * [案例](https://github.com/yorkie/me/issues/10)
+
+### LB3 ~ LB4
 
 ### 很多时候, 你并不需要高度可扩展
 
