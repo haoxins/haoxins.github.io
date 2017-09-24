@@ -1,6 +1,10 @@
 
 料峭春风吹酒醒, 微冷, 山头斜照却相迎. 回首向来萧瑟处, 归去, 也无风雨也无晴.
 
+## 记
+
+* 这是写给自己的博客, 若有幸偶遇, 那便是莫大的缘分 ~
+
 ## About me
 
 * [github: @coderhaoxin](https://github.com/coderhaoxin)
