@@ -8,19 +8,27 @@ date: 2017-09-03
 
 ### 应用场景的复杂度决定相关技术的生态质量
 
-* (2015年前后)前端的场景复杂度提升 -> 更多的实践, 思考, 产物(轮子)
+* (2015前后)前端的场景复杂度提升 -> 更多的实践, 思考, 产物(轮子)
   - 而 ES20xx, web spec 等, 均是次要因素
-* 社区变化迅猛的根本原因是场景复杂度提升, 没有这个前提, 轮子出不来(或无人问津)
-* 只要场景复杂度能再次提升, 社区的浪潮就会再来 (^_^)
+* 场景复杂度提升 -> 变化, 积累
+* node.js 的 server 场景明显不足 (不成熟)
+  - 此处是个人言论
 
 ### 没有 `loopback next`, 不谈 `Node.js is Enterprise Ready` !
 
 * 面对常规的业务场景, 需要集成化的解决方案
-* `loopback (v4)` 是 `node` 社区开始成熟的标志之一
-  - 之前的 `node` 社区是 `不成熟` 的, `callback` 之类的问题只是表层
-  - 如果技术痛点可以解决, 但推进缓慢, 只能是因为: `推动力` 不够 (业务场景不够)
 * 但也不要对 `loopback next` 期望过高. 毕竟, 这是很难玩出新姿势的领域
 * [案例](https://github.com/yorkie/me/issues/10)
+
+### Loopback-next 团队成员
+
+* [bajtos](https://www.linkedin.com/in/bajtos)
+* [ritchie martori ](https://www.linkedin.com/in/ritchie-martori-9548325)
+* [superkhau](https://www.linkedin.com/in/superkhau)
+* [raymondfeng 专业写文档](https://www.linkedin.com/in/raymondfeng)
+* [crandmck](https://www.linkedin.com/in/crandmck)
+  - 专业写文档的, 还有博客
+  - 顺便吐个槽, 第一次看到职位: `document team lead`
 
 ### LB3 ~ LB4
 
