@@ -1,5 +1,5 @@
 ---
-title: why loopback next(v4)
+title: why loopback 4 ?
 description: loopback 能做什么 ? 解决了什么 ?
 date: 2017-09-03
 ---
@@ -11,16 +11,17 @@ date: 2017-09-03
 * (2015前后)前端的场景复杂度提升 -> 更多的实践, 思考, 产物(轮子)
   - 而 ES20xx, web spec 等, 均是次要因素
 * 场景复杂度提升 -> 变化, 积累
-* node.js 的 server 场景明显不足 (不成熟)
-  - 此处是个人言论
+* node.js 的 server 场景尚显不足
 
-### 没有 `loopback next`, 不谈 `Node.js is Enterprise Ready` !
+## 概览
+
+### 没有 `loopback 4`, 不谈 `Node.js is Enterprise Ready` !
 
 * 面对常规的业务场景, 需要集成化的解决方案
-* 但也不要对 `loopback next` 期望过高. 毕竟, 这是很难玩出新姿势的领域
+* 但也不要对 `loopback 4` 期望过高. 毕竟, 这是很难玩出新姿势的领域
 * [案例](https://github.com/yorkie/me/issues/10)
 
-### Loopback-next 团队成员
+### Loopback 团队成员
 
 * [bajtos](https://www.linkedin.com/in/bajtos)
 * [ritchie martori ](https://www.linkedin.com/in/ritchie-martori-9548325)
@@ -30,7 +31,23 @@ date: 2017-09-03
   - 专业写文档的, 还有博客
   - 顺便吐个槽, 第一次看到职位: `document team lead`
 
-### LB3 ~ LB4
+## 为何重写 Loopback
+
+1. 历史包袱重
+2. 生态愿景有了变化
+
+### 目标
+
+* 拥抱新技术, 新标准 (`TypeScript`, `OpenAPI Spec`, `GraphQL`)
+* 打造一个 `Loopback` 生态
+* cloud native
+* 灵活, 可扩展 等
+
+### 设计理念
+
+* Imperative first, declarative later
+* Build minimum features and add more later if necessary
+* Developer experience first
 
 ### 很多时候, 你并不需要高度可扩展
 

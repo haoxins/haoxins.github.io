@@ -20,7 +20,7 @@ date: 2017-09-10
 ### 特性介绍
 
 * [sequence](2017-introducing-loopback-sequence.md)
-* [context](2017-introducing-loopback-context.md)
+* [context and dependency injection](2017-introducing-loopback-context-dependency-injection.md)
 * [controller](2017-introducing-loopback-controller.md)
 * [component](2017-introducing-loopback-component.md)
 * [repository](2017-introducing-loopback-repository.md)
