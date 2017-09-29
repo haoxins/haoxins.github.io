@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>introducing loopback 4</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+    @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+    body {
+      font-family: 'Droid Serif';
+    }
+    h1, h2, h3 {
+      font-family: 'Yanone Kaffeesatz';
+      font-weight: normal;
+    }
+    .remark-code, .remark-inline-code {
+      font-family: 'Ubuntu Mono';
+    }
+  </style>
+</head>
+<body>
+  <textarea id="source">
+
+class: center, middle
+
+## Loopback 4 - 现代化的 X framework
+
+---
+
+## 说在前头
+
+* Loopback 4 is `WIP` !
+* 预计 2018 初 `beta` (老鸟可用, pk: koa, express)
+* 预计 2018 中 `stable` (大多鸟可用, pk: django)
+* 完整的生态宏图, 慢慢发展 (小鸟也能用的爽, pk: ?)
+
+---
+
+class: center, middle
+
+## 场景
+
+---
+
+### 应用场景的复杂度决定相关技术的生态质量
+
+* (2015前后)前端的场景复杂度提升 -> 更多的实践, 思考, 产物(轮子)
+  - 而 ES20xx, web spec 等, 均是次要因素
+* 场景复杂度提升 -> 变化, 积累
+* node.js 的 server 应用场景仍显不足
+
+---
+
+### 没有 `loopback 4`, 不谈 `Enterprise Ready` !
+
+* 面对常规的业务场景, 需要集成化的解决方案
+* 案例
+  - 人 https://github.com/yorkie
+  - 场景
+
+```
+After comparing the complexity between codebases,
+we are clearly to get the following report:
+
+- The total of lines did reduce by 70%
+- The lines of controllers did reduce by 90%
+- The lines of models did reduce by 10%
+- The lines of views keeps unchanged
+- The lines which are not related to business logic did reduce by 99%
+```
+
+---
+
+## 为何重写 Loopback
+
+1. 历史包袱重
+2. 生态愿景有了变化
+  - 我们之前挺 `屌`
+  - 但是我们可以 `更屌`
+
+---
+
+### 目标, 理念
+
+* 一些老生常谈的就不再赘述了
+* 拥抱新技术, 新标准 (`TypeScript`, `OpenAPI Spec`, `GraphQL`)
+* cloud native
+  - aws (azure) 整合, 例如: lambda 等
+  - 其他
+* 打造一个 `Loopback` 生态, `extension market`
+  - 目前除了 `extension` 这个词语, 以及一个 `wish list`, 啥都没有
+  - 这个 `wish list` 估计永远都不可能 `100%` 实现
+
+---
+
+class: center, middle
+
+## 走一遍 Hello, world! 吧 ~
+
+---
+
+* 这段代码很简单, 但是已经显露了 `lb 4` 的灵活, 稍后说明
+
+```ts
+import {Application} from '@loopback/core'
+
+const app = new Application()
+
+app.handler(async (sequence, request, response) => {
+  sequence.send(response, `hello, world`)
+})
+
+app.start()
+```
+
+---
+
+* 加个 `controller`
+
+```ts
+class MyController {
+  @get('/')
+  @param.query.string('name')
+  hello(name: string) {
+    return `hello, ${name}`
+  }
+}
+
+app.controller(MyController)
+```
+
+---
+
+* `OpenAPI spec` 模式, 乍看之下反人类, `lb` 的 目标: `CLI`
+
+```ts
+const spec = <OpenApiSpec> {
+  basePath: '/',
+  paths: <PathsObject> {
+    '/': {
+      get: <OperationObject> {
+        'x-operation-name': 'hello',
+        parameters: [<ParameterObject> {
+          name: 'name',
+          type: 'string',
+          in: 'query'
+        }],
+        responses: {
+          '200': <ResponseObject> {
+            description: 'greeting',
+            schema: {
+              type: 'string'
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@api(spec)
+class MyController {
+  hello(name: string) {
+    return `hello, ${name}`
+  }
+}
+
+app.controller(MyController)
+```
+
+---
+
+##
+
+---
+
+* 配置数据源
+
+```ts
+import {
+  DataSourceConstructor
+} from '@loopback/repository'
+
+const db = new DataSourceConstructor({
+  connector: 'memory',
+  name: 'db'
+})
+```
+
+* 定义 Model
+
+```ts
+import {
+  property,
+  Entity,
+  model
+} from '@loopback/repository'
+
+@model()
+class User extends Entity {
+  @property({type: 'number', id: true})
+  id: number
+
+  @property({type: 'string'})
+  name: string
+}
+```
+
+* 定义 Repository
+
+```ts
+import {
+  DefaultCrudRepository
+} from '@loopback/repository'
+
+class UserRepository extends DefaultCrudRepository<User, typeof User.prototype.id> {
+  constructor() {
+    super(User, db)
+  }
+}
+```
+
+* 定义 Controller, 并绑定 Repository
+
+```ts
+import {
+  repository
+} from '@loopback/repository'
+
+import {
+  Application,
+  inject,
+  param,
+  post,
+  get
+} from '@loopback/core'
+
+const app = new Application()
+
+class UserController {
+  constructor(
+    @repository('user')
+    public repository: UserRepository
+  ) {}
+  @post('/')
+  @param.body('userInstance', {type: 'object'})
+  async create(userInstance: User) {
+    return await this.repository.create(userInstance)
+  }
+  @get('/')
+  async query() {
+    return await this.repository.find()
+  }
+}
+
+app.bind('repositories.user').toClass(UserRepository)
+
+app.controller(UserController)
+
+app.start()
+```
+---
+
+  </textarea>
+  <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+  <script>
+    const slideshow = remark.create()
+  </script>
+</body>
+</html>
