@@ -52,7 +52,7 @@ class MyComponent implements Component {
 }
 
 // provider
-import {Provider} from '@loopback/context';
+import {Provider} from '@loopback/context'
 
 export class MyValueProvider implements Provider<string> {
   // 这里使用 async 仅仅是说明: provider 可以是异步的
