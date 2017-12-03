@@ -32,3 +32,19 @@ try {
 
 * 上述错误自然可以通过 `单元测试` 排除
 * 但在业务代码中, 单元测试覆盖到这种程度的投入是很大的 (几乎不现实)
+
+### 02: 参数容易传错 且 不易发现
+
+* `sequelize` 中传递 `transaction` 如下
+
+```js
+// ...
+await Model.findOne({
+  where: {
+    name: 'hi',
+    // ...
+  },
+  transaction
+})
+// ...
+```
