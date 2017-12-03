@@ -6,8 +6,11 @@ date: 2017-11-19
 
 ### 题记
 
-最近正好在一个典型的业务场景中用到了 `rxjs` 解决一些数据管理的问题,
-对相关的核心代码做了下总结梳理.
+社区内有不少关于 `rxjs` 的优质文章, 但大多数的视角从介绍 `rxjs` 的概念入手.
+最近正好在一个典型的业务场景中用到了 `rxjs` 解决一些数据管理的问题, 对相关的核心代码做了下总结梳理.
+希望能够从业务实现的角度切入, 看看 `rxjs` 的使用. 对于场景中用到的 `rxjs` 的相关概念, 由于篇幅原因,
+仅做简单介绍, 但是会在文末列出一些个人觉得写得很好的文章, 作为补充.
+
 业务场景很常见, 基本做过 `admin` 类的前端开发的同学都很熟悉.
 页面上方是 `条件筛选区`, 比如: `时间范围`, `数据类型` 等.
 页面下方就是一张 `table` 展示查询结果.
@@ -54,7 +57,7 @@ async function request(query) { /* ... */ }
 不知道读者朋友有没有能用很少代码便实现上述需求的,
 至少我个人琢磨了下, 实现上述需求还是需要一定代码量的.
 
-如果使用 `rxjs`, 这种需求是很好解决的
+如果使用 `rxjs`, 这种需求是可以轻易解决的
 
 ```js
 Observable.interval(500)
@@ -66,5 +69,93 @@ Observable.interval(500)
   })
 ```
 
-在 `rxjs` 加持下, 基本 `5行` 代码便满足了我们的需求
+上述 `5行` 代码便满足了我们的需求, 此处做一个简单的说明
+
+* `.interval(500)` 创建了一个数字队列, 每隔 `500ms` 发出一个数字. 这里其实把他用作定时器, 模拟用户行为
+
+```js
+Observable.interval(500).subscribe(n => console.log(n))
+// output: 0, 1, 2, 3, 4, 5 ...
+```
+
+* `.map()` 在这里我们直接返回了 `opts`
+* `.distinctUntilChanged()` 保证了只有当前值与先前值不一样时才会发送 (注: 不会做深度比较)
+
+```js
+Observable.interval(500).distinctUntilChanged()
+  .subscribe(v => console.log(v))
+// 0, 1, 2, 3, 4 ...
+Observable.of(1, 2, 3, 3, 2, 1).distinctUntilChanged()
+  .subscribe(v => console.log(v))
+// 1, 2, 3, 2, 1
+const a = b = { name: 'ms' }
+Observable.of({ name: 'ms' }, a, b, 'bingo')
+  .distinctUntilChanged().subscribe(v => console.log(v))
+// { name: 'ms' }, { name: 'ms' }, 'bingo'
+```
+
+* `.switchMap()` 在这里不去深入挖掘 `switchMap` 的功能, 网上有不少讲解 `switchMap`, `mergeMap`, `*Map` 的优质文章
+  - 此处, 由于 `request` 返回的是一个 `Promise`, `switchMap` 在处理新的请求时, 会忽略之前的请求, 只处理最新的一个
+  - 如果, 我们的实现是使用 `Observable.ajax`, 是 `cancelable` 的, 则先前的 `http` 请求会被 `cancel`
+
+其实, 写到这里, 大家也就能感受到 `rxjs` 的强大.
+但是, 个人却在此处想说的是, 我并不赞同将 `rxjs` 应用到所有场景.
+个人只是在部分复杂场景使用 `rxjs`, 毕竟, 大多场景下, 没有请求队列, 也不需要 `cancel request`
+
+### 需求二: 合并外部事件
+
+在我们当前的页面区域, 相当于一个 `bashboard` 页面. 在我们的业务场景中, 运营人员可以直接进入该页面,
+同时, 是可以在其他的数据实体页面点击某一数据行, 跳转进入该页面的. (比如: 用户列表, 点击某一用户). 此时:
+
+  - 查询条件会在点击数据行时诞生 (外部页面), 同时查询条件复杂 (如包含嵌套的 object 等). 不适合作为 querystring 传入
+  - 点击数据行 -> 转为查询参数的逻辑希望聚合在当前页面的代码逻辑内
+
+
+此时, 我们添加如下代码
+
+```js
+const subject = new ReplaySubject()
+
+export function gotoDashboardFromUserList(user) {
+  const opts = {
+    // ...
+  }
+
+  subject.next(opts)
+}
+```
+
+我们原有的查询代码则相应的合并这个 `subject`
+
+```js
+// 添加如下 一行
+
+  .merge(subject)
+
+// 则现有代码为
+
+Observable.interval(500)
+  .merge(subject)
+  .map(() => opts)
+  .distinctUntilChanged()
+  .switchMap(opts => request(opts))
+  .subscribe(data => {
+    /* render */
+  })
+```
+
+与此同时, 在我们的整个 `admin` 系统中, 是有实时的消息推送的, 会有一个消息列表.
+其中, 部分消息类型需要触发 `dashboard` 刷新 (如果当前页面是 `dashboard`).
+
+### 异步属性依赖
+
+原本, 文章写到这也就结束了, 但奈何需求还没做完啊 ! 准确说, 还没开始做 ...
+
+上文提到, 筛选条件比较复杂, 其中有些筛选条件还是有关系依赖的.
+比如: 性别选择完之后, 胸围的选项肯定是不一样的 (开个玩笑).
+并且, 我们的(部分)筛选条件是不固定的, 即 `维度一` 的选项是动态的,
+需要 `http` 请求获取, 依赖 `维度一` 的 `维度二`, 也是动态的.
+而且, 有一定的实时性要求, 且选项不少.
+
+直接说重点就是: `不能缓存在本地`, `不能一次性获取`, `我们的依赖层级是: 最多三层`
 
