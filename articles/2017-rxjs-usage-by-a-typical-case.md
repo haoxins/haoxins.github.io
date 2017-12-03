@@ -30,8 +30,10 @@ date: 2017-11-19
 需要保证 response 按照 request 的时序排序, 永远取最新值 render.
 
 ```
-request 顺序: A -> B -> C -> D
-但 response 的顺序可能是: A -> C -> D -> B
+request 顺序:
+A -> B -> C -> D
+但 response 的顺序可能是:
+A -> C -> D -> B
 ```
 
 我们先行定义一些基础代码如下:
@@ -41,10 +43,14 @@ request 顺序: A -> B -> C -> D
 let opts = { /* ... */ }
 
 // 当用户变更查询条件时, 视图层做相应变更
-opts = Object.assign({}, opts, { /* ... */ })
+opts = Object.assign({}, opts, {
+  /* ... */
+})
 
 // 假设 http request 函数如下
-async function request(query) { /* ... */ }
+async function request(query) {
+  /* ... */
+}
 ```
 
 上述的需求再细化, 有如下几点:
@@ -71,10 +77,12 @@ Observable.interval(500)
 
 上述 `5行` 代码便满足了我们的需求, 此处做一个简单的说明
 
-* `.interval(500)` 创建了一个数字队列, 每隔 `500ms` 发出一个数字. 这里其实把他用作定时器, 模拟用户行为
+* `.interval(500)` 创建了一个数字队列, 每隔 `500ms` 发出一个数字 (数字时间流).
+这里其实把他用作定时器, 模拟用户行为
 
 ```js
-Observable.interval(500).subscribe(n => console.log(n))
+Observable.interval(500)
+  .subscribe(n => console.log(n))
 // output: 0, 1, 2, 3, 4, 5 ...
 ```
 
@@ -82,15 +90,18 @@ Observable.interval(500).subscribe(n => console.log(n))
 * `.distinctUntilChanged()` 保证了只有当前值与先前值不一样时才会发送 (注: 不会做深度比较)
 
 ```js
-Observable.interval(500).distinctUntilChanged()
+Observable.interval(500)
+  .distinctUntilChanged()
   .subscribe(v => console.log(v))
 // 0, 1, 2, 3, 4 ...
-Observable.of(1, 2, 3, 3, 2, 1).distinctUntilChanged()
+Observable.of(1, 2, 3, 3, 2, 1)
+  .distinctUntilChanged()
   .subscribe(v => console.log(v))
 // 1, 2, 3, 2, 1
 const a = b = { name: 'ms' }
 Observable.of({ name: 'ms' }, a, b, 'bingo')
-  .distinctUntilChanged().subscribe(v => console.log(v))
+  .distinctUntilChanged()
+  .subscribe(v => console.log(v))
 // { name: 'ms' }, { name: 'ms' }, 'bingo'
 ```
 
@@ -147,6 +158,22 @@ Observable.interval(500)
 与此同时, 在我们的整个 `admin` 系统中, 是有实时的消息推送的, 会有一个消息列表.
 其中, 部分消息类型需要触发 `dashboard` 刷新 (如果当前页面是 `dashboard`).
 
+### 事件回放
+
+有一天, 运营同学跑过来说, 我们平时查询很快啊, 有时候需要回顾, 但忘记之前是哪些筛选条件了 (尼玛, 这是金鱼记忆么 ?).
+总之, 你给我加个历史记录, 我可以回退查询 !
+
+OK, 最终梳理的需求如下, 保留最近的 `7` 次查询条件, 可以点击 `返回` 按钮执行上一次查询 (直至无法继续返回),
+在返回过程中, 一但再次便跟条件触发查询, 历史记录栈塞入当前此次查询. 示意如下:
+
+```
+A -> B -> C -> D -> E -> F
+// 返回, 返回, 返回
+A -> B -> C
+// 又查询了一次
+A -> B -> C -> G
+```
+
 ### 异步属性依赖
 
 原本, 文章写到这也就结束了, 但奈何需求还没做完啊 ! 准确说, 还没开始做 ...
@@ -159,3 +186,6 @@ Observable.interval(500)
 
 直接说重点就是: `不能缓存在本地`, `不能一次性获取`, `我们的依赖层级是: 最多三层`
 
+### See also
+
+* [RxJS 入门指引和初步应用](https://github.com/xufei/blog/issues/44)
