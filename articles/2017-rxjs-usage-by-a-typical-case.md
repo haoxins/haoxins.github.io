@@ -94,10 +94,12 @@ Observable.interval(500)
   .distinctUntilChanged()
   .subscribe(v => console.log(v))
 // 0, 1, 2, 3, 4 ...
+
 Observable.of(1, 2, 3, 3, 2, 1)
   .distinctUntilChanged()
   .subscribe(v => console.log(v))
 // 1, 2, 3, 2, 1
+
 const a = b = { name: 'ms' }
 Observable.of({ name: 'ms' }, a, b, 'bingo')
   .distinctUntilChanged()
@@ -109,9 +111,7 @@ Observable.of({ name: 'ms' }, a, b, 'bingo')
   - 此处, 由于 `request` 返回的是一个 `Promise`, `switchMap` 在处理新的请求时, 会忽略之前的请求, 只处理最新的一个
   - 如果, 我们的实现是使用 `Observable.ajax`, 是 `cancelable` 的, 则先前的 `http` 请求会被 `cancel`
 
-其实, 写到这里, 大家也就能感受到 `rxjs` 的强大.
-但是, 个人却在此处想说的是, 我并不赞同将 `rxjs` 应用到所有场景.
-个人只是在部分复杂场景使用 `rxjs`, 毕竟, 大多场景下, 没有请求队列, 也不需要 `cancel request`
+其实, 写到这里, 大家也就能感受到 `rxjs` 的某些强大功能.
 
 ### 需求二: 合并外部事件
 
@@ -125,28 +125,28 @@ Observable.of({ name: 'ms' }, a, b, 'bingo')
 此时, 我们添加如下代码
 
 ```js
-const subject = new ReplaySubject()
+const clickItem$ = new ReplaySubject()
 
 export function gotoDashboardFromUserList(user) {
   const opts = {
     // ...
   }
 
-  subject.next(opts)
+  clickItem$.next(opts)
 }
 ```
 
-我们原有的查询代码则相应的合并这个 `subject`
+我们原有的查询代码则相应的合并这个 `clickItem$`
 
 ```js
 // 添加如下 一行
 
-  .merge(subject)
+  .merge(clickItem$)
 
 // 则现有代码为
 
 Observable.interval(500)
-  .merge(subject)
+  .merge(clickItem$)
   .map(() => opts)
   .distinctUntilChanged()
   .switchMap(opts => request(opts))
@@ -158,33 +158,168 @@ Observable.interval(500)
 与此同时, 在我们的整个 `admin` 系统中, 是有实时的消息推送的, 会有一个消息列表.
 其中, 部分消息类型需要触发 `dashboard` 刷新 (如果当前页面是 `dashboard`).
 
-### 事件回放
+为了简化代码, 此处简写推送的消息为:
+
+```js
+const message$ = new ReplaySubject()
+```
+
+我们只需要再加一个 `.merge` 即可
+
+```js
+  .merge(message$.filter(v => {
+    if (/* 某些类别的消息 */) {
+      return true
+    } else {
+      return false
+    }
+  }))
+```
+
+### 查询回退/前进
 
 有一天, 运营同学跑过来说, 我们平时查询很快啊, 有时候需要回顾, 但忘记之前是哪些筛选条件了 (尼玛, 这是金鱼记忆么 ?).
 总之, 你给我加个历史记录, 我可以回退查询 !
 
-OK, 最终梳理的需求如下, 保留最近的 `7` 次查询条件, 可以点击 `返回` 按钮执行上一次查询 (直至无法继续返回),
-在返回过程中, 一但再次便跟条件触发查询, 历史记录栈塞入当前此次查询. 示意如下:
+OK, 最终梳理的需求如下, 保留最近的 `7` 次查询条件, 可以点击 `后退` 按钮执行上一次查询 (直至无法继续返回),
+在后退过程中, 一但再次便跟条件触发查询, 历史记录栈塞入当前此次查询. 示意如下:
 
 ```
 A -> B -> C -> D -> E -> F
-// 返回, 返回, 返回
+// 后退, 后退, 后退
 A -> B -> C
+// 前进
+A -> B -> C -> D
 // 又查询了一次
-A -> B -> C -> G
+A -> B -> C -> D -> G
 ```
+
+此处, 我们按照常规思路, 定义两个数组, 保存 `undos` 和 `redos`
+
+```js
+let undos = []
+let redos = []
+const size = 7
+```
+
+* 然后需要保存查询记录, 只需要在 `` 再加一个 `map` 操作即可
+
+```js
+  .map(opts => {
+    undos = undos.concat(opts).reverse()
+      .slice(0, size).reverse()
+    redos = []
+    return opts
+  })
+```
+
+* 同时, 我们需要监听 `前进/后退` 按钮事件并 `触发查询`,
+
+```js
+const redoUndo$ = new Subject()
+
+Observable
+  .fromEvent(undoBtn, 'click')
+  .subscribe(() => {
+    const o = undos.pop()
+
+    if (!o) return
+
+    redos.push(o)
+
+    redoUndo$.next(o)
+  })
+
+Observable
+  .fromEvent(redoBtn, 'click')
+  .subscribe(() => {
+    const o = redos.pop()
+
+    if (!o) return
+
+    undos.push(o)
+
+    redoUndo$.next(o)
+  })
+```
+
+* 此时, 我们的查询 `workflow` 需要合并 `redoUndo$`, 代码变更为如下:
+
+```js
+
+Observable.interval(500)
+  .merge(clickItem$)
+  .merge(message$.filter(/* code */))
+  .map(() => opts)
+  .distinctUntilChanged()
+  .merge(redoUndo$)
+  .switchMap(opts => request(opts))
+  .subscribe(data => {
+    /* render */
+  })
+```
+
+### 子视图切换
+
+运营人员再次提出了需求, 查询出的数据行, 支持点击展示详情页.
+  - 在详情页会需要额外的 `http` 请求拉取额外信息
+  - 进入详情页之后, 支持 `上一个/下一个/返回` 操作
+
+与上述场景类似, 我们同样监听按钮点击事件, 并合并入查询流程, 但是略有差异
+
+```js
+let currentIndex = 0
+
+const gotoAction$ = new BehaviorSubject({
+  type: 'back'
+})
+
+Observable
+  .fromEvent(preBtn, 'click')
+  .subscribe(() => gotoAction$.next({action: 'pre'}))
+
+Observable
+  .fromEvent(nextBtn, 'click')
+  .subscribe(() => gotoAction$.next({action: 'next'}))
+
+Observable
+  .fromEvent(backToListBtn, 'click')
+  .subscribe(() => gotoAction$.next({action: 'back'}))
+```
+
+* 相应的, 我们的查询流程的末尾部分也要做相应的调整
+
+```js
+  .switchMap(opts => request(opts))
+  .combineLatest(event)
+  .switchMap(async ([items, action]) => {
+    if (action.type === 'next') {
+      /* code */
+    } else if (action.type === 'pre') {
+      /* code */
+    } else {
+      /* code */
+    }
+  })
+  .subscribe(v => console.log('done:', v))
+```
+
+* `BehaviorSubject`:
+* `combineLatest`:
 
 ### 异步属性依赖
 
-原本, 文章写到这也就结束了, 但奈何需求还没做完啊 ! 准确说, 还没开始做 ...
+原本, 文章写到这也就结束了, 但奈何需求还没做完啊 !
 
 上文提到, 筛选条件比较复杂, 其中有些筛选条件还是有关系依赖的.
-比如: 性别选择完之后, 胸围的选项肯定是不一样的 (开个玩笑).
+比如: 性别选择完之后, 胸围的选项肯定是不一样的 (仅仅打个比方 >_<).
 并且, 我们的(部分)筛选条件是不固定的, 即 `维度一` 的选项是动态的,
-需要 `http` 请求获取, 依赖 `维度一` 的 `维度二`, 也是动态的.
+需要 `http` 请求获取, 基于 `维度一` 的 `维度二`, 也是动态的.
 而且, 有一定的实时性要求, 且选项不少.
 
-直接说重点就是: `不能缓存在本地`, `不能一次性获取`, `我们的依赖层级是: 最多三层`
+说白了就是: `不能缓存在本地`, `不能一次性获取`, `我们的依赖层级是: 最多三层`
+
+下回接着讲 ~
 
 ### See also
 
