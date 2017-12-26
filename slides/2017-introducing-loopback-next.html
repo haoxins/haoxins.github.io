@@ -29,14 +29,16 @@ class: center, middle
 
 ## Loopback 4 - 现代化的 X framework
 
+by: @haoxin
+
 ---
 
 ## 说在前头
 
 * Loopback 4 is `WIP` !
-* 预计 2018 初 `beta` (老鸟可用, pk: koa, express)
-* 预计 2018 中 `stable` (大多鸟可用, pk: django)
-* 完整的生态宏图, 慢慢发展 (小鸟也能用的爽, pk: ?)
+* 预计 2018 初 `beta`
+* 预计 2018 中 `stable`
+* 完整的生态宏图, 慢慢发展
 
 ---
 
@@ -46,34 +48,7 @@ class: center, middle
 
 ---
 
-### 应用场景的复杂度决定相关技术的生态质量
-
-* (2015前后)前端的场景复杂度提升 -> 更多的实践, 思考, 产物(轮子)
-  - 而 ES20xx, web spec 等, 均是次要因素
-* 场景复杂度提升 -> 变化, 积累
-* node.js 的 server 应用场景仍显不足
-
----
-
-### 没有 `loopback 4`, 不谈 `Enterprise Ready` !
-
-* 面对常规的业务场景, 需要集成化的解决方案
-* 案例
-  - 人 https://github.com/yorkie
-  - 场景
-
-```
-After comparing the complexity between codebases,
-we are clearly to get the following report:
-
-- The total of lines did reduce by 70%
-- The lines of controllers did reduce by 90%
-- The lines of models did reduce by 10%
-- The lines of views keeps unchanged
-- The lines which are not related to business logic did reduce by 99%
-```
-
----
+class: middle
 
 ## 为何重写 Loopback
 
@@ -92,8 +67,8 @@ we are clearly to get the following report:
   - aws (azure) 整合, 例如: lambda 等
   - 其他
 * 打造一个 `Loopback` 生态, `extension market`
-  - 目前除了 `extension` 这个词语, 以及一个 `wish list`, 啥都没有
-  - 这个 `wish list` 估计永远都不可能 `100%` 实现
+  - 火热进行中
+  - 永远都不可能 `100%` 实现
 
 ---
 
@@ -135,7 +110,7 @@ app.controller(MyController)
 
 ---
 
-* `OpenAPI spec` 模式, 乍看之下反人类, `lb` 的 目标: `CLI`
+* `OpenAPI spec` 模式, 乍看之下: 这他妈什么鬼 ? (后面再说缘由)
 
 ```ts
 const spec = <OpenApiSpec> {
@@ -161,7 +136,13 @@ const spec = <OpenApiSpec> {
     }
   }
 }
+```
 
+---
+
+* 将 spec 与 controller 绑定
+
+```ts
 @api(spec)
 class MyController {
   hello(name: string) {
@@ -174,7 +155,9 @@ app.controller(MyController)
 
 ---
 
-##
+class: center, middle
+
+## 来个稍微完整点的 hello world ~
 
 ---
 
@@ -186,10 +169,16 @@ import {
 } from '@loopback/repository'
 
 const db = new DataSourceConstructor({
-  connector: 'memory',
-  name: 'db'
+  connector: 'postgresql',
+  host: 'localhost',
+  port: 5432,
+  database: 'loopback',
+  password: '',
+  user: 'hx'
 })
 ```
+
+---
 
 * 定义 Model
 
@@ -210,6 +199,8 @@ class User extends Entity {
 }
 ```
 
+---
+
 * 定义 Repository
 
 ```ts
@@ -224,23 +215,11 @@ class UserRepository extends DefaultCrudRepository<User, typeof User.prototype.i
 }
 ```
 
+---
+
 * 定义 Controller, 并绑定 Repository
 
 ```ts
-import {
-  repository
-} from '@loopback/repository'
-
-import {
-  Application,
-  inject,
-  param,
-  post,
-  get
-} from '@loopback/core'
-
-const app = new Application()
-
 class UserController {
   constructor(
     @repository('user')
@@ -260,15 +239,404 @@ class UserController {
 app.bind('repositories.user').toClass(UserRepository)
 
 app.controller(UserController)
-
-app.start()
 ```
+---
+
+class: center, middle
+
+## 到目前为止, Loopback 4 基本没有亮点 !
+
+---
+
+class: center, middle
+
+## sequence
+
+---
+
+### 什么是 sequence ?
+
+* `sequence` 是一个 `work flow`, 是 `request` 到 `response` 的 `work flow`
+
+```ts
+app.handler(async (sequence, request, response) => {
+  sequence.send(response, `hello, world`)
+})
+```
+
+---
+
+### LB 4 default sequence
+
+```ts
+class DefaultSequence {
+  async handle(req: ParsedRequest, res: ServerResponse) {
+    try {
+      const route = this.findRoute(req)
+      const params = this.parseParams(req, route)
+      const result = await this.invoke(route, params)
+      await this.send(res, result)
+    } catch(err) {
+      await this.reject(res, err)
+    }
+  }
+}
+```
+
+---
+
+### custom sequence
+
+* 自定义 `sequence` 有多种方式
+  - `extends` `DefaultSequence`
+  - `implements` `SequenceHandler` (注: 这里是 `TypeScript` 体现语法优势的一个小点)
+  - `sequence function`
+
+---
+
+* 其实, 在 `hello world` 中, 我们已经通过 `sequence function` 的方式自定义了 `sequence`
+
+```ts
+app.handler(async function fn(sequence, request, response) => {
+  sequence.send(response, `hello, world`)
+})
+
+// 在 loopback core 的内部, 会做如下转换:
+// ...
+class SequenceFromFunction extends DefaultSequence {
+  async handle(req: ParsedRequest, res: ServerResponse) {
+    await Promise.resolve(fn(this, request, response))
+  }
+}
+
+this.sequence(SequenceFromFunction)
+// ...
+```
+
+---
+
+* extends DefaultSequence 的方式如下:
+
+```ts
+const app = new Application()
+
+class MySequence extends DefaultSequence {
+  async handle(req: ParsedRequest, res: ServerResponse) {
+    console.log('oh ~')
+    res.end('bingo ~')
+  }
+}
+
+app.sequence(MySequence)
+```
+
+---
+
+* `implements` `SequenceHandler` 的方式如下:
+
+```ts
+import {
+  ServerResponse
+} from 'http'
+
+const app = new Application()
+
+class MySequence implements SequenceHandler {
+  constructor(@inject(CoreBindings.SequenceActions.SEND) private send: Send) {}
+  async handle(req: ParsedRequest, res: ServerResponse) {
+    console.log('oh ~')
+    this.send(res, 'bingo ~')
+  }
+}
+
+app.sequence(MySequence)
+```
+
+---
+
+### sequence 的设计优势
+
+* 上述示例比较简单, 但也能大致勾勒出 `sequence` 模式的优势
+  - 便于全局扩展一些功能
+  - 如有需要, 完全可以自定义 `核心逻辑`, 组合使用 `Router`, `Controller`, `Component` ... 等
+  - 可以在 `loopback` 中直接使用既有的项目代码: `express`, `koa` 等
+* sequence 是很多其他功能的实现基础
+
+---
+
+class: center, middle
+
+## context
+
+---
+
+### basic
+
+* 说白了, 就是一个 `Class`, 用以管理 `state`, `dependency`, `config` 等 `everything`
+* `Application` extends `Context`
+* `Loopback` 有两种 `Level` 的 `Context`
+  - `Application-level`
+  - `Request-level`
+
+---
+
+### Application-level
+
+```ts
+import { Application } from '@loopback/core'
+const app = new Application() // `app` is a Application-level `Context`
+```
+
+* 生命周期: 整个 `process` 的存续时间
+* `app` 创建时 `初始化`, 全局可 `w/r`
+
+---
+
+### Request-level
+
+```ts
+class MySequence extends DefaultSequence {
+  handle(req: ParsedRequest, res: ServerResponse) {
+    const any = this.ctx.getSync('anything')
+    res.end('bingo ~')
+  }
+}
+```
+
+* 生命周期: 整个 `req -> res` 的存续时间
+* extends `application level` context
+
+---
+
+* 一个常见的使用场景
+
+```ts
+const app = new Application()
+
+app.bind('hello').to('world')
+
+console.log(app.getSync('hello'))
+```
+
+---
+
+### Dependency Injection
+
+* 相关概念很多语言或框架都有了
+* 咱说的 `糙` 一点, 就是 `get/set` `爽` 一点
+
+```ts
+const app = new Application()
+
+app.bind('name').to('John')
+
+class HelloController {
+  constructor(@inject('name') name: string) {
+    this.name = name
+  }
+  greet(name: string) {
+    return `Hello ${name || this.name}`
+  }
+}
+```
+
+---
+
+class: center, middle
+
+## component
+
+---
+
+### 什么是 component ?
+
+* 在 `loopback` 中, `component` 可以实现如下功能
+  - 与 `controller` 交互
+  - 为 `context` 注入自定义的值
+  - 与 `model` 交互
+  - 与 `repository` 交互
+
+* 大体上, `loopback` 中的 `component` 的定位类似于 `koa` 和 `express` 中的 `middleware`
+
+---
+
+### component 的使用
+
+* 例如: `authentication` 为例
+
+```ts
+import {Application} from '@loopback/core'
+import {AuthenticationComponent} from '@loopback/authentication'
+
+const app = new Application()
+app.component(AuthenticationComponent)
+```
+
+---
+
+### 自定义一个简单的 component
+
+* component
+
+```ts
+import {Component, ProviderMap} from '@loopback/core'
+
+class MyComponent implements Component {
+  providers?: ProviderMap
+  constructor() {
+    this.providers = {
+      'my-component.my-value': MyValueProvider
+    }
+  }
+}
+```
+
+---
+
+* provider
+
+```ts
+import {Provider} from '@loopback/context'
+
+export class MyValueProvider implements Provider<string> {
+  // 这里使用 async 仅仅是说明: provider 可以是异步的
+  async value() {
+    return 'Hello world'
+  }
+}
+```
+
+---
+
+* application
+
+```ts
+const app = new Application()
+
+app.component(MyComponent)
+
+class MyController {
+  greeting: string
+
+  constructor(@inject('my-component.my-value') greeting: string) {
+    this.greeting = greeting
+  }
+
+  @get('/')
+  hello() {
+    return this.greeting
+  }
+}
+```
+
+---
+
+### 已有的 component
+
+* authentication
+* rest
+* ...
+
+---
+
+## 当组合使用 sequence, DI, component 时
+
+* 便可无缝集成各种场景, 如: gRPC support
+
+---
+
+* proto
+
+```
+syntax = "proto3";
+
+package hello;
+
+service Greeter {
+  rpc hello (HelloRequest) returns (HelloReply) {}
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+}
+```
+
+---
+
+```ts
+// const helloService = grpc.load('hello.proto')).hello
+@service(helloService.Greeter.service)
+class MyController implements Greeter {
+  hello({name}: HelloRequest): HelloResponse {
+    return {message: `hello ${name}`}
+  }
+}
+```
+
+---
+
+### 你依旧可以自定义 GrpcSequence
+
+---
+
+class: center, middle
+
+## repository, 以及其她蛮多特性, 概念
+
+---
+
+class: center, middle
+
+## 抱歉, 接下来比较尴尬
+
+后面: lb 3 有 (大部分), lb 4 是 TODOs
+
+---
+
+## CLI
+
+* 还记得开始的反人类代码么 ?
+
+---
+
+## Auth
+
+* acl
+
+---
+
+## Doc
+
+* swagger
+
+---
+
+## Data Source
+
+* relation
+
+---
+
+class: center, middle
+
+## 最后, LB4 的生态蓝图就一句话带过吧
+
+等到上述 TODOs 基本实现了, 咱再正式展望 `big vision` ~
+
 ---
 
   </textarea>
   <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
   <script>
-    const slideshow = remark.create()
+    const slideshow = remark.create({
+      highlightStyle: 'monokai',
+      highlightLanguage: 'remark',
+      highlightLines: true
+    })
   </script>
 </body>
 </html>
