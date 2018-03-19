@@ -74,3 +74,6 @@ await connection
 
 ### 事务的使用更直观, 代码不易出疏忽
 
+### CLI 支持
+
+能否根据 model 定义, 一键输出 sql 语句

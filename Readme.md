@@ -24,6 +24,7 @@
 ## 2018
 
 * [hello, flutter](articles/2018-hello-flutter.md)
+* [sequelize to typeorm](articles/2018-migrate-from-sequelize-to-typeorm.md)
 
 ## 2017
 
