@@ -23,6 +23,7 @@
 
 ## 2018
 
+* [个人的开发环境配置](articles/2018-development-environment-config.md)
 * [hello, flutter](articles/2018-hello-flutter.md)
 * [sequelize to typeorm](articles/2018-migrate-from-sequelize-to-typeorm.md)
 
