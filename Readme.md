@@ -7,15 +7,16 @@
 * [github: @haoxins](https://github.com/haoxins)
 * [medium: @haoxin](https://medium.com/@haoxin)
 
-## 游记
-
-* [2018: 清明时节 武夷山](articles/2018-wuyishan-3-days.md)
-
 ## 杂项
 
 * [睡眠 健身 休息](articles/2017-sleeping-fitness-health.md)
 * [冥想](articles/2017-meditation-dhyana.md)
 * [个人的资产理念](articles/2017-personal-finance.md)
+* [阅读](articles/reading.md)
+
+## 游记
+
+* [2018: 清明时节 武夷山](articles/2018-wuyishan-3-days.md)
 
 ## 专题
 
