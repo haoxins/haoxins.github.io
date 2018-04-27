@@ -16,7 +16,7 @@
 
 ## 游记
 
-* [2018: 清明时节 武夷山](articles/2018-wuyishan-3-days.md)
+* [五一 马来西亚](articles/2018-malaysia.md)
 
 ## 专题
 
