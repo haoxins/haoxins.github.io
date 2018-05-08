@@ -14,10 +14,6 @@
 * [个人的资产理念](articles/2017-personal-finance.md)
 * [阅读](articles/reading.md)
 
-## 游记
-
-* [五一 马来西亚](articles/2018-malaysia.md)
-
 ## 专题
 
 * [loopback 相关](articles/loopback-article-list.md)
