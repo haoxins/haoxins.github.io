@@ -345,3 +345,9 @@ Observable
 ### See also
 
 * [RxJS 入门指引和初步应用](https://github.com/xufei/blog/issues/44)
+
+异步属性依赖的另一类场景, 页面跳转
+
+从某一页面跳转到当前页 (带参数)
+
+需要根据参数 而外 多次 获取 数据 并 render
