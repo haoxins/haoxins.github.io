@@ -4,6 +4,10 @@ description: not, not, not 生产环境 ~
 date: 2018-03-23
 ---
 
+### 一些配置
+
+* [amix/vimrc](https://github.com/amix/vimrc)
+
 ### 本地 https
 
 ```bash
