@@ -4,6 +4,13 @@ description: 持续更新
 date: 2018-07-27
 ---
 
+## Service design
+
+- [The twelve-factor app - building software-as-a-service apps](https://12factor.net)
+- [Concurrent Programming for Scalable Web Architectures](http://berb.github.io/diploma-thesis/community/index.html)
+- [10 modern software engineering mistakes](https://medium.com/@rdsubhas/10-modern-software-engineering-mistakes-bc67fbef4fc8)
+- [log: what every software engineer should know about real time datas unifying](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
+
 ## Docker and Kubernetes
 
 * keywords: `Kubernetes`, `Istio`, `Docker`
@@ -53,3 +60,11 @@ date: 2018-07-27
 ### 一些开源项目
 
 - [Golang gokit](https://gokit.io)
+
+## 网络
+
+> 我可以偏激一点, 网络知识 比 系统知识 更重要
+
+* [Computer Network Tutorials](https://www.geeksforgeeks.org/computer-network-tutorials)
+* [QUIC: A UDP-Based Multiplexed and Secure Transport](https://datatracker.ietf.org/doc/draft-ietf-quic-transport)
+* [HPACK: Header Compression for HTTP/2](https://httpwg.org/specs/rfc7541.html)
