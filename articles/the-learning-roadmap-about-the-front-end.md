@@ -4,15 +4,18 @@ description: 缘起, 给有需要的伙伴, 也给自己. 承诺持续更新
 date: 2018-07-27
 ---
 
+## Arch
+
+* [neuland/micro-frontends](https://github.com/neuland/micro-frontends)
+
 ## CSS
 
 * [css triggers](https://csstriggers.com)
 * [9 Biggest Mistakes with CSS Grid](https://hacks.mozilla.org/2018/07/9-biggest-mistakes-with-css-grid)
 
-## Language
+## JavaScript and TypeScript
 
-- [swift is like kotlin](http://nilhcem.com/swift-is-like-kotlin)
-- [kotlin is like typescript](https://gi-no.github.io/kotlin-is-like-typescript)
+[See here](the-learning-roadmap-about-the-language.md)
 
 ## WebAssembly
 
@@ -25,6 +28,10 @@ date: 2018-07-27
   - `Rust`
   - [rustwasm/book](https://github.com/rustwasm/book)
 
+## Performance
+
+- [thedaviddias/Front-End-Performance-Checklist](https://github.com/thedaviddias/Front-End-Performance-Checklist)
+
 ## 序列化
 
 - [dcodeIO/protobuf.js](https://github.com/dcodeIO/protobuf.js)
@@ -33,6 +40,6 @@ date: 2018-07-27
 
 - [Tencent/TSW](https://github.com/Tencent/TSW)
 
-## 轻量级应用
+## 轻量级应用(我不知道这一类怎么表述, 哈哈)
 
 - [Google appmaker](https://developers.google.com/appmaker)
