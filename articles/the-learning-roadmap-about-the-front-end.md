@@ -1,6 +1,6 @@
 ---
 title: The learning roadmap about the front-end
-description: 缘起, 给有需要的伙伴, 也给自己. 承诺持续更新
+description: 持续更新
 date: 2018-07-27
 ---
 
@@ -17,9 +17,21 @@ date: 2018-07-27
 
 [See here](the-learning-roadmap-about-the-language.md)
 
+## Browser, engine
+
+- [How JavaScript works: an overview of the engine, the runtime, and the call stack](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf)
+- [How JavaScript works: The building blocks of Web Workers](https://blog.sessionstack.com/how-javascript-works-the-building-blocks-of-web-workers-5-cases-when-you-should-use-them-a547c0757f6a)
+
+## Network
+
+- [How JavaScript works: Deep dive into WebSockets and HTTP/2 with SSE](https://blog.sessionstack.com/how-javascript-works-deep-dive-into-websockets-and-http-2-with-sse-how-to-pick-the-right-path-584e6b8e3bf7)
+- [How JavaScript Works: Inside the Networking Layer](https://blog.sessionstack.com/how-javascript-works-inside-the-networking-layer-how-to-optimize-its-performance-and-security-f71b7414d34c)
+
 ## WebAssembly
 
 - [AssemblyScript/assemblyscript](https://github.com/AssemblyScript/assemblyscript)
+- [How JavaScript works: A comparison with WebAssembly](https://blog.sessionstack.com/how-javascript-works-a-comparison-with-webassembly-why-in-certain-cases-its-better-to-use-it-d80945172d79)
+
 
 * `官方支持`的`主流`的语言
   - `Golang`
@@ -31,6 +43,8 @@ date: 2018-07-27
 ## Performance
 
 - [thedaviddias/Front-End-Performance-Checklist](https://github.com/thedaviddias/Front-End-Performance-Checklist)
+- [Why Performance Matters](https://developers.google.com/web/fundamentals/performance/why-performance-matters)
+- [The Cost Of JavaScript](https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e)
 
 ## 序列化
 

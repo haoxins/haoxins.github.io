@@ -68,6 +68,8 @@ date: 2018-07-27
 * [Computer Network Tutorials](https://www.geeksforgeeks.org/computer-network-tutorials)
 * [QUIC: A UDP-Based Multiplexed and Secure Transport](https://datatracker.ietf.org/doc/draft-ietf-quic-transport)
 * [HPACK: Header Compression for HTTP/2](https://httpwg.org/specs/rfc7541.html)
+* [7 Tips for Faster HTTP/2 Performance](https://www.nginx.com/blog/7-tips-for-faster-http2-performance)
+* [http2 explained](https://daniel.haxx.se/http2)
 
 ## 数据库
 
@@ -80,6 +82,7 @@ date: 2018-07-27
 
 ## 分布式
 
+* [Notes on Distributed Systems for Young Bloods](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods)
 * [system design primer](https://github.com/donnemartin/system-design-primer)
 * [CAP Twelve Years Later: How the Rules Have Changed](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed)
 * [Base: An Acid Alternative](https://queue.acm.org/detail.cfm?id=1394128)
