@@ -11,11 +11,15 @@ date: 2018-07-27
 - [10 modern software engineering mistakes](https://medium.com/@rdsubhas/10-modern-software-engineering-mistakes-bc67fbef4fc8)
 - [log: what every software engineer should know about real time datas unifying](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
 
-## Docker and Kubernetes
+## Docker, Kubernetes, Service Mesh
 
 * keywords: `Kubernetes`, `Istio`, `Docker`
 
 > 毫不夸张, 未来 service 的唯一主流 runtime.
+
+### 一些官方博客
+
+* [envoy proxy](https://blog.envoyproxy.io)
 
 ### 一些资源
 
@@ -63,7 +67,7 @@ date: 2018-07-27
 
 ## 网络
 
-> 我可以偏激一点, 网络知识 比 系统知识 更重要
+> 网络知识 == cloud APIs
 
 * [Computer Network Tutorials](https://www.geeksforgeeks.org/computer-network-tutorials)
 * [QUIC: A UDP-Based Multiplexed and Secure Transport](https://datatracker.ietf.org/doc/draft-ietf-quic-transport)
