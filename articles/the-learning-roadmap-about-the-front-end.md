@@ -45,6 +45,7 @@ date: 2018-07-27
 - [thedaviddias/Front-End-Performance-Checklist](https://github.com/thedaviddias/Front-End-Performance-Checklist)
 - [Why Performance Matters](https://developers.google.com/web/fundamentals/performance/why-performance-matters)
 - [The Cost Of JavaScript](https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e)
+- [The Cost Of JavaScript In 2018](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
 
 ## 序列化
 
