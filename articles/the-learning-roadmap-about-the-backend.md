@@ -13,9 +13,7 @@ date: 2018-07-27
 
 ## Docker, Kubernetes, Service Mesh
 
-* keywords: `Kubernetes`, `Istio`, `Docker`
-
-> 毫不夸张, 未来 service 的唯一主流 runtime.
+* Keywords: `Kubernetes`, `Istio`, `Envoy`, `Docker`
 
 ### 一些官方博客
 
@@ -41,6 +39,7 @@ date: 2018-07-27
 
 * [Azure - Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns)
 * [AWS - Cloud Design Patterns](http://en.clouddesignpattern.org/index.php/Main_Page)
+* [The Open Guide to Amazon Web Services](https://github.com/open-guides/og-aws)
 
 ### 有趣的开源项目
 
@@ -48,7 +47,7 @@ date: 2018-07-27
 
 ## MicroServices
 
-> 无法绕过的存在
+* Keywords: ``
 
 ### 一些知名站点
 
@@ -67,7 +66,7 @@ date: 2018-07-27
 
 ## 网络
 
-> 网络知识 == cloud APIs
+* Keywords: ``
 
 ### 站点资源
 
