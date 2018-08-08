@@ -11,6 +11,16 @@ date: 2018-07-27
 - [10 modern software engineering mistakes](https://medium.com/@rdsubhas/10-modern-software-engineering-mistakes-bc67fbef4fc8)
 - [log: what every software engineer should know about real time datas unifying](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
 
+### Access Controle
+
+- [Access Control List](https://en.wikipedia.org/wiki/Access_control_list)
+- [Role-based Access Control](https://en.wikipedia.org/wiki/Role-based_access_control)
+- [Attribute-based Access Control](https://en.wikipedia.org/wiki/Attribute-based_access_control)
+- [Azure: Role-based Access Control](https://docs.microsoft.com/en-us/azure/role-based-access-control)
+
+- [AWS: cognito](https://aws.amazon.com/cn/documentation/cognito)
+- [Azure: Active Directory](https://docs.microsoft.com/en-us/azure/active-directory)
+
 ## Docker, Kubernetes, Service Mesh
 
 * Keywords: `Kubernetes`, `Istio`, `Envoy`, `Docker`
