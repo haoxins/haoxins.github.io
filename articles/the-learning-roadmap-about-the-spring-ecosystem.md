@@ -16,6 +16,15 @@ date: 2018-08-03
 - [Spring Framework Documentation](https://docs.spring.io/spring/docs/5.0.x/spring-framework-reference/index.html)
 - [Spring Guides](https://spring.io/guides)
 
+### Data Persistence
+
+[Domain-driven design](https://en.wikipedia.org/wiki/Domain-driven_design)
+[Java Persistence API](https://en.wikipedia.org/wiki/Java_Persistence_API)
+[Java Database Connectivity](https://en.wikipedia.org/wiki/Java_Database_Connectivity)
+[Spring Data](https://projects.spring.io/spring-data)
+[Spring Data JPA](https://projects.spring.io/spring-data-jpa)
+[Spring Data JDBC](https://projects.spring.io/spring-data-jdbc)
+
 ### 一些站点
 
 - [PicoContainer](http://picocontainer.com)

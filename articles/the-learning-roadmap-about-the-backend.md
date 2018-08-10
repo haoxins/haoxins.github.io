@@ -93,6 +93,7 @@ date: 2018-07-27
 
 * [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
 * [Why Uber Engineering Switched from Postgres to MySQL](https://eng.uber.com/mysql-migration)
+* [Cassandra: Architecture in brief](https://docs.datastax.com/en/cassandra/3.0/cassandra/architecture/archIntro.html)
 * [Consistent Hashing in Cassandra](https://blog.imaginea.com/consistent-hashing-in-cassandra)
 * [Graph Database](http://graphdatabases.com)
 * [NoSQL Databases: a Survey and Decision Guidance](https://medium.baqend.com/nosql-databases-a-survey-and-decision-guidance-ea7823a822d)
