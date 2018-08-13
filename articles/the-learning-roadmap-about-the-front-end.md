@@ -7,6 +7,7 @@ date: 2018-07-27
 ## Arch
 
 * [neuland/micro-frontends](https://github.com/neuland/micro-frontends)
+* [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist)
 
 ## CSS
 
