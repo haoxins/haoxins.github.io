@@ -75,6 +75,11 @@ date: 2018-07-27
 
 - [Golang gokit](https://gokit.io)
 
+## 边缘计算
+
+- [wiki: Edge computing](https://en.wikipedia.org/wiki/Edge_computing)
+- [edgex foundry](https://github.com/edgexfoundry)
+
 ## 网络
 
 * Keywords: ``

@@ -19,12 +19,12 @@ date: 2018-08-03
 
 ### Data Persistence
 
-[Domain-driven design](https://en.wikipedia.org/wiki/Domain-driven_design)
-[Java Persistence API](https://en.wikipedia.org/wiki/Java_Persistence_API)
-[Java Database Connectivity](https://en.wikipedia.org/wiki/Java_Database_Connectivity)
-[Spring Data](https://projects.spring.io/spring-data)
-[Spring Data JPA](https://projects.spring.io/spring-data-jpa)
-[Spring Data JDBC](https://projects.spring.io/spring-data-jdbc)
+- [Domain-driven design](https://en.wikipedia.org/wiki/Domain-driven_design)
+- [Java Persistence API](https://en.wikipedia.org/wiki/Java_Persistence_API)
+- [Java Database Connectivity](https://en.wikipedia.org/wiki/Java_Database_Connectivity)
+- [Spring Data](https://projects.spring.io/spring-data)
+- [Spring Data JPA](https://projects.spring.io/spring-data-jpa)
+- [Spring Data JDBC](https://projects.spring.io/spring-data-jdbc)
 
 ### 一些站点
 
