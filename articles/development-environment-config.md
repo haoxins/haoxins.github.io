@@ -87,6 +87,7 @@ https.createServer(options, (req, res) => {
 
 ```bash
 brew cask install minikube
-
-# brew install kubernetes-helm
+# helm
+brew install kubernetes-helm
+helm init
 ```
