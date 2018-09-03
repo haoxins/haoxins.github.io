@@ -27,28 +27,6 @@ date: 2018-07-27
 - [AWS: cognito](https://aws.amazon.com/cn/documentation/cognito)
 - [Azure: Active Directory](https://docs.microsoft.com/en-us/azure/active-directory)
 
-## Docker, Kubernetes, Service Mesh
-
-* Keywords: `Kubernetes`, `Istio`, `Envoy`, `Docker`
-
-### 一些官方博客
-
-* [envoy proxy](https://blog.envoyproxy.io)
-
-### 一些资源
-
-* [play with docker](https://training.play-with-docker.com)
-* [kubernetes bootcamp](https://kubernetesbootcamp.github.io/kubernetes-bootcamp)
-* [docker curriculum](https://docker-curriculum.com)
-* [feiskyer / kubernetes handbook](https://github.com/feiskyer/kubernetes-handbook)
-* [rootsongjc / kubernetes handbook](https://github.com/rootsongjc/kubernetes-handbook)
-* [Understanding CNI - Container Networking Interface](http://www.dasblinkenlichten.com/understanding-cni-container-networking-interface)
-* [kubernetes 101 networking](http://www.dasblinkenlichten.com/kubernetes-101-networking)
-
-### 有趣的开源项目
-
-* [knative/serving](https://github.com/knative/serving)
-
 ## Cloud Native
 
 ### 一些知名站点
