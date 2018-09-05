@@ -84,25 +84,30 @@ date: 2018-07-27
 * [Why Uber Engineering Switched from Postgres to MySQL](https://eng.uber.com/mysql-migration)
 * [Cassandra: Architecture in brief](https://docs.datastax.com/en/cassandra/3.0/cassandra/architecture/archIntro.html)
 * [Consistent Hashing in Cassandra](https://blog.imaginea.com/consistent-hashing-in-cassandra)
+* [cockroachdb design](https://github.com/cockroachdb/cockroach/blob/master/docs/design.md)
 * [Graph Database](http://graphdatabases.com)
 * [NoSQL Databases: a Survey and Decision Guidance](https://medium.baqend.com/nosql-databases-a-survey-and-decision-guidance-ea7823a822d)
 * [Understanding When to use RabbitMQ or Apache Kafka](https://content.pivotal.io/blog/understanding-when-to-use-rabbitmq-or-apache-kafka)
 
 ## 分布式
 
-* [Notes on Distributed Systems for Young Bloods](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods)
-* [system design primer](https://github.com/donnemartin/system-design-primer)
+* [Brewer's CAP Theorem](http://www.julianbrowne.com/article/brewers-cap-theorem)
 * [CAP Twelve Years Later: How the Rules Have Changed](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed)
 * [Base: An Acid Alternative](https://queue.acm.org/detail.cfm?id=1394128)
 * [Eventually Consistent](https://www.allthingsdistributed.com/2008/12/eventually_consistent.html)
-* [Distributed Systems for fun and profit](http://book.mixu.net/distsys/single-page.html)
-* [Scalable Web Architecture and Distributed Systems](http://www.aosabook.org/en/distsys.html)
+
 * [Neat Algorithms - Paxos](http://harry.me/blog/2014/12/27/neat-algorithms-paxos)
 * [Raft 一致性算法论文译文](http://www.infoq.com/cn/articles/raft-paper)
 * [Raft - The Secret Lives of Data](http://thesecretlivesofdata.com/raft)
 * [Raft Consensus Algorithm](https://raft.github.io)
 * [Raft Distributed Consensus Algorithm Visualization](http://kanaka.github.io/raft.js)
 * [Gossip Visualization](https://rrmoelker.github.io/gossip-visualization)
+
+* [System Design Primer](https://github.com/donnemartin/system-design-primer)
+* [Notes on Distributed Systems for Young Bloods](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods)
+* [Distributed Systems for fun and profit](http://book.mixu.net/distsys/single-page.html)
+* [Scalable Web Architecture and Distributed Systems](http://www.aosabook.org/en/distsys.html)
+
 * [Scaling Stateful Objects](http://ithare.com/scaling-stateful-objects)
 * [How we built rate limiting capable of scaling to millions of domains](https://blog.cloudflare.com/counting-things-a-lot-of-different-things)
 
