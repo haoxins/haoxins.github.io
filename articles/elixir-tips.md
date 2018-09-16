@@ -39,3 +39,16 @@ date: 2018-09-13
 
 * `do:` vs `do/end`
   - one-lines vs multiple lines
+
+* function: `named` vs `anonymous`
+  - anonymous must be invoked with a dot `.`
+  - anonymous functions cannot have optional arguments
+
+* Process
+  - `not` OS process
+  - isolated
+  - `link`:
+  - `task`:
+  - `agent`:
+
+* `Error`, `Throw`, `Exit` and `try` `catch` `rescue` `after` `else`
