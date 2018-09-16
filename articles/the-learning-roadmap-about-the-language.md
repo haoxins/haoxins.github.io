@@ -4,23 +4,11 @@ description: 持续更新
 date: 2018-08-01
 ---
 
-## Overview
+## I Like
 
-- [swift is like kotlin](http://nilhcem.com/swift-is-like-kotlin)
-- [kotlin is like typescript](https://gi-no.github.io/kotlin-is-like-typescript)
-
-## JavaScript
-
-- [modern js cheatsheet](https://mbeaudru.github.io/modern-js-cheatsheet)
-
-## TypeSctipt
-
-## Golang
-
-## Kotlin
-
-- [android/android-ktx](https://github.com/android/android-ktx)
-
-### tips
-
-- [Kotlin 中 var、val、const 关键字解析](https://juejin.im/post/5ac03a485188255c56689293)
+* [Elixir](elixir-tips.md)
+* [Golang](golang-tips.md)
+* [TypeScript](typescript-tips.md)
+  - [JavaScript](javascript-tips.md)
+* [Kotlin](kotlin-tips.md)
+  - [Java](java-tips.md)
