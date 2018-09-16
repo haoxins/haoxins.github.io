@@ -14,6 +14,13 @@ date: 2018-09-13
 * [Understanding elixir macros](https://hackernoon.com/understanding-elixir-macros-3464e141434c)
 
 ### 101
+
+* structure
+  - ebin: compiled bytecode
+  - lib: code (`.ex`)
+  - test: (`.exs`)
+  - `.ex` to be compiled, `.exs` for scripting
+
 * `quote` & `unquote`
   - `quoted expressions`
 
@@ -29,3 +36,6 @@ date: 2018-09-13
 
 * unquote
   - `unquote do: {:+, [context: Elixir, import: Kernel], [2, 3]}` -> `2 + 3`
+
+* `do:` vs `do/end`
+  - one-lines vs multiple lines
