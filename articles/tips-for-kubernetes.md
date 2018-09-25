@@ -4,6 +4,10 @@ description: kubernetes is good
 date: 2018-05-10
 ---
 
+* 基本问题
+  - 为什么推荐一个容器, 一个进程
+  - 为什么 k8s 的最小部署单元是 pod, 而非 container
+
 * node -> machine (or vm)
 
 * pod
