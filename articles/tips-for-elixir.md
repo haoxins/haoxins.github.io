@@ -9,6 +9,10 @@ date: 2018-09-13
 * [Elixir School](https://elixirschool.com)
 * [HexDocs Elixir](https://hexdocs.pm/elixir/Kernel.html)
 
+### Awesome Projects
+
+* [hansihe/rustler](https://github.com/hansihe/rustler)
+
 ### Awesome Blogs
 
 * [Understanding elixir macros](https://hackernoon.com/understanding-elixir-macros-3464e141434c)
@@ -20,6 +24,9 @@ date: 2018-09-13
   - lib: code (`.ex`)
   - test: (`.exs`)
   - `.ex` to be compiled, `.exs` for scripting
+
+* atom
+  - once atom is created, it's never reclaimed
 
 * `quote` & `unquote`
   - `quoted expressions`
