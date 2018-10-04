@@ -6,9 +6,9 @@ date: 2018-08-01
 
 ## I Like
 
-* [Elixir](elixir-tips.md)
-* [Golang](golang-tips.md)
-* [TypeScript](typescript-tips.md)
-  - [JavaScript](javascript-tips.md)
-* [Kotlin](kotlin-tips.md)
-  - [Java](java-tips.md)
+* [Elixir](tips-for-elixir.md)
+* [Golang](tips-for-golang.md)
+* [TypeScript](tips-for-typescript.md)
+  - [JavaScript](tips-for-javascript.md)
+* [Kotlin](tips-for-kotlin.md)
+  - [Java](tips-for-java.md)
