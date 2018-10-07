@@ -17,7 +17,7 @@ date: 2018-09-13
 
 * [Understanding elixir macros](https://hackernoon.com/understanding-elixir-macros-3464e141434c)
 
-### 101
+### Elixir
 
 * structure
   - ebin: compiled bytecode
@@ -51,6 +51,13 @@ date: 2018-09-13
   - anonymous must be invoked with a dot `.`
   - anonymous functions cannot have optional arguments
 
+* `Error`, `Throw`, `Exit` and `try` `catch` `rescue` `after` `else`
+
+### mix and OTP
+
+* `mix`: like `npm` to `node`, `gradle` to `java`
+* `otp`: like `?` to `rust`
+
 * Process
   - `not` OS process
   - isolated
@@ -58,4 +65,6 @@ date: 2018-09-13
   - `task`:
   - `agent`:
 
-* `Error`, `Throw`, `Exit` and `try` `catch` `rescue` `after` `else`
+* `Application` and `Project`
+  - `Project` is managed by `mix`
+  - `Application` is from `OTP`
