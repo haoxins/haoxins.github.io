@@ -29,3 +29,4 @@ date: 2018-09-03
 ## Service Mesh
 
 * [envoy proxy blog](https://blog.envoyproxy.io)
+* [tracing - jaeger](https://github.com/jaegertracing/jaeger)
