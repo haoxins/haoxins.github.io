@@ -11,7 +11,8 @@ date: 2018-09-13
 
 ### Awesome Projects
 
-* [hansihe/rustler](https://github.com/hansihe/rustler)
+* [hansihe/rustler Safe Rust bridge for creating Erlang NIF functions](https://github.com/hansihe/rustler)
+* [bitwalker/distillery Simplify deployments in Elixir with OTP releases!](https://github.com/bitwalker/distillery)
 
 ### Awesome Blogs
 
