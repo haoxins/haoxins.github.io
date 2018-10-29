@@ -8,6 +8,7 @@ date: 2018-09-13
 
 * [Elixir School](https://elixirschool.com)
 * [HexDocs Elixir](https://hexdocs.pm/elixir/Kernel.html)
+* [The Erlang Runtime System](https://happi.github.io/theBeamBook)
 
 ### Awesome Projects
 
