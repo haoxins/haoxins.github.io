@@ -19,6 +19,10 @@ date: 2018-09-13
 
 * [Understanding elixir macros](https://hackernoon.com/understanding-elixir-macros-3464e141434c)
 
+### Small Projects
+
+* [Merkle Tree implementation in pure Elixir](https://github.com/yosriady/merkle_tree)
+
 ### Elixir
 
 * structure
