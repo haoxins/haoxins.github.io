@@ -6,4 +6,6 @@ date: 2018-10-30
 
 ### Useful CLIs
 
-* `mix phoenix.routes`
+* `cd` a `phoenix` project,
+  - run `mix help | grep -i phx`
+  - run `mix help | grep -i ecto`
