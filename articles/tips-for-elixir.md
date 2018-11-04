@@ -22,6 +22,7 @@ date: 2018-09-13
 ### Small Projects
 
 * [Merkle Tree implementation in pure Elixir](https://github.com/yosriady/merkle_tree)
+* [multiformats/ex_multihash](https://github.com/multiformats/ex_multihash)
 
 ### Elixir
 
