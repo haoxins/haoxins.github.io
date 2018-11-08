@@ -24,6 +24,10 @@ date: 2018-09-13
 * [Merkle Tree implementation in pure Elixir](https://github.com/yosriady/merkle_tree)
 * [multiformats/ex_multihash](https://github.com/multiformats/ex_multihash)
 
+### Small Erlang Projects
+
+* [Distributed key generation - pairing based cryptography](https://github.com/helium/erlang-dkg)
+
 ### Elixir
 
 * structure
