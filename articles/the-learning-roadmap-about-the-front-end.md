@@ -22,6 +22,7 @@ date: 2018-07-27
 
 - [How JavaScript works: an overview of the engine, the runtime, and the call stack](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf)
 - [How JavaScript works: The building blocks of Web Workers](https://blog.sessionstack.com/how-javascript-works-the-building-blocks-of-web-workers-5-cases-when-you-should-use-them-a547c0757f6a)
+- [estree/estree](https://github.com/estree/estree)
 
 ## Network
 
