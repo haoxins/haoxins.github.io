@@ -13,3 +13,8 @@ date: 2018-08-15
 * multihash
 
 - [multihash](https://github.com/multiformats/multihash)
+
+### Platforms
+
+* [Next-generation framework for blockchain innovation](https://github.com/paritytech/substrate)
+* [Tendermint Core (BFT Consensus) in Go](https://github.com/tendermint/tendermint)
