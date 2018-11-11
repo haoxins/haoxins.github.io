@@ -22,6 +22,7 @@ date: 2018-07-27
 
 - [How JavaScript works: an overview of the engine, the runtime, and the call stack](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf)
 - [How JavaScript works: The building blocks of Web Workers](https://blog.sessionstack.com/how-javascript-works-the-building-blocks-of-web-workers-5-cases-when-you-should-use-them-a547c0757f6a)
+- [Inside a super fast CSS engine: Quantum CSS (aka Stylo)](https://hacks.mozilla.org/2017/08/inside-a-super-fast-css-engine-quantum-css-aka-stylo)
 - [estree/estree](https://github.com/estree/estree)
 
 ## Network
@@ -51,7 +52,8 @@ date: 2018-07-27
 
 ## Browser Engine
 
-- [servo/servo](https://github.com/servo/servo)
+- [The Servo Browser Engine - Rust](https://github.com/servo/servo)
+- [Stylo](https://github.com/servo/servo/tree/master/components/style)
 
 ## 序列化
 
