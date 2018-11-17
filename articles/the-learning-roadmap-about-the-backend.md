@@ -16,6 +16,7 @@ date: 2018-07-27
 - [10 modern software engineering mistakes](https://medium.com/@rdsubhas/10-modern-software-engineering-mistakes-bc67fbef4fc8)
 - [log: what every software engineer should know about real time datas unifying](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
 - [Event-Sourcing+CQRS example application](https://github.com/cer/event-sourcing-examples)
+- [Datomic: Event Sourcing without the hassle](https://vvvvalvalval.github.io/posts/2018-11-12-datomic-event-sourcing-without-the-hassle.html)
 
 ### Access Controle
 
