@@ -53,4 +53,5 @@ date: 2018-07-27
 
 - [comlink: Comlink makes WebWorkers enjoyable](https://github.com/GoogleChromeLabs/comlink)
 - [Clooney: Actor library for the web](https://github.com/GoogleChromeLabs/clooney)
-- [dcodeIO/protobuf.js](https://github.com/dcodeIO/protobuf.js)
+- [protobuf.js](https://github.com/protocolbuffers/protobuf/tree/master/js)
+- [grpc-web](https://github.com/grpc/grpc-web)

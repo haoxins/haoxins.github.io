@@ -13,4 +13,4 @@ if (true) {
 }
 ```
 
-* `console.table`, `console.trace`
+* [Modern JavaScript is fun](https://github.com/MylesBorins/i-love-this-pattern)
