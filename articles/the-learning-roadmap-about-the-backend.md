@@ -89,6 +89,8 @@ date: 2018-07-27
 
 * [Scaling Stateful Objects](http://ithare.com/scaling-stateful-objects)
 * [How we built rate limiting capable of scaling to millions of domains](https://blog.cloudflare.com/counting-things-a-lot-of-different-things)
+* [Network Time Protocol](https://en.wikipedia.org/wiki/Network_Time_Protocol)
+* [Vector clock](https://en.wikipedia.org/wiki/Vector_clock)
 
 ## async, non blocking
 
