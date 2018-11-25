@@ -18,16 +18,6 @@ date: 2018-07-27
 - [Event-Sourcing+CQRS example application](https://github.com/cer/event-sourcing-examples)
 - [Datomic: Event Sourcing without the hassle](https://vvvvalvalval.github.io/posts/2018-11-12-datomic-event-sourcing-without-the-hassle.html)
 
-### Access Controle
-
-- [Access Control List](https://en.wikipedia.org/wiki/Access_control_list)
-- [Role-based Access Control](https://en.wikipedia.org/wiki/Role-based_access_control)
-- [Attribute-based Access Control](https://en.wikipedia.org/wiki/Attribute-based_access_control)
-- [Azure: Role-based Access Control](https://docs.microsoft.com/en-us/azure/role-based-access-control)
-
-- [AWS: cognito](https://aws.amazon.com/cn/documentation/cognito)
-- [Azure: Active Directory](https://docs.microsoft.com/en-us/azure/active-directory)
-
 ## Cloud Native
 
 ### 一些知名站点
@@ -36,13 +26,7 @@ date: 2018-07-27
 * [AWS - Cloud Design Patterns](http://en.clouddesignpattern.org/index.php/Main_Page)
 * [The Open Guide to Amazon Web Services](https://github.com/open-guides/og-aws)
 
-### 有趣的开源项目
-
-* [google/go-cloud](https://github.com/google/go-cloud)
-
 ## MicroServices
-
-* Keywords: ``
 
 ### 一些知名站点
 
@@ -55,18 +39,12 @@ date: 2018-07-27
 - [microservice architecture best practices](https://codingsans.com/blog/microservice-architecture-best-practices)
 - [A pattern language for microservices](http://microservices.io/patterns/index.html)
 
-### 一些开源项目
-
-- [Golang gokit](https://gokit.io)
-
 ## 边缘计算
 
 - [wiki: Edge computing](https://en.wikipedia.org/wiki/Edge_computing)
 - [edgex foundry](https://github.com/edgexfoundry)
 
 ## 网络
-
-* Keywords: ``
 
 ### 站点资源
 
