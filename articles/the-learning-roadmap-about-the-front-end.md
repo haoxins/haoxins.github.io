@@ -6,7 +6,7 @@ date: 2018-07-27
 
 ## Checklist
 
-- [Front-End Performance Checklist](https://github.com/thedaviddias/Front-End-Performance-Checklist)
+* [Front-End Performance Checklist](https://github.com/thedaviddias/Front-End-Performance-Checklist)
 * [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist)
 * [css triggers](https://csstriggers.com)
 
@@ -14,6 +14,10 @@ date: 2018-07-27
 
 * [BigInt](https://developers.google.com/web/updates/2018/05/bigint)
 * [9 Biggest Mistakes with CSS Grid](https://hacks.mozilla.org/2018/07/9-biggest-mistakes-with-css-grid)
+
+## Awesome tips
+
+* [How to stop using console.log() and start using your browser’s debugger](https://medium.com/datadriveninvestor/stopping-using-console-log-and-start-using-your-browsers-debugger-62bc893d93ff)
 
 ## Language
 
