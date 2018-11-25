@@ -4,35 +4,6 @@ description: 现代化的 node.js API 框架
 date: 2017-08-31
 ---
 
-## 概述
-
-[loopback v4][lb-repo-url] 是 [strongloop][sl-org-url] 团队打造的新一代 node.js APIs 框架.
-原本的 `loopback v3` 基于 [express][express-url], 而在 `v4` 当中则不再依赖.
-
-相较于 `rails`, `django`, `meteor` 等框架, `loopback` 最大的差异在于: 仅提供 `API service`.
-后面会有一篇文章再论述 [loopback的前端快速整合方案](2017-loopback-and-angular-admin.md).
-
-* 特点
-  - 快速开发, 高效实现业务逻辑
-  - 高度可配置, 可扩展
-  - 强大的命令行工具, 简单的命令便可产出完整的 `API service`, 定义 `model` 等
-  - 便于测试
-  - 完善的周边生态, 丰富的组件库
-  - 充分利用 `TypeScript` 语法特性
-  - 符合 [OpenAPI][open-api-url] 规范
-
-* 功能
-  - `代码即文档`: 不是说好的代码就是文档, 而是直接根据代码定义输出完备的 APIs 文档
-  - `角色, 权限`: 自带强大的, 灵活的 `role`, `permission` 功能
-  - `model, schema`: 支持各种主流的和非主流的数据库, 可靠的 `类ORM` 实现
-  - `client SDK`: 可以直接生成各平台SDK, `web`, `ios`, `android` 等
-
-* 生态
-  - [extensions](https://github.com/strongloop/loopback-next/issues/512)
-
-* 门槛
-  - 会有一定的学习成本
-
 ## Hello, world!
 
 ```ts
@@ -181,26 +152,10 @@ https://github.com/strongloop/loopback-next/wiki/Sequence
 
 * [官方Wiki地址](https://github.com/strongloop/loopback-next/wiki/Thinking-in-LoopBack)
 
-## 相关文章
-
-* [详解 Loopback Sequence](todo.md)
-* [详解 Loopback Route And Controller](todo.md)
-* [详解 Loopback Context](todo.md)
-* [详解 Loopback Dependency Injection](todo.md)
-* [详解 Loopback Repository](todo.md)
-* [详解 Loopback Component](todo.md)
-* [详解 Loopback Extension](todo.md)
-
 ## 其他特性
 
 * [gRPC 集成](https://github.com/strongloop/loopback-next/issues/521)
 * [Serverless 支持](https://github.com/strongloop/loopback-next/issues/257)
-* [UML generator](https://github.com/strongloop/loopback-next/issues/345)
-
-## 题外
-
-* 对我个人而言, 看着一个不错的项目 `从 0 到 1 到 N 再到 N + X`,
-* 并能参与其中, `有所思考`, `有所贡献`, `有所收获`, 实属快意之事 ~
 
 ## 参考文章
 
