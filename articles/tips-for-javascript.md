@@ -4,16 +4,11 @@ description: js tips
 date: 2018-06-21
 ---
 
-* `debugger`
+### Something new
 
-```js
-if (true) {
-  debugger
-  console.log('no')
-}
-```
+* [BigInt](https://developers.google.com/web/updates/2018/05/bigint)
+* [Typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
 
-* [Modern JavaScript is fun](https://github.com/MylesBorins/i-love-this-pattern)
 
 * TypedArray
 
@@ -31,6 +26,7 @@ const b = new ArrayBuffer(8)
 
 Array.isArray(b) // false
 ```
+### Modern JavaScript
 
 * DataView
 
@@ -46,4 +42,4 @@ v2.getInt8(0) // 18
 
 ### 参考链接
 
-* [MDN - typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
+* [Modern JavaScript is fun](https://github.com/MylesBorins/i-love-this-pattern)

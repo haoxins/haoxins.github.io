@@ -12,8 +12,9 @@ date: 2018-09-13
 
 ### Awesome Projects
 
-* [hansihe/rustler Safe Rust bridge for creating Erlang NIF functions](https://github.com/hansihe/rustler)
-* [bitwalker/distillery Simplify deployments in Elixir with OTP releases!](https://github.com/bitwalker/distillery)
+* [EventBus](https://github.com/otobus/event_bus)
+* [rustler: Safe Rust bridge for creating Erlang NIF functions](https://github.com/hansihe/rustler)
+* [distillery: Simplify deployments in Elixir with OTP releases!](https://github.com/bitwalker/distillery)
 * [elixirscript: Converts Elixir to JavaScript](https://github.com/elixirscript/elixirscript)
 
 ### Awesome Blogs

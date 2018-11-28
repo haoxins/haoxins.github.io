@@ -12,7 +12,6 @@ date: 2018-07-27
 
 ## Awesome new things
 
-* [BigInt](https://developers.google.com/web/updates/2018/05/bigint)
 * [9 Biggest Mistakes with CSS Grid](https://hacks.mozilla.org/2018/07/9-biggest-mistakes-with-css-grid)
 
 ## Awesome tips
