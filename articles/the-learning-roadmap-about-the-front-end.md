@@ -13,6 +13,7 @@ date: 2018-07-27
 ## Awesome new things
 
 * [9 Biggest Mistakes with CSS Grid](https://hacks.mozilla.org/2018/07/9-biggest-mistakes-with-css-grid)
+* [Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API)
 
 ## Awesome tips
 
