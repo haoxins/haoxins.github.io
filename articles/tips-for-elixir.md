@@ -4,18 +4,24 @@ description: Elixir is awesome
 date: 2018-09-13
 ---
 
+## See also
+
+* [Erlang OTP tips](tips-for-erlang-otp.md)
+
 ### Awesome Sites
 
 * [Elixir School](https://elixirschool.com)
 * [HexDocs Elixir](https://hexdocs.pm/elixir/Kernel.html)
-* [The Erlang Runtime System](https://happi.github.io/theBeamBook)
 
 ### Awesome Projects
+
+* [elixirscript: Converts Elixir to JavaScript](https://github.com/elixirscript/elixirscript)
 
 * [EventBus](https://github.com/otobus/event_bus)
 * [rustler: Safe Rust bridge for creating Erlang NIF functions](https://github.com/hansihe/rustler)
 * [distillery: Simplify deployments in Elixir with OTP releases!](https://github.com/bitwalker/distillery)
-* [elixirscript: Converts Elixir to JavaScript](https://github.com/elixirscript/elixirscript)
+* [elixir-flatbuffers](https://github.com/Reimerei/elixir-flatbuffers)
+* [Ace - HTTP web server and client, supports http1 and http2](https://github.com/CrowdHailer/Ace)
 
 ### Awesome Blogs
 
