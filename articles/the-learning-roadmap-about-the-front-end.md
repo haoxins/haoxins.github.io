@@ -12,7 +12,8 @@ date: 2018-07-27
 
 ## Awesome new things
 
-* [9 Biggest Mistakes with CSS Grid](https://hacks.mozilla.org/2018/07/9-biggest-mistakes-with-css-grid)
+* [css - Is Houdini ready yet?](https://ishoudinireadyyet.com)
+* [css - 9 Biggest Mistakes with CSS Grid](https://hacks.mozilla.org/2018/07/9-biggest-mistakes-with-css-grid)
 * [Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API)
 
 ## Awesome tips
@@ -52,6 +53,10 @@ date: 2018-07-27
 
 - [The Servo Browser Engine - Rust](https://github.com/servo/servo)
 - [Stylo](https://github.com/servo/servo/tree/master/components/style)
+
+## CSS
+
+- [Understanding pixels and other CSS units](https://webplatform.github.io/docs/tutorials/understanding-css-units)
 
 ## Awesome library
 
