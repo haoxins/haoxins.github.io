@@ -16,7 +16,7 @@ date: 2018-12-02
 
 ### Go places
 
-* [HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-16)
+* [HTTP/3 - HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-16)
 * [GraphQL WG](https://github.com/graphql/graphql-wg)
 * [css - Houdini](https://ishoudinireadyyet.com)
 * [Webassembly](https://webassembly.org)
