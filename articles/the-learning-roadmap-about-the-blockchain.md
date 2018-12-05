@@ -18,3 +18,9 @@ date: 2018-08-15
 
 * [Next-generation framework for blockchain innovation](https://github.com/paritytech/substrate)
 * [Tendermint Core (BFT Consensus) in Go](https://github.com/tendermint/tendermint)
+
+### Temp save
+
+https://github.com/ElixiumNetwork
+https://github.com/aeternity
+http://noiseprotocol.org
