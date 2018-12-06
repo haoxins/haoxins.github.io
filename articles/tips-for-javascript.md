@@ -12,3 +12,7 @@ date: 2018-06-21
 ### Modern JavaScript
 
 * [Modern JavaScript is fun](https://github.com/MylesBorins/i-love-this-pattern)
+
+### Awesome blogs
+
+* [JavaScript Symbols, Iterators, Generators, Async/Await, and Async Iterators — All Explained Simply](https://medium.freecodecamp.org/some-of-javascripts-most-useful-features-can-be-tricky-let-me-explain-them-4003d7bbed32)

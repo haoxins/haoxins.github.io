@@ -24,8 +24,10 @@ date: 2018-12-02
 
 ### To be completed
 
-* [TC39 - Optional chaining](https://github.com/tc39/proposal-optional-chaining)
-* [TC39 - Pattern matching](https://github.com/tc39/proposal-pattern-matching)
 * [TC39 - Pipeline operator](https://github.com/tc39/proposal-pipeline-operator)
+* [TC39 - Pattern matching](https://github.com/tc39/proposal-pattern-matching)
+* [TC39 - do expression](https://github.com/tc39/proposal-do-expressions)
+* [TC39 - Slice notation](https://github.com/tc39/proposal-slice-notation)
+* [TC39 - Optional chaining](https://github.com/tc39/proposal-optional-chaining)
 * [TC39 - Partial application](https://github.com/tc39/proposal-partial-application)
 * [TypeScript 3.3](https://github.com/Microsoft/TypeScript/milestone/79)
