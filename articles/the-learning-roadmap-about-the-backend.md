@@ -7,7 +7,6 @@ date: 2018-07-27
 ## See Also
 
 - [The learning roadmap about the CNCF ecosystem](articles/the-learning-roadmap-about-the-cncf-ecosystem.md)
-- [The learning roadmap about the Spring ecosystem](articles/the-learning-roadmap-about-the-spring-ecosystem.md)
 
 ## Service design
 
