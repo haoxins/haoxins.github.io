@@ -21,6 +21,7 @@ date: 2018-12-02
 * [CSS - Houdini](https://ishoudinireadyyet.com)
 * [Webassembly](https://webassembly.org)
 * [TC39 - Protocol](https://github.com/michaelficarra/proposal-first-class-protocols)
+* [Microsoft Edge: starting to adopt Chromium in the development of Microsoft Edge](https://github.com/MicrosoftEdge/MSEdge)
 
 ### To be completed
 

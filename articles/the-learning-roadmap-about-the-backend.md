@@ -69,6 +69,9 @@ date: 2018-07-27
 
 ## 分布式
 
+* [Book - Programming Models for Distributed Computation](https://github.com/heathermiller/dist-prog-book)
+* [CRDT - An introduction to state-based CRDTs](https://bartoszsypytkowski.com/the-state-of-a-state-based-crdts)
+
 * [Brewer's CAP Theorem](http://www.julianbrowne.com/article/brewers-cap-theorem)
 * [CAP Twelve Years Later: How the Rules Have Changed](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed)
 * [Base: An Acid Alternative](https://queue.acm.org/detail.cfm?id=1394128)
@@ -91,7 +94,7 @@ date: 2018-07-27
 * [Network Time Protocol](https://en.wikipedia.org/wiki/Network_Time_Protocol)
 * [Vector clock](https://en.wikipedia.org/wiki/Vector_clock)
 
-## async, non blocking
+## Async, non blocking
 
 * [libuv - design overview](http://docs.libuv.org/en/v1.x/design.html)
 * [The reactor pattern and non blocking IO](https://www.celum.com/en/blog/technology/the-reactor-pattern-and-non-blocking-io)
