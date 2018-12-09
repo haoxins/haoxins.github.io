@@ -43,3 +43,6 @@ date: 2018-12-02
 
 https://github.com/dotansimha/graphql-code-generator
 
+### See also
+
+* [Envoy and gRPC-Web: a fresh new alternative to REST](https://blog.envoyproxy.io/envoy-and-grpc-web-a-fresh-new-alternative-to-rest-6504ce7eb880)
