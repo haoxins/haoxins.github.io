@@ -4,26 +4,30 @@ description: The future is always awesome
 date: 2018-12-02
 ---
 
-## 2019
+## 2020 (TODOs)
+
+## 2019 (lockdown in 2018-12-14)
 
 ### Maybe
 
+* [Kotlin will continue up](https://kotlinlang.org)
 * [Elixir ecosystem](https://hexdocs.pm)
-  - `1.8`, `2.0`
-  - Phoenix: `1.5`, `2.0`
-* [Go 2 Draft Designs](https://golang.org/s/go2designs)
-* [Istio: ready for prod](https://istio.io/about/feature-stages)
+  - Elixir: `2.0`
+  - Phoenix: `2.0`
+* [Go 2 designs](https://golang.org/s/go2designs)
+* [Istio: ready for production](https://istio.io/about/feature-stages)
 
 ### Go places
 
+* [Spring boot will lead micro services ecosystem](https://spring.io)
 * [HTTP/3 - HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-16)
-* [GraphQL Foundation](https://gql.foundation)
 * [Envoy supports QUIC](https://github.com/envoyproxy/envoy/projects/2)
+* [GraphQL Foundation](https://gql.foundation)
 * [Serverless](https://github.com/cncf/wg-serverless)
+* [Chromium & Safari to be the only browsers](https://github.com/MicrosoftEdge/MSEdge)
 * [CSS - Houdini](https://ishoudinireadyyet.com)
 * [Webassembly](https://webassembly.org)
 * [TC39 - Protocol](https://github.com/michaelficarra/proposal-first-class-protocols)
-* [Microsoft Edge: starting to adopt Chromium in the development of Microsoft Edge](https://github.com/MicrosoftEdge/MSEdge)
 
 ### To be completed
 
