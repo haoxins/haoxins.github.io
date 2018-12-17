@@ -7,7 +7,7 @@ date: 2018-12-17
 * [Computer Network Tutorials](https://www.geeksforgeeks.org/computer-network-tutorials)
 * [HTTP/3 explained](https://daniel.haxx.se/http3-explained)
 * [HTTP/2 explained](https://daniel.haxx.se/http2)
-* [Spec: HTTP/3](https://tools.ietf.org/html/draft-ietf-quic-http-13)
+* [Spec: HTTP/3](https://tools.ietf.org/html/draft-ietf-quic-http-16)
 
 * [HPACK: Header Compression for HTTP/2](https://httpwg.org/specs/rfc7541.html)
 * [7 Tips for Faster HTTP/2 Performance](https://www.nginx.com/blog/7-tips-for-faster-http2-performance)
