@@ -30,11 +30,6 @@ date: 2018-07-27
 - [How JavaScript works: The building blocks of Web Workers](https://blog.sessionstack.com/how-javascript-works-the-building-blocks-of-web-workers-5-cases-when-you-should-use-them-a547c0757f6a)
 - [Inside a super fast CSS engine: Quantum CSS (aka Stylo)](https://hacks.mozilla.org/2017/08/inside-a-super-fast-css-engine-quantum-css-aka-stylo)
 
-## Network
-
-- [Spec: HTTP3](https://tools.ietf.org/html/draft-ietf-quic-http-13)
-- [How JavaScript works: Deep dive into WebSockets and HTTP/2 with SSE](https://blog.sessionstack.com/how-javascript-works-deep-dive-into-websockets-and-http-2-with-sse-how-to-pick-the-right-path-584e6b8e3bf7)
-- [How JavaScript Works: Inside the Networking Layer](https://blog.sessionstack.com/how-javascript-works-inside-the-networking-layer-how-to-optimize-its-performance-and-security-f71b7414d34c)
 
 ## WebAssembly
 

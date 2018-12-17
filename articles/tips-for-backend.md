@@ -39,19 +39,6 @@ date: 2018-07-27
 - [wiki: Edge computing](https://en.wikipedia.org/wiki/Edge_computing)
 - [edgex foundry](https://github.com/edgexfoundry)
 
-## 网络
-
-### 站点资源
-
-* [Computer Network Tutorials](https://www.geeksforgeeks.org/computer-network-tutorials)
-
-### 一些文章
-
-* [QUIC: A UDP-Based Multiplexed and Secure Transport](https://datatracker.ietf.org/doc/draft-ietf-quic-transport)
-* [HPACK: Header Compression for HTTP/2](https://httpwg.org/specs/rfc7541.html)
-* [7 Tips for Faster HTTP/2 Performance](https://www.nginx.com/blog/7-tips-for-faster-http2-performance)
-* [http2 explained](https://daniel.haxx.se/http2)
-
 ## 数据库
 
 * [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
