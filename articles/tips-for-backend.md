@@ -39,14 +39,12 @@ date: 2018-07-27
 - [wiki: Edge computing](https://en.wikipedia.org/wiki/Edge_computing)
 - [edgex foundry](https://github.com/edgexfoundry)
 
-## 数据库
+## Database
 
-* [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
+* [Dgraph: design concepts](https://docs.dgraph.io/design-concepts)
+* [Cockroachdb: design concepts](https://github.com/cockroachdb/cockroach/blob/master/docs/design.md)
 * [Why Uber Engineering Switched from Postgres to MySQL](https://eng.uber.com/mysql-migration)
-* [Cassandra: Architecture in brief](https://docs.datastax.com/en/cassandra/3.0/cassandra/architecture/archIntro.html)
-* [Consistent Hashing in Cassandra](https://blog.imaginea.com/consistent-hashing-in-cassandra)
-* [cockroachdb design](https://github.com/cockroachdb/cockroach/blob/master/docs/design.md)
-* [Graph Database](http://graphdatabases.com)
+* [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
 * [NoSQL Databases: a Survey and Decision Guidance](https://medium.baqend.com/nosql-databases-a-survey-and-decision-guidance-ea7823a822d)
 * [Understanding When to use RabbitMQ or Apache Kafka](https://content.pivotal.io/blog/understanding-when-to-use-rabbitmq-or-apache-kafka)
 
