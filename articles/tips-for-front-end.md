@@ -14,22 +14,21 @@ date: 2018-07-27
 
 * [css - Is Houdini ready yet?](https://ishoudinireadyyet.com)
 * [css - 9 Biggest Mistakes with CSS Grid](https://hacks.mozilla.org/2018/07/9-biggest-mistakes-with-css-grid)
+
+## APIs
+
+* [Page Lifecycle API](https://developers.google.com/web/updates/2018/07/page-lifecycle-api)
+* [Reporting Observer](https://developers.google.com/web/updates/2018/07/reportingobserver)
 * [Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API)
 
 ## Awesome tips
 
 * [How to stop using console.log() and start using your browser’s debugger](https://medium.com/datadriveninvestor/stopping-using-console-log-and-start-using-your-browsers-debugger-62bc893d93ff)
 
-## Language
-
-[See here](the-learning-roadmap-about-the-language.md)
-
-## Browser, engine
+## Browser engine
 
 - [How JavaScript works: an overview of the engine, the runtime, and the call stack](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf)
 - [How JavaScript works: The building blocks of Web Workers](https://blog.sessionstack.com/how-javascript-works-the-building-blocks-of-web-workers-5-cases-when-you-should-use-them-a547c0757f6a)
-- [Inside a super fast CSS engine: Quantum CSS (aka Stylo)](https://hacks.mozilla.org/2017/08/inside-a-super-fast-css-engine-quantum-css-aka-stylo)
-
 
 ## WebAssembly
 
@@ -43,11 +42,6 @@ date: 2018-07-27
 - [Why Performance Matters](https://developers.google.com/web/fundamentals/performance/why-performance-matters)
 - [The Cost Of JavaScript](https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e)
 - [The Cost Of JavaScript In 2018](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
-
-## Browser engine
-
-- [The Servo Browser Engine - Rust](https://github.com/servo/servo)
-- [Stylo](https://github.com/servo/servo/tree/master/components/style)
 
 ## CSS
 
