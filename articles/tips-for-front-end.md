@@ -35,7 +35,6 @@ date: 2018-07-27
 - [WebAssembly threads](https://github.com/WebAssembly/threads)
 - [AssemblyScript/assemblyscript](https://github.com/AssemblyScript/assemblyscript)
 - [How JavaScript works: A comparison with WebAssembly](https://blog.sessionstack.com/how-javascript-works-a-comparison-with-webassembly-why-in-certain-cases-its-better-to-use-it-d80945172d79)
-- [rustwasm/book](https://github.com/rustwasm/book)
 
 ## Performance
 
