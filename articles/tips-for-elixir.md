@@ -15,26 +15,16 @@ date: 2018-09-13
 
 ### Awesome Projects
 
-* [elixirscript: Converts Elixir to JavaScript](https://github.com/elixirscript/elixirscript)
-
 * [EventBus](https://github.com/otobus/event_bus)
+* [flatbuffers](https://github.com/Reimerei/elixir-flatbuffers)
 * [rustler: Safe Rust bridge for creating Erlang NIF functions](https://github.com/hansihe/rustler)
-* [distillery: Simplify deployments in Elixir with OTP releases!](https://github.com/bitwalker/distillery)
-* [elixir-flatbuffers](https://github.com/Reimerei/elixir-flatbuffers)
+* [distillery: Simplify deployments in Elixir with OTP releases](https://github.com/bitwalker/distillery)
 * [Ace - HTTP web server and client, supports http1 and http2](https://github.com/CrowdHailer/Ace)
+* [elixirscript: Converts Elixir to JavaScript](https://github.com/elixirscript/elixirscript)
 
 ### Awesome Blogs
 
 * [Understanding elixir macros](https://hackernoon.com/understanding-elixir-macros-3464e141434c)
-
-### Small Projects
-
-* [Merkle Tree implementation in pure Elixir](https://github.com/yosriady/merkle_tree)
-* [multiformats/ex_multihash](https://github.com/multiformats/ex_multihash)
-
-### Small Erlang Projects
-
-* [Distributed key generation - pairing based cryptography](https://github.com/helium/erlang-dkg)
 
 ### Elixir
 
@@ -73,9 +63,6 @@ date: 2018-09-13
 * `Error`, `Throw`, `Exit` and `try` `catch` `rescue` `after` `else`
 
 ### mix and OTP
-
-* `mix`: like `npm` to `node`, `gradle` to `java`
-* `otp`: like `?` to `rust`
 
 * Process
   - `not` OS process
