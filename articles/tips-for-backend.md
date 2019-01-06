@@ -79,8 +79,3 @@ date: 2018-07-27
 
 * [libuv - design overview](http://docs.libuv.org/en/v1.x/design.html)
 * [The reactor pattern and non blocking IO](https://www.celum.com/en/blog/technology/the-reactor-pattern-and-non-blocking-io)
-
-## 安全
-
-* [A lesson in timing attacks](https://codahale.com/a-lesson-in-timing-attacks)
-* [How to safely store a password](https://codahale.com/how-to-safely-store-a-password)

@@ -6,6 +6,8 @@ date: 2018-12-17
 
 ### Tools
 
+* `chrome://net-internals`
+* [Wireshark](https://www.wireshark.org)
 * [Nghttp2: HTTP/2 C Library](https://nghttp2.org)
 * [Nghttp3: ???]()
 

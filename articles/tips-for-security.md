@@ -5,3 +5,6 @@ date: 2018-12-26
 ---
 
 https://github.com/trimstray/the-book-of-secret-knowledge
+
+* [A lesson in timing attacks](https://codahale.com/a-lesson-in-timing-attacks)
+* [How to safely store a password](https://codahale.com/how-to-safely-store-a-password)
