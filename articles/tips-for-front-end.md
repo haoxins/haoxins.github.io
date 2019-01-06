@@ -1,8 +1,12 @@
 ---
-title: The learning roadmap about the front-end
-description: 持续更新
+title: Front-end tips
+description: cool
 date: 2018-07-27
 ---
+
+## Tools
+
+* `chrome://tracing`
 
 ## Checklist
 
@@ -20,6 +24,7 @@ date: 2018-07-27
 * [Page Lifecycle API](https://developers.google.com/web/updates/2018/07/page-lifecycle-api)
 * [Reporting Observer](https://developers.google.com/web/updates/2018/07/reportingobserver)
 * [Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API)
+* [Microtask Queue](https://html.spec.whatwg.org/#microtask-queuing)
 
 ## Awesome tips
 
