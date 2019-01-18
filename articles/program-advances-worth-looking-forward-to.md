@@ -8,6 +8,8 @@ date: 2018-12-02
 
 ## 2019 (lockdown in 2018-12-14)
 
+* Keywords: `GraphQL`, `Serverless`, `Webassembly`
+
 ### Maybe
 
 * [Kotlin will continue up](https://kotlinlang.org)
