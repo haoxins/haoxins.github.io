@@ -34,11 +34,6 @@ date: 2018-07-27
 - [microservice architecture best practices](https://codingsans.com/blog/microservice-architecture-best-practices)
 - [A pattern language for microservices](http://microservices.io/patterns/index.html)
 
-## 边缘计算
-
-- [wiki: Edge computing](https://en.wikipedia.org/wiki/Edge_computing)
-- [edgex foundry](https://github.com/edgexfoundry)
-
 ## Database
 
 * [Dgraph: design concepts](https://docs.dgraph.io/design-concepts)
