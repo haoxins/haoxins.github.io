@@ -17,6 +17,7 @@ date: 2018-12-17
 * [QPACK: Header Compression for HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-05)
 * [QUIC Loss Detection and Congestion Control](https://tools.ietf.org/html/draft-ietf-quic-recovery-17)
 * [Using TLS to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-17)
+* [HTTP2: Differences from HTTP 1.1](https://en.wikipedia.org/wiki/HTTP/2#Differences_from_HTTP_1.1)
 
 ### Wi-Fi
 
