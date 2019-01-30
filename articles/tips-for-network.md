@@ -11,21 +11,17 @@ date: 2018-12-17
 * [Nghttp2: HTTP/2 C Library](https://nghttp2.org)
 * [Nghttp3: ???]()
 
-### Spec
+### Specs
 
+* [libp2p specification](https://github.com/libp2p/specs)
 * [HTTP/3](https://tools.ietf.org/html/draft-ietf-quic-http-16)
 * [QPACK: Header Compression for HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-05)
 * [QUIC Loss Detection and Congestion Control](https://tools.ietf.org/html/draft-ietf-quic-recovery-17)
 * [Using TLS to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-17)
 * [HTTP2: Differences from HTTP 1.1](https://en.wikipedia.org/wiki/HTTP/2#Differences_from_HTTP_1.1)
 
-### Wi-Fi
-
-* [Wi-Fi 6 Wiki](https://en.wikipedia.org/wiki/IEEE_802.11ax)
-
 ### Sites
 
-* [Computer Network Tutorials](https://www.geeksforgeeks.org/computer-network-tutorials)
 * [HTTP/3 explained](https://daniel.haxx.se/http3-explained)
 * [HTTP/2 explained](https://daniel.haxx.se/http2)
 
