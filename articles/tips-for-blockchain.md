@@ -4,7 +4,7 @@ description: 持续更新
 date: 2018-08-15
 ---
 
-* BFT
+### BFT
 
 - [pdf: The latest gossip on BFT consensus](https://arxiv.org/pdf/1807.04938.pdf)
 - [Consensus Compare: Casper vs. Tendermint](https://blog.cosmos.network/consensus-compare-casper-vs-tendermint-6df154ad56ae)
@@ -13,6 +13,12 @@ date: 2018-08-15
 * multihash
 
 - [multihash](https://github.com/multiformats/multihash)
+
+### CRDT
+
+* [CRDT - An introduction to state-based CRDTs](https://bartoszsypytkowski.com/the-state-of-a-state-based-crdts)
+* [ipfs - CRDT research](https://github.com/ipfs/research-CRDT)
+* [pfrazee - CRDT notes](https://github.com/pfrazee/crdt_notes)
 
 ### Platforms
 
