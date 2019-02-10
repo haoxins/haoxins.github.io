@@ -1,7 +1,7 @@
 theme: jekyll-theme-cayman
 
-title: haoxin's ...
-description: ~~~
+title: blog
+description: haoxin's blog.
 
 encoding: utf-8
 
@@ -9,7 +9,7 @@ gems:
   - jekyll-seo-tag
 
 page_meta:
-  description: haoxin's blog, this blog has a related topic about node.js, loopback, rxjs, typescript and so on.
+  description: haoxin's blog.
 
 author:
   name: haoxin
