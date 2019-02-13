@@ -6,7 +6,13 @@ date: 2018-12-02
 
 ## 2020 (lockdown in 2019-??-??)
 
-* Keywords: `Serverless`, `gvisor & Container Runtime Sandbox`, `QUIC & HTTP over QUIC & HTTP/3`
+* Keywords: `Fuchsia & Flutter`, `HTTP/3 & QUIC`, `P2P Network`
+
+### Go places
+
+* QUIC & HTTP over QUIC & HTTP/3
+* gvisor & Container Runtime Sandbox
+* dart language
 
 ## 2019 (lockdown in 2018-12-14)
 

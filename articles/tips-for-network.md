@@ -1,6 +1,6 @@
 ---
 title: Tips for network
-description: 持续更新
+description: Network is important
 date: 2018-12-17
 ---
 
@@ -19,14 +19,9 @@ date: 2018-12-17
 * [QUIC Loss Detection and Congestion Control](https://tools.ietf.org/html/draft-ietf-quic-recovery-17)
 * [Using TLS to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-17)
 * [HTTP2: Differences from HTTP 1.1](https://en.wikipedia.org/wiki/HTTP/2#Differences_from_HTTP_1.1)
+* [TLS 1.3](https://tls13.ulfheim.net)
 
 ### Sites
 
 * [HTTP/3 explained](https://daniel.haxx.se/http3-explained)
 * [HTTP/2 explained](https://daniel.haxx.se/http2)
-
-### Blogs
-
-* [7 Tips for Faster HTTP/2 Performance](https://www.nginx.com/blog/7-tips-for-faster-http2-performance)
-* [How JavaScript works: Deep dive into WebSockets and HTTP/2 with SSE](https://blog.sessionstack.com/how-javascript-works-deep-dive-into-websockets-and-http-2-with-sse-how-to-pick-the-right-path-584e6b8e3bf7)
-* [How JavaScript Works: Inside the Networking Layer](https://blog.sessionstack.com/how-javascript-works-inside-the-networking-layer-how-to-optimize-its-performance-and-security-f71b7414d34c)
