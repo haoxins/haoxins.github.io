@@ -13,7 +13,6 @@ date: 2018-12-17
 
 ### Specs
 
-* [libp2p specification](https://github.com/libp2p/specs)
 * [HTTP/3](https://tools.ietf.org/html/draft-ietf-quic-http-16)
 * [QPACK: Header Compression for HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-05)
 * [QUIC Loss Detection and Congestion Control](https://tools.ietf.org/html/draft-ietf-quic-recovery-17)
