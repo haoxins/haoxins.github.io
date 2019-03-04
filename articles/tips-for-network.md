@@ -13,12 +13,17 @@ date: 2018-12-17
 
 ### Specs
 
-* [HTTP/3](https://tools.ietf.org/html/draft-ietf-quic-http-16)
-* [QPACK: Header Compression for HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-05)
-* [QUIC Loss Detection and Congestion Control](https://tools.ietf.org/html/draft-ietf-quic-recovery-17)
-* [Using TLS to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-17)
-* [HTTP2: Differences from HTTP 1.1](https://en.wikipedia.org/wiki/HTTP/2#Differences_from_HTTP_1.1)
-* [TLS 1.3](https://tls13.ulfheim.net)
+* [HTTP/3](https://tools.ietf.org/html/draft-ietf-quic-http-18)
+* [QPACK: Header Compression for HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-06)
+* [QUIC Loss Detection and Congestion Control](https://tools.ietf.org/html/draft-ietf-quic-recovery-18)
+
+* TLS
+  - [TLS 1.3](https://tls13.ulfheim.net)
+  - [Using TLS to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-18)
+
+* Differences
+  - [HTTP2: Differences from HTTP/1.1](https://en.wikipedia.org/wiki/HTTP/2#Differences_from_HTTP_1.1)
+  - [HTTP3: Differences from HTTP/2](https://tools.ietf.org/html/draft-ietf-quic-http-18#appendix-A)
 
 ### Sites
 
