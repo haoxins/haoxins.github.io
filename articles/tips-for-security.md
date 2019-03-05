@@ -1,12 +1,15 @@
 ---
 title: Security Tips
-description: Security is Important ~
+description: Security is important ~
 date: 2018-12-26
 ---
 
-* [Web Authentication](https://github.com/w3c/webauthn)
+### Web
 
-https://github.com/trimstray/the-book-of-secret-knowledge
+* [Web Authentication](https://github.com/w3c/webauthn)
+* [Credential Management](https://github.com/w3c/webappsec-credential-management)
+
+### Cases
 
 * [A lesson in timing attacks](https://codahale.com/a-lesson-in-timing-attacks)
 * [How to safely store a password](https://codahale.com/how-to-safely-store-a-password)
