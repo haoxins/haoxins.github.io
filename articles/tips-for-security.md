@@ -8,6 +8,7 @@ date: 2018-12-26
 
 * [Web Authentication](https://github.com/w3c/webauthn)
 * [Credential Management](https://github.com/w3c/webappsec-credential-management)
+* [Decentralized Identifier (DID)](https://github.com/w3c-ccg/did-spec)
 
 ### Cases
 
