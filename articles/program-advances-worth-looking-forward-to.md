@@ -11,8 +11,8 @@ date: 2018-12-02
 ### Go places
 
 * QUIC & HTTP over QUIC & HTTP/3
-* gvisor & Container Runtime Sandbox
-* dart language
+* gVisor & Container Runtime Sandbox
+* Dart Language & Flutter & Fuchsia OS
 
 ## 2019 (lockdown in 2018-12-14)
 
