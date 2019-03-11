@@ -6,7 +6,7 @@ date: 2018-12-02
 
 ## 2020 (lockdown in 2019-12-??)
 
-* Keywords: `Serverless`, `QUIC`, `Fuchsia`
+* Keyword: `Serverless`
 
 ### Go places
 
