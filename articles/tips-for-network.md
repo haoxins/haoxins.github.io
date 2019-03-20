@@ -8,8 +8,8 @@ date: 2018-12-17
 
 * `chrome://net-internals`
 * [Wireshark](https://www.wireshark.org)
-* [Nghttp2: HTTP/2 C Library](https://nghttp2.org)
-* [Nghttp3: ???]()
+* [nghttp2: HTTP/2 C Library](https://github.com/nghttp2/nghttp2)
+* [nghttp3: HTTP/3 C Library](https://github.com/ngtcp2/nghttp3)
 
 ### Specs
 
