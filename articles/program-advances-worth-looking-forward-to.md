@@ -14,6 +14,11 @@ date: 2018-12-02
 * gVisor & Container Runtime Sandbox
 * Dart Language & Flutter & Fuchsia OS
 
+### To be completed
+
+* [WICG/import-maps](https://github.com/WICG/import-maps)
+* [tc39/proposal-javascript-standard-library](https://github.com/tc39/proposal-javascript-standard-library)
+
 ## 2019 (lockdown in 2018-12-14)
 
 * Keywords: `GraphQL`, `Serverless`, `Webassembly`
