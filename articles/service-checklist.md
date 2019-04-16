@@ -22,3 +22,19 @@ date: 2019-04-08
 ### 事务
 
 * 事务完备性: 永远切记, `service` 随时会被 `shutdown`
+
+### 伸缩
+
+* Amdahl 定律: `S(N) = 1/((1-P) + P/N)`
+  - S(N): 系统在 N 个核上执行时, 获得的加速
+  - P: 程序中可以并行的部分的比例
+* Little 定律: `L=λW`, `响应时间 = 队列长度 / 到达速率`
+* 容量测试
+  - soak testing
+  - spike testing
+  - stress testing
+  - load testing
+
+### Ops
+
+* `log`, `metric`, `alarm`
