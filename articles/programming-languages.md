@@ -6,5 +6,5 @@ date: 2019-04-27
 
 |            | Rust | Go | JavaScript | TypeScript |
 |:----------:|:----:|:--:|:----------:|:----------:|
-| elegant    | todo |    |   todo     |   todo     |
+| elegant    | [x] |    |   todo     |   todo     |
 |            |      |    |            |            |
