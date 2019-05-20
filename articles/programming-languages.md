@@ -4,10 +4,10 @@ description: todo
 date: 2019-04-27
 ---
 
-|            | Rust | Go | JavaScript | TypeScript |
-|:----------:|:----:|:--:|:----------:|:----------:|
-|  elegant   |   Y  |  N |     Y      |      N     |
-|            |      |    |            |            |
+|              | Rust | Kotlin | JavaScript | TypeScript | Go |
+|:------------:|:----:|:------:|:----------:|:----------:|:--:|
+|  写过生产项目  |   N  |    Y   |     Y      |      Y     |  Y |
+|              |      |        |            |            |    |
 
 ## Rust
 
@@ -19,3 +19,8 @@ date: 2019-04-27
 * each value in Rust has a variable that’s called its owner
 * there can only be one owner at a time
 * when the owner goes out of scope, the value will be dropped
+
+## 把玩过的语言
+
+* `2018` ~ `2019`: `Elixir`
+* `2020` ~ `?`: `?`
