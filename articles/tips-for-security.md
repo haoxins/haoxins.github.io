@@ -4,7 +4,6 @@ description: Security is important ~
 date: 2018-12-26
 ---
 
-https://w3c-ccg.github.io/roadmap/diagram.html
 
 ### Web Specification
 
