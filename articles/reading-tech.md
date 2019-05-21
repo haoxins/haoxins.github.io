@@ -7,7 +7,7 @@ date: 2019-04-08
 * [什么是数学 (What is Mathematics)](https://book.douban.com/subject/1320282/)
   - 我看过的, 最好的书, 讲数学的
 
-* [程序员的数学 (系列 1, 2, 3)](https://book.douban.com/subject/19949020/)
+* [程序员的数学 3册](https://book.douban.com/subject/19949020/)
   - 用新的视角重新理解之前的数学概念 (趣)
   - 将数学理论带入实践场景 (用)
   - [程序员的数学](https://book.douban.com/subject/19949020/)
