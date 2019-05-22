@@ -1,6 +1,6 @@
 ---
-title: 睡眠 运动 冥想 休息
-description: 为了更好的明天
+title: 冥想 正念 运动 休息
+description: 更好的生命旅程
 date: 2017-09-18
 ---
 
