@@ -1,5 +1,5 @@
 ---
-title: 睡眠 健身 冥想 休息
+title: 睡眠 运动 冥想 休息
 description: 为了更好的明天
 date: 2017-09-18
 ---
