@@ -14,12 +14,10 @@ date: 2018-12-17
 
 * [OWASP Serverless Goat](https://www.owasp.org/index.php/OWASP_Serverless_Goat)
 
-
 ### Tools
 
 * [nghttp2: HTTP/2 C Library](https://github.com/nghttp2/nghttp2)
 * [nghttp3: HTTP/3 C Library](https://github.com/ngtcp2/nghttp3)
-* [cloudflare/xdpcap](https://github.com/cloudflare/xdpcap)
 
 ### Specs
 
