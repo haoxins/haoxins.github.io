@@ -1,11 +1,15 @@
 ---
-title: 推荐的技术书单
-description: 时间后先排序
+title: 技术书籍
+description: 觉得自己蠢, 是一种幸福
 date: 2019-04-08
 ---
 
+### 2019 年度 Top.1 书籍
+
 * [什么是数学 (What is Mathematics)](https://book.douban.com/subject/1320282/)
   - 我看过的, 最好的书, 讲数学的
+
+------------------
 
 * [程序员的数学 3册](https://book.douban.com/subject/19949020/)
   - 用新的视角重新理解之前的数学概念 (趣)
