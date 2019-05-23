@@ -1,9 +1,8 @@
 ---
-title: Security Tips
+title: Network and Security Tips
 description: Security is important ~
-date: 2018-12-26
+date: 2018-12-17
 ---
-
 
 ### Web Specification
 
@@ -15,16 +14,6 @@ date: 2018-12-26
 
 * [OWASP Serverless Goat](https://www.owasp.org/index.php/OWASP_Serverless_Goat)
 
-### Cases
-
-* [A lesson in timing attacks](https://codahale.com/a-lesson-in-timing-attacks)
-* [How to safely store a password](https://codahale.com/how-to-safely-store-a-password)
-
----
-title: Tips for network
-description: Network is important
-date: 2018-12-17
----
 
 ### Tools
 
