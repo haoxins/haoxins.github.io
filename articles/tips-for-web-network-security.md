@@ -1,6 +1,6 @@
 ---
-title: Network and Security Tips
-description: Security is important ~
+title: Web (network, security) tips
+description: Web is awesome ~
 date: 2018-12-17
 ---
 
