@@ -19,6 +19,8 @@ date: 2018-12-02
 
 * [WICG/import-maps](https://github.com/WICG/import-maps)
 
+------------------
+
 ## 2019 (lockdown in 2018-12-14)
 
 * Keywords: `GraphQL`, `Serverless`, `Webassembly`
