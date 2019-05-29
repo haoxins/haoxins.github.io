@@ -4,10 +4,10 @@ description: todo
 date: 2019-04-27
 ---
 
-|              | Rust | Kotlin | JavaScript | TypeScript | Go |
-|:------------:|:----:|:------:|:----------:|:----------:|:--:|
-|  写过生产项目  |   N  |    Y   |     Y      |      Y     |  Y |
-|              |      |        |            |            |    |
+|              | Rust | TypeScript | JavaScript | Go | Kotlin |
+|:------------:|:----:|:----------:|:----------:|:--:|:------:|
+|  写过生产项目  |   N  |     Y      |      Y     |  Y |    Y   |
+|              |      |            |            |    |        |
 
 ## Rust
 
