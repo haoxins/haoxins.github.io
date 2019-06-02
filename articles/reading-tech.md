@@ -4,10 +4,17 @@ description: 觉得自己蠢, 是一种幸福
 date: 2019-04-08
 ---
 
-### 2019 年度 Top.1 书籍
+### 2020 年度 Top.1 书籍
 
 * [什么是数学 (What is Mathematics)](https://book.douban.com/subject/1320282/)
   - 我看过的, 最好的书, 讲数学的
+
+### 2019 年度 Top.1 书籍
+
+* [图解密码技术 第3版](https://book.douban.com/subject/26822106/)
+  - 做技术的人, 最可怕的就是以为自己懂了, 其实, 一知半解
+  - 不要轻易造轮子, 会被自己的狭隘视野害惨, 个人的力量终究有限
+  - 密码领域, 血淋淋的惨案, 让人对技术心生敬畏
 
 ------------------
 
@@ -20,10 +27,6 @@ date: 2019-04-08
   - [程序员的数学](https://book.douban.com/subject/19949020/)
   - [程序员的数学2 概率统计](https://book.douban.com/subject/26593822/)
   - [程序员的数学3 线性代数](https://book.douban.com/subject/26740548/)
-
-* [图解密码技术 第3版](https://book.douban.com/subject/26822106/)
-  - 通俗易懂
-  - 不要造轮子, 不要 (private) 造轮子
 
 * [高伸缩性系统: Erlang/OTP大型分布式容错设计](https://book.douban.com/subject/30262041/)
   - 有一句话很震撼: 我之前的某服务, 运行 x 年, `6个9`
