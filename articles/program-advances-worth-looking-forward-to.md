@@ -6,13 +6,12 @@ date: 2018-12-02
 
 ## 2020 (lockdown in 2019-12-??)
 
-* Keywords: `?`, `Serverless`, `Webassembly`
+* Keywords: `Webassembly`, `Serverless`
 
 ### Go places
 
 * QUIC & HTTP over QUIC & HTTP/3
 * gVisor & Container Runtime Sandbox
-* Flutter & Fuchsia OS
 * [tc39/proposal-javascript-standard-library](https://github.com/tc39/proposal-javascript-standard-library)
 
 ### To be completed
