@@ -18,6 +18,9 @@ date: 2019-04-08
 
 ------------------
 
+* [数学之美 第二版](https://book.douban.com/subject/26163454/)
+  - 吴军老师的书, 都很不错
+
 * [Clean Architecture](https://book.douban.com/subject/30290504/)
   - 实而不虚聊 `Architecture`
 
