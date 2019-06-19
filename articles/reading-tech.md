@@ -31,6 +31,12 @@ date: 2019-04-08
   - [程序员的数学2 概率统计](https://book.douban.com/subject/26593822/)
   - [程序员的数学3 线性代数](https://book.douban.com/subject/26740548/)
 
+* [数学女孩 4册](https://book.douban.com/subject/26677354/)
+  - [数学女孩](https://book.douban.com/subject/26677354/)
+  - [数学女孩2 费马大定理](https://book.douban.com/subject/26681597/)
+  - [数学女孩3 哥德尔不完备定理](https://book.douban.com/subject/27193490/)
+  - [数学女孩4 随机算法](https://book.douban.com/subject/33444625/)
+
 * [高伸缩性系统: Erlang/OTP大型分布式容错设计](https://book.douban.com/subject/30262041/)
   - 有一句话很震撼: 我之前的某服务, 运行 x 年, `6个9`
 
