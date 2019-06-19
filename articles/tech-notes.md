@@ -4,7 +4,7 @@ description: just notes
 date: 2019-06-18
 ---
 
-### Cryptography
+## Cryptography
 
 * `对称密码`:
   - 共享密钥 `加&解` 密
@@ -19,3 +19,15 @@ date: 2019-06-18
   - 公钥验证签名
   - 公钥, 需要认证 (中间人攻击)
   - `可` 防止否认
+
+### RSA
+
+* 公钥: `E`, `N`
+* 私钥: `D`, `N`
+* 加密: 密文 = 明文 ** E % N
+* 解密: 明文 = 密文 ** D % N
+
+### AES, SHA
+
+* AES: `Rijndael` (2000)
+* SHA-3: `Keccak` (2012)
