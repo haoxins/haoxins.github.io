@@ -36,6 +36,7 @@ date: 2019-04-08
   - [数学女孩2 费马大定理](https://book.douban.com/subject/26681597/)
   - [数学女孩3 哥德尔不完备定理](https://book.douban.com/subject/27193490/)
   - [数学女孩4 随机算法](https://book.douban.com/subject/33444625/)
+  - 反思: 中国的数学教育专注于练习, 解题, 却疏于 认知(抽象), 连接(定理), 投射(具象)
 
 * [高伸缩性系统: Erlang/OTP大型分布式容错设计](https://book.douban.com/subject/30262041/)
   - 有一句话很震撼: 我之前的某服务, 运行 x 年, `6个9`
