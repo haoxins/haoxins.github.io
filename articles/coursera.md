@@ -16,4 +16,5 @@ date: 2019-05-30
   - Grade Achieved: `99.5%`
   - https://www.coursera.org/account/accomplishments/certificate/ERAFARB5FGND
 * [Exploring and Preparing your Data with BigQuery](https://www.coursera.org/learn/gcp-exploring-preparing-data-bigquery)
-  - Grade Achieved: ``
+  - Grade Achieved: `100%`
+  - https://www.coursera.org/account/accomplishments/certificate/354BPNUUEDA9
