@@ -18,3 +18,5 @@ date: 2019-05-30
 * [Exploring and Preparing your Data with BigQuery](https://www.coursera.org/learn/gcp-exploring-preparing-data-bigquery)
   - Grade Achieved: `100%`
   - https://www.coursera.org/account/accomplishments/certificate/354BPNUUEDA9
+  - Grade Achieved: `100%`
+  - https://www.coursera.org/account/accomplishments/certificate/DLKQHT8HBJG6
