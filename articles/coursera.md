@@ -20,3 +20,5 @@ date: 2019-05-30
   - https://www.coursera.org/account/accomplishments/certificate/354BPNUUEDA9
   - Grade Achieved: `100%`
   - https://www.coursera.org/account/accomplishments/certificate/DLKQHT8HBJG6
+  - Grade Achieved: `100%`
+  - https://www.coursera.org/account/accomplishments/certificate/EL9SZTWV46RB
