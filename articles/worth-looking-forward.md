@@ -4,18 +4,17 @@ description: The future is always awesome
 date: 2018-12-02
 ---
 
-## 2020 (lockdown in 2019-12-??)
+## 2020 Serverless (lockdown in 2019-12-??)
 
-* Keywords: `Webassembly`, `Serverless`
+### Serverless
 
-### Go places
-
-* QUIC & HTTP over QUIC & HTTP/3
+* BigQuery: serverless DW
+* Webassembly runtime for service development
 * gVisor & Container Runtime Sandbox
+
+### Web & JavaScript (TypeScript)
+
 * [tc39/proposal-javascript-standard-library](https://github.com/tc39/proposal-javascript-standard-library)
-
-### To be completed
-
 * [WICG/import-maps](https://github.com/WICG/import-maps)
 
 ------------------
