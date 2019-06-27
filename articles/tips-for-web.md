@@ -1,9 +1,8 @@
 ---
-title: Web (network, security) tips
+title: Web tips
 description: Web is awesome ~
 date: 2018-12-17
 ---
-
 
 ### TLS
   - [TLS 1.3](https://tls13.ulfheim.net)
