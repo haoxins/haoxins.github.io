@@ -4,6 +4,8 @@ description: The future is always awesome
 date: 2018-12-02
 ---
 
+## 2021 Decentralized (lockdown in 2020-12-??)
+
 ## 2020 Serverless (lockdown in 2019-12-??)
 
 ### Serverless
