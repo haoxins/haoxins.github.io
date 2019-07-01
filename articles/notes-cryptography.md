@@ -10,16 +10,71 @@ date: 2019-06-30
 * PKCS (Public Key Cryptography Standards)
   - https://en.wikipedia.org/wiki/PKCS
 
+### Stream ciphers
+
 * Stream ciphers (making OTP practical)
   - Bad news (OTP): perfect-secrecy -> key-len >= msg-len
   - Stream ciphers cannot have perfect secrecy
-  - no integrity
+  - no integrity: modifications to ciphertext are undetected and
+  -   have predictable impact on plaintext
   - Two time pad is insecure, never use stream cipher key more than once
+  - secure PRG -> semantically secure stream cipher
+  - Impl: `Salsa20`
 
 * PRP, PRF, PRG
+  - a secure PRG is unpredictable
+  - also, an unpredictable PRG is secure
+  - Pseudo Random Function (PRF) defined over (K, X, Y): F: K*X -> Y
+    * such that exists efficient algorithm to evaluate F(k, x)
+  - Pseudo Random Permutation (PRP) defined over (K, X): E: K*X -> X
+    * Exists efficient deterministic algorithm to evaluate E(k, x)
+    * The function E(k, ⋅) is one-to-one
+    * Exists efficient inversion algorithm D(k, x)
+  - A PRP is a PRF where X=Y and is efficiently invertible
+  - Let F: K * {0, 1}n -> {0, 1}n be a secure PRF
+    * Then the following G: K -> {0, 1}nt is a secure PRG:
+    * G(k) = F(k, 0) || F(k, 1) || ⋯ || F(k, t-1)
 
+### Block ciphers
 
-## Cryptography
+* 2000: NIST adopts Rijndael as AES to replace DES
+* PRPs and PRFs: a useful abstraction of block ciphers
+* AES
+  - ECB mode is not semanAcally secure
+  - neither mode ensures data integrity
+* CPA security for nonce-based encrypAon
+  - System should be secure when nonces are chosen adversarially
+* Tweakable block ciphers
+  - Use tweakable encryption when you need many independent PRPs from one key
+* Format-preserving encryption
+
+### MAC
+
+* Def: MAC I = (S, V) defined over (K, M, T) is a pair of algs:
+  – S(k, m) outputs t in T
+  – V(k, m, t) outputs `yes` or `no`
+
+### Auth encryption (introduced in 2000)
+
+* An authenticated encryption system (E, D) is a cipher where
+  - as usual: E: K * M * N -> C
+  - but D: K * C * N -> M & {⊥}
+  - (⊥ -> ciphertext is rejected)
+* Encrypt-then-MAC: always provides A.E.
+* MAC-then-encrypt: may be insecure against CCA attacks
+
+### Security
+
+* semantically secure:
+  - only negligible information about the plaintext
+  - can be feasibly extracted from the ciphertext
+* Chosen ciphertext security
+* CPA security cannot guarantee secrecy under active attacks
+* Authenticated encryption -> `CCA security` (chosen-ciphertext attack)
+* integrity -> `MAC`
+* integrity, confidentiality -> `authenticated encryption`
+
+### 相关比较
 
 * `对称密码`:
   - 共享密钥 `加&解` 密
@@ -77,3 +132,8 @@ session key = G ** (A * B) % P
 * 公钥基础设施 (PKI) = 用户 (user) + 认证机构 (CA) + 仓库 (Repo)
 * 证书 至少包含: `public key`, `机构签名`
 * 证书信任链
+
+### 数论
+
+* 费马`小`定理
+* 费马`小`定理 -> 欧拉定理
