@@ -15,11 +15,13 @@ date: 2018-03-23
 ### Local https
 
 ```bash
-openssl genrsa -des3 -out root_ca_dev.key 2048 # pass phrase: 123456 :)
+openssl genrsa -des3 -out root_ca_dev.key 2048
+# pass phrase: 123456 :)
 
 openssl req -x509 -new -nodes -key root_ca_dev.key -sha256 -days 2048 -out root_ca_dev.pem
 
-# Mac: Open Keychain Access -> System: Certificates -> Add Item: Import file -> Always Trust
+# Mac: Open Keychain Access -> System: Certificates ->
+# Add Item: Import file -> Always Trust
 
 touch server.csr.cnf
 
