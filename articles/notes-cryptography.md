@@ -63,6 +63,10 @@ date: 2019-06-30
 * Encrypt-then-MAC: always provides A.E.
 * MAC-then-encrypt: may be insecure against CCA attacks
 
+### Public encryption
+
+* one-time security -> many-time security (CPA)
+
 ### Security
 
 * semantically secure:
