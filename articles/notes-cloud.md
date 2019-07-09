@@ -6,7 +6,13 @@ date: 2019-06-28
 
 ### Cloud native
 
-* `Time zone`
+* `Region`, `Time Zone`, `ENV vars`
+
+### Functions
+
+* How to edit code, version control, deploy?
+* How to set & maintain ENV vars?
+* How to centralize logs, metrics?
 
 ### DW
 
