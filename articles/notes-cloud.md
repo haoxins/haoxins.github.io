@@ -18,3 +18,9 @@ date: 2019-06-28
 
 * AWS - Snowflake
 * GCP - BigQuery
+
+### Google cloud data
+
+* Dataprep (by Trifacta)
+* Dataproc
+* Dataflow

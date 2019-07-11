@@ -4,6 +4,7 @@ description: We can do something
 date: 2019-06-30
 ---
 
+马尔可夫假设 -> 贝叶斯网络
 最小二乘法
 在线学习
 
