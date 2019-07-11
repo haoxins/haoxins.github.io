@@ -21,6 +21,14 @@ date: 2019-06-28
 
 ### Google cloud data
 
-* Dataprep (by Trifacta)
-* Dataproc
-* Dataflow
+* Dataprep:
+  - by Trifacta
+
+* Dataflow:
+  - Apache Beam based jobs
+  - Serverless
+  - Automatic provisioning of clusters
+
+* Dataproc:
+  - Hadoop cluster
+  - Manual provisioning of clusters
