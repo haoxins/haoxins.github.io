@@ -8,13 +8,21 @@ date: 2019-06-30
 
 贝叶斯网络 vs 条件随机场
 
+期望最大化算法
+
+最大熵模型
+
+逻辑回归
+
 最小二乘法
 
 在线学习
 
-### linear-regression
+EM算法
 
-* gradient descent algorithm
+## linear-regression
+
+### gradient descent algorithm
 
 ```
 1. scale the features, for example: [-1, 1]
@@ -40,5 +48,13 @@ how to choose features:
 2. polynomial regression
 ```
 
-### logistic regression (classification problems)
+### normal equation
+
+* advantages
+  - no need to iterate
+
+* disadvantages
+  - slow if features number is very large
+
+## logistic regression (classification problems)
 
