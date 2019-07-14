@@ -35,6 +35,8 @@ date: 2019-06-30
     * Then the following G: K -> {0, 1}nt is a secure PRG:
     * G(k) = F(k, 0) || F(k, 1) || ⋯ || F(k, t-1)
 
+* [Why do stream ciphers use a nonce ?](https://crypto.stackexchange.com/questions/30818/why-do-stream-ciphers-use-a-nonce)
+
 ### Block ciphers
 
 * 2000: NIST adopts Rijndael as AES to replace DES
