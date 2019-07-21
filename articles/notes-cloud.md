@@ -32,3 +32,6 @@ date: 2019-06-28
 * Dataproc:
   - Hadoop cluster
   - Manual provisioning of clusters
+
+* Data studio
+  - https://developers.google.com/datastudio/visualization/
