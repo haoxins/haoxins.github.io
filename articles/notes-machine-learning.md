@@ -58,3 +58,5 @@ how to choose features:
 
 ## logistic regression (classification problems)
 
+* [Logistic function](https://en.wikipedia.org/wiki/Logistic_function)
+* [Sigmoid function](https://en.wikipedia.org/wiki/Sigmoid_function)
