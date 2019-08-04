@@ -4,14 +4,17 @@ description: The future is always awesome
 date: 2018-12-02
 ---
 
-## 2021 Decentralized (lockdown in 2020-12-??)
+## 2022 Decentralized (lockdown in 2021-12-??)
+
+## 2021 Cloud Native Development (lockdown in 2020-12-??)
+
+* Cloud native development & deployment
 
 ## 2020 Serverless (lockdown in 2019-12-??)
 
 ### Serverless
 
 * BigQuery: serverless DW
-* Webassembly runtime for service development
 * gVisor & Container Runtime Sandbox
 
 ### Web & JavaScript (TypeScript)
