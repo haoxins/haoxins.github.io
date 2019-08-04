@@ -34,7 +34,7 @@ date: 2019-06-28
 ### GCP BigQuery
 
 * 尽量使 `Scheduled queries` 越简单越好, 把复杂逻辑保存为 `Views`
-  - 当有 `BUG` 或需要改变 `SQL` 逻辑时, 变更 `Views` 不需要变更 `Scheduled queries`
+  - 当 `DEBUG` 或 `change` 逻辑时, 变更 `Views` 不需要变更 `Scheduled queries`
 
 ### Data studio
   - https://developers.google.com/datastudio/visualization/
