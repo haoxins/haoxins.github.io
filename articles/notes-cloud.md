@@ -39,3 +39,8 @@ date: 2019-06-28
 
 ### Data studio
   - https://developers.google.com/datastudio/visualization/
+
+### GCP tools
+
+https://cloud.google.com/apigee/
+https://cloud.google.com/stackdriver/
