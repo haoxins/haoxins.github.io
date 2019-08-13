@@ -17,6 +17,9 @@ date: 2019-05-30
 * [Cryptography I](https://www.coursera.org/learn/crypto)
   - Grade Achieved: ``
 
+  - Grade Achieved: `100.0%`
+  - https://www.coursera.org/account/accomplishments/certificate/XPRQSEH9DJ54
+
 * [Exploring and Preparing your Data with BigQuery](https://www.coursera.org/learn/gcp-exploring-preparing-data-bigquery)
   - https://www.coursera.org/account/accomplishments/specialization/certificate/LABQ8JZ99NML
 
