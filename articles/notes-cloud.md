@@ -43,4 +43,5 @@ date: 2019-06-28
 ### GCP tools
 
 https://cloud.google.com/apigee/
+https://cloud.google.com/endpoints/
 https://cloud.google.com/stackdriver/
