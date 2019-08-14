@@ -22,7 +22,7 @@ date: 2019-05-30
   - https://www.coursera.org/account/accomplishments/certificate/XPRQSEH9DJ54
   - Grade Achieved: `98.7%`
   - https://www.coursera.org/account/accomplishments/certificate/2E2Y7RHTYUZQ
-  - Grade Achieved: 100.0%
+  - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/BEMGBKVVBKCP
 
 * [From Data to Insights with Google Cloud Platform](https://www.coursera.org/specializations/from-data-to-insights-google-cloud-platform)
