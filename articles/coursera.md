@@ -20,6 +20,8 @@ date: 2019-05-30
 * [Architecting with Google Cloud Platform](https://www.coursera.org/specializations/gcp-architecture)
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/XPRQSEH9DJ54
+  - Grade Achieved: 98.7%
+  - https://www.coursera.org/account/accomplishments/certificate/2E2Y7RHTYUZQ
 
 * [From Data to Insights with Google Cloud Platform](https://www.coursera.org/specializations/from-data-to-insights-google-cloud-platform)
   - https://www.coursera.org/account/accomplishments/specialization/certificate/LABQ8JZ99NML
