@@ -17,6 +17,8 @@ date: 2019-05-30
 * [Cryptography I](https://www.coursera.org/learn/crypto)
   - Grade Achieved: ``
 
+* [Data Engineering, Big Data, and Machine Learning on GCP](https://www.coursera.org/specializations/gcp-data-machine-learning)
+
 * [Architecting with Google Cloud Platform](https://www.coursera.org/specializations/gcp-architecture)
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/XPRQSEH9DJ54
