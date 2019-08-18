@@ -31,6 +31,8 @@ date: 2019-06-28
   - Hadoop cluster
   - Manual provisioning of clusters
 
+* DataStore is a `toy`
+
 ### GCP BigQuery
 
 * 尽量使 `Scheduled queries` 越简单越好, 把复杂逻辑保存为 `Views`
@@ -41,6 +43,8 @@ date: 2019-06-28
   - https://developers.google.com/datastudio/visualization/
 
 ### GCP tools
+
+GCP Role -> Team
 
 https://cloud.google.com/apigee/
 https://cloud.google.com/endpoints/
