@@ -20,6 +20,8 @@ date: 2019-05-30
 * [Data Engineering, Big Data, and Machine Learning on GCP](https://www.coursera.org/specializations/gcp-data-machine-learning)
 
 * [Architecting with Google Cloud Platform](https://www.coursera.org/specializations/gcp-architecture)
+  - https://www.coursera.org/account/accomplishments/specialization/certificate/HHM3BJXJUW63
+
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/XPRQSEH9DJ54
   - Grade Achieved: `98.7%`
@@ -30,7 +32,8 @@ date: 2019-05-30
   - https://www.coursera.org/account/accomplishments/certificate/Q2J3WXNRE59B
   - Grade Achieved: `98.8%`
   - https://www.coursera.org/account/accomplishments/certificate/CFJHFPLTMDW4
-
+  - Grade Achieved: `100.0%`
+  - https://www.coursera.org/account/accomplishments/certificate/ZZFKG2AMKASB
 
 * [From Data to Insights with Google Cloud Platform](https://www.coursera.org/specializations/from-data-to-insights-google-cloud-platform)
   - https://www.coursera.org/account/accomplishments/specialization/certificate/LABQ8JZ99NML
