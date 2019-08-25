@@ -27,11 +27,28 @@ date: 2019-06-28
   - Serverless
   - Automatic provisioning of clusters
 
-* Dataproc:
-  - Hadoop cluster
+* DataProc:
   - Manual provisioning of clusters
+  - Hadoop, Hive, Spark, BigQuery, Cloud Storage
+  - Directed Acyclic Graph (DAG)
+  - Cloud Composer (Apache Airflow)
+  - create a cluster specifically for one job
+  - use Cloud Storage instead of HDFS
+  - on non-critical jobs requiring huge clusters, use preemptible VMs
 
 * DataStore is a `toy`
+
+* Streaming
+
+Pub/Sub, DataFlow, BigTable
+
+* ML
+
+BigQuery, TensorFlow, Cloud ML Engine
+
+* Serverless Data
+
+Cloud functions, BigQuery, DataFlow
 
 ### GCP BigQuery
 
