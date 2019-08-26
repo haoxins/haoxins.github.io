@@ -10,10 +10,11 @@ date: 2019-06-28
 
 ### Functions
 
-* How to edit code, version control, deploy?
-* How to set & maintain ENV vars?
-* How to centralize logs, metrics?
-
+* Everything in Git
+  - codes
+  - shell, gcloud deploy ...
+  - ENV vars, `.env.yml`
+* Use StackDriver to view logs, ...
 
 * AWS - Snowflake
 
