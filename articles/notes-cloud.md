@@ -6,7 +6,7 @@ date: 2019-06-28
 
 ### Cloud native
 
-* `Region`, `Time Zone`, `ENV vars`
+* `Region`, `Time Zone`
 
 ### Functions
 
@@ -27,17 +27,6 @@ date: 2019-06-28
   - Apache Beam based jobs
   - Serverless
   - Automatic provisioning of clusters
-
-* DataProc:
-  - Manual provisioning of clusters
-  - Hadoop, Hive, Spark, BigQuery, Cloud Storage
-  - Directed Acyclic Graph (DAG)
-  - Cloud Composer (Apache Airflow)
-  - create a cluster specifically for one job
-  - use Cloud Storage instead of HDFS
-  - on non-critical jobs requiring huge clusters, use preemptible VMs
-
-* DataStore is a `toy`
 
 * Streaming
 
@@ -67,3 +56,16 @@ GCP Role -> Team
 https://cloud.google.com/apigee/
 https://cloud.google.com/endpoints/
 https://cloud.google.com/stackdriver/
+
+## Deprecated
+
+* DataProc:
+  - Manual provisioning of clusters
+  - Hadoop, Hive, Spark, BigQuery, Cloud Storage
+  - Directed Acyclic Graph (DAG)
+  - Cloud Composer (Apache Airflow)
+  - create a cluster specifically for one job
+  - use Cloud Storage instead of HDFS
+  - on non-critical jobs requiring huge clusters, use preemptible VMs
+
+* DataStore is a `toy`
