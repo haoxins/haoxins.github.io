@@ -18,6 +18,9 @@ date: 2019-05-30
   - Grade Achieved: ``
 
 * [Data Engineering, Big Data, and Machine Learning on GCP](https://www.coursera.org/specializations/gcp-data-machine-learning)
+  - Leveraging Unstructured Data with Cloud Dataproc on Google Cloud Platform
+  - Grade Achieved: `100.0%`
+  - https://www.coursera.org/account/accomplishments/certificate/E3QDJW24V749
 
 * [Architecting with Google Cloud Platform](https://www.coursera.org/specializations/gcp-architecture)
   - https://www.coursera.org/account/accomplishments/specialization/certificate/HHM3BJXJUW63
