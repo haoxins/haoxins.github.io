@@ -20,25 +20,16 @@ date: 2019-06-28
 
 ### Google cloud data
 
-* Dataprep:
-  - by Trifacta
-
-* Dataflow:
-  - Apache Beam based jobs
-  - Serverless
+* DataFlow:
+  - MapReduce (Batch), Side inputs, Streaming
   - Automatic provisioning of clusters
+  - With Pub/Sub, BigTable, Cloud functions, BigQuery
 
-* Streaming
-
-Pub/Sub, DataFlow, BigTable
-
-* ML
+* Machine Learning
 
 BigQuery, TensorFlow, Cloud ML Engine
 
-* Serverless Data
-
-Cloud functions, BigQuery, DataFlow
+* Dataprep (by Trifacta)
 
 ### GCP BigQuery
 
@@ -55,7 +46,6 @@ GCP Role -> Team
 
 https://cloud.google.com/apigee/
 https://cloud.google.com/endpoints/
-https://cloud.google.com/stackdriver/
 
 ## Deprecated
 
