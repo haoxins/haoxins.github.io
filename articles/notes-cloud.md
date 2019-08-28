@@ -29,7 +29,7 @@ date: 2019-06-28
 
 BigQuery, TensorFlow, Cloud ML Engine
 
-* Dataprep (by Trifacta)
+* Dataprep (by Trifacta, base on DataFlow)
 
 ### GCP BigQuery
 
