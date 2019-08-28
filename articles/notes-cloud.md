@@ -18,10 +18,16 @@ date: 2019-06-28
 
 * AWS - Snowflake
 
-### Google cloud data
+## Google cloud data
 
-* DataFlow:
-  - MapReduce (Batch), Side inputs, Streaming
+### DataFlow:
+
+* MapReduce
+  - ParDo (Map, FlatMap, Filter -> `<key, val>`)
+  - Combine (perKey, globally) (Count, Sum, ...) `<key, val>`
+  - GroupByKey (-> `<key, [val1, val2, val3, ...]>`)
+  - Combine is more efficient than GroupByKey
+  - Side inputs, Streaming
   - Automatic provisioning of clusters
   - With Pub/Sub, BigTable, Cloud functions, BigQuery
 

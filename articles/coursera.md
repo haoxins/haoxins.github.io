@@ -21,6 +21,9 @@ date: 2019-05-30
   - Leveraging Unstructured Data with Cloud Dataproc on Google Cloud Platform
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/E3QDJW24V749
+  - Serverless Data Analysis with Google BigQuery and Cloud Dataflow
+  - Grade Achieved: `98.0%`
+  - https://www.coursera.org/account/accomplishments/certificate/H427ULGYGU6Z
 
 * [Architecting with Google Cloud Platform](https://www.coursera.org/specializations/gcp-architecture)
   - https://www.coursera.org/account/accomplishments/specialization/certificate/HHM3BJXJUW63
