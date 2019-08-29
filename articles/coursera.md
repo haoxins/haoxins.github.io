@@ -24,6 +24,9 @@ date: 2019-05-30
   - Serverless Data Analysis with Google BigQuery and Cloud Dataflow
   - Grade Achieved: `98.0%`
   - https://www.coursera.org/account/accomplishments/certificate/H427ULGYGU6Z
+  - Building Resilient Streaming Systems on Google Cloud Platform
+  - Grade Achieved: `100.0%`
+  - https://www.coursera.org/account/accomplishments/certificate/WQW6AZMQW6SN
 
 * [Architecting with Google Cloud Platform](https://www.coursera.org/specializations/gcp-architecture)
   - https://www.coursera.org/account/accomplishments/specialization/certificate/HHM3BJXJUW63
