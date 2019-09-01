@@ -27,6 +27,9 @@ date: 2019-05-30
   - Building Resilient Streaming Systems on Google Cloud Platform
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/WQW6AZMQW6SN
+  - Google Cloud Platform Big Data and Machine Learning Fundamentals
+  - Grade Achieved: `100.0%`
+  - https://www.coursera.org/account/accomplishments/certificate/GCEVPSXZQRBC
 
 * [Architecting with Google Cloud Platform](https://www.coursera.org/specializations/gcp-architecture)
   - https://www.coursera.org/account/accomplishments/specialization/certificate/HHM3BJXJUW63
