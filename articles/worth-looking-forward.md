@@ -15,6 +15,8 @@ date: 2018-12-02
 ### Serverless
 
 * BigQuery: serverless DW
+* DataFlow:
+* TensorFlow:
 * gVisor & Container Runtime Sandbox
 
 ### Web & JavaScript (TypeScript)

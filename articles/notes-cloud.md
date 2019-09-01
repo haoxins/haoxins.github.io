@@ -36,7 +36,7 @@ date: 2019-06-28
   - GroupByKey (-> `<key, [val1, val2, val3, ...]>`)
   - Combine is more efficient than GroupByKey
   - Side inputs (ParDo.withSideInputs)
-  - Streaming
+  - Window (Streaming)
 
 * Automatic provisioning of clusters
 * BigTable, Cloud functions, BigQuery
