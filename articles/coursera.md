@@ -32,6 +32,9 @@ date: 2019-05-30
   -
 
 * [Data Engineering, Big Data, and Machine Learning on GCP](https://www.coursera.org/specializations/gcp-data-machine-learning)
+  - https://www.coursera.org/account/accomplishments/specialization/WTGYDY4ZHX6L
+  - https://www.coursera.org/account/accomplishments/specialization/certificate/WTGYDY4ZHX6L
+  - Courses
   - Leveraging Unstructured Data with Cloud Dataproc on Google Cloud Platform
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/E3QDJW24V749
@@ -44,10 +47,15 @@ date: 2019-05-30
   - Google Cloud Platform Big Data and Machine Learning Fundamentals
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/GCEVPSXZQRBC
+  - Serverless Machine Learning with Tensorflow on Google Cloud Platform
+  - Grade Achieved: `97.5%`
+  - https://www.coursera.org/account/accomplishments/certificate/UMRY34MFEXMB
+
 
 * [Architecting with Google Cloud Platform](https://www.coursera.org/specializations/gcp-architecture)
+  - https://www.coursera.org/account/accomplishments/specialization/HHM3BJXJUW63
   - https://www.coursera.org/account/accomplishments/specialization/certificate/HHM3BJXJUW63
-
+  - Courses
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/XPRQSEH9DJ54
   - Grade Achieved: `98.7%`
@@ -62,8 +70,9 @@ date: 2019-05-30
   - https://www.coursera.org/account/accomplishments/certificate/ZZFKG2AMKASB
 
 * [From Data to Insights with Google Cloud Platform](https://www.coursera.org/specializations/from-data-to-insights-google-cloud-platform)
+  - https://www.coursera.org/account/accomplishments/specialization/LABQ8JZ99NML
   - https://www.coursera.org/account/accomplishments/specialization/certificate/LABQ8JZ99NML
-
+  - Courses
   - Grade Achieved: `100%`
   - https://www.coursera.org/account/accomplishments/certificate/354BPNUUEDA9
   - Grade Achieved: `100%`
