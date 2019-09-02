@@ -17,6 +17,20 @@ date: 2019-05-30
 * [Cryptography I](https://www.coursera.org/learn/crypto)
   - Grade Achieved: ``
 
+* [Deep Learning](https://www.coursera.org/specializations/deep-learning)
+  - Neural Networks and Deep Learning
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+
 * [Data Engineering, Big Data, and Machine Learning on GCP](https://www.coursera.org/specializations/gcp-data-machine-learning)
   - Leveraging Unstructured Data with Cloud Dataproc on Google Cloud Platform
   - Grade Achieved: `100.0%`

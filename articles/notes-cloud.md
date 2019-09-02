@@ -20,6 +20,10 @@ date: 2019-06-28
 
 ## Google cloud data
 
+### DataLab
+
+### AI Platform
+
 ### Pub/Sub (Bus)
 
 * A message persist for 7 days (max)
