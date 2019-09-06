@@ -30,6 +30,9 @@ date: 2019-05-30
   -
   -
   -
+  -
+  -
+  -
 
 * [Data Engineering, Big Data, and Machine Learning on GCP](https://www.coursera.org/specializations/gcp-data-machine-learning)
   - https://www.coursera.org/account/accomplishments/specialization/WTGYDY4ZHX6L
