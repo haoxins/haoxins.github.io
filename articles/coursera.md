@@ -21,8 +21,8 @@ date: 2019-05-30
   -
   -
   - Structuring Machine Learning Projects
-  -
-  -
+  - Grade Achieved: `98.7%`
+  - https://www.coursera.org/account/accomplishments/certificate/7LGLEXM9QZFR
   - Neural Networks and Deep Learning
   -
   -
