@@ -15,7 +15,10 @@ date: 2018-12-02
 ### Serverless
 
 * GCP: PubSub, Functions, BigQuery, DataFlow, AI Platform
-* TensorFlow over PyTorch
+
+### Deep Learning
+
+* Keras & TensorFlow over PyTorch
 
 ### Web & JavaScript (TypeScript)
 

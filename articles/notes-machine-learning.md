@@ -5,19 +5,11 @@ date: 2019-06-30
 ---
 
 马尔可夫假设 -> 贝叶斯网络
-
 贝叶斯网络 vs 条件随机场
-
 期望最大化算法
-
 最大熵模型
-
-逻辑回归
-
 最小二乘法
-
 在线学习
-
 EM算法
 
 ## linear-regression
@@ -58,5 +50,7 @@ how to choose features:
 
 ## logistic regression (classification problems)
 
+* [Logistic regression](https://en.wikipedia.org/wiki/Logistic_regression)
 * [Logistic function](https://en.wikipedia.org/wiki/Logistic_function)
+* [Activation function](https://en.wikipedia.org/wiki/Activation_function)
 * [Sigmoid function](https://en.wikipedia.org/wiki/Sigmoid_function)
