@@ -4,6 +4,9 @@ description: We can do something
 date: 2019-09-08
 ---
 
+### ?
+
+https://github.com/cs231n/cs231n.github.io
 ### Structuring Deep Learning Projects
 
 * Orthogonalization
@@ -32,6 +35,10 @@ date: 2019-09-08
   - find a set of mislabeled examples
   - look at the mislabeled examples for false positives and false negatives
   - count up the number of errors that fall into various different categories
+
+### Train, Dev, Test sets
+
+### Bias, Variance
 
 ### ?
 
