@@ -6,7 +6,10 @@ date: 2019-09-08
 
 ### ?
 
-https://github.com/cs231n/cs231n.github.io
+[CS231n: Convolutional Neural Networks for Visual Recognition](https://github.com/cs231n/cs231n.github.io)
+
+[Understanding Neural Networks. From neuron to RNN, CNN, and Deep Learning](https://towardsdatascience.com/understanding-neural-networks-from-neuron-to-rnn-cnn-and-deep-learning-cd88e90e0a90)
+
 ### Structuring Deep Learning Projects
 
 * Orthogonalization
