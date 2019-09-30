@@ -14,17 +14,12 @@ date: 2018-12-02
 
 ### Serverless
 
+* QUIC:
 * GCP: PubSub, Functions, BigQuery, DataFlow, AI Platform
 
 ### Deep Learning
 
 * Keras & TensorFlow over PyTorch
-
-### Web & JavaScript (TypeScript)
-
-* [tc39/proposal-javascript-standard-library](https://github.com/tc39/proposal-javascript-standard-library)
-* [WICG/import-maps](https://github.com/WICG/import-maps)
-* [tc39/proposal-ses](https://github.com/tc39/proposal-ses)
 
 ------------------
 
