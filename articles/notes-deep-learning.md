@@ -33,7 +33,10 @@ date: 2019-09-08
   - look at the mislabeled examples for false positives and false negatives
   - count up the number of errors that fall into various different categories
 
-### Sequence models
+### ?
 
-* RNN
-* LSTM
+* DNN
+* CNN, R-CNN
+* RNN, LSTM
+
+https://en.wikipedia.org/wiki/Backpropagation
