@@ -20,6 +20,12 @@ date: 2019-05-30
 * [Deep Learning](https://www.coursera.org/specializations/deep-learning)
   -
   -
+  - Convolutional Neural Networks
+  -
+  -
+  - Sequence Models
+  -
+  -
   - Structuring Machine Learning Projects
   - Grade Achieved: `98.7%`
   - https://www.coursera.org/account/accomplishments/certificate/7LGLEXM9QZFR
@@ -27,12 +33,6 @@ date: 2019-05-30
   -
   -
   - Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
-  -
-  -
-  - Convolutional Neural Networks
-  -
-  -
-  - Sequence Models
   -
   -
 
