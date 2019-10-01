@@ -10,12 +10,19 @@ date: 2018-12-02
 
 * Cloud native development & deployment
 
-## 2020 Serverless (lockdown in 2019-12-??)
+## 2020 Serverless (lockdown in 2019-10-0?)
 
 ### Serverless
 
-* QUIC:
+* [WASI: WebAssembly System Interface](https://wasi.dev)
+  - runtime environment
+* [QUIC](https://quicwg.org)
+  - based network protocol
 * GCP: PubSub, Functions, BigQuery, DataFlow, AI Platform
+  - cloud platform serverless architecture
+* [Prisma](https://www.prisma.io)
+  - replaces traditional ORMs
+  - cross projects domain models
 
 ### Deep Learning
 
