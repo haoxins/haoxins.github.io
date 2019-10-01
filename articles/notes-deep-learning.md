@@ -4,13 +4,13 @@ description: We can do something
 date: 2019-09-08
 ---
 
-### ?
+## ?
 
 [CS231n: Convolutional Neural Networks for Visual Recognition](https://github.com/cs231n/cs231n.github.io)
 
 [Understanding Neural Networks. From neuron to RNN, CNN, and Deep Learning](https://towardsdatascience.com/understanding-neural-networks-from-neuron-to-rnn-cnn-and-deep-learning-cd88e90e0a90)
 
-### Structuring Deep Learning Projects
+## Structuring Deep Learning Projects
 
 * Orthogonalization
   - Happy cost function
@@ -39,14 +39,26 @@ date: 2019-09-08
   - look at the mislabeled examples for false positives and false negatives
   - count up the number of errors that fall into various different categories
 
-### Train, Dev, Test sets
+## Train, Dev, Test sets
 
-### Bias, Variance
+## Bias, Variance
 
-### ?
+## Convolutional Neural Networks (CNN)
+
+* Example: edge detection
+* Filter: choose vs learn
+* Input (n*n), Filter (f*f), Output ((n-f+1)*(n-f+1))
+* Padding input, make output size = input size
+* Strided Convolutions:
+
+* Transfer Learning
+* One-shot Learning
+  - similarity function
 
 * DNN
-* CNN, R-CNN
-* RNN, LSTM
+
+## Recurrent Neural Networks (RNN)
+
+* LSTM
 
 https://en.wikipedia.org/wiki/Backpropagation
