@@ -50,10 +50,28 @@ date: 2019-09-08
 * Input (n*n), Filter (f*f), Output ((n-f+1)*(n-f+1))
 * Padding input, make output size = input size
 * Strided Convolutions:
-
+  - Input (n*n)
+  - Filter (f*f)
+  - Padding (p)
+  - Stride s
+  - Output (((n+2p-f)/s+1)*((n+2p-f)/s+1))
+* Convolutions Over Volume
+* Pooling Layers
+  - Max pooling
+* Convolutional Implementation of Sliding Windows
 * Transfer Learning
+  - Download open source ways and use that as initialization for your problem
+  - Add your own stuff
 * One-shot Learning
   - similarity function
+* Siamese Network
+* Triplet Loss
+
+* Why Convolutions
+  - parameter sharing
+  - sparsity of connections
+* R-CNN: Regions with convolutional networks or regions with CNNs
+  - region proposals by segmentation algorithm
 
 * DNN
 
