@@ -39,14 +39,15 @@ date: 2019-09-08
   - look at the mislabeled examples for false positives and false negatives
   - count up the number of errors that fall into various different categories
 
+## DNN
+
 ## Train, Dev, Test sets
 
 ## Bias, Variance
 
 ## Convolutional Neural Networks (CNN)
 
-* Example: edge detection
-* Filter: choose vs learn
+* Example: edge detection, object detection, object localization
 * Input (n*n), Filter (f*f), Output ((n-f+1)*(n-f+1))
 * Padding input, make output size = input size
 * Strided Convolutions:
@@ -58,7 +59,16 @@ date: 2019-09-08
 * Convolutions Over Volume
 * Pooling Layers
   - Max pooling
+  - Avg pooling
+* Fully connected layers (FC)
+* ResNets (residual network)
+* 1*1 convolution filter (network in network)
+* Inception Network
 * Convolutional Implementation of Sliding Windows
+  - turn fully connected layers into convolutional layers
+* YOLO algorithm (You Only Look Once)
+  - Bounding Box Predictions
+  - Intersection Over Union
 * Transfer Learning
   - Download open source ways and use that as initialization for your problem
   - Add your own stuff
@@ -66,17 +76,16 @@ date: 2019-09-08
   - similarity function
 * Siamese Network
 * Triplet Loss
-
+  - Anchor, Positive, Negative
 * Why Convolutions
   - parameter sharing
   - sparsity of connections
 * R-CNN: Regions with convolutional networks or regions with CNNs
   - region proposals by segmentation algorithm
 
-* DNN
-
 ## Recurrent Neural Networks (RNN)
 
+* Example:
 * LSTM
 
 https://en.wikipedia.org/wiki/Backpropagation
