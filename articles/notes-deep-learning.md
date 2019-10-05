@@ -69,6 +69,8 @@ date: 2019-09-08
 * YOLO algorithm (You Only Look Once)
   - Bounding Box Predictions
   - Intersection Over Union
+  - Non-max Suppression
+  - Anchor Boxes
 * Transfer Learning
   - Download open source ways and use that as initialization for your problem
   - Add your own stuff
