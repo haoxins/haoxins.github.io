@@ -6,27 +6,21 @@ date: 2018-12-02
 
 ## 2022 Decentralized (lockdown in 2021-12-??)
 
-## 2021 Cloud Native Development (lockdown in 2020-12-??)
+## 2021 ??? (lockdown in 2020-12-??)
 
-* Cloud native development & deployment
-
-## 2020 Serverless (lockdown in 2019-10-0?)
-
-### Serverless
+## 2020 Serverless (lockdown in 2019-10-10)
 
 * [WASI: WebAssembly System Interface](https://wasi.dev)
-  - runtime environment
+  - Runtime
 * [QUIC](https://quicwg.org)
-  - based network protocol
+  - Network Protocol
 * GCP: PubSub, Functions, BigQuery, DataFlow, AI Platform
-  - cloud platform serverless architecture
+  - Cloud Platform
 * [Prisma](https://www.prisma.io)
   - replaces traditional ORMs
   - cross projects domain models
-
-### Deep Learning
-
-* Keras & TensorFlow over PyTorch
+  - cross languages ORMs
+* Deep Learning: Keras & TensorFlow over PyTorch
 
 ------------------
 
