@@ -41,6 +41,10 @@ date: 2019-09-08
 
 ## DNN
 
+* activation function
+* forward and backward propagation
+* parameters vs hyperparameters
+
 ## Train, Dev, Test sets
 
 ## Bias, Variance
@@ -87,7 +91,25 @@ date: 2019-09-08
 
 ## Recurrent Neural Networks (RNN)
 
-* Example:
+* Example: Natural Language Processing (NLP)
 * LSTM
+
+* Word Representation
+  - featurized representation: word embedding
+  - `t-SNE`
+  - transfer learning
+  - analogie using word vectors
+  - cosine similarity
+* Word2Vec algorithm
+  - skip-gram model
+  - hierarchical softmax classifier
+* Negative Sampling algorithm
+* GloVe (global vectors for word representation) algorithm
+* Sentiment Classification
+* Debiasing word embeddings
+* Sequence-to-Sequence models
+* Beam Search algorithm
+* Bleu Score
+* Attention Model
 
 https://en.wikipedia.org/wiki/Backpropagation
