@@ -45,9 +45,22 @@ date: 2019-09-08
 * forward and backward propagation
 * parameters vs hyperparameters
 
-## Train, Dev, Test sets
-
-## Bias, Variance
+* Train, Dev, Test sets
+  - make sure that the dev and test sets come from the same distribution
+  - it might be okay to not have a test set
+* Bias, Variance
+  - underfitting (bias), overfitting (variance)
+  - high variance: (maybe) train set error 1%, dev set error 11%
+  - high bias: (maybe) train set error 15%, dev set error 16%, human error 1%
+* Regularization
+  - prevent overfitting
+  - L1/L2 regularization
+* Dropout Regularization
+  - drop out is very frequently used by computer vision
+* Other regularization methods
+  - data augmentation
+  - early stopping
+* Vanishing / Exploding gradients
 
 ## Convolutional Neural Networks (CNN)
 
