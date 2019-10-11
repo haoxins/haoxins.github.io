@@ -61,6 +61,7 @@ date: 2019-09-08
   - data augmentation
   - early stopping
 * Vanishing / Exploding gradients
+* Gradient checking
 
 ## Convolutional Neural Networks (CNN)
 
