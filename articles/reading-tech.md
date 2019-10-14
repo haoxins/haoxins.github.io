@@ -6,9 +6,6 @@ date: 2019-04-08
 
 ### 2020 年度 Top.1 书籍
 
-* [什么是数学 (What is Mathematics)](https://book.douban.com/subject/1320282/)
-  - 数学的 `历史脉络`, 不同时期的 `思想风潮`
-
 ### 2019 年度 Top.1 书籍
 
 * [为什么: 关于因果关系的新科学](https://book.douban.com/subject/33438811/)
@@ -18,12 +15,21 @@ date: 2019-04-08
 * [Clean Architecture](https://book.douban.com/subject/30290504/)
   - 实而不虚聊 `Architecture`
 
+* [什么是数学 (What is Mathematics)](https://book.douban.com/subject/1320282/)
+  - 数学的 `历史脉络`, 不同时期的 `思想风潮`
+
 * [程序员的数学 3册](https://book.douban.com/subject/19949020/)
   - 用新的视角重新理解之前的数学概念 (趣)
   - 将数学理论带入实践场景 (用)
   - [程序员的数学](https://book.douban.com/subject/19949020/)
   - [程序员的数学2 概率统计](https://book.douban.com/subject/26593822/)
   - [程序员的数学3 线性代数](https://book.douban.com/subject/26740548/)
+
+* [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
+  - ?
+
+* [非平面](https://book.douban.com/subject/30327868/)
+  - 第一次看到这种类型的漫画
 
 * [研究之美](https://book.douban.com/subject/7064456/)
   - 高德纳!!!

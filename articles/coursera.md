@@ -23,9 +23,6 @@ date: 2019-05-30
   - Convolutional Neural Networks
   - Grade Achieved: `99.5%`
   - https://www.coursera.org/account/accomplishments/certificate/G3AB22W52P7K
-  - Sequence Models
-  -
-  -
   - Structuring Machine Learning Projects
   - Grade Achieved: `98.7%`
   - https://www.coursera.org/account/accomplishments/certificate/7LGLEXM9QZFR
@@ -33,6 +30,9 @@ date: 2019-05-30
   -
   -
   - Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
+  -
+  -
+  - Sequence Models
   -
   -
 
