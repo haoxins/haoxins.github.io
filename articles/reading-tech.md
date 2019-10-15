@@ -26,7 +26,7 @@ date: 2019-04-08
   - [程序员的数学3 线性代数](https://book.douban.com/subject/26740548/)
 
 * [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
-  - ?
+  - 从 `古老的概念` 关联到 最新的 `量子前沿`, 一流的 `科普` 就是 超一流的 `科幻`
 
 * [非平面](https://book.douban.com/subject/30327868/)
   - 第一次看到这种类型的漫画
