@@ -41,9 +41,10 @@ date: 2019-09-08
 
 ## DNN
 
-* activation function
-* forward and backward propagation
-* parameters vs hyperparameters
+* Activation function
+* Forward and Backward propagation
+  - https://en.wikipedia.org/wiki/Backpropagation
+* Parameters vs Hyper parameters
 
 * Train, Dev, Test sets
   - make sure that the dev and test sets come from the same distribution
@@ -125,5 +126,3 @@ date: 2019-09-08
 * Beam Search algorithm
 * Bleu Score
 * Attention Model
-
-https://en.wikipedia.org/wiki/Backpropagation
