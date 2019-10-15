@@ -27,8 +27,8 @@ date: 2019-05-30
   - Grade Achieved: `98.7%`
   - https://www.coursera.org/account/accomplishments/certificate/7LGLEXM9QZFR
   - Neural Networks and Deep Learning
-  -
-  -
+  - Grade Achieved: `100.0%`
+  - https://www.coursera.org/account/accomplishments/certificate/NMRED2A3H5PF
   - Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
   -
   -
