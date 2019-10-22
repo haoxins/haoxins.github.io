@@ -10,7 +10,7 @@ date: 2018-03-23
 
 ### Dev tools
 
-* [nghttp2](https://github.com/nghttp2/nghttp2) `brew install nghttp2`
+* [docs: curl http/3](https://github.com/curl/curl/blob/master/docs/HTTP3.md)
 
 ### Local https
 
