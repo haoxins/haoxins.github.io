@@ -8,10 +8,11 @@ date: 2018-12-02
 
 ## 2021 ??? (lockdown in 2020-12-??)
 
-## 2020 Serverless (lockdown in 2019-10-10)
+## 2020 Serverless (lockdown in 2019-10-25)
 
 * [WASI: WebAssembly System Interface](https://wasi.dev)
   - Runtime
+  - [Github](https://github.com/WebAssembly/WASI)
 * [QUIC](https://quicwg.org)
   - Network Protocol
 * GCP: PubSub, Functions, BigQuery, DataFlow, AI Platform
@@ -20,7 +21,7 @@ date: 2018-12-02
   - replaces traditional ORMs
   - cross projects domain models
   - cross languages ORMs
-* Deep Learning: Keras & TensorFlow over PyTorch
+  - GraphQL
 
 ------------------
 
