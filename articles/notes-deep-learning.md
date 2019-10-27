@@ -63,6 +63,9 @@ date: 2019-09-08
   - early stopping
 * Vanishing / Exploding gradients
 * Gradient checking
+* Mini-batch gradient descent
+  - choosing mini-batch size
+* Exponentially weighted averages
 
 ## Convolutional Neural Networks (CNN)
 

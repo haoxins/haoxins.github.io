@@ -6,7 +6,17 @@ date: 2018-12-02
 
 ## 2022 Decentralized (lockdown in 2021-12-??)
 
-## 2021 ??? (lockdown in 2020-12-??)
+## 2021 Cloud (lockdown in 2020-12-??)
+
+### Cloud Native Development
+
+* https://coder.com
+
+### VR, 自动驾驶
+
+### Fuchsia
+
+------------------
 
 ## 2020 Serverless (lockdown in 2019-10-25)
 
