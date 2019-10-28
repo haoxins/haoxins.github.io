@@ -23,6 +23,11 @@ date: 2018-04-01
 * [什么是数学 (What is Mathematics)](https://book.douban.com/subject/1320282/)
   - 数学的 `历史脉络`, 不同时期的 `思想风潮`
 
+* [深度学习的数学](https://book.douban.com/subject/33414479/)
+  - 受之前系列图书的影响, 对 `日本作者` 写的 `数学书籍` 有好感
+  - 第一次在 `图灵社区` 购买 `电子书`
+  - [图灵社区](https://www.ituring.com.cn)
+
 * [程序员的数学 3册](https://book.douban.com/subject/19949020/)
   - 用新的视角重新理解之前的数学概念 (趣)
   - 将数学理论带入实践场景 (用)
@@ -47,6 +52,7 @@ date: 2018-04-01
 
 * [悠扬的素数 - 二百年数学绝唱黎曼假设](https://book.douban.com/subject/34834170/)
   - 历史脉络清晰
+  - 黎曼假设的完全证明, 最可能来自 `物理学` 领域 ? (拭目以待)
 
 * [数学之美 第二版](https://book.douban.com/subject/26163454/)
   - 吴军老师的书, 都很不错
