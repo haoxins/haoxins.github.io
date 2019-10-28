@@ -65,7 +65,14 @@ date: 2019-09-08
 * Gradient checking
 * Mini-batch gradient descent
   - choosing mini-batch size
-* Exponentially weighted averages
+  - Exponentially weighted averages
+  - Gradient descent with momentum
+  - RMSprop (root mean square prop)
+  - Adam optimization algorithm
+  - Learning rate decay
+* Hyperparameter tuning process
+  - choose the hyperparameters at random
+  - coarse to fine
 
 ## Convolutional Neural Networks (CNN)
 
