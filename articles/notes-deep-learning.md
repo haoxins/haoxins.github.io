@@ -73,6 +73,11 @@ date: 2019-09-08
 * Hyperparameter tuning process
   - choose the hyperparameters at random
   - coarse to fine
+  - Using an appropriate scale to pick hyperparameters
+* Batch normalization
+  - covariate shift
+* Multi-class classification
+  - Softmax Regression
 
 ## Convolutional Neural Networks (CNN)
 
