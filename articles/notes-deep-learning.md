@@ -124,7 +124,7 @@ date: 2019-09-08
 * Example: Natural Language Processing (NLP)
 * Vanishing gradients with RNNs
 * Gated Recurrent Unit (GRU)
-* LSTM
+* Long Short Term Memory (LSTM)
 
 * Word Representation
   - featurized representation: word embedding
