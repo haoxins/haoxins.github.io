@@ -77,7 +77,7 @@ date: 2019-09-08
 * Batch normalization
   - covariate shift
 * Multi-class classification
-  - Softmax Regression
+  - Softmax Regression & Softmax classifier
 
 ## Convolutional Neural Networks (CNN)
 
@@ -122,6 +122,8 @@ date: 2019-09-08
 ## Recurrent Neural Networks (RNN)
 
 * Example: Natural Language Processing (NLP)
+* Vanishing gradients with RNNs
+* Gated Recurrent Unit (GRU)
 * LSTM
 
 * Word Representation
