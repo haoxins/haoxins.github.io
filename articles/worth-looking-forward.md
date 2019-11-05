@@ -10,9 +10,11 @@ date: 2018-12-02
 
 ### Cloud Native Development
 
-* https://coder.com
+* Visual Studio Online
 
 ### VR, 自动驾驶
+
+* 上海, 自动驾驶, 出租车
 
 ### Fuchsia
 
