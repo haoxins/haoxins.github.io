@@ -125,7 +125,8 @@ date: 2019-09-08
 * Vanishing gradients with RNNs
 * Gated Recurrent Unit (GRU)
 * Long Short Term Memory (LSTM)
-
+* Bidirectional RNN
+* Deep RNNs
 * Word Representation
   - featurized representation: word embedding
   - `t-SNE`

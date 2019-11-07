@@ -30,8 +30,8 @@ date: 2019-05-30
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/NMRED2A3H5PF
   - Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
-  -
-  -
+  - Grade Achieved: `99.2%`
+  - https://www.coursera.org/account/accomplishments/certificate/PSS72KMLYFKK
   - Sequence Models
   -
   -
