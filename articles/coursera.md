@@ -18,8 +18,9 @@ date: 2019-05-30
   - Grade Achieved: ``
 
 * [Deep Learning](https://www.coursera.org/specializations/deep-learning)
-  -
-  -
+  - https://www.coursera.org/account/accomplishments/specialization/WVK5UDQCN8DN
+  - https://www.coursera.org/account/accomplishments/specialization/certificate/WVK5UDQCN8DN
+  - Courses
   - Convolutional Neural Networks
   - Grade Achieved: `99.5%`
   - https://www.coursera.org/account/accomplishments/certificate/G3AB22W52P7K
@@ -33,8 +34,8 @@ date: 2019-05-30
   - Grade Achieved: `99.2%`
   - https://www.coursera.org/account/accomplishments/certificate/PSS72KMLYFKK
   - Sequence Models
-  -
-  -
+  - Grade Achieved: `100.0%`
+  - https://www.coursera.org/account/accomplishments/certificate/QQURPDHVETJE
 
 * [Data Engineering, Big Data, and Machine Learning on GCP](https://www.coursera.org/specializations/gcp-data-machine-learning)
   - https://www.coursera.org/account/accomplishments/specialization/WTGYDY4ZHX6L
