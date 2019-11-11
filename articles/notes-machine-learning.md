@@ -48,6 +48,11 @@ how to choose features:
 * disadvantages
   - slow if features number is very large
 
+### Large Scale Machine Learning
+
+* Stochastic Gradient Descent
+* Mini-Batch Gradient Descent
+
 ## logistic regression (classification problems)
 
 * [Logistic regression](https://en.wikipedia.org/wiki/Logistic_regression)
