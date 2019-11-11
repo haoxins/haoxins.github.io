@@ -8,13 +8,13 @@ date: 2019-05-30
 
 ### 2019
 
-* [Machine Learning](https://www.coursera.org/learn/machine-learning)
-  - Grade Achieved: ``
-
 * [Cryptography II](https://www.coursera.org/learn/crypto2)
   - Grade Achieved: ``
 
 * [Cryptography I](https://www.coursera.org/learn/crypto)
+  - Grade Achieved: ``
+
+* [Machine Learning](https://www.coursera.org/learn/machine-learning)
   - Grade Achieved: ``
 
 * [Deep Learning](https://www.coursera.org/specializations/deep-learning)
