@@ -23,20 +23,25 @@ date: 2018-12-02
 
 ------------------
 
-## 2020 Serverless (lockdown in 2019-10-25)
+## 2020 Serverless (lockdown in 2019-11-24)
 
 * [WASI: WebAssembly System Interface](https://wasi.dev)
-  - Runtime
-  - [Github](https://github.com/WebAssembly/WASI)
+  - Best runtime
+  - [wasi.dev](https://wasi.dev)
+  - [Github: WebAssembly/WASI](https://github.com/WebAssembly/WASI)
+  - [Node.js WASI](https://github.com/nodejs/wasi)
+  - `LLVM 8`: the WebAssembly target is now built by default
 * [QUIC](https://quicwg.org)
-  - Network Protocol
-* GCP: PubSub, Functions, BigQuery, DataFlow, AI Platform
-  - Cloud Platform
+  - Best network protocol
+  - [Github: quicwg/base-drafts](https://github.com/quicwg/base-drafts)
+* Cloud Platform: Azure, GCP
+  - GCP: PubSub, Functions, BigQuery, DataFlow, AI Platform
 * [Prisma](https://www.prisma.io)
-  - replaces traditional ORMs
-  - cross projects domain models
-  - cross languages ORMs
-  - GraphQL
+  - Replaces traditional ORMs
+  - Cross projects domain models
+  - Cross languages ORMs
+  - GraphQL (PSL: Prisma Schema Language)
+  - Serverless
 
 ------------------
 
