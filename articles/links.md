@@ -4,15 +4,10 @@ description: So ~
 date: 2019-10-27
 ---
 
-https://jose.readthedocs.io/en/latest/
+### AI
 
-------------------
+https://onnx.ai
 
-https://github.com/deeplearning-ai/machine-learning-yearning-cn
+### Block Chain
 
-https://www.anotherbookondatascience.com/
-
-------------------
-
-https://github.com/tendermint/tendermint
 https://github.com/paritytech/substrate
