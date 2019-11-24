@@ -52,6 +52,8 @@ how to choose features:
 
 * Stochastic Gradient Descent
 * Mini-Batch Gradient Descent
+* Ceiling Analysis
+* Online Learning
 
 ## logistic regression (classification problems)
 
