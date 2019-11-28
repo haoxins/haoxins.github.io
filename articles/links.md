@@ -11,3 +11,7 @@ https://onnx.ai
 ### Block Chain
 
 https://github.com/paritytech/substrate
+
+### Rust
+
+https://cheats.rs
