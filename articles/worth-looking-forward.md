@@ -4,18 +4,14 @@ description: The future is always awesome
 date: 2018-12-02
 ---
 
-## 2022 Decentralized (lockdown in 2021-12-??)
+## 2021 Cloud + Edge + P2P (lockdown in 2020-12-??)
 
-## 2021 Cloud (lockdown in 2020-12-??)
+* `HTTP/3` -> P2P over `HTTP/3`
 
 ### Cloud Native Development
 
 * Visual Studio Online + Github
 * Azure (20+%) over GCP (10+%)
-
-### VR, 自动驾驶
-
-* 上海, 自动驾驶, 出租车, 滴滴
 
 ### Fuchsia
 
