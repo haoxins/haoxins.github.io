@@ -8,7 +8,7 @@ date: 2018-12-02
 
 ### Edge & P2P
 
-* `HTTP/3` -> P2P over `HTTP/3`
+* P2P over `Noise`
 
 ### Cloud Native Development
 
@@ -21,7 +21,7 @@ date: 2018-12-02
 
 ------------------
 
-## 2020 Serverless (lockdown in 2019-11-24)
+## 2020 Serverless & WebAssembly (lockdown in 2019-12-12)
 
 * [WASI: WebAssembly System Interface](https://wasi.dev)
   - Best runtime
@@ -29,7 +29,8 @@ date: 2018-12-02
   - [Github: WebAssembly/WASI](https://github.com/WebAssembly/WASI)
   - [Node.js WASI](https://github.com/nodejs/wasi)
   - `LLVM 8`: the WebAssembly target is now built by default
-* [QUIC](https://quicwg.org)
+* [WebAssembly Interface Types Spec](https://github.com/WebAssembly/interface-types)
+* [QUIC to HTTP/3](https://quicwg.org)
   - Best network protocol
   - [Github: quicwg/base-drafts](https://github.com/quicwg/base-drafts)
 * Cloud Platform: Azure, GCP
