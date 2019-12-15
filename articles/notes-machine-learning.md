@@ -55,9 +55,3 @@ how to choose features:
 * Ceiling Analysis
 * Online Learning
 
-## logistic regression (classification problems)
-
-* [Logistic regression](https://en.wikipedia.org/wiki/Logistic_regression)
-* [Logistic function](https://en.wikipedia.org/wiki/Logistic_function)
-* [Activation function](https://en.wikipedia.org/wiki/Activation_function)
-* [Sigmoid function](https://en.wikipedia.org/wiki/Sigmoid_function)

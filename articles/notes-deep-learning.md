@@ -144,3 +144,10 @@ date: 2019-09-08
 * Beam Search algorithm
 * Bleu Score
 * Attention Model
+
+## Refs
+
+* [Logistic regression](https://en.wikipedia.org/wiki/Logistic_regression)
+* [Logistic function](https://en.wikipedia.org/wiki/Logistic_function)
+* [Activation function](https://en.wikipedia.org/wiki/Activation_function)
+* [Sigmoid function](https://en.wikipedia.org/wiki/Sigmoid_function)
