@@ -6,16 +6,17 @@ date: 2019-05-30
 
 ### 2020
 
-### 2019
-
 * [Cryptography II](https://www.coursera.org/learn/crypto2)
   - Grade Achieved: ``
+
+### 2019
 
 * [Cryptography I](https://www.coursera.org/learn/crypto)
   - Grade Achieved: ``
 
 * [Machine Learning](https://www.coursera.org/learn/machine-learning)
-  - Grade Achieved: ``
+  - Grade Achieved: `98.0%`
+  - https://www.coursera.org/account/accomplishments/certificate/2DZGV8YLKAWC
 
 * [Deep Learning](https://www.coursera.org/specializations/deep-learning)
   - https://www.coursera.org/account/accomplishments/specialization/WVK5UDQCN8DN
