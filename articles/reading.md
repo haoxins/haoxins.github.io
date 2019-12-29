@@ -12,32 +12,25 @@ date: 2018-04-01
 
 ------------------
 
-### 2020 年度 Top.1 书籍
-
-* [???](https://magi.com)
-
-### 2019 年度 Top.1 书籍
-
-* [为什么: 关于因果关系的新科学](https://book.douban.com/subject/33438811/)
-  - 难以说: 一定是 `突破|革命`, 但是, 很好的 浇了 近几年 (约 2016+) `AI 盲热` 一盆冷水
-  - `前路漫漫兮`
-
-------------------
-
 ### 2020
 
 ------------------
 
 ### 2019
 
+* [什么是数学 (What is Mathematics)](https://book.douban.com/subject/1320282/)
+  - 这是一本 `科普书`, 对于普通人而言, 还是远离 专业数学书籍 (哈哈哈)
+  - 数学的 `历史脉络`, 不同时期的 `思想风潮`
+
+* [为什么: 关于因果关系的新科学](https://book.douban.com/subject/33438811/)
+  - 难以说: 一定是 `突破|革命`, 但是, 很好的 浇了 近几年 (约 2016+) `AI 盲热` 一盆冷水
+  - `前路漫漫兮`
+
 * [直觉泵和其他思考工具](https://book.douban.com/subject/30340107/)
   - ?
 
 * [Clean Architecture](https://book.douban.com/subject/30290504/)
   - 实而不虚聊 `Architecture`
-
-* [什么是数学 (What is Mathematics)](https://book.douban.com/subject/1320282/)
-  - 数学的 `历史脉络`, 不同时期的 `思想风潮`
 
 * [深度学习的数学](https://book.douban.com/subject/33414479/)
   - 受之前系列图书的影响, 对 `日本作者` 写的 `数学书籍` 有好感
