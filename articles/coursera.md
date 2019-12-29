@@ -12,7 +12,8 @@ date: 2019-05-30
 ### 2019
 
 * [Cryptography I](https://www.coursera.org/learn/crypto)
-  - Grade Achieved: ``
+  - Grade Achieved: `92.2%`
+  - https://www.coursera.org/account/accomplishments/certificate/QDF8EK525SKE
 
 * [Machine Learning](https://www.coursera.org/learn/machine-learning)
   - Grade Achieved: `98.0%`

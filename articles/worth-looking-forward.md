@@ -18,6 +18,11 @@ date: 2018-12-02
 ### Fuchsia
 
 * Release v1
+* First device: Tablet
+
+### Rust
+
+* Maybe never `v2` (Broken) ?
 
 ------------------
 
