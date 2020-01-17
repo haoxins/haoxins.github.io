@@ -4,9 +4,9 @@ description: The future is always awesome
 date: 2018-12-02
 ---
 
-## 2021 Cloud + Edge + P2P (lockdown in 2020-12-??)
+## 2021 Cloud + Edge (lockdown in 2020-12-??)
 
-### Edge & P2P
+### Edge
 
 * P2P over `Noise`
 
