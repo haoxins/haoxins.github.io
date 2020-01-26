@@ -11,13 +11,14 @@ date: 2019-10-24
 ### Timeline
 
 * 2020-02
-  - https://www.youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc
+  - [The Age of A.I.](https://www.youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc)
+  - YouTube 打造
 
 * 2020-01
-  - 受武汉肺炎疫情影响, 春节档电影全部撤档
-  - 抖音 & 徐峥导演团队合作, 春节档电影 囧妈 大年初一在抖音免费播出
+  - 受 `武汉肺炎疫情` 影响, 春节档电影全部撤档
+  - `抖音` & 徐峥导演团队合作, 春节档电影 `囧妈`, 大年初一在抖音免费播出
   - 此举打破了电影发行的规则
-  - 个人觉得, 会加速: `5G`, `VR`, 在线付费影视 发展
+  - 个人认为, 全国性的肺炎疫情, 会加速 `5G`, `VR`, `在线付费影视` 发展
 
 * 2020-01
   - 爱奇艺 网剧 `唐人街探案` 不错, 共3个案件 (12集), 最后一个案件较水
