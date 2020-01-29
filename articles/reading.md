@@ -34,9 +34,6 @@ date: 2018-04-01
 
 ### 2019
 
-* [非平面](https://book.douban.com/subject/30327868/)
-  - 第一次看到这种类型的漫画
-
 * [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
   - 从 `古老的概念` 关联到 最新的 `量子前沿`, 一流的 `科普` 就是 超一流的 `科幻`
   - 相对论 时空 `场`: 最易懂的 人文式讲解
@@ -49,6 +46,9 @@ date: 2018-04-01
 
 * [臣服实验](https://book.douban.com/subject/30384422/)
   - 平静 ~
+
+* [非平面](https://book.douban.com/subject/30327868/)
+  - 第一次看到这种类型的漫画
 
 * [直觉泵和其他思考工具](https://book.douban.com/subject/30340107/)
   - 简单地浏览了一遍
