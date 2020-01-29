@@ -14,14 +14,6 @@ date: 2018-04-01
 
 ### 2020
 
-------------------
-
-### 2019
-
-* [什么是数学 (What is Mathematics)](https://book.douban.com/subject/1320282/)
-  - 这是一本 `科普书`, 对于普通人而言, 还是远离 专业数学书籍 (哈哈哈)
-  - 数学的 `历史脉络`, 不同时期的 `思想风潮`
-
 * [为什么: 关于因果关系的新科学](https://book.douban.com/subject/33438811/)
   - 是本好书, 但由于看之前期望过高, 有点一丢丢的失望
   - 很好的 浇了 近几年 (约 2016+) `AI 盲热` 一盆冷水
@@ -29,16 +21,24 @@ date: 2018-04-01
   - 作者的学识兼具 `广度` & `深度`,
   - 讲解具有: `时代背景 (历史脉络)`, `通俗易懂`
 
+* [深度学习的数学](https://book.douban.com/subject/33414479/)
+  - 受之前系列图书的影响, 对 `日本作者` 写的 `数学书籍` 有好感
+  - 第一次在 `图灵社区` 购买 `电子书`
+  - [图灵社区](https://www.ituring.com.cn)
+
+* [什么是数学 (What is Mathematics)](https://book.douban.com/subject/1320282/)
+  - 这是一本 `科普书`, 对于普通人而言, 还是远离 专业数学书籍 (哈哈哈)
+  - 数学的 `历史脉络`, 不同时期的 `思想风潮`
+
+------------------
+
+### 2019
+
 * [直觉泵和其他思考工具](https://book.douban.com/subject/30340107/)
   - ?
 
 * [Clean Architecture](https://book.douban.com/subject/30290504/)
   - 实而不虚聊 `Architecture`
-
-* [深度学习的数学](https://book.douban.com/subject/33414479/)
-  - 受之前系列图书的影响, 对 `日本作者` 写的 `数学书籍` 有好感
-  - 第一次在 `图灵社区` 购买 `电子书`
-  - [图灵社区](https://www.ituring.com.cn)
 
 * [程序员的数学 3册](https://book.douban.com/subject/19949020/)
   - [程序员的数学](https://book.douban.com/subject/19949020/)
