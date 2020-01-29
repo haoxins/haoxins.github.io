@@ -34,20 +34,6 @@ date: 2018-04-01
 
 ### 2019
 
-* [直觉泵和其他思考工具](https://book.douban.com/subject/30340107/)
-  - ?
-
-* [Clean Architecture](https://book.douban.com/subject/30290504/)
-  - 实而不虚聊 `Architecture`
-
-* [程序员的数学 3册](https://book.douban.com/subject/19949020/)
-  - [程序员的数学](https://book.douban.com/subject/19949020/)
-  - [程序员的数学2 概率统计](https://book.douban.com/subject/26593822/)
-  - [程序员的数学3 线性代数](https://book.douban.com/subject/26740548/)
-  - 用新的视角重新理解之前的数学概念 (趣)
-  - 将数学理论带入实践场景 (用)
-  - 矩阵 -> 映射
-
 * [非平面](https://book.douban.com/subject/30327868/)
   - 第一次看到这种类型的漫画
 
@@ -63,6 +49,20 @@ date: 2018-04-01
 
 * [臣服实验](https://book.douban.com/subject/30384422/)
   - 平静 ~
+
+* [直觉泵和其他思考工具](https://book.douban.com/subject/30340107/)
+  - 简单地浏览了一遍
+  - 对于大部分章节, 没有太多兴趣
+
+* [Clean Architecture](https://book.douban.com/subject/30290504/)
+  - 实而不虚聊 `Architecture`
+
+* [程序员的数学 3册](https://book.douban.com/subject/19949020/)
+  - [程序员的数学](https://book.douban.com/subject/19949020/)
+  - [程序员的数学2 概率统计](https://book.douban.com/subject/26593822/)
+  - [程序员的数学3 线性代数](https://book.douban.com/subject/26740548/)
+  - 用新的视角重新理解之前的数学概念 (趣)
+  - 将数学理论带入实践场景 (用)
 
 * [研究之美](https://book.douban.com/subject/7064456/)
   - 高德纳 数日之间 信手拈来的 小品, 演绎 数学的 `数`, `理`, `绎`
