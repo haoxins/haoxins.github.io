@@ -15,6 +15,10 @@ date: 2018-12-02
 * Visual Studio Online + Github
 * Azure (20+%) over GCP (10+%)
 
+### Deep Learning
+
+* [PyTorch](https://github.com/pytorch/pytorch) over TensorFlow
+
 ### Fuchsia
 
 * Release v1
