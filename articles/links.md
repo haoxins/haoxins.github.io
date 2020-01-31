@@ -12,6 +12,4 @@ https://onnx.ai
 
 https://github.com/paritytech/substrate
 
-### Rust
 
-https://cheats.rs
