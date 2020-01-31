@@ -1,8 +1,3 @@
----
-title: OKR
-description: My OKR
-date: 2019-05-26
----
 
 ### 2020 年度关键词 (暂定)
 
