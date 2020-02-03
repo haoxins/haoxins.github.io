@@ -10,7 +10,6 @@ date: 2019-06-28
 
 * `Callers Auth`
 * `Region`, `Time Zone`
-## 2020
 
 ### Functions
 
@@ -38,21 +37,17 @@ date: 2019-06-28
 
 * Automatic provisioning of clusters
 * BigTable, Cloud functions, BigQuery
-* Machine Learning
 
 BigQuery, TensorFlow, Cloud ML Engine
 
 * Dataprep (by Trifacta, base on DataFlow)
 
-### GCP BigQuery
+### BigQuery
 
 * 尽量使 `Scheduled queries` 越简单越好, 把复杂逻辑保存为 `Views`
   - 当 `DEBUG` 或 `change` 逻辑时, 变更 `Views` 不需要变更 `Scheduled queries`
-  - `风险`: 被别人 误改 (泪)
 
-### GCP tools
-
-GCP Role -> Team
+### Tools
 
 https://cloud.google.com/apigee/
 https://cloud.google.com/endpoints/
