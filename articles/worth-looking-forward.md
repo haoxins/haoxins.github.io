@@ -26,10 +26,10 @@ date: 2018-12-02
 * Release v1
 * First device: Tablet
 
-### Rust
+### WebAssembly
 
-* Maybe never `v2` (Broken) ?
-* If [WebGPU](https://github.com/gfx-rs/wgpu) + WebAssembly ?
+* [pyodide: The Python scientific stack, compiled to WebAssembly.](https://github.com/iodide-project/pyodide)
+* [WebGPU](https://github.com/gfx-rs/wgpu)
 
 ------------------
 
