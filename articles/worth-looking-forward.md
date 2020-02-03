@@ -29,6 +29,7 @@ date: 2018-12-02
 ### Rust
 
 * Maybe never `v2` (Broken) ?
+* If [WebGPU](https://github.com/gfx-rs/wgpu) + WebAssembly ?
 
 ------------------
 
