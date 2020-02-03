@@ -4,15 +4,15 @@ description: We can do something
 date: 2019-09-08
 ---
 
-## ?
+## 2020
 
-https://onnx.ai
+### Papers
 
-https://www.openai.com
+[MEMO](https://arxiv.org/pdf/2001.10913.pdf)
 
-[CS231n: Convolutional Neural Networks for Visual Recognition](https://github.com/cs231n/cs231n.github.io)
+### IDEs
 
-[Understanding Neural Networks. From neuron to RNN, CNN, and Deep Learning](https://towardsdatascience.com/understanding-neural-networks-from-neuron-to-rnn-cnn-and-deep-learning-cd88e90e0a90)
+https://nbdev.fast.ai
 
 ## Structuring Deep Learning Projects
 
@@ -148,10 +148,3 @@ https://www.openai.com
 * Beam Search algorithm
 * Bleu Score
 * Attention Model
-
-## Refs
-
-* [Logistic regression](https://en.wikipedia.org/wiki/Logistic_regression)
-* [Logistic function](https://en.wikipedia.org/wiki/Logistic_function)
-* [Activation function](https://en.wikipedia.org/wiki/Activation_function)
-* [Sigmoid function](https://en.wikipedia.org/wiki/Sigmoid_function)
