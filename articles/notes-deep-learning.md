@@ -14,6 +14,8 @@ date: 2019-09-08
 
 https://nbdev.fast.ai
 
+------------------
+
 ## Structuring Deep Learning Projects
 
 * Orthogonalization

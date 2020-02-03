@@ -9,6 +9,8 @@ date: 2019-05-30
 * [Cryptography II](https://www.coursera.org/learn/crypto2)
   - Grade Achieved: ``
 
+------------------
+
 ### 2019
 
 * [Cryptography I](https://www.coursera.org/learn/crypto)
