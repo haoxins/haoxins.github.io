@@ -6,6 +6,9 @@ date: 2019-06-28
 
 ------------------
 
+## 2020 Serverless (GCP)
+
+* `Callers Auth`
 * `Region`, `Time Zone`
 ## 2020
 
