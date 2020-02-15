@@ -32,6 +32,7 @@ date: 2018-04-01
   - 期待 私人 (`埃隆·马斯克`) 公司 `SpaceX` 的未来
   - 中国的国际合作明显不足
   - 期待 `NASA` 能拍一个纪录片
+  - 慢是高效的, 高效的才是快速的, 慢就是快
 
 * [发布! 设计与部署稳定的分布式系统(第2版)](https://www.ituring.com.cn/book/2622)
   - 比很多堆砌热门名词的书好很多, 真实案例丰富
@@ -86,7 +87,7 @@ Surrender - what an amazingly powerful word. It often
 engenders the thought of weakness and cowardice. In my
 case, it required all the strength I had to be brave enough
 to follow the invisible into the unknown. And that is
-exactly what I was doing. It' s not that surrender gave me
+exactly what I was doing. It's not that surrender gave me
 clarity about where I was going I had no idea where it
 would lead me. But surrender did give me clarity in one
 essential area: my personal preferences of like and dislike
