@@ -80,7 +80,20 @@ date: 2018-04-01
     * 不指望一次性消化吸收这些烧脑的东西, 留着很多疑惑与不解, 期待下一部科普著作
 
 * [臣服实验](https://book.douban.com/subject/30384422/)
-  - 平静 ~
+
+```
+Surrender - what an amazingly powerful word. It often
+engenders the thought of weakness and cowardice. In my
+case, it required all the strength I had to be brave enough
+to follow the invisible into the unknown. And that is
+exactly what I was doing. It' s not that surrender gave me
+clarity about where I was going I had no idea where it
+would lead me. But surrender did give me clarity in one
+essential area: my personal preferences of like and dislike
+were not going to guide my life. By surrendering the hold
+those powerful forces had on me, I was allowing my life to
+be guided by a much more powerful force, life itself.
+```
 
 * [非平面](https://book.douban.com/subject/30327868/)
   - 第一次看到这种类型的漫画
