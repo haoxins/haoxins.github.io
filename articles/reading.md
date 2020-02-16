@@ -20,6 +20,19 @@ date: 2018-04-01
 
 ### 2020
 
+* [穿越平行宇宙](https://book.douban.com/subject/27045352/)
+  - 中文书名估计是为了 `畅销` :)
+  - 英文原名 `Our Mathematical Universe - My Quest for the Ultimate Nature of Reality`
+
+* [奇妙量子世界: 人人都能看懂的量子科学漫画](https://book.douban.com/subject/34614807/)
+  - `国产` 科普, `优秀` 作品
+  - `书籍`, `漫画`, `视频` 很开心看到国内团队 `真心` 做科普
+
+* [算法之美: 指导工作与生活的算法](https://book.douban.com/subject/30155731/)
+  - 英文原名 `Algorithms to Live By`
+  - 算是 `计算机` `科普`, 有深度, 易读
+  - 国内计算机 `专业|科普` 书籍尚差一定水准. `不够真心` (`奇妙量子世界` 是真心作品)
+
 * [深度学习的数学](https://book.douban.com/subject/33414479/)
   - 受之前系列图书的影响, 对 `日本作者` 写的 `数学书籍` 有好感
   - 第一次在 `图灵社区` 购买 `电子书`
