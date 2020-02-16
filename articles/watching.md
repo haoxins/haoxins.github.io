@@ -13,6 +13,7 @@ date: 2019-10-24
 * 2020-02
   - [The Age of A.I.](https://www.youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc)
   - YouTube 打造
+  - 内容本身还行, 可以练英语听力 :)
 
 * 2020-01
   - 受 `武汉肺炎疫情` 影响, 春节档电影全部撤档
