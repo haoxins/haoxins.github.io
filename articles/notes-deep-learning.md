@@ -6,6 +6,8 @@ date: 2019-09-08
 
 ## 2020
 
+图神经网络
+
 ### Papers
 
 [MEMO](https://arxiv.org/pdf/2001.10913.pdf)
