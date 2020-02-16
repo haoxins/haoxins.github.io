@@ -12,9 +12,9 @@ date: 2019-10-24
 
 * 2020-02
   - [The Age of A.I.](https://www.youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc)
-  - YouTube 打造
-  - 内容本身 `还行`, 可以练英语 `听力` :)
-  - Google 是努力让社会认知: Google = AI
+  - YouTube 打造, 有科技, 有愿景, 有温情, 有希望
+  - 内容本身 `很不错`, 还可以练英语 `听力` :)
+  - Google 是努力让社会认知: `AI` 帮助, 而非威胁 `人类`
   - 了解各个 `行业`, `高校`, `公司`, `工作室` 的前沿成果, 还是不错的
   - `机械臂`
 
