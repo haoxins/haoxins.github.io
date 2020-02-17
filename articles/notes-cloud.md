@@ -4,7 +4,9 @@ description: Cloud is future ~
 date: 2019-06-28
 ---
 
-## 2021 Coding online
+## 2021 ???
+
+https://www.gqlstandards.org
 
 ------------------
 
