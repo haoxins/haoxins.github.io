@@ -25,6 +25,10 @@ date: 2019-07-13
   - `火焰纹章`: 风花雪夜
     * 对战(战棋) `Game boy` 现代版
 
+* Google 投资的公司 `Ubiquity6` 开发的 App `Display.land`  挺有意思的
+  - Display.land Creator - 3D Model Scanner, Capture and Edit Reality
+  - 期待今年的 `iPhone12`, `5G`, `高精度相机`, `A14 处理器`
+
 * 2020-01
   - `武汉肺炎疫情` 造成了全国范围内的影响
   - 公共场所关闭, 延迟上班, 延迟开学, 春节档电影撤档
