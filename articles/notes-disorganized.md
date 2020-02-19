@@ -27,7 +27,7 @@ date: 2019-07-13
 
 * Google 投资的公司 `Ubiquity6` 开发的 App `Display.land`  挺有意思的
   - Display.land Creator - 3D Model Scanner, Capture and Edit Reality
-  - 期待今年的 `iPhone12`, `5G`, `高精度相机`, `A14 处理器`
+  - 期待今年的 `iPhone 12`, `5G`, `高精度相机`, `A14 处理器`
   - `4G` 网络下体验并不好, 加载延迟很大 (可能国内无 CDN)
 
 * 2020-01
