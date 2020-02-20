@@ -24,8 +24,7 @@ date: 2018-04-01
   - 中文书名估计是为了 `畅销` :)
   - 英文原名 `Our Mathematical Universe - My Quest for the Ultimate Nature of Reality`
 
-* [生成对抗网络项目实战]()
-  - TODO
+* [生成对抗网络项目实战](https://www.ituring.com.cn/book/2681)
 
 * [奇妙量子世界: 人人都能看懂的量子科学漫画](https://book.douban.com/subject/34614807/)
   - `国产` 科普, `优秀` 作品
