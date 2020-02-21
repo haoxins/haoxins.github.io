@@ -8,10 +8,13 @@ date: 2019-10-24
 
 * [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
 
-### Timeline
+------------------
 
-* 2020-02
-  - [The Age of A.I.](https://www.youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc)
+### 2020
+
+* [MIT 6.824: Distributed Systems](https://www.youtube.com/channel/UC_7WrbZTCODu1o_kfUMq88g)
+
+* [The Age of A.I.](https://www.youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc)
   - YouTube 打造, 有科技, 有愿景; 有温情, 有希望
   - 内容本身 `很不错`, 还可以练英语 `听力` :)
   - Google 是努力让社会认识: `AI` 帮助, 而非威胁 `人类`
@@ -31,13 +34,17 @@ date: 2019-10-24
   - 腾讯视频 纪录片 `风云战国-列国` 很不错
   - `罪恶黑名单` (第七季)
 
+------------------
+
+### 2019
+
 * 2019-12 ~ 2020-01
   - 腾讯视频 `庆余年(第一季)` 挺不错
   - 第一季最后, 范闲在北齐拜见庄墨韩, 令人回味
   - 庄墨韩: 我这一生, 活得快活
 
 * 2019-12
-  - Bilibili (哔哩哔哩) 纪录片: 河西走廊
+  - Bilibili (哔哩哔哩) 纪录片: `河西走廊`
   - 国庆节 黄土高坡 归来, 看这个纪录片, 承前启后
   - 下一站 国内深度游 `甘肃`
 
