@@ -24,7 +24,6 @@ date: 2018-04-01
   - 中文书名估计是为了 `畅销` :)
   - 英文原名 `Our Mathematical Universe - My Quest for the Ultimate Nature of Reality`
 
-* [生成对抗网络项目实战](https://www.ituring.com.cn/book/2681)
 
 * [奇妙量子世界: 人人都能看懂的量子科学漫画](https://book.douban.com/subject/34614807/)
   - `国产` 科普, `优秀` 作品
@@ -34,6 +33,9 @@ date: 2018-04-01
   - 英文原名 `Algorithms to Live By`
   - 算是 `计算机 & 科普`, 有深度, 易读
   - 国内计算机 `专业|科普` 书籍尚差一定水准. `不够真心` (`奇妙量子世界` 是真心作品)
+
+
+* [生成对抗网络项目实战](https://www.ituring.com.cn/book/2681)
 
 * [深度学习的数学](https://book.douban.com/subject/33414479/)
   - 受之前系列图书的影响, 对 `日本作者` 写的 `数学书籍` 有好感
