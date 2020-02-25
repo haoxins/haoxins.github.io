@@ -4,7 +4,8 @@ description: The only language ~
 date: 2020-02-24
 ---
 
-* Pattern first, `=>`
+* Pattern first, `=>`, `match`
+  - `ref`, `@`
 * `fn`, `->`
 * Immutable default, `Shadowing`
 * `Char`, `''`, single quotes
@@ -16,6 +17,9 @@ date: 2020-02-24
 * `Expression`, `(with ;)`, return value `(...)`
 * `Expressions`: `if`
 * `Statement`, `(no ;)`
+* `Ownership`, `References`, `Borrowing`, `Lifetime`
+  - `Copy` trait
+  - `'a`, `'static`
 
 ```rust
 // pattern
