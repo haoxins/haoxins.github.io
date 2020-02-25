@@ -14,6 +14,10 @@ date: 2019-10-24
 
 * [MIT 6.824: Distributed Systems](https://www.youtube.com/channel/UC_7WrbZTCODu1o_kfUMq88g)
 
+* [星际穿越](https://movie.douban.com/subject/1889243/)
+  - 在腾讯视频重温了一遍, 依旧不错
+  - 比起电影院的效果, 差了很多
+
 * [The Age of A.I.](https://www.youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc)
   - YouTube 打造, 有科技, 有愿景; 有温情, 有希望
   - 内容本身 `很不错`, 还可以练英语 `听力` :)
