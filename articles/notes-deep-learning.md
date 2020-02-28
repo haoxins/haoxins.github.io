@@ -10,8 +10,6 @@ date: 2019-09-08
 
 ### Papers
 
-[MEMO](https://arxiv.org/pdf/2001.10913.pdf)
-
 ### IDEs
 
 https://nbdev.fast.ai

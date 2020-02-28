@@ -8,6 +8,8 @@ date: 2018-12-02
 
 ## 2021 Cloud + Edge (lockdown in 2020-12-??)
 
+### BlockChain
+
 ### Edge
 
 * P2P over `Noise`
@@ -15,7 +17,7 @@ date: 2018-12-02
 ### Cloud Native Development
 
 * Visual Studio Online + Github
-* Azure (20+%) over GCP (10+%)
+* Azure or GCP
 
 ### Deep Learning
 
@@ -24,7 +26,6 @@ date: 2018-12-02
 ### Fuchsia
 
 * Release v1
-* First device: Tablet
 
 ### WebAssembly
 
