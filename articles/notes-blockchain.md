@@ -8,10 +8,8 @@ date: 2019-12-10
 
 ## 2020
 
-https://github.com/tox-rs/tox
+### Papers
 
-https://noiseprotocol.org
+### Protocols
 
-https://github.com/ZcashFoundation/zebra
-
-https://www.nervos.org
+* [Noise](https://noiseprotocol.org)
