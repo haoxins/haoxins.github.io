@@ -24,12 +24,11 @@ date: 2018-04-01
   - 中文书名估计是为了 `畅销` :)
   - 英文原名 `Our Mathematical Universe - My Quest for the Ultimate Nature of Reality`
 
-
 * [奇妙量子世界: 人人都能看懂的量子科学漫画](https://book.douban.com/subject/34614807/)
   - `国产` 科普, `优秀` 作品
   - `书籍`, `漫画`, `视频` 很开心看到国内团队 `真心` 做科普
   - `潘建伟`
-  - 下一步: `拓扑学`
+  - 下一步: `拓扑学`, 候选书籍: `拓扑学奇趣`
 
 * [算法之美: 指导工作与生活的算法](https://book.douban.com/subject/30155731/)
   - 英文原名 `Algorithms to Live By`
