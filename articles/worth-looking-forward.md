@@ -8,6 +8,8 @@ date: 2018-12-02
 
 ## 2021 Cloud + Edge (lockdown in 2020-12-??)
 
+https://www.gqlstandards.org
+
 ### BlockChain
 
 ### Edge
