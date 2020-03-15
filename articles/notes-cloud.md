@@ -4,16 +4,11 @@ description: Cloud is future ~
 date: 2019-06-28
 ---
 
-## 2021 ???
 
 https://www.gqlstandards.org
 
-------------------
 
-## 2020 Serverless (GCP)
 
-* `Callers Auth`
-* `Region`, `Time Zone`
 
 ### Functions
 
