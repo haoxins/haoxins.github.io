@@ -10,20 +10,9 @@ date: 2018-12-02
 
 https://www.gqlstandards.org
 
-### BlockChain
+### Serverless
 
-### Edge
-
-* P2P over `Noise`
-
-### Cloud Native Development
-
-* Visual Studio Online + Github
-* Azure or GCP
-
-### Deep Learning
-
-* [PyTorch](https://github.com/pytorch/pytorch) over TensorFlow
+[Istio](https://istio.io) + Serverless
 
 ### Fuchsia
 
