@@ -27,7 +27,7 @@ date: 2018-04-01
   - 中文书名估计是为了 `畅销` :)
   - 英文原名 `Our Mathematical Universe - My Quest for the Ultimate Nature of Reality`
 
-* [天才的拓荒者:  冯·诺伊曼传](https://book.douban.com/subject/3464889/)
+* [天才的拓荒者: 冯·诺伊曼传](https://book.douban.com/subject/3464889/)
   - 首先, 想去 `布达佩斯` 旅游
 
 * [奇妙量子世界: 人人都能看懂的量子科学漫画](https://book.douban.com/subject/34614807/)
