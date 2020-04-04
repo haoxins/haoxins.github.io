@@ -1,5 +1,5 @@
 ---
-title: Rust
+title: Rust & C++
 description: The only language ~
 date: 2020-02-24
 ---

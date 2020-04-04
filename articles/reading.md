@@ -20,6 +20,11 @@ date: 2018-04-01
 
 ### 2020
 
+* [Effective Modern C++](https://book.douban.com/subject/30178902/)
+
+* [强力与弱力](https://book.douban.com/subject/26785898/)
+  - 一本小册子, 猜想为主
+
 * [绳圈的数学](https://book.douban.com/subject/6751238/)
   - 似懂非懂 (>_<)
 
