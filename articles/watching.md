@@ -13,6 +13,8 @@ date: 2019-10-24
 ### 2020
 
 * [MIT 6.824: Distributed Systems](https://www.youtube.com/channel/UC_7WrbZTCODu1o_kfUMq88g)
+  - 从头到尾, 最吸引我的, 其实是有特色的 `粉笔` (>_<)
+  - 挺贴近最新的业界发展, Golang, AWS ...
 
 * [星际穿越](https://movie.douban.com/subject/1889243/)
   - 在腾讯视频重温了一遍, 依旧不错
