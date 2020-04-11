@@ -20,7 +20,12 @@ date: 2018-04-01
 
 ### 2020
 
+* [沉默的巡游](https://book.douban.com/subject/34786086/)
+  - 好久没看 `东野圭吾` 了
+  - 心目中的 `东野圭吾` `Top1` 依旧是: `白夜行`
+
 * [Effective Modern C++](https://book.douban.com/subject/30178902/)
+  - 个人而言, 基本只有读 `C++` code 的需求
 
 * [强力与弱力](https://book.douban.com/subject/26785898/)
   - 一本小册子, 猜想为主
