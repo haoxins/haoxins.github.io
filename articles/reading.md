@@ -20,10 +20,6 @@ date: 2018-04-01
 
 ### 2020
 
-* [沉默的巡游](https://book.douban.com/subject/34786086/)
-  - 好久没看 `东野圭吾` 了
-  - 心目中的 `东野圭吾` `Top1` 依旧是: `白夜行`
-
 * [Effective Modern C++](https://book.douban.com/subject/30178902/)
   - 个人而言, 基本只有读 `C++` code 的需求
 
@@ -36,6 +32,12 @@ date: 2018-04-01
 * [穿越平行宇宙](https://book.douban.com/subject/27045352/)
   - 中文书名估计是为了 `畅销` :)
   - 英文原名 `Our Mathematical Universe - My Quest for the Ultimate Nature of Reality`
+
+* [沉默的巡游](https://book.douban.com/subject/34786086/)
+  - 好久没看 `东野圭吾` 了, `五一旅途看完`
+  - 心目中的 `东野圭吾` `Top1` 依旧是: `白夜行`
+  - 没有白夜行看完后的那种久久无法释怀, 但也值得回味
+  - 不惊喜, 不失望
 
 * [天才的拓荒者: 冯·诺伊曼传](https://book.douban.com/subject/3464889/)
   - 首先, 想去 `布达佩斯` 旅游
