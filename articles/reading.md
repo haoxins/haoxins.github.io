@@ -20,9 +20,6 @@ date: 2018-04-01
 
 ### 2020
 
-* [强力与弱力](https://book.douban.com/subject/26785898/)
-  - 一本小册子, 猜想为主
-
 * [绳圈的数学](https://book.douban.com/subject/6751238/)
   - 似懂非懂 (>_<)
 
@@ -32,6 +29,11 @@ date: 2018-04-01
 
 * [Effective Modern C++](https://book.douban.com/subject/30178902/)
   - 个人而言, 基本只有读 `C++` code 的需求
+
+* [强力与弱力](https://book.douban.com/subject/26785898/)
+  - 一本小册子, 猜想为主, `五一旅途看完`
+  - 对发现 `希格斯玻色子` 的意义有了更深的认知
+  - 不如, `现实不似你所见: 量子引力之旅`
 
 * [沉默的巡游](https://book.douban.com/subject/34786086/)
   - 好久没看 `东野圭吾` 了, `五一旅途看完`
