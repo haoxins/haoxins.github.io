@@ -20,9 +20,6 @@ date: 2018-04-01
 
 ### 2020
 
-* [Effective Modern C++](https://book.douban.com/subject/30178902/)
-  - 个人而言, 基本只有读 `C++` code 的需求
-
 * [强力与弱力](https://book.douban.com/subject/26785898/)
   - 一本小册子, 猜想为主
 
@@ -32,6 +29,9 @@ date: 2018-04-01
 * [穿越平行宇宙](https://book.douban.com/subject/27045352/)
   - 中文书名估计是为了 `畅销` :)
   - 英文原名 `Our Mathematical Universe - My Quest for the Ultimate Nature of Reality`
+
+* [Effective Modern C++](https://book.douban.com/subject/30178902/)
+  - 个人而言, 基本只有读 `C++` code 的需求
 
 * [沉默的巡游](https://book.douban.com/subject/34786086/)
   - 好久没看 `东野圭吾` 了, `五一旅途看完`
