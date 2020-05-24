@@ -14,11 +14,11 @@ date: 2019-05-26
 
 ### Quantum computing
 
-* 很多零散的热点事件
+* 局部的突破
 
 ### Deep learning
 
-* 无明显突破
+* 无重大突破
 
 ### 社会
 
