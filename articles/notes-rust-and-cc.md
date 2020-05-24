@@ -4,6 +4,12 @@ description: The only language ~
 date: 2020-02-24
 ---
 
+## 概述
+
+* Rust 蚕食 C/C++
+
+## ...
+
 * Pattern first, `=>`, `match`
   - `ref`, `@`
 * `fn`, `->`
