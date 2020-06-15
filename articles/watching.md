@@ -12,6 +12,11 @@ date: 2019-10-24
 
 ### 2020
 
+* 2020-06
+  - 爱奇艺, **迷雾剧场** 十日游戏
+  - 东野圭吾 小说改编
+  - [十日游戏](https://movie.douban.com/subject/26986843/)
+
 * [MIT 6.824: Distributed Systems](https://www.youtube.com/channel/UC_7WrbZTCODu1o_kfUMq88g)
   - 从头到尾, 最吸引我的, 其实是有特色的 `粉笔` (>_<)
   - 挺贴近最新的业界发展, Golang, AWS ...
