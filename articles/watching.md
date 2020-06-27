@@ -14,8 +14,12 @@ date: 2019-10-24
 
 * 2020-06
   - 爱奇艺, **迷雾剧场** 十日游戏
-  - 东野圭吾 小说改编
+  - 东野圭吾 小说改编 **十日游戏**
   - [十日游戏](https://movie.douban.com/subject/26986843/)
+  - 穿插着看了 无证之罪, 地域特色明显, 东北味, 不错
+  - [无证之罪](https://movie.douban.com/subject/26930540/)
+  - **隐秘的角落** **端午节** 看完, 挺压抑的
+  - [隐秘的角落](https://movie.douban.com/subject/33404425/)
 
 * [MIT 6.824: Distributed Systems](https://www.youtube.com/channel/UC_7WrbZTCODu1o_kfUMq88g)
   - 从头到尾, 最吸引我的, 其实是有特色的 `粉笔` (>_<)
