@@ -23,6 +23,7 @@ date: 2019-10-24
   - [无证之罪](https://movie.douban.com/subject/26930540/)
   - **隐秘的角落** **端午节** 看完, 挺压抑的
   - [隐秘的角落](https://movie.douban.com/subject/33404425/)
+  - 隐秘的角落, 无证之罪 改编自 同一个作者
 
 * [MIT 6.824: Distributed Systems](https://www.youtube.com/channel/UC_7WrbZTCODu1o_kfUMq88g)
   - 从头到尾, 最吸引我的, 其实是有特色的 `粉笔` (>_<)
