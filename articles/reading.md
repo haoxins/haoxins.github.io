@@ -23,14 +23,17 @@ date: 2018-04-01
 * [绳圈的数学](https://book.douban.com/subject/6751238/)
   - 似懂非懂 (>_<)
 
-* [穿越平行宇宙](https://book.douban.com/subject/27045352/)
-  - 中文书名估计是为了 `畅销` :)
-  - 英文原名 `Our Mathematical Universe - My Quest for the Ultimate Nature of Reality`
-
 * [算法之美: 指导工作与生活的算法](https://book.douban.com/subject/30155731/)
   - 英文原名 `Algorithms to Live By`
   - 算是 `计算机 & 科普`, 有深度, 易读
   - 国内计算机 `专业|科普` 书籍尚差一定水准. `不够真心` (`奇妙量子世界` 是真心作品)
+
+* [穿越平行宇宙](https://book.douban.com/subject/27045352/)
+  - 中文书名估计是为了 `畅销` :)
+  - 英文原名 `Our Mathematical Universe - My Quest for the Ultimate Nature of Reality`
+  - 个人觉得, 不如: **现实不似你所见: 量子引力之旅**, 更专注于讲透一条线索
+  - 任何物体都不能相对空间做超光速运动, 但空间本身可以被随意拉伸, 不管多快都行
+  - 暴胀理论预言, 我们的宇宙不仅是庞大的, 实际上是无限的, 其中有无限多的星系, 而孕育它们的初始条件都来自最初的随机量子涨落
 
 * [万万没想到: 用理工科思维理解世界 (精装增补版)](https://book.douban.com/subject/35066707/)
   - 没看过 第一版
