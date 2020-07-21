@@ -23,6 +23,12 @@ date: 2018-04-01
 * [绳圈的数学](https://book.douban.com/subject/6751238/)
   - 似懂非懂 (>_<)
 
+* [七周七并发模型](https://book.douban.com/subject/26337939/)
+  - 一般吧 ~
+
+* [成就](??????)
+  - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
+
 * [算法之美: 指导工作与生活的算法](https://book.douban.com/subject/30155731/)
   - 英文原名 `Algorithms to Live By`
   - 算是 `计算机 & 科普`, 有深度, 易读
