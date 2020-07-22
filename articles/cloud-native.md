@@ -8,4 +8,8 @@ date: 2020-07-22
 
 ## DB
 
-* Serverless DB 靠谱么?
+### Serverless DB 靠谱么?
+
+* 按照 **Database -> Table** 的划分模式, **落伍了**
+  - Micro service & Serverless
+* 按照 Database instance 分配资源 (计算/存储), **落伍了**
