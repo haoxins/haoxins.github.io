@@ -12,7 +12,8 @@ https://www.gqlstandards.org
 
 ### Serverless
 
-[Istio](https://istio.io) + Serverless
+* Serverless data pipeline & data flow
+* Serverless database, CRUD by HTTP/3
 
 ### Fuchsia
 
