@@ -8,7 +8,9 @@ date: 2020-07-22
 - **Region Region Region**
 - Develop & Debug
 
-## DB
+## Serverless
+
+* [GCP Serverless](https://cloud.google.com/serverless)
 
 ### Serverless DB 靠谱么?
 
