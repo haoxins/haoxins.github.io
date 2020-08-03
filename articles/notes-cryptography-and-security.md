@@ -14,6 +14,8 @@ date: 2019-06-30
   - https://webauthn.guide
   - https://webauthn.io
 
+* [Homomorphic encryption](https://github.com/homenc/HElib)
+
 ### Stream ciphers
 
 * Stream ciphers (making OTP practical)
