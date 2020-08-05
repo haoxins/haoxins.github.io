@@ -20,6 +20,9 @@ date: 2018-04-01
 * [绳圈的数学](https://book.douban.com/subject/6751238/)
   - 似懂非懂 (>_<)
 
+* [Effective Modern C++](https://book.douban.com/subject/30178902/)
+  - 个人而言, 基本只有读 `C++` code 的需求
+
 * [成就](??????)
   - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
 
@@ -85,9 +88,6 @@ be guided by a much more powerful force, life itself.
 * [算法图解](https://book.douban.com/subject/26979890/)
   - 因为打折 (半价), 所以买了
   - 主要看了后半部分, 还行
-
-* [Effective Modern C++](https://book.douban.com/subject/30178902/)
-  - 个人而言, 基本只有读 `C++` code 的需求
 
 * [强力与弱力](https://book.douban.com/subject/26785898/)
   - 一本小册子, 猜想为主, `五一旅途看完`
