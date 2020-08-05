@@ -22,6 +22,10 @@ date: 2018-04-01
 
 * [成就](??????)
   - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
+
+* [非平面](https://book.douban.com/subject/30327868/)
+  - 第一次看到这种类型的漫画
+
 * [七周七并发模型](https://book.douban.com/subject/26337939/)
   - 一般吧 ~
   - 一直认为: 纯粹的函数式语言不会成为主流 (主流 means Top 10)
@@ -191,10 +195,6 @@ were not going to guide my life. By surrendering the hold
 those powerful forces had on me, I was allowing my life to
 be guided by a much more powerful force, life itself.
 ```
-
-* [非平面](https://book.douban.com/subject/30327868/)
-  - 第一次看到这种类型的漫画
-
 * [什么是数学 (What is Mathematics)](https://book.douban.com/subject/1320282/)
   - 这是一本 `科普书`, 对于普通人而言, 还是远离 专业数学书籍 (哈哈哈)
   - 数学的 `历史脉络`, 不同时期的 `思想风潮`
