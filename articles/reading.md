@@ -31,6 +31,23 @@ date: 2018-04-01
   - 一直认为: 纯粹的函数式语言不会成为主流 (主流 means Top 10)
   - 怀念 Elixir
 
+* [臣服实验](https://book.douban.com/subject/30384422/)
+  - **身体** vs **大脑**, **觉知** vs **思考**
+
+```
+Surrender - what an amazingly powerful word. It often
+engenders the thought of weakness and cowardice. In my
+case, it required all the strength I had to be brave enough
+to follow the invisible into the unknown. And that is
+exactly what I was doing. It's not that surrender gave me
+clarity about where I was going I had no idea where it
+would lead me. But surrender did give me clarity in one
+essential area: my personal preferences of like and dislike
+were not going to guide my life. By surrendering the hold
+those powerful forces had on me, I was allowing my life to
+be guided by a much more powerful force, life itself.
+```
+
 * [跟熊逸一起读唐诗](https://book.douban.com/subject/34826393/)
   - 熊逸老师 在 得到App 的专栏都还不错
   - 最爱的一句话: **站着读经典, 而非跪着读经典**
@@ -179,22 +196,6 @@ date: 2018-04-01
 长度    Lp    存在最小长度
 ```
 
-* [臣服实验](https://book.douban.com/subject/30384422/)
-  - **身体** vs **大脑**, **觉知** vs **思考**
-
-```
-Surrender - what an amazingly powerful word. It often
-engenders the thought of weakness and cowardice. In my
-case, it required all the strength I had to be brave enough
-to follow the invisible into the unknown. And that is
-exactly what I was doing. It's not that surrender gave me
-clarity about where I was going I had no idea where it
-would lead me. But surrender did give me clarity in one
-essential area: my personal preferences of like and dislike
-were not going to guide my life. By surrendering the hold
-those powerful forces had on me, I was allowing my life to
-be guided by a much more powerful force, life itself.
-```
 * [什么是数学 (What is Mathematics)](https://book.douban.com/subject/1320282/)
   - 这是一本 `科普书`, 对于普通人而言, 还是远离 专业数学书籍 (哈哈哈)
   - 数学的 `历史脉络`, 不同时期的 `思想风潮`
