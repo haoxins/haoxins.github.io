@@ -16,9 +16,10 @@ date: 2019-10-24
   - [人民的正义]()
 
 * 2020-08
-  - 灵笼
-  - 雾山五行
-  - 小米电视
+  - 小米电视, 还挺不错
+  - 灵笼 下篇 开启
+  - 看一遍不够 [雾山五行](https://movie.douban.com/subject/30395914/)
+  - 重温 [盗梦空间](https://movie.douban.com/subject/3541415/)
 
 * 2020-07 重温 人民的名义
   - [人民的名义](https://movie.douban.com/subject/26727273/)
