@@ -26,6 +26,12 @@ date: 2018-04-01
 
 ### 2020
 
+* [算法 第4版](https://book.douban.com/subject/19952400/)
+  - 珍藏电子书之一
+
+* [网络是怎样连接的](https://book.douban.com/subject/26941639/)
+  - 珍藏电子书之一
+
 * [绳圈的数学](https://book.douban.com/subject/6751238/)
   - 似懂非懂 (>_<)
 
