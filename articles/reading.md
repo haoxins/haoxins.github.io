@@ -34,6 +34,10 @@ date: 2018-04-01
 * [网络是怎样连接的](https://book.douban.com/subject/26941639/)
   - 珍藏电子书之一
 
+* [概率的烦恼](https://book.douban.com/subject/27618869/)
+
+* [不可能的六件事](https://book.douban.com/subject/34929827/)
+
 * [绳圈的数学](https://book.douban.com/subject/6751238/)
   - 似懂非懂 (>_<)
 
