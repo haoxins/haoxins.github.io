@@ -13,3 +13,4 @@ date: 2019-12-10
 ### Protocols
 
 * [Noise](https://noiseprotocol.org)
+  - https://github.com/perlin-network/noise
