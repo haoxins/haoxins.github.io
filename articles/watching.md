@@ -17,6 +17,7 @@ date: 2019-10-24
   - 灵笼 下篇 开启
   - 看一遍不够, 燃爆 [雾山五行](https://movie.douban.com/subject/30395914/)
   - 重温 [盗梦空间](https://movie.douban.com/subject/3541415/)
+  - 重温 [哈利波特](https://www.douban.com/doulist/1286251/)
 
 * 2020-07 重温 人民的名义
   - [人民的名义](https://movie.douban.com/subject/26727273/)
