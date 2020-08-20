@@ -10,8 +10,11 @@ date: 2019-06-30
 * PKCS (Public Key Cryptography Standards)
   - https://en.wikipedia.org/wiki/PKCS
 
+* Proxy re-encryption
+  - https://www.nucypher.com/proxy-re-encryption
 
 * [Homomorphic encryption](https://github.com/homenc/HElib)
+  - https://homomorphicencryption.org
 
 ### Stream ciphers
 
