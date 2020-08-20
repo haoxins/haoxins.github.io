@@ -22,7 +22,7 @@ date: 2018-04-01
 
 * [计算机程序设计艺术 全4卷]()
 
-* [费恩曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
+* [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
 
 * [重构 改善既有代码的设计 第2版 英文版](https://book.douban.com/subject/33425266/)
 
