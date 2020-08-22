@@ -38,6 +38,9 @@ date: 2018-04-01
 
 * [不可能的六件事](https://book.douban.com/subject/34929827/)
 
+* [大教堂与集市](https://book.douban.com/subject/25881855/)
+  - 在 2020 年的世界形势下, 重温此书
+
 * [绳圈的数学](https://book.douban.com/subject/6751238/)
   - 似懂非懂 (>_<)
 
