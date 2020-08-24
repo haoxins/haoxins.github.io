@@ -41,11 +41,6 @@ date: 2018-04-01
 * [成就](??????)
   - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
 
-* [七周七并发模型](https://book.douban.com/subject/26337939/)
-  - 一般吧 ~
-  - 一直认为: 纯粹的函数式语言不会成为主流 (主流 means Top 10)
-  - 怀念 Elixir
-
 * [臣服实验](https://book.douban.com/subject/30384422/)
   - **身体** vs **大脑**, **觉知** vs **思考**
 
@@ -76,6 +71,11 @@ be guided by a much more powerful force, life itself.
   - 第一次看到这种类型的漫画
   - 能很快看完的书, 也是花时间的书
   - 是通俗易懂的漫画, 也是晦涩的字符
+
+* [七周七并发模型](https://book.douban.com/subject/26337939/)
+  - 一般吧 ~
+  - 一直认为: 纯粹的函数式语言不会成为主流 (主流 means Top 10)
+  - 怀念 Elixir
 
 * [跟熊逸一起读唐诗](https://book.douban.com/subject/34826393/)
   - 熊逸老师 在 得到App 的专栏都还不错
