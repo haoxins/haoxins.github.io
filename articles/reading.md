@@ -63,6 +63,7 @@ be guided by a much more powerful force, life itself.
 
 * [绳圈的数学](https://book.douban.com/subject/6751238/)
   - 似懂非懂 (>_<)
+  - 感觉懂了, 一考试就挂的那种 :)
 
 * [Effective Modern C++](https://book.douban.com/subject/30178902/)
   - 个人而言, 基本只有读 `C++` code 的需求
