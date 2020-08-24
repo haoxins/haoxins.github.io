@@ -41,11 +41,6 @@ date: 2018-04-01
 * [成就](??????)
   - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
 
-* [非平面](https://book.douban.com/subject/30327868/)
-  - 第一次看到这种类型的漫画
-  - 能很快看完的书, 也是花时间的书
-  - 是通俗易懂的漫画, 也是晦涩的字符
-
 * [七周七并发模型](https://book.douban.com/subject/26337939/)
   - 一般吧 ~
   - 一直认为: 纯粹的函数式语言不会成为主流 (主流 means Top 10)
@@ -76,6 +71,11 @@ be guided by a much more powerful force, life itself.
 
 * [Effective Modern C++](https://book.douban.com/subject/30178902/)
   - 个人而言, 基本只有读 `C++` code 的需求
+
+* [非平面](https://book.douban.com/subject/30327868/)
+  - 第一次看到这种类型的漫画
+  - 能很快看完的书, 也是花时间的书
+  - 是通俗易懂的漫画, 也是晦涩的字符
 
 * [跟熊逸一起读唐诗](https://book.douban.com/subject/34826393/)
   - 熊逸老师 在 得到App 的专栏都还不错
