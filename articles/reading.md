@@ -38,9 +38,6 @@ date: 2018-04-01
 
 * [不可能的六件事](https://book.douban.com/subject/34929827/)
 
-* [大教堂与集市](https://book.douban.com/subject/25881855/)
-  - 在 2020 年的世界形势下, 重温此书
-
 * [绳圈的数学](https://book.douban.com/subject/6751238/)
   - 似懂非懂 (>_<)
 
@@ -76,6 +73,9 @@ were not going to guide my life. By surrendering the hold
 those powerful forces had on me, I was allowing my life to
 be guided by a much more powerful force, life itself.
 ```
+
+* [大教堂与集市](https://book.douban.com/subject/25881855/)
+  - 在 2020 年的世界形势下, 重温此书
 
 * [跟熊逸一起读唐诗](https://book.douban.com/subject/34826393/)
   - 熊逸老师 在 得到App 的专栏都还不错
