@@ -38,9 +38,6 @@ date: 2018-04-01
 
 * [不可能的六件事](https://book.douban.com/subject/34929827/)
 
-* [Effective Modern C++](https://book.douban.com/subject/30178902/)
-  - 个人而言, 基本只有读 `C++` code 的需求
-
 * [成就](??????)
   - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
 
@@ -76,6 +73,9 @@ be guided by a much more powerful force, life itself.
 
 * [绳圈的数学](https://book.douban.com/subject/6751238/)
   - 似懂非懂 (>_<)
+
+* [Effective Modern C++](https://book.douban.com/subject/30178902/)
+  - 个人而言, 基本只有读 `C++` code 的需求
 
 * [跟熊逸一起读唐诗](https://book.douban.com/subject/34826393/)
   - 熊逸老师 在 得到App 的专栏都还不错
