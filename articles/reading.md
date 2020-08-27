@@ -34,10 +34,6 @@ date: 2018-04-01
 * [网络是怎样连接的](https://book.douban.com/subject/26941639/)
   - 珍藏电子书之一
 
-* [概率的烦恼](https://book.douban.com/subject/27618869/)
-
-* [不可能的六件事](https://book.douban.com/subject/34929827/)
-
 * [洞见 - Why Buddhism is True?](https://book.douban.com/subject/35140470/)
   - 和 **臣服实验** 一块看, 很合适
 
@@ -60,6 +56,10 @@ be guided by a much more powerful force, life itself.
 
 * [成就](??????)
   - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
+
+* [概率的烦恼](https://book.douban.com/subject/27618869/)
+
+* [不可能的六件事](https://book.douban.com/subject/34929827/)
 
 * [大教堂与集市](https://book.douban.com/subject/25881855/)
   - 在 2020 年的世界形势下, 重温此书
