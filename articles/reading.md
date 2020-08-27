@@ -38,8 +38,6 @@ date: 2018-04-01
 
 * [不可能的六件事](https://book.douban.com/subject/34929827/)
 
-* [成就](??????)
-  - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
 
 * [臣服实验](https://book.douban.com/subject/30384422/)
   - **身体** vs **大脑**, **觉知** vs **思考**
@@ -57,6 +55,9 @@ were not going to guide my life. By surrendering the hold
 those powerful forces had on me, I was allowing my life to
 be guided by a much more powerful force, life itself.
 ```
+
+* [成就](??????)
+  - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
 
 * [大教堂与集市](https://book.douban.com/subject/25881855/)
   - 在 2020 年的世界形势下, 重温此书
