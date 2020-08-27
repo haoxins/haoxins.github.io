@@ -38,6 +38,8 @@ date: 2018-04-01
 
 * [不可能的六件事](https://book.douban.com/subject/34929827/)
 
+* [洞见 - Why Buddhism is True?](https://book.douban.com/subject/35140470/)
+  - 和 **臣服实验** 一块看, 很合适
 
 * [臣服实验](https://book.douban.com/subject/30384422/)
   - **身体** vs **大脑**, **觉知** vs **思考**
