@@ -64,6 +64,14 @@ be guided by a much more powerful force, life itself.
 
 * [大教堂与集市](https://book.douban.com/subject/25881855/)
   - 在 2020 年的世界形势下, 重温此书
+  - Pull, 而非 Push; 主动 而非 被动
+  - 早发布, 常发布, 倾听用户
+  - 寻找接棒者
+  - 创新 源自 认识到 自己的错误
+  - **完美的设计** 不是 没有东西可以加, 而是 **没有东西可以减**
+  - 优秀的程序员知道 **写** 什么, 卓越的程序员知道 **改 & 重用** 什么
+  - 避免代码的公地悲剧
+  - 恰逢 Mozilla 裁员, 预测: **Rust** 是 Mozilla 留下的最具影响力的资产
 
 * [绳圈的数学](https://book.douban.com/subject/6751238/)
   - 似懂非懂 (>_<)
