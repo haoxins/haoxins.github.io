@@ -24,8 +24,6 @@ date: 2018-04-01
 
 * [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
 
-* [重构 改善既有代码的设计 第2版 英文版](https://book.douban.com/subject/33425266/)
-
 ### 2020
 
 * [算法 第4版](https://book.douban.com/subject/19952400/)
@@ -56,6 +54,9 @@ be guided by a much more powerful force, life itself.
 
 * [成就](??????)
   - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
+
+* [重构 改善既有代码的设计 第2版 英文版](https://book.douban.com/subject/33425266/)
+  - 话说, 这里是不是更应该 AI 发挥价值?
 
 * [概率的烦恼](https://book.douban.com/subject/27618869/)
   - 此书比 **不可能的六件事** 更好
