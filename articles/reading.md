@@ -60,6 +60,7 @@ be guided by a much more powerful force, life itself.
 * [概率的烦恼](https://book.douban.com/subject/27618869/)
 
 * [不可能的六件事](https://book.douban.com/subject/34929827/)
+  - 一般
 
 * [大教堂与集市](https://book.douban.com/subject/25881855/)
   - 在 2020 年的世界形势下, 重温此书
