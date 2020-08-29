@@ -58,6 +58,8 @@ be guided by a much more powerful force, life itself.
   - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
 
 * [概率的烦恼](https://book.douban.com/subject/27618869/)
+  - 此书比 **不可能的六件事** 更好
+  - 更激进, 更侧重, 更主观
 
 * [不可能的六件事](https://book.douban.com/subject/34929827/)
   - 一般
