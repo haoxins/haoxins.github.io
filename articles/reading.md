@@ -55,15 +55,16 @@ be guided by a much more powerful force, life itself.
 * [成就](??????)
   - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
 
-* [重构 改善既有代码的设计 第2版 英文版](https://book.douban.com/subject/33425266/)
-  - 话说, 这里是不是更应该 AI 发挥价值?
-
 * [概率的烦恼](https://book.douban.com/subject/27618869/)
   - 此书比 **不可能的六件事** 更好
   - 更激进, 更侧重, 更主观
 
 * [不可能的六件事](https://book.douban.com/subject/34929827/)
   - 一般
+
+* [重构 改善既有代码的设计 第2版 英文版](https://book.douban.com/subject/33425266/)
+  - 话说, 这里是不是更应该 AI 发挥价值?
+  - 一般般
 
 * [大教堂与集市](https://book.douban.com/subject/25881855/)
   - 在 2020 年的世界形势下, 重温此书
