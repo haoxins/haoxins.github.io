@@ -15,10 +15,6 @@ https://www.gqlstandards.org
 * Serverless data pipeline & data flow
 * Serverless database, CRUD by HTTP/3
 
-### Fuchsia
-
-* Release v1
-
 ### WebAssembly
 
 * [pyodide: The Python scientific stack, compiled to WebAssembly.](https://github.com/iodide-project/pyodide)
