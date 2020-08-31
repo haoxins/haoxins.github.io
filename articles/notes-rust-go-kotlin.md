@@ -1,5 +1,5 @@
 ---
-title: Rust & C++
+title: Rust & Go
 description: The only language ~
 date: 2020-02-24
 ---
@@ -7,6 +7,9 @@ date: 2020-02-24
 ## 概述
 
 * Rust 蚕食 C/C++
+* Android - Kotlin
+* JVM - Kotlin
+* CNCF - Golang
 
 ## ...
 
