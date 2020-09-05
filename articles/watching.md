@@ -12,6 +12,12 @@ date: 2019-10-24
 
 ### 2020
 
+* 2020-09
+
+  - [信条 Tenet](https://movie.douban.com/subject/30444960/)
+  - [在劫难逃](https://movie.douban.com/subject/33426097/)
+  - [风声](https://movie.douban.com/subject/3734112/)
+
 * 2020-08
   - 小米电视, 还挺不错
   - 灵笼 下篇 开启
