@@ -1,6 +1,6 @@
 ---
-title: Rust & Go
-description: The only language ~
+title: Rust & Go & Kotlin
+description: The only languages ~
 date: 2020-02-24
 ---
 
