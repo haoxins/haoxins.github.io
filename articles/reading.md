@@ -62,6 +62,8 @@ be guided by a much more powerful force, life itself.
 * [概率的烦恼](https://book.douban.com/subject/27618869/)
   - 此书比 **不可能的六件事** 更好
   - 更激进, 更侧重, 更主观
+  - 远不如 **现实不似你所见**
+  - 我不接受 量子贝叶斯理论
 
 * [不可能的六件事](https://book.douban.com/subject/34929827/)
   - 一般
