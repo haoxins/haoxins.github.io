@@ -55,6 +55,10 @@ be guided by a much more powerful force, life itself.
 * [成就](??????)
   - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
 
+* [时间的秩序](https://book.douban.com/subject/33424487/)
+  - 和 **现实不似你所见** 同一个作者 **卡洛·罗韦利 Carlo Rovelli**
+  - 这个哥们是一年一本书啊, 哈哈哈, 蛮好的, 可以一直追~
+
 * [概率的烦恼](https://book.douban.com/subject/27618869/)
   - 此书比 **不可能的六件事** 更好
   - 更激进, 更侧重, 更主观
