@@ -59,6 +59,8 @@ be guided by a much more powerful force, life itself.
   - 和 **现实不似你所见** 同一个作者 **卡洛·罗韦利 Carlo Rovelli**
   - 这个哥们是一年一本书啊, 哈哈哈, 蛮好的, 可以一直追~
 
+* [约翰·惠勒自传 京子, 黑洞和量子泡沫](https://book.douban.com/subject/30187930/)
+
 * [概率的烦恼](https://book.douban.com/subject/27618869/)
   - 此书比 **不可能的六件事** 更好
   - 更激进, 更侧重, 更主观
