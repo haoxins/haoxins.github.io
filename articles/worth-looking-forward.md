@@ -22,6 +22,16 @@ https://www.gqlstandards.org
 
 ------------------
 
+## 2020 Events
+
+* [TiDB: A Raft-based HTAP Database](http://www.vldb.org/pvldb/vol13/p3072-huang.pdf)
+
+```
+8月31日 - 9月4日, 第46届 VLDB 会议以线上直播的方式举行,
+PingCAP 团队的论文 "TiDB: A Raft-based HTAP Database" 入选 VLDB 2020
+成为业界第一篇 Real-time HTAP 分布式数据库工业实现的论文
+```
+
 ## 2020 Serverless & WebAssembly (lockdown in 2019-12-12)
 
 * [WASI: WebAssembly System Interface](https://wasi.dev)
