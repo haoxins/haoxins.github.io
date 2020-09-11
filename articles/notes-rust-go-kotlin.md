@@ -8,7 +8,7 @@ date: 2020-02-24
 
 * Rust 蚕食 C/C++
 * Android - Kotlin
-* CNCF - Golang
+* Golang
 
 ## ...
 
