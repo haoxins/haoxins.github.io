@@ -60,6 +60,7 @@ be guided by a much more powerful force, life itself.
   - 这个哥们是一年一本书啊, 哈哈哈, 蛮好的, 可以一直追~
 
 * [约翰·惠勒自传 京子, 黑洞和量子泡沫](https://book.douban.com/subject/30187930/)
+  - 万物源自比特?
 
 * [概率的烦恼](https://book.douban.com/subject/27618869/)
   - 此书比 **不可能的六件事** 更好
