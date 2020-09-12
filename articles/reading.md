@@ -55,6 +55,9 @@ be guided by a much more powerful force, life itself.
 * [成就](??????)
   - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
 
+* [复盘网飞](https://book.douban.com/subject/34978664/)
+  - 国内 **电子书** 的上线速度现在基本同步于 **纸质书** 了 (好事)
+
 * [时间的秩序](https://book.douban.com/subject/33424487/)
   - 和 **现实不似你所见** 同一个作者 **卡洛·罗韦利 Carlo Rovelli**
   - 这个哥们是一年一本书啊, 哈哈哈, 蛮好的, 可以一直追~
