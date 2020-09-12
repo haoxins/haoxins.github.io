@@ -14,6 +14,10 @@ date: 2019-10-24
 
 * 2020-09
 
+  - [八佰](https://movie.douban.com/subject/26754233/)
+    * 我觉得 很好
+    * 看哭了
+    * 个人觉得 不输 **血战钢锯岭**
   - [信条 Tenet](https://movie.douban.com/subject/30444960/)
   - [在劫难逃](https://movie.douban.com/subject/33426097/)
   - [风声](https://movie.douban.com/subject/3734112/)
