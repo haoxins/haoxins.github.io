@@ -14,11 +14,6 @@ date: 2018-12-02
 * Serverless data pipeline & data flow
 * Serverless database, CRUD by HTTP/3
 
-### WebAssembly
-
-* [pyodide: The Python scientific stack, compiled to WebAssembly.](https://github.com/iodide-project/pyodide)
-* [WebGPU](https://github.com/gfx-rs/wgpu)
-
 ------------------
 
 ## 2020 Events
