@@ -15,7 +15,8 @@ https://en.wikipedia.org/wiki/Harmony_OS
 ### Serverless
 
 * Serverless data pipeline & data flow
-* Serverless database, CRUD by HTTP/3
+* Serverless database, CRUD by HTTP/3 (GCP Firestore)
+
 ### Language
 
 * [Go2 ?](https://github.com/golang/go/milestone/72)
