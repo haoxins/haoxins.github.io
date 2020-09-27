@@ -14,6 +14,8 @@ date: 2019-10-24
 
 ### 2020-09
 
+  - [沉默的真相](https://movie.douban.com/subject/33447642/)
+    * 爱奇艺 迷雾剧场 **赞**
 
   - [八佰](https://movie.douban.com/subject/26754233/)
     * 我觉得 很好
