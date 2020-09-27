@@ -1,6 +1,6 @@
 ---
-title: todo
-description: todo
+title: Watching
+description: Just watching
 date: 2019-10-24
 ---
 
