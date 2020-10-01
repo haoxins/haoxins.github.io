@@ -17,41 +17,41 @@ date: 2019-10-24
 
 ### 2020-09
 
-  - [沉默的真相](https://movie.douban.com/subject/33447642/)
-    * 爱奇艺 迷雾剧场 **赞**
+- [沉默的真相](https://movie.douban.com/subject/33447642/)
+  * 爱奇艺 迷雾剧场 **赞**
 
-  - [八佰](https://movie.douban.com/subject/26754233/)
-    * 我觉得 很好
-    * 看哭了
-    * 个人觉得 不输 **血战钢锯岭**
-  - [信条 Tenet](https://movie.douban.com/subject/30444960/)
-  - [在劫难逃](https://movie.douban.com/subject/33426097/)
-  - [风声](https://movie.douban.com/subject/3734112/)
+- [八佰](https://movie.douban.com/subject/26754233/)
+  * 我觉得 很好
+  * 看哭了
+  * 个人觉得 不输 **血战钢锯岭**
+- [信条 Tenet](https://movie.douban.com/subject/30444960/)
+- [在劫难逃](https://movie.douban.com/subject/33426097/)
+- [风声](https://movie.douban.com/subject/3734112/)
 
 ### 2020-08
 
-  - 小米电视, 还挺不错
-  - 灵笼 下篇 开启
-  - 看一遍不够, 燃爆 [雾山五行](https://movie.douban.com/subject/30395914/)
-  - 重温 [盗梦空间](https://movie.douban.com/subject/3541415/)
-  - 重温 [哈利波特](https://www.douban.com/doulist/1286251/)
-  - 重温 [记忆碎片 Memento](https://movie.douban.com/subject/1304447/)
+- 小米电视, 还挺不错
+- 灵笼 下篇 开启
+- 看一遍不够, 燃爆 [雾山五行](https://movie.douban.com/subject/30395914/)
+- 重温 [盗梦空间](https://movie.douban.com/subject/3541415/)
+- 重温 [哈利波特](https://www.douban.com/doulist/1286251/)
+- 重温 [记忆碎片 Memento](https://movie.douban.com/subject/1304447/)
 
 ### 2020-07 重温 人民的名义
 
-  - [人民的名义](https://movie.douban.com/subject/26727273/)
-  - 貌似拍摄地: 南京
+- [人民的名义](https://movie.douban.com/subject/26727273/)
+- 貌似拍摄地: 南京
 
 ### 2020-06
 
-  - 爱奇艺, **迷雾剧场** 十日游戏
-  - 东野圭吾 小说改编 **十日游戏**
-  - [十日游戏](https://movie.douban.com/subject/26986843/)
-  - 穿插着看了 无证之罪, 地域特色明显, 东北味, 不错
-  - [无证之罪](https://movie.douban.com/subject/26930540/)
-  - **隐秘的角落** **端午节** 看完, 挺压抑的
-  - [隐秘的角落](https://movie.douban.com/subject/33404425/)
-  - 隐秘的角落, 无证之罪 改编自 同一个作者
+- 爱奇艺, **迷雾剧场** 十日游戏
+- 东野圭吾 小说改编 **十日游戏**
+- [十日游戏](https://movie.douban.com/subject/26986843/)
+- 穿插着看了 无证之罪, 地域特色明显, 东北味, 不错
+- [无证之罪](https://movie.douban.com/subject/26930540/)
+- **隐秘的角落** **端午节** 看完, 挺压抑的
+- [隐秘的角落](https://movie.douban.com/subject/33404425/)
+- 隐秘的角落, 无证之罪 改编自 同一个作者
 
 * [MIT 6.824: Distributed Systems](https://www.youtube.com/channel/UC_7WrbZTCODu1o_kfUMq88g)
   - 从头到尾, 最吸引我的, 其实是有特色的 `粉笔` (>_<)
