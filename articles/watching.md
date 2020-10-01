@@ -14,6 +14,8 @@ date: 2019-10-24
 
 * [加勒比海盗](https://movie.douban.com/subject/1298070/)
   - 国庆长假, 重温电影
+* [我的三体](https://www.bilibili.com/bangumi/play/ep30636)
+* [我的三体](https://movie.douban.com/subject/27624727/)
 
 ### 2020-09
 
