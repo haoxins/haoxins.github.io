@@ -61,6 +61,7 @@ be guided by a much more powerful force, life itself.
 * [时间的秩序](https://book.douban.com/subject/33424487/)
   - 和 **现实不似你所见** 同一个作者 **卡洛·罗韦利 Carlo Rovelli**
   - 这个哥们是一年一本书啊, 哈哈哈, 蛮好的, 可以一直追~
+  - 不如 **现实不似你所见: 量子引力之旅**
 
 * [约翰·惠勒自传 京子, 黑洞和量子泡沫](https://book.douban.com/subject/30187930/)
   - 万物源自比特?
