@@ -26,6 +26,7 @@ https://en.wikipedia.org/wiki/Harmony_OS
 
 ## 2020 Events
 
+* 个人的 技术思维从 `偏改革` 走向 `偏改良`
 * [TiDB: A Raft-based HTAP Database](http://www.vldb.org/pvldb/vol13/p3072-huang.pdf)
 
 ```
