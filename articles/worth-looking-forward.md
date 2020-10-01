@@ -20,6 +20,7 @@ https://en.wikipedia.org/wiki/Harmony_OS
 ### Language
 
 * [Go2 ?](https://github.com/golang/go/milestone/72)
+* [Go ORM - facebook/ent](https://github.com/facebook/ent)
 
 ------------------
 
