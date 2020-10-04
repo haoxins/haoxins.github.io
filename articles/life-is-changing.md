@@ -1,5 +1,5 @@
 ---
-title: 变化的家乡
+title: 变化的...
 description: 时间静悄悄
 date: 2020-01-29
 ---
