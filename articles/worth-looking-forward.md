@@ -6,11 +6,7 @@ date: 2018-12-02
 
 ------------------
 
-## 2021 Cloud + Edge (lockdown in 2020-12-??)
-
-### Harmony OS ?
-
-https://en.wikipedia.org/wiki/Harmony_OS
+## 2021 Cloud (lockdown in 2020-12-??)
 
 ### Serverless
 
