@@ -23,6 +23,7 @@ date: 2018-12-02
 ## 2020 Events
 
 * 个人的 技术思维从 `偏改革` 走向 `偏改良`
+* **更加关注** 逐步迭代完善, 而不是 **过分追求** 一开始就设计完美
 * [TiDB: A Raft-based HTAP Database](http://www.vldb.org/pvldb/vol13/p3072-huang.pdf)
 
 ```
