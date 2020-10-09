@@ -21,7 +21,7 @@ highlighter: rouge
 markdown: kramdown
 
 defaults:
-- scope:
+  scope:
     path: articles
     type: pages
   values:
