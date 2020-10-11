@@ -14,6 +14,10 @@ date: 2019-10-24
 
 * **秦时明月** 第六季 `沧海横流` 终于来了 :)
 * [加勒比海盗](https://movie.douban.com/subject/1298070/)
+* [加勒比海盗2](https://movie.douban.com/subject/1315574/)
+* [加勒比海盗3](https://movie.douban.com/subject/1418192/)
+* [加勒比海盗4](https://movie.douban.com/subject/3227410/)
+* [加勒比海盗5](https://movie.douban.com/subject/6311303/)
   - 国庆长假, 重温电影
 * [我的三体](https://www.bilibili.com/bangumi/play/ep30636)
 * [我的三体](https://movie.douban.com/subject/27624727/)
