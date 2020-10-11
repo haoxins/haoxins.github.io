@@ -21,6 +21,10 @@ date: 2019-10-24
   - 国庆长假, 重温电影
 * [我的三体](https://www.bilibili.com/bangumi/play/ep30636)
 * [我的三体](https://movie.douban.com/subject/27624727/)
+* [指环王1](https://movie.douban.com/subject/1291571/)
+* [指环王2](https://movie.douban.com/subject/1291572/)
+* [指环王3](https://movie.douban.com/subject/1291552/)
+  - 3 最好看, 2 其次
 
 ### 2020-09
 
