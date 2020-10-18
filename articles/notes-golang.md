@@ -6,7 +6,7 @@ date: 2020-02-24
 
 ## Modules
 
-* [lodash - go-funk](https://github.com/thoas/go-funk)
+* [Lodash - go-funk](https://github.com/thoas/go-funk)
 * [Gabs - a small utility for dynamic or unknown JSON structures](https://github.com/Jeffail/gabs)
 
 * [Viper - Go configuration with fangs](https://github.com/spf13/viper)
