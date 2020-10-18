@@ -10,10 +10,10 @@ date: 2020-02-24
 * [Gabs - a small utility for dynamic or unknown JSON structures](https://github.com/Jeffail/gabs)
 
 * [Config - Viper](https://github.com/spf13/viper)
+* [Cron](https://github.com/robfig/cron)
 
 * [ORM - ent](https://github.com/facebook/ent)
-* [HTTP Client - resty](https://github.com/go-resty/resty)
-* [Validator - validator](https://github.com/go-playground/validator)
-
+* [Resty](https://github.com/go-resty/resty)
+* [Validator](https://github.com/go-playground/validator)
 
 * [CLI UI - bubbletea](https://github.com/charmbracelet/bubbletea)
