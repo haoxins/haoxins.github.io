@@ -9,6 +9,10 @@ date: 2019-10-24
 
 * **秦时明月** 第六季 `沧海横流` 终于来了 :)
 
+* [指环王1](https://movie.douban.com/subject/1291571/)
+* [指环王2](https://movie.douban.com/subject/1291572/)
+* [指环王3](https://movie.douban.com/subject/1291552/)
+  - 3 最好看, 2 其次
 
 * [加勒比海盗](https://movie.douban.com/subject/1298070/)
 * [加勒比海盗2](https://movie.douban.com/subject/1315574/)
@@ -19,10 +23,6 @@ date: 2019-10-24
 
 * [我的三体 - 哔哩哔哩](https://www.bilibili.com/bangumi/play/ep30636)
 * [我的三体](https://movie.douban.com/subject/27624727/)
-* [指环王1](https://movie.douban.com/subject/1291571/)
-* [指环王2](https://movie.douban.com/subject/1291572/)
-* [指环王3](https://movie.douban.com/subject/1291552/)
-  - 3 最好看, 2 其次
 
 ### 2020-09
 
