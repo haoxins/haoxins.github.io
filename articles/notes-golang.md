@@ -13,4 +13,4 @@ date: 2020-02-24
 * [Validator - validator](https://github.com/go-playground/validator)
 * [Gabs - a small utility for dynamic or unknown JSON structures](https://github.com/Jeffail/gabs)
 
-* [CLI UI - charmbracelet/bubbletea](https://github.com/charmbracelet/bubbletea)
+* [CLI UI - bubbletea](https://github.com/charmbracelet/bubbletea)
