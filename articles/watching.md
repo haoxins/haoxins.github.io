@@ -6,6 +6,11 @@ date: 2019-10-24
 
 ### 2020-10
 
+* [黑客帝国1](https://movie.douban.com/subject/1291843/)
+* [黑客帝国2](https://movie.douban.com/subject/1304141/)
+* [黑客帝国3](https://movie.douban.com/subject/1302467/)
+  - 不再惊艳, 依旧经典
+  - 中国功夫
 
 * **秦时明月** 第六季 `沧海横流` 终于来了 :)
 
