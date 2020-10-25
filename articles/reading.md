@@ -34,6 +34,9 @@ date: 2018-04-01
   - 好吧, 我承认, 冲着 2020年诺贝尔物理学奖得主 **罗杰•彭罗斯** 买的
   - 略失望
 
+* [成就](??????)
+  - 个人思考: 坚持长期主义
+  - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
 
 * [洞见 - Why Buddhism is True?](https://book.douban.com/subject/35140470/)
   - 和 **臣服实验** 一块看, 很合适
@@ -62,9 +65,6 @@ were not going to guide my life. By surrendering the hold
 those powerful forces had on me, I was allowing my life to
 be guided by a much more powerful force, life itself.
 ```
-
-* [成就](??????)
-  - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
 
 * [复盘网飞](https://book.douban.com/subject/34978664/)
   - 国内 **电子书** 的上线速度现在基本同步于 **纸质书** 了 (好事)
