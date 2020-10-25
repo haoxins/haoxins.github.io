@@ -74,3 +74,26 @@ date: 2019-04-08
 * `log`, `metric`, `alarm`
 * `自动化机制` 处理 `人` 不擅长的事情: `重复` 的任务和 `快速` 的响应
 * `人` 处理 `自动化机制` 不擅长的事情: 纵观全局
+
+### APIs
+
+* GCP HTTP error response
+
+```
+{
+  "error": {
+    "code": 401,
+    "message": "...",
+    "errors": [
+      {
+        "message": "Some messages.",
+        "domain": "Global",
+        "reason": "Required",
+        "location": "Authorization",
+        "locationType": "Header"
+      }
+    ],
+    "status": "UNAUTHENTICATED"
+  }
+}
+```
