@@ -8,6 +8,10 @@ date: 2018-12-02
 
 ## 2021 Cloud (lockdown in 2020-12-??)
 
+* [PyTorch](https://github.com/pytorch/pytorch)
+* [TensorFlow](https://github.com/tensorflow/tensorflow)
+  - Which one ?????????????????
+
 ### Serverless
 
 * Serverless data pipeline & data flow
