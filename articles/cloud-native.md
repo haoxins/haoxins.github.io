@@ -4,9 +4,9 @@ description: 瞎琢磨
 date: 2020-07-22
 ---
 
-- **当有一天没人提 Cloud native 的时候, 那就是真的 Cloud native 了**
-- **Region Region Region**
-- Develop & Debug
+* Storage is very very cheap
+* Compute is cheap
+* **Region Region Region**
 
 ## Serverless
 
