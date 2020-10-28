@@ -4,6 +4,10 @@ description: The top language ~
 date: 2020-02-24
 ---
 
+## Frameworks
+
+* [Watermill - Event driven](https://github.com/ThreeDotsLabs/watermill)
+
 ## Modules
 
 * [Lodash - go-funk](https://github.com/thoas/go-funk)
