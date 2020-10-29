@@ -8,5 +8,6 @@
 
 ### Tools
 
-* [fgeller/kt - Kafka command line tool that likes JSON](https://github.com/fgeller/kt)
+* [Direnv](https://github.com/direnv/direnv)
+* [kt - Kafka CLI](https://github.com/fgeller/kt)
 * [hashicorp/terraform - Infra as Code](https://github.com/hashicorp/terraform)
