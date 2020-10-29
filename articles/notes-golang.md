@@ -23,3 +23,4 @@ date: 2020-02-24
 * [Kafka client](https://github.com/Shopify/sarama)
 
 * [CLI UI - bubbletea](https://github.com/charmbracelet/bubbletea)
+* [CLI - spf13/cobra](https://github.com/spf13/cobra)
