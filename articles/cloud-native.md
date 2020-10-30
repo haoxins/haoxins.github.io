@@ -1,8 +1,4 @@
----
-title: Cloud native
-description: 瞎琢磨
-date: 2020-07-22
----
+
 
 * Storage is very very cheap
 * Compute is cheap
