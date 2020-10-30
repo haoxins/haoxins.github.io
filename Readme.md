@@ -7,5 +7,7 @@
 ### Tools
 
 * [Direnv](https://github.com/direnv/direnv)
+* [ktlint](https://github.com/pinterest/ktlint)
 * [kt - Kafka CLI](https://github.com/fgeller/kt)
+
 * [hashicorp/terraform - Infra as Code](https://github.com/hashicorp/terraform)
