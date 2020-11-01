@@ -10,7 +10,7 @@ date: 2018-12-02
 
 * [PyTorch](https://github.com/pytorch/pytorch)
 * [TensorFlow](https://github.com/tensorflow/tensorflow)
-  - Which one ?????????????????
+  - PyTorch Yes !!!
 
 ### Serverless
 
