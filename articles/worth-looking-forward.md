@@ -14,10 +14,10 @@ date: 2018-12-02
 
 ### Serverless
 
-* Serverless database, CRUD by HTTP/3 (GCP Firestore)
 * https://github.com/cilium/cilium
 * https://github.com/openkruise/kruise
 * Workflow: https://cloud.google.com/workflows
+* Database: https://cloud.google.com/firestore
 
 ### Language
 
