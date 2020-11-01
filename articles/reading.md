@@ -28,6 +28,8 @@ date: 2018-04-01
 * [算法 第4版](https://book.douban.com/subject/19952400/)
   - 珍藏电子书之一
 
+* [领域驱动设计: 软件核心复杂性应对之道](https://book.douban.com/subject/26819666/)
+
 * [网络是怎样连接的](https://book.douban.com/subject/26941639/)
   - 写得挺通俗
   - 温故而知新
