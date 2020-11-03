@@ -12,7 +12,7 @@ date: 2018-12-02
 * [TensorFlow](https://github.com/tensorflow/tensorflow)
   - PyTorch Yes !!!
 
-* [Kafka: Replace ZooKeeper with a Self-Managed Metadata Quorum](https://cwiki.apache.org/confluence/display/KAFKA/KIP-500%3A+Replace+ZooKeeper+with+a+Self-Managed+Metadata+Quorum)
+* [Kafka: Replace ZooKeeper with a Self-Managed Metadata Quorum](https://issues.apache.org/jira/browse/KAFKA-9119)
 
 ### Serverless
 
