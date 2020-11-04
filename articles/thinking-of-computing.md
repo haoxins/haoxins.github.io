@@ -22,6 +22,7 @@ date: 2020-07-22
 
 * Programing platform
   - Flink
+  - Dapr
   - Ethereum
 
 ## 我们需要一个什么样的 Platform ?
