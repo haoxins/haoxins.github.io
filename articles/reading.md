@@ -19,7 +19,12 @@ date: 2018-04-01
 
 > 下面这几本书都是 2020-08 买的, 但是呢, 估计不可能看完 :)
 
-* [计算机程序设计艺术 全4卷]()
+* 计算机程序设计艺术 全4卷
+  - [计算机程序设计艺术 卷4A](https://book.douban.com/subject/34452973/)
+  - [计算机程序设计艺术 卷3](https://book.douban.com/subject/26953756/)
+  - [计算机程序设计艺术 卷2](https://book.douban.com/subject/26850558/)
+  - [计算机程序设计艺术 卷1](https://book.douban.com/subject/26681685/)
+  - 这个是买来收藏的 :)
 
 * [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
 
