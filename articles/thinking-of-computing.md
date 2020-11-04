@@ -20,6 +20,10 @@ date: 2020-07-22
 * [Ranking - BigQuery](https://db-engines.com/en/ranking_trend/system/Google+BigQuery)
 * [Ranking - Firestore](https://db-engines.com/en/ranking_trend/system/Google+Cloud+Firestore)
 
+* Programing platform
+  - Flink
+  - Ethereum
+
 ## 我们需要一个什么样的 Platform ?
 
 ### 我们不再应该操心的事情
