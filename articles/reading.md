@@ -42,6 +42,11 @@ date: 2018-04-01
   - 人最重要, 团队比个人重要, 服务型管理, 成就他人 -> 成就自己
 
 * [领域驱动设计: 软件核心复杂性应对之道](https://book.douban.com/subject/26819666/)
+  - 没有银弹
+  - 提炼通用语言 (技术人员, 产品经理, 业务人员)
+  - 确定边界 Bounded
+  - 大型系统 (公司层面) 完全统一的 Domain model **不可行** 且 **不划算**
+  - 优先级, 重点守护 Core domain
 
 * [数据分析之图算法: 基于 Spark 和 Neo4j](https://book.douban.com/subject/31829519/)
   - TODO: Fix douban link
