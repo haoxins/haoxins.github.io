@@ -28,7 +28,7 @@ date: 2018-04-01
 ### 2020
 
 * [算法 第4版](https://book.douban.com/subject/19952400/)
-  - 珍藏电子书之一
+  - 珍藏电子书之一, 也买了纸质版
 
 * [Head First 设计模式](https://book.douban.com/subject/2243615/)
 
@@ -41,8 +41,10 @@ date: 2018-04-01
   - TODO: Fix douban link
 
 * [基于 Apache Flink 的流处理](https://book.douban.com/subject/34912177/)
+  - 还行
 
 * [Kafka 权威指南](https://book.douban.com/subject/27665114/)
+  - 一般
 
 * [网络是怎样连接的](https://book.douban.com/subject/26941639/)
   - 写得挺通俗
