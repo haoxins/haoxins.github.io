@@ -12,7 +12,9 @@ date: 2018-12-02
 * [TensorFlow](https://github.com/tensorflow/tensorflow)
   - PyTorch Yes !!!
 
-[Dapr v1.0](https://github.com/dapr/dapr)
+* [TiDB - HTAP](https://github.com/pingcap/tidb)
+
+* [Dapr v1.0](https://github.com/dapr/dapr)
 
 ### Serverless
 
