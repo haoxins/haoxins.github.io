@@ -12,6 +12,9 @@ date: 2018-12-02
 * [TensorFlow](https://github.com/tensorflow/tensorflow)
   - 各安其位
 
+* [Neo4j](https://github.com/neo4j/neo4j)
+* [Dgraph](https://github.com/dgraph-io/dgraph)
+  - Dgraph for services (CNCF), Neo4j for data (Apache)
 
 * [TiDB - HTAP](https://github.com/pingcap/tidb)
   - 先替代 MySQL 吧 :), HTAP 言之尚早
