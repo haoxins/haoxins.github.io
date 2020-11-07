@@ -10,9 +10,12 @@ date: 2018-12-02
 
 * [PyTorch](https://github.com/pytorch/pytorch)
 * [TensorFlow](https://github.com/tensorflow/tensorflow)
-  - PyTorch Yes !!!
+  - 各安其位
+
 
 * [TiDB - HTAP](https://github.com/pingcap/tidb)
+  - 先替代 MySQL 吧 :), HTAP 言之尚早
+
 
 * [Dapr v1.0](https://github.com/dapr/dapr)
 
