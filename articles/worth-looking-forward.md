@@ -16,14 +16,15 @@ date: 2018-12-02
 * [TiDB - HTAP](https://github.com/pingcap/tidb)
   - 先替代 MySQL 吧 :), HTAP 言之尚早
 
+* https://github.com/apache/beam
 
 * [Dapr v1.0](https://github.com/dapr/dapr)
+  - 先有点行业案例吧
 
 ### Serverless
 
 * Workflow: https://cloud.google.com/workflows
   - https://help.aliyun.com/product/113549.html
-* Database: https://cloud.google.com/firestore
 
 ### Language
 
