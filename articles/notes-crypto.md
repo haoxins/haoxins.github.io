@@ -1,5 +1,5 @@
 ---
-title: Cryptography is fun
+title: Cryptography notes
 description: We can do something
 date: 2019-06-30
 ---

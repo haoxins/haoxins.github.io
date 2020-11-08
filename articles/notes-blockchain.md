@@ -1,5 +1,5 @@
 ---
-title: Blockchain
+title: Blockchain notes
 description: We can do something
 date: 2019-12-10
 ---

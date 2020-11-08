@@ -1,5 +1,5 @@
 ---
-title: Computing
+title: Computing 的思考
 description: Why, What, How!
 date: 2020-07-22
 ---

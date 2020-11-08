@@ -1,5 +1,5 @@
 ---
-title: 心巢
+title: 内心杂思
 description: 记录自己的心路, 感悟, 体验
 date: 2019-05-07
 ---

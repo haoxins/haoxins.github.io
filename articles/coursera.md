@@ -1,5 +1,5 @@
 ---
-title: coursera
+title: Coursera
 description: My coursera records
 date: 2019-05-30
 ---

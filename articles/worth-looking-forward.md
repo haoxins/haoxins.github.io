@@ -1,5 +1,5 @@
 ---
-title: Program advances worth looking forward to
+title: 关于技术, 次年度期待清单
 description: The future is always awesome
 date: 2018-12-02
 ---

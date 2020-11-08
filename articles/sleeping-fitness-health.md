@@ -1,5 +1,5 @@
 ---
-title: 冥想 正念 运动 休息
+title: 正念冥想 运动 休息
 description: 更好的生命旅程
 date: 2017-09-18
 ---
