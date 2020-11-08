@@ -4,6 +4,9 @@ description: We can do something
 date: 2019-06-30
 ---
 
+* [BLS Signatures v4](https://tools.ietf.org/html/draft-irtf-cfrg-bls-signature-04)
+  - Dan Boneh, 第一作者, 就是 Coursera 上 Cryptography 的授课老师
+
 * TLS
   - https://tls13.ulfheim.net
 
