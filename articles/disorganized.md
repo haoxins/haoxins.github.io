@@ -11,6 +11,7 @@ date: 2019-07-13
 ### 2021-??
 
 * 正式从 Apple ios 切换到 Android (小米 10 Ultra)
+  - Android 11
 
 ### 2021-??
 
