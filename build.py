@@ -13,7 +13,7 @@ for (dirpath, dirname, filenames) in walk(dir):
         file = open(p, 'r')
         lines = file.readlines()
         title = lines[1].split(':').pop().strip()
-        content = '[' + title + '](articles/' + filename + ')'
+        content = '* [' + title + '](articles/' + filename + ')'
         contents.append(content)
         file.close()
 
