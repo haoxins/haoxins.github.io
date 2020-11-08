@@ -8,6 +8,8 @@ date: 2019-05-30
 
 * [Cryptography II](https://www.coursera.org/learn/crypto2)
   - 跳票 很久了 ~
+  - 授课大神 Dan Boneh 也研究 区块链 了 :)
+  - BLS Signatures
   - Grade Achieved: ``
 
 ------------------
