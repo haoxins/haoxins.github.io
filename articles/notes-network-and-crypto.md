@@ -147,31 +147,3 @@ session key = G ** (A * B) % P
 * 公钥基础设施 (PKI) = 用户 (user) + 认证机构 (CA) + 仓库 (Repo)
 * 证书 至少包含: `public key`, `机构签名`
 * 证书信任链
-
-## Network
-
-### HTTP/3
-
-* TLS 1.3+
-* 0-RTT or 1-RTT
-* Early data
-* Connection Id
-  - Independent streams
-* QPACK
-* Connection -> Secure Connection -> Streams
-* Stream
-  - 单向
-  - 双向
-  - Flow control
-  - Back pressure
-  - Frames
-* Frame
-  - Headers frame
-  - Data frame
-  - Goaway frame
-  - Other frame
-  - Priority
-* Alt-Svc
-* UDP todo
-  - 操作系统, 内核优化
-  - 硬件加速
