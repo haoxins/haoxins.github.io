@@ -40,6 +40,9 @@ date: 2018-12-02
 
 * [Go2 Beta ?](https://github.com/golang/go/milestone/72)
 * [Go ORM - facebook/ent](https://github.com/facebook/ent)
+### Network
+
+* [HTTP/3 正式发布](https://tools.ietf.org/html/draft-ietf-quic-http-32)
 
 ------------------
 
