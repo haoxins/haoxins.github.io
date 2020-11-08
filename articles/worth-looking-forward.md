@@ -8,8 +8,9 @@ date: 2018-12-02
 
 ## 2022 Blockchain
 
-* [Tendermint](https://github.com/tendermint/tendermint)
+* [Hyperledger](https://github.com/hyperledger)
 * [Substrate](https://github.com/paritytech/substrate)
+* [Tendermint](https://github.com/tendermint/tendermint)
 
 ------------------
 
