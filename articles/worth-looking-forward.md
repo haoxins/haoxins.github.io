@@ -43,6 +43,7 @@ date: 2018-12-02
   - Proposals 冻结
 * [Go - support HTTP/3](https://github.com/golang/go/issues/32204)
 * [Go ORM - facebook/ent v1](https://github.com/facebook/ent)
+* Python3 as default (Linux, MacOS)
 
 ### Network
 
