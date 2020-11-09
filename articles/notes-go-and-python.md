@@ -1,5 +1,5 @@
 ---
-title: Golang
+title: Golang (Python)
 description: The top language ~
 date: 2020-02-24
 ---

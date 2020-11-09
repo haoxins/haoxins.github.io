@@ -1,5 +1,5 @@
 ---
-title: Some great libraries, packages ...
+title: Some great libraries ...
 description: 点点滴滴
 date: 2020-10-15
 ---
