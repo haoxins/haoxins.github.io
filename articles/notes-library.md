@@ -19,7 +19,3 @@ Python, .NET (C#), Delphi, Rust, Dart/Flutter and Elixir
 ## Runtime
 
 * [Dapr](https://github.com/dapr/dapr)
-
-## Frameworks
-
-* [Watermill - Event driven](https://github.com/ThreeDotsLabs/watermill)
