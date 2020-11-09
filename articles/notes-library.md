@@ -15,7 +15,3 @@ An authorization library that supports access control models like
 ACL, RBAC, ABAC for Golang, Java, C/C++, Node.js, Javascript, PHP,
 Python, .NET (C#), Delphi, Rust, Dart/Flutter and Elixir
 ```
-
-## Runtime
-
-* [Dapr](https://github.com/dapr/dapr)
