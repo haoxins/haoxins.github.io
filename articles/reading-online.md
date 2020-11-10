@@ -4,4 +4,4 @@ description: Online
 date: 2020-11-05
 ---
 
-* [Deep Dive TiKV](https://tikv.github.io/deep-dive-tikv)
+* [TiKV - Deep Dive](https://tikv.org/deep-dive/introduction/)
