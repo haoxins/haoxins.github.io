@@ -97,3 +97,12 @@ date: 2019-04-08
   }
 }
 ```
+
+```
+Show me your flowcharts and conceal your tables,
+and I shall continue to be mystified.
+Show me your tables,
+and I won't usually need your flowcharts; they'll be obvious."
+
+-- Fred Brooks.
+```
