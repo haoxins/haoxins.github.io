@@ -79,6 +79,9 @@ date: 2018-04-01
 
 * [臣服实验](https://book.douban.com/subject/30384422/)
   - **身体** vs **大脑**, **觉知** vs **思考**
+  - 在 20年11月 四川旅行的车上看完了余下部分
+  - 看完这本书的时间跨度是足足两年
+  - 书的封面也被多次掸去灰尘
 
 ```
 Surrender - what an amazingly powerful word. It often
@@ -144,7 +147,7 @@ be guided by a much more powerful force, life itself.
 * [七周七并发模型](https://book.douban.com/subject/26337939/)
   - 一般吧 ~
   - 一直认为: 纯粹的函数式语言不会成为主流 (主流 means Top 10)
-  - 怀念 Elixir
+  - 怀念 **Elixir**
 
 * [跟熊逸一起读唐诗](https://book.douban.com/subject/34826393/)
   - 熊逸老师 在 得到App 的专栏都还不错
@@ -220,7 +223,7 @@ be guided by a much more powerful force, life itself.
 * [我在太空的一年](https://book.douban.com/subject/34888766/)
   - 期待 `2022` 年, 中国空间站投入使用
   - 期待 私人 (`埃隆·马斯克`) 公司 `SpaceX` 的未来
-  - 中国的国际合作明显不足
+  - 中国的国际合作明显不足 (更正: 美国拒绝了中国加入)
   - 期待 `NASA` 能拍一个纪录片
   - 慢是高效的, 高效的才是快速的, 慢就是快
   - 在 `Instagram` 关注了 `NASA`, 此时看发布的内容, 感觉亲切了很多 :)
