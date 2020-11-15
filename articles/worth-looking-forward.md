@@ -31,6 +31,7 @@ date: 2018-12-02
 
 * [Dapr v1.0](https://github.com/dapr/dapr)
   - 先有点行业案例吧
+  - 替代 Spring boot & cloud 的不会是另一个 Web framework
 
 ### Serverless
 
