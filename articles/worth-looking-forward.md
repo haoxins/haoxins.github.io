@@ -41,6 +41,8 @@ TODOs
 
 * [Go2 Beta](https://github.com/golang/go/milestone/72)
   - Proposals 冻结
+  - [Go 1.8](??)
+  - [GoNum](https://github.com/gonum/gonum)
 * [Go - support HTTP/3](https://github.com/golang/go/issues/32204)
 * [Go ORM - facebook/ent v1](https://github.com/facebook/ent)
 * Python3 as default (Linux, MacOS)
