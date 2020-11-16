@@ -26,6 +26,7 @@ date: 2019-06-30
 * MTU
 * netstat
 * 以太网 (MAC)
+* NAT & IPv6
 
 ```
 Peer A -> OS Process A -> ip:port
