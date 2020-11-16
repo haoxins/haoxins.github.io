@@ -82,6 +82,7 @@ date: 2018-04-01
   - 在 20年11月 四川旅行的车上看完了余下部分
   - 看完这本书的时间跨度是足足两年
   - 书的封面也被多次掸去灰尘
+  - 全心全意做面前的事情, 不计较个人得失
 
 ```
 Surrender - what an amazingly powerful word. It often
