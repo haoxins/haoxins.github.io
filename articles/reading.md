@@ -31,6 +31,7 @@ date: 2018-04-01
   - 珍藏电子书之一, 也买了纸质版
 
 * [Head First 设计模式](https://book.douban.com/subject/2243615/)
+  - 从来都不是 OOP 的 Fans
 
 * [皇帝新脑](https://book.douban.com/subject/30171336/)
   - 好吧, 我承认, 冲着 2020年诺贝尔物理学奖得主 **罗杰•彭罗斯** 买的
