@@ -30,6 +30,10 @@ date: 2018-04-01
 * [算法 第4版](https://book.douban.com/subject/19952400/)
   - 珍藏电子书之一, 也买了纸质版
 
+* [公式之美](https://book.douban.com/subject/35218287/)
+  - **量子学派**, 不错的科普组织
+  - 黎曼猜想, 杨 - 米尔斯规范场论, 香农公式, 椭圆曲线方程 (看之前最感兴趣的)
+
 * [Head First 设计模式](https://book.douban.com/subject/2243615/)
   - 从来都不是 OOP 的 Fans
 
