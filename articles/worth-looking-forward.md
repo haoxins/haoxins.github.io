@@ -36,6 +36,8 @@ TODOs
   - [kubeflow/kubeflow](https://github.com/kubeflow/kubeflow)
   - [kubeflow/kfserving](https://github.com/kubeflow/kfserving)
 
+* https://github.com/hashicorp/consul
+
 ### Serverless
 
 * Workflow: https://cloud.google.com/workflows
