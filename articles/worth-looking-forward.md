@@ -36,6 +36,8 @@ TODOs
   - [kubeflow/kubeflow](https://github.com/kubeflow/kubeflow)
   - [kubeflow/kfserving](https://github.com/kubeflow/kfserving)
 
+* https://github.com/hashicorp/consul
+
 ### Serverless
 
 * Workflow: https://cloud.google.com/workflows
@@ -50,6 +52,8 @@ TODOs
   - [GoNum](https://github.com/gonum/gonum)
 * [Go - support HTTP/3](https://github.com/golang/go/issues/32204)
 * [Go ORM - facebook/ent v1](https://github.com/facebook/ent)
+* [wasmtime](https://github.com/bytecodealliance/wasmtime)
+* [WebAssembly/WASI](https://github.com/WebAssembly/WASI)
 * Python3 as default (Linux, MacOS)
 
 ### Network
