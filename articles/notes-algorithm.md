@@ -6,6 +6,10 @@ date: 2020-11-09
 
 * [Common used path planning algorithms with animations](https://github.com/zhm-real/PathPlanning)
 
+* https://www.jianshu.com/p/55defda6dcd2
+* http://antirez.com/news/75
+  - HyperLogLog
+
 ## Graph
 
 ### 搜索/遍历
