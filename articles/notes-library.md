@@ -8,7 +8,6 @@ date: 2020-10-15
 
 * [Casbin](https://casbin.org)
 * [Golang](https://github.com/casbin/casbin)
-* [Node.js](https://github.com/casbin/node-casbin)
 
 ```
 An authorization library that supports access control models like
