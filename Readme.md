@@ -10,5 +10,3 @@
 * [CLI for Apache Kafka](https://github.com/birdayz/kaf)
 
 * [Terraform - Infra as Code](https://github.com/hashicorp/terraform)
-
-* [ktlint](https://github.com/pinterest/ktlint)
