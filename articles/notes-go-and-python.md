@@ -12,7 +12,6 @@ date: 2020-02-24
 * [Config - Viper](https://github.com/spf13/viper)
 * [Cron](https://github.com/robfig/cron)
 
-* [ORM - ent](https://github.com/facebook/ent)
 * [Resty](https://github.com/go-resty/resty)
 * [Validator](https://github.com/go-playground/validator)
 
