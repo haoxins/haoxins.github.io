@@ -10,3 +10,9 @@
 * [CLI for Apache Kafka](https://github.com/birdayz/kaf)
 
 * [Terraform - Infra as Code](https://github.com/hashicorp/terraform)
+
+## Good articles
+
+### Coding
+
+* [Psychology of Code Readability](https://medium.com/@egonelbre/psychology-of-code-readability-d23b1ff1258a)

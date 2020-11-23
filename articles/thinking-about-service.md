@@ -106,3 +106,7 @@ and I won't usually need your flowcharts; they'll be obvious.
 
 -- Fred Brooks
 ```
+
+### 接手项目
+
+1. 查看线上服务的所有 config, env
