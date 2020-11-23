@@ -1,5 +1,5 @@
 ---
-title: Service checklist
+title: Thinking about service
 description: todo ~
 date: 2019-04-08
 ---

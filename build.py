@@ -17,6 +17,13 @@ for (dirpath, dirname, filenames) in os.walk(dir):
             'name': filename
         })
 
+
+def takeMtime(info):
+    return info["mtime"]
+
+
+file_infos.sort(key=takeMtime, reverse=True)
+
 for i in file_infos:
     file = open(i['path'], 'r')
     lines = file.readlines()
