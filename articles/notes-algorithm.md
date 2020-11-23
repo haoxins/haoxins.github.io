@@ -4,6 +4,8 @@ description: 嗯哼
 date: 2020-11-09
 ---
 
+* [Common used path planning algorithms with animations](https://github.com/zhm-real/PathPlanning)
+
 ## Graph
 
 ### 搜索/遍历

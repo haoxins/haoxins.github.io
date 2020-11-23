@@ -11,6 +11,5 @@ date: 2020-10-15
 
 ```
 An authorization library that supports access control models like
-ACL, RBAC, ABAC for Golang, Java, C/C++, Node.js, Javascript, PHP,
-Python, .NET (C#), Delphi, Rust, Dart/Flutter and Elixir
+ACL, RBAC, ABAC for Golang, Node.js, Python, and Elixir
 ```
