@@ -10,6 +10,7 @@
 * [CLI for Apache Kafka](https://github.com/birdayz/kaf)
 
 * [Terraform - Infra as Code](https://github.com/hashicorp/terraform)
+* [HashiCorp](https://github.com/hashicorp)
 
 ## Good articles
 
