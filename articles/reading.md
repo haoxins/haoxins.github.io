@@ -38,9 +38,6 @@ date: 2018-04-01
   - **量子学派**, 不错的科普组织
   - 黎曼猜想, 杨 - 米尔斯规范场论, 香农公式, 椭圆曲线方程 (看之前最感兴趣的)
 
-* [Head First 设计模式](https://book.douban.com/subject/2243615/)
-  - 从来都不是 OOP 的 Fans
-
 * [皇帝新脑](https://book.douban.com/subject/30171336/)
   - 好吧, 我承认, 冲着 2020年诺贝尔物理学奖得主 **罗杰•彭罗斯** 买的
   - 意识之谜, 对当代科学而言, 终究还是, 无法触及
@@ -54,6 +51,9 @@ date: 2018-04-01
 
 * [Kafka 权威指南](https://book.douban.com/subject/27665114/)
   - 一般
+
+* [Head First 设计模式](https://book.douban.com/subject/2243615/)
+  - 从来都不是 OOP 的 Fans
 
 * [网络是怎样连接的](https://book.douban.com/subject/26941639/)
   - 写得挺通俗
