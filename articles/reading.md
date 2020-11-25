@@ -43,6 +43,12 @@ date: 2018-04-01
   - 意识之谜, 对当代科学而言, 终究还是, 无法触及
   - 对 图灵机 和 哥德尔不完备定理 的解释比较通俗易懂
 
+* [机器学习实战: 基于 Scikit-Learn Keras 和 TensorFlow (第2版)](https://book.douban.com/subject/35218199/)
+  - 好吧, 书到货了才发现, 其实就是下面那本的 第二版 :(
+
+* [机器学习实战: 基于 Scikit-Learn 和 TensorFlow](https://book.douban.com/subject/30317874/)
+  - 好吧, 书到货了才发现, 其实就是上面那本的 第一版 :)
+
 * [数据分析之图算法: 基于 Spark 和 Neo4j](https://book.douban.com/subject/31829519/)
   - TODO: Fix douban link
 
