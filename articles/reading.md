@@ -54,8 +54,7 @@ date: 2018-04-01
 * [机器学习实战: 基于 Scikit-Learn 和 TensorFlow](https://book.douban.com/subject/30317874/)
   - 好吧, 书到货了才发现, 其实就是上面那本的 第一版 :)
 
-* [数据分析之图算法: 基于 Spark 和 Neo4j](https://book.douban.com/subject/31829519/)
-  - TODO: Fix douban link
+* [数据分析之图算法: 基于 Spark 和 Neo4j](https://book.douban.com/subject/35217091/)
 
 * [基于 Apache Flink 的流处理](https://book.douban.com/subject/34912177/)
   - 还行
