@@ -18,7 +18,14 @@ TODOs
   - [AutoKeras](https://github.com/keras-team/autokeras)
   - [Keras](https://github.com/keras-team/keras)
 
+* KubeFlow
+  - [kubeflow.org](https://www.kubeflow.org)
+  - [kubeflow/kubeflow](https://github.com/kubeflow/kubeflow)
+  - [kubeflow/kfserving](https://github.com/kubeflow/kfserving)
 
+* https://github.com/kubeflow/kfserving
+  - https://github.com/knative/serving
+    * https://github.com/istio/istio
 
 * [Neo4j](https://github.com/neo4j/neo4j)
 * [Dgraph](https://github.com/dgraph-io/dgraph)
@@ -27,15 +34,9 @@ TODOs
 * [TiDB - HTAP](https://github.com/pingcap/tidb)
   - 先替代 MySQL 吧 :), HTAP 言之尚早
 
-
 * [Dapr v1.0](https://github.com/dapr/dapr)
   - 先有点行业案例吧
   - 替代 Spring boot & cloud 的不会是另一个 Web framework
-
-* KubeFlow
-  - [kubeflow.org](https://www.kubeflow.org)
-  - [kubeflow/kubeflow](https://github.com/kubeflow/kubeflow)
-  - [kubeflow/kfserving](https://github.com/kubeflow/kfserving)
 
 * https://github.com/hashicorp/consul
 
