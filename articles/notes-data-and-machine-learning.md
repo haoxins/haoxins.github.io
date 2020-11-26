@@ -13,6 +13,9 @@ date: 2020-11-23
 * https://github.com/pandas-dev/pandas
 * https://github.com/scikit-learn/scikit-learn
 
+* https://keras.io
+  - https://www.tensorflow.org
+
 * NVIDIA
   - CUDA
   - cuDNN
