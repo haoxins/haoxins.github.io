@@ -14,14 +14,13 @@ TODOs
 
 ## 2021 Cloud (lockdown in 2020-12-??)
 
-* [TensorFlow](https://github.com/tensorflow/tensorflow)
-  - [AutoKeras](https://github.com/keras-team/autokeras)
-  - [Keras](https://github.com/keras-team/keras)
-
 * KubeFlow
   - [kubeflow.org](https://www.kubeflow.org)
   - [kubeflow/kubeflow](https://github.com/kubeflow/kubeflow)
   - [kubeflow/kfserving](https://github.com/kubeflow/kfserving)
+  - [TensorFlow](https://github.com/tensorflow/tensorflow)
+  - [AutoKeras](https://github.com/keras-team/autokeras)
+  - [Keras](https://github.com/keras-team/keras)
 
 * https://github.com/kubeflow/kfserving
   - https://github.com/knative/serving
