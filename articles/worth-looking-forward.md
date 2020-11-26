@@ -51,8 +51,11 @@ TODOs
   - [Go 1.18](??)
 * [Go - support HTTP/3](https://github.com/golang/go/issues/32204)
 * [Go ORM - facebook/ent v1](https://github.com/facebook/ent)
+
 * [wasmtime](https://github.com/bytecodealliance/wasmtime)
 * [WebAssembly/WASI](https://github.com/WebAssembly/WASI)
+* [WebAssembly/WAGI](TODO)
+
 * Python3 as default (Linux, MacOS)
 
 ### Network
