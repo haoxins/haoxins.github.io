@@ -26,9 +26,7 @@ TODOs
   - https://github.com/knative/serving
     * https://github.com/istio/istio
 
-* [Neo4j](https://github.com/neo4j/neo4j)
 * [Dgraph](https://github.com/dgraph-io/dgraph)
-  - Dgraph for services (CNCF), Neo4j for data (Apache)
 
 * [TiDB - HTAP](https://github.com/pingcap/tidb)
   - 先替代 MySQL 吧 :), HTAP 言之尚早
@@ -49,8 +47,8 @@ TODOs
 
 * [Go2 Beta](https://github.com/golang/go/milestone/72)
   - Proposals 冻结
-  - [Go 1.8](??)
   - [GoNum](https://github.com/gonum/gonum)
+  - [Go 1.18](??)
 * [Go - support HTTP/3](https://github.com/golang/go/issues/32204)
 * [Go ORM - facebook/ent v1](https://github.com/facebook/ent)
 * [wasmtime](https://github.com/bytecodealliance/wasmtime)
