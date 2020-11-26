@@ -14,7 +14,6 @@ TODOs
 
 ## 2021 Cloud (lockdown in 2020-12-??)
 
-* [PyTorch](https://github.com/pytorch/pytorch)
 * [TensorFlow](https://github.com/tensorflow/tensorflow)
   - 各安其位
 
