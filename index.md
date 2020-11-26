@@ -1,3 +1,5 @@
+* [Blockchain notes](articles/notes-blockchain.md)
+* [Cryptography notes](articles/notes-crypto.md)
 * [阅读笔记](articles/reading.md)
 * [Golang (Python)](articles/notes-go-and-python.md)
 * [Algorithm notes](articles/notes-algorithm.md)
@@ -20,5 +22,3 @@
 * [年度事件](articles/annual-events.md)
 * [Dapr notes](articles/notes-dapr.md)
 * [杂七杂八](articles/disorganized.md)
-* [Cryptography notes](articles/notes-crypto.md)
-* [Blockchain notes](articles/notes-blockchain.md)
