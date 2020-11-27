@@ -14,6 +14,8 @@ TODOs
 
 ## 2021 Cloud (lockdown in 2020-12-??)
 
+### Machine learning
+
 * KubeFlow
   - [kubeflow.org](https://www.kubeflow.org)
   - [kubeflow/kubeflow](https://github.com/kubeflow/kubeflow)
@@ -21,6 +23,9 @@ TODOs
   - [TensorFlow](https://github.com/tensorflow/tensorflow)
   - [AutoKeras](https://github.com/keras-team/autokeras)
   - [Keras](https://github.com/keras-team/keras)
+
+* [GCP Vizier](https://cloud.google.com/ai-platform/optimizer/docs/overview)
+* [GCP AutoML tables](https://cloud.google.com/automl-tables)
 
 * https://github.com/kubeflow/kfserving
   - https://github.com/knative/serving
