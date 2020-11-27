@@ -31,10 +31,13 @@ TODOs
   - https://github.com/knative/serving
     * https://github.com/istio/istio
 
-* [Dgraph](https://github.com/dgraph-io/dgraph)
+### Database
 
+* [Dgraph](https://github.com/dgraph-io/dgraph)
 * [TiDB - HTAP](https://github.com/pingcap/tidb)
   - 先替代 MySQL 吧 :), HTAP 言之尚早
+
+### Service
 
 * [Dapr v1.0](https://github.com/dapr/dapr)
   - 先有点行业案例吧
