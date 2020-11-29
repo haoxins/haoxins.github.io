@@ -71,12 +71,6 @@ https://github.com/hyperledger/fabric
   - 先有点行业案例吧
   - 替代 Spring boot & cloud 的不会是另一个 Web framework
 
-### Serverless
-
-* Workflow: https://cloud.google.com/workflows
-  - https://help.aliyun.com/product/113549.html
-* Database: https://cloud.google.com/firestore
-
 ### Language
 
 * [Go2 Beta](https://github.com/golang/go/milestone/72)
@@ -90,6 +84,12 @@ https://github.com/hyperledger/fabric
 * [WebAssembly/WAGI](TODO)
 
 * Python3 as default (Linux, MacOS)
+
+### Serverless
+
+* Workflow: https://cloud.google.com/workflows
+  - https://help.aliyun.com/product/113549.html
+* Database: https://cloud.google.com/firestore
 
 ### Network
 
