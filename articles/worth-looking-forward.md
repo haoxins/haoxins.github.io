@@ -8,8 +8,6 @@ date: 2018-12-02
 
 ## 2022 Blockchain & ??
 
-* [Dgraph](https://github.com/dgraph-io/dgraph)
-
 ### Blockchain
 
 https://www.nervos.org
@@ -28,6 +26,16 @@ https://github.com/paritytech/substrate-lite
 https://github.com/hyperledger
 https://github.com/hyperledger/grid
 https://github.com/hyperledger/fabric
+
+### Machine learning
+
+### Language
+
+### Database
+
+* [TiDB - HTAP](https://github.com/pingcap/tidb)
+* [Dgraph](https://github.com/dgraph-io/dgraph)
+
 ------------------
 
 ## 2021 Machine learning (lockdown in 2020-12-??)
