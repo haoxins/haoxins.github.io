@@ -30,7 +30,7 @@ https://github.com/hyperledger/grid
 https://github.com/hyperledger/fabric
 ------------------
 
-## 2021 Cloud (lockdown in 2020-12-??)
+## 2021 Machine learning (lockdown in 2020-12-??)
 
 ### Machine learning
 
@@ -41,6 +41,9 @@ https://github.com/hyperledger/fabric
   - [TensorFlow](https://github.com/tensorflow/tensorflow)
   - [AutoKeras](https://github.com/keras-team/autokeras)
   - [Keras](https://github.com/keras-team/keras)
+
+* [MLIR - Multi-Level IR Compiler Framework](https://mlir.llvm.org)
+  - http://llvm.org/devmtg/2019-04/slides/Keynote-ShpeismanLattner-MLIR.pdf
 
 * [GCP Vizier](https://cloud.google.com/ai-platform/optimizer/docs/overview)
 * [GCP AutoML tables](https://cloud.google.com/automl-tables)
