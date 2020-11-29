@@ -8,7 +8,7 @@ date: 2018-12-02
 
 ## 2022 Blockchain & ??
 
-TODOs
+* [Dgraph](https://github.com/dgraph-io/dgraph)
 
 ------------------
 
@@ -33,7 +33,6 @@ TODOs
 
 ### Database
 
-* [Dgraph](https://github.com/dgraph-io/dgraph)
 * [TiDB - HTAP](https://github.com/pingcap/tidb)
   - 先替代 MySQL 吧 :), HTAP 言之尚早
 
