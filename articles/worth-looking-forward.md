@@ -84,6 +84,7 @@ https://github.com/hyperledger/fabric
 * [WebAssembly/WAGI](TODO)
 
 * Python3 as default (Linux, MacOS)
+* Python 3.11 release
 
 ### Serverless
 
