@@ -9,8 +9,8 @@ date: 2019-10-24
 
 ### 2020-11
 
-* [大军师司马懿:虎啸龙吟](https://movie.douban.com/subject/27087788/)
-* [大军师司马懿:军师联盟](https://movie.douban.com/subject/26605881/)
+* [大军师司马懿: 虎啸龙吟](https://movie.douban.com/subject/27087788/)
+* [大军师司马懿: 军师联盟](https://movie.douban.com/subject/26605881/)
   - 一路行来, 没有敌人, 只有朋友和师长
 
 ### 2020-10
