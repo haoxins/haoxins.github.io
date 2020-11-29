@@ -55,15 +55,13 @@ https://github.com/hyperledger/fabric
 ### Database
 
 * [TiDB - HTAP](https://github.com/pingcap/tidb)
-  - 先替代 MySQL 吧 :), HTAP 言之尚早
+  - 先蚕食 MySQL/PostgreSQL 吧 :), **HTAP** 言之尚早
 
-### Service
+### Service runtime
 
 * [Dapr v1.0](https://github.com/dapr/dapr)
   - 先有点行业案例吧
   - 替代 Spring boot & cloud 的不会是另一个 Web framework
-
-* https://github.com/hashicorp/consul
 
 ### Serverless
 
