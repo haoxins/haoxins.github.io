@@ -27,6 +27,11 @@ https://github.com/hyperledger
 https://github.com/hyperledger/grid
 https://github.com/hyperledger/fabric
 
+https://github.com/libp2p/go-libp2p
+https://github.com/ipfs/go-ipfs
+https://github.com/ethereum/go-ethereum
+https://github.com/ethereum/solidity
+
 ### Machine learning
 
 ### Language
