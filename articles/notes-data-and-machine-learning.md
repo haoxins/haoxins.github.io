@@ -7,7 +7,10 @@ date: 2019-06-30
 ### Cases
 
 * Sigmoid - 逻辑回归
-* Softmax -
+* Softmax - 多元逻辑回归
+* SVM
+  - 中小型复杂数据集
+  - 对特征的缩放敏感
 
 ### Blogs
 
