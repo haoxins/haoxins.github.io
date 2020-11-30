@@ -4,6 +4,11 @@ description: AI & ML
 date: 2019-06-30
 ---
 
+### Cases
+
+* Sigmoid - 逻辑回归
+* Softmax -
+
 ### Blogs
 
 * [Tim Dettmers](http://timdettmers.com)
