@@ -68,7 +68,8 @@ https://github.com/ethereum/solidity
 ### Database
 
 * [TiDB - HTAP](https://github.com/pingcap/tidb)
-  - 先蚕食 MySQL/PostgreSQL 吧 :), **HTAP** 言之尚早
+  - TiDB v5
+  - 蚕食 **MySQL/PostgreSQL** & **HTAP**
 
 ### Service runtime
 
