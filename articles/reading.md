@@ -1,6 +1,6 @@
 ---
 title: 阅读书单 & 简记
-description: 觉得自己蠢, 是一种幸福
+description: 莫听穿林打叶声, 何妨吟啸且徐行
 date: 2018-04-01
 ---
 
