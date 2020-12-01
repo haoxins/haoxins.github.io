@@ -46,6 +46,9 @@ date: 2018-04-01
 * [机器学习实战: 基于 Scikit-Learn Keras 和 TensorFlow (第2版)](https://book.douban.com/subject/35218199/)
   - 好吧, 书到货了才发现, 其实就是下面那本的 第二版 :(
   - 个人的 ML 学习之路有 3个节点, 每一个节点都是约 1个月多一点的 工作空窗期
+  - Aurélien Geron 工程派, 吴恩达 学院派
+  - Aurélien Geron 轻松点到工程关注点
+  - 吴恩达 清晰地讲解基本原理
   - `2015 夏季` 跟着一本书 [机器学习实战](https://book.douban.com/subject/24703171/)
   - `2019 夏季` Coursera, 主要是 吴恩达 的课程 (Not code first)
   - `2020 冬季` 就算这本书吧 (Code first)
