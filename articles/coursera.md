@@ -1,6 +1,6 @@
 ---
 title: Coursera 课程记录
-description: My coursera records
+description: 料峭春风吹酒醒, 微冷, 山头斜照却相迎
 date: 2019-05-30
 ---
 
