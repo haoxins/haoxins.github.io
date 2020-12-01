@@ -10,9 +10,9 @@ date: 2019-05-26
 
 ### 个人年度关键词
 
-* `区块链`
+* `Blockchain`
+* `Machine learning`
 * `冥想`
-* `Social`
 
 ### Blockchain
 
