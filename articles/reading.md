@@ -1,5 +1,5 @@
 ---
-title: 阅读笔记
+title: 阅读书单 & 简记
 description: 觉得自己蠢, 是一种幸福
 date: 2018-04-01
 ---
