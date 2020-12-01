@@ -4,7 +4,21 @@ description: Annual events
 date: 2019-05-26
 ---
 
+------------------
+
 ## 2021
+
+### 个人年度关键词
+
+* `区块链`
+* `冥想`
+* `Social`
+
+### Blockchain
+
+### Machine learning
+
+### 社会
 
 ------------------
 
