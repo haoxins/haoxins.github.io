@@ -4,6 +4,14 @@ description: AI & ML
 date: 2019-06-30
 ---
 
+### TensorFlow
+
+* TensorBoard
+* TFX (TensorFlow Extended)
+* TF Serving
+
+* TF <> **NumPy**
+
 ### Cases
 
 * Sigmoid - 逻辑回归

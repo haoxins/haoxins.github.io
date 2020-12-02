@@ -53,7 +53,11 @@ https://github.com/ethereum/solidity
   - [kubeflow/kfserving](https://github.com/kubeflow/kfserving)
   - [TensorFlow](https://github.com/tensorflow/tensorflow)
   - [AutoKeras](https://github.com/keras-team/autokeras)
-  - [Keras](https://github.com/keras-team/keras)
+
+* Cloud native ML & Data development
+  - https://colab.research.google.com 体验很好
+  - https://aihub.cloud.google.com
+  - https://cloud.google.com/ai-platform-notebooks
 
 * [MLIR - Multi-Level IR Compiler Framework](https://mlir.llvm.org)
   - http://llvm.org/devmtg/2019-04/slides/Keynote-ShpeismanLattner-MLIR.pdf
@@ -63,7 +67,7 @@ https://github.com/ethereum/solidity
 
 * https://github.com/kubeflow/kfserving
   - https://github.com/knative/serving
-    * https://github.com/istio/istio
+    - https://github.com/istio/istio
 
 ### Database
 
@@ -74,7 +78,7 @@ https://github.com/ethereum/solidity
 ### Service runtime
 
 * [Dapr v1.0](https://github.com/dapr/dapr)
-  - 先有点行业案例吧
+  - 多点行业案例吧
   - 替代 Spring boot & cloud 的不会是另一个 Web framework
 
 ### Language
