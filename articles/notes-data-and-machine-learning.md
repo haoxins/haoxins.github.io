@@ -10,8 +10,6 @@ date: 2019-06-30
 * TFX (TensorFlow Extended)
 * TF Serving
 
-* TF <> **NumPy**
-
 ### Cases
 
 * Sigmoid - 逻辑回归
