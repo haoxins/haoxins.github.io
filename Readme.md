@@ -11,6 +11,10 @@
 
 * [HashiCorp](https://github.com/hashicorp)
 
+### Good websites
+
+* https://paperswithcode.com
+
 ## Good articles
 
 ### Coding

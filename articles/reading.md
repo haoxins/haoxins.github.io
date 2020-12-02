@@ -56,6 +56,8 @@ date: 2018-04-01
   - TensorFlow v2
   - 第8章: 降维, 开始章节, 对于高维度的几个违背直觉的示例, 反倒很情理之中
   - [书籍配套代码](https://github.com/ageron/handson-ml2)
+  - 作者很负责, 书籍出版之后, 代码库一直在更新
+  - 对最新的 Papers 等进展一直关注 (书籍中最新 ref 的基本接近成书日期)
 
 * [机器学习实战: 基于 Scikit-Learn 和 TensorFlow](https://book.douban.com/subject/30317874/)
   - 好吧, 书到货了才发现, 其实就是上面那本的 第一版 :)
