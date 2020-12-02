@@ -47,7 +47,7 @@ date: 2018-04-01
   - 好吧, 书到货了才发现, 其实就是下面那本的 第二版 :(
   - 个人的 ML 学习之路有 3个节点, 每一个节点都是约 1个月多一点的 工作空窗期
   - Aurélien Geron 工程派, 吴恩达 学院派
-  - Aurélien Geron 轻松点到工程关注点
+  - Aurélien Geron 轻松点到工程关键点
   - 吴恩达 清晰地讲解基本原理
   - `2015 夏季` 跟着一本书 [机器学习实战](https://book.douban.com/subject/24703171/)
   - `2019 夏季` Coursera, 主要是 吴恩达 的课程 (Not code first)
@@ -55,6 +55,7 @@ date: 2018-04-01
   - `6年` 的时间, 理论知识其实没有大的变化, 但工程上已经今非昔比了
   - TensorFlow v2
   - 第8章: 降维, 开始章节, 对于高维度的几个违背直觉的示例, 反倒很情理之中
+  - [书籍配套代码](https://github.com/ageron/handson-ml2)
 
 * [机器学习实战: 基于 Scikit-Learn 和 TensorFlow](https://book.douban.com/subject/30317874/)
   - 好吧, 书到货了才发现, 其实就是上面那本的 第一版 :)
