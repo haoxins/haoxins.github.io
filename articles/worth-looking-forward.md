@@ -6,7 +6,7 @@ date: 2018-12-02
 
 ------------------
 
-## 2022 Blockchain & ??
+## 2022 Blockchain (Lockdown in 2021-10-0?)
 
 ### Blockchain
 
@@ -36,38 +36,36 @@ https://github.com/ethereum/solidity
 
 ### Language
 
+* [wasmer](??)
+* [wasmtime](https://github.com/bytecodealliance/wasmtime)
+* [WebAssembly/WAGI](TODO)
+
 ### Database
 
 * [TiDB - HTAP](https://github.com/pingcap/tidb)
+  - Supports serverless
 * [Dgraph](https://github.com/dgraph-io/dgraph)
 
 ------------------
 
-## 2021 Machine learning (lockdown in 2020-12-??)
+## 2021 Machine learning (lockdown in 2020-12-03)
 
 ### Machine learning
 
 * KubeFlow
-  - [kubeflow.org](https://www.kubeflow.org)
   - [kubeflow/kubeflow](https://github.com/kubeflow/kubeflow)
   - [kubeflow/kfserving](https://github.com/kubeflow/kfserving)
-  - [TensorFlow](https://github.com/tensorflow/tensorflow)
-  - [AutoKeras](https://github.com/keras-team/autokeras)
+    * [knative/serving](https://github.com/knative/serving)
 
 * Cloud native ML & Data development
   - https://colab.research.google.com 体验很好
   - https://aihub.cloud.google.com
-  - https://cloud.google.com/ai-platform-notebooks
 
 * [MLIR - Multi-Level IR Compiler Framework](https://mlir.llvm.org)
   - http://llvm.org/devmtg/2019-04/slides/Keynote-ShpeismanLattner-MLIR.pdf
 
 * [GCP Vizier](https://cloud.google.com/ai-platform/optimizer/docs/overview)
 * [GCP AutoML tables](https://cloud.google.com/automl-tables)
-
-* https://github.com/kubeflow/kfserving
-  - https://github.com/knative/serving
-    - https://github.com/istio/istio
 
 ### Database
 
@@ -83,17 +81,14 @@ https://github.com/ethereum/solidity
 
 ### Language
 
-* [Go2 Beta](https://github.com/golang/go/milestone/72)
+* [Go2 Beta?](https://github.com/golang/go/milestone/72)
   - Proposals 冻结
-  - [Go 1.18](??)
 * [Go - support HTTP/3](https://github.com/golang/go/issues/32204)
 * [Go ORM - facebook/ent v1](https://github.com/facebook/ent)
 
-* [wasmtime](https://github.com/bytecodealliance/wasmtime)
 * [WebAssembly/WASI](https://github.com/WebAssembly/WASI)
-* [WebAssembly/WAGI](TODO)
 
-* Python3 as default (Linux, MacOS)
+* Python3 as default (Ubuntu, MacOS)
 * Python 3.11 release
 
 ### Serverless
@@ -101,6 +96,7 @@ https://github.com/ethereum/solidity
 * Workflow: https://cloud.google.com/workflows
   - https://help.aliyun.com/product/113549.html
 * Database: https://cloud.google.com/firestore
+  - Aliyun HBase, MongoDB, Lindorm Serverless 版
 
 ### Network
 
