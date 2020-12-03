@@ -20,6 +20,7 @@ date: 2019-05-30
 
 * [TensorFlow: Advanced Techniques](https://www.coursera.org/specializations/tensorflow-advanced-techniques)
   - Grade Achieved: ``
+  - 呃, 貌似与 Youtube/Bilibili 的 Google 课程区别不是很大 :)
 
 ------------------
 
