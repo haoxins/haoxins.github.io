@@ -11,6 +11,7 @@ date: 2019-06-30
 * TF Serving
 * TF Record
   - protobuf
+* Functional APIs
 
 ### Cases
 
