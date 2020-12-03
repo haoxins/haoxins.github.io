@@ -10,25 +10,16 @@ date: 2018-12-02
 
 ### Blockchain
 
-https://www.nervos.org
 https://github.com/nervosnetwork/ckb
 https://github.com/nervosnetwork/ckb-vm
 
-https://cosmos.network
-https://tendermint.com
-https://github.com/tendermint/tendermint
-
-https://polkadot.network
 https://github.com/paritytech/polkadot
 https://github.com/paritytech/substrate
-https://github.com/paritytech/substrate-lite
 
-https://github.com/hyperledger
-https://github.com/hyperledger/grid
 https://github.com/hyperledger/fabric
 
-https://github.com/libp2p/go-libp2p
 https://github.com/ipfs/go-ipfs
+https://github.com/libp2p/go-libp2p
 https://github.com/ethereum/go-ethereum
 https://github.com/ethereum/solidity
 
@@ -36,10 +27,12 @@ https://github.com/ethereum/solidity
 
 ### Language
 
-https://github.com/wasm3/wasm3
-* [wasmer](??)
+- Which one?
+
+* [wasm3/wasm3](https://github.com/wasm3/wasm3)
+* [wasmerio/wasmer](https://github.com/wasmerio/wasmer)
 * [wasmtime](https://github.com/bytecodealliance/wasmtime)
-* [WebAssembly/WAGI](TODO)
+* [WebAssembly/WAGI](https://github.com/deislabs/wagi)
 
 ### Database
 
