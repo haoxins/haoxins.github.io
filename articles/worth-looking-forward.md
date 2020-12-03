@@ -81,7 +81,7 @@ https://github.com/ethereum/solidity
 
 ### Language
 
-* [Go2 Beta?](https://github.com/golang/go/milestone/72)
+* [Go2 Beta?](https://github.com/golang/go/milestone/175)
   - Proposals 冻结
 * [Go - support HTTP/3](https://github.com/golang/go/issues/32204)
 * [Go ORM - facebook/ent v1](https://github.com/facebook/ent)
