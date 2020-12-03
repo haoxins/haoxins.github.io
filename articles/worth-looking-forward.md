@@ -36,6 +36,7 @@ https://github.com/ethereum/solidity
 
 ### Language
 
+https://github.com/wasm3/wasm3
 * [wasmer](??)
 * [wasmtime](https://github.com/bytecodealliance/wasmtime)
 * [WebAssembly/WAGI](TODO)
