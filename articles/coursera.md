@@ -4,6 +4,8 @@ description: 料峭春风吹酒醒, 微冷, 山头斜照却相迎
 date: 2019-05-30
 ---
 
+* 看着 Coursera UI/UX 的进化, Lab env 的进步, 还挺有意思的
+
 ### 2021
 
 * [Cryptography II](https://www.coursera.org/learn/crypto2)

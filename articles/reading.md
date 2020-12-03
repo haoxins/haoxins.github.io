@@ -33,6 +33,7 @@ date: 2018-04-01
 
 * [怎样解题: 数学思维的新方法](https://book.douban.com/subject/2124114/)
   - G·波利亚
+  - **探索法**
 
 * [公式之美](https://book.douban.com/subject/35218287/)
   - **量子学派**, 不错的科普组织

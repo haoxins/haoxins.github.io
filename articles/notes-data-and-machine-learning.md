@@ -9,6 +9,8 @@ date: 2019-06-30
 * TensorBoard
 * TFX (TensorFlow Extended)
 * TF Serving
+* TF Record
+  - protobuf
 
 ### Cases
 
@@ -32,6 +34,11 @@ date: 2019-06-30
   - 梯度消失
   - 梯度爆炸
   - 过拟合
+* CNN
+  - Inception Network
+  - GoogLeNet (Inception v1)
+  - Inception-ResNet
+  - Siamese Network
 * 降维
   - 训练集维度越高, 越容易过拟合
   - PCA
@@ -246,3 +253,7 @@ how to choose features:
 * Mini-Batch Gradient Descent
 * Ceiling Analysis
 * Online Learning
+
+### Articles
+
+* [知乎: 机器学习从业者必知的5种回归损失函数](https://zhuanlan.zhihu.com/p/39239829)
