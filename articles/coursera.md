@@ -21,6 +21,22 @@ date: 2019-05-30
 * [TensorFlow: Advanced Techniques](https://www.coursera.org/specializations/tensorflow-advanced-techniques)
   - Grade Achieved: ``
   - 呃, 貌似与 Youtube/Bilibili 的 Google 课程区别不是很大 :)
+  - `@Laurence Moroney`
+  - Functional APIs
+  - Grade Achieved: ``
+  -
+  - Custom Loss Functions
+  - Grade Achieved: ``
+  -
+  - Custom Layers
+  - Grade Achieved: ``
+  -
+  - Custom Models
+  - Grade Achieved: ``
+  -
+  - Bonus Content - Callbacks
+  - Grade Achieved: ``
+  -
 
 ------------------
 
