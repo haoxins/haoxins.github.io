@@ -20,7 +20,8 @@ date: 2019-05-30
 
 * [TensorFlow: Advanced Techniques](https://www.coursera.org/specializations/tensorflow-advanced-techniques)
   - Grade Achieved: ``
-  - 呃, 貌似与 Youtube/Bilibili 的 Google 课程区别不是很大 :)
+  - 呃, 貌似与 YouTube/Bilibili 的 Google 课程区别不是很大 :)
+  - 演示是 Google Colab, Lab 是 Jupyter, 差评
   - `@Laurence Moroney`
   - Functional APIs
   - Grade Achieved: ``
