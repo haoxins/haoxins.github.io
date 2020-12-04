@@ -12,6 +12,8 @@ date: 2019-06-30
 * TF Record
   - protobuf
 * Functional APIs
+* Lambda Layers
+* Layer: State + Computation
 
 ### Cases
 
