@@ -4,7 +4,10 @@ description: 料峭春风吹酒醒, 微冷, 山头斜照却相迎
 date: 2019-05-30
 ---
 
-* 看着 Coursera UI/UX 的进化, Lab env 的进步, 还挺有意思的
+* YouTube/bilibili 的优质学习资源已经不输 Coursera 了
+  - bilibili 还有弹幕优势, 哈哈哈
+
+------------------
 
 ### 2021
 
@@ -16,28 +19,28 @@ date: 2019-05-30
 
 ------------------
 
+* 看着 Coursera UI/UX 的进化, Lab env 的进步, 还挺有意思的
+
+------------------
+
 ### 2020
 
 * [TensorFlow: Advanced Techniques](https://www.coursera.org/specializations/tensorflow-advanced-techniques)
   - Grade Achieved: ``
-  - 呃, 貌似与 YouTube/Bilibili 的 Google 课程区别不是很大 :)
+  - 呃, 貌似与 YouTube/bilibili 的 Google 课程区别不是很大 :)
   - 演示是 Google Colab, Lab 是 Jupyter, 差评
   - `@Laurence Moroney`
   - Functional APIs
-  - Grade Achieved: ``
-  -
+  - Grade Achieved: `100.0%`
   - Custom Loss Functions
   - Grade Achieved: ``
-  -
   - Custom Layers
   - Grade Achieved: ``
-  -
   - Custom Models
   - Grade Achieved: ``
-  -
   - Bonus Content - Callbacks
   - Grade Achieved: ``
-  -
+  - 一般, **不推荐**
 
 ------------------
 
