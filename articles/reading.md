@@ -39,6 +39,9 @@ date: 2018-04-01
   - **量子学派**, 不错的科普组织
   - 黎曼猜想, 杨 - 米尔斯规范场论, 香农公式, 椭圆曲线方程 (看之前最感兴趣的)
   - 费马大定理 & 椭圆曲线 的缘份, 两者与密码学的缘份
+  - 0, 1 ~ 群, 环 域 `@研究之美`
+  - 黎曼猜想 `@悠扬的素数`
+  - 牛顿 -> 麦克斯韦 -> 爱因斯坦
   - 此书赠予 @Leon
 
 * [皇帝新脑](https://book.douban.com/subject/30171336/)
@@ -145,7 +148,7 @@ be guided by a much more powerful force, life itself.
 * [概率的烦恼](https://book.douban.com/subject/27618869/)
   - 此书比 **不可能的六件事** 更好
   - 更激进, 更侧重, 更主观
-  - 远不如 **现实不似你所见**
+  - 远不如 **@现实不似你所见**
   - 我不接受 量子贝叶斯理论
 
 * [不可能的六件事](https://book.douban.com/subject/34929827/)
@@ -181,7 +184,7 @@ be guided by a much more powerful force, life itself.
 * [七周七并发模型](https://book.douban.com/subject/26337939/)
   - 一般吧 ~
   - 一直认为: 纯粹的函数式语言不会成为主流 (主流 means Top 10)
-  - 怀念 **Elixir**
+  - 怀念 **Elixir**, `@Elixir 程序设计`
 
 * [跟熊逸一起读唐诗](https://book.douban.com/subject/34826393/)
   - 熊逸老师 在 得到App 的专栏都还不错
