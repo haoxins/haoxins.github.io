@@ -33,14 +33,13 @@ date: 2019-05-30
   - Functional APIs
   - Grade Achieved: `100.0%`
   - Custom Loss Functions
-  - Grade Achieved: ``
+  - Grade Achieved: `100.0%`
   - Custom Layers
-  - Grade Achieved: ``
+  - Grade Achieved: `100.0%`
   - Custom Models
   - Grade Achieved: ``
   - Bonus Content - Callbacks
-  - Grade Achieved: ``
-  - 一般, **不推荐**
+  - 很一般, **不推荐**
 
 ------------------
 

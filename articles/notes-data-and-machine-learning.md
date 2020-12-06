@@ -14,6 +14,7 @@ date: 2019-06-30
 * Functional APIs
 * Lambda Layers
 * Layer: State + Computation
+* Subclassing models
 
 ### Cases
 
