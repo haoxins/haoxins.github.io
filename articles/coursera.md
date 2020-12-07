@@ -26,6 +26,8 @@ date: 2019-05-30
 ### 2020
 
 * [TensorFlow: Advanced Techniques](https://www.coursera.org/specializations/tensorflow-advanced-techniques)
+  - ...
+  - ...
   - **Courses**
   - Custom Models, Layers, and Loss Functions with TensorFlow
   - Grade Achieved: `100.0%`
@@ -34,8 +36,14 @@ date: 2019-05-30
   - 演示是 Google Colab, Lab 是 Jupyter, 差评
   - `@Laurence Moroney`
   - Custom and Distributed Training with TensorFlow
+  - Grade Achieved: ``
+  - TODO
   - Advanced Computer Vision with TensorFlow
+  - Grade Achieved: ``
+  - TODO
   - Generative Deep Learning with TensorFlow
+  - Grade Achieved: ``
+  - TODO
 
 ------------------
 
