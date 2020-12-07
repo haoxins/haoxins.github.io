@@ -33,6 +33,9 @@ date: 2019-05-30
   - 呃, 貌似与 YouTube/bilibili 的 Google 课程区别不是很大 :)
   - 演示是 Google Colab, Lab 是 Jupyter, 差评
   - `@Laurence Moroney`
+  - Custom and Distributed Training with TensorFlow
+  - Advanced Computer Vision with TensorFlow
+  - Generative Deep Learning with TensorFlow
 
 ------------------
 
