@@ -26,6 +26,7 @@ date: 2019-05-30
 ### 2020
 
 * [TensorFlow: Advanced Techniques](https://www.coursera.org/specializations/tensorflow-advanced-techniques)
+  - **Courses**
   - Custom Models, Layers, and Loss Functions with TensorFlow
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/25G2GE4PSU6E
@@ -48,7 +49,7 @@ date: 2019-05-30
 * [Deep Learning](https://www.coursera.org/specializations/deep-learning)
   - https://www.coursera.org/account/accomplishments/specialization/WVK5UDQCN8DN
   - https://www.coursera.org/account/accomplishments/specialization/certificate/WVK5UDQCN8DN
-  - Courses
+  - **Courses**
   - Convolutional Neural Networks
   - Grade Achieved: `99.5%`
   - https://www.coursera.org/account/accomplishments/certificate/G3AB22W52P7K
@@ -68,7 +69,7 @@ date: 2019-05-30
 * [Data Engineering, Big Data, and Machine Learning on GCP](https://www.coursera.org/specializations/gcp-data-machine-learning)
   - https://www.coursera.org/account/accomplishments/specialization/WTGYDY4ZHX6L
   - https://www.coursera.org/account/accomplishments/specialization/certificate/WTGYDY4ZHX6L
-  - Courses
+  - **Courses**
   - Leveraging Unstructured Data with Cloud Dataproc on Google Cloud Platform
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/E3QDJW24V749
@@ -89,7 +90,7 @@ date: 2019-05-30
 * [Architecting with Google Cloud Platform](https://www.coursera.org/specializations/gcp-architecture)
   - https://www.coursera.org/account/accomplishments/specialization/HHM3BJXJUW63
   - https://www.coursera.org/account/accomplishments/specialization/certificate/HHM3BJXJUW63
-  - Courses
+  - **Courses**
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/XPRQSEH9DJ54
   - Grade Achieved: `98.7%`
@@ -106,7 +107,7 @@ date: 2019-05-30
 * [From Data to Insights with Google Cloud Platform](https://www.coursera.org/specializations/from-data-to-insights-google-cloud-platform)
   - https://www.coursera.org/account/accomplishments/specialization/LABQ8JZ99NML
   - https://www.coursera.org/account/accomplishments/specialization/certificate/LABQ8JZ99NML
-  - Courses
+  - **Courses**
   - Grade Achieved: `100%`
   - https://www.coursera.org/account/accomplishments/certificate/354BPNUUEDA9
   - Grade Achieved: `100%`
