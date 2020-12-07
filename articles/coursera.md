@@ -26,7 +26,9 @@ date: 2019-05-30
 ### 2020
 
 * [TensorFlow: Advanced Techniques](https://www.coursera.org/specializations/tensorflow-advanced-techniques)
-  - Grade Achieved: ``
+  - https://www.coursera.org/account/accomplishments/certificate/25G2GE4PSU6E
+  - https://www.coursera.org/account/accomplishments/verify/25G2GE4PSU6E
+  - Grade Achieved: `100.0%`
   - 呃, 貌似与 YouTube/bilibili 的 Google 课程区别不是很大 :)
   - 演示是 Google Colab, Lab 是 Jupyter, 差评
   - `@Laurence Moroney`
@@ -37,7 +39,7 @@ date: 2019-05-30
   - Custom Layers
   - Grade Achieved: `100.0%`
   - Custom Models
-  - Grade Achieved: ``
+  - Grade Achieved: `100.0%`
   - Bonus Content - Callbacks
   - 很一般, **不推荐**
 
