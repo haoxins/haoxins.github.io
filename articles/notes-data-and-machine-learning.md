@@ -17,6 +17,8 @@ date: 2019-06-30
 * Subclassing Models
 * Built-in Callbacks
 * Custom Callbacks
+* Gradient Tape
+* Eager Mode & Graph Mode
 
 ### Cases
 
