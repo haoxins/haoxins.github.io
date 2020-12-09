@@ -20,6 +20,8 @@ date: 2019-06-30
 * Gradient Tape
 * Eager Mode & Graph Mode
 
+* Distributed Strategies
+
 ### Cases
 
 * Sigmoid - 逻辑回归
