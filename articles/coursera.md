@@ -42,6 +42,20 @@ date: 2019-05-30
   - Generative Deep Learning with TensorFlow
   - TODO
 
+* [Blockchain](https://www.coursera.org/specializations/blockchain)
+  - 重新思考一下
+  - ...
+  - ...
+  - **Courses**
+  - Blockchain Basics
+  - ...
+  - Smart Contracts
+  - ...
+  - Decentralized Applications (Dapps)
+  - ...
+  - Blockchain Platforms
+  - ...
+
 ------------------
 
 ### 2019
