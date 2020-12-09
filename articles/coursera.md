@@ -36,7 +36,7 @@ date: 2019-05-30
   - 演示是 Google Colab, Lab 是 Jupyter, 差评
   - `@Laurence Moroney`
   - Custom and Distributed Training with TensorFlow
-  - TODO
+  - https://www.coursera.org/account/accomplishments/certificate/RQCVH97BGRWZ
   - Advanced Computer Vision with TensorFlow
   - TODO
   - Generative Deep Learning with TensorFlow
