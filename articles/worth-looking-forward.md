@@ -18,11 +18,6 @@ https://github.com/libp2p/go-libp2p
 https://github.com/ethereum/go-ethereum
 https://github.com/ethereum/solidity
 
-https://github.com/paritytech/polkadot
-https://github.com/paritytech/substrate
-
-https://github.com/hyperledger/fabric
-
 ### Big Data
 
 * 出现多年的口号, 有望落地, 基础设施, 主流选择基本落定
