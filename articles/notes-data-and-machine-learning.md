@@ -19,7 +19,7 @@ date: 2019-06-30
 * Custom Callbacks
 * Gradient Tape
 * Eager Mode & Graph Mode
-
+* Auto Graph
 * Distributed Strategies
 
 ### Cases

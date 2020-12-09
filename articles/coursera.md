@@ -36,13 +36,10 @@ date: 2019-05-30
   - 演示是 Google Colab, Lab 是 Jupyter, 差评
   - `@Laurence Moroney`
   - Custom and Distributed Training with TensorFlow
-  - Grade Achieved: ``
   - TODO
   - Advanced Computer Vision with TensorFlow
-  - Grade Achieved: ``
   - TODO
   - Generative Deep Learning with TensorFlow
-  - Grade Achieved: ``
   - TODO
 
 ------------------
