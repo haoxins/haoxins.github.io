@@ -43,7 +43,8 @@ date: 2019-05-30
   - TODO
 
 * [Blockchain](https://www.coursera.org/specializations/blockchain)
-  - 重新思考一下
+  - **课程其实一般**, 从个人角度而言, 从头, 重新梳理一下, 温故知新
+  - 好多 links 失效了, 内容也未及时更新, **不推荐**
   - ...
   - ...
   - **Courses**
