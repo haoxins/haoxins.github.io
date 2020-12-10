@@ -1,6 +1,6 @@
 ---
-title: Apache Beam and Flink
-description: :)
+title: Data infrastructure notes
+description: Apache Spark, Flink and more
 date: 2020-11-03
 ---
 
