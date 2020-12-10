@@ -17,3 +17,7 @@ date: 2019-12-10
 
 * [Lay Down the Common Metrics](https://www.esat.kuleuven.be/cosic/publications/article-3005.pdf)
   - Lay Down the Common Metrics: Evaluating Proof-of-Work Consensus Protocols' Security
+
+### ~
+
+* ECC, Merkle tree hash, SHA-256, Keccak-256
