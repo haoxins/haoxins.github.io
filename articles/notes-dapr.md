@@ -4,5 +4,4 @@ description: :)
 date: 2020-11-04
 ---
 
-* https://dapr.io
-* https://github.com/dapr/dapr
+* https://docs.dapr.io/concepts/faq
