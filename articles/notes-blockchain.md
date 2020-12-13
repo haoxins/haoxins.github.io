@@ -6,6 +6,11 @@ date: 2019-12-10
 
 * https://github.com/w3f
 
+* To B
+  - Fabric (PBFT)
+* IPFS
+* Hashgraph ?
+
 ### ~
 
 * [RingCT 3.0](https://eprint.iacr.org/2019/508.pdf)

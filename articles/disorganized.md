@@ -15,8 +15,8 @@ date: 2019-07-13
 
 ### 2021-0?
 
-* 正式从 Apple ios 切换到 Android (**小米 10 至尊**)
-  - Android **11**
+* 正式从 Apple ios 切换到 Android (**小米10至尊纪念版**)
+  - **Android 11**
 
 ### 2021-??
 
