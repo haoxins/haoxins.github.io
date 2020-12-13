@@ -55,7 +55,7 @@ date: 2019-05-30
   - Decentralized Applications (Dapps)
   - ...
   - Blockchain Platforms
-  - ...
+  - https://www.coursera.org/account/accomplishments/certificate/DNELVZPAR2XL
 
 ------------------
 
