@@ -8,6 +8,7 @@ date: 2019-07-13
 
 ## 2022
 
+* iPad, ChromeOS pad, Android pad 作为 非Office 主力机器?
 
 ------------------
 
