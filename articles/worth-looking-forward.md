@@ -1,6 +1,6 @@
 ---
 title: 关于技术, 次年度期待清单
-description: The future is always awesome
+description: 钟鼓馔玉何足贵, 但愿长醉不复醒.
 date: 2018-12-02
 ---
 
