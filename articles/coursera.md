@@ -51,7 +51,7 @@ date: 2019-05-30
   - Blockchain Basics
   - https://www.coursera.org/account/accomplishments/certificate/XXA6X7ESP2SP
   - Smart Contracts
-  - ...
+  - https://www.coursera.org/account/accomplishments/certificate/BKW6ZUJ7Q6EJ
   - Decentralized Applications (Dapps)
   - ...
   - Blockchain Platforms
