@@ -45,15 +45,16 @@ date: 2019-05-30
 * [Blockchain](https://www.coursera.org/specializations/blockchain)
   - **课程其实一般**, 从个人角度而言, 从头, 重新梳理一下, 温故知新
   - 好多 links 失效了, 内容也未及时更新, **不推荐**
-  - ...
-  - ...
+  - https://coursera.org/share/f54a28d0e715fbfec5827e80b4029a44
+  - https://www.coursera.org/account/accomplishments/specialization/E85UARYBNVFM
+  - https://www.coursera.org/account/accomplishments/specialization/certificate/E85UARYBNVFM
   - **Courses**
   - Blockchain Basics
   - https://www.coursera.org/account/accomplishments/certificate/XXA6X7ESP2SP
   - Smart Contracts
   - https://www.coursera.org/account/accomplishments/certificate/BKW6ZUJ7Q6EJ
   - Decentralized Applications (Dapps)
-  - ...
+  - https://www.coursera.org/account/accomplishments/certificate/VQUY7KQCX9LT
   - Blockchain Platforms
   - https://www.coursera.org/account/accomplishments/certificate/DNELVZPAR2XL
 
