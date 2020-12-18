@@ -5,7 +5,7 @@ date: 2020-11-09
 ---
 
 * [Common used path planning algorithms with animations](https://github.com/zhm-real/PathPlanning)
-
+* [The Raft Consensus Algorithm](https://raft.github.io)
 
 ## Graph
 
