@@ -248,7 +248,11 @@ be guided by a much more powerful force, life itself.
   - 下一步: `拓扑学`, 候选书籍: `绳圈的数学`
 
 * [生成对抗网络项目实战](https://www.ituring.com.cn/book/2681)
-  - 选读了部分章节
+  - 2014年, Ian J. Goodfellow
+  - https://arxiv.org/abs/1406.2661
+  - https://arxiv.org/pdf/1406.2661.pdf
+  - 生成 vs 判别, 纳什均衡
+  - TensorFlow v1
 
 * [深度学习的数学](https://book.douban.com/subject/33414479/)
   - 受之前系列图书的影响, 对 `日本作者` 写的 `数学书籍` 有好感
