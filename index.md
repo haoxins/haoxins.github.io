@@ -1,7 +1,7 @@
+* [个人书单 & 简记](articles/reading.md)
 * [旅游](articles/traveling.md)
 * [杂七杂八](articles/disorganized.md)
 * [Algorithm notes](articles/notes-algorithm.md)
-* [个人书单 & 简记](articles/reading.md)
 * [观影 视频 ...](articles/watching.md)
 * [Coursera 课程记录](articles/coursera.md)
 * [关于技术, 次年度期待清单](articles/worth-looking-forward.md)
