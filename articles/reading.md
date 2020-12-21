@@ -73,7 +73,7 @@ date: 2018-04-01
 * [数据分析之图算法: 基于 Spark 和 Neo4j](https://book.douban.com/subject/35217091/)
 
 * [基于 Apache Flink 的流处理](https://book.douban.com/subject/34912177/)
-  - 还行
+  - 适合入门, 基于 Flink v1.7
 
 * [Kafka 权威指南](https://book.douban.com/subject/27665114/)
   - 一般
