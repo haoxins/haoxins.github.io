@@ -25,15 +25,6 @@ https://github.com/ethereum/solidity
 
 ### Machine learning
 
-### Language
-
-- Which one?
-
-* [wasm3/wasm3](https://github.com/wasm3/wasm3)
-* [wasmerio/wasmer](https://github.com/wasmerio/wasmer)
-* [wasmtime](https://github.com/bytecodealliance/wasmtime)
-* [WebAssembly/WAGI](https://github.com/deislabs/wagi)
-
 ### Database
 
 * [TiDB - HTAP](https://github.com/pingcap/tidb)
