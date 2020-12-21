@@ -22,7 +22,6 @@ https://github.com/ethereum/solidity
 
 ### Big Data
 
-* 出现多年的口号, 有望落地, 基础设施, 主流选择基本落定
 
 ### Machine learning
 

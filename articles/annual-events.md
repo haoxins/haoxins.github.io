@@ -4,17 +4,23 @@ description: Annual events
 date: 2019-05-26
 ---
 
+## 2022
+
+### 个人年度关键词
+
+* `Blockchain`
+
+### Blockchain
+
 ------------------
 
 ## 2021
 
 ### 个人年度关键词
 
-* `Blockchain`
 * `Machine learning`
+* `运动`
 * `冥想`
-
-### Blockchain
 
 ### Machine learning
 

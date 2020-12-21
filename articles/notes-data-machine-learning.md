@@ -64,20 +64,6 @@ date: 2019-06-30
 
 * [Tim Dettmers](http://timdettmers.com)
 
-* https://github.com/numpy/numpy
-* https://github.com/pandas-dev/pandas
-
-* https://github.com/scikit-learn/scikit-learn
-
-* https://github.com/keras-team/keras
-
-* https://keras.io
-  - https://www.tensorflow.org
-
-* NVIDIA
-  - CUDA
-  - cuDNN
-
 ## Structuring Deep Learning Projects
 
 * Orthogonalization

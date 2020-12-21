@@ -4,13 +4,6 @@
 在学习区做事, 叫做事.
 ```
 
-### Tools
-
-* [Direnv](https://github.com/direnv/direnv)
-* [CLI for Apache Kafka](https://github.com/birdayz/kaf)
-
-* [HashiCorp](https://github.com/hashicorp)
-
 ### Good websites
 
 * https://paperswithcode.com
