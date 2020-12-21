@@ -8,8 +8,6 @@ date: 2018-12-02
 
 ## 2022 Blockchain (Lockdown in 2021-10-0?)
 
-### Cloud native development
-
 ### Blockchain
 
 https://github.com/nervosnetwork/ckb
@@ -20,10 +18,9 @@ https://github.com/libp2p/go-libp2p
 https://github.com/ethereum/go-ethereum
 https://github.com/ethereum/solidity
 
-### Big Data
+### Big Data & Machine learning
 
-
-### Machine learning
+* Cloud native development and deployment
 
 ### Database
 
