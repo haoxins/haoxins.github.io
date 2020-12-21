@@ -24,9 +24,11 @@ https://github.com/ethereum/solidity
 
 ### Database
 
-* [TiDB - HTAP](https://github.com/pingcap/tidb)
+* [GraphScope](https://graphscope.io)
+  - https://github.com/alibaba/graphscope
+* [TiDB](https://github.com/pingcap/tidb)
+  - HTAP is ready
   - Supports serverless
-* [Dgraph](https://github.com/dgraph-io/dgraph)
 
 ------------------
 
