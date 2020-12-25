@@ -10,6 +10,24 @@ date: 2020-11-03
 
 ## Flink
 
+* SQL
+  - Rowtime 列在经过窗口操作后, 其 Event Time 属性将丢失
+  - https://help.aliyun.com/document_detail/62510.html
+
+```
+Window (If 5min)
+  TUMBLE [0, 5) [5, 10) [10, 15)
+  HOP - Sliding Window
+    HOP (ts, INTERVAL '30' SECOND, INTERVAL '1' MINUTE)
+    update every 30s, win size 1min
+  SESSION
+
+Over
+  Row Over (ROWS BETWEEN)
+  1 Row -> 1 Window, the row is the last row in the window
+  Range Over (RANGE BETWEEN)
+```
+
 ### Architecture
 
 * JobManager -> Master process
