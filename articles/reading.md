@@ -63,7 +63,7 @@ date: 2018-04-01
   - `2019 夏季` Coursera, 主要是 吴恩达 的课程 (Not code first)
   - `2020 冬季` 就算这本书吧 (Code first)
   - `6年` 的时间, 理论知识其实没有大的变化, 但工程上已经今非昔比了
-  - TensorFlow v2
+  - **TensorFlow v2**
   - 第8章: 降维, 开始章节, 对于高维度的几个违背直觉的示例, 反倒很情理之中
   - [书籍配套代码](https://github.com/ageron/handson-ml2)
   - 作者很负责, 书籍出版之后, 代码库一直在更新
@@ -71,18 +71,19 @@ date: 2018-04-01
 
 * [机器学习实战: 基于 Scikit-Learn 和 TensorFlow](https://book.douban.com/subject/30317874/)
   - 好吧, 书到货了才发现, 其实就是上面那本的 第一版 :)
-  - TensorFlow v1
+  - **TensorFlow v1**
 
 * [数据分析之图算法: 基于 Spark 和 Neo4j](https://book.douban.com/subject/35217091/)
 
 * [基于 Apache Flink 的流处理](https://book.douban.com/subject/34912177/)
-  - 适合入门, 基于 Flink v1.7
+  - 适合入门, 基于 **Flink v1.7**
 
 * [Kafka 权威指南](https://book.douban.com/subject/27665114/)
   - 一般
 
 * [Head First 设计模式](https://book.douban.com/subject/2243615/)
   - 从来都不是 OOP 的 Fans
+  - 此书, 赠予 @道长
 
 * [网络是怎样连接的](https://book.douban.com/subject/26941639/)
   - 写得挺通俗
@@ -257,7 +258,7 @@ be guided by a much more powerful force, life itself.
   - https://arxiv.org/abs/1406.2661
   - https://arxiv.org/pdf/1406.2661.pdf
   - 生成 vs 判别, 纳什均衡
-  - TensorFlow v1
+  - **TensorFlow v1**
 
 * [深度学习的数学](https://book.douban.com/subject/33414479/)
   - 受之前系列图书的影响, 对 `日本作者` 写的 `数学书籍` 有好感
