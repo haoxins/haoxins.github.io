@@ -32,8 +32,7 @@ date: 2019-05-30
   - Custom Models, Layers, and Loss Functions with TensorFlow
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/25G2GE4PSU6E
-  - 呃, 貌似与 YouTube/bilibili 的 Google 课程区别不是很大 :)
-  - 演示是 Google Colab, Lab 是 Jupyter, 差评
+  - 课后作业设计的蛮好的
   - `@Laurence Moroney`
   - Custom and Distributed Training with TensorFlow
   - https://www.coursera.org/account/accomplishments/certificate/RQCVH97BGRWZ
