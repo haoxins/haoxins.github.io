@@ -8,6 +8,9 @@ date: 2018-12-02
 
 ## 2022 Blockchain (Lockdown in 2021-10-0?)
 
+* https://github.com/dapr/dapr
+* Flink
+
 ### Blockchain
 
 https://github.com/nervosnetwork/ckb
