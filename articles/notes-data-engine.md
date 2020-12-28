@@ -40,9 +40,6 @@ Over
   - Web UI
   - Rest API
 
-### Dataflow
-
-
 ### History
 
 * Flink
@@ -62,6 +59,8 @@ After 1.12
 Release Highlights
 
 The community has added support for efficient batch execution in the DataStream API.
+
+The default stream time characteristic has been changed to EventTime.
 
 Kubernetes-based High Availability (HA) was implemented as an alternative to ZooKeeper for highly available production setups.
 ```
