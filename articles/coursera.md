@@ -37,7 +37,7 @@ date: 2019-05-30
   - Custom and Distributed Training with TensorFlow
   - https://www.coursera.org/account/accomplishments/certificate/RQCVH97BGRWZ
   - Advanced Computer Vision with TensorFlow
-  - TODO
+  - https://www.coursera.org/account/accomplishments/certificate/B2PBCA8G7U56
   - Generative Deep Learning with TensorFlow
   - TODO
 
