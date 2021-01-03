@@ -8,6 +8,8 @@ date: 2019-10-24
 
 * [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
 * [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+* [大秦赋](https://movie.douban.com/subject/26413293/)
+  - 看了后面的剧集, 约 1/3
 
 ### 2020-11
 
