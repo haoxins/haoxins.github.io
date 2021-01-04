@@ -19,9 +19,6 @@ date: 2018-12-02
 
 ### Big Data & Machine learning
 
-* Cloud native development and deployment
-
-### Database
 
 * [GraphScope](https://graphscope.io)
   - https://github.com/alibaba/graphscope
@@ -31,6 +28,7 @@ date: 2018-12-02
   - Not **JVM**
   - Not [GraalVM](https://github.com/oracle/graal)
 
+### Next Generation SQL Database
 
 * [TiDB](https://github.com/pingcap/tidb)
   - HTAP is ready
