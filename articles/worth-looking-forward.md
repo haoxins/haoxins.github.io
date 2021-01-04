@@ -35,6 +35,10 @@ date: 2018-12-02
   - Not **JVM**
   - Not [GraalVM](https://github.com/oracle/graal)
 
+### Next Generation Database
+
+* [Azure Cosmos DB](https://azure.microsoft.com/zh-cn/services/cosmos-db/)
+
 ### Next Generation SQL Database
 
 * [TiDB](https://github.com/pingcap/tidb)
