@@ -13,13 +13,9 @@ date: 2018-12-02
 
 ### Blockchain
 
-https://github.com/nervosnetwork/ckb
-https://github.com/nervosnetwork/ckb-vm
-
-https://github.com/ipfs/go-ipfs
-https://github.com/libp2p/go-libp2p
-https://github.com/ethereum/go-ethereum
-https://github.com/ethereum/solidity
+* https://github.com/ipfs/go-ipfs
+* https://github.com/ethereum/go-ethereum
+* https://github.com/nervosnetwork/ckb
 
 ### Big Data & Machine learning
 
