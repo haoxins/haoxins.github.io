@@ -8,7 +8,6 @@ date: 2018-12-02
 
 ------------------
 
-* Flink
 ## 2022 Next Generation (Lockdown in 2021-10-0?)
 
 ### Blockchain
@@ -25,6 +24,11 @@ date: 2018-12-02
   - https://github.com/alibaba/graphscope
 
 * https://github.com/minio/minio
+
+* Flink
+  - Drop ZooKeeper, Kubernetes Native
+  - Object Storage
+
 ### Next Generation Service Runtime
 
 * https://github.com/dapr/dapr
