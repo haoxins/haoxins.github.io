@@ -26,6 +26,9 @@ date: 2018-04-01
 * [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
   - 这个是买来当摆设的 :)
 
+### 2021
+
+
 ### 2020
 
 * [算法 第4版](https://book.douban.com/subject/19952400/)
@@ -35,8 +38,7 @@ date: 2018-04-01
   - G·波利亚
   - **探索法**
 
-* [初识量子计算](TODO)
-
+* [初识量子计算](https://book.douban.com/subject/35295759/)
 
 * [公式之美](https://book.douban.com/subject/35218287/)
   - **量子学派**, 不错的科普组织
