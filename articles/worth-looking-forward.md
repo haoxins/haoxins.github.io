@@ -4,12 +4,12 @@ description: 钟鼓馔玉何足贵, 但愿长醉不复醒.
 date: 2018-12-02
 ---
 
+## 2023 不再继续 (换一种形式)
+
 ------------------
 
-## 2022 Blockchain (Lockdown in 2021-10-0?)
-
-* https://github.com/dapr/dapr
 * Flink
+## 2022 Next Generation (Lockdown in 2021-10-0?)
 
 ### Blockchain
 
@@ -29,6 +29,10 @@ https://github.com/ethereum/solidity
 
 * [GraphScope](https://graphscope.io)
   - https://github.com/alibaba/graphscope
+### Next Generation Service Runtime
+
+* https://github.com/dapr/dapr
+
 * [TiDB](https://github.com/pingcap/tidb)
   - HTAP is ready
   - Supports serverless
