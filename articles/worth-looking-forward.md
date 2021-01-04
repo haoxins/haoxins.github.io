@@ -17,11 +17,13 @@ date: 2018-12-02
 * https://github.com/ethereum/go-ethereum
 * https://github.com/nervosnetwork/ckb
 
-### Big Data & Machine learning
+### Next Generation Data Computing
 
+* **Kubernetes Native**
 
 * [GraphScope](https://graphscope.io)
   - https://github.com/alibaba/graphscope
+
 * https://github.com/minio/minio
 ### Next Generation Service Runtime
 
