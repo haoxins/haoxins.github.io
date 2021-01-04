@@ -32,6 +32,9 @@ https://github.com/ethereum/solidity
 ### Next Generation Service Runtime
 
 * https://github.com/dapr/dapr
+  - Not **JVM**
+  - Not [GraalVM](https://github.com/oracle/graal)
+
 
 * [TiDB](https://github.com/pingcap/tidb)
   - HTAP is ready
