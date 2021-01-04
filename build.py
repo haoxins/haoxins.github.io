@@ -21,13 +21,11 @@ def takeMtime(info):
 file_infos.sort(key=takeMtime, reverse=True)
 
 for i in file_infos:
-  file = open(i['path'], 'r')
-  lines = file.readlines()
-  title = lines[1].split(':').pop().strip()
-  content = '* [' + title + '](articles/' + i['name'] + ')'
-  contents.append(content)
-  file.close()
+  with open(i['path'], 'r') as f:
+    lines = f.readlines()
+    title = lines[1].split(':').pop().strip()
+    content = '* [' + title + '](articles/' + i['name'] + ')'
+    contents.append(content)
 
-file = open(os.path.join(rootdir, 'index.md'), 'w')
-file.write('\n'.join(contents))
-file.close()
+with open(os.path.join(rootdir, 'index.md'), 'w') as f:
+  f.write('\n'.join(contents))
