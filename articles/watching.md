@@ -4,10 +4,17 @@ description: 五花马, 千金裘, 呼儿将出换美酒, 与尔同销万古愁.
 date: 2019-10-24
 ---
 
-### 2020-12
+## 2021
+
+### 2021-02
 
 * [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
 * [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+
+------------------
+
+### 2020-12
+
 * [大秦赋](https://movie.douban.com/subject/26413293/)
   - 看了后面的剧集, 约 1/3
 

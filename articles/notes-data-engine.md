@@ -1,6 +1,6 @@
 ---
-title: Data infrastructure notes
-description: Apache Spark, Flink and more
+title: Data infrastructure
+description: :)
 date: 2020-11-03
 ---
 
@@ -46,7 +46,7 @@ Over
 
 ## History
 
-* Flink
+* **Flink v1.12**
 
 ```
 Before 1.12
