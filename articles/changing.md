@@ -1,6 +1,6 @@
 ---
-title: 变化的 ...
-description: 时间静悄悄
+title: 变化的时间静悄悄
+description: 莫听穿林打叶声, 何妨吟啸且徐行
 date: 2020-01-29
 ---
 

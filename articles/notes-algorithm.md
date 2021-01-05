@@ -1,6 +1,6 @@
 ---
 title: Algorithm notes
-description: 嗯哼
+description: 算法
 date: 2020-11-09
 ---
 

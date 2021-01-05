@@ -1,6 +1,6 @@
 ---
-title: 科普
-description: :)
+title: 科普小记
+description: 人生如逆旅, 我亦是行人
 date: 2020-10-05
 ---
 

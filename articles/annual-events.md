@@ -1,6 +1,6 @@
 ---
 title: 年度事件
-description: Annual events
+description: 西当太白有鸟道, 可以横绝峨眉巅
 date: 2019-05-26
 ---
 
