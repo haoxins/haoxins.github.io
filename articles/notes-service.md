@@ -1,6 +1,6 @@
 ---
 title: Thinking about service
-description: todo ~
+description: 空门说得恒沙劫, 应笑终年为一先
 date: 2019-04-08
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Algorithm notes
-description: 算法
+description: 西当太白有鸟道, 可以横绝峨眉巅
 date: 2020-11-09
 ---
 

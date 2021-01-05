@@ -1,6 +1,6 @@
 ---
 title: 关于 Computing 的思考
-description: Why, What, How!
+description: 携取旧书归万隐, 野花啼鸟一般春
 date: 2020-07-22
 ---
 

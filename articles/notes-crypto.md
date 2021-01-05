@@ -1,6 +1,6 @@
 ---
 title: Cryptography notes
-description: 料峭春风吹酒醒, 微冷, 山头斜照却相迎
+description: 明月照时常皎洁, 不劳寻讨问西东
 date: 2019-06-30
 ---
 
