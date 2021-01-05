@@ -28,6 +28,8 @@ date: 2018-12-02
 * Flink
   - Drop ZooKeeper, Kubernetes Native
   - Object Storage
+  - https://github.com/apache/incubator-yunikorn-core
+  - https://github.com/pravega/pravega
 
 ### Next Generation Service Runtime
 

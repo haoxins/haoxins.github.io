@@ -6,12 +6,8 @@ date: 2019-12-10
 
 * https://github.com/w3f
 
-* To B
-  - Fabric (PBFT)
+* Fabric (PBFT)
 * IPFS
-* Hashgraph ?
-
-### ~
 
 * [RingCT 3.0](https://eprint.iacr.org/2019/508.pdf)
   - RingCT 3.0 for Blockchain Confidential Transaction: Shorter Size and Stronger Security
@@ -25,6 +21,4 @@ date: 2019-12-10
 * [Lay Down the Common Metrics](https://www.esat.kuleuven.be/cosic/publications/article-3005.pdf)
   - Lay Down the Common Metrics: Evaluating Proof-of-Work Consensus Protocols' Security
 
-### ~
-
-* ECC, Merkle tree hash, SHA-256, Keccak-256
+## History
