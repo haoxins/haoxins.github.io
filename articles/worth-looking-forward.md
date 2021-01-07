@@ -10,6 +10,11 @@ date: 2018-12-02
 
 ## 2022 Next Generation (Lockdown in 2021-10-0?)
 
+* [Kubernetes 1.??]()
+* [Go 1.18]()
+* [Flink v2]()
+* [Kafka v3]()
+
 ### Blockchain
 
 * https://github.com/ipfs/go-ipfs
