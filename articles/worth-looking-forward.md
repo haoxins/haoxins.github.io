@@ -10,12 +10,12 @@ date: 2018-12-02
 
 ## 2022 Next Generation (Lockdown in 2021-03-31)
 
-* [Kubernetes 1.??]()
+* [Kubernetes 1.22](https://github.com/kubernetes/kubernetes/milestone/50)
 * [Go 1.18]()
-* [Open JDK 1?]()
-* [Rust ]()
+* [TensorFlow 2.xx](https://github.com/tensorflow/tensorflow)
 * [Flink v2]()
 * [Kafka v3]()
+* [Open JDK 1?]()
 
 ### Blockchain
 
