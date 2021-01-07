@@ -8,10 +8,12 @@ date: 2018-12-02
 
 ------------------
 
-## 2022 Next Generation (Lockdown in 2021-10-0?)
+## 2022 Next Generation (Lockdown in 2021-03-31)
 
 * [Kubernetes 1.??]()
 * [Go 1.18]()
+* [Open JDK 1?]()
+* [Rust ]()
 * [Flink v2]()
 * [Kafka v3]()
 
