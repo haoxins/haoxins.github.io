@@ -1,4 +1,4 @@
-* [](articles/quantum.md)
+* [量子计算 & 量子通信](articles/quantum.md)
 * [Thinking about service](articles/service.md)
 * [Dapr notes](articles/service-runtime.md)
 * [科普小记](articles/science.md)
