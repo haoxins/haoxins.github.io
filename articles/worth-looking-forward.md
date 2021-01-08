@@ -15,7 +15,11 @@ date: 2018-12-02
 * [TensorFlow 2.xx](https://github.com/tensorflow/tensorflow)
 * [Flink v2]()
 * [Kafka v3]()
-* [Open JDK 1?]()
+* [Open JDK 17]()
+  - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
+  - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
+  - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
+  - [JEP 395: Records](https://openjdk.java.net/jeps/395)
 * [Android 13]()
 
 ### Blockchain
