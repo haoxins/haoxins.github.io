@@ -30,6 +30,9 @@ date: 2018-04-01
 
 ### 2021
 
+* [程序员修炼之道 (第2版)](https://book.douban.com/subject/35006892/)
+  - 副标题: 通向务实的最高境界
+
 * [信息传](https://book.douban.com/subject/35223179/)
   - 吴军
 
