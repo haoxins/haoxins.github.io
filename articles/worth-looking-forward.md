@@ -42,10 +42,13 @@ date: 2018-12-02
   - Object Storage
   - https://github.com/apache/incubator-yunikorn-core
   - https://github.com/pravega/pravega
+  -  Flink Stateful Functions (v3)
+  - https://github.com/apache/flink-statefun
 
 ### Next Generation Service Runtime
 
 * https://github.com/dapr/dapr
+  - https://dapr.io
   - Not **JVM**
   - Not [GraalVM](https://github.com/oracle/graal)
 
