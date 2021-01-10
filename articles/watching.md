@@ -11,6 +11,12 @@ date: 2019-10-24
 * [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
 * [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
+### 2021-01
+
+* [拆弹专家2](https://movie.douban.com/subject/30171424/)
+  - 当年的 [拆弹专家](https://movie.douban.com/subject/26748673/)
+  - 也不错
+
 ------------------
 
 ### 2020-12
