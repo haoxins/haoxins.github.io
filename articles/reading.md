@@ -202,6 +202,7 @@ be guided by a much more powerful force, life itself.
   - 第一次看到这种类型的漫画
   - 能很快看完的书, 也是花时间的书
   - 是通俗易懂的漫画, 也是晦涩的字符
+  - 赠予 @Lauren
 
 * [七周七并发模型](https://book.douban.com/subject/26337939/)
   - 一般吧 ~
