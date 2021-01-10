@@ -8,3 +8,5 @@
 
 ## Good articles
 
+* [CAP Theorem: Revisited](https://robertgreiner.com/cap-theorem-revisited/)
+* [CAP 十二年回顾: 规则变了](https://www.infoq.cn/article/cap-twelve-years-later-how-the-rules-have-changed/)
