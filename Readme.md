@@ -8,4 +8,3 @@
 
 ## Good articles
 
-* [Psychology of Code Readability](https://medium.com/@egonelbre/psychology-of-code-readability-d23b1ff1258a)
