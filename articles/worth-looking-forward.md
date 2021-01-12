@@ -8,7 +8,7 @@ date: 2018-12-02
 
 ------------------
 
-## 2022 Next Generation (Lockdown in 2021-03-31)
+## 2022 Next Generation (Lockdown in 2021-05-??)
 
 * [Kubernetes 1.22](https://github.com/kubernetes/kubernetes/milestone/50)
 * [Go 1.18]()

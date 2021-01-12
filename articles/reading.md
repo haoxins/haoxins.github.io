@@ -41,6 +41,7 @@ date: 2018-04-01
 
 * [信息传](https://book.douban.com/subject/35223179/)
   - 吴军
+  - 赠与 Bowen
 
 ### 2020
 
@@ -61,7 +62,7 @@ date: 2018-04-01
   - 黎曼猜想 `@悠扬的素数`
   - 牛顿 -> 麦克斯韦 -> 爱因斯坦
   - 爱因斯坦 (相对论) -> 狄拉克 (量子力学) -> 杨振宁 (规范场)
-  - 此书赠予 @Leon
+  - 此书赠与 @Leon
 
 * [皇帝新脑](https://book.douban.com/subject/30171336/)
   - 好吧, 我承认, 冲着 2020年诺贝尔物理学奖得主 **罗杰•彭罗斯** 买的
@@ -98,7 +99,7 @@ date: 2018-04-01
 
 * [Head First 设计模式](https://book.douban.com/subject/2243615/)
   - 从来都不是 OOP 的 Fans
-  - 此书, 赠予 @道长
+  - 此书, 赠与 @道长
 
 * [网络是怎样连接的](https://book.douban.com/subject/26941639/)
   - 写得挺通俗
@@ -202,7 +203,7 @@ be guided by a much more powerful force, life itself.
   - 第一次看到这种类型的漫画
   - 能很快看完的书, 也是花时间的书
   - 是通俗易懂的漫画, 也是晦涩的字符
-  - 赠予 @Lauren
+  - 赠与 @Lauren
 
 * [七周七并发模型](https://book.douban.com/subject/26337939/)
   - 一般吧 ~
@@ -321,7 +322,7 @@ be guided by a much more powerful force, life itself.
   - 书中的大量案例对 研究 工作 生活 均有 `见识提升` 的促进作用
   - **自由意志** = `意识到自己的动机` + `考虑不一样的行动`
   - 对 AI(ML) 提供了新思路, 考虑到作者的年纪, 期待后人的突破
-  - 此书赠予 @Halcen
+  - 此书赠与 @Halcen
 
 * [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
   - 从 `古老的概念` 关联到 最新的 `量子前沿`, 一流的 `科普` 就是 超一流的 `科幻`
