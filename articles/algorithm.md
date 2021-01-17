@@ -1,5 +1,5 @@
 ---
-title: Algorithm
+title: Algorithms
 description: 西当太白有鸟道, 可以横绝峨眉巅
 date: 2020-11-09
 ---
@@ -64,3 +64,9 @@ date: 2020-11-09
   - 应用: 挖掘共识
 * Louvain 模块度算法
   - 应用: Fraud
+
+------------------
+
+### Websites
+
+* [Algorithms, 4th Edition](https://algs4.cs.princeton.edu)
