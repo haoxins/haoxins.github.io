@@ -10,17 +10,17 @@ date: 2018-12-02
 
 ## 2022 Next Generation (Lockdown in 2021-05-??)
 
-* [Kubernetes 1.22](https://github.com/kubernetes/kubernetes/milestone/50)
-* [Go 1.18]()
 * [TensorFlow 2.xx](https://github.com/tensorflow/tensorflow)
 * [Flink v2]()
-* [Kafka v3]()
+* [Go 1.18]()
+  - [Generics](https://blog.golang.org/generics-proposal)
 * [Open JDK 17]()
   - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
   - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
   - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
   - [JEP 395: Records](https://openjdk.java.net/jeps/395)
 * [Android 13]()
+  - [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
 
 ### Blockchain
 
