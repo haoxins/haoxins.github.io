@@ -10,7 +10,9 @@ date: 2018-12-02
 
 ## 2022 Next Generation (Lockdown in 2021-05-??)
 
-* [TensorFlow 2.xx](https://github.com/tensorflow/tensorflow)
+### Overview
+
+* [TensorFlow 2.x](https://github.com/tensorflow/tensorflow)
 * [Flink v2]()
 * [Go 1.18]()
   - [Generics](https://blog.golang.org/generics-proposal)
@@ -19,8 +21,9 @@ date: 2018-12-02
   - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
   - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
   - [JEP 395: Records](https://openjdk.java.net/jeps/395)
-* [Android 13]()
+* [Android 12]()
   - [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
+* [NuttX (RTOS)](https://github.com/apache/incubator-nuttx)
 
 ### Blockchain
 
@@ -29,6 +32,8 @@ date: 2018-12-02
 * https://github.com/nervosnetwork/ckb
 
 ### Next Generation Data Computing
+
+* [Apache Arrow](https://github.com/apache/arrow)
 
 * **Kubernetes Native**
 
@@ -55,6 +60,7 @@ date: 2018-12-02
 ### Next Generation Database
 
 * [Azure Cosmos DB](https://azure.microsoft.com/zh-cn/services/cosmos-db/)
+* [TiKV](https://github.com/tikv/tikv)
 
 ### Next Generation SQL Database
 
