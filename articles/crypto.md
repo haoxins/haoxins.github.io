@@ -4,10 +4,6 @@ description: 明月照时常皎洁, 不劳寻讨问西东
 date: 2019-06-30
 ---
 
-* [BLS Signatures v4](https://tools.ietf.org/html/draft-irtf-cfrg-bls-signature-04)
-  - Dan Boneh, 第一作者, 就是 Coursera 上 Cryptography 的授课老师
-  - https://github.com/w3f/bls
-
 * https://noiseprotocol.org
 
 * TLS
@@ -150,3 +146,14 @@ session key = G ** (A * B) % P
 * 公钥基础设施 (PKI) = 用户 (user) + 认证机构 (CA) + 仓库 (Repo)
 * 证书 至少包含: `public key`, `机构签名`
 * 证书信任链
+
+------------------
+
+## History
+
+### 2021
+
+* [BLS Signatures v4](https://tools.ietf.org/html/draft-irtf-cfrg-bls-signature-04)
+  - Dan Boneh, 第一作者, 就是 Coursera 上 Cryptography 的授课老师
+  - https://github.com/w3f/bls
+  - TODO - update v5 link later
