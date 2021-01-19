@@ -12,7 +12,6 @@ date: 2018-12-02
 
 ### Overview
 
-* [TensorFlow 2.x](https://github.com/tensorflow/tensorflow)
 * [Go 1.18]()
   - [Generics](https://blog.golang.org/generics-proposal)
 * [Open JDK 17](https://openjdk.java.net/projects/jdk/17/)
