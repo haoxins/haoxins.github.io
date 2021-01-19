@@ -13,14 +13,14 @@ date: 2018-12-02
 ### Overview
 
 * [TensorFlow 2.x](https://github.com/tensorflow/tensorflow)
-* [Flink v2]()
 * [Go 1.18]()
   - [Generics](https://blog.golang.org/generics-proposal)
-* [Open JDK 17]()
+* [Open JDK 17](https://openjdk.java.net/projects/jdk/17/)
   - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
   - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
   - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
   - [JEP 395: Records](https://openjdk.java.net/jeps/395)
+  - [JEP 397: Sealed Classes](https://openjdk.java.net/jeps/397)
 * [Android 12]()
   - [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
 * [NuttX (RTOS)](https://github.com/apache/incubator-nuttx)
@@ -42,7 +42,7 @@ date: 2018-12-02
 
 * https://github.com/minio/minio
 
-* Flink
+* Flink v2
   - Drop ZooKeeper, Kubernetes Native
   - Object Storage
   - https://github.com/apache/incubator-yunikorn-core
