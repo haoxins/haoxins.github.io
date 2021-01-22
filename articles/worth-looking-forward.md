@@ -33,6 +33,7 @@ date: 2018-12-02
 ### Next Generation Data Computing
 
 * [Apache Arrow](https://github.com/apache/arrow)
+  - [Ballista](https://github.com/ballista-compute/ballista)
 
 * **Kubernetes Native**
 
