@@ -246,14 +246,14 @@ how to choose features:
 ### Large Scale Machine Learning
 
 * Stochastic Gradient Descent
-* Mini-Batch Gradient Descent
 * Ceiling Analysis
-* Online Learning
-
-### Articles
-
-* [知乎: 机器学习从业者必知的5种回归损失函数](https://zhuanlan.zhihu.com/p/39239829)
 
 ------------------
 
 ## History
+
+### 2021
+
+* [What are the most important statistical ideas of the past 50 years?](https://arxiv.org/pdf/2012.00174.pdf)
+
+* [CS224W: Machine Learning with Graphs](https://web.stanford.edu/class/cs224w/)
