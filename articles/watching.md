@@ -1,21 +1,20 @@
 ---
-title: 观影 ...
+title: Watching list
 description: 五花马, 千金裘, 呼儿将出换美酒, 与尔同销万古愁.
 date: 2019-10-24
 ---
 
 ## 2021
 
-### 2021-02
-
+* [CS224W 2021](TODOs)
 * [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
 * [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
 ### 2021-01
 
+* [温暖的抱抱](https://movie.douban.com/subject/34869362/)
 * [拆弹专家2](https://movie.douban.com/subject/30171424/)
-  - 当年的 [拆弹专家](https://movie.douban.com/subject/26748673/)
-  - 也不错
+  - 当年的 [拆弹专家](https://movie.douban.com/subject/26748673/) 也不错
 
 ------------------
 

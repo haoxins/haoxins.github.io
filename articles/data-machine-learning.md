@@ -6,9 +6,7 @@ date: 2019-06-30
 
 ### TensorFlow
 
-* TensorBoard
 * TFX (TensorFlow Extended)
-* TF Serving
 * TF Record
   - protobuf
 * Functional APIs
@@ -59,10 +57,6 @@ date: 2019-06-30
   - 对异常值具有鲁棒性
 * GMM 高斯混合模型
   - 异常值检测
-
-### Blogs
-
-* [Tim Dettmers](http://timdettmers.com)
 
 ## Structuring Deep Learning Projects
 
@@ -207,9 +201,9 @@ date: 2019-06-30
 在线学习
 EM 算法
 
-## linear-regression
+## Linear-regression
 
-### gradient descent algorithm
+### Gradient descent algorithm
 
 ```
 1. scale the features, for example: [-1, 1]
@@ -235,7 +229,7 @@ how to choose features:
 2. polynomial regression
 ```
 
-### normal equation
+### Normal equation
 
 * advantages
   - no need to iterate
