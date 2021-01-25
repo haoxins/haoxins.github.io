@@ -51,6 +51,10 @@ date: 2019-07-13
 ### 2021-01
 
 * 帮老婆买了一台 Macbook Air
+  - Apple M1 芯片: 8核 CPU, 8核 GPU, 16核 神经网络引擎
+  - 8GB 内存
+  - 512GB SSD
+
 * Logitech MX Master 2S 鼠标
   - 多年 **Trackpad** 之后, 再试鼠标, 体验很不错
   - 尤其 **多个显示器** 的时候, 优势明显
