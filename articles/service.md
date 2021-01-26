@@ -79,23 +79,20 @@ date: 2019-04-08
 
 ### APIs
 
-* GCP HTTP error response
+* HTTP Response
 
-```
+```js
 {
-  "error": {
-    "code": 401,
+  "data": [...], // or {...}, null
+  "meta": {
+    "error": "Invalid params",
     "message": "...",
     "errors": [
       {
-        "message": "Some messages.",
-        "domain": "Global",
-        "reason": "Required",
-        "location": "Authorization",
-        "locationType": "Header"
+        "domain": "A",
+        "reason": "Aha"
       }
-    ],
-    "status": "UNAUTHENTICATED"
+    ]
   }
 }
 ```
