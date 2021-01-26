@@ -248,6 +248,8 @@ how to choose features:
 
 ### 2021
 
+* [CS 329S: Machine Learning Systems Design](https://stanford-cs329s.github.io)
+
 * [What are the most important statistical ideas of the past 50 years?](https://arxiv.org/pdf/2012.00174.pdf)
 
 * [CS224W: Machine Learning with Graphs](https://web.stanford.edu/class/cs224w/)
