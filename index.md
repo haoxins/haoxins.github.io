@@ -1,3 +1,4 @@
+* [阅读书单 (长期看, 反复看)](articles/reading-long-term.md)
 * [阅读书单](articles/reading.md)
 * [Data and Machine learning](articles/data-machine-learning.md)
 * [Video list](articles/watching.md)
