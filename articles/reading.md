@@ -45,6 +45,9 @@ date: 2018-04-01
 
 ### 2020
 
+* [编程珠玑 第2版 修订版](https://book.douban.com/subject/26302533/)
+* [编程珠玑 续 修订版）](https://book.douban.com/subject/26302596/)
+
 * [算法 第4版](https://book.douban.com/subject/19952400/)
 
 * [怎样解题: 数学思维的新方法](https://book.douban.com/subject/2124114/)
