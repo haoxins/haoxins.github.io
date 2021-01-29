@@ -4,12 +4,11 @@ description: 料峭春风吹酒醒, 微冷, 山头斜照却相迎
 date: 2019-05-30
 ---
 
-* YouTube/bilibili 的优质学习资源已经不输 Coursera 了
-  - bilibili 还有弹幕优势, 哈哈哈
+## 2023
 
 ------------------
 
-### 2021
+## 2022
 
 * [Cryptography II](https://www.coursera.org/learn/crypto2)
   - 跳票 几年了 ~
@@ -19,11 +18,17 @@ date: 2019-05-30
 
 ------------------
 
+## 2021
+
 * 看着 Coursera UI/UX 的进化, Lab env 的进步, 还挺有意思的
+* **暂时告一段落**
+
+* YouTube/bilibili 的优质学习资源已经不输 Coursera 了
+  - bilibili 还有弹幕优势, 哈哈哈
 
 ------------------
 
-### 2020
+## 2020
 
 * [TensorFlow: Advanced Techniques](https://www.coursera.org/specializations/tensorflow-advanced-techniques)
   - ...
@@ -59,7 +64,7 @@ date: 2019-05-30
 
 ------------------
 
-### 2019
+## 2019
 
 * [Cryptography I](https://www.coursera.org/learn/crypto)
   - Grade Achieved: `92.2%`
