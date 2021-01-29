@@ -15,6 +15,8 @@ date: 2018-12-02
 
 ### Overview
 
+* Spring Framework
+  - 打败 Spring Framework 的一定不是另一个 **Framework**
 * [Go 1.18]()
   - [Generics](https://blog.golang.org/generics-proposal)
 * [Open JDK 17](https://openjdk.java.net/projects/jdk/17/)
