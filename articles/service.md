@@ -83,7 +83,7 @@ date: 2019-04-08
 
 ```json
 {
-  "data": "cloud be [], {}, null, ...",
+  "data": "Could be [], {}, null, ...",
   "meta": {
     "error": "Invalid params",
     "message": "...",
