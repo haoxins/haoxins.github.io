@@ -4,7 +4,7 @@ description:
 date: 2021-01-28
 ---
 
-## 始于 2021
+## 始于 2022
 
 ### TAOCP
 
@@ -16,3 +16,8 @@ date: 2021-01-28
 ### 费曼物理学讲义
 
 * [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
+
+## 始于 2021
+
+* [编程珠玑 第2版 修订版](https://book.douban.com/subject/26302533/)
+* [编程珠玑 续 修订版）](https://book.douban.com/subject/26302596/)

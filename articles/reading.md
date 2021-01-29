@@ -4,6 +4,8 @@ description: 莫听穿林打叶声, 何妨吟啸且徐行
 date: 2018-04-01
 ---
 
+[Long term]: reading-long-term.md
+
 ### 综述
 
 * 期待: Dan Boneh 的密码学新作
@@ -17,6 +19,10 @@ date: 2018-04-01
 
 ### 2021
 
+* [编程珠玑 第2版 修订版](https://book.douban.com/subject/26302533/)
+* [编程珠玑 续 修订版）](https://book.douban.com/subject/26302596/)
+  - 移步 [Reading long term][Long term]
+
 * [百面机器学习](https://book.douban.com/subject/30285146/)
   - 副标题: 算法工程师带你去面试
 
@@ -29,7 +35,7 @@ date: 2018-04-01
 
 ------------------
 
-### (移步: reading-long-term)
+### 移步: [Reading long term][Long term]
 
 > 下面这几本书都是 2020-08 买的, 但是呢, 估计不可能看完 :)
 
@@ -46,9 +52,6 @@ date: 2018-04-01
 ------------------
 
 ### 2020
-
-* [编程珠玑 第2版 修订版](https://book.douban.com/subject/26302533/)
-* [编程珠玑 续 修订版）](https://book.douban.com/subject/26302596/)
 
 * [算法 第4版](https://book.douban.com/subject/19952400/)
 
