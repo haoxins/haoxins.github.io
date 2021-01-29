@@ -13,6 +13,7 @@ date: 2019-10-24
 
 ### 2021-01
 
+* [山海情](https://movie.douban.com/subject/35033654/)
 * [温暖的抱抱](https://movie.douban.com/subject/34869362/)
 * [拆弹专家2](https://movie.douban.com/subject/30171424/)
   - 当年的 [拆弹专家](https://movie.douban.com/subject/26748673/) 也不错
