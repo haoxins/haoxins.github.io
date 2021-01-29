@@ -83,7 +83,7 @@ date: 2019-04-08
 
 ```json
 {
-  "data": [], // or {}, null
+  "data": "cloud be [], {}, null, ...",
   "meta": {
     "error": "Invalid params",
     "message": "...",
@@ -97,6 +97,8 @@ date: 2019-04-08
 }
 ```
 
+### 名家语录
+
 ```
 Show me your flowcharts and conceal your tables,
 and I shall continue to be mystified.
@@ -105,7 +107,3 @@ and I won't usually need your flowcharts; they'll be obvious.
 
 -- Fred Brooks
 ```
-
-### 接手项目
-
-1. 查看线上服务的所有 config, env
