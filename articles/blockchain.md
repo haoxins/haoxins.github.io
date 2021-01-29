@@ -7,7 +7,6 @@ date: 2019-12-10
 * https://github.com/w3f
 
 * Fabric (PBFT)
-* IPFS
 
 * [RingCT 3.0](https://eprint.iacr.org/2019/508.pdf)
   - RingCT 3.0 for Blockchain Confidential Transaction: Shorter Size and Stronger Security
@@ -24,3 +23,5 @@ date: 2019-12-10
 ------------------
 
 ## History
+
+### 2021

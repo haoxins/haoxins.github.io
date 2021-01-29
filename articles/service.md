@@ -81,9 +81,9 @@ date: 2019-04-08
 
 * HTTP Response
 
-```js
+```json
 {
-  "data": [...], // or {...}, null
+  "data": [], // or {}, null
   "meta": {
     "error": "Invalid params",
     "message": "...",

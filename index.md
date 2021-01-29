@@ -1,3 +1,4 @@
+* [QUIC & HTTP/3](articles/quic.md)
 * [阅读书单 (在线资源)](articles/reading-online.md)
 * [Data infrastructure](articles/data-engine.md)
 * [阅读书单 (经典书籍, 长期摸索)](articles/reading-long-term.md)
@@ -14,7 +15,6 @@
 * [Cryptography](articles/crypto.md)
 * [Programming language](articles/programming-language.md)
 * [Blockchain](articles/blockchain.md)
-* [QUIC & HTTP/3](articles/quic.md)
 * [Blockchain thinking](articles/thinking-blockchain.md)
 * [量子计算 & 量子通信](articles/quantum.md)
 * [科普小记](articles/science.md)
