@@ -19,7 +19,7 @@ date: 2018-12-02
   - 打败 Spring Framework 的一定不是另一个 **Framework**
 * [Go 1.18]()
   - [Generics](https://blog.golang.org/generics-proposal)
-* [Open JDK 17](https://openjdk.java.net/projects/jdk/17/)
+* [JDK 17](https://openjdk.java.net/projects/jdk/17/)
   - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
   - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
   - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
@@ -28,12 +28,6 @@ date: 2018-12-02
 * [Android 12]()
   - [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
 * [NuttX (RTOS)](https://github.com/apache/incubator-nuttx)
-
-### Blockchain
-
-* https://github.com/ipfs/go-ipfs
-* https://github.com/ethereum/go-ethereum
-* https://github.com/nervosnetwork/ckb
 
 ### Next Generation Data Computing
 
