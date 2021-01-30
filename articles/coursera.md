@@ -31,20 +31,20 @@ date: 2019-05-30
 ## 2020
 
 * [TensorFlow: Advanced Techniques](https://www.coursera.org/specializations/tensorflow-advanced-techniques)
-  - ...
-  - ...
+  - `@Laurence Moroney`
+  - https://www.coursera.org/account/accomplishments/specialization/ASKETFXUMQZU
+  - https://www.coursera.org/account/accomplishments/specialization/certificate/ASKETFXUMQZU
   - **Courses**
   - Custom Models, Layers, and Loss Functions with TensorFlow
   - Grade Achieved: `100.0%`
   - https://www.coursera.org/account/accomplishments/certificate/25G2GE4PSU6E
   - 课后作业设计的蛮好的
-  - `@Laurence Moroney`
   - Custom and Distributed Training with TensorFlow
   - https://www.coursera.org/account/accomplishments/certificate/RQCVH97BGRWZ
   - Advanced Computer Vision with TensorFlow
   - https://www.coursera.org/account/accomplishments/certificate/B2PBCA8G7U56
   - Generative Deep Learning with TensorFlow
-  - TODO
+  - https://www.coursera.org/account/accomplishments/certificate/WRL58LCU83F3
 
 * [Blockchain](https://www.coursera.org/specializations/blockchain)
   - **课程其实一般**, 从个人角度而言, 从头, 重新梳理一下, 温故知新
