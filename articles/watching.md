@@ -11,9 +11,16 @@ date: 2019-10-24
 * [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
 * [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
+### 2021-02
+
+* [大秦帝国之纵横](https://movie.douban.com/subject/4858790/)
+  - 数年前, 被人推荐, 看了 [大秦帝国之裂变](https://movie.douban.com/subject/3114220/)
+
 ### 2021-01
 
 * [山海情](https://movie.douban.com/subject/35033654/)
+  - 方言 彩!
+  - 西海固
 * [温暖的抱抱](https://movie.douban.com/subject/34869362/)
 * [拆弹专家2](https://movie.douban.com/subject/30171424/)
   - 当年的 [拆弹专家](https://movie.douban.com/subject/26748673/) 也不错
