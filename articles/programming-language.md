@@ -4,6 +4,13 @@ description: 青山相待, 白云相爱, 紫罗袍共黄金带
 date: 2020-12-27
 ---
 
+### Kotlin
+
+|         |  let  |  run  | apply | also |
+| ------- |:-----:|:-----:|:-----:|:----:|
+| this/it |  it   | this  |  this |  it  |
+| return  |  yes  | yes   |  not  |  not |
+
 ------------------
 
 ## History
