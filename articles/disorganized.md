@@ -48,6 +48,15 @@ date: 2019-07-13
   - 35 周年
 * 煮糊了
 
+### 2021-02
+
+* 换了一台公司电脑
+  - **旧的** Macbook pro
+  - MacBook Pro (15-inch, 2017)
+  - 3.1 GHz 四核Intel Core i7
+  - 16 GB 2133 MHz LPDDR3
+  - **新的** Macbook pro
+
 ### 2021-01
 
 * 帮老婆买了一台 Macbook Air
