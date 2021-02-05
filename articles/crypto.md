@@ -157,3 +157,5 @@ session key = G ** (A * B) % P
   - Dan Boneh, 第一作者, 就是 Coursera 上 Cryptography 的授课老师
   - https://github.com/w3f/bls
   - TODO - update v5 link later
+
+* [Things that use Ed25519](https://ianix.com/pub/ed25519-deployment.html)
