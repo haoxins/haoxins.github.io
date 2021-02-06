@@ -30,6 +30,7 @@ date: 2018-04-01
 
 * [百面机器学习](https://book.douban.com/subject/30285146/)
   - 副标题: 算法工程师带你去面试
+  - 移步 [Reading long term][Long term]
 
 * [程序员修炼之道 (第2版)](https://book.douban.com/subject/35006892/)
   - 副标题: 通向务实的最高境界
