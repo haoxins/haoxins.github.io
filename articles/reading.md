@@ -64,6 +64,7 @@ date: 2018-04-01
 * [怎样解题: 数学思维的新方法](https://book.douban.com/subject/2124114/)
   - G·波利亚
   - **探索法**
+  - 移步 [Reading long term][Long term]
 
 * [初识量子计算](https://book.douban.com/subject/35295759/)
 
