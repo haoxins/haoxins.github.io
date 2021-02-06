@@ -20,6 +20,7 @@ date: 2018-12-02
 * [Go 1.18]()
   - [Generics](https://blog.golang.org/generics-proposal)
 * [JDK 17](https://openjdk.java.net/projects/jdk/17/)
+  - [JEP 358: Helpful NullPointerExceptions](https://openjdk.java.net/jeps/358)
   - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
   - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
   - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)

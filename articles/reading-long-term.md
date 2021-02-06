@@ -26,6 +26,8 @@ date: 2021-01-28
 * [百面机器学习](https://book.douban.com/subject/30285146/)
   - 副标题: 算法工程师带你去面试
 
+### 编程珠玑
+
 * [编程珠玑 第2版 修订版](https://book.douban.com/subject/26302533/)
 * [编程珠玑 续 修订版）](https://book.douban.com/subject/26302596/)
 
