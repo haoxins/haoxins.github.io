@@ -48,6 +48,15 @@ Over
 
 * **Flink v1.13**
 
+* NumPy 1.20.0
+  - https://github.com/numpy/numpy/releases/tag/v1.20.0
+
+```
+The Python versions supported for this release are 3.7-3.9
+Annotations for NumPy functions
+Preliminary support for the upcoming Cython 3.0
+```
+
 * **Flink v1.12**
 
 ```
