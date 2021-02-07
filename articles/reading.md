@@ -24,6 +24,8 @@ date: 2018-04-01
 
 ### 2021
 
+* [深入Java虚拟机: JVM G1GC 的算法与实现](https://book.douban.com/subject/35292560/)
+
 * [编程珠玑 第2版 修订版](https://book.douban.com/subject/26302533/)
 * [编程珠玑 续 修订版）](https://book.douban.com/subject/26302596/)
   - 移步 [Reading long term][Long term]
