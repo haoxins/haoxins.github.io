@@ -6,6 +6,8 @@ date: 2020-12-27
 
 ### Kotlin
 
+* require, check, assert
+
 |         |  let  |  run  | apply | also |
 | ------- |:-----:|:-----:|:-----:|:----:|
 | this/it |  it   | this  |  this |  it  |
