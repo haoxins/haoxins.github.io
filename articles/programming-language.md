@@ -26,8 +26,6 @@ date: 2020-12-27
   - [NumPy](https://github.com/numpy/numpy)
   - [TensorFlow](https://github.com/tensorflow/tensorflow)
   - [Scikit-learn](https://github.com/scikit-learn/scikit-learn)
-* Golang
-  - [CNCF](https://www.cncf.io)
 * Rust
   - [Firecracker](https://github.com/firecracker-microvm/firecracker)
   - [Polkadot](https://github.com/paritytech/polkadot)
