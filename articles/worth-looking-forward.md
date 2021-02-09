@@ -17,8 +17,6 @@ date: 2018-12-02
 
 * Spring Framework
   - 打败 Spring Framework 的一定不是另一个 **Framework**
-* [Go 1.18]()
-  - [Generics](https://blog.golang.org/generics-proposal)
 * [JDK 17](https://openjdk.java.net/projects/jdk/17/)
   - [JEP 358: Helpful NullPointerExceptions](https://openjdk.java.net/jeps/358)
   - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
