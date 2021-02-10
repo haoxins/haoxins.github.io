@@ -6,12 +6,14 @@ date: 2020-12-27
 
 ### Kotlin
 
+* Sequence, List
+
 * require, check, assert
 
-|         |  let  |  run  | apply | also |
-| ------- |:-----:|:-----:|:-----:|:----:|
-| this/it |  it   | this  |  this |  it  |
-| return  |  yes  | yes   |  not  |  not |
+|         |  let  |  run  | apply | also | with |
+| ------- |:-----:|:-----:|:-----:|:----:|:----:|
+| this/it |  it   | this  |  this |  it  | this |
+| return  |  yes  | yes   |  no   |  no  | yes  |
 
 ------------------
 
@@ -19,7 +21,7 @@ date: 2020-12-27
 
 ### 2021
 
-* Java (Kotlin)
+* Kotlin (Java)
   - [Apache](https://github.com/apache)
   - [Spring](https://spring.io)
 * Rust
