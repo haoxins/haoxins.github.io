@@ -25,9 +25,9 @@ date: 2020-12-27
   - [Apache](https://github.com/apache)
   - [Spring](https://spring.io)
 * Rust
-  - [Firecracker](https://github.com/firecracker-microvm/firecracker)
-  - [Polkadot](https://github.com/paritytech/polkadot)
   - [TiKV](https://github.com/tikv/tikv)
+  - [Firecracker](https://github.com/firecracker-microvm/firecracker)
+  - [Bottlerocket OS](https://github.com/bottlerocket-os/bottlerocket)
 * Python
   - [NumPy](https://github.com/numpy/numpy)
   - [TensorFlow](https://github.com/tensorflow/tensorflow)
