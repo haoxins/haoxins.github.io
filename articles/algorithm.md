@@ -4,7 +4,6 @@ description: 西当太白有鸟道, 可以横绝峨眉巅
 date: 2020-11-09
 ---
 
-* https://en.wikipedia.org/wiki/Banker%27s_algorithm
 * [Common used path planning algorithms with animations](https://github.com/zhm-real/PathPlanning)
 * [The Raft Consensus Algorithm](https://raft.github.io)
 
@@ -68,6 +67,10 @@ date: 2020-11-09
 
 ------------------
 
-### Websites
+## Distributed
+
+------------------
+
+## Websites
 
 * [Algorithms, 4th Edition](https://algs4.cs.princeton.edu)
