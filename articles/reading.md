@@ -27,7 +27,8 @@ date: 2018-04-01
 * [深入Java虚拟机: JVM G1GC 的算法与实现](https://book.douban.com/subject/35292560/)
 
 * [gRPC与云原生应用开发](https://book.douban.com/subject/35309194/)
-  - 副标题: 以Go和Java为例
+  - 副标题: 以 Go 和 Java 为例
+  - **不推荐** 也就 第4章 还凑合
 
 * [编程珠玑 第2版 修订版](https://book.douban.com/subject/26302533/)
 * [编程珠玑 续 修订版）](https://book.douban.com/subject/26302596/)
