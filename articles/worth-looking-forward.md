@@ -28,6 +28,11 @@ date: 2018-12-02
   - [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
 * [NuttX (RTOS)](https://github.com/apache/incubator-nuttx)
 
+https://github.com/istio/istio
+https://github.com/knative
+https://github.com/indradb/indradb
+https://github.com/MaterializeInc/materialize
+
 ### Next Generation Data Computing
 
 * [Apache Arrow](https://github.com/apache/arrow)
