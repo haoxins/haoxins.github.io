@@ -76,6 +76,9 @@ date: 2018-04-01
   - 移步 [Reading long term][Long term]
 
 * [初识量子计算](https://book.douban.com/subject/35295759/)
+  - 肖尔 质因数分解算法
+  - [BB84](https://en.wikipedia.org/wiki/BB84)
+  - Grover search algorithm
 
 * [公式之美](https://book.douban.com/subject/35218287/)
   - **量子学派**, 不错的科普组织
