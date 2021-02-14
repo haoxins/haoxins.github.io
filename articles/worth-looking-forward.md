@@ -30,8 +30,6 @@ date: 2018-12-02
 * [Android 12](https://www.android.com/android-12/)
   - [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
 * [NuttX (RTOS)](https://github.com/apache/incubator-nuttx)
-https://github.com/indradb/indradb
-https://github.com/MaterializeInc/materialize
 * Linux
   - IO_uring
   - eBPF
@@ -47,11 +45,12 @@ https://github.com/MaterializeInc/materialize
 * [GraphScope](https://graphscope.io)
   - https://github.com/alibaba/graphscope
 
-* https://github.com/minio/minio
+* https://github.com/indradb/indradb
+* https://github.com/MaterializeInc/materialize
 
 * Flink v2
   - Drop ZooKeeper, Kubernetes Native
-  - Object Storage
+  - Object Storage (AWS S3, GCP GCS)
   - https://github.com/apache/incubator-yunikorn-core
   - https://github.com/pravega/pravega
   -  Flink Stateful Functions (v3)
