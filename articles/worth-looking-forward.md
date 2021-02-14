@@ -45,7 +45,6 @@ date: 2018-12-02
 * [GraphScope](https://graphscope.io)
   - https://github.com/alibaba/graphscope
 
-* https://github.com/indradb/indradb
 * https://github.com/MaterializeInc/materialize
 
 * Flink v2
