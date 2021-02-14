@@ -24,7 +24,10 @@ date: 2018-12-02
   - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
   - [JEP 395: Records](https://openjdk.java.net/jeps/395)
   - [JEP 397: Sealed Classes](https://openjdk.java.net/jeps/397)
-* [Android 12]()
+* [Svelte](https://github.com/sveltejs/svelte)
+  - https://svelte.dev
+  - I like Svelte
+* [Android 12](https://www.android.com/android-12/)
   - [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
 * [NuttX (RTOS)](https://github.com/apache/incubator-nuttx)
 
