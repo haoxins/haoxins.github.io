@@ -30,17 +30,19 @@ date: 2018-12-02
 * [Android 12](https://www.android.com/android-12/)
   - [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
 * [NuttX (RTOS)](https://github.com/apache/incubator-nuttx)
-
-https://github.com/istio/istio
-https://github.com/knative
 https://github.com/indradb/indradb
 https://github.com/MaterializeInc/materialize
+* Linux
+  - IO_uring
+  - eBPF
 
 ### Next Generation Data Computing
 
 * [Apache Arrow](https://github.com/apache/arrow)
 
 * **Kubernetes Native**
+  - https://github.com/istio/istio
+  - https://github.com/knative
 
 * [GraphScope](https://graphscope.io)
   - https://github.com/alibaba/graphscope
