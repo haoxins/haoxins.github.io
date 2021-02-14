@@ -19,19 +19,17 @@ date: 2020-12-27
 
 ## History
 
+------------------
+
 ### 2021
 
-* Kotlin (Java)
+* **Kotlin**
   - [Apache](https://github.com/apache)
   - [Spring](https://spring.io)
-* Rust
+* **Rust**
   - [TiKV](https://github.com/tikv/tikv)
   - [Firecracker](https://github.com/firecracker-microvm/firecracker)
   - [Bottlerocket OS](https://github.com/bottlerocket-os/bottlerocket)
-* Python
-  - [NumPy](https://github.com/numpy/numpy)
-  - [TensorFlow](https://github.com/tensorflow/tensorflow)
-  - [Scikit-learn](https://github.com/scikit-learn/scikit-learn)
 
 * [Mozilla Welcomes the Rust Foundation](https://blog.mozilla.org/blog/2021/02/08/mozilla-welcomes-the-rust-foundation/)
   - [Hello World!](https://foundation.rust-lang.org/posts/2021-02-08-hello-world/)
