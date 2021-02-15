@@ -8,6 +8,18 @@ date: 2019-10-24
 
 ### 2021-02
 
+* 电影 **春节档**
+
+* [刺杀小说家](https://movie.douban.com/subject/26826330/)
+  - 拍摄手法满新奇
+  - 一开始以为苦情戏
+  - 后来以为悬疑科幻
+  - 最后发现是搞笑喜剧?
+
+* [唐人街探案3](https://movie.douban.com/subject/27619748/)
+  - 还行, 我喜欢
+  - 票房 破30亿
+
 * [大秦帝国之纵横](https://movie.douban.com/subject/4858790/)
   - 数年前, 被人推荐, 看了 [大秦帝国之裂变](https://movie.douban.com/subject/3114220/)
 
