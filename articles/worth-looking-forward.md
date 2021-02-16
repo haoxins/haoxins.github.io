@@ -30,8 +30,9 @@ date: 2018-12-02
 * [Android 12](https://www.android.com/android-12/)
   - [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
 * [NuttX (RTOS)](https://github.com/apache/incubator-nuttx)
-* Linux
+* Linux v5
   - IO_uring
+  - Zero copy
   - eBPF
 
 ### Next Generation Data Computing
