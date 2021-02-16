@@ -55,9 +55,13 @@ Over
 
 ## History
 
+### 2021
+
 ### Flink v1.13
 
 * [How to natively deploy Flink on Kubernetes with High-Availability (HA)](https://flink.apache.org/2021/02/10/native-k8s-with-ha.html)
+
+### 2020
 
 ### Flink v1.12
 

@@ -48,12 +48,16 @@ date: 2018-12-02
 
 * https://github.com/MaterializeInc/materialize
 
-* Flink v2
-  - Drop ZooKeeper, Kubernetes Native
-  - Object Storage (AWS S3, GCP GCS)
+#### Flink v2
+
+* Drop ZooKeeper, Kubernetes Native
   - https://github.com/apache/incubator-yunikorn-core
-  - https://github.com/pravega/pravega
-  -  Flink Stateful Functions (v3)
+
+* CEP
+
+* Graph (Gelly)
+
+* Stateful Functions (v3)
   - https://github.com/apache/flink-statefun
 
 ### Next Generation Service Runtime
