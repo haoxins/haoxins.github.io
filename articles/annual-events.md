@@ -9,6 +9,7 @@ date: 2019-05-26
 ### 个人年度关键词
 
 * `Blockchain`
+* `冥想`
 
 ### Blockchain
 
@@ -18,11 +19,11 @@ date: 2019-05-26
 
 ### 个人年度关键词
 
-* `Machine learning`
-* `运动`
-* `冥想`
+* `Big Data & Machine learning`
+* `English`
+* `运动 冥想`
 
-### Machine learning
+### Big Data & Machine learning
 
 ### 社会
 
@@ -34,7 +35,7 @@ date: 2019-05-26
 
 * `区块链`
 * `冥想`
-* `Social`
+* `社交`
 
 ### Quantum computing
 
