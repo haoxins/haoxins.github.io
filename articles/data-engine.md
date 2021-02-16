@@ -6,6 +6,15 @@ date: 2020-11-03
 
 ------------------
 
+## Serialization
+
+* Flatbuffer
+  - zero copy 高性能读写
+* Protobuf
+  - 节省内存
+* Parquet
+  - 存储效率高
+
 ## Flink
 
 * Chandy-Lamport
