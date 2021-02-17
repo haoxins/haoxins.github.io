@@ -33,6 +33,16 @@ date: 2020-12-27
   - [Firecracker](https://github.com/firecracker-microvm/firecracker)
   - [Bottlerocket OS](https://github.com/bottlerocket-os/bottlerocket)
 
+* 正式开始把玩 **Rust**
+
+```
+编程语言同样是:
+由俭入奢易, 由奢入俭难
+奢俭指的是: 优秀的语言特性
+最近开始把玩 Rust
+无他, 喜欢, 好玩罢了
+```
+
 * [Mozilla Welcomes the Rust Foundation](https://blog.mozilla.org/blog/2021/02/08/mozilla-welcomes-the-rust-foundation/)
   - [Hello World!](https://foundation.rust-lang.org/posts/2021-02-08-hello-world/)
 
