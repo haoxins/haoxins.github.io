@@ -23,15 +23,31 @@ date: 2020-12-27
 
 ## 2022
 
+### This year top pair languages
+
+* **Rust** and **Golang**
+
+### Events
+
+------------------
+
+## 2022
+
+### This year top pair languages
+
+* **Java 17** and **Golang**
+
+### Events
+
+------------------
+
 ## 2021
 
-* **Kotlin**
-  - [Apache](https://github.com/apache)
-  - [Spring](https://spring.io)
-* **Rust**
-  - [TiKV](https://github.com/tikv/tikv)
-  - [Firecracker](https://github.com/firecracker-microvm/firecracker)
-  - [Bottlerocket OS](https://github.com/bottlerocket-os/bottlerocket)
+### This year top pair languages
+
+* **Kotlin** and **Rust**
+
+### Events
 
 * 正式开始把玩 **Rust**
 
