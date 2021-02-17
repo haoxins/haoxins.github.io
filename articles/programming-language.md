@@ -61,6 +61,8 @@ date: 2020-12-27
 BTW: 讨厌分号!
 ```
 
+* [Announcing Rust 1.50](https://blog.rust-lang.org/2021/02/11/Rust-1.50.0.html)
+
 * [Mozilla Welcomes the Rust Foundation](https://blog.mozilla.org/blog/2021/02/08/mozilla-welcomes-the-rust-foundation/)
   - [Hello World!](https://foundation.rust-lang.org/posts/2021-02-08-hello-world/)
 
