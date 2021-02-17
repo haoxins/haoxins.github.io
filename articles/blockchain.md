@@ -22,8 +22,8 @@ date: 2019-12-10
 
 ------------------
 
-## History
+# History
 
-### 2021
+## 2021
 
 * [Substrate v3.0](https://github.com/paritytech/substrate/releases/tag/v3.0.0)
