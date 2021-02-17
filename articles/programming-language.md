@@ -4,7 +4,11 @@ description: 青山相待, 白云相爱, 紫罗袍共黄金带
 date: 2020-12-27
 ---
 
-### Kotlin
+## Rust
+
+## Go
+
+## Kotlin
 
 * Sequence, List
 
@@ -14,6 +18,8 @@ date: 2020-12-27
 | ------- |:-----:|:-----:|:-----:|:----:|:----:|
 | this/it |  it   | this  |  this |  it  | this |
 | return  |  yes  | yes   |  no   |  no  | yes  |
+
+## Java
 
 ------------------
 
@@ -25,7 +31,7 @@ date: 2020-12-27
 
 ### This year top language
 
-* **Rust**
+* **Go 2**
 
 ### Events
 
@@ -33,9 +39,9 @@ date: 2020-12-27
 
 ## 2022
 
-### This year top pair languages
+### This year top language
 
-* **Java 17 (LTS)** and **Go 2**
+* **Java 17 (LTS)**
 
 ### Events
 
