@@ -21,11 +21,11 @@ date: 2020-12-27
 
 ------------------
 
-## 2022
+## 2023
 
-### This year top pair languages
+### This year top language
 
-* **Rust** and **Golang**
+* **Rust**
 
 ### Events
 
@@ -35,7 +35,7 @@ date: 2020-12-27
 
 ### This year top pair languages
 
-* **Java 17** and **Golang**
+* **Java 17 (LTS)** and **Go 2**
 
 ### Events
 
@@ -57,6 +57,8 @@ date: 2020-12-27
 奢俭指的是: 优秀的语言特性
 最近开始把玩 Rust
 无他, 喜欢, 好玩罢了
+
+BTW: 讨厌分号!
 ```
 
 * [Mozilla Welcomes the Rust Foundation](https://blog.mozilla.org/blog/2021/02/08/mozilla-welcomes-the-rust-foundation/)
