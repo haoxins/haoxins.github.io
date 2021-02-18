@@ -17,4 +17,9 @@ date: 2019-12-10
 
 ## 2021
 
+* 公链跨链是个伪命题, 未来:
+  - 屈指可数的 **公链**
+  - 不同领域/行业/团体各自的 **联盟链**
+  - 跨(公)链? 伪需求!
+
 * [Substrate v3.0](https://github.com/paritytech/substrate/releases/tag/v3.0.0)
