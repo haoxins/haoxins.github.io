@@ -1,6 +1,6 @@
 ---
 title: Linux
-description: ~
+description: 万言已默馀心知, 一杯浊酒尽欢意, 秋风万里一明月, 屈指西风寄归期
 date: 2021-02-17
 ---
 

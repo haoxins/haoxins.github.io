@@ -51,6 +51,19 @@ Over
   - Web UI
   - Rest API
 
+## KV 存储
+
+* Redis: 大众情人, 不再赘述
+
+* RocksDB
+  - LSM 树
+  - 基本的 KV 查询能力
+  - 很高的 文件数据 写入速度
+
+* TiKV
+  - LSM 树
+  - TiFlash (B+ 树)
+
 ------------------
 
 # History
