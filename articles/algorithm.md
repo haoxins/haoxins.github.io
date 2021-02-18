@@ -4,33 +4,15 @@ description: 西当太白有鸟道, 可以横绝峨眉巅
 date: 2020-11-09
 ---
 
+## Common
+
 * [Common used path planning algorithms with animations](https://github.com/zhm-real/PathPlanning)
-* [The Raft Consensus Algorithm](https://raft.github.io)
+* 贪心
+* 分治
+* 回溯
+* 动态规划
 
 ## Graph
-
-### 搜索/遍历
-
-* 广度优先 BFS
-  - 应用: 查找邻节点
-* 深度优先 DFS
-  - 应用: 最优路径
-
-### 最短路径
-
-* Dijkstra
-* A*
-* Yen
-* 单源最短路径 SSSP
-
-### 最小生成树
-
-* 经过所有节点的最佳路径
-* 应用: 垃圾回收
-
-### 随机游走
-
-* 应用: 扩充训练数据集
 
 ### 中心性算法
 
@@ -69,7 +51,8 @@ date: 2020-11-09
 
 ## Distributed
 
-PBFT
+* [The Raft Consensus Algorithm](https://raft.github.io)
+* PBFT
 
 ------------------
 
