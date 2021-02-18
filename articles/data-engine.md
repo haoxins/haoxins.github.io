@@ -61,6 +61,9 @@ Over
 
 * [How to natively deploy Flink on Kubernetes with High-Availability (HA)](https://flink.apache.org/2021/02/10/native-k8s-with-ha.html)
 
+* [Announcing Dapr v1.0](https://blog.dapr.io/posts/2021/02/17/announcing-dapr-v1.0)
+  - [Dapr 1.0.0](https://github.com/dapr/dapr/releases/tag/v1.0.0)
+
 ## 2020
 
 ### Flink v1.12
