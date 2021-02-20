@@ -60,7 +60,7 @@ Over
   - 基本的 KV 查询能力
   - 很高的 文件数据 写入速度
 
-* TiKV
+* [TiKV](https://github.com/tikv/tikv)
   - LSM 树
   - TiFlash (B+ 树)
 
