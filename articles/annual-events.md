@@ -20,8 +20,8 @@ date: 2019-05-26
 ### 个人年度关键词
 
 * `Big Data & Machine learning`
-* `English`
 * `运动 冥想`
+* `静`
 
 ### Big Data & Machine learning
 
