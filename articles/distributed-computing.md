@@ -41,9 +41,40 @@ date: 2021-02-21
 |     PBFT   |    Y     |       |        |       |
 |     PoW    |    Y     |       |        |       |
 
-* CAP
+* [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem)
   - C -> ACID
   - A -> Base
+
+```
+CAP 由三个性质组成
+
+一致性 Consistency
+可用性 Availability
+分区容错性 Partition tolerance
+
+分区容错性: 网络出现了问题, 把原本通过网络连接在一起的机器分成了几个独立的部分, 即: 脑裂
+
+CAP 的假设是: 当出现了脑裂后, 你只能在一致性和可用性当中选择一个, 即: 只能选择 CP 或者 AP
+
+CAP 的一致性指的是 可线性化 (Linearizability)
+
+线性一致性 (Linearizability)
+
+可串行化 (Serializability)
+两个事务里所有操作的执行结果等价于这两个事务的某一个顺序执行结果
+
+
+严格可串行化 (Strict Serializability)
+两个事务的运行结果等价于唯一一个顺序执行结果
+正确性极强
+运行效率极低
+
+一致性
+1. 单调写一致
+2. 单调读一致
+3. 自读自写
+4. 先读后写
+```
 
 * [The Raft Consensus Algorithm](https://raft.github.io)
 
