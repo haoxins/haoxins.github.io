@@ -63,7 +63,6 @@ CAP 的一致性指的是 可线性化 (Linearizability)
 可串行化 (Serializability)
 两个事务里所有操作的执行结果等价于这两个事务的某一个顺序执行结果
 
-
 严格可串行化 (Strict Serializability)
 两个事务的运行结果等价于唯一一个顺序执行结果
 正确性极强
