@@ -26,6 +26,9 @@ date: 2018-04-01
   - 2021-07-01 之前, 不再买书!
   - 清理库存
 
+* [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/1148282/)
+  - 移步 [Reading long term][Long term]
+
 * [深入Java虚拟机: JVM G1GC 的算法与实现](https://book.douban.com/subject/35292560/)
 
 * [gRPC与云原生应用开发](https://book.douban.com/subject/35309194/)
