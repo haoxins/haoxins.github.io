@@ -22,6 +22,10 @@ date: 2018-04-01
 
 ### 2021
 
+* 2021-02-22
+  - 2021-07-01 之前, 不再买书!
+  - 清理库存
+
 * [深入Java虚拟机: JVM G1GC 的算法与实现](https://book.douban.com/subject/35292560/)
 
 * [gRPC与云原生应用开发](https://book.douban.com/subject/35309194/)
