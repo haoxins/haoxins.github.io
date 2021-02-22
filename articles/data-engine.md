@@ -8,12 +8,13 @@ date: 2020-11-03
 
 ## Serialization
 
-* Flatbuffer
+* [FlatBuffers](https://github.com/google/flatbuffers)
   - zero copy 高性能读写
-* Protobuf
+* [Protobuf](https://github.com/protocolbuffers/protobuf)
   - 节省内存
-* Parquet
+* [Parquet](https://github.com/apache/parquet-format)
   - 存储效率高
+* [Cap'n Proto](https://github.com/capnproto/capnproto)
 
 ## Flink
 

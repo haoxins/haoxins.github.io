@@ -408,6 +408,7 @@ be guided by a much more powerful force, life itself.
 
 * [Clean Architecture](https://book.douban.com/subject/30290504/)
   - 实而不虚聊 `Architecture`
+  - 赠与 `@Ye Qing`
 
 * [程序员的数学 3册](https://book.douban.com/subject/19949020/)
   - [程序员的数学](https://book.douban.com/subject/19949020/)
