@@ -26,6 +26,8 @@ date: 2018-04-01
   - 2021-07-01 之前, 不再买书!
   - 清理库存
 
+* [形式语言与自动机理论](https://book.douban.com/subject/2179488/)
+
 * [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/1148282/)
   - 移步 [Reading long term][Long term]
 
