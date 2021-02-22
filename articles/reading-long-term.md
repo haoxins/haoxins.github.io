@@ -8,6 +8,7 @@ date: 2021-01-28
 
 ### TAOCP
 
+* [计算机程序设计艺术 MMIX增补](https://book.douban.com/subject/35170836/)
 * [计算机程序设计艺术 卷4A](https://book.douban.com/subject/34452973/)
 * [计算机程序设计艺术 卷3](https://book.douban.com/subject/26953756/)
 * [计算机程序设计艺术 卷2](https://book.douban.com/subject/26850558/)
