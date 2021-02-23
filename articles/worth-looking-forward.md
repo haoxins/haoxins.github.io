@@ -39,6 +39,10 @@ date: 2018-12-02
 
 * [Apache Arrow](https://github.com/apache/arrow)
 
+* Rust over Java
+  - [Materialize](https://github.com/MaterializeInc/materialize)
+  - [FuseQuery](https://github.com/datafusedev/fuse-query)
+
 * **Kubernetes Native**
   - https://github.com/istio/istio
   - https://github.com/knative
