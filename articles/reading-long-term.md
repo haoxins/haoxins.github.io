@@ -35,7 +35,8 @@ date: 2021-01-28
 
 ### 计算机程序的构造和解释
 
-* [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/1148282/)
+* [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/34464721/)
+  - https://book.douban.com/subject/1148282/
 
 * 同样是拜读 **计算机程序设计艺术** 之前的准备书目 :)
 

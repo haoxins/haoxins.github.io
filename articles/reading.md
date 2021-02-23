@@ -28,7 +28,8 @@ date: 2018-04-01
 
 * [形式语言与自动机理论](https://book.douban.com/subject/2179488/)
 
-* [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/1148282/)
+* [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/34464721/)
+  - https://book.douban.com/subject/1148282/
   - 移步 [Reading long term][Long term]
 
 * [深入Java虚拟机: JVM G1GC 的算法与实现](https://book.douban.com/subject/35292560/)
