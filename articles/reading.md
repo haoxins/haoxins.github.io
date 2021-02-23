@@ -20,6 +20,17 @@ date: 2018-04-01
 
 ------------------
 
+### 2022
+
+* 待购清单
+  - [复分析: 可视化方法](https://www.ituring.com.cn/book/2757)
+  - [基础拓扑学](https://www.ituring.com.cn/book/2731)
+  - [应用随机过程: 概率模型导论](https://www.ituring.com.cn/book/1722)
+  - [矩阵计算](https://www.ituring.com.cn/book/1153)
+  - 优先 微信读书
+
+------------------
+
 ### 2021
 
 * 2021-02-22
