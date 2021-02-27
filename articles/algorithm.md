@@ -4,7 +4,7 @@ description: 西当太白有鸟道, 可以横绝峨眉巅
 date: 2020-11-09
 ---
 
-## Common
+## 基础算法
 
 * `O(n2)` > `O(nLogn)` > `O(n)` > `O(Logn)`
 * [Common used path planning algorithms with animations](https://github.com/zhm-real/PathPlanning)
@@ -15,15 +15,19 @@ date: 2020-11-09
 
 ### 排序
 
-|         |  稳定  |  原地  |      时间      |   空间   | 备注 |
-| ------- |:-----:|:-----:|:--------------:|:-------:|:----:|
-|   选择   |   N   |   Y   |      O(n2)     |   O(1)  |   |
-|   插入   |   Y   |   Y   |   O(n)~O(n2)   |   O(1)  |    |
-|   希尔   |   N   |   Y   |                |   O(1)  |    |
-|   快速   |   N   |   Y   |    O(nLogn)    |  O(Logn)|    |
-| 三向快速  |   N   |   Y   |  O(n)~O(nLogn) |  O(Logn)|    |
-|   归并   |   Y   |   N   |    O(nLogn)    |   O(n)  |    |
-|   堆     |   N   |   Y   |    O(nLogn)    |   O(1)  |    |
+* [Wiki](https://en.wikipedia.org/wiki/Sorting_algorithm)
+
+|         |  稳定  |  原地  |   时间   |   空间   |
+| ------- |:-----:|:-----:|:--------:|:-------:|
+|   冒泡   |   Y   |   Y   |  O(n2)   |  O(1)   |
+|   插入   |   Y   |   Y   |  O(n2)   |  O(1)   |
+|   选择   |   N   |   Y   |  O(n2)   |  O(1)   |
+|   归并   |   Y   |   N   | O(nLogn) |  O(n)   |
+|   快速   |   N   |   Y   | O(nLogn) | O(Logn) |
+|   堆     |   N   |   Y   | O(nLogn) |  O(1)   |
+|   桶     |   Y   |   N   |  O(n)    |  O(1)   |
+
+### 查找
 
 ### 索引
 
@@ -58,7 +62,9 @@ date: 2020-11-09
 布隆过滤器 最大的优点: 节省存储空间
 ```
 
-## Graph
+### 字符/编码
+
+## 图
 
 ### 中心性算法
 
