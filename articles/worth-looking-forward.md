@@ -4,10 +4,7 @@ description: 钟鼓馔玉何足贵, 但愿长醉不复醒.
 date: 2018-12-02
 ---
 
-## 2023 不再继续 (换一种形式)
-
-* 2024 - Serverless
-* 2028 - Codeless
+## 2023 不再继续
 
 ------------------
 
@@ -18,22 +15,16 @@ date: 2018-12-02
 * Spring Framework
   - 打败 Spring Framework 的一定不是另一个 **Framework**
 * [JDK 17](https://openjdk.java.net/projects/jdk/17/)
-  - [JEP 358: Helpful NullPointerExceptions](https://openjdk.java.net/jeps/358)
-  - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
-  - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
-  - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
-  - [JEP 395: Records](https://openjdk.java.net/jeps/395)
   - [JEP 397: Sealed Classes](https://openjdk.java.net/jeps/397)
+  - [JEP 395: Records](https://openjdk.java.net/jeps/395)
+  - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
+  - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
+  - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
 * [Svelte](https://github.com/sveltejs/svelte)
   - https://svelte.dev
   - I like Svelte
 * [Android 12](https://www.android.com/android-12/)
   - [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
-* [NuttX (RTOS)](https://github.com/apache/incubator-nuttx)
-* Linux v5
-  - IO_uring
-  - Zero copy
-  - eBPF
 
 ### Next Generation Data Computing
 
@@ -75,7 +66,6 @@ date: 2018-12-02
 ### Next Generation Database
 
 * [Azure Cosmos DB](https://azure.microsoft.com/zh-cn/services/cosmos-db/)
-* [TiKV](https://github.com/tikv/tikv)
 
 ### Next Generation SQL Database
 
