@@ -4,10 +4,12 @@ description: 西当太白有鸟道, 可以横绝峨眉巅
 date: 2020-11-09
 ---
 
+## 不可解性
+
 ## 基础算法
 
 * `O(n2)` > `O(nLogn)` > `O(n)` > `O(Logn)`
-* [Common used path planning algorithms with animations](https://github.com/zhm-real/PathPlanning)
+
 * 贪心
 * 分治
 * 回溯
@@ -98,6 +100,28 @@ date: 2020-11-09
 ### 字符/编码
 
 ## 图
+
+### 生成树
+
+### 路径算法
+
+* [Common used path planning algorithms with animations](https://github.com/zhm-real/PathPlanning)
+
+* Dijkstra
+  - 优:
+    最坏情况下仍有较好性能
+  - 劣:
+    边的权重必须为正
+
+* 拓扑排序
+  - 优:
+    无环图最优算法
+  - 劣:
+    无环加权有向图
+
+* Bellman-Ford
+  - 劣:
+    不能存在负权重环
 
 ### 中心性算法
 
