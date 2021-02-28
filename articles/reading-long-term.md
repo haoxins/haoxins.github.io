@@ -4,15 +4,7 @@ description:
 date: 2021-01-28
 ---
 
-## 始于 2022
-
-### TAOCP
-
-* [计算机程序设计艺术 MMIX增补](https://book.douban.com/subject/35170836/)
-* [计算机程序设计艺术 卷4A](https://book.douban.com/subject/34452973/)
-* [计算机程序设计艺术 卷3](https://book.douban.com/subject/26953756/)
-* [计算机程序设计艺术 卷2](https://book.douban.com/subject/26850558/)
-* [计算机程序设计艺术 卷1](https://book.douban.com/subject/26681685/)
+## 始于 2023
 
 ### 费曼物理学讲义
 
@@ -22,16 +14,15 @@ date: 2021-01-28
 
 ## 始于 2021
 
-### 怎样解题: 数学思维的新方法
+### TAOCP
 
-* [怎样解题: 数学思维的新方法](https://book.douban.com/subject/2124114/)
-  - G·波利亚
-  - **探索法**
+* [Wiki - The Art of Computer Programming](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming)
 
-### 百面机器学习
-
-* [百面机器学习](https://book.douban.com/subject/30285146/)
-  - 副标题: 算法工程师带你去面试
+* [计算机程序设计艺术 MMIX增补](https://book.douban.com/subject/35170836/)
+* [计算机程序设计艺术 卷4A](https://book.douban.com/subject/34452973/)
+* [计算机程序设计艺术 卷3](https://book.douban.com/subject/26953756/)
+* [计算机程序设计艺术 卷2](https://book.douban.com/subject/26850558/)
+* [计算机程序设计艺术 卷1](https://book.douban.com/subject/26681685/)
 
 ### 计算机程序的构造和解释
 
