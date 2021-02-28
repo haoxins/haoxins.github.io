@@ -6,6 +6,13 @@ date: 2020-11-09
 
 ## 不可解性
 
+* NP (nondeterministic polynomial time)
+  - 仅: 解的验证
+  - 分解质因数
+  - P
+* P
+* NPC
+
 ## 基础算法
 
 * `O(n2)` > `O(nLogn)` > `O(n)` > `O(Logn)`
