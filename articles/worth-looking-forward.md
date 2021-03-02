@@ -60,6 +60,7 @@ date: 2018-12-02
 
 * https://github.com/dapr/dapr
   - https://dapr.io
+  - https://github.com/dapr/workflows
   - Not **JVM**
   - Not [GraalVM](https://github.com/oracle/graal)
 
