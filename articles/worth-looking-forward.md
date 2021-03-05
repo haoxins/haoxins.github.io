@@ -21,7 +21,7 @@ date: 2018-12-02
   - [JEP 338: Vector API](https://openjdk.java.net/jeps/338)
 
 * Spring Framework
-  - 打败 Spring Framework 的一定不是另一个 **Framework**
+  - 打败 Spring Framework 的一定不是另一个 **Web Framework**
 
 * [Svelte](https://github.com/sveltejs/svelte)
   - https://svelte.dev
@@ -30,8 +30,8 @@ date: 2018-12-02
 * [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
   - [Android 12](https://www.android.com/android-12/)
 
-* [QUIC]()
-  - [HTTP/3]()
+* [QUIC](https://tools.ietf.org/html/draft-ietf-quic-transport-34)
+  - [HTTP/3](https://tools.ietf.org/html/draft-ietf-quic-http-34)
 
 ### Next Generation Data Computing
 
