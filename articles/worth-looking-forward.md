@@ -12,19 +12,26 @@ date: 2018-12-02
 
 ### Overview
 
-* Spring Framework
-  - 打败 Spring Framework 的一定不是另一个 **Framework**
 * [JDK 17](https://openjdk.java.net/projects/jdk/17/)
   - [JEP 397: Sealed Classes](https://openjdk.java.net/jeps/397)
   - [JEP 395: Records](https://openjdk.java.net/jeps/395)
   - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
   - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
   - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
+  - [JEP 338: Vector API](https://openjdk.java.net/jeps/338)
+
+* Spring Framework
+  - 打败 Spring Framework 的一定不是另一个 **Framework**
+
 * [Svelte](https://github.com/sveltejs/svelte)
   - https://svelte.dev
   - I like Svelte
-* [Android 12](https://www.android.com/android-12/)
-  - [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
+
+* [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
+  - [Android 12](https://www.android.com/android-12/)
+
+* [QUIC]()
+  - [HTTP/3]()
 
 ### Next Generation Data Computing
 
