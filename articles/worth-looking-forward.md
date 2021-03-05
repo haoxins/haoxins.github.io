@@ -46,12 +46,12 @@ date: 2018-12-02
   - https://github.com/istio/istio
   - https://github.com/knative
 
+### Graph computing
+
 * [GraphScope](https://graphscope.io)
   - https://github.com/alibaba/graphscope
 
-* https://github.com/MaterializeInc/materialize
-
-#### Flink v2
+### Flink v2
 
 * Drop ZooKeeper, Kubernetes Native
   - https://github.com/apache/incubator-yunikorn-core
