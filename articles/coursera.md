@@ -20,6 +20,14 @@ date: 2019-05-30
 
 ## 2021
 
+* [Applied Cryptography](https://www.coursera.org/specializations/applied-crypto)
+  - 公司给每位员工发了一张境外虚拟信用卡, 每月额度 $50
+  - 想来想去, 还是 Coursera 订阅最合适
+  - [Cryptography and Information Theory](https://www.coursera.org/learn/crypto-info-theory)
+  - [Symmetric Cryptography](https://www.coursera.org/learn/symmetric-crypto)
+  - [Asymmetric Cryptography and Key Management](https://www.coursera.org/learn/asymmetric-crypto)
+  - [Cryptographic Hash and Integrity Protection](https://www.coursera.org/learn/cryptographic-hash-integrity-protection)
+
 * 看着 Coursera UI/UX 的进化, Lab env 的进步, 还挺有意思的
 * **暂时告一段落**
 
