@@ -8,6 +8,8 @@ date: 2019-10-24
 
 ### 2021-03
 
+* [假面饭店](https://www.bilibili.com/bangumi/media/md28233766)
+
 * [秦时明月之沧海横流](https://movie.douban.com/subject/26184585/)
   - 上篇完结, 下篇播出时间待定
   - 弃坑了 弃坑了 追不动了 :)
