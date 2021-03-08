@@ -55,6 +55,8 @@ date: 2020-12-27
 
 ### Events
 
+* [My Crates Account](https://crates.io/users/haoxins)
+
 * 正式开始把玩 **Rust**
 
 ```
