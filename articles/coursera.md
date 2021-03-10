@@ -20,8 +20,6 @@ date: 2019-05-30
 
 ## 2021
 
-* [Algorithms](https://www.coursera.org/specializations/algorithms)
-
 * [Applied Cryptography](https://www.coursera.org/specializations/applied-crypto)
   - 公司给每位员工发了一张境外虚拟信用卡, 每月额度 $50
   - 想来想去, 还是 Coursera 订阅最合适

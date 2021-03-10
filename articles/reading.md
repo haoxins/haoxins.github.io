@@ -9,7 +9,7 @@ date: 2018-04-01
 ### Wish list
 
 - [ ] Dan Boneh 的密码学新作
-- [ ] 计算机程序设计艺术 卷4B
+- [ ] 计算机程序设计艺术
 
 ------------------
 
@@ -56,7 +56,7 @@ date: 2018-04-01
 
 * [深入Java虚拟机: JVM G1GC 的算法与实现](https://book.douban.com/subject/35292560/)
 
-* [gRPC与云原生应用开发](https://book.douban.com/subject/35309194/)
+* [gRPC 与云原生应用开发](https://book.douban.com/subject/35309194/)
   - 副标题: 以 Go 和 Java 为例
   - **不推荐** 也就 第4章 还凑合
 
