@@ -9,14 +9,13 @@ date: 2019-06-30
 * TLS
   - https://tls13.ulfheim.net
 
-* PKCS (Public Key Cryptography Standards)
-  - https://en.wikipedia.org/wiki/PKCS
-
 * Proxy re-encryption
   - https://www.nucypher.com/proxy-re-encryption
 
 * [Homomorphic encryption](https://github.com/homenc/HElib)
   - https://homomorphicencryption.org
+
+### Threat model
 
 ### Stream ciphers
 
