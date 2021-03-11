@@ -6,7 +6,14 @@ date: 2020-12-27
 
 ## Rust
 
-## Go
+* 分号
+
+```
+Almost everything in Rust is an expression.
+An expression is something that returns a value.
+A semicolon after an expression changes the type of the expression to ().
+Aka turning an expression into a statement.
+```
 
 ## Kotlin
 
@@ -27,31 +34,7 @@ date: 2020-12-27
 
 ------------------
 
-## 2023
-
-### This year top language
-
-* **Go 2**
-
-### Events
-
-------------------
-
-## 2022
-
-### This year top language
-
-* **Java 17 (LTS)**
-
-### Events
-
-------------------
-
 ## 2021
-
-### This year top pair languages
-
-* **Kotlin** and **Rust**
 
 ### Events
 
