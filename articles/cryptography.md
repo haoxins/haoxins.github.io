@@ -17,6 +17,8 @@ date: 2019-06-30
 
 ### Threat model
 
+* Kerckhoffs's Principle (Shannon's maxim)
+
 ### Stream ciphers
 
 * Stream ciphers (making OTP practical)
