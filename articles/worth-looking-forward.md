@@ -38,6 +38,7 @@ date: 2018-12-02
 * [Apache Arrow](https://github.com/apache/arrow)
   - [DataFusion - an in-memory query engine](https://crates.io/crates/datafusion)
 * [InfluxDB IOx](https://github.com/influxdata/influxdb_iox)
+* Azure Cosmos DB vs Amazon DynamoDB
 
 ### Graph computing
 
