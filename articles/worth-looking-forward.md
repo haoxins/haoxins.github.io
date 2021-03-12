@@ -36,15 +36,8 @@ date: 2018-12-02
 ### Next Generation Data Computing
 
 * [Apache Arrow](https://github.com/apache/arrow)
-
-* Rust over Java
-  - [InfluxDB IOx](https://github.com/influxdata/influxdb_iox)
-  - [Materialize](https://github.com/MaterializeInc/materialize)
-  - [FuseQuery](https://github.com/datafusedev/fuse-query)
-
-* **Kubernetes Native**
-  - https://github.com/istio/istio
-  - https://github.com/knative
+  - [DataFusion - an in-memory query engine](https://crates.io/crates/datafusion)
+* [InfluxDB IOx](https://github.com/influxdata/influxdb_iox)
 
 ### Graph computing
 
