@@ -54,6 +54,11 @@ date: 2018-04-01
   - https://book.douban.com/subject/1148282/
   - 移步 [Reading long term][Long term]
 
+* [毛泽东选集](https://book.douban.com/subject/1139360/)
+  - [第二卷](https://book.douban.com/subject/1252183/)
+  - [第三卷](https://book.douban.com/subject/1139361/)
+  - [第四卷](https://book.douban.com/subject/1125024/)
+
 * [深入Java虚拟机: JVM G1GC 的算法与实现](https://book.douban.com/subject/35292560/)
 
 * [gRPC 与云原生应用开发](https://book.douban.com/subject/35309194/)
@@ -156,7 +161,6 @@ date: 2018-04-01
 
 * [Head First 设计模式](https://book.douban.com/subject/2243615/)
   - 从来都不是 OOP 的 Fans
-  - 此书, 赠与 @道长
 
 * [网络是怎样连接的](https://book.douban.com/subject/26941639/)
   - 写得挺通俗
