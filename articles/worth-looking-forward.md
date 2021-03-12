@@ -44,7 +44,7 @@ date: 2018-12-02
 * [GraphScope](https://graphscope.io)
   - https://github.com/alibaba/graphscope
 
-### Flink v2
+### Flink v2 & Kafka v3
 
 * Drop ZooKeeper, Kubernetes Native
   - https://github.com/apache/incubator-yunikorn-core
@@ -52,9 +52,6 @@ date: 2018-12-02
 * CEP
 
 * Graph (Gelly)
-
-* Stateful Functions (v3)
-  - https://github.com/apache/flink-statefun
 
 ### Next Generation Service Runtime
 
@@ -64,9 +61,8 @@ date: 2018-12-02
   - Not **JVM**
   - Not [GraalVM](https://github.com/oracle/graal)
 
-### Next Generation Database
-
-* [Azure Cosmos DB](https://azure.microsoft.com/zh-cn/services/cosmos-db/)
+* Stateful Functions
+  - https://github.com/apache/flink-statefun
 
 ### Next Generation SQL Database
 
