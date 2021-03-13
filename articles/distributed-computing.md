@@ -100,3 +100,14 @@ Raft 可以提供 强一致性, 也可以提供 最终一致性
   - 读时修复: 在读取数据时, 检测数据的不一致, 进行修复
   - 写时修复: 在写入数据时, 检测数据的不一致, 进行修复
   - 异步修复: 定时对账检测副本数据的一致性, 并修复
+
+------------------
+
+# History
+
+## 2021
+
+* [A visual guide to Dapr](https://blog.dapr.io/posts/2021/03/02/a-visual-guide-to-dapr)
+
+* [Announcing Dapr v1.0](https://blog.dapr.io/posts/2021/02/17/announcing-dapr-v1.0)
+  - [Dapr 1.0.0](https://github.com/dapr/dapr/releases/tag/v1.0.0)
