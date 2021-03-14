@@ -31,6 +31,10 @@ date: 2018-04-01
   - 只读 **2021** 及以后出版
   - 技术书籍, 只读 **第二版** 及以上
 
+* [哥德尔 艾舍尔 巴赫](https://book.douban.com/subject/1291204/)
+  - 副标题: 集异璧之大成
+  - 出版年: 1997-05
+
 * [金瓶梅](https://book.douban.com/subject/27020378/)
 
 * [恶意](https://book.douban.com/subject/3646172/)
