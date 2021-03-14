@@ -12,6 +12,9 @@ date: 2019-10-24
   - 复仇者联盟4: 终局之战
   - 灭霸 真的是 有愿景 有情怀
 
+* 影院重新上映 [阿凡达 Avatar](https://movie.douban.com/subject/1652587/)
+  - 第一次看 :)
+
 * 重温经典: [复仇者联盟3](https://movie.douban.com/subject/24773958/)
   - 复仇者联盟3: 无限战争
 
