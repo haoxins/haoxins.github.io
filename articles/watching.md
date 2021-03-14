@@ -8,6 +8,10 @@ date: 2019-10-24
 
 ### 2021-03
 
+* 重温: [正义联盟](https://www.bilibili.com/bangumi/media/md28233973)
+
+* [神奇女侠1984](https://www.bilibili.com/bangumi/media/md28224114)
+
 * [假面饭店](https://www.bilibili.com/bangumi/media/md28233766)
 
 * [秦时明月之沧海横流](https://movie.douban.com/subject/26184585/)
