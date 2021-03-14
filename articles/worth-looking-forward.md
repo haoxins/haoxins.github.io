@@ -12,14 +12,6 @@ date: 2018-12-02
 
 ### Overview
 
-* [JDK 17](https://openjdk.java.net/projects/jdk/17/)
-  - [JEP 397: Sealed Classes](https://openjdk.java.net/jeps/397)
-  - [JEP 395: Records](https://openjdk.java.net/jeps/395)
-  - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
-  - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
-  - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
-  - [JEP 338: Vector API](https://openjdk.java.net/jeps/338)
-
 * Spring Framework
   - 打败 Spring Framework 的一定不是另一个 **Web Framework**
 
@@ -32,6 +24,17 @@ date: 2018-12-02
 
 * [QUIC](https://tools.ietf.org/html/draft-ietf-quic-transport-34)
   - [HTTP/3](https://tools.ietf.org/html/draft-ietf-quic-http-34)
+
+### GraalVM
+
+* [JDK 17](https://openjdk.java.net/projects/jdk/17/)
+  - 最后的 JVM, [GraalVM](https://github.com/oracle/graal)
+  - [JEP 397: Sealed Classes](https://openjdk.java.net/jeps/397)
+  - [JEP 395: Records](https://openjdk.java.net/jeps/395)
+  - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
+  - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
+  - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
+  - [JEP 338: Vector API](https://openjdk.java.net/jeps/338)
 
 ### Next Generation Data Computing
 
