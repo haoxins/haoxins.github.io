@@ -107,7 +107,7 @@ date: 2019-10-24
 * [加勒比海盗5](https://movie.douban.com/subject/6311303/)
   - 国庆长假, 重温电影
 
-* [我的三体 - 哔哩哔哩](https://www.bilibili.com/bangumi/play/ep30636)
+* [我的三体 - 哔哩哔哩](https://www.bilibili.com/bangumi/media/md28223557)
 * [我的三体](https://movie.douban.com/subject/27624727/)
 
 ### 2020-09
