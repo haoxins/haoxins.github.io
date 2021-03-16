@@ -8,11 +8,12 @@ date: 2020-11-05
 
 ## 2021
 
+* [TiKV - Deep Dive](https://tikv.org/deep-dive/introduction/)
+
 * [Consensus: Bridging Theory and Practice](https://github.com/ongardie/dissertation)
 
-* [High-Dimensional Data Analysis with Low-Dimensional Models](https://book-wright-ma.github.io)
-  - High-Dimensional Data Analysis with Low-Dimensional Models:
-  -   Principles, Computation, and Applications
-  - John Wright and Yi Ma, Cambridge University Press
-
-* [TiKV - Deep Dive](https://tikv.org/deep-dive/introduction/)
+* [Peter Bailis, Highly Available, Seldom Consistent](http://www.bailis.org/blog/)
+  - Data management, distributed systems, and beyond
+  - [Linearizability versus Serializability](http://www.bailis.org/blog/linearizability-versus-serializability/)
+  - [Non-blocking Transactional Atomicity](http://www.bailis.org/blog/non-blocking-transactional-atomicity/)
+  - [HAT, not CAP: Introducing Highly Available Transactions](http://www.bailis.org/blog/hat-not-cap-introducing-highly-available-transactions/)
