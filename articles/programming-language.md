@@ -6,6 +6,8 @@ date: 2020-12-27
 
 ## Rust
 
+* `Option` & `Result`
+
 * 分号
 
 ```
