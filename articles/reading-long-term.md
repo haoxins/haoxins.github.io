@@ -1,5 +1,5 @@
 ---
-title: 阅读书单 (经典书籍, 长期摸索)
+title: 阅读 经典书籍
 description:
 date: 2021-01-28
 ---
