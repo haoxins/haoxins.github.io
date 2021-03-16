@@ -24,6 +24,11 @@ date: 2021-01-28
 * [计算机程序设计艺术 卷2](https://book.douban.com/subject/26850558/)
 * [计算机程序设计艺术 卷1](https://book.douban.com/subject/26681685/)
 
+### 哥德尔 艾舍尔 巴赫
+
+* [哥德尔 艾舍尔 巴赫](https://book.douban.com/subject/1291204/)
+  - 副标题: 集异璧之大成
+
 ### 计算机程序的构造和解释
 
 * [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/34464721/)

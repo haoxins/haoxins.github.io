@@ -36,6 +36,7 @@ date: 2018-04-01
 * [哥德尔 艾舍尔 巴赫](https://book.douban.com/subject/1291204/)
   - 副标题: 集异璧之大成
   - 出版年: 1997-05
+  - 移步 [Reading long term][Long term]
 
 * [金瓶梅](https://book.douban.com/subject/27020378/)
 
