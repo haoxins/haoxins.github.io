@@ -148,6 +148,10 @@ session key = G ** (A * B) % P
 * 证书 至少包含: `public key`, `机构签名`
 * 证书信任链
 
+### Hash
+
+* [aHash](https://github.com/tkaitchuck/aHash)
+
 ------------------
 
 # History
