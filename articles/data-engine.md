@@ -4,8 +4,6 @@ description: 回首向来萧瑟处, 归去, 也无风雨也无晴
 date: 2020-11-03
 ---
 
-------------------
-
 ## Serialization
 
 * [Cap'n Proto](https://github.com/capnproto/capnproto)
@@ -20,15 +18,30 @@ date: 2020-11-03
 * [Avro](https://github.com/apache/avro)
   - 磁盘存储, 行
 
-## Flink
+## KV 存储
+
+* RocksDB
+  - LSM 树
+  - 基本的 KV 查询能力
+  - 很高的 文件数据 写入速度
+
+* [TiKV](https://github.com/tikv/tikv)
+  - LSM 树
+  - TiFlash (B+ 树)
+
+------------------
+
+# Timeline
+
+------------------
+
+## 2021
+
+### Flink
 
 * Chandy-Lamport
-  - https://zhuanlan.zhihu.com/p/44454670
-  - http://composition.al/blog/2019/04/26/an-example-run-of-the-chandy-lamport-snapshot-algorithm/
 
-* SQL
-  - Rowtime 列在经过窗口操作后, 其 Event Time 属性将丢失
-  - https://help.aliyun.com/document_detail/62510.html
+* Window
 
 ```
 Window (If 5min)
@@ -44,44 +57,27 @@ Over
   Range Over (RANGE BETWEEN)
 ```
 
-### Architecture
+* Checkpoint
 
-* JobManager -> Master process
-  - JobGraph -> ExecutionGraph
-* TaskManager -> Worker process
-  - Job task slot
-* ResourceManager
-  - Kubernetes
-* Dispatcher
-  - Web UI
-  - Rest API
-
-## KV 存储
-
-* Redis: 大众情人, 不再赘述
-
-* RocksDB
-  - LSM 树
-  - 基本的 KV 查询能力
-  - 很高的 文件数据 写入速度
-
-* [TiKV](https://github.com/tikv/tikv)
-  - LSM 树
-  - TiFlash (B+ 树)
-
-------------------
-
-# History
-
-## 2021
-
-### Flink v1.13
+```
+When working with state kept in a heap-based state backend,
+accesses and updates involve reading and writing objects on the heap.
+But for objects kept in the RocksDBStateBackend,
+accesses and updates involve serialization and deserialization,
+and so are much more expensive.
+But the amount of state you can have with RocksDB is limited
+only by the size of the local disk.
+Note also that only the RocksDBStateBackend is able to do incremental snapshotting, which is a significant benefit for applications
+with large amounts of slowly changing state.
+```
 
 * [How to natively deploy Flink on Kubernetes with High-Availability (HA)](https://flink.apache.org/2021/02/10/native-k8s-with-ha.html)
 
+------------------
+
 ## 2020
 
-### Flink v1.12
+### Flink
 
 ```
 Before 1.12
