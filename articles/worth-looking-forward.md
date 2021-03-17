@@ -36,17 +36,15 @@ date: 2018-12-02
   - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
   - [JEP 338: Vector API](https://openjdk.java.net/jeps/338)
 
-### Next Generation Data Computing
+### Data Computing
 
 * [Apache Arrow](https://github.com/apache/arrow)
   - [DataFusion - an in-memory query engine](https://crates.io/crates/datafusion)
-* [InfluxDB IOx](https://github.com/influxdata/influxdb_iox)
-* Azure Cosmos DB vs Amazon DynamoDB
 
-### Graph computing
+### Graph Computing
 
-* [GraphScope](https://graphscope.io)
-  - https://github.com/alibaba/graphscope
+* [GraphScope](https://github.com/alibaba/graphscope)
+  - https://graphscope.io
 
 ### Flink v2 & Kafka v3
 
@@ -59,14 +57,10 @@ date: 2018-12-02
 
 ### Next Generation Service Runtime
 
-* https://github.com/dapr/dapr
+* [Dapr](https://github.com/dapr/dapr)
   - https://dapr.io
-  - https://github.com/dapr/workflows
   - Not **JVM**
   - Not [GraalVM](https://github.com/oracle/graal)
-
-* Stateful Functions
-  - https://github.com/apache/flink-statefun
 
 ### Next Generation SQL Database
 
