@@ -101,6 +101,9 @@ Raft 可以提供 强一致性, 也可以提供 最终一致性
   - 写时修复: 在写入数据时, 检测数据的不一致, 进行修复
   - 异步修复: 定时对账检测副本数据的一致性, 并修复
 
+* Snapshot
+  - [An example run of the Chandy-Lamport snapshot algorithm](http://composition.al/blog/2019/04/26/an-example-run-of-the-chandy-lamport-snapshot-algorithm/)
+
 ------------------
 
 # History
