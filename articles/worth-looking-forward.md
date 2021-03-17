@@ -8,7 +8,7 @@ date: 2018-12-02
 
 ------------------
 
-## 2022 Next Generation (Lockdown in 2021-05-??)
+## 2022 Next Generation (Lockdown in 2021-03-17)
 
 ### Overview
 
@@ -49,10 +49,7 @@ date: 2018-12-02
 ### Flink v2 & Kafka v3
 
 * Drop ZooKeeper, Kubernetes Native
-  - https://github.com/apache/incubator-yunikorn-core
-
 * CEP
-
 * Graph (Gelly)
 
 ### Next Generation Service Runtime
