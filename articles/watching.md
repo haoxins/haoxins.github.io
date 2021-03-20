@@ -8,15 +8,23 @@ date: 2019-10-24
 
 ### 2021-03
 
+* 重温 [惊奇队长](https://movie.douban.com/subject/26213252/)
+
+* 影院重新上映 [阿凡达 Avatar](https://movie.douban.com/subject/1652587/)
+  - 第一次看 :)
+  - 时隔多年, 依旧震撼
+  - 期待续作, 期待 VR
+
+* 重温 [复仇者联盟](https://movie.douban.com/subject/1866479/)
+
+* 重温 [复仇者联盟2: 奥创纪元](https://movie.douban.com/subject/10741834/)
+
 * 重温经典 [复仇者联盟4](https://movie.douban.com/subject/26100958/)
   - 复仇者联盟4: 终局之战
   - 灭霸 真的是 有愿景 有情怀 赢得起 输得起
   - 钢铁侠 -> 蜘蛛侠
   - iPad 观影体验还是差了些, 期待 VR
   - 虽然还会有 黑寡妇 蜘蛛侠3 永恒族 奇异博士2, 但漫威时代, 基本高潮结束
-
-* 影院重新上映 [阿凡达 Avatar](https://movie.douban.com/subject/1652587/)
-  - 第一次看 :)
 
 * 重温经典: [复仇者联盟3](https://movie.douban.com/subject/24773958/)
   - 复仇者联盟3: 无限战争
