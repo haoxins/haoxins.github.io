@@ -126,7 +126,6 @@ date: 2019-05-30
   - Grade Achieved: `97.5%`
   - https://www.coursera.org/account/accomplishments/certificate/UMRY34MFEXMB
 
-
 * [Architecting with Google Cloud Platform](https://www.coursera.org/specializations/gcp-architecture)
   - https://www.coursera.org/account/accomplishments/specialization/HHM3BJXJUW63
   - https://www.coursera.org/account/accomplishments/specialization/certificate/HHM3BJXJUW63
