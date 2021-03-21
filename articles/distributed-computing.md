@@ -110,6 +110,8 @@ Raft 可以提供 强一致性, 也可以提供 最终一致性
 
 ## 2021
 
+* 3月16日, `混合云第一股` `青云科技` 正式在科创板上市, 股票代码: `688316`
+
 * [A visual guide to Dapr](https://blog.dapr.io/posts/2021/03/02/a-visual-guide-to-dapr)
 
 * [Announcing Dapr v1.0](https://blog.dapr.io/posts/2021/02/17/announcing-dapr-v1.0)
