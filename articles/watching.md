@@ -6,6 +6,9 @@ date: 2019-10-24
 
 ## 2021
 
+* [基地 Foundation](https://movie.douban.com/subject/3161109/)
+  - https://www.imdb.com/title/tt0804484/
+
 ### 2021-03
 
 * 重温 [惊奇队长](https://movie.douban.com/subject/26213252/)
