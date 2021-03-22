@@ -1,31 +1,41 @@
 #!/usr/bin/env python3
 
 import os
+from os import path
 
-rootdir = os.path.dirname(os.path.realpath(__file__))
+root_dir = path.dirname(path.realpath(__file__))
+
 file_infos = []
 contents = []
 
-dir = os.path.join(rootdir, 'articles')
-for (dirpath, dirname, filenames) in os.walk(dir):
-  for filename in filenames:
-    p = os.path.join(dir, filename)
-    info = os.stat(p)
-    file_infos.append({'mtime': info.st_mtime, 'path': p, 'name': filename})
+
+def gen_contents(sub_path):
+  article_dir = path.join(root_dir, sub_path)
+  for (_, _, filenames) in os.walk(article_dir):
+    for filename in filenames:
+      p = path.join(article_dir, filename)
+      info = os.stat(p)
+      file_infos.append({'mtime': info.st_mtime, 'path': p, 'name': filename})
+
+  file_infos.sort(key=lambda info: info["mtime"], reverse=True)
+
+  for i in file_infos:
+    with open(i['path'], 'r') as f:
+      lines = f.readlines()
+      title = lines[1].split(':').pop().strip()
+      content = f'* [{title}]({sub_path}/{i["name"]})'
+      contents.append(content)
+
+  file_infos.clear()
 
 
-def takeMtime(info):
-  return info["mtime"]
+# Generate the index page
 
+gen_contents('articles')
 
-file_infos.sort(key=takeMtime, reverse=True)
+contents.append('\n### Archived\n')
 
-for i in file_infos:
-  with open(i['path'], 'r') as f:
-    lines = f.readlines()
-    title = lines[1].split(':').pop().strip()
-    content = '* [' + title + '](articles/' + i['name'] + ')'
-    contents.append(content)
+gen_contents('_archived')
 
-with open(os.path.join(rootdir, 'index.md'), 'w') as f:
+with open(path.join(root_dir, 'index.md'), 'w') as f:
   f.write('\n'.join(contents))
