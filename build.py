@@ -9,7 +9,7 @@ file_infos = []
 contents = []
 
 
-def gen_contents(sub_path):
+def gen_contents(sub_path, reverse):
   article_dir = path.join(root_dir, sub_path)
   for (_, _, filenames) in os.walk(article_dir):
     for filename in filenames:
@@ -17,7 +17,7 @@ def gen_contents(sub_path):
       info = os.stat(p)
       file_infos.append({'mtime': info.st_mtime, 'path': p, 'name': filename})
 
-  file_infos.sort(key=lambda info: info["mtime"], reverse=True)
+  file_infos.sort(key=lambda info: info["name"], reverse=reverse)
 
   for i in file_infos:
     with open(i['path'], 'r') as f:
@@ -31,11 +31,11 @@ def gen_contents(sub_path):
 
 # Generate the index page
 
-gen_contents('articles')
+gen_contents('articles', False)
 
 contents.append('\n### Archived\n')
 
-gen_contents('_archived')
+gen_contents('_archived', True)
 
 with open(path.join(root_dir, 'index.md'), 'w') as f:
   f.write('\n'.join(contents))
