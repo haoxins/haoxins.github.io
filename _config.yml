@@ -26,3 +26,8 @@ defaults:
     type: pages
   values:
     sectionid: articles
+  scope:
+    path: _archived
+    type: pages
+  values:
+    sectionid: _archived
