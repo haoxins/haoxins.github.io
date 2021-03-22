@@ -104,6 +104,17 @@ Raft 可以提供 强一致性, 也可以提供 最终一致性
 * Snapshot
   - [An example run of the Chandy-Lamport snapshot algorithm](http://composition.al/blog/2019/04/26/an-example-run-of-the-chandy-lamport-snapshot-algorithm/)
 
+```
+Chandy-Lamport snapshot algorithm
+
+It turns out to be important that the channels have FIFO behavior
+for the Chandy-Lamport algorithm to work.
+
+One of the especially cool things about the Chandy-Lamport algorithm
+is that it is decentralized — any process (or multiple processes at once!)
+can begin taking a snapshot without coordinating with other processes.
+```
+
 ------------------
 
 # History

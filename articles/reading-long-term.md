@@ -67,6 +67,35 @@ date: 2021-01-28
 * [程序员修炼之道 (第2版)](https://book.douban.com/subject/35006892/)
   - 副标题: 通向务实的最高境界
 
+* 防御式编程
+  - 别忘了 `防御自己`
+  - DBC 契约式设计
+  - Clojure 前置条件 后置条件
+  - Elixir Guard
+  - 语义不变式
+
+```clojure
+(defn accept-deposit [account-id amount]
+  { :pre [ (> amount 0.00)
+           (account-open? account-id) ]
+    :post [ (contains? (account-transactions account-id) %) ] }
+(create-transaction account-id :deposit amount))
+```
+
+```elixir
+defmodule Deposits do
+  def accept_deposit(account_id, amount) when (amount > 100000) do
+  # ...
+  end
+  def accept_deposit(account_id, amount) when (amount > 1000) do
+  # ...
+  end
+  def accept_deposit(account_id, amount) when (amount > 0) do
+  # ...
+  end
+end
+```
+
 * 软件的熵: 项目的心理性状态 **极其重要, 易被忽略, 隐蔽性强**
 
 ```
