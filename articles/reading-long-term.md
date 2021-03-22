@@ -72,7 +72,6 @@ date: 2021-01-28
   - DBC 契约式设计
   - Clojure 前置条件 后置条件
   - Elixir Guard
-  - 语义不变式
 
 ```clojure
 (defn accept-deposit [account-id amount]

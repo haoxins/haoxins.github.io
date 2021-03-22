@@ -1,7 +1,7 @@
 theme: jekyll-theme-cayman
 
-title: haoxin's blog
-description: haoxin's blog.
+title: hao xin's blog
+description: hao xin's blog.
 
 encoding: utf-8
 
@@ -9,10 +9,10 @@ gems:
   - jekyll-seo-tag
 
 page_meta:
-  description: haoxin's blog.
+  description: hao xin's blog.
 
 author:
-  name: haoxin
+  name: hao xin
   github: haoxins
   email: haoxinst@gmail.com
 
