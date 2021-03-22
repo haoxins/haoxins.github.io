@@ -21,12 +21,12 @@ highlighter: rouge
 markdown: kramdown
 
 defaults:
-  scope:
+  - scope:
     path: articles
     type: pages
   values:
     sectionid: articles
-  scope:
+  - scope:
     path: _archived
     type: pages
   values:
