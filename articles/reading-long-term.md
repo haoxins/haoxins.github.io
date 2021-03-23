@@ -102,6 +102,9 @@ date: 2021-01-28
   - DBC 契约式设计
   - Clojure 前置条件 后置条件
   - Elixir Guard
+  - 尽早崩溃, 死掉的程序 好过 瘫痪的程序
+  - assert 不可能/不应该 发生的事情
+  - assert 不要有副作用
 
 ```clojure
 (defn accept-deposit [account-id amount]
