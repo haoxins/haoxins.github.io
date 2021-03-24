@@ -35,7 +35,7 @@ gen_contents('articles', False)
 
 contents.append('\n### Archived\n')
 
-gen_contents('_archived', True)
+gen_contents('archived', True)
 
 with open(path.join(root_dir, 'index.md'), 'w') as f:
   f.write('\n'.join(contents))

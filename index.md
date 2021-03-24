@@ -23,12 +23,12 @@
 
 ### Archived
 
-* [(2021) 关于技术, 次年度期待清单](_archived/2021-worth-looking-forward.md)
-* [(2021) 年度事件](_archived/2021-annual-events.md)
-* [(2020) 游记](_archived/2020-traveling.md)
-* [(2020) 杂记](_archived/2020-disorganized.md)
-* [(2019) 内心杂思](_archived/2019-thinking.md)
-* [(2019) Thinking about service](_archived/2019-service.md)
-* [(2019) Machine learning](_archived/2019-machine-learning.md)
-* [(2019) Cryptography](_archived/2019-cryptography.md)
-* [(2018) 睡眠 正念冥想 运动](_archived/2018-sleeping-fitness-health.md)
+* [(2021) 关于技术, 次年度期待清单](archived/2021-worth-looking-forward.md)
+* [(2021) 年度事件](archived/2021-annual-events.md)
+* [(2020) 游记](archived/2020-traveling.md)
+* [(2020) 杂记](archived/2020-disorganized.md)
+* [(2019) 内心杂思](archived/2019-thinking.md)
+* [(2019) Thinking about service](archived/2019-service.md)
+* [(2019) Machine learning](archived/2019-machine-learning.md)
+* [(2019) Cryptography](archived/2019-cryptography.md)
+* [(2018) 睡眠 正念冥想 运动](archived/2018-sleeping-fitness-health.md)
