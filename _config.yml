@@ -29,7 +29,7 @@ defaults:
       sectionid: articles
   -
     scope:
-      path: _archived
+      path: archived
       type: pages
     values:
-      sectionid: _archived
+      sectionid: archived
