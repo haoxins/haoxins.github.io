@@ -4,17 +4,17 @@ description:
 date: 2021-01-28
 ---
 
-## 始于 2023
+# 始于 2023
 
-### 费曼物理学讲义
+## 费曼物理学讲义
 
 * [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
 
 ------------------
 
-## 始于 2021
+# 始于 2021
 
-### TAOCP
+## TAOCP
 
 * [Wiki - The Art of Computer Programming](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming)
 
@@ -24,12 +24,12 @@ date: 2021-01-28
 * [计算机程序设计艺术 卷2](https://book.douban.com/subject/26850558/)
 * [计算机程序设计艺术 卷1](https://book.douban.com/subject/26681685/)
 
-### 哥德尔 艾舍尔 巴赫
+## 哥德尔 艾舍尔 巴赫
 
 * [哥德尔 艾舍尔 巴赫](https://book.douban.com/subject/1291204/)
   - 副标题: 集异璧之大成
 
-### 计算机程序的构造和解释
+## 计算机程序的构造和解释
 
 * [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/34464721/)
   - https://book.douban.com/subject/1148282/
@@ -50,7 +50,7 @@ date: 2021-01-28
 (+ 123 456)
 ```
 
-### 编程珠玑
+## 编程珠玑
 
 * [编程珠玑 第2版 修订版](https://book.douban.com/subject/26302533/)
 * [编程珠玑 续 修订版）](https://book.douban.com/subject/26302596/)
@@ -62,7 +62,7 @@ date: 2021-01-28
 
 * 也算作是拜读 **计算机程序设计艺术** 之前的准备书目吧 :)
 
-### 程序员修炼之道
+## 程序员修炼之道
 
 * [程序员修炼之道 (第2版)](https://book.douban.com/subject/35006892/)
   - 副标题: 通向务实的最高境界
@@ -163,7 +163,7 @@ fn main() {
 
 * 耦合
   - 类继承
-  - 全局变量
+  - 全局数据 (不仅仅是: 变量)
   - 方法调用链
 
 * 耦合 的 表现
