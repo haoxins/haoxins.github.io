@@ -160,3 +160,16 @@ fn main() {
   // `file` goes out of scope, and the "hello.txt" file gets closed
 }
 ```
+
+* 耦合
+  - 类继承
+  - 全局变量
+  - 方法调用链
+
+* 耦合 的 表现
+  - 古怪的依赖关系
+  - 改一处 动全身
+  - 开发不敢改东西
+  - 开会要叫很多人
+
+* **TDA** tell-don't-ask
