@@ -42,6 +42,8 @@ date: 2020-11-03
 
 ### Flink
 
+* [How to natively deploy Flink on Kubernetes with High-Availability (HA)](https://flink.apache.org/2021/02/10/native-k8s-with-ha.html)
+
 * Window
 
 ```
@@ -72,7 +74,13 @@ Note also that only the RocksDBStateBackend is able to do incremental snapshotti
 with large amounts of slowly changing state.
 ```
 
-* [How to natively deploy Flink on Kubernetes with High-Availability (HA)](https://flink.apache.org/2021/02/10/native-k8s-with-ha.html)
+```
+Window
+  - WaterMark
+  - Trigger
+    - TriggerResult(boolean fire, boolean purge)
+
+```
 
 ------------------
 

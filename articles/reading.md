@@ -78,6 +78,7 @@ date: 2018-04-01
 * [程序员修炼之道 (第2版)](https://book.douban.com/subject/35006892/)
   - 副标题: 通向务实的最高境界
   - 移步 [Reading long term][Long term]
+  - 赠与 `@Ye Qing`
 
 * [信息传](https://book.douban.com/subject/35223179/)
   - 吴军
