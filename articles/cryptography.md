@@ -5,7 +5,7 @@ date: 2021-03-22
 ---
 
 * 完整性 Integrity
-* 机密性 Confidentialilty
+* 机密性 Confidentiality
 * 可用性 Availability
 
 ### DH（Diffie-Hellman Key Exchange Algorithm）
