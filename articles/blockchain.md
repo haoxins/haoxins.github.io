@@ -24,9 +24,4 @@ date: 2019-12-10
   - [SWIFT](https://en.wikipedia.org/wiki/Society_for_Worldwide_Interbank_Financial_Telecommunication)
   - 最终, 加密货币在跨境支付场景下会是 **成本低**, **效率高** 的选择
 
-* 公链跨链是个伪命题, 未来:
-  - 屈指可数的 **公链**
-  - 不同领域/行业/团体各自的 **联盟链**
-  - 跨(公)链? 伪需求!
-
 * [Substrate v3.0](https://github.com/paritytech/substrate/releases/tag/v3.0.0)
