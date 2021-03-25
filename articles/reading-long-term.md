@@ -66,6 +66,7 @@ date: 2021-01-28
 
 * [程序员修炼之道 (第2版)](https://book.douban.com/subject/35006892/)
   - 副标题: 通向务实的最高境界
+  - 个人觉得本书的亮点是: 用不同的编程语言贯穿全书
 
 * 软件的熵: 项目的心理性状态 **极其重要, 易被忽略, 隐蔽性强**
 
@@ -173,3 +174,54 @@ fn main() {
   - 开会要叫很多人
 
 * **TDA** tell-don't-ask
+
+* 响应式
+  - 有限状态机 (FSM)
+  - 观察者模式 (观察者与观察对象注册在一起)
+  - 发布/订阅 (pub channel sub)
+  - 响应式编程与流
+
+```
+这一部分写的一般
+```
+
+* Elixir `|>`
+  - 不要囤积状态, 传递下去
+* Rust `Option`
+
+```
+看得出来, 作者蛮喜欢 Elixir
+好巧, 我也是
+```
+
+* OO 继承税
+  - 耦合严重
+* 继承 的 替代
+  - 接口/协议
+  - 委托
+  - mixin
+
+```ruby
+# 委托
+class Account
+  def initialize(...)
+    @repo = Persister.for(self)
+  end
+
+  def save
+    @repo.save()
+  end
+end
+```
+
+```ruby
+# mixin
+mixin CommonFinders {
+  def find(id) { ... }
+  def findAll() { ... }
+}
+
+class AccountRecord extends BasicRecord with CommonFinders
+```
+
+* 并发 & 并行
