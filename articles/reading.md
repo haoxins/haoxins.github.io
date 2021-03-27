@@ -281,7 +281,7 @@ be guided by a much more powerful force, life itself.
   - 怀念 **Elixir**, `@Elixir 程序设计`
 
 * [跟熊逸一起读唐诗](https://book.douban.com/subject/34826393/)
-  - 熊逸老师 在 得到App 的专栏都还不错
+  - 熊逸老师 在 得到 App 的专栏都还不错
   - 最爱的一句话: **站着读经典, 而非跪着读经典**
   - 闲余之时, 细品一首唐诗, 坐看窗外的平淡景致, 别有风味
   - 唐诗宋词, 文学佳作等实属文化瑰宝
