@@ -11,6 +11,10 @@ date: 2019-10-24
 
 ### 2021-03
 
+* [睡梦医生](https://www.bilibili.com/bangumi/media/md28233366)
+  - 闪灵
+  - 天命所归, 终(si)得其所
+
 * 重温 [惊奇队长](https://movie.douban.com/subject/26213252/)
 
 * 影院重新上映 [阿凡达 Avatar](https://movie.douban.com/subject/1652587/)
