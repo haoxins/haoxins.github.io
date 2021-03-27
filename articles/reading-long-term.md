@@ -225,3 +225,17 @@ class AccountRecord extends BasicRecord with CommonFinders
 ```
 
 * 并发 & 并行
+
+------------------
+
+# 始于 2019
+
+## 卡洛·罗韦利 Carlo Rovelli
+
+* [卡洛·罗韦利 Carlo Rovelli](https://book.douban.com/author/1987750/)
+  - 最近几年, 这个哥们几乎每年一本书 :)
+
+* [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
+* [时间的秩序](https://book.douban.com/subject/33424487/)
+* [Helgoland ?](https://book.douban.com/subject/35265189/)
+
