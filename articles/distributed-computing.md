@@ -123,6 +123,68 @@ can begin taking a snapshot without coordinating with other processes.
 
 * [Old paper - The Dataflow Model](https://research.google.com/pubs/archive/43864.pdf)
 
+```
+The Dataflow Model:
+A Practical Approach to
+Balancing Correctness,
+Latency, and
+Cost in Massive-Scale,
+Unbounded,
+Out-of-Order
+Data Processing
+
+A windowing model which supports
+unaligned event-time windows,
+and a simple API for their creation and use
+
+A triggering model that binds the output times of results to runtime characteristics of the pipeline,
+with a powerful and flexible declarative API for describing desired triggering semantics
+
+An incremental processing model that
+integrates retractions and updates into the windowing and
+triggering models described above
+
+Common Windowing Patterns
+
+1. Fixed (tumbling windows)
+2. Sliding
+3. Sessions
+
+Time Domains
+
+1. Event Time
+2. Processing Time
+
+Windowing
+
+Window Assignment
+which assigns the element to zero or more windows.
+From the model’s perspective, window assignment
+creates a new copy of the element in each of the windows
+to which it has been assigned.
+
+Window Merging
+which merges windows at grouping time.
+This allows data-driven windows to be constructed over time
+as data arrive and are grouped together.
+
+For any given windowing strategy, the two operations are intimately related;
+sliding window assignment requires sliding window merging,
+sessions window assignment requires sessions window merging, etc.
+Note that, to support event-time windowing natively,
+instead of passing (key, value) pairs through the system,
+we now pass (key, value, event time, window) 4-tuples.
+Elements are provided to the system with event-time timestamps,
+and are initially assigned to a default global window,
+covering all of event time,
+providing semantics that match the defaults in the standard batch model.
+
+Windowing determines where in event time
+data are grouped together for processing.
+Triggering determines when in processing time
+the results of groupings are emitted as panes.
+```
+
 * 3月16日, `混合云第一股` `青云科技` 正式在科创板上市, 股票代码: `688316`
 
 * [A visual guide to Dapr](https://blog.dapr.io/posts/2021/03/02/a-visual-guide-to-dapr)

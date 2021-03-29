@@ -76,11 +76,15 @@ accesses and updates involve serialization and deserialization,
 and so are much more expensive.
 But the amount of state you can have with RocksDB is limited
 only by the size of the local disk.
-Note also that only the RocksDBStateBackend is able to do incremental snapshotting, which is a significant benefit for applications
+Note also that only the RocksDBStateBackend is able to do incremental snapshotting,
+which is a significant benefit for applications
 with large amounts of slowly changing state.
 ```
 
 ```
+Each parallel subtask of a source function
+usually generates its watermarks independently.
+
 Window
   - WaterMark
   - Trigger
