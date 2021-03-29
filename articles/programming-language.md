@@ -6,7 +6,17 @@ date: 2020-12-27
 
 ## Rust
 
+* 减少内存分配和拷贝
+  - zero-copy [rkyv](https://github.com/djkoloski/rkyv)
+
 * `Option` & `Result`
+
+* Future
+
+```
+Rust 一个 Future 只有被主动 poll（await）才会得到执行
+JavaScript 一个 Promise 一旦生成, 就会放入 event loop 里等待执行
+```
 
 * 分号
 
@@ -32,7 +42,7 @@ Aka turning an expression into a statement.
 
 ------------------
 
-# History
+# Timeline
 
 ------------------
 
@@ -70,3 +80,7 @@ Reliability, Quality, and Collaboration.
 ```
 
 * [The Go Blog - A Proposal for Adding Generics to Go](https://blog.golang.org/generics-proposal)
+
+* `已经过时` Reddit 关于 Rust Async 的讨论
+  - [Diagram of Async Architectures](https://www.reddit.com/r/rust/comments/jpcv2s/diagram_of_async_architectures/)
+  - [smol vs tokio vs async-std;](https://www.reddit.com/r/rust/comments/i5hppj/smol_vs_tokio_vs_asyncstd/)
