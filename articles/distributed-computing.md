@@ -121,6 +121,8 @@ can begin taking a snapshot without coordinating with other processes.
 
 ## 2021
 
+* [Old article - Streaming 101: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/)
+
 * [Old paper - The Dataflow Model](https://research.google.com/pubs/archive/43864.pdf)
 
 ```

@@ -50,35 +50,20 @@ date: 2020-11-03
 
 * [How to natively deploy Flink on Kubernetes with High-Availability (HA)](https://flink.apache.org/2021/02/10/native-k8s-with-ha.html)
 
-* Window
+* Window, Watermark
 
 ```
 Window (If 5min)
   TUMBLE [0, 5) [5, 10) [10, 15)
   HOP - Sliding Window
     HOP (ts, INTERVAL '30' SECOND, INTERVAL '1' MINUTE)
-    update every 30s, win size 1min
+    update every 30s, window size 1min
   SESSION
 
 Over
   Row Over (ROWS BETWEEN)
   1 Row -> 1 Window, the row is the last row in the window
   Range Over (RANGE BETWEEN)
-```
-
-* Checkpoint
-
-```
-When working with state kept in a heap-based state backend,
-accesses and updates involve reading and writing objects on the heap.
-But for objects kept in the RocksDBStateBackend,
-accesses and updates involve serialization and deserialization,
-and so are much more expensive.
-But the amount of state you can have with RocksDB is limited
-only by the size of the local disk.
-Note also that only the RocksDBStateBackend is able to do incremental snapshotting,
-which is a significant benefit for applications
-with large amounts of slowly changing state.
 ```
 
 ```
@@ -105,10 +90,25 @@ So if there are no events in a given time frame,
 no results will be reported.
 
 Window
-  - WaterMark
+  - Watermark
   - Trigger
     - TriggerResult(boolean fire, boolean purge)
 
+```
+
+* Checkpoint
+
+```
+When working with state kept in a heap-based state backend,
+accesses and updates involve reading and writing objects on the heap.
+But for objects kept in the RocksDBStateBackend,
+accesses and updates involve serialization and deserialization,
+and so are much more expensive.
+But the amount of state you can have with RocksDB is limited
+only by the size of the local disk.
+Note also that only the RocksDBStateBackend is able to do incremental snapshotting,
+which is a significant benefit for applications
+with large amounts of slowly changing state.
 ```
 
 ------------------
