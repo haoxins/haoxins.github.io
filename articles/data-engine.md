@@ -82,8 +82,27 @@ with large amounts of slowly changing state.
 ```
 
 ```
+Once a watermark reaches an operator,
+the operator can advance its internal event time
+clock to the value of the watermark.
+
 Each parallel subtask of a source function
 usually generates its watermarks independently.
+
+Some operators consume multiple input streams; a union, for example,
+or operators following a keyBy() or partition() function.
+Such an operator's current event time is the
+minimum of its input streams' event times.
+
+Sliding window assigners can create lots of window objects,
+and will copy each event into every relevant window.
+For example, if you have sliding windows
+every 15 minutes that are 24-hours in length,
+each event will be copied into 4 * 24 = 96 windows.
+
+Windows are only created when events are assigned to them.
+So if there are no events in a given time frame,
+no results will be reported.
 
 Window
   - WaterMark
