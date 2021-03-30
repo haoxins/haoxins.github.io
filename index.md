@@ -2,6 +2,7 @@
 * [Blockchain](articles/blockchain.md)
 * [猫咪的那些事](articles/cat.md)
 * [时间静悄悄](articles/changing.md)
+* [从公司, 到组织](articles/company-and-organization.md)
 * [Coursera 课程记录](articles/coursera.md)
 * [Cryptography](articles/cryptography.md)
 * [Data engine](articles/data-engine.md)
@@ -20,6 +21,7 @@
 * [关于 Computing 的思考](articles/thinking-computing.md)
 * [Watching long term](articles/watching-long-term.md)
 * [Watching](articles/watching.md)
+* [唐诗](articles/唐诗.md)
 
 ### Archived
 
