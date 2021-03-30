@@ -111,6 +111,14 @@ which is a significant benefit for applications
 with large amounts of slowly changing state.
 ```
 
+### Kafka
+
+* KIP-500: Replace ZooKeeper with a Self-Managed Metadata Quorum
+
+```
+Raft
+```
+
 ------------------
 
 ## 2020

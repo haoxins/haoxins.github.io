@@ -7,6 +7,7 @@
 * [Cryptography](articles/cryptography.md)
 * [Data engine](articles/data-engine.md)
 * [Distributed computing](articles/distributed-computing.md)
+* [银河帝国](articles/galactic-empire.md)
 * [游戏](articles/gaming.md)
 * [Linux](articles/linux.md)
 * [Machine learning](articles/machine-learning.md)
