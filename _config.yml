@@ -1,18 +1,15 @@
 theme: jekyll-theme-cayman
 
-title: hao xin's blog
-description: hao xin's blog.
+title: Hao Xin's Blog
+description: Hao Xin's Blog.
 
 encoding: utf-8
 
-gems:
-  - jekyll-seo-tag
-
 page_meta:
-  description: hao xin's blog.
+  description: Hao Xin's Blog.
 
 author:
-  name: hao xin
+  name: Hao Xin
   github: haoxins
   email: haoxinst@gmail.com
 

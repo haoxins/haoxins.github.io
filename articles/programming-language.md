@@ -26,6 +26,7 @@ An expression is something that returns a value.
 A semicolon after an expression changes the type of the expression to ().
 Aka turning an expression into a statement.
 ```
+## Go
 
 ## Kotlin
 
@@ -39,6 +40,18 @@ Aka turning an expression into a statement.
 | return  |  yes  | yes   |  no   |  no  | yes  |
 
 ## Java
+
+* Records
+
+```java
+record Rational(int num, int denom) {
+  Rational {
+    int gcd = gcd(num, denom);
+    num /= gcd;
+    denom /= gcd;
+  }
+}
+```
 
 ------------------
 

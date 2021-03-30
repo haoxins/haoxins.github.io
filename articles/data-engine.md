@@ -89,11 +89,53 @@ Windows are only created when events are assigned to them.
 So if there are no events in a given time frame,
 no results will be reported.
 
-Window
-  - Watermark
-  - Trigger
-    - TriggerResult(boolean fire, boolean purge)
+1. Specify whether your stream is keyed or not
+2. Define a window assigner
+  - tumbling windows
+  - sliding windows
+  - session windows
+  - global windows
+  - custom window (WindowAssigner)
+3. Specify the computation that we want to perform on each of these windows
+  - ReduceFunction
+  - AggregateFunction
+  - ProcessWindowFunction
 
+Time-based windows have a start timestamp (inclusive)
+and an end timestamp (exclusive) that together
+describe the size of the window.
+
+When watermarks arrive at the window operator this triggers two things:
+1. the watermark triggers computation of all windows
+  where the maximum timestamp (which is end-timestamp - 1)
+  is smaller than the new watermark
+2. the watermark is forwarded to downstream operations
+
+A Trigger determines when a window (as formed by the window assigner)
+is ready to be processed by the window function.
+
+Flink allows to specify a maximum allowed lateness for window operators.
+(default value is 0)
+
+Elements that arrive after the watermark has passed the end of the window
+but before it passes the end of the window plus the allowed lateness,
+are still added to the window. Depending on the trigger used,
+a late but not dropped element may cause the window to fire again.
+
+In order to make this work, Flink keeps the state of windows
+until their allowed lateness expires.
+```
+
+```
+Window
+  * Watermark
+  * Trigger
+    - TriggerResult(boolean fire, boolean purge)
+    - CONTINUE: do nothing
+    - FIRE: trigger the computation
+    - PURGE: clear the elements
+    - FIRE_AND_PURGE: trigger the computation and clear the elements
+  * Evictor
 ```
 
 * Checkpoint
@@ -118,6 +160,10 @@ with large amounts of slowly changing state.
 ```
 Raft
 ```
+
+### JDK 17 (LTS)
+
+* [ZGC | What's new in JDK 16](https://malloc.se/blog/zgc-jdk16)
 
 ------------------
 
