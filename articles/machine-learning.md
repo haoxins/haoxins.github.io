@@ -4,13 +4,51 @@ description: ~
 date: 2021-03-21
 ---
 
-# Overview
+------------------
+
+# Timeline
+
+------------------
+
+# 2021
+
+* [What are the most important statistical ideas of the past 50 years?](https://arxiv.org/pdf/2012.00174.pdf)
+
+## Overview
 
 ### 特征工程
 
+* 归一化
+  - 线性归一化
+  - 零均值归一化 (均值为 0, 标准差为 1)
+
+* 类别型数据
+  - 序号编码
+  - 独热编码
+  - 二进制编码
+
+* 文本数据
+  - Word2Vec
+
+* 组合特征
+  - 提高复杂关系的拟合能力
+  - 基于决策树寻找特征组合
+
 ### 模型评估
 
+* 精确率 vs 召回率
+  - P-R 曲线
+  - ROC 曲线
+  - F1 Score
+
+* ROC 曲线 & AUC
+* 余弦距离 vs 欧氏距离
+
 ### 经典算法
+
+* SVM
+* 逻辑回归
+* 决策树
 
 ### 降维
 
@@ -62,6 +100,10 @@ date: 2021-03-21
 * 难以 并行计算
 * 容易 梯度消失或梯度爆炸
 
+* LSTM
+* GRU
+* Seq2Seq
+
 ### 生成模型
 
 ### 元学习
@@ -69,11 +111,3 @@ date: 2021-03-21
 ### GANs
 
 * 传统概率生成模型 vs GANs
-
-------------------
-
-# History
-
-## 2021
-
-* [What are the most important statistical ideas of the past 50 years?](https://arxiv.org/pdf/2012.00174.pdf)
