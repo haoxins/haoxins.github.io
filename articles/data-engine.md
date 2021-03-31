@@ -4,20 +4,6 @@ description: 回首向来萧瑟处, 归去, 也无风雨也无晴
 date: 2020-11-03
 ---
 
-## Serialization
-
-* [Cap'n Proto](https://github.com/capnproto/capnproto)
-  - :)
-* [FlatBuffers](https://github.com/google/flatbuffers)
-  - Zero copy, IPC
-* [Protobuf](https://github.com/protocolbuffers/protobuf)
-  - 节省内存, RPC
-
-* [Parquet](https://github.com/apache/parquet-format)
-  - 磁盘存储, 列
-* [Avro](https://github.com/apache/avro)
-  - 磁盘存储, 行
-
 ## KV 存储
 
 * RocksDB
@@ -193,3 +179,16 @@ Kubernetes-based High Availability (HA) was implemented as an alternative to Zoo
 ```
 
 * [Stateful Functions Internals: Behind the scenes of Stateful Serverless](https://flink.apache.org/news/2020/10/13/stateful-serverless-internals.html)
+
+### Serialization
+
+* [Cap'n Proto](https://github.com/capnproto/capnproto)
+  - :)
+* [FlatBuffers](https://github.com/google/flatbuffers)
+  - Zero copy, IPC
+* [Protobuf](https://github.com/protocolbuffers/protobuf)
+  - 节省内存, RPC
+* [Parquet](https://github.com/apache/parquet-format)
+  - 磁盘存储, 列
+* [Avro](https://github.com/apache/avro)
+  - 磁盘存储, 行
