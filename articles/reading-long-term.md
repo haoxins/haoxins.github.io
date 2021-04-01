@@ -288,6 +288,32 @@ class AccountRecord extends BasicRecord with CommonFinders
 基于端对端构建
 ```
 
+* 基于特性的测试 **Property-based testing**
+  - [Python Hypothesis](https://github.com/HypothesisWorks/hypothesis)
+
+* **安全性的基本原则**
+  - 攻击面积最小化
+  - 最小特权原则
+  - 安全的默认值
+  - 敏感数据加密
+  - 维护安全更新
+
+* 密码学
+
+```
+当涉及密码学的问题时,
+常识可能会让你失望.
+当涉及加密时:
+永远不要自己做!
+```
+
+* 命名
+  - 表明意图
+  - 团队/社区文化
+  - 尽可能持续一致性, 即: 始终如一
+  - 及时修正
+  - 好好取名, 需要时更名
+
 ------------------
 
 # 始于 2019

@@ -10,6 +10,7 @@ date: 2020-12-27
   - zero-copy [rkyv](https://github.com/djkoloski/rkyv)
 
 * `Option` & `Result`
+  - Result, Either
 
 * Future
 
