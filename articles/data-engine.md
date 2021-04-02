@@ -23,15 +23,6 @@ date: 2020-11-03
 
 ## 2021
 
-### Overview
-
-* [Argo Workflows](https://github.com/argoproj/argo-workflows)
-  - [Argo Workflows](https://argoproj.github.io/argo-workflows/)
-  - 有点意思
-
-* [Old blog - Random notes on improving the Redis LRU algorithm](http://antirez.com/news/109)
-* [Old blog - Redis persistence demystified](http://oldblog.antirez.com/post/redis-persistence-demystified.html)
-
 ### Flink
 
 * [How to natively deploy Flink on Kubernetes with High-Availability (HA)](https://flink.apache.org/2021/02/10/native-k8s-with-ha.html)
@@ -150,6 +141,28 @@ Raft
 ### JDK 17 (LTS)
 
 * [ZGC | What's new in JDK 16](https://malloc.se/blog/zgc-jdk16)
+
+### Others
+
+* [Old blog - Random notes on improving the Redis LRU algorithm](http://antirez.com/news/109)
+* [Old blog - Redis persistence demystified](http://oldblog.antirez.com/post/redis-persistence-demystified.html)
+
+* [Announcing the Deno Company](https://deno.com/blog/the-deno-company)
+
+```
+A Globally Distributed JavaScript VM
+
+Deno Deploy is a distributed system that runs JavaScript, TypeScript, and WebAssembly
+at the edge, worldwide. The service deeply integrates the V8 JavaScript runtime
+with a high performance asynchronous web server to provide
+optimal performance without unnecessary intermediate abstractions.
+
+不看好
+```
+
+* [Argo Workflows](https://github.com/argoproj/argo-workflows)
+  - [Argo Workflows](https://argoproj.github.io/argo-workflows)
+  - 有点意思, 期待成为主流
 
 ------------------
 
