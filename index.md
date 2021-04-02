@@ -9,7 +9,6 @@
 * [Distributed computing](articles/distributed-computing.md)
 * [银河帝国](articles/galactic-empire.md)
 * [游戏](articles/gaming.md)
-* [Linux](articles/linux.md)
 * [Machine learning](articles/machine-learning.md)
 * [冥想](articles/meditation.md)
 * [Programming language](articles/programming-language.md)
@@ -27,6 +26,7 @@
 ### Archived
 
 * [(2021) 关于技术, 次年度期待清单](archived/2021-worth-looking-forward.md)
+* [Linux](archived/2021-linux.md)
 * [(2021) 年度事件](archived/2021-annual-events.md)
 * [(2020) 游记](archived/2020-traveling.md)
 * [(2020) 杂记](archived/2020-disorganized.md)
