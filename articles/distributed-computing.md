@@ -140,6 +140,8 @@ can begin taking a snapshot without coordinating with other processes.
 Lock (Block) vs Starvation
 ```
 
+* CAS
+
 ```
 1. CAS (compare-and-swap)
 
