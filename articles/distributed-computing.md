@@ -129,6 +129,35 @@ can begin taking a snapshot without coordinating with other processes.
 
 ## 2021
 
+
+* [Introduction to Lock-Free Data Structures](https://www.baeldung.com/lock-free-programming)
+
+```
+1. Obstruction-Free
+2. Lock-Free
+3. Wait-Free
+
+Lock (Block) vs Starvation
+```
+
+```
+1. CAS (compare-and-swap)
+
+CAS is an atomic operation, which means that
+fetch and update together are one single operation.
+
+Furthermore, compare-and-swap does not prevent the A-B-A problem
+
+2. Load-Link/Store-Conditional
+
+AtomicStampedReference
+
+3. Fetch and Add
+
+Again, the important point is that the operation happens atomically,
+which means no other thread can interfere.
+```
+
 * [Old article - Streaming 101: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/)
 * [Old article - Streaming 102: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-102/)
   - 看了果断买了书 [Streaming Systems](https://book.douban.com/subject/27080632/)
