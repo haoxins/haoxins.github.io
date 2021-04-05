@@ -11,7 +11,12 @@ date: 2020-01-29
 * 重庆 朝天门, 来福士
 * 颇有香港维多利亚港的感觉, 未来可期
 
+### ARM v9
 
+* ARM Announces ARM v9 Architecture: SVE2, Security, and the Next Decade
+  - 2022
+  - PC 的 ARM 时代
+  - VR 的 时代
 
 ### 春节期间
 
