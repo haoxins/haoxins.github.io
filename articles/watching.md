@@ -9,6 +9,16 @@ date: 2019-10-24
 * [基地 Foundation](https://movie.douban.com/subject/3161109/)
   - https://www.imdb.com/title/tt0804484/
 
+### 2021-04
+
+* 2021 必看剧 [觉醒年代](https://movie.douban.com/subject/30228394/)
+  - 前有 山海情, 又有 觉醒年代
+
+* 重温 [影](https://www.bilibili.com/bangumi/media/md28228747)
+  - 清明节假期 在重庆看的
+  - 白天游览 重庆武隆 天坑地缝
+  - 晚上看 影, 水墨意境
+
 ### 2021-03
 
 * [睡梦医生](https://www.bilibili.com/bangumi/media/md28233366)
