@@ -21,12 +21,13 @@
 * [关于 Computing 的思考](articles/thinking-computing.md)
 * [Watching long term](articles/watching-long-term.md)
 * [Watching](articles/watching.md)
+* [Web](articles/web.md)
 * [唐诗](articles/唐诗.md)
 
 ### Archived
 
 * [(2021) 关于技术, 次年度期待清单](archived/2021-worth-looking-forward.md)
-* [Linux](archived/2021-linux.md)
+* [(2021) Linux](archived/2021-linux.md)
 * [(2021) 年度事件](archived/2021-annual-events.md)
 * [(2020) 游记](archived/2020-traveling.md)
 * [(2020) 杂记](archived/2020-disorganized.md)
