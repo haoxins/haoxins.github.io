@@ -40,8 +40,8 @@ date: 2021-04-05
 
 * [Gridsome: The Jamstack framework for Vue.js](https://github.com/gridsome/gridsome)
 
-### Svelte
-
 ### 纯玩 CSS
 
-### 微信小程序
+### 微信 小程序
+
+* v2.16.0 (2021-03-03)

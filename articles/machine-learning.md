@@ -14,6 +14,8 @@ date: 2021-03-21
 
 * [What are the most important statistical ideas of the past 50 years?](https://arxiv.org/pdf/2012.00174.pdf)
 
+### PyTorch
+
 ### 特征工程
 
 * 归一化
