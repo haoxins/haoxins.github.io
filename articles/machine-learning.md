@@ -22,6 +22,7 @@ date: 2021-03-21
   - Train set, Test set
   - Train set, Dev set, Test set
   - Dev set (验证集) -> 验证 超参
+  - Bias, Variance
 
 * 归一化
   - 线性归一化
