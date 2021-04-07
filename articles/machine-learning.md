@@ -18,6 +18,11 @@ date: 2021-03-21
 
 ### 特征工程
 
+* Data split
+  - Train set, Test set
+  - Train set, Dev set, Test set
+  - Dev set (验证集) -> 验证 超参
+
 * 归一化
   - 线性归一化
   - 零均值归一化 (均值为 0, 标准差为 1)
@@ -75,7 +80,7 @@ date: 2021-03-21
 * L2正则化
 
 * 正则化
-  - 防止 过拟合
+  - 通过 **约束模型** 使其更简单, 降低 **过拟合** 风险
   - Dropout
 
 * 模型集成 Dropout
