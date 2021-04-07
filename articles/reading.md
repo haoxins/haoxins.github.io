@@ -24,6 +24,8 @@ date: 2018-04-01
 
 * [端粒效应](https://book.douban.com/subject/26956594/)
 
+* [支付方法论](https://book.douban.com/subject/35350745/)
+
 * [永恒的终结](https://book.douban.com/subject/25829693/)
   - 副标题: 关于时间旅行的终极奥秘和恢宏构想
   - 阿西莫夫

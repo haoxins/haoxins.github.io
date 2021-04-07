@@ -17,6 +17,8 @@ date: 2019-12-10
 
 ## 2021
 
+* [WebRTC is now a W3C and IETF standard](https://web.dev/webrtc-standard-announcement/)
+
 * 数据安全 数据隐私 数据权益
   - 区块链是最佳解决方案
   - 主权国家 & 组织机构, 对数据权益的主张, 会推动加密货币的发展
