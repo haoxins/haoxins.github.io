@@ -10,6 +10,18 @@ date: 2021-03-22
 
 ### Cryptanalysis
 
+* The ciphertext-only attack
+  - The baseline attack when designing cryptosystem
+* The known-plaintext attack
+* The chosen-plaintext attack
+  - The difference from the known-plaintext attack is that
+  - the attackers are the ones choosing the plaintext
+
+```
+Perfect Secrecy == One-Time Pad
+  - Claude Shannon
+```
+
 ### DH（Diffie-Hellman Key Exchange Algorithm）
 
 ------------------
