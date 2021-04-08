@@ -19,6 +19,8 @@ date: 2020-12-27
 
 ### Events
 
+* [Rust in the Android platform (2021-04-06)](https://security.googleblog.com/2021/04/rust-in-android-platform.html)
+
 * [My Crates Account](https://crates.io/users/haoxins)
 
 * 正式开始把玩 **Rust**
