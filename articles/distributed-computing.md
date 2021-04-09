@@ -129,6 +129,7 @@ can begin taking a snapshot without coordinating with other processes.
 
 ## 2021
 
+* [The Netflix Cosmos Platform](https://netflixtechblog.com/the-netflix-cosmos-platform-35c14d9351ad)
 
 * [Introduction to Lock-Free Data Structures](https://www.baeldung.com/lock-free-programming)
 
