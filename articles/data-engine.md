@@ -134,9 +134,7 @@ with large amounts of slowly changing state.
 
 * KIP-500: Replace ZooKeeper with a Self-Managed Metadata Quorum
 
-```
-Raft
-```
+* [Apache Kafka Made Simple: A First Glimpse of a Kafka Without ZooKeeper](https://www.confluent.io/blog/kafka-without-zookeeper-a-sneak-peek/)
 
 ### JDK 17 (LTS)
 
