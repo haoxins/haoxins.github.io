@@ -83,6 +83,8 @@ JavaScript 一个 Promise 一旦生成, 就会放入 event loop 里等待执行
   - Eq: Trait for equality comparisons which are [equivalence relations](https://en.wikipedia.org/wiki/Equivalence_relation)
   - PartialEq : Trait for equality comparisons which are [partial equivalence relations](https://en.wikipedia.org/wiki/Partial_equivalence_relation)
 
+* [Crust of Rust: Atomics and Memory Ordering](https://www.youtube.com/watch?v=rMGWeSjctlY)
+
 ### Kotlin
 
 |         |  let  |  run  | apply | also | with |
