@@ -1,8 +1,15 @@
 ---
-title: Programming language
+title: (2021) Programming language
 description: 青山相待, 白云相爱, 紫罗袍共黄金带
 date: 2020-12-27
 ---
+
+* Rust 会单独作为一篇 文章
+* 此文章 Archived
+  - 才学不足, 无法诸多语言融会贯通
+  - 杂放在一起只会毫无重点
+* 未来数年, Rust 足矣!
+* 做一个预测: TIOBE 2021 年度语言 **Rust**
 
 ## Rust
 
@@ -84,6 +91,29 @@ JavaScript 一个 Promise 一旦生成, 就会放入 event loop 里等待执行
   - PartialEq : Trait for equality comparisons which are [partial equivalence relations](https://en.wikipedia.org/wiki/Partial_equivalence_relation)
 
 * [Crust of Rust: Atomics and Memory Ordering](https://www.youtube.com/watch?v=rMGWeSjctlY)
+
+* Rust vs Java
+
+```rust
+let x = 5;
+let mut y = 5;
+```
+
+```java
+final String key = "ABC";
+```
+
+```
+Immutable first
+
+不仅仅是语法的问题
+也是理念传达的问题
+
+将良好的编程习惯融入语法设计
+将诸多的语法特性融合却不显冲突
+
+妙
+```
 
 ### Kotlin
 
