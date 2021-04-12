@@ -28,6 +28,8 @@ date: 2019-05-30
   - 公司给每位员工发了一张境外虚拟信用卡, 每月额度 $50
   - 想来想去, 还是 Coursera 订阅最合适
   - [Cryptography and Information Theory](https://www.coursera.org/learn/crypto-info-theory)
+  - https://www.coursera.org/account/accomplishments/certificate/H69MQJ4ZXNXN
+  - https://www.coursera.org/account/accomplishments/verify/H69MQJ4ZXNXN
   - [Symmetric Cryptography](https://www.coursera.org/learn/symmetric-crypto)
   - [Asymmetric Cryptography and Key Management](https://www.coursera.org/learn/asymmetric-crypto)
   - [Cryptographic Hash and Integrity Protection](https://www.coursera.org/learn/cryptographic-hash-integrity-protection)
