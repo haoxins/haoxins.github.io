@@ -40,7 +40,7 @@ date: 2021-04-05
 
 * [Gridsome: The Jamstack framework for Vue.js](https://github.com/gridsome/gridsome)
 
-### 纯玩 CSS
+* [Tailwind CSS: A utility-first CSS framework for rapidly building custom user interfaces](https://github.com/tailwindlabs/tailwindcss)
 
 ### 微信 小程序
 
