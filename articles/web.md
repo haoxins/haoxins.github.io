@@ -38,9 +38,22 @@ date: 2021-04-05
 2018年之前 :)
 ```
 
+* [Vite v2 - Next generation frontend tooling](https://github.com/vitejs/vite)
+
 * [Gridsome: The Jamstack framework for Vue.js](https://github.com/gridsome/gridsome)
 
 * [Tailwind CSS: A utility-first CSS framework for rapidly building custom user interfaces](https://github.com/tailwindlabs/tailwindcss)
+
+```
+这么多年了, 一直没有真正的 CSS Framework
+
+Tailwind CSS 是正确的思路
+
+Houdini
+
+要么 胎死腹中
+要么 Game changer
+```
 
 ### 微信 小程序
 
