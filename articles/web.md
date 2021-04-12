@@ -66,3 +66,6 @@ Electron-style GUIs,
 Cloudflare Worker-style Serverless Functions,
 embedded scripting for databases, etc.
 ```
+
+> embedded scripting for databases, etc.
+- 说到这个, Redis 选择 Lua 真是让人痛苦
