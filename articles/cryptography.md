@@ -22,6 +22,13 @@ Perfect Secrecy == One-Time Pad
   - Claude Shannon
 ```
 
+* Computational security relies on two assumptions
+  - First, the attackers are computationally limited
+  - Second, the cryptosystem relies on mathematical problems
+  - that are assumed to be difficult to solve
+
+* Side-Channel Attack
+
 ### Symmetric
 
 ### DH（Diffie-Hellman Key Exchange Algorithm）
