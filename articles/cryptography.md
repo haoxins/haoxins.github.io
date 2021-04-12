@@ -22,6 +22,8 @@ Perfect Secrecy == One-Time Pad
   - Claude Shannon
 ```
 
+### Symmetric
+
 ### DH（Diffie-Hellman Key Exchange Algorithm）
 
 ------------------
