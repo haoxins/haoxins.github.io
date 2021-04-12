@@ -154,8 +154,6 @@ Deno Deploy is a distributed system that runs JavaScript, TypeScript, and WebAss
 at the edge, worldwide. The service deeply integrates the V8 JavaScript runtime
 with a high performance asynchronous web server to provide
 optimal performance without unnecessary intermediate abstractions.
-
-不看好
 ```
 
 * [Argo Workflows](https://github.com/argoproj/argo-workflows)

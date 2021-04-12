@@ -45,3 +45,24 @@ date: 2021-04-05
 ### 微信 小程序
 
 * v2.16.0 (2021-03-03)
+
+### Deno
+
+* [Announcing the Deno Company](https://deno.com/blog/the-deno-company)
+  - 定位蛮清晰的 :)
+
+```
+Deno is our attempt to breathe new life into this ecosystem.
+To provide a modern, productive programming system that
+adheres to browser APIs.
+Deno is not a monolithic system,
+but rather a set of technologies that we believe can be
+repurposed to a variety of needs.
+Not every use-case of server-side JavaScript needs to
+access the file system;
+our infrastructure makes it possible to compile out unnecessary bindings.
+This allows us to create custom runtimes for different applications:
+Electron-style GUIs,
+Cloudflare Worker-style Serverless Functions,
+embedded scripting for databases, etc.
+```
