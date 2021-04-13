@@ -156,7 +156,29 @@ date: 2021-01-28
 )
 
 (display (sqrt 36.0))
+; 6.000000005333189
 ```
+
+* 高阶过程 & Lambda
+
+```scheme
+(define (deriv g)
+  (lambda (x)
+    (/ (- (g (+ x dx)) (g x)) dx)
+  )
+)
+
+(define dx 0.00001)
+
+(define (cube x)
+  (* x x x)
+)
+
+(display ((deriv cube) 4))
+; 48.00011999748221
+```
+
+### 构造数据抽象
 
 ------------------
 
