@@ -87,7 +87,7 @@ date: 2021-01-28
   - 应用序和正则序
   - 条件表达式和谓词
 
-```lisp
+```scheme
 ; Comments
 (+ 123 456)
 ```
@@ -101,7 +101,7 @@ date: 2021-01-28
   - 组合式 `(+ 2.7 10)` -> `12.7`
   - 复合过程
 
-```lisp
+```scheme
 (define (square x)
   (* x x)
 )
@@ -109,7 +109,7 @@ date: 2021-01-28
 
   - 条件表达式 (`谓词: >, =, <, and, or, not`)
 
-```lisp
+```scheme
 (define (abs x)
   (cond ((> x 0) x)
         ((= x 0) 0)
@@ -124,7 +124,7 @@ date: 2021-01-28
 )
 ```
 
-```lisp
+```scheme
 ; 定义一个 谓词
 (define (>= x y)
   (not (< x y))
