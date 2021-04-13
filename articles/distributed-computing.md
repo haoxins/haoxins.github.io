@@ -119,8 +119,6 @@ can begin taking a snapshot without coordinating with other processes.
 
 ## Streaming computing
 
-* [Streaming Systems](https://book.douban.com/subject/27080632/)
-
 ------------------
 
 # Timeline

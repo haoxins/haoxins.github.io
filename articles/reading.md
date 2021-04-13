@@ -33,12 +33,17 @@ date: 2018-04-01
 
 * [Streaming Systems](https://book.douban.com/subject/27080632/)
   - 出版年: 2017-10-25
+  - 基于 如下2篇 热门文章, `并未超出`
+  - [Streaming 101: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/)
+  - [Streaming 102: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-102/)
+  - `Flink` 作为事实标准, `Beam` 继续存在的意义是什么?
 
 * [端粒效应](https://book.douban.com/subject/26956594/)
 
 * [支付方法论](https://book.douban.com/subject/35350745/)
   - 一般般, 不推荐, 远不如同类型的 [计算广告](https://book.douban.com/subject/34804492/)
   - 虽然不做广告了, 但是看这本书, 反而让我想再去看看 `计算广告(第二版)` 了
+  - 赠与 `@Ye Qing`
 
 * [永恒的终结](https://book.douban.com/subject/25829693/)
   - 副标题: 关于时间旅行的终极奥秘和恢宏构想
