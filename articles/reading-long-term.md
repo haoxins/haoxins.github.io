@@ -180,6 +180,36 @@ date: 2021-01-28
 
 ### 构造数据抽象
 
+```scheme
+(define x (cons 1 2))
+(define y (cons 3 4))
+(define z (cons x y))
+
+(display (car (car z)))
+; 1
+(display (car (cdr z)))
+; 3
+
+; cons construct
+; car, cdr 的命名是历史原因
+; IBM 704 的寄存器取址模式相关
+```
+
+* 层次性数据 & 闭包
+
+```scheme
+(define x (cons (list 1 2) (list 3 4)))
+
+(display (length x))
+; 3
+
+(display (list x x))
+; (((1 2) 3 4) ((1 2) 3 4))
+
+(display (length (list x x)))
+; 2
+```
+
 ------------------
 
 ## 编程珠玑
