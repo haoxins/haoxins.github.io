@@ -25,6 +25,9 @@ date: 2020-11-03
 
 ### Flink
 
+* [A Python 3 implementation built on GraalVM](https://github.com/oracle/graalpython)
+  - 期待 **PyFlink** 引入
+
 * [How to natively deploy Flink on Kubernetes with High-Availability (HA)](https://flink.apache.org/2021/02/10/native-k8s-with-ha.html)
 
 * Window, Watermark
