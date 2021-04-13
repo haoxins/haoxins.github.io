@@ -37,6 +37,8 @@ date: 2018-04-01
 * [端粒效应](https://book.douban.com/subject/26956594/)
 
 * [支付方法论](https://book.douban.com/subject/35350745/)
+  - 一般般, 不推荐, 远不如同类型的 [计算广告](https://book.douban.com/subject/34804492/)
+  - 虽然不做广告了, 但是看这本书, 反而让我想再去看看 `计算广告(第二版)` 了
 
 * [永恒的终结](https://book.douban.com/subject/25829693/)
   - 副标题: 关于时间旅行的终极奥秘和恢宏构想
