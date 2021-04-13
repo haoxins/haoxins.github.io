@@ -31,6 +31,10 @@ date: 2021-04-05
 再次投身 新一代的 Web 开发.
 ```
 
+### WebAssembly
+
+* [Second State](https://github.com/second-state)
+
 ### Vue v3
 
 ```

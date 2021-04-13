@@ -36,7 +36,7 @@ date: 2018-04-01
   - 基于 如下2篇 热门文章, `并未超出`
   - [Streaming 101: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/)
   - [Streaming 102: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-102/)
-  - `Flink` 作为事实标准, `Beam` 继续存在的意义是什么?
+  - `Flink` 已经成为事实标准, `Beam` 继续存在的意义是什么?
 
 * [端粒效应](https://book.douban.com/subject/26956594/)
 
