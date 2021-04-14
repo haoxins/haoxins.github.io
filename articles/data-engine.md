@@ -167,6 +167,8 @@ optimal performance without unnecessary intermediate abstractions.
 
 ## 2020
 
+* [A Snowflake deep dive](https://hhhypergrowth.com/a-snowflake-deep-dive/)
+
 ### Flink
 
 ```

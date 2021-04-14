@@ -17,6 +17,12 @@ date: 2021-04-10
   - 后来也会有噪音, 但好在优良的基因已经种下
   - 较之 Node.js (npm) 社区, 一开始便太多噪音
 
+```
+In Rust, the compiler plays a gatekeeper role by
+refusing to compile code with these elusive bugs,
+including concurrency bugs.
+```
+
 ### 理念细节 (By code)
 
 ```rust
