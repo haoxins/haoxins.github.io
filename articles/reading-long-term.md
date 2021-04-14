@@ -30,6 +30,8 @@ date: 2021-01-28
 
 * [哥德尔 艾舍尔 巴赫](https://book.douban.com/subject/1291204/)
   - 副标题: 集异璧之大成
+  - 出版年: 1997-05
+  - 中译本前后费时十余年
 
 ------------------
 
@@ -185,9 +187,9 @@ date: 2021-01-28
 (define y (cons 3 4))
 (define z (cons x y))
 
-(display (car (car z)))
+(car (car z))
 ; 1
-(display (car (cdr z)))
+(car (cdr z))
 ; 3
 
 ; cons construct
@@ -200,16 +202,23 @@ date: 2021-01-28
 ```scheme
 (define x (cons (list 1 2) (list 3 4)))
 
-(display (length x))
+(length x)
 ; 3
 
-(display (list x x))
+(list x x)
 ; (((1 2) 3 4) ((1 2) 3 4))
 
-(display (length (list x x)))
+(length (list x x))
 ; 2
 ```
 
+> 这一章节看着比较熟悉, 回忆起了当年阅读 @`Elixir 程序设计` 的时候
+> 递归, map, reduce
+
+```
+(map square (list 1 2 3 4))
+; (1 4 9 16)
+```
 ------------------
 
 ## 编程珠玑

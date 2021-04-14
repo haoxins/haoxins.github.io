@@ -44,7 +44,7 @@ date: 2018-04-01
   - 支付常识, 没有 `方法论`
   - 一般般, 不推荐, 远不如同类型的 [计算广告](https://book.douban.com/subject/34804492/)
   - 虽然不做广告了, 但是看这本书, 反而让我想再去看看 `计算广告(第二版)` 了
-  - 赠与 `@Ye Qing`
+  - 赠与 @`Ye Qing`
 
 * [永恒的终结](https://book.douban.com/subject/25829693/)
   - 副标题: 关于时间旅行的终极奥秘和恢宏构想
@@ -60,6 +60,7 @@ date: 2018-04-01
 * [哥德尔 艾舍尔 巴赫](https://book.douban.com/subject/1291204/)
   - 副标题: 集异璧之大成
   - 出版年: 1997-05
+  - 中译本前后费时十余年
   - 移步 [Reading long term][Long term]
 
 * [金瓶梅](https://book.douban.com/subject/27020378/)
@@ -103,7 +104,7 @@ date: 2018-04-01
 * [程序员修炼之道 (第2版)](https://book.douban.com/subject/35006892/)
   - 副标题: 通向务实的最高境界
   - 移步 [Reading long term][Long term]
-  - 赠与 `@Ye Qing`
+  - 赠与 @`Ye Qing`
 
 * [信息传](https://book.douban.com/subject/35223179/)
   - 吴军
@@ -149,11 +150,11 @@ date: 2018-04-01
   - **量子学派**, 不错的科普组织
   - 黎曼猜想, 杨 - 米尔斯规范场论, 香农公式, 椭圆曲线方程 (看之前最感兴趣的)
   - 费马大定理 & 椭圆曲线 的缘份, 两者与密码学的缘份
-  - 0, 1 ~ 群, 环, 域 `@研究之美 (高德纳)`
-  - 黎曼猜想 `@悠扬的素数`
+  - 0, 1 ~ 群, 环, 域 @`研究之美 (高德纳)`
+  - 黎曼猜想 @`悠扬的素数`
   - 牛顿 -> 麦克斯韦 -> 爱因斯坦
   - 爱因斯坦 (相对论) -> 狄拉克 (量子力学) -> 杨振宁 (规范场)
-  - 此书赠与 @Leon
+  - 此书赠与 @`Leon`
 
 * [皇帝新脑](https://book.douban.com/subject/30171336/)
   - 好吧, 我承认, 冲着 2020年诺贝尔物理学奖得主 **罗杰•彭罗斯** 买的
@@ -266,7 +267,7 @@ be guided by a much more powerful force, life itself.
 * [概率的烦恼](https://book.douban.com/subject/27618869/)
   - 此书比 **不可能的六件事** 更好
   - 更激进, 更侧重, 更主观
-  - 远不如 **@现实不似你所见**
+  - 远不如 **现实不似你所见**
   - 我不接受 量子贝叶斯理论
 
 * [不可能的六件事](https://book.douban.com/subject/34929827/)
@@ -298,12 +299,12 @@ be guided by a much more powerful force, life itself.
   - 第一次看到这种类型的漫画
   - 能很快看完的书, 也是花时间的书
   - 是通俗易懂的漫画, 也是晦涩的字符
-  - 赠与 @Lauren
+  - 赠与 @`Lauren`
 
 * [七周七并发模型](https://book.douban.com/subject/26337939/)
   - 一般吧 ~
   - 一直认为: 纯粹的函数式语言不会成为主流 (主流 means Top 10)
-  - 怀念 **Elixir**, `@Elixir 程序设计`
+  - 怀念 **Elixir**, @`Elixir 程序设计`
 
 * [跟熊逸一起读唐诗](https://book.douban.com/subject/34826393/)
   - 熊逸老师 在 得到 App 的专栏都还不错
@@ -417,7 +418,7 @@ be guided by a much more powerful force, life itself.
   - 书中的大量案例对 研究 工作 生活 均有 `见识提升` 的促进作用
   - **自由意志** = `意识到自己的动机` + `考虑不一样的行动`
   - 对 AI(ML) 提供了新思路, 考虑到作者的年纪, 期待后人的突破
-  - 此书赠与 @Halcen
+  - 此书赠与 @`Halcen`
 
 * [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
   - 从 `古老的概念` 关联到 最新的 `量子前沿`, 一流的 `科普` 就是 超一流的 `科幻`
@@ -468,7 +469,7 @@ be guided by a much more powerful force, life itself.
 
 * [Clean Architecture](https://book.douban.com/subject/30290504/)
   - 实而不虚聊 `Architecture`
-  - 赠与 `@Ye Qing`
+  - 赠与 @`Ye Qing`
 
 * [程序员的数学 3册](https://book.douban.com/subject/19949020/)
   - [程序员的数学](https://book.douban.com/subject/19949020/)
