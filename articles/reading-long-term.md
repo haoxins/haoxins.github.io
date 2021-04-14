@@ -246,6 +246,38 @@ date: 2021-01-28
 
 > 符号求导数对于 Lisp 有着特殊的历史意义
 
+* Huffman
+
+```scheme
+(define (make-leaf symbol weight)
+  (list 'leaf symbol weight)
+)
+(define (leaf? object)
+  (eq? (car object) 'leaf)
+)
+(define (symbol-leaf x)
+  (cadr x)
+)
+(define (weight-leaf x)
+  (caddr x)
+)
+(define (make-code-tree left right)
+  (list left
+        right
+        (append (symboles left) (symboles right))
+        (+ (weight left) (weight right)))
+)
+
+(define (left-branch tree) (car tree))
+(define (right-branch tree) (cadr tree))
+(define (symboles tree)
+  (if (leaf? tree)
+      (list (symbol-leaf tree))
+      (caddr tree)
+  )
+)
+```
+
 ------------------
 
 ## 编程珠玑
