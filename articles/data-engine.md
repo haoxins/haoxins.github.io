@@ -169,6 +169,37 @@ optimal performance without unnecessary intermediate abstractions.
 
 * [A Snowflake deep dive](https://hhhypergrowth.com/a-snowflake-deep-dive/)
 
+```
+Extract, Load & Transform (ELT) = Changing the ETL process
+to eliminate needing a staging area.
+The load ("L") is done before the transform ("T"), meaning
+all of the raw data is now directly loaded into the Data Lake,
+which can then serve as the staging area to
+further refine the data from there, using SQL-based tooling.
+
+In AWS, is using EC2 compute over S3 storage,
+acting somewhat akin to (aka competes against) AWS Athena
+or the MongoDB Atlas Data Lake service.
+
+In Azure, it utilizes Azure Compute over Azure Blob Storage.
+They also recently added support for the new
+Azure Data Lake Storage format (ADLS Gen2).
+
+On Google Cloud, it uses Google Compute Engine (GCE)
+over Google Cloud Storage (GCS).
+
+Single Copy of Data
+One huge benefit of a Data Lakehouse is that
+all the raw data can be utilized further,
+directly within the database.
+An analyst can be saving queries into new refined datasets
+for BI tools to take advantage of.
+A data broker can be directly isolating datasets
+to share or publish or monetize.
+
+"One Copy of Data, Many Workloads".
+```
+
 ### Flink
 
 ```
