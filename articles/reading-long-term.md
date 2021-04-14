@@ -215,10 +215,37 @@ date: 2021-01-28
 > 这一章节看着比较熟悉, 回忆起了当年阅读 @`Elixir 程序设计` 的时候
 > 递归, map, reduce
 
-```
+```scheme
 (map square (list 1 2 3 4))
 ; (1 4 9 16)
 ```
+
+* 符号数据
+
+```scheme
+(define a 1)
+(define b 2)
+(list a b)
+; (1 2)
+(list 'a b)
+; (a 2)
+```
+
+```scheme
+(define (memq item x)
+  (cond ((null? x) false)
+        ((eq? item (car x)) x)
+        (else (memq item (cdr x)))
+  )
+)
+(memq 'apple '(pear banana prune))
+; #f
+(memq 'apple '(x (apple sauce) y apple pear))
+; (apple pear)
+```
+
+> 符号求导数对于 Lisp 有着特殊的历史意义
+
 ------------------
 
 ## 编程珠玑
