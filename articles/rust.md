@@ -1,6 +1,6 @@
 ---
 title: Rust
-description: ~
+description: 惟江上之清风, 与山间之明月, 耳得之而为声, 目遇之而成色, 取之无禁, 用之不竭.
 date: 2021-04-10
 ---
 
