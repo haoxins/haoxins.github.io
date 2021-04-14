@@ -24,6 +24,7 @@
 * [Watching](articles/watching.md)
 * [Web](articles/web.md)
 * [唐诗](articles/唐诗.md)
+* [苏轼](articles/苏轼.md)
 
 ### Archived
 
