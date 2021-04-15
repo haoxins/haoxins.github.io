@@ -215,7 +215,7 @@ date: 2021-01-28
 ```
 
 > 这一章节看着比较熟悉, 回忆起了当年阅读 @`Elixir 程序设计` 的时候
-> 递归, map, reduce
+> 递归, map, filter, reduce
 
 ```
 递归 数学归纳法
@@ -258,8 +258,9 @@ date: 2021-01-28
 ```
 
 > 符号求导数对于 Lisp 有着特殊的历史意义
+> Lisp 不愧是为了表达数学推导过程而诞生的语言, 可把玩, 但 (编码效率极低)
 
-* Huffman
+* Huffman (下面代码, 手工摘抄)
 
 ```scheme
 (define (make-leaf symbol weight)
@@ -289,7 +290,43 @@ date: 2021-01-28
       (caddr tree)
   )
 )
+(define (weight tree)
+  (if (leaf? tree)
+      (weight-leaf tree)
+      (cadddr tree)
+  )
+)
 ```
+
+```scheme
+(define (decode bits tree)
+  (define (decode-1 bits current-branch)
+    (if (null? bits)
+      '()
+      (let ((next-branch
+               (choose-branch (car bits) current-branch))
+           )
+           (if (leaf? next-branch)
+               (cons (symbol-leaf next-branch)
+                     (decode-1 (car bits) tree)
+               )
+               (decode-1 (car bits) next-branch)
+           )
+      )
+    )
+  )
+  (decode-1 bits tree)
+)
+
+(define (choose-branch bit branch)
+  (cond ((= bit 0) (left-branch branch))
+        ((= bit 1) (right-branch branch))
+        (else (error "Bad bit -- choose-branch" bit))
+  )
+)
+```
+
+> Scheme 的编码体验真的是 蛮差的 :)
 
 ### 模块 对象 状态
 

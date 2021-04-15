@@ -41,6 +41,10 @@ Perfect Secrecy == One-Time Pad
 
 ## 2021
 
+* `SHA-1` to `SHA-2`
+
+> 微软宣布, 从2021年5月9日起, 该公司旗下的所有主要流程与服务, 都将全面转向仅使用 SHA-2 算法.
+
 * [A Mathematical Theory of Communication (1948)](https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication)
 
 * [BLS Signatures v4](https://tools.ietf.org/html/draft-irtf-cfrg-bls-signature-04)
