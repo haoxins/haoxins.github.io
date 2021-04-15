@@ -354,9 +354,36 @@ date: 2021-01-28
 * 基于类型的分派
   - **可加性**
 
-#### 小游戏 多项式
-
 ### 模块 对象 状态
+
+* 基于对象 vs 基于(信息)流处理
+
+```scheme
+; Global state
+(define balance 100)
+
+(define (withdraw amount)
+  (if (>= balance amount)
+      (begin (set! balance (- balance amount))
+             balance
+      )
+      "Insufficient funds"
+  )
+)
+; Internal state
+(define withdraw2
+  (let ((balance 100))
+    (lambda (amount)
+      (if (>= balance amount)
+          (begin (set! balance (- balance amount))
+             balance
+          )
+          "Insufficient funds"
+      )
+    )
+  )
+)
+```
 
 ### 元语言 抽象
 
