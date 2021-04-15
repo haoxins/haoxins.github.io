@@ -359,7 +359,7 @@ date: 2021-01-28
 * 基于对象 vs 基于(信息)流处理
 
 ```scheme
-; Global state
+; Global (open) state
 (define balance 100)
 
 (define (withdraw amount)
@@ -370,7 +370,15 @@ date: 2021-01-28
       "Insufficient funds"
   )
 )
-; Internal state
+
+(withdraw 36)
+; 64
+(withdraw 36)
+; 28
+(withdraw 36)
+; Insufficient funds
+
+; Internal (scope) state
 (define withdraw2
   (let ((balance 100))
     (lambda (amount)
@@ -383,6 +391,36 @@ date: 2021-01-28
     )
   )
 )
+
+(withdraw2 36)
+; 64
+(withdraw2 36)
+; 28
+(withdraw2 36)
+; Insufficient funds
+
+; Instance (object) state
+(define (make-withdraw balance)
+  (lambda (amount)
+    (if (>= balance amount)
+        (begin (set! balance (- balance amount))
+               balance
+        )
+        ("Insufficient funds")
+    )
+  )
+)
+
+(define W1 (make-withdraw 100))
+(define W2 (make-withdraw 100))
+
+(W1 60)
+; 40
+(W2 70)
+; 30
+```
+
+```scheme
 ```
 
 ### 元语言 抽象
