@@ -15,7 +15,7 @@ date: 2020-11-09
 
 ## 基础算法
 
-* `\omicron(n2)` > `\omicron(nLogn)` > `\omicron(n)` > `\omicron(Logn)`
+* $\omicron(n2)$ > `\omicron(nLogn)` > `\omicron(n)` > `\omicron(Logn)`
 
 * 贪心
 * 分治
