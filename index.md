@@ -12,6 +12,7 @@
 * [游戏](articles/gaming.md)
 * [Machine learning](articles/machine-learning.md)
 * [冥想](articles/meditation.md)
+* [Prolog](articles/prolog.md)
 * [量子计算 & 量子通信](articles/quantum.md)
 * [QUIC & HTTP/3](articles/quic.md)
 * [阅读 经典书籍](articles/reading-long-term.md)
