@@ -421,7 +421,41 @@ date: 2021-01-28
 ```
 
 ```scheme
+(define (make-account balance)
+  (define (withdraw amount)
+    (if (>= balance amount)
+        (begin (set! balance (- balance amount))
+               balance
+        )
+        "Insufficient funds"
+    )
+  )
+  (define (deposit amount)
+    (set! balance (+ balance amount))
+    balance
+  )
+  (define (dispatch m)
+    (cond ((eq? m 'withdraw) withdraw)
+          ((eq? m 'deposit) deposit)
+          (else (error "Unknown request -- make-account" m))
+    )
+  )
+  dispatch
+)
+
+(define acc (make-account 100))
+
+((acc 'withdraw) 50)
+; 50
+((acc 'deposit) 30 )
+; 80
+((acc 'withdraw) 20 )
+; 60
 ```
+
+* 如果一个语言支持在表达式里 `同一的东西可以相互替换` 的概念
+* 这样的替换不会改变表达式的值
+* 称为: **具有引用透明性**
 
 ### 元语言 抽象
 
