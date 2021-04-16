@@ -447,6 +447,50 @@ date: 2021-01-28
 )
 ```
 
+#### 并发
+
+* **serializer**
+  - **mutex** 互斥元, `acquired` or `released`
+
+* 并发 时间 通信
+
+```
+从本质上看, 在并发控制中,
+任何时间概念都必然与通信有内在的密切联系.
+
+有意思的是, 时间与通信之间的这种联系也出现在相对论里,
+在那里的光速是与时间和空间有关的基本常量.
+
+我们在计算模型领域遇到的复杂性,
+可能就是物理世界中最基本的复杂性的一种反映.
+```
+
+* **流**
+  - `无穷`
+  - 此处用 `数学问题的计算` 去讲解 `流/Generator` 的应用, 是我目前见到过的最佳的例子
+  - **无穷的流**, 无限的 **无理数** 的数值逼近, 第一次觉得如此美妙! 赞!
+
+```scheme
+; v1
+(define (sum-primes a b)
+  (define (iter count accum)
+    (cond ((> count b) accum)
+          ((prime? count) (iter (+ count 1) (+ count accum)))
+          (else (iter (+ count 1) accum))
+    )
+  )
+  (iter a 0)
+)
+
+; v2
+(define (sum-primes a b)
+  (accumulate +
+              0
+              (filter prime? (enumerate-interval a b))
+  )
+)
+```
+
 ### 元语言 抽象
 
 ### 寄存器 计算
@@ -746,5 +790,6 @@ class AccountRecord extends BasicRecord with CommonFinders
 * [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
 * [时间的秩序](https://book.douban.com/subject/33424487/)
 * [Helgoland ?](https://book.douban.com/subject/35265189/)
+  - 微信读书 ?
 
 * 如果只看一本的话: `现实不似你所见: 量子引力之旅`
