@@ -23,6 +23,11 @@ date: 2020-11-03
 
 ## 2021
 
+### Arrow
+
+* [Ballista: A Distributed Scheduler for Apache Arrow (2021-04-12)](https://arrow.apache.org/blog/2021/04/12/ballista-donation/)
+  - [Ballista (2021-04-10)](https://github.com/ballista-compute/ballista) has been donated to the Apache Arrow project
+
 ### Flink
 
 * [A Python 3 implementation built on GraalVM](https://github.com/oracle/graalpython)
