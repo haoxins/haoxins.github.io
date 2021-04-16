@@ -389,9 +389,9 @@ date: 2021-01-28
 
 ((acc 'withdraw) 50)
 ; 50
-((acc 'deposit) 30 )
+((acc 'deposit) 30)
 ; 80
-((acc 'withdraw) 20 )
+((acc 'withdraw) 20)
 ; 60
 ```
 
@@ -400,6 +400,52 @@ date: 2021-01-28
 - 称为: **具有引用透明性**
 - 包含 `set!` 打破了 `引用透明性`
 - 相对于 函数式程序设计, 采用赋值(`set!`)的程序设计被称为 命令式程序设计
+
+#### 小游戏: 数字电路模拟器
+
+* 摘抄2段局部代码
+
+```scheme
+(define (add-gate a1 a2 output)
+  (define (and-action-procedure)
+    (let ((new-value (logical-and (get-signal a1) (get-signal a2))))
+      (after-delay and-gate-delay
+        (lambda ()
+          (set-signal! output new-value)
+        )
+      )
+    )
+  )
+  (add-action! a1 and-action-procedure)
+  (add-action! a2 and-action-procedure)
+  'ok
+)
+
+(define (make-wire)
+  (let ((signal-value 0) (action-procedures '()))
+    (define (set-my-signal! new-value)
+      (if (not (= signal-value new-value))
+          (begin (set! signal-value new-value)
+                 (call-each action-procedures)
+          )
+          'done
+      )
+    )
+    (define (accept-action-procedure! proc)
+      (set! action-procedures (cons proc action-procedures))
+      (proc)
+    )
+    (define (dispatch m)
+      (cond ((eq? m 'get-signal) signal-value)
+            ((eq? m 'set-signal!) set-my-signal!)
+            ((eq? m 'add-action!) accept-action-procedure!)
+            (else (error "Unknown operation -- wire" m))
+      )
+    )
+    dispatch
+  )
+)
+```
 
 ### 元语言 抽象
 
