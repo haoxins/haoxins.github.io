@@ -17,6 +17,7 @@
 * [QUIC & HTTP/3](articles/quic.md)
 * [阅读 经典书籍](articles/reading-long-term.md)
 * [阅读 在线资源](articles/reading-online.md)
+* [阅读 2022+](articles/reading.md)
 * [Rust](articles/rust.md)
 * [科普小记](articles/science.md)
 * [关于 Computing 的思考](articles/thinking-computing.md)
