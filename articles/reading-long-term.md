@@ -10,24 +10,6 @@ date: 2021-01-28
 
 # 始于 2021
 
-## TAOCP
-
-* [Wiki - The Art of Computer Programming](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming)
-
-* [计算机程序设计艺术 MMIX增补](https://book.douban.com/subject/35170836/)
-* [计算机程序设计艺术 卷4A](https://book.douban.com/subject/34452973/)
-* [计算机程序设计艺术 卷3](https://book.douban.com/subject/26953756/)
-* [计算机程序设计艺术 卷2](https://book.douban.com/subject/26850558/)
-* [计算机程序设计艺术 卷1](https://book.douban.com/subject/26681685/)
-
-------------------
-
-## 复分析: 可视化方法
-
-* [复分析: 可视化方法](https://book.douban.com/subject/35316347/)
-  - 译者: 齐民友
-  - 出版年: 2021-01
-
 ```
 假想有一个社会, 在那里, 鼓励到了一定年龄的公民去读乐谱, 这一切都是令人尊敬的.
 然而这个社会有一个非常奇怪且令人苦恼的法律,
