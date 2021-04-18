@@ -37,6 +37,8 @@ Archived (2021-05)
 
 * [丹尼尔·希利斯讲计算机](https://book.douban.com/subject/35291006/)
   - 微信读书
+  - 一般般, 不推荐
+  - 不如, 编码, 后者 (编码) 一以贯之
 
 * [复分析: 可视化方法](https://book.douban.com/subject/35316347/)
   - 译者: 齐民友
@@ -55,6 +57,10 @@ Archived (2021-05)
 ```
 特别值得注意的是复数可用来解任何方程.
 换言之, 虚数似乎是完全性所需要的最后的要素.
+```
+
+```latex
+\\[ a^2 = b^2 + c^2 \\]
 ```
 
 * [Streaming Systems](https://book.douban.com/subject/27080632/)
