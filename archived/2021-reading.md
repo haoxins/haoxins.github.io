@@ -59,7 +59,8 @@ Archived (2021-05)
 换言之, 虚数似乎是完全性所需要的最后的要素.
 ```
 
-$$ \nabla_\boldsymbol{x} J(\boldsymbol{x}) $$
+* 椭圆曲线 (椭圆方程)
+$$ y^2 = x^3 + ax^2 + bx + c $$ ``
 
 * [Streaming Systems](https://book.douban.com/subject/27080632/)
   - 出版年: 2017-10-25
