@@ -15,7 +15,9 @@ date: 2020-11-09
 
 ## 基础算法
 
-* `O(n2)` > `O(nLogn)` > `O(n)` > `O(Logn)`
+```math
+ O(n^2) > O(nLogn) > O(n) > O(Logn)
+```
 
 * 贪心
 * 分治
