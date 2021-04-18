@@ -88,6 +88,12 @@ Archived (2021-05)
 
 * [端粒效应](https://book.douban.com/subject/26956594/)
 
+* [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/34464721/)
+  - https://book.douban.com/subject/1148282/
+  - 移步 [Reading long term][Long term]
+
+* [形式语言与自动机理论](https://book.douban.com/subject/2179488/)
+
 * [支付方法论](https://book.douban.com/subject/35350745/)
   - 支付常识, 没有 `方法论`
   - 一般般, 不推荐, 远不如同类型的 [计算广告](https://book.douban.com/subject/34804492/)
@@ -123,12 +129,6 @@ Archived (2021-05)
   - 期待未来专业书籍的 **想法** 也会多一些
   - 这将是电子书对纸书的绝对优势
   - 备注: **想法**, 微信读书正文可以查看的用户评注
-
-* [形式语言与自动机理论](https://book.douban.com/subject/2179488/)
-
-* [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/34464721/)
-  - https://book.douban.com/subject/1148282/
-  - 移步 [Reading long term][Long term]
 
 * [毛泽东选集](https://book.douban.com/subject/1139360/)
   - [第二卷](https://book.douban.com/subject/1252183/)
