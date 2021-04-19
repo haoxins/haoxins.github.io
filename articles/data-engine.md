@@ -25,6 +25,8 @@ date: 2020-11-03
 
 ### Arrow
 
+* [arrow-rs: Native Rust implementation of Apache Arrow](https://github.com/apache/arrow-rs)
+
 * [Ballista: A Distributed Scheduler for Apache Arrow (2021-04-12)](https://arrow.apache.org/blog/2021/04/12/ballista-donation/)
   - [Ballista (2021-04-10)](https://github.com/ballista-compute/ballista) has been donated to the Apache Arrow project
 
