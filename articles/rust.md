@@ -4,6 +4,26 @@ description: 惟江上之清风, 与山间之明月, 耳得之而为声, 目遇�
 date: 2021-04-10
 ---
 
+### Macro (!)
+
+### Others
+
+* 减少内存分配和拷贝
+  - zero-copy [rkyv](https://github.com/djkoloski/rkyv)
+
+------------------
+
+# Timeline
+
+------------------
+
+## 2021
+
+* [Crust of Rust: Atomics and Memory Ordering](https://www.youtube.com/watch?v=rMGWeSjctlY)
+
+* [Mozilla Welcomes the Rust Foundation](https://blog.mozilla.org/blog/2021/02/08/mozilla-welcomes-the-rust-foundation/)
+  - [Hello World!](https://foundation.rust-lang.org/posts/2021-02-08-hello-world/)
+
 ### 美妙之处
 
 * **反复强调** 从 Docs, eBook, 编译器, 工具链 全方位的强调设计理念
@@ -30,19 +50,3 @@ including concurrency bugs.
 let x = 666;
 let mut y = 996;
 ```
-
-* 减少内存分配和拷贝
-  - zero-copy [rkyv](https://github.com/djkoloski/rkyv)
-
-------------------
-
-# Timeline
-
-------------------
-
-## 2021
-
-* [Crust of Rust: Atomics and Memory Ordering](https://www.youtube.com/watch?v=rMGWeSjctlY)
-
-* [Mozilla Welcomes the Rust Foundation](https://blog.mozilla.org/blog/2021/02/08/mozilla-welcomes-the-rust-foundation/)
-  - [Hello World!](https://foundation.rust-lang.org/posts/2021-02-08-hello-world/)
