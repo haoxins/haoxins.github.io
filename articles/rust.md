@@ -59,4 +59,7 @@ that you passed as an argument to `expect`.
 
 Like `Result`, `Ordering` is another enum,
 but the variants for `Ordering` are `Less`, `Greater`, and `Equal`.
+
+Shadowing lets us reuse the variable name rather than
+forcing us to create two unique variables.
 ```
