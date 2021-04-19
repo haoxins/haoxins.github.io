@@ -50,3 +50,13 @@ including concurrency bugs.
 let x = 666;
 let mut y = 996;
 ```
+
+```
+An instance of `io::Result` has an `expect` method that you can call.
+If this instance of `io::Result` is an `Err` value,
+`expect` will cause the program to crash and display the message
+that you passed as an argument to `expect`.
+
+Like `Result`, `Ordering` is another enum,
+but the variants for `Ordering` are `Less`, `Greater`, and `Equal`.
+```
