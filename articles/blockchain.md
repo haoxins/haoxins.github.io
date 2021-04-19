@@ -4,18 +4,17 @@ description: 竹杖芒鞋轻胜马, 谁怕? 一蓑烟雨任平生
 date: 2019-12-10
 ---
 
-* https://swarm.ethereum.org
-* https://github.com/LazyLedger
-* https://github.com/ArweaveTeam
-
-* https://www.nervos.org
-* https://github.com/nervosnetwork
-
 ------------------
 
 # Timeline
 
 ## 2021
+
+* **NFT** 短期是泡沫, 但具有长期价值 (期待)
+  - [Wiki - Non-fungible token](https://en.wikipedia.org/wiki/Non-fungible_token)
+  - 长期价值: 纯数字资产 (没有任何实物对应) 的价值确认, `是具有探索意义的`
+  - 泡沫: 从来不缺各类同质化的伪创新
+  - 以 Digital art 为起点, 应该会诞生很有意思的东西
 
 * [WebRTC is now a W3C and IETF standard](https://web.dev/webrtc-standard-announcement/)
 
