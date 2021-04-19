@@ -1,5 +1,5 @@
 ---
-title: 冥想
+title: 冥想 健身
 description: ~
 date: 2021-03-18
 ---

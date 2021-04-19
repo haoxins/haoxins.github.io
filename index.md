@@ -11,7 +11,7 @@
 * [银河帝国](articles/galactic-empire.md)
 * [游戏](articles/gaming.md)
 * [Machine learning](articles/machine-learning.md)
-* [冥想](articles/meditation.md)
+* [冥想 健身](articles/meditation.md)
 * [Prolog](articles/prolog.md)
 * [量子计算 & 量子通信](articles/quantum.md)
 * [QUIC & HTTP/3](articles/quic.md)
@@ -25,7 +25,6 @@
 * [Watching](articles/watching.md)
 * [Web](articles/web.md)
 * [唐诗](articles/唐诗.md)
-* [苏轼](articles/苏轼.md)
 
 ### Archived
 
