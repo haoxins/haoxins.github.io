@@ -1,5 +1,4 @@
 * [Algorithms](articles/algorithm.md)
-* [AI.](articles/artificial-intelligence.md)
 * [Blockchain](articles/blockchain.md)
 * [猫咪的那些事](articles/cat.md)
 * [时间静悄悄](articles/changing.md)
