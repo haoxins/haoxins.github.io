@@ -1,5 +1,5 @@
 ---
-title: 科普
+title: 不求甚解地了解点 物理
 description: 人生如逆旅, 我亦是行人
 date: 2020-10-05
 ---
@@ -19,9 +19,3 @@ date: 2020-10-05
 * 费曼图
 
 ## 规范场论
-
-## 量子计算
-
-## 哥德尔
-
-## Artificial Intelligence
