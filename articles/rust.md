@@ -92,3 +92,48 @@ io::stdin()
 let guess: u32 = guess.trim().parse()
   .expect("Please type a number!");
 ```
+
+```
+Rust’s char type is four bytes in size
+and represents a Unicode Scalar Value.
+```
+
+```rust
+// Tuple
+let tup = (500, 6.4, 1);
+let (x, y, z) = tup;
+
+let x: (i32, f64, u8) = (500, 6.4, 1);
+let five_hundred = x.0;
+let six_point_four = x.1;
+```
+
+```
+Arrays in Rust are different from arrays
+in some other languages because
+arrays in Rust have a fixed length, like tuples.
+```
+
+```
+Statements are instructions that perform some action and
+do not return a value.
+Expressions evaluate to a resulting value.
+```
+
+```rust
+let x = 5; // statement
+
+let y = { // expression
+  let x = 3;
+  x + 1
+};
+
+// Expressions do not include ending semicolons.
+// If you add a semicolon to the end of an expression,
+// you turn it into a statement,
+// which will then not return a value.
+
+fn plus_one(x: i32) -> i32 {
+  x + 1
+}
+```
