@@ -62,4 +62,33 @@ but the variants for `Ordering` are `Less`, `Greater`, and `Equal`.
 
 Shadowing lets us reuse the variable name rather than
 forcing us to create two unique variables.
+
+You declare constants using the `const` keyword
+instead of the `let` keyword, and the type of the value
+must be `annotated`.
+
+Shadowing is different from marking a variable as `mut`,
+because we’ll get a compile-time error if we accidentally try to
+reassign to this variable without using the `let` keyword.
+
+The other difference between `mut` and `shadowing` is that
+because we’re effectively creating a new variable
+when we use the `let` keyword again,
+we can change the type of the value but reuse the same name.
+
+> Cool
+```
+
+* Shadowing
+
+```rust
+// 虽说不是很特别的特性, 但在项目中确实能增加美感
+let mut guess = String::new();
+
+io::stdin()
+  .read_line(&mut guess)
+  .expect("Failed to read line");
+
+let guess: u32 = guess.trim().parse()
+  .expect("Please type a number!");
 ```
