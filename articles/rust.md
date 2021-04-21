@@ -196,7 +196,7 @@ at the end of an item's lifetime is sometimes called
 This pattern has a profound impact on the way Rust code is written.
 It may seem simple right now, but the behavior of code can be
 unexpected in more complicated situations when we want to have
-multiple variables use the data we’ve allocated on the heap.
+multiple variables use the data we've allocated on the heap.
 ```
 
 ```
@@ -230,3 +230,31 @@ just as assignment does.
 ```
 
 * References and Borrowing
+
+```rust
+let s1 = String::from("hello");
+let len = calculate_length(&s1);
+```
+
+```
+Just as variables are immutable by default, so are references.
+We're not allowed to modify something we have a reference to.
+
+But mutable references have one big restriction:
+you can have only one mutable reference to
+a particular piece of data in a particular scope.
+
+We also cannot have a mutable reference while we have an immutable one.
+
+Note that a reference's scope starts from where it is introduced
+and continues through the last time that reference is used.
+```
+
+* Another data type that does not have **ownership** is the **slice**
+
+```rust
+let s = String::from("hello world");
+
+let hello = &s[0..5];
+let world = &s[6..11];
+```
