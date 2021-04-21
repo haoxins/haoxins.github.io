@@ -308,12 +308,12 @@ fn main() {
 // that will return a new instance of the struct.
 
 impl Rectangle {
-    fn square(size: u32) -> Rectangle {
-        Rectangle {
-            width: size,
-            height: size,
-        }
+  fn square(size: u32) -> Rectangle {
+    Rectangle {
+      width: size,
+      height: size,
     }
+  }
 }
 
 let sq = Rectangle::square(3);
