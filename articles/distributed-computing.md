@@ -201,7 +201,7 @@ Windowing
 
 Window Assignment
 which assigns the element to zero or more windows.
-From the model’s perspective, window assignment
+From the model's perspective, window assignment
 creates a new copy of the element in each of the windows
 to which it has been assigned.
 

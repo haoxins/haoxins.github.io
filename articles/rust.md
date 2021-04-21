@@ -68,11 +68,11 @@ instead of the `let` keyword, and the type of the value
 must be `annotated`.
 
 Shadowing is different from marking a variable as `mut`,
-because we’ll get a compile-time error if we accidentally try to
+because we'll get a compile-time error if we accidentally try to
 reassign to this variable without using the `let` keyword.
 
 The other difference between `mut` and `shadowing` is that
-because we’re effectively creating a new variable
+because we're effectively creating a new variable
 when we use the `let` keyword again,
 we can change the type of the value but reuse the same name.
 
@@ -94,7 +94,7 @@ let guess: u32 = guess.trim().parse()
 ```
 
 ```
-Rust’s char type is four bytes in size
+Rust's char type is four bytes in size
 and represents a Unicode Scalar Value.
 ```
 
@@ -165,3 +165,68 @@ for number in (1..4).rev() {
 ```
 
 * Ownership
+  - Each value in Rust has a variable that's called its owner.
+  - There can only be **one owner at a time**.
+  - When the owner goes out of scope, the value will be dropped.
+  - **Drop**, **Move**
+
+```
+All data stored on the stack must have a known, fixed size.
+
+Pushing to the stack is faster than allocating on the heap
+because the allocator never has to search for a place to store new data;
+that location is always at the top of the stack.
+
+Accessing data in the heap is slower than accessing data on the stack
+because you have to follow a pointer to get there.
+Contemporary processors are faster if they jump around less in memory.
+
+> restaurant 的例子不错
+```
+
+```
+When a variable goes out of scope,
+Rust calls a special function for us.
+This function is called `drop`.
+
+Note: In C++, this pattern of deallocating resources
+at the end of an item's lifetime is sometimes called
+`Resource Acquisition Is Initialization` (RAII).
+
+This pattern has a profound impact on the way Rust code is written.
+It may seem simple right now, but the behavior of code can be
+unexpected in more complicated situations when we want to have
+multiple variables use the data we’ve allocated on the heap.
+```
+
+```
+If you've heard the terms shallow copy and deep copy
+while working with other languages,
+the concept of copying the pointer, length, and capacity
+without copying the data probably sounds like making a shallow copy.
+But because Rust also invalidates the first variable,
+instead of being called a shallow copy, it's known as a move.
+```
+
+```
+Rust will never automatically create "deep" copies of your data.
+Therefore, any automatic copying can be assumed to be inexpensive
+in terms of runtime performance.
+```
+
+* Here are some of the types that implement `Copy`:
+  - All the `integer` types
+  - The `Boolean` type
+  - All the `floating point` types
+  - The `character` type, `char`
+  - `Tuples`, if they only contain types that also implement `Copy`
+  - For example, `(i32, i32)` implements `Copy`, but `(i32, String)` does not
+
+```
+The semantics for passing a value to a function are similar to
+those for assigning a value to a variable.
+Passing a variable to a function will `move` or `copy`,
+just as assignment does.
+```
+
+* References and Borrowing
