@@ -7,4 +7,6 @@
 * Cryptography
 * Distributed computing
 
+### Awesome blogs
 
+* [Shtetl-Optimized: The Blog of Scott Aaronson](https://www.scottaaronson.com/blog/)

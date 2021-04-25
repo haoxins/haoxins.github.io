@@ -4,7 +4,13 @@ description: 遥知朔漠多风雪, 更待江南半月春
 date: 2021-01-07
 ---
 
-# History
+### Blogs
+
+* [Shtetl-Optimized: The Blog of Scott Aaronson](https://www.scottaaronson.com/blog/)
+
+------------------
+
+# Timeline
 
 ## 2021
 
