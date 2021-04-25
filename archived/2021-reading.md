@@ -32,16 +32,6 @@ Archived (2021-05)
   - 印象中, 早些年在 **Kindle** 看过, 没看完 (看不下去, 哈哈哈哈)
   - 希望这次, 不一样的感受
 
-* [编码](https://book.douban.com/subject/4822685/)
-  - 副标题: 隐匿在计算机软硬件背后的语言
-  - 出版年: 2010
-  - 微信读书
-
-* [丹尼尔·希利斯讲计算机](https://book.douban.com/subject/35291006/)
-  - 微信读书
-  - 一般般, 不推荐
-  - 不如, 编码, 后者 (编码) 一以贯之
-
 * [复分析: 可视化方法](https://book.douban.com/subject/35316347/)
   - 译者: 齐民友
   - 出版年: 2021-01
@@ -99,6 +89,17 @@ Archived (2021-05)
 * [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/34464721/)
   - https://book.douban.com/subject/1148282/
   - 移步 [Reading long term][Long term]
+
+* [编码](https://book.douban.com/subject/4822685/)
+  - 副标题: 隐匿在计算机软硬件背后的语言
+  - 出版年: 2010
+  - 微信读书
+  - 一般
+
+* [丹尼尔·希利斯讲计算机](https://book.douban.com/subject/35291006/)
+  - 微信读书
+  - 一般般, 不推荐
+  - 不如, 编码, 后者 (编码) 一以贯之
 
 * [形式语言与自动机理论](https://book.douban.com/subject/2179488/)
 
