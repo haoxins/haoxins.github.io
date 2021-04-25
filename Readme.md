@@ -7,7 +7,4 @@
 * Cryptography
 * Distributed computing
 
-### Awesome online tools
 
-* [Excalidraw](https://excalidraw.com)
-  - [GitHub](https://github.com/excalidraw/excalidraw)
