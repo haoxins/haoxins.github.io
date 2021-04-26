@@ -6,6 +6,9 @@ date: 2021-04-16
 
 # 始于 2022
 
+* [活出生命的意义](https://book.douban.com/subject/5330333/)
+  - 再看 重温
+
 ## 费曼物理学讲义
 
 * [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
