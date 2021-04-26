@@ -25,6 +25,10 @@ Archived (2021-05)
 
 ### 2021
 
+* [猫, 爱因斯坦和密码学](https://book.douban.com/subject/35269186/)
+  - [知乎](https://www.zhihu.com) 出品
+  - 近年来, 不少国产科普佳作出现
+
 * [图灵的秘密](https://book.douban.com/subject/10779604/)
   - 副标题: 他的生平, 思想及论文解读
   - 出版年: 2012-11
