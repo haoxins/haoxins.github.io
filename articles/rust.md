@@ -320,3 +320,56 @@ let sq = Rectangle::square(3);
 ```
 
 * Enums and Pattern Matching
+
+```rust
+// v1
+enum IpAddrKind {
+  V4,
+  V6,
+}
+
+let six = IpAddrKind::V6;
+
+// v2
+enum IpAddr {
+  V4(String),
+  V6(String),
+}
+
+let loopback = IpAddr::V6(String::from("::1"));
+
+// v3
+enum IpAddr {
+  V4(u8, u8, u8, u8),
+  V6(String),
+}
+
+let home = IpAddr::V4(127, 0, 0, 1);
+let loopback = IpAddr::V6(String::from("::1"));
+
+// v4
+struct Ipv4Addr {
+  // ...
+}
+
+struct Ipv6Addr {
+  // ...
+}
+
+enum IpAddr {
+  V4(Ipv4Addr),
+  V6(Ipv6Addr),
+}
+```
+
+```
+There is one more similarity between enums and structs:
+just as we're able to define methods on structs using impl,
+we're also able to define methods on enums.
+```
+
+```
+Rust does not have nulls, but it does have an enum that
+can encode the concept of a value being present or absent.
+This enum is `Option<T>`
+```
