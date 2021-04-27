@@ -6,7 +6,7 @@ date: 2020-01-29
 
 ## 2021
 
-* **Bose QC 30** 丢了, 购买了 **Apple AirPods Pro**
+* **Bose QC 30** 不小心丢了, 购买了 **Apple AirPods Pro**
   - 感觉后者降噪效果更好
   - 操作起来也更加便利
 

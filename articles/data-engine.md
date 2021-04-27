@@ -152,6 +152,21 @@ with large amounts of slowly changing state.
 
 ### Others
 
+* [What's New in TiDB 5.0](https://docs.pingcap.com/zh/tidb/stable/release-5.0.0)
+
+```
+TiDB 通过 TiFlash 节点引入了 MPP 架构.
+这使得大型表连接类查询可以由不同 TiFlash 节点共同分担完成.
+经测试, TiDB 5.0 在同等资源下, MPP 引擎的总体性能是 Greenplum 6.15.0 与 Apache Spark 3.1.1
+两到三倍之间, 部分查询可达 8 倍性能差异.
+
+引入聚簇索引功能, 提升数据库的性能. 例如, TPC-C tpmC 的性能提升了 39%.
+开启异步提交事务功能, 降低写入数据的延迟.
+引入 Raft Joint Consensus 算法, 确保 Region 成员变更时系统的可用性.
+优化 EXPLAIN 功能, 引入不可见索引等功能帮助提升 DBA 调试及 SQL 语句执行的效率.
+提升从 Amazon S3 或者 TiDB/MySQL 导入导出数据的性能.
+```
+
 * [Old blog - Random notes on improving the Redis LRU algorithm](http://antirez.com/news/109)
 * [Old blog - Redis persistence demystified](http://oldblog.antirez.com/post/redis-persistence-demystified.html)
 
