@@ -373,3 +373,29 @@ Rust does not have nulls, but it does have an enum that
 can encode the concept of a value being present or absent.
 This enum is `Option<T>`
 ```
+
+```rust
+let coin = Coin::Penny;
+let mut count = 0;
+
+// match
+match coin {
+  Coin::Quarter(state) => println!("State quarter from {:?}!", state),
+  _ => count += 1,
+}
+
+// if let
+if let Coin::Quarter(state) = coin {
+  println!("State quarter from {:?}!", state);
+} else {
+  count += 1;
+}
+```
+
+* The module system
+  - Packages: A **Cargo** feature that lets you build, test, and share crates
+  - Crates: A tree of modules that produces a library or executable
+  - Modules and use: Let you control the organization, scope, and privacy of paths
+  - Paths: A way of naming an item, such as a struct, function, or module
+
+* Packages and Crates
