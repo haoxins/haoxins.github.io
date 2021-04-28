@@ -146,6 +146,11 @@ with large amounts of slowly changing state.
 
 * [Apache Kafka Made Simple: A First Glimpse of a Kafka Without ZooKeeper](https://www.confluent.io/blog/kafka-without-zookeeper-a-sneak-peek/)
 
+* **Kafka 2.8.0**
+  - Early access of replace ZooKeeper with a self-managed quorum
+  - JSON request/response debug logs
+  - Topic identifiers
+
 ### JDK 17 (LTS)
 
 * [ZGC | What's new in JDK 16](https://malloc.se/blog/zgc-jdk16)
