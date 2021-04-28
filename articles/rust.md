@@ -405,3 +405,37 @@ and then ignores all other values.
   - Paths: A way of naming an item, such as a struct, function, or module
 
 * Packages and Crates
+
+```
+The way privacy works in Rust is that all items
+(functions, methods, structs, enums, modules, and constants)
+are private by default.
+
+Items in a parent module can't use the private items inside child modules,
+but items in child modules can use the items in their ancestor modules.
+```
+
+```
+Enums aren't very useful unless their variants are public;
+it would be annoying to have to annotate all enum variants with pub in every case,
+so the default for enum variants is to be `public`.
+
+Structs are often useful without their fields being public,
+so struct fields follow the general rule of everything being private by default
+unless annotated with pub.
+```
+
+```rust
+use std::{cmp::Ordering, io};
+
+use std::collections::*;
+
+// v1
+use std::io;
+use std::io::Write;
+
+// v2
+use std::io::{self, Write};
+```
+
+* Storing Lists of Values with Vectors
