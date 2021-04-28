@@ -25,11 +25,6 @@ Archived (2021-05)
 
 ### 2021
 
-* [猫, 爱因斯坦和密码学](https://book.douban.com/subject/35269186/)
-  - [知乎](https://www.zhihu.com) 出品
-  - 近年来, 不少国产科普佳作出现
-  - 知乎 专栏 - [猫, 爱因斯坦和密码学: 我也能看懂的量子通信](https://zhuanlan.zhihu.com/p/28079967)
-
 * [图灵的秘密](https://book.douban.com/subject/10779604/)
   - 副标题: 他的生平, 思想及论文解读
   - 出版年: 2012-11
@@ -42,6 +37,11 @@ Archived (2021-05)
   - 出版年: 2021-01
   - 移步 [Reading long term][Long term]
   - 如果 2020 & 2021 只能买一本数学书, 那必定就是这一本!
+
+* [猫, 爱因斯坦和密码学](https://book.douban.com/subject/35269186/)
+  - [知乎](https://www.zhihu.com) 出品
+  - 近年来, 不少国产科普佳作出现
+  - 知乎 专栏 - [猫, 爱因斯坦和密码学: 我也能看懂的量子通信](https://zhuanlan.zhihu.com/p/28079967)
 
 * [费马大定理](https://book.douban.com/subject/20494401/)
   - 副标题: **一个困惑了世间智者358年的谜**
@@ -129,6 +129,9 @@ Archived (2021-05)
   - [Streaming 101: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/)
   - [Streaming 102: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-102/)
   - `Flink` 已经成为事实标准, `Beam` 继续存在的意义是什么?
+  - 对基本概念的讲解还是比较透彻的
+  - 配图很不错
+  - Flink 的官方文档有很大的进步空间啊, 哈哈哈 (现在太一般了)
 
 * [端粒效应](https://book.douban.com/subject/26956594/)
 
