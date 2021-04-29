@@ -24,7 +24,7 @@
 * [Watching long term](articles/watching-long-term.md)
 * [Watching](articles/watching.md)
 * [Web](articles/web.md)
-* [唐诗](articles/唐诗.md)
+* [诗 · 词 · 文](articles/诗.md)
 
 ### Archived
 
