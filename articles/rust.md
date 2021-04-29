@@ -24,6 +24,8 @@ date: 2021-04-10
 * [Mozilla Welcomes the Rust Foundation](https://blog.mozilla.org/blog/2021/02/08/mozilla-welcomes-the-rust-foundation/)
   - [Hello World!](https://foundation.rust-lang.org/posts/2021-02-08-hello-world/)
 
+### Advanced
+
 ### 美妙之处
 
 * **反复强调** 从 Docs, eBook, 编译器, 工具链 全方位的强调设计理念
@@ -43,7 +45,7 @@ refusing to compile code with these elusive bugs,
 including concurrency bugs.
 ```
 
-### 理念细节 (By code)
+### Basic (By code)
 
 ```rust
 // Immutable first
@@ -439,3 +441,21 @@ use std::io::{self, Write};
 ```
 
 * Storing Lists of Values with Vectors
+
+```rust
+let v: Vec<i32> = Vec::new();
+// macro
+let v = vec![1, 2, 3];
+```
+
+```
+When we run this code, the first [] method will cause the program to panic
+because it references a nonexistent element.
+This method is best used when you want your program to crash
+if there's an attempt to access an element past the end of the vector.
+
+When the get method is passed an index that is outside the vector,
+it returns None without panicking.
+You would use this method if accessing an element beyond the range
+of the vector happens occasionally under normal circumstances.
+```
