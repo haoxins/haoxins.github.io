@@ -4,8 +4,6 @@ description: 惟江上之清风, 与山间之明月, 耳得之而为声, 目遇�
 date: 2021-04-10
 ---
 
-### Macro (!)
-
 ### Others
 
 * 减少内存分配和拷贝
@@ -26,6 +24,8 @@ date: 2021-04-10
 
 ### Advanced
 
+* Macro (!)
+
 ### 美妙之处
 
 * **反复强调** 从 Docs, eBook, 编译器, 工具链 全方位的强调设计理念
@@ -45,7 +45,7 @@ refusing to compile code with these elusive bugs,
 including concurrency bugs.
 ```
 
-### Basic (By code)
+### Basic
 
 ```rust
 // Immutable first
@@ -459,3 +459,44 @@ it returns None without panicking.
 You would use this method if accessing an element beyond the range
 of the vector happens occasionally under normal circumstances.
 ```
+
+```
+adding a new element onto the end of the vector might require allocating new memory
+and copying the old elements to the new space, if there isn't enough room to
+put all the elements next to each other where the vector currently is.
+
+In that case, the reference to the first element would be pointing to deallocated memory.
+The borrowing rules prevent programs from ending up in that situation.
+```
+
+```rust
+let v = vec![100, 32, 57];
+for i in &v {
+  println!("{}", i);
+}
+```
+
+```rust
+let mut v = vec![100, 32, 57];
+for i in &mut v {
+  *i += 50;
+}
+```
+
+> when we need to store elements of a different type in a vector,
+> we can define and use an enum!
+
+* Rust strings don't support indexing
+  - A String is a wrapper over a `Vec<u8>`
+
+```rust
+for c in "नमस्ते".chars() {
+  println!("{}", c);
+}
+
+for b in "नमस्ते".bytes() {
+  println!("{}", b);
+}
+```
+
+* Hash Maps
