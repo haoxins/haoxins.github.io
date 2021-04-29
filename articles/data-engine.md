@@ -23,6 +23,12 @@ date: 2020-11-03
 
 ## 2021
 
+### Argo
+
+* [Argo Project](https://github.com/argoproj)
+  - [Argo Workflows](https://github.com/argoproj/argo-workflows)
+  - 有点意思, 期待成为主流
+
 ### Arrow
 
 * [arrow-rs: Native Rust implementation of Apache Arrow](https://github.com/apache/arrow-rs)
@@ -185,10 +191,6 @@ at the edge, worldwide. The service deeply integrates the V8 JavaScript runtime
 with a high performance asynchronous web server to provide
 optimal performance without unnecessary intermediate abstractions.
 ```
-
-* [Argo Workflows](https://github.com/argoproj/argo-workflows)
-  - [Argo Workflows](https://argoproj.github.io/argo-workflows)
-  - 有点意思, 期待成为主流
 
 ------------------
 
