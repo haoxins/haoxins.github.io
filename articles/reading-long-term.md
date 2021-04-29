@@ -878,7 +878,14 @@ class AccountRecord extends BasicRecord with CommonFinders
 * [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
 * [时间的秩序](https://book.douban.com/subject/33424487/)
   - 在 2021 年, 五一小长假期间, 又重新读了一遍
+  - 赠与 @`Jan Li`
 * [Helgoland ?](https://book.douban.com/subject/35265189/)
-  - 微信读书 ?
 
 * 如果只看一本的话: `现实不似你所见: 量子引力之旅`
+
+* 时间的崩塌
+  - 广义相对论: 物体会使它周围的时间变慢
+  - 物体会自然向时间流逝更慢的地方运动
+  - (时间的 **统一性** 消失)
+  - (时间的 **方向** 消失)
+  - (时间的 **独立性** 消失)
