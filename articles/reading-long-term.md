@@ -877,6 +877,7 @@ class AccountRecord extends BasicRecord with CommonFinders
 
 * [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
 * [时间的秩序](https://book.douban.com/subject/33424487/)
+  - 在 2021 年, 五一小长假期间, 又重新读了一遍
 * [Helgoland ?](https://book.douban.com/subject/35265189/)
   - 微信读书 ?
 
