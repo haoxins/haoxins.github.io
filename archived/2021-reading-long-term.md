@@ -876,8 +876,10 @@ class AccountRecord extends BasicRecord with CommonFinders
   - 最近几年, 这个哥们几乎每年一本书 :)
 
 * [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
+  - 在 2021 年, 五一小长假 期间, 又重新读了一遍
+  - 赠与 @`Jan Li`
 * [时间的秩序](https://book.douban.com/subject/33424487/)
-  - 在 2021 年, 五一小长假期间, 又重新读了一遍
+  - 在 2021 年, 五一小长假 前后, 又重新读了一遍
   - 赠与 @`Jan Li`
 * [Helgoland ?](https://book.douban.com/subject/35265189/)
 
@@ -893,6 +895,7 @@ class AccountRecord extends BasicRecord with CommonFinders
   - 狭义相对论: 时间会被速度延缓
   - 在过去与未来之间, 还存在一个时间段, 既非过去, 亦非未来
   - (时间的 **当下** 终结)
+  -
   - (时间的 **独立性** 消失)
 
 ```

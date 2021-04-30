@@ -11,6 +11,8 @@ date: 2019-10-24
 
 ### 2021-04
 
+* [悬崖之上](https://movie.douban.com/subject/32493124/)
+
 * [哥斯拉大战金刚](https://movie.douban.com/subject/26613692/)
   - iMax 效果不错
   - 靠吼 靠打 院线流水线大片
