@@ -889,3 +889,5 @@ class AccountRecord extends BasicRecord with CommonFinders
   - (时间的 **统一性** 消失)
   - (时间的 **方向** 消失)
   - (时间的 **独立性** 消失)
+
+* 时间 - 热 熵 - 不可逆性

@@ -4,7 +4,7 @@ description: 莫听穿林打叶声, 何妨吟啸且徐行
 date: 2018-04-01
 ---
 
-* [Long term]: reading-long-term.md
+* [Long term]: 2021-reading-long-term.md
 
 ### Wish list
 
@@ -69,6 +69,8 @@ Archived (2021-05)
 1. 虽然有瞬时连接, 但无法用来传送信息
 2. 不能通过局域操作和经典通信创造
 ```
+
+* 量子通信卫星 **墨子号**, 用的是更简便的量子密钥分配协议: **BB84** 协议
 
 * [费马大定理](https://book.douban.com/subject/20494401/)
   - 副标题: **一个困惑了世间智者358年的谜**
