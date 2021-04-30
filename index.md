@@ -29,7 +29,7 @@
 
 * [(2021) 关于技术, 次年度期待清单](archived/2021-worth-looking-forward.md)
 * [(2021) 阅读 书单 & 简记](archived/2021-reading.md)
-* [阅读 经典书籍](archived/2021-reading-long-term.md)
+* [(2021) 阅读 经典书籍](archived/2021-reading-long-term.md)
 * [(2021) Programming language](archived/2021-programming-language.md)
 * [(2021) Linux](archived/2021-linux.md)
 * [(2021) 年度事件](archived/2021-annual-events.md)
