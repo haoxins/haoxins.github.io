@@ -511,3 +511,45 @@ let initial_scores = vec![10, 50];
 let mut scores: HashMap<_, _> =
   teams.into_iter().zip(initial_scores.into_iter()).collect();
 ```
+
+```
+If we insert references to values into the hash map,
+the values won't be moved into the hash map.
+The values that the references point to must be valid for
+at least as long as the hash map is valid.
+```
+
+```rust
+let mut scores = HashMap::new();
+scores.insert(String::from("Blue"), 10);
+
+scores.entry(String::from("Yellow")).or_insert(50);
+scores.entry(String::from("Blue")).or_insert(50);
+```
+
+* Updating a Value Based on the Old Value
+
+```rust
+let text = "hello world wonderful world";
+
+let mut map = HashMap::new();
+
+for word in text.split_whitespace() {
+  let count = map.entry(word).or_insert(0);
+  *count += 1;
+}
+```
+
+* Error Handling
+
+```
+Rust groups errors into two major categories: recoverable and unrecoverable errors.
+
+Most languages don't distinguish between these two kinds of errors and
+handle both in the same way, using mechanisms such as exceptions.
+
+Rust doesn't have exceptions.
+Instead, it has the type Result<T, E> for recoverable errors and
+the panic! macro that stops execution when the program encounters
+an unrecoverable error.
+```
