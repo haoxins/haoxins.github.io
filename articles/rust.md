@@ -23,6 +23,7 @@ date: 2021-04-10
 
 * [Mozilla Welcomes the Rust Foundation](https://blog.mozilla.org/blog/2021/02/08/mozilla-welcomes-the-rust-foundation/)
   - [Hello World!](https://foundation.rust-lang.org/posts/2021-02-08-hello-world/)
+  - Facebook Joins the Rust Foundation (2021-04-29)
 
 ### Advanced
 
