@@ -9,9 +9,17 @@ date: 2019-10-24
 * [基地 Foundation](https://movie.douban.com/subject/3161109/)
   - https://www.imdb.com/title/tt0804484/
 
-### 2021-04
+### 2021-05
 
 * [悬崖之上](https://movie.douban.com/subject/32493124/)
+
+* 继续看 [觉醒年代](https://movie.douban.com/subject/30228394/)
+  - 林纾, 刘师培 文人风骨
+  - 对 **五四运动** 有了真正的认知
+  - 上学时的课本上的文字, 始终没有情感上的共鸣
+  - 对鲁迅先生的作品也有了更好的了解, **唤醒国人**
+
+### 2021-04
 
 * [哥斯拉大战金刚](https://movie.douban.com/subject/26613692/)
   - iMax 效果不错
