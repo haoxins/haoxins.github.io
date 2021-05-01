@@ -7,8 +7,10 @@ date: 2021-02-12
 ## 2021
 
 * [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
+  - 微积分
 
 * [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+  - 线性代数
 
 ## 海贼王
 
