@@ -877,7 +877,7 @@ class AccountRecord extends BasicRecord with CommonFinders
 
 * [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
   - 在 2021 年, 五一小长假 期间, 又重新读了一遍
-  - 留在了 ``
+  - 五一出游, 留在了 ``
 * [时间的秩序](https://book.douban.com/subject/33424487/)
   - 在 2021 年, 五一小长假 前后, 又重新读了一遍
   - 赠与 @`Jan Li`
@@ -896,7 +896,7 @@ class AccountRecord extends BasicRecord with CommonFinders
 ```
 量子场绘制了空间, 时间, 物质与光,
 在事件之间交换信息.
-`实在` 是由独立事件构成的网络,
+`实在 (Reality)` 是由独立事件构成的网络,
 概率使它们相互关联,
 在两个事件之间,
 空间, 时间, 物质与能量,
