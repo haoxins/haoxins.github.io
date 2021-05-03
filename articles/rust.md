@@ -555,3 +555,8 @@ Instead, it has the type Result<T, E> for recoverable errors and
 the panic! macro that stops execution when the program encounters
 an unrecoverable error.
 ```
+
+```toml
+[profile.release]
+panic = 'abort'
+```
