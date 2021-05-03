@@ -15,3 +15,15 @@ date: 2021-02-17
 ### Normal
 
 * [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+
+------------------
+
+# Timeline
+
+------------------
+
+## 2021
+
+* Ubuntu 21.04
+  - 集成用于 **Flutter** 应用开发的 SDK
+  - 默认启用 **Wayland** 替换了 X Window System
