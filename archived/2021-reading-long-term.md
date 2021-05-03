@@ -877,13 +877,12 @@ class AccountRecord extends BasicRecord with CommonFinders
 
 * [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
   - 在 2021 年, 五一小长假 期间, 又重新读了一遍
-  - 五一出游, 留在了 ``
+  - 五一出游, 书留在了民宿 `在田间`
+  - 颇有缘分的是, 屋内恰好有一本: 人生若只如初见
 * [时间的秩序](https://book.douban.com/subject/33424487/)
   - 在 2021 年, 五一小长假 前后, 又重新读了一遍
   - 赠与 @`Jan Li`
 * [Helgoland ?](https://book.douban.com/subject/35265189/)
-
-* 如果只看一本的话: `现实不似你所见: 量子引力之旅`
 
 ```
 作者文笔颇具诗意
