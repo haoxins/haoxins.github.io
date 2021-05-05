@@ -11,6 +11,11 @@ date: 2019-10-24
 
 ### 2021-05
 
+* [正义联盟: 扎克·施奈德版](https://www.bilibili.com/bangumi/media/md28234241/)
+  - bilibili 版权引入速度可以的
+  - 长度感人, 分几次看完的
+  - 如果没有续作, 那挖的坑可就多余了
+
 * [悬崖之上](https://movie.douban.com/subject/32493124/)
 
 * 继续看 [觉醒年代](https://movie.douban.com/subject/30228394/)
