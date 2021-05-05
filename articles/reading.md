@@ -9,6 +9,12 @@ date: 2021-04-16
 * [活出生命的意义](https://book.douban.com/subject/5330333/)
   - 再看 重温
 
+------------------
+
+# 始于 2021
+
+------------------
+
 ## 费曼物理学讲义
 
 * [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
@@ -24,13 +30,6 @@ date: 2021-04-16
 * 中译本前后费时 **十余年**
 * 译者都是数学和哲学的专家, 还得到 **原作者** 的直接参与
 * 使这部译本甚至可看作是一部新的创作
-
-------------------
-
-# 始于 2021
-
-------------------
-
 ## TAOCP
 
 * [Wiki - The Art of Computer Programming](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming)
