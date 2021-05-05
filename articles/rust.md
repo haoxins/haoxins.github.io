@@ -560,3 +560,6 @@ an unrecoverable error.
 [profile.release]
 panic = 'abort'
 ```
+
+> Let's try getting a backtrace by setting the `RUST_BACKTRACE`
+> environment variable to any value except 0.
