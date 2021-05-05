@@ -38,6 +38,28 @@ date: 2020-11-03
 
 ### Flink
 
+* [Apache Flink 1.13.0 Release Announcement](https://flink.apache.org/news/2021/05/03/release-1.13.0.html)
+
+```
+The release brings us a big step forward in one of our major efforts:
+
+Making Stream Processing Applications as natural and as simple
+to manage as any other application.
+
+The new reactive scaling mode means that scaling streaming
+applications in and out now works like in any other application
+by just changing the number of parallel processes.
+
+The release also prominently features a series of improvements
+that help users better understand the performance of applications.
+
+Load and backpressure visualization to identify bottlenecks,
+CPU flame graphs to identify hot code paths in your application,
+and State Access Latencies to see how the State Backends are keeping up.
+
+Unaligned Checkpoints - production-ready
+```
+
 * [A Python 3 implementation built on GraalVM](https://github.com/oracle/graalpython)
   - 期待 **PyFlink** 引入
 
