@@ -8,6 +8,15 @@ date: 2021-01-28
 
 ------------------
 
+## 费曼物理学讲义
+
+* [Wiki - The Feynman Lectures on Physics](https://en.wikipedia.org/wiki/The_Feynman_Lectures_on_Physics)
+* [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
+
+* **单独成文**
+
+------------------
+
 ## TAOCP
 
 * [Wiki - The Art of Computer Programming](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming)
