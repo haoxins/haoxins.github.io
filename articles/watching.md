@@ -11,6 +11,10 @@ date: 2019-10-24
 
 ### 2021-05
 
+* [蝙蝠侠大战超人: 正义黎明](https://www.bilibili.com/bangumi/media/md28229705)
+  - 回来补课的
+  - BTW: 感觉 DC 的时代, 也差不多了
+
 * [正义联盟: 扎克·施奈德版](https://www.bilibili.com/bangumi/media/md28234241/)
   - bilibili 版权引入速度可以的
   - 长度感人, 分几次看完的
