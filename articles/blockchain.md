@@ -25,6 +25,8 @@ date: 2019-12-10
   - [SWIFT](https://en.wikipedia.org/wiki/Society_for_Worldwide_Interbank_Financial_Telecommunication)
   - 最终, 加密货币在跨境支付场景下会是 **成本低**, **效率高** 的选择
 
+### Polkadot
+
 * [Substrate v3.0](https://github.com/paritytech/substrate/releases/tag/v3.0.0)
 
 ### Ethereum
