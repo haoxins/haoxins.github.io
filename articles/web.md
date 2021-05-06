@@ -33,7 +33,11 @@ date: 2021-04-05
 
 ### WebAssembly
 
-* [Second State](https://github.com/second-state)
+* [AssemblyScript](https://github.com/AssemblyScript/assemblyscript)
+* Second State
+  - [Website](https://www.secondstate.io)
+  - [Github](https://github.com/second-state)
+  - [WasmEdge (formerly SSVM)](https://github.com/WasmEdge/WasmEdge)
 
 ### Vue v3
 
@@ -58,10 +62,6 @@ Houdini
 要么 胎死腹中
 要么 Game changer
 ```
-
-### 微信 小程序
-
-* v2.16.0 (2021-03-03)
 
 ### Deno
 
