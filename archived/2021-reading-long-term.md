@@ -905,7 +905,7 @@ class AccountRecord extends BasicRecord with CommonFinders
 
 * [时间的秩序](https://book.douban.com/subject/33424487/)
   - 在 2021 年, 五一小长假 前后, 又重新读了一遍
-  - 赠与 @`Jan Li`
+  - 赠与 @`Jan Li`, 因为这本书有点**哲学**向
   - [Forget time - Carlo Rovelli (August 2008)](https://arxiv.org/pdf/0903.3832.pdf)
 
 * [Helgoland ?](https://book.douban.com/subject/35265189/)
