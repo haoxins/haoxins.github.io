@@ -9,7 +9,9 @@ date: 2021-04-10
 ### Others
 
 * 减少内存分配和拷贝
-  - zero-copy [rkyv](https://github.com/djkoloski/rkyv)
+  - Zero copy [rkyv](https://github.com/djkoloski/rkyv)
+* Crypto
+  - [Rust Crypto](https://github.com/rustcrypto)
 
 ------------------
 
@@ -26,6 +28,8 @@ date: 2021-04-10
 * [Mozilla Welcomes the Rust Foundation](https://blog.mozilla.org/blog/2021/02/08/mozilla-welcomes-the-rust-foundation/)
   - [Hello World!](https://foundation.rust-lang.org/posts/2021-02-08-hello-world/)
   - Facebook Joins the Rust Foundation (2021-04-29)
+
+* [Models of Generics and Metaprogramming: Go, Rust, Swift, D and More](https://thume.ca/2019/07/14/a-tour-of-metaprogramming-models-for-generics/)
 
 ### Advanced
 
@@ -563,3 +567,86 @@ panic = 'abort'
 
 > Let's try getting a backtrace by setting the `RUST_BACKTRACE`
 > environment variable to any value except 0.
+
+```rust
+// v1
+let f = File::open("hello.txt");
+
+let f = match f {
+  Ok(file) => file,
+  Err(error) => match error.kind() {
+    ErrorKind::NotFound => match File::create("hello.txt") {
+      Ok(fc) => fc,
+      Err(e) => panic!("Problem creating the file: {:?}", e),
+    },
+    other_error => {
+      panic!("Problem opening the file: {:?}", other_error)
+    }
+  },
+};
+
+// v2
+let f = File::open("hello.txt").unwrap_or_else(|error| {
+  if error.kind() == ErrorKind::NotFound {
+    File::create("hello.txt").unwrap_or_else(|error| {
+      panic!("Problem creating the file: {:?}", error);
+    })
+  } else {
+    panic!("Problem opening the file: {:?}", error);
+  }
+});
+```
+
+```
+The ? placed after a Result value is defined to work in almost the same way
+as the match expressions we defined to handle the Result values.
+
+If the value of the Result is an Ok, the value inside the Ok will get returned
+from this expression, and the program will continue.
+
+If the value is an Err, the Err will be returned from the whole function
+as if we had used the return keyword so the error value gets
+propagated to the calling code.
+```
+
+```rust
+// v1
+fn read_username_from_file() -> Result<String, io::Error> {
+  let mut f = File::open("hello.txt")?;
+  let mut s = String::new();
+  f.read_to_string(&mut s)?;
+  Ok(s)
+}
+
+// v2
+fn read_username_from_file() -> Result<String, io::Error> {
+  let mut s = String::new();
+
+  File::open("hello.txt")?.read_to_string(&mut s)?;
+
+  Ok(s)
+}
+
+// v3
+fn read_username_from_file() -> Result<String, io::Error> {
+  fs::read_to_string("hello.txt")
+}
+```
+
+* The **?** Operator Can Be Used in Functions That Return Result
+
+```
+The ? operator can be used in functions that have a return type of Result,
+because it is defined to work in the same way as the match expression.
+The part of the match that requires a return type of Result is return Err(e),
+so the return type of the function has to be a Result
+to be compatible with this return.
+```
+
+```rust
+fn main() -> Result<(), Box<dyn Error>> {
+  let f = File::open("hello.txt")?;
+
+  Ok(())
+}
+```
