@@ -33,6 +33,8 @@ date: 2021-04-10
 
 ### Advanced
 
+* Generic Types, Traits, and Lifetimes
+
 * Macro (!)
 
 ### 美妙之处
