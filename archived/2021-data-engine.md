@@ -153,7 +153,7 @@ Window
   * Evictor
 ```
 
-* Checkpoint & Savepoint
+* Checkpoint, Savepoint
 
 ```
 When working with state kept in a heap-based state backend,
@@ -168,7 +168,7 @@ which is a significant benefit for applications
 with large amounts of slowly changing state.
 ```
 
-* Streaming joins
+* Streaming, Windowing joins
 
 ### Kafka
 
