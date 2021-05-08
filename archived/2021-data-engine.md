@@ -65,7 +65,7 @@ Unaligned Checkpoints - production-ready
 
 * [How to natively deploy Flink on Kubernetes with High-Availability (HA)](https://flink.apache.org/2021/02/10/native-k8s-with-ha.html)
 
-* Window, Watermark
+* Window, Trigger, Watermark
 
 ```
 Window (If 5min)
@@ -153,7 +153,7 @@ Window
   * Evictor
 ```
 
-* Checkpoint
+* Checkpoint & Savepoint
 
 ```
 When working with state kept in a heap-based state backend,
@@ -167,6 +167,8 @@ Note also that only the RocksDBStateBackend is able to do incremental snapshotti
 which is a significant benefit for applications
 with large amounts of slowly changing state.
 ```
+
+* Streaming joins
 
 ### Kafka
 
