@@ -11,6 +11,9 @@ date: 2019-10-24
 
 ### 2021-05
 
+* [超人: 钢铁之躯](https://www.bilibili.com/bangumi/media/md28222057/)
+  - 没看过, B站 补课
+
 * [蝙蝠侠大战超人: 正义黎明](https://www.bilibili.com/bangumi/media/md28229705)
   - **看过**, 忘记了, 又在 B站 看了一遍
   - BTW: 感觉 DC 的时代, 也差不多了
