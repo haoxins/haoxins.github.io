@@ -1,4 +1,3 @@
-* [Algorithms](articles/algorithm.md)
 * [Blockchain](articles/blockchain.md)
 * [猫咪的那些事](articles/cat.md)
 * [时间静悄悄](articles/changing.md)
@@ -36,6 +35,7 @@
 * [(2021) Linux](archived/2021-linux.md)
 * [(2021) Data engine](archived/2021-data-engine.md)
 * [(2021) 年度事件](archived/2021-annual-events.md)
+* [Algorithms](archived/2021-algorithm.md)
 * [(2020) 游记](archived/2020-traveling.md)
 * [(2020) 杂记](archived/2020-disorganized.md)
 * [(2019) 杂思](archived/2019-thinking.md)
