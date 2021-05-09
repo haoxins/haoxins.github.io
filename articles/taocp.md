@@ -1,6 +1,6 @@
 ---
 title: (TAOCP) 计算机程序设计艺术
-description: ~
+description: 穷且益坚, 不坠青云之志. 酌贪泉而觉爽, 处涸辙以犹欢.
 date: 2021-05-05
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 游戏
-description: ~
+description: 虽趣舍万殊, 静躁不同, 当其欣于所遇, 暂得于己, 快然自足
 date: 2021-02-17
 ---
 

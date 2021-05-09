@@ -1,6 +1,6 @@
 ---
 title: Prolog
-description: ~
+description: 寄蜉蝣于天地, 渺沧海之一粟. 哀吾生之须臾, 羡长江之无穷.
 date: 2021-04-15
 ---
 
