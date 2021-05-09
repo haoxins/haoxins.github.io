@@ -6,6 +6,15 @@ date: 2021-05-03
 
 ## 数学 & 计算
 
+### 计算机程序设计艺术
+
+* [计算机程序设计艺术 MMIX增补](https://book.douban.com/subject/35170836/)
+* [计算机程序设计艺术 卷4A](https://book.douban.com/subject/34452973/)
+* [计算机程序设计艺术 卷3](https://book.douban.com/subject/26953756/)
+* [计算机程序设计艺术 卷2](https://book.douban.com/subject/26850558/)
+* [计算机程序设计艺术 卷1](https://book.douban.com/subject/26681685/)
+  - 高德纳: **我的书专注于永恒的真理**
+
 ### 哥德尔 艾舍尔 巴赫
 
 * [哥德尔 艾舍尔 巴赫](https://book.douban.com/subject/1291204/)
