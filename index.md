@@ -20,7 +20,6 @@
 * [阅读 2022+](articles/reading.md)
 * [Rust](articles/rust.md)
 * [(TAOCP) 计算机程序设计艺术](articles/taocp.md)
-* [The dataflow model](articles/the-dataflow-model.md)
 * [费曼物理学讲义](articles/the-feynman-lectures-on-physics.md)
 * [关于 Computing 的思考](articles/thinking-computing.md)
 * [Watching long term](articles/watching-long-term.md)
