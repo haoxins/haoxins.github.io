@@ -4,6 +4,15 @@ description: 西当太白有鸟道, 可以横绝峨眉巅
 date: 2020-11-09
 ---
 
+* 算法分类
+  - 排序
+  - 搜索
+  - 选择
+  - 字符串
+  - 向量 & 矩阵
+  - 随机
+  - 数值计算
+
 ## 不可解性
 
 * NP (nondeterministic polynomial time)
