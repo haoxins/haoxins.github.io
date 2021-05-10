@@ -33,7 +33,6 @@ date: 2021-04-10
 
 ### Advanced
 
-* Generic Types, Traits, and Lifetimes
 
 * Macro (!)
 
@@ -651,4 +650,63 @@ fn main() -> Result<(), Box<dyn Error>> {
 
   Ok(())
 }
+```
+
+* Generic Types, Traits, and Lifetimes
+
+```rust
+struct Point<T> {
+  x: T,
+  y: T,
+}
+
+impl<T> Point<T> {
+  fn x(&self) -> &T {
+    &self.x
+  }
+}
+
+// mixup
+
+struct Point<T, U> {
+  x: T,
+  y: U,
+}
+
+impl<T, U> Point<T, U> {
+  fn mixup<V, W>(self, other: Point<V, W>) -> Point<T, W> {
+    Point {
+      x: self.x,
+      y: other.y,
+    }
+  }
+}
+
+let p1 = Point { x: 5, y: 10.4 };
+let p2 = Point { x: "Hello", y: 'c' };
+let p3 = p1.mixup(p2);
+```
+
+```
+Rust accomplishes this by performing monomorphization of the code
+that is using generics at compile time.
+Monomorphization is the process of turning generic code into
+specific code by filling in the concrete types
+that are used when compiled.
+```
+
+* Trait Bound Syntax
+
+```rust
+// v1
+pub fn notify(item1: &impl Summary, item2: &impl Summary)
+// v2
+pub fn notify<T: Summary>(item1: &T, item2: &T)
+
+// +
+
+// v1
+pub fn notify(item: &(impl Summary + Display))
+// v2
+pub fn notify<T: Summary + Display>(item: &T)
 ```
