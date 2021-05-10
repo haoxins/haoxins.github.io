@@ -1,6 +1,7 @@
 ---
 title: 哥德尔 艾舍尔 巴赫 - 集异璧之大成
 description: ~
+date: 2021-05-10
 ---
 
 * **Gödel**, Escher, Bach: `an Eternal Golden Braid`
