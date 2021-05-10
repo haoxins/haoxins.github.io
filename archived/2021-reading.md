@@ -231,7 +231,7 @@ Archived (2021-05)
   - 副标题: 集异璧之大成
   - 出版年: 1997-05
   - 中译本前后费时十余年
-  - 移步 [Reading long term][Long term]
+  - **单独成文**
 
 * [金瓶梅](https://book.douban.com/subject/27020378/)
 
