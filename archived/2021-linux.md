@@ -24,6 +24,13 @@ date: 2021-02-17
 
 ## 2021
 
+* Longterm release kernels
+
+| Version |  Released  | Projected EOL |
+| ------- |:----------:|:-------------:|
+|  5.10   | 2020-12-13 |   Dec, 2026   |
+|  4.19   | 2018-10-22 |   Dec, 2024   |
+
 * Ubuntu 21.04
   - 集成用于 **Flutter** 应用开发的 SDK
   - 默认启用 **Wayland** 替换了 X Window System

@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 cat $1 | \
+tr '\t' ' ' | \
 tr '【' '[' | \
 tr '】' ']' | \
 tr '，' ', ' | \
