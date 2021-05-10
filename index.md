@@ -1,3 +1,4 @@
+* [哥德尔 艾舍尔 巴赫 - 集异璧之大成](articles/an-eternal-golden-braid.md)
 * [Blockchain](articles/blockchain.md)
 * [猫咪的那些事](articles/cat.md)
 * [时间静悄悄](articles/changing.md)
