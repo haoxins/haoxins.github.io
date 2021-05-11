@@ -25,6 +25,7 @@ date: 2019-05-30
   - [Symmetric Cryptography](https://www.coursera.org/learn/symmetric-crypto)
   - [Asymmetric Cryptography and Key Management](https://www.coursera.org/learn/asymmetric-crypto)
   - [Cryptographic Hash and Integrity Protection](https://www.coursera.org/learn/cryptographic-hash-integrity-protection)
+  - 一般般, 不推荐, 远不如 [Cryptography I](https://www.coursera.org/learn/crypto)
 
 ------------------
 
