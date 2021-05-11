@@ -14,10 +14,6 @@ date: 2019-05-30
 
 ## 2021
 
-* [Quantum Computing. Less Formulas - More Understanding](https://www.coursera.org/learn/quantum-computing-lfmu)
-
-* [理解爱因斯坦: 狭义相对论](https://www.coursera.org/learn/einstein-relativity)
-
 * Coursera 上面感兴趣的东西越来越少了 :)
 
 * [Applied Cryptography](https://www.coursera.org/specializations/applied-crypto)
