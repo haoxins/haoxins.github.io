@@ -1,6 +1,6 @@
 ---
-title: 猫咪的那些事 (葡萄和提子)
-description: ~
+title: 猫咪的那些事
+description: 葡萄和提子
 date: 2021-03-23
 ---
 

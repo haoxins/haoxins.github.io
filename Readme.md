@@ -4,7 +4,6 @@
 在学习区做事, 叫经验.
 ```
 
-* Cryptography
 * Distributed computing
 
 ### Awesome blogs
