@@ -48,7 +48,7 @@ date: 2021-04-10
 * **社区氛围** 这一点后期很难改变
   - 所幸 Rust 诞生之初, 社区并未蓬勃, 得以聚集优良的信念
   - 后来也会有噪音, 但好在优良的基因已经种下
-  - 较之 Node.js (npm) 社区, 一开始便太多噪音
+  - 较之 **Node.js (npm)** 社区, 一开始便太多噪音
 
 ```
 In Rust, the compiler plays a gatekeeper role by
@@ -97,9 +97,9 @@ The other difference between `mut` and `shadowing` is that
 because we're effectively creating a new variable
 when we use the `let` keyword again,
 we can change the type of the value but reuse the same name.
+```
 
 > Cool
-```
 
 * Shadowing
 
@@ -202,9 +202,9 @@ that location is always at the top of the stack.
 Accessing data in the heap is slower than accessing data on the stack
 because you have to follow a pointer to get there.
 Contemporary processors are faster if they jump around less in memory.
+```
 
 > restaurant 的例子不错
-```
 
 ```
 When a variable goes out of scope,
