@@ -31,6 +31,19 @@ date: 2020-11-03
 
 ### Arrow
 
+* [Data Fusion](https://github.com/apache/arrow-datafusion)
+
+```
+DataFusion supports both an SQL and a DataFrame API
+for building logical query plans as well as a query optimizer
+and execution engine capable of parallel execution against
+partitioned data sources (CSV and Parquet) using threads.
+
+DataFusion is used to create modern, fast and efficient data pipelines,
+ETL processes, and database systems, which need the performance of
+Rust and Apache Arrow and want to provide their users the convenience of
+an SQL interface or a DataFrame API.
+```
 
 * [Ballista: A Distributed Scheduler for Apache Arrow (2021-04-12)](https://arrow.apache.org/blog/2021/04/12/ballista-donation/)
   - [Ballista (2021-04-10)](https://github.com/ballista-compute/ballista) has been donated to the Apache Arrow project
