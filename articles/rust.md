@@ -31,8 +31,11 @@ date: 2021-04-10
 
 ### Advanced
 
+* [Smart Pointers](https://doc.rust-lang.org/book/ch15-00-smart-pointers.html)
 
+* [Fearless Concurrency](https://doc.rust-lang.org/book/ch16-00-concurrency.html)
 
+* [Advanced Features](https://doc.rust-lang.org/book/ch19-00-advanced-features.html)
 
 ### 美妙之处
 
