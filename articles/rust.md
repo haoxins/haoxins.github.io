@@ -4,8 +4,6 @@ description: 惟江上之清风, 与山间之明月, 耳得之而为声, 目遇�
 date: 2021-04-10
 ---
 
-* `2015-05-15` Rust 1.0
-
 ### Others
 
 * 减少内存分配和拷贝
@@ -33,27 +31,8 @@ date: 2021-04-10
 
 ### Advanced
 
-* Lifetimes `'`
 
-```rust
-fn longest_with_an_announcement<'a, T>(
-  x: &'a str,
-  y: &'a str,
-  ann: T,
-) -> &'a str
-where
-  T: Display,
-{
-  println!("Announcement! {}", ann);
-  if x.len() > y.len() {
-    x
-  } else {
-    y
-  }
-}
-```
 
-* Macro `!`
 
 ### 美妙之处
 
@@ -72,6 +51,15 @@ where
 In Rust, the compiler plays a gatekeeper role by
 refusing to compile code with these elusive bugs,
 including concurrency bugs.
+```
+
+* `2015-05-15` **Rust 1.0**
+
+```
+Every two or three years, the Rust team produces a new Rust edition.
+Each edition brings together the features that have landed
+into a clear package with fully updated documentation and tooling.
+New editions ship as part of the usual six-week release process.
 ```
 
 ### Basic
@@ -728,4 +716,45 @@ pub fn notify<T: Summary>(item1: &T, item2: &T)
 pub fn notify(item: &(impl Summary + Display))
 // v2
 pub fn notify<T: Summary + Display>(item: &T)
+```
+
+* Lifetimes `'`
+
+```rust
+fn longest_with_an_announcement<'a, T>(
+  x: &'a str,
+  y: &'a str,
+  ann: T,
+) -> &'a str
+where
+  T: Display,
+{
+  println!("Announcement! {}", ann);
+  if x.len() > y.len() {
+    x
+  } else {
+    y
+  }
+}
+```
+
+* Closures
+
+```
+To define a closure, we start with a pair of vertical pipes (|),
+inside which we specify the parameters to the closure;
+this syntax was chosen because of its similarity to
+closure definitions in Smalltalk and Ruby.
+```
+
+* Making Useful Documentation Comments
+
+```rust
+/// Documentation
+///
+/// # Examples
+///
+/// ```
+/// code here!
+/// ```
 ```
