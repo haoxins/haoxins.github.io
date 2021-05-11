@@ -4,17 +4,11 @@ description: 料峭春风吹酒醒, 微冷, 山头斜照却相迎
 date: 2019-05-30
 ---
 
-## 2023
-
-------------------
-
-## 2022
-
 * [Cryptography II](https://www.coursera.org/learn/crypto2)
   - 跳票 几年了 ~
   - 授课大神 Dan Boneh 也研究 区块链 了 :)
   - BLS Signatures
-  - Grade Achieved: ``
+  - 不抱期望了, ByeBye, Coursera
 
 ------------------
 
