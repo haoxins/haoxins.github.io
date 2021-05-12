@@ -29,45 +29,9 @@ date: 2020-11-03
   - [Argo Workflows](https://github.com/argoproj/argo-workflows)
   - 有点意思, 期待成为主流
 
-### Arrow
+### Kubernetes
 
-* [Data Fusion](https://github.com/apache/arrow-datafusion)
-
-```
-DataFusion supports both an SQL and a DataFrame API
-for building logical query plans as well as a query optimizer
-and execution engine capable of parallel execution against
-partitioned data sources (CSV and Parquet) using threads.
-
-DataFusion is used to create modern, fast and efficient data pipelines,
-ETL processes, and database systems, which need the performance of
-Rust and Apache Arrow and want to provide their users the convenience of
-an SQL interface or a DataFrame API.
-```
-
-* [Ballista: A Distributed Scheduler for Apache Arrow (2021-04-12)](https://arrow.apache.org/blog/2021/04/12/ballista-donation/)
-  - [Ballista (2021-04-10)](https://github.com/ballista-compute/ballista) has been donated to the Apache Arrow project
-
-> How does this (Ballista) compare to Apache Spark?
-
-```
-The choice of Rust as the main execution language means that
-memory usage is deterministic and avoids the overhead of GC pauses.
-
-Ballista is designed from the ground up to use `columnar data`,
-enabling a number of efficiencies such as vectorized processing
-(SIMD and GPU) and efficient compression.
-
-Although Spark does have some columnar support,
-it is still largely `row-based` today.
-
-The combination of Rust and Arrow provides excellent memory efficiency
-and memory usage can be 5x - 10x lower than Apache Spark
-in some cases, which means that more processing can fit on a single node,
-reducing the overhead of distributed compute.
-```
-
-* [arrow-rs: Native Rust implementation of Apache Arrow](https://github.com/apache/arrow-rs)
+* 1.22
 
 ### Flink
 
@@ -213,6 +177,48 @@ with large amounts of slowly changing state.
   - Early access of replace ZooKeeper with a self-managed quorum
   - JSON request/response debug logs
   - Topic identifiers
+
+### DataFusion and Ballista
+
+* [Data Fusion](https://github.com/apache/arrow-datafusion)
+
+```
+DataFusion supports both an SQL and a DataFrame API
+for building logical query plans as well as a query optimizer
+and execution engine capable of parallel execution against
+partitioned data sources (CSV and Parquet) using threads.
+
+DataFusion is used to create modern, fast and efficient data pipelines,
+ETL processes, and database systems, which need the performance of
+Rust and Apache Arrow and want to provide their users the convenience of
+an SQL interface or a DataFrame API.
+```
+
+* [Ballista: A Distributed Scheduler for Apache Arrow (2021-04-12)](https://arrow.apache.org/blog/2021/04/12/ballista-donation/)
+  - [Ballista (2021-04-10)](https://github.com/ballista-compute/ballista) has been donated to the Apache Arrow project
+
+> How does this (Ballista) compare to Apache Spark?
+
+```
+The choice of Rust as the main execution language means that
+memory usage is deterministic and avoids the overhead of GC pauses.
+
+Ballista is designed from the ground up to use `columnar data`,
+enabling a number of efficiencies such as vectorized processing
+(SIMD and GPU) and efficient compression.
+
+Although Spark does have some columnar support,
+it is still largely `row-based` today.
+
+The combination of Rust and Arrow provides excellent memory efficiency
+and memory usage can be 5x - 10x lower than Apache Spark
+in some cases, which means that more processing can fit on a single node,
+reducing the overhead of distributed compute.
+```
+
+### Arrow
+
+* [arrow-rs: Native Rust implementation of Apache Arrow](https://github.com/apache/arrow-rs)
 
 ### JDK 17 (LTS)
 
