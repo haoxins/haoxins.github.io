@@ -910,7 +910,8 @@ class AccountRecord extends BasicRecord with CommonFinders
   - 赠与 @`Jan Li`, 因为这本书有点**哲学**向
   - [Forget time - Carlo Rovelli (August 2008)](https://arxiv.org/pdf/0903.3832.pdf)
 
-* [Helgoland ?](https://book.douban.com/subject/35265189/)
+* [Helgoland](https://book.douban.com/subject/35265189/)
+  - 等不及翻译了, 京东 (jd.com) 预定了英文版
 
 ```
 作者文笔颇具诗意
