@@ -12,6 +12,27 @@ date: 2021-03-21
 
 ## 2021
 
+### Kubeflow
+
+* [The Kubeflow 1.3 software release streamlines ML workflows and simplifies ML platform operations](https://blog.kubeflow.org/kubeflow-1.3-release/)
+
+```
+The Kubeflow 1.3 release delivers simplified ML workflows
+and additional Kubernetes integrated features to
+optimize operational and infrastructure efficiencies.
+
+In addition to new User Interfaces (UIs),
+which improve ML workflows for pipeline building,
+model tuning, serving and monitoring,
+1.3 also enables "headless" GitOps-inspired installation patterns.
+The latest version of Kubeflow provides users with a mature foundation
+and delivers a modern ML platform with best-in-class
+Key Performance Indicators (KPIs).
+```
+
+### Others
+
+
 * [What are the most important statistical ideas of the past 50 years?](https://arxiv.org/pdf/2012.00174.pdf)
 
 ### 特征工程
