@@ -29,9 +29,27 @@ date: 2020-11-03
   - [Argo Workflows](https://github.com/argoproj/argo-workflows)
   - 有点意思, 期待成为主流
 
-### Kubernetes
+### Knative
 
-* 1.22
+* Kubernetes: 1.22
+
+* Knative Version 0.22 release
+
+```
+Highlights
+
+Eventing now allows subscribers and triggers from
+different namespaces to be used together.
+
+1.18 is now the minimum Kubernetes version required
+to use the Apache Kafka broker with Knative Eventing v0.22.
+
+Apache Kafka broker now supports the ability to choose
+between ordered and unordered delivery.
+
+The Knative Operator v0.22 release contains bug fixes
+and supports version v0.22 of Knative Serving and Eventing.
+```
 
 ### Flink
 
