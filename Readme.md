@@ -5,6 +5,10 @@
 ```
 
 * Distributed computing
+* Data & ML engineering
+
+* Formerly
+  - Web developer (Some years)
 
 ### Awesome blogs
 
