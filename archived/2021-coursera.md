@@ -14,6 +14,9 @@ date: 2019-05-30
 
 ## 2021
 
+* [Machine Learning Engineering for Production (MLOps)](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops)
+  - 这个来的蛮及时的, 正好要做 ML Platform 了
+
 * Coursera 上面感兴趣的东西越来越少了 :)
 
 * [Applied Cryptography](https://www.coursera.org/specializations/applied-crypto)
