@@ -33,6 +33,9 @@ Key Performance Indicators (KPIs).
 ### Others
 
 * [A Chat with Andrew on MLOps: From Model-centric to Data-centric AI](https://www.youtube.com/watch?v=06-AZXmwHjo)
+  - data quality systematic
+  - code fixed, iteratively improve the data
+  - MLOps
 
 * [What are the most important statistical ideas of the past 50 years?](https://arxiv.org/pdf/2012.00174.pdf)
 
