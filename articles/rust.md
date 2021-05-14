@@ -19,6 +19,16 @@ date: 2021-04-10
 
 ## 2021
 
+* 2021-05-11: The Plan for the **Rust 2021** Edition
+
+```
+We are happy to announce that the third edition of the Rust language,
+Rust 2021,
+is scheduled for release in October.
+Rust 2021 contains a number of small changes that are nonetheless
+expected to make a significant improvement to how Rust feels in practice.
+```
+
 * [Crust of Rust: Dispatch and Fat Pointers](https://www.youtube.com/watch?v=xcygqF5LVmM)
 
 * [Crust of Rust: Atomics and Memory Ordering](https://www.youtube.com/watch?v=rMGWeSjctlY)
