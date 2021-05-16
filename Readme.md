@@ -8,7 +8,7 @@
 * Data & ML engineering
 
 * Formerly
-  - Web developer (Some years)
+  - Web developer (5 years +)
 
 ### Awesome blogs
 
