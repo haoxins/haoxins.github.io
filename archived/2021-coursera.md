@@ -16,6 +16,10 @@ date: 2019-05-30
 
 * [Machine Learning Engineering for Production (MLOps)](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops)
   - 这个来的蛮及时的, 正好要做 ML Platform 了
+  - **2020+** 的这几年, **ML 的工程化**
+  - 像极了 **2015+** 的 **前端工程化**
+  - 像极了 **2018+** 的 **微服务, 云原生**
+  - **MLOps**, **Serverless**
 
 * Coursera 上面感兴趣的东西越来越少了 :)
 
