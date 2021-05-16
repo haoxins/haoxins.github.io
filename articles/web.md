@@ -35,6 +35,8 @@ date: 2021-04-05
 
 ```
 DOM 的历史包袱
+
+谁还记得 Google 提出的 Web components, 哈哈哈
 ```
 
 * [AssemblyScript](https://github.com/AssemblyScript/assemblyscript)
