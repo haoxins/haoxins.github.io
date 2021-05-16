@@ -31,24 +31,32 @@ date: 2021-04-05
 再次投身 新一代的 Web 开发.
 ```
 
-### WebAssembly
+* [Google Docs will now use canvas based rendering](https://workspaceupdates.googleblog.com/2021/05/Google-Docs-Canvas-Based-Rendering-Update.html)
+
+```
+DOM 的历史包袱
+```
 
 * [AssemblyScript](https://github.com/AssemblyScript/assemblyscript)
+
+```
+为啥不直接用 Rust ?
+```
+
 * Second State
   - [Website](https://www.secondstate.io)
   - [Github](https://github.com/second-state)
   - [WasmEdge (formerly SSVM)](https://github.com/WasmEdge/WasmEdge)
+  - 过了 2021 年, 类似的解决方案也该决出佼佼者了
 
-### Vue v3
+* Vue v3
+  - [Vite v2 - Next generation frontend tooling](https://github.com/vitejs/vite)
+  - [Gridsome: The Jamstack framework for Vue.js](https://github.com/gridsome/gridsome)
 
 ```
 上一次用 Vue 是什么时候?
 2018年之前 :)
 ```
-
-* [Vite v2 - Next generation frontend tooling](https://github.com/vitejs/vite)
-
-* [Gridsome: The Jamstack framework for Vue.js](https://github.com/gridsome/gridsome)
 
 * [Tailwind CSS: A utility-first CSS framework for rapidly building custom user interfaces](https://github.com/tailwindlabs/tailwindcss)
 
@@ -62,8 +70,6 @@ Houdini
 要么 胎死腹中
 要么 Game changer
 ```
-
-### Deno
 
 * [Announcing the Deno Company](https://deno.com/blog/the-deno-company)
   - 定位蛮清晰的 :)
