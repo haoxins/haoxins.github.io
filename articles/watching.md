@@ -11,6 +11,10 @@ date: 2019-10-24
 
 ### 2021-05
 
+* [灵笼 第一季](https://www.bilibili.com/bangumi/media/md23432)
+  - 断播良久, 终于完结
+  - 良心作品, 期待续集
+
 * [超人: 钢铁之躯](https://www.bilibili.com/bangumi/media/md28222057/)
   - 没看过, B站 补课
 
