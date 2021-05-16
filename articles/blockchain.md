@@ -10,6 +10,8 @@ date: 2019-12-10
 
 ## 2021
 
+* 微软宣布将于 2021 年 09 月 10 日关闭其 Azure 区块链服务
+
 * **NFT** 短期是泡沫, 但具有长期价值 (期待)
   - [Wiki - Non-fungible token](https://en.wikipedia.org/wiki/Non-fungible_token)
   - 长期价值: 纯数字资产 (没有任何实物对应) 的价值确认, `是具有探索意义的`
