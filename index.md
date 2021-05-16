@@ -1,10 +1,9 @@
 * [哥德尔 艾舍尔 巴赫 - 集异璧之大成](articles/an-eternal-golden-braid.md)
 * [Blockchain](articles/blockchain.md)
-* [猫咪的那些事 (葡萄和提子)](articles/cat.md)
+* [猫咪的那些事](articles/cat.md)
 * [时间静悄悄](articles/changing.md)
 * [从公司, 到组织](articles/company-and-organization.md)
 * [Distributed computing](articles/distributed-computing.md)
-* [银河帝国](articles/galactic-empire.md)
 * [游戏](articles/gaming.md)
 * [Machine learning](articles/machine-learning.md)
 * [不求甚解地了解点 数学](articles/math.md)
@@ -23,7 +22,7 @@
 * [Watching long term](articles/watching-long-term.md)
 * [Watching](articles/watching.md)
 * [Web](articles/web.md)
-* [诗·词·文](articles/诗.md)
+* [诗·文](articles/诗.md)
 
 ### Archived
 
@@ -32,6 +31,7 @@
 * [(2021) 阅读 经典书籍](archived/2021-reading-long-term.md)
 * [(2021) Programming language](archived/2021-programming-language.md)
 * [(2021) Linux](archived/2021-linux.md)
+* [(2021) 银河帝国](archived/2021-galactic-empire.md)
 * [(2021) Data engine](archived/2021-data-engine.md)
 * [(2021) Cryptography](archived/2021-cryptography.md)
 * [(2021) Coursera 课程记录](archived/2021-coursera.md)
