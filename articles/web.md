@@ -31,6 +31,9 @@ date: 2021-04-05
 再次投身 新一代的 Web 开发.
 ```
 
+* 争论 Svelte, Vue, React 的时代过去了
+  - 争论 **Sapper vs Next.js** 的时代来了
+
 * [Sapper](https://github.com/sveltejs/sapper)
   - [Sapper: Towards the ideal web app framework](https://svelte.dev/blog/sapper-towards-the-ideal-web-app-framework)
 
