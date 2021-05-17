@@ -32,29 +32,14 @@ date: 2021-04-05
 ```
 
 * 争论 Svelte, Vue, React 的时代过去了
-  - 争论 **Sapper vs Next.js** 的时代来了
 
-* [Sapper](https://github.com/sveltejs/sapper)
-  - [Sapper: Towards the ideal web app framework](https://svelte.dev/blog/sapper-towards-the-ideal-web-app-framework)
 
-* What's Sapper?
 
 ```
-Sapper is an app framework (or 'metaframework')
-built on top of Svelte (which is a component framework).
-Its job is to make it easy to build
-Svelte apps with all the modern best practices like
-server-side rendering (SSR) and code-splitting,
-and to provide a project structure that makes
-development productive and fun. It uses filesystem-based routing
-(as popularised by Next and adopted by many other frameworks,
-albeit with some enhancements)
-— your project's file structure mirrors the structure of the app itself.
 ```
 
 * [SvelteKit](https://github.com/sveltejs/kit)
   - [Using Vite](https://github.com/vitejs/vite)
-
 * [Google Docs will now use canvas based rendering](https://workspaceupdates.googleblog.com/2021/05/Google-Docs-Canvas-Based-Rendering-Update.html)
 
 ```
