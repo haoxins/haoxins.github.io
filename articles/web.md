@@ -32,14 +32,35 @@ date: 2021-04-05
 ```
 
 * 争论 Svelte, Vue, React 的时代过去了
-
-
-
-```
-```
+  - 争论 **SvelteKit vs Next.js** 的时代来了
 
 * [SvelteKit](https://github.com/sveltejs/kit)
   - [Using Vite](https://github.com/vitejs/vite)
+
+* What is SvelteKit?
+
+```
+SvelteKit is a framework for building
+extremely high-performance web apps.
+You're looking at one right now!
+There are two basic concepts:
+
+1. Each page of your app is a Svelte component
+
+2. You create pages by adding files to the
+src/routes directory of your project.
+These will be server-rendered so that
+a user's first visit to your app is as fast as possible,
+then a client-side app takes over
+
+Building an app with all the modern best practices
+- code-splitting, offline support, server-rendered views
+with client-side hydration
+- is fiendishly complicated.
+SvelteKit does all the boring stuff for you
+so that you can get on with the creative part.
+```
+
 * [Google Docs will now use canvas based rendering](https://workspaceupdates.googleblog.com/2021/05/Google-Docs-Canvas-Based-Rendering-Update.html)
 
 ```
