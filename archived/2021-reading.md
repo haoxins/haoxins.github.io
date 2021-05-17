@@ -25,6 +25,10 @@ Archived (2021-05)
 
 ### 2021
 
+* [具体数学](https://book.douban.com/subject/21323941/)
+  - 副标题: 计算机科学基础
+  - 买回来, 供着先
+
 * [群论彩图版](https://book.douban.com/subject/34879608/)
   - 出版年: 2019-10-01
 
