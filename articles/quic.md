@@ -31,6 +31,7 @@ date: 2019-06-30
 
 * [WebRTC is now a W3C and IETF standard](https://web.dev/webrtc-standard-announcement/)
 
-* 过去, **TCP** 比 **UDP** 发挥更大价值
 * 未来, **UDP** 比 **TCP** 发挥更大价值
+  - 过去, **TCP** 比 **UDP** 发挥更大价值
+
 * [IETF Last Call - (QUIC) to Proposed Standard](https://mailarchive.ietf.org/arch/msg/quic/ye1LeRl7oEz898RxjE6D3koWhn0/)
