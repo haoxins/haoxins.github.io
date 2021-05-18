@@ -40,6 +40,11 @@ Perfect Secrecy == One-Time Pad
 * Block Cipher vs Stream Cipher
   - like: batch vs streaming
 
+* Block
+  - Electronic Codebook (ECB)
+  - Cipher Block Chaining (CBC)
+  - Cipher Feedback (CFB)
+
 ------------------
 
 # Timeline
