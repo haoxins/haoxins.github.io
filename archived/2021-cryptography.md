@@ -8,6 +8,8 @@ date: 2021-03-22
 * 机密性 Confidentiality
 * 可用性 Availability
 
+### DH（Diffie-Hellman Key Exchange Algorithm）
+
 ### Cryptanalysis
 
 * The ciphertext-only attack
@@ -29,9 +31,14 @@ Perfect Secrecy == One-Time Pad
 
 * Side-Channel Attack
 
+### Hash and Integrity
+
+### Asymmetric
+
 ### Symmetric
 
-### DH（Diffie-Hellman Key Exchange Algorithm）
+* Block Cipher vs Stream Cipher
+  - like: batch vs streaming
 
 ------------------
 
