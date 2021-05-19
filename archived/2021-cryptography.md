@@ -12,6 +12,9 @@ date: 2021-03-22
 
 ### Hash and Integrity
 
+* Message Authentication Code (MAC)
+* Digital Signature
+
 ### Asymmetric
 
 ### Symmetric
