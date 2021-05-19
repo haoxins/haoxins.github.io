@@ -10,6 +10,22 @@ date: 2021-03-22
 
 ### DH（Diffie-Hellman Key Exchange Algorithm）
 
+### Hash and Integrity
+
+### Asymmetric
+
+### Symmetric
+
+* Block Cipher vs Stream Cipher
+  - like: batch vs streaming
+
+* Block
+  - Electronic Codebook (ECB)
+  - Cipher Block Chaining (CBC)
+  - Cipher Feedback (CFB)
+  - Output Feedback (OFB)
+  - Counter (CTR) (IPSec and others)
+
 ### Cryptanalysis
 
 * The ciphertext-only attack
@@ -30,20 +46,6 @@ Perfect Secrecy == One-Time Pad
   - that are assumed to be difficult to solve
 
 * Side-Channel Attack
-
-### Hash and Integrity
-
-### Asymmetric
-
-### Symmetric
-
-* Block Cipher vs Stream Cipher
-  - like: batch vs streaming
-
-* Block
-  - Electronic Codebook (ECB)
-  - Cipher Block Chaining (CBC)
-  - Cipher Feedback (CFB)
 
 ------------------
 
