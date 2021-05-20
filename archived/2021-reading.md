@@ -32,6 +32,13 @@ Archived (2021-05)
 * [群论彩图版](https://book.douban.com/subject/34879608/)
   - 出版年: 2019-10-01
 
+* [数学女孩5: 伽罗瓦理论](https://book.douban.com/subject/35385260/)
+  - [结城浩](https://book.douban.com/author/104541/)
+  - 这个作者的系列图书都蛮不错的:
+  - `图解密码技术 (第3版)`
+  - `程序员的数学 3册`
+  - 数学女孩系列由于作品形式的特殊性, 也值得一读
+
 * [图灵的秘密](https://book.douban.com/subject/10779604/)
   - 副标题: 他的生平, 思想及论文解读
   - 出版年: 2012-11
