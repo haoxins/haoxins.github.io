@@ -31,7 +31,7 @@
 * [(2021) 阅读 经典书籍](archived/2021-reading-long-term.md)
 * [(2021) Programming language](archived/2021-programming-language.md)
 * [(2021) Linux](archived/2021-linux.md)
-* [(2021) 银河帝国](archived/2021-galactic-empire.md)
+* [(2021) 银河帝国 (阿西莫夫)](archived/2021-galactic-empire.md)
 * [(2021) Data engine](archived/2021-data-engine.md)
 * [(2021) Cryptography](archived/2021-cryptography.md)
 * [(2021) Coursera 课程记录](archived/2021-coursera.md)
