@@ -10,6 +10,8 @@ date: 2021-03-22
 
 ### DH（Diffie-Hellman Key Exchange Algorithm）
 
+* El Gamal
+
 ### Hash and Integrity
 
 * Message Authentication Code (MAC)

@@ -11,6 +11,8 @@ date: 2021-02-12
 
 * [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
   - 线性代数
+  - 动画真心不错
+  - Vectors
 
 * [YouTube: Arindam Kumar Chatterjee](https://www.youtube.com/channel/UCdnu4FeJYj_JOdh682wzHfg)
 
