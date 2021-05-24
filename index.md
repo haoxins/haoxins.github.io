@@ -27,6 +27,8 @@
 ### Archived
 
 * [(2021) 关于技术, 次年度期待清单](archived/2021-worth-looking-forward.md)
+* [(2021) 程序员修炼之道 第2版](archived/2021-the-pragmatic-programmer.md)
+* [(2021) 计算机程序的构造和解释 第2版](archived/2021-structure-and-interpretation-of-computer-programs.md)
 * [(2021) 阅读 书单 & 简记](archived/2021-reading.md)
 * [(2021) 阅读 经典书籍](archived/2021-reading-long-term.md)
 * [(2021) Programming language](archived/2021-programming-language.md)
@@ -35,6 +37,7 @@
 * [(2021) Data engine](archived/2021-data-engine.md)
 * [(2021) Cryptography](archived/2021-cryptography.md)
 * [(2021) Coursera 课程记录](archived/2021-coursera.md)
+* [(2021) 卡洛·罗韦利 (Carlo Rovelli) 系列作品](archived/2021-carlo-rovelli.md)
 * [(2021) 年度事件](archived/2021-annual-events.md)
 * [(2021) Algorithms](archived/2021-algorithm.md)
 * [(2020) 游记](archived/2020-traveling.md)
