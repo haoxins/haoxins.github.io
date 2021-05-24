@@ -31,13 +31,6 @@ date: 2021-01-28
 
 ------------------
 
-## 数学女孩5: 伽罗瓦理论
-
-* [数学女孩5: 伽罗瓦理论](https://book.douban.com/subject/35385260/)
-  - [结城浩](https://book.douban.com/author/104541/)
-
-------------------
-
 ## 复分析: 可视化方法
 
 * [复分析: 可视化方法](https://book.douban.com/subject/35316347/)
