@@ -65,7 +65,7 @@ Caused by:
   /tmp/flink-netty-shuffle-*.channel
 
 Diagnostics java.net.BindException:
-Could not start actor system on any port in port range 6123
+  Could not start actor system on any port in port range 6123
 
 The stop script relies on the file `flink-<host>-<process>.pid`.
 If that file somehow gets cleanup up occasionally,
