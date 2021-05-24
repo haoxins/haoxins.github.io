@@ -20,8 +20,12 @@ date: 2019-05-30
   - 像极了 **2015+** 的 **前端工程化**
   - 像极了 **2018+** 的 **微服务, 云原生**
   - **MLOps**, **Serverless**
+  - [Introduction to Machine Learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
+  - [Machine Learning Data Lifecycle in Production](https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production)
+  - [Machine Learning Modeling Pipelines in Production](https://www.coursera.org/learn/machine-learning-modeling-pipelines-in-production)
+  - [Deploying Machine Learning Models in Production](https://www.coursera.org/learn/deploying-machine-learning-models-in-production)
 
-* Coursera 上面感兴趣的东西越来越少了 :)
+* **Coursera 上面感兴趣的东西越来越少了** :)
 
 * [Applied Cryptography](https://www.coursera.org/specializations/applied-crypto)
   - 公司给每位员工发了一张境外虚拟信用卡, 每月额度 $50
