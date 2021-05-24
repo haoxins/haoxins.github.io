@@ -53,6 +53,26 @@ and supports version v0.22 of Knative Serving and Eventing.
 
 ### Flink
 
+* **env.pid.dir**
+  - default: `/tmp`
+  - Defines the directory where the `flink-<host>-<process>.pid` files are saved
+  - 遇到的问题: 重启不干净, 导致 Cluster 不健康
+
+```
+Caused by:
+  org.apache.flink.util.FlinkRuntimeException:
+  java.nio.file.NoSuchFileException:
+  /tmp/flink-netty-shuffle-*.channel
+
+Diagnostics java.net.BindException:
+Could not start actor system on any port in port range 6123
+
+The stop script relies on the file `flink-<host>-<process>.pid`.
+If that file somehow gets cleanup up occasionally,
+the stop script can't find the process identifiers
+inside that file to kill the processes.
+```
+
 * [Apache Flink 1.13.0 Release Announcement](https://flink.apache.org/news/2021/05/03/release-1.13.0.html)
 
 ```
