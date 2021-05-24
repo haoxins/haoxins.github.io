@@ -38,7 +38,6 @@ Archived (2021-05)
   - `图解密码技术 (第3版)`
   - `程序员的数学 3册`
   - `数学女孩` 系列由于作品形式的特殊性, 也值得一读
-  - 移步 [Reading long term][Long term]
   - 这本书将这个系列推向了一个新的高度
 
 * [图灵的秘密](https://book.douban.com/subject/10779604/)
@@ -208,7 +207,6 @@ Archived (2021-05)
 
 * [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/34464721/)
   - https://book.douban.com/subject/1148282/
-  - 移步 [Reading long term][Long term]
 
 * [编码](https://book.douban.com/subject/4822685/)
   - 副标题: 隐匿在计算机软硬件背后的语言
@@ -280,7 +278,6 @@ Archived (2021-05)
 
 * [程序员修炼之道 (第2版)](https://book.douban.com/subject/35006892/)
   - 副标题: 通向务实的最高境界
-  - 移步 [Reading long term][Long term]
   - 赠与 @`Ye Qing`
 
 * [信息传](https://book.douban.com/subject/35223179/)
