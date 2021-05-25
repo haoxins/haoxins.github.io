@@ -32,9 +32,35 @@ date: 2021-03-21
 
 ### Modeling
 
+* ML = Code (Model) + Data
+
+* Key challenges
+  - Establish a baseline
+  - Baseline helps to indicate what might be possible.
+
+* Tips
+  - Start with a quick literature search to see what's possible
+  - **Don't obsess about finding the latest, greatest algorithm**
+
+```
+A reasonable algorithm with good data will often do just fine
+and will in fact outperform a great algorithm with not so good data
+```
+
+* Error analysis
+  - error analysis is also an iterative process
+
+------------------
+
+* [Responsible Machine Learning with Error Analysis](https://techcommunity.microsoft.com/t5/azure-ai/responsible-machine-learning-with-error-analysis/ba-p/2141774)
+
+* [Machine Learning in Production: Why You Should Care About Data and Concept Drift](https://towardsdatascience.com/machine-learning-in-production-why-you-should-care-about-data-and-concept-drift-d96d0bc907fb)
+
 * [Challenges in Deploying Machine Learning: a Survey of Case Studies](https://arxiv.org/abs/2011.09926)
 
 * [Towards ML Engineering: A Brief History Of TensorFlow Extended (TFX)](https://arxiv.org/abs/2010.02013)
+
+* [Deep Double Descent: Where Bigger Models and More Data Hurt](https://arxiv.org/abs/1912.02292)
 
 ------------------
 
