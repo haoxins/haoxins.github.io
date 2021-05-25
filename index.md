@@ -15,6 +15,7 @@
 * [推荐阅读清单](articles/reading-recommended.md)
 * [阅读 2022+](articles/reading.md)
 * [Rust](articles/rust.md)
+* [Serverless for everything](articles/serverless.md)
 * [(TAOCP) 计算机程序设计艺术](articles/taocp.md)
 * [费曼物理学讲义](articles/the-feynman-lectures-on-physics.md)
 * [关于 Computing 的思考](articles/thinking-computing.md)
