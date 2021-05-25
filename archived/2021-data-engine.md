@@ -28,6 +28,7 @@ date: 2020-11-03
 * [Argo Project](https://github.com/argoproj)
   - [Argo Workflows](https://github.com/argoproj/argo-workflows)
   - 有点意思, 期待成为主流
+  - [Argo CD](https://github.com/argoproj/argo-cd)
 
 ### Knative
 

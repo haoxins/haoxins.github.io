@@ -10,6 +10,7 @@ date: 2021-03-21
   - high quality data
 * Modeling
   - data, code
+* Think of deployments as an iterative process
 
 * Key challenges
   - Concept drift and, data drift
@@ -18,10 +19,16 @@ date: 2021-03-21
   - Security and privacy
 
 * Deployment patterns
-  - Versioning or rollback
+  - Versioning and rollback
   - Shadow mode (Human and ML)
   - Canary deployment
   - Blue green deployment
+
+* Monitoring
+  - Software metrics
+  - Input metrics
+  - Output metrics
+  - Only by monitoring the system that you can spot if there may be a problem
 
 * [Challenges in Deploying Machine Learning: a Survey of Case Studies](https://arxiv.org/abs/2011.09926)
 
