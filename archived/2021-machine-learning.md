@@ -4,7 +4,7 @@ description: 逝者如斯, 而未尝往也; 盈虚者如彼, 而卒莫消长也.
 date: 2021-03-21
 ---
 
-### Machine Learning in Production
+## Machine Learning in Production
 
 * Data definition
   - high quality data
@@ -49,6 +49,16 @@ and will in fact outperform a great algorithm with not so good data
 
 * Error analysis
   - error analysis is also an iterative process
+
+### Data iteration
+
+> Data-centric AI development
+
+* Good data
+  - covers the important cases
+  - defined consistently
+  - has timely feedback from production data
+  - reasonable size
 
 ------------------
 
