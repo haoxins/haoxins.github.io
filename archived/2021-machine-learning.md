@@ -6,6 +6,27 @@ date: 2021-03-21
 
 ### Machine Learning in Production
 
+* Data definition
+  - high quality data
+* Modeling
+  - data, code
+
+* Key challenges
+  - Concept drift and, data drift
+  - Software engineering issues
+  - (cloud or edge, batch or realtime, TPU or GPU, latency, logging, QPS, ...)
+  - Security and privacy
+
+* Deployment patterns
+  - Versioning or rollback
+  - Shadow mode (Human and ML)
+  - Canary deployment
+  - Blue green deployment
+
+* [Challenges in Deploying Machine Learning: a Survey of Case Studies](https://arxiv.org/abs/2011.09926)
+
+* [Towards ML Engineering: A Brief History Of TensorFlow Extended (TFX)](https://arxiv.org/abs/2010.02013)
+
 ------------------
 
 # Timeline
