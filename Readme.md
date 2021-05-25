@@ -4,9 +4,6 @@
 在学习区做事, 叫经验.
 ```
 
-* Distributed computing
-* Data & ML engineering
-
 * Formerly
   - Web developer (5 years +)
 
