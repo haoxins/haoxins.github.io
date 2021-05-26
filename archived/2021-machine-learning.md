@@ -94,6 +94,10 @@ Big data                |                emphasis on data processes
                         |
 ```
 
+* Improving label consistency
+  - try to reach an agreement
+  - create a new label to capture uncertainty
+
 ## Machine Learning Data Lifecycle in Production
 
 ------------------
