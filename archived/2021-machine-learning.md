@@ -4,6 +4,22 @@ description: 逝者如斯, 而未尝往也; 盈虚者如彼, 而卒莫消长也.
 date: 2021-03-21
 ---
 
+## Machine Learning Data Lifecycle in Production
+
+------------------
+
+* [Responsible Machine Learning with Error Analysis](https://techcommunity.microsoft.com/t5/azure-ai/responsible-machine-learning-with-error-analysis/ba-p/2141774)
+
+* [Machine Learning in Production: Why You Should Care About Data and Concept Drift](https://towardsdatascience.com/machine-learning-in-production-why-you-should-care-about-data-and-concept-drift-d96d0bc907fb)
+
+* [Challenges in Deploying Machine Learning: a Survey of Case Studies](https://arxiv.org/abs/2011.09926)
+
+* [Towards ML Engineering: A Brief History Of TensorFlow Extended (TFX)](https://arxiv.org/abs/2010.02013)
+
+* [Deep Double Descent: Where Bigger Models and More Data Hurt](https://arxiv.org/abs/1912.02292)
+
+------------------
+
 ## Machine Learning in Production
 
 * Data definition
@@ -47,7 +63,7 @@ A reasonable algorithm with good data will often do just fine
 and will in fact outperform a great algorithm with not so good data
 ```
 
-* Error analysis
+* **Error analysis**
   - error analysis is also an iterative process
   - skewed datastes, confusion matrix (precision and recall)
 
@@ -98,19 +114,8 @@ Big data                |                emphasis on data processes
   - try to reach an agreement
   - create a new label to capture uncertainty
 
-## Machine Learning Data Lifecycle in Production
+* Human level performance (HLP)
 
-------------------
-
-* [Responsible Machine Learning with Error Analysis](https://techcommunity.microsoft.com/t5/azure-ai/responsible-machine-learning-with-error-analysis/ba-p/2141774)
-
-* [Machine Learning in Production: Why You Should Care About Data and Concept Drift](https://towardsdatascience.com/machine-learning-in-production-why-you-should-care-about-data-and-concept-drift-d96d0bc907fb)
-
-* [Challenges in Deploying Machine Learning: a Survey of Case Studies](https://arxiv.org/abs/2011.09926)
-
-* [Towards ML Engineering: A Brief History Of TensorFlow Extended (TFX)](https://arxiv.org/abs/2010.02013)
-
-* [Deep Double Descent: Where Bigger Models and More Data Hurt](https://arxiv.org/abs/1912.02292)
 
 ------------------
 
