@@ -139,6 +139,11 @@ I found this really hard to predict what will happen
 when your data set size increases even beyond that.
 ```
 
+* Meta-data, data provenance and lineage
+
+* Balanced train/dev/test splits (Small data set)
+  - makes your data set more representative of the true data distribution
+
 ------------------
 
 # Timeline
