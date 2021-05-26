@@ -21,6 +21,8 @@ date: 2019-05-30
   - 像极了 **2018+** 的 **微服务, 云原生**
   - **MLOps**, **Serverless**
   - [Introduction to Machine Learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
+  - https://www.coursera.org/account/accomplishments/certificate/WK4VBRTJ32U3
+  - https://www.coursera.org/account/accomplishments/verify/WK4VBRTJ32U3
   - [Machine Learning Data Lifecycle in Production](https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production)
   - [Machine Learning Modeling Pipelines in Production](https://www.coursera.org/learn/machine-learning-modeling-pipelines-in-production)
   - [Deploying Machine Learning Models in Production](https://www.coursera.org/learn/deploying-machine-learning-models-in-production)
