@@ -130,6 +130,15 @@ because we raise Human Level Performance by improving label consistency
 and that ultimately results in better learning outcomes performance as well.
 ```
 
+```
+How much bigger should you make your data set?
+One tip I've given a lot of teams is
+don't increase your data by more than 10x at a time.
+
+I found this really hard to predict what will happen
+when your data set size increases even beyond that.
+```
+
 ------------------
 
 # Timeline
