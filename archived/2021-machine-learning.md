@@ -49,6 +49,13 @@ and will in fact outperform a great algorithm with not so good data
 
 * Error analysis
   - error analysis is also an iterative process
+  - skewed datastes, confusion matrix (precision and recall)
+
+```
+Precision = TP / (TP + FP)
+Recall = TP / (TP + FN)
+F1 Score = 2 / ((1 / Precision) + (1 / Recall))
+```
 
 ### Data iteration
 
@@ -59,6 +66,19 @@ and will in fact outperform a great algorithm with not so good data
   - defined consistently
   - has timely feedback from production data
   - reasonable size
+
+> Can adding data hurt? Yes!
+
+* Data augmentation
+
+* Versioning everything
+  - Code
+  - Datasets
+  - Hyperparameters
+
+### Data definition
+
+* consistently label the data with one convention
 
 ------------------
 
