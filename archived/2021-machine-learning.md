@@ -70,6 +70,7 @@ F1 Score = 2 / ((1 / Precision) + (1 / Recall))
 > Can adding data hurt? Yes!
 
 * Data augmentation
+  - GANs
 
 * Versioning everything
   - Code
@@ -79,6 +80,21 @@ F1 Score = 2 / ((1 / Precision) + (1 / Recall))
 ### Data definition
 
 * consistently label the data with one convention
+
+* Major types of data problems
+
+```
+          Unstructured     Structured
+                        |
+Small data              |                clean labels are critical
+                        |
+          ------------------------------
+                        |
+Big data                |                emphasis on data processes
+                        |
+```
+
+## Machine Learning Data Lifecycle in Production
 
 ------------------
 
