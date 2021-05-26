@@ -10,6 +10,16 @@ date: 2019-12-10
 
 ## 2021
 
+* Microsoft Build 2021
+
+```
+Azure Confidential Ledger (PREVIEW)
+
+Tamperproof, unstructured data store hosted in
+trusted execution environments (TEEs) and
+backed by cryptographically verifiable evidence
+```
+
 * 微软宣布将于 2021 年 09 月 10 日关闭其 Azure 区块链服务
 
 * **NFT** 短期是泡沫, 但具有长期价值 (期待)

@@ -25,6 +25,7 @@ date: 2020-01-29
 * [飞书](https://www.feishu.cn)
   - 这一套产品确实不错
   - 理念清晰, 让信息高效传递
+  - **飞书文档** = Google Docs/Sheets + Confluence
 
 * **Bose QC 30** 不小心丢了, 购买了 **Apple AirPods Pro**
   - 感觉后者降噪效果更好
