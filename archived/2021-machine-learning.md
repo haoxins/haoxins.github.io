@@ -8,6 +8,16 @@ date: 2021-03-21
 
 * ML: **data is a first class citizen**
 
+* Data issues
+  - Data drift
+  - Concept drift
+  - Schema skew
+  - Distribution skew
+  - Data shift
+  - Covariate shift
+  - Concept shift
+  - [TFDV](https://github.com/tensorflow/data-validation)
+
 ------------------
 
 * [Rules of Machine Learning](https://developers.google.com/machine-learning/guides/rules-of-ml)
