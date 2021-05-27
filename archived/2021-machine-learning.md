@@ -6,7 +6,11 @@ date: 2021-03-21
 
 ## Machine Learning Data Lifecycle in Production
 
+* ML: **data is a first class citizen**
+
 ------------------
+
+* [Rules of Machine Learning](https://developers.google.com/machine-learning/guides/rules-of-ml)
 
 * [Responsible Machine Learning with Error Analysis](https://techcommunity.microsoft.com/t5/azure-ai/responsible-machine-learning-with-error-analysis/ba-p/2141774)
 
