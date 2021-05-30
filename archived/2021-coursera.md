@@ -4,6 +4,10 @@ description: 料峭春风吹酒醒, 微冷, 山头斜照却相迎
 date: 2019-05-30
 ---
 
+* **未来, 期待 Coursera 能有一些优质的量子计算的课程**
+  - 除了 Labs 和 测试题, **YouTube** 的资源基本占优
+  - So, **why Coursera?**
+
 * [Cryptography II](https://www.coursera.org/learn/crypto2)
   - 跳票 几年了 ~
   - 授课大神 Dan Boneh 也研究 区块链 了 :)
