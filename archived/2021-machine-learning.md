@@ -18,6 +18,30 @@ date: 2021-03-21
   - Concept shift
   - [TFDV](https://github.com/tensorflow/data-validation)
 
+* Feature Engineering
+  - training vs serving
+  - batch vs streaming
+
+* Preprocessing Operations
+  - Mapping raw data into features
+  - Data cleansing
+  - Feature tuning
+  - Transformations
+  - Feature construction
+
+* Feature Engineering Techniques
+  - Feature scaling
+  - Normalization (Xnorm = (X - Xmin) / (Xmax - Xmin) ...)
+  - Standardization (Z-Score ...)
+  - Bucketizing, Binning
+  - PCA, t-SNE, UMAP
+
+* Feature crosses
+
+* Encoding features
+
+* Feature spaces
+
 ------------------
 
 * [Rules of Machine Learning](https://developers.google.com/machine-learning/guides/rules-of-ml)
