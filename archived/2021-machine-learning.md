@@ -41,6 +41,13 @@ date: 2021-03-21
 * Encoding features
 
 * Feature spaces
+  - decision boundary
+  - so feature space coverage is important
+
+* Feature selection
+  - Filter methods
+  - Wrapper methods
+  - Embedded methods
 
 ------------------
 
