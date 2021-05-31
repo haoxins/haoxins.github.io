@@ -46,8 +46,17 @@ date: 2021-03-21
 
 * Feature selection
   - Filter methods
+  - (correlation matrix)
   - Wrapper methods
+  - (forward selection, start with one feature)
+  - (backward elimination, start with all features)
+  - (recursive feature elimination, RFE)
   - Embedded methods
+  - (L1 or L2 regularization)
+  - (Feature importance)
+
+* ML Metadata
+  - https://github.com/google/ml-metadata
 
 ------------------
 
