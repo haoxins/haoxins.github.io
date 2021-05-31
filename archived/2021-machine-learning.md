@@ -69,6 +69,11 @@ date: 2021-03-21
 
 * Data warehouse & Data lakes
 
+* Time series
+  - windowing
+  - sensors and signals
+  - spectrogram
+
 ------------------
 
 * [Rules of Machine Learning](https://developers.google.com/machine-learning/guides/rules-of-ml)
