@@ -58,6 +58,17 @@ date: 2021-03-21
 * ML Metadata
   - https://github.com/google/ml-metadata
 
+* [Data Version Control, DVC](https://github.com/iterative/dvc)
+  - Data Version Control or DVC is an open-source tool for
+  - data science and machine learning projects.
+
+* Feature stores
+
+* [Feast](https://github.com/feast-dev/feast)
+  - Feast is an open source feature store for machine learning.
+
+* Data warehouse & Data lakes
+
 ------------------
 
 * [Rules of Machine Learning](https://developers.google.com/machine-learning/guides/rules-of-ml)
