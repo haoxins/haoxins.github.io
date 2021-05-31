@@ -40,11 +40,13 @@ date: 2019-05-30
   - https://www.coursera.org/account/accomplishments/certificate/H69MQJ4ZXNXN
   - https://www.coursera.org/account/accomplishments/verify/H69MQJ4ZXNXN
   - [Symmetric Cryptography](https://www.coursera.org/learn/symmetric-crypto)
+  - https://www.coursera.org/account/accomplishments/certificate/TEPVFJGR34WG
+  - https://www.coursera.org/account/accomplishments/verify/TEPVFJGR34WG
   - [Asymmetric Cryptography and Key Management](https://www.coursera.org/learn/asymmetric-crypto)
   - https://www.coursera.org/account/accomplishments/certificate/UPVTME59ADJ8
   - https://www.coursera.org/account/accomplishments/verify/UPVTME59ADJ8
   - [Cryptographic Hash and Integrity Protection](https://www.coursera.org/learn/cryptographic-hash-integrity-protection)
-  - 一般般, 不推荐, 远不如 [Cryptography I](https://www.coursera.org/learn/crypto)
+  - 一般般, **不推荐**, 远不如 [Cryptography I](https://www.coursera.org/learn/crypto)
 
 ------------------
 
