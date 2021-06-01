@@ -19,6 +19,8 @@ date: 2021-04-10
 
 ## 2021
 
+* [程序君的 Rust 培训 (1)](https://www.bilibili.com/video/BV19b4y1o7Lt)
+
 * 2021-05-11: The Plan for the **Rust 2021** Edition
 
 ```
