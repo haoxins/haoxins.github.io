@@ -30,35 +30,21 @@ date: 2020-11-03
   - 有点意思, 期待成为主流
   - [Argo CD](https://github.com/argoproj/argo-cd)
 
-```
-Ksonnet if there are two files, one named `app.yaml`
-and one named `components/params.libsonnet`.
-
-Helm if there's a file matching `Chart.yaml`.
-
-Kustomize if there's a `kustomization.yaml`,
-`kustomization.yml`, or `Kustomization`
-
-Otherwise it is assumed to be a plain directory application.
-```
-
 * Helm
 
 ```zsh
-wordpress/
-  Chart.yaml
-  # A YAML file containing information about the chart
-  values.yaml
-  # The default configuration values for this chart
-  values.schema.json
-  # OPTIONAL: A JSON Schema for imposing a structure on the values.yaml file
-  charts/
-  # A directory containing any charts upon which this chart depends.
-  crds/
-  # Custom Resource Definitions
-  templates/
-  # A directory of templates that, when combined with values,
-  # will generate valid Kubernetes manifest files.
+Chart.yaml
+# A YAML file containing information about the chart
+values.yaml
+# The default configuration values for this chart
+charts/
+# A directory containing any charts upon which this chart depends.
+templates/
+# A directory of templates that, when combined with values,
+# will generate valid Kubernetes manifest files.
+  deployment.yaml
+  service.yaml
+  ingress.yaml
 ```
 
 ### Knative
