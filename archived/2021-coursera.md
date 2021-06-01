@@ -30,6 +30,7 @@ date: 2019-05-30
   - [Machine Learning Data Lifecycle in Production](https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production)
   - [Machine Learning Modeling Pipelines in Production](https://www.coursera.org/learn/machine-learning-modeling-pipelines-in-production)
   - [Deploying Machine Learning Models in Production](https://www.coursera.org/learn/deploying-machine-learning-models-in-production)
+  - Coursera 的课程, 普遍工程性较弱
 
 * **Coursera 上面感兴趣的东西越来越少了** :)
 

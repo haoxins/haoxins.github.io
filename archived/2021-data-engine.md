@@ -30,6 +30,18 @@ date: 2020-11-03
   - 有点意思, 期待成为主流
   - [Argo CD](https://github.com/argoproj/argo-cd)
 
+```
+Ksonnet if there are two files, one named `app.yaml`
+and one named `components/params.libsonnet`.
+
+Helm if there's a file matching `Chart.yaml`.
+
+Kustomize if there's a `kustomization.yaml`,
+`kustomization.yml`, or `Kustomization`
+
+Otherwise it is assumed to be a plain directory application.
+```
+
 ### Knative
 
 * Kubernetes: 1.22
