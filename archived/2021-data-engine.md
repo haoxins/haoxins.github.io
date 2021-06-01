@@ -42,6 +42,25 @@ Kustomize if there's a `kustomization.yaml`,
 Otherwise it is assumed to be a plain directory application.
 ```
 
+* Helm
+
+```zsh
+wordpress/
+  Chart.yaml
+  # A YAML file containing information about the chart
+  values.yaml
+  # The default configuration values for this chart
+  values.schema.json
+  # OPTIONAL: A JSON Schema for imposing a structure on the values.yaml file
+  charts/
+  # A directory containing any charts upon which this chart depends.
+  crds/
+  # Custom Resource Definitions
+  templates/
+  # A directory of templates that, when combined with values,
+  # will generate valid Kubernetes manifest files.
+```
+
 ### Knative
 
 * Kubernetes: 1.22
