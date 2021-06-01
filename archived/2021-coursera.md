@@ -35,6 +35,8 @@ date: 2019-05-30
 * **Coursera 上面感兴趣的东西越来越少了** :)
 
 * [Applied Cryptography](https://www.coursera.org/specializations/applied-crypto)
+  - https://www.coursera.org/account/accomplishments/specialization/certificate/T6X63JVWWBLP
+  - https://www.coursera.org/account/accomplishments/specialization/T6X63JVWWBLP
   - 公司给每位员工发了一张境外虚拟信用卡, 每月额度 $50
   - 想来想去, 还是 Coursera 订阅最合适
   - [Cryptography and Information Theory](https://www.coursera.org/learn/crypto-info-theory)
