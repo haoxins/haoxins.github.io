@@ -32,6 +32,10 @@ date: 2020-01-29
 拭目以待!!!
 ```
 
+* 06月01日, OceanBase 开源
+  - [OceanBase](https://open.oceanbase.com)
+  - [GitHub](https://github.com/oceanbase/oceanbase)
+
 * 05月22日, 杂交水稻之父 **袁隆平** 在长沙逝世, 享年91岁
 
 * 安卓 **12** 引入了对 **AVIF** 的支持
