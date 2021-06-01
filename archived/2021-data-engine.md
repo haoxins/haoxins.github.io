@@ -44,13 +44,13 @@ Sync status
 # Whether or not the live state matches the target state.
 # Is the deployed application the same as Git says it should be?
 Sync
-# The process of making an application move to its target state. E.g. by applying changes to a Kubernetes cluster.
+# The process of making an application move to its target state.
 Sync operation status
 # Whether or not a sync succeeded.
 Refresh
 # Compare the latest code in Git with the live state. Figure out what is different.
 Health
-# The health of the application, is it running correctly? Can it serve requests?
+# The health of the application, is it running correctly?
 ```
 
 * Helm
