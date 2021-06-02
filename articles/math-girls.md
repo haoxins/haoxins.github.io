@@ -1,6 +1,6 @@
 ---
 title: 数学女孩系列
-description: ~
+description: 天高地迥, 觉宇宙之无穷; 兴尽悲来, 识盈虚之有数.
 date: 2021-05-24
 ---
 
