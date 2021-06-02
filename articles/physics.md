@@ -4,9 +4,13 @@ description: 人生如逆旅, 我亦是行人
 date: 2020-10-05
 ---
 
-> 一个 **技术人** 也需要科学素养
+```
+规范场论 (杨振宁)
 
-* 爱因斯坦, 狄拉克, 杨振宁
+(狄拉克)
+
+相对论 (爱因斯坦)
+```
 
 * [YouTube: Arindam Kumar Chatterjee](https://www.youtube.com/channel/UCdnu4FeJYj_JOdh682wzHfg)
 
