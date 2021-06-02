@@ -122,6 +122,61 @@ Immutable first
 | this/it |  it   | this  |  this |  it  | this |
 | return  |  yes  | yes   |  no   |  no  | yes  |
 
+```kotlin
+fun main() = runBlocking {
+  launch {
+    delay(200L)
+    println("Task from runBlocking")
+  }
+
+  coroutineScope {
+    launch {
+      delay(500L)
+      println("Task from nested launch")
+    }
+
+    delay(100L)
+    println("Task from coroutine scope")
+  }
+
+  println("Coroutine scope is over")
+}
+
+// Task from coroutine scope
+// Task from runBlocking
+// Task from nested launch
+// Coroutine scope is over
+```
+
+```kotlin
+val job = launch {
+  try {
+    repeat(1000) { i ->
+      println("job: I'm sleeping $i ...")
+      delay(500L)
+    }
+  } finally {
+    withContext(NonCancellable) {
+      println("job: I'm running finally")
+      delay(1000L)
+      println("job: And I've just delayed for 1 sec because I'm non-cancellable")
+    }
+  }
+}
+delay(1300L)
+println("main: I'm tired of waiting!")
+job.cancelAndJoin()
+println("main: Now I can quit.")
+
+// job: I'm sleeping 0 ...
+// job: I'm sleeping 1 ...
+// job: I'm sleeping 2 ...
+// main: I'm tired of waiting!
+// job: I'm running finally
+// job: And I've just delayed for 1 sec because I'm non-cancellable
+// main: Now I can quit.
+```
+
 ### Java
 
 * Records
