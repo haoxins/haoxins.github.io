@@ -177,6 +177,83 @@ println("main: Now I can quit.")
 // main: Now I can quit.
 ```
 
+```kotlin
+GlobalScope.launch {
+  // ...
+}
+
+// equals
+
+launch(Dispatchers.Default) {
+  // ...
+}
+```
+
+* Flow
+
+```kotlin
+fun simple(): Flow<Int> = flow {
+  emit(1)
+  throw RuntimeException()
+}
+
+fun main() = runBlocking<Unit> {
+  simple()
+    .onCompletion { cause -> if (cause != null) println("Flow completed exceptionally") }
+    .catch { cause -> println("Caught exception") }
+    .collect { value -> println(value) }
+}
+
+// 1
+// Flow completed exceptionally
+// Caught exception
+```
+
+```kotlin
+fun simple(): Flow<Int> = (1..3).asFlow()
+
+fun main() = runBlocking<Unit> {
+  simple()
+    .onCompletion { cause -> println("Flow completed with $cause") }
+    .collect { value ->
+      check(value <= 1) { "Collected $value" }
+      println(value)
+    }
+}
+
+// 1
+// Flow completed with java.lang.IllegalStateException: Collected 2
+// Exception in thread "main" java.lang.IllegalStateException: Collected 2
+```
+
+```kotlin
+fun events(): Flow<Int> = (1..3).asFlow().onEach { delay(100) }
+
+fun main() = runBlocking<Unit> {
+  events()
+    .onEach { event -> println("Event: $event") }
+    .collect()
+  println("Done")
+}
+
+// Event: 1
+// Event: 2
+// Event: 3
+// Done
+
+fun main() = runBlocking<Unit> {
+  events()
+    .onEach { event -> println("Event: $event") }
+    .launchIn(this)
+  println("Done")
+}
+
+// Done
+// Event: 1
+// Event: 2
+// Event: 3
+```
+
 ### Java
 
 * Records
