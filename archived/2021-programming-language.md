@@ -189,7 +189,7 @@ launch(Dispatchers.Default) {
 }
 ```
 
-* Flow
+* **Flow**
 
 ```kotlin
 fun simple(): Flow<Int> = flow {
@@ -253,6 +253,63 @@ fun main() = runBlocking<Unit> {
 // Event: 2
 // Event: 3
 ```
+
+* **Channel**
+
+```kotlin
+val channel = Channel<Int>()
+launch {
+  for (x in 1..5) channel.send(x * x)
+}
+repeat(5) { println(channel.receive()) }
+println("Done!")
+
+// 1
+// 4
+// 9
+// 16
+// 25
+// Done!
+
+launch {
+  for (x in 1..5) channel.send(x * x)
+  channel.close()
+}
+for (y in channel) println(y)
+println("Done!")
+```
+
+```kotlin
+fun CoroutineScope.produceNumbers() = produce<Int> {
+  var x = 1
+  while (true) send(x++)
+}
+
+fun CoroutineScope.square(numbers: ReceiveChannel<Int>): ReceiveChannel<Int> = produce {
+  for (x in numbers) send(x * x)
+}
+
+val numbers = produceNumbers()
+val squares = square(numbers)
+repeat(5) {
+  println(squares.receive())
+}
+println("Done!")
+coroutineContext.cancelChildren()
+
+// 1
+// 4
+// 9
+// 16
+// 25
+// Done!
+```
+
+* **Supervisor**
+
+* **Actor**
+
+* **Select**
 
 ### Java
 
