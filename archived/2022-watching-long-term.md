@@ -1,5 +1,5 @@
 ---
-title: (2022) - Watching long term
+title: (2022) Watching long term
 description: 画栋朝飞南浦云, 珠帘暮卷西山雨.
 date: 2021-02-12
 ---

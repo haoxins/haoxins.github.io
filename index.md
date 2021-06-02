@@ -16,7 +16,7 @@
 ### Archived
 
 * [(2022) Web](archived/2022-web.md)
-* [(2022) - Watching long term](archived/2022-watching-long-term.md)
+* [(2022) Watching long term](archived/2022-watching-long-term.md)
 * [(2022) TAOCP - 计算机程序设计艺术](archived/2022-taocp.md)
 * [(2022) 阅读 - 在线资源](archived/2022-reading-online.md)
 * [(2022) QUIC & HTTP/3](archived/2022-quic.md)
