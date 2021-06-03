@@ -8,6 +8,7 @@ date: 2020-01-29
 
 * 06月02日, **Harmony OS** 正式发布!
   - **Open Harmony v2** 正式开源
+  - https://gitee.com/openharmony
 
 ```
 BTW: 5月25日, Google 向市场推出了 Fuchsia OS,
