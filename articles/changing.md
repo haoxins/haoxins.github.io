@@ -10,8 +10,7 @@ date: 2020-01-29
   - **Open Harmony v2** 正式开源
 
 ```
-BTW: 5月25日, 在研发计划曝光数年之后, Google
-终于向市场推出了 Fuchsia OS:
+BTW: 5月25日, Google 向市场推出了 Fuchsia OS,
 从 Nest Hub 开始.
 ```
 
