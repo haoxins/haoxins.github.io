@@ -7,32 +7,15 @@ date: 2020-01-29
 ## 2021
 
 * 06月02日, **Harmony OS** 正式发布!
-  - 鸿蒙
+  - **Open Harmony v2** 正式开源
 
 ```
-5月25日, 在研发计划曝光数年之后, Google
+BTW: 5月25日, 在研发计划曝光数年之后, Google
 终于向市场推出了 Fuchsia OS:
 从 Nest Hub 开始.
 ```
 
-```
-如果没有美国的打压
-
-华为不会这么快推出 Harmony
-推出了也难以推广
-
-由于特殊的背景
-反而有可能促成 Harmony
-
-1. Android
-2. Harmony
-3. Fuchsia
-
-年底, 基本可以初见分晓!
-拭目以待!!!
-```
-
-* 06月01日, OceanBase 开源
+* 06月01日, **OceanBase** 开源
   - [OceanBase](https://open.oceanbase.com)
   - [GitHub](https://github.com/oceanbase/oceanbase)
 
