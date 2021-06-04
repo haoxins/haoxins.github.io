@@ -9,6 +9,15 @@ date: 2021-02-12
 * [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
   - 微积分
 
+```
+对于数学家而言, 数学的美是 严密无缺 的 逻辑体系,
+但是对于普通人而言, 理解证明体系的能力很容易触及天花板 (哈哈哈).
+所以往后, 概念性的认知 (动画, 可视化) 就尤为重要了,
+也是普通人理解高阶数学的几乎唯一路径.
+
+所以, 准确性的损失 换取 可理解性的提升.
+```
+
 * [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
   - 线性代数
   - 动画真心不错
