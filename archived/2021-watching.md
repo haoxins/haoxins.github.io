@@ -4,11 +4,7 @@ description: 五花马, 千金裘, 呼儿将出换美酒, 与尔同销万古愁.
 date: 2019-10-24
 ---
 
-## 2022
-
 * [海伯利安 Hyperion](https://movie.douban.com/subject/3026565/)
-  - 真的假的?
-
 ## 2021
 
 * [基地 Foundation](https://movie.douban.com/subject/3161109/)
