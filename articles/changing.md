@@ -6,8 +6,9 @@ date: 2020-01-29
 
 ## 2021
 
-* 06月02日, **Harmony OS** 正式发布!
-  - **Open Harmony v2** 正式开源
+* 06月02日, **Harmony OS 2.0** 正式发布!
+  - **Open Harmony 2.0** 正式开源
+  - 但愿 3.0, 带来真正完整的 Open Harmony
   - https://gitee.com/openharmony
 
 ```
