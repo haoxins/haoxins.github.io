@@ -29,6 +29,8 @@ Archived (2021-05)
   - 副标题: 计算机科学基础
   - 买回来, 供着先
 
+* [庞加莱猜想](https://book.douban.com/subject/5338169/)
+
 * [群论彩图版](https://book.douban.com/subject/34879608/)
   - 出版年: 2019-10-01
 
