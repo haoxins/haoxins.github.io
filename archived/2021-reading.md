@@ -31,6 +31,9 @@ Archived (2021-05)
 
 * [庞加莱猜想](https://book.douban.com/subject/5338169/)
 
+* [数学爵士乐](https://book.douban.com/subject/2185715/)
+  - 原作名: Coincidences, Chaos, and All That Math Jazz
+
 * [群论彩图版](https://book.douban.com/subject/34879608/)
   - 出版年: 2019-10-01
 
