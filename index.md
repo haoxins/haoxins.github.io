@@ -37,7 +37,7 @@
 * [(2021) Cryptography](archived/2021-cryptography.md)
 * [(2021) Coursera 课程记录](archived/2021-coursera.md)
 * [(2021) 从公司, 到组织](archived/2021-company-and-organization.md)
-* [(2021) 数学爵士乐 - 庞加莱猜想](archived/2021-coincidences-chaos-and-all-that-math-jazz.md)
+* [(2021) 数学爵士乐 & 庞加莱猜想](archived/2021-coincidences-chaos-and-all-that-math-jazz.md)
 * [(2021) 卡洛·罗韦利 Carlo Rovelli 系列作品](archived/2021-carlo-rovelli.md)
 * [(2021) 年度事件](archived/2021-annual-events.md)
 * [(2021) 哥德尔 艾舍尔 巴赫 - 集异璧之大成](archived/2021-an-eternal-golden-braid.md)
