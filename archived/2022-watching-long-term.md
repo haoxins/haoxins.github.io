@@ -6,6 +6,8 @@ date: 2021-02-12
 
 ## 2021
 
+* [Group theory, abstraction, and the 196,883-dimensional monster](https://www.youtube.com/watch?v=mH0oCDa74tE)
+
 ### Essence of linear algebra
 
 * [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
@@ -41,6 +43,13 @@ the ubiquitous Michio Kaku and Brian Cox.
 ```
 
 * What's so special about Euler's number e?
+  - ???
+
+* [Taylor series](https://www.youtube.com/watch?v=3d6DsjIBzJ4)
+
+* [The other way to visualize derivatives](https://www.youtube.com/watch?v=CfW845LNObM)
+  - Awesome
+  - Inputs -> Outputs
 
 ## 海贼王
 

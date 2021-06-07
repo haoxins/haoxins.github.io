@@ -21,6 +21,10 @@ date: 2021-04-10
 
 * [程序君的 Rust 培训 (1)](https://www.bilibili.com/video/BV19b4y1o7Lt)
 
+* [Crust of Rust: Dispatch and Fat Pointers](https://www.youtube.com/watch?v=xcygqF5LVmM)
+
+* [Crust of Rust: Atomics and Memory Ordering](https://www.youtube.com/watch?v=rMGWeSjctlY)
+
 * 2021-05-11: The Plan for the **Rust 2021** Edition
 
 ```
@@ -30,10 +34,6 @@ is scheduled for release in October.
 Rust 2021 contains a number of small changes that are nonetheless
 expected to make a significant improvement to how Rust feels in practice.
 ```
-
-* [Crust of Rust: Dispatch and Fat Pointers](https://www.youtube.com/watch?v=xcygqF5LVmM)
-
-* [Crust of Rust: Atomics and Memory Ordering](https://www.youtube.com/watch?v=rMGWeSjctlY)
 
 * [Mozilla Welcomes the Rust Foundation](https://blog.mozilla.org/blog/2021/02/08/mozilla-welcomes-the-rust-foundation/)
   - [Hello World!](https://foundation.rust-lang.org/posts/2021-02-08-hello-world/)
