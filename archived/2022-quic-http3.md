@@ -27,6 +27,14 @@ date: 2019-06-30
 * [gRPC over HTTP2](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md)
   - [ ] TODO: HTTP3
 
+### QUIC-LB: Generating Routable QUIC Connection IDs
+
+* [QUIC-LB: Generating Routable QUIC Connection IDs](https://quicwg.org/load-balancers/draft-ietf-quic-load-balancers.html)
+
+### Applicability of the QUIC Transport Protocol
+
+* [Applicability of the QUIC Transport Protocol](https://quicwg.org/ops-drafts/draft-ietf-quic-applicability.html)
+
 ------------------
 
 # Timeline
