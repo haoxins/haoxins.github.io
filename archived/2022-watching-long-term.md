@@ -6,16 +6,7 @@ date: 2021-02-12
 
 ## 2021
 
-* [Group theory, abstraction, and the 196,883-dimensional monster](https://www.youtube.com/watch?v=mH0oCDa74tE)
-
-### Essence of linear algebra
-
-* [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
-  - 线性代数
-  - 动画真心不错
-  - Vectors
-
-* [YouTube: Arindam Kumar Chatterjee](https://www.youtube.com/channel/UCdnu4FeJYj_JOdh682wzHfg)
+* [Arindam Kumar Chatterjee](https://www.youtube.com/channel/UCdnu4FeJYj_JOdh682wzHfg)
 
 ```
 Theoretical / mathematical physics at the graduate level and above.
@@ -26,6 +17,19 @@ and for aspiring theoretical physicists to see what they are working towards,
 i.e., to provide the public with something beyond
 the ubiquitous Michio Kaku and Brian Cox.
 ```
+
+* [Group theory, abstraction, and the 196,883-dimensional monster](https://www.youtube.com/watch?v=mH0oCDa74tE)
+
+### Essence of linear algebra
+
+* [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+  - 线性代数
+  - 动画真心不错
+  - Vectors
+
+* [Eigenvectors and eigenvalues](https://www.youtube.com/watch?v=PFDu9oVAE-g)
+
+* [Abstract vector spaces](https://www.youtube.com/watch?v=TgKwz5Ikpc8)
 
 ### Essence of calculus
 
