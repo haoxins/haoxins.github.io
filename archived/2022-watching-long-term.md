@@ -48,8 +48,8 @@ the ubiquitous Michio Kaku and Brian Cox.
 * [Taylor series](https://www.youtube.com/watch?v=3d6DsjIBzJ4)
 
 * [The other way to visualize derivatives](https://www.youtube.com/watch?v=CfW845LNObM)
-  - Awesome
-  - Inputs -> Outputs
+  - Awesome!!
+  - Inputs -> Outputs (集合 映射)
 
 ## 海贼王
 
