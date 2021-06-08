@@ -115,6 +115,17 @@ date: 2021-01-28
 只需要原来开发的十分之一的时间, 人力成本.
 ```
 
+* 基本操作的威力
+
+```c
+// abcde fghij -> fghij abcde
+// or
+// hello world -> world hello
+reverse(0, r-1)
+reverse(r-1, n-1)
+reverse(0, n-1)
+```
+
 ### 粗略估算
 
 * **两个答案比一个答案好** (运用不同估算思路)
