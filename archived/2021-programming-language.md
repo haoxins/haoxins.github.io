@@ -26,6 +26,18 @@ date: 2020-12-27
 
 ### Events
 
+* [Kotlin Coroutines 1.5: GlobalScope Marked as Delicate, Refined Channels API, and More](https://blog.jetbrains.com/kotlin/2021/05/kotlin-coroutines-1-5-0-released/)
+
+```
+While the use of GlobalScope isn't recommended for most cases
+
+In many cases, the use of GlobalScope should be avoided and the
+containing operation should be marked with suspend
+
+Version 1.5 of Kotlin Coroutines promotes most of the functions
+responsible for integrations with reactive frameworks to stable API.
+```
+
 * [Rust in the Android platform (2021-04-06)](https://security.googleblog.com/2021/04/rust-in-android-platform.html)
 
 * [My Crates Account](https://crates.io/users/haoxins)
