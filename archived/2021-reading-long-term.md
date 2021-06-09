@@ -159,6 +159,23 @@ reverse(0, n-1)
 
 ### 堆
 
+* 排序
+* 优先级队列
+
+* 二叉树
+  - 顺序: 任何节点 `<=` 其子节点
+  - 形状: 完全二叉树
+
+* 数组表示法
+  - 从 **1** 开始, root = 1
+  - left child = `2 * i`
+  - right child = `2 * i + 1`
+
+* siftup
+  - Add element to heap
+
+* siftdown
+
 ### 字符串
 
 ### 数值计算
