@@ -25,11 +25,11 @@ the ubiquitous Michio Kaku and Brian Cox.
 * [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
   - 线性代数
   - 动画真心不错
-  - Vectors
 
 * [Eigenvectors and eigenvalues](https://www.youtube.com/watch?v=PFDu9oVAE-g)
 
 * [Abstract vector spaces](https://www.youtube.com/watch?v=TgKwz5Ikpc8)
+  - vectors - functions
 
 ### Essence of calculus
 
