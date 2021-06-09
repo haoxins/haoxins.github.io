@@ -19,11 +19,11 @@ date: 2021-04-10
 
 ## 2021
 
-* [程序君的 Rust 培训 (1)](https://www.bilibili.com/video/BV19b4y1o7Lt)
-
 * [Crust of Rust: Dispatch and Fat Pointers](https://www.youtube.com/watch?v=xcygqF5LVmM)
 
 * [Crust of Rust: Atomics and Memory Ordering](https://www.youtube.com/watch?v=rMGWeSjctlY)
+
+* [程序君的 Rust 培训 (1)](https://www.bilibili.com/video/BV19b4y1o7Lt)
 
 * 2021-05-11: The Plan for the **Rust 2021** Edition
 
