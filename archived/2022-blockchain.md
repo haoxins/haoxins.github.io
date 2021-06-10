@@ -43,5 +43,7 @@ backed by cryptographically verifiable evidence
 
 ### Ethereum
 
+* [Dodging a bullet: Ethereum State Problems](https://blog.ethereum.org/2021/05/18/eth_state_problems/)
+
 * [Fe](https://github.com/ethereum/fe)
   - Fe is an emerging smart contract language for the Ethereum blockchain.
