@@ -19,6 +19,10 @@ date: 2021-04-10
 
 ## 2021
 
+* [Rocket](https://github.com/SergioBenitez/Rocket)
+  - Version 0.5.0-rc.1 (Jun 09, 2021)
+  - 期待 `v1.0`
+
 * [Crust of Rust: Dispatch and Fat Pointers](https://www.youtube.com/watch?v=xcygqF5LVmM)
   - name is hard (hahahaha)
 
