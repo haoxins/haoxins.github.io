@@ -25,6 +25,11 @@ Archived (2021-05)
 
 ### 2021
 
+* [Helgoland](https://book.douban.com/subject/35265189/)
+  - 卡洛·罗韦利 Carlo Rovelli
+  - 借与 @`Frederic`
+  - **独读书** 不如 **众读书**
+
 * [具体数学](https://book.douban.com/subject/21323941/)
   - 副标题: 计算机科学基础
   - 买回来, 供着先

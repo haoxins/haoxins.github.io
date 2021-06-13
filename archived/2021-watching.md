@@ -9,6 +9,10 @@ date: 2019-10-24
 * [基地 Foundation](https://movie.douban.com/subject/3161109/)
   - https://www.imdb.com/title/tt0804484/
 
+
+* 继续看 [觉醒年代](https://movie.douban.com/subject/30228394/)
+  - **白玉兰** 最佳导演, 最佳编剧, 最佳男主角 **于和伟**
+
 ### 2021-05
 
 * [速度与激情9](https://movie.douban.com/subject/25728006/)
@@ -135,7 +139,7 @@ date: 2019-10-24
 ### 2021-01
 
 * [山海情](https://movie.douban.com/subject/35033654/)
-  - 方言 彩!
+  - 方言 棒!
   - 西海固
   - **不容易!!!**
 * [温暖的抱抱](https://movie.douban.com/subject/34869362/)
