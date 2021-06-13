@@ -1,4 +1,4 @@
-* [Arindam Kumar Chatterjee](articles/arindam-kumar-chatterjee.md)
+* [School of Theoretical Physics Applied Mathematics](articles/arindam-kumar-chatterjee.md)
 * [猫咪的那些事](articles/cat.md)
 * [时间静悄悄](articles/changing.md)
 * [(不求甚解地了解点) 数学](articles/math.md)

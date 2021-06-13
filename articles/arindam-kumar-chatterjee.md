@@ -1,11 +1,12 @@
 ---
-title: Arindam Kumar Chatterjee
+title: School of Theoretical Physics Applied Mathematics
 description: ~
 date: 2021-06-14
 ---
 
 * [Arindam Kumar Chatterjee](https://www.youtube.com/channel/UCdnu4FeJYj_JOdh682wzHfg)
-  - [About](https://www.youtube.com/c/SchoolofTheoreticalPhysicsAppliedMathematics/about)
+
+* [School of Theoretical Physics Applied Mathematics](https://www.youtube.com/c/SchoolofTheoreticalPhysicsAppliedMathematics)
 
 ```
 Theoretical / mathematical physics at the graduate level and above.
