@@ -9,9 +9,12 @@ date: 2019-10-24
 * [基地 Foundation](https://movie.douban.com/subject/3161109/)
   - https://www.imdb.com/title/tt0804484/
 
+### 2021-06
 
 * 继续看 [觉醒年代](https://movie.douban.com/subject/30228394/)
   - **白玉兰** 最佳导演, 最佳编剧, 最佳男主角 **于和伟**
+
+* [黑白魔女库伊拉 Cruella](https://movie.douban.com/subject/26703121/)
 
 ### 2021-05
 
