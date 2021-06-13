@@ -1,4 +1,3 @@
-* [School of Theoretical Physics Applied Mathematics](articles/arindam-kumar-chatterjee.md)
 * [猫咪的那些事](articles/cat.md)
 * [时间静悄悄](articles/changing.md)
 * [(不求甚解地了解点) 数学](articles/math.md)
@@ -8,6 +7,7 @@
 * [推荐阅读清单](articles/reading-recommended.md)
 * [阅读 2022+](articles/reading-watching-and-gaming.md)
 * [Rust](articles/rust.md)
+* [School of Theoretical Physics Applied Mathematics](articles/school-of-theoretical-physics-applied-mathematics.md)
 * [Serverless for everything](articles/serverless.md)
 * [费曼物理学讲义 (卷三)](articles/the-feynman-lectures-on-physics.md)
 * [关于 Computing 的思考](articles/thinking-computing.md)
