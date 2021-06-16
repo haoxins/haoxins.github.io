@@ -25,6 +25,11 @@ Archived (2021-05)
 
 ### 2021
 
+* [UNIX 传奇](https://book.douban.com/subject/35292726/)
+  - 副标题: 历史与回忆
+  - 原作名: UNIX: A History and a Memoir
+  - 微信读书赠送 :)
+
 * [Helgoland](https://book.douban.com/subject/35265189/)
   - 卡洛·罗韦利 Carlo Rovelli
   - 借与 @`Frederic`
