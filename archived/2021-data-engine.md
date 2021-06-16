@@ -297,6 +297,8 @@ reducing the overhead of distributed compute.
 
 ### Arrow
 
+* [Arrow Columnar Format](https://arrow.apache.org/docs/format/Columnar.html)
+
 * [arrow-rs: Native Rust implementation of Apache Arrow](https://github.com/apache/arrow-rs)
 
 ### JDK 17 (LTS)
@@ -404,8 +406,19 @@ Kubernetes-based High Availability (HA) was implemented as an alternative to Zoo
   - 磁盘存储, 行
 
 * [Cap'n Proto](https://github.com/capnproto/capnproto)
-  - :)
+  - will die :)
 * [FlatBuffers](https://github.com/google/flatbuffers)
   - Zero copy, IPC
 * [Protobuf](https://github.com/protocolbuffers/protobuf)
   - 节省内存, RPC
+
+* **FlatBuffers** vs **Protobuf**
+
+|                              | Protobuf | FlatBuffers |
+| ---------------------------- |:--------:|:-----------:|
+| Zero-copy                    |    no    |     yes     |
+| Random-access reads          |    no    |     yes     |
+| Initialization order         |    any   |  bottom-up  |
+| Usable as mutable state      |    yes   |     no      |
+| Padding takes space on wire? |    no    |     yes     |
+| Pointers take space on wire? |    no    |     yes     |
