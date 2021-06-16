@@ -45,5 +45,8 @@ backed by cryptographically verifiable evidence
 
 * [Dodging a bullet: Ethereum State Problems](https://blog.ethereum.org/2021/05/18/eth_state_problems/)
 
+* [evmone](https://github.com/ethereum/evmone)
+  - Fast Ethereum Virtual Machine implementation
+
 * [Fe](https://github.com/ethereum/fe)
   - Fe is an emerging smart contract language for the Ethereum blockchain.
