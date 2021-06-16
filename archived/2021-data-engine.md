@@ -405,12 +405,12 @@ Kubernetes-based High Availability (HA) was implemented as an alternative to Zoo
 * [Avro](https://github.com/apache/avro)
   - 磁盘存储, 行
 
-* [Cap'n Proto](https://github.com/capnproto/capnproto)
-  - will die :)
 * [FlatBuffers](https://github.com/google/flatbuffers)
   - Zero copy, IPC
 * [Protobuf](https://github.com/protocolbuffers/protobuf)
   - 节省内存, RPC
+* [Cap'n Proto](https://github.com/capnproto/capnproto)
+  - will die :)
 
 * **FlatBuffers** vs **Protobuf**
 
