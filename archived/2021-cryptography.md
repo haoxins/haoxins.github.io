@@ -64,6 +64,16 @@ Perfect Secrecy == One-Time Pad
 
 * [Google - Fully Homomorphic Encryption (FHE)](https://github.com/google/fully-homomorphic-encryption)
 
+```
+About Fully Homomorphic Encryption
+
+Fully Homomorphic Encryption (FHE) is an emerging data processing paradigm
+that allows developers to perform transformations on encrypted data.
+FHE can change the way computations are performed by preserving privacy end-to-end,
+thereby giving users even greater confidence that their information
+will remain private and secure.
+```
+
 * `SHA-1` to `SHA-2`
 
 > 微软宣布, 从2021年5月9日起, 该公司旗下的所有主要流程与服务, 都将全面转向仅使用 SHA-2 算法.
