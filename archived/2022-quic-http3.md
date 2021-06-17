@@ -35,6 +35,10 @@ date: 2019-06-30
 
 * [Applicability of the QUIC Transport Protocol](https://quicwg.org/ops-drafts/draft-ietf-quic-applicability.html)
 
+### Problem Details for HTTP APIs
+
+* [RFC 7807: Problem Details for HTTP APIs](https://datatracker.ietf.org/doc/html/rfc7807)
+
 ------------------
 
 # Timeline
