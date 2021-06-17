@@ -62,6 +62,8 @@ Perfect Secrecy == One-Time Pad
 
 ## 2021
 
+* [Google - Fully Homomorphic Encryption (FHE)](https://github.com/google/fully-homomorphic-encryption)
+
 * `SHA-1` to `SHA-2`
 
 > 微软宣布, 从2021年5月9日起, 该公司旗下的所有主要流程与服务, 都将全面转向仅使用 SHA-2 算法.

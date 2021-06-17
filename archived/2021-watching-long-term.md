@@ -18,7 +18,10 @@ i.e., to provide the public with something beyond
 the ubiquitous Michio Kaku and Brian Cox.
 ```
 
+* [P vs. NP and the Computational Complexity Zoo](https://www.youtube.com/watch?v=YX40hbAHx3s)
+
 * [Group theory, abstraction, and the 196,883-dimensional monster](https://www.youtube.com/watch?v=mH0oCDa74tE)
+  - **symmetry** -> group
 
 ### Essence of linear algebra
 
