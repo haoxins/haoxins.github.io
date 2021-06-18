@@ -134,6 +134,8 @@ Immutable first
 | this/it |  it   | this  |  this |  it  | this |
 | return  |  yes  | yes   |  no   |  no  | yes  |
 
+* Coroutine
+
 ```kotlin
 fun main() = runBlocking {
   launch {
