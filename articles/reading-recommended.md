@@ -4,6 +4,9 @@ description: 落霞与孤鹜齐飞, 秋水共长天一色.
 date: 2021-05-03
 ---
 
+* 准则
+  - 不放超过三卷本的大部头
+
 ## 数学
 
 ------------------
@@ -20,15 +23,6 @@ date: 2021-05-03
 ## 计算
 
 ------------------
-
-### 计算机程序设计艺术
-
-* [计算机程序设计艺术 MMIX增补](https://book.douban.com/subject/35170836/)
-* [计算机程序设计艺术 卷4A](https://book.douban.com/subject/34452973/)
-* [计算机程序设计艺术 卷3](https://book.douban.com/subject/26953756/)
-* [计算机程序设计艺术 卷2](https://book.douban.com/subject/26850558/)
-* [计算机程序设计艺术 卷1](https://book.douban.com/subject/26681685/)
-  - 高德纳: **我的书专注于永恒的真理**
 
 * 期待 Dan Boneh 密码学
 
