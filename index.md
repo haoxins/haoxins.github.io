@@ -24,6 +24,7 @@
 * [(2021) Watching long term](archived/2021-watching-long-term.md)
 * [(2021) 程序员修炼之道 第2版](archived/2021-the-pragmatic-programmer.md)
 * [(2021) 庞加莱猜想](archived/2021-the-poincare-conjecture.md)
+* [(2021) TAOCP - 计算机程序设计艺术](archived/2021-taocp.md)
 * [(2021) 计算机程序的构造和解释 第2版](archived/2021-structure-and-interpretation-of-computer-programs.md)
 * [(2021) 阅读 书单 & 简记](archived/2021-reading.md)
 * [(2021) 阅读 - 在线资源](archived/2021-reading-online.md)
