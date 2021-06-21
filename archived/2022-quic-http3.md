@@ -45,6 +45,17 @@ date: 2019-06-30
 
 ## 2021
 
+* 截至2021年4月
+
+```
+中国 IPv6 活跃用户数已达 5.15 亿,占网民总数的 52.1%.
+
+全球的 IPv4 地址早在 2019 年底就分配完了,
+大部分被美国占据,
+而在 IPv6 地址分配上,
+中美一直竞争激烈, 目前我国暂居第一.
+```
+
 * [RFC 9000 - IETF](https://datatracker.ietf.org/doc/html/rfc9000)
   - [RFC 9000 - RFC Editor](https://www.rfc-editor.org/rfc/rfc9000)
   - **QUIC**: A UDP-Based Multiplexed and Secure Transport
