@@ -45,6 +45,12 @@ date: 2019-06-30
 
 ## 2021
 
+* [RFC 9000 - IETF](https://datatracker.ietf.org/doc/html/rfc9000)
+  - [RFC 9000 - RFC Editor](https://www.rfc-editor.org/rfc/rfc9000)
+  - **QUIC**: A UDP-Based Multiplexed and Secure Transport
+  - **May 2021**
+  - 目测, **HTTP/3** 也快了
+
 * 截至2021年4月
 
 ```
@@ -55,12 +61,6 @@ date: 2019-06-30
 而在 IPv6 地址分配上,
 中美一直竞争激烈, 目前我国暂居第一.
 ```
-
-* [RFC 9000 - IETF](https://datatracker.ietf.org/doc/html/rfc9000)
-  - [RFC 9000 - RFC Editor](https://www.rfc-editor.org/rfc/rfc9000)
-  - **QUIC**: A UDP-Based Multiplexed and Secure Transport
-  - **May 2021**
-  - 目测, **HTTP/3** 也快了
 
 * [WebRTC is now a W3C and IETF standard](https://web.dev/webrtc-standard-announcement/)
 
