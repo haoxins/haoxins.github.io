@@ -119,22 +119,8 @@ can begin taking a snapshot without coordinating with other processes.
 
 ## Streaming computing
 
-```
-1. Obstruction-Free
-2. Lock-Free
-3. Wait-Free
-
-Lock (Block) vs Starvation
-2. Load-Link/Store-Conditional
-
-AtomicStampedReference
-
-3. Fetch and Add
 * [Naiad: A Timely Dataflow System](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/11/naiad_sosp2013.pdf)
 
-Again, the important point is that the operation happens atomically,
-which means no other thread can interfere.
-```
 * [Streaming 101: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/)
 * [Streaming 102: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-102/)
   - 看了果断买了书 [Streaming Systems](https://book.douban.com/subject/27080632/)
@@ -216,6 +202,12 @@ the results of groupings are emitted as panes.
 * [Introduction to Lock-Free Data Structures](https://www.baeldung.com/lock-free-programming)
 
 ```
+1. Obstruction-Free
+2. Lock-Free
+3. Wait-Free
+
+Lock (Block) vs Starvation
+```
 
 * CAS
 
@@ -226,6 +218,16 @@ CAS is an atomic operation, which means that
 fetch and update together are one single operation.
 
 Furthermore, compare-and-swap does not prevent the A-B-A problem
+
+2. Load-Link/Store-Conditional
+
+AtomicStampedReference
+
+3. Fetch and Add
+
+Again, the important point is that the operation happens atomically,
+which means no other thread can interfere.
+```
 
 * [How Alibaba is using Dapr](https://blog.dapr.io/posts/2021/03/19/how-alibaba-is-using-dapr)
 
