@@ -119,14 +119,6 @@ can begin taking a snapshot without coordinating with other processes.
 
 ## Streaming computing
 
-------------------
-
-# Timeline
-
-------------------
-
-## 2021
-
 * [The Netflix Cosmos Platform](https://netflixtechblog.com/the-netflix-cosmos-platform-35c14d9351ad)
 
 * [Introduction to Lock-Free Data Structures](https://www.baeldung.com/lock-free-programming)
@@ -154,13 +146,13 @@ Furthermore, compare-and-swap does not prevent the A-B-A problem
 AtomicStampedReference
 
 3. Fetch and Add
+* [Naiad: A Timely Dataflow System](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/11/naiad_sosp2013.pdf)
 
 Again, the important point is that the operation happens atomically,
 which means no other thread can interfere.
 ```
-
-* [Old article - Streaming 101: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/)
-* [Old article - Streaming 102: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-102/)
+* [Streaming 101: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/)
+* [Streaming 102: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-102/)
   - 看了果断买了书 [Streaming Systems](https://book.douban.com/subject/27080632/)
 
 * [Old paper - The Dataflow Model](https://research.google.com/pubs/archive/43864.pdf)
@@ -227,6 +219,13 @@ Triggering determines when in processing time
 the results of groupings are emitted as panes.
 ```
 
+------------------
+
+# Timeline
+
+------------------
+
+## 2021
 * [How Alibaba is using Dapr](https://blog.dapr.io/posts/2021/03/19/how-alibaba-is-using-dapr)
 
 * 3月16日, `混合云第一股` `青云科技` 正式在科创板上市, 股票代码: `688316`
