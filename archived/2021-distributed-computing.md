@@ -119,28 +119,12 @@ can begin taking a snapshot without coordinating with other processes.
 
 ## Streaming computing
 
-* [The Netflix Cosmos Platform](https://netflixtechblog.com/the-netflix-cosmos-platform-35c14d9351ad)
-
-* [Introduction to Lock-Free Data Structures](https://www.baeldung.com/lock-free-programming)
-
 ```
 1. Obstruction-Free
 2. Lock-Free
 3. Wait-Free
 
 Lock (Block) vs Starvation
-```
-
-* CAS
-
-```
-1. CAS (compare-and-swap)
-
-CAS is an atomic operation, which means that
-fetch and update together are one single operation.
-
-Furthermore, compare-and-swap does not prevent the A-B-A problem
-
 2. Load-Link/Store-Conditional
 
 AtomicStampedReference
@@ -226,6 +210,23 @@ the results of groupings are emitted as panes.
 ------------------
 
 ## 2021
+
+* [The Netflix Cosmos Platform](https://netflixtechblog.com/the-netflix-cosmos-platform-35c14d9351ad)
+
+* [Introduction to Lock-Free Data Structures](https://www.baeldung.com/lock-free-programming)
+
+```
+
+* CAS
+
+```
+1. CAS (compare-and-swap)
+
+CAS is an atomic operation, which means that
+fetch and update together are one single operation.
+
+Furthermore, compare-and-swap does not prevent the A-B-A problem
+
 * [How Alibaba is using Dapr](https://blog.dapr.io/posts/2021/03/19/how-alibaba-is-using-dapr)
 
 * 3月16日, `混合云第一股` `青云科技` 正式在科创板上市, 股票代码: `688316`
