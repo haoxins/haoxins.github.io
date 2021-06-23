@@ -146,6 +146,33 @@ and the ability to perform iterative and incremental computations.
    records for a given round of input or loop iteration.
 ```
 
+```
+Timely dataflow is a computational model based on a
+directed graph in which stateful vertices send and
+receive logically timestamped messages along directed edges.
+The dataflow graph may contain nested cycles,
+and the timestamps reflect this structure in order to
+distinguish data that arise in different input epochs and loop iterations.
+```
+
+```
+Timely dataflow graphs are directed graphs with the constraint that
+the vertices are organized into possibly nested loop contexts,
+with three associated system-provided vertices.
+Edges entering a loop context must pass through an
+ingress vertex and edges leaving a loop context must
+pass through an egress vertex. Additionally,
+every cycle in the graph must be contained entirely within some loop context,
+and include at least one feedback vertex that is not
+nested within any inner loop contexts.
+```
+
+```
+Each Naiad worker is responsible for delivering messages
+and notifications to vertices in its
+partition of the timely dataflow graph.
+```
+
 * [Streaming 101: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/)
 * [Streaming 102: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-102/)
   - 看了果断买了书 [Streaming Systems](https://book.douban.com/subject/27080632/)
