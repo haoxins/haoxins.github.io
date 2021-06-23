@@ -8,8 +8,8 @@ date: 2019-05-26
 
 ### 个人年度关键词
 
-* `Blockchain`
-* `冥想`
+* **Blockchain**
+* **冥想**
 
 ### Blockchain
 
