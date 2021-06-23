@@ -120,6 +120,10 @@ can begin taking a snapshot without coordinating with other processes.
 ## Streaming computing
 
 * [Differential dataflow](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/01/differentialdataflow.pdf)
+  - **Incremental computation**
+  - [Naiad](https://github.com/MicrosoftResearch/Naiad)
+  - Naiad 可惜了 :)
+  - **LINQ** 也是 (Language Integrated Query)
 
 * [Naiad: A Timely Dataflow System](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/11/naiad_sosp2013.pdf)
 
