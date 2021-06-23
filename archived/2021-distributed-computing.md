@@ -123,11 +123,34 @@ can begin taking a snapshot without coordinating with other processes.
 
 * [Naiad: A Timely Dataflow System](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/11/naiad_sosp2013.pdf)
 
+```
+A Naiad application that supports real-time queries
+on continually updated data.
+The dashed rectangle represents iterative processing that
+incrementally updates as new data arrive.
+```
+
+```
+Naiad is a distributed system for executing data parallel,
+cyclic dataflow programs.
+It offers the high throughput of batch processors,
+the low latency of stream processors,
+and the ability to perform iterative and incremental computations.
+```
+
+```
+1. structured loops allowing feedback in the dataflow,
+2. stateful dataflow vertices capable of consuming and
+   producing records without global coordination, and
+3. notifications for vertices once they have received all
+   records for a given round of input or loop iteration.
+```
+
 * [Streaming 101: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/)
 * [Streaming 102: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-102/)
   - 看了果断买了书 [Streaming Systems](https://book.douban.com/subject/27080632/)
 
-* [Old paper - The Dataflow Model](https://research.google.com/pubs/archive/43864.pdf)
+* [The Dataflow Model](https://research.google.com/pubs/archive/43864.pdf)
 
 ```
 The Dataflow Model:
