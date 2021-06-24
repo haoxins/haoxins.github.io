@@ -4,6 +4,10 @@
 在学习区做事, 叫经验.
 ```
 
+* Me
+  - [github.com](https://github.com/haoxins)
+  - [crates.io](https://crates.io/users/haoxins)
+
 * Formerly
   - Web developer (5 years +)
 
