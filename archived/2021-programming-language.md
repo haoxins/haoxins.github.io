@@ -26,6 +26,9 @@ date: 2020-12-27
 
 ### Events
 
+* Kotlin 逐渐废弃了一些子项目, 好事!
+  - 还需要更加的专注, 缩小 Scope
+
 * [Kotlin Coroutines 1.5: GlobalScope Marked as Delicate, Refined Channels API, and More](https://blog.jetbrains.com/kotlin/2021/05/kotlin-coroutines-1-5-0-released/)
 
 ```
