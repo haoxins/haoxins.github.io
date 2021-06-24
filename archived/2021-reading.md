@@ -25,6 +25,11 @@ Archived (2021-05)
 
 ### 2021
 
+* [量子力学概论](https://book.douban.com/subject/35257979/)
+  - 副标题: 英文注释版 原书第3版
+  - 原作名: Introduction to quantum mechanics
+  - 出版年: 2020-9-1
+
 * [UNIX 传奇](https://book.douban.com/subject/35292726/)
   - 副标题: 历史与回忆
   - 原作名: UNIX: A History and a Memoir
