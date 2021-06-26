@@ -1,5 +1,5 @@
 ---
-title: (2022) TAOCP - 计算机程序设计艺术
+title: (2022) TAOCP (卷4) - 计算机程序设计艺术
 description: 穷且益坚, 不坠青云之志. 酌贪泉而觉爽, 处涸辙以犹欢.
 date: 2021-06-20
 ---
@@ -8,7 +8,6 @@ date: 2021-06-20
 
 * [计算机程序设计艺术](https://book.douban.com/series/46236)
   - [计算机程序设计艺术 卷4A](https://book.douban.com/subject/34452973/)
-  - [计算机程序设计艺术 卷3](https://book.douban.com/subject/26953756/)
 
 ------------------
 
