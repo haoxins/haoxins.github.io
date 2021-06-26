@@ -4,6 +4,11 @@ description: 西当太白有鸟道, 可以横绝峨眉巅
 date: 2020-11-09
 ---
 
+* [(2022) TAOCP 组合算法 - 计算机程序设计艺术](2022-taocp-4.md)
+* [(2021) TAOCP 排序与查找 - 计算机程序设计艺术](2021-taocp-3.md)
+* [(2021) TAOCP 半数值算法 - 计算机程序设计艺术](2021-taocp-2.md)
+* [(2021) TAOCP 基本算法 - 计算机程序设计艺术](2021-taocp-1.md)
+
 ## 不可解性
 
 * NP (nondeterministic polynomial time)
