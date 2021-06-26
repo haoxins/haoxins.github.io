@@ -4,8 +4,6 @@ description: 莫听穿林打叶声, 何妨吟啸且徐行
 date: 2018-04-01
 ---
 
-[Long term] 2021-reading-long-term.md
-
 ### Wish list
 
 - [ ] Dan Boneh 的密码学新作
@@ -72,7 +70,7 @@ Archived (2021-05)
 * [复分析: 可视化方法](https://book.douban.com/subject/35316347/)
   - 译者: 齐民友
   - 出版年: 2021-01
-  - 移步 [Reading long term][Long term]
+  - 移步 [Reading long term](2021-reading-long-term.md)
   - 如果 2020 & 2021 只能买一本数学书, 那必定就是这一本!
 
 * [猫, 爱因斯坦和密码学](https://book.douban.com/subject/35269186/)
@@ -296,7 +294,7 @@ Archived (2021-05)
 
 * [编程珠玑 第2版 修订版](https://book.douban.com/subject/26302533/)
 * [编程珠玑 续 修订版）](https://book.douban.com/subject/26302596/)
-  - 移步 [Reading long term][Long term]
+  - 移步 [Reading long term](2021-reading-long-term.md)
 
 * [百面机器学习](https://book.douban.com/subject/30285146/)
   - 副标题: 算法工程师带你去面试
@@ -317,7 +315,7 @@ Archived (2021-05)
 
 ------------------
 
-### 移步: [Reading long term][Long term]
+### 移步: [Reading long term](2021-reading-long-term.md)
 
 > 下面这几本书都是 2020-08 买的, 但是呢, 估计不可能看完 :)
 
