@@ -5,6 +5,7 @@ date: 2021-05-05
 ---
 
 * [Wiki - The Art of Computer Programming](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming)
+  - [MMIX](https://mmix.cs.hm.edu)
 
 * [计算机程序设计艺术](https://book.douban.com/series/46236)
   - [计算机程序设计艺术 MMIX增补](https://book.douban.com/subject/35170836/)
@@ -39,6 +40,10 @@ date: 2021-05-05
   - 卷5. 语法算法 第9章: 词法扫描
   - 卷5. 语法算法 第10章: 语法分析
 
+* 首先, 阅读 `1.3 (MIX) - 1.4`
+  - 配合 **(MMIX增补)**, `第一部分 第1章`, `第二部分 第1章`
+  - [MMIX](https://mmix.cs.hm.edu)
+
 ------------------
 
 ## 信息结构 (卷1)
@@ -57,6 +62,8 @@ RISC-V 发展迅速
 
 精彩纷呈!
 ```
+
+* [MMIX](https://mmix.cs.hm.edu)
 
 ------------------
 
