@@ -293,7 +293,7 @@ Archived (2021-05)
   - **不推荐** 也就 第4章 还凑合
 
 * [编程珠玑 第2版 修订版](https://book.douban.com/subject/26302533/)
-* [编程珠玑 续 修订版）](https://book.douban.com/subject/26302596/)
+* [编程珠玑 续 修订版](https://book.douban.com/subject/26302596/)
   - 移步 [Reading long term](2021-reading-long-term.md)
 
 * [百面机器学习](https://book.douban.com/subject/30285146/)
