@@ -29,6 +29,8 @@ Archived (2021-05)
   - 副标题: 英文注释版 原书第3版
   - 原作名: Introduction to quantum mechanics
   - 出版年: 2020-9-1
+  - 中文注释也太少了吧
+  - 还是等 2022 年的中文翻译版本吧 ~
 
 * [UNIX 传奇](https://book.douban.com/subject/35292726/)
   - 副标题: 历史与回忆
