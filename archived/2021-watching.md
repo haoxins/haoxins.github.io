@@ -11,6 +11,11 @@ date: 2019-10-24
 
 ### 2021-06
 
+* [bilibili - 尼罗河上的惨案](https://www.bilibili.com/bangumi/media/md28233708)
+  - [尼罗河上的惨案](https://movie.douban.com/subject/1302100/)
+  - 学生时代追剧 **大侦探波罗** 的记忆依旧十分清晰
+  - 还是更喜欢 大侦探波罗 中的 **波罗**
+
 * 继续看 [觉醒年代](https://movie.douban.com/subject/30228394/)
   - **白玉兰** 最佳导演, 最佳编剧, 最佳男主角 **于和伟**
 
