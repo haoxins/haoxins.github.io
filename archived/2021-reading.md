@@ -4,7 +4,7 @@ description: 莫听穿林打叶声, 何妨吟啸且徐行
 date: 2018-04-01
 ---
 
-* [Long term]: 2021-reading-long-term.md
+* [Long term] 2021-reading-long-term.md
 
 ### Wish list
 
