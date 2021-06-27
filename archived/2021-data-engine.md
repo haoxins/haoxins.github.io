@@ -30,7 +30,7 @@ date: 2020-11-03
   - 有点意思, 期待成为主流
   - [Argo CD](https://github.com/argoproj/argo-cd)
 
-```zsh
+```sh
 Application
 # A group of Kubernetes resources as defined by a manifest.
 # This is a Custom Resource Definition (CRD).
@@ -55,7 +55,7 @@ Health
 
 * Helm
 
-```zsh
+```sh
 Chart.yaml
 # A YAML file containing information about the chart
 values.yaml
