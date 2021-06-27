@@ -42,6 +42,10 @@ date: 2019-05-26
 标志着中国人首次进入自己的空间站.
 ```
 
+* 上海发布 `上海市住宅和商务楼宇 FTTR 光网络布线白皮书`
+  - **FTTR**: Fiber to the room
+  - 光纤 **取代** 电力线, 电话线, 同轴电视线, 网线
+  - 目前室内的布线基本是网线, 光纤到房间就需要把网线替换成光纤
 
 * ARM Announces ARM v9 Architecture: SVE2, Security, and the Next Decade
   - 2022
