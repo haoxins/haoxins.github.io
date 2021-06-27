@@ -42,6 +42,12 @@ date: 2019-05-26
 标志着中国人首次进入自己的空间站.
 ```
 
+
+* ARM Announces ARM v9 Architecture: SVE2, Security, and the Next Decade
+  - 2022
+  - PC 的 ARM 时代
+  - VR 的 时代
+
 ------------------
 
 ## 2020

@@ -97,13 +97,6 @@ BTW: 5月25日, Google 向市场推出了 Fuchsia OS,
   - 虽说没有明显的变化, 但依旧感受到重庆楼群的密集, 有点香港的感觉
 * 相较于 成都, 更添 厚重感
 
-### ARM v9
-
-* ARM Announces ARM v9 Architecture: SVE2, Security, and the Next Decade
-  - 2022
-  - PC 的 ARM 时代
-  - VR 的 时代
-
 ### 春节期间
 
 * 抗击疫情, 提倡就地过年, 身边不少同事不返乡
