@@ -42,6 +42,18 @@ date: 2019-05-26
 标志着中国人首次进入自己的空间站.
 ```
 
+* 06月02日, **Harmony OS 2.0** 正式发布!
+  - **Open Harmony 2.0** 正式开源
+  - 但愿 3.0, 带来真正完整的 Open Harmony
+  - https://gitee.com/openharmony
+
+> 从某种层面上来讲, 微信小程序的生态间接为鸿蒙生态奠定了基础.
+> 因为开发模式上的相似~
+
+```
+BTW: 5月25日, Google 向市场推出了 Fuchsia OS,
+从 Nest Hub 开始.
+```
 
 * 06月01日, **OceanBase** 开源
   - [OceanBase](https://open.oceanbase.com)

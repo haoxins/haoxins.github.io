@@ -18,18 +18,6 @@ date: 2020-01-29
 日暮乡关何处是? 烟波江上使人愁.
 ```
 
-* 06月02日, **Harmony OS 2.0** 正式发布!
-  - **Open Harmony 2.0** 正式开源
-  - 但愿 3.0, 带来真正完整的 Open Harmony
-  - https://gitee.com/openharmony
-
-> 从某种层面上来讲, 微信小程序的生态间接为鸿蒙生态奠定了基础.
-> 因为开发模式上的相似~
-
-```
-BTW: 5月25日, Google 向市场推出了 Fuchsia OS,
-从 Nest Hub 开始.
-```
 * [飞书](https://www.feishu.cn)
   - 这一套产品确实不错
   - 理念清晰, 让信息高效传递
