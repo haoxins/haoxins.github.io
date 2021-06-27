@@ -43,9 +43,17 @@ date: 2019-05-26
 ```
 
 
+* 06月01日, **OceanBase** 开源
+  - [OceanBase](https://open.oceanbase.com)
+  - [GitHub](https://github.com/oceanbase/oceanbase)
+
 * 05月22日, 杂交水稻之父 **袁隆平** 在长沙逝世, 享年91岁
 
 * 安卓 **12** 引入了对 **AVIF** 的支持
+
+* 05月15日, **天问一号** 火星探测器所携带的 **祝融号** 火星车及其着陆组合体成功着陆于火星.
+  - 庞大工程, 圆满实施
+  - 令人赞叹, 由衷钦佩
 
 * 上海发布 `上海市住宅和商务楼宇 FTTR 光网络布线白皮书`
   - **FTTR**: Fiber to the room

@@ -30,13 +30,6 @@ date: 2020-01-29
 BTW: 5月25日, Google 向市场推出了 Fuchsia OS,
 从 Nest Hub 开始.
 ```
-
-* 06月01日, **OceanBase** 开源
-  - [OceanBase](https://open.oceanbase.com)
-  - [GitHub](https://github.com/oceanbase/oceanbase)
-* 05月15日, **天问一号** 火星探测器所携带的 **祝融号** 火星车及其着陆组合体成功着陆于火星.
-  - 庞大工程, 圆满实施
-  - 令人赞叹, 由衷钦佩
 * [飞书](https://www.feishu.cn)
   - 这一套产品确实不错
   - 理念清晰, 让信息高效传递
