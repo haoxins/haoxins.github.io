@@ -19,9 +19,9 @@ date: 2019-05-26
 
 ### 个人年度关键词
 
-* `Big Data & Machine learning`
-* `运动 冥想`
-* `静`
+* **Big Data & Machine learning**
+* **运动 冥想**
+* **读书 经典书**
 
 ### Big Data & Machine learning
 
@@ -71,6 +71,7 @@ BTW: 5月25日, Google 向市场推出了 Fuchsia OS,
   - **FTTR**: Fiber to the room
   - 光纤 **取代** 电力线, 电话线, 同轴电视线, 网线
   - 目前室内的布线基本是网线, 光纤到房间就需要把网线替换成光纤
+  - 定个大目标, 买二套房, FTTR!
 
 * ARM Announces ARM v9 Architecture: SVE2, Security, and the Next Decade
   - 2022
