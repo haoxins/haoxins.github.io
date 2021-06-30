@@ -224,6 +224,15 @@ when your data set size increases even beyond that.
 
 ### Kubeflow
 
+* [Blog: Running Kubeflow at Intuit: Enmeshed in the service mesh](https://blog.kubeflow.org/running-kubeflow-at-intuit/)
+
+```
+Kubeflow 1.3, Istio, ArgoCD
+
+Kubfelow uses Argo workflows internally to run the pipeline
+in a workflow fashion.
+```
+
 * [The Kubeflow 1.3 software release streamlines ML workflows and simplifies ML platform operations](https://blog.kubeflow.org/kubeflow-1.3-release/)
 
 ```
