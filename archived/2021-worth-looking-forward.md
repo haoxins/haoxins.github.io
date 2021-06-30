@@ -8,7 +8,7 @@ date: 2018-12-02
 
 ------------------
 
-## 2022 Next Generation (Lockdown in 2021-03-17)
+## 2022 Next Generation (Lockdown in 2021-06-30)
 
 ### Overview
 
@@ -22,7 +22,7 @@ date: 2018-12-02
 * [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
   - [Android 12](https://www.android.com/android-12/)
 
-* [QUIC](https://tools.ietf.org/html/draft-ietf-quic-transport-34)
+* [QUIC](https://datatracker.ietf.org/doc/html/rfc9000)
   - [HTTP/3](https://tools.ietf.org/html/draft-ietf-quic-http-34)
 
 ### GraalVM
@@ -39,7 +39,7 @@ date: 2018-12-02
 ### Data Computing
 
 * [Apache Arrow](https://github.com/apache/arrow)
-  - [DataFusion - an in-memory query engine](https://crates.io/crates/datafusion)
+  - [DataFusion is an extensible query execution framework, written in Rust, that uses Apache Arrow as its in-memory format.](https://github.com/apache/arrow-datafusion)
 
 ### Graph Computing
 
