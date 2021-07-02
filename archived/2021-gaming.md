@@ -8,6 +8,10 @@ date: 2021-02-17
 
 ### 2021
 
+* [超级机器人大战30](https://baike.baidu.com/item/超级机器人大战30/57293309)
+  - 超级机器人大战, 30周年, 怀念青春, Game boy!
+  - 如果到时候没有发布 Switch pro, 那就买个 Switch 吧
+
 * **阿凡达: 潘多拉前线**
   - Avatar: Frontiers of Pandora
   - 期待!
