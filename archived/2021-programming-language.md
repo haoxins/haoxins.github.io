@@ -26,6 +26,9 @@ date: 2020-12-27
 
 ### Events
 
+* [PEP 621: Storing project metadata in pyproject.toml](https://www.python.org/dev/peps/pep-0621/)
+  - `pyproject.toml`
+
 * Kotlin 逐渐废弃了一些子项目, 好事!
   - 还需要更加 `Focus`, 缩小 `Scope`
 
