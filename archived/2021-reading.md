@@ -30,6 +30,9 @@ Archived (2021-05)
   - 中文注释也太少了吧
   - 还是等 2022 年的中文翻译版本吧 ~
 
+* [神们自己](https://book.douban.com/subject/26264967/)
+  - 微信读书
+
 * [UNIX 传奇](https://book.douban.com/subject/35292726/)
   - 副标题: 历史与回忆
   - 原作名: UNIX: A History and a Memoir
