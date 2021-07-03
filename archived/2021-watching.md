@@ -6,10 +6,18 @@ date: 2019-10-24
 
 ## 2021
 
-### 2021-06
+### 2021-07
+
+* [蝙蝠侠: 黑暗骑士崛起](https://www.bilibili.com/bangumi/media/md28222056)
+
+* [蝙蝠侠: 黑暗骑士](https://www.bilibili.com/bangumi/media/md28221971)
+
+* [蝙蝠侠: 侠影之谜](https://www.bilibili.com/bangumi/media/md28222012)
 
 * [茶馆 (1982)](https://movie.douban.com/subject/1461403/)
   - 嗑瓜子, 喝可乐, 看茶馆
+
+### 2021-06
 
 * [bilibili - 尼罗河上的惨案](https://www.bilibili.com/bangumi/media/md28233708)
   - [尼罗河上的惨案](https://movie.douban.com/subject/1302100/)
