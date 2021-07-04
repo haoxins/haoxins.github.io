@@ -1,24 +1,35 @@
 #!/usr/bin/env zsh
 
-if [ -f $1 ]; then
-  cat $1 | \
-  tr '\t' ' ' | \
-  tr '’' "'" | \
-  tr '‘' "'" | \
-  tr '“' '"' | \
-  tr '”' '"' | \
-  tr '（' '(' | \
-  tr '）' ')' | \
-  tr '【' '[' | \
-  tr '】' ']' | \
-  tr '，' ', ' | \
-  tr '、' ', ' | \
-  tr '。' '. ' | \
-  tr '；' '; ' | \
-  tr '：' ': ' | \
-  tr '！' '! ' | \
-  tr '？' '? ' > \
-  $1
-else
-  echo "$1 does not exist."
-fi
+fmt_md() {
+  MD_FILE="./$MD_FILE"
+
+  if [ -f $MD_FILE ]; then
+    cat $MD_FILE | \
+    tr '\t' ' ' | \
+    tr '’' "'" | \
+    tr '‘' "'" | \
+    tr '“' '"' | \
+    tr '”' '"' | \
+    tr '（' '(' | \
+    tr '）' ')' | \
+    tr '【' '[' | \
+    tr '】' ']' | \
+    tr '，' ', ' | \
+    tr '、' ', ' | \
+    tr '。' '. ' | \
+    tr '；' '; ' | \
+    tr '：' ': ' | \
+    tr '！' '! ' | \
+    tr '？' '? ' > \
+    $MD_FILE
+  else
+    echo "$MD_FILE does not exist."
+  fi
+}
+
+MD_FILES=`git add --all && git status -s | grep '.md' | grep -E 'A|M' | cut -c 2- | xargs`
+
+for MD_FILE in $MD_FILES
+do
+  fmt_md
+done
