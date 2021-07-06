@@ -23,12 +23,14 @@ Archived (2021-05)
 
 ### 2021
 
+* [数据密集型应用系统设计](https://book.douban.com/subject/30329536/)
+
 * [量子力学概论](https://book.douban.com/subject/35257979/)
   - 副标题: 英文注释版 原书第3版
   - 原作名: Introduction to quantum mechanics
   - 出版年: 2020-9-1
   - 中文注释也太少了吧
-  - 还是等 2022 年的中文翻译版本吧 ~
+  - **还是等** 2022 年的中文翻译版本吧 ~
 
 * [神们自己](https://book.douban.com/subject/26264967/)
   - 微信读书
