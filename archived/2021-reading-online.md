@@ -8,8 +8,6 @@ date: 2020-11-05
 
 ## 2021
 
-* [TiKV - Deep Dive](https://tikv.org/deep-dive/introduction/)
-
 * [Consensus: Bridging Theory and Practice](https://github.com/ongardie/dissertation)
 
 * [Peter Bailis, Highly Available, Seldom Consistent](http://www.bailis.org/blog/)
