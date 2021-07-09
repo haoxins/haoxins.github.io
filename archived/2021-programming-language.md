@@ -22,7 +22,7 @@ date: 2020-12-27
   - Web Frontend
   - Multiplatform Mobile
   - 更别提 Data Science
-  - 踏踏实实做好 Android, Server-side
+  - 踏踏实实做好 Server-side, Android
   - By haoxin, 2021-07-09
 
 ------------------
@@ -107,7 +107,7 @@ Aka turning an expression into a statement.
 * Future
 
 ```
-Rust 一个 Future 只有被主动 poll(await)才会得到执行
+Rust 一个 Future 只有被主动 poll (await) 才会得到执行
 JavaScript 一个 Promise 一旦生成, 就会放入 event loop 里等待执行
 ```
 
