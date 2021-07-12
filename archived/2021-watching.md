@@ -9,6 +9,7 @@ date: 2019-10-24
 ### 2021-07
 
 * [蝙蝠侠: 黑暗骑士崛起](https://www.bilibili.com/bangumi/media/md28222056)
+  - 还算 精彩
 
 * [蝙蝠侠: 黑暗骑士](https://www.bilibili.com/bangumi/media/md28221971)
 
