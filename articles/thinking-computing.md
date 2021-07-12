@@ -19,6 +19,11 @@ date: 2020-07-22
 * Storage is very very cheap
 * Compute is cheap
 
+* Conpute & Storage
+  - Storage 越来越是 Cloud native (Cloud service)
+  - Conpute 目前是 Open source
+  - IO
+
 ### Serverless DB ?
 
 * **Database -> Table**, **落伍了**
