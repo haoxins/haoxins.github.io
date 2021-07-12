@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/usr/bin/env python3
+
 
 fmt_md() {
   MD_FILE="./$MD_FILE"
