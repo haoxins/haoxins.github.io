@@ -28,6 +28,7 @@
 * [(2021) 阅读 书单 & 简记](archived/2021-reading.md)
 * [(2021) 阅读 - 在线资源](archived/2021-reading-online.md)
 * [(2021) 阅读 - 经典书籍](archived/2021-reading-long-term.md)
+* [(2021) Programming Rust - 2nd Edition](archived/2021-programming-rust-2nd.md)
 * [(2021) Programming language](archived/2021-programming-language.md)
 * [(2021) 程序员修炼之道 第2版](archived/2021-pragmatic-programmer.md)
 * [(2021) 卡洛·罗韦利 Carlo Rovelli 系列作品](archived/2021-physics-carlo-rovelli.md)

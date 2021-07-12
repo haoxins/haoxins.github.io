@@ -23,6 +23,9 @@ Archived (2021-05)
 
 ### 2021
 
+* [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
+  - 副标题: Fast, Safe Systems Development
+
 * [数据密集型应用系统设计](https://book.douban.com/subject/30329536/)
 
 * [量子力学概论](https://book.douban.com/subject/35257979/)
