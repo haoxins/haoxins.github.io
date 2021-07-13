@@ -4,6 +4,15 @@ description: 逝者如斯, 而未尝往也; 盈虚者如彼, 而卒莫消长也.
 date: 2021-03-21
 ---
 
+## Machine Learning Modeling Pipelines in Production
+
+### Neural Architecture Search
+
+* Neural Architecture Search (NAS)
+  - search space
+  - search strategy
+  - performance estimation strategy
+
 ## Machine Learning Data Lifecycle in Production
 
 * ML: **data is a first class citizen**
