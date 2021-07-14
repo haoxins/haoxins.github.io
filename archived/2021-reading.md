@@ -24,10 +24,10 @@ Archived (2021-05)
 ### 2021
 
 * [量子计算公开课](https://book.douban.com/subject/35467917/)
-  - 副标题: 从德谟克利特、计算复杂性到自由意志
+  - 副标题: 从德谟克利特, 计算复杂性到自由意志
   - 原作名: Quantum Computing since Democritus
   - 自费曼以来, 还没有谁的公开课能如此精彩
-  - 接上, 真的假的, 不要让我期待过高哟!
+  - 接上, 真的假的? 不要让我期待过高哟!
 
 * [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
   - 副标题: Fast, Safe Systems Development
