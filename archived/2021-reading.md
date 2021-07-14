@@ -22,6 +22,7 @@ date: 2018-04-01
 
 * [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
   - 副标题: Fast, Safe Systems Development
+  - @`Elvis` 送了我一本 打印版
 
 * [数据密集型应用系统设计](https://book.douban.com/subject/30329536/)
 
