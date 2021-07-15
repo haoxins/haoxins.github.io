@@ -106,6 +106,32 @@ date: 2021-07-06
   - 今天才清晰地意识到它是 **multi-master**
   - 毕竟, 也没这个需求~
 
+* 自动冲突解决
+
+```
+冲突解决的规则可能会变得越来越复杂, 且自定义代码很容易出错.
+
+有一些有意思的研究尝试自动解决并发修改所引起的冲突.
+
+1. 无冲突的复制数据类型 (Conflict-free Replicated Datatypes, CRDT)
+
+CRDT 是可以由多个用户同时编辑的数据结构, 包括 map, ordered list, 计数器等,
+并且以内置的合理方式自动地解决冲突. 一些 CRDT 已经在 Riak 2.0 中得以具体实现.
+
+2. 可合并的持久数据结构 (Mergeable persistent data)
+
+它跟踪变更历史, 类似于 Git 版本控制系统, 并提出三向合并功能
+(three-way merge function. CRDT 采用双向合并).
+
+3. 操作转换 (Operational transformationl)
+
+它是 Google Docs 等协作编辑应用背后的冲突解决算法.
+专为可同时编辑的有序列表而设计, 如文本文档的字符列表.
+
+这些算法总体来讲还处于早期阶段, 但将来它们可能会被整合到更多的数据系统中.
+这些自动冲突解决方案可以使 主复制模型 更简单, 更容易被应用程序集成.
+```
+
 * [Introducing Riak 2.0: Data Types, Strong Consistency, Full-Text Search](https://riak.com/introducing-riak-2-0/)
   - Posted October 29, 2013
   - https://github.com/basho
