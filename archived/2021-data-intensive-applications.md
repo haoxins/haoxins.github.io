@@ -106,6 +106,11 @@ date: 2021-07-06
   - 今天才清晰地意识到它是 **multi-master**
   - 毕竟, 也没这个需求~
 
+* [Introducing Riak 2.0: Data Types, Strong Consistency, Full-Text Search](https://riak.com/introducing-riak-2-0/)
+  - Posted October 29, 2013
+  - https://github.com/basho
+  - https://github.com/basho-labs
+
 ### 复制滞后
 
 ## 数据分区
