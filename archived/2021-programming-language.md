@@ -344,6 +344,29 @@ coroutineContext.cancelChildren()
 
 ### Python
 
+* Global Interpreter Lock, GIL
+
+```
+An older way of marking a function as a coroutine
+is to decorate a normal def function with
+@asyncio.coroutine.
+
+The result is a generator-based coroutine.
+
+Support for generator-based coroutines is deprecated
+and is scheduled for removal in Python 3.10.
+
+Generator-based coroutines predate async/await syntax.
+They are Python generators that use yield from expressions
+to await on Futures and other coroutines.
+
+However, async IO is not threading,
+nor is it multiprocessing.
+
+In fact, async IO is a single-threaded,
+single-process design.
+```
+
 ### Java
 
 * Records
