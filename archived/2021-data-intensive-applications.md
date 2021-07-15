@@ -98,6 +98,14 @@ date: 2021-07-06
 * 基于行的逻辑日志复制
   - 变更数据捕获 (CDC)
 
+* [Apache CouchDB](https://github.com/apache/couchdb)
+  - https://couchdb.apache.org
+  - Seamless multi-master syncing database
+  - with an intuitive HTTP/JSON API
+  - 之前看见 CouchDB, 只注意到了 `HTTP/JSON API`
+  - 今天才清晰地意识到它是 **multi-master**
+  - 毕竟, 也没这个需求~
+
 ### 复制滞后
 
 ## 数据分区
