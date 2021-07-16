@@ -112,6 +112,10 @@ The Operator pattern consists of three components:
    Report the state of the application in a declarative way.
 ```
 
+* [OAM](https://oam.dev)
+  - An open model for defining cloud native apps.
+  - https://github.com/oam-dev/kubevela
+
 ### Knative
 
 * Kubernetes: 1.22
