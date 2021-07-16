@@ -29,6 +29,8 @@ date: 2020-11-03
   - [Argo Workflows](https://github.com/argoproj/argo-workflows)
   - 有点意思, 期待成为主流
   - [Argo CD](https://github.com/argoproj/argo-cd)
+  - [Argo Workflows v3.0](https://blog.argoproj.io/argo-workflows-v3-0-4d0b69f15a6e)
+  - [Argo Workflows v3.1 is coming ...](https://blog.argoproj.io/argo-workflows-v3-1-is-coming-1fb1c1091324)
 
 ```sh
 Application
