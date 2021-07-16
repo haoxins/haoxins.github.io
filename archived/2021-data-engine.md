@@ -91,6 +91,27 @@ Some of the things that you can use an operator to automate include:
   without an internal member election process
 ```
 
+* [CNCF Operator White Paper - Final Version](https://github.com/cncf/tag-app-delivery/blob/master/operator-wg/whitepaper/Operator-WhitePaper_v1-0.md)
+
+```
+The Operator Pattern can be used to solve the problem of managing state.
+
+By using the operator pattern, the knowledge on how to
+adjust and maintain a resource is captured in code
+and often within a single service (also called a controller).
+
+The Operator pattern consists of three components:
+
+1. The application or infrastructure that we want to manage.
+2. A domain specific language that enables the user
+   to specify the desired state of the application
+   in a declarative way.
+3. A controller that runs continuously:
+   Reads and is aware of the state.
+   Runs actions when operations state changes in an automated way.
+   Report the state of the application in a declarative way.
+```
+
 ### Knative
 
 * Kubernetes: 1.22
