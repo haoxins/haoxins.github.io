@@ -11,16 +11,16 @@ def fmt_md(file: str):
         text = f.read()
         text = (
             text.replace("\t", " ", -1)
+            .replace("‘", "'", -1)
+            .replace("’", "'", -1)
+            .replace("“", '"', -1)
+            .replace("”", '"', -1)
             .replace("（", " (", -1)
             .replace("）", ") ", -1)
             .replace("《", " <", -1)
             .replace("》", "> ", -1)
             .replace("【", " [", -1)
             .replace("】", "] ", -1)
-            .replace("‘", "'", -1)
-            .replace("’", "'", -1)
-            .replace("“", '"', -1)
-            .replace("”", '"', -1)
             .replace("，", ", ", -1)
             .replace("、", ", ", -1)
             .replace("。", ". ", -1)
@@ -41,11 +41,13 @@ output = subprocess.run(["git", "status", "-s"], capture_output=True)
 files = output.stdout.decode("utf-8").split("\n")
 files = filter(lambda s: s.endswith(".md"), files)
 
+
 def get_filename(s: str) -> str:
     if s.startswith("R"):
         return s.split("->").pop().strip()
     else:
         return s[1:].strip()
+
 
 files = map(get_filename, files)
 
