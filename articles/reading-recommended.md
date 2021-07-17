@@ -15,9 +15,6 @@ date: 2021-05-03
   - 数学女孩? No
   - 期待新的系列
 
-* [数学爵士乐](https://book.douban.com/subject/2185715/)
-  - 原作名: Coincidences, Chaos, and All That Math Jazz
-
 ------------------
 
 ## 计算
