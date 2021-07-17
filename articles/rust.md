@@ -19,6 +19,9 @@ date: 2021-04-10
 
 ## 2021
 
+* Arti: reimplementing Tor in Rust
+  - https://www.torproject.org
+
 * [Rocket](https://github.com/SergioBenitez/Rocket)
   - Version 0.5.0-rc.1 (Jun 09, 2021)
   - 期待 `v1.0`
