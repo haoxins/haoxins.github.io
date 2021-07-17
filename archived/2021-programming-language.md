@@ -151,7 +151,7 @@ Immutable first
 
 * Coroutine
 
-```kotlin
+```kt
 fun main() = runBlocking {
   launch {
     delay(200L)
@@ -177,7 +177,7 @@ fun main() = runBlocking {
 // Coroutine scope is over
 ```
 
-```kotlin
+```kt
 val job = launch {
   try {
     repeat(1000) { i ->
@@ -206,7 +206,7 @@ println("main: Now I can quit.")
 // main: Now I can quit.
 ```
 
-```kotlin
+```kt
 GlobalScope.launch {
   // ...
 }
@@ -220,7 +220,7 @@ launch(Dispatchers.Default) {
 
 * **Flow**
 
-```kotlin
+```kt
 fun simple(): Flow<Int> = flow {
   emit(1)
   throw RuntimeException()
@@ -238,7 +238,7 @@ fun main() = runBlocking<Unit> {
 // Caught exception
 ```
 
-```kotlin
+```kt
 fun simple(): Flow<Int> = (1..3).asFlow()
 
 fun main() = runBlocking<Unit> {
@@ -255,7 +255,7 @@ fun main() = runBlocking<Unit> {
 // Exception in thread "main" java.lang.IllegalStateException: Collected 2
 ```
 
-```kotlin
+```kt
 fun events(): Flow<Int> = (1..3).asFlow().onEach { delay(100) }
 
 fun main() = runBlocking<Unit> {
@@ -285,7 +285,7 @@ fun main() = runBlocking<Unit> {
 
 * **Channel**
 
-```kotlin
+```kt
 val channel = Channel<Int>()
 launch {
   for (x in 1..5) channel.send(x * x)
@@ -308,7 +308,7 @@ for (y in channel) println(y)
 println("Done!")
 ```
 
-```kotlin
+```kt
 fun CoroutineScope.produceNumbers() = produce<Int> {
   var x = 1
   while (true) send(x++)
