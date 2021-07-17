@@ -384,6 +384,16 @@ class InventoryItem:
 
 ### Java
 
+* Text Blocks
+
+```java
+String query = """
+               SELECT "EMP_ID", "LAST_NAME" FROM "EMPLOYEE_TB"
+               WHERE "CITY" = 'INDIANAPOLIS'
+               ORDER BY "EMP_ID", "LAST_NAME";
+               """;
+```
+
 * Records
 
 ```java
@@ -392,6 +402,18 @@ record Rational(int num, int denom) {
     int gcd = gcd(num, denom);
     num /= gcd;
     denom /= gcd;
+  }
+}
+```
+
+* Switch Expressions
+
+```java
+static void howMany(int k) {
+  switch (k) {
+    case 1  -> System.out.println("one");
+    case 2  -> System.out.println("two");
+    default -> System.out.println("many");
   }
 }
 ```
