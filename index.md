@@ -7,7 +7,6 @@
 * [阅读 2022+](articles/reading-watching-and-gaming.md)
 * [Rust](articles/rust.md)
 * [Serverless for everything](articles/serverless.md)
-* [School of Theoretical Physics Applied Mathematics](articles/theoretical-physics-applied-mathematics.md)
 * [关于 Computing 的思考](articles/thinking-computing.md)
 * [诗·文](articles/诗.md)
 

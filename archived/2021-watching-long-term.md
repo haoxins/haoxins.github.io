@@ -6,17 +6,6 @@ date: 2021-02-12
 
 ## 2021
 
-* [Arindam Kumar Chatterjee](https://www.youtube.com/channel/UCdnu4FeJYj_JOdh682wzHfg)
-
-```
-Theoretical / mathematical physics at the graduate level and above.
-This is NOT a popular science channel.
-Here you find real theoretical physicists doing real theoretical physics.
-We think it is important for people to get a taste of the real deal,
-and for aspiring theoretical physicists to see what they are working towards,
-i.e., to provide the public with something beyond
-the ubiquitous Michio Kaku and Brian Cox.
-```
 
 * [P vs. NP and the Computational Complexity Zoo](https://www.youtube.com/watch?v=YX40hbAHx3s)
 
