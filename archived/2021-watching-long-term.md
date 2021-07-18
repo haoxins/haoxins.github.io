@@ -6,6 +6,8 @@ date: 2021-02-12
 
 ## 2021
 
+* [RISC-V 上的操作系统](https://www.bilibili.com/video/BV1Q5411w7z5)
+  - 循序渐进, 学习开发一个 RISC-V 上的操作系统 - 汪辰 - 2021春
 
 * [P vs. NP and the Computational Complexity Zoo](https://www.youtube.com/watch?v=YX40hbAHx3s)
 
