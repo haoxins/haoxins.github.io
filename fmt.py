@@ -39,7 +39,7 @@ subprocess.run(["git", "add", "--all"])
 output = subprocess.run(["git", "status", "-s"], capture_output=True)
 
 files = output.stdout.decode("utf-8").split("\n")
-files = filter(lambda s: s.endswith(".md"), files)
+files = filter(lambda s: s.endswith(".md") and (not s.startswith("D ")), files)
 
 
 def get_filename(s: str) -> str:

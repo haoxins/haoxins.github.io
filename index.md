@@ -2,6 +2,7 @@
 * [时间静悄悄](articles/changing.md)
 * [费曼物理学讲义 (卷三)](articles/feynman-lectures-on-physics.md)
 * [冥想 健身](articles/meditation-fitness.md)
+* [pili](articles/pili.md)
 * [量子计算 & 量子通信](articles/quantum.md)
 * [推荐阅读清单](articles/reading-recommended.md)
 * [阅读 2022+](articles/reading-watching-and-gaming.md)
