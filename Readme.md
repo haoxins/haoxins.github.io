@@ -7,8 +7,10 @@
 * Me
   - [github.com](https://github.com/haoxins)
   - [crates.io](https://crates.io/users/haoxins)
+  - [gitee.com](https://gitee.com/haoxins)
 
 * Formerly
+  - JVM stack developer
   - Web developer (5 years +)
 
 ### Awesome blogs
