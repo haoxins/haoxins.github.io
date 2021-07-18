@@ -8,6 +8,9 @@ date: 2019-10-24
 
 ### 2021-07
 
+* [中国医生](https://movie.douban.com/subject/35087699/)
+  - 武汉市金银潭医院
+
 * [蝙蝠侠: 黑暗骑士崛起](https://www.bilibili.com/bangumi/media/md28222056)
   - 还算 精彩
 
