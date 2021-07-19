@@ -194,6 +194,19 @@ depending on how much accuracy is lost and
 the requirements of the application.
 ```
 
+* High-Performance Ingestion
+
+### Knowledge Distillation
+
+```
+Knowledge distillation seeks to create
+a more efficient model which captures
+the same knowledge as a more complex model.
+
+It starts, by first training a complex model or
+model ensemble to achieve a high level of accuracy. It then uses that model as a teacher for a simpler student model. Which will then be the actual model that gets deployed to production. This teacher network can be either fixed or jointly optimized. Can even be used to train multiple student models of different sizes simultaneously.
+```
+
 ------------------
 
 ## Machine Learning Data Lifecycle in Production
