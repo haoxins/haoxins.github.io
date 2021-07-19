@@ -13,6 +13,20 @@ date: 2021-03-21
   - search strategy
   - performance estimation strategy
 
+### Dimensionality Reduction
+
+```
+But as you add more features,
+you reach a certain point where your model's performance degrades.
+
+The challenge is to keep as much of the predictive information
+as possible using as few features as possible.
+```
+
+### Quantization and Pruning
+
+------------------
+
 ## Machine Learning Data Lifecycle in Production
 
 * ML: **data is a first class citizen**
