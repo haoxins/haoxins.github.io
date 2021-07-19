@@ -139,53 +139,6 @@ as possible using as few features as possible.
   - Output metrics
   - Only by monitoring the system that you can spot if there may be a problem
 
-### Modeling
-
-* ML = Code (Model) + Data
-
-* Key challenges
-  - Establish a baseline
-  - Baseline helps to indicate what might be possible.
-
-* Tips
-  - Start with a quick literature search to see what's possible
-  - **Don't obsess about finding the latest, greatest algorithm**
-
-```
-A reasonable algorithm with good data will often do just fine
-and will in fact outperform a great algorithm with not so good data
-```
-
-* **Error analysis**
-  - error analysis is also an iterative process
-  - skewed datastes, confusion matrix (precision and recall)
-
-```
-Precision = TP / (TP + FP)
-Recall = TP / (TP + FN)
-F1 Score = 2 / ((1 / Precision) + (1 / Recall))
-```
-
-### Data iteration
-
-> Data-centric AI development
-
-* Good data
-  - covers the important cases
-  - defined consistently
-  - has timely feedback from production data
-  - reasonable size
-
-> Can adding data hurt? Yes!
-
-* Data augmentation
-  - GANs
-
-* Versioning everything
-  - Code
-  - Datasets
-  - Hyperparameters
-
 ### Data definition
 
 * consistently label the data with one convention
@@ -236,6 +189,53 @@ when your data set size increases even beyond that.
 
 * Balanced train/dev/test splits (Small data set)
   - makes your data set more representative of the true data distribution
+
+### Modeling
+
+* ML = Code (Model) + Data
+
+* Key challenges
+  - Establish a baseline
+  - Baseline helps to indicate what might be possible.
+
+* Tips
+  - Start with a quick literature search to see what's possible
+  - **Don't obsess about finding the latest, greatest algorithm**
+
+```
+A reasonable algorithm with good data will often do just fine
+and will in fact outperform a great algorithm with not so good data
+```
+
+* **Error analysis**
+  - error analysis is also an iterative process
+  - skewed datastes, confusion matrix (precision and recall)
+
+```
+Precision = TP / (TP + FP)
+Recall = TP / (TP + FN)
+F1 Score = 2 / ((1 / Precision) + (1 / Recall))
+```
+
+### Data iteration
+
+> Data-centric AI development
+
+* Good data
+  - covers the important cases
+  - defined consistently
+  - has timely feedback from production data
+  - reasonable size
+
+> Can adding data hurt? Yes!
+
+* Data augmentation
+  - GANs
+
+* Versioning everything
+  - Code
+  - Datasets
+  - Hyperparameters
 
 ------------------
 
