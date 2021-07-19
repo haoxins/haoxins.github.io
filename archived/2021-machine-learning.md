@@ -96,6 +96,16 @@ ICA, on the other hand,
 considers all components to be equally important.
 ```
 
+* NMF and PCA
+
+```
+NMF, like PCA, is a dimensionality reduction technique,
+in contrast to PCA, however,
+NMF models are interpretable.
+NMF can produce a parts-based representation of the dataset,
+resulting in interpretable models.
+```
+
 ### Quantization and Pruning
 
 ------------------
