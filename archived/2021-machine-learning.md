@@ -140,6 +140,19 @@ The goal is to fine-tune the weights
 to adjust for the precision loss.
 ```
 
+* Pruning
+
+```
+Pruning aims to reduce the number of parameters
+and operations involved in generating a prediction
+by removing network connections.
+
+A sparse network is not only smaller,
+but it is also faster to train and use.
+Also, more complex models are more
+prone to overfitting.
+```
+
 ------------------
 
 ## Machine Learning Data Lifecycle in Production
