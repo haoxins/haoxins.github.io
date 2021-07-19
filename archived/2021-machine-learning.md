@@ -23,6 +23,21 @@ The challenge is to keep as much of the predictive information
 as possible using as few features as possible.
 ```
 
+* Tuner -> Trainer
+
+```
+A poor model fed with important features will
+perform better than a fantastic model fed
+with low quality or bad features.
+```
+
+* Principal component analysis, or **PCA**
+* Linear discriminant analysis, or **LDA**
+* Partial least squares, or **PLS**
+
+* Principal Components Analysis
+  - Starting with decorrelation
+
 ### Quantization and Pruning
 
 ------------------
