@@ -52,11 +52,18 @@ studying clusters of observations in high dimensions.
 
 * Unsupervised approaches
   - single value decomposition, or SVD
-  - independent component analysis or ICA.
+  - independent component analysis, or ICA
 * Matrix factorization techniques
   - non-negative matrix factorization
 * Latent dimensionality reduction methods
   - latent dirichlet allocation, or LDA
+
+* SVD
+
+```
+SVD decomposes our original dataset into its constituents,
+resulting in a reduction of dimensionality.
+```
 
 ### Quantization and Pruning
 
