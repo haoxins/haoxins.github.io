@@ -38,6 +38,26 @@ with low quality or bad features.
 * Principal Components Analysis
   - Starting with decorrelation
 
+```
+You can reduce dimensionality by limiting the number of
+principal components to keep based on the
+cumulative explained variance.
+
+In addition, PCA offers several variations and extensions.
+For example, kernel PCA or sparse PCA, etc.
+
+Other than this, PCA is especially useful when visually
+studying clusters of observations in high dimensions.
+```
+
+* Unsupervised approaches
+  - single value decomposition, or SVD
+  - independent component analysis or ICA.
+* Matrix factorization techniques
+  - non-negative matrix factorization
+* Latent dimensionality reduction methods
+  - latent dirichlet allocation, or LDA
+
 ### Quantization and Pruning
 
 ------------------
