@@ -108,6 +108,38 @@ resulting in interpretable models.
 
 ### Quantization and Pruning
 
+* Quantization
+
+```
+Quantization involves transforming a model into
+an equivalent representation that uses
+parameters and computations at a lower precision.
+
+Quantization, in essence, lessens or reduces
+the number of bits needed to represent information.
+
+You can do quantization during training or
+after the model has been trained.
+
+The simplest approach to quantize a neural network
+is to first train it in full precision and then
+simply quantize the weights to fixed point.
+
+This is post-training quantization.
+By contrast, quantization aware training
+applies quantization to the model while it is being trained.
+The core idea is that quantization aware training simulates
+low precision inference time computation in the forward pass
+of the training process.
+
+By inserting fake quantization nodes,
+the rounding effects of quantization
+are assimilated in the forward pass,
+as it would normally occur in actual inference.
+The goal is to fine-tune the weights
+to adjust for the precision loss.
+```
+
 ------------------
 
 ## Machine Learning Data Lifecycle in Production
