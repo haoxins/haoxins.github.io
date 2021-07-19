@@ -65,6 +65,37 @@ SVD decomposes our original dataset into its constituents,
 resulting in a reduction of dimensionality.
 ```
 
+* PCA vs ICA
+
+```
+PCAs and ICAs's significant difference is that
+PCA looks for uncorrelated factors, while
+ICA looks for independent factors.
+
+If two factors are uncorrelated,
+it means that there is no linear relation between them.
+If they're independent, it means that they are not
+dependent on other variables.
+
+ICA is an algorithm that finds directions in the
+feature space corresponding to projections
+which are highly non-Gaussian.
+
+Unlike PCA, these directions need not be orthogonal
+in the original feature space,
+but they are orthogonal in the whitened feature space,
+in which all directions correspond to the same variance.
+
+PCA, on the other hand, finds orthogonal directions
+in the raw feature space that corresponded
+directions accounting for maximum variance.
+
+When it comes to the importance of components,
+PCA, considers some of them to be more important than others.
+ICA, on the other hand,
+considers all components to be equally important.
+```
+
 ### Quantization and Pruning
 
 ------------------
