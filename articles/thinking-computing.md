@@ -28,10 +28,17 @@ date: 2020-07-22
 * Storage is very very cheap
 * Compute is cheap
 
-* Conpute & Storage
+* Compute & Storage
   - Storage 越来越是 Cloud native (Cloud service)
   - Conpute 目前是 Open source
   - IO
+
+* Compute & Data
+  - OLTP vs OLAP
+  - Streaming
+  - Computing
+  - 个人的开发经验基本都是 以 Data 为核心?
+  - 什么场景是 Computing 为核心? 游戏渲染? 计算机模拟? (个人对此一无所知)
 
 ### Serverless DB ?
 
