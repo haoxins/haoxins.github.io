@@ -153,6 +153,47 @@ Also, more complex models are more
 prone to overfitting.
 ```
 
+### High-Performance Modeling
+
+* Distributed Training
+  - data parallelism and model parallelism
+
+```
+In model parallelism, however,
+you segment the model into different parts,
+training concurrently on different workers.
+Each model will train on the same piece of data.
+```
+
+```
+There are two basic styles of distributed training
+using data parallelism.
+
+In synchronous training, each worker trains on its
+current mini batch of data, applies its own updates,
+communicates out its updates to the other workers.
+And waits to receive and apply all of the updates
+from the other workers before proceeding to the next mini batch.
+And all-reduce algorithm is an example of this.
+
+In asynchronous training, all workers are independently
+training over their mini batch of data and
+updating variables asynchronously.
+
+Asynchronous training tends to be more efficient,
+but can be more difficult to implement.
+Parameter server algorithm is an example of this.
+One major disadvantage of asynchronous training
+is reduced accuracy and slower convergence,
+which means that more steps are required to converge.
+Slow convergence may not be a problem,
+since the speed up in asynchronous training
+may be enough to compensate.
+However, the accuracy loss may be an issue
+depending on how much accuracy is lost and
+the requirements of the application.
+```
+
 ------------------
 
 ## Machine Learning Data Lifecycle in Production
