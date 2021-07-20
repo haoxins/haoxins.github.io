@@ -237,6 +237,29 @@ Can even be used to train multiple student models
 of different sizes simultaneously.
 ```
 
+```
+The teacher will be trained first using a
+standard objective function that seeks to
+maximize the accuracy or a similar metric of the model.
+This is normal model training.
+
+The student then seeks transferable knowledge.
+It uses that objective function that seeks to
+match the probability distribution of the
+predictions of the teacher.
+Notice that the student is not just learning
+the teacher's predictions,
+but the probabilities of the predictions.
+```
+
+```
+These results show that knowledge distillation
+isn't just limited to smaller models,
+like to still bert.
+But can also be used to increase the robustness
+of an already great model using noisy student training.
+```
+
 ------------------
 
 ## Machine Learning Data Lifecycle in Production
