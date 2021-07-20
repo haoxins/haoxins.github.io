@@ -16,6 +16,11 @@ date: 2020-12-27
 * 减少内存分配和拷贝
   - zero-copy [rkyv](https://github.com/djkoloski/rkyv)
 
+### Python
+
+* [pydantic](https://github.com/samuelcolvin/pydantic)
+  - Data parsing and validation using Python type hints
+
 ### Kotlin
 
 * 期待 Kotlin 尽早放弃:
