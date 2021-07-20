@@ -11,7 +11,7 @@ date: 2020-12-27
 * 未来数年, **Rust** 足矣!
 * 做一个预测: `TIOBE 2021 年度语言` **Rust**
 
-## Rust
+### Rust
 
 * 减少内存分配和拷贝
   - zero-copy [rkyv](https://github.com/djkoloski/rkyv)
@@ -24,6 +24,12 @@ date: 2020-12-27
   - 更别提 Data Science
   - 踏踏实实做好 Server-side, Android
   - By haoxin, 2021-07-09
+
+### 留个纪念, 2021-12
+
+* TIOBE Index
+
+* PYPL Index
 
 ------------------
 
