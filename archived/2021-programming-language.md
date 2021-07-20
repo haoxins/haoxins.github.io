@@ -340,15 +340,35 @@ coroutineContext.cancelChildren()
 // Done!
 ```
 
-* **Supervisor**
-
-* **Actor**
-
-* **Select**
+* **Supervisor**, **Actor**, **Select**
 
 > **Golang** + **Elixir (Erlang)**
 
 ### Python
+
+```
+列表推导, 生成器表达式, 以及同它们很相似的
+集合 (set) 推导 和 字典 (dict) 推导,
+都有自己的局部作用域.
+
+filter 和 map 合起来能做的事情, 列表推导也可以做,
+而且还不需要借助难以阅读的 lambda 表达式.
+```
+
+* **dataclass**
+
+```py
+from dataclasses import dataclass
+
+@dataclass
+class InventoryItem:
+    name: str
+    unit_price: float
+    quantity_on_hand: int = 0
+
+    def total_cost(self) -> float:
+        return self.unit_price * self.quantity_on_hand
+```
 
 * Global Interpreter Lock, GIL
 
@@ -371,21 +391,6 @@ nor is it multiprocessing.
 
 In fact, async IO is a single-threaded,
 single-process design.
-```
-
-* **dataclass**
-
-```py
-from dataclasses import dataclass
-
-@dataclass
-class InventoryItem:
-    name: str
-    unit_price: float
-    quantity_on_hand: int = 0
-
-    def total_cost(self) -> float:
-        return self.unit_price * self.quantity_on_hand
 ```
 
 ### Java
