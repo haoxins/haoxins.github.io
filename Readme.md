@@ -12,7 +12,7 @@
 
 ### Formerly
 
-> * Web developer (5 years +, Node.js, Front-End, MiniApp and others)
+> * Web developer (5Y+, Node.js, Front-End, MiniApp and others)
 
 ### Awesome blogs
 

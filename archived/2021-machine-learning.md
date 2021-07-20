@@ -260,6 +260,26 @@ But can also be used to increase the robustness
 of an already great model using noisy student training.
 ```
 
+### Interpretability
+
+* [SHAP (SHapley Additive exPlanations)](https://github.com/slundberg/shap)
+  - A game theoretic approach to explain
+  - the output of any machine learning model.
+
+* Intrinsically Interpretable Models
+
+```
+One key characteristic which helps improve
+interpretability is when features are monotonic.
+Monotonic means that the contribution of
+the feature towards them all result,
+either consistently increases or decreases or
+stays even as the feature value changes.
+```
+
+* Partial Dependence Plots, or **PDP**
+* Permutation Feature Importance
+
 ------------------
 
 ## Machine Learning Data Lifecycle in Production
