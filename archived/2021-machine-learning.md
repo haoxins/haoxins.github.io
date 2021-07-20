@@ -266,6 +266,23 @@ of an already great model using noisy student training.
   - A game theoretic approach to explain
   - the output of any machine learning model.
 
+* Shapley Values
+
+```
+Some feel that Shapley value might be the
+only legally compliant method because
+it's based on a solid theory and
+distributes the effects fairly.
+The Shapley value also allows contrastive explanations.
+
+Like any method Shapley has some disadvantages.
+Probably the most important is that
+its computationally expensive,
+which in a large percentage of real world cases
+means that it's only feasible to
+calculate at approximate solution.
+```
+
 * Intrinsically Interpretable Models
 
 ```
@@ -279,6 +296,7 @@ stays even as the feature value changes.
 
 * Partial Dependence Plots, or **PDP**
 * Permutation Feature Importance
+* Testing Concept Activation Vectors
 
 ------------------
 
