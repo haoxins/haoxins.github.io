@@ -24,6 +24,7 @@ date: 2018-04-01
 * [流畅的 Python](https://book.douban.com/subject/27028517/)
   - 微信读书
   - 查漏补缺~
+  - 书中部分内容过时了, `Python 3.10`
 
 * [量子计算公开课](https://book.douban.com/subject/35467917/)
   - 副标题: 从德谟克利特, 计算复杂性到自由意志

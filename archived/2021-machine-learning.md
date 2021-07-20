@@ -196,6 +196,29 @@ the requirements of the application.
 
 * **High-Performance Ingestion**
 
+```
+One strategy that can overcome problems with
+insufficient GPU memory is gradient accumulation.
+Gradient accumulation is a mechanism to split
+full batches into several mini-batches.
+
+The second approach is swapping.
+The problem here is that it's slow.
+```
+
+* **pipeline parallelism**
+
+```
+Pipeline parallelism frameworks integrate both
+data and model parallelism to achieve high
+efficiency and preserve model accuracy.
+
+They do that by dividing mini-batches
+into smaller micro-batches,
+by allowing different workers to work on
+different micro-batches in parallel.
+```
+
 ### Knowledge Distillation
 
 ```
