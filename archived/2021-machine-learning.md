@@ -260,6 +260,16 @@ But can also be used to increase the robustness
 of an already great model using noisy student training.
 ```
 
+### Model Analysis
+
+* Model Performance Analysis
+
+```
+At a high level, there are two main ways to
+analyze the performance of your model.
+Black-box evaluation and model introspection.
+```
+
 ### Interpretability
 
 * [SHAP (SHapley Additive exPlanations)](https://github.com/slundberg/shap)
