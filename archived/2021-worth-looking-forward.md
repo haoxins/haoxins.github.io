@@ -8,49 +8,53 @@ date: 2018-12-02
 
 ------------------
 
-## 2022 Next Generation (Lockdown in 2021-06-30)
+## 2022 Next Generation (Lockdown in 2021-07-30)
 
 ### Overview
 
-* Spring Framework
+* [QUIC](https://datatracker.ietf.org/doc/html/rfc9000)
+  - [HTTP/3](https://datatracker.ietf.org/doc/html/draft-ietf-quic-http-34)
+
+* **Spring Framework**
+  - [Spring Native](https://github.com/spring-projects-experimental/spring-native)
   - 打败 Spring Framework 的一定不是另一个 **Web Framework**
 
-* [Svelte](https://github.com/sveltejs/svelte)
-  - https://svelte.dev
-  - I like Svelte
+### Machine learning
 
-* [AV1 & AVIF](https://en.wikipedia.org/wiki/AV1)
-  - [Android 12](https://www.android.com/android-12/)
-
-* [QUIC](https://datatracker.ietf.org/doc/html/rfc9000)
-  - [HTTP/3](https://tools.ietf.org/html/draft-ietf-quic-http-34)
-
-### GraalVM
-
-* [JDK 17](https://openjdk.java.net/projects/jdk/17/)
-  - 最后的 JVM, [GraalVM](https://github.com/oracle/graal)
-  - [JEP 397: Sealed Classes](https://openjdk.java.net/jeps/397)
-  - [JEP 395: Records](https://openjdk.java.net/jeps/395)
-  - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
-  - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
-  - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
-  - [JEP 338: Vector API](https://openjdk.java.net/jeps/338)
+* KubeFlow
+  - [kubeflow/kubeflow](https://github.com/kubeflow/kubeflow)
+  - [kubeflow/kfserving](https://github.com/kubeflow/kfserving)
+  - [kubeflow/pipelines](https://github.com/kubeflow/pipelines)
+  - [kubeflow/tf-operator](https://github.com/kubeflow/tf-operator)
 
 ### Data Computing
 
 * [Apache Arrow](https://github.com/apache/arrow)
-  - [DataFusion is an extensible query execution framework, written in Rust, that uses Apache Arrow as its in-memory format.](https://github.com/apache/arrow-datafusion)
+  - [DataFusion](https://github.com/apache/arrow-datafusion)
+  - DataFusion is an extensible query execution framework,
+  - written in Rust, that uses Apache Arrow as its in-memory format.
+
+* Flink v2 & Kafka v3
+  - Drop ZooKeeper, Kubernetes Native
+  - CEP
+  - Graph (Gelly)
 
 ### Graph Computing
 
 * [GraphScope](https://github.com/alibaba/graphscope)
   - https://graphscope.io
 
-### Flink v2 & Kafka v3
+### GraalVM
 
-* Drop ZooKeeper, Kubernetes Native
-* CEP
-* Graph (Gelly)
+* [JDK 17](https://openjdk.java.net/projects/jdk/17/)
+  - 最后的 JVM, [GraalVM](https://github.com/oracle/graal)
+  - [JEP 414: Vector API](https://openjdk.java.net/jeps/414)
+  - [JEP 409: Sealed Classes](https://openjdk.java.net/jeps/409)
+  - [JEP 406: Pattern Matching for switch](https://openjdk.java.net/jeps/406)
+  - [JEP 395: Records](https://openjdk.java.net/jeps/395)
+  - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
+  - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
+  - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
 
 ### Next Generation Service Runtime
 
