@@ -270,6 +270,16 @@ analyze the performance of your model.
 Black-box evaluation and model introspection.
 ```
 
+* **TFMA**
+  - TFMA uses Apache Beam to do a full pass over the evil dataset.
+
+```
+The metrics themselves will be the same types that
+you use for training depending on the model type.
+So things like RMSC for regression models
+and AUC for classification.
+```
+
 ### Interpretability
 
 * [SHAP (SHapley Additive exPlanations)](https://github.com/slundberg/shap)
