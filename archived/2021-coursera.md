@@ -31,6 +31,8 @@ date: 2019-05-30
   - https://www.coursera.org/account/accomplishments/certificate/32NFCJWRC4UE
   - https://www.coursera.org/account/accomplishments/verify/32NFCJWRC4UE
   - [Machine Learning Modeling Pipelines in Production](https://www.coursera.org/learn/machine-learning-modeling-pipelines-in-production)
+  - https://www.coursera.org/account/accomplishments/certificate/B5PKU5B8VTQJ
+  - https://www.coursera.org/account/accomplishments/verify/B5PKU5B8VTQJ
   - [Deploying Machine Learning Models in Production](https://www.coursera.org/learn/deploying-machine-learning-models-in-production)
   - Coursera 的课程, 普遍工程性较弱
 
