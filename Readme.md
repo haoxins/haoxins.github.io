@@ -16,4 +16,5 @@
 
 ### Awesome blogs
 
-* [Shtetl-Optimized: The Blog of Scott Aaronson](https://www.scottaaronson.com/blog/)
+* [Shtetl-Optimized](https://www.scottaaronson.com/blog/)
+  - The Blog of Scott Aaronson
