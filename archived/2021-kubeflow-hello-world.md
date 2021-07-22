@@ -300,6 +300,12 @@ gcloud projects add-iam-policy-binding "${KF_PROJECT}" \
 kubectl -n istio-system get ingress
 ```
 
+```
+Name          Nodes vCPUs Memory
+kubeflow      2     16    64 GB
+kubeflow-mgmt 1     4     15 GB
+```
+
 ### Kubeflow Operator
 
 * [kubeflow/kfctl](https://github.com/kubeflow/kfctl)
