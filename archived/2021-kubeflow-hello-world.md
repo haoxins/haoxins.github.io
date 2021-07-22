@@ -38,6 +38,7 @@ date: 2021-07-22
 ```zsh
 export PROJECT_ID=$(gcloud config get-value project)
 export CLUSTER_NAME=kubeflow-testing
+export CLUSTER_ZONE=us-central1-a
 ```
 
 ```zsh
@@ -47,7 +48,14 @@ gcloud container clusters create $CLUSTER_NAME \
   --machine-type=n1-standard-2 \
   --scopes compute-rw,gke-default,storage-rw \
   --num-nodes=3 \
-  --zone=us-central1-a
+  --zone=$CLUSTER_ZONE
+```
+
+* If you want to delete
+
+```zsh
+gcloud container clusters delete $CLUSTER_NAME \
+  --zone=$CLUSTER_ZONE
 ```
 
 ### Kubeflow Pipelines Standalone Deployment
@@ -88,6 +96,23 @@ kubectl port-forward -n kubeflow svc/ml-pipeline-ui 8080:80
 ```
 
 > BTW, KFP 的 UI 仅兼容 Chrome
+
+### Kubeflow on GCP
+
+* Make sure that you have the Owner role for the project in Cloud IAM.
+
+```zsh
+gcloud services enable \
+  compute.googleapis.com \
+  container.googleapis.com \
+  iam.googleapis.com \
+  servicemanagement.googleapis.com \
+  cloudresourcemanager.googleapis.com \
+  ml.googleapis.com \
+  iap.googleapis.com \
+  sqladmin.googleapis.com \
+  meshconfig.googleapis.com
+```
 
 ## Kubeflow Pipelines
 
