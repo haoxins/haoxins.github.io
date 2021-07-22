@@ -35,6 +35,8 @@ date: 2021-07-22
 
 ### 首先, Create 一个 K8s cluster
 
+* **ENVs**
+
 ```zsh
 export PROJECT_ID=$(gcloud config get-value project)
 export CLUSTER_NAME=kubeflow-testing
@@ -59,6 +61,8 @@ gcloud container clusters delete $CLUSTER_NAME \
 ```
 
 ### Kubeflow Pipelines Standalone Deployment
+
+* **ENVs**
 
 ```zsh
 export PIPELINE_VERSION=1.6.0
@@ -123,6 +127,149 @@ curl --request POST \
   https://meshconfig.googleapis.com/v1alpha1/projects/${PROJECT_ID}:initialize
 ```
 
+> * If you encounter a `Workload Identity Pool does not exist` error,
+>   - refer to the following issue:
+>   - https://github.com/kubeflow/website/issues/2121
+
+```zsh
+gcloud container clusters create tmp-cluster \
+  --release-channel regular \
+  --workload-pool=${PROJECT_ID}.svc.id.goog \
+  --zone=$CLUSTER_ZONE
+
+gcloud container clusters delete tmp-cluster \
+  --zone=$CLUSTER_ZONE
+```
+
+* gcloud components
+
+```zsh
+gcloud components install kubectl kpt anthoscli beta
+gcloud components update
+# If the output said
+# the Cloud SDK component manager is disabled for installation,
+# copy the command from output and run it.
+```
+
+* Kustomize
+
+```zsh
+curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
+
+sudo mv ./kustomize /usr/local/bin/kustomize
+```
+
+* yq and jq
+
+```zsh
+sudo wget https://github.com/mikefarah/yq/releases/download/3.4.1/yq_linux_amd64 \
+  -O /usr/bin/yq && \
+  sudo chmod +x /usr/bin/yq
+
+sudo apt install jq
+```
+
+* Fetch kubeflow/gcp-blueprints package
+
+```zsh
+git clone https://github.com/kubeflow/gcp-blueprints.git
+cd gcp-blueprints
+
+git checkout tags/v1.3.0 -b v1.3.0
+cd management
+# ~/gcp-blueprints/management
+```
+
+* **ENVs**
+
+```zsh
+export MGMT_PROJECT=$(gcloud config get-value project)
+export MGMT_DIR="~/gcp-blueprints/management/"
+export MGMT_NAME=kubeflow-mgmt
+export LOCATION=${CLUSTER_ZONE}
+```
+
+* Configure kpt setter values
+
+```zsh
+kpt cfg set -R . name "${MGMT_NAME}"
+kpt cfg set -R . gcloud.core.project "${MGMT_PROJECT}"
+kpt cfg set -R . location "${LOCATION}"
+
+bash kpt-set.sh
+
+kpt cfg list-setters .
+```
+
+* Deploy Management Cluster
+
+```zsh
+make apply-cluster
+
+make create-context
+
+make apply-kcc
+```
+
+* **ENVs**
+
+```zsh
+cd ../kubeflow
+# ~/gcp-blueprints/kubeflow
+
+gcloud auth login
+
+export CLIENT_ID=<Your CLIENT_ID>
+export CLIENT_SECRET=<Your CLIENT_SECRET>
+export KF_PROJECT=$(gcloud config get-value project)
+export KF_PROJECT_NUMBER=<Your project number>
+export ADMIN_EMAIL=$(gcloud config get-value account)
+export MGMTCTXT="${MGMT_NAME}"
+
+export KF_NAME=kubeflow
+export CLOUDSQL_NAME="${KF_NAME}-kfp"
+export BUCKET_NAME="${KF_PROJECT}-kfp"
+export REGION=us-central1
+export ZONE=us-central1-a
+export ASM_LABEL=asm-193-2
+```
+
+* kpt setter config
+
+```zsh
+bash ./kpt-set.sh
+```
+
+* Management cluster config
+
+```zsh
+kubectl config use-context "${MGMTCTXT}"
+
+# Create if not exists
+kubectl create namespace "${KF_PROJECT}"
+```
+
+```zsh
+pushd "../management"
+# ~/gcp-blueprints/kubeflow
+
+kpt cfg set -R . name "${MGMT_NAME}"
+kpt cfg set -R . gcloud.core.project "${MGMT_PROJECT}"
+kpt cfg set -R . managed-project "${KF_PROJECT}"
+
+gcloud beta anthos apply ./managed-project/iam.yaml
+
+popd
+# ~/gcp-blueprints/kubeflow
+```
+
+* Deploy Kubeflow
+
+```zsh
+make apply
+```
+
+```
 ### Kubeflow Operator
 
 * [kubeflow/kfctl](https://github.com/kubeflow/kfctl)
