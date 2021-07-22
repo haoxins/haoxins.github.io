@@ -280,6 +280,33 @@ So things like RMSC for regression models
 and AUC for classification.
 ```
 
+* Sensitivity Analysis and Adversarial Attacks
+* Residual Analysis
+* Model Remediation
+* Continuous Evaluation and Monitoring
+
+```
+Concept drift can happen even when
+the rest of your data doesn't change.
+
+An emerging concept refers to new patterns
+in the data distribution that weren't
+previously present in your dataset.
+
+In covariate shift, the distribution of your
+input data changes, but the conditional probability
+of your output over the input remains the same.
+The distribution of your labels doesn't change.
+
+Prior probability shift is basically the
+opposite of covariate shift.
+The distribution of your labels changes,
+but your input data stays the same.
+
+Concept drift can be thought of as
+a type of prior probability shift.
+```
+
 ### Interpretability
 
 * [SHAP (SHapley Additive exPlanations)](https://github.com/slundberg/shap)
