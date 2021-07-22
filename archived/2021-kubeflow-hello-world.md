@@ -29,7 +29,11 @@ date: 2021-07-22
   - 一来会有意料之外的报错
   - 二来无法 Scale 做一些基本的性能/花费评估
 
-* 首先, 任意云平台 Setup 一个 K8s cluster
+* 截止目前 (2021-07), Kubeflow 的安装
+  - 文档不全, 依赖较多, 各个 Components 更新频繁
+  - 个人尝试了不少方式, 现列举 `3个` 未来依旧有价值的方式
+
+### 首先, Create 一个 K8s cluster
 
 ```zsh
 export PROJECT_ID=$(gcloud config get-value project)
@@ -45,11 +49,6 @@ gcloud container clusters create $CLUSTER_NAME \
   --num-nodes=3 \
   --zone=us-central1-a
 ```
-
-* 截止目前 (2021-07), Kubeflow 的安装
-  - 文档不全 & 陈旧
-  - 依赖较多, 且各个 Components 更新频繁
-  - 个人尝试了不少方式, 现罗列 `3个` 未来依旧有价值的方式
 
 ### Kubeflow Pipelines Standalone Deployment
 
@@ -87,3 +86,16 @@ kubectl describe configmap inverse-proxy-config -n kubeflow | grep googleusercon
 ```zsh
 kubectl port-forward -n kubeflow svc/ml-pipeline-ui 8080:80
 ```
+
+> BTW, KFP 的 UI 仅兼容 Chrome
+
+## Kubeflow Pipelines
+
+* UI 简陋, 远不如 [Airflow](https://github.com/apache/airflow)
+* A pipeline component is a self-contained set of user code,
+  packaged as a Docker image,
+  that performs one step in the pipeline.
+  - 虽然 Airflow 也有 Docker Operator
+  - 但是 KFP 明显更加范式统一
+* Kubeflow Pipelines SDK v2
+
