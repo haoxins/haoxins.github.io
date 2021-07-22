@@ -306,6 +306,8 @@ kubeflow      2     16    64 GB
 kubeflow-mgmt 1     4     15 GB
 ```
 
+* 吐血~
+
 ### Kubeflow Operator
 
 * [kubeflow/kfctl](https://github.com/kubeflow/kfctl)
