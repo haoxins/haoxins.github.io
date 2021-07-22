@@ -31,7 +31,7 @@ date: 2021-07-22
 
 * 截止目前 (2021-07), Kubeflow 的安装
   - 文档不全, 依赖较多, 各个 Components 更新频繁
-  - 个人尝试了不少方式, 现列举 `3个` 未来依旧有价值的方式
+  - 个人尝试了不少方式, 现列举几个未来依旧有价值的方式
 
 ### 首先, Create 一个 K8s cluster
 
@@ -113,6 +113,11 @@ gcloud services enable \
   sqladmin.googleapis.com \
   meshconfig.googleapis.com
 ```
+
+### Kubeflow Operator
+
+* [kubeflow/kfctl](https://github.com/kubeflow/kfctl)
+  - **未来可期, 暂不可用**
 
 ## Kubeflow Pipelines
 
