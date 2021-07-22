@@ -374,6 +374,9 @@ coroutineContext.cancelChildren()
 
 filter 和 map 合起来能做的事情, 列表推导也可以做,
 而且还不需要借助难以阅读的 lambda 表达式.
+
+生成器表达式的语法跟列表推导差不多,
+只不过把方括号换成圆括号而已.
 ```
 
 * **dataclass**
