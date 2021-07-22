@@ -114,6 +114,15 @@ gcloud services enable \
   meshconfig.googleapis.com
 ```
 
+* [Anthos](https://cloud.google.com/anthos)
+
+```zsh
+curl --request POST \
+  --header "Authorization: Bearer $(gcloud auth print-access-token)" \
+  --data '' \
+  https://meshconfig.googleapis.com/v1alpha1/projects/${PROJECT_ID}:initialize
+```
+
 ### Kubeflow Operator
 
 * [kubeflow/kfctl](https://github.com/kubeflow/kfctl)
