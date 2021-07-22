@@ -270,6 +270,36 @@ make apply
 ```
 
 ```
+If resources can't be created because
+webhook.cert-manager.io is unavailable
+wait and then rerun make apply
+
+  This issue is being tracked in kubeflow/manifests#1234
+
+If resources can't be created with an error message like:
+
+  error: unable to recognize ".build/application/app.k8s.
+  io_v1beta1_application_application-controller-kubeflow.yaml":
+  no matches for kind "Application" in version "app.k8s.io/v1beta1"
+
+This issue occurs when the CRD endpoint isn't established
+in the Kubernetes API server
+when the CRD's custom object is applied.
+This issue is expected and can happen multiple times
+for different kinds of resource.
+To resolve this issue, try running make apply again.
+```
+
+* Access the Kubeflow user interface (UI)
+
+```zsh
+gcloud projects add-iam-policy-binding "${KF_PROJECT}" \
+  --member=user:<EMAIL> \
+  --role=roles/iap.httpsResourceAccessor
+
+kubectl -n istio-system get ingress
+```
+
 ### Kubeflow Operator
 
 * [kubeflow/kfctl](https://github.com/kubeflow/kfctl)
