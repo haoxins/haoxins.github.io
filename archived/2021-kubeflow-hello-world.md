@@ -294,16 +294,18 @@ To resolve this issue, try running make apply again.
 
 ```zsh
 gcloud projects add-iam-policy-binding "${KF_PROJECT}" \
-  --member=user:<EMAIL> \
+  --member=user:${ADMIN_EMAIL} \
   --role=roles/iap.httpsResourceAccessor
 
 kubectl -n istio-system get ingress
 ```
 
+> [Set up OAuth client](https://www.kubeflow.org/docs/distributions/gke/deploy/oauth-setup/)
+
 ```
-Name          Nodes vCPUs Memory
-kubeflow      2     16    64 GB
-kubeflow-mgmt 1     4     15 GB
+Name           Nodes  vCPUs  Memory
+kubeflow       2      16     64 GB
+kubeflow-mgmt  1      4      15 GB
 ```
 
 * 吐血~
