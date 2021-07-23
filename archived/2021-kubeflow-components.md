@@ -4,6 +4,8 @@ description: 行到水穷处, 坐看云起时. 偶然值林叟, 谈笑无还期.
 date: 2021-07-23
 ---
 
+* (Kubeflow components)[https://www.kubeflow.org/docs/components/]
+
 ## Kubeflow Pipelines
 
 * UI 简陋, 远不如 [Airflow](https://github.com/apache/airflow)
