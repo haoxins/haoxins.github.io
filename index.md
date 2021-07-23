@@ -40,6 +40,7 @@
 * [(2021) Machine learning](archived/2021-machine-learning.md)
 * [(2021) Linux](archived/2021-linux.md)
 * [(2021) 初识 Kubeflow, 安装~](archived/2021-kubeflow-installation.md)
+* [(2021) 初识 Kubeflow, Components~](archived/2021-kubeflow-hello-world.md)
 * [(2021) 游戏](archived/2021-gaming.md)
 * [(2021) 阿西莫夫 - 银河帝国](archived/2021-galactic-empire.md)
 * [(2021) Distributed computing](archived/2021-distributed-computing.md)
