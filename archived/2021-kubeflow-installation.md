@@ -1,5 +1,5 @@
 ---
-title: (2021) 初识 Kubeflow
+title: (2021) 初识 Kubeflow, 安装~
 description: 行到水穷处, 坐看云起时. 偶然值林叟, 谈笑无还期.
 date: 2021-07-22
 ---
