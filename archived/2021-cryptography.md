@@ -8,7 +8,7 @@ date: 2021-03-22
 * 机密性 Confidentiality
 * 可用性 Availability
 
-### DH (Diffie-Hellman Key Exchange Algorithm) 
+### DH (Diffie-Hellman Key Exchange Algorithm)
 
 * El Gamal
 
