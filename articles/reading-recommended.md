@@ -33,37 +33,6 @@ date: 2021-05-03
 
 * [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
   - 既是教材, 也是科普!
-
-### 量子引力之旅 & 时间的秩序
-
-* [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
-* [时间的秩序](https://book.douban.com/subject/33424487/)
-  - [Forget time - Carlo Rovelli (August 2008)](https://arxiv.org/pdf/0903.3832.pdf)
-* [Helgoland](https://book.douban.com/subject/35265189/)
-
-* 卡洛·罗韦利 **诗意** 科普
-  - [Wiki - Carlo Rovelli](https://en.wikipedia.org/wiki/Carlo_Rovelli)
-
-* 对于我个人而言
-  - 第一轮阅读时, 我感觉 `量子引力之旅` 优于 `时间的秩序`
-  - 第二轮阅读时, 我感觉 `时间的秩序` 优于 `量子引力之旅`
-  - 科普再精妙, 理解了就豁然了; 人文如佳酿, 历久弥新
-
-```
-作者文笔独具诗意, 激发好奇心
-穿插历史人文, 降低了阅读负担
-不引入数学公式, 避免过于劝退
-耐心细致的比喻, 引人深思
-
-用一条清晰的脉络
-简洁的贯穿物理学史
-全书篇幅却依旧轻盈
-作者身为物理学家
-专业性毋庸置疑
-触及不确定的前沿
-点睛之处
-```
-
 * 我所认为的科普经典的标准
 
 ```
