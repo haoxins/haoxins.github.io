@@ -44,7 +44,7 @@ the ubiquitous Michio Kaku and Brian Cox.
 
 ------------------
 
-# Timeline
+# Events
 
 ------------------
 

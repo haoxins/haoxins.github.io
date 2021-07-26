@@ -247,7 +247,7 @@ the results of groupings are emitted as panes.
 
 ------------------
 
-# Timeline
+# Events
 
 ------------------
 
