@@ -8,6 +8,9 @@ date: 2019-10-24
 
 ### 2021-07
 
+* 重温 [老炮儿](https://movie.douban.com/subject/24751756/)
+  - 当年不识 于和伟, 哈哈哈
+
 * [中国医生](https://movie.douban.com/subject/35087699/)
   - 武汉市金银潭医院
 
