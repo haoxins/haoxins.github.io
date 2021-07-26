@@ -298,6 +298,10 @@ gcloud projects add-iam-policy-binding "${KF_PROJECT}" \
   --role=roles/iap.httpsResourceAccessor
 
 kubectl -n istio-system get ingress
+
+# port forward
+kubectl port-forward \
+  -n istio-system svc/istio-ingressgateway 8080:80
 ```
 
 > [Set up OAuth client](https://www.kubeflow.org/docs/distributions/gke/deploy/oauth-setup/)
