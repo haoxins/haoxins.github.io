@@ -294,6 +294,10 @@ Again, the important point is that the operation happens atomically,
 which means no other thread can interfere.
 ```
 
+### JDK 17 (LTS)
+
+* [ZGC | What's new in JDK 16](https://malloc.se/blog/zgc-jdk16)
+
 * [How Alibaba is using Dapr](https://blog.dapr.io/posts/2021/03/19/how-alibaba-is-using-dapr)
 
 * 3月16日, `混合云第一股` `青云科技` 正式在科创板上市, 股票代码: `688316`

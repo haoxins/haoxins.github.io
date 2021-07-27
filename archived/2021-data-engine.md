@@ -347,10 +347,6 @@ reducing the overhead of distributed compute.
 
 * [arrow-rs: Native Rust implementation of Apache Arrow](https://github.com/apache/arrow-rs)
 
-### JDK 17 (LTS)
-
-* [ZGC | What's new in JDK 16](https://malloc.se/blog/zgc-jdk16)
-
 ### Others
 
 * [What's New in TiDB 5.0](https://docs.pingcap.com/zh/tidb/stable/release-5.0.0)
