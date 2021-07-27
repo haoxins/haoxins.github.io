@@ -247,23 +247,23 @@ the results of groupings are emitted as panes.
 
 ------------------
 
-# Events
+# Timeline
 
 ------------------
 
 ## 2021
 
-```
-2021-06-30
-  Quarkus 2.0.0.Final released
-    - Vert.x 4
-    - MicroProfile 4
-    - Continuous Testing
-    - and much more
-```
+### Events
 
+* 2021-06-30: **Quarkus** 2.0.0.Final released
+  - Vert.x 4
+  - MicroProfile 4
+  - Continuous Testing
+  - and much more
+  - 我还是比较期待 **Spring native**
 
 * [Introduction to Lock-Free Data Structures](https://www.baeldung.com/lock-free-programming)
+* 3月16日, `混合云第一股` **青云科技** 正式在科创板上市, 股票代码: `688316`
 
 ```
 1. Obstruction-Free
@@ -320,7 +320,6 @@ and supports version v0.22 of Knative Serving and Eventing.
 
 ### Dapr
 
-* 3月16日, `混合云第一股` **青云科技** 正式在科创板上市, 股票代码: `688316`
 * [The Netflix Cosmos Platform](https://netflixtechblog.com/the-netflix-cosmos-platform-35c14d9351ad)
 
 * [How Alibaba is using Dapr](https://blog.dapr.io/posts/2021/03/19/how-alibaba-is-using-dapr)
