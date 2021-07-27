@@ -300,7 +300,7 @@ which means no other thread can interfere.
 
 * [How Alibaba is using Dapr](https://blog.dapr.io/posts/2021/03/19/how-alibaba-is-using-dapr)
 
-* 3月16日, `混合云第一股` `青云科技` 正式在科创板上市, 股票代码: `688316`
+* 3月16日, `混合云第一股` **青云科技** 正式在科创板上市, 股票代码: `688316`
 
 * [A visual guide to Dapr](https://blog.dapr.io/posts/2021/03/02/a-visual-guide-to-dapr)
 
