@@ -115,6 +115,36 @@ is that it is decentralized — any process (or multiple processes at once!)
 can begin taking a snapshot without coordinating with other processes.
 ```
 
+* [Introduction to Lock-Free Data Structures](https://www.baeldung.com/lock-free-programming)
+
+```
+1. Obstruction-Free
+2. Lock-Free
+3. Wait-Free
+
+Lock (Block) vs Starvation
+```
+
+* CAS
+
+```
+1. CAS (compare-and-swap)
+
+CAS is an atomic operation, which means that
+fetch and update together are one single operation.
+
+Furthermore, compare-and-swap does not prevent the A-B-A problem
+
+2. Load-Link/Store-Conditional
+
+AtomicStampedReference
+
+3. Fetch and Add
+
+Again, the important point is that the operation happens atomically,
+which means no other thread can interfere.
+```
+
 ------------------
 
 ## Streaming computing
@@ -262,42 +292,27 @@ the results of groupings are emitted as panes.
   - and much more
   - 我还是比较期待 **Spring native**
 
-* [Introduction to Lock-Free Data Structures](https://www.baeldung.com/lock-free-programming)
 * 3月16日, `混合云第一股` **青云科技** 正式在科创板上市, 股票代码: `688316`
 
 ```
-1. Obstruction-Free
-2. Lock-Free
-3. Wait-Free
-
-Lock (Block) vs Starvation
-```
-
-* CAS
 
 ```
-1. CAS (compare-and-swap)
 
-CAS is an atomic operation, which means that
-fetch and update together are one single operation.
 
-Furthermore, compare-and-swap does not prevent the A-B-A problem
+```
 
-2. Load-Link/Store-Conditional
+
+
 * [OAM](https://oam.dev)
   - An open model for defining cloud native apps.
   - https://github.com/oam-dev/kubevela
 
-AtomicStampedReference
 ### Knative
 
-3. Fetch and Add
 * Kubernetes: 1.22
 
 * Knative Version 0.22 release
 
-Again, the important point is that the operation happens atomically,
-which means no other thread can interfere.
 ```
 Highlights
 
