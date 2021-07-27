@@ -287,11 +287,29 @@ Furthermore, compare-and-swap does not prevent the A-B-A problem
 2. Load-Link/Store-Conditional
 
 AtomicStampedReference
+### Knative
 
 3. Fetch and Add
+* Kubernetes: 1.22
+
+* Knative Version 0.22 release
 
 Again, the important point is that the operation happens atomically,
 which means no other thread can interfere.
+```
+Highlights
+
+Eventing now allows subscribers and triggers from
+different namespaces to be used together.
+
+1.18 is now the minimum Kubernetes version required
+to use the Apache Kafka broker with Knative Eventing v0.22.
+
+Apache Kafka broker now supports the ability to choose
+between ordered and unordered delivery.
+
+The Knative Operator v0.22 release contains bug fixes
+and supports version v0.22 of Knative Serving and Eventing.
 ```
 
 ### JDK 17 (LTS)

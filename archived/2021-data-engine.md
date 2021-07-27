@@ -116,28 +116,6 @@ The Operator pattern consists of three components:
   - An open model for defining cloud native apps.
   - https://github.com/oam-dev/kubevela
 
-### Knative
-
-* Kubernetes: 1.22
-
-* Knative Version 0.22 release
-
-```
-Highlights
-
-Eventing now allows subscribers and triggers from
-different namespaces to be used together.
-
-1.18 is now the minimum Kubernetes version required
-to use the Apache Kafka broker with Knative Eventing v0.22.
-
-Apache Kafka broker now supports the ability to choose
-between ordered and unordered delivery.
-
-The Knative Operator v0.22 release contains bug fixes
-and supports version v0.22 of Knative Serving and Eventing.
-```
-
 ### Flink
 
 * **env.pid.dir**
