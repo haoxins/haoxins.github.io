@@ -303,7 +303,7 @@ the results of groupings are emitted as panes.
   - [Argo Workflows v3.0](https://blog.argoproj.io/argo-workflows-v3-0-4d0b69f15a6e)
   - [Argo Workflows v3.1 is coming ...](https://blog.argoproj.io/argo-workflows-v3-1-is-coming-1fb1c1091324)
 
-```sh
+```zsh
 Application
 # A group of Kubernetes resources as defined by a manifest.
 # This is a Custom Resource Definition (CRD).
@@ -326,9 +326,48 @@ Health
 # The health of the application, is it running correctly?
 ```
 
+### Kustomize
+
+* [Kustomize Feature List](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/#kustomize-feature-list)
+
+```
+kustomize targets kubernetes;
+it understands and can patch kubernetes style API objects.
+It's like make, in that what it does is declared in a file,
+and it's like sed, in that it emits edited text.
+```
+
+```
+~/app
+  deployment.yaml
+  kustomization.yaml
+  service.yaml
+```
+
+```
+~/app
+  base
+    deployment.yaml
+    kustomization.yaml
+    service.yaml
+  overlays
+    development
+      cpu_count.yaml
+      kustomization.yaml
+      replica_count.yaml
+    production
+      cpu_count.yaml
+      kustomization.yaml
+      replica_count.yaml
+```
+
+```zsh
+kustomize build ~/app/overlays/production
+```
+
 ### Helm
 
-```sh
+```zsh
 Chart.yaml
 # A YAML file containing information about the chart
 values.yaml
@@ -342,6 +381,8 @@ templates/
   service.yaml
   ingress.yaml
 ```
+
+### Kubebuilder
 
 ### Operator pattern
 

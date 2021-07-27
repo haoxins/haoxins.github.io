@@ -4,8 +4,6 @@ description: ~
 date: 2021-07-21
 ---
 
-* [MPI Forum](https://www.mpi-forum.org)
-
 ------------------
 
 # Events
