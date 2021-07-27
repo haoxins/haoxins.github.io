@@ -294,6 +294,38 @@ the results of groupings are emitted as panes.
 
 * 3月16日, `混合云第一股` **青云科技** 正式在科创板上市, 股票代码: `688316`
 
+### Argo
+
+* [Argo Project](https://github.com/argoproj)
+  - [Argo Workflows](https://github.com/argoproj/argo-workflows)
+  - 有点意思, 期待成为主流
+  - [Argo CD](https://github.com/argoproj/argo-cd)
+  - [Argo Workflows v3.0](https://blog.argoproj.io/argo-workflows-v3-0-4d0b69f15a6e)
+  - [Argo Workflows v3.1 is coming ...](https://blog.argoproj.io/argo-workflows-v3-1-is-coming-1fb1c1091324)
+
+```sh
+Application
+# A group of Kubernetes resources as defined by a manifest.
+# This is a Custom Resource Definition (CRD).
+Application source type
+# Which Tool is used to build the application.
+Target state
+# The desired state of an application, as represented by files in a Git repository.
+Live state
+# The live state of that application. What pods etc are deployed.
+Sync status
+# Whether or not the live state matches the target state.
+# Is the deployed application the same as Git says it should be?
+Sync
+# The process of making an application move to its target state.
+Sync operation status
+# Whether or not a sync succeeded.
+Refresh
+# Compare the latest code in Git with the live state. Figure out what is different.
+Health
+# The health of the application, is it running correctly?
+```
+
 ```
 
 ```
