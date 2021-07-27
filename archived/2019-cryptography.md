@@ -156,6 +156,8 @@ session key = G ** (A * B) % P
 
 # History
 
+------------------
+
 ## 2021
 
 * [BLS Signatures v4](https://tools.ietf.org/html/draft-irtf-cfrg-bls-signature-04)

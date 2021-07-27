@@ -6,7 +6,9 @@ date: 2021-07-23
 
 * (Kubeflow components)[https://www.kubeflow.org/docs/components/]
 
-## Kubeflow Pipelines
+## Notebooks
+
+## Pipelines
 
 * UI 简陋, 远不如 [Airflow](https://github.com/apache/airflow)
 * A pipeline component is a self-contained set of user code,
@@ -16,9 +18,17 @@ date: 2021-07-23
   - 但是 KFP 明显更加范式统一
 * Kubeflow Pipelines SDK v2
 
-## TF Jobs
+## Training
+
+### TF Jobs
+
+* [tf-operator](https://github.com/kubeflow/tf-operator)
 
 > **Note**: TFJob doesn't work in a user namespace by default
 > because of Istio automatic sidecar injection.
 > In order to get TFJob running, it needs annotation
 > `sidecar.istio.io/inject: "false"` to disable it for TFJob pods.
+
+## Serving
+
+* 个人暂时不用

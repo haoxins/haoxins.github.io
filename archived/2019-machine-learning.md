@@ -250,6 +250,8 @@ how to choose features:
 
 # History
 
+------------------
+
 ## 2021
 
 * [CS 329S: Machine Learning Systems Design](https://stanford-cs329s.github.io)
