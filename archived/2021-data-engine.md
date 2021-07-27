@@ -111,11 +111,6 @@ The Operator pattern consists of three components:
    Runs actions when operations state changes in an automated way.
    Report the state of the application in a declarative way.
 ```
-
-* [OAM](https://oam.dev)
-  - An open model for defining cloud native apps.
-  - https://github.com/oam-dev/kubevela
-
 ### Flink
 
 * **env.pid.dir**

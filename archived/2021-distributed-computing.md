@@ -262,7 +262,6 @@ the results of groupings are emitted as panes.
     - and much more
 ```
 
-* [The Netflix Cosmos Platform](https://netflixtechblog.com/the-netflix-cosmos-platform-35c14d9351ad)
 
 * [Introduction to Lock-Free Data Structures](https://www.baeldung.com/lock-free-programming)
 
@@ -285,6 +284,9 @@ fetch and update together are one single operation.
 Furthermore, compare-and-swap does not prevent the A-B-A problem
 
 2. Load-Link/Store-Conditional
+* [OAM](https://oam.dev)
+  - An open model for defining cloud native apps.
+  - https://github.com/oam-dev/kubevela
 
 AtomicStampedReference
 ### Knative
@@ -316,9 +318,12 @@ and supports version v0.22 of Knative Serving and Eventing.
 
 * [ZGC | What's new in JDK 16](https://malloc.se/blog/zgc-jdk16)
 
-* [How Alibaba is using Dapr](https://blog.dapr.io/posts/2021/03/19/how-alibaba-is-using-dapr)
+### Dapr
 
 * 3月16日, `混合云第一股` **青云科技** 正式在科创板上市, 股票代码: `688316`
+* [The Netflix Cosmos Platform](https://netflixtechblog.com/the-netflix-cosmos-platform-35c14d9351ad)
+
+* [How Alibaba is using Dapr](https://blog.dapr.io/posts/2021/03/19/how-alibaba-is-using-dapr)
 
 * [A visual guide to Dapr](https://blog.dapr.io/posts/2021/03/02/a-visual-guide-to-dapr)
 
