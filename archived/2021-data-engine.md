@@ -371,17 +371,6 @@ TiDB 通过 TiFlash 节点引入了 MPP 架构.
 * [Old blog - Random notes on improving the Redis LRU algorithm](http://antirez.com/news/109)
 * [Old blog - Redis persistence demystified](http://oldblog.antirez.com/post/redis-persistence-demystified.html)
 
-* [Announcing the Deno Company](https://deno.com/blog/the-deno-company)
-
-```
-A Globally Distributed JavaScript VM
-
-Deno Deploy is a distributed system that runs JavaScript, TypeScript, and WebAssembly
-at the edge, worldwide. The service deeply integrates the V8 JavaScript runtime
-with a high performance asynchronous web server to provide
-optimal performance without unnecessary intermediate abstractions.
-```
-
 ------------------
 
 ## 2020
