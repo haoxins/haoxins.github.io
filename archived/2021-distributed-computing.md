@@ -397,10 +397,10 @@ Some of the things that you can use an operator to automate include:
 1. deploying an application on demand
 2. taking and restoring backups of that application's state
 3. handling upgrades of the application code alongside
-  related changes such as database schemas or extra configuration settings
+   related changes such as database schemas or extra configuration settings
 5. simulating failure in all or part of your cluster to test its resilience
 6. choosing a leader for a distributed application
-  without an internal member election process
+   without an internal member election process
 ```
 
 * [CNCF Operator White Paper - Final Version](https://github.com/cncf/tag-app-delivery/blob/master/operator-wg/whitepaper/Operator-WhitePaper_v1-0.md)
@@ -455,6 +455,8 @@ and supports version v0.22 of Knative Serving and Eventing.
 * [ZGC | What's new in JDK 16](https://malloc.se/blog/zgc-jdk16)
 
 ### Dapr
+
+* [Dapr 1.3.0](https://github.com/dapr/dapr/releases/tag/v1.3.0)
 
 * [The Netflix Cosmos Platform](https://netflixtechblog.com/the-netflix-cosmos-platform-35c14d9351ad)
 
