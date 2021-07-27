@@ -10,6 +10,9 @@ date: 2021-07-23
 
 ## Pipelines
 
+* [pipelines](https://github.com/kubeflow/pipelines)
+* [Metadata](https://github.com/kubeflow/metadata)
+
 * UI 简陋, 远不如 [Airflow](https://github.com/apache/airflow)
 * A pipeline component is a self-contained set of user code,
   packaged as a Docker image,
@@ -20,9 +23,13 @@ date: 2021-07-23
 
 ## Training
 
-### TF Jobs
+* [Arena](https://github.com/kubeflow/arena)
+* [Katib (AutoML)](https://github.com/kubeflow/katib)
+* [TensorFlow Operator](https://github.com/kubeflow/tf-operator)
+* [XGBoost Operator](https://github.com/kubeflow/xgboost-operator)
+* [MPI Operator](https://github.com/kubeflow/mpi-operator)
 
-* [tf-operator](https://github.com/kubeflow/tf-operator)
+### TF Jobs
 
 > **Note**: TFJob doesn't work in a user namespace by default
 > because of Istio automatic sidecar injection.
@@ -31,4 +38,5 @@ date: 2021-07-23
 
 ## Serving
 
-* 个人暂时不用
+* [KFServing](https://github.com/kubeflow/kfserving)
+  - 个人暂未使用
