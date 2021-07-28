@@ -4,7 +4,31 @@ description: 行到水穷处, 坐看云起时. 偶然值林叟, 谈笑无还期.
 date: 2021-07-23
 ---
 
-* (Kubeflow components)[https://www.kubeflow.org/docs/components/]
+* [Kubeflow components](https://www.kubeflow.org/docs/components/)
+
+## Auth
+
+```
+After Kubeflow is installed and configured,
+you will by default be accessing your primary profile.
+
+A profile owns a Kubernetes namespace
+of the same name along with
+a collection of Kubernetes resources.
+Users have view and modify access to their primary profiles.
+```
+
+* [Manual profile creation](https://www.kubeflow.org/docs/components/multi-tenancy/getting-started/#manual-profile-creation)
+* [Managing contributors through the Kubeflow UI](https://www.kubeflow.org/docs/components/multi-tenancy/getting-started/#managing-contributors-through-the-kubeflow-ui)
+
+* [GCP Workload Identity](https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity)
+  - `GKE` 会为每个 GCP Project 自动创建一个固定的
+  - `Workload Identity Pool (PROJECT_ID.svc.id.goog)`
+  - 用于 Project 中的所有 GKE Clusters
+  - `serviceAccount:PROJECT_ID.svc.id.goog[K8S_NAMESPACE/KSA_NAME]`
+  - `PROJECT_ID.svc.id.goog` 是 Cluster 上的 `Workload Identity Pool`
+  - `KSA_NAME` 是发出请求的 K8s Service Account 的名称
+  - `K8S_NAMESPACE` 是在其中定义了 K8s Service Account 的 K8s Namespace
 
 ## Notebooks
 
@@ -15,7 +39,8 @@ date: 2021-07-23
 * [pipelines](https://github.com/kubeflow/pipelines)
 * [Metadata](https://github.com/kubeflow/metadata)
 
-* UI 简陋, 远不如 [Airflow](https://github.com/apache/airflow)
+* Kubeflow Pipelines separates its resources by
+  Kubernetes namespaces (Kubeflow profiles).
 
 * A pipeline component is a self-contained set of user code,
   packaged as a Docker image,
