@@ -8,18 +8,27 @@ date: 2021-07-23
 
 ## Notebooks
 
+* [Kubeflow Public Images](https://console.cloud.google.com/gcr/images/kubeflow-images-public)
+
 ## Pipelines
 
 * [pipelines](https://github.com/kubeflow/pipelines)
 * [Metadata](https://github.com/kubeflow/metadata)
 
 * UI 简陋, 远不如 [Airflow](https://github.com/apache/airflow)
+
 * A pipeline component is a self-contained set of user code,
   packaged as a Docker image,
   that performs one step in the pipeline.
   - 虽然 Airflow 也有 Docker Operator
   - 但是 KFP 明显更加范式统一
+
 * Kubeflow Pipelines SDK v2
+
+```
+Experiments
+  Pipelines
+```
 
 ## Training
 
