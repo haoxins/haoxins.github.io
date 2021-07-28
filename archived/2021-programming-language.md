@@ -4,17 +4,20 @@ description: 青山相待, 白云相爱, 紫罗袍共黄金带
 date: 2020-12-27
 ---
 
-* **Rust** 会单独作为一篇文章
-* 此文章 **归档**
-  - 才学不足, 无法诸多语言融会贯通
-  - 多个语言放在一起只会杂乱无章
-* 未来数年, **Rust** 足矣!
-* 做一个预测: `TIOBE 2021 年度语言` **Rust**
+### Go
+
+* [Gin](https://github.com/gin-gonic/gin)
+  - Go 社区终于有了真正的主流 `Web Framework`
+  - 何谓主流? 即: 新人可以不纠结, 轻易地选择!
 
 ### Rust
 
-* 减少内存分配和拷贝
-  - zero-copy [rkyv](https://github.com/djkoloski/rkyv)
+* [Rocket](https://github.com/SergioBenitez/Rocket)
+  - 2022, 能否主流?
+
+* [rkyv](https://github.com/djkoloski/rkyv)
+  - zero-copy
+  - 减少内存分配和拷贝
 
 ### Python
 
@@ -116,6 +119,10 @@ Reliability, Quality, and Collaboration.
 * `已经过时` Reddit 关于 Rust Async 的讨论
   - [Diagram of Async Architectures](https://www.reddit.com/r/rust/comments/jpcv2s/diagram_of_async_architectures/)
   - [smol vs tokio vs async-std;](https://www.reddit.com/r/rust/comments/i5hppj/smol_vs_tokio_vs_asyncstd/)
+
+### Go
+
+* [Effective Go](https://golang.org/doc/effective_go)
 
 ### Rust
 
