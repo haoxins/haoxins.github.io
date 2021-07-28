@@ -240,6 +240,9 @@ date: 2018-04-01
   - Flink 的官方文档有很大的进步空间啊, 哈哈哈 (现在太一般了)
 
 * [端粒效应](https://book.douban.com/subject/26956594/)
+  - The Telomere Effect
+  - 副标题: A Revolutionary Approach to Living Younger, Healthier, Longer
+  - 赠与 @ `Hugo`
 
 * [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/34464721/)
   - https://book.douban.com/subject/1148282/
