@@ -18,8 +18,8 @@ a collection of Kubernetes resources.
 Users have view and modify access to their primary profiles.
 ```
 
-* [Manual profile creation](https://www.kubeflow.org/docs/components/multi-tenancy/getting-started/#manual-profile-creation)
-* [Managing contributors through the Kubeflow UI](https://www.kubeflow.org/docs/components/multi-tenancy/getting-started/#managing-contributors-through-the-kubeflow-ui)
+> - [Manual profile creation](https://www.kubeflow.org/docs/components/multi-tenancy/getting-started/#manual-profile-creation)
+> - [Managing contributors through the Kubeflow UI](https://www.kubeflow.org/docs/components/multi-tenancy/getting-started/#managing-contributors-through-the-kubeflow-ui)
 
 * [GCP Workload Identity](https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity)
   - `GKE` 会为每个 GCP Project 自动创建一个固定的

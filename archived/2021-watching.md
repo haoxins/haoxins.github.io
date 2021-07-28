@@ -8,6 +8,8 @@ date: 2019-10-24
 
 ### 2021-07
 
+* 重温 [绣春刀II: 修罗战场](https://movie.douban.com/subject/26270502/)
+
 * 重温 [老炮儿](https://movie.douban.com/subject/24751756/)
   - 当年不识 于和伟, 哈哈哈
 
