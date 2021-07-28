@@ -394,7 +394,9 @@ class InventoryItem:
         return self.unit_price * self.quantity_on_hand
 ```
 
-* Global Interpreter Lock, GIL
+* Global Interpreter Lock, **GIL**
+  - Python 标准库中的所有 阻塞型I/O函数 都会释放GIL, 允许其他线程运行.
+  - `time.sleep()` 函数也会释放 GIL.
 
 ```
 An older way of marking a function as a coroutine

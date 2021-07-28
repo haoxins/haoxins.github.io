@@ -318,3 +318,7 @@ kubeflow-mgmt  1      4      15 GB
 
 * [kubeflow/kfctl](https://github.com/kubeflow/kfctl)
   - **未来可期, 暂不可用**
+
+### Deploying Kubeflow with ArgoCD
+
+* [argoflow/argoflow](https://github.com/argoflow/argoflow)
