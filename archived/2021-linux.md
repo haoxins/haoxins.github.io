@@ -29,7 +29,7 @@ date: 2021-02-17
   - Linux **5.13**
   - By: Linus Torvalds
 
-* Longterm release kernels
+* Long-term release kernels
 
 | Version |  Released  | Projected EOL |
 | ------- |:----------:|:-------------:|
