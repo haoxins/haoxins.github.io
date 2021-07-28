@@ -34,9 +34,12 @@ Experiments
 
 * [Arena](https://github.com/kubeflow/arena)
 * [Katib (AutoML)](https://github.com/kubeflow/katib)
+
+### Operators
+
 * [TensorFlow Operator](https://github.com/kubeflow/tf-operator)
-* [XGBoost Operator](https://github.com/kubeflow/xgboost-operator)
 * [MPI Operator](https://github.com/kubeflow/mpi-operator)
+* [XGBoost Operator](https://github.com/kubeflow/xgboost-operator)
 
 ### TF Jobs
 
