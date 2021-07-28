@@ -7,6 +7,8 @@ date: 2019-12-10
 ### Consensus protocol
 
 * [MirBFT](https://github.com/hyperledger-labs/mirbft)
+  - https://arxiv.org/abs/1906.05552
+  - Mir-BFT: High-Throughput Robust BFT for Decentralized Networks
 
 ------------------
 
