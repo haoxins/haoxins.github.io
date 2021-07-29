@@ -312,7 +312,13 @@ kubeflow       2      16     64 GB
 kubeflow-mgmt  1      4      15 GB
 ```
 
-* 吐血~
+* 添加更多的成员
+
+```zsh
+gcloud projects add-iam-policy-binding "${KF_PROJECT}" \
+  --member=user:<Another OWNER_EMAIL> \
+  --role=roles/iap.httpsResourceAccessor
+```
 
 ### Kubeflow Operator
 
