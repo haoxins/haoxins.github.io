@@ -285,6 +285,14 @@ the results of groupings are emitted as panes.
 
 ### Events
 
+* [Announcing Linkerd's Graduation](https://linkerd.io/2021/07/28/announcing-cncf-graduation/)
+  - Above all else, we promise to be relentless and unwavering in our mission
+    to keep Linkerd simple, lightweight, and fast;
+    to minimize human cost of service mesh operation wherever possible;
+    and to continue making Linkerd the best service mesh on the planet.
+  - [Why Linkerd doesn't use Envoy](https://linkerd.io/2020/12/03/why-linkerd-doesnt-use-envoy/)
+  - 个人还是非常喜欢 **Linkerd** 的, 虽然 **Istio** 更可能赢得这场比赛
+
 * 2021-06-30: **Quarkus** 2.0.0.Final released
   - Vert.x 4
   - MicroProfile 4

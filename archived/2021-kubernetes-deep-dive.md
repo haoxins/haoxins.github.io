@@ -14,3 +14,6 @@ date: 2021-07-28
   - Server (Cloud), Embedded (IoT), Mobile/Laptop 的未来发展必定是分离的
   - **Linux** 未来或许只能 **Focus server**!
   - GUI 等很多东西都会是多余的
+
+* Container: 同一个 Kernel
+  - 不能 Namespace 化: **Time**
