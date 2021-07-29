@@ -10,10 +10,21 @@ date: 2021-07-23
 
 * [Kubeflow Public Images](https://console.cloud.google.com/gcr/images/kubeflow-images-public)
 
+### Use kfp
+
+```
+export PATH=$PATH:~/.local/bin
+
+kfp pipeline upload pipeline.yaml --pipeline-name pipeline-1
+```
+
 ## Pipelines
 
 * [pipelines](https://github.com/kubeflow/pipelines)
 * [Metadata](https://github.com/kubeflow/metadata)
+
+> * Kubeflow Pipelines with **Argo** which is the default.
+>   - Another Kubeflow Pipelines with **Tekton** comes from IBM
 
 * Kubeflow Pipelines separates its resources by
   Kubernetes namespaces (Kubeflow profiles).
@@ -27,9 +38,17 @@ date: 2021-07-23
 * Kubeflow Pipelines SDK v2
 
 ```
+Pipelines
+  - Versions
+
 Experiments
-  Pipelines
+  - Runs
+  - Run -> pipeline with a specific version
+  - Run -> Archive -> Delete
 ```
+
+* [Rest APIs](https://www.kubeflow.org/docs/components/pipelines/reference/api/kubeflow-pipeline-api-spec/)
+* [SDK Docs](https://kubeflow-pipelines.readthedocs.io/en/stable/)
 
 ## Training
 
@@ -77,3 +96,7 @@ Users have view and modify access to their primary profiles.
   - `PROJECT_ID.svc.id.goog` 是 Cluster 上的 `Workload Identity Pool`
   - `KSA_NAME` 是发出请求的 K8s Service Account 的名称
   - `K8S_NAMESPACE` 是在其中定义了 K8s Service Account 的 K8s Namespace
+
+### Pipelines
+
+* [Connecting to Kubeflow Pipelines on Google Cloud using the SDK](https://www.kubeflow.org/docs/distributions/gke/pipelines/authentication-sdk/)
