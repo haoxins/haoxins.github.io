@@ -171,6 +171,37 @@ var p *[]int = new([]int)
 v := make([]int, 100)
 ```
 
+* There are major differences between the ways **arrays** work in Go and C. In Go,
+  - Arrays are values.
+    Assigning one array to another copies all the elements.
+  - In particular, if you pass an array to a function,
+    it will receive a copy of the array, not a pointer to it.
+  - The size of an array is part of its type.
+    The types `[10]int` and `[20]int` are distinct.
+
+```
+Slices hold references to an underlying array,
+and if you assign one slice to another,
+both refer to the same array.
+
+If a function takes a slice argument,
+changes it makes to the elements of the slice will be visible to the caller,
+analogous to passing a pointer to the underlying array.
+A Read function can therefore accept a slice argument
+rather than a pointer and a count;
+the length within the slice sets an upper limit of how much data to read.
+```
+
+* **len** and **cap**
+
+```
+The length of a slice may be changed as long as
+it still fits within the limits of the underlying array;
+just assign it to a slice of itself.
+The capacity of a slice, accessible by the built-in function cap,
+reports the maximum length the slice may assume.
+```
+
 ```go
 // Allocate the top-level slice.
 picture := make([][]uint8, YSize) // One row per unit of y.
@@ -192,6 +223,20 @@ pixels := make([]uint8, XSize*YSize)
 for i := range picture {
   picture[i], pixels = pixels[:XSize], pixels[XSize:]
 }
+```
+
+```
+An attempt to fetch a map value with a key that
+is not present in the map will return the zero value
+for the type of the entries in the map.
+
+For instance, if the map contains integers,
+looking up a non-existent key will return 0.
+
+Sometimes you need to distinguish a missing entry from a zero value.
+Is there an entry for "UTC" or is that 0
+because it's not in the map at all?
+You can discriminate with a form of multiple assignment.
 ```
 
 ```go
