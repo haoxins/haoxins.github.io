@@ -171,6 +171,35 @@ var p *[]int = new([]int)
 v := make([]int, 100)
 ```
 
+```go
+// Allocate the top-level slice.
+picture := make([][]uint8, YSize) // One row per unit of y.
+// Loop over the rows, allocating the slice for each row.
+for i := range picture {
+  picture[i] = make([]uint8, XSize)
+}
+```
+
+```go
+// Allocate the top-level slice.
+// One row per unit of y.
+picture := make([][]uint8, YSize)
+// Allocate one large slice to hold all the pixels.
+// Has type []uint8 even though picture is [][]uint8.
+pixels := make([]uint8, XSize*YSize)
+// Loop over the rows,
+// slicing each row from the front of the remaining pixels slice.
+for i := range picture {
+  picture[i], pixels = pixels[:XSize], pixels[XSize:]
+}
+```
+
+```go
+var seconds int
+var ok bool
+seconds, ok = timeZone[tz]
+```
+
 ### Rust
 
 * 分号
