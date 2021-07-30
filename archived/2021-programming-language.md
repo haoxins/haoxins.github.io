@@ -267,6 +267,134 @@ verify or repair correctness of the program state
 before real execution begins.
 ```
 
+* **Interface checks**
+
+```go
+if _, ok := val.(json.Marshaler); ok {
+  fmt.Printf("value %v of type %T implements json.Marshaler\n", val, val)
+}
+```
+
+* **Embedding**
+
+```go
+type Reader interface {
+  Read(p []byte) (n int, err error)
+}
+
+type Writer interface {
+  Write(p []byte) (n int, err error)
+}
+
+// ReadWriter is the interface that
+// combines the Reader and Writer interfaces.
+type ReadWriter interface {
+  Reader
+  Writer
+}
+
+// ReadWriter stores pointers to a Reader and a Writer.
+// It implements io.ReadWriter.
+type ReadWriter struct {
+  // *bufio.Reader
+  *Reader
+  // *bufio.Writer
+  *Writer
+}
+```
+
+* **Concurrency**
+
+* **Communicating Sequential Processes (CSP)**
+
+```
+Go encourages a different approach in which shared values
+are passed around on channels and, in fact,
+never actively shared by separate threads of execution.
+
+Only one goroutine has access to the value at any given time.
+
+Data races cannot occur, by design.
+To encourage this way of thinking we have reduced it to a slogan:
+
+Do not communicate by sharing memory;
+instead, share memory by communicating.
+```
+
+```
+A goroutine has a simple model:
+it is a function executing concurrently
+with other goroutines in the same address space.
+```
+
+* **Channels**
+
+```
+If an optional integer parameter is provided,
+it sets the buffer size for the channel.
+The default is zero, for an unbuffered or synchronous channel.
+```
+
+```
+Unbuffered channels combine communication
+"the exchange of a value"
+with synchronization-guaranteeing that two
+calculations (goroutines) are in a known state.
+```
+
+```
+If the channel is unbuffered,
+the sender blocks until the receiver has received the value.
+
+If the channel has a buffer,
+the sender blocks only until the value has been copied to the buffer;
+
+if the buffer is full,
+this means waiting until some receiver has retrieved a value.
+```
+
+```go
+var sem = make(chan int, MaxOutstanding)
+
+func handle(r *Request) {
+  sem <- 1    // Wait for active queue to drain.
+  process(r)  // May take a long time.
+  <-sem       // Done; enable next request to run.
+}
+
+// Once MaxOutstanding handlers are executing process,
+// any more will block trying to send
+// into the filled channel buffer,
+// until one of the existing handlers
+// finishes and receives from the buffer.
+
+// v1
+func Serve(queue chan *Request) {
+  for req := range queue {
+    sem <- 1
+    go func(req *Request) {
+      process(req)
+      <-sem
+    }(req)
+  }
+}
+
+// v2
+func Serve(queue chan *Request) {
+  for req := range queue {
+    // Create new instance of req for the goroutine.
+    req := req
+    sem <- 1
+    go func() {
+      process(req)
+      <-sem
+    }()
+  }
+}
+```
+
+* **Channels of channels**
+
 ### Rust
 
 * 分号
