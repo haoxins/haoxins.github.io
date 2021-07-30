@@ -124,6 +124,53 @@ Reliability, Quality, and Collaboration.
 
 * [Effective Go](https://golang.org/doc/effective_go)
 
+* **new** vs **make**
+
+```
+Let's talk about new first.
+
+It's a built-in function that allocates memory,
+but unlike its namesakes in some other languages
+it does not initialize the memory,
+it only zeros it.
+That is, new(T) allocates zeroed storage for a new item of type T
+and returns its address, a value of type *T.
+
+In Go terminology, it returns a pointer to a newly allocated zero value of type T.
+
+The built-in function make(T, args) serves a purpose different from new(T).
+
+It creates slices, maps, and channels only,
+and it returns an initialized (not zeroed) value of type T (not *T).
+The reason for the distinction is that these three types represent,
+under the covers, references to data structures that
+must be initialized before use.
+
+A slice, for example, is a three-item descriptor
+containing a pointer to the data (inside an array),
+the length, and the capacity,
+and until those items are initialized, the slice is nil.
+For slices, maps, and channels, make initializes
+the internal data structure and prepares the value for use.
+
+Remember that make applies only to maps, slices and channels
+and does not return a pointer.
+```
+
+```go
+// allocates slice structure; *p == nil; rarely useful
+var p *[]int = new([]int)
+// the slice v now refers to a new array of 100 ints
+var v  []int = make([]int, 100)
+
+// Unnecessarily complex:
+var p *[]int = new([]int)
+*p = make([]int, 100, 100)
+
+// Idiomatic:
+v := make([]int, 100)
+```
+
 ### Rust
 
 * 分号

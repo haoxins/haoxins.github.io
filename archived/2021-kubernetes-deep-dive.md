@@ -18,6 +18,7 @@ date: 2021-07-28
 * Container
   - 同一个 Kernel
   - 不能 Namespace 化: **Time**
+  - `Docker exec` -> `Linux setns()`
 * Cgroups 的不足: `/proc`
 * Image
   - `chroot` -> Mount Namespace -> `rootfs`
