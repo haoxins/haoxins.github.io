@@ -53,6 +53,58 @@ Experiments
 
 > `Delete Archived Runs` 才会删除 `Completed Pods`
 
+* [Building Python function-based components](https://www.kubeflow.org/docs/components/pipelines/sdk/python-function-components/)
+  - **lightweight**
+
+```
+It should not use any code declared outside of the function definition.
+
+Import statements must be added inside the function.
+
+Helper functions must be defined inside this function.
+
+If the function accepts or returns large amounts of data
+or complex data types, you must pass that data as a file.
+
+If the function accepts numeric values as parameters,
+the parameters must have type hints.
+Supported types are int and float.
+Otherwise, parameters are passed as strings.
+
+If your component returns multiple small outputs
+(short strings, numbers, or booleans),
+annotate your function with the `typing.NamedTuple` type hint
+and use the `collections.namedtuple` function
+return your function's outputs as a new subclass of tuple.
+
+If your function has complex dependencies, choose or build a
+container image for your Python function to run in.
+```
+
+* Understanding how data is passed between components
+
+```
+When Kubeflow Pipelines runs a component,
+a container image is started in a Kubernetes Pod
+and your component's inputs are passed in as
+command-line arguments.
+When your component has finished,
+the component's outputs are returned as files.
+
+In your component's specification,
+you define the components inputs and outputs and
+how the inputs and output paths are passed to
+your program as command-line arguments.
+You can pass small inputs, such as short strings or numbers,
+to your component by value. Large inputs, such as datasets,
+must be passed to your component as file paths.
+Outputs are written to the paths that Kubeflow Pipelines provides.
+```
+
+> The function's arguments are decorated
+> with the `kfp.components.InputPath`
+> and the `kfp.components.OutputPath` annotations.
+
 * [Rest APIs](https://www.kubeflow.org/docs/components/pipelines/reference/api/kubeflow-pipeline-api-spec/)
 * [SDK Docs](https://kubeflow-pipelines.readthedocs.io/en/stable/)
 
