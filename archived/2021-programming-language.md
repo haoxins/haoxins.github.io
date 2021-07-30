@@ -393,7 +393,14 @@ func Serve(queue chan *Request) {
 }
 ```
 
-* **Channels of channels**
+* **Parallelization**
+
+```
+Although the concurrency features of Go can make
+some problems easy to structure as parallel computations,
+Go is a concurrent language, not a parallel one,
+and not all parallelization problems fit Go's model.
+```
 
 ### Rust
 
