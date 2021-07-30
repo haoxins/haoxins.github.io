@@ -51,6 +51,8 @@ Experiments
   - Run -> Archive -> Delete
 ```
 
+> `Delete Archived Runs` 才会删除 `Completed Pods`
+
 * [Rest APIs](https://www.kubeflow.org/docs/components/pipelines/reference/api/kubeflow-pipeline-api-spec/)
 * [SDK Docs](https://kubeflow-pipelines.readthedocs.io/en/stable/)
 
@@ -71,6 +73,24 @@ Experiments
 > because of Istio automatic sidecar injection.
 > In order to get TFJob running, it needs annotation
 > `sidecar.istio.io/inject: "false"` to disable it for TFJob pods.
+
+```zsh
+git clone https://github.com/kubeflow/tf-operator
+
+cd tf-operator/examples/v1/mnist_with_summaries
+
+kubectl apply -f tfevent-volume
+
+kubectl apply -f tf_job_mnist.yaml
+```
+
+```zsh
+kubectl -n kubeflow get tfjob mnist -o yaml
+
+kubectl -n kubeflow delete tfjob mnist
+```
+
+## AutoML/Katib
 
 ## Serving
 
