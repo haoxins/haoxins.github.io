@@ -10,6 +10,10 @@ date: 2021-07-23
 
 * [Kubeflow Public Images](https://console.cloud.google.com/gcr/images/kubeflow-images-public)
 
+* 个人推荐使用 [code-server](https://github.com/cdr/code-server)
+  - Run VS Code on any machine anywhere and access it in the browser.
+  - `Command + Shift + P` -> `Jupyter: Create New Blank Notebook`
+
 ### Use kfp
 
 ```
