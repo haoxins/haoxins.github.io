@@ -245,6 +245,28 @@ var ok bool
 seconds, ok = timeZone[tz]
 ```
 
+* **append**
+
+```go
+x := []int{1,2,3}
+y := []int{4,5,6}
+x = append(x, y...)
+```
+
+* **init function**
+
+```
+init is called after all the variable declarations
+in the package have evaluated their initializers,
+and those are evaluated only after
+all the imported packages have been initialized.
+
+Besides initializations that cannot be expressed as declarations,
+a common use of init functions is to
+verify or repair correctness of the program state
+before real execution begins.
+```
+
 ### Rust
 
 * 分号
