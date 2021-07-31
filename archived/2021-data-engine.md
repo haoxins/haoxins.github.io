@@ -204,6 +204,24 @@ Rust and Apache Arrow and want to provide their users the convenience of
 an SQL interface or a DataFrame API.
 ```
 
+* [Apache Arrow Rust 5.0.0 Release](https://arrow.apache.org/blog/2021/07/29/5.0.0-rs-release/)
+  - [Apache Arrow 5.0.0 (29 July 2021)](https://arrow.apache.org/release/5.0.0.html)
+  - Arrow releases major versions every three months.
+
+```
+Feature-wise, this release adds:
+
+A new kernel which lexicographically partitions points.
+Expanded support for the FFI/C data interface,
+easing integration with the broader Arrow ecosystem.
+
+Usability enhancements for creating and manipulating RecordBatches.
+
+Improved usability for Arrow Flight's API.
+
+Slimmer dependency stack when default features are disabled.
+```
+
 * [Ballista: A Distributed Scheduler for Apache Arrow (2021-04-12)](https://arrow.apache.org/blog/2021/04/12/ballista-donation/)
   - [Ballista (2021-04-10)](https://github.com/ballista-compute/ballista) has been donated to the Apache Arrow project
 
