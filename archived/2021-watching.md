@@ -8,6 +8,9 @@ date: 2019-10-24
 
 ### 2021-07
 
+* [怒火·重案](https://movie.douban.com/subject/30174085/)
+  - 邦主: `我们总是想着如何少做一点, 但其实应该想着如何做好一点.`
+
 * 重温 [绣春刀II: 修罗战场](https://movie.douban.com/subject/26270502/)
 
 * 重温 [老炮儿](https://movie.douban.com/subject/24751756/)
