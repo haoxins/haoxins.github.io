@@ -6,9 +6,13 @@ date: 2021-05-25
 
 ## ML pipeline
 
+* [Kubeflow](https://github.com/kubeflow)
+
 ------------------
 
 ## Data flow
+
+* [DataFusion](https://github.com/apache/arrow-datafusion)
 
 ### Streaming
 
@@ -20,10 +24,17 @@ date: 2021-05-25
 
 ------------------
 
+## Application service
+
+* [Dapr](https://github.com/dapr/dapr)
+
+------------------
+
 ## QUIC
 
 ------------------
 
 ## Cloud
 
-[华为云: Function Graph](https://support.huaweicloud.com/functiongraph/)
+* [华为云: Function Graph](https://support.huaweicloud.com/functiongraph/)
+  - 截止 2021-07, 很一般
