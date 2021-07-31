@@ -28,10 +28,10 @@ date: 2020-07-22
 * Storage is very very cheap
 * Compute is cheap
 
-* Compute & Storage
+* Storage & Compute & Network
   - Storage 越来越是 Cloud native (Cloud service)
   - Conpute 目前是 Open source
-  - IO
+  - Network
 
 * Compute & Data
   - OLTP vs OLAP
