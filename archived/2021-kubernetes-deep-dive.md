@@ -100,6 +100,12 @@ IaD 设计中的 Data 具体表现出来, 其实就是声明式的 Kubernetes ob
 它正是通过自定义 API Object 的 CRD 来进行规范的.
 ```
 
+* [KubeVela](https://kubevela.io)
+  - https://github.com/oam-dev/kubevela
+
+* [Dapr](https://dapr.io)
+  - https://github.com/dapr/dapr
+
 ## 编排
 
 ## 存储
