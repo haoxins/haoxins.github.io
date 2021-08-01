@@ -212,6 +212,7 @@ an SQL interface or a DataFrame API.
 Feature-wise, this release adds:
 
 A new kernel which lexicographically partitions points.
+
 Expanded support for the FFI/C data interface,
 easing integration with the broader Arrow ecosystem.
 
