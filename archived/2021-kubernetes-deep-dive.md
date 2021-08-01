@@ -153,6 +153,70 @@ Deployment 的控制器实际上控制的是 ReplicaSet 的数目,
 Kubernetes 项目就实现了对多个应用版本的描述.
 ```
 
+* **StatefulSet**
+
+```
+StatefulSet 的设计其实非常容易理解,
+它把现实世界里的应用状态抽象为了两种情况.
+
+1. 拓扑状态
+
+应用的多个实例之间不是完全对等的.
+这些应用实例必须按照某种顺序启动,
+比如应用的主节点 A 要先于从节点 B 启动.
+而如果删除 A 和 B 两个 Pod,
+它们再次被创建出来时也必须严格按照这个顺序运行.
+并且, 新创建出来的 Pod 必须和原来 Pod 的网络标识一样,
+这样原先的访问者才能使用同样的方法访问到这个新 Pod.
+
+2. 存储状态
+
+应用的多个实例分别绑定了不同的存储数据.
+对于这些应用实例来说, Pod A 第一次读取到的数据和隔了 10 分钟之后
+再次读取到的数据应该是同一份,
+哪怕在此期间 Pod A 被重新创建过.
+这种情况最典型的例子是一个数据库应用的多个存储实例.
+
+所以, StatefulSet 的核心功能, 就是通过某种方式记录这些状态,
+然后在 Pod 被重新创建时能够为新 Pod 恢复这些状态.
+```
+
+```
+首先, StatefulSet 的控制器直接管理的是 Pod.
+这是因为 StatefulSet 里的不同 Pod 实例不再像 ReplicaSet
+中那样都是完全一样的, 而是有了细微区别.
+
+比如, 每个 Pod 的 hostname, name 等都不同, 都携带了编号.
+而 StatefulSet 通过在 Pod 的名字里加上事先约定好的编号来区分这些实例.
+
+其次, Kubernetes 通过 Headless Service 为这些有编号的 Pod,
+在 DNS 服务器中生成带有相同编号的 DNS 记录.
+只要 StatefulSet 能够保证这些 Pod 名字里的编号不变,
+那么 Service 里类似于 web-0.nginx.default.svc.clusterlocal
+这样的 DNS 记录就不会变, 而这条记录解析出来的 Pod 的 IP 地址,
+会随着后端 Pod 的删除和重建而自动更新.
+这当然是 Service 机制本身的能力, 不需要 StatefulSet 操心.
+
+最后, StatefulSet 还为每个 Pod 分配并创建一个相同编号的 PVC.
+这样, Kubernetes 就可以通过 Persistent Volume 机制
+为这个 PVC 绑定对应的 PV, 从而保证了每个 Pod 都拥有一个独立的 Volume.
+
+在这种情况下, 即使 Pod 被删除, 它所对应的 PVC 和 PV 依然会保留下来.
+所以当这个 Pod 被重新创建出来之后, Kubernetes 会为它找到编号相同的 PVC,
+挂载这个 PVC 对应的 Volume 从而获取以前保存在 Volume 里的数据.
+```
+
+> * Operator
+
+```
+StatefulSet 管理的 "有状态应用" 的多个实例,
+也都是通过同一个 Pod 模板创建出来的,
+使用的是同一个 Image.
+这也就意味着: 如果你的应用要求不同节点的 Image 不同,
+就不能再使用 StatefulSet 了.
+对于这种情况, 应该考虑 Operator.
+```
+
 ## 存储
 
 ## 网络
