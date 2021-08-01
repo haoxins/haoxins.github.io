@@ -49,20 +49,20 @@ date: 2020-07-22
 * Programing platform
   - Flink
   - Dapr
-  - Ethereum
 
-## 我们需要一个什么样的 Platform ?
+### 云存储
 
-### 我们不再应该操心的事情
+* 云计算的 **Top1** 产品, **没有之一**
 
-* 存储扩容
-* 数据加密
-* 数据备份
-* 通讯协议
-* Runtime 可用性
+* [Network-attached storage](https://en.wikipedia.org/wiki/Network-attached_storage)
+  - [Network File System](https://en.wikipedia.org/wiki/Network_File_System)
+  - [NFS version 4 Protocol](https://datatracker.ietf.org/doc/html/rfc3010)
+  - [Network File System (NFS) Version 4 Protocol](https://datatracker.ietf.org/doc/html/rfc7530)
 
-### 我们需要 Focus 的事情
+* GCP
+  - Filestore (NAS)
+  - Cloud Storage
 
-* 业务逻辑, 这是最浅显的
-* 行业(规则)积累
-* 专业(工业控制系统, 规划, ...)建树
+* Aliyun
+  - NAS
+  - OSS
