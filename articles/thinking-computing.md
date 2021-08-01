@@ -59,10 +59,10 @@ date: 2020-07-22
   - [NFS version 4 Protocol](https://datatracker.ietf.org/doc/html/rfc3010)
   - [Network File System (NFS) Version 4 Protocol](https://datatracker.ietf.org/doc/html/rfc7530)
 
-* GCP
-  - Filestore (NAS)
-  - Cloud Storage
-
 * Aliyun
   - NAS
   - OSS
+
+* GCP
+  - Filestore (NAS)
+  - Cloud Storage
