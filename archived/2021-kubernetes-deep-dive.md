@@ -108,6 +108,51 @@ IaD 设计中的 Data 具体表现出来, 其实就是声明式的 Kubernetes ob
 
 ## 编排
 
+* Projected Volume (投射数据卷)
+
+```
+在 Kubernetes 中有几种特殊的 Volume,
+它们存在的意义不是为了存放容器里的数据,
+也不是用于容器和宿主机之间的致据交换,
+而是为容器提供预先定义好的数据.
+
+到目前为止, Kubernetes 支持的常用 Projected Volume 共有以下4种:
+
+1. Secret
+2. ConfigMap
+3. Downward API
+4. ServiceAccountToken
+```
+
+* ServiceAccountToken
+
+```
+一旦 Pod 创建完成, 容器里的应用就可以直接从默认
+ServiceAccountToken 的挂载目录里访问授权信息和文件.
+这个容器内的路径在 Kubernetes 里是固定的:
+/var/run/secrets/kubernetes.io/serviceaccount
+```
+
+```
+在 Kubernetes 的 Pod 中, 还有一个名叫
+readinessProbe 的字段.
+虽然它的用法与
+livenessProbe 类似,
+作用却大不相同.
+readinessProbe 检查结果决定了这个 Pod 能否通过
+Service 的方式访问, 而不影响 Pod 的生命周期.
+```
+
+```
+Deployment 的控制器实际上控制的是 ReplicaSet 的数目,
+以及每个 ReplicaSet 的属性.
+而一个应用的版本对应的正是一个 ReplicaSet,
+这个版本应用的 Pod 数量则由 ReplicaSet 通过它自己的控制器
+(ReplicaSet Controller) 来保证.
+通过这样的多个 ReplicaSet 对象,
+Kubernetes 项目就实现了对多个应用版本的描述.
+```
+
 ## 存储
 
 ## 网络
