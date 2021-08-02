@@ -42,6 +42,7 @@ Kubernetes 中有一种特殊的容器启动方法叫作 "Static Pod".
   - Deployment controls Pods
 * `Object events`
   - Pod events
+* Pod template, `spec.template`
 
 * **Controller** and **Operator**
   - CRD + Operator
@@ -215,6 +216,21 @@ StatefulSet 管理的 "有状态应用" 的多个实例,
 这也就意味着: 如果你的应用要求不同节点的 Image 不同,
 就不能再使用 StatefulSet 了.
 对于这种情况, 应该考虑 Operator.
+```
+
+```
+Job Controller 实际上控制了作业执行的并行度 (parallelism),
+以及总共需要完成的任务数 (completions) 这两个重要参数.
+
+CronJob 与 Job 的的关系正如同
+Deployment 与 Pod 的关系一样.
+CronJob 是一个专门用来管理 Job 对象的控制器.
+只不过, 它创建和删除 Job 的依据是 schedule 字段定义的,
+一个标准的 Unix Cron 格式的表达式.
+
+1. concurrencyPolicy: Allow
+2. concurrencyPolicy: Forbid
+3. concurrencyPolicy: Replace
 ```
 
 ## 存储
