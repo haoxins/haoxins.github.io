@@ -111,6 +111,9 @@ Outputs are written to the paths that Kubeflow Pipelines provides.
 ## Training
 
 * [Arena](https://github.com/kubeflow/arena)
+  - Arena's goal is to make the data scientists feel like
+    to work on a single machine
+    but with the Power of GPU clusters indeed.
 * [Katib (AutoML)](https://github.com/kubeflow/katib)
 
 ### Operators
