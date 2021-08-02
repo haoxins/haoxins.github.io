@@ -62,7 +62,4 @@ date: 2020-07-22
 * Aliyun
   - NAS
   - OSS
-
-* GCP
-  - Filestore (NAS)
-  - Cloud Storage
+  - EBS

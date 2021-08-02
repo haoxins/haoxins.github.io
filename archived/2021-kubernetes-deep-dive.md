@@ -247,7 +247,30 @@ CronJob 是一个专门用来管理 Job 对象的控制器.
 * **ListAndWatch**
   - `delta FIFO queue`
 
+* [Code Generation for CustomResources](https://cloud.redhat.com/blog/kubernetes-deep-dive-code-generation-customresources)
+
+### Operator
+
+```
+Operator 的工作原理, 实际上是利用 Kubernetes 的 CRD
+来描述我们想要部署的 "有状态应用";
+然后在 自定义控制器 里根据自定义 API 对象的变化,
+来完成具体的部署和运维工作.
+所以, 编写 etcd Operator 与前面编写 自定义控制器 的过程并无不同.
+```
+
 ## 存储
+
+* VolumeController
+
+* 2 steps
+  - Attach (nodeName) -> kube-controller-manager
+  - Mount  (dir)      -> kubelet
+
+* StorageClass -> PVs
+  - PVC -> PV
+
+* CSI
 
 ## 网络
 
