@@ -233,6 +233,20 @@ CronJob 是一个专门用来管理 Job 对象的控制器.
 3. concurrencyPolicy: Replace
 ```
 
+```
+在 Kubernetes 项目中, 一个 API Object 在 etcd 里的
+完整资源路径是由 Group, Version, Resource 3个 部分组成的.
+```
+
+### CRD + Custom Controller
+
+* **Informer**
+  - `EventHandler`
+  - resync
+
+* **ListAndWatch**
+  - `delta FIFO queue`
+
 ## 存储
 
 ## 网络
