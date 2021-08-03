@@ -43,9 +43,59 @@ date: 2019-06-30
 
 # 网络基础
 
-### VPN
+## Layers
 
-### SDN
+### 应用层
+
+* DNS, HTTP, QUIC?
+
+### 传输层
+
+* UDP
+
+```
+UDP Header
+
+| Source port | Destination port | Length | Checksum |
+```
+
+### 网络层/路由层
+
+* ping: ICMP
+
+* IP, IPSec, GRE
+
+```
+Handle IP
+
+| IP header | TCP header | data ... |
+```
+
+* 网关: 路由器
+  - 转发网关: 不改变 IP
+  - NAT: 改变 IP
+  - MAC 地址过网关 (换局域网) 则变
+
+```
+每到一个新的局域网, 包的 MAC 地址都是要变的, 但是 IP 地址都不变.
+在 IP 头里面, 不会保存任何网关的 IP 地址.
+所谓的下一跳是某个 IP 地址,
+意思是要将这个 IP 地址转换为 MAC 地址放入 MAC 头中.
+```
+
+* 路由器
+  - 多张网卡
+  - 路由表
+
+```
+ip rule add from 192.168.1.0/24 table 10
+ip rule add from 192.168.2.0/24 table 20
+```
+
+* 动态路由协议
+  - OSPF
+  - BGP
+
 
 ------------------
 
