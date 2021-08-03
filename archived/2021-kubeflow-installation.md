@@ -328,3 +328,7 @@ gcloud projects add-iam-policy-binding "${KF_PROJECT}" \
 ### Deploying Kubeflow with ArgoCD
 
 * [argoflow/argoflow](https://github.com/argoflow/argoflow)
+
+### Others
+
+* [Blog: Running Kubeflow at Intuit: Enmeshed in the service mesh](https://blog.kubeflow.org/running-kubeflow-at-intuit/)

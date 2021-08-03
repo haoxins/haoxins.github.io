@@ -274,6 +274,10 @@ Operator 的工作原理, 实际上是利用 Kubernetes 的 CRD
 
 ## 网络
 
+* [The Layers of the OSI Model Illustrated](https://www.lifewire.com/layers-of-the-osi-model-illustrated-818017)
+
+* CNI
+
 ## 调度
 
 ## CRI
