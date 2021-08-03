@@ -20,6 +20,7 @@ date: 2018-04-01
 
 * [深入剖析 Kubernetes](https://book.douban.com/subject/35424872/)
   - 不错, 国产好书
+  - 赠与 @`Jan`
 
 * [Kotlin 核心编程](https://book.douban.com/subject/33419618/)
   - 微信读书
@@ -246,7 +247,7 @@ date: 2018-04-01
 * [端粒效应](https://book.douban.com/subject/26956594/)
   - The Telomere Effect
   - 副标题: A Revolutionary Approach to Living Younger, Healthier, Longer
-  - 赠与 @ `Hugo`
+  - 赠与 @`Hugo`
 
 * [计算机程序的构造和解释 (原书第2版)](https://book.douban.com/subject/34464721/)
   - https://book.douban.com/subject/1148282/
