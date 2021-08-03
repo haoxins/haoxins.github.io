@@ -281,8 +281,14 @@ Operator 的工作原理, 实际上是利用 Kubernetes 的 CRD
 * [IPVS proxy mode](https://kubernetes.io/docs/concepts/services-networking/service/#proxy-mode-ipvs)
 
 * [Cilium](https://github.com/cilium/cilium)
-* [Flannel](https://github.com/flannel-io/flannel)
+
 * [Weave](https://github.com/weaveworks/weave)
+
+* [Flannel](https://github.com/flannel-io/flannel)
+  - 基于 UDP 在 用户态 实现 Overlay
+  - 基于 VXLAN 在 内核台 实现 Overlay
+
+* [Calico](https://github.com/projectcalico/calico)
 
 ## 调度
 

@@ -40,9 +40,10 @@ date: 2020-12-27
 ### 留个纪念, 2021-12
 
 * 除了 `Go 2`, 主流语言基本都 **Stable**
-  - 未来数年 (5Y+), 下面的列表估计不会变化超过 3 个
 
-* [PYPL Index](https://pypl.github.io/PYPL.html)
+* Stackoverflow survey **2021**
+  - Programming, Scripting, and Markup Languages
+  - Remove the Markup Languages
 
 ```
 1.
