@@ -192,10 +192,6 @@ export LOCATION=${CLUSTER_ZONE}
 * Configure kpt setter values
 
 ```zsh
-kpt cfg set -R . name "${MGMT_NAME}"
-kpt cfg set -R . gcloud.core.project "${MGMT_PROJECT}"
-kpt cfg set -R . location "${LOCATION}"
-
 bash kpt-set.sh
 
 kpt cfg list-setters .
