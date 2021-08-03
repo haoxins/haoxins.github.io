@@ -4,6 +4,11 @@ description: 中岁颇好道, 晚家南山陲. 兴来每独往, 胜事空自知.
 date: 2021-07-22
 ---
 
+* **Warning!!!**, only works for
+  - **Kubeflow v1.3**
+  - **kpt v0.39**
+  - https://github.com/kubeflow/gcp-blueprints/issues/294
+
 * **2021年7月**, 最近工作需要, 进行 **Kubeflow** 的调研.
   - 调研的目标是:
   - Kubeflow 如果可用, 则完成一些基本的使用场景;
