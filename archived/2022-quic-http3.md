@@ -43,6 +43,39 @@ date: 2019-06-30
 
 # 网络基础
 
+## Apps
+
+* iptables
+
+```
+Private IP -> SNAT -> Public IP
+
+Netfilter, conntrack
+
+SNAT (源地址转换)
+
+iptables -t nat -A -s 私网IP地址 -j Snat --to-source 外网IP地址
+
+DNAT (目标地址转换)
+
+iptables -t nat -A -PREROUTING -d 外网IP地址 -j Dnat --to-destination 私网IP地址
+```
+
+* IPsec VPN
+
+```
+| 外层IP头 | IPsec 头 | 内层 IP 包 |
+| 承载协议 | 隧道协议  | 乘客协议    |
+```
+
+* MPLS VPN
+
+* GRE
+  - IP-over-IP
+  - 点对点隧道技术
+
+* VXLAN
+
 ## Layers
 
 ### 应用层
@@ -63,7 +96,7 @@ UDP Header
 
 * ping: ICMP
 
-* IP, IPSec, GRE
+* IP
 
 ```
 Handle IP
@@ -131,24 +164,6 @@ Tag control information (TCI)
 ```
 
 ### 物理层
-
-## Apps
-
-* iptables
-
-```
-Private IP -> SNAT -> Public IP
-
-Netfilter, conntrack
-
-SNAT (源地址转换)
-
-iptables -t nat -A -s 私网IP地址 -j Snat --to-source 外网IP地址
-
-DNAT (目标地址转换)
-
-iptables -t nat -A -PREROUTING -d 外网IP地址 -j Dnat --to-destination 私网IP地址
-```
 
 ------------------
 
