@@ -18,8 +18,15 @@ date: 2018-04-01
   - 副标题: Fast, Safe Systems Development
   - @`Elvis` 送了我一本 打印版
 
+* [趣谈网络协议](https://book.douban.com/subject/35013753/)
+
+* [图解机器学习算法](https://book.douban.com/subject/35489302/)
+  - `内容很浅`, 主要是看封面漂亮买的
+  - 不推荐!
+
 * [深入剖析 Kubernetes](https://book.douban.com/subject/35424872/)
   - 不错, 国产好书
+  - 看完就可以啃官方文档, 看一些需要用的 Operator 源码了 :)
   - 赠与 @`Jan`
 
 * [Kotlin 核心编程](https://book.douban.com/subject/33419618/)

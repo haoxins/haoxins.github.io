@@ -289,7 +289,7 @@ Operator 的工作原理, 实际上是利用 Kubernetes 的 CRD
   - 1Mi = 1024 * 1024
   - 1M = 1000 * 1000
 
-* QoS
+* QoS (Quality of Service)
 
 ```
 当 Eviction 发生时, kubelet 具体会挑选哪些 Pod 进行删除,
