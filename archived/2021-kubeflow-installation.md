@@ -247,7 +247,7 @@ kubectl create namespace "${KF_PROJECT}"
 
 ```zsh
 pushd "../management"
-# ~/gcp-blueprints/kubeflow
+# ~/gcp-blueprints/management
 
 kpt cfg set -R . name "${MGMT_NAME}"
 kpt cfg set -R . gcloud.core.project "${MGMT_PROJECT}"
