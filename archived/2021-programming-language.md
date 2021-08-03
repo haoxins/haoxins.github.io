@@ -4,20 +4,23 @@ description: 青山相待, 白云相爱, 紫罗袍共黄金带
 date: 2020-12-27
 ---
 
+### Rust
+
+* [Rocket](https://github.com/SergioBenitez/Rocket)
+  - 2022, 能否主流?
+  - 嗯, 比 [Gin](https://github.com/gin-gonic/gin) 好太多
+  - 比 Spring boot 差太远 :)
+
+* [rkyv](https://github.com/djkoloski/rkyv)
+  - zero-copy
+  - 减少内存分配和拷贝
+
 ### Go
 
 * [Gin](https://github.com/gin-gonic/gin)
   - Go 社区终于有了真正的主流 `Web Framework`
   - 何谓主流? 即: 新人可以不纠结, 轻易地选择!
-
-### Rust
-
-* [Rocket](https://github.com/SergioBenitez/Rocket)
-  - 2022, 能否主流?
-
-* [rkyv](https://github.com/djkoloski/rkyv)
-  - zero-copy
-  - 减少内存分配和拷贝
+  - 当然, 矮子里面拔将军, 还是比较简陋~
 
 ### Python
 
