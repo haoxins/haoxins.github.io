@@ -17,10 +17,11 @@ date: 2020-12-27
 
 ### Go
 
-* [Gin](https://github.com/gin-gonic/gin)
-  - Go 社区终于有了真正的主流 `Web Framework`
-  - 何谓主流? 即: 新人可以不纠结, 轻易地选择!
-  - 当然, 矮子里面拔将军, 还是比较简陋~
+> * [Gin](https://github.com/gin-gonic/gin)
+>   - Go 社区终于有了真正的主流 `Web Framework`
+>   - 何谓主流? 即: 新人可以不纠结, 轻易地选择!
+>   - 当然, 矮子里面拔将军, 还是比较简陋~
+>   - 不喜欢, 不推荐
 
 ### Python
 
