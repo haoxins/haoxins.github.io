@@ -68,7 +68,7 @@ UDP Header
 ```
 Handle IP
 
-| IP header | TCP header | data ... |
+| IP header | UDP header | data ... |
 ```
 
 * 网关: 路由器
@@ -96,6 +96,59 @@ ip rule add from 192.168.2.0/24 table 20
   - OSPF
   - BGP
 
+### 链路层 (Mac 层)
+
+* ARP
+  - 广播, 由 IP 得 Mac
+
+```
+Handle Mac
+
+| Mac header | IP header | UDP header | data ... |
+
+| 目标 Mac 地址 | 源 Mac 地址 | Type (2 byte) | Data (46 - 1500 byte) | CRC (4 byte) |
+```
+
+* 局域网
+  - Hub: 广播
+  - Switch: Mac 学习能力
+
+* VLAN
+
+```
+| 目标 Mac 地址 | 源 Mac 地址 | 802.1Q | Type (2 byte) | ...
+
+802.1Q
+
+Tag protocol identifier (TPID)
+Tag control information (TCI)
+  Priority code point (PCP)
+  Drop eligible indicator (DEI)
+  VLAN identifier (VID)
+
+| TPID |       TCI       |
+| TPID | PCP | DEI | VID |
+```
+
+### 物理层
+
+## Apps
+
+* iptables
+
+```
+Private IP -> SNAT -> Public IP
+
+Netfilter, conntrack
+
+SNAT (源地址转换)
+
+iptables -t nat -A -s 私网IP地址 -j Snat --to-source 外网IP地址
+
+DNAT (目标地址转换)
+
+iptables -t nat -A -PREROUTING -d 外网IP地址 -j Dnat --to-destination 私网IP地址
+```
 
 ------------------
 
