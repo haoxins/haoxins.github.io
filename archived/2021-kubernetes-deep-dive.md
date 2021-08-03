@@ -291,6 +291,31 @@ Operator 的工作原理, 实际上是利用 Kubernetes 的 CRD
 
 * QoS
 
+```
+当 Eviction 发生时, kubelet 具体会挑选哪些 Pod 进行删除,
+就需要参考这些 Pod 的 QoS 类别了.
+
+首当其冲的, 自然是 BestEffort 类别的 Pod.
+
+其次, 是属于 Burstable 类别,
+  并且发生 "饥饿" 的资源使用量已经超出 requests 的 Pod.
+
+最后, 才是 Guaranteed 类别.
+
+并且 Kubernetes 会保证只有当 Guaranteed 类别的 Pod 的资源
+使用量超过其 limits 的限制,
+或者宿主机本身正处于 Memory Pressure 状态时,
+Guaranteed 类别的 Pod 才可能被选中进行 Eviction 操作.
+
+当然, 对于同 QoS 类别的 Pod 来说,
+Kubernetes 还会根据 Pod 的优先级来进一步地排序和选择.
+```
+
+* cpuset
+
+* Device plugin
+  - GPU
+
 ## CRI
 
 * kubelet, CRI -> SIG-Node
