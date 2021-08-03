@@ -278,8 +278,28 @@ Operator 的工作原理, 实际上是利用 Kubernetes 的 CRD
 
 * CNI
 
+* [IPVS proxy mode](https://kubernetes.io/docs/concepts/services-networking/service/#proxy-mode-ipvs)
+
 ## 调度
+
+* 可压缩资源 & 不可压缩资源
+
+* cpu: `1000m` 即 1
+* memory
+  - 1Mi = 1024 * 1024
+  - 1M = 1000 * 1000
+
+* QoS
 
 ## CRI
 
-## Metric
+* kubelet, CRI -> SIG-Node
+
+* kubelet
+  - SyncLoop
+
+* CRI shim
+  - containerd -> runC
+
+* [gVisor](https://github.com/google/gvisor)
+  - KVM (Kernel-based Virtual Machine)
