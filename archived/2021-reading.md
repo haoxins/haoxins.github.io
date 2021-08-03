@@ -25,6 +25,7 @@ date: 2018-04-01
   - 不推荐!
 
 * [深入剖析 Kubernetes](https://book.douban.com/subject/35424872/)
+  - 作者: 张磊
   - 不错, 国产好书
   - 看完就可以啃官方文档, 看一些需要用的 Operator 源码了 :)
   - 赠与 @`Jan`
