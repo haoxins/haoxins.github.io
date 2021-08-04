@@ -41,6 +41,7 @@
 * [(2021) Linux](archived/2021-linux.md)
 * [(2021) 深入剖析 Kubernetes](archived/2021-kubernetes-deep-dive.md)
 * [(2021) 初识 Kubeflow, 安装~](archived/2021-kubeflow-installation.md)
+* [(2021) 初识 Kubeflow, 使用 ArgoCD 安装~](archived/2021-kubeflow-installation-with-argocd.md)
 * [(2021) 初识 Kubeflow, Components~](archived/2021-kubeflow-components.md)
 * [(2021) Istio 服务网格技术解析与实践](archived/2021-istio-service-mesh.md)
 * [(2021) 游戏](archived/2021-gaming.md)

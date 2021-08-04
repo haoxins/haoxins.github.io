@@ -7,6 +7,19 @@ date: 2021-08-04
 * [argoflow/argoflow](https://github.com/argoflow/argoflow)
   - [argoflow/argoflow-gcp](https://github.com/argoflow/argoflow-gcp)
 
+### Enable GCP APIs
+
+```zsh
+gcloud services enable \
+  compute.googleapis.com \
+  container.googleapis.com \
+  servicemanagement.googleapis.com \
+  cloudresourcemanager.googleapis.com \
+  iam.googleapis.com \
+  iap.googleapis.com \
+  ml.googleapis.com
+```
+
 ### Create 一个 K8s cluster
 
 * **ENVs**
@@ -31,4 +44,33 @@ gcloud container clusters create $CLUSTER_NAME \
 ```zsh
 gcloud container clusters delete $CLUSTER_NAME \
   --zone=$CLUSTER_ZONE
+```
+
+### Install ArgoCD
+
+```zsh
+cd argoflow-gcp
+```
+
+```zsh
+kustomize build argocd/ | kubectl apply -f -
+```
+
+* If you want to login ArgoCD UI
+
+```zsh
+# port forward
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+# username: admin, get password
+kubectl -n argocd get secret \
+  argocd-initial-admin-secret \
+  -o jsonpath="{.data.password}" | base64 -d
+```
+
+### Install Kubeflow
+
+* [Follow this](https://github.com/argoflow/argoflow-gcp#installing-kubeflow)
+
+```zsh
+# TODO: use ingress
 ```
