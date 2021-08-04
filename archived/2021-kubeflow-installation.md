@@ -7,7 +7,9 @@ date: 2021-07-22
 * **Warning!!!**, only works for
   - **Kubeflow v1.3**
   - **kpt v0.39**
+  - **Kubernetes 1.18**
   - https://github.com/kubeflow/gcp-blueprints/issues/294
+  - https://github.com/kubeflow/pipelines/issues/5714
 
 * **2021年7月**, 最近工作需要, 进行 **Kubeflow** 的调研.
   - 调研的目标是:
@@ -38,7 +40,7 @@ date: 2021-07-22
   - 文档不全, 依赖较多, 各个 Components 更新频繁
   - 个人尝试了不少方式, 现列举几个未来依旧有价值的方式
 
-### 首先, Create 一个 K8s cluster
+### Create 一个 K8s cluster
 
 * **ENVs**
 
@@ -106,7 +108,7 @@ kubectl port-forward -n kubeflow svc/ml-pipeline-ui 8080:80
 
 > BTW, KFP 的 UI 仅兼容 Chrome
 
-### Kubeflow on GCP
+### Kubeflow on GCP/GKE
 
 * Make sure that you have the Owner role for the project in Cloud IAM.
 
@@ -329,6 +331,7 @@ gcloud projects add-iam-policy-binding "${KF_PROJECT}" \
 ### Deploying Kubeflow with ArgoCD
 
 * [argoflow/argoflow](https://github.com/argoflow/argoflow)
+  - [argoflow/argoflow-gcp](https://github.com/argoflow/argoflow-gcp)
 
 ### Others
 
