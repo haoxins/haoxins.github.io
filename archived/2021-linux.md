@@ -31,6 +31,9 @@ date: 2021-02-17
   - Linux **5.13**
   - By: Linus Torvalds
 
+* 2021-06-19
+  - Debian 10: `10.10` released
+
 * Long-term release kernels
 
 | Version |  Released  | Projected EOL |
