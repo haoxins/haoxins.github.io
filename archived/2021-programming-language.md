@@ -6,6 +6,10 @@ date: 2020-12-27
 
 ### Rust
 
+* [axum](https://github.com/tokio-rs/axum)
+  - axum is a web application framework that focuses on ergonomics and modularity.
+  - Tokio 团队 2021 新作!
+
 * [Rocket](https://github.com/SergioBenitez/Rocket)
   - 2022, 能否主流?
   - 嗯, 比 [Gin](https://github.com/gin-gonic/gin) 好太多

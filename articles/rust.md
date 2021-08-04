@@ -19,6 +19,10 @@ date: 2021-04-10
 
 ## 2021
 
+* [axum](https://github.com/tokio-rs/axum)
+  - axum is a web application framework that focuses on ergonomics and modularity.
+  - Tokio 团队新作!
+
 * Arti: reimplementing Tor in Rust
   - https://www.torproject.org
 
