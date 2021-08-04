@@ -14,6 +14,9 @@ date: 2018-04-01
 
 ### 2021
 
+* [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
+  - 微信读书
+
 * [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
   - 副标题: Fast, Safe Systems Development
   - @`Elvis` 送了我一本 打印版
