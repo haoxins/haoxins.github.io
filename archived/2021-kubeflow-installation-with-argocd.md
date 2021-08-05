@@ -33,9 +33,19 @@ export CLUSTER_ZONE=asia-southeast1-c
 ```zsh
 gcloud container clusters create $CLUSTER_NAME \
   --project=$PROJECT_ID \
-  --machine-type=n1-standard-1 \
+  --machine-type=n1-standard-2 \
   --scopes compute-rw,gke-default,storage-rw \
   --num-nodes=3 \
+  --zone=$CLUSTER_ZONE
+```
+
+> 基本是最低资源配置了 :)
+
+* Describe the cluster
+
+```zsh
+gcloud container clusters describe $CLUSTER_NAME \
+  --project=$PROJECT_ID \
   --zone=$CLUSTER_ZONE
 ```
 
@@ -72,5 +82,8 @@ kubectl -n argocd get secret \
 * [Follow this](https://github.com/argoflow/argoflow-gcp#installing-kubeflow)
 
 ```zsh
-# TODO: use ingress
+kubectl -n istio-system get svc
+
+kubectl port-forward \
+  -n istio-system svc/istio-ingressgateway 8088:80
 ```
