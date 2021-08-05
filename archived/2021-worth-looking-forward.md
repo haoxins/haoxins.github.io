@@ -8,7 +8,7 @@ date: 2018-12-02
 
 ------------------
 
-## 2022 Next Generation (Lockdown in 2021-07-30)
+## 2022 Next Generation (Lockdown in 2021-08-05)
 
 ### Overview
 
@@ -47,6 +47,7 @@ date: 2018-12-02
 
 * [GraphScope](https://github.com/alibaba/graphscope)
   - https://graphscope.io
+  - https://github.com/GraphScope
 
 ### GraalVM
 
