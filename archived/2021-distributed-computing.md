@@ -285,6 +285,10 @@ the results of groupings are emitted as panes.
 
 ### Events
 
+* [APISIX](https://github.com/apache/apisix)
+  - 公司一直在用的, 国产优秀开源软件
+  - 加油!
+
 * [Announcing Linkerd's Graduation](https://linkerd.io/2021/07/28/announcing-cncf-graduation/)
   - Above all else, we promise to be relentless and unwavering in our mission
     to keep Linkerd simple, lightweight, and fast;
