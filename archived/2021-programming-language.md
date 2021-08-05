@@ -715,6 +715,8 @@ single-process design.
 
 ### Java
 
+* `System.currentTimeMillis()` is **not monotonic**
+
 * Text Blocks
 
 ```java
