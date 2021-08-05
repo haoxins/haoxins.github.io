@@ -14,6 +14,12 @@ date: 2018-04-01
 
 ### 2021
 
+* [Graph Databases in Action](https://book.douban.com/subject/34700758/)
+  - @TODO
+
+* [图数据库](https://book.douban.com/subject/26831072/)
+  - 第2版
+
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
   - 微信读书
 

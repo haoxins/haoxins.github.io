@@ -43,8 +43,6 @@ This is attested to by the breadth of code written in Rust
 and the range of application areas to which it is being applied.
 ```
 
-## Tour
-
 ## Concepts
 
 ## Basics
