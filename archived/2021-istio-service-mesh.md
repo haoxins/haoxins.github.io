@@ -14,3 +14,12 @@ date: 2021-08-04
 * Istio: 流量
   - 控制面
   - 数据面
+
+* 控制面
+  - Pilot   流量
+  - Mixer   监控
+  - Citadel 安全
+  - Galley
+
+* **xDS**
+  - Envoy 的各种服务发现协议
