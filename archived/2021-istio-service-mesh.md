@@ -6,3 +6,11 @@ date: 2021-08-04
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
   - 微信读书, 免费阅读 :)
+
+* [Service Mesh Comparison](https://servicemesh.es)
+
+* Container: 隔离
+* Kubernetes: 编排, 调度
+* Istio: 流量
+  - 控制面
+  - 数据面
