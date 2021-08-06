@@ -34,10 +34,6 @@ date: 2018-12-02
 ### Data Computing
 
 * [Apache Arrow](https://github.com/apache/arrow)
-* Flink v2 & Kafka v3
-  - Drop ZooKeeper, Kubernetes Native
-  - CEP
-  - Graph (Gelly)
   - https://github.com/apache/arrow-cookbook
   - https://github.com/apache/arrow-rs
 
