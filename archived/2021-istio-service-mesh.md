@@ -29,5 +29,5 @@ date: 2021-08-04
 * `南北向`: 入口请求到集群服务的流量管理
 * `东西向`: 集群内服务网格之间的流量管理
 
-* Virtual service:
+* Virtual service
   - Rules
