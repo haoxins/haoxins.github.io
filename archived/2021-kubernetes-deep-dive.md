@@ -1,8 +1,16 @@
 ---
-title: (2021) 深入剖析 Kubernetes
+title: (2021) Kubernetes deep dive
 description: 春江潮水连海平, 海上明月共潮生. 滟滟随波千万里, 何处春江无月明!
 date: 2021-07-28
 ---
+
+------------------
+
+* [Kubernetes 1.22: Server Side Apply moves to GA](https://kubernetes.io/blog/2021/08/06/server-side-apply-ga/)
+
+* [Annotating Kubernetes Services for Humans](https://kubernetes.io/blog/2021/04/20/annotating-k8s-for-humans/)
+
+------------------
 
 * [深入剖析 Kubernetes](https://book.douban.com/subject/35424872/)
 
