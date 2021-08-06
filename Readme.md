@@ -8,10 +8,10 @@
   - [github.com](https://github.com/haoxins)
   - [crates.io](https://crates.io/users/haoxins)
   - [gitee.com](https://gitee.com/haoxins)
-  - JVM stack developer (Kotlin, Spring and others)
 
 ### Formerly
 
+> * JVM stack developer (Kotlin, Spring and others)
 > * Web developer (5Y+, Node.js, Front-End, MiniApp and others)
 
 ### Awesome blogs
