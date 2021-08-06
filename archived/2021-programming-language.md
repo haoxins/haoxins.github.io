@@ -41,27 +41,35 @@ date: 2020-12-27
   - 踏踏实实做好 Server-side, Android
   - By haoxin, 2021-07-09
 
-### 留个纪念, 2021-12
+### 留个纪念, Stackoverflow survey 2021
 
 * 除了 `Go 2`, 主流语言基本都 **Stable**
 
-* Stackoverflow survey **2021**
-  - Programming, Scripting, and Markup Languages
-  - Remove the Markup Languages
+* [Most popular](https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-programming-scripting-and-markup-languages)
+  - Programming, Scripting, and Markup languages
+  - Remove the Shell and Markup languages
+  - Merge some languages
 
 ```
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-11.
-12.
+```
+
+* [Most loved, dreaded, and wanted](https://insights.stackoverflow.com/survey/2021#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages)
+
+* Loved vs. Dreaded
+
+```
+1. Rust
+```
+
+* Want
+
+```
+1. Python
+2. TypeScript/JavaScript
+3. Go
+4. Rust
+5. C++
+6. Kotlin
 ```
 
 ------------------
