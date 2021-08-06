@@ -43,7 +43,7 @@ date: 2020-12-27
 
 ### 留个纪念, Stackoverflow survey 2021
 
-* 除了 `Go 2`, 主流语言基本都 **Stable**
+* 2021-08
 
 * [Most popular](https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-programming-scripting-and-markup-languages)
   - Programming, Scripting, and Markup languages
@@ -51,6 +51,15 @@ date: 2020-12-27
   - Merge some languages
 
 ```
+1. JavaScript/TypeScript
+2. Python
+3. Java
+4. C#
+5. C/C++
+6. PHP
+7. Go
+8. Kotlin
+9. Rust
 ```
 
 * [Most loved, dreaded, and wanted](https://insights.stackoverflow.com/survey/2021#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages)
@@ -68,8 +77,6 @@ date: 2020-12-27
 2. TypeScript/JavaScript
 3. Go
 4. Rust
-5. C++
-6. Kotlin
 ```
 
 ------------------
