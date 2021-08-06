@@ -8,15 +8,14 @@ date: 2018-12-02
 
 ------------------
 
-## 2022 Next Generation (Lockdown in 2021-08-05)
+## 2022 Next Generation (Lockdown in 2021-08-06)
 
 ### Overview
 
 * [QUIC](https://datatracker.ietf.org/doc/html/rfc9000)
   - [HTTP/3](https://datatracker.ietf.org/doc/html/draft-ietf-quic-http-34)
 
-* Why Golang v2?
-  - Maybe never?
+* **Why Golang v2?**
   - Just Go 1.18, 1.19, 1.20, ...
 
 * **Spring Framework**
