@@ -34,14 +34,16 @@ date: 2018-12-02
 ### Data Computing
 
 * [Apache Arrow](https://github.com/apache/arrow)
-  - [DataFusion](https://github.com/apache/arrow-datafusion)
-  - DataFusion is an extensible query execution framework,
-  - written in Rust, that uses Apache Arrow as its in-memory format.
-
 * Flink v2 & Kafka v3
   - Drop ZooKeeper, Kubernetes Native
   - CEP
   - Graph (Gelly)
+  - https://github.com/apache/arrow-cookbook
+  - https://github.com/apache/arrow-rs
+
+* [Datafuse](https://github.com/datafuselabs/datafuse)
+  - https://datafuse.rs
+  - [Roadmap 2021](https://github.com/datafuselabs/datafuse/issues/746)
 
 ### Graph Computing
 
