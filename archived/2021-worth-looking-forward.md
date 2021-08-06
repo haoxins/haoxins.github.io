@@ -25,11 +25,11 @@ date: 2018-12-02
 
 ### Machine learning
 
-* KubeFlow
-  - [kubeflow/kubeflow](https://github.com/kubeflow/kubeflow)
-  - [kubeflow/kfserving](https://github.com/kubeflow/kfserving)
-  - [kubeflow/pipelines](https://github.com/kubeflow/pipelines)
-  - [kubeflow/tf-operator](https://github.com/kubeflow/tf-operator)
+* [KubeFlow](https://github.com/kubeflow)
+  - [Kubeflow](https://github.com/kubeflow/kubeflow)
+  - [KFServing](https://github.com/kubeflow/kfserving)
+  - [Pipelines](https://github.com/kubeflow/pipelines)
+  - [Katib](https://github.com/kubeflow/katib)
 
 ### Data Computing
 
