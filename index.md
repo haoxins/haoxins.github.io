@@ -7,7 +7,6 @@
 * [推荐阅读清单](articles/reading-recommended.md)
 * [阅读 2022+](articles/reading-watching-and-gaming.md)
 * [Serverless for everything](articles/serverless.md)
-* [关于 Computing 的思考](articles/thinking-computing.md)
 * [诗·文](articles/诗.md)
 
 ### Archived
@@ -15,7 +14,6 @@
 * [(2022) Web](archived/2022-web.md)
 * [(2022) TAOCP 组合算法 - 计算机程序设计艺术](archived/2022-taocp-4.md)
 * [(2022) TAOCP 半数值算法 - 计算机程序设计艺术](archived/2022-taocp-2.md)
-* [(2022) Rust](archived/2022-rust.md)
 * [(2022) QUIC & HTTP/3](archived/2022-quic-http3.md)
 * [(2022) 不求甚解地了解点 - 物理](archived/2022-physics.md)
 * [(2022) ML for production](archived/2022-ml-for-production.md)
@@ -26,6 +24,7 @@
 * [(2021) Watching long term](archived/2021-watching-long-term.md)
 * [(2021) TAOCP 排序与查找 - 计算机程序设计艺术](archived/2021-taocp-3.md)
 * [(2021) TAOCP 基本算法 - 计算机程序设计艺术](archived/2021-taocp-1.md)
+* [(2021) Rust](archived/2021-rust.md)
 * [(2021) 阅读 书单 & 简记](archived/2021-reading.md)
 * [(2021) 阅读 - 在线资源](archived/2021-reading-online.md)
 * [(2021) 阅读 - 经典书籍](archived/2021-reading-long-term.md)
