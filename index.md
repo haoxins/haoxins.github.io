@@ -18,6 +18,7 @@
 * [(2022) 不求甚解地了解点 - 物理](archived/2022-physics.md)
 * [(2022) ML for production](archived/2022-ml-for-production.md)
 * [(2022) 不求甚解地了解点 - 数学](archived/2022-math.md)
+* [(2022) Distributed data computing](archived/2022-distributed-data-computing.md)
 * [(2022) Blockchain](archived/2022-blockchain.md)
 * [(2021) 关于技术, 次年度期待清单](archived/2021-worth-looking-forward.md)
 * [(2021) Watching](archived/2021-watching.md)
