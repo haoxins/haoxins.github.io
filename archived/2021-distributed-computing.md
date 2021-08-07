@@ -285,6 +285,8 @@ the results of groupings are emitted as panes.
 
 ### Events
 
+* 2021年8月, 开源 Data Cloud 服务商 Datafuse Labs 完成数百万美元种子轮与天使轮融资.
+
 * [APISIX](https://github.com/apache/apisix)
   - 公司一直在用的, 国产优秀开源软件
   - 加油!
