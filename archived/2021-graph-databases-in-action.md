@@ -5,14 +5,23 @@ date: 2021-08-08
 ---
 
 ```
-Key-value        (Redis, Riak)
+Key-value        (Redis)
   Wide-column    (Cassandra, HBase)
     Document     (MongoDB)
-      Relational (Dgraph, Neo4j, CosmosDB)
-        Graph
+      Relational (MySQL, Postgres)
+        Graph    (Dgraph, CosmosDB)
 
 Simple -> Complex
 ```
+
+> Our first decision was to pick the type of database.
+> We decided to use a **labeled property graph** database,
+> instead of, for example, an **RDF store** or **triplestore** database.
+
+> In the end, we decided to use the
+> Apache **TinkerPop** version 3.4.x framework
+
+* **Gremlin**
 
 ## Graph data modeling
 
@@ -23,6 +32,7 @@ Simple -> Complex
 ## Formatting results
 
 ## Developing an application
+
 ## Advanced data modeling techniques
 
 ## Building traversals using known walks
