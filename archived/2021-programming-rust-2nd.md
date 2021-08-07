@@ -42,6 +42,14 @@ and these restrictions take practice and experience to get used to.
 * **`#[test]`**
   - attribute: open-ended
 
+* A `trait` must be in scope in order to use its methods
+
+* Rust does not have exceptions:
+  - all errors are handled using either `Result` or `panic`
+
+* **All** Rust functions are **thread-safe**
+  - Really?
+
 ## Concepts
 
 ## Basics
