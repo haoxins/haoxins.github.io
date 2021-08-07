@@ -76,10 +76,9 @@ date: 2020-07-22
   - 什么场景是 Computing 为核心? 游戏渲染? 计算机模拟? (个人对此一无所知)
 
 * 什么算 计算?
-  - 一个网页算不算计算?
-  - 一个手机 App 算不算计算?
-  - 什么算 计算?
-  - 至少有 Input + State (v1) -> Output + State (v2)
+  - Input + State (v1) -> compute -> Output + State (v2)
+  - State: Local vs Remote
+  - State: Centric vs Dsitributed
 
 ### Serverless DB ?
 
