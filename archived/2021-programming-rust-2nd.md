@@ -50,6 +50,17 @@ and these restrictions take practice and experience to get used to.
 * **All** Rust functions are **thread-safe**
   - Really?
 
+* Rust lets you simply write `Complex { re, im }`.
+  - This is modeled on similar notations in JavaScript.
+
+* This kind of match statement is such a common pattern in Rust
+  that the language provides the **`?`** operator
+  as shorthand for the whole thing.
+
+* [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
+* [Rayon](https://github.com/rayon-rs/rayon)
+* [Smol](https://github.com/smol-rs/smol)
+
 ## Concepts
 
 ## Basics
