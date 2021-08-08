@@ -49,4 +49,5 @@ date: 2021-08-04
 * Knative
   - [Serving](https://github.com/knative/serving)
   - [Eventing](https://github.com/knative/eventing)
-> - [Build: Tekton Pipelines](https://github.com/tektoncd/pipeline)
+
+> * [Build: Tekton Pipelines](https://github.com/tektoncd/pipeline)
