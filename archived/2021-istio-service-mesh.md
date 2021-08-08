@@ -31,3 +31,22 @@ date: 2021-08-04
 
 * Virtual service
   - Rules
+
+* Service Entry
+  - 用于把一个服务添加到 Istio 抽象模型或服务注册表中.
+  - 添加服务条目后, Envoy 代理可以将流量发送到服务,
+    如同这个添加的服务条目是网格中的其他服务一样.
+    使用服务条目有很多方便之处,
+    可以管理在网格外部运行的服务的流量.
+
+* Istio 提供两种设置负载均衡的方式
+  - 标准负载均衡
+  - 会话保持
+
+* SDS (秘钥发现服务)
+  - `Envoy 1.8.0` 版本开始引入
+
+* Knative
+  - [Serving](https://github.com/knative/serving)
+  - [Eventing](https://github.com/knative/eventing)
+> - [Build: Tekton Pipelines](https://github.com/tektoncd/pipeline)
