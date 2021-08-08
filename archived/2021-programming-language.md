@@ -4,6 +4,19 @@ description: 青山相待, 白云相爱, 紫罗袍共黄金带
 date: 2020-12-27
 ---
 
+* Blockchain
+  **Rust**, **Go**
+* Data
+  **Rust**, Java
+* DevOps, DataOps, MLOps
+  **Python**
+* K8s, Istio
+  **Go**
+* Service
+  Java, Kotlin, **Go**
+* Serverless
+  **Python**, **Go**, JavaScript/TypeScript
+
 ### Rust
 
 * [axum](https://github.com/tokio-rs/axum)
