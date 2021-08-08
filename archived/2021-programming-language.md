@@ -10,7 +10,7 @@ date: 2020-12-27
   **Rust**, Java
 * DevOps, DataOps, MLOps
   **Python**
-* K8s, Istio
+* K8s, Istio, CNCF
   **Go**
 * Service
   Java, Kotlin, **Go**
