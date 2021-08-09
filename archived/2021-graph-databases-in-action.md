@@ -4,6 +4,8 @@ description: 此时相望不相闻, 愿逐月华流照君. 鸿雁长飞光不度
 date: 2021-08-08
 ---
 
+* [Graph Databases in Action](https://book.douban.com/subject/34700758/)
+
 ```
 Key-value        (Redis)
   Wide-column    (Cassandra, HBase)
