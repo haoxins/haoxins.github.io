@@ -80,6 +80,15 @@ and these restrictions take practice and experience to get used to.
   - tuples allow only constants as indices,
     like `t.4`. You can't write `t.i` or `t[i]`.
 
+* Pointer types
+  - References
+  - Boxes (heap)
+  - Unsafe pointers/Raw pointers
+
+* Rust references are never null
+  - `&T`
+  - `&mut T`
+
 ## Basics
 
 ## Traits & Generics
