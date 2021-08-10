@@ -63,6 +63,11 @@ and these restrictions take practice and experience to get used to.
 
 ## Concepts
 
+* Rust uses the `u8` type for byte values
+
+
+
+
 ## Basics
 
 ## Traits & Generics
