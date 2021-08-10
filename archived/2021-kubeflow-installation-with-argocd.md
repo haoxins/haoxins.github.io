@@ -88,6 +88,11 @@ kubectl port-forward \
   -n istio-system svc/istio-ingressgateway 8088:80
 ```
 
-### GCP ESPv2
+### External access
 
-* [Google Cloud Platform ESPv2](https://github.com/GoogleCloudPlatform/esp-v2)
+* [GKE Ingress: HTTP(S) Load Balancer](https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer)
+  - [Create Ingress](https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer#creating_an_ingress_resource)
+  - [kubernetes/ingress-gce](https://github.com/kubernetes/ingress-gce)
+
+> * [Cloud Load Balancing: HTTP(S)](https://cloud.google.com/load-balancing/docs/https)
+> * [Google Cloud Platform ESPv2](https://github.com/GoogleCloudPlatform/esp-v2)
