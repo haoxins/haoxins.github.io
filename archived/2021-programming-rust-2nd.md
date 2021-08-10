@@ -65,8 +65,20 @@ and these restrictions take practice and experience to get used to.
 
 * Rust uses the `u8` type for byte values
 
+* Rust's `character` type `char` represents
+  a single `Unicode` character, as a `32-bit` value.
 
+* Rust uses the `char` type for single characters in isolation,
+  but uses the `UTF-8` encoding for `strings` and `streams` of text.
+  So, a String represents its text as a sequence of `UTF-8` bytes,
+  not as an array of characters.
 
+* To a certain extent, tuples resemble arrays:
+  - both types represent an ordered sequence of values.
+  - each element of a tuple can have a different type,
+    whereas an array's elements must be all the same type.
+  - tuples allow only constants as indices,
+    like `t.4`. You can't write `t.i` or `t[i]`.
 
 ## Basics
 
