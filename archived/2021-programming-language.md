@@ -10,7 +10,7 @@ date: 2020-12-27
   Rust, Java
 * DevOps, DataOps, MLOps
   Python, Go
-* K8s, Istio, CNCF
+* K8s, Istio, Prometheus, CNCF
   Go
 * Service
   Java/Kotlin, Go
