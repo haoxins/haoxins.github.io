@@ -27,6 +27,14 @@ Simple -> Complex
 
 ## Graph data modeling
 
+> entities and relationships are treated with
+> equal importance in a graph database
+
+* Why can't I use SQL?
+
+> Relational databases (in a fit of naming irony)
+> are rather poor at representing rich relationships.
+
 ## Running basic and recursive traversals
 
 ## Pathfinding traversals and mutating graphs

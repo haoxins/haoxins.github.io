@@ -89,6 +89,13 @@ and these restrictions take practice and experience to get used to.
   - `&T`
   - `&mut T`
 
+* Array: `[T; N]`
+* Vector: `Vec<T>`
+* Shared slice: `&[T]`
+* Mutable slice: `&mut [T]`
+
+> Share or Modify
+
 ## Basics
 
 ## Traits & Generics
