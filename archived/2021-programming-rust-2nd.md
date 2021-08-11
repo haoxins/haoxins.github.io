@@ -91,10 +91,16 @@ and these restrictions take practice and experience to get used to.
 
 * Array: `[T; N]`
 * Vector: `Vec<T>`
+  - `vec![1, 2, 3]`
 * Shared slice: `&[T]`
 * Mutable slice: `&mut [T]`
 
 > Share or Modify
+
+* Strings (**`str`**)
+  - String literals
+  - Raw strings
+  - Byte stings
 
 ## Basics
 
