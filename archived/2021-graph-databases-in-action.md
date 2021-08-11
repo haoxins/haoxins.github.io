@@ -97,9 +97,10 @@ TFGB_ -take goose-> FB_TG
   doesn't necessarily mean that a graph database is
   the best technology to choose to solve that problem.
 
-* related or recursive data
-* pattern matching
-* centrality, clustering, and influence
+* Should use graph database
+  - related or recursive data
+  - pattern matching
+  - centrality, clustering, and influence
 
 ## Running basic and recursive traversals
 
