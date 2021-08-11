@@ -565,6 +565,19 @@ F1 Score = 2 / ((1 / Precision) + (1 / Recall))
 
 ## 2021
 
+### GraphScope
+
+> A One-Stop Large-Scale Graph Computing System from Alibaba
+
+* [Release v0.6.0](https://github.com/alibaba/GraphScope/releases/tag/v0.6.0)
+  - [Release Notes: v0.6.0](https://graphscope.io/blog/releasenotes/2021/08/08/release-notes-0.6.0.html)
+
+```
+This major release integrates a new graph interactive engine GAIA,
+which supports efficient parallel execution and
+bounded-memory execution for Gremlin queries.
+```
+
 ### Kubeflow
 
 * [Blog: Running Kubeflow at Intuit: Enmeshed in the service mesh](https://blog.kubeflow.org/running-kubeflow-at-intuit/)
