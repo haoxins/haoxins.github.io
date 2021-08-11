@@ -35,6 +35,68 @@ Simple -> Complex
 > Relational databases (in a fit of naming irony)
 > are rather poor at representing rich relationships.
 
+### Cases study
+
+* Recursive queries
+  - unbounded recursive queries
+
+> let's examine how we determine a person's reporting hierarchy.
+
+```sql
+CREATE TABLE org_chart (
+  employee_id          SMALLINT NOT NULL,
+  manager_employee_id  SMALLINT NULL,
+  employee_name        VARCHAR(20) NOT NULL
+);
+```
+
+```zsh
+g.V().
+  repeat(
+    out('works_for')
+  ).path().next()
+```
+
+* river crossing puzzle
+
+```zsh
+T (the boat and the farmer)
+G (the goose)
+F (the fox)
+B (the barley)
+_ (the river)
+```
+
+```zsh
+g.V('TFGB_').
+  repeat(
+    out()
+  ).until(hasId('_TGFB')).
+  path().next()
+```
+
+```zsh
+TFGB_ -take goose-> FB_TG
+      -take empty-> TFB_G
+      -take barley-> F_TGB
+      -return goose-> TFG_B
+      -take fox-> G_TBF
+      -return empty-> TG_FB
+      -take goose-> _TGFB
+
+TFGB_ -take goose-> FB_TG
+      -take empty-> TFB_G
+      -take fox-> B_TFG
+      -return goose-> TGB_F
+      -take barley-> G_TBF
+      -return empty-> TG_FB
+      -take fox-> _TGFB
+```
+
+* Just because a problem can be represented as a graph
+  doesn't necessarily mean that a graph database is
+  the best technology to choose to solve that problem.
+
 ## Running basic and recursive traversals
 
 ## Pathfinding traversals and mutating graphs
