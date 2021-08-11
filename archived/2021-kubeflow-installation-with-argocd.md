@@ -34,6 +34,7 @@ export CLUSTER_ZONE=asia-southeast1-c
 gcloud container clusters create $CLUSTER_NAME \
   --project=$PROJECT_ID \
   --machine-type=n1-standard-2 \
+  --enable-autoscaling --min-nodes 1 --max-nodes 4 \
   --scopes compute-rw,gke-default,storage-rw \
   --num-nodes=3 \
   --zone=$CLUSTER_ZONE
