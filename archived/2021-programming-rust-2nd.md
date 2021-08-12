@@ -104,6 +104,21 @@ and these restrictions take practice and experience to get used to.
 
 ## Basics
 
+* Ownership tree
+  - **Copy types**: excused from the ownership rules
+  - You can move values from one owner to another
+  - **Rc, Arc** reference-counted pointer types
+  - Borrow a reference, references are non-owning pointers
+
+> In Rust, for most types, Rust doesn't copy the value but moves it.
+
+* The standard Copy types include all the machine integer
+  and floating-point numeric types, the char and bool types,
+  and a few others. A tuple or fixed-size array of
+  Copy types is itself a Copy type.
+
+* A value owned by an `Rc` pointer is immutable.
+
 ## Traits & Generics
 
 ## Closures & Iterators
