@@ -285,6 +285,10 @@ the results of groupings are emitted as panes.
 
 ### Events
 
+* [OpenFunction/OpenFunction](https://github.com/OpenFunction/OpenFunction)
+  - 由 **青云** 开源, [QingCloud](https://www.qingcloud.com)
+  - 基于 [dapr/dapr](https://github.com/dapr/dapr)
+
 * 2021年8月, 开源 Data Cloud 服务商 Datafuse Labs 完成数百万美元种子轮与天使轮融资.
 
 * [APISIX](https://github.com/apache/apisix)

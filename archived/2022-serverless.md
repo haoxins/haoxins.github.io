@@ -12,7 +12,7 @@ date: 2020-07-22
 
 ## Data flow
 
-* [DataFusion](https://github.com/apache/arrow-datafusion)
+* [Datafuse](https://github.com/datafuselabs/datafuse)
 
 ### Streaming
 
@@ -33,11 +33,6 @@ date: 2020-07-22
 ## QUIC
 
 ------------------
-
-## Cloud
-
-* [华为云: Function Graph](https://support.huaweicloud.com/functiongraph/)
-  - 截止 2021-07, 很一般
 
 ```
 2021 注定是一个节点, 但未必称得上是 转折点
