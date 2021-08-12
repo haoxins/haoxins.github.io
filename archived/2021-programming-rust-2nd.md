@@ -122,6 +122,13 @@ and these restrictions take practice and experience to get used to.
 * References: non-owning
   - must never outlive their referents
 
+* A *shared reference* lets you read but not modify its referent
+  - *Shared references* are *Copy*
+* If you have a *mutable reference* to a value,
+  you may both read and modify the value
+  - *Mutable references* are not *Copy*
+* A *multiple readers and single writer* rule
+
 ## Traits & Generics
 
 ## Closures & Iterators
