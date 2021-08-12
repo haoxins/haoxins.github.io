@@ -22,8 +22,6 @@ date: 2019-06-30
   - Headers frame
   - Data frame
 
-* [ICMP](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol)
-
 * [gRPC over HTTP2](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md)
   - [ ] TODO: HTTP3
 
@@ -95,6 +93,7 @@ UDP Header
 ### 网络层/路由层
 
 * ping: ICMP
+* NDP: 基于 ICMPv6
 
 * IP
 

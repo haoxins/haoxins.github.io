@@ -64,7 +64,7 @@ cd argoflow-gcp
 ```
 
 ```zsh
-kustomize build argocd/ | kubectl apply -f -
+kubectl apply -k ./distribution/argocd/
 ```
 
 * If you want to login ArgoCD UI
@@ -81,6 +81,13 @@ kubectl -n argocd get secret \
 ### Install Kubeflow
 
 * [Follow this](https://github.com/argoflow/argoflow-gcp#installing-kubeflow)
+  - `kubeflow/common/user-namespace/params.env`
+  - `kubeflow/common/dex-istio/configmap-patch.yaml`
+  - `metallb/configmap.yaml`
+
+```zsh
+kubectl apply -f ./distribution/kubeflow.yaml
+```
 
 ```zsh
 kubectl -n istio-system get svc
