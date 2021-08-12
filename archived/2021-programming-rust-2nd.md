@@ -8,7 +8,7 @@ date: 2021-07-12
   - **Fast, Safe Systems Development**
   - [Code Examples for Programming Rust](https://github.com/ProgrammingRust/examples)
 
-> 看看比官方文档多了啥~
+> 此书不断号召 *C++* 玩家转投 *Rust* 平台, 哈哈哈!
 
 * **Rust 1.50**
   - I'm using `1.54`
@@ -128,6 +128,41 @@ and these restrictions take practice and experience to get used to.
   you may both read and modify the value
   - *Mutable references* are not *Copy*
 * A *multiple readers and single writer* rule
+
+* The **.** operator implicitly dereferences its left operand if needed.
+* The **.** operator can also implicitly borrow a reference
+  to its left operand if needed for a method call.
+
+* The **.** operator follows as many references
+  as it takes to find its target.
+
+```rust
+struct Point {
+    x: i32,
+    y: i32,
+}
+let p = Point { x: 1, y: 2 };
+let r: &Point = &p;
+let rr: &&Point = &r;
+let rrr: &&&Point = &rr;
+assert_eq!(rrr.x, 1);
+assert_eq!(rrr.y, 2);
+```
+
+* Like the **.** operator, Rust's comparison operators
+  "see-through" any number of references.
+
+```rust
+let x = 1;
+let y = 1;
+let rx = &x;
+let ry = &y;
+let rrx = &rx;
+let rry = &ry;
+assert!(rrx <= rry);
+assert!(rrx == rry);
+assert!(rrx >= rry);
+```
 
 ## Traits & Generics
 
