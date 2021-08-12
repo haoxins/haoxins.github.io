@@ -24,6 +24,8 @@ date: 2021-02-17
 
 ## 2021
 
+* RFC: Add the stateless AV1 uAPI and the VIVPU virtual driver to showcase it.
+
 * [Supporting Linux kernel development in Rust](https://lwn.net/Articles/829858/)
   - https://github.com/Rust-for-Linux/linux
 
