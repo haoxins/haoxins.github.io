@@ -119,6 +119,9 @@ and these restrictions take practice and experience to get used to.
 
 * A value owned by an `Rc` pointer is immutable.
 
+* References: non-owning
+  - must never outlive their referents
+
 ## Traits & Generics
 
 ## Closures & Iterators
