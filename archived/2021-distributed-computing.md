@@ -475,6 +475,10 @@ and supports version v0.22 of Knative Serving and Eventing.
 ### Dapr
 
 * [Dapr 1.3.0](https://github.com/dapr/dapr/releases/tag/v1.3.0)
+  - Setup VS Code development in a containerized environment
+    and use this in GitHub Codespaces for
+    contributing to dapr project
+  - 赞!
 
 * [The Netflix Cosmos Platform](https://netflixtechblog.com/the-netflix-cosmos-platform-35c14d9351ad)
 
