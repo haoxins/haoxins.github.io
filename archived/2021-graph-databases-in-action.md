@@ -102,6 +102,11 @@ TFGB_ -take goose-> FB_TG
   - pattern matching
   - centrality, clustering, and influence
 
+```
+Relational databases solve 88 out of 100 application issues well,
+so feel free to use them for those problems.
+```
+
 ## Running basic and recursive traversals
 
 ## Pathfinding traversals and mutating graphs
