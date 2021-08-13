@@ -164,6 +164,11 @@ assert!(rrx == rry);
 assert!(rrx >= rry);
 ```
 
+* In Rust, a function's signature always exposes the body's behavior.
+
+* Whenever a reference type appears inside another
+  type's definition, you must write out its lifetime.
+
 ## Traits & Generics
 
 ## Closures & Iterators
