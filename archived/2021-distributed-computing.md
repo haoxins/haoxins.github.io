@@ -287,6 +287,16 @@ the results of groupings are emitted as panes.
 
 * [New GKE Dataplane V2 increases security and visibility for containers](https://cloud.google.com/blog/products/containers-kubernetes/bringing-ebpf-and-cilium-to-google-kubernetes-engine)
   - Using *eBPF* to build Kubernetes Network Policy Logging
+  - [Cilium](https://github.com/cilium)
+
+```
+Today, we're introducing GKE Dataplane V2,
+an opinionated dataplane that harnesses the power of eBPF and Cilium,
+an open source project that makes the Linux kernel
+Kubernetes-aware using eBPF.
+Now in beta, we're also using Dataplane V2 to bring
+Kubernetes Network Policy logging to Google Kubernetes Engine (GKE).
+```
 
 * [OpenFunction/OpenFunction](https://github.com/OpenFunction/OpenFunction)
   - 由 **青云** 开源, [QingCloud](https://www.qingcloud.com)

@@ -288,7 +288,7 @@ Operator 的工作原理, 实际上是利用 Kubernetes 的 CRD
 
 * [IPVS proxy mode](https://kubernetes.io/docs/concepts/services-networking/service/#proxy-mode-ipvs)
 
-* [Cilium](https://github.com/cilium/cilium)
+* [**Cilium**](https://github.com/cilium/cilium)
 
 * [Weave](https://github.com/weaveworks/weave)
 
