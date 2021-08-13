@@ -326,7 +326,8 @@ gcloud projects add-iam-policy-binding "${KF_PROJECT}" \
 ### Kubeflow Operator
 
 * [kubeflow/kfctl](https://github.com/kubeflow/kfctl)
-  - **未来可期, 暂不可用**
+  - 个人觉得 *ArgoCD* 部署是较好的方案
+  - 即使是 *Operator* 模式, *Kubeflow* 也应该是多个 *Operators*
 
 ### Deploying Kubeflow with ArgoCD
 
