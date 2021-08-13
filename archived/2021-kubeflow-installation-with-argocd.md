@@ -93,7 +93,7 @@ kubectl apply -f ./distribution/kubeflow.yaml
 kubectl -n istio-system get svc
 
 kubectl port-forward \
-  -n istio-system svc/istio-ingressgateway 8088:80
+  -n istio-system svc/istio-ingressgateway 8088:443
 ```
 
 ### External access

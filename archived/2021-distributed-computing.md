@@ -285,6 +285,9 @@ the results of groupings are emitted as panes.
 
 ### Events
 
+* [New GKE Dataplane V2 increases security and visibility for containers](https://cloud.google.com/blog/products/containers-kubernetes/bringing-ebpf-and-cilium-to-google-kubernetes-engine)
+  - Using *eBPF* to build Kubernetes Network Policy Logging
+
 * [OpenFunction/OpenFunction](https://github.com/OpenFunction/OpenFunction)
   - 由 **青云** 开源, [QingCloud](https://www.qingcloud.com)
   - 基于 [dapr/dapr](https://github.com/dapr/dapr)
