@@ -24,6 +24,8 @@ date: 2021-02-17
 
 ## 2021
 
+* [Facebook, Google, Isovalent, Microsoft, and Netflix announce eBPF Foundation](https://isovalent.com/blog/post/2021-08-ebpf-foundation-announcement)
+
 * [eBPF](https://ebpf.io)
   - [eBPF Summit 2021](https://ebpf.io/summit-2021/)
 
