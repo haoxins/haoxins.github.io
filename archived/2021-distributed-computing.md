@@ -400,9 +400,10 @@ templates/
   ingress.yaml
 ```
 
-### Kubebuilder
-
 ### Operator pattern
+
+* [operator-framework/operator-sdk](https://github.com/operator-framework/operator-sdk)
+  - Operator SDK `Reaches v1.0` (August 18, 2020)
 
 ```
 Kubernetes' controllers concept lets you extend the cluster's behaviour
