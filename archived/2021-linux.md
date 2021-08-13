@@ -24,6 +24,9 @@ date: 2021-02-17
 
 ## 2021
 
+* [eBPF](https://ebpf.io)
+  - [eBPF Summit 2021](https://ebpf.io/summit-2021/)
+
 * RFC: Add the stateless AV1 uAPI and the VIVPU virtual driver to showcase it.
 
 * [Supporting Linux kernel development in Rust](https://lwn.net/Articles/829858/)
