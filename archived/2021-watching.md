@@ -6,14 +6,18 @@ date: 2019-10-24
 
 ## 2021
 
+### 2021-08
+
+* *重温* [**绣春刀**](https://movie.douban.com/subject/24745500/)
+
 ### 2021-07
 
-* [怒火·重案](https://movie.douban.com/subject/30174085/)
+* [**怒火·重案**](https://movie.douban.com/subject/30174085/)
   - 邦主: `我们总是想着如何少做一点, 但其实应该想着如何做好一点.`
 
-* 重温 [绣春刀II: 修罗战场](https://movie.douban.com/subject/26270502/)
+* *重温* [绣春刀II: 修罗战场](https://movie.douban.com/subject/26270502/)
 
-* 重温 [老炮儿](https://movie.douban.com/subject/24751756/)
+* *重温* [老炮儿](https://movie.douban.com/subject/24751756/)
   - 当年不识 于和伟, 哈哈哈
 
 * [中国医生](https://movie.douban.com/subject/35087699/)
@@ -37,7 +41,7 @@ date: 2019-10-24
   - 还是更喜欢 大侦探波罗 中的 **波罗**
   - 期待翻拍
 
-* 继续看 [觉醒年代](https://movie.douban.com/subject/30228394/)
+* *继续看* [**觉醒年代**](https://movie.douban.com/subject/30228394/)
   - **白玉兰** 最佳导演, 最佳编剧, 最佳男主角 **于和伟**
   - 李大钊送陈独秀离京, 途遇难民, 满目疮痍, 百废待兴
   - 陈李二人, 悲痛欲绝, 宣誓建党! 奋斗终身!
