@@ -169,6 +169,31 @@ assert!(rrx >= rry);
 * Whenever a reference type appears inside another
   type's definition, you must write out its lifetime.
 
+* If your function is a method on some type and
+  takes its **self** parameter by reference,
+  then that breaks the tie: Rust assumes that
+  *self*'s lifetime is the one to give
+  everything in your return value.
+
+* Rust assumes that whatever you're borrowing,
+  you're borrowing from *self*.
+
+* Note that in both cases, the path of ownership
+  leading to the referent cannot be changed for
+  the reference's lifetime.
+  For a shared borrow, the path is *read-only*;
+  for a mutable borrow, it's completely in accessible.
+  So there's no way for the program to do anything
+  that will invalidate the reference.
+
+* Most of the *control flow* tools in C are statements.
+  In Rust, they are ***all expressions***.
+
+* It's never strictly necessary to use `if let`,
+  because `match` can do everything `if let` can do.
+  An `if let` express on is shorthand for
+  a `match` with just one pattern.
+
 ## Traits & Generics
 
 ## Closures & Iterators
