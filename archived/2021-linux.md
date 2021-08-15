@@ -35,6 +35,10 @@ date: 2021-02-17
 * [Facebook, Google, Isovalent, Microsoft, and Netflix announce eBPF Foundation](https://isovalent.com/blog/post/2021-08-ebpf-foundation-announcement)
 
 ```
+Think of eBPF as making the operating system programmable
+in the same way as JavaScript and other languages
+have done this to the web browser.
+We are therefore looking into an exciting future of innovation ahead of us.
 ```
 
 * [eBPF](https://ebpf.io)
