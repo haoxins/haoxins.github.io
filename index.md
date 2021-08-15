@@ -16,6 +16,7 @@
 * [(2022) 不求甚解地了解点 - 物理](archived/2022-physics.md)
 * [(2022) MLOps](archived/2022-ml-ops.md)
 * [(2022) 不求甚解地了解点 - 数学](archived/2022-math.md)
+* [(2021) 费曼物理学讲义 (卷三)](archived/2022-feynman-lectures-on-physics-3.md)
 * [(2022) Distributed data computing](archived/2022-distributed-data-computing.md)
 * [(2022) 时间静悄悄](archived/2022-changing.md)
 * [(2022) Blockchain](archived/2022-blockchain.md)
