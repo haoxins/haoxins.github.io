@@ -24,7 +24,18 @@ date: 2021-02-17
 
 ## 2021
 
+* [Debian 11 **bullseye** released](https://www.debian.org/News/2021/20210814)
+  - *August 14th, 2021*
+  - Linux kernel 5.10 series
+  - Python 3, 3.9.1
+  - Rustc 1.48
+
+* [Debian 11](https://www.debian.org/releases/bullseye/releasenotes)
+
 * [Facebook, Google, Isovalent, Microsoft, and Netflix announce eBPF Foundation](https://isovalent.com/blog/post/2021-08-ebpf-foundation-announcement)
+
+```
+```
 
 * [eBPF](https://ebpf.io)
   - [eBPF Summit 2021](https://ebpf.io/summit-2021/)
