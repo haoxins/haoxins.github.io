@@ -37,6 +37,7 @@
 * [(2021) 图灵的秘密 & 集异璧之大成 (哥德尔)](archived/2021-math-turing-and-godel.md)
 * [(2021) 庞加莱猜想](archived/2021-math-poincare-conjecture.md)
 * [(2021) 伽罗瓦理论 - 数学女孩系列](archived/2021-math-galois-theory.md)
+* [(2021) 毛泽东选集](archived/2021-mao.md)
 * [(2021) Machine learning](archived/2021-machine-learning.md)
 * [(2021) Linux](archived/2021-linux.md)
 * [(2021) Kubernetes deep dive](archived/2021-kubernetes-deep-dive.md)
