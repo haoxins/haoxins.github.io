@@ -7,8 +7,6 @@ date: 2021-08-15
 * [Wiki - The Feynman Lectures on Physics](https://en.wikipedia.org/wiki/The_Feynman_Lectures_on_Physics)
 * [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
 
-* *卷二* 是 **最不感兴趣** 的一卷, 所以整体匆匆阅过, ***略读***
-
 ## 电磁学
 
 ## 矢量场的微分运算
