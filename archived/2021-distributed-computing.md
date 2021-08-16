@@ -285,6 +285,17 @@ the results of groupings are emitted as panes.
 
 ### Events
 
+* [Kitex](https://github.com/cloudwego/kitex)
+  - Kitex 字节跳动内部的 Golang 微服务 RPC 框架
+* [rpcx](https://github.com/smallnest/rpcx)
+  - Best microservices framework in Go, like alibaba Dubbo,
+    but with more features, Scale easily.
+
+```
+没人怀疑 gRPC 在 CNCF 的统治地位,
+但是 gRPC 不太适合业务层的开发.
+```
+
 * [Fluid](https://github.com/fluid-cloudnative/fluid)
   - Fluid, elastic data abstraction and acceleration for
     BigData/AI applications in cloud.
