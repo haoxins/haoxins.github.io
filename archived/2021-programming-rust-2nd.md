@@ -194,6 +194,30 @@ assert!(rrx >= rry);
   An `if let` express on is shorthand for
   a `match` with just one pattern.
 
+* The `..=` operator produces end-inclusive (or closed) ranges,
+  which do include the end value.
+  For example, the range `..= 3`
+  includes the numbers `0, 1, 2,` and `3`.
+
+* As in *C*, `a % b` computes the signed remainder,
+  or modulus, of division rounding toward zero.
+  The result has the same sign as the lefthand operand.
+  Note that `%` can be used on
+  floating-point numbers as well as integers:
+
+```rust
+let x = 1234.567 % 10.0; // approximately 4.567
+```
+
+* However, what we did earlier is generally considered
+  the best style import `types`, `traits`, and `modules`
+  (like `std::mem`)
+  and then use relative paths to access the
+  `functions`, `constants`, and other `members` within.
+
+* Modules do not automatically inherit
+  names from their parent modules.
+
 ## Traits & Generics
 
 ## Closures & Iterators
