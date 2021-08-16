@@ -107,6 +107,16 @@ Relational databases solve 88 out of 100 application issues well,
 so feel free to use them for those problems.
 ```
 
+* The main difference is that we must shift from an
+  *"entity first"* mindset
+  (or perhaps more accurately, an *"entity-only"* mindset) to an
+  ***"entity and relationship"*** mindset.
+
+* ***Entity***,
+  ***Relationship***,
+  ***Attribute***,
+  ***Access pattern***
+
 ## Running basic and recursive traversals
 
 ## Pathfinding traversals and mutating graphs
