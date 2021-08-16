@@ -218,6 +218,38 @@ let x = 1234.567 % 10.0; // approximately 4.567
 * Modules do not automatically inherit
   names from their parent modules.
 
+* A **`constant`** is a bit like a *C++* **`#define`**:
+  - the value is compiled into your code every place it's used.
+* A **`static`** is a variable that's set up before
+  your program starts running and lasts until it exits.
+* Use **`constants`** for *magic numbers* and `strings` in your code.
+* Use **`statics`** for *larger amounts of data*,
+  or any time you need to *borrow* a *reference* to the constant value.
+
+* The code in **`src/lib.rs`** forms the root module of the library.
+  - Other crates that use our library can only access
+    the public items of this root module.
+
+* The **`src/bin`** Directory
+  - Cargo has some built-in support for small
+    programs that live in the same crate as a library.
+
+* To attach an attribute to a whole crate,
+  add it at the top of the `main.rs` or `lib.rs` file,
+  before any items, and write **`#!`** instead of **`#`**.
+
+* ***Integration tests*** are `.rs` files that live in a **`tests`**
+  directory alongside your project's **`src`** directory.
+  When you run `cargo test`, Cargo compiles each integration test
+  as a separate, standalone crate, linked with your
+  library and the Rust test harness.
+
+* ***Integration tests*** are valuable in part because
+  they see your crate from the *outside*, just as a user would.
+  They test the crate's **public** API.
+
+* `cargo test` runs both *unit tests* and *integration tests*.
+
 ## Traits & Generics
 
 ## Closures & Iterators
