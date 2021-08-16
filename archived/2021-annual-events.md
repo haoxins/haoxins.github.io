@@ -44,7 +44,7 @@ date: 2019-05-26
 
 * 06月02日, **Harmony OS 2.0** 正式发布!
   - **Open Harmony 2.0** 正式开源
-  - 但愿 3.0, 带来真正完整的 Open Harmony
+  - 但愿 *3.0*, 带来真正完整的 Open Harmony
   - https://gitee.com/openharmony
 
 > 从某种层面上来讲, 微信小程序的生态间接为鸿蒙生态奠定了基础.
