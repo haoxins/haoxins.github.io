@@ -285,6 +285,18 @@ the results of groupings are emitted as panes.
 
 ### Events
 
+* [Fluid](https://github.com/fluid-cloudnative/fluid)
+  - Fluid, elastic data abstraction and acceleration for
+    BigData/AI applications in cloud.
+  - 有点意思, 明年看看
+
+```
+2021 年 4 月 27 日, 云原生计算基金会 (CNCF) 宣布通过全球 TOC 投票
+接纳 Fluid 成为 CNCF 官方沙箱项目.
+Fluid 是一个由南京大学, 阿里云以及 Alluxio 开源社区联合发起并开源的
+云原生数据编排和加速系统.
+```
+
 * [New GKE Dataplane V2 increases security and visibility for containers](https://cloud.google.com/blog/products/containers-kubernetes/bringing-ebpf-and-cilium-to-google-kubernetes-engine)
   - Using *eBPF* to build Kubernetes Network Policy Logging
   - [Cilium](https://github.com/cilium)
