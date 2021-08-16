@@ -297,6 +297,13 @@ Fluid 是一个由南京大学, 阿里云以及 Alluxio 开源社区联合发起
 云原生数据编排和加速系统.
 ```
 
+* [Volcano](https://github.com/volcano-sh/volcano)
+  - Volcano is a batch system built on Kubernetes.
+  - It provides a suite of mechanisms that are commonly required
+    by many classes of batch & elastic workload including:
+  - machine learning/deep learning/big data applications.
+  - 在 Kubeflow 里面看到的, 期待未来
+
 * [New GKE Dataplane V2 increases security and visibility for containers](https://cloud.google.com/blog/products/containers-kubernetes/bringing-ebpf-and-cilium-to-google-kubernetes-engine)
   - Using *eBPF* to build Kubernetes Network Policy Logging
   - [Cilium](https://github.com/cilium)
