@@ -9,7 +9,6 @@
 
 * [(2022) Web](archived/2022-web.md)
 * [(2022) TAOCP 组合算法 - 计算机程序设计艺术](archived/2022-taocp-4.md)
-* [(2022) TAOCP 半数值算法 - 计算机程序设计艺术](archived/2022-taocp-2.md)
 * [(2022) Serverless for everything](archived/2022-serverless.md)
 * [(2022) QUIC & HTTP/3](archived/2022-quic-http3.md)
 * [(2022) pili](archived/2022-pili.md)
@@ -24,6 +23,7 @@
 * [(2021) Watching](archived/2021-watching.md)
 * [(2021) Watching long term](archived/2021-watching-long-term.md)
 * [(2021) TAOCP 排序与查找 - 计算机程序设计艺术](archived/2021-taocp-3.md)
+* [(2021) TAOCP 半数值算法 - 计算机程序设计艺术](archived/2021-taocp-2.md)
 * [(2021) TAOCP 基本算法 - 计算机程序设计艺术](archived/2021-taocp-1.md)
 * [(2021) 阅读 书单 & 简记](archived/2021-reading.md)
 * [(2021) 阅读 - 在线资源](archived/2021-reading-online.md)
