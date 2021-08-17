@@ -355,6 +355,23 @@ Kubernetes Network Policy logging to Google Kubernetes Engine (GKE).
 
 * 3月16日, `混合云第一股` **青云科技** 正式在科创板上市, 股票代码: `688316`
 
+### Dapr
+
+* [Dapr 1.3.0](https://github.com/dapr/dapr/releases/tag/v1.3.0)
+  - Setup VS Code development in a containerized environment
+    and use this in GitHub Codespaces for
+    contributing to dapr project
+  - 赞!
+
+* [The Netflix Cosmos Platform](https://netflixtechblog.com/the-netflix-cosmos-platform-35c14d9351ad)
+
+* [How Alibaba is using Dapr](https://blog.dapr.io/posts/2021/03/19/how-alibaba-is-using-dapr)
+
+* [A visual guide to Dapr](https://blog.dapr.io/posts/2021/03/02/a-visual-guide-to-dapr)
+
+* [Announcing Dapr v1.0](https://blog.dapr.io/posts/2021/02/17/announcing-dapr-v1.0)
+  - [Dapr 1.0.0](https://github.com/dapr/dapr/releases/tag/v1.0.0)
+
 ### Argo
 
 * [Argo Project](https://github.com/argoproj)
@@ -512,23 +529,7 @@ The Knative Operator v0.22 release contains bug fixes
 and supports version v0.22 of Knative Serving and Eventing.
 ```
 
-### JDK 17 (LTS)
+
+
 
 * [ZGC | What's new in JDK 16](https://malloc.se/blog/zgc-jdk16)
-
-### Dapr
-
-* [Dapr 1.3.0](https://github.com/dapr/dapr/releases/tag/v1.3.0)
-  - Setup VS Code development in a containerized environment
-    and use this in GitHub Codespaces for
-    contributing to dapr project
-  - 赞!
-
-* [The Netflix Cosmos Platform](https://netflixtechblog.com/the-netflix-cosmos-platform-35c14d9351ad)
-
-* [How Alibaba is using Dapr](https://blog.dapr.io/posts/2021/03/19/how-alibaba-is-using-dapr)
-
-* [A visual guide to Dapr](https://blog.dapr.io/posts/2021/03/02/a-visual-guide-to-dapr)
-
-* [Announcing Dapr v1.0](https://blog.dapr.io/posts/2021/02/17/announcing-dapr-v1.0)
-  - [Dapr 1.0.0](https://github.com/dapr/dapr/releases/tag/v1.0.0)
