@@ -250,6 +250,31 @@ let x = 1234.567 % 10.0; // approximately 4.567
 
 * `cargo test` runs both *unit tests* and *integration tests*.
 
+* **`panic`** is per thread
+
+* **Errors**
+  - *Printing Errors*
+  - *Propagating Errors*, *`Option.?`*, *`Result.?`*
+  - *Ignoring Errors*, `let _ = writeln!(stderr(), "error: {}", err);`
+  - *Custom Error Type*
+
+* **Why Results?**
+  - The most common decision is to allow errors to *propagate*,
+    and that's written with a single character, **`?`**.
+    Thus, error plumbing does not clutter up
+    your code the way it does in *C* and *Go*.
+  - Since the possibility of errors is part of every function's *return type*,
+    it's clear which functions can fail and which cant.
+    If you change a function to be fallible,
+    you're changing its return type,
+    so the compiler will make you update that functions downstream users.
+  - Rust checks that *Result* values are used,
+    so you can't accidentally let an error pass silently
+    (a common mistake in C).
+  - Since *Result* is a data type like any other,
+    it's easy to store success and error results in the same collection.
+    This makes it easy to model partial success.
+
 ## Traits & Generics
 
 ## Closures & Iterators
