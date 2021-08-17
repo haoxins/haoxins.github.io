@@ -509,7 +509,10 @@ The Operator pattern consists of three components:
 
 ### Knative
 
-* Kubernetes: 1.22
+* Announcing Knative v0.24 Release
+  - In preparation for *GA*
+  - Kubernetes *1.19* is now required
+  - DomainMapping feature is now BETA
 
 * Knative Version 0.22 release
 
@@ -529,7 +532,14 @@ The Knative Operator v0.22 release contains bug fixes
 and supports version v0.22 of Knative Serving and Eventing.
 ```
 
+### Dex
 
+* [Dex](https://github.com/dexidp/dex)
+  - A Federated OpenID Connect Provider
+  - 如果本人记得没错, OpenID 曾经一度凉凉
+  - 看来 CNCF 把他救活了
+  - 意义: 各种内部系统的无缝整合, Grafana, Kibana, Flink UI
 
+### JDK 17 (LTS)
 
 * [ZGC | What's new in JDK 16](https://malloc.se/blog/zgc-jdk16)
