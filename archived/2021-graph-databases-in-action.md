@@ -116,6 +116,14 @@ so feel free to use them for those problems.
   ***Relationship***,
   ***Attribute***,
   ***Access pattern***
+  - We usually make our choice based on
+    the predominant *access patterns*.
+
+* Four-step process for data modeling
+  - Understand the problem (core access patterns)
+  - Create a whiteboard or conceptual model
+  - Create a logical data model
+  - Test the model
 
 ## Running basic and recursive traversals
 
