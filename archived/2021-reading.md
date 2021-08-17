@@ -367,6 +367,7 @@ date: 2018-04-01
   - [计算机程序设计艺术 卷2](https://book.douban.com/subject/26850558/)
   - [计算机程序设计艺术 卷1](https://book.douban.com/subject/26681685/)
   - 这个是买来收藏的 :)
+  - *卷1* 赠与 @*Gary*
 
 * [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
   - 这个是买来当摆设的 :)
