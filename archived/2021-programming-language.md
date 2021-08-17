@@ -110,6 +110,12 @@ date: 2020-12-27
 
 ### Events
 
+* [Go 1.17 is released](https://blog.golang.org/go1.17)
+  - [Go 1.17 Release Notes](https://golang.org/doc/go1.17)
+  - *16 August 2021*
+  - Pruned module graphs in go *1.17* modules
+  - **`go mod tidy -go=1.17`**
+
 * [PEP 621: Storing project metadata in pyproject.toml](https://www.python.org/dev/peps/pep-0621/)
   - `pyproject.toml`
 
