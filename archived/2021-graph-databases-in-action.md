@@ -128,6 +128,26 @@ so feel free to use them for those problems.
 > we have found that singular names tend to be
 > a better fit for graph data modeling.
 
+* Because *relationships* are *first-class*
+  citizens in a graph data model,
+  both *vertices* and *edges* can have
+  *properties* associated with those.
+
+* **Naming**
+  - We could have gone with the name *User*,
+    but this is specific to one type of
+    potential person within the application.
+  - While we currently do not have this requirement,
+    we might need to represent other types of people,
+    such as *employees* or *owners*, in the future.
+
+* ***lower_snake_case***, ***singular***
+
+> It is generally a safe bet that each vertex
+> in a graph database can only be associated
+> with a single label.
+> That is the approach of Apache *TinkerPop*.
+
 ## Running basic and recursive traversals
 
 ## Pathfinding traversals and mutating graphs
