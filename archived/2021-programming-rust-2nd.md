@@ -275,6 +275,19 @@ let x = 1234.567 % 10.0; // approximately 4.567
     it's easy to store success and error results in the same collection.
     This makes it easy to model partial success.
 
+* `#[derive(Copy, Clone, Debug, PartialEq)]`
+
+* **Interior Mutability**
+  - *`Cell<T>`*
+  - *`RefCell<T>`*
+
+### Enums and Patterns
+
+* **Enum**
+  - *unit-like* structs
+  - *tuple variants*, tuple structs
+  - *struct variants*
+
 ## Traits & Generics
 
 ## Closures & Iterators
