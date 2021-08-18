@@ -538,7 +538,7 @@ and supports version v0.22 of Knative Serving and Eventing.
   - A Federated OpenID Connect Provider
   - 如果本人记得没错, OpenID 曾经一度凉凉
   - 看来 CNCF 把他救活了
-  - 意义: 各种内部系统的无缝整合, Grafana, Kibana, Flink UI
+  - 意义: 各种内部系统的无缝整合, Grafana, Flink Web UI
 
 ### JDK 17 (LTS)
 
