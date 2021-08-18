@@ -8,7 +8,7 @@ date: 2018-12-02
 
 ------------------
 
-## 2022 Next Generation (Lockdown in 2021-08-06)
+## 2022 Next Generation (Lockdown in 2021-08-18)
 
 ### Overview
 
@@ -17,6 +17,9 @@ date: 2018-12-02
 
 * **Why Golang v2?**
   - Just Go 1.18, 1.19, 1.20, ...
+  - **Generics**: *1.18+*
+  - **Error handling**: *1.2x*
+  - **Error values**: *2.xx or 1.2x*
 
 * **Spring Framework**
   - [Spring Native](https://github.com/spring-projects-experimental/spring-native)
@@ -29,6 +32,8 @@ date: 2018-12-02
   - [KFServing](https://github.com/kubeflow/kfserving)
   - [Pipelines](https://github.com/kubeflow/pipelines)
   - [Katib](https://github.com/kubeflow/katib)
+
+> *社区的治理存在很大风险*
 
 ### Data Computing
 
@@ -46,7 +51,7 @@ date: 2018-12-02
   - https://graphscope.io
   - https://github.com/GraphScope
 
-### GraalVM
+### JDK
 
 * [JDK 17](https://openjdk.java.net/projects/jdk/17/)
   - 最后的 JVM, [GraalVM](https://github.com/oracle/graal)
@@ -57,6 +62,8 @@ date: 2018-12-02
   - [JEP 394: Pattern Matching for instanceof](https://openjdk.java.net/jeps/394)
   - [JEP 378: Text Blocks](https://openjdk.java.net/jeps/378)
   - [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
+
+> 最终, *Rust* + *Go* 会干掉 *JDK/GraalVM*
 
 ### Next Generation Service Runtime
 
