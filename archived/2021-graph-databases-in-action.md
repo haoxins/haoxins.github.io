@@ -125,6 +125,9 @@ so feel free to use them for those problems.
   - Create a logical data model
   - Test the model
 
+> we have found that singular names tend to be
+> a better fit for graph data modeling.
+
 ## Running basic and recursive traversals
 
 ## Pathfinding traversals and mutating graphs
