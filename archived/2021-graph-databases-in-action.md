@@ -148,6 +148,14 @@ so feel free to use them for those problems.
 > with a single label.
 > That is the approach of Apache *TinkerPop*.
 
+* *uniqueness*
+  - single uniqueness edge
+  - multiple uniqueness edge
+
+> ***Incorrect edge uniqueness*** is one of the most
+> common problems in graph data modeling,
+> and it is frequently a root cause of query issues.
+
 ## Running basic and recursive traversals
 
 ## Pathfinding traversals and mutating graphs
