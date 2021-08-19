@@ -156,7 +156,14 @@ so feel free to use them for those problems.
 > common problems in graph data modeling,
 > and it is frequently a root cause of query issues.
 
+* Checklist
+  - Do the vertices and edges *read like a sentence*? (**Yes**)
+  - Do I have different vertex or edge labels
+    with the same properties? (**No**)
+
 ## Running basic and recursive traversals
+
+> the Gremlin Server is *in-memory* only
 
 ## Pathfinding traversals and mutating graphs
 
