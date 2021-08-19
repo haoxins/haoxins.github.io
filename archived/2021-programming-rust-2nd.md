@@ -288,6 +288,8 @@ let x = 1234.567 % 10.0; // approximately 4.567
   - *tuple variants*, tuple structs
   - *struct variants*
 
+* *expressions* produce values; *patterns* consume values
+
 ## Traits & Generics
 
 ## Closures & Iterators
