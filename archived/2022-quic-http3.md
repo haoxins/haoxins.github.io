@@ -172,6 +172,9 @@ Tag control information (TCI)
 
 ## 2021
 
+* [Envoy: HTTP3 overview (v1.20)](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/http/http3)
+  - `HTTP/3` support is still in *Alpha*
+
 * [RFC 9000 - IETF](https://datatracker.ietf.org/doc/html/rfc9000)
   - [RFC 9000 - RFC Editor](https://www.rfc-editor.org/rfc/rfc9000)
   - **QUIC**: A UDP-Based Multiplexed and Secure Transport
