@@ -77,10 +77,9 @@ date: 2020-12-27
 3. Java
 4. C#
 5. C/C++
-6. PHP
-7. Go
-8. Kotlin
-9. Rust
+6. Go
+7. Kotlin
+8. Rust
 ```
 
 * [Most loved, dreaded, and wanted](https://insights.stackoverflow.com/survey/2021#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages)
