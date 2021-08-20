@@ -163,12 +163,32 @@ so feel free to use them for those problems.
 
 ## Running basic and recursive traversals
 
-> the Gremlin Server is *in-memory* only
+> The Gremlin Server is *in-memory* only
 
 * Traversing
-  - Traversing is a series of *steps*
-  - Traversing requires knowing *where* we are
-  - Edge *direction* matters
+  - Traversing is *a series of steps*
+  - Traversing requires knowing *where we are*
+  - Edge *direction matters*
+  - Traversals *don't have history*
+
+```sql
+g.V()
+  .has('person', 'first_name', 'Ted')
+  .out('friends')
+  .values('first_name')
+```
+
+* **`has`**
+  - `hasLabel(label)`
+  - `has(key, value)`
+  - `has(label, key, value)`
+* `out(label)`, `in(label)`
+* `both(label)`
+
+> **Remember**, an *outgoing vertex* is the vertex
+> where an *edge starts*,
+> and an *incoming vertex* is a vertex
+> where an *edge ends*.
 
 ## Pathfinding traversals and mutating graphs
 
