@@ -165,6 +165,11 @@ so feel free to use them for those problems.
 
 > the Gremlin Server is *in-memory* only
 
+* Traversing
+  - Traversing is a series of *steps*
+  - Traversing requires knowing *where* we are
+  - Edge *direction* matters
+
 ## Pathfinding traversals and mutating graphs
 
 ## Formatting results
