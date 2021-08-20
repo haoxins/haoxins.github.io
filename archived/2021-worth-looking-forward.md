@@ -8,7 +8,7 @@ date: 2018-12-02
 
 ------------------
 
-## 2022 Next Generation (Lockdown in 2021-08-18)
+## 2022 Next Generation (Lockdown in 2021-08-20)
 
 ### Overview
 
@@ -16,24 +16,24 @@ date: 2018-12-02
   - [HTTP/3](https://datatracker.ietf.org/doc/html/draft-ietf-quic-http-34)
 
 * **Why Golang v2?**
-  - Just Go 1.18, 1.19, 1.20, ...
+  - Just Go `1.18`, `1.19`, `1.20`, ...
   - **Generics**: *1.18+*
   - **Error handling**: *1.2x*
-  - **Error values**: *2.xx or 1.2x*
+  - **Error values**: *2.xx* or *1.2x*
 
 * **Spring Framework**
   - [Spring Native](https://github.com/spring-projects-experimental/spring-native)
-  - 打败 Spring Framework 的一定不是另一个 **Web Framework**
+  - 打败 *Spring Framework* 的一定不是另一个 **Web Framework**
 
 ### Machine learning
 
-* [KubeFlow](https://github.com/kubeflow)
+* [Kubeflow](https://github.com/kubeflow)
   - [Kubeflow](https://github.com/kubeflow/kubeflow)
   - [KFServing](https://github.com/kubeflow/kfserving)
   - [Pipelines](https://github.com/kubeflow/pipelines)
   - [Katib](https://github.com/kubeflow/katib)
 
-> *社区的治理存在很大风险*
+> *社区的治理存在风险*
 
 ### Data Computing
 
@@ -45,11 +45,15 @@ date: 2018-12-02
   - https://datafuse.rs
   - [Roadmap 2021](https://github.com/datafuselabs/datafuse/issues/746)
 
+* [Vineyard (v6d)](https://github.com/v6d-io/v6d)
+
 ### Graph Computing
 
 * [GraphScope](https://github.com/alibaba/graphscope)
   - https://graphscope.io
   - https://github.com/GraphScope
+  - https://github.com/apache/tinkerpop
+  - https://github.com/v6d-io/v6d
 
 ### JDK
 
