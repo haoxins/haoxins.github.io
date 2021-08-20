@@ -404,6 +404,11 @@ Health
 # The health of the application, is it running correctly?
 ```
 
+* [v2.1.0](https://github.com/argoproj/argo-cd/releases/tag/v2.1.0)
+  - The synchronization process became *much much faster*
+    and requires significantly *less memory*.
+  - This dramatically *reduces* the number of Git requests.
+
 ### Kustomize
 
 * [Kustomize Feature List](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/#kustomize-feature-list)
