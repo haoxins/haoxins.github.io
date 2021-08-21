@@ -171,24 +171,54 @@ so feel free to use them for those problems.
   - Edge *direction matters*
   - Traversals *don't have history*
 
-```sql
+```js
 g.V()
   .has('person', 'first_name', 'Ted')
   .out('friends')
   .values('first_name')
 ```
 
-* **`has`**
-  - `hasLabel(label)`
-  - `has(key, value)`
-  - `has(label, key, value)`
-* `out(label)`, `in(label)`
-* `both(label)`
+* *`hasLabel(label)`*
+* *`has(key, value)`*
+* *`has(label, key, value)`*
+* *`out(label)`*
+* *`in(label)`*
+* *`both(label)`*
+* *`repeat(traversal)`*
+* *`times(integer)`*
+* *`until(traversal)`*
 
-> **Remember**, an *outgoing vertex* is the vertex
-> where an *edge starts*,
-> and an *incoming vertex* is a vertex
-> where an *edge ends*.
+> * **Remember**, an *outgoing vertex* is the vertex
+>   where an *edge starts*,
+>   and an *incoming vertex* is a vertex
+>   where an *edge ends*.
+
+> * *Traversal* parameters are similar to *lambda expressions* in Java.
+
+```js
+g.V()
+  .has('person', 'first_name', 'Ted')
+  .repeat(out('friends'))
+  .times(2)
+  .values('first_name')
+```
+
+* **Unbounded traversal**
+  - Queries that use the `until()` step can create
+    performance issues because the traversal runs
+    until the condition is met.
+  - If the condition is never met, then it continues
+    until it exhausts every potential path in the graph.
+  - This scenario is known as an *unbounded traversal*.
+
+```js
+g.V()
+  .has('person', 'first_name', 'Ted')
+  .until(has('person', 'first_name', 'Hank'))
+  .repeat(out('friends'))
+  .emit()
+  .values('first_name')
+```
 
 ## Pathfinding traversals and mutating graphs
 
