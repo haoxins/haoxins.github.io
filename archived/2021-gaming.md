@@ -8,6 +8,11 @@ date: 2021-02-17
 
 ### 2021
 
+* [黑神话: 悟空](https://www.bilibili.com/video/BV1y64y1q757)
+  - *12分钟 UE5 实机测试集锦*
+  - 最期待的游戏, 没有之一
+  - 工程师之所愿, 莫过于打造出由衷自豪的作品
+
 * [超级机器人大战30](https://baike.baidu.com/item/超级机器人大战30/57293309)
   - 超级机器人大战, 30周年, 怀念青春, Game boy!
   - 如果到时候没有发布 Switch pro, 那就买个 Switch 吧
