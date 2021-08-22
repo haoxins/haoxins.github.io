@@ -220,6 +220,14 @@ g.V()
   .values('first_name')
 ```
 
+> * The `emit()` step is similar to the `until()` step,
+    whether it's placed before or after the `repeat()` step,
+    that impacts how it behaves.
+> * If the `emit()` is placed before the `repeat()`,
+    it includes the starting vertex.
+    If it's placed after the `repeat()`,
+    it only emits the vertices traversed as part of the loop.
+
 ## Pathfinding traversals and mutating graphs
 
 ## Formatting results
