@@ -14,6 +14,9 @@ date: 2018-04-01
 
 ### 2021
 
+* [基础拓扑学 (修订版)](https://book.douban.com/subject/34899142/)
+  - 原作名: Basic Topology
+
 * [代数的历史](https://book.douban.com/subject/35428125/)
   - 副标题: 人类对未知量的不舍追踪 (修订版)
   - 原作名: Unknown Quantity: A Real and Imaginary History of Algebra
