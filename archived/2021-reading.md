@@ -14,6 +14,15 @@ date: 2018-04-01
 
 ### 2021
 
+* [代数的历史](https://book.douban.com/subject/35428125/)
+  - 副标题: 人类对未知量的不舍追踪 (修订版)
+  - 原作名: Unknown Quantity: A Real and Imaginary History of Algebra
+  - 出版年: 2021-4
+  - 感恩: ***微信读书***
+
+* [一个数学家的辩白 (双语版) ](https://book.douban.com/subject/34954763/)
+  - *微信读书*
+
 * [Graph Databases in Action](https://book.douban.com/subject/34700758/)
   - 推荐
 
