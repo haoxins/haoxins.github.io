@@ -262,6 +262,30 @@ g.addE('friends')
     explicitly remove or drop these,
     leaving the start and end vertices.
 
+* The `iterate()` step and the similar `next()` step
+  both cause the traversal to execute.
+  The key *difference* between these is that the `iterate()` step
+  does not return a result, while the `next()` step
+  returns the result of the traversal.
+
+```js
+dave = g
+  .addV('person')
+  .property('first_name', 'Dave')
+  .next()
+```
+
+* **`next()`**
+  - A terminal step that takes the iterable
+    traversal source composed from the previous steps,
+    iterates it once, and returns the first or
+    next item in the iterable.
+
+* Because *Gremlin* is **lazily evaluated**,
+  we need to iterate our traversal in order to get a result.
+  Otherwise, all we have is an iterable that contains
+  the desired result but isn't of any use until it iterates.
+
 ## Formatting results
 
 ## Developing an application
