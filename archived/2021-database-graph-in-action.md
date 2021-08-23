@@ -288,6 +288,14 @@ dave = g
 
 ### Paths
 
+* **`path()`**
+  - Using the *`path()`* step in Gremlin requires
+    additional resource overhead on the server
+    because each traverser needs to maintain the
+    entire history of the steps it visits.
+
+* Cycles in graphs
+
 ## Formatting results
 
 ## Developing an application
