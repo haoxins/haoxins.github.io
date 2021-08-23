@@ -283,8 +283,10 @@ dave = g
 
 * Because *Gremlin* is **lazily evaluated**,
   we need to iterate our traversal in order to get a result.
-  Otherwise, all we have is an iterable that contains
+* Otherwise, all we have is an iterable that contains
   the desired result but isn't of any use until it iterates.
+
+### Paths
 
 ## Formatting results
 
