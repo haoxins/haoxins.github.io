@@ -230,6 +230,38 @@ g.V()
 
 ## Pathfinding traversals and mutating graphs
 
+* Creating new vertex entities involves
+  adding the appropriate elements and properties.
+* However, creating new edges is a bit more complicated
+  because we need to specify the vertex
+  that belongs at each end of the edge.
+
+```js
+g.addV('person')
+  .property('first_name', 'Dave')
+```
+
+* `addV(label)`
+* `property(key, value)`
+
+```js
+g.addE('friends')
+  .from(V().has('person', 'first_name', 'Ted'))
+  .to(V().has('person', 'first_name', 'Hank'))
+```
+
+* `addE(label)`
+* `from(vertex)`
+* `to(vertex)`
+
+* *We can remove an edge from a graph in one of two ways.*
+  - First, if we delete the starting or ending vertex,
+    any edge associated with that vertex is also deleted;
+    it's the graph database version of referential integrity.
+  - The second way to remove edges from a graph is to
+    explicitly remove or drop these,
+    leaving the start and end vertices.
+
 ## Formatting results
 
 ## Developing an application
