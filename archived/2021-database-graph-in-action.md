@@ -405,6 +405,13 @@ g.V().has('person', 'first_name', 'Dave')
 
 * `project(string[])`
 
+```js
+g.V().hasLabel('person')
+  .project('name', 'degree')
+  .by('first_name')
+  .by(bothE().count())
+```
+
 ## Developing an application
 
 ## Advanced data modeling techniques
