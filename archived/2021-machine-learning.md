@@ -1,5 +1,5 @@
 ---
-title: (2021) Machine learning
+title: Machine learning
 description: 逝者如斯, 而未尝往也; 盈虚者如彼, 而卒莫消长也.
 date: 2021-03-21
 ---

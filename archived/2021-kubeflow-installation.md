@@ -1,5 +1,5 @@
 ---
-title: (2021) 初识 Kubeflow, 安装~
+title: 初识 Kubeflow, 安装~
 description: 中岁颇好道, 晚家南山陲. 兴来每独往, 胜事空自知.
 date: 2021-07-22
 ---

@@ -1,5 +1,5 @@
 ---
-title: (2021) 初识 Kubeflow, 使用 ArgoCD 安装~
+title: 初识 Kubeflow, 使用 ArgoCD 安装~
 description: 人生代代无穷已, 江月年年望相似. 不知江月待何人, 但见长江送流水.
 date: 2021-08-04
 ---
