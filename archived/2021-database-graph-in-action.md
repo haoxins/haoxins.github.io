@@ -296,6 +296,34 @@ dave = g
 
 * Cycles in graphs
 
+* *Simple path*
+  - A *simple path* is a path that doesn't *repeat* any vertices,
+    meaning that we only get results that are not cyclical.
+
+* `simplePath()`
+
+```js
+g.V()
+  .has('person', 'first_name', 'Ted')
+  .until(has('person', 'first_name', 'Denise'))
+  .repeat(
+    both('friends').simplePath()
+  )
+  .path()
+```
+
+```js
+g.V().has('person' ,'first_name', 'Dave')
+  .bothE('works_with')
+  .has('end_year', lte(2018))
+  .otherV()
+  .values('first_name')
+```
+
+* `inE(label)`
+* `outE(label)`
+* `bothE(label)`, *regardless of direction*
+
 ## Formatting results
 
 ## Developing an application
