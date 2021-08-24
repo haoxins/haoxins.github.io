@@ -388,6 +388,21 @@ g.V().has('person', 'first_name', 'Dave')
 > * The first `by()` performs actions on the elements labeled as `'f'`;
 > * the second `by()` performs actions on the elements labeled as `'foff'`.
 
+* Projecting results instead of aliasing
+  - **Selection** is the process of working with vertices,
+    properties, or additional traversal expressions to return results
+    from *previously* labeled steps.
+  - **Selection** always looks **back** to earlier parts of the traversal.
+  - **Projection** is the process of working with vertices,
+    properties, or additional traversal expressions to create results
+    from the input to the current step.
+  - **Projection** always moves **forward**, taking the incoming
+    data as the starting point.
+  - **Selection** is generally used to combine results
+    from elements traversed earlier in the traversal.
+  - **Projection** is generally used to group or aggregate
+    data starting from the current location in the graph.
+
 ## Developing an application
 
 ## Advanced data modeling techniques
