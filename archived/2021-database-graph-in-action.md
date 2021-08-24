@@ -403,6 +403,8 @@ g.V().has('person', 'first_name', 'Dave')
   - **Projection** is generally used to group or aggregate
     data starting from the current location in the graph.
 
+* `project(string[])`
+
 ## Developing an application
 
 ## Advanced data modeling techniques

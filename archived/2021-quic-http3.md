@@ -172,6 +172,17 @@ Tag control information (TCI)
 
 ## 2021
 
+* [Braid: Synchronization for HTTP](https://braid.org)
+  - The *Braid Protocol* is an extension to HTTP that
+    generalizes it from a *state transfer*
+    to a *state synchronization* protocol.
+
+* ***Braid*** adds these features to HTTP:
+  1. *Versioning* to HTTP resources
+  2. *Subscriptions* to GET requests
+  3. *Patches* to Range Requests
+  4. *Merge-Types* to specify **OT** or **CRDT** behavior
+
 * [Envoy: HTTP3 overview (v1.20)](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/http/http3)
   - `HTTP/3` support is still in *Alpha*
 
