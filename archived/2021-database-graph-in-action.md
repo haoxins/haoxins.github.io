@@ -349,6 +349,45 @@ g.V().has('person', 'first_name', 'Ted')
 
 ## Formatting results
 
+> In a graph database, only the values of the current
+  vertices or edges are retrieved.
+
+* In a graph database, the output of any step of a traversal
+  is the *current set of vertices or edges*.
+
+* Aliasing elements mid-traversal using `as()`
+
+> The more *aliases* we create,
+  the more the traverser has to keep track
+  of with each additional step.
+
+* Returning aliased elements
+
+* `select(string[])`
+* `by(key)`
+* `by(traversal)`
+
+* There are two forms of *`by()`*.
+  - The first form takes the *property key* and returns
+    the corresponding property value from the labeled element.
+  - The second form takes a *traversal* that allows us to
+    perform additional steps on the labeled element,
+    such as a `valueMap()` or `out().valueMap('key')`.
+
+```js
+g.V().has('person', 'first_name', 'Dave')
+  .out()
+  .as('f')
+  .out()
+  .as('foff')
+  .select('f', 'foff')
+  .by('first_name')
+  .by('first_name')
+```
+
+> * The first `by()` performs actions on the elements labeled as `'f'`;
+> * the second `by()` performs actions on the elements labeled as `'foff'`.
+
 ## Developing an application
 
 ## Advanced data modeling techniques
