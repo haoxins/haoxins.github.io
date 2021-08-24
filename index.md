@@ -47,6 +47,7 @@
 * [(2021) Machine learning](archived/2021-machine-learning.md)
 * [(2021) Linux](archived/2021-linux.md)
 * [(2021) Kubernetes deep dive](archived/2021-kubernetes-deep-dive.md)
+* [(2021) Kubeflow 遇上 Dapr](archived/2021-kubeflow-integrates-dapr.md)
 * [(2021) 初识 Kubeflow, 安装~](archived/2021-kubeflow-installation.md)
 * [(2021) 初识 Kubeflow, 使用 ArgoCD 安装~](archived/2021-kubeflow-installation-with-argocd.md)
 * [(2021) 初识 Kubeflow, Components~](archived/2021-kubeflow-components.md)
