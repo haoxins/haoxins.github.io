@@ -5,3 +5,5 @@ date: 2021-08-24
 ---
 
 * ***Using Dapr for serving***
+
+* 为什么会想到 Dapr?
