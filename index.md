@@ -6,9 +6,8 @@
 * [猫咪的那些事](articles/cat.md)
 ### 2022
 * [Serverless for everything](archived/2022-serverless.md)
-* [Pili](archived/2022-pili.md)
+* [pili](archived/2022-pili.md)
 * [不求甚解地了解点 - 物理](archived/2022-physics.md)
-* [MLOps](archived/2022-ml-ops.md)
 * [不求甚解地了解点 - 数学](archived/2022-math.md)
 * [Distributed data computing](archived/2022-data-computing.md)
 * [Blockchain](archived/2022-blockchain.md)
@@ -43,6 +42,7 @@
 * [费马大定理](archived/2021-math-fermat-last-theorem.md)
 * [毛泽东选集](archived/2021-mao.md)
 * [Machine learning](archived/2021-machine-learning.md)
+* [MLOps](archived/2021-machine-learning-ops.md)
 * [Linux](archived/2021-linux.md)
 * [Kubernetes](archived/2021-kubernetes.md)
 * [Kubernetes deep dive](archived/2021-kubernetes-deep-dive.md)

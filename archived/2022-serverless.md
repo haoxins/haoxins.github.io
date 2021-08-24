@@ -14,11 +14,6 @@ date: 2020-07-22
 
 * [Datafuse](https://github.com/datafuselabs/datafuse)
 
-* Query
-  - SQL       (MySQL)
-  - Streaming (Flink SQL)
-  - Graph
-
 ### Streaming
 
 * Checkpoints + Serverless jobs
