@@ -38,6 +38,7 @@
 * [(2021) 费曼物理学讲义 (卷一)](archived/2021-physics-feynman-lectures-1.md)
 * [(2021) 卡洛·罗韦利 Carlo Rovelli 系列作品](archived/2021-physics-carlo-rovelli.md)
 * [(2021) 图灵的秘密 & 集异璧之大成 (哥德尔)](archived/2021-math-turing-and-godel.md)
+* [(2021) 基础拓扑学 修订版](archived/2021-math-topology.md)
 * [(2021) 庞加莱猜想](archived/2021-math-poincare-conjecture.md)
 * [(2021) 代数的历史](archived/2021-math-history-of-algebra.md)
 * [(2021) 伽罗瓦理论 - 数学女孩系列](archived/2021-math-galois-theory.md)

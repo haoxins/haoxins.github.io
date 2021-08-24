@@ -1,0 +1,8 @@
+---
+title: (2021) 基础拓扑学 修订版
+description: 江流宛转绕芳甸, 月照花林皆似霰; 空里流霜不觉飞, 汀上白沙看不见.
+date: 2021-08-24
+---
+
+* [基础拓扑学 (修订版)](https://book.douban.com/subject/34899142/)
+  - 原作名: **Basic Topology**
