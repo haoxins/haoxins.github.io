@@ -1,5 +1,5 @@
 ---
-title: (2021) 计算机程序的构造和解释 第2版
+title: 计算机程序的构造和解释 第2版
 description: Structure and Interpretation of Computer Programs
 date: 2021-01-28
 ---

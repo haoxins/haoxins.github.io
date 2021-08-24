@@ -1,5 +1,5 @@
 ---
-title: (2022) Serverless for everything
+title: Serverless for everything
 description: 携取旧书归万隐, 野花啼鸟一般春
 date: 2020-07-22
 ---

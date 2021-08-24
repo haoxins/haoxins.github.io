@@ -1,5 +1,5 @@
 ---
-title: (2022) MLOps
+title: MLOps
 description: 昨夜闲潭梦落花, 可怜春半不还家. 江水流春去欲尽, 江潭落月复西斜.
 date: 2021-07-21
 ---
