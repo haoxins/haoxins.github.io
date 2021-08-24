@@ -338,6 +338,15 @@ g.V().has('person', 'first_name', 'Dave')
 
 * Include edges in path results
 
+```js
+g.V().has('person', 'first_name', 'Ted')
+  .until(has('person', 'first_name', 'Denise'))
+  .repeat(
+    bothE('works_with').otherV().simplePath()
+  )
+  .path()
+```
+
 ## Formatting results
 
 ## Developing an application
