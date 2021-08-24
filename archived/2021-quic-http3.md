@@ -176,6 +176,7 @@ Tag control information (TCI)
   - The *Braid Protocol* is an extension to HTTP that
     generalizes it from a *state transfer*
     to a *state synchronization* protocol.
+  - **十分有趣**
 
 * ***Braid*** adds these features to HTTP:
   1. *Versioning* to HTTP resources
