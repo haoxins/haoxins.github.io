@@ -1,5 +1,5 @@
 ---
-title: (2021) Graph Databases in Action
+title: Graph Databases in Action
 description: 此时相望不相闻, 愿逐月华流照君. 鸿雁长飞光不度, 鱼龙潜跃水成文.
 date: 2021-08-08
 ---

@@ -1,5 +1,5 @@
 ---
-title: (2019) Machine learning
+title: Machine learning
 description: 念去去, 千里烟波, 暮霭沉沉楚天阔
 date: 2019-06-30
 ---

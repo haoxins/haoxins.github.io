@@ -1,5 +1,5 @@
 ---
-title: (2019) Cryptography
+title: Cryptography
 description: 明月照时常皎洁, 不劳寻讨问西东
 date: 2019-06-30
 ---
