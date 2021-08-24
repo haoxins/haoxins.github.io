@@ -324,6 +324,20 @@ g.V().has('person' ,'first_name', 'Dave')
 * `outE(label)`
 * `bothE(label)`, *regardless of direction*
 
+* Filtering with edge properties
+  - time-based filters
+  - weight-based filters
+
+```js
+g.V().has('person', 'first_name', 'Dave')
+  .bothE('works_with')
+  .has('end_year', lte(2018))
+  .otherV()
+  .values('first_name')
+```
+
+* Include edges in path results
+
 ## Formatting results
 
 ## Developing an application

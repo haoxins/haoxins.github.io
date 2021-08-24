@@ -5,6 +5,8 @@ date: 2021-08-04
 ---
 
 * [Service Mesh Comparison](https://servicemesh.es)
+  - *Istio*: Proxy sidecar
+  - *Dapr*: Service sidecar
 
 ------------------
 
