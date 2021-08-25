@@ -412,6 +412,19 @@ g.V().hasLabel('person')
   .by(bothE().count())
 ```
 
+* *Selection* uses the `select()` step to
+  create a result set based on previously
+  traversed elements of a graph.
+  To use the `select()` step, we alias
+  each of the elements with the `as()` step for later use.
+* *Projection* uses the `project()` step to
+  branch from the current location within
+  the graph and creates new objects.
+  In our present example, we had one element remain static,
+  the person's name, but we needed the other elements
+  to be calculated through further traversing of
+  the graph to return the number of friends.
+
 ## Developing an application
 
 ## Advanced data modeling techniques
