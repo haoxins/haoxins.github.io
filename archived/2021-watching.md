@@ -8,6 +8,9 @@ date: 2019-10-24
 
 ### 2021-08
 
+* [扫黑风暴](https://movie.douban.com/subject/35202793/)
+  - 很不错
+
 * *重温* [**绣春刀**](https://movie.douban.com/subject/24745500/)
 
 ### 2021-07
