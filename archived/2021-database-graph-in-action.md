@@ -425,6 +425,22 @@ g.V().hasLabel('person')
   to be calculated through further traversing of
   the graph to return the number of friends.
 
+* **Ordering** results returned from a graph traversal
+
+* `order()`
+
+```js
+g.V().hasLabel('person')
+  .values('first_name')
+  .order()
+  .by(decr)
+```
+
+* **Grouping** results returned from a graph traversal
+
+* `group()`
+* `groupCount()`
+
 ## Developing an application
 
 ## Advanced data modeling techniques
