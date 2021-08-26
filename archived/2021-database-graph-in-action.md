@@ -220,13 +220,13 @@ g.V()
   .values('first_name')
 ```
 
-> * The `emit()` step is similar to the `until()` step,
-    whether it's placed before or after the `repeat()` step,
-    that impacts how it behaves.
-> * If the `emit()` is placed before the `repeat()`,
-    it includes the starting vertex.
-    If it's placed after the `repeat()`,
-    it only emits the vertices traversed as part of the loop.
+* The `emit()` step is similar to the `until()` step,
+  whether it's placed before or after the `repeat()` step,
+  that impacts how it behaves.
+* If the `emit()` is placed before the `repeat()`,
+  it includes the starting vertex.
+  If it's placed after the `repeat()`,
+  it only emits the vertices traversed as part of the loop.
 
 ## Pathfinding traversals and mutating graphs
 
@@ -299,8 +299,7 @@ dave = g
 * *Simple path*
   - A *simple path* is a path that doesn't *repeat* any vertices,
     meaning that we only get results that are not cyclical.
-
-* `simplePath()`
+  - `simplePath()`
 
 ```js
 g.V()
@@ -426,8 +425,7 @@ g.V().hasLabel('person')
   the graph to return the number of friends.
 
 * **Ordering** results returned from a graph traversal
-
-* `order()`
+  - `order()`
 
 ```js
 g.V().hasLabel('person')
@@ -437,9 +435,64 @@ g.V().hasLabel('person')
 ```
 
 * **Grouping** results returned from a graph traversal
+  - `group()`
+  - `groupCount()`
+  - `unfold()`
 
-* `group()`
-* `groupCount()`
+```js
+g.V().has('person', 'first_name', 'Dave')
+  .both()
+  .both()
+  .group()
+  .by('first_name')
+  .unfold()
+```
+
+```js
+g.V().has('person', 'first_name', 'Dave')
+  .both()
+  .both()
+  .groupCount()
+  .by('first_name')
+  .unfold()
+// Equals to
+g.V().has('person', 'first_name', 'Dave')
+  .both()
+  .both()
+  .group()
+  .by('first_name')
+  .by(count())
+  .unfold()
+```
+
+* **Limiting** results
+  - `limit(number)`
+  - `tail(number)`
+  - `range(startNumber, endNumber)`
+
+```js
+g.V().hasLabel('person')
+  .values('first_name')
+  .order()
+  .by()
+  .limit(3)
+```
+
+```js
+g.V().has('person', 'first_name', 'Dave')
+  .both()
+  .both()
+  .groupCount()
+  .by('first_name')
+  .unfold()
+  .order()
+  .by(values, desc)
+  .by(keys)
+  .project('name', 'count')
+  .by(keys)
+  .by(values)
+  .limit(3)
+```
 
 ## Developing an application
 
