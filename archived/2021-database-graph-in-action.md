@@ -494,9 +494,14 @@ g.V().has('person', 'first_name', 'Dave')
   .limit(3)
 ```
 
-## Developing an application
-
 ## Advanced data modeling techniques
+
+* *`union(traversal, traversal, ...)`*
+  - Processes each traversal separately and
+    outputs the combined results as a single result set.
+  - A `union()` step is a branching step that requires
+    that the current traverser be copied to each branch
+    of the `union()` step in order to run.
 
 ## Building traversals using known walks
 
