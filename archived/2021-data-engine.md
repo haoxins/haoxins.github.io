@@ -204,6 +204,15 @@ Rust and Apache Arrow and want to provide their users the convenience of
 an SQL interface or a DataFrame API.
 ```
 
+* [Ballista 0.5.0 Release](https://arrow.apache.org/blog/2021/08/18/ballista-0.5.0/)
+  - Ballista queries can now be executed by calling `DataFrame.collect()`
+  - The shuffle mechanism has been *re-implemented*
+  - Distributed hash-partitioned joins are now supported
+  - Keda autoscaling is supported
+
+* [DataFusion 5.0.0 Release](https://arrow.apache.org/blog/2021/08/18/datafusion-5.0.0/)
+  - There have been numerous **performance improvements** in this release.
+
 * [Apache Arrow Rust 5.0.0 Release](https://arrow.apache.org/blog/2021/07/29/5.0.0-rs-release/)
   - [Apache Arrow 5.0.0 (29 July 2021)](https://arrow.apache.org/release/5.0.0.html)
   - Arrow releases major versions every three months.
