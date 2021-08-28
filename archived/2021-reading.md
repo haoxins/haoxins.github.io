@@ -37,7 +37,7 @@ date: 2018-04-01
 
 * [图数据库](https://book.douban.com/subject/26831072/)
   - 第2版
-  - 不推荐
+  - *不推荐*
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
   - 微信读书
@@ -98,8 +98,10 @@ date: 2018-04-01
   - **独读书** 不如 **众读书**
 
 * [具体数学](https://book.douban.com/subject/21323941/)
-  - 副标题: 计算机科学基础
-  - 买回来, 供着先
+  - 副标题: *计算机科学基础*
+  - 作者: **Ronald L.Graham**, **Donald E.Knuth**
+  - 原作名: *Concrete Mathematics: A Foundation for Computer Science*
+  - 出版年: 2013-4
 
 * [庞加莱猜想](https://book.douban.com/subject/5338169/)
 

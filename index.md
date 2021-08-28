@@ -41,6 +41,7 @@
 * [代数的历史](archived/2021-math-history-of-algebra.md)
 * [伽罗瓦理论 - 数学女孩系列](archived/2021-math-galois-theory.md)
 * [费马大定理](archived/2021-math-fermat-last-theorem.md)
+* [具体数学](archived/2021-math-concrete-mathematics.md)
 * [毛泽东选集](archived/2021-mao.md)
 * [Machine learning](archived/2021-machine-learning.md)
 * [MLOps](archived/2021-machine-learning-ops.md)
