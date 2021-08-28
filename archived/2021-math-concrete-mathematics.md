@@ -9,3 +9,31 @@ date: 2021-08-28
   - 作者: **Ronald L.Graham**, **Donald E.Knuth**
   - 原作名: *Concrete Mathematics: A Foundation for Computer Science*
   - 出版年: 2013-4
+
+* **葛立恒**
+* **高德纳**
+
+* **LaTeX**
+
+≥
+≤
+$$ \times $$
+$$ \mod $$
+
+## 递归问题
+
+## 和式
+
+## 整值函数
+
+## 数论
+
+## 二项式系数
+
+## 特殊的数
+
+## 生成函数
+
+## 离散概率
+
+## 渐进式

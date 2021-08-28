@@ -18,12 +18,3 @@
 
 * [Shtetl-Optimized](https://www.scottaaronson.com/blog/)
   - The Blog of Scott Aaronson
-
-### LaTeX
-
-```
-≥
-≤
-\times
-\mod
-```
