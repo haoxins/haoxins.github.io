@@ -15,10 +15,12 @@ date: 2021-08-28
 
 * **LaTeX**
 
-≥
-≤
+$$ \geq or \ge $$
+$$ \leq or \le $$
 $$ \times $$
 $$ \mod $$
+$$ \begin {bmatrix} a \\ b \end {bmatrix} $$
+$$ \begin {Bmatrix} a \ b \end {Bmatrix} $$
 
 ## 递归问题
 
