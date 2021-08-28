@@ -16,8 +16,10 @@ date: 2021-08-28
 * [LaTeX 第五课: 数学公式排版](https://zhuanlan.zhihu.com/p/24502400)
 
 * **LaTeX**
-  - $$ a \geq or \ge b $$
-  - $$ a \leq or \le b $$
+  - $$ a \g b $$
+  - $$ a \l b $$
+  - $$ a \ge b $$
+  - $$ a \le b $$
   - $$ a \times b $$
   - $$ a \mod b $$
   - $$ \begin {bmatrix} a \\ b \end {bmatrix} $$
