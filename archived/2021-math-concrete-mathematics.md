@@ -13,14 +13,15 @@ date: 2021-08-28
 * **葛立恒**
 * **高德纳**
 
-* **LaTeX**
+* [LaTeX 第五课: 数学公式排版](https://zhuanlan.zhihu.com/p/24502400)
 
-$$ \geq or \ge $$
-$$ \leq or \le $$
-$$ \times $$
-$$ \mod $$
-$$ \begin {bmatrix} a \\ b \end {bmatrix} $$
-$$ \begin {Bmatrix} a \ b \end {Bmatrix} $$
+* **LaTeX**
+  - $$ \geq or \ge $$
+  - $$ \leq or \le $$
+  - $$ \times $$
+  - $$ \mod $$
+  - $$ \begin {bmatrix} a \\ b \end {bmatrix} $$
+  - $$ \begin {Bmatrix} a \\ b \end {Bmatrix} $$
 
 ## 递归问题
 
