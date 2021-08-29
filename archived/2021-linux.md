@@ -24,6 +24,12 @@ date: 2021-02-17
 
 ## 2021
 
+* Linux kernel ***5.14***
+
+| Version |  Released  | Projected EOL |
+| ------- |:----------:|:-------------:|
+|  5.14   | 2021-xx-xx |   xxx, 203x   |
+
 * [Debian 11 **bullseye** released](https://www.debian.org/News/2021/20210814)
   - *August 14th, 2021*
   - Linux kernel 5.10 series
@@ -60,7 +66,6 @@ We are therefore looking into an exciting future of innovation ahead of us.
 
 | Version |  Released  | Projected EOL |
 | ------- |:----------:|:-------------:|
-|  5.10   | 2020-12-13 |   Dec, 2026   |
 |  4.19   | 2018-10-22 |   Dec, 2024   |
 
 * Ubuntu 21.04
