@@ -503,6 +503,19 @@ g.V().has('person', 'first_name', 'Dave')
     that the current traverser be copied to each branch
     of the `union()` step in order to run.
 
+* **Denormalizing** graph data
+  - **precalculated** fields and **duplicated** data
+  - *copying* data into multiple locations at write time
+    to increase performance at read time
+  - In a graph database, denormalization is all about
+    *reducing the length of the traversal* required to
+    get from our starting point to the ending data.
+
+* **Precalculated fields** are properties of a vertex or edge
+  that store the result of performing a calculation
+  at write time to allow quick retrieval
+  of the data at read time.
+
 ## Building traversals using known walks
 
 ## Working with subgraphs
