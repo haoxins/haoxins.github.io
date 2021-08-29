@@ -33,6 +33,10 @@ date: 2018-04-01
   - 出版年: 2021-4
   - 感恩: ***微信读书***
 
+* [Graph Databases](https://book.douban.com/subject/26427118/)
+  - 副标题: *New Opportunities for Connected Data*
+  - *英文版同样不推荐*
+
 * [一个数学家的辩白 (双语版) ](https://book.douban.com/subject/34954763/)
   - *微信读书*
 
