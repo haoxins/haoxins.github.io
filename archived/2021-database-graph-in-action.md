@@ -516,6 +516,11 @@ g.V().has('person', 'first_name', 'Dave')
   at write time to allow quick retrieval
   of the data at read time.
 
+* **Copying properties** into more than one location
+  in our graph allows us to optimize for multiple,
+  different traversal paths at
+  the expense of *keeping data in sync*.
+
 ## Building traversals using known walks
 
 ## Working with subgraphs

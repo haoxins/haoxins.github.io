@@ -8,11 +8,9 @@ date: 2021-02-17
 
 ### io_uring
 
-### KVM
-
 ### Zero copy
 
-### Normal
+### Others
 
 * [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
@@ -32,9 +30,9 @@ date: 2021-02-17
 
 * [Debian 11 **bullseye** released](https://www.debian.org/News/2021/20210814)
   - *August 14th, 2021*
-  - Linux kernel 5.10 series
-  - Python 3, 3.9.1
-  - Rustc 1.48
+  - Linux kernel *5.10* series
+  - Python 3, *3.9.1*
+  - Rustc *1.48*
 
 * [Debian 11](https://www.debian.org/releases/bullseye/releasenotes)
 
@@ -60,7 +58,7 @@ We are therefore looking into an exciting future of innovation ahead of us.
   - By: Linus Torvalds
 
 * 2021-06-19
-  - Debian 10: `10.10` released
+  - Debian 10: **10.10** released
 
 * Long-term release kernels
 
@@ -68,6 +66,6 @@ We are therefore looking into an exciting future of innovation ahead of us.
 | ------- |:----------:|:-------------:|
 |  4.19   | 2018-10-22 |   Dec, 2024   |
 
-* Ubuntu 21.04
+* Ubuntu **21.04**
   - 集成用于 **Flutter** 应用开发的 SDK
   - 默认启用 **Wayland** 替换了 X Window System
