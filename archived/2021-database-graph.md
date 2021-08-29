@@ -11,3 +11,10 @@ date: 2021-08-29
   - *英文版同样不推荐*
 
 * 公司最近采用了 **Neo4j**
+
+* Labeled Property Graph Model
+
+> * Relational Databases Lack Relationships
+
+* Labels in the Graph
+  - Using labels in this way, we can group nodes.
