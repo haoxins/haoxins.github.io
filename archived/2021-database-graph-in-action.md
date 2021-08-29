@@ -530,6 +530,45 @@ g.V().has('person', 'first_name', 'Dave')
 
 * **vertex-induced** and **edge-induced**
 
+```js
+g.V().has('person', 'person_id', 2)
+  .bothE('friends')
+  .subgraph('sg')
+  .cap('sg')
+  .next()
+```
+
+* *`subgraph(sideEffectKey)`*
+  - Defines an *edge-induced* subgraph within a larger set of graph data.
+  - The *sideEffectKey* is a reference to the full results of the side effect.
+
+* *`cap(sideEffectKey)`*
+  - Iterates the traversal up to itself and emits the results
+    of the side effect referenced by the *sideEffectKey*.
+
 ## Performance, pitfalls, and anti-patterns
 
+* **Indexes**
+  - Properties frequently used for filtering on values or ranges.
+  - Properties requiring a full-text search.
+  - Spatial features needing to be searched if
+    the database supports geospatial data.
+
+* **Supernodes**
+  - *Monitoring*
+  - *Mitigating*
+
+### anti-patterns
+
+* ***Using graphs for non-graph use cases***
+
+* Traversal anti-patterns
+  - *Not using parameterized traversals*
+  - *Using unlabeled filtering steps*
+
 ## Graph analytics, machine learning, and resources
+
+* Pathfinding
+  - Direction finding
+  - Optimization problems
+  - Fraud detection
