@@ -17,6 +17,7 @@
 * [Watching](archived/2021-watching.md)
 * [Watching long term](archived/2021-watching-long-term.md)
 * [TAOCP 组合算法 - 计算机程序设计艺术](archived/2021-taocp-4.md)
+* [TAOCP 组合算法 习题 - 计算机程序设计艺术](archived/2021-taocp-4-exe.md)
 * [TAOCP 排序与查找 - 计算机程序设计艺术](archived/2021-taocp-3.md)
 * [TAOCP 半数值算法 - 计算机程序设计艺术](archived/2021-taocp-2.md)
 * [TAOCP 基本算法 - 计算机程序设计艺术](archived/2021-taocp-1.md)
