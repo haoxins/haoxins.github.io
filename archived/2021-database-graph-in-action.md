@@ -6,6 +6,8 @@ date: 2021-08-08
 
 * [Graph Databases in Action](https://book.douban.com/subject/34700758/)
 
+* [GQL Standard](https://www.gqlstandards.org)
+
 ```
 Key-value        (Redis)
   Wide-column    (Cassandra, HBase)
