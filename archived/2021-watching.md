@@ -8,6 +8,10 @@ date: 2019-10-24
 
 ### 2021-08
 
+* [失控玩家](https://movie.douban.com/subject/30337388/)
+  - *剧情单薄*
+  - 视觉效果还行
+
 * [扫黑风暴](https://movie.douban.com/subject/35202793/)
   - 很不错
 
