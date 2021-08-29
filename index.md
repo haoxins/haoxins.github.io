@@ -29,6 +29,7 @@
 * [Rust](archived/2021-programming-rust.md)
 * [Programming Rust - 2nd Edition](archived/2021-programming-rust-2nd.md)
 * [Programming language](archived/2021-programming-language.md)
+* [嗨翻C语言 Head First C](archived/2021-programming-c.md)
 * [程序员修炼之道 第2版](archived/2021-pragmatic-programmer.md)
 * [通向实在之路](archived/2021-physics-road-to-reality.md)
 * [费曼物理学讲义 (卷三)](archived/2021-physics-feynman-lectures-3.md)

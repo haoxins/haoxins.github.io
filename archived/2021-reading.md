@@ -14,6 +14,10 @@ date: 2018-04-01
 
 ### 2021
 
+* [嗨翻C语言](https://book.douban.com/subject/25703412/)
+  - 原作名: *Head First C*
+  - **重温我的第一门编程语言**
+
 * [基础拓扑学 (修订版)](https://book.douban.com/subject/34899142/)
   - 原作名: *Basic Topology*
 
