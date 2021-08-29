@@ -523,9 +523,12 @@ g.V().has('person', 'first_name', 'Dave')
   different traversal paths at
   the expense of *keeping data in sync*.
 
-## Building traversals using known walks
+> Unlike *relational* data models, both *technical*
+  and *non-technical* users can understand *graph* data models.
 
 ## Working with subgraphs
+
+* **vertex-induced** and **edge-induced**
 
 ## Performance, pitfalls, and anti-patterns
 
