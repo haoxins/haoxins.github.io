@@ -50,6 +50,7 @@
 * [Linux](archived/2021-linux.md)
 * [Kubernetes](archived/2021-kubernetes.md)
 * [Service mesh - Istio](archived/2021-kubernetes-istio.md)
+* [Kubernetes in Action - 2nd Edition](archived/2021-kubernetes-in-action.md)
 * [Kubernetes deep dive](archived/2021-kubernetes-deep-dive.md)
 * [Kubeflow 遇上 Dapr](archived/2021-kubeflow-integrates-dapr.md)
 * [初识 Kubeflow, 安装~](archived/2021-kubeflow-installation.md)

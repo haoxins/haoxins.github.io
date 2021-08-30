@@ -33,6 +33,8 @@ date: 2018-04-01
   - 出版年: 2021-4
   - 感恩: ***微信读书***
 
+* [Kubernetes in Action, Second Edition](https://book.douban.com/subject/34986745/)
+
 * [Istio in Action](https://book.douban.com/subject/33406485/)
 
 * [Graph Databases](https://book.douban.com/subject/26427118/)
