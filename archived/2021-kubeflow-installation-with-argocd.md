@@ -64,7 +64,7 @@ cd argoflow-gcp
 ```
 
 ```zsh
-kubectl apply -k ./distribution/argocd/
+kubectl apply -k ./distribution/argocd/base
 ```
 
 * If you want to login ArgoCD UI

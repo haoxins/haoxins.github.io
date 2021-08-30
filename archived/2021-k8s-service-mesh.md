@@ -10,6 +10,10 @@ date: 2021-08-04
 
 ------------------
 
+* [Istio in Action](https://book.douban.com/subject/33406485/)
+
+------------------
+
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
   - 微信读书, 免费阅读 :)
 

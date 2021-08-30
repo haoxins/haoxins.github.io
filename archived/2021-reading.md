@@ -33,6 +33,8 @@ date: 2018-04-01
   - 出版年: 2021-4
   - 感恩: ***微信读书***
 
+* [Istio in Action](https://book.douban.com/subject/33406485/)
+
 * [Graph Databases](https://book.douban.com/subject/26427118/)
   - 副标题: *New Opportunities for Connected Data*
   - *英文版同样不推荐*
