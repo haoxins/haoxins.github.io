@@ -15,7 +15,7 @@ date: 2021-08-04
   - 不能面向简历搞技术
 
 * Although *unit tests* are critical, a strong focus for
-  automated testing should be *scenario* or *feature* tests.
+  automated testing should be ***scenario or feature tests***.
   - 赞同, 也是我的个人习惯
 
 
