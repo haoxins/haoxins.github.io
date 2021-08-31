@@ -11,6 +11,13 @@ date: 2021-08-04
 ------------------
 
 * [Istio in Action](https://book.douban.com/subject/33406485/)
+  - 开篇先说, 要解决的**问题**, *赞*
+  - 不能面向简历搞技术
+
+* Although *unit tests* are critical, a strong focus for
+  automated testing should be *scenario* or *feature* tests.
+  - 赞同, 也是我的个人习惯
+
 
 ------------------
 
