@@ -25,6 +25,47 @@ date: 2021-08-04
   - 从个人角度来讲, 单测*早期*针对 *feature tests* 难以覆盖的 codes
   - *后期*则是针对 *hot/key codes*
 
+> * With Istio we can finely control traffic to
+    new deployments and reduce the risk of doing deployments.
+> * As we aspire to do deployments quickly we should also
+    lower the risks of doing those deployments.
+
+* **Challenges**
+  - Keeping faults from jumping isolation boundaries
+  - Building applications/services capable of
+    responding to changes in their environment
+  - Building systems capable of running in
+    partially failed conditions
+  - Understanding what's happening to the overall system
+    as it constantly changes and evolves
+  - Inability to control the runtime behaviors of the system
+  - Implementing strong security as the attack surface grows
+  - How to lower the risk of making changes to the system
+  - How to enforce policies about `who/what/when` can use
+    the components in the system
+
+## First steps with Istio
+
+## Istio's data plane: Envoy Proxy
+
+## Istio Gateway: getting traffic into your cluster
+
+## Traffic control: fine-grained traffic routing
+
+## Resilience: solving application-networking challenges
+
+## Observability
+
+## Securing microservice communication
+
+## Troubleshooting the data plane
+
+## Performance tuning the control plane
+
+## Scaling Istio in your organization
+
+## Incorporating VM workloads into the mesh
+
 ------------------
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
