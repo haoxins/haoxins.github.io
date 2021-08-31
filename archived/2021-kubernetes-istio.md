@@ -19,6 +19,11 @@ date: 2021-08-04
   - 赞同, 也是我的个人习惯
   - 不能**单纯**面向数字 (*Coverage*) 写 tests
 
+* Lastly, as implementation details change because of
+  refactoring, paying down technical debt, maintenance, etc.
+  our *feature tests should rarely have to change*.
+  - 从个人角度来讲, 单测*早期*针对 *feature tests* 难以覆盖的 codes
+  - *后期*则是针对 *hot/key codes*
 
 ------------------
 
