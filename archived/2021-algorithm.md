@@ -29,7 +29,7 @@ date: 2020-11-09
   - 随机
   - 数值计算
 
-$$ O(n^2) > O(nLogn) > O(n) > O(Logn) $$
+* $$ O(n^2) > O(nLogn) > O(n) > O(Logn) $$
 
 * 贪心
 * 分治
