@@ -44,6 +44,33 @@ date: 2021-08-04
   - How to enforce policies about `who/what/when` can use
     the components in the system
 
+* Some patterns have evolved to help mitigate these types of
+  *scenarios* and help make applications more resilient to
+  unplanned, unexpected **failures**:
+  - *Client side load balancing* - give the client
+    the list of possible endpoints and
+    let it decide which to call
+  - *Service discovery* - a mechanism for finding the
+    periodically updated list of healthy endpoints
+    for a particular logical service
+  - *Circuit breaking* - shedding load for a period of
+    time to a service that appears to be misbehaving
+  - *Bulk heading* - limiting client resource usage
+    with explicit thresholds (connections, threads, sessions, etc)
+    when making calls to a service
+  - *Timeouts* - Enforcing time limitations on requests,
+    sockets, liveness, etc when making calls to a service
+  - *Retries* - Retrying a failed request
+  - *Retry budgets* - Applying constraints to retries;
+    ie, limiting the number of retries in a given period
+    (e.g., can only retry 50% of the calls in a 10s window)
+  - *Deadlines* - giving requests context about how long
+    a response may still be useful; if outside of
+    the deadline, disregard processing the request
+
+> Collectively these types of patterns
+  can be though of *"application networking"*.
+
 ## First steps with Istio
 
 ## Istio's data plane: Envoy Proxy
