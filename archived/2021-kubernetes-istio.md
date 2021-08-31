@@ -12,7 +12,7 @@ date: 2021-08-04
 
 * [Istio in Action](https://book.douban.com/subject/33406485/)
   - 开篇先说, 要解决的**问题**, *赞*
-  - 不能为了装逼搞技术
+  - 新技术(在早期)有可能是*毒药*, 过了早期阶段, 大部分就消失了 :)
 
 * Although *unit tests* are critical, a strong focus for
   automated testing should be ***scenario or feature tests***.
