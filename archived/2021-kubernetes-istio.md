@@ -64,8 +64,6 @@ date: 2021-08-04
 
 ## Scaling Istio in your organization
 
-## Incorporating VM workloads into the mesh
-
 ------------------
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)

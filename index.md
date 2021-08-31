@@ -54,7 +54,7 @@
 * [Kubernetes deep dive](archived/2021-kubernetes-deep-dive.md)
 * [Kubeflow 遇上 Dapr](archived/2021-kubeflow-integrates-dapr.md)
 * [初识 Kubeflow, 安装~](archived/2021-kubeflow-installation.md)
-* [初识 Kubeflow, 使用 ArgoCD 安装~](archived/2021-kubeflow-installation-with-argocd.md)
+* [初识 Kubeflow, 使用 ArgoCD 安装~ (Outdated)](archived/2021-kubeflow-installation-with-argocd.md)
 * [初识 Kubeflow, Components~](archived/2021-kubeflow-components.md)
 * [游戏](archived/2021-gaming.md)
 * [阿西莫夫 - 银河帝国](archived/2021-galactic-empire.md)
