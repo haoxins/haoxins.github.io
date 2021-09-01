@@ -14,6 +14,9 @@ date: 2021-08-04
   - 开篇先说, 要解决的**问题**, *赞*
   - 新技术(在早期)有可能是*毒药*, 过了早期阶段, 大部分就消失了 :)
 
+* Istio **1.10**
+* Kubernetes **1.18**
+
 * Although *unit tests* are critical, a strong focus for
   automated testing should be ***scenario or feature tests***.
   - 赞同, 也是我的个人习惯
@@ -136,6 +139,8 @@ date: 2021-08-04
 ## Performance tuning the control plane
 
 ## Scaling Istio in your organization
+
+## Extending Istio on the request path
 
 ------------------
 
