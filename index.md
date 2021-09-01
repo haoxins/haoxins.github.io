@@ -55,7 +55,7 @@
 * [初识 Kubeflow, 安装~](archived/2021-kubeflow-installation.md)
 * [初识 Kubeflow, 使用 ArgoCD 安装~ (Outdated)](archived/2021-kubeflow-installation-with-argocd.md)
 * [初识 Kubeflow, Components~](archived/2021-kubeflow-components.md)
-* [Service mesh - Istio in Action](archived/2021-istio-in-action.md)
+* [Istio in Action](archived/2021-istio-in-action.md)
 * [游戏](archived/2021-gaming.md)
 * [阿西莫夫 - 银河帝国](archived/2021-galactic-empire.md)
 * [Distributed computing](archived/2021-distributed-computing.md)

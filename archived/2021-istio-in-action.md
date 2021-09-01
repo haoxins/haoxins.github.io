@@ -1,5 +1,5 @@
 ---
-title: Service mesh - Istio in Action
+title: Istio in Action
 description: 白云一片去悠悠, 青枫浦上不胜愁. 谁家今夜扁舟子? 何处相思明月楼?
 date: 2021-08-04
 ---
@@ -95,6 +95,27 @@ date: 2021-08-04
   - Traffic control capabilities
   - Security
   - Policy enforcement
+
+* Istio can assign *workload identity* and
+  embed that into the certificates.
+  Istio can use the *identity* of the
+  different *workloads* to further
+  implement powerful *access-control policies*.
+
+* What are the drawbacks to using a service mesh?
+  - for someone unfamiliar with operating Envoy,
+    this could look very complex and
+    inhibit existing debugging practices.
+  - Another drawback of using a service mesh
+    is in terms of *tenancy*.
+    A mesh is as valuable as there are services
+    running in the mesh. That is, the more services
+    in the mesh the more valuable the mesh becomes
+    to operating those services.
+    However, without *proper policy*, *automation*, and *forethought*
+    going into the tenancy and isolation models of
+    the physical mesh deployment, you could end up in a situation
+    where mis-configuring the mesh impacts many services.
 
 ## First steps with Istio
 
