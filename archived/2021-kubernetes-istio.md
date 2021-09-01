@@ -1,5 +1,5 @@
 ---
-title: Service mesh - Istio
+title: Service mesh - Istio in Action
 description: 白云一片去悠悠, 青枫浦上不胜愁. 谁家今夜扁舟子? 何处相思明月楼?
 date: 2021-08-04
 ---
@@ -70,6 +70,31 @@ date: 2021-08-04
 
 > Collectively these types of patterns
   can be though of *"application networking"*.
+
+* To do this, this *"service proxy"* will need to
+  understand application constructs like
+  messages and requests instead of more
+  traditional infrastructure proxies which
+  understand connections and packets.
+  In other words, we need an **L7 proxy**.
+
+* **Envoy** gives us networking capabilities like
+  *retries*, *timeouts*, *circuit breaking*,
+  *client-side load balancing*, *service discovery*,
+  *security*, and *metrics-collection*
+  without any explicit language or framework dependencies.
+
+* This *`proxy+application`* combination forms the
+  foundation of a communication bus known as a **service mesh**.
+
+* Together, the *data plane* and the *control plane* provide
+  important capabilities necessary in any
+  cloud-native architecture such as:
+  - Service resilience
+  - Observability signals
+  - Traffic control capabilities
+  - Security
+  - Policy enforcement
 
 ## First steps with Istio
 
