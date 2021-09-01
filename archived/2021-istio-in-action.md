@@ -122,6 +122,17 @@ date: 2021-08-04
 
 ## First steps with Istio
 
+* ***istioctl***
+
+* Kubernetes is conceptually implemented as
+  a set of *reconciliation controllers*.
+  An *operator* is just a user (or in this case, Istio)
+  supplied controller.
+
+* The **istio-system** namespace is special in that
+  the control plane is deployed into it and is able to
+  act as a cluster-wide control plane for Istio.
+
 ## Istio's data plane: Envoy Proxy
 
 ## Istio Gateway: getting traffic into your cluster
