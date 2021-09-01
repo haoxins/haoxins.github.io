@@ -130,8 +130,8 @@ date: 2021-08-04
   supplied controller.
 
 * The **istio-system** namespace is special in that
-  the control plane is deployed into it and is able to
-  act as a cluster-wide control plane for Istio.
+  the *control plane* is deployed into it and is able to
+  act as a cluster-wide *control plane* for Istio.
 
 ## Istio's data plane: Envoy Proxy
 
