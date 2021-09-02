@@ -210,7 +210,7 @@ istioctl proxy-config routes \
 * Envoy generates a `x-request-id` header to correlate
   calls across services and can also generate the
   `initial x-b3*` headers when tracing is triggered.
-* The headers that the application is responsible
+* The headers that the *application* is responsible
   for propagating are:
   - `x-b3-traceid`
   - `x-b3-spanid`
@@ -225,6 +225,30 @@ istioctl proxy-config routes \
 * **Static configuration**
   - We can specify *listeners*, *route rules*, and *clusters*
     using Envoy's configuration file.
+
+* **Dynamic configuration**
+  - *Listener Discovery Service* (**LDS**)
+  - an API that allows Envoy to query what
+    listeners should be exposed on this proxy
+  - *Route Discovery Service* (**RDS**)
+  - a part of the configuration for listeners that
+    specifies which routes to use;
+    this is a subset of LDS for when static and
+    dynamic configuration should be used
+  - *Cluster Discovery Service* (**CDS**)
+  - an API that allows Envoy to discover what
+    clusters and respective configuration for
+    each cluster this proxy should have
+  - *Endpoint Discovery Service* (**EDS**)
+  - a part of the configuration for clusters that
+    specifies which endpoints to use for a specific cluster;
+    this is a subset of CDS
+  - *Secret Discovery Service* (**SDS**)
+  - an API used to distribute certificates
+  - *Aggregate Discovery Service* (**ADS**)
+  - a serialized stream of all the changes
+    to the rest of the APIs; you can use this single API
+    to get all of the changes in order
 
 ## Istio Gateway: getting traffic into your cluster
 
