@@ -283,7 +283,69 @@ istioctl proxy-config routes \
 
 ## Istio Gateway: getting traffic into your cluster
 
-* Virtual IPs
+* **Virtual Hosting**
+  - Hosting multiple different services at
+    a single entry point is known as **virtual hosting**.
+  - We need some way to decide to which *virtual-host*
+    group a particular request should be routed.
+  - With `HTTP/1.1`, we can use the **Host** *header*,
+  - with `HTTP/2` we can use the **:authority** *header*,
+  - and with TCP connections we can rely on
+    *Server Name Indication* (**SNI**) with TLS.
+
+* Istio uses a *single* Envoy *proxy* as the *ingress gateway*.
+
+* To configure Istio's *`ingress gateway`* to allow
+  traffic into the cluster and through the service mesh,
+  we'll start by exploring two Istio resources:
+  the **Gateway** and **VirtualService** resources.
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: coolstore-gateway
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "webapp.istioinaction.io"
+```
+
+```zsh
+istioctl -n istio-system proxy-config \
+  listener deploy/istio-ingressgateway
+```
+
+* In Istio, a **VirtualService** resource defines how
+  a client talks to a specific *service* through its
+  fully qualified *domain name*,
+  which *versions* of a service are available,
+  and other *routing properties*
+  (like retries and request timeouts).
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: webapp-vs-from-gw
+spec:
+  hosts:
+  - "webapp.istioinaction.io"
+  gateways:
+  - coolstore-gateway
+  http:
+  - route:
+    - destination:
+        host: webapp
+        port:
+          number: 8080
+```
 
 ## Traffic control: fine-grained traffic routing
 
