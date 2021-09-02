@@ -133,6 +133,22 @@ date: 2021-08-04
   the *control plane* is deployed into it and is able to
   act as a cluster-wide *control plane* for Istio.
 
+* For Istio, the control plane provides the following functions:
+  - APIs for operators to specify desired routing/resilience
+    behavior APIs for the data plane to consume
+    localized configuration Service discovery abstraction
+    for the data plane
+  - APIs for specifying usage policies
+  - Certificate issuance and rotation
+  - Assigning workload identity
+  - Unified telemetry collection
+  - Service-proxy sidecar injection
+  - Specifying network boundaries and how to access them
+
+* The bulk of these responsibilities are implemented
+  in a *single* component of
+  the control plane called **Istiod**.
+
 ## Istio's data plane: Envoy Proxy
 
 ## Istio Gateway: getting traffic into your cluster

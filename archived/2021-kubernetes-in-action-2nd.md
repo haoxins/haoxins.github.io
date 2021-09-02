@@ -16,6 +16,11 @@ date: 2021-08-30
   - A set of **worker nodes** that form the *Workload Plane*,
     which is where your workloads (or applications) run.
 
+* Everything in Kubernetes is represented by an **object**.
+  - You create and retrieve these objects via the *Kubernetes API*.
+  - These objects are usually defined in one or more *manifest*
+    files in either *YAML* or *JSON* format.
+
 ## Introducing the Kubernetes API objects
 
 ## Running applications in Pods
