@@ -264,16 +264,26 @@ istioctl proxy-config routes \
   and access to its configuration.
   - `http://proxy:15000/stats`
   - `/certs` - the certificates on the machine
-  - `/clusters` - the clusters Envoy is
-    configured with `/config_dump`,
-    dump the actual Envoy config
-  - `/listeners` - the listeners Envoy is
-    configured with `/logging`,
-    can view and change logging settings
+  - `/clusters` - the clusters Envoy is configured with
+  - `/config_dump` - dump the actual Envoy config
+  - `/listeners` - the listeners Envoy is configured with
+  - `/logging` - can view and change logging settings
   - `/stats` - Envoy statistics
   - `/stats/prometheus` - Envoy statistics as prometheus records
 
+* When Istio is deployed on Kubernetes,
+  Kubernetes' *service registry* is what
+  Istio uses for *service discovery*.
+* Other registries can also be used
+  like *HashiCorp's Consul*.
+* Istio configures the data plane to
+  integrate with time-series systems
+  like *Prometheus*.
+* Istio integrates with the *Jaeger* tracing engine.
+
 ## Istio Gateway: getting traffic into your cluster
+
+* Virtual IPs
 
 ## Traffic control: fine-grained traffic routing
 
