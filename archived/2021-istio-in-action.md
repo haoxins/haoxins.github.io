@@ -233,7 +233,7 @@ istioctl proxy-config routes \
   - *Route Discovery Service* (**RDS**)
   - a part of the configuration for listeners that
     specifies which routes to use;
-    this is a subset of LDS for when static and
+    this is a subset of `LDS` for when static and
     dynamic configuration should be used
   - *Cluster Discovery Service* (**CDS**)
   - an API that allows Envoy to discover what
@@ -242,13 +242,36 @@ istioctl proxy-config routes \
   - *Endpoint Discovery Service* (**EDS**)
   - a part of the configuration for clusters that
     specifies which endpoints to use for a specific cluster;
-    this is a subset of CDS
+    this is a subset of `CDS`
   - *Secret Discovery Service* (**SDS**)
   - an API used to distribute certificates
   - *Aggregate Discovery Service* (**ADS**)
   - a serialized stream of all the changes
     to the rest of the APIs; you can use this single API
     to get all of the changes in order
+
+* One thing to note is that Envoy's xDS APIs are
+  built on a premise of *"eventual consistency"* and
+  that correct configurations will converge eventually.
+* Envoy introduced the *Aggregated Discovery Service* (**ADS**)
+  to account for this ordering *race conditions*.
+* Istio implements the *Aggregated Discovery Service* and
+  uses **ADS** for proxy configuration changes.
+
+* The **Admin API** gives us insight into
+  how the proxy is behaving,
+  access to its metrics,
+  and access to its configuration.
+  - `http://proxy:15000/stats`
+  - `/certs` - the certificates on the machine
+  - `/clusters` - the clusters Envoy is
+    configured with `/config_dump`,
+    dump the actual Envoy config
+  - `/listeners` - the listeners Envoy is
+    configured with `/logging`,
+    can view and change logging settings
+  - `/stats` - Envoy statistics
+  - `/stats/prometheus` - Envoy statistics as prometheus records
 
 ## Istio Gateway: getting traffic into your cluster
 
