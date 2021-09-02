@@ -149,6 +149,16 @@ date: 2021-08-04
   in a *single* component of
   the control plane called **Istiod**.
 
+* This *data-plane* API exposed by Istiod
+  implements Envoy's **"discovery APIs"**.
+  These discovery APIs, like those for
+  service discovery (*Listener Discovery Service* - **LDS**),
+  endpoints (*Endpoint Discovery Service* - **EDS**), or
+  routing rules (*Route Discovery Service* - **RDS**)
+  are known as the **xDS APIs**.
+
+* Istio uses **X.509** certificates to encrypt the traffic.
+
 ## Istio's data plane: Envoy Proxy
 
 ## Istio Gateway: getting traffic into your cluster
