@@ -183,6 +183,49 @@ istioctl proxy-config routes \
 
 ## Istio's data plane: Envoy Proxy
 
+* **Listeners** - expose a port to the outside world
+  into which application can connect;
+  for example, a listener on port 8080 would
+  accept traffic and apply any configured
+  behavior to that traffic
+* **Routes** - rules for how to handle traffic
+  that came in on *listeners*;
+  for example, if a request comes in and
+  matches `/catalog`, then direct that
+  traffic to the catalog cluster
+* **Clusters** - specific upstream services to
+  which Envoy can direct traffic;
+  for example, `catalog-v1` and `catalog-v2` can be
+  separate clusters and routes can specify rules
+  about how traffic can be directed to either
+  `v1` or `v2` of the catalog service
+
+* Envoy provides out of the box **load balancing algorithms**
+  for the following strategies:
+  - *random*
+  - *round robin*
+  - *weighted*, *least request*
+  - *consistent hashing* (sticky)
+
+* Envoy generates a `x-request-id` header to correlate
+  calls across services and can also generate the
+  `initial x-b3*` headers when tracing is triggered.
+* The headers that the application is responsible
+  for propagating are:
+  - `x-b3-traceid`
+  - `x-b3-spanid`
+  - `x-b3-parentspanid`
+  - `x-b3-sampled`
+  - `x-b3-flags`
+
+* Envoy filters are written in C++ and compiled into the *Envoy binary*.
+  - Additionally, Envoy supports *Lua* scripting and *WebAssembly*
+    for a less invasive approach to extending Envoy functionality.
+
+* **Static configuration**
+  - We can specify *listeners*, *route rules*, and *clusters*
+    using Envoy's configuration file.
+
 ## Istio Gateway: getting traffic into your cluster
 
 ## Traffic control: fine-grained traffic routing
