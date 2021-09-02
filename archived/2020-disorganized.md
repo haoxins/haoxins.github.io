@@ -60,11 +60,11 @@ date: 2019-07-13
 * 换了一台公司电脑
   - **旧的** Macbook Pro
   - MacBook Pro (15-inch, 2017)
-  - 3.1 GHz 四核Intel Core i7
+  - 3.1 GHz 四核 Intel Core i7
   - 16 GB 2133 MHz LPDDR3
   - **新的** Macbook Pro
   - MacBook Pro (16-inch, 2019)
-  - 2.6 GHz 六核Intel Core i7
+  - 2.6 GHz 六核 Intel Core i7
   - 32 GB 2667 MHz DDR4
   - 键盘改进明显
   - Touch Bar 有改进 (Touch Id, Esc 回归 实体键)
