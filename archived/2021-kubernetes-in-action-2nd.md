@@ -9,6 +9,13 @@ date: 2021-08-30
 > Each application must be small enough to
   fit on one of the worker nodes.
 
+* a Kubernetes cluster consists of nodes divided into **two groups**:
+  - A set of **master nodes** that host the *Control Plane* components,
+    which are the brains of the system,
+    since they control the entire cluster.
+  - A set of **worker nodes** that form the *Workload Plane*,
+    which is where your workloads (or applications) run.
+
 ## Introducing the Kubernetes API objects
 
 ## Running applications in Pods
