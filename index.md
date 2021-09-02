@@ -52,7 +52,7 @@
 * [Kubernetes in Action - 2nd Edition](archived/2021-kubernetes-in-action-2nd.md)
 * [Kubernetes deep dive](archived/2021-kubernetes-deep-dive.md)
 * [Kubeflow 遇上 Dapr](archived/2021-kubeflow-integrates-dapr.md)
-* [初识 Kubeflow, 安装~](archived/2021-kubeflow-installation.md)
+* [初识 Kubeflow, 安装~ (Outdated)](archived/2021-kubeflow-installation.md)
 * [初识 Kubeflow, 使用 ArgoCD 安装~ (Outdated)](archived/2021-kubeflow-installation-with-argocd.md)
 * [初识 Kubeflow, Components~](archived/2021-kubeflow-components.md)
 * [Istio in Action](archived/2021-istio-in-action.md)

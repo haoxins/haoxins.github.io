@@ -6,6 +6,9 @@ date: 2021-08-30
 
 * [Kubernetes in Action, Second Edition](https://book.douban.com/subject/34986745/)
 
+> Each application must be small enough to
+  fit on one of the worker nodes.
+
 ## Introducing the Kubernetes API objects
 
 ## Running applications in Pods
