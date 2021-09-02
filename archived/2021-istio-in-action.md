@@ -159,6 +159,28 @@ date: 2021-08-04
 
 * Istio uses **X.509** certificates to encrypt the traffic.
 
+* *istio-ingressgateway* and *istio-egressgateway*
+  - Both of these components are really just *Envoy proxies*
+    that can understand Istio configurations.
+  - These components reside in the *data plane* and
+    are configured very similarly to istio service proxies
+    that live with the applications.
+  - The only real difference is that they're independent of
+    any application workload and are really just to
+    let traffic *into* and *out* of the cluster.
+
+* *Istio Ingress Gateway*
+  - On a *cloud provider*, it will be the
+    public *load balancer* assigned to
+    the Kubernetes *service*.
+
+```zsh
+istioctl proxy-config routes \
+  deploy/istio-ingressgateway.istio-system
+```
+
+> To get **metrics**, we will use *Prometheus* and *Grafana*.
+
 ## Istio's data plane: Envoy Proxy
 
 ## Istio Gateway: getting traffic into your cluster
