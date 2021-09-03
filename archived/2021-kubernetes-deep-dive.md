@@ -215,7 +215,7 @@ StatefulSet 的设计其实非常容易理解,
 挂载这个 PVC 对应的 Volume 从而获取以前保存在 Volume 里的数据.
 ```
 
-> * Operator
+* Operator
 
 ```
 StatefulSet 管理的 "有状态应用" 的多个实例,

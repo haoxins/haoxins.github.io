@@ -347,6 +347,15 @@ spec:
           number: 8080
 ```
 
+* *Istio Ingress Gateway* vs *Kubernetes Ingress*
+  - *Istio Gateway* handles the `L4` and `L5` concerns
+    while *VirtualService* handles the `L7` concerns.
+  - https://gateway-api.sigs.k8s.io
+
+* In fact, for production, you should run the
+  *ingress gateway* component in its own namespace,
+  separate from *istio-system*.
+
 ## Traffic control: fine-grained traffic routing
 
 ## Resilience: solving application-networking challenges
