@@ -356,6 +356,68 @@ spec:
   *ingress gateway* component in its own namespace,
   separate from *istio-system*.
 
+* [cert-manager](https://cert-manager.io)
+  - **X.509** certificate management for Kubernetes
+
+* HTTP redirect to HTTPS
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: custom-coolstore-gateway
+spec:
+  selector:
+    istio: custom-ingressgateway
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "webapp.istioinaction.io"
+    tls:
+      httpsRedirect: true
+  - port:
+      number: 443
+      name: https
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      serverCertificate: /etc/istio/ingressgateway-certs/tls.crt
+      privateKey: /etc/istio/ingressgateway-certs/tls.key
+    hosts:
+    - "webapp.istioinaction.io"
+```
+
+* **mTLS**
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: coolstore-gateway
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "webapp.istioinaction.io"
+  - port:
+      number: 443
+      name: https
+      protocol: HTTPS
+    tls:
+      mode: MUTUAL
+      credentialName: webapp-credential-mtls
+    hosts:
+    - "webapp.istioinaction.io"
+```
+
 ## Traffic control: fine-grained traffic routing
 
 ## Resilience: solving application-networking challenges
