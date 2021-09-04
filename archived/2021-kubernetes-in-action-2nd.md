@@ -66,6 +66,9 @@ date: 2021-08-30
   by updating the *object* that
   represents the application instance.
 
+* Using Kubernetes is *ten times easier*
+  than **managing** it.
+
 ## Introducing the Kubernetes API objects
 
 ## Running applications in Pods

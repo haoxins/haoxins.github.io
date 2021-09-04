@@ -15,3 +15,7 @@ kube-node-lease
 kube-public
 kube-system
 ```
+
+* *Kubernetes* 将会是各大*云厂商*和*开源社区*的`边界`
+  - 云厂商: *存储*, *网络*, *弹性 VMs*, *API Services*
+  - *Kubernetes* 天生就是跑在 *Cloud* 上的
