@@ -8,6 +8,9 @@ date: 2019-10-24
 
 ### 2021-08
 
+* [明日之战](https://movie.douban.com/subject/30459571/)
+  - 这, 远不如 [灵笼](https://movie.douban.com/subject/27121260/) 啊!
+
 * [失控玩家](https://movie.douban.com/subject/30337388/)
   - *剧情单薄*
   - 视觉效果还行
