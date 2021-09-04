@@ -21,6 +21,51 @@ date: 2021-08-30
   - These objects are usually defined in one or more *manifest*
     files in either *YAML* or *JSON* format.
 
+* These actions take place when you **deploy** the application:
+  1. You submit the application *manifest*
+     to the Kubernetes API.
+     The API Server writes the *objects* defined
+     in the manifest to *etcd*.
+  2. A *controller* notices the newly created *objects*
+     and creates several new objects -
+     one for each application instance.
+  3. The *Scheduler* assigns a node to each instance.
+  4. The *Kubelet* notices that an instance is assigned
+     to the Kubelet's node.
+     It runs the application instance
+     via the *Container Runtime*.
+  5. The *Kube Proxy* notices that the application instances
+     are ready to accept connections from clients and
+     configures a *load balancer* for them.
+  6. The *Kubelets* and the *Controllers* monitor
+     the system and keep the applications running.
+
+* A **controller** is interested in a particular *object type*.
+  It waits for the API server to notify it that
+  a new object has been created, and then performs
+  operations to bring that object to life.
+
+* The **scheduler** is a special type of *controller*,
+  whose only task is to schedule application
+  instances onto worker nodes.
+
+* The **Kubelet** that runs on each *worker node*
+  is also a type of *controller*.
+  Its task is to wait for application instances
+  to be assigned to the node on which it is
+  located and run the application.
+
+* The **Kube Proxy**, another *controller*
+  running alongside the *Kubelet*,
+  is responsible for setting up the *load balancer*.
+
+* Once the application is up and running,
+  the *Kubelet* keeps the application healthy
+  by restarting it when it terminates.
+  It also reports the *status* of the application
+  by updating the *object* that
+  represents the application instance.
+
 ## Introducing the Kubernetes API objects
 
 ## Running applications in Pods
