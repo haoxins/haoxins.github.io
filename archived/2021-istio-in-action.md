@@ -418,6 +418,53 @@ spec:
     - "webapp.istioinaction.io"
 ```
 
+```zsh
+istioctl pc secret -n istio-system \
+  deploy/istio-ingressgateway
+```
+
+* Serving multiple virtual hosts with TLS
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: coolstore-gateway
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 443
+      name: https-webapp
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      credentialName: webapp-credential
+    hosts:
+    - "webapp.istioinaction.io"
+  - port:
+      number: 443
+      name: https-catalog
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      credentialName: catalog-credential
+    hosts:
+    - "catalog.istioinaction.io"
+```
+
+* *Server Name Indication* (**SNI**)
+  - Basically, when a HTTPS connection is created,
+    the client first identifies which service it's
+    trying to reach using the ClientHello part
+    of the TLS *handshake*.
+  - Istio's Gateway (Envoy specifically) implements
+    SNI on TLS which is how it's able to present
+    the correct cert and route to the correct service.
+
+* Traffic routing with *SNI* **Passthrough**
+
 ## Traffic control: fine-grained traffic routing
 
 ## Resilience: solving application-networking challenges
