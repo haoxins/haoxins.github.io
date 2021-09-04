@@ -70,15 +70,12 @@ date: 2021-08-30
   than **managing** it.
 
 * The *filesystem* of a container consists of
-  *read-only layers* from the container image and
+  *read-only* layers from the container image and
   an additional *read/write* layer stacked on top.
   When an application running in container A changes
-  a file in one of the read-only layers,
-  the entire file is copied into the container's
-  read/write layer and the file contents are changed there.
-  Since each container has its own writable layer,
-  changes to shared files are not visible
-  in any other container.
+  a file in one of the *read-only* layers,
+  the entire file is **copied** into the container's
+  *read/write* layer and the file contents are changed there.
 
 ## Introducing the Kubernetes API objects
 
