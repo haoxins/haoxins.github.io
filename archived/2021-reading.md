@@ -14,6 +14,11 @@ date: 2018-04-01
 
 ### 2021
 
+* [并行计算机体系结构](https://book.douban.com/subject/1102231/)
+  - 副标题: *硬件/软件结合的设计与分析*
+  - 原作名: *Parallel Computer Architecture: A Hardware/Software Approach*
+  - 出版年: **2003-01**
+
 * [嗨翻C语言](https://book.douban.com/subject/25703412/)
   - 原作名: *Head First C*
   - **重温我的第一门编程语言**

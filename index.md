@@ -33,6 +33,7 @@
 * [费曼物理学讲义 (卷二)](archived/2021-physics-feynman-lectures-2.md)
 * [费曼物理学讲义 (卷一)](archived/2021-physics-feynman-lectures-1.md)
 * [卡洛·罗韦利 Carlo Rovelli 系列作品](archived/2021-physics-carlo-rovelli.md)
+* [并行计算机体系结构](archived/2021-parallel-computer-architecture.md)
 * [不求甚解地了解点 - 数学](archived/2021-math.md)
 * [图灵的秘密 & 集异璧之大成 (哥德尔)](archived/2021-math-turing-and-godel.md)
 * [基础拓扑学 修订版](archived/2021-math-topology.md)
