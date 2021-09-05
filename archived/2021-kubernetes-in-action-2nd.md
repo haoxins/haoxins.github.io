@@ -77,6 +77,15 @@ date: 2021-08-30
   the entire file is **copied** into the container's
   *read/write* layer and the file contents are changed there.
 
+* *Open Container Initiative* (**OCI**)
+* *Container Runtime Interface* (**CRI**)
+  - One implementation of *CRI* is **CRI-O**,
+    a lightweight alternative to *Docker* that
+    allows you to leverage any *OCI-compliant*
+    container runtime with *Kubernetes*.
+    Examples of *OCI-compliant* runtimes include
+    *runC*, and *Kata Containers*.
+
 ## Introducing the Kubernetes API objects
 
 ## Running applications in Pods

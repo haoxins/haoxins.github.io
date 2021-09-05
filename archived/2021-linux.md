@@ -29,6 +29,7 @@ date: 2021-02-17
 |  5.14   | 2021-xx-xx |   xxx, 203x   |
 
 * [Debian 11 **bullseye** released](https://www.debian.org/News/2021/20210814)
+  - **bullseye**
   - *August 14th, 2021*
   - Linux kernel *5.10* series
   - Python 3, *3.9.1*
