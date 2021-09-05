@@ -655,7 +655,7 @@ spec:
   hosts:
   - catalog
   gateways:
-    - mesh
+  - mesh
   http:
   - route:
     - destination:
@@ -667,6 +667,42 @@ spec:
         subset: version-v2
       weight: 10
 ```
+
+* [Argo Rollouts - Progressive Delivery for Kubernetes](https://github.com/argoproj/argo-rollouts)
+
+* Traffic mirroring
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: catalog
+spec:
+  hosts:
+  - catalog
+  gateways:
+  - mesh
+  http:
+  - route:
+    - destination:
+        host: catalog
+        subset: version-v1
+      weight: 100
+    mirror:
+      host: catalog
+      subset: version-v2
+```
+
+* change Istio's default from `"ALLOW_ANY"`
+  to `"REGISTRY_ONLY"`. This means,
+  we'll only allow traffic to leave the mesh
+  if it's explicitly whitelisted
+  in the service-mesh registry.
+
+* ***ServiceEntry***
+  - The Istio **ServiceEntry** encapsulates
+    registry metadata that we can use to insert
+    an *entry* into Istio's *service registry*
 
 ## Resilience: solving application-networking challenges
 
