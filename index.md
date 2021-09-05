@@ -49,6 +49,7 @@
 * [Kubernetes](archived/2021-kubernetes.md)
 * [Kubernetes in Action - 2nd Edition](archived/2021-kubernetes-in-action-2nd.md)
 * [Kubernetes deep dive](archived/2021-kubernetes-deep-dive.md)
+* [Chaos Mesh](archived/2021-kubernetes-chaos.md)
 * [Argo workflows](archived/2021-kubernetes-argo-workflows.md)
 * [Kubeflow 遇上 Dapr](archived/2021-kubeflow-integrates-dapr.md)
 * [初识 Kubeflow, 安装~ (Outdated)](archived/2021-kubeflow-installation.md)
