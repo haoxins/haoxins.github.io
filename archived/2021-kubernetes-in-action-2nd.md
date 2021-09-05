@@ -86,6 +86,38 @@ date: 2021-08-30
     Examples of *OCI-compliant* runtimes include
     *runC*, and *Kata Containers*.
 
+* The following types of **namespaces** exist:
+  - The *Mount namespace* (mnt) isolates
+    mount points (*file systems*).
+  - The *Process ID namespace* (pid) isolates process IDs.
+  - The *Network namespace* (net) isolates
+    network devices, stacks, ports, etc.
+  - The *Inter-process communication namespace* (ipc) isolates
+    the communication between processes
+    (this includes isolating message queues,
+    shared memory, and others).
+  - The *UNIX Time-sharing System* (UTS) namespace isolates
+    the system hostname and the
+    *Network Information Service* (NIS) domain name.
+  - The *User ID namespace* (user) isolates user and group IDs.
+  - The *Cgroup namespace* isolates the
+    *Control Groups* root directory.
+
+* In summary, processes may want to
+  *share some resources but not others*.
+  This is possible because separate namespace types exist.
+  A process has an associated namespace for each type.
+
+* **Linux Namespaces** make it possible for processes
+  to access only some of the host's resources,
+  but they don't *limit how much* of a single resource
+  each process can consume.
+* The *second* Linux kernel feature that makes
+  containers possible is called
+  **Linux Control Groups** (*cgroups*).
+  It *limits*, accounts for and isolates system resources
+  such as CPU, memory and disk or network bandwidth.
+
 ## Introducing the Kubernetes API objects
 
 ## Running applications in Pods
