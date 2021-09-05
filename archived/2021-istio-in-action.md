@@ -464,6 +464,32 @@ spec:
     the correct cert and route to the correct service.
 
 * Traffic routing with *SNI* **Passthrough**
+  - All the gateway will do is inspect the
+    *SNI headers* and route the traffic to the
+    specific backend which will then *terminate*
+    the TLS connection.
+    The connection will *"pass through"* the gateway
+    and be handled by the actual service,
+    not the *gateway*.
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: sni-passthrough-gateway
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 31400
+      name: tcp-sni
+      protocol: TLS
+    hosts:
+    - "simple-sni-1.istioinaction.io"
+    tls:
+      mode: PASSTHROUGH
+```
 
 ## Traffic control: fine-grained traffic routing
 
