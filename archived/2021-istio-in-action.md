@@ -733,6 +733,35 @@ spec:
       simple: ROUND_ROBIN
 ```
 
+* Istio's ability to load balance across
+  locality includes *region*, *zone* and
+  even a more fine-grained "subzone".
+* Istio's *locality-aware* load balancing
+  is enabled by default.
+  If you wish to disable it, you can configure
+  the `meshConfig.localityLbSetting.enabled`
+  setting to be false.
+* For *locality-aware* load balancing to
+  work in Istio, we need to
+  configure **health checking**.
+  Without *health checking*, Istio does not know
+  which endpoints in the load balancing pool
+  are unhealthy and what heuristics to use
+  to spill over into the next locality.
+
+* By default, Istio will try a call and if it fails,
+  *will try 2 more times*.
+  This **default retry** will only apply to certain situations.
+  These default situations are typically safe
+  to retry a request because the indicate network
+  connectivity could not be established and that a request
+  could not have been sent on first try:
+  - *connect-failure*
+  - *refused-stream*
+  - *unavailable* (gRPC status code `14`)
+  - cancelled (gRPC status code `1`)
+  - retriable-status-codes (default to HTTP `503` in Istio)
+
 ## Observability
 
 ## Securing microservice communication
