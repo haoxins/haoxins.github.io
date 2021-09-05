@@ -120,6 +120,8 @@ date: 2021-08-30
 
 ## Introducing the Kubernetes API objects
 
+* *`~/.kube/config`*
+
 ## Running applications in Pods
 
 ## Managing the lifecycle of the Pod's containers

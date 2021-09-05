@@ -491,6 +491,71 @@ spec:
       mode: PASSTHROUGH
 ```
 
+> Although we positioned the *ingress gateway* as
+  the single point of ingress, the truth is
+  you can and sometimes should have
+  **multiple** points of *ingress*.
+
+* How to define and install a new custom gateway
+
+```yaml
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+metadata:
+  name: my-user-gateway-install
+  namespace: istioinaction
+spec:
+  profile: empty
+  values:
+    gateways:
+      istio-ingressgateway:
+        autoscaleEnabled: false
+  components:
+    ingressGateways:
+    - name: istio-ingressgateway
+      enabled: false
+    - name: my-user-gateway
+      namespace: istioinaction
+      enabled: true
+      label:
+        istio: my-user-gateway
+```
+
+> This would install *a new gateway* just
+  for the *istioinaction* namespace.
+
+* **Gateway injection**
+  - With *Gateway injection*, you deploy a
+    stubbed-out gateway deployment and
+    Istio fills in the rest similar to how
+    sidecar injection is done. This way you can
+    give a team a stubbed out gateway deployment
+    resource and have Istio
+    *auto-configure* the rest of it.
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-user-gateway-injected
+  namespace: istioinaction
+spec:
+  selector:
+    matchLabels:
+      ingress: my-user-gateway-injected
+  template:
+    metadata:
+      annotations:
+        sidecar.istio.io/inject: "true"
+        inject.istio.io/templates: gateway
+      labels:
+        ingress: my-user-gateway-injected
+    spec:
+      containers:
+      - name: istio-proxy
+        image: auto
+```
+
 ## Traffic control: fine-grained traffic routing
 
 ## Resilience: solving application-networking challenges
