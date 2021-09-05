@@ -740,7 +740,7 @@ spec:
   is enabled by default.
   If you wish to disable it, you can configure
   the `meshConfig.localityLbSetting.enabled`
-  setting to be false.
+  setting to be `false`.
 * For *locality-aware* load balancing to
   work in Istio, we need to
   configure **health checking**.
@@ -759,8 +759,128 @@ spec:
   - *connect-failure*
   - *refused-stream*
   - *unavailable* (gRPC status code `14`)
-  - cancelled (gRPC status code `1`)
-  - retriable-status-codes (default to HTTP `503` in Istio)
+  - *cancelled* (gRPC status code `1`)
+  - *retriable-status-codes* (default to HTTP `503` in Istio)
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: simple-backend-vs
+spec:
+  hosts:
+  - simple-backend
+  http:
+  - route:
+    - destination:
+        host: simple-backend
+    retries:
+      attempts: 2
+      retryOn: gateway-error,connect-failure,retriable-4xx
+      perTryTimeout: 300ms
+      retryRemoteLocalities: true
+```
+
+* One thing to note about this setting is that
+  the **perTryTimeout** value multiplied by
+  the *total attempts* must be lower than
+  the *overall request timeout*.
+
+* Naive retry settings (like the default) can
+  lead to significant retry "thundering herd" problem.
+  For example if a service chain is *5 calls deep* and
+  *each* step can retry a request *2 times*,
+  we could end up with *32x requests* for
+  each incoming request.
+
+* To limit *max number of parallel retries*
+  to a fixed number, we can configure
+  *`maxRetries`* in our *`DestinationRule`*
+
+```yaml
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: simple-backend-dr
+spec:
+  host: simple-backend.istioinaction.svc.cluster.local
+  trafficPolicy:
+    connectionPool:
+      http:
+        maxRetries: 3
+        http2MaxRequests: 10
+        maxRequestsPerConnection: 10
+```
+
+* By default, Istio will set *`maxRetries`* to a
+  very high number (Max value of unsigned integer)
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: EnvoyFilter
+metadata:
+  name: simple-backend-retry-status-codes
+  namespace: istioinaction
+spec:
+  workloadSelector:
+    labels:
+      app: simple-web
+  configPatches:
+  - applyTo: CLUSTER
+    match:
+      context: SIDECAR_OUTBOUND
+      cluster:
+        portNumber: 80
+        service: simple-backend.istioinaction.svc.cluster.local
+    patch:
+      operation: MERGE
+      value:
+        circuit_breakers:
+          thresholds:
+          - retry_budget:
+              budget_percent: 20.0
+              min_retry_concurrency: 5
+```
+
+* In Istio we will use the *`connectionPool`*
+  settings in a *`DestinationRule`* to limit
+  the number of connections and requests that
+  may be piling up when calling a service.
+
+```yaml
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: simple-backend-dr
+spec:
+  host: simple-backend.istioinaction.svc.cluster.local
+  trafficPolicy:
+    connectionPool:
+      tcp:
+        maxConnections: 1
+      http:
+        http1MaxPendingRequests: 1
+        maxRequestsPerConnection: 1
+        maxRetries: 1
+        http2MaxRequests: 1
+```
+
+* *Outlier detection*
+
+```yaml
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: simple-backend-dr
+spec:
+  host: simple-backend.istioinaction.svc.cluster.local
+  trafficPolicy:
+    outlierDetection:
+      consecutive5xxErrors: 1
+      interval: 5s
+      baseEjectionTime: 5s
+      maxEjectionPercent: 100
+```
 
 ## Observability
 
