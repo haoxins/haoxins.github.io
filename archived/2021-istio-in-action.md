@@ -706,6 +706,33 @@ spec:
 
 ## Resilience: solving application-networking challenges
 
+* Istio's service proxy implements these
+  basic **resiliency patterns** out of the box:
+  - Client-side load balancing
+  - Locality aware load balancing
+  - Timeouts / Retries
+  - Circuit breaking
+
+* Client-side load balancing
+  - Service operators and developers can configure
+    what *load-balancing algorithm* a client uses
+    by defining a **DestinationRule**.
+  - *Round robin* (default)
+  - *Random*
+  - *Weighted least request*
+
+```yaml
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: simple-backend-dr
+spec:
+  host: simple-backend.istioinaction.svc.cluster.local
+  trafficPolicy:
+    loadBalancer:
+      simple: ROUND_ROBIN
+```
+
 ## Observability
 
 ## Securing microservice communication
