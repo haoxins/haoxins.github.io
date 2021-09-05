@@ -556,6 +556,40 @@ spec:
         image: auto
 ```
 
+* The **Sidecar** resource, however,
+  does not apply to gateways.
+  When you deploy a new gateway
+  (ingress gateway for example),
+  the proxy will get configured with all of
+  the services available for routing in the mesh.
+  The trick is to trim out any of these additional
+  configurations for the proxy by including only
+  configuration that's relevant to the gateway.
+
+```yaml
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+metadata:
+  name: control-plane
+spec:
+  profile: minimal
+  components:
+        env:
+        - name: PILOT_FILTER_GATEWAY_CLUSTER_CONFIG
+          value: "true"
+  meshConfig:
+    defaultConfig:
+      proxyMetadata:
+        ISTIO_META_DNS_CAPTURE: "true"
+    enablePrometheusMerge: true
+```
+
+* `PILOT_FILTER_GATEWAY_CLUSTER_CONFIG`
+  - This will trimmed down all of the clusters
+    in the gateway's proxy configuration to only
+    those that are actually referenced in a
+    *VirtualService* that applies to the particular gateway.
+
 ## Traffic control: fine-grained traffic routing
 
 ## Resilience: solving application-networking challenges
