@@ -574,6 +574,8 @@ metadata:
 spec:
   profile: minimal
   components:
+    pilot:
+      k8s:
         env:
         - name: PILOT_FILTER_GATEWAY_CLUSTER_CONFIG
           value: "true"
@@ -591,6 +593,80 @@ spec:
     *VirtualService* that applies to the particular gateway.
 
 ## Traffic control: fine-grained traffic routing
+
+* Doing a **deployment** to production
+  should not impact users running in production
+  because it doesn't take any user requests.
+* Once we have code **deployed** into production,
+  we can make a business decision about
+  how to **release** it to our users.
+* **Releasing** our code means bringing live
+  traffic over to our new deployment.
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: catalog
+spec:
+  host: catalog
+  subsets:
+  - name: version-v1
+    labels:
+      version: v1
+  - name: version-v2
+    labels:
+      version: v2
+```
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: catalog-vs-from-gw
+spec:
+  hosts:
+  - "catalog.istioinaction.io"
+  gateways:
+  - catalog-gateway
+  http:
+  - match:
+    - headers:
+        x-istio-cohort:
+          exact: "internal"
+    route:
+    - destination:
+        host: catalog
+        subset: version-v2
+  - route:
+    - destination:
+        host: catalog
+        subset: version-v1
+```
+
+* Traffic shifting
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: catalog
+spec:
+  hosts:
+  - catalog
+  gateways:
+    - mesh
+  http:
+  - route:
+    - destination:
+        host: catalog
+        subset: version-v1
+      weight: 90
+    - destination:
+        host: catalog
+        subset: version-v2
+      weight: 10
+```
 
 ## Resilience: solving application-networking challenges
 
