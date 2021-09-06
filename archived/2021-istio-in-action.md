@@ -1074,6 +1074,30 @@ kubectl -n prometheus port-forward svc/prom-grafana 3000:80
   - `x-b3-flags`
   - `x-ot-span-context`
 
+```yaml
+apiVersion: kiali.io/v1alpha1
+kind: Kiali
+metadata:
+  namespace: istio-system
+  name: kiali
+spec:
+  istio_namespace: "istio-system"
+  istio_component_namespaces:
+    prometheus: prometheus
+  auth:
+    strategy: anonymous
+  deployment:
+    accessible_namespaces:
+    - '**'
+    image_version: operator_version
+  external_services:
+    prometheus:
+      cache_duration: 10
+      cache_enabled: true
+      cache_expiration: 300
+      url: "http://prom-kube-prometheus-stack-prometheus.prometheus:9090"
+```
+
 ## Securing microservice communication
 
 ## Troubleshooting the data plane
