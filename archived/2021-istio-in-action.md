@@ -1302,6 +1302,24 @@ kubectl -n istio-system port-forward deploy/kiali 20001
   to a workload, in other words, if a workload has
   allow policies *one has to match for it to be allowed*.
 
+* *Catch-all authorization policies*
+  - Just as the lack of any rule is an indicator that
+    no requests are allowed, the opposite, the presence
+    of an empty rule means that all requests are allowed.
+  - For an example the following will
+    *allow all requests by default*:
+
+```yaml
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: allow-all
+  namespace: istio-system
+spec:
+  rules:
+  - {}
+```
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
