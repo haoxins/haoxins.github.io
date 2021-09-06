@@ -1179,6 +1179,17 @@ kubectl -n istio-system port-forward deploy/kiali 20001
 
 ## Securing microservice communication
 
+* What's *Authentication* and *Authorization*?
+  - **Authentication** is the process by which
+    a client or server proves its identity using
+    *something they know* (a password),
+    *something they have* (a device, a certificate),
+    or *something they are* (a unique trait such as a fingerprint).
+  - **Authorization** is the process of allowing
+    or denying an already *authenticated* user to perform
+    an operation such as *creating*, *reading*, *updating*,
+    or *deleting* a resource.
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
