@@ -1223,6 +1223,26 @@ kubectl -n istio-system port-forward deploy/kiali 20001
   decisions based on the extracted data,
   by the *former two resources*.
 
+* When we say Istio is *"secure by default"*
+  we actually mean *"almost secure by default"*,
+  as there is still work on our side,
+  to make the mesh even more secure.
+
+* The *`PeerAuthentication`* resource enables configuration
+  of workloads to either *strictly require mTLS*, or
+  to be *permissive and accept clear-text traffic*,
+  using *one of* the following authentication modes:
+  **STRICT** or **PERMISSIVE**.
+  The mutual authentication mode can be configured
+  in different scopes:
+  - *Mesh-wide PeerAuthentication* policies apply to
+    all workloads of the service mesh
+  - *Namespace-wide PeerAuthentication* policies apply
+    to all workloads within a namespace
+  - *Workload-specific PeerAuthentication* policies apply
+    to all workloads that match the selector
+    specified in the policy.
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
