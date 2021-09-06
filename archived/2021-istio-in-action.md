@@ -1355,6 +1355,21 @@ spec:
   - Will be `rejected` when there are **ALLOW**
     policies but none matches
 
+* *JSON Web Token (JWT)* is a compact claims
+  representation that is used to transmit unmodified
+  information between two parties as JSON objects.
+  The unmodified part comes from the
+  verifiable signature of the JWT Token.
+  JWT Tokens consist of the following three parts:
+  - *Header* - composed of the type and the
+    hashing algorithm
+  - *Payload* - contains the user claims
+  - *Signature* - used to verify the authenticity
+    of the JWT Token
+* Those three parts, the `header`, `payload`, and `signature`
+  are separated by dots (`.`) and stored *base64*
+  URL encoded which makes it perfect for usage in HTTP requests.
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
