@@ -25,8 +25,6 @@ kubectl get secret argocd-initial-admin-secret \
 ```zsh
 kubectl port-forward svc/jaeger-query \
   -n istio-system 8088:80
-
-# skipping opening a browser http://localhost:16686
 ```
 
 ## Kiali
