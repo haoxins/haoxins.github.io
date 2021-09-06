@@ -1032,6 +1032,22 @@ spec:
 
 * *Common Expression Language* (**CEL**)
 
+```zsh
+kubectl -n istioinaction exec -it deploy/webapp -c istio-proxy \
+  -- curl localhost:15000/stats/prometheus
+```
+
+```zsh
+kubectl get po -n prometheus
+```
+
+```zsh
+kubectl -n prometheus port-forward svc/prom-grafana 3000:80
+
+# Username: admin
+# Password: prom-operator
+```
+
 ## Securing microservice communication
 
 ## Troubleshooting the data plane
