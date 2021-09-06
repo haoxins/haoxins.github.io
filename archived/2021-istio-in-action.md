@@ -1277,6 +1277,27 @@ kubectl -n istio-system port-forward deploy/kiali 20001
   only if one of its rules matches the
   source and the operation.
 
+* The fields of a single rule are:
+  - The **`from`** field specifies the source of
+    the request and it can be one of the following types:
+  - *`principals`*: a list of source identities
+    (i.e. SPIFFE ID as seen in the mTLS examples).
+  - *`namespaces`*: a list of namespaces that
+    matches the source namespace.
+  - *`ipBlocks`*: a list of single IP addresses
+    or CIDRs that match the source IP address.
+  - The **`to`** field specifies the operations
+    of the request, such as the host
+    or method of the request, etc.
+  - The **`when`** field specifies a list of
+    conditions that need to be met
+    after the rule has matched.
+
+* If **one or more ALLOW** authorization policies
+  are applied to a workload, access to that workload
+  is denied by default and only allowed if
+  *one of the ALLOW rules matches it*.
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
