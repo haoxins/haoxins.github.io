@@ -1052,6 +1052,20 @@ kubectl -n prometheus port-forward svc/prom-grafana 3000:80
   that includes *Open Tracing* which is a specification that
   captures concepts and APIs related to *distributed tracing*.
 
+* A **Span** is a collection of data about a request
+  representing a *"unit of work"* within a service or component.
+  This data including things like the *"start time"*
+  of the operation, the *"end time"*, the *operation name*,
+  and a set of tags and logs.
+* **Spans** have their own *ID* and
+  a *parent ID* which is the *Trace ID*.
+* *Istio* can handle *sending the Spans* to
+  the distributed tracing engine.
+* Istio appends *HTTP headers*, commonly known as the
+  *Zipkin tracing headers*, to the request that can be used
+  to *correlate subsequent Span objects* to the overall Trace.
+* The following *Zipkin tracing headers* are used by
+  Istio and the *distributed-tracing* functionality:
 ## Securing microservice communication
 
 ## Troubleshooting the data plane
