@@ -1212,6 +1212,17 @@ kubectl -n istio-system port-forward deploy/kiali 20001
     (abbreviated to **SVID**), which
     Istio's control plane mints for workloads.
 
+* The `PeerAuthentication` resource configures
+  the proxy to authenticate
+  *service-to-service* traffic.
+* The `RequestAuthentication` resource configures
+  the proxy how to authenticate *end-user* credentials
+  against the servers that issued those.
+* The `AuthorizationPolicy` resource configures
+  the proxy to authorize or reject requests by making
+  decisions based on the extracted data,
+  by the *former two resources*.
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
