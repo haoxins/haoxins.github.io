@@ -1066,6 +1066,14 @@ kubectl -n prometheus port-forward svc/prom-grafana 3000:80
   to *correlate subsequent Span objects* to the overall Trace.
 * The following *Zipkin tracing headers* are used by
   Istio and the *distributed-tracing* functionality:
+  - `x-request-id`
+  - `x-b3-traceid`
+  - `x-b3-spanid`
+  - `x-b3-parentspanid`
+  - `x-b3-sampled`
+  - `x-b3-flags`
+  - `x-ot-span-context`
+
 ## Securing microservice communication
 
 ## Troubleshooting the data plane
