@@ -1167,6 +1167,16 @@ spec:
 kubectl -n istio-system port-forward deploy/kiali 20001
 ```
 
+* The last thing we'll point out about *Kiali*
+  is it can discover **misconfigurations**
+  in Istio resources.
+* *Kiali* can also do the following
+  Istio resource validations:
+  - VirtualService pointing to non-existant Gateway
+  - Routing to destinations that do not exist
+  - More than one VirtualService for the same host
+  - Service subsets not found
+
 ## Securing microservice communication
 
 ## Troubleshooting the data plane
