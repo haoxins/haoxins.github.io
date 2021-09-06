@@ -1472,6 +1472,8 @@ spec:
 
 ## Troubleshooting the data plane
 
+*  The most common mistake: *A misconfigured Data Plane*
+
 ## Performance tuning the control plane
 
 ## Scaling Istio in your organization
