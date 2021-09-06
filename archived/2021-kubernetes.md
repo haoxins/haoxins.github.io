@@ -26,6 +26,12 @@ istioctl dashboard jaeger --browser=false
 # skipping opening a browser http://localhost:16686
 ```
 
+## Kiali
+
+```zsh
+kubectl -n istio-system port-forward deploy/kiali 20001
+```
+
 ## Prometheus
 
 * [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator)

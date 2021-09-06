@@ -1161,6 +1161,12 @@ spec:
       url: "http://prom-kube-prometheus-stack-prometheus.prometheus:9090"
 ```
 
+* Kiali
+
+```zsh
+kubectl -n istio-system port-forward deploy/kiali 20001
+```
+
 ## Securing microservice communication
 
 ## Troubleshooting the data plane
