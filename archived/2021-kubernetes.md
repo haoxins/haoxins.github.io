@@ -22,6 +22,13 @@ kubectl -n argocd get secret \
 * [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator)
 * [kube-prometheus](https://github.com/prometheus-operator/kube-prometheus)
 
+```zsh
+kubectl -n prometheus port-forward svc/prom-grafana 3000:80
+
+# Username: admin
+# Password: prom-operator
+```
+
 ## Others
 
 * **GKE**, `1.20.8-gke`
