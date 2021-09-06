@@ -1297,6 +1297,10 @@ kubectl -n istio-system port-forward deploy/kiali 20001
   are applied to a workload, access to that workload
   is denied by default and only allowed if
   *one of the ALLOW rules matches it*.
+* This is the **deny-by-default** behavior that
+  applies only when you have allow policies applied
+  to a workload, in other words, if a workload has
+  allow policies *one has to match for it to be allowed*.
 
 ## Troubleshooting the data plane
 
