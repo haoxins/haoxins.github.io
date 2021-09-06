@@ -894,6 +894,144 @@ spec:
 * Istio helps with one part of observability:
   *application-level network* instrumentation.
 
+* Monitoring is a subset of observability.
+* **Observability** supposes our systems are
+  highly unpredictable and we cannot know
+  all of the possible failure modes in advance.
+
+```yaml
+metadata:
+  annotations:
+    sidecar.istio.io/statsInclusionPrefixes: \
+      "cluster.outbound|80||catalog.istioinaction.svc.cluster.local"
+```
+
+* Envoy has a notion of `"internal origin"`
+  vs `"external origin"` when identifying traffic.
+
+* To view the **control plane metrics**,
+  run the following command:
+
+```zsh
+kubectl exec -it -n istio-system deploy/istiod \
+  -- curl localhost:15014/metrics
+```
+
+* *Istio Metrics* with **Prometheus**
+  - *Prometheus* is slightly different from other telemetry
+    or metrics collection systems in that it **"pulls" metrics**
+    from its targets rather than expects agents
+    to "push" metrics to it.
+  - In fact, this is how *Prometheus* can be configured to be
+    highly available: we can just run *multiple* Prometheus
+    servers scraping the same targets.
+
+* All of our applications that have the *Istio service proxy*
+  injected will automatically expose these *Prometheus metrics*.
+
+* To configure *Prometheus* to do collect metrics
+  from *Istio*, we will use the *Prometheus Operator CRs*
+  **ServiceMonitor** and **PodMonitor**.
+
+```yaml
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: istio-component-monitor
+  namespace: prometheus
+  labels:
+    monitoring: istio-components
+    release: prom
+spec:
+  jobLabel: istio
+  targetLabels: [app]
+  selector:
+    matchExpressions:
+    - {key: istio, operator: In, values: [pilot]}
+  namespaceSelector:
+    any: true
+  endpoints:
+  - port: http-monitoring
+    interval: 15s
+```
+
+```zsh
+kubectl -n prometheus port-forward \
+  statefulset/prometheus-prom-kube-prometheus-stack-prometheus 9090
+```
+
+```yaml
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: envoy-stats-monitor
+  namespace: prometheus
+  labels:
+    monitoring: istio-proxies
+    release: prom
+spec:
+  selector:
+    matchExpressions:
+    - {key: istio-prometheus-ignore, operator: DoesNotExist}
+  namespaceSelector:
+    any: true
+  jobLabel: envoy-stats
+  podMetricsEndpoints:
+  - path: /stats/prometheus
+    interval: 15s
+    relabelings:
+    - action: keep
+      sourceLabels: [__meta_kubernetes_pod_container_name]
+      regex: "istio-proxy"
+    - action: keep
+      sourceLabels: [
+        __meta_kubernetes_pod_annotationpresent_prometheus_io_scrape]
+    - sourceLabels: [
+        __address__, __meta_kubernetes_pod_annotation_prometheus_io_port]
+      action: replace
+      regex: ([^:]+)(?::\d+)?;(\d+)
+      replacement: $1:$2
+      targetLabel: __address__
+    - action: labeldrop
+      regex: "__meta_kubernetes_pod_label_(.+)"
+    - sourceLabels: [__meta_kubernetes_namespace]
+      action: replace
+      targetLabel: namespace
+    - sourceLabels: [__meta_kubernetes_pod_name]
+      action: replace
+      targetLabel: pod_name
+```
+
+* A **metric** is a *counter*, *gauge*, or
+  *histogram/distribution* of telemetry
+  between service calls (inbound/outbound).
+* A **metric** can contain many *dimensions*
+* We see two *different entries* for
+  `istio_requests_total` if the *dimensions differ*.
+* **Attributes** are used to define
+  the *value of a dimension*.
+
+```zsh
+kubectl get envoyfilter -n istio-system
+```
+
+```yaml
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapp
+  template:
+    metadata:
+      annotations:
+        sidecar.istio.io/extraStatTags: \
+          upstream_proxy_version,source_mesh_id
+      labels:
+        app: webapp
+```
+
+* *Common Expression Language* (**CEL**)
+
 ## Securing microservice communication
 
 ## Troubleshooting the data plane
