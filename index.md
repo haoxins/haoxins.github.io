@@ -46,7 +46,7 @@
 * [Machine learning](archived/2021-machine-learning.md)
 * [MLOps](archived/2021-machine-learning-ops.md)
 * [Linux](archived/2021-linux.md)
-* [Kubernetes](archived/2021-kubernetes.md)
+* [Kubernetes stack](archived/2021-kubernetes.md)
 * [Kubernetes in Action - 2nd Edition](archived/2021-kubernetes-in-action-2nd.md)
 * [Kubernetes deep dive](archived/2021-kubernetes-deep-dive.md)
 * [Chaos Mesh](archived/2021-kubernetes-chaos.md)
