@@ -1243,6 +1243,12 @@ kubectl -n istio-system port-forward deploy/kiali 20001
     to all workloads that match the selector
     specified in the policy.
 
+* To create a *mesh-wide PeerAuthentication* policy
+  it must fullfill two conditions,
+  - *firstly*, it must be applied in the Istio
+    installation namespace and
+  - *secondly*, it must be named *"default"*.
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
