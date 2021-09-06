@@ -1190,6 +1190,28 @@ kubectl -n istio-system port-forward deploy/kiali 20001
     an operation such as *creating*, *reading*, *updating*,
     or *deleting* a resource.
 
+* **SPIFFE**
+  - *Secure Production Identity Framework For Everyone*
+  - SPIFFE is a set of open source standards for
+    providing identity to workloads in highly
+    dynamic and heterogeneous environments.
+
+* *SPIFFE Identity* is an `RFC 3986` compliant
+  URI composed in the following format
+  - `spiffe://trust-domain/path`, where:
+  - The `trust-domain` represents the issuer
+    of identity such as an individual or organization
+  - The `path` uniquely identifies a workload
+    within the trust domain
+  - Istio populates this `path` using the
+    *service account* under which a
+    particular workload runs.
+  - This *SPIFFE Identity* is encoded in
+    `X509` certificates, also known as
+    *SPIFFE Verifiable Identity Document*
+    (abbreviated to **SVID**), which
+    Istio's control plane mints for workloads.
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
