@@ -7,11 +7,12 @@ date: 2021-08-24
 ## Argo
 
 ```zsh
-kubectl port-forward svc/argocd-server -n argocd 8080:443
+kubectl port-forward svc/argocd-server \
+  -n argocd 8080:443
 # Username: admin
 # Get password
-kubectl -n argocd get secret \
-  argocd-initial-admin-secret \
+kubectl get secret argocd-initial-admin-secret \
+  -n argocd \
   -o jsonpath="{.data.password}" | base64 -d
 ```
 
@@ -22,14 +23,17 @@ kubectl -n argocd get secret \
 ## Jaeger
 
 ```zsh
-istioctl dashboard jaeger --browser=false
+kubectl port-forward svc/jaeger-query \
+  -n istio-system 8088:80
+
 # skipping opening a browser http://localhost:16686
 ```
 
 ## Kiali
 
 ```zsh
-kubectl -n istio-system port-forward deploy/kiali 20001
+kubectl port-forward deploy/kiali \
+  -n istio-system 20001
 ```
 
 ## Prometheus
@@ -38,7 +42,8 @@ kubectl -n istio-system port-forward deploy/kiali 20001
 * [kube-prometheus](https://github.com/prometheus-operator/kube-prometheus)
 
 ```zsh
-kubectl -n prometheus port-forward svc/prom-grafana 3000:80
+kubectl port-forward svc/prom-grafana \
+  -n prometheus 3000:80
 
 # Username: admin
 # Password: prom-operator
