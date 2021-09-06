@@ -1048,6 +1048,10 @@ kubectl -n prometheus port-forward svc/prom-grafana 3000:80
 # Password: prom-operator
 ```
 
+* *Open Telemetry* is a community-driven framework
+  that includes *Open Tracing* which is a specification that
+  captures concepts and APIs related to *distributed tracing*.
+
 ## Securing microservice communication
 
 ## Troubleshooting the data plane
