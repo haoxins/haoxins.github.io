@@ -1443,6 +1443,33 @@ spec:
 ```
 
 * Configuring Istio for ExtAuthz
+
+```yaml
+extensionProviders:
+- name: sample-ext-authz-http
+  envoyExtAuthzHttp:
+    service: ext-authz.istioinaction.svc.cluster.local
+    port: "8000"
+    includeHeadersInCheck: ["x-ext-authz"]
+---
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: ext-authz
+  namespace: istioinaction
+spec:
+  selector:
+    matchLabels:
+      app: webapp
+  action: CUSTOM
+  provider:
+    name: sample-ext-authz-http
+  rules:
+  - to:
+    - operation:
+        paths: ["/"]
+```
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
