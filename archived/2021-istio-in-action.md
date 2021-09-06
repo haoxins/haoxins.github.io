@@ -1320,6 +1320,9 @@ spec:
   - {}
 ```
 
+* To allow requests from `non-authenticated` workloads
+  we need to drop the **`from`** field *entirely*
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
