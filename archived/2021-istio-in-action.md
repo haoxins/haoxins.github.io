@@ -1323,6 +1323,20 @@ spec:
 * To allow requests from `non-authenticated` workloads
   we need to drop the **`from`** field *entirely*
 
+* The difference between these two that
+  *`principals`* is the peer from a mTLS connection
+  configured by `PeerAuthentication`, and
+  *`requestPrincipals`* is for end-user
+  `RequestAuthentication` and comes from a JWT token.
+
+* In other words one source defined in *`"from"`* is
+  **AND-ed** with one of the operations
+  defined in *`"to"`* and **both are `AND-ed`** with
+  all the conditions specified in *`"when"`*.
+* Meanwhile, it is different in the **`when`** property,
+  where all conditions need to match
+  because those are **`AND-ed`** together.
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
