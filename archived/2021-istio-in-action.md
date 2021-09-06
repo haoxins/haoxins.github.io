@@ -1074,6 +1074,43 @@ kubectl -n prometheus port-forward svc/prom-grafana 3000:80
   - `x-b3-flags`
   - `x-ot-span-context`
 
+* We can configure Istio for distributed tracing
+  at the global level as well as each individual workload.
+
+```yaml
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+metadata:
+  namespace: istio-system
+spec:
+  meshConfig:
+    defaultConfig:
+      tracing:
+        zipkin:
+          address: zipkin.istio-system:9411
+```
+
+```yaml
+apiVersion: v1
+data:
+  mesh: |-
+    defaultConfig:
+      discoveryAddress: istiod.istio-system.svc:15012
+      proxyMetadata: {}
+      tracing:
+        zipkin:
+          address: zipkin.istio-system:9411
+    enablePrometheusMerge: true
+    rootNamespace: istio-system
+    trustDomain: cluster.local
+  meshNetworks: "networks: {}"
+```
+
+```zsh
+istioctl dashboard jaeger --browser=false
+# skipping opening a browser http://localhost:16686
+```
+
 ```yaml
 apiVersion: kiali.io/v1alpha1
 kind: Kiali
