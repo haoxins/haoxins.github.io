@@ -15,7 +15,16 @@ kubectl -n argocd get secret \
   -o jsonpath="{.data.password}" | base64 -d
 ```
 
-## Istio WebAssembly
+## Istio
+
+### WebAssembly
+
+## Jaeger
+
+```zsh
+istioctl dashboard jaeger --browser=false
+# skipping opening a browser http://localhost:16686
+```
 
 ## Prometheus
 
