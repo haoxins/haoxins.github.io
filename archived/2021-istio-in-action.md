@@ -1370,6 +1370,23 @@ spec:
   are separated by dots (`.`) and stored *base64*
   URL encoded which makes it perfect for usage in HTTP requests.
 
+* Istio workloads can be configured to authenticate
+  and authorize end-user requests with JWT tokens.
+
+* The main purpose of the *`RequestAuthentication`*
+  resource is to validate JWT tokens and to extract
+  and store the claims of valid tokens into
+  filter metadata, which are used by authorization
+  policies to take actions based on the data.
+* An important implicit detail here is that
+  *`RequestAuthentication`* resources by themselves
+  do not enforce authorizations. You still need
+  an *`AuthorizationPolicy`* for that.
+* To deny requests *without a JWT token* we need
+  to create an *`AuthorizationPolicy`* that
+  explicitely denies those,
+  *achieved with the definition below:*
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
