@@ -884,6 +884,16 @@ spec:
 
 ## Observability
 
+* Mean Time To Recovery (MTTR)
+
+* This definition is based on the study of
+  **control theory** first introduced in a paper from
+  **"On the General Theory of Control Systems"** in 1960.
+  - 一下子, *段位*就上来了, 哈哈哈
+
+* Istio helps with one part of observability:
+  *application-level network* instrumentation.
+
 ## Securing microservice communication
 
 ## Troubleshooting the data plane
