@@ -4,6 +4,17 @@ description: 汉下白登道, 胡窥青海湾. 由来征战地, 不见有人还.
 date: 2021-08-24
 ---
 
+## Argo
+
+```zsh
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+# Username: admin
+# Get password
+kubectl -n argocd get secret \
+  argocd-initial-admin-secret \
+  -o jsonpath="{.data.password}" | base64 -d
+```
+
 ## Istio WebAssembly
 
 ## Prometheus
