@@ -1249,6 +1249,34 @@ kubectl -n istio-system port-forward deploy/kiali 20001
     installation namespace and
   - *secondly*, it must be named *"default"*.
 
+* Most of the time you will be using either
+  the **STRICT** or **PERMISSIVE** modes.
+  But there are an additional of two modes:
+  * **UNSET** - *Inherit the PeerAuthentication*
+    policy of the parent
+  - **DISABLE** - Do not tunnel the traffic,
+    send directly to the service.
+
+* Istio provides the *`AuthorizationPolicy`*
+  resource which is a declarative API to define
+  *mesh-wide*, *namespace*, or *workload-specific*
+  access policies within a service mesh.
+
+* The *`AuthorizationPolicy`* resource specification
+  provides three fields to configure and define a policy:
+  - The **selector** field defines the subset
+    of workloads to which the policy applies
+  - The **action** specifies whether this is
+    an `ALLOW`, `DENY`, or `CUSTOM` policy.
+  - The **action** will only be applied if one of the
+    rules matches the request
+  - The **rules** field defines a list of rules
+    that identify a request for which the policy
+    will be activated
+* *`AuthorizationPolicy`* enforcement is activated
+  only if one of its rules matches the
+  source and the operation.
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
