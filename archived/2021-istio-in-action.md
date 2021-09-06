@@ -1172,10 +1172,10 @@ kubectl -n istio-system port-forward deploy/kiali 20001
   in Istio resources.
 * *Kiali* can also do the following
   Istio resource validations:
-  - VirtualService pointing to non-existant Gateway
-  - Routing to destinations that do not exist
-  - More than one VirtualService for the same host
-  - Service subsets not found
+  - *VirtualService pointing to non-existant Gateway*
+  - *Routing to destinations that do not exist*
+  - *More than one VirtualService for the same host*
+  - *Service subsets not found*
 
 ## Securing microservice communication
 
