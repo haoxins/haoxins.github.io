@@ -24,7 +24,9 @@ kubectl get secret argocd-initial-admin-secret \
 
 ```zsh
 kubectl port-forward svc/jaeger-query \
-  -n istio-system 8088:80
+  -n istio-system 8086:80
+# Forwarding from 127.0.0.1:8086 -> 16686
+# Forwarding from [::1]:8086 -> 16686
 ```
 
 ## Kiali
