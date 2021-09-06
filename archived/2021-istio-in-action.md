@@ -1387,6 +1387,62 @@ spec:
   explicitely denies those,
   *achieved with the definition below:*
 
+```yaml
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: app-gw-requires-jwt
+  namespace: istio-system
+spec:
+  selector:
+    matchLabels:
+      app: istio-ingressgateway
+  action: DENY
+  rules:
+  - from:
+    - source:
+        notRequestPrincipals: ["*"]
+    to:
+    - operation:
+        hosts: ["webapp.istioinaction.io"]
+```
+
+```yaml
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: allow-all-with-jwt-to-webapp
+  namespace: istio-system
+spec:
+  selector:
+    matchLabels:
+      app: istio-ingressgateway
+  action: ALLOW
+  rules:
+  - from:
+    - source:
+        requestPrincipals: ["auth@istioinaction.io/*"]
+    to:
+    - operation:
+        hosts: ["webapp.istioinaction.io"]
+        methods: ["GET"]
+---
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: allow-mesh-all-ops-admin
+  namespace: istio-system
+spec:
+  rules:
+  - from:
+    - source:
+        requestPrincipals: ["auth@istioinaction.io/*"]
+    when:
+    - key: request.auth.claims[group]
+      values: ["admin"]
+```
+
+* Configuring Istio for ExtAuthz
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
