@@ -1337,6 +1337,24 @@ spec:
   where all conditions need to match
   because those are **`AND-ed`** together.
 
+* Istio uses a different approach on
+  *how policies are evaluated*:
+  - The **CUSTOM** policies are evaluated first.
+  - The **DENY** policies are evaluated and if
+    no *`deny`* policy is matched then
+  - The **ALLOW** policies are evaluated and if
+    one matches then the request is allowed
+  - Otherwise, according to the presence or absence
+    of a `catch-all` policy we have two
+  - When the `catch-all` policy is *present* it will
+    determine the outcome whether
+    the request is approved or not.
+  - When the `catch-all` policy is *absent*,
+    then the request:
+  - Will be `allowed` if there are no **ALLOW** policies
+  - Will be `rejected` when there are **ALLOW**
+    policies but none matches
+
 ## Troubleshooting the data plane
 
 ## Performance tuning the control plane
