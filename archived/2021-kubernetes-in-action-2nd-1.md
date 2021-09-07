@@ -168,6 +168,8 @@ date: 2021-08-30
   - **Status** contains the current actual state
     of the object.
 
+* `kubectl explain <kind>`
+
 ## Running applications in Pods
 
 ## Managing the lifecycle of the Pod's containers

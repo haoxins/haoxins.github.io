@@ -6,6 +6,8 @@ date: 2021-08-24
 
 ```zsh
 kubectl api-resources
+
+kubectl explain <kind>
 ```
 
 ## Argo
