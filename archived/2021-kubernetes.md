@@ -22,6 +22,18 @@ kubectl get secret argocd-initial-admin-secret \
 istioctl proxy-status
 ```
 
+```zsh
+# 优先使用 Kiali !!!
+istioctl analyze -n istio-system
+```
+
+### Envoy
+
+```zsh
+kubectl port-forward deploy/istio-ingressgateway \
+  -n istio-system 15000
+```
+
 ### Kiali
 
 ```zsh
