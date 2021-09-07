@@ -148,6 +148,26 @@ date: 2021-08-30
   *Resources* are *views* through which
   you interact with *objects*.
 
+* The **manifest** of most Kubernetes API *objects*
+  consists of the following four sections:
+  - **Type Metadata** contains information about
+    the type of object this manifest describes.
+    It specifies the *object type*, the *group*
+    to which the type belongs, and the API version.
+  - **Object Metadata** holds the basic information
+    about the object instance, including its
+    name, time of creation, owner of the object,
+    and other identifying information. The fields in
+    the *Object Metadata* are the *same for all object types*.
+  - **Spec** is the part in which you specify the
+    desired state of the object. Its fields differ
+    between different object types. For pods, this is
+    the part that specifies the pod's containers,
+    storage volumes and other information
+    related to its operation.
+  - **Status** contains the current actual state
+    of the object.
+
 ## Running applications in Pods
 
 ## Managing the lifecycle of the Pod's containers
