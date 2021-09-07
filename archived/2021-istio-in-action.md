@@ -1565,6 +1565,18 @@ istioctl pc routes deploy/istio-ingressgateway \
 
 * [Gloo Mesh](https://github.com/solo-io/gloo-mesh)
 
+* We distinguish between two types of clusters
+  in multi-cluster service meshes:
+  - *Primary Cluster*: the cluster in which
+    Istio's control plane is installed
+  - *Remote Cluster*: the cluster that is remote
+    to the control plane installation
+
+* The **multi-cluster** service mesh deployment
+  models Istio supports:
+  - the *single* control plane (**Primary-Remote**)
+  - the *replicated* control planes (**Primary-Primary**)
+  - the *external* control plane
 
 ------------------
 
