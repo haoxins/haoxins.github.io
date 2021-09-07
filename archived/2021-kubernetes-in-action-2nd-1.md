@@ -130,6 +130,13 @@ date: 2021-08-30
 * A *service* with the type *LoadBalancer*
   provisions an external *load balancer*, which
   makes the service accessible via a *public IP*.
+  - If your cluster is deployed in the **cloud**,
+    Kubernetes can ask the cloud infrastructure
+    to provision a load balancer and configure
+    it to forward traffic into your cluster.
+  - The infrastructure tells Kubernetes the
+    IP address of the load balancer and this
+    becomes the external address of your service.
 
 ## Running applications in Pods
 
