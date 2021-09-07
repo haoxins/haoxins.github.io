@@ -1472,7 +1472,9 @@ spec:
 
 ## Troubleshooting the data plane
 
-*  The most common mistake: *A misconfigured Data Plane*
+* The most common mistake: *A misconfigured Data Plane*
+
+* How to verify that the data plane is up to date?
 
 ## Performance tuning the control plane
 
