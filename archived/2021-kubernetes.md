@@ -30,6 +30,7 @@ istioctl analyze -n istio-system
 ### Envoy
 
 ```zsh
+# Envoy Administration dashboard
 kubectl port-forward deploy/istio-ingressgateway \
   -n istio-system 15000
 ```

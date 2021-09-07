@@ -1482,6 +1482,26 @@ spec:
 * Using *`Kiali`* we can perform a quick
   *validation* of the configuration.
 
+* The ***Kiali validations*** are helpful and should be
+  one of the first stops when your workloads are not
+  behaving according to your expectation.
+  - **Kiali validations** 赞!
+* The next stop is to use *istioctl* which provides
+  another set of validations.
+
+* The *Envoy Administration dashboard* is accessible
+  for every service proxy on port `15000`.
+
+* The *`istioctl proxy-config`* command enables us
+  to retrieve and filter the proxy configuration
+  of a workload based on the *Envoy xDS APIs*,
+  where each subcommand is appropriately named:
+  - *`cluster`* - Retrieves cluster configuration
+  - *`endpoint`* - Retrieves endpoint configuration
+  - *`listener`* - Retrieves listener configuration
+  - *`route`* - Retrieves route configuration
+  - *`secret`* - Retrieves secret configuration
+
 ## Performance tuning the control plane
 
 ## Scaling Istio in your organization
