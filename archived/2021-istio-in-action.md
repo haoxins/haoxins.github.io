@@ -1556,6 +1556,15 @@ istioctl pc routes deploy/istio-ingressgateway \
 
 ## Scaling Istio in your organization
 
+* The benefits of a multi-cluster service mesh
+  - Improved Isolation
+  - Failure boundary
+  - Regulatory and compliance
+  - Increased availability and performance
+  - Enable Multi and Hybrid-cloud
+
+* [Gloo Mesh](https://github.com/solo-io/gloo-mesh)
+
 
 ------------------
 
