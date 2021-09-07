@@ -1556,7 +1556,6 @@ istioctl pc routes deploy/istio-ingressgateway \
 
 ## Scaling Istio in your organization
 
-## Extending Istio on the request path
 
 ------------------
 

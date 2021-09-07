@@ -48,6 +48,11 @@ istioctl pc routes deploy/istio-ingressgateway \
   --name http.80
 ```
 
+```zsh
+kubectl exec -it -n istio-system deploy/istiod \
+  -- curl localhost:15014/metrics
+```
+
 ### Envoy
 
 ```zsh
