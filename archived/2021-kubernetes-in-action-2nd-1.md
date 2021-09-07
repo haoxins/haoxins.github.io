@@ -142,6 +142,12 @@ date: 2021-08-30
   a static IP address that never changes
   during lifetime of the service.
 
+> If you are familiar with relational database systems,
+  you can compare *resources* and *object* types
+  with *views* and *tables*.
+  *Resources* are *views* through which
+  you interact with *objects*.
+
 ## Running applications in Pods
 
 ## Managing the lifecycle of the Pod's containers
