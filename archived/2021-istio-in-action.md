@@ -1549,6 +1549,9 @@ istioctl pc routes deploy/istio-ingressgateway \
   --name http.80
 ```
 
+* Whenever the *Grafana* dashboard doesn't provide
+  enough details we can query *Prometheus* directly.
+
 ## Performance tuning the control plane
 
 ## Scaling Istio in your organization

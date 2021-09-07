@@ -16,6 +16,15 @@ kubectl get secret argocd-initial-admin-secret \
   -o jsonpath="{.data.password}" | base64 -d
 ```
 
+## Grafana
+
+```zsh
+kubectl port-forward svc/kube-prometheus-stack-grafana \
+  -n monitoring 3000:80
+# Username: admin
+# Password: prom-operator
+```
+
 ## Istio
 
 ```zsh
@@ -88,9 +97,10 @@ kubectl port-forward svc/jaeger-query \
 * [kube-prometheus](https://github.com/prometheus-operator/kube-prometheus)
 
 ```zsh
-kubectl port-forward svc/prom-grafana \
-  -n prometheus 3000:80
-
+# Whenever the Grafana dashboard doesn't provide
+# enough details we can query Prometheus directly.
+kubectl port-forward svc/kube-prometheus-stack-prometheus \
+  -n monitoring 9090
 # Username: admin
 # Password: prom-operator
 ```
