@@ -169,6 +169,7 @@ date: 2021-08-30
     of the object.
 
 * `kubectl explain <kind>`
+  - `kubectl explain node.spec.xxx`
 
 ## Running applications in Pods
 
