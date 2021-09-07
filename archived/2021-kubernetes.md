@@ -35,6 +35,11 @@ kubectl port-forward deploy/istio-ingressgateway \
   -n istio-system 15000
 ```
 
+```zsh
+istioctl proxy-config listeners \
+  deploy/istio-ingressgateway -n istio-system
+```
+
 ### Kiali
 
 ```zsh

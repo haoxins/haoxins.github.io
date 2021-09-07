@@ -1502,6 +1502,31 @@ spec:
   - *`route`* - Retrieves route configuration
   - *`secret`* - Retrieves secret configuration
 
+* Envoy **Listeners** define a networking
+  configuration such as an *IP Address* and *Port*
+  that allows downstream traffic into the proxy.
+* Envoy **Routes** is a set of rules that match
+  the *virtual hosts* to *clusters*. Routes are
+  processed in the listed order. The first to match
+  is used to route traffic to clusters of workloads.
+* Envoy **Clusters** is a set of clusters where each
+  cluster has a group of *endpoints* to similar workloads.
+  **Subsets** are used to further divide workloads
+  within a cluster, which enables
+  fine-grained traffic management.
+* Envoy **Endpoints** is a set of endpoints which
+  represent the *IP Addresses* of the
+  workloads that serve the requests.
+
+* Admitting traffic is the responsibility of
+  the *Envoy Listeners* which are configured
+  in Istio using the *`Gateway`* resource.
+
+```zsh
+istioctl proxy-config listeners \
+  deploy/istio-ingressgateway -n istio-system
+```
+
 ## Performance tuning the control plane
 
 ## Scaling Istio in your organization
