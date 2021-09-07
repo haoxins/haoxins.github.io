@@ -2,7 +2,7 @@
 * [阅读 2022+](articles/reading-watching-and-gaming.md)
 * [推荐阅读清单](articles/reading-recommended.md)
 * [量子计算 & 量子通信](articles/quantum.md)
-* [冥想 健身](articles/meditation-fitness.md)
+* [健身, 冥想](articles/meditation-fitness.md)
 * [猫咪的那些事](articles/cat.md)
 ### 2021
 * [关于技术, 次年度期待清单](archived/2021-worth-looking-forward.md)
@@ -82,4 +82,4 @@
 * [Machine learning](archived/2019-machine-learning.md)
 * [Cryptography](archived/2019-cryptography.md)
 ### 2018
-* [睡眠 正念冥想 运动](archived/2018-sleeping-fitness-health.md)
+* [睡眠, 运动, 正念冥想](archived/2018-sleeping-fitness-health.md)
