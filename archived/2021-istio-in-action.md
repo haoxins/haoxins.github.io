@@ -1538,6 +1538,17 @@ kubectl -n istio-system get svc \
   istio-ingressgateway -o yaml
 ```
 
+* Istio configures *Envoy Routes* using the
+  *`VirtualService`* resource, meanwhile, *clusters*
+  are either auto-discovered or defined using
+  the *`DestinationRule`* resource.
+
+```zsh
+istioctl pc routes deploy/istio-ingressgateway \
+  -n istio-system \
+  --name http.80
+```
+
 ## Performance tuning the control plane
 
 ## Scaling Istio in your organization

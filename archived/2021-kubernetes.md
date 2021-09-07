@@ -33,6 +33,12 @@ kubectl get svc istio-ingressgateway \
   -o yaml
 ```
 
+```zsh
+istioctl pc routes deploy/istio-ingressgateway \
+  -n istio-system \
+  --name http.80
+```
+
 ### Envoy
 
 ```zsh
