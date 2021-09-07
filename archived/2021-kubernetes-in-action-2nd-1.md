@@ -122,6 +122,15 @@ date: 2021-08-30
 
 * *`~/.kube/config`*
 
+* Each pod has its own `IP`, `hostname`, `processes`,
+  `network interfaces` and `other` resources.
+  Containers that are part of the same pod think that
+  they're the only ones running on the computer.
+
+* A *service* with the type *LoadBalancer*
+  provisions an external *load balancer*, which
+  makes the service accessible via a *public IP*.
+
 ## Running applications in Pods
 
 ## Managing the lifecycle of the Pod's containers
