@@ -1554,6 +1554,28 @@ istioctl pc routes deploy/istio-ingressgateway \
 
 ## Performance tuning the control plane
 
+* Understanding the steps of data plane synchronization
+  1. An incoming event *triggers* the
+     synchronization process
+  2. The *DiscoveryServer* is a component of istiod
+     that listens for these events. In order to improve
+     performance, it delays adding the event to the
+     push queue for a defined period in order to batch
+     and merge subsequent events for that period of time.
+  3. After the delay period expires, the *DiscoveryServer*
+     adds the merged events to the push queue which
+     maintains a list of pushes pending to be processed
+  4. The istiod server *throttles* (i.e. limits) the
+     number of push requests that are processed concurrently,
+     which ensures that faster progress is made on the pushed
+     items and prevents CPU time from getting wasted
+     context switching between the tasks
+  5. The items that get pushed are converted to
+    *envoy configuration* and pushed to the workloads
+
+* Ignoring events:
+  - Reducing the scope of discovery using discovery selectors
+
 ## Scaling Istio in your organization
 
 * The benefits of a multi-cluster service mesh
