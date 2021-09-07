@@ -47,6 +47,7 @@ date: 2020-07-22
   - [RFC9000: QUIC](https://datatracker.ietf.org/doc/html/rfc9000)
   - [Rust](https://github.com/rust-lang/rust)
   - [Istio](https://github.com/istio/istio)
+  - [WebAssembly](https://webassembly.org)
 
 ------------------
 
