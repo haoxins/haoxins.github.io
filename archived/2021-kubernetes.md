@@ -25,6 +25,20 @@ istioctl proxy-status
 ### Kiali
 
 ```zsh
+kubectl port-forward svc/kiali \
+  -n monitoring 20001
+```
+
+```zsh
+kiali_token_name=$(kubectl get sa \
+  kiali-service-account \
+  -n monitoring \
+  -o jsonpath="{.secrets[0].name}")
+
+kubectl get secret \
+  -n monitoring \
+  $kiali_token_name \
+  -o jsonpath={.data.token} | base64 -d
 ```
 
 ### WebAssembly
@@ -36,13 +50,6 @@ kubectl port-forward svc/jaeger-query \
   -n istio-system 8086:80
 # Forwarding from 127.0.0.1:8086 -> 16686
 # Forwarding from [::1]:8086 -> 16686
-```
-
-## Kiali
-
-```zsh
-kubectl port-forward deploy/kiali \
-  -n istio-system 20001
 ```
 
 ## Prometheus
