@@ -1527,6 +1527,17 @@ istioctl proxy-config listeners \
   deploy/istio-ingressgateway -n istio-system
 ```
 
+* Be assured that port `8080` is the correct port
+  as traffic from port `80` to `8080` is forwarded
+  by the Kubernetes service named
+  `istio-ingressgateway`, which can be seen
+  when printing the service definition.
+
+```zsh
+kubectl -n istio-system get svc \
+  istio-ingressgateway -o yaml
+```
+
 ## Performance tuning the control plane
 
 ## Scaling Istio in your organization

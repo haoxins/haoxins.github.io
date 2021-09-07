@@ -27,6 +27,12 @@ istioctl proxy-status
 istioctl analyze -n istio-system
 ```
 
+```zsh
+kubectl get svc istio-ingressgateway \
+  -n istio-system \
+  -o yaml
+```
+
 ### Envoy
 
 ```zsh
