@@ -18,6 +18,15 @@ kubectl get secret argocd-initial-admin-secret \
 
 ## Istio
 
+```zsh
+istioctl proxy-status
+```
+
+### Kiali
+
+```zsh
+```
+
 ### WebAssembly
 
 ## Jaeger
