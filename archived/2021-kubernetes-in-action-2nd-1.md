@@ -138,6 +138,10 @@ date: 2021-08-30
     IP address of the load balancer and this
     becomes the external address of your service.
 
+* When you create a *service*, it is assigned
+  a static IP address that never changes
+  during lifetime of the service.
+
 ## Running applications in Pods
 
 ## Managing the lifecycle of the Pod's containers
