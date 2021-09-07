@@ -14,7 +14,7 @@
 * [TAOCP 排序与查找 - 计算机程序设计艺术](archived/2021-taocp-3.md)
 * [TAOCP 半数值算法 - 计算机程序设计艺术](archived/2021-taocp-2.md)
 * [TAOCP 基本算法 - 计算机程序设计艺术](archived/2021-taocp-1.md)
-* [Serverless for everything](archived/2021-serverless.md)
+* [Serverless for everything](archived/2021-serverless-for-all.md)
 * [阅读 书单 & 简记](archived/2021-reading.md)
 * [阅读 - 在线资源](archived/2021-reading-online.md)
 * [阅读 - 经典书籍](archived/2021-reading-long-term.md)

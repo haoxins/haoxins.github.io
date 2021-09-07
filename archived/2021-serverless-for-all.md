@@ -43,10 +43,10 @@ date: 2020-07-22
   - 看看 *5年后*, *10年后*, 会是什么光景
   - *Components* 包括: *标准*, *开源项目*
   - [Kubernetes (K8s)](https://github.com/kubernetes/kubernetes)
-  - [RFC9000: QUIC](https://datatracker.ietf.org/doc/html/rfc9000)
-  - [Istio](https://github.com/istio/istio)
   - [Go](https://github.com/golang/go)
+  - [RFC9000: QUIC](https://datatracker.ietf.org/doc/html/rfc9000)
   - [Rust](https://github.com/rust-lang/rust)
+  - [Istio](https://github.com/istio/istio)
 
 ------------------
 
