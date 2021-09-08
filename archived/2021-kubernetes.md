@@ -116,6 +116,16 @@ kubectl port-forward svc/kube-prometheus-stack-prometheus \
 # Password: prom-operator
 ```
 
+## GCP/GKE
+
+* *Storage classes* (Default)
+
+```
+standard      kubernetes.io/gce-pd   pd-standard
+standard-rwo  pd.csi.storage.gke.io  pd-balanced
+premium-rwo   pd.csi.storage.gke.io  pd-ssd
+```
+
 ## Others
 
 * **GKE**, `1.20.8-gke`
