@@ -1,5 +1,5 @@
 ---
-title: Programming Rust - 2nd Edition
+title: Programming Rust - 2nd Edition (上)
 description: Fast, Safe Systems Development (Covers Rust 1.50)
 date: 2021-07-12
 ---
@@ -301,7 +301,3 @@ let x = 1234.567 % 10.0; // approximately 4.567
   - So we'll also talk about how *`&mut dyn Write`*
     and *`<T: Write>`* are *similar*, how they're *different*,
     and how to choose between these two ways of using *traits*.
-
-## Closures & Iterators
-
-## Others
