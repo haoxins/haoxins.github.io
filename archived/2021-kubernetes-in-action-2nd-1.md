@@ -171,6 +171,10 @@ date: 2021-08-30
 * `kubectl explain <kind>`
   - `kubectl explain node.spec.xxx`
 
+> Unlike other objects, each *Event object* is deleted
+  *one hour after its creation* to reduce the burden
+  on etcd, the data store for Kubernetes API objects.
+
 ## Running applications in Pods
 
 ## Managing the lifecycle of the Pod's containers
