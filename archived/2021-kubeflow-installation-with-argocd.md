@@ -28,7 +28,7 @@ gcloud services enable \
 
 ```zsh
 export PROJECT_ID=$(gcloud config get-value project)
-export CLUSTER_NAME=kubeflow-sg-dev
+export CLUSTER_NAME=kubeflow-sg
 export CLUSTER_ZONE=asia-southeast1-c
 ```
 
@@ -36,7 +36,7 @@ export CLUSTER_ZONE=asia-southeast1-c
 gcloud container clusters create $CLUSTER_NAME \
   --project=$PROJECT_ID \
   --machine-type=n1-standard-4 \
-  --enable-autoscaling --min-nodes 1 --max-nodes 4 \
+  --enable-autoscaling --min-nodes 1 --max-nodes 99 \
   --scopes compute-rw,gke-default,storage-rw \
   --num-nodes=3 \
   --zone=$CLUSTER_ZONE
