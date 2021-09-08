@@ -175,6 +175,15 @@ date: 2021-08-30
   *one hour after its creation* to reduce the burden
   on etcd, the data store for Kubernetes API objects.
 
+* The `kubectl get` command allows you to specify
+  the field selector with the `--field-selector` option.
+  To list only events that represent warnings,
+  you execute the following command:
+
+```zsh
+kubectl get ev --field-selector type=Warning
+```
+
 ## Running applications in Pods
 
 ## Managing the lifecycle of the Pod's containers
