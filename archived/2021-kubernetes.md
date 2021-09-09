@@ -35,6 +35,8 @@ kubectl port-forward svc/kube-prometheus-stack-grafana \
 
 ```zsh
 istioctl proxy-status
+
+kubectl get envoyfilter -n istio-system
 ```
 
 ```zsh
@@ -55,21 +57,25 @@ istioctl pc routes deploy/istio-ingressgateway \
 ```
 
 ```zsh
-kubectl exec -it -n istio-system deploy/istiod \
+kubectl exec -it deploy/istiod \
+  -n istio-system \
   -- curl localhost:15014/metrics
-```
 
-### Envoy
+istioctl pc secret \
+  deploy/istio-ingressgateway \
+  -n istio-system
 
-```zsh
+istioctl proxy-config routes \
+  deploy/istio-ingressgateway \
+  -n istio-system
+
+istioctl proxy-config listeners \
+  deploy/istio-ingressgateway \
+  -n istio-system
+
 # Envoy Administration dashboard
 kubectl port-forward deploy/istio-ingressgateway \
   -n istio-system 15000
-```
-
-```zsh
-istioctl proxy-config listeners \
-  deploy/istio-ingressgateway -n istio-system
 ```
 
 ### Kiali
