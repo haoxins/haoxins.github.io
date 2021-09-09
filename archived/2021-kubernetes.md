@@ -14,7 +14,7 @@ kubectl explain <kind>
 
 ```zsh
 kubectl port-forward svc/argocd-server \
-  -n argocd 8080:443
+  -n argocd 8080:80
 # Username: admin
 # Get password
 kubectl get secret argocd-initial-admin-secret \
