@@ -28,7 +28,9 @@ kubectl get secret argocd-initial-admin-secret \
 kubectl port-forward svc/kube-prometheus-stack-grafana \
   -n monitoring 3000:80
 # Username: admin
-# Password: prom-operator
+kubectl get secret kube-prometheus-stack-grafana \
+  -n monitoring \
+  -o jsonpath="{.data.admin-password}" | base64 -d
 ```
 
 ## Istio
