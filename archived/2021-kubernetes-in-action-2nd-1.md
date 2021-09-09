@@ -197,8 +197,27 @@ kubectl get ev --field-selector type=Warning
 * *each container always has its own Mount namespace*,
   giving it its own file system, but when two
   containers must share a part of the file system,
-  you can add a volume to the pod and
+  you can add a **volume** to the pod and
   mount it into both containers.
+
+* Placing several containers in a single pod is
+  *only appropriate if* the application consists of
+  *a primary process* and one or more processes
+  that complement the operation of the primary process.
+  - *primary container*
+  - *sidecar container*
+
+* The Kubernetes network model dictates that
+  each pod is accessible from any other pod and
+  that each node can reach any pod
+  on any node in the cluster.
+
+* The application in the container must be
+  bound to a port on the *loopback device* for
+  the Kubelet to reach it. If it listens only
+  on the pod's **`eth0`** network interface,
+  you won't be able to reach it with the
+  `kubectl port-forward` command.
 
 ## Managing the lifecycle of the Pod's containers
 
