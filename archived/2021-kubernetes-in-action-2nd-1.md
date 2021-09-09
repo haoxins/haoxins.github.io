@@ -186,6 +186,20 @@ kubectl get ev --field-selector type=Warning
 
 ## Running applications in Pods
 
+* When a *pod* has multiple containers,
+  all of them run on the *same* worker *node*
+  - *a single pod instance never spans multiple nodes*.
+
+* This *sharing of namespaces* is exactly how
+  Kubernetes and the container runtime
+  combine containers into pods.
+
+* *each container always has its own Mount namespace*,
+  giving it its own file system, but when two
+  containers must share a part of the file system,
+  you can add a volume to the pod and
+  mount it into both containers.
+
 ## Managing the lifecycle of the Pod's containers
 
 ## Mounting storage volumes into the Pod's containers
