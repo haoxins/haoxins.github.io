@@ -24,6 +24,7 @@ date: 2018-04-01
   - **重温我的第一门编程语言**
 
 * [Real-World Cryptography](https://book.douban.com/subject/34615742/)
+  - https://www.manning.com/books/real-world-cryptography
 
 * [基础拓扑学 (修订版)](https://book.douban.com/subject/34899142/)
   - 原作名: *Basic Topology*
@@ -41,8 +42,10 @@ date: 2018-04-01
   - 感恩: ***微信读书***
 
 * [Kubernetes in Action, Second Edition](https://book.douban.com/subject/34986745/)
+  - https://www.manning.com/books/kubernetes-in-action-second-edition
 
 * [Istio in Action](https://book.douban.com/subject/33406485/)
+  - https://www.manning.com/books/istio-in-action
 
 * [Graph Databases](https://book.douban.com/subject/26427118/)
   - 副标题: *New Opportunities for Connected Data*

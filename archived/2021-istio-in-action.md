@@ -11,6 +11,7 @@ date: 2021-08-04
 ------------------
 
 * [Istio in Action](https://book.douban.com/subject/33406485/)
+  - https://www.manning.com/books/istio-in-action
   - 开篇先说, 要解决的**问题**, *赞*
   - 新技术(在早期)有可能是*毒药*, 过了早期阶段, 大部分就消失了 :)
 

@@ -5,3 +5,4 @@ date: 2021-09-10
 ---
 
 * [Real-World Cryptography](https://book.douban.com/subject/34615742/)
+  - https://www.manning.com/books/real-world-cryptography
