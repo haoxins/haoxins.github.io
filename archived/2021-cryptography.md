@@ -1,6 +1,6 @@
 ---
 title: Cryptography
-description: 月出于东山之上, 徘徊于斗牛之间. 白露横江, 水光接天. 纵一苇之所如, 凌万顷之茫然.
+description: 月出于东山之上, 徘徊于斗牛之间.
 date: 2021-03-22
 ---
 
