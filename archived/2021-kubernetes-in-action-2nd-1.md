@@ -233,16 +233,25 @@ metadata:
 spec:
   containers:
   - name: kiada
-    image: luksa/kiada:0.2 ports:
+    image: luksa/kiada:0.2
+    ports:
     - name: http
-    containerPort: 8080
+      containerPort: 8080
   - name: envoy
-    image: luksa/kiada-ssl-proxy:0.1 ports:
+    image: luksa/kiada-ssl-proxy:0.1
+    ports:
     - name: https
-    containerPort: 8443
+      containerPort: 8443
     - name: admin
-    containerPort: 9901
+      containerPort: 9901
 ```
+
+* you also specify the container name using
+  the `--container` or `-c` option.
+  - `kubectl exec -it kiada-ssl -c envoy -- bash`
+  - If you don't provide the name, kubectl
+    exec defaults to the *first container*
+    specified in the pod manifest.
 
 * *`kubectl delete all --all`*
   - The first `all` in the command indicates that
