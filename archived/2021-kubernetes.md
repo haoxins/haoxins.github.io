@@ -10,6 +10,14 @@ kubectl api-resources
 kubectl explain <kind>
 ```
 
+* Args
+
+```zsh
+logs   pod-abc --all-containers
+get    po      --all-namespaces
+delete po      --all
+```
+
 ## Argo
 
 ```zsh

@@ -219,6 +219,12 @@ kubectl get ev --field-selector type=Warning
   you won't be able to reach it with the
   `kubectl port-forward` command.
 
+* *`kubectl delete all --all`*
+  - The first `all` in the command indicates that
+    you want to delete *objects of all types*.
+  - The `--all` option indicates that you want to
+    delete *all instances of each object type*.
+
 ## Managing the lifecycle of the Pod's containers
 
 ## Mounting storage volumes into the Pod's containers
