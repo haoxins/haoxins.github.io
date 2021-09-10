@@ -285,6 +285,15 @@ the results of groupings are emitted as panes.
 
 ### Events
 
+* 市场研究机构 Canalys 公布的数据显示, 截止 2020 年 Q4,
+  在全球云服务市场, 排名前四的是*亚马逊云服务* (AWS) ,
+  *微软* Azure, *谷歌云* (Google Cloud) 和*阿里云*.
+* 根据 Canalys 的数据报告, 2020 年四季度, 中国云计算市场
+  *阿里巴巴*以 `40.3%` 的市场份额高居第一;
+  *华为*以 `17.4%` 的市场份额夺得第二;
+  *腾讯*位列第三, 市场份额为 `14.9%`;
+  *百度*排名第四, 市场份额为 `8.4%`.
+
 * [Kitex](https://github.com/cloudwego/kitex)
   - Kitex 字节跳动内部的 Golang 微服务 RPC 框架
 * [rpcx](https://github.com/smallnest/rpcx)
