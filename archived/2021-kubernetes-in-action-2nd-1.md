@@ -219,6 +219,31 @@ kubectl get ev --field-selector type=Warning
   you won't be able to reach it with the
   `kubectl port-forward` command.
 
+* a new Kubernetes feature called **ephemeral containers**
+  allows you to debug running containers by
+  attaching a debug container to them.
+
+* ***Envoy***
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kiada-ssl
+spec:
+  containers:
+  - name: kiada
+    image: luksa/kiada:0.2 ports:
+    - name: http
+    containerPort: 8080
+  - name: envoy
+    image: luksa/kiada-ssl-proxy:0.1 ports:
+    - name: https
+    containerPort: 8443
+    - name: admin
+    containerPort: 9901
+```
+
 * *`kubectl delete all --all`*
   - The first `all` in the command indicates that
     you want to delete *objects of all types*.
