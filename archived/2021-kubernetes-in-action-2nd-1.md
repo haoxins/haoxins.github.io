@@ -272,6 +272,21 @@ spec:
   in the spec section, just as regular
   containers are defined in its `containers` field.
 
+* Whenever you create objects from a file,
+  you can also delete them by passing the file to
+  the delete command instead of
+  specifying the name of the pod.
+  - `kubectl delete -f abcd.yaml`
+  - This makes *deploying* and *removing* the
+    application as easy as executing
+    `kubectl apply -f app.yaml` and
+    `kubectl delete -f app.yaml`, respectively.
+  - This applies to all files in the directory
+    that have the correct file extension
+    (`.yaml`, `.json`)
+  - `kubectl apply -f apps/`
+  - `kubectl delete -f apps/`
+
 * *`kubectl delete all --all`*
   - The first `all` in the command indicates that
     you want to delete *objects of all types*.
@@ -279,6 +294,21 @@ spec:
     delete *all instances of each object type*.
 
 ## Managing the lifecycle of the Pod's containers
+
+* A pod's *status* section contains the following information:
+  - the *IP* addresses of the pod and the worker *node* that hosts it
+  - *when* the pod was *started*
+  - the pod's *quality-of-service* (QoS) class
+  - what *phase* the pod is in,
+  - the *conditions* of the pod, and
+  - the *state* of its individual *containers*.
+
+* **Pod Phase**
+  - *Pending*
+  - *Running*
+  - *Succeeded*
+  - *Failed*
+  - *Unknown*
 
 ## Mounting storage volumes into the Pod's containers
 
