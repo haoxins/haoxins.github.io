@@ -253,6 +253,25 @@ spec:
     exec defaults to the *first container*
     specified in the pod manifest.
 
+* **Init containers** are like the pod's
+  regular containers, but they don't run in parallel
+  - *only one init container runs at a time*.
+
+* **Init containers** are typically added
+  to pods to achieve the following:
+  - Initialize files in the volumes used
+    by the pod's main containers.
+  - Initialize the pod's networking system.
+  - Delay the start of the pod's main
+    containers until a precondition is met.
+  - Notify an external service that the pod
+    is about to start running.
+
+* In a *pod manifest*, init containers are
+  defined in the `initContainers` field
+  in the spec section, just as regular
+  containers are defined in its `containers` field.
+
 * *`kubectl delete all --all`*
   - The first `all` in the command indicates that
     you want to delete *objects of all types*.
