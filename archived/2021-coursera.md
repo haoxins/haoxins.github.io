@@ -24,6 +24,8 @@ date: 2019-05-30
   - 像极了 **2015+** 的 **前端工程化**
   - 像极了 **2018+** 的 **微服务, 云原生**
   - **MLOps**, **Serverless**
+  - https://www.coursera.org/account/accomplishments/specialization/certificate/J4JVB4DSZCR6
+  - https://www.coursera.org/account/accomplishments/specialization/J4JVB4DSZCR6
   - [Introduction to Machine Learning in Production](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
   - https://www.coursera.org/account/accomplishments/certificate/WK4VBRTJ32U3
   - https://www.coursera.org/account/accomplishments/verify/WK4VBRTJ32U3
