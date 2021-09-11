@@ -28,6 +28,14 @@ date: 2021-03-21
   - https://cloud.google.com/firestore
   - Serverless
 
+* Your *model* is typically saved to the *file system*.
+* The *model server* receives this data formats
+  it into the required shape, passes it to the
+  model file and gets the inference back.
+  - TensorFlow serving
+  - Torch Serve
+  - Kubeflow Serving
+
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search
