@@ -4,6 +4,16 @@ description: 逝者如斯, 而未尝往也; 盈虚者如彼, 而卒莫消长也.
 date: 2021-03-21
 ---
 
+## Deploying Machine Learning Models in Production
+
+* After deploying to the production environment,
+  the ML model remains constant until it's
+  retrained because the model will see a lot of
+  real life data and then it becomes
+  stale quite quickly. This phenomenon is called
+  **model decay**, and it's something that
+  *should be carefully monitored*.
+
 
 * Google Cloud Firestore
   - https://cloud.google.com/firestore
