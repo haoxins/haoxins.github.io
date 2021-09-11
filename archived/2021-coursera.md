@@ -36,6 +36,8 @@ date: 2019-05-30
   - https://www.coursera.org/account/accomplishments/certificate/B5PKU5B8VTQJ
   - https://www.coursera.org/account/accomplishments/verify/B5PKU5B8VTQJ
   - [Deploying Machine Learning Models in Production](https://www.coursera.org/learn/deploying-machine-learning-models-in-production)
+  - https://www.coursera.org/account/accomplishments/certificate/ST3VAT79RRUE
+  - https://www.coursera.org/account/accomplishments/verify/ST3VAT79RRUE
   - Coursera 的课程, 普遍工程性较弱
 
 * **Coursera 上面感兴趣的东西越来越少了** :)
