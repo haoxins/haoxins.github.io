@@ -83,6 +83,26 @@ date: 2021-03-21
 * and *Confidential and Private Collaborative learning*,
   or **CaPC**.
 
+* In many ways, machine learning can be
+  considered an experimental science since
+  experimenting and analyzing results is
+  at the heart of ML development.
+
+* Even small changes like changing the width
+  of a layer or the learning rate can make a
+  big difference in both the model's performance
+  and the resources required to train the model.
+
+* In these cases, you probably want to keep
+  experiments separate if you're using a shared
+  monorepo with your team so that your commits
+  don't version the rest of the team's repo.
+
+* So if you're going to be able to track,
+  understand, compare and duplicate your
+  experimental results you need to
+  *version your data*.
+
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search
