@@ -64,6 +64,17 @@ date: 2021-03-21
   - *Concept drift* occurs when the relationship
     between the features and the labels changes.
 
+* If you can automate the process of detecting
+  the conditions which require model retraining,
+  that's ideal. That includes being able to
+  detect model performance degradation and
+  triggering retraining, or when you detect
+  significant data drift.
+
+* You should consider privacy enhancing technologies
+  such as *Secure Multi-Party Computation*, or **SMPC**,
+  or *Fully Homomorphic Encryption*, or **FHE**,
+  when training and serving your models.
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search
