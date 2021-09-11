@@ -14,6 +14,15 @@ date: 2021-03-21
   **model decay**, and it's something that
   *should be carefully monitored*.
 
+* Depending on the use case, you need to decide
+  on two metrics. There's the **model's optimizing metric**
+  which reflects the model's predictive effectiveness
+  and this includes things like *accuracy*, *precision*,
+  *recall*, and so on. Good values in these metrics is
+  a strong signal about the *quality of your model*.
+  And then there's the models **gating metric** and
+  this reflects an operational constraint that
+  the model has to satisfy, such as *prediction latency*.
 
 * Google Cloud Firestore
   - https://cloud.google.com/firestore
