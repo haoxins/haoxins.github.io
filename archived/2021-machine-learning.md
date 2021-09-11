@@ -36,6 +36,12 @@ date: 2021-03-21
   - Torch Serve
   - Kubeflow Serving
 
+* **TorchServe** is an initiative by
+  *AWS and Facebook* to build a model serving
+  framework for PyTorch models.
+  - With *TorchServe*, you can deploy *PyTorch*
+    models in either *eager* or *graph* mode.
+
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search
