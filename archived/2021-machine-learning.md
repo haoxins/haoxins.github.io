@@ -29,7 +29,7 @@ date: 2021-03-21
   - Serverless
 
 * Your *model* is typically saved to the *file system*.
-* The *model server* receives this data formats
+* The *model server* receives these data formats
   it into the required shape, passes it to the
   model file and gets the inference back.
   - TensorFlow serving
@@ -41,6 +41,28 @@ date: 2021-03-21
   framework for PyTorch models.
   - With *TorchServe*, you can deploy *PyTorch*
     models in either *eager* or *graph* mode.
+
+* Unlike a pure software system, there are
+  two additional components to consider in
+  an ML system, the *data* and the *model*.
+  Unlike in traditional software systems,
+  the accuracy of an ML system depends on
+  how well the model reflects the world
+  it is meant to model which in turn
+  depends on the data used for training
+  and on the data that it receives
+  while serving requests.
+
+* So there are two main causes of model drift.
+  **Data drift** and **concept drift**.
+  - *Data drift* occurs when statistical
+    properties of the input, the features, changes.
+    As the input changes, the prediction requests,
+    the input moves farther away from the data
+    that the model was trained with,
+    and model accuracy suffers.
+  - *Concept drift* occurs when the relationship
+    between the features and the labels changes.
 
 ## Machine Learning Modeling Pipelines in Production
 
