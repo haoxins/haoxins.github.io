@@ -11,7 +11,7 @@ date: 2019-05-30
 * [Cryptography II](https://www.coursera.org/learn/crypto2)
   - 跳票 几年了 ~
   - 授课大神 Dan Boneh 也研究 区块链 了 :)
-  - BLS Signatures
+  - *BLS Signatures*
   - 不抱期望了, ByeBye, Coursera
 
 ------------------
@@ -19,7 +19,7 @@ date: 2019-05-30
 ## 2021
 
 * [Machine Learning Engineering for Production (MLOps)](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops)
-  - 这个来的蛮及时的, 正好要做 ML Platform 了
+  - 这个来的蛮及时的, 正好要做 *ML Platform* 了
   - **2020+** 的这几年, **ML 的工程化**
   - 像极了 **2015+** 的 **前端工程化**
   - 像极了 **2018+** 的 **微服务, 云原生**
