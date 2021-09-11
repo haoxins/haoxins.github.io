@@ -75,6 +75,9 @@ date: 2021-03-21
   such as *Secure Multi-Party Computation*, or **SMPC**,
   or *Fully Homomorphic Encryption*, or **FHE**,
   when training and serving your models.
+
+* *Differentially-Private Stochastic Gradient Descent*,
+  or **DP-SGD**,
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search
