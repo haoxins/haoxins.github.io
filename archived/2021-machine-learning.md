@@ -78,6 +78,9 @@ date: 2021-03-21
 
 * *Differentially-Private Stochastic Gradient Descent*,
   or **DP-SGD**,
+* and *Confidential and Private Collaborative learning*,
+  or **CaPC**.
+
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search
