@@ -4,6 +4,11 @@ description: 逝者如斯, 而未尝往也; 盈虚者如彼, 而卒莫消长也.
 date: 2021-03-21
 ---
 
+
+* Google Cloud Firestore
+  - https://cloud.google.com/firestore
+  - Serverless
+
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search

@@ -311,6 +311,20 @@ spec:
   - *Failed*
   - *Unknown*
 
+* **Pod Condition**
+  - *PodScheduled*
+  - *Initialized*
+  - *ContainersReady*
+  - *Ready*
+
+* Each condition is either `fulfilled` or `not`.
+
+* *Container State*
+  - *Waiting*
+  - *Running*
+  - *Terminated*
+  - *Unknown*
+
 ## Mounting storage volumes into the Pod's containers
 
 ## Persisting application data with PersistentVolumes
