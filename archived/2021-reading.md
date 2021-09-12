@@ -14,6 +14,9 @@ date: 2018-04-01
 
 ### 2021
 
+* [Graph-Powered Machine Learning](https://book.douban.com/subject/35135117/)
+  - https://www.manning.com/books/graph-powered-machine-learning
+
 * [并行计算机体系结构](https://book.douban.com/subject/1102231/)
   - 副标题: *硬件/软件结合的设计与分析*
   - 原作名: *Parallel Computer Architecture: A Hardware/Software Approach*
