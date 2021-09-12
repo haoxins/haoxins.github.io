@@ -134,6 +134,14 @@ date: 2021-03-21
   - In addition, components should
     ideally be *containerized*.
 
+* A **feature store** is a centralized repository
+  where you standardize the *definition*, *storage*,
+  and access of features for training and serving.
+  Ideally, a feature store will provide an API
+  for both high throughput *batch serving* and
+  low latency, *real-time serving* for the feature values,
+  and support both training and serving workloads.
+
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search
