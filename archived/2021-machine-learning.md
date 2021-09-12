@@ -163,6 +163,17 @@ date: 2021-03-21
   but it need not improve or
   even change the model itself.
 
+* **Model lineage** is a set of relationships
+  among the artifacts that resulted in the
+  trained model. To build model artifacts,
+  you have to be able to track the code
+  that builds them and the data,
+  including pre-processing operations that
+  the model was trained and tested with.
+
+
+* ***Progressive Delivery***
+
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search
