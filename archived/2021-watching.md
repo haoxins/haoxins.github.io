@@ -6,6 +6,10 @@ date: 2019-10-24
 
 ## 2021
 
+### 2021-09
+
+* *重温* [**琅琊榜**](https://movie.douban.com/subject/25754848/)
+
 ### 2021-08
 
 * [明日之战](https://movie.douban.com/subject/30459571/)
