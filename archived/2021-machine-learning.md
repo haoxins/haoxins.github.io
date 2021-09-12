@@ -171,6 +171,10 @@ date: 2021-03-21
   including pre-processing operations that
   the model was trained and tested with.
 
+* A **model registry** is a central repository
+  for storing trained models. Model registries
+  provide an API for managing train models
+  throughout the model development lifecycle.
 
 * ***Progressive Delivery***
 
