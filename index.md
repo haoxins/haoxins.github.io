@@ -1,7 +1,6 @@
 * [诗·文](articles/shi.md)
 * [阅读 2022+](articles/reading-watching-and-gaming.md)
 * [推荐阅读清单](articles/reading-recommended.md)
-* [量子计算 & 量子通信](articles/quantum.md)
 * [健身, 冥想](articles/meditation-fitness.md)
 * [猫咪的那些事](articles/cat.md)
 ### 2021
@@ -19,6 +18,7 @@
 * [阅读 - 在线资源](archived/2021-reading-online.md)
 * [阅读 - 经典书籍](archived/2021-reading-long-term.md)
 * [QUIC & HTTP/3](archived/2021-quic-http3.md)
+* [量子计算 & 量子通信](archived/2021-quantum.md)
 * [量子计算公开课](archived/2021-quantum-computing.md)
 * [计算机程序的构造和解释 第2版](archived/2021-programs-structure.md)
 * [Rust](archived/2021-programming-rust.md)
