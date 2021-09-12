@@ -76,6 +76,7 @@
 * [时间静悄悄](archived/2021-changing.md)
 * [Blockchain](archived/2021-blockchain.md)
 * [年度事件](archived/2021-annual-events.md)
+* [Advanced Algorithms and Data Structures](archived/2021-algorithms-advanced.md)
 * [Algorithms](archived/2021-algorithm.md)
 ### 2020
 * [游记](archived/2020-traveling.md)
