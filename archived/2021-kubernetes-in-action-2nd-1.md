@@ -340,6 +340,21 @@ spec:
   - *OnFailure*
   - *Never*
 
+* Kubernetes can be configured to check whether
+  an application is still alive by
+  defining a **liveness probe**.
+  - *Liveness probes* can only be used in the
+    pod's regular containers. They can't be
+    defined in *init containers*.
+
+* Unlike *liveness probes*, it's perfectly normal
+  for a *startup probe* to fail. A failure only
+  indicates that the application hasn't yet been
+  completely started. A successful *startup probe*
+  indicates that the application has started
+  successfully, and Kubernetes should
+  *switch to the liveness probe*.
+
 ## Mounting storage volumes into the Pod's containers
 
 ## Persisting application data with PersistentVolumes
