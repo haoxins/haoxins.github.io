@@ -103,6 +103,11 @@ date: 2021-03-21
   experimental results you need to
   *version your data*.
 
+* Changes in the data as the world
+  around them changes, are not typically a
+  primary concern when simply
+  doing software development.
+
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search
