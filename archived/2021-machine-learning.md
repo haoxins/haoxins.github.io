@@ -142,6 +142,13 @@ date: 2021-03-21
   low latency, *real-time serving* for the feature values,
   and support both training and serving workloads.
 
+* Another key component is the **metadata store**,
+  where information about each execution of the
+  pipeline is recorded in order to help with
+  data and artifact lineage,
+  reproducibility, and comparisons.
+  It also helps you debug errors and anomalies.
+
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search
