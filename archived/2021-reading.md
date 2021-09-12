@@ -14,6 +14,9 @@ date: 2018-04-01
 
 ### 2021
 
+* [100 Go Mistakes: How to Avoid Them]()
+  - https://www.manning.com/books/100-go-mistakes-how-to-avoid-them
+
 * [Graph-Powered Machine Learning](https://book.douban.com/subject/35135117/)
   - https://www.manning.com/books/graph-powered-machine-learning
 
