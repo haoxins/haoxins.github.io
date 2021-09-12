@@ -325,6 +325,21 @@ spec:
   - *Terminated*
   - *Unknown*
 
+* Kubernetes *never restarts* a container,
+  but instead discards it and
+  *creates a new container*.
+  Regardless, we *call* this
+  *restarting a container*.
+
+* If init containers are defined in the pod and
+  one of the pod's regular containers is restarted,
+  the *init containers are not executed again*.
+
+* **Restart Policy**
+  - *Always* (default)
+  - *OnFailure*
+  - *Never*
+
 ## Mounting storage volumes into the Pod's containers
 
 ## Persisting application data with PersistentVolumes
