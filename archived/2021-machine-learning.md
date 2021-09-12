@@ -118,6 +118,22 @@ date: 2021-03-21
   test and validate code and components but also
   do the same for data schemas and models.
 
+* A *level 0 process* is concerned only with
+  deploying the trained model as a prediction service.
+* One of the *key goals* of **level one** is to
+  perform *continuous training of the model*,
+  by *automating the training pipeline*.
+* The truth is that the current stage are at
+  the current stage of the development of
+  MLOps best practices, **level two** is still
+  somewhat *speculative*.
+
+* To construct *ML pipelines components* need to be
+  *reusable*, *composable*, and potentially
+  *shareable* across pipelines.
+  - In addition, components should
+    ideally be *containerized*.
+
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search
