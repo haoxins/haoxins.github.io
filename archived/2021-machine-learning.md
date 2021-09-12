@@ -149,6 +149,20 @@ date: 2021-03-21
   reproducibility, and comparisons.
   It also helps you debug errors and anomalies.
 
+* The **major version** will increment when
+  you have an incompatible data change,
+  such as a schema change or target variable
+  change that can render the modeling compatible
+  with it's prior versions when it's
+  used for predictions.
+* The **minor version** will increment when
+  you believe that you've improved or
+  enhanced the model's output.
+* Finally, the pipeline version will correspond
+  to an update in the training pipeline,
+  but it need not improve or
+  even change the model itself.
+
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search
