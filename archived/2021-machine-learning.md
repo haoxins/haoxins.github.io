@@ -108,6 +108,16 @@ date: 2021-03-21
   primary concern when simply
   doing software development.
 
+* Like DevOps, MLOps is an ML engineering
+  *culture and practice* that aims at unifying
+  *ML system development or dev*
+  and *ML system operation or ops*. Unlike DevOps,
+  ML systems present unique challenges to core
+  DeVOps principles like continuous integration
+  which for ML means that you not only just
+  test and validate code and components but also
+  do the same for data schemas and models.
+
 ## Machine Learning Modeling Pipelines in Production
 
 ### Neural Architecture Search
