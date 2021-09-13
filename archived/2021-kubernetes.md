@@ -10,27 +10,30 @@ curl https://dashboard.kubeflow.awx.im \
 ```
 
 ```zsh
-kubectl api-resources
 
-kubectl explain <kind>
+
+k api-resources
+
+k explain <kind>
 ```
 
 * Options
 
 ```zsh
 k logs pod-abc --all-containers
-k get  po      --all-namespaces
-k get  ev      -w
+k get  po       --all-namespaces
+k get  ev       -w
+k get  po,ev,svc,pv,pvc,secret,deploy
 ```
 
 ## Argo
 
 ```zsh
-kubectl port-forward svc/argocd-server \
+k port-forward svc/argocd-server \
   -n argocd 8080:80
 # Username: admin
 # Get password
-kubectl get secret argocd-initial-admin-secret \
+k get secret argocd-initial-admin-secret \
   -n argocd \
   -o jsonpath="{.data.password}" | base64 -d
 ```
@@ -38,10 +41,10 @@ kubectl get secret argocd-initial-admin-secret \
 ## Grafana
 
 ```zsh
-kubectl port-forward svc/kube-prometheus-stack-grafana \
+k port-forward svc/kube-prometheus-stack-grafana \
   -n monitoring 3000:80
 # Username: admin
-kubectl get secret kube-prometheus-stack-grafana \
+k get secret kube-prometheus-stack-grafana \
   -n monitoring \
   -o jsonpath="{.data.admin-password}" | base64 -d
 ```
@@ -51,7 +54,7 @@ kubectl get secret kube-prometheus-stack-grafana \
 ```zsh
 istioctl proxy-status
 
-kubectl get envoyfilter -n istio-system
+k get envoyfilter -n istio-system
 ```
 
 ```zsh
@@ -60,7 +63,7 @@ istioctl analyze -n istio-system
 ```
 
 ```zsh
-kubectl get svc istio-ingressgateway \
+k get svc istio-ingressgateway \
   -n istio-system \
   -o yaml
 ```
@@ -72,7 +75,7 @@ istioctl pc routes deploy/istio-ingressgateway \
 ```
 
 ```zsh
-kubectl exec -it deploy/istiod \
+k exec -it deploy/istiod \
   -n istio-system \
   -- curl localhost:15014/metrics
 
@@ -89,7 +92,7 @@ istioctl proxy-config listeners \
   -n istio-system
 
 # Envoy Administration dashboard
-kubectl port-forward deploy/istio-ingressgateway \
+k port-forward deploy/istio-ingressgateway \
   -n istio-system 15000
 ```
 
@@ -101,7 +104,7 @@ kubectl port-forward deploy/istio-ingressgateway \
 ### Kiali
 
 ```zsh
-kubectl port-forward svc/kiali \
+k port-forward svc/kiali \
   -n monitoring 20001
 ```
 
@@ -111,7 +114,7 @@ kiali_token_name=$(kubectl get sa \
   -n monitoring \
   -o jsonpath="{.secrets[0].name}")
 
-kubectl get secret \
+k get secret \
   -n monitoring \
   $kiali_token_name \
   -o jsonpath={.data.token} | base64 -d
@@ -122,7 +125,7 @@ kubectl get secret \
 ## Jaeger
 
 ```zsh
-kubectl port-forward svc/jaeger-query \
+k port-forward svc/jaeger-query \
   -n istio-system 8086:80
 # Forwarding from 127.0.0.1:8086 -> 16686
 # Forwarding from [::1]:8086 -> 16686
@@ -136,7 +139,7 @@ kubectl port-forward svc/jaeger-query \
 ```zsh
 # Whenever the Grafana dashboard doesn't provide
 # enough details we can query Prometheus directly.
-kubectl port-forward svc/kube-prometheus-stack-prometheus \
+k port-forward svc/kube-prometheus-stack-prometheus \
   -n monitoring 9090
 # Username: admin
 # Password: prom-operator
