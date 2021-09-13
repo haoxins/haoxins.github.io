@@ -10,6 +10,8 @@ curl https://dashboard.kubeflow.awx.im \
 ```
 
 ```zsh
+k config get-contexts
+k config set-context --current --namespace new_ns
 
 
 k api-resources
