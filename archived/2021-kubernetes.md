@@ -5,6 +5,11 @@ date: 2021-08-24
 ---
 
 ```zsh
+curl https://dashboard.kubeflow.awx.im \
+  --resolve dashboard.kubeflow.awx.im:443:127.0.0.1
+```
+
+```zsh
 kubectl api-resources
 
 kubectl explain <kind>
@@ -88,6 +93,11 @@ kubectl port-forward deploy/istio-ingressgateway \
   -n istio-system 15000
 ```
 
+### Envoy
+
+* 保留端口
+  - `:15021/healthz/ready`
+
 ### Kiali
 
 ```zsh
@@ -141,6 +151,17 @@ standard      kubernetes.io/gce-pd   pd-standard
 standard-rwo  pd.csi.storage.gke.io  pd-balanced
 premium-rwo   pd.csi.storage.gke.io  pd-ssd
 ```
+
+## Cert Manager
+
+* An **`Issuer`** is scoped to a *single namespace*,
+  and can only fulfill Certificate resources
+  within its *own namespace*.
+
+* On the other hand, a **`ClusterIssuer`** is a
+  cluster wide version of an Issuer.
+  It is able to be referenced by Certificate
+  resources in *any namespace*.
 
 ## Others
 
