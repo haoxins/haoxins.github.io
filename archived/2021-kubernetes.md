@@ -13,6 +13,7 @@ curl https://dashboard.kubeflow.awx.im \
 k config get-contexts
 k config set-context --current --namespace new_ns
 
+k exec --stdin --tty pod_name -- bash
 
 k api-resources
 
@@ -22,10 +23,10 @@ k explain <kind>
 * Options
 
 ```zsh
-k logs pod-abc --all-containers
+k logs pod_name -f --all-containers
 k get  po       --all-namespaces
 k get  ev       -w
-k get  po,ev,svc,pv,pvc,secret,deploy
+k get  po,ev,svc,ns,pv,pvc,secret,deploy
 ```
 
 ## Argo
