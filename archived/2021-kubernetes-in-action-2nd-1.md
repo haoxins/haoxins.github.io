@@ -355,6 +355,25 @@ spec:
   successfully, and Kubernetes should
   *switch to the liveness probe*.
 
+* You may also want to run additional processes
+  every time a container starts and just
+  before it stops. You can do this by adding
+  *lifecycle hooks* to the container. Two types
+  of hooks are currently supported:
+  - *Post-start hooks*, which are executed
+    when the container starts, and
+  - *Pre-stop hooks*, which are executed
+    shortly before the container stops.
+* These lifecycle hooks are *specified per container*,
+  as opposed to *init containers*,
+  which are *specified at the pod level*.
+
+* Like liveness probes, lifecycle hooks
+  can be used to either
+  - execute a command inside the container, or
+  - send an `HTTP GET` request to the
+    application in the container.
+
 ## Mounting storage volumes into the Pod's containers
 
 ## Persisting application data with PersistentVolumes
