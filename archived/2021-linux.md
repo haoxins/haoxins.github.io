@@ -14,6 +14,20 @@ date: 2021-02-17
 
 * [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
+* cURL
+
+```zsh
+# -S, --show-error
+#   Show error even when -s is used
+# -v, --verbose
+#   Make the operation more talkative
+# -k, --insecure
+#   Allow insecure server connections when using SSL
+
+curl https://dashboard.kubeflow.awx.im \
+  --resolve dashboard.kubeflow.awx.im:443:127.0.0.1
+```
+
 ------------------
 
 # Events

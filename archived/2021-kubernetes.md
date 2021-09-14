@@ -5,11 +5,6 @@ date: 2021-08-24
 ---
 
 ```zsh
-curl https://dashboard.kubeflow.awx.im \
-  --resolve dashboard.kubeflow.awx.im:443:127.0.0.1
-```
-
-```zsh
 k config get-contexts
 k config set-context --current --namespace new_ns
 
