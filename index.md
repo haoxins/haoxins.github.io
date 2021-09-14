@@ -1,5 +1,4 @@
 * [诗·文](articles/shi.md)
-* [阅读 2022+](articles/reading-watching-and-gaming.md)
 * [推荐阅读清单](articles/reading-recommended.md)
 * [健身, 冥想](articles/meditation-fitness.md)
 * [猫咪的那些事](articles/cat.md)
