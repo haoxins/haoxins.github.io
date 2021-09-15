@@ -22,6 +22,17 @@ date: 2021-09-12
   anomalies, storing data in the form
   of a graph could be useless.
 
+* Even the *best learning algorithm* on the
+  **wrong data** produces the **wrong results**.
+
+* For complex problems, data often matters
+  more than algorithms.
+  - Increasing the amount of data available
+    during the training phase improved the
+    performance of all the learners.
+
+* Data concerns can be summarized in four categories:
+
 ## Graph data engineering
 
 ## Graphs in machine learning applications
