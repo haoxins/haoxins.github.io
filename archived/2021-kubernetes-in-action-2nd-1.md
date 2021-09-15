@@ -374,6 +374,26 @@ spec:
   - send an `HTTP GET` request to the
     application in the container.
 
+* Another problem with `HTTP GET` *post-start* hooks
+  is that Kubernetes doesn't treat the hook as failed
+  if the HTTP server responds with status code
+  such as `404 Not Found`.
+
+* If the `imagePullPolicy` is set to `Always` and
+  the image registry is *offline*, the container will
+  not run even if the same image
+  is already stored locally.
+
+* When the first *init container* is complete, the
+  image for the *next init container* is pulled and
+  the container is started. This process is repeated
+  until all init containers are successfully completed.
+
+* Init containers are normally only executed once.
+  Even if one of the pod's main containers is
+  terminated later, the pod's init containers
+  are not re-executed.
+
 ## Mounting storage volumes into the Pod's containers
 
 ## Persisting application data with PersistentVolumes
