@@ -9,6 +9,19 @@ date: 2021-09-12
 
 ## Machine learning and graphs: An introduction
 
+* When you face new problems or tasks that you
+  would like to solve with a computer program,
+  the following questions can help you
+  decide whether to use machine learning:
+  - Is the specific task *too complex to be programmed*?
+  - Does the task require any sort of
+    *adaptivity throughout its life*?
+
+* In *stream analytics*, in which it is necessary
+  to process a stream of data to reveal short-term
+  anomalies, storing data in the form
+  of a graph could be useless.
+
 ## Graph data engineering
 
 ## Graphs in machine learning applications
