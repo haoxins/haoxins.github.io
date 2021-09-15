@@ -394,6 +394,10 @@ spec:
   terminated later, the pod's init containers
   are not re-executed.
 
+* When all *init containers* are successfully
+  completed, the pod's regular containers
+  are all created in parallel.
+
 ## Mounting storage volumes into the Pod's containers
 
 ## Persisting application data with PersistentVolumes

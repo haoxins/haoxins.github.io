@@ -9,13 +9,15 @@ k config get-contexts
 k config set-context --current --namespace new_ns
 
 k exec --stdin --tty pod_name -- bash
-
-k api-resources
-
-k explain <kind>
+k exec --stdin --tty pod_name -c container_name -- bash
 ```
 
 * Options
+
+```zsh
+k api-resources
+k explain
+```
 
 ```zsh
 k logs pod_name -f --all-containers
@@ -117,6 +119,8 @@ k get secret \
   $kiali_token_name \
   -o jsonpath={.data.token} | base64 -d
 ```
+
+* [Known Problem: Uninstall Hangs](https://kiali.io/documentation/latest/installation-guide#_known_problem_uninstall_hangs)
 
 ### WebAssembly
 
