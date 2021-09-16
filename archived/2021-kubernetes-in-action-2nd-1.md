@@ -8,7 +8,7 @@ date: 2021-08-30
   - https://www.manning.com/books/kubernetes-in-action-second-edition
 
 > Each application must be small enough to
-  fit on one of the worker nodes.
+  fit on *one of* the worker nodes.
 
 * a Kubernetes cluster consists of nodes divided into **two groups**:
   - A set of **master nodes** that host the *Control Plane* components,
@@ -397,6 +397,20 @@ spec:
 * When all *init containers* are successfully
   completed, the pod's regular containers
   are all created in parallel.
+
+* Perhaps surprisingly, if the restart policy is
+  set to `Never` and the startup hook fails,
+  the pod's status is shown as `Completed`
+  *even though the post-start hook failed*.
+
+* The pod's containers are terminated in parallel.
+
+* Any time you delete a pod, the pod's
+  `terminationGracePeriodSeconds` determines the
+  amount of time the pod is given to shut down,
+  but you can override this time when you execute
+  the `kubectl delete` command using the
+  `--grace-period` command line option.
 
 ## Mounting storage volumes into the Pod's containers
 
