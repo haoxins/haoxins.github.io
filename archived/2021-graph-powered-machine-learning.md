@@ -32,6 +32,33 @@ date: 2021-09-12
     performance of all the learners.
 
 * Data concerns can be summarized in four categories:
+  - Insufficient quantity of data
+  - Poor quality of data
+  - Nonrepresentative data
+  - Irrelevant features
+
+* *Feature selection* and *feature extraction* represent
+  two important tasks during the preparation of data.
+
+* Data management constraints and requirements
+  - Managing big data
+  - Designing a flexible schema
+  - Developing efficient access patterns
+
+* Performance is a complex topic in machine learning
+  because it can be related to multiple factors:
+  - Predictive accuracy
+  - Training performance
+  - Prediction performance
+
+* In this context, graphs could provide the proper
+  storage mechanism for both source and model data,
+  reducing the access time required to read data as
+  well as offering multiple algorithmic techniques
+  for improving the accuracy of the predictions.
+
+* The model's structure is related directly to the
+  specific algorithm or the algorithm class employed.
 
 ## Graph data engineering
 
