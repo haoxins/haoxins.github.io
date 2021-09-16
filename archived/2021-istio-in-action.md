@@ -315,7 +315,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "webapp.istioinaction.io"
+    - webapp.istioinaction.io
 ```
 
 ```zsh
@@ -337,7 +337,7 @@ metadata:
   name: webapp-vs-from-gw
 spec:
   hosts:
-  - "webapp.istioinaction.io"
+  - webapp.istioinaction.io
   gateways:
   - coolstore-gateway
   http:
@@ -376,7 +376,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "webapp.istioinaction.io"
+    - webapp.istioinaction.io
     tls:
       httpsRedirect: true
   - port:
@@ -388,7 +388,7 @@ spec:
       serverCertificate: /etc/istio/ingressgateway-certs/tls.crt
       privateKey: /etc/istio/ingressgateway-certs/tls.key
     hosts:
-    - "webapp.istioinaction.io"
+    - webapp.istioinaction.io
 ```
 
 * **mTLS**
@@ -407,7 +407,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "webapp.istioinaction.io"
+    - webapp.istioinaction.io
   - port:
       number: 443
       name: https
@@ -416,7 +416,7 @@ spec:
       mode: MUTUAL
       credentialName: webapp-credential-mtls
     hosts:
-    - "webapp.istioinaction.io"
+    - webapp.istioinaction.io
 ```
 
 ```zsh
@@ -443,7 +443,7 @@ spec:
       mode: SIMPLE
       credentialName: webapp-credential
     hosts:
-    - "webapp.istioinaction.io"
+    - webapp.istioinaction.io
   - port:
       number: 443
       name: https-catalog
@@ -452,7 +452,7 @@ spec:
       mode: SIMPLE
       credentialName: catalog-credential
     hosts:
-    - "catalog.istioinaction.io"
+    - catalog.istioinaction.io
 ```
 
 * *Server Name Indication* (**SNI**)
@@ -487,7 +487,7 @@ spec:
       name: tcp-sni
       protocol: TLS
     hosts:
-    - "simple-sni-1.istioinaction.io"
+    - simple-sni-1.istioinaction.io
     tls:
       mode: PASSTHROUGH
 ```
@@ -627,14 +627,14 @@ metadata:
   name: catalog-vs-from-gw
 spec:
   hosts:
-  - "catalog.istioinaction.io"
+  - catalog.istioinaction.io
   gateways:
   - catalog-gateway
   http:
   - match:
     - headers:
         x-istio-cohort:
-          exact: "internal"
+          exact: internal
     route:
     - destination:
         host: catalog
@@ -983,7 +983,7 @@ spec:
     relabelings:
     - action: keep
       sourceLabels: [__meta_kubernetes_pod_container_name]
-      regex: "istio-proxy"
+      regex: istio-proxy
     - action: keep
       sourceLabels: [
         __meta_kubernetes_pod_annotationpresent_prometheus_io_scrape]
@@ -1152,14 +1152,14 @@ spec:
     strategy: anonymous
   deployment:
     accessible_namespaces:
-    - '**'
+    - "**"
     image_version: operator_version
   external_services:
     prometheus:
       cache_duration: 10
       cache_enabled: true
       cache_expiration: 300
-      url: "http://prom-kube-prometheus-stack-prometheus.prometheus:9090"
+      url: http://prom-kube-prometheus-stack-prometheus.prometheus:9090
 ```
 
 * Kiali
