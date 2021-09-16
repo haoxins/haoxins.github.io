@@ -66,6 +66,29 @@ date: 2021-09-12
   called the *tail*, or *start* node, and $$ V_j $$ is
   called the *head*, or *end* node.
 
+* Two vertices `x` and `y` of `G` are defined as
+  **adjacent**, or **neighbors**, if `{x, y}` is an
+  edge of `G`. The edge $$ E_{ij} $$ connecting them
+  is said to be **incident** on the
+  two vertices $$ V_i $$ and $$ V_j $$.
+
+* One of the most important properties of a vertex
+  in a graph is its **degree**, defined as the total
+  number of edges incident to that vertex, which is
+  also equal to the number of neighbors of that vertex.
+
+* In a *directed* graph, the degree of a vertex
+  $$ V_i $$ is split into the *`in-degree`* of the vertex,
+  defined as the number of edges for which $$ V_i $$ is
+  their *end node* (the *head* of the arrow) and the
+  *`out-degree`* of the vertex, which is the number of
+  edges for which $$ V_i $$ is their *start node*
+  (the *tail* of the arrow).
+
+* A **path** with no repeating vertices is called a
+  **simple path**. A **cycle** is a path in which the
+  *first and the last vertex coincide*.
+
 ## Graph data engineering
 
 ## Graphs in machine learning applications
