@@ -60,11 +60,11 @@ date: 2021-09-12
 * The model's structure is related directly to the
   specific algorithm or the algorithm class employed.
 
-* In directed graphs, an edge $$ E_ij $$ can be
+* In *directed* graphs, an edge $$ E_{ij} $$ can be
   traversed from $$ V_i $$ to $$ V_j $$ but not
   in the opposite direction; $$ V_i $$ is
-  called the tail, or start node, and $$ V_j $$ is
-  called the head, or end node.
+  called the *tail*, or *start* node, and $$ V_j $$ is
+  called the *head*, or *end* node.
 
 ## Graph data engineering
 
