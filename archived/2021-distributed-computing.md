@@ -556,4 +556,9 @@ and supports version v0.22 of Knative Serving and Eventing.
 
 ### JDK 17 (LTS)
 
+* [Oracle Releases Java 17](https://www.oracle.com/news/announcement/oracle-releases-java-17-2021-09-14/)
+  - *2021-09-14*
+  - [JDK 17](https://openjdk.java.net/projects/jdk/17/)
+  - [JEP 414: Vector API (Second Incubator)](https://openjdk.java.net/jeps/414)
+
 * [ZGC | What's new in JDK 16](https://malloc.se/blog/zgc-jdk16)
