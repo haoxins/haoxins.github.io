@@ -120,7 +120,7 @@ k get secret \
 ### Debug
 
 ```zsh
-kubectl logs -n istio-system -l app=istiod --tail=10000
+k logs -n istio-system -l app=istiod --tail=10000
 ```
 
 ## Jaeger

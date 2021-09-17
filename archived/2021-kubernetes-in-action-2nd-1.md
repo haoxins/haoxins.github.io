@@ -414,6 +414,17 @@ spec:
 
 ## Mounting storage volumes into the Pod's containers
 
+* A *volume* is defined at the *pod level* and then
+  mounted at the desired location in the container.
+
+* The lifecycle of a volume is tied to the lifecycle
+  of the entire pod and is independent of the
+  lifecycle of the container in which it is mounted.
+
+* All volumes in a pod are created when the pod is
+  set up - *before* any of its containers are started.
+  They are torn down when the pod is shut down.
+
 ## Persisting application data with PersistentVolumes
 
 ## Configuring applications using ConfigMaps, Secrets, and the Downward API
