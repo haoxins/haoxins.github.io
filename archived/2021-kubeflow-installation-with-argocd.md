@@ -100,6 +100,8 @@ kubectl port-forward \
 
 ### External access
 
+* [GCP Cloud DNS](https://cloud.google.com/dns)
+
 * [GKE Ingress: HTTP(S) Load Balancer](https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer)
   - [Create Ingress](https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer#creating_an_ingress_resource)
   - [kubernetes/ingress-gce](https://github.com/kubernetes/ingress-gce)

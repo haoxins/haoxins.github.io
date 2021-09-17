@@ -58,7 +58,6 @@ k get envoyfilter -n istio-system
 ```
 
 ```zsh
-# 优先使用 Kiali !!!
 istioctl analyze -n istio-system
 ```
 
@@ -66,12 +65,6 @@ istioctl analyze -n istio-system
 k get svc istio-ingressgateway \
   -n istio-system \
   -o yaml
-```
-
-```zsh
-istioctl pc routes deploy/istio-ingressgateway \
-  -n istio-system \
-  --name http.80
 ```
 
 ```zsh
@@ -123,6 +116,12 @@ k get secret \
 * [Known Problem: Uninstall Hangs](https://kiali.io/documentation/latest/installation-guide#_known_problem_uninstall_hangs)
 
 ### WebAssembly
+
+### Debug
+
+```zsh
+kubectl logs -n istio-system -l app=istiod --tail=10000
+```
 
 ## Jaeger
 
