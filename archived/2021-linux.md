@@ -14,8 +14,6 @@ date: 2021-02-17
 
 * [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
-* cURL
-
 ```zsh
 # -S, --show-error
 #   Show error even when -s is used
@@ -26,6 +24,13 @@ date: 2021-02-17
 
 curl https://dashboard.kubeflow.awx.im \
   --resolve dashboard.kubeflow.awx.im:443:127.0.0.1
+
+curl -H "Host: dashboard.kubeflow.awx.im" \
+  https://localhost:8443
+
+nc -zv -w 3 dashboard.kubeflow.awx.im 443
+
+netstat -tulpn | grep LISTEN
 ```
 
 ------------------
