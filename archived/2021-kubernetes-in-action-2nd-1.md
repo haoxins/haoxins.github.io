@@ -452,7 +452,7 @@ spec:
     Kubernetes objects through files.
   - **`persistentVolumeClaim`**
   - **`csi`**: A pluggable way of adding storage
-    via the Container Storage Interface.
+    via the *Container Storage Interface*.
 
 ## Persisting application data with PersistentVolumes
 
