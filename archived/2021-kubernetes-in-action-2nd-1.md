@@ -425,6 +425,35 @@ spec:
   set up - *before* any of its containers are started.
   They are torn down when the pod is shut down.
 
+* While technologies such as `Network File System`
+  (**NFS**) allow you to attach the volume in
+  `read/write` mode on multiple computers, other
+  technologies typically available in cloud environments,
+  such as the *Google Compute Engine Persistent Disk*,
+  allow the volume to be used either in `read/write`
+  mode on a single cluster node, or in
+  `read-only` mode on many nodes.
+
+* When you add a volume to a pod, you must specify the
+  volume type. A wide range of volume types is available.
+  - **`emptyDir`**: A simple directory that allows the
+    pod to store data for the duration of its life cycle.
+  - **`hostPath`**: Used for mounting files from the
+    *`worker node's filesystem`* into the pod.
+  - **`nfs`**
+  - `gcePersistentDisk`, `awsElasticBlockStore`
+  - `azureFile`, `azureDisk`
+  - **`configMap`**
+  - **`secret`**
+  - **`downwardAPI`**
+  - **`projected`**
+  - Special types of volumes used to
+    expose information about the pod and other
+    Kubernetes objects through files.
+  - **`persistentVolumeClaim`**
+  - **`csi`**: A pluggable way of adding storage
+    via the Container Storage Interface.
+
 ## Persisting application data with PersistentVolumes
 
 ## Configuring applications using ConfigMaps, Secrets, and the Downward API
