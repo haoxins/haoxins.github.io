@@ -559,6 +559,24 @@ kubectl get node node_name -o json \
 
 ## Persisting application data with PersistentVolumes
 
+* To make pod manifests *portable* across different
+  cluster environments, the environment-specific
+  information about the actual storage volume is
+  moved to a *`PersistentVolume`* object.
+  - A *`PersistentVolumeClaim`* object connects the
+    pod to this *`PersistentVolume`* object.
+
+* Before a user can use a *persistent volume* in
+  their pods, they must first *claim* the volume by
+  creating a `PersistentVolumeClaim` object.
+  - After claiming the volume, the user has exclusive
+    rights to it and can use it in their pods.
+  - They can delete the pod at any time, and they
+    won't lose ownership of the persistent volume.
+  - When the volume is no longer needed, the user
+    releases it by *deleting* the
+    `PersistentVolumeClaim` object.
+
 ## Configuring applications using ConfigMaps, Secrets, and the Downward API
 
 ## Organizing API objects using labels, selectors, and Namespaces
