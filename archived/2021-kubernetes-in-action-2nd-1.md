@@ -481,6 +481,43 @@ spec:
       mountPath: /data/db
 ```
 
+* The files in an `emptyDir` volume are stored
+  in a directory in the *host node's filesystem*.
+  It's nothing but a normal file directory.
+  - If you delete the pod, the directory is deleted.
+    This means that the data is lost once again.
+  - Creating the `emptyDir` volume in `memory` is
+    also a good idea whenever it's
+    used to store sensitive data.
+  - The size of an `emptyDir` volume can be limited
+    by setting the `sizeLimit` field.
+
+```yaml
+volumes:
+  - name: content
+    emptyDir:
+      medium: Memory
+```
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: quiz
+spec:
+  volumes:
+  - name: quiz-data
+    gcePersistentDisk:
+      pdName: quiz-data
+      fsType: ext4
+  containers:
+  - name: mongo
+    image: mongo
+    volumeMounts:
+    - name: quiz-data
+      mountPath: /data/db
+```
+
 ## Persisting application data with PersistentVolumes
 
 ## Configuring applications using ConfigMaps, Secrets, and the Downward API
