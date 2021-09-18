@@ -81,7 +81,6 @@ def gen_contents(sub_path):
             lines = f.readlines()
 
             year = i["year"]
-            # global last_year
             if year != None and year != last_year:
                 last_year = year
                 index_contents.append(f"### {last_year}")

@@ -1,5 +1,5 @@
 ---
-title: Kubernetes stack
+title: Kubernetes stack and cases
 description: 汉下白登道, 胡窥青海湾. 由来征战地, 不见有人还.
 date: 2021-08-24
 ---
@@ -72,15 +72,18 @@ k exec -it deploy/istiod \
   -n istio-system \
   -- curl localhost:15014/metrics
 
+# Aliases:
+#   proxy-config, pc
+
 istioctl pc secret \
   deploy/istio-ingressgateway \
   -n istio-system
 
-istioctl proxy-config routes \
+istioctl pc routes \
   deploy/istio-ingressgateway \
   -n istio-system
 
-istioctl proxy-config listeners \
+istioctl pc listeners \
   deploy/istio-ingressgateway \
   -n istio-system
 
