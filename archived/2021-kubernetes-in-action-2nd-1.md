@@ -518,6 +518,45 @@ spec:
       mountPath: /data/db
 ```
 
+* you can't mount the same *GCE Persistent Disk*
+  on multiple hosts *simultaneously* in `read/write`
+  mode. You can only mount it on multiple hosts
+  if you use the `read-only` mode.
+
+* Use the following command to see which
+  network volumes that are attached to a node:
+
+```zsh
+kubectl get node node_name -o json \
+  | jq .status.volumesAttached
+```
+
+* A *network volume* is mounted by the *host node*,
+  and then the *pod* is given access to the
+  *mount point*.
+* The underlying storage technology may not allow
+  a volume to be attached to more than one node
+  at a time in *`read/write` mode*, but multiple
+  pods on the *same node* can all use the
+  volume in *`read/write` mode*.
+
+* Replicas of the same pod typically can't use
+  the same network volume in `read/write` mode.
+
+* A **`hostPath`** volume points to a specific file
+  or directory in the filesystem of the host node.
+  Pods running on the same node and using the same
+  path in their `hostPath` volume have access to
+  the same files, whereas pods on other nodes do not.
+
+* Typically, a **`hostPath`** volume is used in cases
+  where the pod needs to read or write files in the
+  node's filesystem that the processes running on the
+  node read or generate, such as *system-level logs*.
+  - The *`hostPath`* volume type is one of the
+    *most dangerous volume* types in Kubernetes and
+    is usually reserved for use in privileged pods only.
+
 ## Persisting application data with PersistentVolumes
 
 ## Configuring applications using ConfigMaps, Secrets, and the Downward API
