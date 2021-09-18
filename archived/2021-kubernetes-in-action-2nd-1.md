@@ -454,6 +454,33 @@ spec:
   - **`csi`**: A pluggable way of adding storage
     via the *Container Storage Interface*.
 
+* **`emptyDir`**
+  - This volume type is used in *single-container pods*
+    when data must be preserved even if the
+    container is restarted.
+  - It's also used when the container's filesystem
+    is marked *`read-only`*, and you want part of it
+    to be writable.
+  - In pods with two or more containers, an *`emptyDir`*
+    volume is used to share data between them.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: quiz
+spec:
+  volumes:
+  - name: quiz-data
+    emptyDir: {}
+  containers:
+  - name: mongo
+    image: mongo
+    volumeMounts:
+    - name: quiz-data
+      mountPath: /data/db
+```
+
 ## Persisting application data with PersistentVolumes
 
 ## Configuring applications using ConfigMaps, Secrets, and the Downward API
