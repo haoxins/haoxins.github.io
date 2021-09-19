@@ -577,6 +577,9 @@ kubectl get node node_name -o json \
     releases it by *deleting* the
     `PersistentVolumeClaim` object.
 
+* *Multiple pods* can use the same *storage volume* if
+  they refer to the *same persistent volume claim* and
+  therefore transitively to the *same persistent volume*.
 
 ```yaml
 apiVersion: v1
@@ -593,6 +596,58 @@ spec:
     pdName: quiz-data
     fsType: ext4
 ```
+
+* The *`capacity`* of the volume indicates the
+  size of the underlying volume.
+  - Each persistent volume must specify its
+    capacity so that Kubernetes can determine
+    whether a particular persistent volume
+    can meet the requirements specified in
+    the persistent volume claim
+    before it can bind them.
+* Each persistent volume must specify a
+  list of *`accessModes`* it supports.
+  - The access mode determines how many
+    **nodes**, not *pods*, can
+    attach the volume at a time.
+  - *`ReadWriteOnce`*: The volume can be
+    mounted by a *single* worker *node*
+    in *`read/write` mode*.
+  - *`ReadOnlyMany`*: The volume can be
+    mounted on *multiple* worker *nodes*
+    simultaneously in *`read-only` mode*.
+  - *`ReadWriteMany`*: The volume can be
+    mounted in *`read/write` mode* on
+    multiple worker nodes at the same time.
+
+* **Volume Mode**
+  - *Filesystem* (default)
+  - *Block*
+
+```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: quiz-data
+spec:
+  resources:
+    requests:
+      storage: 1Gi
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: ""
+  volumeName: quiz-data
+```
+
+* The field **must be set to an empty string** if you
+  want Kubernetes to bind a `pre-provisioned`
+  persistent volume to this claim instead of
+  *provisioning a new one*.
+
+* If the cluster administrator creates a bunch of
+  persistent volumes with non-descript names,
+  and you *don't care which one you get*,
+  you can skip the `volumeName` field.
 
 
 ## ConfigMaps, Secrets, and the Downward API
