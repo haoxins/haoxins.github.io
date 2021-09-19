@@ -649,6 +649,58 @@ spec:
   and you *don't care which one you get*,
   you can skip the `volumeName` field.
 
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: quiz
+spec:
+  volumes:
+  - name: quiz-data
+    persistentVolumeClaim:
+      claimName: quiz-data
+  containers:
+  - name: mongo
+    image: mongo
+    volumeMounts:
+    - name: quiz-data
+      mountPath: /data/db
+```
+
+* When you no longer plan to deploy pods that
+  will use this claim, you can delete it.
+  This **releases** the persistent volume.
+* You might wonder if you can then *recreate* the
+  claim and access the *same volume and data*.
+* The `STATUS` column shows the volume as `Released`
+  rather than `Available`, as was the case initially.
+* The `CLAIM` column still shows the quiz-data claim
+  to which it was previously bound,
+  even if the claim *no longer exists*.
+* To make the volume available again, you must
+  *delete and recreate* the `PersistentVolume` object.
+  - But will this cause the data stored
+    in the volume to be lost?
+* With a `pre-provisioned` persistent volume like the
+  one at hand, deleting the object is equivalent to
+  deleting a **data pointer**.
+  - The `PersistentVolume` object merely points to a
+    GCE Persistent Disk. It doesn't store the data.
+  - If you delete and recreate the object, you end up
+    with a *new pointer* to the same GCE PD
+    and thus *the same data*.
+* An alternative way of making a persistent volume
+  available again is to edit the `PersistentVolume`
+  object and remove the `claimRef`
+  from the spec section.
+
+* **Reclaim policy**:
+  - `PersistentVolume.spec.persistentVolumeReclaimPolicy`
+  - **`Retain`**: This is the *default* policy for
+    *manually created* persistent volumes.
+  - **`Delete`**: This is the *default* policy for
+    *dynamically provisioned* persistent volumes
+
 
 ## ConfigMaps, Secrets, and the Downward API
 
