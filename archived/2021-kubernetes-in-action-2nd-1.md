@@ -701,6 +701,40 @@ spec:
   - **`Delete`**: This is the *default* policy for
     *dynamically provisioned* persistent volumes
 
+* The *`ReadWriteOnce`* mode doesn't mean that only a
+  single pod can use it, but that a single node can
+  *attach the volume*.
+* You don't need `ReadWriteMany` for multiple pods to
+  write to the volume if they are on the *same node*.
+  - As explained before, the word `"Once"` in
+    `ReadWriteOnce` refers to **nodes**, not **pods**.
+* If the claim supports access mode `ReadOnlyMany`,
+  why can't both nodes attach the volume and
+  run the reader pods? This is caused by the writer pods.
+  The first node attached the persistent volume in
+  *`read-write`* mode. This **prevents** other nodes
+  from attaching the volume, *even in `read-only` mode*.
+* Kubernetes can't *detach the volume* or
+  *change the mode* in which it is attached
+  while it's being used by pods.
+
+* The `ReadOnlyMany` access mode doesn't need
+  further explanation. If no pod mounts the volume in
+  `read-write` mode, any number of pods can use
+  the volume, even on many different nodes.
+
+* When using **manually provisioned** persistent volumes,
+  the lifecycle of the underlying storage volume is not
+  coupled to the lifecycle of the `PersistentVolume` object.
+  - Each time you create the object, its initial status
+    is `Available`.
+  - When a `PersistentVolumeClaim` object appears,
+    the persistent volume is bound to it,
+    if it meets the requirements set forth in the claim.
+  - Until the claim is bound to the volume,
+    it has the status `Pending`; then both the volume
+    and the claim are displayed as `Bound`.
+
 
 ## ConfigMaps, Secrets, and the Downward API
 
