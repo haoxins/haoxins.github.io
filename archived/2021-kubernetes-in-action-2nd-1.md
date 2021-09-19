@@ -577,9 +577,27 @@ kubectl get node node_name -o json \
     releases it by *deleting* the
     `PersistentVolumeClaim` object.
 
-## Configuring applications using ConfigMaps, Secrets, and the Downward API
 
-## Organizing API objects using labels, selectors, and Namespaces
+```yaml
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: quiz-data
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+  - ReadWriteOnce
+  - ReadOnlyMany
+  gcePersistentDisk:
+    pdName: quiz-data
+    fsType: ext4
+```
+
+
+## ConfigMaps, Secrets, and the Downward API
+
+## Organizing objects using labels, selectors, and Namespaces
 
 ## Exposing Pods with Services and Ingresses
 

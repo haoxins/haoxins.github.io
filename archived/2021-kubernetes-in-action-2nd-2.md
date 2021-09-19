@@ -25,6 +25,6 @@ date: 2021-09-07
 
 ## Adding centralized logging, metrics, alerting, and tracing
 
-## Best practices for Kubernetes application development and deployment
+## Best practices for Kubernetes application
 
 ## Extending Kubernetes with CustomResourceDefinitions and operators
