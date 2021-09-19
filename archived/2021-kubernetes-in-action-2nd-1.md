@@ -735,6 +735,27 @@ spec:
     it has the status `Pending`; then both the volume
     and the claim are displayed as `Bound`.
 
+* **dynamic provisioning of persistent volumes**
+  - If your Kubernetes cluster is managed by a
+    cloud provider, it probably already has a
+    persistent volume provisioner configured.
+
+* A Kubernetes cluster can run multiple
+  persistent volume provisioners, and a single
+  provisioner may support several different
+  types of storage volumes.
+  - When creating a claim, you use the
+    `storageClassName` field to specify which
+    storage class you want.
+  - `kubectl get sc`
+
+* Remember that **omitting** the `storageClassName`
+  field causes the *default storage class* to be used,
+  whereas explicitly setting the field to **`""`**
+  *disables dynamic provisioning* and causes an
+  *existing persistent volume* to be selected
+  and bound to the claim.
+
 
 ## ConfigMaps, Secrets, and the Downward API
 
