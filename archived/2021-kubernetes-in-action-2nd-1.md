@@ -756,6 +756,17 @@ spec:
   *existing persistent volume* to be selected
   and bound to the claim.
 
+* You'll notice that `StorageClass` objects have
+  no *`spec`* or *`status`* sections.
+  This is because the object only contains
+  *static* information.
+  - Regardless of what provisioner is used,
+    the volume's *reclaim policy* is set to
+    whatever is specified in the *storage class*.
+
+* In summary, a *`StorageClass`* object
+  represents a class of storage that
+  can be *dynamically provisioned*.
 
 ## ConfigMaps, Secrets, and the Downward API
 
