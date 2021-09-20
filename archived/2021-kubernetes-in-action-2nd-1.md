@@ -879,6 +879,49 @@ spec:
 
 ## ConfigMaps, Secrets, and the Downward API
 
+* Values that the **YAML** parser might
+  interpret as something other than a string
+  must be enclosed in *quotes*.
+  - This includes *numeric* values such as `1234`,
+  - and *Boolean* values such as `true` and `false`.
+  - Some other *special strings* must also be *quoted*,
+    otherwise they would also be interpreted as
+    `Boolean` or other types.
+  - These include the values
+    `true`, `false`, *`yes`*, *`no`*, *`on`*, *`off`*,
+    **`y`**, **`n`**, **`t`**, **`f`**,
+    `null`, and *others*.
+
+```yaml
+kind: Pod
+metadata:
+  name: kiada
+spec:
+  containers:
+  - name: kiada
+    image: luksa/kiada:0.4
+    env:
+    - name: POD_NAME
+      value: kiada
+```
+
+* Since *environment variables* values must be
+  *strings*, you must enclose values that aren't
+  strings in *quotes* to prevent the YAML parser
+  from treating them as anything
+  other than a string.
+
+* Referring to an environment variable
+  in another variable
+
+```yaml
+env:
+- name: POD_NAME
+  value: kiada
+- name: INITIAL_STATUS_MESSAGE
+  value: My name is $(POD_NAME).
+```
+
 ## Organizing objects using labels, selectors, and Namespaces
 
 ## Exposing Pods with Services and Ingresses
