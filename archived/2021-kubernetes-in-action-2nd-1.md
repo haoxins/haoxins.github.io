@@ -1022,6 +1022,24 @@ metadata:
   name: kiada-envoy-config
 ```
 
+* If a config map entry contains
+  *non-UTF-8* byte sequences, it must be
+  defined in the `binaryData` field.
+* The values in this field are `Base64`
+  encoded, which is how *binary* values
+  are represented in YAML.
+* In YAML, you can specify *multi-line values*
+  using a *pipeline* character and
+  appropriate indentation.
+
+* When creating config maps from files,
+  make sure that none of the lines in
+  the file contain **trailing whitespace**.
+* If any line **ends** with **whitespace**,
+  the value of the entry in the manifest
+  is *formatted as a quoted* string with
+  the newline character escaped.
+
 ## Organizing objects using labels, selectors, and Namespaces
 
 ## Exposing Pods with Services and Ingresses
