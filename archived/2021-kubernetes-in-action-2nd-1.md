@@ -888,11 +888,3 @@ spec:
 ## Deploying stateful applications using StatefulSets
 
 ## Running special workloads using DaemonSets, Jobs, and CronJobs
-
-## Understanding the fine details of the Kubernetes API
-
-## Diving deep into the Control Plane
-
-## Diving deep into the Worker Nodes
-
-## Understanding the internal operation of Kubernetes controllers
