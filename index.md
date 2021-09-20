@@ -56,7 +56,6 @@
 * [Kubernetes deep dive](archived/2021-kubernetes-deep-dive.md)
 * [Chaos Mesh](archived/2021-kubernetes-chaos.md)
 * [Kube stack - Argo workflows, Kubeflow pipelines](archived/2021-kubernetes-argo-workflows.md)
-* [Beyond Kubeflow, Argoflow ~](archived/2021-kubeflow-to-argoflow.md)
 * [Kubeflow 遇上 Dapr](archived/2021-kubeflow-integrates-dapr.md)
 * [初识 Kubeflow, 安装~ (Outdated)](archived/2021-kubeflow-installation.md)
 * [初识 Kubeflow, 使用 ArgoCD 安装~ (Outdated)](archived/2021-kubeflow-installation-with-argocd.md)
