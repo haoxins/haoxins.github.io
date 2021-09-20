@@ -23,7 +23,7 @@ k explain
 k logs pod_name -f --all-containers
 k get  po       --all-namespaces
 k get  ev       -w
-k get  po,ev,svc,ns,pv,pvc,secret,deploy
+k get  po,ev,cm,svc,ns,pv,pvc,secret,deploy
 ```
 
 ## Argo
