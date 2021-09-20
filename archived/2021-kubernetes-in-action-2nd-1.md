@@ -795,7 +795,16 @@ spec:
 
 * **Volume binding mode**
   - **`Immediate`**
+  - The provision and binding of the persistent volume
+    takes place *immediately* after the claim is created.
+  - Because the consumer of the claim is unknown at
+    this point, this mode is only applicable to volumes
+    that are can be accessed from *any cluster node*.
   - **`WaitForFirstConsumer`**
+  - The volume is provisioned and bound to the claim
+    when the first pod that uses this claim is created.
+  - This mode is used for *topology-constrained*
+    volume types.
 
 ```yaml
 apiVersion: storage.k8s.io/v1
@@ -818,6 +827,10 @@ spec:
   accessModes:
   - ReadWriteOnce
 ```
+
+* If a persistent volume claim refers to a
+  *non-existent* storage class, the claim remains
+  `Pending` until the storage class is created.
 
 ## ConfigMaps, Secrets, and the Downward API
 
