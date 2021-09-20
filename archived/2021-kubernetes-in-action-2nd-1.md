@@ -929,7 +929,7 @@ env:
 * When you want a variable to contain the
   *literal string* `$(VAR_NAME)` and don't want
   Kubernetes to resolve it, use a *double dollar*
-  sign as in `$${VAR_NAME)`. Kubernetes will remove
+  sign as in `$$(VAR_NAME)`. Kubernetes will remove
   one of the *dollar* signs and skip
   resolving the variable.
 
@@ -944,6 +944,53 @@ env:
   the fully qualified domain name (FQDN)
   of the pod is as follows:
   - `<hostname>.<subdomain>.<pod ns>.svc.<cluster domain>`
+
+* A **`ConfigMap`** is a Kubernetes API object
+  that simply contains a list of `key/value` pairs.
+* The `key/value` pairs in the config map are
+  passed to containers as **environment variables**
+  or **mounted as files** in the container's
+  filesystem via a **configMap volume**.
+* *Keys* in a config map may only consist of
+  *alphanumeric* characters, *dashes*,
+  *underscores*, or *dots*.
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kiada-config
+data:
+  status-message: This message is set in the config map
+```
+
+```yaml
+kind: Pod
+spec:
+  containers:
+  - name: kiada
+    env:
+    - name: INITIAL_STATUS_MESSAGE
+      valueFrom:
+        configMapKeyRef:
+          name: kiada-config
+          key: status-message
+          optional: true
+```
+
+* Using `envFrom` to inject the entire
+  config map into environment variables
+
+```yaml
+kind: Pod
+spec:
+  containers:
+  - name: kiada
+    envFrom:
+    - configMapRef:
+        name: kiada-config
+        optional: true
+```
 
 ## Organizing objects using labels, selectors, and Namespaces
 
