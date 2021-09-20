@@ -768,6 +768,57 @@ spec:
   represents a class of storage that
   can be *dynamically provisioned*.
 
+```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: quiz-data-default
+spec:
+  resources:
+    requests:
+      storage: 1Gi
+  accessModes:
+  - ReadWriteOnce
+```
+
+* This `PersistentVolumeClaim` manifest contains only
+  the storage size request and the desired access mode,
+  but no `storageClassName` field, so the default
+  storage class is used.
+
+* Some types of volumes require this type of behavior,
+  because the system needs to know where the pod is
+  scheduled before it can provision the volume.
+* This is the case with provisioners that create
+  *`node-local`* volumes, such as the one you find
+  in clusters created with the *kind* tool.
+
+* **Volume binding mode**
+  - **`Immediate`**
+  - **`WaitForFirstConsumer`**
+
+```yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: fast
+provisioner: kubernetes.io/gce-pd
+parameters:
+  type: pd-ssd
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: quiz-data-fast
+spec:
+  storageClassName: fast
+  resources:
+    requests:
+      storage: 1Gi
+  accessModes:
+  - ReadWriteOnce
+```
+
 ## ConfigMaps, Secrets, and the Downward API
 
 ## Organizing objects using labels, selectors, and Namespaces
