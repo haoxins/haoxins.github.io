@@ -14,6 +14,7 @@ date: 2018-04-01
 
 ### 2021
 
+
 * [Fluent Python, 2nd Edition](https://book.douban.com/subject/34990079/)
 
 * [100 Go Mistakes: How to Avoid Them]()
