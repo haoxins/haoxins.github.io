@@ -922,6 +922,29 @@ env:
   value: My name is $(POD_NAME).
 ```
 
+* You can only use the `$(VAR_NAME)` syntax to
+  refer to variables defined in the *same manifest*.
+* The referenced variable must be *defined*
+  *before* the variable that *references* it.
+* When you want a variable to contain the
+  *literal string* `$(VAR_NAME)` and don't want
+  Kubernetes to resolve it, use a *double dollar*
+  sign as in `$${VAR_NAME)`. Kubernetes will remove
+  one of the *dollar* signs and skip
+  resolving the variable.
+
+* However, you can use a different approach.
+  If you run the command through a *shell*,
+  you can have the *shell* resolve the variable.
+
+* By default, the hostname is the same as
+  the pod's name, but you can override it using
+  the hostname field in the pod's spec.
+* You can also set the subdomain field so that
+  the fully qualified domain name (FQDN)
+  of the pod is as follows:
+  - `<hostname>.<subdomain>.<pod ns>.svc.<cluster domain>`
+
 ## Organizing objects using labels, selectors, and Namespaces
 
 ## Exposing Pods with Services and Ingresses
