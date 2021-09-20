@@ -14,6 +14,8 @@ date: 2018-04-01
 
 ### 2021
 
+* [Rust in Action](https://book.douban.com/subject/27099617/)
+  - 作为 *Programming Rust, 2nd Edition* 的陪衬, 点缀
 
 * [Fluent Python, 2nd Edition](https://book.douban.com/subject/34990079/)
 
