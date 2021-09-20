@@ -992,6 +992,36 @@ spec:
         optional: true
 ```
 
+* You can combine entries from *multiple config maps*.
+  If two config maps contain the *same key*,
+  the *last one* takes precedence.
+* You can also combine the `envFrom` field with
+  the `env` field if you wish to inject all entries
+  of one config map and particular entries of another.
+* When an environment variable is configured in
+  the `env` field, it takes precedence *over*
+  environment variables set in the `envFrom` field.
+
+* A config map manifest containing a multi-line value
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+binaryData:
+  dummy.bin: n29IJxo+rdJ06cz5...
+data:
+  envoy.yaml: |
+    admin:
+      access_log_path: /var/log/envoy.admin.log
+      address:
+        socket_address:
+          protocol: TCP
+          address: 0.0.0.0
+metadata:
+  creationTimestamp: null
+  name: kiada-envoy-config
+```
+
 ## Organizing objects using labels, selectors, and Namespaces
 
 ## Exposing Pods with Services and Ingresses
