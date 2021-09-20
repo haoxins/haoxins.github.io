@@ -12,9 +12,3 @@ date: 2020-11-05
 ### Interpretable Machine Learning
 * [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
   - A Guide for Making Black Box Models Explainable.
-### Others
-* [Peter Bailis, Highly Available, Seldom Consistent](http://www.bailis.org/blog/)
-  - Data management, distributed systems, and beyond
-  - [Linearizability versus Serializability](http://www.bailis.org/blog/linearizability-versus-serializability/)
-  - [Non-blocking Transactional Atomicity](http://www.bailis.org/blog/non-blocking-transactional-atomicity/)
-  - [HAT, not CAP: Introducing Highly Available Transactions](http://www.bailis.org/blog/hat-not-cap-introducing-highly-available-transactions/)
