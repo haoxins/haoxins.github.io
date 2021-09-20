@@ -834,7 +834,7 @@ spec:
 
 * Kubernetes does not support *changing* the
   *storage class* name in an existing claim.
-  - The part that is mutable is
+  - The part that is **mutable** is
     `spec.resources.requests`, which is where
     you indicate the desired size of the volume.
   - To **resize** the persistent volume, you
@@ -858,6 +858,24 @@ spec:
   typically triggers the deletion of both
   the `PersistentVolume` object and the
   underlying storage volume.
+
+* The Kubernetes scheduler ensures that the
+  pod is always scheduled on the node to
+  which the **local volume** is attached.
+  - *Local persistent volumes* are also
+    better than `hostPath` volumes because
+    they offer much better security.
+
+* **Local persistent volumes** are used when
+  applications need to access disks that are
+  directly attached to nodes.
+  - This affects the *scheduling* of the *pods*,
+    since the pod must be scheduled to one of
+    the nodes that can provide a
+    local persistent volume.
+  - If the pod is subsequently deleted and
+    recreated, it will always be scheduled
+    to the **same node**.
 
 ## ConfigMaps, Secrets, and the Downward API
 
