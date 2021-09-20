@@ -832,6 +832,33 @@ spec:
   *non-existent* storage class, the claim remains
   `Pending` until the storage class is created.
 
+* Kubernetes does not support *changing* the
+  *storage class* name in an existing claim.
+  - The part that is mutable is
+    `spec.resources.requests`, which is where
+    you indicate the desired size of the volume.
+  - To **resize** the persistent volume, you
+    may need to *delete and recreate* the pod
+    that uses the claim.
+  - When the cluster administrator creates a
+    storage class, they can use the
+    `spec.allowVolumeExpansion` field to
+    indicate whether volumes of this
+    class can be *resized*.
+
+* The underlying volume is typically provisioned
+  **asynchronously**. When the process completes,
+  the status of the `PersistentVolume` object
+  changes to `Available`; at this point,
+  the volume is bound to the claim.
+* Users can then deploy pods that refer to the
+  claim to gain access to the underlying
+  storage volume. When the volume is no longer
+  needed, the user deletes the claim. This
+  typically triggers the deletion of both
+  the `PersistentVolume` object and the
+  underlying storage volume.
+
 ## ConfigMaps, Secrets, and the Downward API
 
 ## Organizing objects using labels, selectors, and Namespaces

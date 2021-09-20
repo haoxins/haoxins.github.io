@@ -1601,6 +1601,8 @@ istioctl pc routes deploy/istio-ingressgateway \
   - the *replicated* control planes (**Primary-Primary**)
   - the *external* control plane
 
+## Extending Istio on the request path
+
 ------------------
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
