@@ -1192,6 +1192,13 @@ immutable: true
     They must be stored in the secret under the key
     *`tls.crt`* and *`tls.key`*, respectively.
 
+* Like *config maps*, the maximum size of a
+  secret is approximately `1MB`.
+* For obvious reasons, it's not the best idea to
+  create `YAML` *manifests* for your *secrets*
+  and store them in your version control system,
+  as you do with config maps.
+
 ## Organizing objects using labels, selectors, and Namespaces
 
 ## Exposing Pods with Services and Ingresses
