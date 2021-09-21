@@ -1040,6 +1040,93 @@ metadata:
   is *formatted as a quoted* string with
   the newline character escaped.
 
+* To make config map entries available as
+  files in the container's filesystem,
+  you define a `configMap` volume in the
+  pod and mount it in the container.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kiada-ssl
+spec:
+  volumes:
+  - name: envoy-config
+    configMap:
+      name: kiada-envoy-config
+  containers:
+  - name: envoy
+    image: luksa/kiada-ssl-proxy:0.1
+    volumeMounts:
+    - name: envoy-config
+      mountPath: /etc/envoy
+```
+
+* Because all of the pod's volumes must be
+  set up before the pod's containers can
+  be started, referencing a missing config map
+  in a volume prevents all the containers
+  in the pod from starting, not just the
+  container in which the volume is mounted.
+
+* `configMap` volumes let you specify which
+  config map entries to project into files.
+
+```yaml
+volumes:
+  - name: envoy-config
+    configMap:
+      name: kiada-envoy-config
+      items:
+      - key: envoy.yaml
+        path: envoy.yaml
+```
+
+* The items field specifies the list of
+  config map entries to include in the volume.
+* Each item must specify the key and the
+  file name in the path field.
+* Entries not listed here aren't
+  included in the volume.
+* You can set the default permissions for
+  the files in a `configMap` volume by setting
+  the `defaultMode` field in the volume definition.
+* When specifying file permissions in
+  YAML manifests, make sure you never forget
+  the leading zero, which indicates that
+  the value is in `octal` form. If you omit
+  the zero, the value will be treated as `decimal`.
+* When you use `kubectl get -o yaml` to display
+  the YAML definition of a pod, note that the
+  file permissions are represented
+  as `decimal` values.
+
+* When you update a config map, the **files**
+  in the `configMap` volume are
+  automatically updated.
+* Unlike files, *environment variables* can't
+  be updated while the container is running.
+* However, if the container is restarted for
+  some reason, Kubernetes will use the new
+  config map values when it sets up the
+  environment variables for the new container.
+
+* To prevent users from changing the values
+  in a config map, you can mark the
+  config map as `immutable`
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-immutable-configmap
+data:
+  mykey: myvalue
+  another-key: another-value
+immutable: true
+```
+
 ## Organizing objects using labels, selectors, and Namespaces
 
 ## Exposing Pods with Services and Ingresses
