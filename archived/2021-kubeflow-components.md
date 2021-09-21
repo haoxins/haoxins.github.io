@@ -36,8 +36,9 @@ kfp pipeline upload pipeline.yaml --pipeline-name pipeline-1
 * A pipeline component is a self-contained set of user code,
   packaged as a Docker image,
   that performs one step in the pipeline.
-  - 虽然 Airflow 也有 Docker Operator
-  - 但是 KFP 明显更加范式统一
+  - 虽然 *Airflow* 也有 Docker Operator
+  - 但是 `KFP` 明显更加范式统一
+  - `KFP` 基于 K8s & *Argo workflows*, `dev & debug` 会容易很多
 
 * Kubeflow Pipelines SDK v2
 
