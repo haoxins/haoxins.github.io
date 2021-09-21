@@ -1267,6 +1267,108 @@ spec:
   in an in-memory filesystem (`tmpfs`),
   so they are less likely to be compromised.
 
+```yaml
+containers:
+  - name: my-container
+    env:
+    - name: TLS_CERT
+      valueFrom:
+        secretKeyRef:
+          name: kiada-tls
+          key: tls.crt
+```
+
+* *Kubernetes Downward API*, which allows
+  you to expose pod and container metadata
+  via environment variables or files.
+  - It's simply a way to inject values
+    from the pod's `metadata`, `spec`,
+    or `status` fields down into the container.
+  - You can't use the *Downward API* to inject
+    any field from the pod object.
+    Only *certain fields* are supported.
+
+```
+Field                        Allowed in env    Allowed in volume
+metadata.name
+metadata.namespace
+metadata.uid
+metadata.labels              NO
+metadata.labels['key']
+metadata.annotations         NO
+metadata.annotations['key']
+spec.nodeName                                  NO
+spec.serviceAccountName                        NO
+status.podIP                                   NO
+status.hostIP                                  NO
+```
+
+* Information about the container's computational
+  resource constraints is injected via the
+  `resourceFieldRef` field. They can all be
+  injected into `environment` *variables* and
+  via a `downwardAPI` *volume*.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kiada-ssl
+spec:
+  containers:
+  - name: kiada
+    image: luksa/kiada:0.4
+    env:
+    - name: POD_NAME
+      valueFrom:
+        fieldRef:
+          fieldPath: metadata.name
+    - name: POD_IP
+      valueFrom:
+        fieldRef:
+          fieldPath: status.podIP
+    - name: NODE_NAME
+      valueFrom:
+        fieldRef:
+          fieldPath: spec.nodeName
+    - name: NODE_IP
+      valueFrom:
+        fieldRef:
+          fieldPath: status.hostIP
+```
+
+```yaml
+env:
+- name: MAX_CPU_CORES
+  valueFrom:
+    resourceFieldRef:
+      resource: limits.cpu
+- name: MAX_MEMORY_KB
+  valueFrom:
+    resourceFieldRef:
+      resource: limits.memory
+      divisor: 1k
+```
+
+* Each `resourceFieldRef` can also specify a **divisor**.
+  It specifies which *unit* to use for the value.
+
+* Injecting pod metadata into the container's filesystem
+
+```yaml
+  volumes:
+  - name: pod-meta
+    downwardAPI:
+      items:
+      - path: pod-name.txt
+        fieldRef:
+          fieldPath: metadata.name
+  containers:
+  - name: foo
+    volumeMounts:
+    - name: pod-meta
+      mountPath: /pod-metadata
+```
 
 * ***Projected volumes*** allow you to combine
   information from multiple *config maps*,
