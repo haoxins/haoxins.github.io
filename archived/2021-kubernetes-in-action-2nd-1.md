@@ -1075,12 +1075,12 @@ spec:
 
 ```yaml
 volumes:
-  - name: envoy-config
-    configMap:
-      name: kiada-envoy-config
-      items:
-      - key: envoy.yaml
-        path: envoy.yaml
+- name: envoy-config
+  configMap:
+    name: kiada-envoy-config
+    items:
+    - key: envoy.yaml
+      path: envoy.yaml
 ```
 
 * The items field specifies the list of
@@ -1269,13 +1269,13 @@ spec:
 
 ```yaml
 containers:
-  - name: my-container
-    env:
-    - name: TLS_CERT
-      valueFrom:
-        secretKeyRef:
-          name: kiada-tls
-          key: tls.crt
+- name: my-container
+  env:
+  - name: TLS_CERT
+    valueFrom:
+      secretKeyRef:
+        name: kiada-tls
+        key: tls.crt
 ```
 
 * *Kubernetes Downward API*, which allows
@@ -1356,18 +1356,18 @@ env:
 * Injecting pod metadata into the container's filesystem
 
 ```yaml
-  volumes:
+volumes:
+- name: pod-meta
+  downwardAPI:
+    items:
+    - path: pod-name.txt
+      fieldRef:
+        fieldPath: metadata.name
+containers:
+- name: foo
+  volumeMounts:
   - name: pod-meta
-    downwardAPI:
-      items:
-      - path: pod-name.txt
-        fieldRef:
-          fieldPath: metadata.name
-  containers:
-  - name: foo
-    volumeMounts:
-    - name: pod-meta
-      mountPath: /pod-metadata
+    mountPath: /pod-metadata
 ```
 
 * ***Projected volumes*** allow you to combine
@@ -1393,7 +1393,7 @@ spec:
     projected:
       sources:
       - configMap:
-          name: kiada-envoy-config   B
+          name: kiada-envoy-config
       - secret:
           name: kiada-tls
           items:
