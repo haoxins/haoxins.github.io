@@ -10,7 +10,12 @@ date: 2020-07-22
 
 ------------------
 
-## Data flow
+## Data flow/computing
+
+* Query
+  - SQL              (MySQL)
+  - Streaming/Window (Flink SQL)
+  - Graph
 
 * [Datafuse](https://github.com/datafuselabs/datafuse)
 
