@@ -1267,6 +1267,48 @@ spec:
   in an in-memory filesystem (`tmpfs`),
   so they are less likely to be compromised.
 
+
+* ***Projected volumes*** allow you to combine
+  information from multiple *config maps*,
+  *secrets*, and the *Downward API* into a
+  *single pod volume* that you can then mount
+  in the pod's containers. They behave exactly
+  like the `configMap`, `secret`, and
+  `downwardAPI` volumes you learned about in
+  the previous sections of this chapter.
+  They provide the same features and are
+  configured in almost the same way
+  as the other volume types.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kiada-ssl
+spec:
+  volumes:
+  - name: etc-envoy
+    projected:
+      sources:
+      - configMap:
+          name: kiada-envoy-config   B
+      - secret:
+          name: kiada-tls
+          items:
+          - key: tls.crt
+            path: example-com.crt
+          - key: tls.key
+            path: example-com.key
+            mode: 0600
+  containers:
+  - name: envoy
+    image: envoyproxy/envoy:v1
+    volumeMounts:
+    - name: etc-envoy
+      mountPath: /etc/envoy
+      readOnly: true
+```
+
 ## Organizing objects using labels, selectors, and Namespaces
 
 ## Exposing Pods with Services and Ingresses
