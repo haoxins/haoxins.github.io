@@ -1127,6 +1127,49 @@ data:
 immutable: true
 ```
 
+* When a config map is marked as `immutable`,
+  the Kubelets on the worker nodes that use
+  it don't have to be notified of changes
+  to the `ConfigMap` object.
+  This reduces the load on the API server.
+
+* If you use the `subPath` field to mount
+  individual files instead of the entire
+  `configMap` volume, the file **won't** be
+  **updated** when you modify the config map.
+* To get around this problem, you can mount
+  *the entire volume* in another directory
+  and create a *symbolic link* in the desired
+  location pointing to the file
+  in the other directory.
+
+* Every time you *change* the *config map*,
+  Kubernetes creates a new *timestamped*
+  directory, writes the files to it,
+  and then associates the `..data`
+  *symbolic* link with this new directory,
+  replacing all files *instantaneously*.
+
+* If you use `subPath` in your volume mount
+  definition, this mechanism isn't used.
+  Instead, the file is written directly to
+  the target directory and the file isn't
+  updated when you modify the config map.
+
+* The `data` field in `secrets` corresponds to
+  the `binaryData` field in `config maps`.
+* It can contain `binary` values as
+  `Base64-encoded` strings.
+* The `stringData` field in secrets is
+  equivalent to the `data` field in `config maps`
+  and is used to store plain text values.
+* This `stringData` field in secrets
+  is `write-only`.
+* When you read back the `Secret` object,
+  any values you added to `stringData` will be
+  included in the `data` field as
+  `Base64-encoded` strings.
+
 ## Organizing objects using labels, selectors, and Namespaces
 
 ## Exposing Pods with Services and Ingresses
