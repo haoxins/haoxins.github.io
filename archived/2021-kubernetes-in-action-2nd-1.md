@@ -1232,6 +1232,41 @@ stringData:
   will be displayed in the `data` field as
   `Base64-encoded` values.
 
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kiada-ssl
+spec:
+  volumes:
+  - name: cert-and-key
+    secret:
+      secretName: kiada-tls
+      items:
+      - key: tls.crt
+        path: example-com.crt
+      - key: tls.key
+        path: example-com.key
+        mode: 0600
+  containers:
+  - name: envoy
+    image: envoyproxy/envoy:v1
+    volumeMounts:
+    - name: cert-and-key
+      mountPath: /etc/certs
+      readOnly: true
+```
+
+* When you project the entries of a secret
+  into a container via a *secret volume*,
+  the projected file is not `Base64-encoded`.
+  The application doesn't need to decode the file.
+  The same is true if the secret entries are
+  injected into *environment variables*.
+* The files in a secret volume are stored
+  in an in-memory filesystem (`tmpfs`),
+  so they are less likely to be compromised.
+
 ## Organizing objects using labels, selectors, and Namespaces
 
 ## Exposing Pods with Services and Ingresses
