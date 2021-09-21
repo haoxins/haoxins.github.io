@@ -192,5 +192,9 @@ kube-system
 
 ### Istio
 
-* **Connection reset by peer**
-  - *`EnvoyFilter`*
+* Connection reset by peer
+  - `EnvoyFilter`, `LISTENER`
+* upstream connect error or
+  disconnect/reset before headers.
+  reset reason: connection termination
+  - `AuthorizationPolicy`
