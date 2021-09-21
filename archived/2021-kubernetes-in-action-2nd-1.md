@@ -1170,6 +1170,28 @@ immutable: true
   included in the `data` field as
   `Base64-encoded` strings.
 
+* *Built-in secret type*
+  - *`Opaque`* (Default): This type of secret can
+    contain secret data stored under arbitrary keys.
+  - *`bootstrap.kubernetes.io/token`*: This type of
+    secret is used for tokens that are used when
+    bootstrapping new cluster nodes.
+  - *`kubernetes.io/basic-auth`*: This type of secret
+    stores the *credentials* required for basic
+    authentication. It must contain the
+    `username` and `password` keys.
+  - *`kubernetes.io/service-account-token`*: This type
+    of secret stores a token that identifies
+    a Kubernetes service account.
+  - *`kubernetes.io/ssh-auth`*: This type of secret
+    stores the *private key* used for SSH authentication.
+    The private key must be stored under the
+    key *`ssh-privatekey`* in the secret.
+  - *`kubernetes.io/tls`*: This type of secrets stores
+    a TLS certificate and the associated private key.
+    They must be stored in the secret under the key
+    *`tls.crt`* and *`tls.key`*, respectively.
+
 ## Organizing objects using labels, selectors, and Namespaces
 
 ## Exposing Pods with Services and Ingresses
