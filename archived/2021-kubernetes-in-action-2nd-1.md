@@ -1199,6 +1199,39 @@ immutable: true
   and store them in your version control system,
   as you do with config maps.
 
+```yaml
+apiVersion: v1
+kind: Secret
+data:
+  pass: bXktcGFzc3dvcmQ=
+  user: bXktdXNlcm5hbWU=
+metadata:
+  creationTimestamp: null
+  name: my-credentials
+```
+
+* Since not all sensitive data is in binary form,
+  Kubernetes also allows you to specify plain
+  text values in secrets by using `stringData`
+  instead of the `data` field.
+
+```yaml
+apiVersion: v1
+kind: Secret
+stringData:
+  user: my-username
+  pass: my-password
+```
+
+* The `stringData` field is *`write-only`* and
+  can only be used to set values. If you create
+  this secret and read it back with
+  `kubectl get -o yaml`, the `stringData` field
+  is no longer present.
+* Instead, any entries you specified in it
+  will be displayed in the `data` field as
+  `Base64-encoded` values.
+
 ## Organizing objects using labels, selectors, and Namespaces
 
 ## Exposing Pods with Services and Ingresses
