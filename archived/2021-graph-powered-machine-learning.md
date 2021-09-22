@@ -187,6 +187,21 @@ date: 2021-09-12
 
 ## Graph data engineering
 
+* **Collect**: Data from multiple data
+  sources is gathered and collected.
+* **Store**: The data is stored in a
+  proper way in a single
+  (or occasionally more than one)
+  easy-to-access data store so that
+  it's ready for the next phases.
+* **Clean**: The data is merged, cleaned,
+  and (whenever possible) normalized by
+  using a unified and homogeneous schema.
+* **Access**: The data is available. Multiple
+  views or access patterns are provided to
+  simplify and speed access to the dataset
+  that will be used for training purposes.
+
 ## Graphs in machine learning applications
 
 ## Content-based recommendations
