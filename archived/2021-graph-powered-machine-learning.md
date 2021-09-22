@@ -89,6 +89,31 @@ date: 2021-09-12
   **simple path**. A **cycle** is a path in which the
   *first and the last vertex coincide*.
 
+* We refer to these forces as **surrounding contexts**:
+  factors that exist outside the vertices and edges
+  of a network but nonetheless affect how the
+  network's structure evolves over time.
+
+* Understanding the **surrounding contexts** and the
+  related forces that act on a network helps with
+  machine learning tasks in multiple ways:
+  - Networks are conduits for both wanted
+    and unwanted flows.
+  - Understanding such forces allows the prediction
+    of how the network will evolve over time,
+    and enables data scientists to proactively react
+    to such changes or use them for
+    specific business purposes.
+  - Findings in sociological and psychological
+    disciplines point to the relevance of a
+    person's social network in
+    determining their tastes, preferences,
+    and activities. One of the problems related
+    to recommendation engines is the *cold-start*
+    problem: Social networks and the homophily
+    principle can be used to make a recommendation
+    based on the tastes of connected users.
+
 ## Graph data engineering
 
 ## Graphs in machine learning applications
