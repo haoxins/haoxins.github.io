@@ -4,11 +4,11 @@ description: 天高地迥, 觉宇宙之无穷; 兴尽悲来, 识盈虚之有数.
 date: 2021-05-24
 ---
 
+[研究之美]: https://book.douban.com/subject/7064456/
+
 * 日本原版的封面更好, 哈哈哈
 
 ## 数学女孩5: 伽罗瓦理论
-
-[研究之美]: https://book.douban.com/subject/7064456/
 
 * [数学女孩5: 伽罗瓦理论](https://book.douban.com/subject/35385260/)
   - [结城浩](https://book.douban.com/author/104541/)
@@ -28,6 +28,8 @@ date: 2021-05-24
 ------------------
 
 ## 群论彩图版
+
+* [群论彩图版](https://book.douban.com/subject/34879608/)
 
 * 凯莱图, (Cayley 图)
 
