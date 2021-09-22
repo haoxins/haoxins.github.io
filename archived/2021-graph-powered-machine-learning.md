@@ -114,6 +114,43 @@ date: 2021-09-12
     principle can be used to make a recommendation
     based on the tastes of connected users.
 
+* *Graph-powered* **data management** features include
+  - **Connected sources of truth**: Graphs allow you
+    to merge multiple data sources into a
+    single uniform, connected dataset ready for
+    the training phase.
+  - This feature represents a great advantage by
+    reducing *data sparsity*, increasing the amount
+    of data available, and simplifying data management.
+  - **Knowledge graphs**: Building on the previous
+    idea, knowledge graphs provide a homogeneous
+    data structure for combining not only data
+    sources, but also prediction models, manually
+    provided data, and external sources of knowledge.
+  - The resulting data is machine ready and can
+    be used during training, prediction,
+    or visualization.
+  - **Fast data access**: Tables provide a single
+    access pattern related to row and column filters.
+    *Graphs*, on the other hand, provide multiple
+    access points to the same set of data.
+  - This feature improves performance by reducing
+    the amount of data to be accessed to the
+    baseline minimum for the specific set of needs.
+  - **Data enrichment**: In addition to making it
+    easy to extend existing data with external
+    sources, the schemaless nature of graphs
+    and the access patterns provided within graph
+    databases help with data cleaning and merging.
+  - **Feature selection**: Identifying relevant
+    features in a dataset is key in several
+    machine learning tasks, such as classification.
+  - By providing fast access to data and multiple
+    query patterns, graphs speed feature
+    identification and extraction.
+
+* *Graph-powered* **data analysis** features include
+  - **Graph algorithms**: Several types of graph
 ## Graph data engineering
 
 ## Graphs in machine learning applications
