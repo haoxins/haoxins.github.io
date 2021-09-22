@@ -151,6 +151,40 @@ date: 2021-09-12
 
 * *Graph-powered* **data analysis** features include
   - **Graph algorithms**: Several types of graph
+    algorithms, such as *clustering*, *page ranking*,
+    and *link analysis* algorithms, are useful for
+    identifying insights in the data and for
+    analysis purposes.
+  - Moreover, they can be used as a first data
+    preprocessing step in a more
+    complex analysis process.
+  - **Graph-accelerated machine learning**: The
+    graph-powered feature extraction discussed
+    earlier is an example of how graphs can
+    speed or improve the quality of the
+    learning system. Graphs can help in
+    *filtering*, *cleaning*, *enriching*, and
+    *merging* data before or
+    during training phases.
+  - **Network dynamics**: Awareness of the
+    surrounding contexts and related forces
+    that act on networks allows you not only
+    to understand network dynamics, but also
+    to use them to improve the quality
+    of the predictions.
+  - **Mixing models**: Multiple models can
+    coexist in the same graph, taking advantage
+    of flexible and fast access patterns,
+    provided that they can be merged during
+    the prediction phase. This feature improves
+    final accuracy. Moreover, the same model
+    sometimes can be used in different ways.
+  - **Fast model access**: Real-time use
+    requires fast predictions, which implies
+    a model that can be accessed as fast as
+    possible. Graphs provide the right
+    patterns for these scopes.
+
 ## Graph data engineering
 
 ## Graphs in machine learning applications
