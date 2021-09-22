@@ -177,7 +177,9 @@ premium-rwo   pd.csi.storage.gke.io  pd-ssd
 
 ## Others
 
-* **GKE**, `1.20.8-gke`
+* **GKE**
+  - 2021-09: Updates `default`
+    kubectl from `1.18` to `1.20`.
 
 ```zsh
 # Default namespaces
