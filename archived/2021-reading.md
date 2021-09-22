@@ -36,6 +36,8 @@ date: 2018-04-01
 * [嗨翻C语言](https://book.douban.com/subject/25703412/)
   - 原作名: *Head First C*
   - **重温我的第一门编程语言**
+  - 从 **C**, 再到 **C**
+  - 我其实不太喜欢 *Head First xxx* 的风格
 
 * [Real-World Cryptography](https://book.douban.com/subject/34615742/)
   - https://www.manning.com/books/real-world-cryptography

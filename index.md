@@ -25,7 +25,6 @@
 * [Programming Rust - 2nd Edition (上)](archived/2021-programming-rust-2nd-1.md)
 * [Programming language](archived/2021-programming-language.md)
 * [Fluent Python, 2nd Edition](archived/2021-programming-fluent-python-2nd.md)
-* [嗨翻C语言 Head First C](archived/2021-programming-c.md)
 * [100 Go Mistakes, How to Avoid Them](archived/2021-programming-100-go-mistakes.md)
 * [程序员修炼之道 第2版](archived/2021-pragmatic-programmer.md)
 * [pili](archived/2021-pili.md)
