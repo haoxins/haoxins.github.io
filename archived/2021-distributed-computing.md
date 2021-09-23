@@ -556,14 +556,6 @@ The Knative Operator v0.22 release contains bug fixes
 and supports version v0.22 of Knative Serving and Eventing.
 ```
 
-### Dex
-
-* [Dex](https://github.com/dexidp/dex)
-  - A Federated OpenID Connect Provider
-  - 如果本人记得没错, OpenID 曾经一度凉凉
-  - 看来 CNCF 把他救活了
-  - 意义: 各种内部系统的无缝整合, Grafana, Flink Web UI
-
 ### JDK 17 (LTS)
 
 * [Oracle Releases Java 17](https://www.oracle.com/news/announcement/oracle-releases-java-17-2021-09-14/)
