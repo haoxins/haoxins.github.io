@@ -1603,6 +1603,15 @@ istioctl pc routes deploy/istio-ingressgateway \
 
 ## Extending Istio on the request path
 
+* The following are examples of extension:
+  - integrating with rate limiting or
+    external authorization services
+  - adding, removing, or modifying headers
+  - calling out to other services to enrich a request payload
+  - implement some custom protocols like
+    `HMAC` signing/verification
+  - non-standard security token handling
+
 ------------------
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
