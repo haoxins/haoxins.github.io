@@ -60,6 +60,7 @@
 * [初识 Kubeflow, 使用 ArgoCD 安装~ (Outdated)](archived/2021-kubeflow-installation-with-argocd.md)
 * [初识 Kubeflow, Components~](archived/2021-kubeflow-components.md)
 * [Beyond Kubeflow, Cloud Native MLOps](archived/2021-kubeflow-beyond.md)
+* [Istio & WebAssembly](archived/2021-istio-webassembly.md)
 * [Istio in Action](archived/2021-istio-in-action.md)
 * [Graph-Powered Machine Learning](archived/2021-graph-powered-machine-learning.md)
 * [Graph Databases - Neo4j](archived/2021-graph-database.md)
