@@ -21,6 +21,16 @@ date: 2021-04-10
 
 ## 2021
 
+* [An update on Memory Safety in Chrome](https://security.googleblog.com/2021/09/an-update-on-memory-safety-in-chrome.html)
+  - September 21, 2021
+
+```
+We've started to land limited, non-user-facing
+Rust experiments in the Chromium source code tree,
+but we're not yet using it in production versions
+of Chrome - we remain in an experimental phase.
+```
+
 * [Diesel 2.0](https://github.com/diesel-rs/diesel/milestone/16)
   - 期待 2021 发布
   - BTW: `1.0.0`, `2018-01`
