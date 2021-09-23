@@ -49,6 +49,13 @@ date: 2021-01-28
 * [卡洛·罗韦利 Carlo Rovelli](https://book.douban.com/author/1987750/)
   - 最近几年, 这个哥们几乎每年一本书 :)
 
+------------------
+
+* [Helgoland](https://book.douban.com/subject/35265189/)
+  - 等不及翻译了, 京东 (jd.com) 预定了英文版
+
+------------------
+
 * [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
   - 在 2021 年, 五一小长假 期间, 又重新读了一遍
   - 五一出游, 书留在了民宿 `在田间`
@@ -58,9 +65,6 @@ date: 2021-01-28
   - 在 2021 年, 五一小长假 前后, 又重新读了一遍
   - 赠与 @`Jan Li`, 因为这本书有点**哲学**向
   - [Forget time - Carlo Rovelli (August 2008)](https://arxiv.org/pdf/0903.3832.pdf)
-
-* [Helgoland](https://book.douban.com/subject/35265189/)
-  - 等不及翻译了, 京东 (jd.com) 预定了英文版
 
 ```
 作者文笔颇具诗意
