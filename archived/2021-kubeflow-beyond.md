@@ -46,6 +46,28 @@ date: 2021-09-13
   exchanged for an `access_token` and an `id_token`.
 * There are *three types* of tokens in OIDC:
   `id_token`, `access_token` and `refresh_token`.
+
+* `OIDC` auth from external
+  - [Google OAuth 2.0](https://developers.google.com/identity/protocols/oauth2/openid-connect)
+  - [OAuth2 Proxy](https://github.com/oauth2-proxy/oauth2-proxy)
+  - Going with the `WASM` extensibility in *Istio*,
+    managing the `OIDC` flow may be a good candidate
+    as a `WASM` extension in the future.
+* `OIDC` auth on cluster
+  - [Dex](https://github.com/dexidp/dex)
+  - *Dex*, no session!
+  - [Keycloak](https://github.com/keycloak/keycloak)
+* [OIDC AuthService](https://github.com/arrikto/oidc-authservice)
+  - `OIDC AuthService` stores *sessions* and other state
+    in a local file using `BoltDB`.
+  - Kubeflow *built-in* solution, should be deprecated!
+* Starting with *Envoy* `1.16` (*Istio* `>= 1.8`)
+  there is a new filter called `OAuth2`.
+  - It does a token request (exactly how `oauth2-proxy` does),
+    but makes it internally
+    (directly from the *Envoy* component),
+    so no additional tooling is needed.
+
 ## Storage Backend
 
 * katib-mysql
