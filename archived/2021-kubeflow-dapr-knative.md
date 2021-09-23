@@ -1,5 +1,5 @@
 ---
-title: Kubeflow, Knative and Dapr
+title: Kubeflow and Dapr, not Knative
 description: 明月出天山, 苍茫云海间. 长风几万里, 吹度玉门关.
 date: 2021-08-24
 ---
@@ -38,4 +38,4 @@ date: 2021-08-24
 
 ### Knative Eventing
 
-* *Eventing* 的存在, 没有意义, 不用, 忽略~
+* *Eventing* 的存在, 没有意义, 忽略~
