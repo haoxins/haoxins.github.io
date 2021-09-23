@@ -9,6 +9,18 @@ date: 2021-09-10
 
 ## Introduction
 
+> The slightest mistake could be deadly.
+
+* While a typical cryptography book usually
+  starts with the discovery of cryptography
+  and takes you through its history, I think
+  that it makes little sense for me to
+  kick off things that way. I want to
+  *tell you about the practical*.
+
+* *symmetric* encryption algorithm
+  - *secret key*
+
 ## Hash functions
 
 ## Message authentication codes
