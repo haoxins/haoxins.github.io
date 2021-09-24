@@ -1697,6 +1697,11 @@ istioctl pc routes deploy/istio-ingressgateway \
   configuring a workload with the `EnvoyFilter`
   resource.
 
+```zsh
+istioctl pc listener deploy/webapp.istioinaction \
+  --port 15006 --address 0.0.0.0 -o yaml
+```
+
 ------------------
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
