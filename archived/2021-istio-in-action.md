@@ -1664,6 +1664,39 @@ istioctl pc routes deploy/istio-ingressgateway \
 
 * **`EnvoyFilter`**
 
+* Resources like `VirtualService`, `DestinationRule`, or
+  `AuthorizationPolicy` all end up getting translated to
+  *Envoy* configuration and potentially configure specific
+  `HTTP filters` in a *filter chain*.
+* The `EnvoyFilter` resource is intended for advanced usage
+  of Istio and is a "break glass" solution. The underlying
+  *Envoy API* may change at any time between releases of
+  Istio so be sure to validate any `EnvoyFilter` you deploy.
+* ***Do not assume any backward compatibility here***.
+* Bad configuration with this API can potentially
+  **take down the entire Istio data plane**.
+
+* The first thing to know about an `EnvoyFilter` resource
+  is that it will apply to **all workloads** in the
+  namespace for which it is declared unless
+  you specify otherwise.
+* If you create a `EnvoyFilter` resource in the
+  `istio-system` namespace, it will be applied to
+  *all workloads* in the mesh.
+* If you want to be more specific about which
+  workloads in a namespace to which the custom
+  `EnvoyFilter` configuration applies, you can use
+  a `workloadSelector`.
+* The second thing to know about an `EnvoyFilter`
+  resource is that it applies after all other Istio
+  resources have been translated and configured.
+* For example, if you have `VirtualService` or
+  `DestinationRule` resources, those configurations
+  will be applied to the data plane first.
+* Lastly, you should ***take great care*** when
+  configuring a workload with the `EnvoyFilter`
+  resource.
+
 ------------------
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
