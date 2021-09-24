@@ -1649,6 +1649,18 @@ istioctl pc routes deploy/istio-ingressgateway \
 
 * [HTTP filters](https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/http_filters)
 
+* The `HTTP filters` must end in a `terminal filter`
+  which sends to request to an *upstream* cluster.
+  The `HTTP filter` responsible for this
+  is the `router filter`.
+
+* There are ways to extend *Envoy's HTTP capabilities*,
+  including writing filters, without compiling changes
+  into the Envoy binary itself
+  with the following HTTP filters:
+  - External processing
+  - Lua
+  - **WebAssembly**
 
 * **`EnvoyFilter`**
 
