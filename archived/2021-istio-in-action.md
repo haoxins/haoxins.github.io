@@ -1612,6 +1612,40 @@ istioctl pc routes deploy/istio-ingressgateway \
     `HMAC` signing/verification
   - non-standard security token handling
 
+* A request comes in from a *downstream* system
+  through the `listeners`, then goes through the
+  `routing rules`, and ends up going to a `cluster`
+  which sends to an *upstream* service.
+
+* A `listener` in *Envoy* is a way to open a port
+  on a networking interface and start listening
+  to incoming traffic.
+* *Envoy* is ultimately a level three and level four
+  (L3/L4) proxy that takes bytes off a network
+  connection and processes them in some way.
+* A `listener` reads bytes off the networking
+  stream and processes them through various
+  `filters` or *stages* of functionality.
+* Envoy's most basic filters are `network filters`
+  which operate on a stream of bytes for either
+  *encoding* or *decoding*.
+* You can configure more than one filter to
+  operate on the stream in sequence called a
+  **filter chain** and these chains can be used
+  to implement the functionality of the proxy.
+* One of the most commonly used network filters
+  is the *`HTTP connection manager`*. This filter
+  is responsible for abstracting away the details
+  of converting a stream of bytes into `HTTP`
+  *headers*, *body*, and *trailers* for
+  *HTTP based protocols*
+  (ie, *HTTP 1.1*, *HTTP2*, *gRPC*, and *HTTP3*).
+* The `HTTP connection manager` or sometimes
+  referred to as **HCM**, handles HTTP requests
+  as well as things like *access logging*,
+  *request retry*, *header manipulation*, and
+  *request routing* based on *headers*, *path-prefix*,
+  and other *request attributes*.
 
 * [HTTP filters](https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/http_filters)
 
