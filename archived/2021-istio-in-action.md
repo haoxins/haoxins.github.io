@@ -1612,6 +1612,12 @@ istioctl pc routes deploy/istio-ingressgateway \
     `HMAC` signing/verification
   - non-standard security token handling
 
+
+* [HTTP filters](https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/http_filters)
+
+
+* **`EnvoyFilter`**
+
 ------------------
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
