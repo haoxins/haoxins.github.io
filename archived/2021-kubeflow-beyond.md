@@ -60,7 +60,8 @@ date: 2021-09-13
 * [OIDC AuthService](https://github.com/arrikto/oidc-authservice)
   - `OIDC AuthService` stores *sessions* and other state
     in a local file using `BoltDB`.
-  - Kubeflow *built-in* solution, should be deprecated!
+  - `BoltDB` has been *archived*!
+  - Kubeflow *built-in* solution, should be *deprecated*!
 * Starting with *Envoy* `1.16` (*Istio* `>= 1.8`)
   there is a new filter called `OAuth2`.
   - It does a token request (exactly how `oauth2-proxy` does),
