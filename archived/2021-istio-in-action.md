@@ -1745,8 +1745,8 @@ spec:
     patch:
       operation: INSERT_BEFORE
       value:
-       name: envoy.lua
-       typed_config:
+        name: envoy.lua
+        typed_config:
           "@type": "type.googleapis.com/envoy.extensions.filters.http.lua.v3.Lua"
           inlineCode: |
             function envoy_on_request(request_handle)
@@ -1755,6 +1755,8 @@ spec:
             function envoy_on_response(response_handle)
               -- some code here
             end
+```
+
 ------------------
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
