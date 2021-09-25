@@ -1757,6 +1757,19 @@ spec:
             end
 ```
 
+* Extending Istio's data plane with ***WebAssembly***
+
+
+
+## Istio Pilot debug endpoints
+
+```zsh
+kubectl -n istio-system port-forward \
+  `make istiod-pod` 8080
+```
+
+## Istio security: SPIFFE
+
 ------------------
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
