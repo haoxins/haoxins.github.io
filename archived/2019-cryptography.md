@@ -25,7 +25,7 @@ date: 2019-06-30
   - Bad news (OTP): perfect-secrecy -> key-len >= msg-len
   - Stream ciphers cannot have perfect secrecy
   - no integrity: modifications to ciphertext are undetected and
-  -   have predictable impact on plaintext
+    have predictable impact on plaintext
   - Two time pad is insecure, never use stream cipher key more than once
   - secure PRG -> semantically secure stream cipher
   - Impl: `Salsa20`
