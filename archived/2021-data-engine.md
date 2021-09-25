@@ -188,7 +188,7 @@ with large amounts of slowly changing state.
     (**`acks=all`**, *`enable.idempotence=true`*).
   - This means that users now get ordering
     and durability by default.
- - Support for Java 8 is deprecated across all components
+  - Support for Java 8 is deprecated across all components
     of the Apache Kafka project in 3.0.
 
 * KIP-500: Replace ZooKeeper with a Self-Managed Metadata Quorum
