@@ -179,6 +179,18 @@ with large amounts of slowly changing state.
 
 ### Kafka
 
+* [What's New in Apache Kafka 3.0.0](https://www.confluent.io/blog/apache-kafka-3-0-major-improvements-and-new-features/)
+  - While **`KRaft`** is not yet recommended for production,
+    we have made many improvements to
+    the **`KRaft`** metadata and APIs.
+  - Starting with Apache Kafka 3.0, the producer enables
+    the strongest delivery guarantees by default
+    (**`acks=all`**, *`enable.idempotence=true`*).
+  - This means that users now get ordering
+    and durability by default.
+ - Support for Java 8 is deprecated across all components
+    of the Apache Kafka project in 3.0.
+
 * KIP-500: Replace ZooKeeper with a Self-Managed Metadata Quorum
 
 * [Apache Kafka Made Simple: A First Glimpse of a Kafka Without ZooKeeper](https://www.confluent.io/blog/kafka-without-zookeeper-a-sneak-peek/)
