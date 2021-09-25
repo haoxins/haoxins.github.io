@@ -1759,7 +1759,11 @@ spec:
 
 * Extending Istio's data plane with ***WebAssembly***
 
+* [solo-io/wasm](https://github.com/solo-io/wasm)
+  - WebAssembly (WASM) is the future of
+    cloud-native infrastructure extensibility.
 
+* [Istio Ecosystem Wasm Extensions](https://github.com/istio-ecosystem/wasm-extensions)
 
 ## Istio Pilot debug endpoints
 
