@@ -1704,6 +1704,57 @@ istioctl pc listener deploy/webapp.istioinaction \
 
 * [envoyproxy/ratelimit](https://github.com/envoyproxy/ratelimit)
 
+* Extending Istio's data plane with **Lua**
+
+```lua
+function envoy_on_request(request_handle)
+  local headers, test_bucket = request_handle:httpCall(
+  "bucket_tester",
+  {
+    [":method"] = "GET",
+    [":path"] = "/",
+    [":scheme"] = "http",
+    [":authority"] = "bucket-tester.istioinaction.svc.cluster.local",
+  }, "", 5000)
+
+  request_handle:headers():add("x-test-cohort", test_bucket)
+end
+```
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: EnvoyFilter
+metadata:
+  name: webapp-lua-extension
+  namespace: istioinaction
+spec:
+  workloadSelector:
+    labels:
+      app: httpbin
+  configPatches:
+  - applyTo: HTTP_FILTER
+    match:
+      context: SIDECAR_INBOUND
+      listener:
+        portNumber: 80
+        filterChain:
+          filter:
+            name: "envoy.filters.network.http_connection_manager"
+            subFilter:
+              name: "envoy.filters.http.router"
+    patch:
+      operation: INSERT_BEFORE
+      value:
+       name: envoy.lua
+       typed_config:
+          "@type": "type.googleapis.com/envoy.extensions.filters.http.lua.v3.Lua"
+          inlineCode: |
+            function envoy_on_request(request_handle)
+              -- some code here
+            end
+            function envoy_on_response(response_handle)
+              -- some code here
+            end
 ------------------
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
