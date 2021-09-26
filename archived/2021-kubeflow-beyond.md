@@ -11,17 +11,17 @@ date: 2021-09-13
 ## Auth
 
 * *OpenID Connect* (**OIDC**)
-* **`OIDC`** is a common way of delegating the
+* **OIDC** is a common way of delegating the
   responsibility of managing user credentials
   to another service and a powerful feature of
   *Istio* is that it can be leveraged to manage
   this flow without your backend service needing
-  to be aware of `OIDC` is even being used.
-* **`Scopes`** are space-separated lists of
+  to be aware of *OIDC* is even being used.
+* **Scopes** are space-separated lists of
   identifiers used to specify what access
   privileges are being requested.
-  Valid scope identifiers are specified in `RFC 6749`.
-* **`OIDC`** has a number of built in scope identifiers.
+  Valid scope identifiers are specified in **RFC 6749**.
+* **OIDC** has a number of built in scope identifiers.
   `openid` is a *required* scope. All others –
   including custom scopes – are *optional*.
 * The *built-in* scopes are:
@@ -31,7 +31,7 @@ date: 2021-09-13
   - `address`: requests access to address claim
   - `phone`: requests access to `phone_number` and
     `phone_number_verified` claims
-* **`claims`** are `name/value` pairs that contain
+* **claims** are `name/value` pairs that contain
   information about a user, as well `meta-information`
   about the `OIDC` service. The official definition
   from the spec is a
@@ -47,24 +47,23 @@ date: 2021-09-13
 * There are *three types* of tokens in OIDC:
   `id_token`, `access_token` and `refresh_token`.
 
-* `OIDC` auth from external
+* OIDC auth from **external**
   - [Google OAuth 2.0](https://developers.google.com/identity/protocols/oauth2/openid-connect)
-  - [OAuth2 Proxy](https://github.com/oauth2-proxy/oauth2-proxy)
-  - Going with the `WASM` extensibility in *Istio*,
-    managing the `OIDC` flow may be a good candidate
-    as a `WASM` extension in the future.
-* `OIDC` auth on cluster
+* OIDC auth on **cluster**
   - [Dex](https://github.com/dexidp/dex)
-  - *Dex*, no session!
   - [Keycloak](https://github.com/keycloak/keycloak)
 * [OIDC AuthService](https://github.com/arrikto/oidc-authservice)
-  - `OIDC AuthService` stores *sessions* and other state
-    in a local file using `BoltDB`.
-  - `BoltDB` has been *archived*!
+  - OIDC AuthService stores *sessions* and other state
+    in a local file using *BoltDB*.
+  - *BoltDB* has been *archived*!
   - Kubeflow *built-in* solution, should be *deprecated*!
+* [OAuth2 Proxy](https://github.com/oauth2-proxy/oauth2-proxy)
+  - Going with the *WASM* extensibility in *Istio*,
+    managing the *OIDC* flow may be a good candidate
+    as a *WASM* extension in the future.
 * Starting with *Envoy* `1.16` (*Istio* `>= 1.8`)
-  there is a new filter called `OAuth2`.
-  - It does a token request (exactly how `oauth2-proxy` does),
+  there is a new filter called **OAuth2**.
+  - It does a token request (exactly how *oauth2-proxy* does),
     but makes it internally
     (directly from the *Envoy* component),
     so no additional tooling is needed.
