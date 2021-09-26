@@ -5,7 +5,7 @@ date: 2019-06-30
 ---
 
 * [RFC 9000 - QUIC](https://www.rfc-editor.org/rfc/rfc9000)
-* [RFC xxxx - HTTP/3]()
+* [RFC xxxx - HTTP3]()
 
 ### Overview
 
@@ -25,17 +25,13 @@ date: 2019-06-30
 * [gRPC over HTTP2](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md)
   - [ ] TODO: HTTP3
 
-### QUIC-LB: Generating Routable QUIC Connection IDs
-
 * [QUIC-LB: Generating Routable QUIC Connection IDs](https://quicwg.org/load-balancers/draft-ietf-quic-load-balancers.html)
-
-### Applicability of the QUIC Transport Protocol
 
 * [Applicability of the QUIC Transport Protocol](https://quicwg.org/ops-drafts/draft-ietf-quic-applicability.html)
 
-### Problem Details for HTTP APIs
-
 * [RFC 7807: Problem Details for HTTP APIs](https://datatracker.ietf.org/doc/html/rfc7807)
+
+* [RFC 6749: The OAuth 2.0 Authorization Framework](https://datatracker.ietf.org/doc/html/rfc6749)
 
 ------------------
 
