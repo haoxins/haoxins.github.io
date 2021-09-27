@@ -197,6 +197,8 @@ kube-system
 
 ## Cases
 
+* 更新 `Secrets`, 最好重建*相关的* `Pods`
+
 ### Istio
 
 * Connection reset by peer
