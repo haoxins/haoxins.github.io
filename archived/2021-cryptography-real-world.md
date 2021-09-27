@@ -62,6 +62,13 @@ date: 2021-09-10
 
 ## Hash functions
 
+* *second preimage resistance*
+
+> There are other ways to encode binary data
+  for human consumption, but the two most
+  widely used encodings are
+  **hexadecimal** and **base64**.
+
 ## Message authentication codes
 
 ## Authenticated encryption
