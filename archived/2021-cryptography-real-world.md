@@ -18,8 +18,7 @@ date: 2021-09-10
   kick off things that way. I want to
   *tell you about the practical*.
 
-* *symmetric* encryption algorithm
-  - *secret key*
+* **Kerckhoff's principle**: *Only the key is kept secret*
 
 ## Hash functions
 
