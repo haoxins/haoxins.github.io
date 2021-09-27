@@ -46,8 +46,19 @@ date: 2021-09-10
   - AES for symmetric encryption is an
     example of such a construction.
 * *Symmetric* constructions are most often
-  based on heuristics, while most *asymmetric*
-  constructions are based on mathematical problems.
+  based on *heuristics*, while most *asymmetric*
+  constructions are based on *mathematical* problems.
+
+* **Confidentiality**
+  - It's about masking and protecting some
+    information from the wrong eyes.
+  - For example, encryption masks
+    the messages in transit.
+* **Authentication**
+  - It's about identifying who we are talking to.
+  - For example, this can be helpful in making
+    sure that messages we receive
+    indeed come from Alice.
 
 ## Hash functions
 
