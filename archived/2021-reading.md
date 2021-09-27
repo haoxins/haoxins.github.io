@@ -14,6 +14,13 @@ date: 2018-04-01
 
 ### 2021
 
+* 今天 (*2021-09-27*) 突然发现
+  - [Manning](https://www.manning.com)
+  - 上面的书籍
+  - [O'Reilly](https://www.oreilly.com)
+  - 上面都可以看
+  - O'Reilly 每月的订阅费 `$49`, **完美!**
+
 * [Rust in Action](https://book.douban.com/subject/27099617/)
   - 作为 *Programming Rust, 2nd Edition* 的陪衬, 点缀
 
