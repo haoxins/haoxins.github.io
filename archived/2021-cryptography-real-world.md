@@ -36,6 +36,19 @@ date: 2021-09-10
   - Asymmetric encryption
   - Digital signatures with RSA
 
+* Another way of dividing cryptography can be
+  - *Math-based constructions*
+  - These rely on mathematical problems like
+    factoring numbers.
+  - *Heuristic-based constructions*
+  - These rely on observations and statistical
+    analysis by cryptanalysts.
+  - AES for symmetric encryption is an
+    example of such a construction.
+* *Symmetric* constructions are most often
+  based on heuristics, while most *asymmetric*
+  constructions are based on mathematical problems.
+
 ## Hash functions
 
 ## Message authentication codes
