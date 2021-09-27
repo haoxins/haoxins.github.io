@@ -18,7 +18,23 @@ date: 2021-09-10
   kick off things that way. I want to
   *tell you about the practical*.
 
-* **Kerckhoff's principle**: *Only the key is kept secret*
+* **Kerckhoff's principle**:
+  - *Only the key is kept secret*
+
+* **Asymmetric cryptography**:
+  - *Two keys are better than one*
+  - *key exchange*: Diffie-Hellman (**DH**)
+  - DH: `man-in-the-middle`
+
+* **RSA** contains two different primitives:
+  - a public key encryption algorithm
+    (or asymmetric encryption)
+  - and a (digital) signature scheme.
+
+* Three different asymmetric primitives:
+  - Key exchange with Diffie-Hellman
+  - Asymmetric encryption
+  - Digital signatures with RSA
 
 ## Hash functions
 
