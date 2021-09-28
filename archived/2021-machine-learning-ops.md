@@ -8,7 +8,8 @@ date: 2021-07-21
 
 ```py
 # %env GOOGLE_APPLICATION_CREDENTIALS="/home/jovyan/abc.json"
-# Not works
+# Not works, the error is:
+# File "/home/jovyan/abc.json" not found
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/jovyan/abc.json"
 # This works
 ```

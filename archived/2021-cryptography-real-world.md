@@ -62,7 +62,7 @@ date: 2021-09-10
 
 ## Hash functions
 
-* *second preimage resistance*
+* *second pre-image resistance*
 
 > There are other ways to encode binary data
   for human consumption, but the two most
