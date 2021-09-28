@@ -4,7 +4,14 @@ description: 昨夜闲潭梦落花, 可怜春半不还家. 江水流春去欲尽
 date: 2021-07-21
 ---
 
+### Jupyter
 
+```py
+# %env GOOGLE_APPLICATION_CREDENTIALS="/home/jovyan/abc.json"
+# Not works
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/jovyan/abc.json"
+# This works
+```
 
 ------------------
 
