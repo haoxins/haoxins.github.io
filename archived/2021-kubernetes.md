@@ -189,9 +189,11 @@ kube-public
 kube-system
 ```
 
-* *Kubernetes* 将会是各大*云厂商*和*开源社区*的`边界`
-  - 云厂商: *存储*, *网络*, *弹性 VMs*, *API Services*
-  - *Kubernetes* 天生就是跑在 *Cloud* 上的
+### YAML
+
+* `1.4`, `8` 这种值需要注意 *String* or *Number*
+  - `"1.4"` or `1.4`
+  - `v1.4`, `1.4.0` 是明确的 *String*
 
 ------------------
 
