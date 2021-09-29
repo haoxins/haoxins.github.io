@@ -209,4 +209,4 @@ spec:
 
 ## Kubeflow pipelines
 
-* *Python* code -> **KFP** *Python* library -> Argo workflow YAMLs
+* *Python* code -> **KFP** *Python* library -> **Argo** workflow YAMLs
