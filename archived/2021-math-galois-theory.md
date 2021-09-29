@@ -67,7 +67,7 @@ date: 2021-05-24
 
 * 棣莫弗公式 (三角函数版)
 
-$$ \cos n\theta + i \sin n\theta = \left( \cos + i \sin \theta \right)^n $$
+$$ \cos n\theta + i \sin n\theta = \left( \cos \theta + i \sin \theta \right)^n $$
 
 * 棣莫弗公式 (指数函数版)
 
