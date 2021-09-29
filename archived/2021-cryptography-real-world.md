@@ -69,6 +69,21 @@ date: 2021-09-10
   widely used encodings are
   **hexadecimal** and **base64**.
 
+* Security properties of a hash function
+  - The **first** one is *pre-image resistance*.
+  - No one should be able to reverse the
+    hash function in order to recover
+    the input given an output.
+  - But you can't hide something that is
+    too small or that is predictable.
+  - The **second** property is
+    *second pre-image resistance*.
+  - You should not be able to find a different
+    input that hashes to the same digest.
+  - The **third** property is *collision resistance*.
+  - No one should be able to produce two different
+    inputs that hash to the same output.
+
 ## Message authentication codes
 
 ## Authenticated encryption
