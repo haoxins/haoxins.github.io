@@ -8,6 +8,8 @@ date: 2021-05-24
 
 * 日本原版的封面更好, 哈哈哈
 
+* [Group Explorer](https://github.com/nathancarter/group-explorer)
+
 ## 数学女孩5: 伽罗瓦理论
 
 * [数学女孩5: 伽罗瓦理论](https://book.douban.com/subject/35385260/)
