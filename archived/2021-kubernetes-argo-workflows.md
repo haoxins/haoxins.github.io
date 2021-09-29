@@ -174,5 +174,37 @@ spec:
      url: "{{inputs.parameters.url}}"
 ```
 
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: container-set-template-
+spec:
+  entrypoint: main
+  templates:
+  - name: main
+    volumes:
+    - name: workspace
+      emptyDir: {}
+    containerSet:
+      volumeMounts:
+      - mountPath: /workspace
+        name: workspace
+      containers:
+      - name: a
+        image: argoproj/argosay:v2
+      - name: b
+        image: argoproj/argosay:v2
+      - name: main
+        image: argoproj/argosay:v2
+        dependencies:
+        - a
+        - b
+    outputs:
+      parameters:
+      - name: message
+        valueFrom:
+          path: /workpsace/message
+```
 
 ## Kubeflow pipelines
