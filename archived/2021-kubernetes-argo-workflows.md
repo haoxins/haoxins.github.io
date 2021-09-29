@@ -37,11 +37,142 @@ date: 2021-09-04
 * [Argo Events](https://github.com/argoproj/argo-events)
   - The *Event-driven Workflow Automation* Framework
 
+```yaml
+- name: gen-random-int
+  script:
+    image: python:alpine3.6
+    command: [python]
+    source: |
+      import random
+      i = random.randint(1, 100)
+      print(i)
+---
+- name: k8s-owner-reference
+  resource:
+    action: create
+    manifest: |
+      apiVersion: v1
+      kind: ConfigMap
+      metadata:
+        generateName: owned-eg-
+      data:
+        some: value
+```
 
+```yaml
+- name: hello-hello-hello
+  steps:
+  - - name: step1
+      template: prepare-data
+  - - name: step2a
+      template: run-data-first-half
+    - name: step2b
+      template: run-data-second-half
+---
+- name: diamond
+  dag:
+    tasks:
+    - name: A
+      template: echo
+    - name: B
+      dependencies: [A]
+      template: echo
+    - name: C
+      dependencies: [A]
+      template: echo
+    - name: D
+      dependencies: [B, C]
+      template: echo
+```
 
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: hello-world-parameters-
+spec:
+  entrypoint: whalesay
+  arguments:
+    parameters:
+    - name: message
+      value: hello world
+  templates:
+  - name: whalesay
+    inputs:
+      parameters:
+      - name: message
+    container:
+      image: docker/whalesay
+      command: [ cowsay ]
+      args: [ "{{inputs.parameters.message}}" ]
+```
 
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: empty-dir-
+spec:
+  entrypoint: main
+  templates:
+  - name: main
+    container:
+      image: argoproj/argosay:v2
+      command: [sh, -c]
+      args: ["cowsay hello world | tee /mnt/out/hello_world.txt"]
+      volumeMounts:
+      - name: out
+        mountPath: /mnt/out
+    volumes:
+    - name: out
+      emptyDir: {}
+    outputs:
+      parameters:
+      - name: message
+        valueFrom:
+          path: /mnt/out/hello_world.txt
+```
 
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: CronWorkflow
+metadata:
+  name: test-cron-wf
+spec:
+  schedule: "* * * * *"
+  concurrencyPolicy: Replace
+  startingDeadlineSeconds: 0
+  workflowSpec:
+    entrypoint: whalesay
+    templates:
+    - name: whalesay
+      container:
+        image: alpine:3.6
+        command: [sh, -c]
+        args: ["date; sleep 90"]
+```
 
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: http-template-
+spec:
+  entrypoint: main
+  templates:
+  - name: main
+    steps:
+    - - name: good
+        template: http
+        arguments:
+          parameters: [{name: url, value: "https://a.com/b.json"}]
+  - name: http
+    inputs:
+      parameters:
+      - name: url
+    http:
+     url: "{{inputs.parameters.url}}"
+```
 
 
 ## Kubeflow pipelines
