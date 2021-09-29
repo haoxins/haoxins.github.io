@@ -4,6 +4,10 @@ description: 昨夜闲潭梦落花, 可怜春半不还家. 江水流春去欲尽
 date: 2021-07-21
 ---
 
+### pip
+
+* `~/.config/pip/pip.conf`
+
 ### Jupyter
 
 ```py
