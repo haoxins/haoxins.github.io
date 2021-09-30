@@ -84,6 +84,34 @@ date: 2021-09-10
   - No one should be able to produce two different
     inputs that hash to the same output.
 
+> in **practice** *impossible*
+  but not **theoretically** *impossible*.
+
+* There is a `minimum` output size that a hash
+  function must produce in practice:
+  `256 bits` (or `32 bytes`).
+* For a hash function to provide all three
+  security properties mentioned earlier, it needs
+  to provide at least `128 bits` of security
+  against all three attacks.
+* If our hash function generates random outputs
+  of 256 bits, the space of all outputs
+  is of size $$ 2^256 $$.
+* This means that collisions can be found with
+  good probability after generating $$ 2^128 $$
+  digests (due to the *birthday bound*).
+* In order to achieve `128-bit` security at a minimum,
+  a digest must not be truncated under:
+  - `256 bits` for *collision resistance*
+  - `128 bits` for *pre-image* and
+    *second pre-image resistance*
+
+> `CRC32` are not *cryptographic hash functions*
+  but *error-detecting code functions*.
+
+
+
+
 ## Message authentication codes
 
 ## Authenticated encryption
