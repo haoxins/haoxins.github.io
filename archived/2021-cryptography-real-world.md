@@ -204,6 +204,35 @@ echo -n "Alice""Bob""1001""5" | openssl dgst -sha3-256
 
 * 哇喔, Rust!
 
+```rust
+// sha2 = "0.9.8"
+// hmac = "0.11.0"
+use hmac::{Hmac, Mac, NewMac};
+use sha2::Sha256;
+// Note that this protocol is not perfect:
+// it allows replays.
+fn send_message(key: &[u8], message: &[u8]) -> Vec<u8> {
+    let mut mac = Hmac::<Sha256>::new(key.into());
+    mac.update(message);
+    mac.finalize().into_bytes().to_vec()
+}
+
+fn receive_message(key: &[u8], message: &[u8], authentication_tag: &[u8]) -> bool {
+    let mut mac = Hmac::<Sha256>::new(key.into());
+    mac.update(message);
+    mac.verify(&authentication_tag).is_ok()
+}
+
+fn main() {
+    let key: [u8; 64] = [1; 64];
+    let msg: [u8; 64] = [9; 64];
+    let tag = send_message(&key, &msg);
+    let ok = receive_message(&key, &msg, &tag);
+
+    assert_eq!(ok, true)
+}
+```
+
 ## Authenticated encryption
 
 ## Key exchanges
