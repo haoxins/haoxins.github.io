@@ -151,6 +151,11 @@ date: 2021-09-10
   *extendable output function* or `XOF`.
 * This section introduces the two standardized XOFs:
   - `SHAKE` and `cSHAKE`.
+* **`SHAKE`**, specified in *FIPS 202* along with `SHA-3`,
+  can be seen as a hash function that returns
+  an output of *an arbitrary length*.
+* **`cSHAKE`** is pretty much exactly like `SHAKE`,
+  except that it also takes a *customization string*.
 
 ## Message authentication codes
 
