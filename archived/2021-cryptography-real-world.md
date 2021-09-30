@@ -252,6 +252,19 @@ fn main() {
   defining a collision when `MAC(k, X) = MAC(k, Y)`
   for inputs X and Y.
 
+* When verifying an authentication tag,
+  the comparison between the received
+  authentication tag and the one you compute
+  must be done in **constant time**.
+  - **timing attacks**
+
+```go
+// Constant time comparison in Golang
+for i := 0; i < len(x); i++ {
+  v |= x[i] ^ y[i]
+}
+```
+
 ## Authenticated encryption
 
 ## Key exchanges
