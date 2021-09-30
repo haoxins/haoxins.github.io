@@ -233,6 +233,25 @@ fn main() {
 }
 ```
 
+* A `MAC` usually comes with a proof that even
+  if an attacker can ask you to produce the
+  authentication tags for a large number of
+  arbitrary messages, the attacker should still
+  not be able to forge an authentication tag
+  on a never-seen-before message by themselves.
+
+* If you are trying to authenticate *structures*,
+  make sure to *serialize* them before
+  authenticating them with a `MAC`; otherwise,
+  forgery might be trivial.
+
+* Remember, finding a collision for a
+  *hash function* means finding two different
+  inputs X and Y such that `HASH(X) = HASH(Y)`.
+* We can extend this definition to `MACs` by
+  defining a collision when `MAC(k, X) = MAC(k, Y)`
+  for inputs X and Y.
+
 ## Authenticated encryption
 
 ## Key exchanges
