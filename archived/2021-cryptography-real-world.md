@@ -109,8 +109,35 @@ date: 2021-09-10
 > `CRC32` are not *cryptographic hash functions*
   but *error-detecting code functions*.
 
+* `MD5` and `SHA-1` were shown to be broken
+  in `2004` and `2016`.
+* `SHA-2` is based on the `Merkle-Damgard` construction,
+  while `SHA-3` is based on the `sponge` construction.
+* `SHA-2` provides 4 different versions, producing
+  outputs of `224`, `256`, `384`, or `512` bits.
 
+* While there are different ways of building
+  a **compression function**, `SHA-2` uses the
+  `Davies-Meyer` method, which relies on a
+  *block cipher*.
+* The `Merkle-Damgard` construction iteratively
+  applies a compression function to each block
+  of the input to be hashed and the output of
+  the previous compression function.
+  The *final* call to the compression function
+  directly returns the *digest*.
 
+* While `SHA-2` is a perfectly fine hash function
+  to use, it is *not suitable* for **hashing secrets**.
+* This is because of a downside of the `Merkle-Damgard`
+  construction, which makes `SHA-2` vulnerable to
+  an attack (called a `length-extension attack`)
+  if used to **hash secrets**.
+* Because of this, and the fact that SHA-2 is vulnerable
+  to *length-extension attacks*, NIST decided in 2007 to
+  organize an open competition for a new standard: `SHA-3`.
+* `SHA-3` is a cryptographic algorithm
+  built on top of a *permutation*.
 
 ## Message authentication codes
 
