@@ -156,6 +156,18 @@ date: 2021-09-10
   an output of *an arbitrary length*.
 * **`cSHAKE`** is pretty much exactly like `SHAKE`,
   except that it also takes a *customization string*.
+* **`TupleHash`**, which is based on `cSHAKE` and
+  specified in the same standard as `cSHAKE`.
+* **`TupleHash`** is an interesting function
+  that allows one to hash a *tuple*.
+
+```zsh
+echo -n "Alice""Bob""100""15" | openssl dgst -sha3-256
+# vs
+echo -n "Alice""Bob""1001""5" | openssl dgst -sha3-256
+# This is what TupleHash solves.
+```
+
 
 ## Message authentication codes
 
