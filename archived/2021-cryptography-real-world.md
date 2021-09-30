@@ -168,6 +168,26 @@ echo -n "Alice""Bob""1001""5" | openssl dgst -sha3-256
 # This is what TupleHash solves.
 ```
 
+* If an attacker retrieves hashed passwords,
+  a brute force attack or an exhaustive search
+  can be undertaken. This would test each
+  attempt against the whole database.
+  - This issue has been commonly solved by using *salts*,
+    which in some sense is like using a
+    per-user customization string with `cSHAKE`.
+  - It effectively creates a different
+    hash function for every user.
+* Hash functions are supposed to be as fast.
+  Attackers can leverage this to brute force
+  (many, many passwords per second).
+  - This issue is solved with *password hashes*,
+    which are designed to be slow.
+  - The current state-of-the-art
+    choice for this is *Argon2*.
+
+* [RFC 9106](https://datatracker.ietf.org/doc/rfc9106/)
+  - Argon2 Memory-Hard Function for
+    Password Hashing and Proof-of-Work Applications
 
 ## Message authentication codes
 
