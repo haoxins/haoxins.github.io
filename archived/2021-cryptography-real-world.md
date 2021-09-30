@@ -191,6 +191,19 @@ echo -n "Alice""Bob""1001""5" | openssl dgst -sha3-256
 
 ## Message authentication codes
 
+* Mix a *hash function* with a *secret key* and
+  you obtain something called a
+  *message authentication code* (**MAC**),
+  a cryptographic primitive to
+  protect the **integrity** of data.
+
+* **`HMAC`** is a message authentication code
+  that uses a hash function at its core.
+* It is compatible with different hash functions,
+  but it is mostly used in conjunction with `SHA-2`.
+
+* 哇喔, Rust!
+
 ## Authenticated encryption
 
 ## Key exchanges
