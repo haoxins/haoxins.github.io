@@ -133,11 +133,24 @@ date: 2021-09-10
   construction, which makes `SHA-2` vulnerable to
   an attack (called a `length-extension attack`)
   if used to **hash secrets**.
-* Because of this, and the fact that SHA-2 is vulnerable
+* Because of this, and the fact that `SHA-2` is vulnerable
   to *length-extension attacks*, NIST decided in 2007 to
   organize an open competition for a new standard: `SHA-3`.
 * `SHA-3` is a cryptographic algorithm
   built on top of a *permutation*.
+* `SHA-3` is based on a particular *permutation* called
+  `keccak-f` that takes an input and returns
+  an output of the same size.
+
+* Cryptographic protocols often necessitate this
+  type of primitives but do not want to be
+  constrained by the *fixed sizes* of
+  a hash function's digest.
+* For this reason, the `SHA-3` standard introduced
+  a more versatile primitive called an
+  *extendable output function* or `XOF`.
+* This section introduces the two standardized XOFs:
+  - `SHAKE` and `cSHAKE`.
 
 ## Message authentication codes
 
