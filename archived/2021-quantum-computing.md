@@ -8,6 +8,7 @@ date: 2021-07-16
   - 副标题: *从德谟克利特, 计算复杂性到自由意志*
   - 原作名: *Quantum Computing since Democritus*
   - *自费曼以来, 还没有谁的公开课能如此精彩*
+  - `2021`年`ACM计算奖`得主
 
 * [Shtetl-Optimized](https://www.scottaaronson.com/blog/)
   - The Blog of Scott Aaronson
