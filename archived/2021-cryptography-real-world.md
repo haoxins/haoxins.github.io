@@ -265,6 +265,19 @@ for i := 0; i < len(x); i++ {
 }
 ```
 
+* HMAC-based key derivation function (HKDF)
+* The pseudorandom function (PRF)
+
+* Many major applications use a `MAC` with a
+  random key in place of the *noncryptographic*
+  hash function.
+* This is the case for many programming languages
+  (like Rust, Python).
+* They all make use of `SipHash`, a poorly-named
+  `MAC` optimized for short authentication tags,
+  with a random key generated
+  at the start of the program.
+
 ## Authenticated encryption
 
 ## Key exchanges
