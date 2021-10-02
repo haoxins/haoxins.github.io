@@ -24,6 +24,14 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/jovyan/abc.json"
 
 ------------------
 
+* [How We Used PyTorch Lightning to Make Our Deep Learning Pipeline 10x Faster](https://devblog.pytorchlightning.ai/how-we-used-pytorch-lightning-to-make-our-deep-learning-pipeline-10x-faster-731bd7ad318a)
+  - Parallel data loading
+  - Multi-GPU training
+  - Mixed precision training
+  - Sharded training
+  - Early stopping
+  - Optimizations during model evaluation & inference
+
 * 2021~2022 才是 ML 真正飞入寻常百姓家 的时候
   - K8s Operator ready!
   - 学术界的输出趋于稳定, 工程界开始代码工程化
