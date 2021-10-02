@@ -8,3 +8,8 @@ date: 2021-09-14
   - https://learning.oreilly.com/library/view/fluent-python-2nd/9781492056348/
 
 ## The Python Data Model
+
+* `__len__`, `__getitem__`
+* `reversed`, `sorted`, `random.choice`
+* If a collection has no `__contains__` method,
+  the `in` operator does a sequential scan.
