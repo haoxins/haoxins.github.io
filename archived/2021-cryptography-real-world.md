@@ -278,8 +278,19 @@ for i := 0; i < len(x); i++ {
   with a random key generated
   at the start of the program.
 
-The most widely used `MAC` is `HMAC` (for *hash-based MAC*),
+* The most widely used `MAC` is `HMAC` (for *hash-based MAC*),
 invented in 1996, and specified in `RFC 2104`.
+  - It first creates two keys from the main key.
+  - It then concatenates a key, `k1`,
+    with the message and hashes it.
+  - The result is concatenated with a key, `k2`,
+    and hashed one more time.
+  - This produces the final authentication tag.
+
+> Because `HMAC` is customizable, the size of its
+  *authentication tag* is dictated by the
+  hash function used.
+
 
 ## Authenticated encryption
 
