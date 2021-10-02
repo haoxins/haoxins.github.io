@@ -278,6 +278,9 @@ for i := 0; i < len(x); i++ {
   with a random key generated
   at the start of the program.
 
+The most widely used `MAC` is `HMAC` (for *hash-based MAC*),
+invented in 1996, and specified in `RFC 2104`.
+
 ## Authenticated encryption
 
 ## Key exchanges
