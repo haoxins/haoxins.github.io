@@ -291,6 +291,19 @@ invented in 1996, and specified in `RFC 2104`.
   *authentication tag* is dictated by the
   hash function used.
 
+* `KMAC` is simply a wrapper around `cSHAKE`.
+  To use a `key`, it encodes (in a unambiguous way)
+  the *key*, the *input*, and the *output length*
+  as the `input` to `cSHAKE`.
+
+* `SHA-2` has an *annoying peculiarity*:
+  - From a digest over an input, one can compute
+    the digest of an input and more.
+* This vulnerability allows one to continue
+  hashing from a given digest, like the
+  operation was not finished.
+  - **length-extension attack**
+  - one **should never** hash secrets with `SHA-2`
 
 ## Authenticated encryption
 
