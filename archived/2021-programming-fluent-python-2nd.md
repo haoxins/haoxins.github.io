@@ -13,3 +13,14 @@ date: 2021-09-14
 * `reversed`, `sorted`, `random.choice`
 * If a collection has no `__contains__` method,
   the `in` operator does a sequential scan.
+  - `__iter__` vs `__getitem__`
+
+* Normally, your code should **not** have many
+  direct calls to special methods.
+* Unless you are doing a lot of metaprogramming,
+  you should be *implementing* special methods
+  more often than *invoking* them explicitly.
+  - If you need to invoke a special method,
+    it is usually better to call the related
+    *built-in* function.
+  - e.g., `len`, `iter`, `str`, etc.
