@@ -307,6 +307,49 @@ invented in 1996, and specified in `RFC 2104`.
 
 ## Authenticated encryption
 
+* The Advanced Encryption Standard (**AES**) block cipher
+
+> *Bit security* is an *upper bound*
+
+* The interface of `AES` for encryption:
+  - The algorithm takes a *variable-length key*.
+  - It also takes a *plaintext* of exactly `128` bits.
+  - It outputs a *ciphertext* of exactly `128` bits.
+  - Because `AES` encrypts a *fixed-size* plaintext,
+    we call it a **block cipher**.
+
+* In technical terms, a *block cipher*
+  with a *key* is a **permutation**:
+  - it maps all the possible *plaintexts* to
+    all the possible *ciphertexts*.
+  - Changing the *key* changes that *mapping*.
+  - A *permutation* is also *reversible*.
+
+* **AES**, which behave like *permutations*
+  and are *randomized* by a *key*.
+* We say that they are
+  *pseudorandom permutations* (**PRPs**).
+
+* When entering the `AES` algorithm,
+  a plaintext of *16 bytes* gets transformed
+  into a `4-by-4` matrix.
+* This state is then encrypted and finally
+  transformed into a `16-byte` ciphertext.
+* `AES` iterates a **round function** over
+  a state in order to encrypt it.
+* The *round function* takes several
+  arguments including a secret key.
+* Each call to the *round function*
+  transforms the state further, eventually
+  producing the ciphertext.
+* Each *round* uses a *different round key*,
+  which is derived *from the main symmetric key*
+  (*key schedule*).
+* This allows the *slightest change* in the bits
+  of the symmetric key to give a
+  *completely different encryption*
+  (a principle called *diffusion*).
+
 ## Key exchanges
 
 ## Asymmetric encryption and hybrid encryption
