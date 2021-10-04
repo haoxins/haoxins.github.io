@@ -371,6 +371,33 @@ invented in 1996, and specified in `RFC 2104`.
   the value of the last byte of plaintext and
   interpret it as the length of padding to remove.
 
+* The electronic codebook (**ECB**) mode of operation.
+  - As you learned, encryption is deterministic,
+    and so encrypting the same block of plaintext
+    twice leads to the same ciphertext.
+  - This means that by encrypting each block
+    *individually*, the resulting ciphertext
+    might have *repeating patterns*.
+  - The famous ECB penguin is an encryption
+    of an image of a penguin using the
+    electronic codebook (ECB) mode of operation.
+  - As ECB does not hide repeating patterns,
+    one can guess just by looking at the
+    ciphertext what was originally encrypted.
+
+* To encrypt more than 128 bits of plaintext safely,
+  better modes of operation exist that
+  "randomize" the encryption.
+* One of the most popular modes of operation for
+  AES is *cipher block chaining* (**CBC**).
+* *CBC* works for any deterministic block cipher
+  (not just AES) by taking an additional value
+  called an *initialization vector* (**IV**)
+  to randomize the encryption.
+  - Because of this, the `IV` is the length of
+    the block size (16 bytes for AES) and
+    must be random and unpredictable.
+
 ## Key exchanges
 
 ## Asymmetric encryption and hybrid encryption
