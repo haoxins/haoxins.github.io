@@ -397,6 +397,10 @@ invented in 1996, and specified in `RFC 2104`.
   - Because of this, the `IV` is the length of
     the block size (16 bytes for AES) and
     must be random and unpredictable.
+* To decrypt with the CBC mode of operation,
+  reverse the operations.
+* As the `IV` is needed, it must be transmitted
+  in clear text along with the ciphertext.
 
 ## Key exchanges
 
