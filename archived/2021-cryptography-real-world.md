@@ -350,6 +350,27 @@ invented in 1996, and specified in `RFC 2104`.
   *completely different encryption*
   (a principle called *diffusion*).
 
+> The *slightest change* in the plaintext also
+  returns a *completely different ciphertext*.
+  This principle is called the **avalanche effect**.
+
+* There are several ways to specify how to
+  choose these padding bytes, but the most important
+  aspect of padding is that it must be reversible.
+* Once we decrypt ciphertext, we should be able
+  to remove the padding to retrieve
+  the original unpadded message.
+
+* `PKCS#7` padding specifies one rule:
+  - the value of each padding byte must be
+    set to the length of the required padding.
+* What if the plaintext is already 16 bytes?
+  - Then we add a full block of padding
+    set to the value 16.
+* To remove the padding, you can easily check
+  the value of the last byte of plaintext and
+  interpret it as the length of padding to remove.
+
 ## Key exchanges
 
 ## Asymmetric encryption and hybrid encryption
