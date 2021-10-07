@@ -402,6 +402,10 @@ invented in 1996, and specified in `RFC 2104`.
 * As the `IV` is needed, it must be transmitted
   in clear text along with the ciphertext.
 
+> When an `IV` repeats or is *predictable*,
+  the encryption becomes *deterministic* again,
+  and a number of clever **attacks** become possible.
+
 ## Key exchanges
 
 ## Asymmetric encryption and hybrid encryption
