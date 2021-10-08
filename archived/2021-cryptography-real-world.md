@@ -406,6 +406,62 @@ invented in 1996, and specified in `RFC 2104`.
   the encryption becomes *deterministic* again,
   and a number of clever **attacks** become possible.
 
+* We then apply the `MAC` after *padding* the *plaintext*
+  and *encrypting* it over *both* the ciphertext
+  and the IV; otherwise, an attacker can still modify
+  the IV without being caught.
+  - This construction is called `Encrypt-then-MAC`.
+  - The alternatives (like `MAC-then-Encrypt`) can
+    sometimes lead to clever attacks and are
+    thus **avoided** in practice.
+  - In addition, it is best practice to use
+    *different keys* for `AES` and `HMAC`.
+
+* All-in-one constructions: Authenticated encryption
+  - `AES-GCM`
+  - `ChaCha20-Poly1305`
+
+* The `AES-GCM` AEAD (authenticated encryption with associated data)
+  - It was designed for high performance by taking advantage of
+    hardware support for AES and by using a MAC (GMAC)
+    that can be implemented efficiently.
+  - `AES-GCM` combines the *Counter* (`CTR`) mode of operation
+    with the `GMAC` message authentication code.
+  - `AES-CTR` uses AES to encrypt a nonce concatenated
+    with a number instead of the plaintext.
+  - The *nonce* of `AES-GCM` is sometimes
+    referred to as an `IV`.
+  - The *nonce* in `AES-CTR` is `96` bits (`12` bytes)
+    and takes *most* of the `16` bytes to be encrypted.
+  - The `32` bits (`4` bytes) left serves as a counter,
+    starting from `1` and incremented for each block
+    encryption until it reaches its maximum value.
+  - This means that, at most, `4,294,967,295` blocks
+    of `128` bits can be encrypted with the
+    *same nonce* (so less than `69` GBs).
+
+* an interesting aspect of `CTR` mode:
+  - no padding is required.
+* We say that it turns a block cipher (`AES`)
+  into a stream cipher.
+* It encrypts the plaintext byte by byte.
+
+* By default, encryption *doesn't* hides
+  the length of what you are encrypting.
+* Because of this, the use of compression before
+  encryption can lead to attacks if an attacker
+  can influence parts of what is being encrypted.
+
+* `GMAC` is effectively the encryption of the
+  `GHASH` output with `AES-CTR` (and a different key).
+* Again, the nonce must be *unique*.
+
+* `AES-GCM` works by using `AES-CTR` with a
+  symmetric key *K* to encrypt the plaintext
+  and by using `GMAC` to authenticate the
+  *associated data* and the *ciphertext* using
+  an authentication key *H*.
+
 ## Key exchanges
 
 ## Asymmetric encryption and hybrid encryption
