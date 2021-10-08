@@ -487,6 +487,20 @@ invented in 1996, and specified in `RFC 2104`.
     standards like `XChaCha20-Poly1305`
     are available.
 
+* `Poly1305` is a `MAC` created via the
+  *Wegman-Carter* technique, much like the
+  `GMAC` we previously talked about.
+* Eventually, we can use `ChaCha20` and a
+  counter set to `0` to generate a keystream
+  and derive the `16-byte` *r* and `16-byte` *s*
+  values we need for `Poly1305`.
+
+* `ChaCha20-Poly1305` works by using `ChaCha20`
+  to encrypt the plaintext and to derive the
+  keys required by the *Poly1305 MAC*.
+* `Poly1305` is then used to authenticate the
+  ciphertext as well as the associated data.
+
 ## Key exchanges
 
 ## Asymmetric encryption and hybrid encryption
