@@ -11,8 +11,6 @@ date: 2021-05-03
 
 ------------------
 
-* 期待 Dan Boneh 密码学
-
 * [量子计算公开课](https://book.douban.com/subject/35467917/)
   - 副标题: *从德谟克利特, 计算复杂性到自由意志*
   - 原作名: *Quantum Computing since Democritus*
