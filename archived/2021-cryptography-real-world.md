@@ -462,6 +462,31 @@ invented in 1996, and specified in `RFC 2104`.
   *associated data* and the *ciphertext* using
   an authentication key *H*.
 
+* `ChaCha20-Poly1305`
+  - It is the combination of two algorithms:
+    the `ChaCha20` stream cipher and the
+    `Poly1305 MAC`.
+  - In 2013, Google standardized the
+    `ChaCha20-Poly1305` AEAD in order to make
+    use of it in *Android* mobile phones
+    relying on low-end processors.
+  - Nowadays, it is widely adopted by internet
+    protocols like *OpenSSH*, *TLS*, and *Noise*.
+  - `ChaCha20` is a modification of
+    the `Salsa20` stream cipher
+  - `ChaCha20` works by taking a symmetric key
+    and a unique nonce. It then generates a
+    keystream that is `XORed` with the plaintext
+    (or ciphertext) to produce the ciphertext
+    (or plaintext).
+    The encryption is *length-preserving* as
+    the ciphertext and the plaintext are
+    of the same length.
+  - While allowing a large number of messages
+    to be encrypted under a single key, other
+    standards like `XChaCha20-Poly1305`
+    are available.
+
 ## Key exchanges
 
 ## Asymmetric encryption and hybrid encryption
