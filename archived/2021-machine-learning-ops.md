@@ -24,6 +24,13 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/jovyan/abc.json"
 
 ------------------
 
+* [KServe: The next generation of KFServing](https://blog.kubeflow.org/release/official/2021/09/27/kfserving-transition.html)
+  - *KFServing* is now *KServe*
+  - The project has been rebranded from
+    *KFServing* to *KServe*, and we are planning
+    to *graduate* the project from
+    *Kubeflow Project* later this year.
+
 * [How We Used PyTorch Lightning to Make Our Deep Learning Pipeline 10x Faster](https://devblog.pytorchlightning.ai/how-we-used-pytorch-lightning-to-make-our-deep-learning-pipeline-10x-faster-731bd7ad318a)
   - Parallel data loading
   - Multi-GPU training
