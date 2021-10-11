@@ -628,9 +628,10 @@ invented in 1996, and specified in `RFC 2104`.
   - Compared to the recommended `2,048-bit` parameters in **DH**,
     parameters of `256 bits` were possible with the
     elliptic curve variant of the algorithm.
+  - elliptic curves are just curves!
 
 * The **short Weierstrass equation**
-  - $$ y^2 = x^3 + ax + b (4a^3 + 27b^2 \neq 0) $$
+  - $$ y^2 = x^3 + ax + b (Where 4a^3 + 27b^2 \neq 0) $$
 
 ## Asymmetric encryption and hybrid encryption
 
