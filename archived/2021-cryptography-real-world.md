@@ -503,6 +503,29 @@ invented in 1996, and specified in `RFC 2104`.
 
 ## Key exchanges
 
+> A *key exchange* between two participants allows
+  them to agree on a *secret key*, while a
+  `man-in-the-middle` (**MITM**) adversary can't derive
+  the same *secret key* from passively
+  observing the key exchange.
+
+* The *key exchange* is **unauthenticated**!
+  - An *unauthenticated key exchange* is vulnerable
+    to an active `MITM` attacker.
+  - Indeed, the attacker can simply impersonate
+    both sides of the connection and perform
+    two separate key exchanges.
+
+> By the way, when both sides are *authenticated*,
+  we call that a *mutually authenticated key exchange*.
+
+* While *key exchanges* are useful, they do not
+  scale well in all scenarios without their
+  sister primitive: the *digital signature*.
+
+> `X25519` key exchange algorithm
+
+* The `Diffie-Hellman` (**DH**) key exchange
 
 * **Group theory**
   - The DH key exchange is built on top of
