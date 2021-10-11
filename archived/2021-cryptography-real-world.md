@@ -609,6 +609,9 @@ invented in 1996, and specified in `RFC 2104`.
 * In a `DH` group, every element is a
   generator of a subgroup.
 
+* The security of the `DH` key exchange relies
+  on the *discrete logarithm problem* in a group,
+  a problem believed to be hard to solve.
 
 ## Asymmetric encryption and hybrid encryption
 
