@@ -25,6 +25,19 @@ date: 2020-11-03
 
 ### Flink
 
+* [Apache Flink 1.14.0 Release Announcement](https://flink.apache.org/news/2021/09/29/release-1.14.0.html)
+  - Flink now supports taking *checkpoints* of applications
+    that are partially running and partially finished
+    (some operators reached the end of the bounded inputs).
+    Additionally, bounded streams now take a final checkpoint
+    when reaching their end to ensure smooth
+    committing of results in sinks.
+  - The batch execution mode now supports programs that
+    use a mixture of the `DataStream API` and the `SQL/Table API`
+    (previously only pure `Table/SQL` or `DataStream` programs).
+  - We are removing the *old SQL execution engine* and
+    are removing the active integration with *Apache Mesos*.
+
 * **env.pid.dir**
   - default: `/tmp`
   - Defines the directory where the `flink-<host>-<process>.pid` files are saved
