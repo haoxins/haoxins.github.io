@@ -503,6 +503,28 @@ invented in 1996, and specified in `RFC 2104`.
 
 ## Key exchanges
 
+
+* **Group theory**
+  - The DH key exchange is built on top of
+    a field of mathematics called *group theory*,
+    which is the base of most public key
+    cryptography today.
+  - Note that DH works in a *multiplicative* group:
+    a group where the *multiplication* is used
+    as the defined binary operation.
+
+* The four properties of a **group**:
+  *closure*, *associativity*, *identity* element,
+  and *inverse* element.
+  - *Closure*: Operating on two elements results
+    in another element of the same set.
+  - *Associativity*: Operating on several elements
+    at a time can be done in any order.
+  - *Identity element*: Operating with this element
+    does not change the result of the other operand.
+  - *Inverse element*: Existing as an inverse to
+    all group elements.
+
 ## Asymmetric encryption and hybrid encryption
 
 ## Signatures and zero-knowledge proofs
