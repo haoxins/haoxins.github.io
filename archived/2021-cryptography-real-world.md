@@ -633,6 +633,12 @@ invented in 1996, and specified in `RFC 2104`.
 * The **short Weierstrass equation**
   - $$ y^2 = x^3 + ax + b \, (Where \, 4a^3 + 27b^2 \neq 0) $$
 
+* Groups over *elliptic curves* are often
+  defined as additive groups.
+* *Elliptic curve cryptography* (**ECC**), in practice,
+  is mostly specified with *elliptic curves* in
+  *coordinates modulo* a large prime number `p`.
+
 ## Asymmetric encryption and hybrid encryption
 
 ## Signatures and zero-knowledge proofs
