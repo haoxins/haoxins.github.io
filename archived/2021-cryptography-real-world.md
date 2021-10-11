@@ -554,11 +554,61 @@ invented in 1996, and specified in `RFC 2104`.
 
 * `DH` uses the *modular multiplication* as
   a special operation.
+  - `3×2 = 6`
+  - `3×2 mod 5 = 1`
+  - $$ 3^{-1} mod 5 = 2 $$
 
-  - $$ 8 = 1 mod 7      $$
-  - $$ 54 = 2 mod 13    $$
-  - $$ 170 = 0 mod 17   $$
-  - $$ 3^{–1} = 2 mod 5 $$
+> When the context is clear, the modulus part
+  is often left out from equations.
+
+* We now have a group, which includes the set
+  of strictly positive integers `1, 2, ..., p-1`
+  for `p` a prime number, along with
+  *modular multiplication*.
+* The group we formed also happens to be two things:
+  - *Commutative*: The order of operations doesn't matter.
+    A group that has this property is
+    often called a *Galois group*.
+  - *A finite field*: A *Galois group* that has more
+    properties, as well as an additional operation.
+
+* `DH` defined over this type of group is sometimes
+  called `Finite Field Diffie-Hellman` (**FFDH**).
+* A *subgroup* is just a group contained inside
+  your original group. That is, it's a subset of
+  the group elements. Operating on elements of the
+  *subgroup* results in another *subgroup* element,
+  and every *subgroup* element has an *inverse*
+  in the *subgroup*, etc.
+* A *cyclic subgroup* is a *subgroup* that can be
+  generated from a single generator (or base).
+* A generator generates a *cyclic subgroup* by
+  *multiplying* itself over and over.
+* For example, the generator 4 defines a *subgroup*
+  consisting of the numbers 1 and 4:
+  - `4 mod 5 = 4`
+  - `4×4 mod 5 = 1`
+  - `4×4×4 mod 5 = 4`
+  - `4×4×4×4 mod 5 = 1`
+
+* It happens that when our modulus is *prime*,
+  every element of our group is a generator
+  of a subgroup.
+* These different *subgroups* can have
+  different *sizes*, which we call **orders**.
+
+* A group is a set of numbers with a binary
+  operation that respects some properties
+  (*closure*, *associativity*,
+  *identity element*, *inverse element*).
+* DH works in the *Galois group*
+  (a group with *commutativity*), formed by
+  the set of strictly positive numbers up to
+  a prime number (not included) and the
+  *modular multiplication*.
+* In a `DH` group, every element is a
+  generator of a subgroup.
+
 
 ## Asymmetric encryption and hybrid encryption
 
