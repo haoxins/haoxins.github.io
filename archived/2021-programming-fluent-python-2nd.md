@@ -24,3 +24,40 @@ date: 2021-09-14
     it is usually better to call the related
     *built-in* function.
   - e.g., `len`, `iter`, `str`, etc.
+
+* `__repr__`, `__abs__`, `__add__` and `__mul__`.
+* The `__repr__` special method is called by
+  the repr built-in to get the string
+  representation of the object for inspection.
+* In contrast, `__str__` is called by the `str()`
+  built-in and implicitly used by the print function.
+  It should return a string suitable for
+  *display to end users*.
+* Sometimes same string returned by `__repr__` is
+  user-friendly, and you don't need to code
+  `__str__` because the implementation inherited
+  from the object class calls `__repr__` as a fallback.
+* If you only implement one of these special
+  methods in Python, choose **`__repr__`**.
+* Basically, `bool(x)` calls `x.__bool__()` and
+  uses the result. If `__bool__` is not implemented,
+  Python tries to invoke `x.__len__()`, and if that
+  returns *zero*, bool returns `False`.
+  Otherwise bool returns `True`.
+
+* The `Collection` *ABC* unifies the three
+  essential interfaces that every
+  collection should implement:
+  - `Iterable` to support `for`, unpacking,
+    and other forms of iteration;
+  - `Sized` to support the `len` built-in function;
+  - `Container` to support the `in` operator.
+* Three very important specializations
+  of `Collection` are:
+  - `Sequence`, formalizing the interface of
+    built-ins like `list` and `str`;
+  - `Mapping`, implemented by `dict`,
+    `collections.defaultdict`, etc.;
+  - `Set`: the interface of the `set` and
+    `frozenset` built-in types.
+
