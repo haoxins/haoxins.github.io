@@ -613,6 +613,25 @@ invented in 1996, and specified in `RFC 2104`.
   on the *discrete logarithm problem* in a group,
   a problem believed to be hard to solve.
 
+* [Diffie-Hellman key exchange](https://en.wikipedia.org/wiki/Diffie-Hellman_key_exchange)
+
+* In general, https://www.keylength.com summarizes
+  recommendations on parameter lengths for
+  common cryptographic algorithms.
+* Due to all of these issues, newer protocols and
+  libraries have converged towards either *deprecating*
+  `DH` in favor of *Elliptic Curve Diffie-Hellman*
+  (**ECDH**) or using the groups defined in the better
+  standard, [RFC 7919](https://www.rfc-editor.org/info/rfc7919).
+
+* The **Elliptic Curve Diffie-Hellman** (*ECDH*) key exchange
+  - Compared to the recommended `2,048-bit` parameters in **DH**,
+    parameters of `256 bits` were possible with the
+    elliptic curve variant of the algorithm.
+
+* The **short Weierstrass equation**
+  - $$ y^2 = x^3 + ax + b (4a^3 + 27b^2 \neq 0) $$
+
 ## Asymmetric encryption and hybrid encryption
 
 ## Signatures and zero-knowledge proofs
