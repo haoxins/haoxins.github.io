@@ -548,6 +548,18 @@ invented in 1996, and specified in `RFC 2104`.
   - *Inverse element*: Existing as an inverse to
     all group elements.
 
+> To speed things up, most cryptographic libraries
+  will instead look for pseudo-primes (numbers that
+  have a high probability of being primes).
+
+* `DH` uses the *modular multiplication* as
+  a special operation.
+
+  - $$ 8 = 1 mod 7      $$
+  - $$ 54 = 2 mod 13    $$
+  - $$ 170 = 0 mod 17   $$
+  - $$ 3^{–1} = 2 mod 5 $$
+
 ## Asymmetric encryption and hybrid encryption
 
 ## Signatures and zero-knowledge proofs
