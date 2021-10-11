@@ -631,7 +631,7 @@ invented in 1996, and specified in `RFC 2104`.
   - elliptic curves are just curves!
 
 * The **short Weierstrass equation**
-  - $$ y^2 = x^3 + ax + b (Where 4a^3 + 27b^2 \neq 0) $$
+  - $$ y^2 = x^3 + ax + b \, (Where \, 4a^3 + 27b^2 \neq 0) $$
 
 ## Asymmetric encryption and hybrid encryption
 
