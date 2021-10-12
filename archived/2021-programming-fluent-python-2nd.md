@@ -97,11 +97,36 @@ date: 2021-09-14
 
 ### Asynchronous Programming
 
+* Python 3.5 and later offer three kinds of coroutines:
+  - **native coroutines**
+  - A coroutine defined with `async def`. You can delegate
+    from a native coroutine to another native coroutine
+    coroutines use `yield from`. The `async def` statement
+    always defines a native coroutine, even if the `await`
+    keyword is not used in its body. The `await` keyword
+    cannot be used outside of a native coroutine.
+  - **classic coroutines**
+  - A generator function that consumes data sent to it
+    via `my_coro.send(data)` calls, and reads that data
+    by using `yield` in an expression. Classic coroutines
+    can delegate to other classic coroutines using
+    `yield from`. Classic coroutines cannot be driven
+    by `await`, and are *no longer supported* by `asyncio`.
+  - **generator-based coroutines**
+  - A generator function decorated with `@types.coroutine`
+    introduced in Python 3.5. That decorator makes the
+    generator compatible with the new `await` keyword.
 
 ### Dynamic Attributes and Properties
 
+* Most updates to this chapter were motivated by
+  a discussion of `@functools.cached_property`
+  (introduced in Python 3.8), as well as the
+  combined use `@property` with
+  `@functools.cache` (new in 3.9).
 
 ### Attribute Descriptors
 
 ### Class Metaprogramming
 
+* `@dataclass` decorator and `typing.NamedTuple`.
