@@ -123,6 +123,14 @@ date: 2021-09-14
 ### Concurrency Models in Python
 
 
+### Concurrency with Futures
+
+* Since Python 3.4, there are two classes named
+  *Future* in the standard library:
+  `concurrent.futures.Future` and `asyncio.Future`.
+* They serve the same purpose: an instance of
+  computation that may or may not have completed.
+
 ### Asynchronous Programming
 
 * Python 3.5 and later offer three kinds of coroutines:
