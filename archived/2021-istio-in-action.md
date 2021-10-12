@@ -29,9 +29,9 @@ date: 2021-08-04
   - 从个人角度来讲, 单测*早期*针对 *feature tests* 难以覆盖的 codes
   - *后期*则是针对 *hot/key codes*
 
-> * With Istio we can finely control traffic to
+> - With Istio we can finely control traffic to
     new deployments and reduce the risk of doing deployments.
-> * As we aspire to do deployments quickly we should also
+> - As we aspire to do deployments quickly we should also
     lower the risks of doing those deployments.
 
 * **Challenges**
@@ -1818,4 +1818,4 @@ kubectl -n istio-system port-forward \
   - [Serving](https://github.com/knative/serving)
   - [Eventing](https://github.com/knative/eventing)
 
-> * [Build: Tekton Pipelines](https://github.com/tektoncd/pipeline)
+> - [Build: Tekton Pipelines](https://github.com/tektoncd/pipeline)

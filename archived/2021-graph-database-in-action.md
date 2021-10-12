@@ -195,7 +195,7 @@ g.V()
 >   and an *incoming vertex* is a vertex
 >   where an *edge ends*.
 
-> * *Traversal* parameters are similar to *lambda expressions* in Java.
+> - *Traversal* parameters are similar to *lambda expressions* in Java.
 
 ```js
 g.V()
@@ -386,8 +386,8 @@ g.V().has('person', 'first_name', 'Dave')
   .by('first_name')
 ```
 
-> * The first `by()` performs actions on the elements labeled as `'f'`;
-> * the second `by()` performs actions on the elements labeled as `'foff'`.
+> - The first `by()` performs actions on the elements labeled as `'f'`;
+> - the second `by()` performs actions on the elements labeled as `'foff'`.
 
 * Projecting results instead of aliasing
   - **Selection** is the process of working with vertices,

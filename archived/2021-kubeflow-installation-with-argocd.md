@@ -106,5 +106,5 @@ kubectl port-forward \
   - [Create Ingress](https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer#creating_an_ingress_resource)
   - [kubernetes/ingress-gce](https://github.com/kubernetes/ingress-gce)
 
-> * [Cloud Load Balancing: HTTP(S)](https://cloud.google.com/load-balancing/docs/https)
-> * [Google Cloud Platform ESPv2](https://github.com/GoogleCloudPlatform/esp-v2)
+> - [Cloud Load Balancing: HTTP(S)](https://cloud.google.com/load-balancing/docs/https)
+> - [Google Cloud Platform ESPv2](https://github.com/GoogleCloudPlatform/esp-v2)
