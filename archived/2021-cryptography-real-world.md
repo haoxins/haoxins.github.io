@@ -686,10 +686,17 @@ invented in 1996, and specified in `RFC 2104`.
   *limited* due to the restricted length
   of messages it can encrypt.
 
+* Today, `RSA` is often *not the preferred way*
+  of doing a key exchange, and it is being used
+  *less and less* in protocols *in favor of*
+  **Elliptic Curve Diffie-Hellman** (`ECDH`).
 
 * In practice, *asymmetric encryption* can only
   encrypt messages up to *a certain length*.
 
+* **ECIES**
+  - The main standard to perform hybrid encryption
+    with *Elliptic Curve Diffie-Hellman* (**ECDH**)
 
 * Nowadays, most protocols and applications that
   use `RSA` either still implement the insecure
@@ -698,6 +705,17 @@ invented in 1996, and specified in `RFC 2104`.
   `RSA` encryption **in favor of**
   *Elliptic Curve Diffie-Hellman* (**ECDH**)
   for both *key exchanges* and *hybrid encryption*.
+
+* First, if you want to encrypt a message
+  to Alice, you use an `(EC)DH`-based key
+  exchange with Alice's public key and a
+  key pair that you generate for the occasion
+  (this is called an ephemeral key pair).
+* After this, you can send the ephemeral
+  public key and the ciphertext to Alice.
+  Alice can use your ephemeral public key
+  to perform a key exchange with
+  her own key pair.
 
 ## Signatures and zero-knowledge proofs
 
