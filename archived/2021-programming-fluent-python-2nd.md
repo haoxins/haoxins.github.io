@@ -7,7 +7,7 @@ date: 2021-09-14
 * [Fluent Python, 2nd Edition](https://book.douban.com/subject/34990079/)
   - https://learning.oreilly.com/library/view/fluent-python-2nd/9781492056348/
 
-## The Python Data Model
+### The Python Data Model
 
 * `__len__`, `__getitem__`
 * `reversed`, `sorted`, `random.choice`
@@ -60,4 +60,48 @@ date: 2021-09-14
     `collections.defaultdict`, etc.;
   - `Set`: the interface of the `set` and
     `frozenset` built-in types.
+
+### An Array of Sequences
+
+
+### Dictionaries and Sets
+
+
+### Unicode Text versus Bytes
+
+### Data Class Builders
+
+### Object References, Mutability, and Recycling
+
+### Functions as First-Class Objects
+
+### Type Hints in Functions
+
+### Decorators and Closures
+
+### Special Methods for Sequences
+
+### Interfaces, Protocols, and ABCs
+
+
+### More About Type Hints
+
+### Operator Overloading
+
+### Iterators, Generators, and Classic Coroutines
+
+### With, match, and else blocks
+
+### Concurrency Models in Python
+
+
+### Asynchronous Programming
+
+
+### Dynamic Attributes and Properties
+
+
+### Attribute Descriptors
+
+### Class Metaprogramming
 
