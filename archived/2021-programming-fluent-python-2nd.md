@@ -122,6 +122,70 @@ date: 2021-09-14
 
 ### Concurrency Models in Python
 
+* Let's make sure we are on the same page
+  regarding some core concepts.
+
+* **concurrency**
+  - The ability to handle multiple pending tasks,
+    making progress one at a time or in parallel
+    (if possible) so that each of them eventually
+    succeeds or fails.
+  - A *single-core* CPU is capable of concurrency
+    if it runs an OS scheduler that interleaves
+    the execution of the pending tasks.
+    Also known as *multitasking*.
+
+* **parallelism**
+  - The ability to execute multiple computations
+    at the same time. This requires a *multi-core*
+    CPU, a GPU, or multiple computers in cluster.
+
+* **process**
+  - An instance of a computer program while
+    it is running, using memory and a slice of
+    the CPU time.
+  - Modern operating systems are able to manage
+    many processes concurrently, with each process
+    isolated in its own private memory space.
+  - Processes communicate via pipes, sockets, or
+    carry raw bytes, not live Python objects.
+  - A process can spawn *sub-processes*, each
+    called a child process. These are also isolated
+    from each other and from the parent.
+
+* **thread**
+  - An execution path within a single process.
+  - When a process starts, it uses a single thread:
+    the main thread. Using operating system APIs,
+    a process can create more threads that operate
+    concurrently thanks to the operating system scheduler.
+  - Threads share the memory space of the process,
+    which holds live Python objects. This allows easy
+    communication between threads, but can also lead to
+    corrupted data when more than one thread updates
+    the same object concurrently.
+
+* **contention**
+  - Dispute over a limited asset. Resource contention
+    happens when multiple processes or threads try
+    a lock or storage.
+  - There's also CPU contention, when compute-intensive
+    processes or threads must wait for
+    their share of CPU time.
+
+* **lock**
+  - An object that threads can use to coordinate
+    and synchronize their actions and
+    avoid corrupting data. While updating a shared
+    data structure, a thread should hold
+    an associated lock.
+    until the lock is released before accessing
+    the same data structure. The simplest type of
+    lock is also known as a *mutex*
+    (for mutual exclusion).
+
+* Here is how the concepts we just saw apply
+  to Python programming, in **ten points**.
 
 ### Concurrency with Futures
 
@@ -129,6 +193,7 @@ date: 2021-09-14
   *Future* in the standard library:
   `concurrent.futures.Future` and `asyncio.Future`.
 * They serve the same purpose: an instance of
+  either `Future` class represents a deferred
   computation that may or may not have completed.
 
 ### Asynchronous Programming
