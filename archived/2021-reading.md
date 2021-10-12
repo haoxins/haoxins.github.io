@@ -12,6 +12,13 @@ date: 2018-04-01
 
 ### 2021
 
+* [Advanced Algorithms and Data Structures]()
+  - https://www.manning.com/books/advanced-algorithms-and-data-structures
+  - https://learning.oreilly.com/library/view/advanced-algorithms-and/9781617295485/
+
+* [100 Go Mistakes: How to Avoid Them]()
+  - https://www.manning.com/books/100-go-mistakes-how-to-avoid-them
+
 * 今天 (*2021-09-27*) 突然发现
   - [Manning](https://www.manning.com)
   - 上面的书籍
@@ -22,16 +29,9 @@ date: 2018-04-01
 * [Fluent Python, 2nd Edition](https://book.douban.com/subject/34990079/)
   - https://learning.oreilly.com/library/view/fluent-python-2nd/9781492056348/
 
-* [100 Go Mistakes: How to Avoid Them]()
-  - https://www.manning.com/books/100-go-mistakes-how-to-avoid-them
-
 * [Graph-Powered Machine Learning](https://book.douban.com/subject/35135117/)
   - https://www.manning.com/books/graph-powered-machine-learning
   - https://learning.oreilly.com/library/view/graph-powered-machine-learning/9781617295645/
-
-* [Advanced Algorithms and Data Structures]()
-  - https://www.manning.com/books/advanced-algorithms-and-data-structures
-  - https://learning.oreilly.com/library/view/advanced-algorithms-and/9781617295485/
 
 * [并行计算机体系结构](https://book.douban.com/subject/1102231/)
   - 副标题: *硬件/软件结合的设计与分析*
