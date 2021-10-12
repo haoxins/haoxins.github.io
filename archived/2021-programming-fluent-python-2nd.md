@@ -148,6 +148,7 @@ date: 2021-09-14
     many processes concurrently, with each process
     isolated in its own private memory space.
   - Processes communicate via pipes, sockets, or
+    memory mapped files all of which can only
     carry raw bytes, not live Python objects.
   - A process can spawn *sub-processes*, each
     called a child process. These are also isolated
@@ -168,6 +169,7 @@ date: 2021-09-14
 * **contention**
   - Dispute over a limited asset. Resource contention
     happens when multiple processes or threads try
+    to access a shared resource such as
     a lock or storage.
   - There's also CPU contention, when compute-intensive
     processes or threads must wait for
@@ -179,6 +181,7 @@ date: 2021-09-14
     avoid corrupting data. While updating a shared
     data structure, a thread should hold
     an associated lock.
+  - This makes other well behaved threads wait
     until the lock is released before accessing
     the same data structure. The simplest type of
     lock is also known as a *mutex*
