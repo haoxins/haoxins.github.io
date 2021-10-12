@@ -682,6 +682,23 @@ invented in 1996, and specified in `RFC 2104`.
 
 ## Asymmetric encryption and hybrid encryption
 
+* In reality, asymmetric encryption is quite
+  *limited* due to the restricted length
+  of messages it can encrypt.
+
+
+* In practice, *asymmetric encryption* can only
+  encrypt messages up to *a certain length*.
+
+
+* Nowadays, most protocols and applications that
+  use `RSA` either still implement the insecure
+  `PKCS#1` `v1.5` or `OAEP`. On the other hand,
+  more and more protocols are moving away from
+  `RSA` encryption **in favor of**
+  *Elliptic Curve Diffie-Hellman* (**ECDH**)
+  for both *key exchanges* and *hybrid encryption*.
+
 ## Signatures and zero-knowledge proofs
 
 ## Randomness and secrets
