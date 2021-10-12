@@ -730,8 +730,9 @@ class InventoryItem:
 ```
 
 * Global Interpreter Lock, **GIL**
-  - Python 标准库中的所有 阻塞型I/O函数 都会释放 GIL, 允许其他线程运行.
-  - `time.sleep()` 函数也会释放 GIL.
+  - Python 标准库中的所有*阻塞型I/O函数*都会释放 `GIL`,
+    允许其他线程运行.
+  - `time.sleep()` 函数也会释放 `GIL`.
 
 ```
 An older way of marking a function as a coroutine
