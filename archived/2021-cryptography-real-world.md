@@ -639,6 +639,47 @@ invented in 1996, and specified in `RFC 2104`.
   is mostly specified with *elliptic curves* in
   *coordinates modulo* a large prime number `p`.
 
+* The group we formed on top of *elliptic curves*
+  differs with the group we formed with the
+  strictly positive integers modulo a prime number.
+* Due to some of these differences, the strongest
+  attacks known against DH (known as
+  *index calculus or number field sieve attacks*)
+  do not work well on the *elliptic curve* groups.
+* This is the main reason why parameters for `ECDH`
+  can be much lower than the parameters for `DH`
+  at the same level of security.
+* Nowadays, most of the curves in use come from
+  a couple standards, and most applications have
+  fixated on two curves: **P-256** and **Curve25519**.
+* `RFC 7748`, "*Elliptic Curves for Security*,"
+  which was published in 2016, specifies two
+  curves: **Curve25519** and **Curve448**.
+* The combination of `ECDH` with **Curve25519**
+  is often dubbed **X25519**.
+
+> A *small subgroup attack* impacts `DH` groups
+  that have many subgroups. By choosing generators
+  of small subgroups as public keys, an attacker
+  can leak bits of someone's private key
+  little by little.
+
+* If using `ECDH`, I would advise you to use
+  the **X25519** key exchange due to the quality
+  of the design (which takes into account
+  invalid curve attacks), the quality of available
+  implementations, and the resistance against
+  timing attacks by design.
+* **Curve25519** has one caveat though it is not
+  a *prime-order group*. The curve has two subgroups:
+  a small subgroup of size 8 and a large subgroup
+  used for `ECDH`. On top of that, the original
+  design did not prescribe validating received
+  points, and libraries, in turn, did not implement
+  these checks. This led to issues being found in
+  different types of protocols that were making
+  use of the primitive in more exotic ways.
+
 ## Asymmetric encryption and hybrid encryption
 
 ## Signatures and zero-knowledge proofs
