@@ -20,7 +20,6 @@
 * [量子计算公开课](archived/2021-quantum-computing.md)
 * [计算机程序的构造和解释 第2版](archived/2021-programs-structure.md)
 * [Rust](archived/2021-programming-rust.md)
-* [Rust in Action](archived/2021-programming-rust-in-action.md)
 * [Programming Rust - 2nd Edition (下)](archived/2021-programming-rust-2nd-2.md)
 * [Programming Rust - 2nd Edition (上)](archived/2021-programming-rust-2nd-1.md)
 * [Programming language](archived/2021-programming-language.md)

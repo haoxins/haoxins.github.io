@@ -19,10 +19,6 @@ date: 2018-04-01
   - 上面都可以看
   - O'Reilly 每月的订阅费 `$49`, **完美!**
 
-* [Rust in Action](https://book.douban.com/subject/27099617/)
-  - 作为 *Programming Rust, 2nd Edition* 的陪衬, 点缀
-  - https://learning.oreilly.com/library/view/rust-in-action/9781617294556/
-
 * [Fluent Python, 2nd Edition](https://book.douban.com/subject/34990079/)
   - https://learning.oreilly.com/library/view/fluent-python-2nd/9781492056348/
 
