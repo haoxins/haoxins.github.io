@@ -63,6 +63,34 @@ date: 2021-09-14
 
 ### An Array of Sequences
 
+* **Container** sequences
+  - Can hold items of different types, including
+    *nested containers*. Some examples:
+    `list`, `tuple`, and `collections.deque`.
+* **Flat** sequences
+  - Hold items of one simple type. Some examples:
+    `str`, `bytes`, and `array.array`.
+
+* A *container sequence* holds *references* to the
+  objects it contains, which may be of any type,
+  while a *flat sequence* stores the *value* of
+  its contents in its own memory space, and not
+  as distinct Python objects.
+
+* Another way of grouping sequence types
+  is by *mutability*:
+  - *Mutable* sequences
+  - E.g. `list`, `bytearray`, `array.array`,
+    and `collections.deque`.
+  - *Immutable* sequences
+  - E.g. `tuple`, `str`, and `bytes`.
+
+* The built-in concrete sequence types
+  do not actually *subclass* the `Sequence`
+  and `MutableSequence` *abstract base classes*
+  (ABCs), but they are *virtual subclasses*
+  registered with those ABCs
+
 
 ### Dictionaries and Sets
 
@@ -101,6 +129,7 @@ date: 2021-09-14
   - **native coroutines**
   - A coroutine defined with `async def`. You can delegate
     from a native coroutine to another native coroutine
+    using the `await` keyword, similar to how classic
     coroutines use `yield from`. The `async def` statement
     always defines a native coroutine, even if the `await`
     keyword is not used in its body. The `await` keyword
