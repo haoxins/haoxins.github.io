@@ -719,6 +719,30 @@ invented in 1996, and specified in `RFC 2104`.
 
 ## Signatures and zero-knowledge proofs
 
+* Only you can use your signature to sign arbitrary messages.
+* Anybody can verify your signature on a message.
+
+* A signature scheme typically consists of
+  *three different algorithms*:
+  - A *key pair generation algorithm* that
+    a signer uses to create a new private
+    and public key (the public key can
+    then be shared with anyone).
+  - A *signing algorithm* that takes a
+    private key and a message to
+    produce a signature.
+  - A *verifying algorithm* that takes a
+    public key, a message, and a signature
+    and returns a success or error message.
+
+* What are signatures good for? They are good for
+  *authenticating the origin* of a message
+  *as well as the integrity* of a message:
+  - **Origin**:
+  - If my signature is on it, it came from me.
+  - **Integrity**:
+  - If someone modifies the message, it voids the signature.
+
 ## Randomness and secrets
 
 ## Secure transport
