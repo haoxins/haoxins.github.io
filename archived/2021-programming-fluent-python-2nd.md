@@ -298,6 +298,7 @@ class Tombola(abc.ABC):
     may pick one of them to proceed.
   - When we write Python code, we have no control
     over the GIL. But a built-in function or an
+    extension written in `C` or any language that
     interfaces at the *Python/C* API level can
     release the GIL while running time-consuming tasks.
   - Every Python standard library function that
