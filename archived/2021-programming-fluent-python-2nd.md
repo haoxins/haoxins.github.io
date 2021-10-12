@@ -91,9 +91,54 @@ date: 2021-09-14
   (ABCs), but they are *virtual subclasses*
   registered with those ABCs
 
+```py
+colors = ['black', 'white']
+sizes = ['S', 'M', 'L']
+tshirts = [(color, size) for color in colors for size in sizes]
+```
+
+```py
+colors = ['black', 'white']
+sizes = ['S', 'M', 'L']
+for tshirt in (f'{c} {s}' for c in colors for s in sizes):
+    print(tshirt)
+```
+
+* Pattern Matching with Sequences
+
+```py
+metro_areas = [
+    ('Tokyo', 'JP', 36.933, (35.689722, 139.691667)),
+    ('Delhi NCR', 'IN', 21.935, (28.613889, 77.208889)),
+    ('Mexico City', 'MX', 20.142, (19.433333, -99.133333)),
+    ('New York-Newark', 'US', 20.104, (40.808611, -74.020386)),
+    ('São Paulo', 'BR', 19.649, (-23.547778, -46.635833)),
+]
+
+def main():
+    print(f'{"":15} | {"latitude":>9} | {"longitude":>9}')
+    for record in metro_areas:
+        match record:
+            case [name, _, _, (lat, lon)] if lon <= 0:
+                print(f'{name:15} | {lat:9.4f} | {lon:9.4f}')
+```
 
 ### Dictionaries and Sets
 
+```py
+def get_creators(record: dict) -> list:
+    match record:
+        case {'type': 'book', 'api': 2, 'authors': [*names]}:
+            return names
+        case {'type': 'book', 'api': 1, 'author': name}:
+            return [name]
+        case {'type': 'book'}:
+            raise ValueError(f"Invalid 'book' record: {record!r}")
+        case {'type': 'movie', 'director': name}:
+            return [name]
+        case _:
+            raise ValueError(f'Invalid record: {record!r}')
+```
 
 ### Unicode Text versus Bytes
 
