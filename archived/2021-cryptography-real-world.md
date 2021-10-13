@@ -743,6 +743,40 @@ invented in 1996, and specified in `RFC 2104`.
   - **Integrity**:
   - If someone modifies the message, it voids the signature.
 
+* *Key exchanges* didn't fully solve the problem
+  of setting up a secure connection between two
+  participants as an active **man-in-the-middle** (MITM)
+  attacker can trivially impersonate both sides of a
+  *key exchange*. This is where *signatures*
+  enter the ring.
+
+* **Public key infrastructures**
+  - *Transitivity of trust* allows you to scale trust
+    in systems in extreme ways.
+
+* **Zero-knowledge proofs** (ZKPs):
+  - The origin of signatures
+* **Schnorr identification protocol**:
+  - An **interactive** *zero-knowledge proof*
+
+* So-called *interactive* ZKP systems that
+  follow a three-movement pattern
+  (*commitment*, *challenge*, and *proof*)
+  are often referred to as *Sigma protocols*.
+
+* The *Schnorr identification protocol* is an
+  **interactive** ZKP that is complete
+  (Peggy can prove she knows some witness),
+  sound (Peggy cannot prove anything if she
+  doesn't know the witness), and zero-knowledge
+  (Victor learns nothing about the witness).
+  - Peggy: I'll prove that I know `x` in $$ Y = g^{x} \mod p $$
+  - Peggy: Here's a *commitment* of a
+    random value $$ R = g^k $$
+  - Victor: Here's a random challenge `c`
+  - Peggy: Here's a *hidden witness* $$ s = k + c \times x $$
+  - Victor: Indeed, $$ g^s = Y^{c} \times R $$
+
 ## Randomness and secrets
 
 ## Secure transport
