@@ -40,6 +40,7 @@
 * [庞加莱猜想](archived/2021-math-poincare-conjecture.md)
 * [代数的历史](archived/2021-math-history-of-algebra.md)
 * [伽罗瓦理论 - 群论](archived/2021-math-galois-theory.md)
+* [Math for Programmers](archived/2021-math-for-programmers.md)
 * [费马大定理](archived/2021-math-fermat-last-theorem.md)
 * [具体数学](archived/2021-math-concrete-mathematics.md)
 * [毛泽东选集 - 论持久战](archived/2021-mao.md)
