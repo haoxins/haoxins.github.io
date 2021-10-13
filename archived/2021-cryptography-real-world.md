@@ -886,6 +886,32 @@ invented in 1996, and specified in `RFC 2104`.
     message to sign. After that, a process similar
     to Schnorr signatures follows.
 
+* EdDSA key generation produces a secret key
+  that is then used to derive two other keys.
+  - The first derived key is the actual signing
+    key and can thus be used to derive
+    the public key;
+  - the other derived key is the nonce key,
+    used to deterministically derive the nonce
+    during signing operations.
+* EdDSA signatures are then like Schnorr
+  signatures with the exception that the nonce
+  is generated deterministically from the nonce
+  key and the message, and the public key of the
+  signer is included as part of the challenge.
+
+* The *most widely used* instantiation of
+  **EdDSA**, **Ed25519**, is defined with the
+  *Edwards25519* curve and the
+  *SHA-512* as a hash function.
+
+* Substitution attacks on signatures
+  - Substitution attacks, also referred to as
+    duplicate signature key selection (DSKS),
+    are possible on both RSA `PKCS#1` `v1.5`
+    and `RSA-PSS`.
+* Signature malleability
+
 ## Randomness and secrets
 
 ## Secure transport
