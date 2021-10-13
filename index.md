@@ -62,7 +62,7 @@
 * [Istio & WebAssembly](archived/2021-istio-webassembly.md)
 * [Istio in Action](archived/2021-istio-in-action.md)
 * [Graph-Powered Machine Learning](archived/2021-graph-powered-machine-learning.md)
-* [Graph Databases - Neo4j](archived/2021-graph-database.md)
+* [Graph Databases](archived/2021-graph-database.md)
 * [Graph Databases in Action](archived/2021-graph-database-in-action.md)
 * [游戏](archived/2021-gaming.md)
 * [阿西莫夫 - 银河帝国](archived/2021-galactic-empire.md)
