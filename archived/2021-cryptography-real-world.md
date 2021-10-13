@@ -777,6 +777,40 @@ invented in 1996, and specified in `RFC 2104`.
   - Peggy: Here's a *hidden witness* $$ s = k + c \times x $$
   - Victor: Indeed, $$ g^s = Y^{c} \times R $$
 
+> - Signatures as `non-interactive` *zero-knowledge proofs*
+
+* In 1986, Amos Fiat and Adi Shamir published a
+  technique that allowed one to easily convert
+  an *interactive* ZKP *into* a *non-interactive* ZKP.
+* The trick they introduced (referred to as the Fiat-Shamir
+  heuristic or Fiat-Shamir transformation) was to
+  make the prover compute the challenge themselves,
+  in a way they can't control.
+* Compute the challenge as a hash of all the messages
+  sent and received as part of the protocol up to
+  that point (which we call the *transcript*).
+* If we assume that the hash function gives outputs
+  that are indistinguishable from truly-random numbers
+  (in other words, it looks random), then it can
+  successfully simulate the role of the verifier.
+* *Digital signatures* are just *non-interactive* ZKPs.
+  Applying the *Fiat-Shamir transform* to the
+  *Schnorr identification protocol*, we obtain the
+  *Schnorr signature scheme*.
+
+* **Schnorr signature**
+  - *Commitment*: $$ R = g^k $$
+  - *"Random" challenge*: $$ c = HASH(R, msg) $$
+  - *Hidden witness*: $$ s = k + c \times x $$
+
+* A *Schnorr signature* is essentially two values,
+  `R` and `s`, where `R` is a *commitment* to some
+  secret random value (which is often called a
+  *nonce* as it needs to be unique per signature),
+  and `s` is a value computed with the help of
+  the *commitment* `R`, the private key
+  (the witness `x`), and a message.
+
 ## Randomness and secrets
 
 ## Secure transport
