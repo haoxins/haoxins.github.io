@@ -859,6 +859,33 @@ invented in 1996, and specified in `RFC 2104`.
 
 * The *Edwards-curve Digital Signature Algorithm*
   (**EdDSA**)
+  - *EdDSA* is actually based on
+    *Schnorr signatures*
+  - One particularity of EdDSA is that the scheme
+    does *not require new randomness* for
+    every signing operation.
+  - EdDSA produces signatures *deterministically*.
+  - EdDSA is on track to be included in NIST's
+    upcoming update for its `FIPS 186-5` standard
+    (still a draft as of early 2021).
+  - In practice, EdDSA is mostly instantiated with
+    the `Edwards25519` curve and the combo is called
+    `Ed25519` (whereas EdDSA with `Edwards448`
+    is shortened as `Ed448`).
+  - Key generation with EdDSA is a bit different
+    from other existing schemes. Instead of generating
+    a signing key directly, EdDSA generates a secret
+    key that is then used to derive the actual
+    signing key and another key that
+    we call the nonce key.
+  - That nonce key is important! It is the one used
+    to *deterministically* generate the
+    required per signature nonce.
+  - To sign, EdDSA first deterministically generates
+    the nonce by hashing the nonce key with the
+    message to sign. After that, a process similar
+    to Schnorr signatures follows.
+
 ## Randomness and secrets
 
 ## Secure transport
