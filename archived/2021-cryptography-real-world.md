@@ -833,6 +833,19 @@ invented in 1996, and specified in `RFC 2104`.
     able to forge a signature without
     knowledge of the private key.
 
+* The *Elliptic Curve Digital Signature Algorithm*
+  (**ECDSA**)
+  - An elliptic curve variant of DSA that was itself
+    invented only to circumvent patents
+    in Schnorr signatures.
+  - Unfortunately, ECDSA, like DSA, does not come with
+    a proof of security, while Schnorr signatures did.
+  - The private key is a large number
+    `x` generated randomly.
+  - The public key is obtained by viewing `x` as
+    an index in a group created by a generator
+    (called base point in elliptic curve cryptography).
+
 ## Randomness and secrets
 
 ## Secure transport
