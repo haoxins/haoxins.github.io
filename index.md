@@ -73,6 +73,7 @@
 * [Data engine](archived/2021-data-engine.md)
 * [Cryptography](archived/2021-cryptography.md)
 * [Real-World Cryptography](archived/2021-cryptography-real-world.md)
+* [Self-Sovereign Identity](archived/2021-crypto-self-sovereign-id.md)
 * [Coursera 课程记录](archived/2021-coursera.md)
 * [从公司, 到组织](archived/2021-company-and-organization.md)
 * [时间静悄悄](archived/2021-changing.md)

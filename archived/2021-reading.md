@@ -22,6 +22,9 @@ date: 2018-04-01
 * [Math for Programmers](https://book.douban.com/subject/35246850/)
   - https://learning.oreilly.com/library/view/math-for-programmers/9781617295355/
 
+* [Self-Sovereign Identity](https://book.douban.com/subject/34910070/)
+  - https://learning.oreilly.com/library/view/self-sovereign-identity/9781617296598/
+
 * 今天 (*2021-09-27*) 突然发现
   - [Manning](https://www.manning.com)
   - 上面的书籍
