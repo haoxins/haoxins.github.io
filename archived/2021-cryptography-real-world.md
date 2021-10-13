@@ -846,6 +846,19 @@ invented in 1996, and specified in `RFC 2104`.
     an index in a group created by a generator
     (called base point in elliptic curve cryptography).
 
+* The elliptic curves that tend to be used with
+  **ECDSA** are pretty much the same curves that
+  are popular with the *Elliptic Curve Diffie-Hellman*
+  (**ECDH**) algorithm with *one notable exception*:
+  **Secp256k1**.
+* **Secp256k1** is a type of elliptic curve called
+  a *Koblitz curve*. A *Koblitz curve* is just an
+  elliptic curve with some constraints in its
+  parameters that allow implementations to
+  optimize some operations on the curve.
+
+* The *Edwards-curve Digital Signature Algorithm*
+  (**EdDSA**)
 ## Randomness and secrets
 
 ## Secure transport
