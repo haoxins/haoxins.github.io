@@ -382,6 +382,41 @@ date: 2021-09-12
 
 * *Native* vs. *non-native* graph databases
 
+* Native graph databases are designed to use
+  the filesystem in a way that not only
+  understands but also supports graphs, which
+  means that they are both highly performant
+  and safe for graph workloads.
+* In more detail, a native graph DBMS exhibits
+  a property called index-free adjacency, which
+  means that each node maintains direct references
+  to its adjacent nodes. The adjacency list
+  representation is one of the most common ways
+  to represent sparse graphs.
+
+* The *adjacency list representation* can be
+  similarly modified to support many other graph
+  variants too. In such a representation, each
+  node acts as a microindex of other nearby nodes,
+  which is much cheaper than using global indexes.
+* A traversal across a relationship in such a
+  database has a constant cost, irrespective of
+  the size of the graph. Also, the query times
+  are independent of the total size of the graph;
+  instead, they are proportional to the amount
+  of the graph searched.
+
+* A native graph architecture provides many
+  advantages that make it generally superior to
+  a nonnative approach to managing graph models.
+  We can summarize these advantages as follows:
+  - "Minutes-to-milliseconds" performance:
+  - Read efficiency
+  - Disk space optimization
+  - Write efficiency
+
+* Label property graphs
+
 ## Graphs in machine learning applications
 
 ## Content-based recommendations
@@ -397,7 +432,5 @@ date: 2021-09-12
 ## Proximity-based algorithms
 
 ## Social network analysis against fraud
-
-## Graph-based natural language processing
 
 ## Knowledge graphs
