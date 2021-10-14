@@ -260,6 +260,65 @@ date: 2021-09-12
   is to build big data systems as a series of
   three layers: `batch`, `serving`, and `speed`.
 
+* Such advantages can be summarized as follows:
+  - Multiple data sources, such as geographical
+    or GPS information, social network data,
+    user personal profiles, family data, and
+    the like, can be merged in a single
+    connected source of truth.
+  - Existing data can be extended with external
+    sources of knowledge (shop locations,
+    people's addresses, and so on) or with
+    contextual information (a new shop, other
+    complaints, and the like) that can be used
+    to improve the analysis.
+  - The same data model can support several
+    analysis techniques.
+  - Data can be visualized as a graph to
+    speed the manual analysis.
+  - The analysis can be extended to multiple
+    levels of interaction, considering
+    multiple hops.
+  - The structure simplifies the merging and
+    cleaning operation, thanks to the flexible
+    access pattern provided by the graph model.
+
+* The key concerns of MDM
+  (*master data management *) include:
+  - Managing changes over time as organizational
+    structures change, businesses merge, and
+    business rules evolve
+  - Incorporating new sources of data
+  - Supplementing existing data with
+    external data sources
+  - Addressing the needs of reporting, compliance,
+    and business intelligence consumers
+  - Versioning data as its values and schema change
+
+* When done correctly, MDM has numerous advantages
+  that can be summarized as follows:
+  - Streamlining data sharing among
+    personnel and departments
+  - Facilitating computing in multiple system
+    architectures, platforms, and applications
+  - Removing inconsistencies and duplications from data
+  - Reducing unnecessary frustration when
+    searching for information
+  - Simplifying business procedures
+  - Improving communication throughout the organization
+
+* Graph-based MDM has the following advantages:
+  - *Flexibility*: The data captured can be easily
+    changed to include additional attributes and objects.
+  - *Extensibility*: The model allows the rapid evolution
+    of the master data model in line
+    with changing business needs.
+  - *Search capability*: Each node, each relationship, and
+    all their related properties are search entry points.
+  - *Indexing capability*: Graph databases are naturally
+    indexed by both relationships and nodes, providing
+    faster access compared to relational data.
+
 ## Graphs in machine learning applications
 
 ## Content-based recommendations
