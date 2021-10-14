@@ -417,6 +417,30 @@ date: 2021-09-12
 
 * Label property graphs
 
+* A property graph has the following properties
+  (defined here in a platform-agnostic way):
+  - The graph consists of a set of entities.
+    An entity represents either a
+    node or a relationship.
+  - Each entity has an identifier that uniquely
+    identifies it across the entire graph.
+  - Each relationship has a direction, a name
+    that identifies the type of the relationship,
+    a start node, and an end node.
+  - An entity can have a set of properties, which
+    are typically represented as key/value pairs.
+  - Nodes can be tagged with one or more labels,
+    which group nodes and indicate the roles
+    they play within the dataset.
+
+* As for relational databases, there are some
+  best practices or style rules for defining
+  a model for a graph. The labels for nodes
+  *should be singular*, for example, because
+  they represent a specific entity, whereas
+  the names for the relationships
+  *should reflect the direction*.
+
 ## Graphs in machine learning applications
 
 ## Content-based recommendations
