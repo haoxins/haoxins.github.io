@@ -219,6 +219,47 @@ date: 2021-09-12
   resulting feedback are at the
   core of machine learning.
 
+* From the specific model, it is possible to abstract
+  a more generic approach. The problem and process
+  can be generalized as follows:
+  - There is a lot of data in the form of events.
+  - The data is distributed across
+    multiple data sources.
+  - The data needs to be aggregated and organized
+    in a form that simplifies further
+    processes and analysis.
+  - From the first aggregation format, some
+    views are created.
+  - At the same time, some real-time view of
+    the last events needs to be stored
+    to react fast to those events.
+* Some important and relevant aspects of this
+  data flow affect the architecture
+  of the machine learning project:
+  - The events logged are raw, immutable, and true.
+    They will not change because of the analysis
+    performed; they just happen. It is necessary to
+    store the events one time and in a raw format.
+  - Multiple views are created as functions
+    (aggregation is one example) on this data, and
+    they can change according to the
+    algorithms used for the analysis.
+  - The view-building process generally operates on
+    the entire set of data, and this process can
+    take time, especially when it operates on a
+    large amount of data, as in our specific use case.
+    The time required to process the data creates
+    a gap between the view of current events
+    and previous events.
+  - To have a real-time view of the data, it is
+    necessary to fill this gap. The real-time view
+    requires a kind of streaming process that reads
+    the events and appends information to the views.
+
+* The primary concept of the *Lambda Architecture*
+  is to build big data systems as a series of
+  three layers: `batch`, `serving`, and `speed`.
+
 ## Graphs in machine learning applications
 
 ## Content-based recommendations
