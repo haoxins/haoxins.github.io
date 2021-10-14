@@ -923,6 +923,36 @@ invented in 1996, and specified in `RFC 2104`.
   like the weather are hard to predict accurately
   past a certain number of days.
 
+* These hardware random number generators are often
+  called *true random number generators* (TRNGs) as
+  they make use of external unpredictable physical
+  phenomena like thermal noise to extract randomness.
+* Randomness extractors must clean and gather several
+  sources of noise together before it can be used for
+  cryptographic applications.
+* Extracting randomness from noise is a process that
+  can be slow. For some applications that might need
+  lots of random numbers quickly, it can become a
+  bottleneck.
+
+* *pseudorandom number generator* (**PRNG**)
+
+* Obtaining unpredictable randomness is somewhat of a
+  slow process. This is sometimes due to a source of
+  entropy being slow to produce noise. As a result,
+  OSs often optimize their production of random numbers
+  by using *pseudorandom number generators* (**PRNGs**).
+* A pseudorandom number generator (PRNG) generates a
+  sequence of random numbers based on a seed. Using the
+  same seed makes the PRNG produce the same sequence
+  of random numbers.
+  - It should be impossible to recover the state using
+    knowledge of the random outputs.
+  - It follows that it should also be impossible from
+    observing the produced random numbers alone to
+    predict future random numbers or to
+    recover previously generated random numbers.
+
 ## Secure transport
 
 ## End-to-end encryption
