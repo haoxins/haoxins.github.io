@@ -443,6 +443,38 @@ date: 2021-09-12
 
 ## Graphs in machine learning applications
 
+* **Graph modeling**: Data is converted to some
+  graph representation by means of a modeling
+  pattern. The information is the same, only in
+  a different format, or the data is aggregated
+  to make it more suitable to feed
+  into the learning process.
+* **Graph construction**: A new graph is created,
+  starting from the data available. The resulting
+  graph contains more information than before.
+
+* The graph representation is helpful for the following tasks:
+  - *Feature selection*: Querying a relational database or
+    extracting a key from a value in a NoSQL database is
+    a complex undertaking. A graph is easy to query and
+    can merge data from multiple sources, so finding and
+    extracting the list of variables to use for training
+    is made simpler by the graph approach.
+  - *Data filtering*: The easy-to-navigate relationships
+    among objects make it easy to filter out useless data
+    before the training phase, which speeds the
+    model-building process.
+  - *Data preparation*: Graphs make it easy to clean the
+    data, removing spurious entries, and to merge data
+    from multiple sources.
+  - *Data enrichment*: Extending the data with external
+    sources of knowledge or looping back the result of
+    the modeling phase to build a bigger knowledge base
+    is straightforward with a graph.
+  - *Data formatting*: It's easy to export the data in
+    whichever format is necessary:
+    vectors, documents, and so on.
+
 ## Content-based recommendations
 
 ## Collaborative filtering
