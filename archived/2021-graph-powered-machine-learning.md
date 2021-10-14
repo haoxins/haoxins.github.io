@@ -213,6 +213,12 @@ date: 2021-09-12
 * **Variety**
 * **Veracity**
 
+> With a *feedback loop*, the system learns continuously
+  by *monitoring* the effectiveness of predictions and
+  *retraining* when needed. Monitoring and using the
+  resulting feedback are at the
+  core of machine learning.
+
 ## Graphs in machine learning applications
 
 ## Content-based recommendations
