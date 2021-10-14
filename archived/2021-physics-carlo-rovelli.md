@@ -52,6 +52,7 @@ date: 2021-01-28
 ------------------
 
 * [Helgoland](https://book.douban.com/subject/35265189/)
+  - https://book.douban.com/subject/35476832/
   - 等不及翻译了, 京东 (jd.com) 预定了英文版
 
 ------------------

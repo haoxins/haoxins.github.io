@@ -142,6 +142,7 @@ date: 2018-04-01
   - 微信读书赠送 :)
 
 * [Helgoland](https://book.douban.com/subject/35265189/)
+  - https://book.douban.com/subject/35476832/
   - 卡洛·罗韦利 Carlo Rovelli
   - 借与 @`Frederic`
   - **独读书** 不如 **众读书**
