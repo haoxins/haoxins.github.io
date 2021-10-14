@@ -202,6 +202,17 @@ date: 2021-09-12
   simplify and speed access to the dataset
   that will be used for training purposes.
 
+* **Volume**
+  - Scalable storage
+  - Scalable processing
+* In a big data platform, graphs can help address
+  volume issues by playing two roles:
+  - Main data source
+  - Materialized views
+* **Velocity**
+* **Variety**
+* **Veracity**
+
 ## Graphs in machine learning applications
 
 ## Content-based recommendations
