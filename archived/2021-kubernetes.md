@@ -29,6 +29,7 @@ k get   po,ev,cm,svc,ns,pv,pvc,secret,deploy,rs
 
 ```zsh
 k rollout status deploy deploy_name
+k rollout restart deploy deploy_name
 ```
 
 ## Argo

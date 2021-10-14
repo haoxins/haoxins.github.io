@@ -914,6 +914,15 @@ invented in 1996, and specified in `RFC 2104`.
 
 ## Randomness and secrets
 
+* That being said, all of these factors impact the
+  end result so much that a slight imprecision in
+  the knowledge of the initial conditions would mess
+  with our predictions. The extreme sensitivity of
+  an outcome to its initial conditions is known as
+  **chaos theory**, and it is the reason why things
+  like the weather are hard to predict accurately
+  past a certain number of days.
+
 ## Secure transport
 
 ## End-to-end encryption
