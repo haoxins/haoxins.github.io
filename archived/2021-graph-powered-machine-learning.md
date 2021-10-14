@@ -319,6 +319,69 @@ date: 2021-09-12
     indexed by both relationships and nodes, providing
     faster access compared to relational data.
 
+* A proper native graph database, on the other hand,
+  uses a graph model for storing and processing the
+  data, making graph manipulation straightforward,
+  intuitive, and performant.
+* An interesting way of classifying graph processing,
+  organized along three dimensions:
+  - graph dynamism,
+  - algorithm types,
+  - and workload types
+
+* The graph data model, on the other hand, is
+  highly relationship-oriented. Each node can be
+  related to any other node, so a graph doesn't
+  have predictable lookups. It also has a highly
+  mutable structure: with few new links and
+  few new nodes, the connection
+  structure can change heavily.
+* Moreover, due to the dynamic nature of the
+  graphs, graphs and their access patterns can
+  change rapidly and unpredictably at run time,
+  making this solution inconvenient
+  to implement in practice.
+* With these challenges in mind, generally
+  speaking, there are *three techniques* for
+  *scaling a graph database*:
+  - **Application-level sharding**
+  - **Increasing the RAM or using cache sharding**
+  - Cache sharding isn't sharding in the
+    traditional sense, because we expect the
+    full dataset to be present on each database
+    instance. To implement cache sharing, we
+    partition the workload undertaken by each
+    database instance to increase the
+    likelihood of hitting a warm cache for
+    a given request. (Warm caches in graph
+    databases like Neo4j are highly performant.)
+  - **Replication**
+
+* Data replication consists of maintaining
+  multiple copies of data, called *replicas*,
+  on separate computers.
+  Replication has several purposes:
+  - *System availability*
+  - *Performance*
+  - *Scalability*
+  - *Application requirements*
+
+> - Data replication has clear benefits,
+    but keeping the different copies
+    synchronized is a challenge.
+
+* Due to the highly connected nature of graphs,
+  implementing either a centralized primary copy
+  protocol or a distributed protocol is a
+  difficult task, one that has serious effects
+  on performance and data consistency,
+  to mention the most critical.
+* Therefore, we will focus on the *centralized*
+  approach with a single master, also described
+  as `master/slave` replication.
+
+* *Native* vs. *non-native* graph databases
+
 ## Graphs in machine learning applications
 
 ## Content-based recommendations
