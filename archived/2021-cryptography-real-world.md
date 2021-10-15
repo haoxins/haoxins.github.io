@@ -1009,6 +1009,31 @@ invented in 1996, and specified in `RFC 2104`.
   different *noise* sources and used to
   seed a *long-term* **PRNG**.
 
+* In `2021`, Linux uses a PRNG that's based on the
+  `ChaCha20` stream cipher. In addition, the random
+  number generator interface exposed to developers
+  will be different depending on the OS.
+* For example, on Linux, one can read bytes from
+  the `/dev/urandom`.
+* One problem with `/dev/urandom` is that it might
+  not provide enough entropy
+  (its numbers won't be random enough)
+  if used too early after booting the device.
+* I recommend that you use `getrandom` if it is
+  available on your system. The following listing
+  shows how one can securely use getrandom in C:
+
+```c
+#include <sys/random.h>
+
+uint8_t secret[16];
+int len = getrandom(secret, sizeof(secret), 0);
+
+if (len != sizeof(secret)) {
+  abort();
+}
+```
+
 ## Secure transport
 
 ## End-to-end encryption
