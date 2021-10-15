@@ -1034,6 +1034,20 @@ if (len != sizeof(secret)) {
 }
 ```
 
+> It might be easy to forget that `getrandom`
+  only returns up to *256 bytes* per call,
+  for example. For this reason, you should always
+  attempt to generate random numbers through the
+  standard library of the programming
+  language you're using.
+
+* Make sure that you use random libraries that
+  generate ***cryptographically strong*** random
+  numbers. Usually the name of the library helps
+  (for example, you can probably guess which one
+  you should use between the `math/rand` and
+  `crypto/rand` packages in Golang).
+
 ## Secure transport
 
 ## End-to-end encryption
