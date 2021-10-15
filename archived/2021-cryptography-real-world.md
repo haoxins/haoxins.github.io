@@ -1,5 +1,5 @@
 ---
-title: Real-World Cryptography
+title: Real-World Cryptography (上)
 description: 白露横江, 水光接天. 纵一苇之所如, 凌万顷之茫然.
 date: 2021-09-10
 ---
@@ -1244,6 +1244,39 @@ if (len != sizeof(secret)) {
   exist several cryptographic techniques that can be
   useful in different scenarios.
   - Imagine a protocol that accepts a financial
+    transaction only if it has been signed by Alice.
+    In order to reduce the impact of an attack on
+    Alice, we can, instead, change the protocol to
+    accept (on the same transaction) a number `n`
+    of signatures from `n` different public keys,
+    including Alice's. An attacker would have to
+    compromise all n signatures in order to forge
+    a valid transaction! Such systems are called
+    **multi-signature** (often shortened as
+    **multi-sig**) and are widely adopted in the
+    cryptocurrency space.
+  - Some signature schemes (like the **BLS**
+    signature scheme) can compress several
+    signatures down to a single one. This is called
+    **signature aggregation**. Some *multi-signature*
+    schemes go even further in the compression
+    by allowing the `n` public keys to be aggregated
+    into a single public key. This technique is
+    called *distributed key generation* (*DKG*) and
+    is part of a field of cryptography called
+    **secure multi-party computation**.
+  - DKG lets `n` participants collaboratively
+    compute a public key without ever having the
+    associated private key in the clear during the
+    process (unlike SSS, there is no dealer).
+    If participants want to sign a message, they can
+    then collaboratively create a signature using
+    each participant's private shares, which can be
+    verified using the public key they previously
+    created. Again, the private key never exists
+    physically, preventing the single point of
+    failure problem SSS has.
+
 ## Secure transport
 
 ## End-to-end encryption
@@ -1256,6 +1289,6 @@ if (len != sizeof(secret)) {
 
 ## Post-quantum cryptography
 
-## Is this it? Next-generation cryptography
+## Next-generation cryptography
 
 ## When and where cryptography fails
