@@ -1159,6 +1159,50 @@ if (len != sizeof(secret)) {
     as `input` and `is`, thus, usually ran after
     HKDF-Extract.
 
+* HKDF-Extract is the first function specified by HKDF.
+  It takes an optional salt that is used as the key in
+  HMAC and the input secret that might be nonuniformly
+  random. Using different salts with the same input
+  secret produces different outputs.
+
+* HKDF-Expand is the second function specified
+  by HKDF. It takes an optional `info` byte string
+  and an `input` secret that needs to be uniformly
+  random. Using different `info` byte strings
+  with the same `input` secret produces different
+  outputs. The length of the output is controlled
+  by a `length` argument.
+
+* HKDF does not expect the `salt` to be a secret;
+  it can be known to everyone, including adversaries.
+  Instead of a hash function, HKDF-Extract uses a MAC
+  (specifically HMAC), which coincidentally has an
+  interface that accepts two arguments.
+
+* HKDF is limited by the size of the hash function
+  you use; more precisely, if you use SHA-512
+  (which produces outputs of 512 bits) with HKDF,
+  you are limited to `512 × 255` bits = `16,320` bytes
+  of output for a given key and an info byte string.
+
+* Calling HKDF or HKDF-Expand several times with
+  the same arguments, except for the output length,
+  produces the same output truncated to the different
+  length requested.
+* This property is called **related outputs** and can,
+  in rare scenarios, surprise protocol designers.
+  It is good to keep this in mind.
+
+* The *extended output functions* (XOFs)
+  (SHAKE and cSHAKE) can be used as a KDF
+  as well! Remember, a XOF
+  - Does not expect a uniformly random input
+  - Can produce a practically infinitely
+    large uniformly random output
+
+* most serious applications employ
+  two defense-in-depth techniques:
+  - **Key rotation**: By associating an expiration date
 ## Secure transport
 
 ## End-to-end encryption
