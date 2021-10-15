@@ -1276,19 +1276,3 @@ if (len != sizeof(secret)) {
     created. Again, the private key never exists
     physically, preventing the single point of
     failure problem SSS has.
-
-## Secure transport
-
-## End-to-end encryption
-
-## User authentication
-
-## Crypto as in cryptocurrency?
-
-## Hardware cryptography
-
-## Post-quantum cryptography
-
-## Next-generation cryptography
-
-## When and where cryptography fails
