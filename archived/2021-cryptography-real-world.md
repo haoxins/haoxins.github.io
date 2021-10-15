@@ -1107,6 +1107,58 @@ if (len != sizeof(secret)) {
   - **League of Entropy**:
     Decentralized Randomness Beacon
 
+* Key derivation with HKDF
+  - PRNGs are not the only constructions one can
+    use to derive more secrets from one secret
+    (in other words, to stretch a key).
+  - Deriving several secrets from one secret is
+    actually such a frequent pattern in
+    cryptography that this concept has its
+    own name: *key derivation*.
+
+* A key derivation function (**KDF**) is like
+  a PRNG in many ways, except for a number of
+  subtleties as noted in the following list.
+  - A KDF does not necessarily expect a uniformly
+    random secret (as long as it has enough entropy).
+    This makes a KDF useful for deriving secrets
+    from key exchange output, which produce high
+    entropy but biased results. The resulting
+    secrets are, in turn, uniformly random, so
+    you can use these in constructions that expect
+    uniformly random keys.
+  - A KDF is generally used in protocols that
+    require participants to rederive the same keys
+    several times. In this sense, a KDF is expected
+    to be deterministic, while PRNGs sometimes
+    provide backward secrecy by frequently reseeding
+    themselves with more entropy.
+  - A KDF is usually not designed to produce
+    a LOT of random numbers. Instead, it is normally
+    used to derive a limited number of keys.
+
+* A key derivation function (KDF) and a PRNG
+  are two similar constructions. The main differences
+  are that a KDF does not expect a fully uniformly
+  random secret as input
+  (as long as it has enough entropy) and is usually
+  not used to generate too much output.
+
+* The most popular KDF is the HMAC-based
+  key derivation function (HKDF). HKDF is a
+  light KDF built on top of HMAC and defined
+  in RFC 5869. For this reason, one can use
+  HKDF with different hash functions, although,
+  it is most commonly used with SHA-2.
+  HKDF is specified as two different functions:
+  - **HKDF-Extract**: Removes biases from a
+    secret input, producing a uniformly random secret.
+  - **HKDF-Expand**: Produces an arbitrary length
+    and uniformly random output. Like PRNGs,
+    it expects a uniformly random secret
+    as `input` and `is`, thus, usually ran after
+    HKDF-Extract.
+
 ## Secure transport
 
 ## End-to-end encryption
