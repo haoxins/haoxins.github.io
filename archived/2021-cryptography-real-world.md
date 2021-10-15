@@ -1203,6 +1203,47 @@ if (len != sizeof(secret)) {
 * most serious applications employ
   two defense-in-depth techniques:
   - **Key rotation**: By associating an expiration date
+    to a key (usually a public key) and by replacing
+    your key with a new key periodically, you can "heal"
+    from an eventual compromise. The shorter the
+    expiration date and rotation frequency, the faster
+    you can replace a key that might be
+    known to an attacker.
+  - **Key revocation**: Key rotation is not always
+    enough, and you might want to cancel a key
+    as soon as you hear it has been compromised.
+    For this reason, some systems allow you to ask
+    if a key has been revoked before making use of it.
+
+* **Secret splitting** allows you to break a secret
+  into multiple parts that can be shared among
+  a set of participants. Here, a secret can be
+  anything you want: a symmetric key, a signing
+  private key, and so on.
+* Given a key and a number of shares n, the
+  **Shamir's Secret Sharing** scheme creates `n`
+  partial keys of the same size
+  as the original key.
+* The **Shamir's Secret Sharing** scheme used to
+  split a secret in n partial keys requires all
+  of the n partial keys to reconstruct
+  the original key.
+* The idea behind the **Shamir's Secret Sharing**
+  scheme is to see a polynomial defining a curve
+  as the secret and random points on the curve as
+  partial keys. To recover a polynomial of degree
+  `n` that defines a curve, one needs to know
+  `n + 1` points on the curve. For example,
+  $$ f(x) = 3x + 5 $$ is of degree `1`, so you
+  need any two points `(x, f(x))` to recover the
+  polynomial, and $$ f(x) = 5x^2 + 2x + 3 $$
+  is of degree `2`, so you need any three points
+  to recover the polynomial.
+
+* To avoid this single point of failure issue, there
+  exist several cryptographic techniques that can be
+  useful in different scenarios.
+  - Imagine a protocol that accepts a financial
 ## Secure transport
 
 ## End-to-end encryption
