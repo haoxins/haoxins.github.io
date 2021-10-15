@@ -1048,6 +1048,65 @@ if (len != sizeof(secret)) {
   you should use between the `math/rand` and
   `crypto/rand` packages in Golang).
 
+* In most situations, sticking to what the
+  programming language's standard library or
+  what a good cryptography library
+  provides should be enough.
+* It is good to keep in mind the following
+  edge cases should you run into them:
+  - **Forking processes**: When using a userland
+    PRNG (some applications with extremely high
+    performance requirements might have no
+    other choice), it is important to keep in mind
+    that a program that forks will produce a new
+    child process that will have the same PRNG
+    state as its parent. Consequently, both PRNGs will
+    produce the same sequence of random numbers
+    from there on.
+  - **Virtual machines (VMs)**: Cloning of PRNG state
+    can also become a problem when using the OS PRNG.
+    Think about VMs. If the entire state of a VM is
+    saved and then started several times from this
+    point on, every instance might produce the exact
+    same sequence of random numbers. This is sometimes
+    fixed by hypervisors and OSs, but it is good to
+    look into what the hypervisor you're using is
+    doing before running applications that request
+    random numbers in VMs.
+  - **Early boot entropy**: While OSs should have no
+    trouble gathering entropy in user-operated devices
+    due to the noise produced by the user's interactions
+    with the device, embedded devices and headless
+    systems have more challenges to overcome in order to
+    produce good entropy at boot time. History has shown
+    that some devices tend to boot in a similar fashion
+    and end up amassing the same initial noise from
+    the system, leading to the same seed being used for
+    their internal PRNGs and the same series of random
+    numbers being generated.
+
+* **Public randomness**
+  - *One-to-many*: You want to produce randomness for others.
+  - *Many-to-many*: A set of participants want to produce
+    randomness together.
+
+* A *verifiable random function* (**VRF**) generates
+  verifiable randomness via public key cryptography.
+  To generate a random number, simply use a signature
+  scheme which produces unique signatures
+  (like **BLS**) to sign a seed, then hash the signature
+  to produce the public random number.
+* To validate the resulting randomness, make sure that
+  the hash of the signature is indeed the random number
+  and verify the signature over the seed.
+
+* One popular *decentralized randomness beacon* is
+  called drand and is run in concert by several
+  organizations and universities. It is available at
+  - https://leagueofentropy.com
+  - **League of Entropy**:
+    Decentralized Randomness Beacon
+
 ## Secure transport
 
 ## End-to-end encryption
