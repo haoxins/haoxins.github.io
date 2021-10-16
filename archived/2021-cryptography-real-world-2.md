@@ -80,6 +80,66 @@ date: 2021-10-15
   cryptographic algorithm, cherry-picked from the
   client's selection.
 
+* **TLS 1.3** optimizes this flow by attempting
+  to do *both* the *negotiation* and the
+  *key exchange* at the same time: the client
+  speculatively chooses a key exchange algorithm
+  and sends a public key in the first message
+  (the `ClientHello`). If the client fails to
+  predict the server's choice of key exchange
+  algorithm, then the client falls back to the
+  outcome of the negotiation and sends a new
+  `ClientHello` containing the correct public key.
+
+* In TLS 1.3, each session starts with an
+  **ephemeral key exchange**. If a server is
+  compromised at some point in time, no
+  previous sessions will be impacted.
+* TLS 1.3 derives different keys at
+  different points in time to encrypt
+  different phases with independent keys.
+* To derive the different keys, TLS 1.3 uses
+  HKDF with the hash function negotiated.
+  - HKDF-Extract is used on the output of the
+    key exchange to remove any biases,
+  - while HKDF-Expand is used with different
+    info parameters to derive
+    the encryption keys.
+
+* A TLS **1.3** handshake is actually split
+  into three different stages
+  - **Key exchange** This phase contains the
+    `ClientHello` and `ServerHello` messages
+    that provide some negotiation and perform
+    the key exchange. All messages including
+    handshake messages *after* this phase
+    are *encrypted*.
+  - **Server parameters** Messages in this phase
+    contain additional negotiation data from
+    the server. This is negotiation data that
+    does not have to be contained in the first
+    message of the server and that could
+    benefit from being encrypted.
+  - **Authentication** This phase includes
+    authentication information from both
+    the server and the client.
+
+* Client authentication is often delegated to
+  the application layer for the web, most
+  often via a form asking you for your
+  credentials. That being said, client
+  authentication can also happen in TLS if
+  requested by the server during the
+  *server parameters* phase. When both sides
+  of the connection are authenticated, we talk
+  about mutually-authenticated TLS
+  (sometimes abbreviated as **mTLS**).
+* Client authentication is done the same way
+  as server authentication. This can happen at
+  any point after the authentication
+  of the server (for example, during the
+  handshake or in the post-handshake phase).
+
 ## End-to-end encryption
 
 ## User authentication
