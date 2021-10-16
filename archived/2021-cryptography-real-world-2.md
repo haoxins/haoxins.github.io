@@ -200,6 +200,34 @@ date: 2021-10-15
   allows the participants to detect and
   abort the connection.
 
+* While certificates are optional in TLS 1.3
+  (you can always use plain keys),
+  many applications and protocols,
+  not just the web, make heavy use of them
+  in order to certify additional metadata.
+  Specifically, the `X.509` certificate
+  standard **version 3** is used.
+* The `X.509` standard uses a description
+  language called **Abstract Syntax Notation One**
+  to specify information contained in a certificate.
+  A data structure described in **ASN.1**
+  looks like this:
+
+```
+Certificate  ::=  SEQUENCE  {
+    tbsCertificate      TBSCertificate,
+    signatureAlgorithm  AlgorithmIdentifier,
+    signatureValue      BIT STRING  }
+```
+
+* `tbsCertificate`: The to-be-signed certificate.
+* `signatureAlgorithm`: The algorithm used to
+  sign the certificate.
+* `signatureValue`: The signature from a CA.
+
+* **DER** is a deterministic (only one way to encode)
+  binary encoding used to translate `X.509`
+  certificates into bytes.
 ## End-to-end encryption
 
 ## User authentication
