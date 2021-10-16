@@ -475,6 +475,35 @@ date: 2021-09-12
     whichever format is necessary:
     vectors, documents, and so on.
 
+* **Identify the data sources**. Identify the data
+  available for algorithm training purposes, as well
+  as the sources from which such data can be extracted.
+* **Analyze the data available**. Analyze each data
+  source available, and evaluate the content, in terms
+  of quality and quantity.
+* **Design the graph data model**. This step is twofold.
+  According to the specific analytics requirements,
+  you must
+  - Identify the meaningful information to be
+    extracted from the data sources.
+  - Design a specific graph model, considering the
+    data available, access patterns, and extensibility.
+* **Define the data flow**. Design the architecture
+  of the ingestion process (known as the ETL process)
+  that extracts, transforms, and loads the data from
+  the multiple sources into the graph database,
+  using the schema designed.
+* **Import data into the graph**.
+* **Perform postimport tasks**. Before you start
+  the analysis, the data in the graph might require
+  some preprocessing. These tasks include
+  - *Data cleaning*
+  - *Data enrichment*
+  - *Data merging*
+
+* The resulting graph can be generalized
+  as a **co-occurrence** graph.
+
 ## Content-based recommendations
 
 ## Collaborative filtering
