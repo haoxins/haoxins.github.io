@@ -228,6 +228,22 @@ Certificate  ::=  SEQUENCE  {
 * **DER** is a deterministic (only one way to encode)
   binary encoding used to translate `X.509`
   certificates into bytes.
+* **DER** only encodes information as
+  "here is an integer" or "this is a bytearray."
+  Field names described in `ASN.1`
+  (like `tbsCertificate`) are lost after encoding.
+* Decoding **DER** without the knowledge of the
+  original `ASN.1` description of what each
+  field truly means is thus pointless.
+* **DER** encoding is a *difficult* protocol
+  *to parse correctly*, and the complexity of
+  `X.509` certificates makes for many mistakes
+  to be potentially devastating. For this reason,
+  I **don't recommend** any modern application
+  **to use** `X.509` certificates unless it has to.
+
+* In `TLS 1.3`, a **PSK** handshake works by having
+  the client advertise in its `ClientHello` message
 ## End-to-end encryption
 
 ## User authentication
