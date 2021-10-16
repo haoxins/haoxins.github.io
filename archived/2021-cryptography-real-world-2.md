@@ -244,6 +244,56 @@ Certificate  ::=  SEQUENCE  {
 
 * In `TLS 1.3`, a **PSK** handshake works by having
   the client advertise in its `ClientHello` message
+  that it supports a list of **PSK** identifiers.
+  If the server recognizes one of the **PSK** IDs,
+  it can say so in its response
+  (the `ServerHello` message), and both can then
+  avoid doing a key exchange (if they want to).
+  By doing this, the *authentication phase* is
+  *skipped*, making the `Finished` message at
+  the end of the handshake important
+  to prevent **MITM** attacks.
+
+* Both the `ClientHello` and `ServerHello`
+  messages have a random field, which is
+  randomly generated for every new session
+  (and often referred to as client
+  random and server random).
+
+* Another use case for **PSKs** is session
+  resumption. Session resumption is about
+  reusing secrets created from a
+  previous session or connection.
+* TLS 1.3 offers a way to generate a PSK
+  after a handshake is successfully
+  performed, which can be used in subsequent
+  connections to avoid having to
+  redo a full handshake.
+* If the server wants to offer this feature,
+  it can send a *New Session Ticket* message
+  at any time during the *post-handshake* phase.
+
+* Starting with TLS 1.3, if a server decides
+  to allow it, clients have the possibility
+  to send encrypted data as part of their
+  first series of messages, right after the
+  `ClientHello` message. This means that
+  browsers do not necessarily have to wait
+  until the end of the handshake to start
+  sending application data to the server.
+  This mechanism is called *early data* or
+  **0-RTT** (for *zero round trip time*).
+  It can only be used with the combination
+  of a PSK as it allows derivation of
+  symmetric keys during the `ClientHello` message.
+* This feature was quite controversial during
+  the development of the TLS 1.3 standard
+  because a passive attacker can replay an
+  observed `ClientHello` followed by the
+  encrypted 0-RTT data. This is why 0-RTT
+  must be used only with application data
+  that can be replayed safely.
+
 ## End-to-end encryption
 
 ## User authentication
