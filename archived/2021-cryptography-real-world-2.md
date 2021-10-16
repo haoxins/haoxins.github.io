@@ -140,6 +140,66 @@ date: 2021-10-15
   of the server (for example, during the
   handshake or in the post-handshake phase).
 
+* There are two sides to the web PKI.
+  - First, browsers must trust a set of
+    root public keys that we call
+    *certificate authorities* (**CAs**).
+    Usually, browsers will either use a
+    hardcoded set of trusted public keys
+    or will rely on the operating system
+    to provide them.
+  - Second, websites that want to use HTTPS
+    must have a way to obtain a certification
+    (a signature of their signing public key)
+    from these CAs. In order to do this,
+    a website owner must prove to a CA
+    that they own a specific domain.
+
+* More specifically, CAs do not actually
+  sign public keys, but instead they sign
+  **certificates** (more on this later).
+* A **certificate** *contains* the
+  *long-term public key*, along with some
+  *additional important metadata* like
+  the web page's domain name.
+
+* The signature in the `CertificateVerify`
+  message proves to the client what the
+  server has so far seen. Without this
+  signature, a MITM attacker could intercept
+  the server's handshake messages and
+  replace the ephemeral public key of the
+  server contained in the ServerHello message,
+  allowing the attacker to successfully
+  impersonate the server.
+* The authentication part of a handshake
+  starts with the server sending a
+  certificate chain to the client.
+  The certificate chain starts with the
+  leaf certificate (the certificate
+  containing the website's public key
+  and additional metadata like
+  the domain name) and ends with a root
+  certificate that is trusted by the browser.
+  Each certificate contains a signature
+  from the certificate above it in the chain.
+
+* Finally, in order to officially end the
+  handshake, both sides of the connection must
+  send a `Finished` message as part of the
+  authentication phase.
+* A Finished message contains an authentication
+  tag produced by HMAC, instantiated with the
+  negotiated hash function for the session.
+  This allows both the client and the server
+  to tell the other side,
+  "These are all the messages I have sent
+  and received in order during this handshake."
+  If the handshake is intercepted and tampered
+  with by MITM attackers, this integrity check
+  allows the participants to detect and
+  abort the connection.
+
 ## End-to-end encryption
 
 ## User authentication
