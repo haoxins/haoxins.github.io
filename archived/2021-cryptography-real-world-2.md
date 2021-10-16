@@ -294,6 +294,57 @@ Certificate  ::=  SEQUENCE  {
   must be used only with application data
   that can be replayed safely.
 
+* *Certificate revocation* As the name
+  indicates, this allows a CA to revoke
+  a certificate and warn browsers about it.
+* *Certificate monitoring* This is a
+  relatively new system that forces CAs
+  to publicly log every certificate signed.
+
+* **Secure Shell (SSH)**
+* **Wi-Fi Protected Access (WPA)**
+* **IPSec**: One of the most popular
+  virtual network protocols (**VPNs**) used
+  to connect different private networks together.
+  It is mostly used by companies to link
+  different office networks. As its name
+  indicates, it acts at the IP layer and
+  is often found in routers, firewalls,
+  and other network appliances. Another
+  popular VPN is OpenVPN, which
+  makes direct use of TLS.
+
+* **the Noise protocol framework**.
+  - **Noise** is a much more modern
+    *alternative* to *TLS*.
+
+* The **Noise protocol framework** removes
+  the run-time complexity of TLS by avoiding
+  all negotiation in the handshake. A client
+  and a server running Noise follow a
+  linear protocol that does not branch.
+* Contrast this to TLS, which can take many
+  different paths, depending on the information
+  contained in the different handshake messages.
+* What Noise does is that it pushes all the
+  complexity to the design phase.
+
+* The Noise protocol framework offers different
+  *handshake patterns* that you can choose from.
+  Handshake patterns typically come with a name
+  that indicates what is going on.
+* For example, the `IK` handshake pattern
+  indicates that the client's public key is sent
+  as part of the handshake
+  (the first I stands for immediate), and that
+  the server's public key is known to the client
+  in advance (the `K` stands for known).
+* Once a handshake pattern is chosen, applications
+  making use of it will never attempt to perform
+  any of the other possible handshake patterns.
+* As opposed to TLS, this makes Noise a simple
+  and linear protocol in practice.
+
 ## End-to-end encryption
 
 ## User authentication
