@@ -686,11 +686,19 @@ Certificate  ::=  SEQUENCE  {
     one-time password, the user is
     successfully authenticated.
 
+
 ## Crypto as in cryptocurrency?
 
-## Hardware cryptography
-
-## Post-quantum cryptography
+* One limitation of these **PBFT-based**
+  consensus algorithms is that they all
+  require a known and fixed set of
+  *participants*.
+* More problematic, past a certain number
+  of participants, they start breaking
+  apart: communication complexity
+  increases drastically, they become
+  extremely slow, electing a leader
+  becomes complicated, etc.
 
 ## Next-generation cryptography
 
