@@ -438,6 +438,55 @@ Certificate  ::=  SEQUENCE  {
 * **Secure messaging**: A modern look at
   end-to-end encryption with **Signal**
 
+* In the Signal mobile application, a
+  fingerprint between Alice and Bob
+  is computed by:
+  - Hashing Alice's identity key prefixed
+    by her username (a phone number in Signal)
+    and interpreting a truncation of
+    that digest as a series of numbers
+  - Doing the same for Bob
+  - Displaying the concatenation of the two
+    series of numbers to the user
+
+* **X3DH**: the Signal protocol's handshake
+* Signal's key exchange, **X3DH**, combines three
+  (or more) DH key exchanges into one.
+* The three different types of DH keys that Signal uses:
+  - *Identity keys* These are the long-term keys that
+    represent the users. You can imagine that if
+    Signal only used identity keys, then the scheme
+    would be fairly similar to PGP, and there would
+    be no forward secrecy.
+  - *One-time prekeys* In order to add forward
+    secrecy to the key exchange, even when the
+    recipient of a new conversation is not online,
+    Signal has users upload multiple single-use
+    public keys. They are simply ephemeral keys
+    that are uploaded in advance and are
+    deleted after being used.
+  - *Signed prekeys* We could stop here, but
+    there's one edge case missing. Because the
+    one-time prekeys that a user uploads can,
+    at some point, be depleted, users also have
+    to upload a medium-term public key that
+    they sign: a signed prekey. This way, if no
+    more one-time prekeys are available on the
+    server under your username, someone can still
+    use your signed prekey to add forward secrecy
+    up to the last time you changed your
+    signed prekey. This also means that you have
+    to periodically rotate your signed prekey.
+* Signal's flow starts with a user registering
+  with a number of public keys. If Alice wants
+  to talk to Bob, she first retrieves Bob's
+  public keys (called a prekey bundle), then
+  she performs an X3DH key exchange with these
+  keys and creates an initial message using
+  the output of the key exchange. After receipt
+  of the message, Bob can perform the same on his
+  side to initialize and continue the conversation.
+
 ## User authentication
 
 ## Crypto as in cryptocurrency?
