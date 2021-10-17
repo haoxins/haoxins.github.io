@@ -8,6 +8,8 @@ date: 2019-10-24
 
 ### 2021-10
 
+* [我和我的父辈](https://movie.douban.com/subject/35294995/)
+
 * [八角亭谜雾](https://movie.douban.com/subject/35307435/)
   - 爱奇艺*迷雾剧场*系列
 
