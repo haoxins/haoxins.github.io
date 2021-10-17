@@ -532,6 +532,16 @@ Certificate  ::=  SEQUENCE  {
 * *User-aided authentication*, or how humans
   can help machines authenticate one another
 
+* In this book, I talk about *origin authentication*
+  in three types of scenarios.
+  - User authentication happens when a
+    device authenticates a human being.
+  - Machine authentication happens when a
+    machine authenticates another machine.
+  - User-aided authentication happens when a
+    human is involved in a machine
+    authenticating another machine.
+
 ## Crypto as in cryptocurrency?
 
 ## Hardware cryptography
