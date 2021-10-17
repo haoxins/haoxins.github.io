@@ -504,6 +504,29 @@ date: 2021-09-12
 * The resulting graph can be generalized
   as a **co-occurrence** graph.
 
+* **PageRank** This algorithm works by
+  counting the number and quality of edges
+  to a node to arrive at a rough estimate
+  of the node's importance. The basic idea
+  implemented by the PageRank model, invented
+  by the founders of Google for their
+  search engine, is that of voting or
+  recommendation. When a node is connected to
+  another node by an edge, it is basically
+  casting a vote for that node. The more votes
+  a node receives, the more important it is
+  but the importance of the "voters" matters too.
+  Hence, the score associated with a node is
+  computed based on the votes that are cast
+  for it and the scores of the nodes casting those votes.
+* **Betweenness centrality** This algorithm measures
+  the importance of a node by considering how often
+  it lies on the shortest paths between other nodes.
+  It applies to a wide range of problems in
+  network theory. In a supply chain network,
+  for example, a node with higher betweenness
+  centrality will have more control of the
+  network because more goods will pass through that node.
 
 ## Basic approaches to graph-powered fraud detection
 
