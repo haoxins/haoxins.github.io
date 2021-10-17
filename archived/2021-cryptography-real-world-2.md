@@ -383,6 +383,61 @@ Certificate  ::=  SEQUENCE  {
 
 ## End-to-end encryption
 
+* The reason why there is no true solution
+  is that we are trying to bridge reality
+  (real human beings) with a theoretical
+  cryptographic protocol.
+
+* The details are in `RFC 4880`, the last
+  version of **OpenPGP**, and can be
+  simplified to the following steps:
+  - The sender creates an email. At this
+    point the email's content is compressed
+    before it is encrypted.
+  - The OpenPGP implementation generates
+    a random symmetric key and symmetrically
+    encrypts the email using the symmetric key.
+  - The symmetric key is asymmetrically
+    encrypted to each recipient's public key.
+  - All of the intended recipients' encrypted
+    versions of the symmetric key are
+    concatenated with the encrypted message.
+    The email body is replaced with this blob
+    of data and sent to all recipients.
+  - To decrypt an email, a recipient uses their
+    private key to decrypt the symmetric key,
+    then decrypts the content of the email
+    using the decrypted symmetric key.
+
+* how do you obtain and how can you trust
+  other people's public keys? The answer is
+  that in **PGP**, **you build trust yourself**!
+* The web of trust (WOT) is the concept that
+  users can transitively trust other users
+  by relying on signatures. Alice trusts Bob
+  who trusts Charles. Alice can use Bob's
+  signature over Charles's identity and
+  public key to trust Charles as well.
+
+* PGP did try another way to solve the issue
+  of *discovering public keys*:
+  **key registries**. The concept is pretty
+  simple: publish your PGP public key and
+  associated signatures from others that
+  attest to your identity on some public
+  list so that people can find it.
+* In practice, this doesn't work as anyone
+  can publish a key and associated signature
+  purportedly matching your email.
+
+* more and more real-world cryptography
+  applications are aiming at
+  **replacing PGP** and solving its
+  usability problems.
+* **If not PGP, then what?**
+* **Secure messaging**: A modern look at
+  end-to-end encryption with **Signal**
+
 ## User authentication
 
 ## Crypto as in cryptocurrency?
