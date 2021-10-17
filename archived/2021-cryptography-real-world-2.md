@@ -511,6 +511,27 @@ Certificate  ::=  SEQUENCE  {
 
 ## User authentication
 
+* You should think of **authentication** as
+  a term used in cryptography to convey
+  *two different concepts* depending
+  on the context:
+  - **Message/payload authentication** You're
+    proving that a message is genuine and
+    hasn't been modified since its creation.
+  - **Origin/entity/identity authentication**
+    You're proving that an entity really is
+    who they say they are.
+
+* **Authentication** is about proving that
+  something is what it is supposed to be,
+  and that *something* can be *a person*,
+  *a message*, or *something else*.
+
+* *User authentication*, or how machines
+  authenticate humans
+* *User-aided authentication*, or how humans
+  can help machines authenticate one another
+
 ## Crypto as in cryptocurrency?
 
 ## Hardware cryptography
