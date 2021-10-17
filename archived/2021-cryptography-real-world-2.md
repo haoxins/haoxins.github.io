@@ -542,6 +542,43 @@ Certificate  ::=  SEQUENCE  {
     human is involved in a machine
     authenticating another machine.
 
+* Today, two protocols are the main competitors
+  when it comes to setting up SSO:
+  - *Security Assertion Markup Language 2.0 (SAML)*
+    A protocol using the
+    *Extensible Markup Language (XML)* encoding.
+  - *OpenID Connect (OIDC)* An extension to the
+    *OAuth 2.0 (RFC 6749)* authorization protocol
+    using the JavaScript Object Notation
+    (JSON) encoding.
+  - https://openid.net
+
+* Cryptographic protocols called asymmetric
+  (or augmented) password-authenticated key exchanges
+  (PAKEs) attempt to provide user authentication
+  without having users ever communicate their
+  passwords directly to the server. This contrasts
+  with symmetric or balanced PAKEs protocols,
+  where both sides know the password.
+
+* In the summer of 2019, the Crypto Forum Research
+  Group (CFRG) of the IETF started a PAKE selection
+  process with the goal to pick one algorithm to
+  standardize for each category of PAKEs:
+  *symmetric/balanced* and *asymmetric/augmented*.
+* In March 2020, the CFRG announced the end of the
+  PAKE selection process, selecting
+  - **CPace** The recommended *symmetric/balanced*
+    PAKE.
+  - **OPAQUE** The recommended *asymmetric/augmented*
+    PAKE.
+
+* *oblivious pseudorandom function* (**OPRF**).
+  - The term *oblivious* in cryptography generally
+    refers to protocols where one party computes a
+    cryptographic operation without knowing the
+    input provided by another party.
+
 
 * https://github.com/cfrg/draft-irtf-cfrg-opaque
 * https://cfrg.github.io/draft-irtf-cfrg-opaque/draft-irtf-cfrg-opaque.html
