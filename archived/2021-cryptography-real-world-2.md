@@ -719,6 +719,43 @@ Certificate  ::=  SEQUENCE  {
     authentication via hardware authenticators,
     WebAuthn is what you need to use.
 
+* To authenticate without using a password,
+  applications can allow users to either use
+  **symmetric keys** via **OTP-based** protocols
+  or use **asymmetric keys** via the **FIDO2**
+  standard. FIDO2 supports different types of
+  authenticators, roaming authenticators
+  (via the CTAP standard) or built-in authenticators.
+
+* User-aided authentication protocols that
+  allow a human to pair two devices are modeled
+  with two types of channels between the devices:
+  - an insecure channel (for example,
+    NFC, Bluetooth, WiFi, and so on),
+    which we assume is adversary-controlled, and
+  - an authenticated channel (for example, real life),
+    which does not provide confidentiality but can
+    be used to exchange relatively small
+    amounts of information.
+
+* The **CPace** PAKE works by having the two
+  devices create a generator based on a password
+  and then use it to perform as a base for the
+  usual ephemeral DH key exchange.
+
+* three techniques to pair two devices:
+  - (1) a user can either help the devices
+    obtain each other’s public keys so that
+    they can perform a key exchange;
+  - (2) a user can enter the same password
+    on two devices so that they can perform
+    a symmetric password-authenticated
+    key exchange; or
+  - (3) a user can verify a fingerprint of
+    the key exchange after the fact to
+    confirm that no MITM attacker
+    intercepted the pairing.
+
 ## Crypto as in cryptocurrency?
 
 * One limitation of these **PBFT-based**
