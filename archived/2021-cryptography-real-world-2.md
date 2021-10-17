@@ -487,6 +487,21 @@ Certificate  ::=  SEQUENCE  {
   of the message, Bob can perform the same on his
   side to initialize and continue the conversation.
 
+* https://signal.org/docs/specifications/x3dh/
+
+* **Double Ratchet**: Signal's *post-handshake* protocol
+
+* https://signal.org/docs/
+
+* The state of end-to-end encryption
+
+* Signal has open sourced a lot of its code, but it
+  lacks documentation and can be hard to use correctly.
+* On the other hand, you might have better luck using
+  a decentralized open source solution like **Matrix**,
+  which might prove easier to integrate with.
+  This is what the French government has done.
+
 ## User authentication
 
 ## Crypto as in cryptocurrency?
