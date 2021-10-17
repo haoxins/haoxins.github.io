@@ -686,6 +686,38 @@ Certificate  ::=  SEQUENCE  {
     one-time password, the user is
     successfully authenticated.
 
+* One interesting standard in this space is the
+  **Fast IDentity Online 2** (**FIDO2**).
+  *FIDO2* is an open standard that defines how
+  to use asymmetric keys to authenticate users.
+  The standard specifically targets phishing
+  attacks, and for this reason, FIDO2 is made to
+  work *only with hardware authenticators*.
+  Hardware authenticators are simply physical
+  components that can generate and store signing
+  keys and can sign arbitrary challenges.
+  **FIDO2** is *split into two specifications*:
+  - *Client to Authenticator Protocol* (**CTAP**)
+    CTAP specifies a protocol that roaming
+    authenticators and clients can use to
+    communicate with one another. Roaming
+    authenticators are hardware authenticators
+    that are external to your main device.
+    A client in the CTAP specification is
+    defined as the software that wants to
+    query these authenticators as part of
+    an authentication protocol. Thus, a client
+    can be an operating system, a native
+    application like a browser, and so on.
+  - *Web Authentication* (**WebAuthn**)
+    WebAuthn is the protocol that web browsers
+    and web applications can use to authenticate
+    users with hardware authenticators. It,
+    thus, must be implemented by browsers to
+    support authenticators. If you are building
+    a web application and want to support user
+    authentication via hardware authenticators,
+    WebAuthn is what you need to use.
 
 ## Crypto as in cryptocurrency?
 
