@@ -345,6 +345,42 @@ Certificate  ::=  SEQUENCE  {
 * As opposed to TLS, this makes Noise a simple
   and linear protocol in practice.
 
+* One particularity of Noise is that it
+  continuously authenticates its handshake
+  transcript. To achieve this, both sides
+  maintain two variables: a **hash (h)** and
+  a **chaining key (ck)**. Each handshake
+  message sent or received is hashed with
+  the previous `h` value.
+* In the Noise protocol framework, each
+  side of the connection keeps track of a
+  digest `h` of all messages that have been
+  sent and received during the handshake.
+  When a message is sent and encrypted with
+  an authenticated encryption with associated
+  data (AEAD) algorithm, the current `h` value
+  is used as associated data in order to
+  authenticate the handshake up to this point.
+* At the end of each message pattern, a
+  (potentially empty) payload is encrypted
+  with an authenticated encryption with
+  associated data (AEAD) algorithm. When this
+  happens, the `h` value is authenticated by
+  the associated data field of the AEAD.
+  This allows Noise to continuously verify
+  that both sides of the connection are
+  seeing the exact same series of messages
+  and in the same order.
+* In addition, every time a DH key exchange
+  happens (several can happen during a handshake),
+  its output is fed along with the previous
+  chaining key (ck) to HKDF, which derives a
+  new chaining key and a new set of symmetric
+  keys to use for authenticating and
+  encrypting subsequent messages.
+
+* **TLS** and **Noise**
+
 ## End-to-end encryption
 
 ## User authentication
