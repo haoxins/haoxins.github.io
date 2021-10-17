@@ -579,6 +579,28 @@ Certificate  ::=  SEQUENCE  {
     cryptographic operation without knowing the
     input provided by another party.
 
+* Here is how an **OPRF** works at a high level:
+  - Alice wants to compute a PRF over an input
+    but wants the input to remain secret.
+    She "blinds" her input with a random value
+    (called a blinding factor) and sends this to Bob.
+  - Bob runs the OPRFs on this blinded value
+    with his secret key, but the output is still
+    blinded so it's useless for Bob.
+    Bob then sends this back to Alice.
+  - Alice finally "unblinds" the result using the
+    same blinding factor she previously
+    used to obtain the real output.
+* An oblivious PRF (OPRF) is a construction that
+  allows one party to compute a PRF over the input
+  of another party without learning that input.
+  To do this, Alice first generates a random
+  blinding factor, then blinds her input with that
+  before sending it to Bob. Bob uses his secret key
+  to compute the PRF over the blinded value, then
+  sends the blinded output to Alice who can
+  unblind it. The result does not depend on the
+  value of the blinding factor.
 
 * https://github.com/cfrg/draft-irtf-cfrg-opaque
 * https://cfrg.github.io/draft-irtf-cfrg-opaque/draft-irtf-cfrg-opaque.html
