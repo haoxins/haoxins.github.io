@@ -502,6 +502,13 @@ Certificate  ::=  SEQUENCE  {
   which might prove easier to integrate with.
   This is what the French government has done.
 
+* Other protocols, like **Matrix**, attempt to
+  standardize federated protocols for end-to-end
+  encrypted messaging. Federated protocols are
+  open protocols that anyone can interoperate
+  with (as opposed to centralized protocols
+  that are limited to a single application).
+
 ## User authentication
 
 ## Crypto as in cryptocurrency?
