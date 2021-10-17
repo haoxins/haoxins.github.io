@@ -641,6 +641,51 @@ Certificate  ::=  SEQUENCE  {
   data is different, depending on the
   OTP algorithm.
 
+* There are two main schemes that one can
+  use to produce OTPs:
+  - The HMAC-based one-time password (**HOTP**)
+    algorithm, standardized in `RFC 4226`,
+    which is an OTP algorithm where the
+    additional data is a counter.
+  - The time-based one-time password (**TOTP**)
+    algorithm, standardized in `RFC 6238`,
+    which is an OTP algorithm where the
+    additional data is the time.
+
+* Most applications nowadays use **TOTP**
+  because *HOTP* requires both the client
+  and the server to store a state (a counter).
+* Storing a state can lead to issues if
+  one side falls out of synchrony and
+  cannot produce (or validate)
+  legitimate OTPs anymore.
+
+* In most cases, this is how TOTP works:
+  - When registering, the service communicates
+    a symmetric key to the user
+    (perhaps using a QR code). The user then
+    adds this key to a TOTP application.
+  - When logging in, the user can use the
+    TOTP application to compute a one-time
+    password. This is done by computing
+    `HMAC(symmetric_key, time)`, where time
+    represents the current time
+    (rounded to the minute in order to make
+    a one-time password valid for 60 seconds). Then
+  - (a) The TOTP application displays to the
+    user the derived one-time password, truncated
+    and in a human-readable base (for example,
+    reduced to 6 characters in base 10
+    to make it all digits).
+  - (b) The user either copies or types the
+    one-time password into the relevant application.
+  - (c) The application retrieves the user's
+    associated symmetric key and computes the
+    one-time password in the same way as the
+    user did. If the result matches the received
+    one-time password, the user is
+    successfully authenticated.
+
 ## Crypto as in cryptocurrency?
 
 ## Hardware cryptography
