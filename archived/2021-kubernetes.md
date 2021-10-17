@@ -4,6 +4,11 @@ description: 汉下白登道, 胡窥青海湾. 由来征战地, 不见有人还.
 date: 2021-08-24
 ---
 
+### Tools
+
+* [kube-ps1](https://github.com/jonmosco/kube-ps1)
+  - Kubernetes prompt for bash and zsh
+
 ```zsh
 k config get-contexts
 k config set-context --current --namespace new_ns
