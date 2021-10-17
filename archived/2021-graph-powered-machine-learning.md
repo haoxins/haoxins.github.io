@@ -504,13 +504,6 @@ date: 2021-09-12
 * The resulting graph can be generalized
   as a **co-occurrence** graph.
 
-## Content-based recommendations
-
-## Collaborative filtering
-
-## Session-based recommendations
-
-## Context-aware and hybrid recommendations
 
 ## Basic approaches to graph-powered fraud detection
 
