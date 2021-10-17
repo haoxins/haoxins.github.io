@@ -745,7 +745,7 @@ Certificate  ::=  SEQUENCE  {
 
 * three techniques to pair two devices:
   - (1) a user can either help the devices
-    obtain each other’s public keys so that
+    obtain each other's public keys so that
     they can perform a key exchange;
   - (2) a user can enter the same password
     on two devices so that they can perform
@@ -770,5 +770,25 @@ Certificate  ::=  SEQUENCE  {
   becomes complicated, etc.
 
 ## Next-generation cryptography
+
+* I give you a taste of what the future of
+  real-world cryptography might look like
+  (perhaps in the next 10 to 20 years)
+  by briefly introducing three primitives:
+  - **Secure multi-party computation** (MPC)
+    A subfield of cryptography that allows
+    different participants to execute a
+    program together without necessarily
+    revealing their own input to the program.
+  - **Fully homomorphic encryption** (FHE)
+    The holy grail of cryptography, a
+    primitive used to allow arbitrary
+    computations on encrypted data.
+  - **General-purpose zero-knowledge proofs**
+    (ZKPs) The primitive you learned about
+    that allows you to prove that you know
+    something without revealing that something,
+    but this time, applied more generally
+    to more complex programs.
 
 ## When and where cryptography fails
