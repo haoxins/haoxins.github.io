@@ -542,6 +542,11 @@ Certificate  ::=  SEQUENCE  {
     human is involved in a machine
     authenticating another machine.
 
+
+* https://github.com/cfrg/draft-irtf-cfrg-opaque
+* https://cfrg.github.io/draft-irtf-cfrg-opaque/draft-irtf-cfrg-opaque.html
+* https://datatracker.ietf.org/doc/draft-irtf-cfrg-opaque/
+
 ## Crypto as in cryptocurrency?
 
 ## Hardware cryptography
