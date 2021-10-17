@@ -791,4 +791,7 @@ Certificate  ::=  SEQUENCE  {
     but this time, applied more generally
     to more complex programs.
 
+* The more the merrier:
+  *Secure multi-party computation* (MPC)
+
 ## When and where cryptography fails
