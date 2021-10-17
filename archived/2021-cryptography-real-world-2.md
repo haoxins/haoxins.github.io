@@ -606,6 +606,41 @@ Certificate  ::=  SEQUENCE  {
 * https://cfrg.github.io/draft-irtf-cfrg-opaque/draft-irtf-cfrg-opaque.html
 * https://datatracker.ietf.org/doc/draft-irtf-cfrg-opaque/
 
+* To register to a server using **OPAQUE**,
+  Alice generates a long-term key pair
+  and sends her public key to the server,
+  which stores it and associates it with
+  Alice's identity. She then uses the **OPRF**
+  protocol to obtain a strong symmetric
+  key from her password and sends an encrypted
+  backup of her key pair to the server.
+  To log in, she obtains her encrypted key
+  pair from the server, then performs the **OPRF**
+  protocol with her password to obtain a symmetric
+  key capable of decrypting her key pair. All
+  that's left is to perform a mutually
+  authenticated key exchange
+  (or possibly sign a challenge) with this key.
+* Passwords are a handy way to authenticate
+  users as they live in someone's head and can
+  be used on any device. On the other hand,
+  users have trouble creating strong passwords,
+  and because users tend to reuse passwords
+  across websites, password breaches can be
+  damaging. SSO allows you to connect to many
+  services using one (or a few) service(s),
+  while asymmetric (or augmented)
+  password-authenticated key exchanges allow
+  you to authenticate without the server ever
+  learning your real password.
+
+* A *one-time password* (**OTP**) algorithm
+  allows you to create as many one-time
+  passwords as you want from a symmetric
+  key and some additional data. The additional
+  data is different, depending on the
+  OTP algorithm.
+
 ## Crypto as in cryptocurrency?
 
 ## Hardware cryptography
