@@ -932,6 +932,88 @@ Certificate  ::=  SEQUENCE  {
 * You could think that you're stuck, but
   **bootstrapping** unsticks you by removing the
 
+* **General-purpose zero-knowledge proofs** (ZKPs)
+
+* **General-purpose ZKPs** allow a prover to convince
+  a verifier about the integrity of an execution trace
+  (the inputs of a program and the outputs
+  obtained after its execution) while hiding some of
+  the inputs or outputs involved in the computation.
+  An example of this is a prover trying to prove
+  that a sudoku can be solved.
+
+* In 2018, actors from the industry and academia
+  joined together to form the ZKProof Standardization
+  effort with the goal to "standardize the use of
+  cryptographic zero-knowledge proofs."
+
+* Distinctions between the different proposed
+  schemes are quite important. Because it is a
+  great source of confusion, here is how some
+  of these schemes are divided:
+  - **Zero-knowledge or not** If some of the
+    information needs to remain secret from some
+    of the participants, then we need
+    zero-knowledgeness. Note that proofs without
+    secrets can be useful as well. For example,
+    you might want to delegate some intensive
+    computation to a service that, in turn,
+    has to prove to you that the result
+    they provide is correct.
+  * **Interactive or not** Most ZKP schemes can be
+    made non-interactive, and protocol designers
+    seem most interested in the non-interactive
+    version of the scheme. This is because
+    back-and-forth's can be time consuming
+    in protocols, but also because interactivity
+    is sometimes not possible. So-called
+    non-interactive proofs are often referred
+    to as NIZKs for non-interactive ZKPs.
+  * **Succinct proofs or not** Most of the ZKP
+    schemes in the spotlight are often referred to
+    as zk-SNARKs for Zero-Knowledge
+    *Succinct Non-Interactive Argument of Knowledge*.
+    While the definition can vary, it focuses on the
+    size of the proofs produced by such systems
+    (usually in the order of hundreds of bytes), and
+    the amount of time needed to verify them
+    (within the range of milliseconds). zk-SNARKs are,
+    thus, short and easy to use to verify ZKPs. Note
+    that a scheme not being a zk-SNARK does not
+    disqualify it for the real world as often different
+    properties might be useful in different use cases.
+  * **Transparent setup or not** Like every cryptographic
+    primitive, ZKPs need a setup to agree on a set of
+    parameters and common values. This is called a
+    common reference string (CRS). But setups for ZKPs
+    can be much more limiting or dangerous than
+    initially thought. There are three types of setup:
+  * *Trusted* Means that whoever created the CRS also
+    has access to secrets that allow them to forge proofs
+    (hence, it's why these secrets are sometimes
+    called "toxic waste"). This is quite an issue as we
+    are back to having a trusted third party, yet schemes
+    that exhibit this property are often the most efficient
+    and have the shortest proof size. To decrease the risk,
+    MPC can be use to have many participants help create
+    these dangerous parameters. If a single participant is
+    honest and deletes their keys after the ceremony, the
+    toxic waste gets flushed.
+  - *Universal* A trusted setup is said to be universal if
+    you can use it to prove the execution of any circuit
+    (bounded by some size). Otherwise it is specific
+    to a single circuit.
+  - *Transparent* Fortunately for us, many schemes also
+    offer transparent setups, meaning that no trusted
+    third party needs to be present to create the
+    parameters of the system. Transparent schemes
+    are by design universal.
+  - **Quantum-resistant or not** Some ZKPs make use of
+    public key cryptography and advanced primitives like bilinear pairings, while others only rely on symmetric
+    cryptography (like hash functions), which makes them
+    naturally resistant to quantum computers
+    (usually at the expense of much larger proofs).
+
 * First and foremost, there are *many, many zk-SNARK schemes*,
   too many of them, really.
 * Most build on this type of construction:
