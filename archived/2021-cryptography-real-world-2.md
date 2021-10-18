@@ -1035,7 +1035,8 @@ Certificate  ::=  SEQUENCE  {
     parameters of the system. Transparent schemes
     are by design universal.
   - **Quantum-resistant or not** Some ZKPs make use of
-    public key cryptography and advanced primitives like bilinear pairings, while others only rely on symmetric
+    public key cryptography and advanced primitives like
+    bilinear pairings, while others only rely on symmetric
     cryptography (like hash functions), which makes them
     naturally resistant to quantum computers
     (usually at the expense of much larger proofs).
