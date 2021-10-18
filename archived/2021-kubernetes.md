@@ -9,6 +9,8 @@ date: 2021-08-24
 * [kube-ps1](https://github.com/jonmosco/kube-ps1)
   - Kubernetes prompt for bash and zsh
 
+### K8s common
+
 ```zsh
 k config get-contexts
 k config set-context --current --namespace new_ns

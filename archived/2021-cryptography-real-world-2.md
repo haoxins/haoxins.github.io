@@ -931,6 +931,32 @@ Certificate  ::=  SEQUENCE  {
 
 * You could think that you're stuck, but
   **bootstrapping** unsticks you by removing the
+  noise out of that ciphertext. To do that, you
+  re-encrypt the noisy ciphertext under another
+  public key (usually called the bootstrapping key)
+  to obtain an encryption of that noisy ciphertext.
+  Notice that the new ciphertext has no noise.
+* Now comes the magic: you are provided with the
+  initial private key, not in cleartext, but
+  encrypted under that bootstrapping key. This
+  means that you can use it with a decryption
+  circuit to homomorphically decrypt the inner
+  noisy ciphertext. If the decryption circuit
+  produces an acceptable amount of noise, then
+  it works, and you will end up with the result
+  of the first homomorphic operation encrypted
+  under the bootstrapping key.
+* If the remaining amount of errors allows you
+  to do at least one more homomorphic operation
+  `(+ or ×)`, then you are gold: you have a
+  fully homomorphic encryption algorithm because
+  you can always, in practice, run the
+  bootstrapping after or before every operation.
+  Note that you can set the bootstrapping
+  key pair to be the same as the initial key pair.
+  It's a bit weird as you get some circular
+  security oddity, but it seems to work and no
+  security issues are known.
 
 * **General-purpose zero-knowledge proofs** (ZKPs)
 
