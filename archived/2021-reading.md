@@ -17,7 +17,7 @@ date: 2018-04-01
   - https://learning.oreilly.com/library/view/advanced-algorithms-and/9781617295485/
 
 * [100 Go Mistakes: How to Avoid Them]()
-  - https://www.manning.com/books/100-go-mistakes-how-to-avoid-them
+  - https://www.manning.com/books/100-go-mistakes-and-how-to-avoid-them
 
 * [Math for Programmers](https://book.douban.com/subject/35246850/)
   - https://learning.oreilly.com/library/view/math-for-programmers/9781617295355/
