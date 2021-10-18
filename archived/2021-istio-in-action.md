@@ -1811,6 +1811,59 @@ kubectl -n istio-system port-forward \
     (SVID) is represented as the certificate
     issued by the Workload API
 
+* SPIFFE Identity is an `RFC 3986` compliant
+  URI composed in the following format
+  `spiffe://trust-domain/path`.
+  The two variables here are:
+  - The trust-domain which represents the issuer
+    of identity such as an individual or
+    organization and
+  - The path that uniquely identifies a workload
+    within the trust domain.
+
+* The Workload APIs two main functions are:
+  - Issuing certificates to workloads, to do
+    so it has the Certificate Authority private
+    key for signing certificate signing requests
+    made by the workloads and
+  - Exposing an API to make its features
+    available to Workload Endpoints
+
+* The Workload Endpoint represents the data plane
+  component of the SPIFFE specification.
+  It is deployed alongside every workload and
+  provides the following functionalities:
+  - Workload Attestation is the process by which
+    the workload endpoint verifies the identity
+    of a workload. Using methods such as Kernel
+    introspection or orchestrator interrogation
+  - Workload API Exposure is the process by which
+    the Workload Endpoint initiates and maintains
+    a secure communication to the Workload API.
+    This secure communication is used to
+    fetch and rotate SVIDs
+
+* We can see an overview of the steps needed to
+  issue identity to workloads:
+  - The Workload Endpoint verifies the identity
+    of the workload (Workload Attestation)
+    and forms the SPIFFE ID
+  - The Workload Endpoint submits the SPIFFE ID
+    (encoded in a Certificate Signing Request)
+    to the Workload API
+  - The Workload Endpoint receives the signed
+    certificate which represents the SPIFFE
+    Verifiable Identity Document and makes it
+    available to the workload
+
+* Mapping the SPIFFE components to Istio's implementation
+  - The Workload Endpoint is implemented by the
+    Pilot-Agent that performs identity bootstrapping
+  - The Workload API is implemented by Istio CA
+    that issues certificates
+  - The Workload for whom the identity is issued in
+    Istio is the service proxy
+
 ------------------
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
