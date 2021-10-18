@@ -14,13 +14,12 @@ date: 2018-04-01
 
 * [Advanced Algorithms and Data Structures]()
   - https://www.manning.com/books/advanced-algorithms-and-data-structures
-  - https://learning.oreilly.com/library/view/advanced-algorithms-and/9781617295485/
 
 * [100 Go Mistakes: How to Avoid Them]()
   - https://www.manning.com/books/100-go-mistakes-and-how-to-avoid-them
 
 * [Math for Programmers](https://book.douban.com/subject/35246850/)
-  - https://learning.oreilly.com/library/view/math-for-programmers/9781617295355/
+  - https://www.manning.com/books/math-for-programmers
 
 * 今天 (*2021-09-27*) 突然发现
   - [Manning](https://www.manning.com)

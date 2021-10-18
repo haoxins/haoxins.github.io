@@ -5,4 +5,4 @@ date: 2021-10-13
 ---
 
 * [Math for Programmers](https://book.douban.com/subject/35246850/)
-  - https://learning.oreilly.com/library/view/math-for-programmers/9781617295355/
+  - https://www.manning.com/books/math-for-programmers
