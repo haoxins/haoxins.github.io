@@ -530,8 +530,24 @@ date: 2021-09-12
 
 ## Basic approaches to graph-powered fraud detection
 
+* This expert-based approach, even though it is
+  useful and still common in many domains,
+  suffers from several disadvantages:
+  - Rule-based engines are typically complex
+    and therefore expensive to build because
+    they require advanced manual
+    input by fraud experts.
+  - This complexity makes them difficult
+    to maintain and manage.
+  - Rules must be kept up to date because
+    fraudsters are continually evolving their
+    approaches and coming up with new ones.
+    As soon as they discover the rules behind
+    the fraud reduction system, they change
+    their behavior to avoid being recognized.
+  - In most cases, these systems require
+    further human follow-up, analysis,
+    and investigation.
+
 ## Proximity-based algorithms
 
-## Social network analysis against fraud
-
-## Knowledge graphs
