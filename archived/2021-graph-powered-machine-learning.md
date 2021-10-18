@@ -551,3 +551,55 @@ date: 2021-09-12
 
 ## Proximity-based algorithms
 
+* The most common ways to define proximity
+  for outlier analysis are
+  - **Cluster-based** The data points are split
+    into clusters, using whatever technique is
+    most appropriate, considering how the elements
+    are represented and how accurate the algorithm
+    should be. The outlier score is computed by
+    using the nonmembership of a data point in any
+    of the clusters, its distance from other
+    clusters, the size of the closest cluster,
+    or a combination of these factors. Points
+    belong to clusters or should be
+    considered to be outliers.
+  - **Density-based** A local region is defined
+    for each data point
+    (perhaps based on grid position), and the
+    number of other points in that region is
+    used to define a local density value. This
+    value can be converted to an outlier score,
+    with elements with higher scores considered
+    to be outliers. The basic assumption of
+    density-based outlier detection methods is
+    that the local density around a nonoutlier
+    object is similar to the local density around
+    its neighbors, whereas the local density around
+    an outlier object is significantly different
+    from the local density around its neighbors.
+    Whereas cluster-based methods partition the
+    data points, density-based methods
+    partition the data space.
+  - **Distance-based** For each data point, the
+    *k-nearest* neighbor (k-NN) network is
+    computed. The outlier score is computed by
+    using the distance of a data point to its
+    *k-nearest* neighbors; the data points with
+    the largest k-NN distances are marked as
+    outliers. Distance-based algorithms
+    typically perform better than the other
+    methods presented here because they have
+    higher granularity. In both clustering
+    and density-based methods, the data is
+    aggregated before outlier analysis by
+    partitioning the points or the data space,
+    and the individual data points are compared
+    with those distributions for analysis.
+    In distance-based methods, the outlier
+    score is based on the k-NN distance to the
+    original data points. This greater
+    granularity often comes at a significant
+    computational cost, but that cost can be
+    mitigated by using graphs and
+    some other techniques.
