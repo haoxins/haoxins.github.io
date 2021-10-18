@@ -301,3 +301,7 @@ let x = 1234.567 % 10.0; // approximately 4.567
   - So we'll also talk about how *`&mut dyn Write`*
     and *`<T: Write>`* are *similar*, how they're *different*,
     and how to choose between these two ways of using *traits*.
+
+* There is one unusual rule about trait methods:
+  **the trait itself must be in scope**.
+  Otherwise, all its methods are hidden.
