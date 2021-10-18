@@ -1774,6 +1774,43 @@ kubectl -n istio-system port-forward \
 
 ## Istio security: SPIFFE
 
+* The client initiates the handshake
+  with a `ClientHello`, containing the TLS
+  version and the encryption methods
+  supported by the client.
+* The server responds with `ServerHello` and
+  it's `X.509` certificate containing server
+  identity data, and the public key
+* The client verifies that the server's
+  certificate data are not tampered with
+  and validates the chain of trust
+* On a successful validation the client
+  sends the server a secret key which is
+  a randomly generated string encrypted
+  with the server's public key.
+* The server uses it's private key to
+  decrypt the secret key and uses it for
+  encrypting a "finished" message sent as
+  a response back to the client.
+* The client sends the server an encrypted
+  "finished" message using the secret key,
+  and the TLS handshake is completed.
+
+* SPIFFE is a set of open source standards for
+  providing identity to workloads in highly
+  dynamic and heterogeneous environments.
+  To issue and bootstrap identity SPIFFE
+  defines the following specifications:
+  - The SPIFFE ID that uniquely identifies a
+    service within a trust domain
+  - The Workload Endpoint bootstraps the
+    identity of a workload
+  - The Workload API signs and issues the
+    certificate containing the SPIFFE ID
+  - The SPIFFE Verifiable Identity Document
+    (SVID) is represented as the certificate
+    issued by the Workload API
+
 ------------------
 
 * [Istio 服务网格技术解析与实践](https://book.douban.com/subject/35001667/)
