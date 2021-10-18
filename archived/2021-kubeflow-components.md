@@ -4,6 +4,21 @@ description: 行到水穷处, 坐看云起时. 偶然值林叟, 谈笑无还期.
 date: 2021-07-23
 ---
 
+> After: Kubeflow `1.4`
+
+* [Kubeflow Training Operator](https://github.com/kubeflow/training-operator)
+  - Starting from `v1.3`, this training operator provides
+    Kubernetes custom resources that makes it easy to run
+    distributed or non-distributed
+    `TensorFlow/PyTorch/MXNet/XGBoost`
+    jobs on Kubernetes.
+  - Before `v1.2` release, Kubeflow Training Operator
+    only supports `TFJob` on Kubernetes.
+
+------------------
+
+> Before: Kubeflow `1.3` (2021-10)
+
 * [Kubeflow components](https://www.kubeflow.org/docs/components/)
 
 ## Notebooks
