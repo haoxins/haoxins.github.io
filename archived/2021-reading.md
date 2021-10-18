@@ -27,6 +27,7 @@ date: 2018-04-01
   - [O'Reilly](https://www.oreilly.com)
   - 上面都可以看
   - O'Reilly 每月的订阅费 `$49`, **完美!**
+  - 订阅了一个月, *取消订阅*, 阅读体验一般
 
 * [Fluent Python, 2nd Edition](https://book.douban.com/subject/34990079/)
   - https://learning.oreilly.com/library/view/fluent-python-2nd/9781492056348/
