@@ -885,6 +885,52 @@ Certificate  ::=  SEQUENCE  {
     paper introducing MPC. Another alternative is
     based on **fully homomorphic encryption**.
 
+* **Fully homomorphic encryption** (FHE) and
+  the *promises of an encrypted cloud*
+  - This interesting concept, originally proposed
+    in 1978 by Rivest, Adleman, and Dertouzos, is
+    what we call fully homomorphic encryption (FHE)
+    (or as it used to be called,
+    the holy grail of cryptography).
+  - Fully homomorphic encryption (FHE) is an
+    encryption scheme that allows for arbitrary
+    computations over encrypted content. Only the
+    owner of the key can decrypt
+    the result of the computation.
+
+* Other types of homomorphic encryptions include
+  - **Somewhat homomorphic** Which means partially
+    homomorphic for one operation
+    (addition or multiplication) and homomorphic
+    for the other operation in limited ways.
+    For example, additions are unlimited up to a
+    certain number but only a few
+    multiplications can be done.
+  - **Leveled homomorphic** Both addition and
+    multiplication are possible up to a
+    certain number of times.
+  - **Fully homomorphic** Addition and multiplication
+    are unlimited (it's the real deal).
+
+* After encrypting a message with a fully
+  homomorphic encryption algorithm, operating on it
+  increases its noise to dangerous thresholds,
+  where decryption becomes impossible.
+* To eliminate the noise of the ciphertext,
+  you can decrypt it. But because you don't have
+  the secret key, instead you reencrypt the noisy
+  ciphertext under another public key
+  (called the bootstrapping key) to obtain a new
+  ciphertext of a noisy ciphertext without error.
+* You use the initial secret key encrypted to the
+  bootstrapping key to apply the decryption
+  circuit to that new ciphertext. This effectively
+  decrypts the noisy ciphertext in place, removing
+  the errors. There will be some amount of errors
+  due to the decryption circuit.
+
+* You could think that you're stuck, but
+  **bootstrapping** unsticks you by removing the
 
 * First and foremost, there are *many, many zk-SNARK schemes*,
   too many of them, really.
