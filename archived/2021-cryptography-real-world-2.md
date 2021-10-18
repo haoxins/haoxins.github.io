@@ -794,4 +794,28 @@ Certificate  ::=  SEQUENCE  {
 * The more the merrier:
   *Secure multi-party computation* (MPC)
 
-## When and where cryptography fails
+
+* First and foremost, there are *many, many zk-SNARK schemes*,
+  too many of them, really.
+* Most build on this type of construction:
+  - A proving system, allowing a prover to
+    prove something to a verifier.
+  - A translation or compilation of a program to
+    something the proving system can prove.
+
+* How can we prove this without giving out `f(x)`?
+  The answer is in the following three tricks:
+  - **Homomorphic commitments** A commitment scheme
+    similar to the ones we used in other ZKPs
+  - **Bilinear pairings** A mathematical construction
+    that has some interesting properties;
+  - The fact that different polynomials evaluate to
+    different values most of the time.
+
+* Finally, the succinctness of zk-SNARKs comes from
+  the fact that two functions that differ evaluate
+  to different points most of the time.
+* The Schwartz-Zippel lemma says that two different
+  polynomials of degree `n` can intersect in at most
+  `n` points. In other words, two different
+  polynomials will differ in most points.
