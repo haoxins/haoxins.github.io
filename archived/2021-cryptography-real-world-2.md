@@ -794,6 +794,97 @@ Certificate  ::=  SEQUENCE  {
 * The more the merrier:
   *Secure multi-party computation* (MPC)
 
+* *Secure multi-party computation* (MPC) is
+  a field of cryptography that came into existence
+  in 1982 with the famous Millionaires' problem.
+* In his 1982 paper "Protocols for Secure Computations,"
+  Andrew C. Yao wrote, "Two millionaires wish to know
+  who is richer; however, they do not want to find
+  out inadvertently any additional information about
+  each other's wealth. How can they carry out such
+  a conversation?" Simply put, MPC is a way for
+  *multiple participants to compute a program together*.
+
+* MPC allows us to completely remove trusted third
+  parties from a distributed computation and enables
+  participants to compute the computation by themselves
+  without revealing their respective inputs to one
+  another. This is done through
+  a cryptographic protocol.
+
+* NIST in mid-2019 kicking off a standardization
+  process for **threshold cryptography**.
+* Another well-known *subfield* of **MPC** is the
+  field of **private set intersection** (PSI),
+  which poses the following problem:
+  - Alice and Bob have a list of words, and they
+    want to know which words (or perhaps just how many)
+    they have in common without revealing their
+    respective list of words. One way to solve this
+    problem is to use the oblivious pseudorandom
+    function (OPFR) construction.
+* **Private set intersection** (PSI) allows Alice
+  to learn what words she has in common with Bob.
+  - First, she blinds every word she has in her
+    list and uses the OPRF protocol with Bob to
+    apply a PRF using Bob's key on
+    each of her words.
+  - Finally, Bob sends her the PRF of his key
+    with his words. Alice can then see if
+    anything matches to learn what
+    words they have in common.
+
+* More generally, MPC has many different
+  solutions aiming at the computation of
+  arbitrary programs. General-purpose MPC
+  solutions all provide different levels
+  of efficiency (from hours to milliseconds)
+  and types of properties.
+* For example, how many dishonest participants
+  can the protocol tolerate? Are participants
+  malicious or just honest but curious
+  (also called semi-honest, a type of participant
+  in MPC protocols that is willing to execute
+  the protocol correctly but might attempt to
+  learn the other participants' inputs)?
+* An **arithmetic circuit** is a number of
+  addition or multiplication gates linking inputs
+  to outputs. Notice that different inputs to the
+  circuit are provided by different participants,
+  but they could also be public inputs
+  (known to everyone).
+
+* The first step of a general-purpose MPC with
+  secret sharing is to have participants split
+  their respective secret inputs (using
+  Shamir's secret sharing scheme) and distribute
+  the parts to all participants.
+* The second step of a general-purpose MPC with
+  secret sharing is to have participants compute
+  each gate in the circuit. For example, a
+  participant can compute an addition gate by adding
+  the two input Shamir shares that they have, which
+  produces a Shamir share of the output.
+
+* The **state** of **MPC**
+  - There's been huge progress in the last decade
+    to make MPC practical. It is a field of many
+    different use cases, and one should be on the
+    lookout for the potential applications that can
+    benefit from this newish primitive.
+  - Note that, unfortunately, no real standardization
+    effort exists, and while several MPC implementations
+    can be considered practical for many use cases
+    today, they are not easy to use.
+  - Incidentally, the general-purpose MPC construction
+    I explained earlier in this section is based on
+    secret sharing, but there are more ways to
+    construct MPC protocols. A well-known alternative
+    is called **garbled circuits**, which is a type of
+    construction first proposed by Yao in his 1982
+    paper introducing MPC. Another alternative is
+    based on **fully homomorphic encryption**.
+
 
 * First and foremost, there are *many, many zk-SNARK schemes*,
   too many of them, really.

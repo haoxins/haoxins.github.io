@@ -12,6 +12,7 @@ date: 2021-10-15
 
 
 
+* [Homomorphic Encryption](https://homomorphicencryption.org)
 
 ### The OPAQUE Asymmetric PAKE Protocol
 
