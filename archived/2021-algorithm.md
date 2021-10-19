@@ -216,7 +216,7 @@ date: 2020-11-09
 | 延时的 Prim 算法   |   E   | $$ E\log{E} $$    |
 | 即时的 Prim 算法   |   V   | $$ E\log{V} $$    |
 | Kruskal          |   E   | $$ E\log{E} $$     |
-| Fredman-Tarjan   |   V   | $$ E + V\log{E} $$ |
+| Fredman-Tarjan   |   V   | $$ E + V\log{V} $$ |
 | Chazelle         |   V   | 非常接近但还没有达到E |
 | 理想情况          |   V   |         E?         |
 
