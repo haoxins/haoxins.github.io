@@ -208,6 +208,18 @@ date: 2020-11-09
 
 ### 生成树
 
+* 各种最小生成树算法的性能特点
+  - `V` 个顶点 `E` 条边, 最坏情况下的增长数量级
+
+|       算法       |  空间  |        时间        |
+| ---------------- |:----:|:------------------:|
+| 延时的 Prim 算法   |   E   | $$ E\log{E} $$    |
+| 即时的 Prim 算法   |   V   | $$ E\log{V} $$    |
+| Kruskal          |   E   | $$ E\log{E} $$     |
+| Fredman-Tarjan   |   V   | $$ E + V\log{E} $$ |
+| Chazelle         |   V   | 非常接近但还没有达到E |
+| 理想情况          |   V   |         E?         |
+
 ### 路径算法
 
 * [Common used path planning algorithms with animations](https://github.com/zhm-real/PathPlanning)
