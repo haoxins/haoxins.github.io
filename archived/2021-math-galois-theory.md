@@ -114,10 +114,10 @@ $$ e^{in\theta} = \left( e^{i\theta} \right)^n $$
 * 所有 `1` 的原始 `12` 次方根都能生成循环群
   $$ \langle \zeta{12} \rangle $$.
 $$
-\zeta {1}_{12} =
-\zeta {5}_{12} =
-\zeta {7}_{12} =
-\zeta {11}_{12} = \{
+\langle \zeta {1}_{12} \rangle =
+\langle \zeta {5}_{12} \rangle =
+\langle \zeta {7}_{12} \rangle =
+\langle \zeta {11}_{12} \rangle = \{
 \zeta {1}_{12},
 \zeta {2}_{12},
 \zeta {3}_{12},
@@ -134,8 +134,8 @@ $$
 * 生成元的个数
   - 满足以下等式的整数 `k`, 在 `1≤k<12` 的范围内有 `4` 个.
   - $$
-    \zeta{12} =
-    \zeta \begin{align} {k}\\{12} \end{align}
+    \langle \zeta{12} \rangle =
+    \langle \zeta \begin{align} {k}\\{12} \end{align} \rangle
     $$
 
 * 在思考三等分角问题时, 我们能做的只有这些.
