@@ -114,10 +114,10 @@ $$ e^{in\theta} = \left( e^{i\theta} \right)^n $$
 * 所有 `1` 的原始 `12` 次方根都能生成循环群
   $$ \langle \zeta{12} \rangle $$.
 $$
-\zeta \begin{align} {1}\\{12} \end{align} =
-\zeta \begin{align} {5}\\{12} \end{align} =
-\zeta \begin{align} {7}\\{12} \end{align} =
-\zeta \begin{align} {11}\\{12} \end{align} = \{
+\zeta {1}_{12} =
+\zeta {5}_{12} =
+\zeta {7}_{12} =
+\zeta {11}_{12} = \{
 \zeta {1}_{12},
 \zeta {2}_{12},
 \zeta {3}_{12},
