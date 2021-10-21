@@ -89,8 +89,7 @@ $$ e^{in\theta} = \left( e^{i\theta} \right)^n $$
     i sin\frac{2\pi}{12}
     $$,
     以下式子成立.
-  - $$
-    \langle \zeta{12} \rangle = \{
+  - $$ \langle \zeta{12} \rangle = \{
     \zeta \begin{align} {1}\\{12} \end{align},
     \zeta \begin{align} {2}\\{12} \end{align},
     \zeta \begin{align} {3}\\{12} \end{align},
@@ -102,8 +101,7 @@ $$ e^{in\theta} = \left( e^{i\theta} \right)^n $$
     \zeta \begin{align} {9}\\{12} \end{align},
     \zeta \begin{align} {10}\\{12} \end{align},
     \zeta \begin{align} {11}\\{12} \end{align},
-    \zeta \begin{align} {12}\\{12} \end{align} \}
-    $$
+    \zeta \begin{align} {12}\\{12} \end{align} \} $$
   - "来做一道题吧. `n` 有无数个, 但为什么集合
     $$ \langle \zeta{12} \rangle $$
     中只有12个元素?"
