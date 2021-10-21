@@ -92,7 +92,7 @@ $$ e^{in\theta} = \left( e^{i\theta} \right)^n $$
   - $$
     \langle \zeta{12} \rangle =
     \{
-    \begin \zeta{1}\\{12} \end,
+    \begin{cases} \zeta{1}\\{12} \end{cases},
     \zeta{2}{12},
     \zeta{3}{12},
     \zeta{4}{12},
