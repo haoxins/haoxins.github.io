@@ -92,27 +92,27 @@ $$ e^{in\theta} = \left( e^{i\theta} \right)^n $$
   - $$
     \langle \zeta{12} \rangle =
     \{
-    \zeta\begin{align} {1}\\{12} \end{align},
-    \zeta{2}{12},
-    \zeta{3}{12},
-    \zeta{4}{12},
-    \zeta{5}{12},
-    \zeta{6}{12},
-    \zeta{7}{12},
-    \zeta{8}{12},
-    \zeta{9}{12},
-    \zeta{10}{12},
-    \zeta{11}{12},
-    \zeta{12}{12}
+    \zeta \begin{align} {1}\\{12} \end{align},
+    \zeta \begin{align} {2}\\{12} \end{align},
+    \zeta \begin{align} {3}\\{12} \end{align},
+    \zeta \begin{align} {4}\\{12} \end{align},
+    \zeta \begin{align} {5}\\{12} \end{align},
+    \zeta \begin{align} {6}\\{12} \end{align},
+    \zeta \begin{align} {7}\\{12} \end{align},
+    \zeta \begin{align} {8}\\{12} \end{align},
+    \zeta \begin{align} {9}\\{12} \end{align},
+    \zeta \begin{align} {10}\\{12} \end{align},
+    \zeta \begin{align} {11}\\{12} \end{align},
+    \zeta \begin{align} {12}\\{12} \end{align}
     \}
     $$
   - "来做一道题吧. `n` 有无数个, 但为什么集合
     $$ \langle \zeta{12} \rangle $$
     中只有12个元素?"
   - "12 个元素会绕一圈 ..., 比如,
-    $$ \zeta{13}{12} $$
+    $$ \zeta \begin{align} {13}\\{12} \end{align} $$
     等于
-    $$ \zeta{1}{12} $$.
+    $$ \zeta \begin{align} {1}\\{12} \end{align} $$.
     不管多少次方, 都不会超过 `12` 个."
 
 
