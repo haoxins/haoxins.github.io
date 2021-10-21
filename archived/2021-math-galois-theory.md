@@ -135,7 +135,7 @@ $$
   - 满足以下等式的整数 `k`, 在 `1≤k<12` 的范围内有 `4` 个.
   - $$
     \zeta{12} =
-    \zeta \begin{align} {k}\\{12} \end{align} =
+    \zeta \begin{align} {k}\\{12} \end{align}
     $$
 
 * 在思考三等分角问题时, 我们能做的只有这些.
