@@ -9,7 +9,8 @@
 > * JVM stack developer (Kotlin, Spring and others)
 > * Web developer (5Y+, Node.js, Front-End, MiniApp and others)
 
-### Awesome blogs
+### Awesome websites
 
 * [Shtetl-Optimized](https://www.scottaaronson.com/blog/)
   - The Blog of Scott Aaronson
+* [LaTeX Symbol Tables - Mathematics](https://wikieducator.org/Help:LaTeX_Symbol_Tables_-_Mathematics)
