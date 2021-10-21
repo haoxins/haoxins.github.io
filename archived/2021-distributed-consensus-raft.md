@@ -28,8 +28,8 @@ date: 2021-09-20
   - They are fully functional (available) as long as
     any majority of the servers are operational and can
     communicate with each other and with clients. Thus,
-    a typical cluster of five servers can tolerate the
-    failure of any two servers.
+    a typical cluster of **five** servers can tolerate
+    the failure of any **two** servers.
   - They do not depend on timing to ensure the consistency
     of the logs: faulty clocks and extreme message delays
     can, at worst, cause availability problems.
@@ -43,3 +43,23 @@ date: 2021-09-20
     overall system performance.
 
 ## Basic Raft algorithm
+
+## Cluster membership changes
+
+## Log compaction
+
+## Client interaction
+
+## Raft user study
+
+## Correctness
+
+## Leader election evaluation
+
+## Implementation and performance
+
+## Related work
+
+## Conclusion
+
+## Safety proof and formal specification
