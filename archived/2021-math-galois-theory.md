@@ -85,8 +85,8 @@ $$ e^{in\theta} = \left( e^{i\theta} \right)^n $$
   - 数 `a` 的 `n` `(n = 1, 2, 3, ...)` 次方可以得到的数的集合
   - 假设 $$
     \zeta{12} =
-    cos\frac{{2\pi}{12}} +
-    i sin\frac{{2\pi}{12}}
+    cos\frac{2\pi}{12} +
+    i sin\frac{2\pi}{12}
     $$,
     以下式子成立.
   - $$
