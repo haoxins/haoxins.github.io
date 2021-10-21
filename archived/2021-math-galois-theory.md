@@ -111,6 +111,32 @@ $$ e^{in\theta} = \left( e^{i\theta} \right)^n $$
     $$ \zeta \begin{align} {1}\\{12} \end{align} $$.
     不管多少次方, 都不会超过 `12` 个."
 
+* 所有 `1` 的原始 `12` 次方根都能生成循环群
+  $$ \langle \zeta{12} \rangle $$.
+$$
+\zeta \begin{align} {1}\\{12} \end{align} =
+\zeta \begin{align} {5}\\{12} \end{align} =
+\zeta \begin{align} {7}\\{12} \end{align} =
+\zeta \begin{align} {11}\\{12} \end{align} = \{
+\zeta {1}_{12},
+\zeta {2}_{12},
+\zeta {3}_{12},
+\zeta {4}_{12},
+\zeta {5}_{12},
+\zeta {6}_{12},
+\zeta {7}_{12},
+\zeta {8}_{12},
+\zeta {9}_{12},
+\zeta {10}_{12},
+\zeta {11}_{12},
+\zeta {12}_{12} \}
+$$
+* 生成元的个数
+  - 满足以下等式的整数 `k`, 在 `1≤k<12` 的范围内有 `4` 个.
+  - $$
+    \zeta{12} =
+    \zeta \begin{align} {k}\\{12} \end{align} =
+    $$
 
 * 在思考三等分角问题时, 我们能做的只有这些.
   - **直尺**: 画出通过给定的2个点的直线
