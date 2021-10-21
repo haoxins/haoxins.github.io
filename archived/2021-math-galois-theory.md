@@ -89,7 +89,7 @@ $$ e^{in\theta} = \left( e^{i\theta} \right)^n $$
     i sin\frac{2\pi}{12}
     $$,
     以下式子成立.
-  - $$ \langle \zeta{12} \rangle = \{
+  - $$ \langle \zeta{12} \rangle \eq \{
     \zeta \begin{align} {1}\\{12} \end{align},
     \zeta \begin{align} {2}\\{12} \end{align},
     \zeta \begin{align} {3}\\{12} \end{align},
