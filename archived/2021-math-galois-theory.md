@@ -90,20 +90,21 @@ $$ e^{in\theta} = \left( e^{i\theta} \right)^n $$
     $$,
     以下式子成立.
   - $$
-    \langle \zeta{12} \rangle = {
-    \zeta{1}_{12},
-    \zeta{2}_{12},
-    \zeta{3}_{12},
-    \zeta{4}_{12},
-    \zeta{5}_{12},
-    \zeta{6}_{12},
-    \zeta{7}_{12},
-    \zeta{8}_{12},
-    \zeta{9}_{12},
-    \zeta{10}_{12},
-    \zeta{11}_{12},
-    \zeta{12}_{12},
-    }
+    \langle \zeta{12} \rangle =
+    \left {
+    \zeta{1}\\{12},
+    \zeta{2}\\{12},
+    \zeta{3}\\{12},
+    \zeta{4}\\{12},
+    \zeta{5}\\{12},
+    \zeta{6}\\{12},
+    \zeta{7}\\{12},
+    \zeta{8}\\{12},
+    \zeta{9}\\{12},
+    \zeta{10}\\{12},
+    \zeta{11}\\{12},
+    \zeta{12}\\{12},
+    \right }
     $$
   - "来做一道题吧. `n` 有无数个, 但为什么集合
     $$ \langle \zeta{12} \rangle $$
