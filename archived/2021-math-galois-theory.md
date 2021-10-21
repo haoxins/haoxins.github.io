@@ -91,7 +91,7 @@ $$ e^{in\theta} = \left( e^{i\theta} \right)^n $$
     以下式子成立.
   - $$
     \langle \zeta{12} \rangle =
-    \left {
+    \{
     \zeta{1}\\{12},
     \zeta{2}\\{12},
     \zeta{3}\\{12},
@@ -104,7 +104,7 @@ $$ e^{in\theta} = \left( e^{i\theta} \right)^n $$
     \zeta{10}\\{12},
     \zeta{11}\\{12},
     \zeta{12}\\{12},
-    \right }
+    \}
     $$
   - "来做一道题吧. `n` 有无数个, 但为什么集合
     $$ \langle \zeta{12} \rangle $$
