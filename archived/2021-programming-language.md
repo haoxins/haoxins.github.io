@@ -109,6 +109,9 @@ date: 2020-12-27
 
 ### Events
 
+* [Announcing Rust 1.56.0 and Rust 2021](https://blog.rust-lang.org/2021/10/21/Rust-1.56.0.html)
+  - **Rust 2021**
+
 * [Go 1.17 is released](https://blog.golang.org/go1.17)
   - [Go 1.17 Release Notes](https://golang.org/doc/go1.17)
   - *16 August 2021*
