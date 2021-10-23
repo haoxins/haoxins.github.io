@@ -305,3 +305,17 @@ let x = 1234.567 % 10.0; // approximately 4.567
 * There is one unusual rule about trait methods:
   **the trait itself must be in scope**.
   Otherwise, all its methods are hidden.
+
+
+* In Rust, a *subtrait* does not inherit the
+  associated items of its *supertrait*; each
+  trait still needs to be in scope if you want to
+  call its methods.
+* In fact, Rust's *subtraits* are really just a
+  shorthand for a bound on `Self`.
+
+* **Type-Associated Functions**
+* In most object-oriented languages, *interfaces*
+  can't include *static methods* or *constructors*,
+  but traits can include *type-associated functions*,
+  Rust's analog to *static methods*.
