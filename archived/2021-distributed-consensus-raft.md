@@ -81,6 +81,11 @@ date: 2021-09-20
 
 ### Raft basics
 
+* At any given time each server is in one of three states:
+  - leader,
+  - follower,
+  - or candidate.
+
 ## Cluster membership changes
 
 ## Log compaction
