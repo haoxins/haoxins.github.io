@@ -8,6 +8,9 @@ date: 2019-10-24
 
 ### 2021-10
 
+* [沙丘 Dune](https://movie.douban.com/subject/3001114/)
+  - 还行吧~
+
 * [我和我的父辈](https://movie.douban.com/subject/35294995/)
 
 * [八角亭谜雾](https://movie.douban.com/subject/35307435/)
