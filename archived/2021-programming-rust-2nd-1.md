@@ -306,6 +306,12 @@ let x = 1234.567 % 10.0; // approximately 4.567
   **the trait itself must be in scope**.
   Otherwise, all its methods are hidden.
 
+* Rust lets you implement *any trait* on *any type*,
+  as long as either the trait or the type is
+  introduced in the current crate.
+* This means that any time you want to add a method
+  to any type, you can use a trait to do it.
+  - *extension trait*
 
 * In Rust, a *subtrait* does not inherit the
   associated items of its *supertrait*; each
