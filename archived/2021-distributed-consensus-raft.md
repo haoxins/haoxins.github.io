@@ -44,6 +44,22 @@ date: 2021-09-20
 
 ## Basic Raft algorithm
 
+* But our most important goal and most
+  difficult challenge was **understandability**.
+
+* **Leader election**: a new leader must be chosen
+  when starting the cluster and when
+  an existing leader fails.
+* **Log replication**: the leader must accept log
+  entries from clients and replicate them across
+  the cluster, forcing the other logs
+  to agree with its own.
+* **Safety**: the key safety property for Raft is
+  the *State Machine Safety Property*: if any server
+  has applied a particular log entry to its
+  state machine, then no other server may apply a
+  different command for the same log index.
+
 ## Cluster membership changes
 
 ## Log compaction
