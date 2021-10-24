@@ -1413,6 +1413,28 @@ spec:
 
 ## Organizing objects using labels, selectors, and Namespaces
 
+* Most Kubernetes API object types are **namespaced**,
+  but a few are not.
+  - `Pods`, `ConfigMaps`, `Secrets`, `PersistentVolumeClaims`,
+    and `Events` are all **namespaced**.
+  - `Nodes`, `PersistentVolumes`, `StorageClasses`, and
+    `Namespaces` themselves are not.
+* To see if a resource is *namespaced* or *cluster-scoped*,
+  check the `NAMESPACED` column when
+  running `kubectl api-resources`.
+
+* `kubectl get ns`
+
+```zsh
+default
+kube-node-lease
+kube-public
+kube-system
+```
+
+* Namespaces prefixed with `kube-` are reserved
+  for Kubernetes system namespaces.
+
 ## Exposing Pods with Services and Ingresses
 
 ## Deploying applications using Deployments
