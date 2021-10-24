@@ -325,3 +325,20 @@ let x = 1234.567 % 10.0; // approximately 4.567
   can't include *static methods* or *constructors*,
   but traits can include *type-associated functions*,
   Rust's analog to *static methods*.
+
+* In Rust, the expression `lhs * rhs` is shorthand
+  for `Mul::mul(lhs, rhs)`. So overloading the `*`
+  operator in Rust is as simple as
+  implementing the `Mul` trait.
+
+* There is one important exception. Using generics
+  allows callers of the function to specify the
+  type of the generic argument `s`, like
+  `print::<i32>(42)`, while
+  using `impl Trait` does not.
+
+* Each `impl Trait` argument is assigned its own
+  anonymous type parameter, so `impl Trait` for
+  arguments is limited to only the simplest
+  generic functions, with no relationships
+  between the types of arguments.
