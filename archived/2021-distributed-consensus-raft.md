@@ -86,6 +86,42 @@ date: 2021-09-20
   - follower,
   - or candidate.
 
+* Raft ensures that there is at most
+  one leader in a given term.
+
+* **Followers** only respond to requests from other servers.
+  If a follower receives no communication, it becomes a
+  **candidate** and initiates an election. A **candidate**
+  that receives votes from a majority of the full cluster
+  becomes the new **leader**.
+  Leaders typically operate until they fail.
+* Time is divided into **terms**, and each term begins with
+  an **election**. After a successful election, a single
+  leader manages the cluster until the end of the term.
+* Some elections fail, in which case the term ends without
+  choosing a leader. The transitions between terms may be
+  observed at different times on different servers.
+
+---
+
+* **Terms** act as a *logical clock* in Raft, and they allow
+  servers to detect obsolete information such as
+  stale leaders.
+* Each server stores a *current term number*, which
+  increases monotonically over time.
+* If a candidate or leader discovers that its term is
+  *out of date*, it immediately **reverts** to follower state.
+* If a server receives a request with a *stale term number*,
+  it **rejects** the request.
+* The basic consensus algorithm requires **only two** types
+  of RPCs between servers.
+  - `RequestVote` RPCs are initiated by *candidates* during
+    elections,
+  - and `AppendEntries` RPCs are initiated by *leaders* to
+    replicate log entries and to provide a form of heartbeat.
+
+### Leader election
+
 ## Cluster membership changes
 
 ## Log compaction
