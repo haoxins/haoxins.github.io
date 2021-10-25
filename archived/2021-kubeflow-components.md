@@ -6,6 +6,20 @@ date: 2021-07-23
 
 > After: Kubeflow `1.4`
 
+### Profiles
+
+* If you want to **delete** `Profiles`/`User namespaces`
+  - Remove the `profiles`, not remove `ns` directly
+
+### Pipelines
+
+* The Kubeflow Pipelines API service
+  *deployment* is `ml-pipeline-ui`.
+
+* [Multi-User mode](https://www.kubeflow.org/docs/components/pipelines/sdk/connect-api/#multi-user-mode)
+
+### Training Operator
+
 * [Kubeflow Training Operator](https://github.com/kubeflow/training-operator)
   - Starting from `v1.3`, this training operator provides
     Kubernetes custom resources that makes it easy to run
