@@ -109,6 +109,10 @@ date: 2020-12-27
 
 ### Events
 
+* [What's New In Python 3.10](https://docs.python.org/3/whatsnew/3.10.html)
+  - ***Structural Pattern Matching***
+  - Parenthesized context managers
+
 * [Announcing Rust 1.56.0 and Rust 2021](https://blog.rust-lang.org/2021/10/21/Rust-1.56.0.html)
   - **Rust 2021**
 
@@ -737,26 +741,23 @@ class InventoryItem:
     允许其他线程运行.
   - `time.sleep()` 函数也会释放 `GIL`.
 
-```
-An older way of marking a function as a coroutine
-is to decorate a normal def function with
-@asyncio.coroutine.
 
-The result is a generator-based coroutine.
+* An older way of marking a function as a coroutine
+  is to decorate a normal `def` function with
+  `@asyncio.coroutine`. The result is a
+  *generator-based* coroutine.
+* Support for *generator-based* coroutines is
+  **deprecated** and is scheduled for *removal* in
+  Python `3.10`.
+* *Generator-based coroutines* predate `async/await`
+  syntax. They are Python generators that use
+  `yield from` expressions to await on
+  Futures and other coroutines.
 
-Support for generator-based coroutines is deprecated
-and is scheduled for removal in Python 3.10.
-
-Generator-based coroutines predate async/await syntax.
-They are Python generators that use yield from expressions
-to await on Futures and other coroutines.
-
-However, async IO is not threading,
-nor is it multiprocessing.
-
-In fact, async IO is a single-threaded,
-single-process design.
-```
+* However, async IO is *not threading*,
+  *nor* is it *multiprocessing*.
+* In fact, async IO is a *single-threaded*,
+  *single-process* design.
 
 ### Java
 
