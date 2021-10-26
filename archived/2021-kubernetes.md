@@ -36,7 +36,6 @@ k explain
 ```zsh
 k apply -k kustomization_directory
 k logs  pod_name -f --all-containers
-k get   po       --all-namespaces
 k get   ev       -w
 k get   po,ev,cm,svc,ns,pv,pvc,secret,deploy,rs
 ```
