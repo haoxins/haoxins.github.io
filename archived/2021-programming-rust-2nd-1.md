@@ -365,3 +365,22 @@ let x = 1234.567 % 10.0; // approximately 4.567
     `Drop`, `Deref` and `DerefMut`, and the
     *conversion traits* `From` and `Into`.
   - **Marker traits**
+  - These are traits mostly used to bound *generic type*
+    variables to express constraints you can't capture
+    otherwise. These include `Sized` and `Copy`.
+  - **Public vocabulary traits**
+  - These don't have any magical compiler integration;
+    you could define equivalent traits in your own code.
+    But they serve the important goal of setting down
+    conventional solutions for common problems. These
+    are especially valuable in public interfaces between
+    crates and modules: by *reducing needless variation*,
+    they make interfaces easier to understand, but they
+    also increase the likelihood that features from
+    different crates can simply be plugged together
+    directly, without boilerplate or custom glue code.
+    These include `Default`, the *reference-borrowing*
+    traits `AsRef`, `AsMut`, `Borrow` and `BorrowMut`;
+    the *fallible conversion* traits `TryFrom` and
+    `TryInto`; and the `ToOwned` trait,
+    a generalization of `Clone`.
