@@ -346,3 +346,22 @@ let x = 1234.567 % 10.0; // approximately 4.567
 ### Operator Overloading
 
 ### Utility Traits
+
+* Rust's "utility" traits, a grab bag of various
+  traits from the standard library that have enough
+  of an impact on the way Rust is written that
+  you'll need to be familiar with them in order to
+  write idiomatic code and design public interfaces
+  for your crates that users will judge to be
+  properly "`Rustic`." They fall into
+  three broad categories:
+  - **Language extension traits**
+  - Just as the *operator overloading traits* make it
+    possible for you to use Rust's *expression operators*
+    on your own types, there are several other standard
+    library traits that serve as Rust extension points,
+    allowing you to integrate your own types more
+    closely with the language. These include
+    `Drop`, `Deref` and `DerefMut`, and the
+    *conversion traits* `From` and `Into`.
+  - **Marker traits**
