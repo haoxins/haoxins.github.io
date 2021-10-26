@@ -154,6 +154,34 @@ date: 2021-09-20
   election; this reduces the likelihood of another
   split vote in the new election.
 
+### Log replication
+
+* *Logs* are composed of *entries*, which are
+  *numbered sequentially*. Each entry contains the
+  `term` in which it was created
+  (the number in each box) and a command for the
+  state machine. An entry is considered committed
+  if it is safe for that entry to be
+  applied to state machines.
+* The leader decides when it is safe to apply a
+  log entry to the state machines; such an entry
+  is called **committed**. Raft guarantees that
+  committed entries are durable and will eventually
+  be executed by all of the available state machines.
+* A log entry is committed once the leader that
+  created the entry has replicated it on a majority
+  of the servers. This also commits all preceding
+  entries in the leader's log, including entries
+  created by previous leaders.
+* Raft maintains the following properties, which
+  together constitute the *Log Matching Property*:
+  - If two entries in different logs have the
+    *same index and term*, then they store
+    the **same command**.
+  - If two entries in different logs have the
+    *same index and term*, then the logs are
+    **identical in all** preceding entries.
+
 ## Cluster membership changes
 
 ## Log compaction
