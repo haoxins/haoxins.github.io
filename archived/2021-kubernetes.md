@@ -6,8 +6,7 @@ date: 2021-08-24
 
 ### Tools
 
-* [kube-ps1](https://github.com/jonmosco/kube-ps1)
-  - Kubernetes prompt for bash and zsh
+* [kubectx + kubens](https://github.com/ahmetb/kubectx)
 
 ### K8s common
 
