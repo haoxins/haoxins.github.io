@@ -122,6 +122,38 @@ date: 2021-09-20
 
 ### Leader election
 
+* If a follower receives no communication over a period of
+  time called the *election timeout*, then it assumes there
+  is no viable leader and begins an
+  election to choose a new leader.
+* A candidate continues in this state until one of
+  three things happens:
+  - (a) it wins the election,
+  - (b) another server establishes itself as leader, or
+  - (c) another election timeout goes by with no winner.
+* While waiting for votes, a *candidate* may receive an
+  `AppendEntries` RPC from another server claiming to
+  be leader.
+  - If the leader's term (included in its RPC) is at
+    least as large as the candidate's current term,
+    then the candidate recognizes the leader as
+    legitimate and returns to follower state.
+  - If the term in the RPC is smaller than the
+    candidate's current term, then the candidate
+    *rejects* the RPC and continues
+    in candidate state.
+* Raft uses *randomized election timeouts* to ensure
+  that split votes are rare and that they are
+  resolved quickly. To prevent split votes in the
+  first place, election timeouts are chosen randomly
+  from a fixed interval (e.g., `150-300 ms`).
+* The same mechanism is used to handle split votes.
+  Each candidate restarts its randomized election
+  timeout at the start of an election, and it waits
+  for that timeout to elapse before starting the next
+  election; this reduces the likelihood of another
+  split vote in the new election.
+
 ## Cluster membership changes
 
 ## Log compaction
