@@ -26,6 +26,13 @@ k api-resources
 k explain
 ```
 
+* Shortcuts
+
+```zsh
+-A    --all-namespaces
+-n    --namespace
+```
+
 ```zsh
 k apply -k kustomization_directory
 k logs  pod_name -f --all-containers

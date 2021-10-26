@@ -1435,6 +1435,8 @@ kube-system
 * Namespaces prefixed with `kube-` are reserved
   for Kubernetes system namespaces.
 
+* You can also type `-A` instead of `--all-namespaces`.
+
 ## Exposing Pods with Services and Ingresses
 
 ## Deploying applications using Deployments
