@@ -1437,6 +1437,27 @@ kube-system
 
 * You can also type `-A` instead of `--all-namespaces`.
 
+* When users use namespaces in a single physical
+  cluster, it's as if they each use their own
+  virtual cluster. But this is only true up to the
+  point of being able to create objects without
+  running into naming conflicts.
+* Unless explicitly configured to do so, Kubernetes
+  doesn't provide network isolation between
+  applications running in pods in different namespaces.
+* An application running in one namespace can
+  communicate with applications running in
+  other namespaces.
+  - By default, there is *no network isolation*
+    between namespaces.
+* When you delete the Namespace object, all the
+  objects you created in that namespace are
+  automatically deleted. You don't need
+  to delete them first.
+
+
+---
+
 ## Exposing Pods with Services and Ingresses
 
 ## Deploying applications using Deployments
