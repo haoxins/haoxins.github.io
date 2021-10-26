@@ -1455,6 +1455,18 @@ kube-system
   automatically deleted. You don't need
   to delete them first.
 
+* Remember that the `kubectl get all` command lists
+  only *some types of* objects. For example, it
+  *doesn't list* `secrets`. Even though the command
+  doesn't return anything, this doesn't mean that
+  the namespace is empty.
+* Here I just want to show you how to figure out
+  which object is causing the namespace
+  (the delete process) to be stuck.
+* Here's a hint: Namespace objects also have a
+  status field. While the `kubectl describe` command
+  normally also displays the status of the object.
+  - `kubectl get ns ns_name -o yaml`
 
 ---
 
