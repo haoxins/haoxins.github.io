@@ -1470,6 +1470,42 @@ kube-system
 
 ---
 
+* The label prefixes `kubernetes.io/` and `k8s.io/`
+  are reserved for Kubernetes components. If you want
+  to use a prefix for your labels, use your
+  organization's domain name to avoid conflicts.
+
+* The following syntax rules apply to the `label prefix`:
+  - Must be a DNS subdomain (must contain only
+    *lowercase* alphanumeric characters,
+    *hyphens*, *underscores*, and *dots*).
+  - Must be *no more* than `253` characters long
+    (not including the *slash* character).
+  - Must end with a *forward slash*.
+  - The prefix must be followed by the
+    `label name`, which:
+  - Must *begin* and *end* with an
+    *alphanumeric character*.
+  - May contain *hyphens*, *underscores*,
+    and *dots*.
+  - May contain *uppercase* letters.
+  - May *not be longer* than `63` characters.
+* A `label value`:
+  - May be *empty*.
+  - Must *begin* with an *alphanumeric character*
+    if not empty.
+  - May contain only *alphanumeric characters*,
+    *hyphens*, *underscores*, and *dots*.
+  - Must *not* contain *spaces* or
+    other *whitespace*.
+  - Must be *no more* than `63` characters long.
+
+* If you need to add values that don't follow
+  these rules, you can add them as **annotations**
+  instead of **labels**.
+
+* **Well-known labels used by Kubernetes**
+
 ## Exposing Pods with Services and Ingresses
 
 ## Deploying applications using Deployments
