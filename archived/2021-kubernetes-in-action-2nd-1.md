@@ -1563,6 +1563,45 @@ app.kubernetes.io/managed-by quotes-operator
   **match all** of the specified selectors.
   - `app=quote,rel=canary`
 
+```zsh
+k get po -l app=quote,rel=canary
+k get po -l 'app in (quiz, quote)'
+k get po -l '!rel'
+```
+
+> **Make sure** to use **single quotes** around
+  `!rel`, so your shell doesn't evaluate
+  the `exclamation mark`.
+
+* Scheduling pods to nodes with specific labels
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kiada-front-end
+spec:
+  nodeSelector:
+    node-role: front-end
+```
+
+* In the `nodeSelector` field, you can specify
+  one or more label keys and values that the
+  `node` must match to be eligible to run the pod.
+* Note that this field only supports specifying
+  an `equality-based` label selector.
+
+```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ssd-claim
+spec:
+  selector:
+    matchLabels:
+      type: ssd
+```
+
 ## Exposing Pods with Services and Ingresses
 
 ## Deploying applications using Deployments
