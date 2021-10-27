@@ -49,6 +49,29 @@ date: 2021-09-08
   to spell out the generic types each time, but to
   see the advantages of this design, just read on.
 
+* Any closure that requires `mut` access to
+  a value, but doesn't `drop` any values,
+  is an `FnMut` closure.
+* The three categories of Rust closures.
+  - `Fn` is the family of closures and functions
+    that you can call multiple times without
+    restriction. This **highest** category also
+    includes all `fn` functions.
+  - `FnMut` is the family of closures that can be
+    called multiple times if the
+    closure itself is declared `mut`.
+  - `FnOnce` is the family of closures that can
+    be called **once**, if the caller
+    owns the closure.
+* Every `Fn` meets the requirements for `FnMut`, and
+  every `FnMut` meets the requirements for `FnOnce`.
+* Instead, `Fn()` is a *subtrait* of `FnMut()`,
+  which is a *subtrait* of `FnOnce( )`.
+* This makes `Fn` the most exclusive and most powerful
+  category. `FnMut` and `FnOnce` are broader
+  categories that include closures
+  with usage restrictions.
+
 ## Iterators
 
 ## Collections
