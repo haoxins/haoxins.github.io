@@ -28,8 +28,10 @@ k explain
 * Shortcuts
 
 ```zsh
--A    --all-namespaces
--n    --namespace
+-A  --all-namespaces
+-n  --namespace
+-l  --selector
+-L  --label-columns
 ```
 
 ```zsh
