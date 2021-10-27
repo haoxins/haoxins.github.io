@@ -1533,6 +1533,36 @@ app.kubernetes.io/version    1.0.0
 app.kubernetes.io/managed-by quotes-operator
 ```
 
+* **Label selectors** allow you to select a
+  subset of objects that contain a particular
+  label and perform an operation on those objects.
+* There are two types of label selectors:
+  - **equality-based** selectors, and
+  - **set-based** selectors.
+* An **equality-based** selector can filter objects
+  based on whether the value of a particular label
+  is `equal` to or `not equal`
+  to a particular value.
+  - `app=quote`, `app!=quote`
+* **Set-based selectors** are more powerful and
+  allow you to specify:
+  - a set of values that a particular label must
+    have; for example: `app in (quiz, quote)`,
+  - a set of values that a particular label must
+    not have; for example: `app notin (kiada)`,
+  - a particular label key that should be present
+    in the object's labels; for example, to select
+    objects that have the `app` label,
+    the selector is simply `app`,
+  - a particular label key that should not be
+    present in the object's labels; for example,
+    to select objects that do not have the
+    `app` label, the selector is `!app`.
+* When you filter objects, you can *combine multiple*
+  selectors. To be selected, an object must
+  **match all** of the specified selectors.
+  - `app=quote,rel=canary`
+
 ## Exposing Pods with Services and Ingresses
 
 ## Deploying applications using Deployments
