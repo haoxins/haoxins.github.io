@@ -8,6 +8,7 @@ date: 2021-02-17
 
 ### 2021
 
+* 入手了 `Switch oled` 日版
   - 下单了 *超级机器人大战30*
 
 * [黑神话: 悟空](https://www.bilibili.com/video/BV1y64y1q757)
