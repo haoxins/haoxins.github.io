@@ -24,6 +24,10 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/jovyan/abc.json"
 
 ------------------
 
+* [PyTorch 1.10 Release](https://pytorch.org/blog/pytorch-1.10-released/)
+  - including CUDA Graphs APIs, Frontend
+    and Compiler Improvements
+
 * [KServe: The next generation of KFServing](https://blog.kubeflow.org/release/official/2021/09/27/kfserving-transition.html)
   - *KFServing* is now *KServe*
   - The project has been rebranded from
