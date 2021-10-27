@@ -1659,6 +1659,24 @@ k get po --field-selector status.phase!=Running --all-namespaces
   and can contain any character.
 * The same rules that apply to `label keys` also
   apply to `annotations keys`.
+* `Annotation values`, on the other hand, have
+  *no special rules*. An annotation value can
+  contain *any character* and can be up to
+  `256 KB` long. It must be a string, but can
+  contain `plain text`, `YAML`, `JSON`, or even a
+  `Base64-Encoded` value.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-with-annotations
+  annotations:
+    created-by: Hao Xin <hao.xin@email.me>
+    contact-phone: +86 18304374450
+    revision: "3"
+```
+
 ## Exposing Pods with Services and Ingresses
 
 ## Deploying applications using Deployments
