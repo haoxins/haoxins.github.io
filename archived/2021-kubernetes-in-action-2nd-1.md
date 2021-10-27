@@ -1602,6 +1602,50 @@ spec:
       type: ssd
 ```
 
+* Unlike the node selector in the `Pod` object,
+  the label selector in the `PersistentVolumeClaim`
+  object supports both `equality-based` and
+  `set-based` selectors and uses a
+  slightly different syntax.
+* As you can see in the listing, you can specify
+  multiple expressions. The `PersistentVolume's`
+  labels must match all of the specified
+  expressions to be selected.
+  - You must specify the `key`, `operator`,
+    and `values` for each expression.
+* The `key` is the `label key` to which the
+  selector is applied. The `operator` must be
+  *one of* `In`, `NotIn`, `Exists`, and
+  `DoesNotExist`. When you use the `In` or `NotIn`
+  operators, the values array must *not be empty*,
+  but it must be empty when you use the `Exists`
+  and `DoesNotExist` operators.
+
+```yaml
+spec:
+  selector:
+    matchExpressions:
+    - key: type
+      operator: NotIn
+      values:
+      - ssd
+    - key: age
+      operator: In
+      values:
+      - old
+      - very-old
+```
+
+* The set of fields you can use in a
+  **field selector** depends on the object kind.
+  The `metadata.name` and `metadata.namespace`
+  fields are always supported.
+* Like `equality-based` label selectors,
+  field selectors support the *equal* (`=` or `==`)
+  and *not equal* (`!=`) operator, and you can
+  combine multiple field selectors
+  by separating them with a `comma`.
+
 ## Exposing Pods with Services and Ingresses
 
 ## Deploying applications using Deployments
