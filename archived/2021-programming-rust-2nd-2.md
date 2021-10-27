@@ -49,6 +49,23 @@ date: 2021-09-08
   to spell out the generic types each time, but to
   see the advantages of this design, just read on.
 
+* **Pseudocode** for `Fn`, `FnMut`,
+  and `FnOnce` traits.
+
+```rust
+trait Fn() -> R {
+  fn call(&self) -> R;
+}
+
+trait FnMut() -> R {
+  fn call_mut(&mut self) -> R;
+}
+
+trait FnOnce() -> R {
+  fn call_once(self) -> R;
+}
+```
+
 * Any closure that requires `mut` access to
   a value, but doesn't `drop` any values,
   is an `FnMut` closure.
