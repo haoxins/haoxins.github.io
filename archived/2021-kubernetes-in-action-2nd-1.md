@@ -1646,6 +1646,19 @@ spec:
   combine multiple field selectors
   by separating them with a `comma`.
 
+```zsh
+k get po --field-selector status.phase!=Running
+k get po --field-selector status.phase!=Running --all-namespaces
+```
+
+* *Like* labels, **annotations** are also `key-value` pairs,
+  but they don't store identifying information and
+  can't be used to filter objects.
+* *Unlike* labels, an **annotation** value can be
+  much longer (up to `256 KB`)
+  and can contain any character.
+* The same rules that apply to `label keys` also
+  apply to `annotations keys`.
 ## Exposing Pods with Services and Ingresses
 
 ## Deploying applications using Deployments
