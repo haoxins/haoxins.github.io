@@ -1506,6 +1506,33 @@ kube-system
 
 * **Well-known labels used by Kubernetes**
 
+```
+Label key                        Example value     Applied to
+
+kubernetes.io/arch               amd64             Node
+kubernetes.io/os                 linux             Node
+kubernetes.io/hostname           worker-node2      Node
+topology.kubernetes.io/region    asia-southeast1   Node,PV
+topology.kubernetes.io/zone      asia-southeast1-c Node,PV
+node.kubernetes.io/instance-type micro-1           Node
+```
+
+* The Kubernetes community has agreed on a set of
+  standard labels that you can add to your objects
+  so that `other users and tools`
+  can understand them.
+
+```
+Label                        Example
+
+app.kubernetes.io/name       quotes
+app.kubernetes.io/instance   quotes-foo
+app.kubernetes.io/component  database
+app.kubernetes.io/part-of    kubia-demo
+app.kubernetes.io/version    1.0.0
+app.kubernetes.io/managed-by quotes-operator
+```
+
 ## Exposing Pods with Services and Ingresses
 
 ## Deploying applications using Deployments
