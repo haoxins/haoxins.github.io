@@ -89,6 +89,28 @@ trait FnOnce() -> R {
   categories that include closures
   with usage restrictions.
 
+* On the other hand, a `non-move` closure that *does*
+  `mutate` values has `mutable` references within
+  its internal representation. `Mutable` references
+  are neither `Clone` nor `Copy`, so neither is
+  a closure that uses them.
+
+* For a `move` closure, the rules are even simpler.
+  If everything a `move` closure captures ís `Copy`,
+  it's `Copy`. If everything it captures is `Clone`,
+  it's `Clone`.
+
+* Closures have unique types because each one
+  captures different variables, so among other things,
+  they're each a different size.
+* If they don't capture anything, though, there's
+  nothing to store. By using `fn` pointers in functions
+  that take callbacks, you can restrict a caller to
+  use only these noncapturing closures, gaining some
+  perfomance and flexibility within the code using
+  callbacks at the cost of flexibility
+  for the users of your APl.
+
 ## Iterators
 
 ## Collections
