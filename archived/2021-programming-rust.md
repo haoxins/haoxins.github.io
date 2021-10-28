@@ -6,7 +6,7 @@ date: 2021-04-10
 
 ### Ecosystems
 
-* [Diesel](https://github.com/diesel-rs/diesel)
+* [SeaORM](https://github.com/SeaQL/sea-orm)
 
 * [axum](https://github.com/tokio-rs/axum)
 
@@ -20,6 +20,9 @@ date: 2021-04-10
 ------------------
 
 ## 2021
+
+* [SeaORM](https://github.com/SeaQL/sea-orm)
+  - 期待 `v1.0`
 
 * [An update on Memory Safety in Chrome](https://security.googleblog.com/2021/09/an-update-on-memory-safety-in-chrome.html)
   - September 21, 2021
