@@ -7,11 +7,10 @@ date: 2020-12-27
 * Blockchain
   - Rust
   - Go
-* Data Engineering
+* Data
+  - Python
   - Rust
   - Java
-* Data Science
-  - Python
 * DevOps, DataOps, MLOps
   - Python
   - Go
