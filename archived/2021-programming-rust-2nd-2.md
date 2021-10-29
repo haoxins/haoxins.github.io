@@ -113,6 +113,50 @@ trait FnOnce() -> R {
 
 ## Iterators
 
+* Here, `filter` returns a new iterator that
+  produces only those items from the `map` iterator
+  for which the closure returns `true`.
+* A chain of iterator adapters is like a pipeline
+  in the `Unix` shell: each adapter has a single
+  purpose, and it's clear how the sequence is
+  being transformed as one reads from left to right.
+  These adapters' signatures are as follows:
+
+```rust
+fn map<B, F>(self, f: F) -> impl Iterator<Item=B>
+  where Self: Sized, F: FnMut(Self::Item) -> B;
+
+fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
+  where Self: Sized, P: FnMut(&Self::Item) -> bool;
+```
+
+* In the standard library, `map` and `filter` actually
+  return specific opaque `struct` types named
+  `std::iter::Map` and `std::iter::Filter`. However,
+  just seeing their names is not very informative,
+  so in this book, were just going to write
+  `-> impl Iterator<Item=...>` instead, since that
+  tells us what we really want to know:
+  - the method returns an `Iterator` that produces
+    items of the given type.
+* Since most adapters take `self` by value, they require
+  `Self` to be `Sized` (which all common iterators are).
+  - A `map` iterator passes each item to its closure
+    by `value` and, in turn, passes along *ownership* of the
+    closure's result to it's consumer.
+  - A `filter` iterator passes each item to its closure
+    by *shared reference*, retaining *ownership* in case
+    the item is selected to be passed on to it's consumer.
+
+* There are **two** important points to notice about
+  iterator adapters
+* **First**, simply calling an adapter on an iterator
+  doesn't consume any items; it just returns a
+  new iterator, ready to produce its own items by
+  drawing from the first iterator as `needed`. In a
+  chain of adapters, the only way to make any work
+  actually get done is to call `next`
+  on the **final** iterator.
 ## Collections
 
 ## Strings and Text
