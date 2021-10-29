@@ -157,6 +157,42 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
   chain of adapters, the only way to make any work
   actually get done is to call `next`
   on the **final** iterator.
+  - **No** work takes place until `collect` starts
+    calling `next` on the `filter` iterator.
+  - This point is especially important if you use
+    adapters that have *side effects*. For example,
+    this code prints **nothing** at all:
+
+```rust
+["earth", "water", "air", "fire"]
+  .iter().map(|elt| println!("{}", elt));
+```
+
+* The `iter` call returns an iterator over the array's
+  elements, and the `map` call returns a second
+  iterator that applies the closure to each value the
+  first produces. But there is nothing here that ever
+  actually demands a value from the whole chain, so no
+  `next` method ever runs.
+* The term `"lazy"` in the error message is not a
+  disparaging term; it's just jargon for any mechanism
+  that puts off a computation until its value is needed.
+  It is Rust's convention that iterators should do the
+  minimum work necessary to satisfy each call to `next`;
+  in the example, there are no such calls at all,
+  so no work takes place.
+* The **second** important point is that iterator
+  adapters are a `zero-overhead` abstraction. Since
+  `map`, `filter`, and their companions are `generic`,
+  applying them to an iterator specializes their code
+  for the specific iterator type involved.
+* This means that Rust has enough information to inline
+  each iterator's next method into its consumer and
+  then translate the entire arrangement into
+  machine code as a unit، So the `lines/map/filter` chain
+  of iterators we showed before is as efficient as the
+  code you would probably write by hand.
+
 ## Collections
 
 ## Strings and Text
