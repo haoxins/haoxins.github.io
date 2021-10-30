@@ -8,6 +8,9 @@ date: 2019-10-24
 
 ### 2021-10
 
+* [007: 无暇赴死](https://movie.douban.com/subject/20276229/)
+  - 一般般~
+
 * [沙丘 Dune](https://movie.douban.com/subject/3001114/)
   - 还行吧~
 
