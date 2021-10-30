@@ -11,6 +11,8 @@ date: 2019-10-24
 * [007: 无暇赴死](https://movie.douban.com/subject/20276229/)
   - 一般般~
 
+* 重温 [让子弹飞](https://movie.douban.com/subject/3742360/)
+
 * [沙丘 Dune](https://movie.douban.com/subject/3001114/)
   - 还行吧~
 
