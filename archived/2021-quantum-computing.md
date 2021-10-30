@@ -7,7 +7,7 @@ date: 2021-07-16
 * [Shtetl-Optimized](https://www.scottaaronson.com)
   - The Blog of Scott Aaronson
   - 哇喔, 原来我早先就收藏了作者的博客
-  - https://www.scottaaronson.com/blog/
+  - https://scottaaronson.blog
   - https://www.scottaaronson.com/papers/
 
 ------------------

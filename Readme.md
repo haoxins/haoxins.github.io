@@ -11,6 +11,6 @@
 
 ### Awesome websites
 
-* [Shtetl-Optimized](https://www.scottaaronson.com/blog/)
+* [Shtetl-Optimized](https://scottaaronson.blog)
   - The Blog of Scott Aaronson
 * [LaTeX Symbol Tables - Mathematics](https://wikieducator.org/Help:LaTeX_Symbol_Tables_-_Mathematics)
