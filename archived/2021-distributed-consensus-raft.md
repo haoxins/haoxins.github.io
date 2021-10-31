@@ -4,6 +4,10 @@ description: Consensus, Bridging Theory and Practice
 date: 2021-09-20
 ---
 
+* https://github.com/tikv/raft-rs
+
+* https://raft.github.io/raft.pdf
+
 * [Consensus: Bridging Theory and Practice](https://github.com/ongardie/dissertation)
   - https://raft.github.io
 
@@ -182,22 +186,9 @@ date: 2021-09-20
     *same index and term*, then the logs are
     **identical in all** preceding entries.
 
+
 ## Cluster membership changes
+
 
 ## Log compaction
 
-## Client interaction
-
-## Raft user study
-
-## Correctness
-
-## Leader election evaluation
-
-## Implementation and performance
-
-## Related work
-
-## Conclusion
-
-## Safety proof and formal specification
