@@ -63,11 +63,12 @@ of Chrome - we remain in an experimental phase.
 * 2021-05-11: The Plan for the **Rust 2021** Edition
 
 ```
-We are happy to announce that the third edition of the Rust language,
-Rust 2021,
+We are happy to announce that the third edition
+of the Rust language, Rust 2021,
 is scheduled for release in October.
-Rust 2021 contains a number of small changes that are nonetheless
-expected to make a significant improvement to how Rust feels in practice.
+Rust 2021 contains a number of small changes that are
+nonetheless expected to make a significant improvement
+to how Rust feels in practice.
 ```
 
 * [Mozilla Welcomes the Rust Foundation](https://blog.mozilla.org/blog/2021/02/08/mozilla-welcomes-the-rust-foundation/)
@@ -106,10 +107,13 @@ including concurrency bugs.
 * `2015-05-15` **Rust 1.0**
 
 ```
-Every two or three years, the Rust team produces a new Rust edition.
-Each edition brings together the features that have landed
-into a clear package with fully updated documentation and tooling.
-New editions ship as part of the usual six-week release process.
+Every two or three years, the Rust team produces
+a new Rust edition. Each edition brings together
+the features that have landed into a clear package
+with fully updated documentation and tooling.
+
+New editions ship as part of the
+usual six-week release process.
 ```
 
 ### Basic
@@ -121,29 +125,36 @@ let mut y = 996;
 ```
 
 ```
-An instance of `io::Result` has an `expect` method that you can call.
+An instance of `io::Result` has an `expect`
+method that you can call.
 If this instance of `io::Result` is an `Err` value,
-`expect` will cause the program to crash and display the message
-that you passed as an argument to `expect`.
+`expect` will cause the program to crash and
+display the message that you passed as
+an argument to `expect`.
 
 Like `Result`, `Ordering` is another enum,
-but the variants for `Ordering` are `Less`, `Greater`, and `Equal`.
+but the variants for `Ordering` are
+`Less`, `Greater`, and `Equal`.
 
-Shadowing lets us reuse the variable name rather than
-forcing us to create two unique variables.
+Shadowing lets us reuse the variable name
+rather than forcing us to create
+two unique variables.
 
 You declare constants using the `const` keyword
-instead of the `let` keyword, and the type of the value
-must be `annotated`.
+instead of the `let` keyword, and the type
+of the value must be `annotated`.
 
-Shadowing is different from marking a variable as `mut`,
-because we'll get a compile-time error if we accidentally try to
-reassign to this variable without using the `let` keyword.
+Shadowing is different from marking a
+variable as `mut`, because we'll get a
+compile-time error if we accidentally try
+to reassign to this variable without
+using the `let` keyword.
 
-The other difference between `mut` and `shadowing` is that
-because we're effectively creating a new variable
-when we use the `let` keyword again,
-we can change the type of the value but reuse the same name.
+The other difference between `mut` and `shadowing`
+is that because we're effectively creating a new
+variable when we use the `let` keyword again,
+we can change the type of the value
+but reuse the same name.
 ```
 
 > Cool
@@ -184,8 +195,8 @@ arrays in Rust have a fixed length, like tuples.
 ```
 
 ```
-Statements are instructions that perform some action and
-do not return a value.
+Statements are instructions that perform some
+action and do not return a value.
 Expressions evaluate to a resulting value.
 ```
 
@@ -242,13 +253,16 @@ for number in (1..4).rev() {
 ```
 All data stored on the stack must have a known, fixed size.
 
-Pushing to the stack is faster than allocating on the heap
-because the allocator never has to search for a place to store new data;
+Pushing to the stack is faster than allocating
+on the heap because the allocator never has to
+search for a place to store new data;
 that location is always at the top of the stack.
 
-Accessing data in the heap is slower than accessing data on the stack
-because you have to follow a pointer to get there.
-Contemporary processors are faster if they jump around less in memory.
+Accessing data in the heap is slower than accessing
+data on the stack because you have to follow
+a pointer to get there.
+Contemporary processors are faster if they
+jump around less in memory.
 ```
 
 > restaurant 的例子不错
@@ -262,25 +276,28 @@ Note: In C++, this pattern of deallocating resources
 at the end of an item's lifetime is sometimes called
 `Resource Acquisition Is Initialization` (RAII).
 
-This pattern has a profound impact on the way Rust code is written.
-It may seem simple right now, but the behavior of code can be
-unexpected in more complicated situations when we want to have
-multiple variables use the data we've allocated on the heap.
+This pattern has a profound impact on the way Rust
+code is written. It may seem simple right now, but
+the behavior of code can be unexpected in more
+complicated situations when we want to have multiple
+variables use the data we've allocated on the heap.
 ```
 
 ```
 If you've heard the terms shallow copy and deep copy
 while working with other languages,
 the concept of copying the pointer, length, and capacity
-without copying the data probably sounds like making a shallow copy.
-But because Rust also invalidates the first variable,
-instead of being called a shallow copy, it's known as a move.
+without copying the data probably sounds like
+making a shallow copy. But because Rust also invalidates
+the first variable, instead of being called a
+shallow copy, it's known as a move.
 ```
 
 ```
-Rust will never automatically create "deep" copies of your data.
-Therefore, any automatic copying can be assumed to be inexpensive
-in terms of runtime performance.
+Rust will never automatically create "deep" copies
+of your data. Therefore, any automatic copying can
+be assumed to be inexpensive in terms of
+runtime performance.
 ```
 
 * Here are some of the types that implement `Copy`:
@@ -288,12 +305,15 @@ in terms of runtime performance.
   - The `Boolean` type
   - All the `floating point` types
   - The `character` type, `char`
-  - `Tuples`, if they only contain types that also implement `Copy`
-  - For example, `(i32, i32)` implements `Copy`, but `(i32, String)` does not
+  - `Tuples`, if they only contain types
+    that also implement `Copy`
+  - For example, `(i32, i32)` implements `Copy`,
+    but `(i32, String)` does not
 
 ```
-The semantics for passing a value to a function are similar to
-those for assigning a value to a variable.
+The semantics for passing a value to a function
+are similar to those for assigning a value
+to a variable.
 Passing a variable to a function will `move` or `copy`,
 just as assignment does.
 ```
@@ -306,20 +326,24 @@ let len = calculate_length(&s1);
 ```
 
 ```
-Just as variables are immutable by default, so are references.
-We're not allowed to modify something we have a reference to.
+Just as variables are immutable by default,
+so are references. We're not allowed to modify
+something we have a reference to.
 
 But mutable references have one big restriction:
 you can have only one mutable reference to
 a particular piece of data in a particular scope.
 
-We also cannot have a mutable reference while we have an immutable one.
+We also cannot have a mutable reference
+while we have an immutable one.
 
-Note that a reference's scope starts from where it is introduced
-and continues through the last time that reference is used.
+Note that a reference's scope starts from
+where it is introduced and continues through
+the last time that reference is used.
 ```
 
-* Another data type that does not have **ownership** is the **slice**
+* Another data type that does not have
+  **ownership** is the **slice**
 
 ```rust
 let s = String::from("hello world");
@@ -462,35 +486,44 @@ if let Coin::Quarter(state) = coin {
 ```
 
 ```
-In other words, you can think of if let as syntax sugar for a match
-that runs code when the value matches one pattern
+In other words, you can think of if let
+as syntax sugar for a match that runs code
+when the value matches one pattern
 and then ignores all other values.
 ```
 
 * The module system
-  - **Packages**: A **Cargo** feature that lets you build, test, and share crates
-  - Crates: A tree of modules that produces a library or executable
-  - **Modules**: Let you control the organization, scope, and privacy of paths
-  - Paths: A way of naming an item, such as a struct, function, or module
+  - **Packages**: A **Cargo** feature that
+    lets you build, test, and share crates
+  - Crates: A tree of modules that produces
+    a library or executable
+  - **Modules**: Let you control the organization,
+    scope, and privacy of paths
+  - Paths: A way of naming an item, such as a
+    `struct`, `function`, or `module`
 
 * Packages and Crates
 
 ```
 The way privacy works in Rust is that all items
-(functions, methods, structs, enums, modules, and constants)
+(functions, methods, structs, enums,
+modules, and constants)
 are private by default.
 
-Items in a parent module can't use the private items inside child modules,
-but items in child modules can use the items in their ancestor modules.
+Items in a parent module can't use the private
+items inside child modules, but items in child
+modules can use the items in their ancestor modules.
 ```
 
 ```
-Enums aren't very useful unless their variants are public;
-it would be annoying to have to annotate all enum variants with pub in every case,
+Enums aren't very useful unless their variants
+are public; it would be annoying to have to
+annotate all enum variants with pub in every case,
 so the default for enum variants is to be `public`.
 
-Structs are often useful without their fields being public,
-so struct fields follow the general rule of everything being private by default
+Structs are often useful without their fields
+being public, so struct fields follow the general
+rule of everything being private by default
 unless annotated with pub.
 ```
 
@@ -516,24 +549,33 @@ let v = vec![1, 2, 3];
 ```
 
 ```
-When we run this code, the first [] method will cause the program to panic
-because it references a nonexistent element.
-This method is best used when you want your program to crash
-if there's an attempt to access an element past the end of the vector.
+When we run this code, the first [] method will
+cause the program to panic because it
+references a nonexistent element.
+This method is best used when you want your
+program to crash if there's an attempt to access
+an element past the end of the vector.
 
-When the get method is passed an index that is outside the vector,
-it returns None without panicking.
-You would use this method if accessing an element beyond the range
-of the vector happens occasionally under normal circumstances.
+When the get method is passed an index that
+is outside the vector, it returns
+None without panicking.
+You would use this method if accessing an
+element beyond the range of the vector happens
+occasionally under normal circumstances.
 ```
 
 ```
-adding a new element onto the end of the vector might require allocating new memory
-and copying the old elements to the new space, if there isn't enough room to
-put all the elements next to each other where the vector currently is.
+adding a new element onto the end of the
+vector might require allocating new memory
+and copying the old elements to the new space,
+if there isn't enough room to put all the
+elements next to each other where
+the vector currently is.
 
-In that case, the reference to the first element would be pointing to deallocated memory.
-The borrowing rules prevent programs from ending up in that situation.
+In that case, the reference to the first element
+would be pointing to deallocated memory.
+The borrowing rules prevent programs from
+ending up in that situation.
 ```
 
 ```rust
@@ -550,8 +592,9 @@ for i in &mut v {
 }
 ```
 
-> when we need to store elements of a different type in a vector,
-> we can define and use an enum!
+> when we need to store elements of a
+  different type in a `vector`,
+  we can define and use an `enum`!
 
 * Rust strings don't support indexing
   - A String is a wrapper over a `Vec<u8>`
@@ -579,8 +622,9 @@ let mut scores: HashMap<_, _> =
 ```
 If we insert references to values into the hash map,
 the values won't be moved into the hash map.
-The values that the references point to must be valid for
-at least as long as the hash map is valid.
+The values that the references point to
+must be valid for at least as long as
+the hash map is valid.
 ```
 
 ```rust
@@ -607,14 +651,17 @@ for word in text.split_whitespace() {
 * Error Handling
 
 ```
-Rust groups errors into two major categories: recoverable and unrecoverable errors.
+Rust groups errors into two major categories:
+recoverable and unrecoverable errors.
 
-Most languages don't distinguish between these two kinds of errors and
-handle both in the same way, using mechanisms such as exceptions.
+Most languages don't distinguish between these
+two kinds of errors and handle both in the
+same way, using mechanisms such as exceptions.
 
 Rust doesn't have exceptions.
-Instead, it has the type Result<T, E> for recoverable errors and
-the panic! macro that stops execution when the program encounters
+Instead, it has the type Result<T, E> for
+recoverable errors and the `panic!` macro that
+stops execution when the program encounters
 an unrecoverable error.
 ```
 
@@ -623,8 +670,9 @@ an unrecoverable error.
 panic = 'abort'
 ```
 
-> Let's try getting a backtrace by setting the `RUST_BACKTRACE`
-> environment variable to any value except 0.
+> Let's try getting a backtrace by setting
+  the `RUST_BACKTRACE` environment variable
+  to any value except `0`.
 
 ```rust
 // v1
@@ -656,14 +704,17 @@ let f = File::open("hello.txt").unwrap_or_else(|error| {
 ```
 
 ```
-The ? placed after a Result value is defined to work in almost the same way
-as the match expressions we defined to handle the Result values.
+The ? placed after a Result value is defined to
+work in almost the same way as the match expressions
+we defined to handle the Result values.
 
-If the value of the Result is an Ok, the value inside the Ok will get returned
-from this expression, and the program will continue.
+If the value of the Result is an Ok, the value
+inside the Ok will get returned from this
+expression, and the program will continue.
 
-If the value is an Err, the Err will be returned from the whole function
-as if we had used the return keyword so the error value gets
+If the value is an Err, the Err will be returned
+from the whole function as if we had used the
+return keyword so the error value gets
 propagated to the calling code.
 ```
 
@@ -691,14 +742,19 @@ fn read_username_from_file() -> Result<String, io::Error> {
 }
 ```
 
-* The **?** Operator Can Be Used in Functions That Return Result
+* The **?** Operator Can Be Used in
+  Functions That Return Result
 
 ```
-The ? operator can be used in functions that have a return type of Result,
-because it is defined to work in the same way as the match expression.
-The part of the match that requires a return type of Result is return Err(e),
-so the return type of the function has to be a Result
-to be compatible with this return.
+The ? operator can be used in functions
+that have a return type of Result,
+because it is defined to work in the
+same way as the match expression.
+The part of the match that requires a
+return type of Result is return Err(e),
+so the return type of the function has
+to be a Result to be compatible
+with this return.
 ```
 
 ```rust
@@ -745,10 +801,12 @@ let p3 = p1.mixup(p2);
 ```
 
 ```
-Rust accomplishes this by performing monomorphization of the code
-that is using generics at compile time.
-Monomorphization is the process of turning generic code into
-specific code by filling in the concrete types
+Rust accomplishes this by performing
+monomorphization of the code that is
+using generics at compile time.
+Monomorphization is the process of
+turning generic code into specific code
+by filling in the concrete types
 that are used when compiled.
 ```
 
@@ -791,10 +849,12 @@ where
 * Closures
 
 ```
-To define a closure, we start with a pair of vertical pipes (|),
-inside which we specify the parameters to the closure;
-this syntax was chosen because of its similarity to
-closure definitions in Smalltalk and Ruby.
+To define a closure, we start with
+a pair of vertical pipes (|),
+inside which we specify the parameters
+to the closure; this syntax was chosen
+because of its similarity to closure
+definitions in Smalltalk and Ruby.
 ```
 
 * Making Useful Documentation Comments
