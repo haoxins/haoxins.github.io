@@ -186,6 +186,18 @@ date: 2021-09-20
     *same index and term*, then the logs are
     **identical in all** preceding entries.
 
+* During normal operation, the logs of the leader
+  and followers stay consistent, so the
+  `AppendEntries` consistency check never fails.
+* However, leader crashes can leave the logs
+  inconsistent.
+  - the old leader may not have fully replicated
+    all of the entries in its log.
+* In Raft, the leader handles inconsistencies by
+  forcing the followers' logs to duplicate its own.
+* This means that conflicting entries in follower
+  logs will be overwritten with entries from
+  the leader's log.
 
 ## Cluster membership changes
 
