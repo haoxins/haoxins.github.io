@@ -1,11 +1,14 @@
 ---
-title: Kubeflow, Knative serving and Dapr
+title: KServe and Dapr (Serverless)
 description: 明月出天山, 苍茫云海间. 长风几万里, 吹度玉门关.
 date: 2021-08-24
 ---
 
-* **Using Dapr for serving**
-  - *Dapr* vs *Knative Serving*
+## KServe
+
+* [KServe](https://github.com/kserve/kserve)
+
+------------------
 
 ## Dapr
 
@@ -30,11 +33,17 @@ date: 2021-08-24
   - Kubernetes
   - HashiCorp Consul
 
+------------------
+
 ## Knative
 
 * [Knative Operator](https://github.com/knative/operator)
 
 ### Knative Serving
+
+* 原本 `KFServing` 基于 *Knative*
+* 后来 `KFServing` 改名 **KServe**,
+  且 *Knative* 变为*可选依赖*
 
 ### Knative Eventing
 
