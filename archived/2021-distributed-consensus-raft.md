@@ -201,6 +201,15 @@ date: 2021-09-20
 
 ## Cluster membership changes
 
+* RPCs used to change cluster membership.
+  - The `AddServer` RPC is used to add a new server
+    to the current configuration, and
+  - the `RemoveServer` RPC is used to remove a server
+    from the current configuration.
 
 ## Log compaction
 
+* Snapshotting `memory-based` state machines
+* Snapshotting `disk-based` state machines
+* Incremental cleaning approaches
+* Alternative: `leader-based` approaches
