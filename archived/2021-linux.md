@@ -41,11 +41,12 @@ netstat -tulpn | grep LISTEN
 
 ## 2021
 
-* Linux kernel ***5.14***
+* Linux kernel ***5.15***
+  - **ntfs3**: new `NTFS` driver for 5.15
 
 | Version |  Released  | Projected EOL |
 | ------- |:----------:|:-------------:|
-|  5.14   | 2021-xx-xx |   xxx, 203x   |
+|  5.15   | 2021-10-31 |   Oct, 2023   |
 
 * [Debian 11 **bullseye** released](https://www.debian.org/News/2021/20210814)
   - **bullseye**
