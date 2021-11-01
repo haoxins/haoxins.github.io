@@ -11,3 +11,17 @@ date: 2021-09-12
 * Go implements the **CSP model** with
   two primitives: the **goroutine**
   and the **channel**.
+
+* When to use `interfaces`?
+* When to use `value` or `pointer` receivers?
+* How to deal efficiently with `slices`?
+* How to handle `error` management
+  cleanly and expressively?
+* How to avoid `memory leaks`?
+
+## Code and Project Orga2nization
+
+* In the following example, we will see
+  an unintended side effect because of
+  a **shadowed variable**.
+
