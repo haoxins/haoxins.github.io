@@ -6,7 +6,7 @@
 
 ### Formerly
 
-> * JVM stack developer (Kotlin, Spring and others)
+> * JVM stack developer (3Y+, Kotlin, Spring and others)
 > * Web developer (5Y+, Node.js, Front-End, MiniApp and others)
 
 ### Awesome websites
