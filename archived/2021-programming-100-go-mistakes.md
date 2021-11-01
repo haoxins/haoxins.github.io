@@ -107,3 +107,32 @@ if tracing {
 * `interface{}` says nothing
 
 * [Standard Go Project Layout](https://github.com/golang-standards/project-layout)
+
+## Data Types
+
+* In Go, we must know that an integer
+  *starting with* `0` is considered an
+  *octal integer* (`base 8`).
+
+* If we want to match the Linux permissions,
+  we can pass an octal number for readability
+  instead of a base 10 number:
+  - Using `0o` instead of only `0`
+    doesn't change anything.
+
+```go
+file, err := os.OpenFile("foo", os.O_RDONLY, 0644)
+```
+
+* **Binary**: `0b` or `0B` prefix.
+  - For example, `0b100` is equal to `4` in base `10`.
+* **Hexadecimal**: `0x` or `0X` prefix.
+  - For example, `0xF` is equal to `15` in base `10`.
+* **Imaginary**: `i` suffix.
+  - For example, `3i`.
+
+* We can also use an *underscore* character
+  as a separator. For example, we can write
+  `1 billion` this way: `1_000_000_000`.
+
+* A `slice` is backed by an `array` in Go,
