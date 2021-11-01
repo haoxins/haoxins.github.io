@@ -78,3 +78,22 @@ if tracing {
     running the test cases, which isn't
     necessarily what we want.
 
+* **Interface pollution** is about overwhelming
+  our code with unnecessary abstractions making
+  it harder to understand and evolve.
+* What makes Go interfaces so different is that
+  they are satisfied implicitly. There is no
+  explicit keyword like `implements` for example,
+  to mark that an `object X implements interface Y`.
+* **The bigger the interface**,
+  **the weaker the abstraction**.
+* An *interface name* should *describe a behavior*,
+  *not a state*. Hence, in general, it should be
+  a **verb**, **not** a **noun**.
+* The interfaces allow us to create abstractions,
+  and **abstractions should be discovered**,
+  **not created**.
+
+* **Don't design with interfaces, discover them.**
+  - ***Rob Pike***
+
