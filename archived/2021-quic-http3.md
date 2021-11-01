@@ -47,14 +47,21 @@ date: 2019-06-30
 Private IP -> SNAT -> Public IP
 
 Netfilter, conntrack
+```
 
-SNAT (源地址转换)
+* SNAT (源地址转换)
 
-iptables -t nat -A -s 私网IP地址 -j Snat --to-source 外网IP地址
+```zsh
+iptables -t nat -A -s 私网IP地址 \
+  -j Snat --to-source 外网IP地址
+```
 
-DNAT (目标地址转换)
+* DNAT (目标地址转换)
 
-iptables -t nat -A -PREROUTING -d 外网IP地址 -j Dnat --to-destination 私网IP地址
+```zsh
+iptables -t nat -A -PREROUTING \
+  -d 外网IP地址 -j Dnat \
+  --to-destination 私网IP地址
 ```
 
 * IPsec VPN
@@ -106,12 +113,12 @@ Handle IP
   - NAT: 改变 IP
   - MAC 地址过网关 (换局域网) 则变
 
-```
-每到一个新的局域网, 包的 MAC 地址都是要变的, 但是 IP 地址都不变.
-在 IP 头里面, 不会保存任何网关的 IP 地址.
-所谓的下一跳是某个 IP 地址,
-意思是要将这个 IP 地址转换为 MAC 地址放入 MAC 头中.
-```
+* 每到一个新的局域网, 包的 `MAC` 地址都是要变的,
+  但是 `IP` 地址都不变. 在 `IP` 头里面,
+  不会保存任何网关的 `IP` 地址.
+* 所谓的`下一跳`是某个 `IP` 地址,
+  意思是要将这个 `IP` 地址转换为
+  `MAC` 地址放入 `MAC` 头中.
 
 * 路由器
   - 多张网卡
@@ -136,7 +143,8 @@ Handle Mac
 
 | Mac header | IP header | UDP header | data ... |
 
-| 目标 Mac 地址 | 源 Mac 地址 | Type (2 byte) | Data (46 - 1500 byte) | CRC (4 byte) |
+| 目标 Mac 地址 | 源 Mac 地址 | Type (2 byte) |
+  Data (46 - 1500 byte) | CRC (4 byte) |
 ```
 
 * 局域网
@@ -177,10 +185,11 @@ Tag control information (TCI)
   - **十分有趣**
 
 * ***Braid*** adds these features to HTTP:
-  1. *Versioning* to HTTP resources
-  2. *Subscriptions* to GET requests
-  3. *Patches* to Range Requests
-  4. *Merge-Types* to specify **OT** or **CRDT** behavior
+  - *Versioning* to HTTP resources
+  - *Subscriptions* to GET requests
+  - *Patches* to Range Requests
+  - *Merge-Types* to specify **OT**
+    or **CRDT** behavior
 
 * [Envoy: HTTP3 overview (v1.20)](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/http/http3)
   - `HTTP/3` support is still in *Alpha*
