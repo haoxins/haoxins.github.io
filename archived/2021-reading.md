@@ -14,8 +14,7 @@ date: 2018-04-01
 
 * [Advanced Algorithms and Data Structures](https://www.manning.com/books/advanced-algorithms-and-data-structures)
 
-* [100 Go Mistakes: How to Avoid Them]()
-  - https://www.manning.com/books/100-go-mistakes-and-how-to-avoid-them
+* [100 Go Mistakes: How to Avoid Them](https://www.manning.com/books/100-go-mistakes-and-how-to-avoid-them)
 
 * [Math for Programmers](https://book.douban.com/subject/35246850/)
   - https://www.manning.com/books/math-for-programmers
