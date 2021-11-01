@@ -6,3 +6,8 @@ date: 2021-09-12
 
 * [100 Go Mistakes: How to Avoid Them](https://www.manning.com/books/100-go-mistakes-and-how-to-avoid-them)
 
+## Go: Simple to Learn but Hard to Master
+
+* Go implements the **CSP model** with
+  two primitives: the **goroutine**
+  and the **channel**.
