@@ -97,3 +97,13 @@ if tracing {
 * **Don't design with interfaces, discover them.**
   - ***Rob Pike***
 
+* Be conservative in what you do, be liberal
+  in what you accept from others.
+* If we apply this idiom to Go, it means
+  **returning structs** instead of interfaces.
+  Meanwhile, it also means **accepting interfaces**
+  whenever possible.
+  - Of course, there are some exceptions.
+* `interface{}` says nothing
+
+* [Standard Go Project Layout](https://github.com/golang-standards/project-layout)
