@@ -136,3 +136,25 @@ file, err := os.OpenFile("foo", os.O_RDONLY, 0644)
   `1 billion` this way: `1_000_000_000`.
 
 * A `slice` is backed by an `array` in Go,
+  meaning the slice's data are stored in an array.
+  A slice structure also handles the logic of
+  adding an element if the backing array is
+  full or how to shrink the backing array
+  if it's almost empty.
+* Furthermore, a `slice` holds a `pointer` towards
+  the backing array plus a *length* and a *capacity*.
+  - The `length` is the number of elements the
+    slice contains,
+  - whereas the `capacity` is the number of
+    elements in the backing array.
+* In Go, a `slice` grows by *doubling* until
+  it contains `1024` elements, after which it
+  grows by `25%` each time.
+* To summarize, the slice length is the number of
+  available elements in the slice, whereas the
+  slice capacity is the number of elements
+  in the backing array. Adding an element to a
+  full slice (`length == capacity`) leads to
+  creating a new backing array with a new capacity,
+  copying all the elements from the previous array,
+  and updating the slice pointer to the new array.
