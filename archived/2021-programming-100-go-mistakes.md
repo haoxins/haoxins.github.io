@@ -158,3 +158,55 @@ file, err := os.OpenFile("foo", os.O_RDONLY, 0644)
   creating a new backing array with a new capacity,
   copying all the elements from the previous array,
   and updating the slice pointer to the new array.
+
+* We have also seen that slicing an existing slice
+  will create another slice, and the
+  same array will back both.
+* Therefore, updating an element on one slice
+  using an index (e.g., `s1[1] = 10`) will also
+  be visible on the other slice if this index is
+  within the length range of both slices.
+
+```go
+s1 := []int{1, 2, 3}
+s2 := s1[1:2]
+s3 := append(s2, 10)
+// s1: [1 2 10]
+// s2: [2]
+// s3: [2 10]
+```
+
+* `s1` is a `3-length`, `3-capacity` slice,
+  while `s2` is a `1-length`, `2-capacity` slice,
+  both backed by the **same array**.
+* Adding an element using `append` checks whether
+  the slice is full:
+  - the slice length is equal to the slice capacity.
+* If `not`, the `append` function will add
+  the element by updating the backing array and
+  returning a slice having a length
+  incremented by one.
+
+* **full slice expression**: `s[low:high:max]`
+  - it creates a similar slice to one created with
+    `s[low:high]` except that the resulting slice's
+    `capacity` will *be equal to* `max - low`.
+
+* We have to keep in mind that we can have
+  conflicts between two slices if one was created
+  from slicing the other.
+* Conflicts can occur while modifying an element
+  directly or even when using `append`.
+* If we want to restrict the range of potential
+  *side-effects* of a caller, we can use the
+  **full slice expression**.
+  - It's the most efficient solution as it
+    doesn't require any additional `copy` step.
+
+```go
+src := []int{0, 1, 2}
+var dst []int
+copy(dst, src)
+fmt.Println(dst) // []
+```
+
