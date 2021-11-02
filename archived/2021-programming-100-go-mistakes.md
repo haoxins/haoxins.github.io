@@ -236,3 +236,24 @@ src := []int{0, 1, 2}
 dst := append([]int(nil), src...)
 fmt.Println(dst) // [0 1 2]
 ```
+
+* As a rule of thumb, we have to bear in mind
+  that *slicing an existing slice or array*
+  may potentially create a slice with a large
+  backing array leading to a potential high
+  memory consumption in our applications.
+* Using **slice copy** allows us to restrict
+  the memory consumed by slices.
+
+```go
+var s []string
+fmt.Printf("1: nil = %t, len = %d, cap = %d\n", s == nil, len(s), cap(s))
+s = []string{}
+fmt.Printf("2: nil = %t, len = %d, cap = %d\n", s == nil, len(s), cap(s))
+s = make([]string, 0)
+fmt.Printf("3: nil = %t, len = %d, cap = %d\n", s == nil, len(s), cap(s))
+// 1: nil = true, len = 0, cap = 0
+// 2: nil = false, len = 0, cap = 0
+// 3: nil = false, len = 0, cap = 0
+```
+
