@@ -533,6 +533,12 @@ The Operator pattern consists of three components:
 
 ### Knative
 
+* [Announcing: Knative 1.0](https://knative.dev/blog/articles/announcing-knative-1.0/)
+  - We are pleased to announce the release of
+    **Knative 1.0** on `Nov. 2, 2021`.
+
+* [Knative Serving release v1.0.0](https://github.com/knative/serving/releases/tag/knative-v1.0.0)
+
 * Announcing Knative v0.24 Release
   - In preparation for *GA*
   - Kubernetes *1.19* is now required
