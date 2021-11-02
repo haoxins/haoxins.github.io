@@ -296,3 +296,23 @@ func handleOperations(id string) {
   a technical difference if we return
   a `nil` or an `empty` slice.
 
+* This principle is the same with `maps`. To
+  check if a map is empty, we should check
+  its length, not whether it's nil.
+
+* In Go, a `map` is based on the *hashtable*
+  data structure. Internally, a hashtable is
+  an array of buckets, each bucket being a
+  pointer to an array of `key/value` pairs.
+* In Go, each bucket has a fixed size of
+  *eight elements*. If a bucket is full
+  (known as bucket overflow), Go will create
+  another bucket of *eight elements* and
+  link it to the previous bucket.
+
+* **A map doesn't** keep the data
+  sorted by the key
+* **A map doesn't** preserve the
+  order the data were added in
+
+* Reading, updating, inserting, or deleting
