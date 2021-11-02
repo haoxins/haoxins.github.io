@@ -316,3 +316,40 @@ func handleOperations(id string) {
   order the data were added in
 
 * Reading, updating, inserting, or deleting
+  a key is done by associating a key to a
+  given bucket index.
+* It's achieved by a hash function that assigns
+  a key to a unique bucket. This function is stable
+  as we want it to return the same bucket given
+  the same key consistently.
+* To prevent wasting memory due to allocation
+  alignment, in-memory, Go doesn't store a
+  sequence of key/values.
+  - e.g., `key1-value1-key2-value2-key3-value3`
+* Instead, all the keys are first stored
+  contiguously, then all the values.
+  - e.g., `key1-key2-key3-value1-value2-value3`
+* Ideally, there is only one pair of `key/value`
+  per bucket. If it's the case, each operation
+  takes `O(1)`. However, it isn't always possible.
+  Indeed, if applying the hashing function to two
+  different keys return the same bucket index,
+  it leads to a collision. In that case, both
+  `key/value` pairs are stored in the same bucket
+
+* In a similar manner as `slices`, a `map`
+  grows by doubling its number of buckets.
+  What are the conditions to
+  trigger a map to grow?
+  - Either if the average number of items
+    in the buckets (called load factor) is
+    greater than a constant. This constant is
+    currently equal to 6.5, but this may change
+    in future versions as it's an internal of Go.
+  - Or if there are too many buckets that are
+    overflowed (containing more than eight elements).
+* When a map grows, all the keys have to be
+  distributed again across all the buckets.
+  - It's the reason why in the *worst-case* scenario,
+    inserting a key can be an `O(n)` operation.
+
