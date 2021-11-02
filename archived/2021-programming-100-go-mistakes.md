@@ -257,3 +257,42 @@ fmt.Printf("3: nil = %t, len = %d, cap = %d\n", s == nil, len(s), cap(s))
 // 3: nil = false, len = 0, cap = 0
 ```
 
+* A `nil` and `empty` slice, then we should favor
+  option one: `var s []string`.
+* A `non-nil` and `empty` slice, then we should favor
+  option three: `s := make([]string, 0)`.
+  - Using this option, we can later update the
+    slice length and/or capacity if required,
+    which is impossible with option two.
+* Compared to an `empty` slice that might require
+  an allocation event if its capacity is *zero*,
+  a `nil` slice needs no allocation.
+* A `nil` slice is *marshaled* as a `null` element,
+  whereas an `empty` slice is *marshaled*
+  as an `empty` array.
+
+```go
+func handleOperations(id string) {
+  operations := getOperations(id)
+  if len(operations) != 0 {
+    handle(operations)
+  }
+}
+```
+
+* Here we didn't check whether a slice was `nil`.
+  Instead, we checked if its `length`
+  was equaled to `zero`.
+* With this implementation, regardless of the
+  slice is `nil` or *non-nil but empty*, checking
+  the length will do the job. It's the best
+  practice to follow, as we can't always control
+  the approach taken by a function that we call.
+* Also, as the Go Wiki states, when designing
+  interfaces, we **should avoid distinguishing**
+  `nil` and `empty` slices as it can lead to
+  subtle programming errors. Hence, when returning
+  slices, we should make neither a semantic nor
+  a technical difference if we return
+  a `nil` or an `empty` slice.
+
