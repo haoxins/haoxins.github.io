@@ -420,3 +420,11 @@ m := make(map[string]int, 1_000_000)
 
 ## Control Structures
 
+* A `range` loop allows iterating over
+  different data structures:
+  - `String`
+  - `Array`
+  - `Pointer` to an array
+  - `Slice`
+  - `Map`
+  - Receiving channel
