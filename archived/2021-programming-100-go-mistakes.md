@@ -382,3 +382,27 @@ m := make(map[string]int, 1_000_000)
   - the size of a map in memory can
     **only increase**, **never decrease**.
 
+* It's essential to understand how to use
+  `==` and `!=` to make comparisons effectively.
+  We can use them on operands that are comparable:
+  - *Booleans*: Compare whether two
+    booleans are equals.
+  - *Numerics* (`int`, `float`, and `complex` types):
+    Compare whether two numerics are equals.
+    It compiles if both values have the same
+    type or can be converted to be of the same type
+    (e.g., comparing a `float32` with a `float64` is
+    accepted but not a `int64` with an `int`).
+  - *Strings*: Compare whether two strings are equals.
+  - *Channels*: Compare whether two channels were
+    created by the same call to make or
+    if both are `nil`.
+  - *Interfaces*: Compare whether two interfaces
+    have identical dynamic types and equal
+    dynamic values or if both have value `nil`.
+  - *Pointers*: Compare whether two pointers
+    point to the same value in memory or
+    if both are `nil`.
+  - Structs and arrays if they are
+    composed of *comparable types*
+
