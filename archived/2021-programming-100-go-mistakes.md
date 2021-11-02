@@ -210,3 +210,29 @@ copy(dst, src)
 fmt.Println(dst) // []
 ```
 
+* To use `copy` effectively, it's important to
+  understand that the *number of elements copied*
+  to the *destination* slice corresponds to the
+  `minimum` between the *source slice's length*
+  and the *destination slice's length*.
+* In the previous example, `src` is a `3-length`
+  slice but `dst` is a `0-length-slice`. Therefore,
+  `copy` will *copy* the `minimum` between `3` and `0`:
+  - `0` element. It's the reason why
+    the slice was **empty**.
+* If we want to perform a **complete copy**, the
+  destination slice must have a length
+  greater or equal to the source slice's length:
+
+```go
+src := []int{0, 1, 2}
+dst := make([]int, len(src))
+copy(dst, src)
+fmt.Println(dst) // [0 1 2]
+```
+
+```go
+src := []int{0, 1, 2}
+dst := append([]int(nil), src...)
+fmt.Println(dst) // [0 1 2]
+```
