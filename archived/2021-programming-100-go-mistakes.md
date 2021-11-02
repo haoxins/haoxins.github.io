@@ -353,3 +353,32 @@ func handleOperations(id string) {
   - It's the reason why in the *worst-case* scenario,
     inserting a key can be an `O(n)` operation.
 
+* We can use the `make` *built-in* function to
+  provide an initial size while creating a map.
+
+```go
+m := make(map[string]int, 1_000_000)
+```
+
+* With a `map`, `make` can provide only an
+  initial size, **not** a `capacity`
+  as with slices.
+* Also, specifying a size doesn't mean making
+  a map with at most one million elements.
+  We can still add more than one million elements.
+* Specifying a size means asking the Go runtime
+  to allocate a map with room for **at least**
+  `x` elements, which is helpful if we
+  already know the size upfront.
+* Therefore, just like with slices, if we know
+  upfront the number of elements a map will contain,
+  we should create it by providing an initial size.
+* By doing this, we avoid potential map growth,
+  which is quite heavy computation-wise as it
+  requires reallocating enough space and
+  rebalancing all the pairs.
+* When working with maps in Go, we have to know a
+  noteworthy property:
+  - the size of a map in memory can
+    **only increase**, **never decrease**.
+
