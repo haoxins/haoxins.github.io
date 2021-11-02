@@ -406,3 +406,17 @@ m := make(map[string]int, 1_000_000)
   - Structs and arrays if they are
     composed of *comparable types*
 
+* The `reflect.DeepEqual` has specific behavior
+  with the different types it accepts.
+* However, there are **two things** to keep in
+  mind while using `reflect.DeepEqual`.
+  - The first one is that it makes the distinction
+    between an `empty` and a `nil` collection.
+  - The other catch is something pretty standard
+    in most of the languages. As this function uses
+    *reflection*, which will introspect at runtime
+    the values to discover how they are formed,
+    it has a performance penalty.
+
+## Control Structures
+
