@@ -428,3 +428,64 @@ m := make(map[string]int, 1_000_000)
   - `Slice`
   - `Map`
   - Receiving channel
+
+* In general, `range` produces two values for
+  each data structure except for a
+  `receiving channel` that produces
+  a single element.
+
+```go
+type account struct {
+  balance float32
+}
+
+accounts := []account{
+  {balance: 100.},
+  {balance: 200.},
+  {balance: 300.},
+}
+
+for _, a := range accounts {
+  a.balance += 1000
+}
+
+fmt.Println(accounts) // [{100} {200} {300}]
+```
+
+* In Go, everything we *assign* is a **copy**.
+  For example, if we assign the result
+  of a function returning:
+  - A `struct`, we will perform a
+    *copy* of this struct
+  - A `pointer`, we will perform a *copy*
+    of this pointer (though both pointers
+    reference the same object,
+    it remains a pointer *copy*)
+* Indeed, when a `range` loop iterates over
+  a data structure, it performs a *copy* of
+  each element to the value variable
+  (the second item).
+
+```go
+type account struct {
+  balance float32
+}
+
+accounts := []*account{
+  {balance: 100.},
+  {balance: 200.},
+  {balance: 300.},
+}
+
+for _, a := range accounts {
+  a.balance += 1000
+}
+
+for _, a := range accounts {
+  fmt.Println(a)
+}
+// &{1100}
+// &{1200}
+// &{1300}
+```
+
