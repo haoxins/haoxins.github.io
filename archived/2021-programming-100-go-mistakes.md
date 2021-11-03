@@ -594,3 +594,40 @@ for i, v := range &a {
   the order will be the same from
   one iteration to the next.
 
+```
+If a map entry is created during iteration,
+it may be produced during the iteration or skipped.
+The choice may vary for each entry created and
+from one iteration to the next.
+  - Go spec
+```
+
+* To summarize, when we work with a map,
+  we **shouldn't** rely on:
+  - The ordering of the data by keys
+  - The preservation of the insertion order
+  - A deterministic iteration order
+  - The fact that an element added during
+    an iteration will be produced
+    during this iteration
+
+* One important rule to keep in mind:
+  a `break` statement terminates the execution
+  of the innermost `for`, `switch`, or
+  `select` statement.
+
+```go
+loop:
+  for i := 0; i < 5; i++ {
+    fmt.Println(i)
+    switch i {
+    default:
+    case 2:
+      break loop
+    }
+  }
+  // 0
+  // 1
+  // 2
+```
+
