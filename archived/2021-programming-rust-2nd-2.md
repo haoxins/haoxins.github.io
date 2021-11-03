@@ -233,6 +233,30 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
 
 ## Concurrency
 
+* An `unsafe` block unlocks five
+  additional options for you:
+  - You can call `unsafe` functions. Each `unsafe`
+    function must specify its own *contract*,
+    depending on its purpose.
+  - You can dereference raw pointers. Safe code can
+    pass raw pointers around, compare them, and
+    create them by conversion from references
+    (or even from integers), but only `unsafe` code
+    can actually use them to access memory.
+  - You can access the fields of `unions`, which the
+    compiler can't be sure contain valid bit patterns
+    for their respective types.
+  - You can access *mutable static variables*. Rust
+    can't be sure when threads are using
+    *mutable static variables*, so their contract
+    requires you to ensure all access is
+    properly synchronized.
+  - You can access functions and variables declared
+    through Rust's foreign function interface. These
+    are considered `unsafe` even when *immutable*, since
+    they are visible to code written in other languages
+    that may not respect Rust's safety rules.
+
 ## Asynchronous Programming
 
 ## Macros
