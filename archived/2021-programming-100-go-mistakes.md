@@ -674,3 +674,35 @@ func readFile(path string) error {
 }
 ```
 
+* In this implementation, the `defer` function
+  is called when `readFile` returns, meaning at
+  the end of each iteration. Therefore, we will
+  not keep file descriptors opened until the
+  parent `readFiles` function returns.
+* The other way to create a surrounding function
+  so that `defer` can be executed during each
+  iteration is to use a closure (as a reminder,
+  a function value that references variables
+  from outside its body):
+
+```go
+func readFiles(ch <-chan string) error {
+  for path := range ch {
+    err := func() error {
+      file, err := os.Open(path)
+      if err != nil {
+        return err
+      }
+      defer file.Close()
+      // Do something with file
+      return nil
+    }()
+    if err != nil {
+      return err
+    }
+  }
+  return nil
+}
+```
+
+## Strings
