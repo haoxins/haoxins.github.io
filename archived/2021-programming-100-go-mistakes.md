@@ -489,3 +489,27 @@ for _, a := range accounts {
 // &{1300}
 ```
 
+```go
+s := []int{0, 1, 2}
+for range s {
+  s = append(s, 10)
+}
+fmt.Println(s) // [0 1 2 10 10 10]
+```
+
+* The expression passed to `range` is
+  evaluated **only once**, before the
+  beginning of the loop.
+* In this context, evaluated means that
+  the provided expression is copied to a
+  temporary variable, and then the `range`
+  operator will iterate over this variable,
+  not the original one.
+
+```go
+s := []int{0, 1, 2}
+for i := 0; i < len(s); i++ {
+  s = append(s, 10)
+}
+fmt.Println("Never ends!!!")
+```
