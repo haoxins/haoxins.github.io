@@ -828,3 +828,10 @@ func concat(ids []string) string {
 }
 ```
 
+* Let's bear in mind that all the exported functions
+  of the `strings` package also have their alternative
+  in the `bytes` package.
+* If we have to implement a function that consumes and
+  returns a `byte[]`, be it while doing IO or else,
+  we should first check whether we could implement
+  the whole workflow without extra conversions.
