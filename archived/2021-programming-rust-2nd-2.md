@@ -257,6 +257,26 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
     they are visible to code written in other languages
     that may not respect Rust's safety rules.
 
+* Restricting `unsafe` features to `unsafe` blocks
+  doesn't really prevent you from doing whatever you want.
+  Its perfectly possible to just stick an `unsafe` block
+  into your code and move on. The benefit of the rule
+  lies mainly in *drawing human attention* to code whose
+  safety Rust can't guarantee:
+  - You won't accidentally use `unsafe` features and
+    then discover you were responsible for contracts
+    you didn't even know existed.
+  - An `unsafe` block attracts *more attention* from
+    *reviewers*. Some projects even have automation
+    to ensure this, flagging code changes that affect
+    `unsafe` blocks for special attention.
+  - When you're considering writing an `unsafe` block,
+    you can take a moment to ask yourself whether your
+    task really requires such measures. If it's for
+    performance. do you have measurements to show that
+    this is actually a bottleneck? Perhaps there is a
+    good way to accomplish the same thing in safe Rust.
+
 ## Asynchronous Programming
 
 ## Macros
