@@ -631,3 +631,46 @@ loop:
   // 2
 ```
 
+* We can also use `continue` with a label to
+  go to the next iteration of the labeled loop.
+* We should remain cautious while using a
+  `switch` or `select` statement inside a loop.
+* When using `break`, we should always make sure
+  to know which statement it will affect.
+  Using labels, as we have seen, is the easiest
+  solution to enforce breaking a
+  specific statement.
+
+* We have to recall that `defer` schedules a
+  function call when the surrounding function returns.
+  In this case, the `defer` calls will be executed not
+  during each iteration of the loop but when the
+  `readFiles` function `return`. If `readFiles` doesn't
+  `return`, the file descriptors will be kept open
+  forever, causing leaks.
+
+* The first way to do it is to extract the logic
+  inside of the loop in another function
+  and refactor `readFiles`:
+
+```go
+func readFiles(ch <-chan string) error {
+  for path := range ch {
+    if err := readFile(path); err != nil {
+      return err
+    }
+  }
+  return nil
+}
+
+func readFile(path string) error {
+  file, err := os.Open(path)
+  if err != nil {
+    return err
+  }
+  defer file.Close()
+  // Do something with file
+  return nil
+}
+```
+
