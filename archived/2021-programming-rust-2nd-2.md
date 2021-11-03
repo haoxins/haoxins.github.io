@@ -193,9 +193,43 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
   of iterators we showed before is as efficient as the
   code you would probably write by hand.
 
-## Collections
-
 ## Strings and Text
+
+* `String` and `str`
+
+* Rust's `string` and `str` types are guaranteed
+  to hold only well-formed UTF-8. The library ensures
+  this by restricting the ways you can create `String`
+  and `str` values and the operations you can perform
+  on them, such that the values are well-formed when
+  introduced and remain so as you work with them.
+* All their methods protect this guarantee: no safe
+  operation on them can introduce ill-formed UTF-8.
+  This simplifies code that works with the text.
+
+* Rust places text-handling methods on either
+  `str` or `String` depending on whether the method
+  needs a resizable buffer or is content just to
+  use the text in place.
+* Since String dereferences to `&str`, every method
+  defined on `str` is directly available on `String`
+  as well.
+
+* These methods index text by *byte offsets* and
+  measure its length in bytes, rather than characters.
+* In practice, given the nature of *Unicode*, indexing
+  by character is not as useful as it may seem, and
+  *byte offsets* are faster and simpler. If you try to
+  use a *byte offset* that lands in the midst of some
+  character's UTF-8 encoding, the method panics, so
+  you can't introduce ill-formed UTF-8 this way.
+
+* A `String` is implemented as a wrapper around a
+  `Vec<u8>` that ensures the vector's contents are
+  always well-formed UTF-8. Rust will never change
+  `String` to use a more complicated representation,
+  so you can assume that `String` shares `Vec's`
+  performance characteristics.
 
 ## Concurrency
 
