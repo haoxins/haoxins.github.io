@@ -706,3 +706,40 @@ func readFiles(ch <-chan string) error {
 ```
 
 ## Strings
+
+* In Go, a **string** is an **immutable** data
+  structure representing:
+  - A *pointer* to a backing array of bytes
+  - The total number of bytes in this array
+
+* We should understand the distinction between
+  `charset` and `encoding`.
+  - A `charset`, as the name suggests, is a set of
+    characters. For example, ASCII contains `128`
+    characters from the null char character
+    (`0` in decimal) to the delete character
+    (`127` in decimal). It includes all the
+    uppercase letters from `A` to `Z` and
+    lowercase letters from `a` to `z`.
+  - On the other side, `encoding` is the
+    translation of a character's list in binary.
+  - Unicode is an extension of ASCII and
+    contains `2^21` characters.
+
+* In Go, a ***rune*** is a **Unicode code point**.
+* Some people believe that Go strings are
+  always `UTF-8`, yet this is **not always true**.
+
+* A charset is a set of characters, whereas an
+  encoding describes how to translate
+  a charset into binary.
+* In Go, a string references a
+  *slice of arbitrary bytes*.
+* A Go source code is encoded using `UTF-8`. Hence,
+  all string literals are `UTF-8` strings. Yet,
+  as a string can contain arbitrary bytes,
+  it's not necessarily based on `UTF-8`.
+* A `rune` corresponds to a *Unicode code point*
+  concept, meaning an item represented
+  by a single value.
+
