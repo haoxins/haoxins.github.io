@@ -794,3 +794,37 @@ for i, r := range runes {
 ```
 
 * `TrimRight` vs `TrimSuffix`
+
+```go
+fmt.Println(strings.TrimRight("123xoxo", "xo"))  // 123
+fmt.Println(strings.TrimSuffix("123xoxo", "xo")) // 123xo
+```
+
+```go
+func concat(ids []string) string {
+  s := ""
+  for _, id := range ids {
+    s += id
+  }
+  return s
+}
+```
+
+* We used the `+=` operator for each string and
+  assigned it to `s`. At first sight, this function
+  may not look wrong. Yet, with this implementation,
+  we forget one of the core characteristics of a string:
+  its **immutability**. Therefore, each iteration
+  allocates a new string that needs to be allocated
+  in memory, which impacts performance.
+
+```go
+func concat(ids []string) string {
+  sb := strings.Builder{}
+  for _, id := range ids {
+    _, _ = sb.WriteString(id)
+  }
+  return sb.String()
+}
+```
+
