@@ -542,7 +542,55 @@ for v := range ch {
   an `array`? As the range expression is evaluated
   before the beginning of the loop, what is
   assigned to the temporary loop variable is a
-  copy of the array. It's important to keep this
-  behavior in mind to avoid common mistakes when
-  updating the loop's iteration variable.
+  **copy** of the array. It's important to keep
+  this behavior in mind to avoid common mistakes
+  when updating the loop's iteration variable.
+
+```go
+a := [3]int{0, 1, 2}
+for i, v := range a {
+  a[2] = 10
+  if i == 2 {
+    fmt.Println(v) // 2
+  }
+}
+```
+
+```go
+a := [3]int{0, 1, 2}
+for i := range a {
+  a[2] = 10
+  if i == 2 {
+    fmt.Println(a[2]) // 10
+  }
+}
+```
+
+```go
+a := [3]int{0, 1, 2}
+for i, v := range &a {
+  a[2] = 10
+  if i == 2 {
+    fmt.Println(v) // 10
+  }
+}
+```
+
+* When we have to iterate over a data structure
+  using a `range` loop, we have to recall that all
+  the values are assigned to a unique variable with
+  a unique address.
+* Therefore, if we store this **pointer** variable
+  during each iteration, we will end up in a situation
+  where we have stored the same pointer that references
+  the *same* element: the *latest* one.
+* We can overcome this issue by forcing the creation
+  of a local variable in the loop's scope or accessing
+  the value via its index. Both solutions are perfectly
+  fine.
+
+* In Go, the *iteration order* over a map is
+  **not specified**. Also, there is no guarantee that
+  the order will be the same from
+  one iteration to the next.
 
