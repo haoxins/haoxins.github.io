@@ -743,3 +743,54 @@ func readFiles(ch <-chan string) error {
   concept, meaning an item represented
   by a single value.
 
+```go
+s := "hêllo"
+for i := range s {
+  fmt.Printf("position %d: %c\n", i, s[i])
+}
+fmt.Printf("len=%d\n", len(s))
+// position 0: h
+// position 1: Ã
+// position 3: l
+// position 4: l
+// position 5: o
+// len=6
+```
+
+* We have to know that `len(s)` doesn't return
+  the *number of runes* in a string
+  but its *number of bytes*.
+* Printing `s[i]` didn't print the `i'th` *rune*;
+  it printed the UTF-8 representation of
+  the byte at index `i`.
+
+```go
+s := "hêllo"
+for i, r := range s {
+  fmt.Printf("position %d: %c\n", i, r)
+}
+// position 0: h
+// position 1: ê
+// position 3: l
+// position 4: l
+// position 5: o
+```
+
+* Indeed, using a `range` loop on a string
+  returns two variables: the starting index
+  of a rune and the **rune** itself.
+
+```go
+s := "hêllo"
+runes := []rune(s)
+for i, r := range runes {
+  fmt.Printf("position %d: %c\n", i, r)
+}
+// position 0: h
+// position 1: ê
+// position 2: l
+// position 3: l
+// position 4: o
+```
+
+* `TrimRight` vs `TrimSuffix`
