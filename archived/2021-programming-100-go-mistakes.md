@@ -513,3 +513,36 @@ for i := 0; i < len(s); i++ {
 }
 fmt.Println("Never ends!!!")
 ```
+
+```go
+ch1 := make(chan int, 3)
+go func() {
+  ch1 <- 0
+  ch1 <- 1
+  ch1 <- 2
+  close(ch1)
+}()
+
+ch2 := make(chan int, 3)
+go func() {
+  ch2 <- 10
+  ch2 <- 11
+  ch2 <- 12
+  close(ch2)
+}()
+
+ch := ch1
+for v := range ch {
+  fmt.Println(v)
+  ch = ch2
+}
+```
+
+* What's the impact of using a `range` loop with
+  an `array`? As the range expression is evaluated
+  before the beginning of the loop, what is
+  assigned to the temporary loop variable is a
+  copy of the array. It's important to keep this
+  behavior in mind to avoid common mistakes when
+  updating the loop's iteration variable.
+
