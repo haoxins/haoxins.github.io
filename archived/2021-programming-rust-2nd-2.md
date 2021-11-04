@@ -283,5 +283,72 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
     this is actually a bottleneck? Perhaps there is a
     good way to accomplish the same thing in safe Rust.
 
+* Two critical facts about bugs and `unsafe` code:
+  - Bugs that occur before the `unsafe` block can
+    break contracts. Whether an `unsafe` block causes
+    undefined behavior can depend not just on the code
+    in the block itself, but also on the code that
+    supplies the values it operates on. Everything that
+    your `unsafe` code relies on to satisfy contracts
+    is safety-critical. The conversion from `Ascii` to
+    `String` based on `String::from_utf8_unchecked`
+    is well-defined only if the rest of the module
+    properly maintains Ascii's invariants.
+  - The consequences of breaking a contract may appear
+    after you leave the `unsafe` block. The undefined
+    behavior courted by failing to comply with an
+    `unsafe` feature's contract often does not occur
+    within the `unsafe` block itself. Constructing a
+    bogus `String` as shown before may not cause
+    problems until much later in the
+    program's execution.
 
+* Essentially. Rust's *type checker*, *borrow checker*,
+  and other *static checks* are inspecting your program
+  and trying to construct proof that it cannot exhibit
+  undefined behavior.
+* When Rust compiles your program successfully, that
+  means it succeeded in proving your code sound. An
+  `unsafe` block is a gap in this proof:
+  - "This code," you are saying to Rust, "is fine, trust me."
+* Whether your claim is true could depend on any part
+  of the program that influences what happens in the
+  `unsafe` block, and the consequences of being wrong
+  could appear anywhere influenced by the `unsafe` block.
+* Writing the `unsafe` keyword amounts to a reminder
+  that you are not getting the full benefit of the
+  language's safety checks.
+
+* Given the choice, you should naturally prefer to
+  create safe interfaces, without contracts. These are
+  much easier to work with, since users can count
+  on Rust's safety checks to ensure their code is free
+  of undefined behavior. Even if your implementation
+  uses `unsafe` features, it's best to use Rust's
+  `types`, `lifetimes`, and module system to meet
+  their contracts while using only what you can
+  guarantee yourself, rather than passing
+  responsibilities on to your callers.
+
+* Unfortunately, it's not unusual to come across
+  *unsafe functions* in the wild whose documentation
+  does not bother to explain their contracts. You
+  are expected to infer the rules yourself, based on
+  your experience and knowledge of how the code
+  behaves. If you've ever uneasily wondered whether
+  what you're doing with a `C` or `C++` API is OK,
+  then you know what that's like.
+
+* **Unsafe Block** or **Unsafe Function**?
+
+* You may find yourself wondering whether to
+  use an `unsafe block` or just mark the whole
+  `function unsafe`. The approach we recommend is
+  to first make a decision about the function:
+  - If it's possible to misuse the function in a
+    way that compiles fine but still causes
+    undefined behavior, you must mark it as `unsafe`.
+    The rules for using the function correctly are
+    its contract; the existence of a contract is
+    what makes the function `unsafe`.
 
