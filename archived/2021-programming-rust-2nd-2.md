@@ -233,6 +233,12 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
 
 ## Concurrency
 
+
+## Asynchronous Programming
+
+
+## Unsafe Code
+
 * An `unsafe` block unlocks five
   additional options for you:
   - You can call `unsafe` functions. Each `unsafe`
@@ -277,8 +283,5 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
     this is actually a bottleneck? Perhaps there is a
     good way to accomplish the same thing in safe Rust.
 
-## Asynchronous Programming
 
-## Macros
 
-## Unsafe Code
