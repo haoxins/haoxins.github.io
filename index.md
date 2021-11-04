@@ -2,6 +2,7 @@
 * [推荐阅读清单](articles/reading-recommended.md)
 * [Programming language](articles/programming-language.md)
 * [健身, 冥想](articles/meditation-fitness.md)
+* [Graph machine learning](articles/graph-machine-learning.md)
 * [Blockchain & Cryptography](articles/cryptography.md)
 * [猫咪的那些事](articles/cat.md)
 ### 2022
