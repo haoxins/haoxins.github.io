@@ -251,6 +251,29 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
   undefined behavior.
 
 * **Mutexes** are helpful for several reasons:
+  - They prevent *data races*, situations where racing
+    threads concurrently read and write the same memory.
+    *Data races* are undefined behavior in `C++` and `Go`.
+    Managed languages like `Java` and `C#` promise
+    not to crash, but the results of *data races* are
+    still (to summarize) nonsense.
+  - Even if data races didn't exist, even if all reads
+    and writes happened one by one in program order,
+    without a `mutex` the actions of different threads
+    could interleave in arbitrary ways. Imagine trying
+    to write code that works even if other threads
+    modify its data while it's running. Imagine trying
+    to debug it. It would be like your
+    program was haunted.
+  - *Mutexes* support programming with invariants, rules
+    about the protected data that are true by
+    construction when you set it up and maintained
+    by every critical section.
+* Of course, all of these are really the same reason:
+  *uncontrolled race conditions* make
+  programming intractable. *Mutexes* bring some order
+  to the *chaos*.
+  - though not as much order as channels or fork-join
 
 ## Asynchronous Programming
 
