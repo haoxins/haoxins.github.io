@@ -351,4 +351,18 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
     The rules for using the function correctly are
     its contract; the existence of a contract is
     what makes the function `unsafe`.
+  - Otherwise, the function is **safe**: no
+    well-typed call to it can cause undefined
+    behavior. It should not be marked `unsafe`.
 
+* Whether the function uses `unsafe` features in
+  its body is irrelevant; what matters is the
+  presence of a contract. Before, we showed an
+  `unsafe` function that uses no `unsafe` features,
+  and a safe function that does use `unsafe` features.
+* Don't mark a *safe* function `unsafe` just because
+  you use `unsafe` features in its body. This makes
+  the function harder to use and confuses readers
+  who will (correctly) expect to find a contract
+  explained somewhere. Instead, use an `unsafe` block,
+  *even if it's the function's entire body*.
