@@ -233,6 +233,24 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
 
 ## Concurrency
 
+* Thread Safety: **`Send`** and **`Sync`**
+
+* So far we've been acting as though all values can
+  be freely moved and shared across threads. This is
+  mostly true, but Rust's full thread safety story
+  hinges on two built-in traits, `std::marker::Send`
+  and `std::marker::Sync`.
+  - Types that implement `Send` are safe to pass
+    by value to another thread. They can be
+    *moved across threads*.
+  - Types that implement `Sync` are safe to pass
+    by *non-mut reference to another thread*. They
+    can be shared across threads.
+* By safe here, we mean the same thing we always
+  mean: free from *data races* and other
+  undefined behavior.
+
+* **Mutexes** are helpful for several reasons:
 
 ## Asynchronous Programming
 
