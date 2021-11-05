@@ -237,6 +237,21 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
 ## Asynchronous Programming
 
 
+* In practice, every account of implementing high-volume
+  servers that we could find emphasized the importance
+  of measurement, tuning, and a relentless campaign to
+  identify and remove sources of contention between tasks.
+* An asynchronous architecture **won't** let you skip any of
+  this work. In fact, while there are plenty of
+  `off-the-shelf` tools for assessing the behavior of
+  `multithreaded` programs, Rust asynchronous tasks are
+  invisible to those tools and thus require tooling of
+  their own.
+* Even if you don't use asynchronous code now, it's
+  nice to know that the option is there if you ever
+  have the good fortune to be vastly
+  busier than you are now.
+
 ## Unsafe Code
 
 * An `unsafe` block unlocks five
