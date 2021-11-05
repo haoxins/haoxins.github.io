@@ -277,6 +277,27 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
 
 ## Asynchronous Programming
 
+* Rust's use of *polling*, however, is **unusual**.
+  In `JavaScript` and `C#`, an asynchronous function
+  begins running as soon as it is called, and there
+  is a global event loop built into the system
+  library that resumes suspended async function
+  calls when the values they were awaiting become
+  available.
+* In Rust, however, an `async` call does **nothing**
+  until you pass it to a function like `block_on`,
+  `spawn`, or `spawn_local` that will poll it and
+  drive the work to completion. These functions,
+  called **executors**, play the role that other
+  languages cover with *a global event loop*.
+* Because Rust makes you, the programmer, choose
+  an executor to poll your futures. Rust has
+  **no need** for a global event loop built into
+  the system. The `async-std` crate offers the
+  executor functions we've used in this chapter
+  so far, but the `tokio` crate. which we'll
+  use later in this chapter, defines its own set
+  of similar executor functions.
 
 * In practice, every account of implementing high-volume
   servers that we could find emphasized the importance
