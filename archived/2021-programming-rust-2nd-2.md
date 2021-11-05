@@ -278,12 +278,11 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
 ## Asynchronous Programming
 
 * Rust's use of *polling*, however, is **unusual**.
-  In `JavaScript` and `C#`, an asynchronous function
-  begins running as soon as it is called, and there
-  is a global event loop built into the system
-  library that resumes suspended async function
-  calls when the values they were awaiting become
-  available.
+  In `JavaScript`, an asynchronous function begins
+  running as soon as it is called, and there is a
+  global event loop built into the system library
+  that resumes suspended async function calls
+  when the values they were awaiting become available.
 * In Rust, however, an `async` call does **nothing**
   until you pass it to a function like `block_on`,
   `spawn`, or `spawn_local` that will poll it and
