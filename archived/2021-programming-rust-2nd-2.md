@@ -324,6 +324,40 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
     Starting after its first poll, we must assume
     the future may not be safe to move.
 
+* The flexibility of the first life stage is what
+  lets us pass futures to `block_on` and `spawn`
+  and call adapter methods like `race` and `fuse`,
+  all of which take futures by value. In fact,
+  even the asynchronous function call that created
+  the future in the first place had to return it
+  to the caller; that was a `move` as well.
+* To enter its second life stage, the future must
+  be *polled*. The `poll` method requires the future
+  be passed as a `Pin<&mut Self>` value. `Pin` is a
+  wrapper for *pointer types* (like `&mut Self`) that
+  restricts how the pointers can be used, ensuring
+  that their referents (like `Self`) cannot ever be
+  moved again. So you must produce a `Pin-wrapped`
+  pointer to the future before you can poll it.
+
+* This, then, is Rust's strategy for keeping
+  futures *safe*: a future can't become dangerous
+  to move until it's *polled*; you can't poll a
+  future until you've constructed a `Pin-wrapped`
+  pointer to it; and once you've done that,
+  the future can't be moved.
+* **"A value you can't move"** sounds impossible:
+  moves are everywhere in Rust.
+
+* Although this section has discussed asynchronous
+  *functions*, everything here applies to asynchronous
+  *blocks* as well.
+* A freshly created future of an *asynchronous block*
+  simply captures the variables it will use from the
+  surrounding code, like a closure.
+* Only polling the future can create references to
+  its contents, rendering it `unsafe` to `move`.
+
 * In practice, every account of implementing high-volume
   servers that we could find emphasized the importance
   of measurement, tuning, and a relentless campaign to
