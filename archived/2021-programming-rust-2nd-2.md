@@ -397,6 +397,40 @@ pub struct Pin<P> {
 }
 ```
 
+* Note that the pointer field is *not* `pub`.
+  This means that the only way to construct or
+  use a `Pin` is through the carefully chosen
+  methods the type provides.
+* Given a future of an asynchronous function or
+  block, there are only a few ways to get a
+  pinned pointer to it:
+  - The `pin!` macro, from the `futures-lite` crate,
+    shadows a variable of type `T` with a new one of
+    type `Pin<&mut T>`. The new variable points to
+    the original's value, which has been moved to an
+    anonymous temporary location on the stack. When
+    the variable goes out of scope,
+    the value is dropped.
+    We used `pin!` in our `block_on` implementation
+    to `pin` the future we wanted to *poll*.
+  - The standard library's `Box::pin` constructor
+    takes ownership of a value of any type `T`,
+    moves it into the heap, and returns a
+    `Pin<Box<T>>`.
+  - `Pin<Box<T>>` implements `From<Box<T>>`, so
+    `Pin::from(boxed)` takes ownership of boxed
+    and gives you back a pinned box pointing
+    at the same `T` on the heap.
+
+* Every way to obtain a *pinned pointer* to these
+  futures entails giving up ownership of the future,
+  and there is no way to get it back out. The
+  *pinned pointer* itself can be moved in any way
+  you please, of course, but moving a pointer doesn't
+  move its *referent*. So possession of a *pinned pointer*
+  to a future serves as proof that you have permanently
+  given up the ability to move that future. This is
+  all we need to know that it can be polled safely.
 * In practice, every account of implementing high-volume
   servers that we could find emphasized the importance
   of measurement, tuning, and a relentless campaign to
