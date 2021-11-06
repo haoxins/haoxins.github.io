@@ -450,6 +450,27 @@ loop {
 }
 ```
 
+* Here, the `pin!` macro has redeclared future as
+  a `Pin<&mut F>`, so we could just pass that to poll.
+  But *mutable* references are not `Copy`, so
+  `Pin<&mut F>` cannot be `Copy` either, meaning that
+  calling `future.poll()` directly would take
+  ownership of future, leaving the next iteration of
+  the loop with an uninitialized variable.
+* To avoid this, we call `future.as_mut()` to reborrow
+  a fresh `Pin<&mut F>` for each loop iteration.
+
+* There is no way to get a `&mut` reference to a
+  pinned future: if you could, you could use
+  `std::mem::replace` or `std::mem::swap` to move
+  it out and put a different future in its place.
+* The reason we don't have to worry about
+  *pinning futures* in ordinary asynchronous code
+  is that the most common ways to obtain a future's
+  *value-awaiting* it or passing to an executor.
+  - all take ownership of the future and manage
+    the pinning internally.
+* For example, our `block_on` implementation
 * In practice, every account of implementing high-volume
   servers that we could find emphasized the importance
   of measurement, tuning, and a relentless campaign to
