@@ -602,6 +602,49 @@ assert_eq!(new_home, "Pinned? Not so much.");
 
 ### So, what are the real advantages of asynchronous code?
 
+* Asynchronous tasks can use **less memory**.
+* On Linux, a thread's memory use starts at `20 KiB`,
+  counting both user and kernel space.
+  - Futures can be much smaller.
+* Asynchronous tasks are **faster to create**.
+* On Linux, creating a thread takes around `15us`.
+  Spawning an asynchronous task takes around `300 ns`.
+* **Context switches are faster** between asynchronous
+  tasks than between operating system threads,
+  `0.2 us` versus `1.7 us` on Linux. However,
+  these are best-case numbers for each:
+  if the switch is due to `I/O` readiness,
+  both costs rise to `1.7 us`.
+  - Whether the switch is between threads or
+    tasks on different processor cores also
+    makes a big difference:
+  - communication between cores is very slow.
+
+* This gives us a hint as to what sorts of problems
+  asynchronous code can solve. For example, an
+  asynchronous server might use less memory per task
+  and thus be able to handle more
+  simultaneous connections.
+  - This is probably where asynchronous code gets
+    its reputation for being "good for I/O."
+* Or, if your design is naturally organized as many
+  independent tasks communicating with each other,
+  then *low per-task costs*, *short creation times*,
+  and *quick context switches* are all important
+  advantages.
+  - This is why chat servers are the classic example
+    for asynchronous programming, but multi
+    player games and network routers would
+    probably be good uses too.
+* In other situations, the case for using async is
+  less clear. If your program has a pool of threads
+  doing heavy computations or sitting idle waiting
+  for `I/O` to finish. The advantages listed earlier
+  are probably not a big influence on its performance.
+  You'll have to optimize your computation, find a
+  faster net connection, or do something else that
+  actually affects the limiting factor.
+
 * In practice, every account of implementing high-volume
   servers that we could find emphasized the importance
   of measurement, tuning, and a relentless campaign to
