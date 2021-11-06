@@ -431,6 +431,25 @@ pub struct Pin<P> {
   to a future serves as proof that you have permanently
   given up the ability to move that future. This is
   all we need to know that it can be polled safely.
+* Once you've pinned a future, if you'd like to poll it,
+  all `Pin<pointer to T>` types have an `as_mut` method
+  that dereferences the pointer and returns the
+  `Pin<&mut T>` that poll requires.
+* The `as_mut` method can also help you poll a future
+  without giving up ownership. Our `block_on`
+  implementation used it in this role:
+
+```rust
+pin!(future);
+
+loop {
+  match future.as_mut().poll(&mut context) {
+    Poll::Ready(value) => return value,
+    Poll::Pending => parker.park(),
+  }
+}
+```
+
 * In practice, every account of implementing high-volume
   servers that we could find emphasized the importance
   of measurement, tuning, and a relentless campaign to
