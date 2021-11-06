@@ -471,6 +471,39 @@ loop {
   - all take ownership of the future and manage
     the pinning internally.
 * For example, our `block_on` implementation
+  takes ownership of the future and uses the
+  `pin!` macro to produce the `Pin<&mut F>`
+  needed to poll. An *await expression* also
+  takes ownership of the future and uses an
+  approach similar to the `pin!` macro internally.
+
+### The Unpin Trait
+
+* However, not all futures require this kind of
+  careful handling.
+* Such durable types implement the
+  `Unpin` marker trait:
+
+```rust
+trait Unpin { }
+```
+
+* Almost all types in Rust automatically implement
+  `Unpin`, using special support in the compiler.
+  Asynchronous function and block futures are the
+  exceptions to this rule.
+* For `Unpin` types, `Pin` imposes no restrictions
+  whatsoever. You can make a *pinned pointer* from an
+  ordinary pointer with `Pin::new` and get the pointer
+  back out with `Pin::into_inner`. The `Pin` itself
+  passes along the pointer's own `Deref` and
+  `DerefMut` implementations.
+* For example, `String` implements `Unpin`,
+  so we can write:
+
+```rust
+```
+
 * In practice, every account of implementing high-volume
   servers that we could find emphasized the importance
   of measurement, tuning, and a relentless campaign to
