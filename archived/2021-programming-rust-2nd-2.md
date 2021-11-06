@@ -502,7 +502,56 @@ trait Unpin { }
   so we can write:
 
 ```rust
+let mut string = "Pinned?".to_string();
+let mut pinned: Pin<&mut String> = Pin::new(&mut string);
+
+pinned.push_str(" Not");
+Pin::into_inner(pinned).push_str(" so much.");
+
+let new_home = string;
+assert_eq!(new_home, "Pinned? Not so much.");
 ```
+
+* Even after making a `Pin<&mut String>`, we have
+  full **mutable** access to the string and can
+  move it to a new variable once the `Pin` has been
+  consumed by `into_inner` and the *mutable reference*
+  is gone. So for types that are `Unpin`
+  - which is almost all of them - `Pin` is a boring
+    wrapper around pointers to that type.
+* This means that when you implement `Future` for your
+  own `Unpin` types, your poll implementation can treat
+  *self* as if it were `&mut Self`, not `Pin<&mut Self>`.
+  - Pinning becomes something you can mostly ignore.
+* It may be surprising to learn that `Pin<&mut F>` and
+  `Pin<Box<F>>` implement `Unpin`, even if `F` does not.
+  This doesn't read well - how can a `Pin` be `Unpin`?
+  - But if you think carefully about what each term
+    means, it does make sense.
+    Even if `F` is not safe to move once it has been
+    polled, a pointer to it is always safe to move,
+    *polled or not*. Only the pointer moves; its
+    fragile referent says put.
+* This is useful to know when you would like to
+  pass the future of an asynchronous function or
+  block to a function that only
+  accepts `Unpin` futures.
+  - Such functions are rare in `async_std`, but
+    less so elsewhere in the async ecosystem.
+* `Pin<Box<F>>` is `Unpin` even if `F` is not, so
+  applying `Box::pin` to an asynchronous function
+  or block future gives you a future you can use
+  anywhere, at the cost of a heap allocation.
+
+* There are various unsafe methods for working
+  with `Pin` that let you do whatever you like
+  with the pointer and its target, even for
+  target types that are not `Unpin`. But Rust
+  cannot check that these methods are being
+  used correctly; you become responsible for
+  ensuring the safety of the code that uses them.
+
+### When Is Asynchronous Code Helpful?
 
 * In practice, every account of implementing high-volume
   servers that we could find emphasized the importance
