@@ -358,6 +358,45 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
 * Only polling the future can create references to
   its contents, rendering it `unsafe` to `move`.
 
+* Keep in mind that this `move` fragility is limited
+  to futures of asynchronous functions and blocks,
+  with their special compiler-generated `Future`
+  implementations. If you implement Future by hand
+  for your own types, such futures are perfectly safe
+  to move both before and after they've been *polled*.
+* In any handwritten poll implementation, the borrow
+  checker ensures that whatever references you had
+  borrowed to parts of self are gone by the time
+  poll returns. It is only because asynchronous
+  *functions and blocks* have the power to suspend
+  execution in the midst of a function call, with
+  borrows in progress, that we must handle
+  their futures with care.
+
+* **Pinned Pointers**
+
+* The `Pin` type is a wrapper for pointers to
+  futures that restricts how the pointers may be
+  used to make sure that futures can't be moved
+  once they've been polled. These restrictions
+  can be lifted for futures that don't mind being
+  moved, but they are essential to safely polling
+  futures of asynchronous functions and blocks.
+* By *pointer*, we mean any type that implements
+  `Deref`, and possibly `DerefMut`. A `Pin`
+  wrapped around a pointer is called a
+  *pinned pointer*. `Pin<&mut T>` and `Pin<Box<T>>`
+  are typical.
+
+* The definition of `Pin` in the standard library
+  is simple:
+
+```rust
+pub struct Pin<P> {
+  pointer: P,
+}
+```
+
 * In practice, every account of implementing high-volume
   servers that we could find emphasized the importance
   of measurement, tuning, and a relentless campaign to
