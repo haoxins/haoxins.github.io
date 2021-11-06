@@ -553,6 +553,55 @@ assert_eq!(new_home, "Pinned? Not so much.");
 
 ### When Is Asynchronous Code Helpful?
 
+* Asynchronous code is trickier to write than
+  *multithreaded* code. You have to use the
+  right `I/O` and synchronization primitives,
+  break up long-running computations by hand
+  or spin them off on other threads, and manage
+  other details like pinning that don't arise
+  in threaded code. So what specific advantages
+  does asynchronous code offer?
+
+* Two claims you'll often hear don't stand up
+  to careful inspection:
+* **"Async code is great for I/O"**: This is
+  **not quite correct**. If your application is
+  spending its time waiting for `I/O`, making
+  it async will not make that `I/O` run faster.
+  There is nothing about the asynchronous `I/O`
+  interfaces generally used today that makes
+  them more efficient than their synchronous
+  counterparts. The operating system has the
+  same work to do either way.
+  - In fact, an asynchronous `I/O` operation that
+    isn't ready must be tried again later, so it
+    takes two system calls to complete instead of one.
+* **"Async code is easier to write than multithreaded code"**:
+  In languages like `JavaScript` and `Python`, this may
+  well be true. In those languages, programmers use
+  `async/await` as well-behaved form of concurrency:
+  - there's a single thread of execution, and interruptions
+    only occur at *await expressions*, so there's often no
+    need for a `mutex` to keep data consistent:
+  - just dont await while you're in the midst of using it!
+    It's much easier to understand your code when task
+    switches occur only with your explicit permission.
+* But this argument doesn't carry over to Rust, where
+  threads aren't nearly as troublesome. Once your
+  program compiles, it is free of data races.
+  - Nondeterministic behavior is confined to
+    synchronization features like
+    `mutexes`, `channels`,`atomics`, and so on,
+    which were designed to cope with it.
+  - So asynchronous code has no unique advantage at
+    helping you see when other threads might impact you;
+    that's clear in all safe Rust code.
+  - And of course, Rust's asynchronous support really
+    shines when used in combination with threads.
+    It would be a pity to give that up.
+
+### So, what are the real advantages of asynchronous code?
+
 * In practice, every account of implementing high-volume
   servers that we could find emphasized the importance
   of measurement, tuning, and a relentless campaign to
