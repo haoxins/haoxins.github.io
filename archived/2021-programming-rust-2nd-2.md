@@ -298,6 +298,32 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
   use later in this chapter, defines its own set
   of similar executor functions.
 
+* Rust's solution to this problem rests on the
+  insight that futures are always safe to move
+  when they are first created, and only become
+  `unsafe` to move when they are *polled*. A
+  future that has just been created by calling an
+  asynchronous function simply holds a resumption
+  point and the argument values. These are only
+  in scope for the asynchronous function's body,
+  which has not yet begun execution. Only polling
+  a future can *borrow* its contents.
+
+* From this, we can see that every **future** has
+  **two life stages**:
+  - The first stage begins when the future is
+    created. Because the function's body hasn't
+    begun execution, no part of it could possibly
+    be *borrowed* yet. At this point, it's as safe
+    to move as any other Rust value.
+  - The second stage begins the first time the
+    future is *polled*. Once the function's body has
+    begun execution, it could borrow references to
+    variables stored in the future and then await,
+    leaving that part of the future borrowed.
+    Starting after its first poll, we must assume
+    the future may not be safe to move.
+
 * In practice, every account of implementing high-volume
   servers that we could find emphasized the importance
   of measurement, tuning, and a relentless campaign to
