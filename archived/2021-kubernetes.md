@@ -196,10 +196,15 @@ premium-rwo   pd.csi.storage.gke.io  pd-ssd
   It is able to be referenced by Certificate
   resources in *any namespace*.
 
-## Others
+------------------
+
+## Cases & Tips
 
 * **GKE**
   - 2021-09: Updates `default`
+* 更新 `Secrets` 之后, 最好 `Delete` *相关的* `Pods`
+  - 否则不会立即生效
+
     kubectl from `1.18` to `1.20`.
 
 ```zsh
@@ -209,12 +214,6 @@ kube-node-lease
 kube-public
 kube-system
 ```
-
-------------------
-
-## Cases
-
-* 更新 `Secrets`, 最好重建*相关的* `Pods`
 
 ### Istio
 
