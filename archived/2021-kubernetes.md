@@ -46,6 +46,12 @@ k rollout status deploy deploy_name
 k rollout restart deploy deploy_name
 ```
 
+### YAML
+
+* `1.4`, `8` 这种值需要注意 *String* or *Number*
+  - `"1.4"` or `1.4`
+  - `v1.4`, `1.4.0` 是明确的 *String*
+
 ## Argo
 
 ```zsh
@@ -203,12 +209,6 @@ kube-node-lease
 kube-public
 kube-system
 ```
-
-### YAML
-
-* `1.4`, `8` 这种值需要注意 *String* or *Number*
-  - `"1.4"` or `1.4`
-  - `v1.4`, `1.4.0` 是明确的 *String*
 
 ------------------
 
