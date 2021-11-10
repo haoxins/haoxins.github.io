@@ -175,16 +175,6 @@ k port-forward svc/kube-prometheus-stack-prometheus \
 # Password: prom-operator
 ```
 
-## GCP/GKE
-
-* *Storage classes* (Default)
-
-```
-standard      kubernetes.io/gce-pd   pd-standard
-standard-rwo  pd.csi.storage.gke.io  pd-balanced
-premium-rwo   pd.csi.storage.gke.io  pd-ssd
-```
-
 ## Cert Manager
 
 * An **`Issuer`** is scoped to a *single namespace*,
@@ -195,6 +185,19 @@ premium-rwo   pd.csi.storage.gke.io  pd-ssd
   cluster wide version of an Issuer.
   It is able to be referenced by Certificate
   resources in *any namespace*.
+
+## GCP/GKE
+
+* *Storage classes* (Default)
+
+```
+standard      kubernetes.io/gce-pd   pd-standard
+standard-rwo  pd.csi.storage.gke.io  pd-balanced
+premium-rwo   pd.csi.storage.gke.io  pd-ssd
+```
+
+
+
 
 ------------------
 
