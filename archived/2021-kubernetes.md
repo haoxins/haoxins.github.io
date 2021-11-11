@@ -196,8 +196,16 @@ standard-rwo  pd.csi.storage.gke.io  pd-balanced
 premium-rwo   pd.csi.storage.gke.io  pd-ssd
 ```
 
+* **Workload Identity**
+  - 基于 *Google Compute Engine (GCE)* `metadata service`.
 
+```zsh
+curl http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/?recursive=true \
+  --header "Metadata-Flavor: Google"
+```
 
+> - 如果报错: `Request cannot contain header: X-Forwarded-For`
+> - 十有八九: `Envoy` 的**锅**
 
 ------------------
 
