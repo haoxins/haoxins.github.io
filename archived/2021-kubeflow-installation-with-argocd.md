@@ -15,11 +15,11 @@ date: 2021-08-04
 gcloud services enable \
   compute.googleapis.com \
   container.googleapis.com \
-  servicemanagement.googleapis.com \
   cloudresourcemanager.googleapis.com \
+  servicemanagement.googleapis.com \
+  iamcredentials.googleapis.com \
   iam.googleapis.com \
-  iap.googleapis.com \
-  ml.googleapis.com
+  iap.googleapis.com
 ```
 
 ### Create 一个 K8s cluster
@@ -35,6 +35,7 @@ export CLUSTER_ZONE=asia-southeast1-c
 ```zsh
 gcloud container clusters create $CLUSTER_NAME \
   --project=$PROJECT_ID \
+  --workload-pool=$PROJECT_ID.svc.id.goog
   --machine-type=n1-standard-4 \
   --enable-autoscaling --min-nodes 1 --max-nodes 99 \
   --scopes compute-rw,gke-default,storage-rw \
