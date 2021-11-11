@@ -1,5 +1,5 @@
 ---
-title: 初识 Kubeflow, Components~
+title: Kubeflow Components~
 description: 行到水穷处, 坐看云起时. 偶然值林叟, 谈笑无还期.
 date: 2021-07-23
 ---
@@ -17,6 +17,12 @@ date: 2021-07-23
   *deployment* is `ml-pipeline-ui`.
 
 * [Multi-User mode](https://www.kubeflow.org/docs/components/pipelines/sdk/connect-api/#multi-user-mode)
+
+* From `1.7.0`
+  - [Use argo emissary executor by default](https://argoproj.github.io/argo-workflows/workflow-executors/#emissary-emissary)
+  - Output artifacts can be located on
+    the base layer (e.g. `/tmp`).
+  - `command` **must** be specified for containers.
 
 ### Training Operator
 

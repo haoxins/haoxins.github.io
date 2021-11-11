@@ -62,7 +62,7 @@
 * [Kube stack - Argo workflows, Kubeflow pipelines](archived/2021-kubernetes-argo-workflows.md)
 * [初识 Kubeflow, 安装~ (Outdated)](archived/2021-kubeflow-installation.md)
 * [初识 Kubeflow, 使用 ArgoCD 安装~ (Outdated)](archived/2021-kubeflow-installation-with-argocd.md)
-* [初识 Kubeflow, Components~](archived/2021-kubeflow-components.md)
+* [Kubeflow Components~](archived/2021-kubeflow-components.md)
 * [Beyond Kubeflow, Cloud Native MLOps](archived/2021-kubeflow-beyond.md)
 * [KServe and Dapr (Serverless)](archived/2021-kserve-dapr.md)
 * [Istio & WebAssembly](archived/2021-istio-webassembly.md)
