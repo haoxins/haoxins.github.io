@@ -13,6 +13,9 @@ date: 2021-07-23
 
 ### Pipelines
 
+* `Run`: one time
+* `Job`: recurring/cron
+
 * The Kubeflow Pipelines API service
   *deployment* is `ml-pipeline-ui`.
 
