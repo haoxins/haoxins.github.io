@@ -14,6 +14,11 @@ date: 2018-04-01
 
 * [人间词话 (叶嘉莹讲评本)](https://book.douban.com/subject/35616606/)
 
+* [量子信息简话](https://book.douban.com/subject/35654033/)
+  - 副标题: 给所有人的新科技革命读本
+  - 支持一下中国科普
+  - 在抖音上买的~
+
 * [Advanced Algorithms and Data Structures](https://www.manning.com/books/advanced-algorithms-and-data-structures)
 
 * [100 Go Mistakes: How to Avoid Them](https://www.manning.com/books/100-go-mistakes-and-how-to-avoid-them)
