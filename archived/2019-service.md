@@ -85,8 +85,11 @@ date: 2019-04-08
 {
   "data": "Could be [], {}, null, ...",
   "meta": {
-    "error": "Invalid params",
-    "message": "...",
+    "message": "Success or others ...",
+    "error": "null (If Success) or Error message",
+    "page": 3,
+    "size": 50,
+    "total": 1000,
     "errors": [
       {
         "domain": "A",
