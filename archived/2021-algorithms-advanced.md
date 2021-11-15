@@ -14,4 +14,11 @@ date: 2021-09-12
   - No details are provided on how data is stored
     or how physical memory is used.
 * A *data structure* (**DS**) is a concrete
-  implementation of the specification provided by an **ADT**.
+  implementation of the specification
+  provided by an **ADT**.
+* A more formal definition would describe an **ADT** as
+  a set of types, a designated type from that type set,
+  a set of functions, and a set of axioms.
+* In contrast, a *data structure*, which is a concrete
+  representation of data, is described from
+  the point of view of an implementer, not a user.
