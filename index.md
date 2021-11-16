@@ -7,6 +7,7 @@
 * [猫咪的那些事](articles/cat.md)
 ### 2022
 * [Shtetl-Optimized](archived/2022-scott-aaronson.md)
+* [复分析 可视化方法](archived/2022-math-complex-analysis.md)
 ### 2021
 * [关于技术, 次年度期待清单](archived/2021-worth-looking-forward.md)
 * [Web](archived/2021-web.md)
