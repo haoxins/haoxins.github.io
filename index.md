@@ -82,6 +82,7 @@
 * [Real-World Cryptography (上)](archived/2021-cryptography-real-world-1.md)
 * [Coursera 课程记录](archived/2021-coursera.md)
 * [从公司, 到组织](archived/2021-company-and-organization.md)
+* [人间词话 - 叶嘉莹讲评本](archived/2021-ci.md)
 * [时间静悄悄](archived/2021-changing.md)
 * [Blockchain](archived/2021-blockchain.md)
 * [年度事件](archived/2021-annual-events.md)

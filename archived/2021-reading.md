@@ -12,7 +12,7 @@ date: 2018-04-01
 
 ### 2021
 
-* [人间词话 (叶嘉莹讲评本)](https://book.douban.com/subject/35616606/)
+* [人间词话 - 叶嘉莹讲评本](https://book.douban.com/subject/35616606/)
 
 * [量子信息简话](https://book.douban.com/subject/35654033/)
   - 副标题: 给所有人的新科技革命读本
