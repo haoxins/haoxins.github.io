@@ -35,7 +35,7 @@ export CLUSTER_ZONE=asia-southeast1-c
 ```zsh
 gcloud container clusters create $CLUSTER_NAME \
   --project=$PROJECT_ID \
-  --workload-pool=$PROJECT_ID.svc.id.goog
+  --workload-pool=$PROJECT_ID.svc.id.goog \
   --machine-type=n1-standard-4 \
   --enable-autoscaling --min-nodes 1 --max-nodes 99 \
   --scopes compute-rw,gke-default,storage-rw \
