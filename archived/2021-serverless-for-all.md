@@ -39,6 +39,37 @@ date: 2020-07-22
 
 ------------------
 
+## Papers
+
+### Boki: Stateful Serverless Computing with Shared Logs
+
+* [Boki: Stateful Serverless Computing with Shared Logs](https://dl.acm.org/doi/pdf/10.1145/3477132.3483541)
+
+```
+State management has become a major challenge
+in serverless computing. Boki is the first system
+that allows stateful serverless functions to
+manage state using distributed shared logs.
+
+Boki's shared log abstraction (i.e., LogBooks) can
+support diverse serverless use cases, including
+fault-tolerant workflows, durable object storage,
+and message queues. Boki's shared logs
+achieve elasticity, data locality, and resource efficiency,
+enabled by a novel metalog design. The metalog is a
+unified solution to the problems of log ordering,
+consistency, and fault tolerance in Boki.
+
+Evaluations of Boki and its support libraries
+demonstrate the performance advantages (up to 4.7×)
+of the shared-log-based approach for
+serverless state management.
+```
+
+> 期待真实的实现
+
+------------------
+
 * **2021** 注定是一个节点, 但未必称得上是*转折点*
   - 一方面: 商业上的红利期已过, *低垂的果实*基本不再, 行业开始反垄断等整治;
   - 另一方面: 技术上, 国内有大量的*优质开发人员*, 且已经积累了*足够的应用场景*.
