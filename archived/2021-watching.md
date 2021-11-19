@@ -8,8 +8,10 @@ date: 2019-10-24
 
 ### 2021-11
 
+* [反叛的鲁路修剧场版2: 叛道](https://movie.douban.com/subject/27107624/)
 
 * [反叛的鲁路修剧场版1: 兴道](https://movie.douban.com/subject/26923131/)
+  - 相较于*动画版*, 节奏快了很多, 有点过快~
 
 * [致命愿望](https://movie.douban.com/subject/34857316/)
   - 谈不上*优秀*, 看了第一集差点直接放弃观看
