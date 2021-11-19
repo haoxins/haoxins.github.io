@@ -178,6 +178,11 @@ Tag control information (TCI)
 
 ## 2021
 
+* [Quinn - 0.8.0](https://github.com/quinn-rs/quinn/releases/tag/0.8.0)
+  - **Quinn** is a *pure-rust*, *async-compatible*
+    implementation of the IETF QUIC transport protocol.
+  - **期待**: `v1.0`
+
 * [Braid: Synchronization for HTTP](https://braid.org)
   - The *Braid Protocol* is an extension to HTTP that
     generalizes it from a *state transfer*
