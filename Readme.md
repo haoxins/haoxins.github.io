@@ -3,9 +3,10 @@
   - [github.com](https://github.com/haoxins)
   - [crates.io](https://crates.io/users/haoxins)
 
-* I'm working on Machine learning engineering,
-  Cloud native computing,
-  Serverless architect,
+* I'm working on
+  *Machine learning engineering*,
+  *Serverless architect*,
+  *Graph computing*,
   and so on.
 
 ### Formerly
