@@ -1,8 +1,12 @@
 
-* Me
+* About me
   - [github.com](https://github.com/haoxins)
   - [crates.io](https://crates.io/users/haoxins)
-  - [gitee.com](https://gitee.com/haoxins)
+
+* I'm working on Machine learning engineering,
+  Cloud native computing,
+  Serverless architect,
+  and so on.
 
 ### Formerly
 
