@@ -24,6 +24,7 @@
 * [QUIC & HTTP/3](archived/2021-quic-http3.md)
 * [量子计算 & 量子通信](archived/2021-quantum.md)
 * [量子计算公开课](archived/2021-quantum-computing.md)
+* [量子信息简话](archived/2021-quantum-brief.md)
 * [计算机程序的构造和解释 第2版](archived/2021-programs-structure.md)
 * [Rust](archived/2021-programming-rust.md)
 * [Programming Rust - 2nd Edition (下)](archived/2021-programming-rust-2nd-2.md)
