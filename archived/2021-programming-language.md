@@ -100,6 +100,21 @@ date: 2020-12-27
 
 ### Events
 
+* [Twelve Years of Go](https://go.dev/blog/12years)
+  - https://go.dev
+  - Officially proposed adding **generics** to Go (`1.18`)
+  - **Generics** will be one of our focuses for `2022`.
+    The initial release in Go `1.18` is only the
+    beginning. We need to spend time using generics and
+    learning what works and what doesn't, so that we can
+    write *best practices* and decide what should be
+    added to the standard library and other libraries.
+  - We expect that Go `1.19` (expected in **August 2022**)
+    and later releases will further refine the design
+    and implementation of generics as well as
+    integrating them further into the
+    overall Go experience.
+
 * [What's New In Python 3.10](https://docs.python.org/3/whatsnew/3.10.html)
   - ***Structural Pattern Matching***
   - Parenthesized context managers
