@@ -689,7 +689,7 @@ $$ P_r \left [ | h - n/2 | \geq a \right ] \leq 2e^{-ca^{2} / n} $$
     为多项式时间图灵机的一个列表,
     并给定一个输人长度 `n`. 然后我会说, 存在一个布尔函数
 
-$$ f: \left { 0, 1 \right }^{n} \rightarrow \left { 0, 1 \right } $$,
+$$ f: \{ 0, 1 \}^{n} \rightarrow \{ 0, 1 \} $$,
 
   - 使得即便给定任何
     $$ n^{ \log{n} } $$
