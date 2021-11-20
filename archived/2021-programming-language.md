@@ -7,18 +7,15 @@ date: 2020-12-27
 * Blockchain
   - Rust
   - Go
-* Data
+* Data, ML
   - Python
   - Rust
-  - Java
 * DevOps, DataOps, MLOps
   - Python
   - Go
 * K8s, Istio, Prometheus, CNCF
   - Go
-* Service
   - Go
-  - Java/Kotlin
 * Serverless
   - Python
   - JavaScript
