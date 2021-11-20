@@ -10,15 +10,10 @@ date: 2020-12-27
 * Data, ML
   - Python
   - Rust
-* DevOps, DataOps, MLOps
-  - Python
-  - Go
-* K8s, Istio, Prometheus, CNCF
-  - Go
+* K8s
   - Go
 * Serverless
   - Python
-  - JavaScript
   - Go
 
 ### Rust
