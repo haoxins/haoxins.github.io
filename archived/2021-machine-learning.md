@@ -657,17 +657,23 @@ Big data                |                emphasis on data processes
 * Human level performance (HLP)
 
 ```
-Measuring Human Level Performance is useful for establishing a baseline
-using that to drive error analysis and prioritization.
+Measuring Human Level Performance is useful for
+establishing a baseline using that to drive
+error analysis and prioritization.
+
 But using it to benchmark machines and humans sometimes
-runs into problematic cases like this. I found that when my goal is
-to build a useful application, not publish a paper, you publish a paper,
+runs into problematic cases like this.
+I found that when my goal is to build a useful application,
+not publish a paper, you publish a paper,
 let's prove we can outperform people that helps published paper.
+
 But found that when my goal is to build a useful application
 rather than trying to beat Human Level Performance,
-I found it's often useful to instead try to raise Human Level Performance
-because we raise Human Level Performance by improving label consistency
-and that ultimately results in better learning outcomes performance as well.
+I found it's often useful to instead try to
+raise Human Level Performance because we raise
+Human Level Performance by improving label consistency
+and that ultimately results in better
+learning outcomes performance as well.
 ```
 
 ```
