@@ -52,7 +52,7 @@ k rollout restart deploy deploy_name
   - `"1.4"` or `1.4`
   - `v1.4`, `1.4.0` 是明确的 *String*
 
-## Argo
+### Argo
 
 ```zsh
 k port-forward svc/argocd-server \
@@ -64,7 +64,7 @@ k get secret argocd-initial-admin-secret \
   -o jsonpath="{.data.password}" | base64 -d
 ```
 
-## Grafana
+### Grafana
 
 ```zsh
 k port-forward svc/kube-prometheus-stack-grafana \
@@ -74,6 +74,55 @@ k get secret kube-prometheus-stack-grafana \
   -n monitoring \
   -o jsonpath="{.data.admin-password}" | base64 -d
 ```
+
+## Prometheus
+
+* [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator)
+* [kube-prometheus](https://github.com/prometheus-operator/kube-prometheus)
+
+```zsh
+# Whenever the Grafana dashboard doesn't provide
+# enough details we can query Prometheus directly.
+k port-forward svc/kube-prometheus-stack-prometheus \
+  -n monitoring 9090
+# Username: admin
+# Password: prom-operator
+```
+
+## Cert Manager
+
+* An **`Issuer`** is scoped to a *single namespace*,
+  and can only fulfill Certificate resources
+  within its *own namespace*.
+
+* On the other hand, a **`ClusterIssuer`** is a
+  cluster wide version of an Issuer.
+  It is able to be referenced by Certificate
+  resources in *any namespace*.
+
+
+## GCP/GKE
+
+* *Storage classes* (Default)
+
+```
+standard      kubernetes.io/gce-pd   pd-standard
+standard-rwo  pd.csi.storage.gke.io  pd-balanced
+premium-rwo   pd.csi.storage.gke.io  pd-ssd
+```
+
+* **Workload Identity**
+  - 基于 *Google Compute Engine (GCE)* `metadata service`.
+
+```zsh
+curl http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/?recursive=true \
+  --header "Metadata-Flavor: Google"
+```
+
+> - 如果报错: `Request cannot contain header: X-Forwarded-For`
+> - 十有八九: `Envoy` 的**锅**
+
+------------------
 
 ## Istio
 
@@ -160,52 +209,6 @@ k port-forward svc/jaeger-query \
 # Forwarding from 127.0.0.1:8086 -> 16686
 # Forwarding from [::1]:8086 -> 16686
 ```
-
-## Prometheus
-
-* [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator)
-* [kube-prometheus](https://github.com/prometheus-operator/kube-prometheus)
-
-```zsh
-# Whenever the Grafana dashboard doesn't provide
-# enough details we can query Prometheus directly.
-k port-forward svc/kube-prometheus-stack-prometheus \
-  -n monitoring 9090
-# Username: admin
-# Password: prom-operator
-```
-
-## Cert Manager
-
-* An **`Issuer`** is scoped to a *single namespace*,
-  and can only fulfill Certificate resources
-  within its *own namespace*.
-
-* On the other hand, a **`ClusterIssuer`** is a
-  cluster wide version of an Issuer.
-  It is able to be referenced by Certificate
-  resources in *any namespace*.
-
-## GCP/GKE
-
-* *Storage classes* (Default)
-
-```
-standard      kubernetes.io/gce-pd   pd-standard
-standard-rwo  pd.csi.storage.gke.io  pd-balanced
-premium-rwo   pd.csi.storage.gke.io  pd-ssd
-```
-
-* **Workload Identity**
-  - 基于 *Google Compute Engine (GCE)* `metadata service`.
-
-```zsh
-curl http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/?recursive=true \
-  --header "Metadata-Flavor: Google"
-```
-
-> - 如果报错: `Request cannot contain header: X-Forwarded-For`
-> - 十有八九: `Envoy` 的**锅**
 
 ------------------
 
