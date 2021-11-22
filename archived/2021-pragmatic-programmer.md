@@ -178,15 +178,15 @@ class AccountRecord extends BasicRecord with CommonFinders
   - 随机故障通常是并发问题
   - Rust ownership
 
-* 角色(Actor)与进程
+* 角色 (`Actor`) 与进程
   - 角色: 一个独立的处理单元, 具有私有状态, 收发/处理消息
   - 进程: 以角色的形式运转的虚拟处理机
 
-* 角色 (Actor)
+* 角色 (`Actor`)
   - 本地状态在角色之外无法访问
   - 消息都是单向的, no ack
   - 角色一次只处理一条消息, 直到处理完
-  - Elixir
+  - `Elixir`
 
 ```
 传统观点认为, 一旦项目到了编码阶段, 就几乎只剩一些机械工作.
