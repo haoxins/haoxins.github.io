@@ -8,6 +8,9 @@ date: 2019-10-24
 
 ### 2021-11
 
+* [扬名立万](https://movie.douban.com/subject/35422807/)
+  - 不错!
+
 * [雾山五行·犀川幻紫林 PV2](https://www.bilibili.com/bangumi/play/ss39705)
 
 * [三体 PV2](https://www.bilibili.com/bangumi/play/ep431193)
