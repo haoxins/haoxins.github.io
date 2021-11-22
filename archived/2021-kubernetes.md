@@ -106,12 +106,13 @@ k port-forward svc/kube-prometheus-stack-prometheus \
   It is able to be referenced by Certificate
   resources in *any namespace*.
 
-------------------
+### Let's Encrypt: DNS-01
 
-## DNS
-
-
-### GCP
+* [Let's Encrypt: DNS-01 challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge)
+* [GCP: Let's Encrypt DNS-01 Challenge](https://kosyfrances.com/letsencrypt-dns01/)
+  - *DNS-01 Challenge Provider* for
+    *Let's Encrypt Issuer*
+    using *Google CloudDNS*
 
 ------------------
 
