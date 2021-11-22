@@ -55,7 +55,7 @@
 * [MLOps](archived/2021-machine-learning-ops.md)
 * [Interpretable Machine Learning](archived/2021-machine-learning-interpretable.md)
 * [Linux](archived/2021-linux.md)
-* [Kubernetes stack and cases](archived/2021-kubernetes.md)
+* [Kubernetes stack, components and cases](archived/2021-kubernetes.md)
 * [Kubernetes in Action (下) - 2nd Edition](archived/2021-kubernetes-in-action-2nd-3.md)
 * [Kubernetes in Action (中) - 2nd Edition](archived/2021-kubernetes-in-action-2nd-2.md)
 * [Kubernetes in Action (上) - 2nd Edition](archived/2021-kubernetes-in-action-2nd-1.md)

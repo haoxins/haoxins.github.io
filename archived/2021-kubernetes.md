@@ -1,14 +1,12 @@
 ---
-title: Kubernetes stack and cases
+title: Kubernetes stack, components and cases
 description: 汉下白登道, 胡窥青海湾. 由来征战地, 不见有人还.
 date: 2021-08-24
 ---
 
-### Tools
+## K8s common
 
 * [kubectx + kubens](https://github.com/ahmetb/kubectx)
-
-### K8s common
 
 ```zsh
 k config get-contexts
@@ -52,7 +50,9 @@ k rollout restart deploy deploy_name
   - `"1.4"` or `1.4`
   - `v1.4`, `1.4.0` 是明确的 *String*
 
-### Argo
+------------------
+
+## Argo
 
 ```zsh
 k port-forward svc/argocd-server \
@@ -64,7 +64,9 @@ k get secret argocd-initial-admin-secret \
   -o jsonpath="{.data.password}" | base64 -d
 ```
 
-### Grafana
+------------------
+
+## Grafana
 
 ```zsh
 k port-forward svc/kube-prometheus-stack-grafana \
@@ -74,6 +76,8 @@ k get secret kube-prometheus-stack-grafana \
   -n monitoring \
   -o jsonpath="{.data.admin-password}" | base64 -d
 ```
+
+------------------
 
 ## Prometheus
 
@@ -89,6 +93,8 @@ k port-forward svc/kube-prometheus-stack-prometheus \
 # Password: prom-operator
 ```
 
+------------------
+
 ## Cert Manager
 
 * An **`Issuer`** is scoped to a *single namespace*,
@@ -100,6 +106,14 @@ k port-forward svc/kube-prometheus-stack-prometheus \
   It is able to be referenced by Certificate
   resources in *any namespace*.
 
+------------------
+
+## DNS
+
+
+### GCP
+
+------------------
 
 ## GCP/GKE
 
@@ -200,6 +214,8 @@ k get secret \
 ```zsh
 k logs -n istio-system -l app=istiod --tail=10000
 ```
+
+------------------
 
 ## Jaeger
 
