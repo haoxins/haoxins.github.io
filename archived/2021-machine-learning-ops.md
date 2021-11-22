@@ -18,6 +18,12 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/jovyan/abc.json"
 # This works
 ```
 
+### Training
+
+* `Precision = TP / (TP + FP)`
+* `Recall = TP / (TP + FN)`
+* `F1 Score = 2 / ((1 / Precision) + (1 / Recall))`
+
 ------------------
 
 # Events
