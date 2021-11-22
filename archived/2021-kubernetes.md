@@ -108,6 +108,7 @@ k port-forward svc/kube-prometheus-stack-prometheus \
 
 ### Let's Encrypt: DNS-01
 
+* [Configuring DNS01 Challenge Provider](https://cert-manager.io/docs/configuration/acme/dns01/)
 * [Let's Encrypt: DNS-01 challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge)
 * [GCP: Let's Encrypt DNS-01 Challenge](https://kosyfrances.com/letsencrypt-dns01/)
   - *DNS-01 Challenge Provider* for
