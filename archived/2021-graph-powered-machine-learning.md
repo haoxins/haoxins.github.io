@@ -571,33 +571,34 @@ date: 2021-09-12
     used to define a local density value. This
     value can be converted to an outlier score,
     with elements with higher scores considered
-    to be outliers. The basic assumption of
-    density-based outlier detection methods is
-    that the local density around a nonoutlier
-    object is similar to the local density around
-    its neighbors, whereas the local density around
-    an outlier object is significantly different
-    from the local density around its neighbors.
-    Whereas cluster-based methods partition the
-    data points, density-based methods
+    to be outliers.
+  - The basic assumption of density-based outlier
+    detection methods is that the local density
+    around a nonoutlier object is similar to the
+    local density around its neighbors, whereas
+    the local density around an outlier object
+    is significantly different from the local
+    density around its neighbors.
+  - Whereas *cluster-based* methods partition
+    the data points, density-based methods
     partition the data space.
   - **Distance-based** For each data point, the
-    *k-nearest* neighbor (k-NN) network is
+    *k-nearest* neighbor (`k-NN`) network is
     computed. The outlier score is computed by
     using the distance of a data point to its
     *k-nearest* neighbors; the data points with
-    the largest k-NN distances are marked as
-    outliers. Distance-based algorithms
+    the largest `k-NN` distances are marked as
+    outliers. *Distance-based* algorithms
     typically perform better than the other
     methods presented here because they have
-    higher granularity. In both clustering
-    and density-based methods, the data is
-    aggregated before outlier analysis by
-    partitioning the points or the data space,
+    higher granularity.
+  - In both *clustering* and *density-based* methods,
+    the data is aggregated before outlier analysis
+    by partitioning the points or the data space,
     and the individual data points are compared
     with those distributions for analysis.
-    In distance-based methods, the outlier
-    score is based on the k-NN distance to the
+  - In *distance-based* methods, the outlier
+    score is based on the `k-NN` distance to the
     original data points. This greater
     granularity often comes at a significant
     computational cost, but that cost can be
