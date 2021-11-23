@@ -22,3 +22,14 @@ date: 2021-09-12
 * In contrast, a *data structure*, which is a concrete
   representation of data, is described from
   the point of view of an implementer, not a user.
+
+```
+NP-complete problems are a set of problems for which
+any given solution can be verified quickly (in polynomial time),
+but there is no known efficient way to
+locate a solution in the first place.
+
+NP-complete problems, by definition, can't currently be
+solved in polynomial time
+on a classical deterministic machine.
+```
