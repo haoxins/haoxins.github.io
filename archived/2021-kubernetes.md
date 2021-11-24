@@ -235,8 +235,14 @@ k port-forward svc/jaeger-query \
 * 更新 `Secrets` 之后, 最好 `Delete` *相关的* `Pods`
   - 否则不会立即生效
 
-* **GKE**: 2021-09: Updates `default`
-    kubectl from `1.18` to `1.20`.
+* **Jaeger**: 2021-11
+  - 把自己的 K8s 上的 **Jaeger** *storage backend* 从
+    **Cassandra** 切换到了 **Elasticsearch**
+  - The *Jaeger* team recommends *Elasticsearch*
+    as the storage backend over *Cassandra*
+
+* **GKE**: 2021-09
+  - Updates `default` kubectl from `1.18` to `1.20`.
 
 ```zsh
 # Default namespaces
@@ -248,8 +254,8 @@ kube-system
 
 ### Istio
 
-* `Connection reset by peer`
+* *Connection reset by peer*
   - `EnvoyFilter`
   - `LISTENER`
-* `upstream connect error or disconnect/reset before headers`
+* *upstream connect error or disconnect/reset before headers*
   - `AuthorizationPolicy`
