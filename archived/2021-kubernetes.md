@@ -252,6 +252,12 @@ kube-public
 kube-system
 ```
 
+### Cert Manager
+
+* **ClusterIssuer** 的
+  `.spec.acme.solvers.dns01.cloudDNS.serviceAccountSecretRef`
+  需要与 **Certificate** 在同一个 **Namespace**
+
 ### Istio
 
 * *Connection reset by peer*
