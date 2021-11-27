@@ -12,6 +12,11 @@ date: 2018-04-01
 
 ### 2021
 
+* [一说万物: 现代物理学百年漫谈](https://book.douban.com/subject/35607839/)
+  - 支持国产科普
+  - 并无特别的亮点
+  - 个人角度而言: 不如, **量子信息简话**
+
 * [人间词话 - 叶嘉莹讲评本](https://book.douban.com/subject/35616606/)
 
 * [量子信息简话](https://book.douban.com/subject/35654033/)
