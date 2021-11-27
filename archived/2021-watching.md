@@ -10,9 +10,15 @@ date: 2019-10-24
 
 ### 2021-11
 
+* 重温 [寒战](https://movie.douban.com/subject/6890730/)
+  - 不错
+
+* [不速来客](https://movie.douban.com/subject/34927916/)
+  - 一般
+
 * [新·福音战士剧场版: 终](https://movie.douban.com/subject/10428501/)
-  - 一般般, 混杂着宗教, 神秘主义, 内心矛盾, 曲解一些量子力学名词
-  - 已经没有中学时, 看 EVA 的那种感觉了
+  - *一般般*, 一点点宗教文化, 神秘主义, 内心矛盾, 曲解一些量子力学名词
+  - 已经没有中学时, 看 **EVA** 的那种感觉了
 
 * [扬名立万](https://movie.douban.com/subject/35422807/)
   - 不错!
