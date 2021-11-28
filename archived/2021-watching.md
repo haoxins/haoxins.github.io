@@ -10,7 +10,9 @@ date: 2019-10-24
 
 ### 2021-11
 
+* 重温 [无双](https://movie.douban.com/subject/26425063/)
 
+* 重温 [寒战2](https://movie.douban.com/subject/20505982/)
 
 * 重温 [寒战](https://movie.douban.com/subject/6890730/)
   - 不错
