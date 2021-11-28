@@ -295,6 +295,7 @@ the results of groupings are emitted as panes.
 
 ### Events
 
+
 * 市场研究机构 Canalys 公布的数据显示, 截止 2020 年 Q4,
   在全球云服务市场, 排名前四的是*亚马逊云服务* (AWS) ,
   *微软* Azure, *谷歌云* (Google Cloud) 和*阿里云*.
