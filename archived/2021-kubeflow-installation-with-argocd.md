@@ -37,7 +37,7 @@ gcloud container clusters create $CLUSTER_NAME \
   --project=$PROJECT_ID \
   --workload-pool=$PROJECT_ID.svc.id.goog \
   --machine-type=n1-standard-4 \
-  --enable-autoscaling --min-nodes 1 --max-nodes 99 \
+  --enable-autoscaling --min-nodes 3 --max-nodes 99 \
   --scopes compute-rw,gke-default,storage-rw \
   --num-nodes=3 \
   --zone=$CLUSTER_ZONE
