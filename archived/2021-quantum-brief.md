@@ -48,13 +48,13 @@ date: 2021-11-19
   和
   $$ |-\rangle $$
   就是它们的叠加态.
-  - 对于
-    $$ |+\rangle $$
-    来说,
+* 对于
+  $$ |+\rangle $$
+  来说,
   - `a = b = 1/√2`
-  - 对
-    $$ |-\rangle $$
-    来说,
+* 对
+  $$ |-\rangle $$
+  来说,
   - `a = 1/√2`, `b = -1/√2`
 * $$ |+\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}} $$
 * $$ |-\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}} $$
