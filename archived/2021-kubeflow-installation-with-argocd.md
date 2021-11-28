@@ -41,6 +41,8 @@ gcloud container clusters create $CLUSTER_NAME \
   --scopes compute-rw,gke-default,storage-rw \
   --num-nodes=3 \
   --zone=$CLUSTER_ZONE
+# Why --min-nodes 3
+# Some components need HA as default.
 ```
 
 > 基本是最低资源配置了 :)
