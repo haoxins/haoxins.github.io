@@ -86,7 +86,7 @@ date: 2021-11-19
   和
   $$ |1\rangle $$,
   那么它也能处于任何一个
-  $$ a |0\rangle + b|1\rangle $$,
+  $$ a|0\rangle + b|1\rangle $$,
   这样的状态称为叠加态 (superposition state).
   - 这里的 `a` 和 `b` 是两个数, 它们可以取任何值.
     对它们唯一的限制, 就是它们绝对值的平方和等于 `1`,
