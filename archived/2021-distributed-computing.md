@@ -295,6 +295,7 @@ the results of groupings are emitted as panes.
 
 ### Events
 
+* [X.1011: Guidelines for continuous protection of the service access process](https://www.itu.int/rec/T-REC-X.1011-202110-I)
 
 * 市场研究机构 Canalys 公布的数据显示, 截止 2020 年 Q4,
   在全球云服务市场, 排名前四的是*亚马逊云服务* (AWS) ,
