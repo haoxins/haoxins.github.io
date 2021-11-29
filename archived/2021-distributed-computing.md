@@ -378,6 +378,34 @@ Kubernetes Network Policy logging to Google Kubernetes Engine (GKE).
 
 ### Dapr
 
+* [Dapr (Distributed Application Runtime) joins CNCF Incubator](https://www.cncf.io/blog/2021/11/03/dapr-distributed-application-runtime-joins-cncf-incubator/)
+
+```
+"Distributed applications and microservices form the basis
+for containers and cloud native, but writing distributed
+applications that are scalable and reliable can be
+incredibly difficult," said Chris Aniszczyk, CTO of CNCF.
+
+"Dapr integrates well with other CNCF projects and provides
+best practices that developers can build on top of using
+any language or framework. We're excited to welcome Dapr to
+the CNCF and work to cultivate their community."
+
+The Dapr project roadmap includes the addition of a new
+Configuration API that makes it easier for developers to
+manage configuration for their applications and get notified
+whenever configurations change, as well as a Query API that
+makes it easier for developers to query and filter data in
+Dapr state stores.
+
+In addition, the project is looking to add support for gRPC
+and WASM-based components that'll allow dynamic discoverability
+of state stores, pub/sub brokers, bindings, and other
+Dapr components. Finally, new Concurrency APIs will unblock
+scenarios such as leader election are also being discussed
+in the Dapr community.
+```
+
 * [Dapr 1.3.0](https://github.com/dapr/dapr/releases/tag/v1.3.0)
   - Setup VS Code development in a containerized environment
     and use this in GitHub Codespaces for
