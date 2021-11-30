@@ -21,6 +21,9 @@ date: 2021-07-23
   *deployment* is `ml-pipeline-ui`.
 
 * [Multi-User mode](https://www.kubeflow.org/docs/components/pipelines/sdk/connect-api/#multi-user-mode)
+  - Kubeflow Pipelines **multi-user** support is not available
+    in **standalone**, because **multi-user** support depends
+    on other Kubeflow components.
 
 * From `1.7.0`
   - [Use argo emissary executor by default](https://argoproj.github.io/argo-workflows/workflow-executors/#emissary-emissary)
