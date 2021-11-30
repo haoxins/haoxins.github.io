@@ -56,7 +56,8 @@ k rollout restart deploy deploy_name
 
 ```zsh
 k port-forward svc/argocd-server \
-  -n argocd 8080:80
+  -n argocd 8080:443
+
 # Username: admin
 # Get password
 k get secret argocd-initial-admin-secret \
