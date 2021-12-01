@@ -12,6 +12,8 @@ date: 2018-04-01
 
 ### 2021
 
+* [Parallel and High Performance Computing](https://www.manning.com/books/parallel-and-high-performance-computing)
+
 * [一说万物: 现代物理学百年漫谈](https://book.douban.com/subject/35607839/)
   - 支持国产科普
   - 并无特别的亮点

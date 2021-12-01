@@ -41,6 +41,7 @@
 * [通向实在之路 (下)](archived/2021-physics-road-to-reality-2.md)
 * [通向实在之路 (上)](archived/2021-physics-road-to-reality-1.md)
 * [卡洛·罗韦利 Carlo Rovelli 系列作品](archived/2021-physics-carlo-rovelli.md)
+* [Parallel and High Performance Computing](archived/2021-parallel-high-perf-computing.md)
 * [不求甚解地了解点 - 数学](archived/2021-math.md)
 * [图灵的秘密 & 集异璧之大成 (哥德尔)](archived/2021-math-turing-and-godel.md)
 * [基础拓扑学 修订版](archived/2021-math-topology.md)
