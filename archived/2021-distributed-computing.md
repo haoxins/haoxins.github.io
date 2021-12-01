@@ -296,6 +296,14 @@ the results of groupings are emitted as panes.
 ### Events
 
 * [X.1011: Guidelines for continuous protection of the service access process](https://www.itu.int/rec/T-REC-X.1011-202110-I)
+  - **Authentication**: Formalized process of verification that,
+    if successful, results in an authenticated
+    identity for an entity.
+  - Use of the term *authentication* in an
+    identity management (**IdM**) context is
+    taken to mean *entity authentication*.
+  - **Authorization**: The granting of rights and,
+    based on these rights, the granting of access.
 
 * 市场研究机构 Canalys 公布的数据显示, 截止 2020 年 Q4,
   在全球云服务市场, 排名前四的是*亚马逊云服务* (AWS) ,
