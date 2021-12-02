@@ -115,6 +115,7 @@ k port-forward svc/kube-prometheus-stack-prometheus \
   - *DNS-01 Challenge Provider* for
     *Let's Encrypt Issuer*
     using *Google CloudDNS*
+  - https://letsencrypt.org/docs/rate-limits/
 
 ------------------
 
@@ -257,7 +258,7 @@ kube-system
 
 * **ClusterIssuer** 的
   `.spec.acme.solvers.dns01.cloudDNS.serviceAccountSecretRef`
-  需要与 **Certificate** 在同一个 **Namespace**
+  需要与 **Cert Manager** 在同一个 **Namespace**
 
 ### Istio
 
