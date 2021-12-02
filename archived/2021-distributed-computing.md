@@ -295,6 +295,12 @@ the results of groupings are emitted as panes.
 
 ### Events
 
+* [gRPC Proxyless Service Mesh](https://istio.io/latest/blog/2021/proxyless-grpc/)
+  - Introduction to Istio support for gRPC's
+    proxyless service mesh features.
+  - Istio 1.11 adds experimental support for
+    adding gRPC services directly to the mesh.
+
 * [X.1011: Guidelines for continuous protection of the service access process](https://www.itu.int/rec/T-REC-X.1011-202110-I)
   - **Authentication**: Formalized process of verification that,
     if successful, results in an authenticated
