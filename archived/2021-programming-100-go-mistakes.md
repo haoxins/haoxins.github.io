@@ -835,3 +835,61 @@ func concat(ids []string) string {
   returns a `byte[]`, be it while doing IO or else,
   we should first check whether we could implement
   the whole workflow without extra conversions.
+
+## Functions and Methods
+
+* In Go, we can attach to a method either
+  a value or a pointer receiver. With
+  a value receiver, Go makes a copy of the value
+  and passes it to the method. Any changes to the
+  object will remain local to the method.
+  The original object will remain unchanged.
+
+```go
+type customer struct {
+  balance float64
+}
+
+func (c customer) add(v float64) {
+  c.balance += v
+}
+
+func main() {
+  c := customer{balance: 100.}
+  c.add(50.)
+  fmt.Printf("balance: %.2f\n", c.balance)
+  // balance: 100.00
+}
+```
+
+* On the other side, with a pointer receiver,
+  Go passes the address of an object to the method.
+  Any modifications on the receiver will be done
+  on the original object directly.
+
+
+```go
+type customer struct {
+  data *data
+}
+
+type data struct {
+  balance float64
+}
+
+func (c customer) add(operation float64) {
+  c.data.balance += operation
+}
+
+func main() {
+  c := customer{data: &data{
+    balance: 100,
+  }}
+  c.add(50.)
+  fmt.Printf("balance: %.2f\n", c.data.balance)
+  // balance: 150.00
+}
+```
+
+> - In this case, what should we use, a **pointer** or
+    a **value** receiver? There's no hard rule here.
