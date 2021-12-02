@@ -839,11 +839,12 @@ func concat(ids []string) string {
 ## Functions and Methods
 
 * In Go, we can attach to a method either
-  a value or a pointer receiver. With
-  a value receiver, Go makes a copy of the value
-  and passes it to the method. Any changes to the
-  object will remain local to the method.
-  The original object will remain unchanged.
+  a value or a pointer receiver. With a
+  value receiver, Go makes a **copy** of the
+  value and passes it to the method.
+  - Any changes to the object will remain
+    local to the method.
+  - The original object will remain unchanged.
 
 ```go
 type customer struct {
@@ -867,6 +868,33 @@ func main() {
   Any modifications on the receiver will be done
   on the original object directly.
 
+* A receiver **must** be a **pointer**:
+  - If the method needs to *mutate* the receiver.
+    This rule is also valid if the receiver is a
+    `slice` and a method needs to append elements.
+  - If the method receiver is a struct containing a
+    `sync` field. `sync` is the Go package providing
+    synchronization primitives such as `mutexes`.
+* A receiver **should** be a **pointer**:
+  - If the receiver is a *large object*, a pointer
+    receiver should be used as doing a copy would be
+    less efficient.
+* A receiver **must** be a **value**:
+  - If we have to enforce a receiver's
+    *immutability*.
+  - If the receiver is a `map`, a `function`,
+    or a `channel`; otherwise, it leads to
+    a compilation error.
+* A receiver **should** be a **value**:
+  - If the receiver is a `slice` that
+    *doesn't* have to be *mutated*.
+  - If the receiver is a *basic type*. As
+    passing a value receiver uses on-stack copy
+    instead of heap allocation, it will reduce
+    GC's work.
+  - If the receiver is *not a large object* and
+    none of the conditions for using
+    a pointer were met.
 
 ```go
 type customer struct {
