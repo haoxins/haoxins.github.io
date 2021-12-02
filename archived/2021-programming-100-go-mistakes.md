@@ -1028,6 +1028,39 @@ func main() {
     the potential changes to the variable
     referenced by the pointer will be visible.
 
+```go
+func main() {
+  s := Struct{id: "foo"}
+  defer s.print()
+  s.id = "bar"
+}
+
+type Struct struct {
+  id string
+}
+
+func (s Struct) print() {
+  fmt.Println(s.id)
+  // foo
+}
+```
+
+```go
+func main() {
+  s := &Struct{id: "foo"}
+  defer s.print()
+  s.id = "bar"
+}
+
+type Struct struct {
+  id string
+}
+
+func (s *Struct) print() {
+  fmt.Println(s.id)
+  // bar
+}
+```
 
 * The `s` pointer is also evaluated immediately
   while calling `defer`. However, this pointer
