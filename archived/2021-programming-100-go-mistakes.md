@@ -921,3 +921,73 @@ func main() {
 
 > - In this case, what should we use, a **pointer** or
     a **value** receiver? There's no hard rule here.
+
+* **Never** using *named result parameters*
+  - When a result parameter is named, it's
+    initialized to its **zero** value when the
+    `function/method` begins.
+  - Also, with named result parameters, we can
+    call an *empty return statement* without
+    arguments.
+
+* Unintended *side-effects* with named result parameters
+
+```go
+type Customer struct {
+  Age  int
+  Name string
+}
+
+type MultiError struct {
+  errs []string
+}
+
+func (m *MultiError) Add(err error) {
+  m.errs = append(m.errs, err.Error())
+}
+
+func (m *MultiError) Error() string {
+  return strings.Join(m.errs, ";")
+}
+func (c Customer) Validate() error {
+  var m *MultiError
+
+  if c.Age < 0 {
+    if m == nil {
+      m = &MultiError{}
+    }
+    m.Add(errors.New("age is negative"))
+  }
+  if c.Name == "" {
+    if m == nil {
+      m = &MultiError{}
+    }
+    m.Add(errors.New("name is nil"))
+  }
+
+  return m
+}
+
+func main() {
+  customer := Customer{Age: 33, Name: "John"}
+  if err := customer.Validate(); err != nil {
+    log.Fatalf("customer is invalid: %v", err)
+  }
+  // customer is invalid: <nil>
+}
+```
+
+* We have to know that in Go, a
+  pointer receiver **can** be `nil`.
+  - Therefore, a `nil` pointer is
+    a valid receiver.
+* But why is a `nil` pointer valid?
+  - In Go, a method is just syntactic sugar for
+    a function whose first parameter would be
+    the receiver.
+
+* When we have to return an `interface`, we
+  *should not* return a `nil` pointer but a
+  `nil` value directly.
+* In general, having a `nil` pointer is not
+  a desirable state and means a probable bug.
