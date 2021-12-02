@@ -949,6 +949,7 @@ func (m *MultiError) Add(err error) {
 func (m *MultiError) Error() string {
   return strings.Join(m.errs, ";")
 }
+
 func (c Customer) Validate() error {
   var m *MultiError
 
@@ -991,3 +992,52 @@ func main() {
   `nil` value directly.
 * In general, having a `nil` pointer is not
   a desirable state and means a probable bug.
+
+---
+
+* Let's see a concrete use case when receiving
+  an `io.Reader` type instead of a
+  *filename* is considered a best practice.
+  - For each *unit test*, it will require creating
+    a file within our Go project. The more complex
+    the function is, the more cases we may want
+    to add, and the more files we will
+    have to create.
+  - One may also criticize the fact that this
+    function is not reusable.
+
+---
+
+* There's something crucial to understand
+  with arguments evaluation in a `defer` function:
+  - the arguments are **evaluated right away**,
+    not once the surrounding function returns.
+* Calling as a `defer` statement a closure.
+  - As a reminder, a closure is a function value that
+    references variables from outside its body.
+  - The arguments passed to a `defer` function are
+    evaluated right away. Yet, we must know that the
+    variables referenced by a `defer` closure are
+    evaluated during the closure execution.
+
+* When we use `defer` on a method, the same logic
+  related to arguments evaluation applies.
+  - With a **value** receiver, the receiver
+    is evaluated immediately.
+  - Conversely, if the receiver is a **pointer**,
+    the potential changes to the variable
+    referenced by the pointer will be visible.
+
+
+* The `s` pointer is also evaluated immediately
+  while calling `defer`. However, this pointer
+  references a struct that mutates before the
+  surrounding function returns.
+  - Hence, this example prints `bar`.
+* In summary, we have to remind that calling
+  `defer` on a function or method, the call’s
+  arguments are *evaluated immediately*.
+  - For a method, the receiver is also
+    *evaluated immediately*. If we want to
+    delay the evaluation, it can be done
+    either using *pointers* or *closures*.
