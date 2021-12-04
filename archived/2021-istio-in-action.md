@@ -107,7 +107,7 @@ date: 2021-08-04
   implement powerful *access-control policies*.
 
 * What are the drawbacks to using a service mesh?
-  - for someone unfamiliar with operating Envoy,
+  - For someone unfamiliar with operating Envoy,
     this could look very complex and
     inhibit existing debugging practices.
   - Another drawback of using a service mesh
@@ -116,10 +116,11 @@ date: 2021-08-04
     running in the mesh. That is, the more services
     in the mesh the more valuable the mesh becomes
     to operating those services.
-    However, without *proper policy*, *automation*, and *forethought*
-    going into the tenancy and isolation models of
-    the physical mesh deployment, you could end up in a situation
-    where mis-configuring the mesh impacts many services.
+  - However, without *proper policy*, *automation*,
+    and *forethought* going into the tenancy and
+    isolation models of the physical mesh deployment,
+    you could end up in a situation where
+    mis-configuring the mesh impacts many services.
 
 ## First steps with Istio
 
