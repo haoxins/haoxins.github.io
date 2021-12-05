@@ -1972,6 +1972,36 @@ spec:
   externalName: worldtimeapi.org
 ```
 
+* In addition to setting the type to `ExternalName`,
+  the service manifest must also specify in the
+  `externalName` field external name to which
+  this service resolves.
+  - No `Endpoints` or `EndpointSlice` object is
+    required for `ExternalName` services.
+* After the service is created, pods can connect to
+  the external service using the domain name
+  `time-api.<namespace>.svc.cluster.local`
+  - or `time-api` if they're in the
+    same namespace as the service
+  - instead of using the actual FQDN of the
+    external service.
+* Because `ExternalName` services are implemented
+  at the DNS level (only a CNAME record is created
+  for the service), clients don't connect to the
+  service through the cluster IP, as is the case
+  with non-headless ClusterIP services.
+  - They connect directly to the external service.
+  - Like headless services, `ExternalName` services
+    have no cluster IP.
+
+* If pods provide a service that's tied in some way
+  to the node on which the pod is running, you must
+  ensure that client pods running on a particular
+  node connect only to the endpoints on the same node.
+  - You can do this by creating a Service with the
+    `internalTrafficPolicy` set to `Local`.
+
+* As with **liveness** probes, Kubernetes supports
 ## Deploying applications using Deployments
 
 ## Deploying stateful applications using StatefulSets
