@@ -1786,6 +1786,39 @@ metadata:
     to access the service through the load balancer.
   - Not supported by all load balancer controllers.
 
+* Both the additional network hop problem and
+  the source IP obfuscation problem can be solved
+  by preventing nodes from forwarding traffic to
+  pods that aren't running on the same node.
+* This is done by setting the **`externalTrafficPolicy`**
+  field in the Service object's spec field to Local.
+  This way, a node forwards external traffic only to
+  pods running on the node that received the connection.
+
+* `healthCheckNodePort`
+  - The external load balancer uses this node port to
+    check whether a node contains endpoints for the
+    service or not.
+  - This allows the load balancer to forward traffic
+    only to nodes that have such a pod.
+
+* When `externalTrafficPolicy` is set to `Cluster`,
+  each node forwards traffic to all pods in the system.
+  - Traffic is split evenly between the pods.
+  - Additional network hops are required, and
+    the client IP is obfuscated.
+* When the `externalTrafficPolicy` is set to `Local`,
+  all traffic arriving at node `A` is forwarded to
+  the single pod on that node.
+  - This means that this pod receives `50%` of all traffic.
+  - Traffic arriving at node `B` is split between two pods.
+    Each pod receives `25%` of the total traffic processed
+    by the load balancer.
+  - There are no unnecessary network hops, and the
+    source IP is that of the client.
+
+> - The shorthand for `endpoints` is `ep`.
+
 ## Deploying applications using Deployments
 
 ## Deploying stateful applications using StatefulSets
