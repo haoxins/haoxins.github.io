@@ -259,6 +259,7 @@ kube-system
 * **ClusterIssuer** 的
   `.spec.acme.solvers.dns01.cloudDNS.serviceAccountSecretRef`
   需要与 **Cert Manager** 在同一个 **Namespace**
+  - 比如 *Cert Manager* 默认的 `ns`: `cert-manager`
 
 ### Istio
 

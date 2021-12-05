@@ -1717,8 +1717,20 @@ metadata:
 * Kubernetes supports several types of **services**:
   - `ClusterIP` (**default**):
     only used **internally**, within the cluster.
-  - `NodePort`,
-  - `LoadBalancer`,
+  - `NodePort`: Like a ClusterIP service, a NodePort
+    service is accessible through its internal
+    cluster IP, but also through the node port on
+    *each of the cluster nodes*.
+  - It doesn't matter which node a client connects
+    to because all the nodes will forward the
+    connection to a pod that belongs to the service,
+    regardless of which node is running the pod.
+  - `LoadBalancer`: The LoadBalancer service type is
+    an *extension of the NodePort type*, which makes
+    the service accessible through these node ports.
+  - Not all Kubernetes clusters support this type
+    of service, but if your cluster runs in the cloud,
+    it almost certainly does.
   - and `ExternalName`.
 
 ## Deploying applications using Deployments
