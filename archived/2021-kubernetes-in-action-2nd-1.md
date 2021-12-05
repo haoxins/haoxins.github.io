@@ -1679,6 +1679,48 @@ metadata:
 
 ## Exposing Pods with Services and Ingresses
 
+* Each pod has its own network interface with
+  its own IP address. All pods in the cluster
+  are connected by a single private network
+  with a flat address space.
+* Even if the nodes hosting the pods are
+  geographically dispersed with many network routers
+  in between, the pods can communicate over their
+  own flat network where no NAT
+  (Network Address Translation)
+  is required.
+  - This pod network is typically a software-defined
+    network that's layered on top of the actual
+    network that connects the nodes.
+* When a pod sends a network packet to another pod,
+  neither SNAT (Source NAT) nor DNAT (Destination NAT)
+  is performed on the packet.
+  - This means that the source IP and port,
+    and the destination IP and port, of packets
+    exchanged directly between pods are never changed.
+  - If the sending pod knows the IP address of the
+    receiving pod, it can send packets to it.
+  - The receiving pod can see the sender's IP as
+    the source IP address of the packet.
+* Therefore, the communication between two pods
+  is always the same, regardless of whether the pods are
+  running on the same node or on nodes located in
+  different geographic regions.
+* The containers in the pods can communicate with
+  each other over the flat NAT-less network, like
+  computers on a local area network (LAN) connected
+  to a single network switch.
+  - From the perspective of the applications, the
+    actual network topology between
+    the nodes isn't important.
+
+* Kubernetes supports several types of **services**:
+  - `ClusterIP` (**default**):
+    only used **internally**, within the cluster.
+  - `NodePort`,
+  - `LoadBalancer`,
+  - and `ExternalName`.
+
 ## Deploying applications using Deployments
 
 ## Deploying stateful applications using StatefulSets
