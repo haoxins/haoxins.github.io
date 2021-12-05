@@ -1826,6 +1826,7 @@ metadata:
   - Each time a new pod appears or disappears that matches
     the Service's label selector, Kubernetes updates the
     **Endpoints** object to add or remove the endpoint
+    associated with the pod.
   - You can also manage a service's endpoints manually.
 * While an **Endpoints** object contains multiple
   endpoint subsets, each **EndpointSlice** contains only one.
@@ -1912,6 +1913,65 @@ metadata:
   the `clusterIP` field to `None`.
 
 ```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: quote-headless
+spec:
+  clusterIP: None
+  selector:
+    app: quote
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+    protocol: TCP
+```
+
+* Because the service doesn't have a cluster IP,
+  the DNS server can't return it when you try to
+  resolve the service name.
+  - Instead, it returns the IP addresses of the pods.
+
+* The difference is that with a headless service
+  you connect directly to the pod IP, while with
+  regular services you connect to the cluster IP
+  of the service, and your connection is
+  forwarded to one of the pods.
+* To conclude this section on headless services,
+  I'd like to mention that services with manually
+  configured endpoints
+  (services without a label selector)
+  can also be headless.
+  - If you omit the label selector and set the
+    `clusterIP` to `None`, the DNS will return an
+    `A/AAAA` record for each endpoint, just as
+    it does when the service endpoints are pods.
+* In Kubernetes, you add `CNAME` records to DNS
+  by creating a `Service` object, just as you do
+  for A and AAAA records.
+  - A CNAME record is a DNS record that maps an
+    alias to an existing DNS name
+    instead of an IP address.
+
+---
+
+* To create a service that serves as an alias
+  for an existing service, whether it exists
+  inside or outside the cluster, you create a
+  `Service` object whose type field is set
+  to `ExternalName`.
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: time-api
+spec:
+  type: ExternalName
+  externalName: worldtimeapi.org
+```
+
 ## Deploying applications using Deployments
 
 ## Deploying stateful applications using StatefulSets
