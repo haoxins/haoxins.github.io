@@ -1819,6 +1819,99 @@ metadata:
 
 > - The shorthand for `endpoints` is `ep`.
 
+* You didn't create any of the three **Endpoints** objects.
+  They were created by Kubernetes when you created the
+  associated **Service** objects.
+  - These objects are fully managed by Kubernetes.
+  - Each time a new pod appears or disappears that matches
+    the Service's label selector, Kubernetes updates the
+    **Endpoints** object to add or remove the endpoint
+  - You can also manage a service's endpoints manually.
+* While an **Endpoints** object contains multiple
+  endpoint subsets, each **EndpointSlice** contains only one.
+  - If two groups of pods expose the service on
+    different ports, they appear in two different
+    **EndpointSlice** objects.
+  - Also, an **EndpointSlice** object supports a maximum
+    of `1000` endpoints, but by default Kubernetes only
+    adds up to `100` endpoints to each slice. The number
+    of ports in a slice is also limited to `100`.
+  - Therefore, a service with hundreds of endpoints or
+    many ports can have multiple **EndpointSlices**
+    objects associated with it.
+* Like **Endpoints**, **EndpointSlices** are
+  created and managed automatically.
+* You'll notice that unlike **Endpoints** objects,
+  whose names match the names of their respective
+  Service objects, each **EndpointSlice** object
+  contains a randomly generated suffix after the
+  service name.
+  - This way, many **EndpointSlice** objects
+    can exist for each service.
+
+---
+
+* The creation of the `Service` and its associated
+  `Endpoints` object allows pods to use this
+  service in the same way as other
+  services defined in the cluster.
+* By changing the existing `Service` object, the
+  cluster IP address of the service
+  remains constant.
+* You know that a service is assigned an internal
+  cluster IP address that pods can resolve through
+  the cluster DNS.
+  - This is because each service gets an A record
+    in DNS (or an AAAA record for IPv6).
+  - However, a service also receives an SRV record
+    for each of the ports it makes available.
+* A service provides one or more ports. Each port
+  is given an SRV record in DNS.
+* A smart client running in a pod could look up
+  the SRV records of a service to find out what
+  ports are provided by the service.
+
+---
+
+* Services expose a set of pods at a stable
+  IP address. Each connection to that IP address
+  is forwarded to a random `pod` or other `endpoint`
+  that backs the service.
+  - Connections to the service are automatically
+    distributed across its endpoints.
+  - But what if you want the client to do the
+    load balancing?
+  - What if the client needs to decide which
+    pod to connect to? Or what if it needs to
+    connect to all pods that back the service?
+  - What if the pods that are part of a service
+    all need to connect directly to each other?
+  - Connecting via the service's cluster IP
+    clearly isn't the way to do this. What then?
+* Instead of connecting to the service IP,
+  clients could get the pod IPs from the
+  `Kubernetes API`, but it's better to keep them
+  `Kubernetes-agnostic` and use standard
+  mechanisms like DNS.
+  - Fortunately, you can configure the internal
+    DNS to return the pod IPs instead of the
+    service's cluster IP by creating
+    a **headless service**.
+* For **headless services**, the cluster DNS
+  returns not just a single A record pointing to
+  the service's cluster IP, but multiple A records,
+  one for each pod that's part of the service.
+  - Clients can therefore query the DNS to get the
+    IPs of all the pods in the service.
+  - With this information, the client can then
+    connect directly to the pods.
+
+---
+
+* To create a headless service, you set
+  the `clusterIP` field to `None`.
+
+```yaml
 ## Deploying applications using Deployments
 
 ## Deploying stateful applications using StatefulSets
