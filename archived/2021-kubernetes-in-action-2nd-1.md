@@ -2002,6 +2002,19 @@ spec:
     `internalTrafficPolicy` set to `Local`.
 
 * As with **liveness** probes, Kubernetes supports
+  three types of **readiness** probes:
+  - An `exec` probe executes a process in
+    the container. The exit code used to terminate
+    the process determines whether the container
+    is ready or not.
+  - An `httpGet` probe sends a `GET` request to the
+    container via HTTP or HTTPS. The response code
+    determines the container's readiness status.
+  - A `tcpSocket` probe opens a TCP connection to a
+    specified port on the container. If the
+    connection is established, the container
+    is considered ready.
+
 ## Deploying applications using Deployments
 
 ## Deploying stateful applications using StatefulSets
