@@ -1733,6 +1733,59 @@ metadata:
     it almost certainly does.
   - and `ExternalName`.
 
+* You can configure whether the service should
+  forward each connection to a different pod,
+  or whether it should forward all connections
+  from the same client to the same pod.
+  - You do this via the `spec.sessionAffinity`
+    field in the Service object.
+  - Only two types of service session affinity
+    are supported: `None` and `ClientIP`.
+
+* This **internal DNS** allows pods to resolve
+  the `cluster IP` address of a **service**
+  through its **name**.
+* A pod can resolve any service defined in the
+  *same namespace* as the pod by simply pointing
+  to *the name of the service* in the URL.
+* If a pod needs to connect to a service in a
+  *different namespace*, it must **append** the
+  *namespace* of the Service object to the URL.
+  - For example, to connect to the `quiz` *service*
+    in the `kiada` *namespace*, a pod can use the URL
+    `http://quiz.kiada/` regardless of which
+    namespace it's in.
+
+* A service is resolvable under the following DNS names:
+  - `<service-name>`, if the service is in the
+    same namespace as the pod performing the DNS lookup,
+  - `<service-name>.<service-namespace>` from any
+    namespace, but also under
+  - `<service-name>.<service-namespace>.svc`, and
+  - `<service-name>.<service-namespace>.svc.cluster.local`.
+  - The default *domain suffix* is `cluster.local` but
+    can be changed at the cluster level.
+  - The reason you don't need to specify the fully
+    qualified domain name (FQDN) when resolving the
+    service through DNS is because of the search
+    line in the pod's `/etc/resolv.conf` file.
+
+* The nameserver in the pod's `resolv.conf` file
+  points to the `kube-dns` service in
+  the `kube-system` namespace.
+
+* Most cloud providers support `LoadBalancer` services
+  in their clusters, whereas clusters deployed on
+  premises require an add-on such as MetalLB,
+  a load-balancer implementation for
+  bare-metal Kubernetes clusters.
+
+* **`loadBalancerSourceRanges`**
+  - `[]string`
+  - Restricts the client IPs that are allowed
+    to access the service through the load balancer.
+  - Not supported by all load balancer controllers.
+
 ## Deploying applications using Deployments
 
 ## Deploying stateful applications using StatefulSets
