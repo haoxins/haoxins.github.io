@@ -78,8 +78,6 @@ k get secret kube-prometheus-stack-grafana \
   -o jsonpath="{.data.admin-password}" | base64 -d
 ```
 
-------------------
-
 ## Prometheus
 
 * [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator)
@@ -92,6 +90,15 @@ k port-forward svc/kube-prometheus-stack-prometheus \
   -n monitoring 9090
 # Username: admin
 # Password: prom-operator
+```
+
+## Jaeger
+
+```zsh
+k port-forward svc/jaeger-query \
+  -n istio-system 8086:80
+# Forwarding from 127.0.0.1:8086 -> 16686
+# Forwarding from [::1]:8086 -> 16686
 ```
 
 ------------------
@@ -217,17 +224,6 @@ k get secret \
 
 ```zsh
 k logs -n istio-system -l app=istiod --tail=10000
-```
-
-------------------
-
-## Jaeger
-
-```zsh
-k port-forward svc/jaeger-query \
-  -n istio-system 8086:80
-# Forwarding from 127.0.0.1:8086 -> 16686
-# Forwarding from [::1]:8086 -> 16686
 ```
 
 ------------------
