@@ -22,15 +22,19 @@ date: 2021-02-17
 # -k, --insecure
 #   Allow insecure server connections when using SSL
 
-curl https://dashboard.kubeflow.awx.im \
-  --resolve dashboard.kubeflow.awx.im:443:127.0.0.1
+curl https://dashboard.awx.im \
+  --resolve dashboard.awx.im:443:127.0.0.1
 
-curl -H "Host: dashboard.kubeflow.awx.im" \
+curl -H "Host: dashboard.awx.im" \
   https://localhost:8443
+```
 
-nc -zv -w 3 dashboard.kubeflow.awx.im 443
+```zsh
+nc -zv -w 3 dashboard.awx.im 443
 
 netstat -tulpn | grep LISTEN
+
+dig +short dashboard.awx.im
 ```
 
 ------------------
