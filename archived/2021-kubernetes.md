@@ -259,8 +259,14 @@ kube-system
 
 ### Istio
 
+* `spec.LoadBalancerSourceRanges`
+  - `Invalid value: "[59.100.192.6]"`
+  - `must be a list of IP ranges. For example, 10.240.0.0/24,10.250.0.0/24`
+  - `59.100.192.6` 不行, 得是 `59.100.192.6/32`
+
 * *Connection reset by peer*
   - `EnvoyFilter`
   - `LISTENER`
+
 * *upstream connect error or disconnect/reset before headers*
   - `AuthorizationPolicy`
