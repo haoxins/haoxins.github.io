@@ -151,6 +151,8 @@ curl http://metadata.google.internal/computeMetadata/v1/instance/service-account
 
 ## Istio
 
+* https://istio.io/latest/docs/reference/config/istio.operator.v1alpha1/
+
 ```zsh
 istioctl proxy-status
 
