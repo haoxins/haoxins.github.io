@@ -349,6 +349,7 @@ date: 2018-04-01
   - [计算机程序设计艺术 卷2](https://book.douban.com/subject/26850558/)
   - [计算机程序设计艺术 卷1](https://book.douban.com/subject/26681685/)
   - *卷1* 赠与 @*Gary*
+  - *卷3* 赠与 @*Gary*
 
 * [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
   - 面向本科一, 二年级的学生
