@@ -12,7 +12,6 @@
 * [费曼物理学讲义 (卷三)](archived/2022-physics-feynman-lectures-3.md)
 * [费曼物理学讲义 (卷二)](archived/2022-physics-feynman-lectures-2.md)
 * [费曼物理学讲义 (卷一)](archived/2022-physics-feynman-lectures-1.md)
-* [基础拓扑学 修订版](archived/2022-math-topology.md)
 * [复分析 可视化方法 Visual Complex Analysis](archived/2022-math-complex-analysis.md)
 ### 2021
 * [关于技术, 次年度期待清单](archived/2021-worth-looking-forward.md)
@@ -45,6 +44,7 @@
 * [Parallel and High Performance Computing](archived/2021-parallel-high-perf-computing.md)
 * [不求甚解地了解点 - 数学](archived/2021-math.md)
 * [图灵的秘密 & 集异璧之大成 (哥德尔)](archived/2021-math-turing-and-godel.md)
+* [基础拓扑学 修订版](archived/2021-math-topology.md)
 * [庞加莱猜想](archived/2021-math-poincare-conjecture.md)
 * [代数的历史](archived/2021-math-history-of-algebra.md)
 * [伽罗瓦理论 - 群论](archived/2021-math-galois-theory.md)

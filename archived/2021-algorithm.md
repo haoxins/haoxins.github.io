@@ -4,7 +4,7 @@ description: 西当太白有鸟道, 可以横绝峨眉巅
 date: 2020-11-09
 ---
 
-* [TAOCP 组合算法](2021-taocp-4.md)
+* [TAOCP 组合算法](2022-taocp-4.md)
 * [TAOCP 排序与查找](2021-taocp-3.md)
 * [TAOCP 半数值算法](2021-taocp-2.md)
 * [TAOCP 基本算法](2021-taocp-1.md)
