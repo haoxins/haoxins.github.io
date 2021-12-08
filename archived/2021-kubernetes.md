@@ -65,6 +65,8 @@ k get secret argocd-initial-admin-secret \
   -o jsonpath="{.data.password}" | base64 -d
 ```
 
+### Kyverno
+
 ------------------
 
 ## Grafana
@@ -113,6 +115,8 @@ k port-forward svc/jaeger-query \
   cluster wide version of an Issuer.
   It is able to be referenced by Certificate
   resources in *any namespace*.
+
+## External DNS
 
 ### Let's Encrypt: DNS-01
 
@@ -234,6 +238,9 @@ k logs -n istio-system -l app=istiod --tail=10000
 
 * 更新 `Secrets` 之后, 最好 `Delete` *相关的* `Pods`
   - 否则不会立即生效
+  - `Certificates` 本质上也是 `Secrets`
+  - **Prod** 需要**平滑升级**,
+    `Create new`, `Apply new`, `Delete later`
 
 * **Jaeger**: 2021-11
   - 把自己的 K8s 上的 **Jaeger** *storage backend* 从
