@@ -5,7 +5,7 @@ date: 2021-07-06
 ---
 
 * [数据密集型应用系统设计](https://book.douban.com/subject/30329536/)
-  - 原作名: Designing Data-Intensive Applications
+  - 原作名: **Designing Data-Intensive Applications**
   - 出版年: 2018-09-01
 
 ## 数据模型与查询语言

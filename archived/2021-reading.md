@@ -4,13 +4,15 @@ description: 莫听穿林打叶声, 何妨吟啸且徐行
 date: 2018-04-01
 ---
 
-### Wish list (Archived 2021-10)
-
-* 培养电子书的习惯, 低碳, 环保
+* 培养**电子书**的习惯, **低碳**, **环保**
 
 ------------------
 
 ### 2021
+
+* [计算之魂](https://book.douban.com/subject/35641088/)
+  - 副标题: 计算科学品位和认知进阶
+  - 抖音上面买的, 一冲动, 下单了~
 
 * [Parallel and High Performance Computing](https://www.manning.com/books/parallel-and-high-performance-computing)
 
