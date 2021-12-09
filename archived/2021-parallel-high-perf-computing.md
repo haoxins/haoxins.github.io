@@ -48,3 +48,27 @@ date: 2021-12-01
 
 > - When you use the latest processors, make sure to use
     the latest versions of the compiler.
+
+* The **vector hardware releases** over the last decade
+  have dramatically improved vector functionality.
+  - `SSE` (Streaming SIMD Extensions)
+  - `SSE2` (From `2001`)
+  - `AVX` (Advanced Vector Extensions)
+  - `AVX2`
+  - `AVX512`
+* From the years `2018` and on, **Intel** and **AMD**
+  have created multiple variants of `AVX512` as
+  incremental improvements to
+  **vector hardware architectures**.
+* There are several ways to achieve vectorization
+  in your program. In ascending order of
+  programmer effort, these include:
+  - Optimized libraries
+  - Auto-vectorization
+  - Hints to the compiler
+  - Vector intrinsics
+  - Assembler instructions
+
+# GPUs: Built to accelerate
+
+## GPU architectures and concepts

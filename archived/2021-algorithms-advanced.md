@@ -33,3 +33,5 @@ NP-complete problems, by definition, can't currently be
 solved in polynomial time
 on a classical deterministic machine.
 ```
+
+## Improving priority queues: d-way heaps
