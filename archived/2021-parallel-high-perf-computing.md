@@ -336,5 +336,93 @@ xnew[j][i] = (x[j][i] + x[j][i-1] + x[j][i+1] + x[j-1][i] + x[j+1][i]) / 5.0;
   local thread index plus the block (tile) information:
 
 ```c
-gid = blockIdx.x *blockDim.x + threadIdx.x;
+gid = blockIdx.x * blockDim.x + threadIdx.x;
 ```
+
+* Avoiding `out-of-bound` reads and writes is
+  important in GPU kernels because they lead to
+  random kernel crashes with
+  no error message or output.
+
+* How to address memory resources in
+  your GPU programming model?
+
+> On the GPU, the memory coalescing is done at the
+  hardware level in the memory controller. The
+  performance gains from these coalesced loads
+  are substantial.
+> But also important is that a lot of the
+  optimizations from earlier GPU programming guides
+  are no longer necessary, significantly reducing
+  the GPU programming effort.
+
+* The basic nature of work on GPUs is **asynchronous**.
+  Work is queued up on the GPU and, usually, only
+  gets executed when a result or synchronization
+  is requested.
+
+## GPU languages: Getting down to basics
+
+* A GPU programming language must have several
+  basic features. It is helpful to understand
+  what these features are so that you can
+  recognize these in each GPU language.
+* We summarize the necessary GPU language features here.
+  - **Detecting the accelerator device**
+  - The language must provide a detection of the
+    accelerator devices and a way to choose between
+    those devices. Some languages give more control
+    over the selection of devices than others. Even
+    for a language such as `CUDA`, which just looks
+    for an NVIDIA GPU, there must be a way to handle
+    multiple GPUs on a node.
+  - **Support for writing device kernels**
+  - The language must provide a way to generate the
+    low-level instructions for GPUs or other accelerators.
+    GPUs provide nearly identical basic operations
+    as CPUs, so the kernel language should not be
+    dramatically different.
+  - Rather than invent a new language, the most
+    straightforward way is to leverage current
+    programming languages and compilers to generate
+    the new instruction set. GPU languages have done
+    this by adopting a particular version of the
+    C or C++ language as a basis for their system.
+  - **CUDA** originally was based on the `C`
+    programming language but now is based on `C++` and
+    has some support for the Standard Template Library (STL).
+  - OpenCL is based on the `C99` standard and has
+    released a new specification with `C++` support.
+  - **Mechanism to call device kernels from the host**
+  - Ok, now we have the device code, but we also have to
+    have a way of calling the code from the host. The
+    syntax for performing this operation varies the most
+    across the various languages. But the mechanism is
+    only slightly more complicated than a
+    standard subroutine call.
+  - **Memory handling**
+  - The language must have support for memory
+    allocations, deallocations, and moving data back
+    and forth from the host to the device. The most
+    straightforward way for this is to have a subroutine
+    call for each of these operations.
+  - But another way is through the compiler detecting
+    when to move the data and doing it for you behind
+    the scenes. As this is such a major part of GPU
+    programming, innovation continues to occur on the
+    hardware and soft- ware side for this functionality.
+  - **Synchronization**
+  - A mechanism must be provided to specify the
+    synchronization requirements between the CPU
+    and the GPU. Synchronization operations must also
+    be provided within kernels.
+  - **Streams**
+  - A complete GPU language allows the scheduling
+    of asynchronous streams of operations along with
+    the explicit dependencies between the kernels and
+    the memory transfer operations.
+
+# High performance computing ecosystems
+
+## Affinity: Truce with the kernel
+
