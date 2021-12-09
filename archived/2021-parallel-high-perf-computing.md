@@ -426,3 +426,56 @@ gid = blockIdx.x * blockDim.x + threadIdx.x;
 
 ## Affinity: Truce with the kernel
 
+* We first encountered **affinity** on the **MPI**
+  (*Message Passing Interface*), where we defined
+  it and briefly showed how to handle it.
+* We repeat the definition here and also
+  define process placement.
+  - **Affinity**: Assigns a preference for the
+    scheduling of a process, rank or thread to
+    a particular hardware component. This is also
+    called **pinning** or **binding**.
+  - **Placement**: Assigns a process or thread
+    to a hardware location.
+* It is not enough to keep every parallel process
+  active and scheduled. We also need to keep
+  processes scheduled on the same
+  *Non-Uniform Memory Access* (NUMA) domain to
+  minimize memory access costs.
+
+---
+
+* The concept of **affinity** is born out of how the
+  operating system sees things. At the level of the
+  operating system, you can set where each process
+  is allowed to run.
+  - On Linux, this is done through either the
+    `taskset` or the `numactl` commands. These commands,
+    and similar utilities on other operating systems,
+    emerged as the complexity of the CPU grew so that
+    you could provide more information to the scheduler
+    in the operating system.
+  - The directions might be taken as hints or requirements
+    by the scheduler. Using these commands, you can pin
+    a server process to a particular processor to be
+    closer to a particular hardware component or to
+    gain faster response.
+  - This focus on affinity alone is enough when dealing
+    with a single process.
+* For parallel programming, there are additional
+  considerations. We have a set of processes that we
+  need to consider. Lets say we have `16` processors and
+  we are running a `four` rank MPI job.
+  - Where do we put the ranks?
+  - Do we put these across the sockets, on all the sockets,
+    pack them close together, or spread them out?
+  - Do we place certain ranks next to each other
+    (ranks `1` and `2` together or ranks `1` and `4` together)?
+* To be able to answer these questions, we need to
+  address the following:
+  - **Mapping**: the placement of processes
+  - **Order of ranks**: which ranks are close together
+  - **Binding**: affinity or tying a process to
+    a location or locations
+
+## Batch schedulers: Bringing order to chaos
