@@ -187,4 +187,80 @@ date: 2021-12-01
   `SIMT`, `SIMD`, or *vector operations*.
   - A similar type of functionality can be provided
     by ganging PEs together.
+
 * A typical **GPU** has **different types of memory**.
+* The list of the GPU memory types and
+  their properties are as follows.
+  - **Private memory (register memory)**: Immediately
+    accessible by a single PE and only by that PE.
+  - **Local memory**: Accessible to a single CU and
+    all of the PEs on that CU. Local memory can be
+    split between a scratchpad that can be used as a
+    programmable cache and, by some vendors, a
+    traditional cache on GPUs. Local memory is around
+    `64-96` KB in size.
+  - **Constant memory**: Read-only memory accessible
+    and shared across all of the CUs.
+  - **Global memory**: Memory that's located on the
+    GPU and accessible by all of the CUs.
+
+## GPU programming model
+
+* Data decomposition
+* Chunk-sized work for processing with some
+  shared, local memory
+* Operating on multiple data items with a single instruction
+* Vectorization (on some GPUs)
+
+* One thing to note from these GPU parallel abstractions
+  is that there are fundamentally three, or maybe four,
+  **different levels of parallelization** that you can
+  apply to a computational loop.
+
+* The technique of **data decomposition** is at the
+  heart of how GPUs obtain performance. GPUs break up
+  the problem into many smaller blocks of data.
+  Then they break it up again, and again.
+* If you only have a single instruction stream on a
+  single piece of data, a GPU will be slow because it
+  has no way to hide the latency. But if you have lots
+  of data to operate on, it's incredibly fast.
+* To further optimize the graphics operations, GPUs
+  recognize that the same operations can be performed
+  on many data elements.
+  - GPUs are therefore optimized by working on sets of
+    data with a single instruction rather than with
+    separate instructions for each.
+  - This reduces the number of instructions that need
+    to be handled. This technique on the CPU is called
+    single instruction, multiple data (SIMD).
+  - All GPUs emulate this with a group of threads where
+    it is called single instruction, multithread (SIMT).
+* Because SIMT simulates SIMD operations, it is not
+  necessarily constrained the same way as are SIMD
+  operations by the underlying vector hardware.
+  - Current SIMT operations are executed in lockstep,
+    with every thread in the subgroup executing all
+    paths through branching if any one thread must
+    go through a branch.
+  - This is similar to how a SIMD operation is done
+    with a mask. But because the SIMT operation is
+    emulated, this could be relaxed with more flexibility
+    in the instruction pipeline, where more than one
+    instruction could be supported.
+* The basic unit of operation is called a work item
+  in OpenCL. This work item can be mapped to a thread
+  or to a processing core, depending on the hardware
+  implementation.
+* In **CUDA**, it is simply called a **thread** because
+  that is how it is mapped in NVIDIA GPUs. Calling it a
+  thread is mixing the programming model with how it is
+  implemented in the hardware, but it is a little
+  clearer to the programmer.
+* A work item can invoke another level of parallelism on
+  GPUs with vector hardware units. This model of operation
+  also maps to the CPU where a thread can
+  execute a vector operation.
+
+---
+
