@@ -264,3 +264,77 @@ date: 2021-12-01
 
 ---
 
+> For convenience and generality, we call the
+  **CPU** the **host** and we use the term
+  **device** to refer to the **GPU**.
+
+* The GPU programming model splits the `loop body`
+  from the `array range` or `index set` that is applied
+  to the function. The `loop body` creates the GPU kernel.
+  The `index set` and arguments will be used on the
+  host to make the kernel call.
+
+* Extract the parallel kernel
+* Map from the local data tile to global data
+* Calculate data decomposition on the
+  host into blocks of data
+* Allocate any required memory
+
+* GPU programming is the perfect language for
+  the "Me" generation. In the kernel, everything
+  is relative to yourself. Take for example
+
+```c
+c[i] = a[i] + scalar * b[i];
+```
+
+* In this expression, there is no information about the
+  extent of the loop. This could be a loop where `i`,
+  the global `i` index, covers a range from `0` to
+  `1,000` or just the single value `22`.
+* Each data item knows what needs to be done to itself
+  and itself only. This is truly a "Me" programming model,
+  where I care only about myself. What is so powerful
+  about this is that the operations on each data element
+  become completely independent.
+* Let's look at the more complicated example of the
+  stencil operator. Although we have two indices, both
+  `i` and `j`, and some of the references are to adjacent
+  data values, this line of code is still fully defined
+  once we determine the values of `i` and `j`.
+
+```c
+xnew[j][i] = (x[j][i] + x[j][i-1] + x[j][i+1] + x[j-1][i] + x[j+1][i]) / 5.0;
+```
+
+* The key to how the kernel can compose its local
+  operation is that, as a product of the data
+  decomposition, we provide each work group
+  with some information about where it is in the
+  local and global domains. In OpenCL, you can get
+  the following information:
+  - **Dimension**: Gets the number of dimensions,
+    either `1D`, `2D`, or `3D`, for this kernel
+    from the kernel invocation
+  - **Global information**: Global index in each
+    dimension, which corresponds to a local work
+    unit, or the global size in each dimension,
+    which is the size of the global computational
+    domain in each dimension
+  - **Local (tile) information**: The local size in
+    each dimension, which corresponds to the tile
+    size in this dimension, or the local index in
+    each dimension, which cor- responds to the
+    tile index in this dimension
+  - **Group information**: The number of groups in
+    each dimension, which corresponds to the number
+    of groups in this dimension, or the group index
+    in each dimension, which corresponds to the
+    group index in this dimension
+* Similar information is available in CUDA, but the
+  global index must be calculated from the
+  local thread index plus the block (tile) information:
+
+```c
+gid = blockIdx.x *blockDim.x + threadIdx.x;
+```
