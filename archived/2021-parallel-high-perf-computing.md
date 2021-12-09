@@ -72,3 +72,119 @@ date: 2021-12-01
 # GPUs: Built to accelerate
 
 ## GPU architectures and concepts
+
+* We will use the terminology established by the
+  **OpenCL standard** because it was agreed to by
+  multiple GPU vendors.
+* We will also note alternate terminology that is
+  in common use, such as that used by `NVIDIA`.
+* Let's look at a few definitions before
+  continuing our discussion:
+  - **CPU**: The main processor that is installed
+    in the socket of the motherboard.
+  - **CPU RAM**: The "memory sticks" or dual in-line
+    memory modules (DIMMs) containing
+    *Dynamic Random-Access Memory* (**DRAM**)
+    that are inserted into the memory
+    slots in the motherboard.
+  - **GPU**: A large peripheral card installed in
+    a *Peripheral Component Interconnect Express*
+    (**PCIe**) slot on the motherboard.
+  - **GPU RAM**: Memory modules on the GPU peripheral
+    card for exclusive use of the GPU.
+  - **PCI bus**: The wiring that connects the
+    peripheral cards to the other components
+    on the motherboard.
+
+* Compared to CPUs that can handle tens of
+  parallel threads or processes in a clock cycle,
+* GPUs are capable of processing thousands of
+  parallel threads simultaneously.
+* To implement algorithms on GPUs, programmers had to
+  reframe their algorithms in terms of these operations,
+  which was `time-consuming` and `error-prone`.
+* Extending the use of the graphics processor to
+  non-graphics workloads became known as general-purpose
+  graphics processing unit (**GPGPU**) computing.
+* The continued interest and success of `GPGPU` computing
+  led to the introduction of a flurry of GPGPU languages.
+  - The first to gain wide adoption was the
+    Compute Unified Device Architecture (**CUDA**)
+    programming language for NVIDIA GPUs, which was
+    first introduced in `2007`.
+  - The dominant open standard GPGPU computing language
+    is the Open Computing Language (OpenCL), developed by
+    a group of vendors led by Apple and released in 2009.
+* GPUs come in two flavors:
+  - **Integrated GPUs**: A graphics processor engine that
+    is contained on the CPU
+  - **Dedicated GPUs**: A GPU contained on a separate
+    peripheral card
+
+---
+
+* In order for work to be executed on the GPU,
+  at some point, data must be transferred from
+  the CPU to the GPU. When the work is complete,
+  and the results are going to be written to file,
+  the GPU must send data back to the CPU.
+* The instructions the GPU must execute are also
+  sent from CPU to GPU. Each one of these transactions
+  is mediated by the PCI bus. Although we won't discuss
+  how to make these actions happen in this chapter,
+  we'll discuss the hardware performance limitations
+  of the PCI bus.
+* Due to these limitations, a poorly designed GPU
+  application can potentially have worse performance
+  than that with CPU-only code.
+* We'll also discuss the internal architecture of
+  the GPU and the performance of the GPU with regards
+  to memory and floating-point operations.
+
+* For those of us who have done thread programming
+  over the years on a CPU, the graphics processor is
+  like the ideal thread engine. The components of
+  this thread engine are:
+  - A seemingly infinite number of threads
+  - Zero time cost for switching or starting threads
+  - Latency hiding of memory accesses through
+    automatic switching between work groups
+
+* GPU hardware replication units by vendor
+  - **AMD**: Shader Engine (SE)
+  - **NVIDIA/CUDA**: Graphics processing cluster
+* A GPU is composed of
+  - GPU RAM (also known as global memory)
+  - Workload distributor
+  - Compute units (CUs) (SMs in CUDA)
+* **CUs** have their own internal architecture,
+  often referred to as the *microarchitecture*.
+* Instructions and data received from the CPU
+  are processed by the workload distributor.
+  The distributor coordinates instruction execution
+  and data movement onto and off of the CUs.
+  The achievable performance of a GPU depends on:
+  - Global memory bandwidth
+  - Compute unit bandwidth
+  - The number of CUs
+* A GPU compute device has multiple CUs.
+  - **CU**, compute unit, is the term agreed to by
+    the community for the OpenCL standard.
+  - NVIDIA calls them *streaming multiprocessors*
+    (**SMs**),
+  - and Intel refers to them as *subslices*.
+* Each **CU** contains multiple graphics processors
+  called *processing elements* (**PEs**) in OpenCL,
+  or *CUDA cores* (or *Compute Cores*) as
+  NVIDIA calls them.
+  - Intel refers to them as *execution units* (EUs),
+  - and the graphics community calls them
+    *shader processors*.
+* Within each **PE**, it might be possible to perform
+  an operation on more than one data item. Depending
+  on the details of the GPU microprocessor architecture
+  and the GPU vendor, these are referred to as
+  `SIMT`, `SIMD`, or *vector operations*.
+  - A similar type of functionality can be provided
+    by ganging PEs together.
+* A typical **GPU** has **different types of memory**.
