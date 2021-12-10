@@ -136,10 +136,10 @@ date: 2021-08-04
   act as a cluster-wide *control plane* for Istio.
 
 * For Istio, the control plane provides the following functions:
-  - APIs for operators to specify desired routing/resilience
-    behavior APIs for the data plane to consume
-    localized configuration Service discovery abstraction
-    for the data plane
+  - APIs for operators to specify
+    `desired routing`/`resilience behavior`
+  - APIs for the data plane to consume localized configuration
+  - Service discovery abstraction for the data plane
   - APIs for specifying usage policies
   - Certificate issuance and rotation
   - Assigning workload identity

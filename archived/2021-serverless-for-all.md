@@ -85,6 +85,8 @@ serverless state management.
   - [WebAssembly](https://webassembly.org)
   - [Rust](https://github.com/rust-lang/rust)
   - [Dapr](https://github.com/dapr/dapr)
+  - [Cilium](https://github.com/cilium/cilium)
+  - [Prometheus](https://github.com/prometheus/prometheus)
 
 ------------------
 
