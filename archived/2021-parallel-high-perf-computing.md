@@ -477,5 +477,3 @@ gid = blockIdx.x * blockDim.x + threadIdx.x;
   - **Order of ranks**: which ranks are close together
   - **Binding**: affinity or tying a process to
     a location or locations
-
-## Batch schedulers: Bringing order to chaos
