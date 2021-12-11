@@ -57,7 +57,6 @@ k rollout restart deploy deploy_name
 ```zsh
 k port-forward svc/argocd-server \
   -n argocd 8080:443
-
 # Username: admin
 # Get password
 k get secret argocd-initial-admin-secret \
@@ -99,8 +98,6 @@ k port-forward svc/kube-prometheus-stack-prometheus \
 ```zsh
 k port-forward svc/jaeger-query \
   -n istio-system 8086:80
-# Forwarding from 127.0.0.1:8086 -> 16686
-# Forwarding from [::1]:8086 -> 16686
 ```
 
 ------------------
@@ -159,18 +156,7 @@ curl http://metadata.google.internal/computeMetadata/v1/instance/service-account
 
 ```zsh
 istioctl proxy-status
-
-k get envoyfilter -n istio-system
-```
-
-```zsh
 istioctl analyze -n istio-system
-```
-
-```zsh
-k get svc istio-ingressgateway \
-  -n istio-system \
-  -o yaml
 ```
 
 ```zsh
@@ -206,11 +192,6 @@ k port-forward deploy/istio-ingressgateway \
 ### Kiali
 
 ```zsh
-k port-forward svc/kiali \
-  -n monitoring 20001
-```
-
-```zsh
 kiali_token_name=$(kubectl get sa \
   kiali-service-account \
   -n monitoring \
@@ -221,8 +202,6 @@ k get secret \
   $kiali_token_name \
   -o jsonpath={.data.token} | base64 -d
 ```
-
-* [Known Problem: Uninstall Hangs](https://kiali.io/documentation/latest/installation-guide#_known_problem_uninstall_hangs)
 
 ### WebAssembly
 
