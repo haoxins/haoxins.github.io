@@ -22,8 +22,8 @@ date: 2021-09-13
   privileges are being requested.
   Valid scope identifiers are specified in **RFC 6749**.
 * **OIDC** has a number of built in scope identifiers.
-  `openid` is a *required* scope. All others -
-  including custom scopes - are *optional*.
+  `openid` is a *required* scope. All others
+  (including custom scopes) are *optional*.
 * The *built-in* scopes are:
   - `profile`: requests access to default profile claims
   - `email`: requests access to email
