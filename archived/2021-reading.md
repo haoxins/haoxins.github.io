@@ -12,7 +12,7 @@ date: 2018-04-01
 
 * [计算之魂](https://book.douban.com/subject/35641088/)
   - 副标题: 计算科学品位和认知进阶
-  - 抖音上面买的, 一冲动, 下单了~
+  - 抖音上面买的~
 
 * [Parallel and High Performance Computing](https://www.manning.com/books/parallel-and-high-performance-computing)
 
