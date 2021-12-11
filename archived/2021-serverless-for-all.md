@@ -17,7 +17,7 @@ date: 2020-07-22
   - Streaming/Window (Flink SQL)
   - Graph
 
-* [Datafuse](https://github.com/datafuselabs/datafuse)
+* [Databend](https://github.com/datafuselabs/databend)
 
 ### Streaming
 
