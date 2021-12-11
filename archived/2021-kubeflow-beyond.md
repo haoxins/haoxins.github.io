@@ -22,8 +22,8 @@ date: 2021-09-13
   privileges are being requested.
   Valid scope identifiers are specified in **RFC 6749**.
 * **OIDC** has a number of built in scope identifiers.
-  `openid` is a *required* scope. All others –
-  including custom scopes – are *optional*.
+  `openid` is a *required* scope. All others -
+  including custom scopes - are *optional*.
 * The *built-in* scopes are:
   - `profile`: requests access to default profile claims
   - `email`: requests access to email
@@ -35,7 +35,7 @@ date: 2021-09-13
   information about a user, as well `meta-information`
   about the `OIDC` service. The official definition
   from the spec is a
-  "piece of information asserted about an Entity."
+  - `"piece of information asserted about an Entity."`
 * There are *three primary flows*: `Authorization Code`,
   `Implicit`, and `Hybrid`. These flows are controlled
   by the `response_type` query parameter in the

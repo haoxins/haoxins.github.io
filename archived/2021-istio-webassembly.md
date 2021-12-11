@@ -7,7 +7,7 @@ date: 2021-09-24
 ------------------
 
 * [Announcing Istio 1.12](https://istio.io/latest/news/releases/1.12.x/announcing-1.12/)
-  - Istio `1.12.0` is officially supported on
+  - Istio `1.12` is officially supported on
     Kubernetes versions `1.19` to `1.22`.
   - [Wasm Plugin](https://istio.io/latest/docs/reference/config/proxy_extensions/wasm-plugin/)
   - [Telemetry API](https://istio.io/latest/docs/reference/config/telemetry/)
