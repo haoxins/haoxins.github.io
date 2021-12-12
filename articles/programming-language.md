@@ -6,8 +6,15 @@ date: 2021-10-28
 
 > - 随机故障通常是并发问题
 
+## Go (1.18+)
+
+------------------
+
 ## Rust (2021)
 
+* [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
+
+------------------
 
 ## Python (3.10+)
 
@@ -27,5 +34,3 @@ date: 2021-10-28
 * [encode/orm](https://github.com/encode/orm)
   - The `orm` package is an async **ORM** for Python,
     with support for `Postgres`, `MySQL`, and `SQLite`.
-
-## Go (1.18+)
