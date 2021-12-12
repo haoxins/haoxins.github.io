@@ -8,11 +8,9 @@ date: 2021-10-28
 
 ## Rust (2021)
 
-* [gRPC](https://grpc.io)
 
 ## Python (3.10+)
 
-* [gRPC](https://grpc.io)
 * [**tiangolo/fastapi**](https://github.com/tiangolo/fastapi)
   - [encode/starlette](https://github.com/encode/starlette)
   - *Starlette* is a lightweight **ASGI** *framework/toolkit*,
@@ -31,5 +29,3 @@ date: 2021-10-28
     with support for `Postgres`, `MySQL`, and `SQLite`.
 
 ## Go (1.18+)
-
-* [gRPC](https://grpc.io)
