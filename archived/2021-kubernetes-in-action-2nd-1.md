@@ -63,7 +63,7 @@ date: 2021-08-30
 * Once the application is up and running,
   the *Kubelet* keeps the application healthy
   by restarting it when it terminates.
-  It also reports the *status* of the application
+* It also reports the *status* of the application
   by updating the *object* that
   represents the application instance.
 
@@ -73,7 +73,7 @@ date: 2021-08-30
 * The *filesystem* of a container consists of
   *read-only* layers from the container image and
   an additional *read/write* layer stacked on top.
-  When an application running in container A changes
+* When an application running in container A changes
   a file in one of the *read-only* layers,
   the entire file is **copied** into the container's
   *read/write* layer and the file contents are changed there.
