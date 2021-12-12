@@ -470,7 +470,7 @@ spec:
     *SNI headers* and route the traffic to the
     specific backend which will then *terminate*
     the TLS connection.
-    The connection will *"pass through"* the gateway
+  - The connection will *"pass through"* the gateway
     and be handled by the actual service,
     not the *gateway*.
 
@@ -560,11 +560,11 @@ spec:
 
 * The **Sidecar** resource, however,
   does not apply to gateways.
-  When you deploy a new gateway
+* When you deploy a new gateway
   (ingress gateway for example),
   the proxy will get configured with all of
   the services available for routing in the mesh.
-  The trick is to trim out any of these additional
+* The trick is to trim out any of these additional
   configurations for the proxy by including only
   configuration that's relevant to the gateway.
 
@@ -746,7 +746,7 @@ spec:
 * For *locality-aware* load balancing to
   work in Istio, we need to
   configure **health checking**.
-  Without *health checking*, Istio does not know
+* Without *health checking*, Istio does not know
   which endpoints in the load balancing pool
   are unhealthy and what heuristics to use
   to spill over into the next locality.

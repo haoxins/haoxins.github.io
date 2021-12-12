@@ -84,7 +84,7 @@ date: 2021-08-30
     a lightweight alternative to *Docker* that
     allows you to leverage any *OCI-compliant*
     container runtime with *Kubernetes*.
-    Examples of *OCI-compliant* runtimes include
+  - Examples of *OCI-compliant* runtimes include
     *runC*, and *Kata Containers*.
 
 * The following types of **namespaces** exist:
