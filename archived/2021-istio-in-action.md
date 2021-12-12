@@ -530,9 +530,9 @@ spec:
   - With *Gateway injection*, you deploy a
     stubbed-out gateway deployment and
     Istio fills in the rest similar to how
-    sidecar injection is done. This way you can
-    give a team a stubbed out gateway deployment
-    resource and have Istio
+    sidecar injection is done.
+  - This way you can give a team a stubbed out
+    gateway deployment resource and have Istio
     *auto-configure* the rest of it.
 
 ```yaml
