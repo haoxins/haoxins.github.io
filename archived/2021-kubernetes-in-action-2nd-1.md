@@ -116,8 +116,8 @@ date: 2021-08-30
 * The *second* Linux kernel feature that makes
   containers possible is called
   **Linux Control Groups** (*cgroups*).
-  It *limits*, accounts for and isolates system resources
-  such as CPU, memory and disk or network bandwidth.
+  - It *limits*, accounts for and isolates system resources
+    such as CPU, memory and disk or network bandwidth.
 
 ## Introducing the Kubernetes API objects
 
@@ -125,8 +125,8 @@ date: 2021-08-30
 
 * Each pod has its own `IP`, `hostname`, `processes`,
   `network interfaces` and `other` resources.
-  Containers that are part of the same pod think that
-  they're the only ones running on the computer.
+  - Containers that are part of the same pod think
+    that they're the only ones running on the computer.
 
 * A *service* with the type *LoadBalancer*
   provisions an external *load balancer*, which
