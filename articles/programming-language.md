@@ -19,13 +19,6 @@ date: 2021-10-28
 ## Python (3.10+)
 
 * [**tiangolo/fastapi**](https://github.com/tiangolo/fastapi)
-  - [encode/starlette](https://github.com/encode/starlette)
-  - *Starlette* is a lightweight **ASGI** *framework/toolkit*,
-    which is ideal for building
-    high performance **async** services.
-  - [encode/uvicorn](https://github.com/encode/uvicorn)
-  - *Uvicorn* is a lightning-fast **ASGI** server
-    implementation, using `uvloop` and `httptools`.
   - [samuelcolvin/pydantic](https://github.com/samuelcolvin/pydantic)
   - Data validation and settings management
     using Python type hinting.
