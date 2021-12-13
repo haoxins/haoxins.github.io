@@ -155,14 +155,31 @@ curl http://metadata.google.internal/computeMetadata/v1/instance/service-account
 * https://istio.io/latest/docs/reference/config/istio.operator.v1alpha1/
 
 ```
-Gateway
-  - VirtualService
-    - Host (origin)
+downstream ->
+
+Gateway (Envoy Listeners)
+  - VirtualService (Envoy Routes)
+    - Host (from)
       - Protocol
         - Route
-          - DestinationRule
+          - DestinationRule (Envoy Clusters)
             - host (dest)
             - subset
+
+ServiceEntry
+```
+
+* `AuthorizationPolicy` enforcement is activated
+  **only if** one of its rules **matches** the
+  **source and the operation**.
+* The presence of an empty rule means that
+  all requests are allowed.
+
+```yaml
+kind: AuthorizationPolicy
+spec:
+  rules:
+  - {}
 ```
 
 ```zsh

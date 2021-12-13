@@ -1235,7 +1235,7 @@ kubectl -n istio-system port-forward deploy/kiali 20001
   to be *permissive and accept clear-text traffic*,
   using *one of* the following authentication modes:
   **STRICT** or **PERMISSIVE**.
-  The mutual authentication mode can be configured
+* The mutual authentication mode can be configured
   in different scopes:
   - *Mesh-wide PeerAuthentication* policies apply to
     all workloads of the service mesh
@@ -1360,9 +1360,9 @@ spec:
 * *JSON Web Token (JWT)* is a compact claims
   representation that is used to transmit unmodified
   information between two parties as JSON objects.
-  The unmodified part comes from the
+* The unmodified part comes from the
   verifiable signature of the JWT Token.
-  JWT Tokens consist of the following three parts:
+* JWT Tokens consist of the following three parts:
   - *Header* - composed of the type and the
     hashing algorithm
   - *Payload* - contains the user claims
