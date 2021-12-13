@@ -154,6 +154,17 @@ curl http://metadata.google.internal/computeMetadata/v1/instance/service-account
 
 * https://istio.io/latest/docs/reference/config/istio.operator.v1alpha1/
 
+```
+Gateway
+  - VirtualService
+    - Host (origin)
+      - Protocol
+        - Route
+          - DestinationRule
+            - host (dest)
+            - subset
+```
+
 ```zsh
 istioctl proxy-status
 istioctl analyze -n istio-system

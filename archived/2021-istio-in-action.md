@@ -1485,10 +1485,10 @@ spec:
   *validation* of the configuration.
 
 * The ***Kiali validations*** are helpful and should be
-  one of the first stops when your workloads are not
+  one of the first steps when your workloads are not
   behaving according to your expectation.
   - **Kiali validations** 赞!
-* The next stop is to use *istioctl* which provides
+* The next step is to use *istioctl* which provides
   another set of validations.
 
 * The *Envoy Administration dashboard* is accessible
@@ -1498,11 +1498,11 @@ spec:
   to retrieve and filter the proxy configuration
   of a workload based on the *Envoy xDS APIs*,
   where each subcommand is appropriately named:
-  - *`cluster`* - Retrieves cluster configuration
-  - *`endpoint`* - Retrieves endpoint configuration
-  - *`listener`* - Retrieves listener configuration
-  - *`route`* - Retrieves route configuration
-  - *`secret`* - Retrieves secret configuration
+  - `cluster`: Retrieves cluster configuration
+  - `endpoint`: Retrieves endpoint configuration
+  - `listener`: Retrieves listener configuration
+  - `route`: Retrieves route configuration
+  - `secret`: Retrieves secret configuration
 
 * Envoy **Listeners** define a networking
   configuration such as an *IP Address* and *Port*
