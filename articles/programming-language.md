@@ -19,11 +19,7 @@ date: 2021-10-28
 ## Python (3.10+)
 
 * [**tiangolo/fastapi**](https://github.com/tiangolo/fastapi)
-  - [samuelcolvin/pydantic](https://github.com/samuelcolvin/pydantic)
-  - Data validation and settings management
-    using Python type hinting.
+  - [pydantic](https://github.com/samuelcolvin/pydantic)
+  - [SQLModel](https://github.com/tiangolo/sqlmodel)
 * [encode/httpx](https://github.com/encode/httpx)
-  - A next-generation HTTP client for Python.
 * [encode/orm](https://github.com/encode/orm)
-  - The `orm` package is an async **ORM** for Python,
-    with support for `Postgres`, `MySQL`, and `SQLite`.
