@@ -12,6 +12,8 @@ date: 2021-02-17
 
 ### Others
 
+* [Users and groups](https://wiki.archlinux.org/title/users_and_groups)
+
 * [Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
 ```zsh
