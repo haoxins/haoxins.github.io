@@ -710,10 +710,11 @@ spec:
     `ReadWriteOnce` refers to **nodes**, not **pods**.
 * If the claim supports access mode `ReadOnlyMany`,
   why can't both nodes attach the volume and
-  run the reader pods? This is caused by the writer pods.
-  The first node attached the persistent volume in
-  *`read-write`* mode. This **prevents** other nodes
-  from attaching the volume, *even in `read-only` mode*.
+  run the reader pods?
+  - This is caused by the writer pods.
+  - The first node attached the persistent volume in
+    *`read-write`* mode. This **prevents** other nodes
+    from attaching the volume, *even in `read-only` mode*.
 * Kubernetes can't *detach the volume* or
   *change the mode* in which it is attached
   while it's being used by pods.

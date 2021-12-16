@@ -8,6 +8,8 @@ date: 2019-10-24
 
 ### 2021-12
 
+* 重温 [误杀](https://movie.douban.com/subject/30176393/)
+
 * [谁是凶手](https://movie.douban.com/subject/35180907/)
   - 开局不错!
 
