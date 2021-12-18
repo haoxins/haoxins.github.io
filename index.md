@@ -5,6 +5,7 @@
 * [Graph machine learning](articles/graph-machine-learning.md)
 * [Blockchain & Cryptography](articles/cryptography.md)
 * [猫咪的那些事](articles/cat.md)
+* [Algorithms](articles/algorithms.md)
 ### 2022
 * [TAOCP 组合算法 - 计算机程序设计艺术](archived/2022-taocp-4.md)
 * [TAOCP 组合算法 习题 - 计算机程序设计艺术](archived/2022-taocp-4-exe.md)
