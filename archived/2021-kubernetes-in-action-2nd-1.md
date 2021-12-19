@@ -855,10 +855,10 @@ spec:
 * Users can then deploy pods that refer to the
   claim to gain access to the underlying
   storage volume. When the volume is no longer
-  needed, the user deletes the claim. This
-  typically triggers the deletion of both
-  the `PersistentVolume` object and the
-  underlying storage volume.
+  needed, the user deletes the claim.
+  - This typically triggers the deletion of
+    both the `PersistentVolume` object and
+    the underlying storage volume.
 
 * The Kubernetes scheduler ensures that the
   pod is always scheduled on the node to
@@ -930,9 +930,9 @@ env:
 * When you want a variable to contain the
   *literal string* `$(VAR_NAME)` and don't want
   Kubernetes to resolve it, use a *double dollar*
-  sign as in `$$(VAR_NAME)`. Kubernetes will remove
-  one of the *dollar* signs and skip
-  resolving the variable.
+  sign as in `$$(VAR_NAME)`.
+  - Kubernetes will remove one of the *dollar*
+    signs and skip resolving the variable.
 
 * However, you can use a different approach.
   If you run the command through a *shell*,
