@@ -88,7 +88,7 @@ serverless state management.
   - [Cilium](https://github.com/cilium/cilium)
   - [Prometheus](https://github.com/prometheus/prometheus)
 
-* 关于 `Kubernetes`, `2021` 之前基本完成的是:
+* 关于 `Kubernetes`, `2021` 年之前基本完成的是:
   - 所有的东西都跑在了 `K8s` 上
 * 那么 `2022` 年开始:
   - 所有的基础组件 (`Components`), 都会深度基于 `K8s` 去开发
