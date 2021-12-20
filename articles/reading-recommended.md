@@ -26,6 +26,10 @@ date: 2021-05-03
   - 作者: **布赖恩·格林**
   - 原作名: *The Fabric of the Cosmos*
 
+* [新物理狂想曲](https://book.douban.com/subject/35412910/)
+  - **罗杰•彭罗斯**
+  - 原作名: *Fashion, Faith, and Fantasy in the New Physics of the Universe*
+
 * [通向实在之路](https://book.douban.com/subject/25823056/)
   - **罗杰•彭罗斯**
   - 副标题: **宇宙法则的完全指南**
