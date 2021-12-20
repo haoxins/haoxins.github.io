@@ -1132,7 +1132,7 @@ immutable: true
   the Kubelets on the worker nodes that use
   it don't have to be notified of changes
   to the `ConfigMap` object.
-  This reduces the load on the API server.
+  - This reduces the load on the API server.
 
 * If you use the `subPath` field to mount
   individual files instead of the entire
@@ -1261,9 +1261,9 @@ spec:
 * When you project the entries of a secret
   into a container via a *secret volume*,
   the projected file is not `Base64-encoded`.
-  The application doesn't need to decode the file.
-  The same is true if the secret entries are
-  injected into *environment variables*.
+  - The application doesn't need to decode the file.
+  - The same is true if the secret entries are
+    injected into *environment variables*.
 * The files in a secret volume are stored
   in an in-memory filesystem (`tmpfs`),
   so they are less likely to be compromised.
@@ -1352,7 +1352,7 @@ env:
 ```
 
 * Each `resourceFieldRef` can also specify a **divisor**.
-  It specifies which *unit* to use for the value.
+  - It specifies which *unit* to use for the value.
 
 * Injecting pod metadata into the container's filesystem
 
@@ -1792,9 +1792,9 @@ metadata:
   by preventing nodes from forwarding traffic to
   pods that aren't running on the same node.
 * This is done by setting the **`externalTrafficPolicy`**
-  field in the Service object's spec field to Local.
-  This way, a node forwards external traffic only to
-  pods running on the node that received the connection.
+  field in the `Service` object's `spec` field to `Local`.
+  - This way, a node forwards external traffic only to
+    pods running on the node that received the connection.
 
 * `healthCheckNodePort`
   - The external load balancer uses this node port to
