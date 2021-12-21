@@ -1101,3 +1101,31 @@ func f() {
   a goroutine panicking is only useful
   inside a `defer` function.
 
+* `%w` allows wrapping an error that can be unwrapped
+  to retrieve the initial error later.
+  - For example, a caller of `GetContract` could compare
+    the error to a specific error value
+    using `errors.Is`:
+
+```go
+contract, err := store.GetContract(name)
+if err != nil {
+  if errors.Is(err, store.ErrFoo) {
+    // ...
+  }
+}
+```
+
+> These functions unwrap the `err` error returned by
+  `GetContract` to check if the source error
+  was a `store.ErrFoo` value.
+
+* `errors.As`: This function recursively unwraps an error
+  and returns `true` if an error in the
+  chain matches the expected type.
+  - This function requires the second argument
+    (the target error) to be of a pointer.
+  - Otherwise, the function will compile but panic at runtime.
+* In summary, if we rely on error wrapping, we must use
+  `errors.As` to check whether an error is a specific type.
+
