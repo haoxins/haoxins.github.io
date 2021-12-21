@@ -1129,3 +1129,23 @@ if err != nil {
 * In summary, if we rely on error wrapping, we must use
   `errors.As` to check whether an error is a specific type.
 
+* **Expected errors** should be designed as error values
+  (sentinel errors):
+  - `var ErrFoo = errors.New("foo")`
+* **Unexpected errors** should be designed as error types:
+  - `type BarError struct{ … }` with `BarError`
+    implementing the `error` interface
+
+* Checking if the error is an `sql.ErrNoRows` was
+  done using the `==` operator.
+* If an `sql.ErrNoRows` is wrapped using `fmt.Errorf`
+  and the `%w` directive, the `err == sql.ErrNoRows`
+  will always be `false`.
+* We have seen how `errors.As` is used to check an
+  **error** against a **type**.
+* With **error values**, we should use its
+  counterpart: `errors.Is`.
+* Using `errors.Is` instead of the `==` makes the
+  comparison working even if the error was
+  **wrapped** using `%w`.
+
