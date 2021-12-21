@@ -1678,7 +1678,7 @@ metadata:
     revision: "3"
 ```
 
-## Exposing Pods with Services and Ingresses
+## Exposing Pods with Services
 
 * Each pod has its own network interface with
   its own IP address. All pods in the cluster
