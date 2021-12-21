@@ -1148,4 +1148,3 @@ if err != nil {
 * Using `errors.Is` instead of the `==` makes the
   comparison working even if the error was
   **wrapped** using `%w`.
-
