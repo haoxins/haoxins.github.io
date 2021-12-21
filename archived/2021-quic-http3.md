@@ -22,8 +22,7 @@ date: 2019-06-30
   - Headers frame
   - Data frame
 
-* [gRPC over HTTP2](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md)
-  - [ ] TODO: HTTP3
+* [G2: gRPC over HTTP/3](https://github.com/grpc/proposal/blob/master/G2-http3-protocol.md)
 
 * [QUIC-LB: Generating Routable QUIC Connection IDs](https://quicwg.org/load-balancers/draft-ietf-quic-load-balancers.html)
 
