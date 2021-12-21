@@ -1068,9 +1068,36 @@ func (s *Struct) print() {
   surrounding function returns.
   - Hence, this example prints `bar`.
 * In summary, we have to remind that calling
-  `defer` on a function or method, the call’s
+  `defer` on a function or method, the call's
   arguments are *evaluated immediately*.
   - For a method, the receiver is also
     *evaluated immediately*. If we want to
     delay the evaluation, it can be done
     either using *pointers* or *closures*.
+
+## Error Management
+
+```go
+func main() {
+  defer func() {
+    if r := recover(); r != nil {
+      fmt.Println("recover", r)
+    }
+  }()
+
+  f()
+}
+
+func f() {
+  fmt.Println("a")
+  panic("foo")
+  fmt.Println("b")
+}
+// a
+// recover foo
+```
+
+* We should note that calling `recover()` to capture
+  a goroutine panicking is only useful
+  inside a `defer` function.
+
