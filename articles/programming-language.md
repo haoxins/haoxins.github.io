@@ -20,6 +20,6 @@ date: 2021-10-28
 
 * [**tiangolo/fastapi**](https://github.com/tiangolo/fastapi)
   - [pydantic](https://github.com/samuelcolvin/pydantic)
-  - [SQLModel](https://github.com/tiangolo/sqlmodel)
 * [encode/httpx](https://github.com/encode/httpx)
-* [encode/orm](https://github.com/encode/orm)
+
+> - 个人角度, Python 仅用于: ML, Data, Stateless services
