@@ -18,8 +18,8 @@ date: 2021-10-28
 
 ## Python (3.10+)
 
-* [**tiangolo/fastapi**](https://github.com/tiangolo/fastapi)
+* [tiangolo/fastapi](https://github.com/tiangolo/fastapi)
   - [pydantic](https://github.com/samuelcolvin/pydantic)
-* [encode/httpx](https://github.com/encode/httpx)
+  - [encode/httpx](https://github.com/encode/httpx)
 
 > - 个人角度, Python 仅用于: ML, Data, Stateless services
