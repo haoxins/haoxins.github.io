@@ -80,6 +80,18 @@ date: 2021-12-09
 
 ## 智能的本质: 分类与组合
 
+### 十条集合公理
+
+* 外延公理 (Axiom of Extensionality):
+  - 一个集合完全由它的元素所决定.
+  - 两个集合相同, 当且仅当它们的元素皆相同.
+* 分类公理 (子集公理)
+  - (Axiom Schema of Specification)
+  - (Axiom Schema of Separation)
+  - (Axiom Schema of Restricted Comprehension):
+  - 给出任何集合 `A` 及命题 `P(x)`, 其中 $$ x \in A $$,
+    存在着一个原来集合的子集 `B` (即 $$ B \subseteq A $$),
+    包含且只包含使 `P(x)` 成立的元素.
 ## 工具与算法: 图论及应用
 
 ## 化繁为简: 分治思想及应用
