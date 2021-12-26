@@ -261,11 +261,10 @@ that location is always at the top of the stack.
 Accessing data in the heap is slower than accessing
 data on the stack because you have to follow
 a pointer to get there.
+
 Contemporary processors are faster if they
 jump around less in memory.
 ```
-
-> restaurant 的例子不错
 
 ```
 When a variable goes out of scope,
