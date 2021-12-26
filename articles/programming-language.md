@@ -4,8 +4,6 @@ description: 结庐在人境, 而无车马喧. 问君何能尔? 心远地自偏.
 date: 2021-10-28
 ---
 
-> - 随机故障通常是并发问题
-
 ## Go (1.18+)
 
 ------------------
@@ -13,6 +11,8 @@ date: 2021-10-28
 ## Rust (2021)
 
 * [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
+* [axum](https://github.com/tokio-rs/axum)
+  - [Surf](https://github.com/http-rs/surf)
 
 ------------------
 
