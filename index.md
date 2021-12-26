@@ -78,6 +78,7 @@
 * [Graph Computing](archived/2021-graph-computing.md)
 * [游戏](archived/2021-gaming.md)
 * [阿西莫夫 - 银河帝国](archived/2021-galactic-empire.md)
+* [动手学深度学习 第二版](archived/2021-dive-into-deep-learning.md)
 * [Raft](archived/2021-distributed-consensus-raft.md)
 * [Distributed computing](archived/2021-distributed-computing.md)
 * [数据密集型应用系统设计](archived/2021-data-intensive-applications.md)
