@@ -94,7 +94,7 @@ date: 2021-12-09
     包含且只包含使 `P(x)` 成立的元素.
 * 配对公理 (Axiom of Pairing):
   - 假如 `X` 和 `Y` 均为集合, 则有另一个集合
-    $$ \left{ X, Y \right} $$
+    $$ \{ X, Y \} $$
     包含 `X` 与 `Y` 作为它仅有的元素.
 * 并集公理 (Axiom of Union):
   - 对于任意一个集合 `X`, 存在一个并集 `Y`,
@@ -106,7 +106,7 @@ date: 2021-12-09
 * 无穷公理 (Axiom of Infinity):
   - 存在着一个集合 `X`, 空集 $$ \varnothing $$
     为其元素之一且对于任何 `X` 中的元素 `Y`,
-    $$ Y \cup \left{ Y \right} $$
+    $$ Y \cup \{ Y \} $$
     也是 `X` 的元素.
   - 说明: 用这种方式, 可以定义所有的整数.
 * 替代公理 (Axiom Schema of Replacement):
