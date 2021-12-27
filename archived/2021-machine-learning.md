@@ -20,7 +20,7 @@ date: 2021-03-21
   and this includes things like *accuracy*, *precision*,
   *recall*, and so on. Good values in these metrics is
   a strong signal about the *quality of your model*.
-  And then there's the models **gating metric** and
+* And then there's the models **gating metric** and
   this reflects an operational constraint that
   the model has to satisfy, such as *prediction latency*.
 
@@ -406,6 +406,7 @@ It then uses that model as a teacher
 for a simpler student model.
 Which will then be the actual model
 that gets deployed to production.
+
 This teacher network can be either fixed or jointly optimized.
 Can even be used to train multiple student models
 of different sizes simultaneously.
@@ -421,6 +422,7 @@ The student then seeks transferable knowledge.
 It uses that objective function that seeks to
 match the probability distribution of the
 predictions of the teacher.
+
 Notice that the student is not just learning
 the teacher's predictions,
 but the probabilities of the predictions.
