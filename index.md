@@ -1,4 +1,3 @@
-* [诗·文](articles/shi.md)
 * [推荐阅读清单](articles/reading-recommended.md)
 * [Programming language](articles/programming-language.md)
 * [健身, 冥想](articles/meditation-fitness.md)
@@ -9,11 +8,13 @@
 ### 2022
 * [TAOCP 组合算法 - 计算机程序设计艺术](archived/2022-taocp-4.md)
 * [TAOCP 组合算法 习题 - 计算机程序设计艺术](archived/2022-taocp-4-exe.md)
+* [诗·文](archived/2022-shi.md)
 * [Shtetl-Optimized](archived/2022-scott-aaronson.md)
 * [费曼物理学讲义 (卷三)](archived/2022-physics-feynman-lectures-3.md)
 * [费曼物理学讲义 (卷二)](archived/2022-physics-feynman-lectures-2.md)
 * [费曼物理学讲义 (卷一)](archived/2022-physics-feynman-lectures-1.md)
 * [复分析 可视化方法 Visual Complex Analysis](archived/2022-math-complex-analysis.md)
+* [人间词话 - 叶嘉莹讲评本](archived/2022-ci.md)
 ### 2021
 * [关于技术, 次年度期待清单](archived/2021-worth-looking-forward.md)
 * [Web](archived/2021-web.md)
@@ -89,7 +90,6 @@
 * [Coursera 课程记录](archived/2021-coursera.md)
 * [计算之魂](archived/2021-computing-core.md)
 * [从公司, 到组织](archived/2021-company-and-organization.md)
-* [人间词话 - 叶嘉莹讲评本](archived/2021-ci.md)
 * [时间静悄悄](archived/2021-changing.md)
 * [Blockchain](archived/2021-blockchain.md)
 * [年度事件](archived/2021-annual-events.md)
