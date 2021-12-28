@@ -485,7 +485,7 @@ if let Coin::Quarter(state) = coin {
 ```
 
 ```
-In other words, you can think of if let
+In other words, you can think of `if let`
 as syntax sugar for a match that runs code
 when the value matches one pattern
 and then ignores all other values.
@@ -596,7 +596,7 @@ for i in &mut v {
   we can define and use an `enum`!
 
 * Rust strings don't support indexing
-  - A String is a wrapper over a `Vec<u8>`
+  - A `String` is a wrapper over a `Vec<u8>`
 
 ```rust
 for c in "नमस्ते".chars() {
@@ -703,15 +703,15 @@ let f = File::open("hello.txt").unwrap_or_else(|error| {
 ```
 
 ```
-The ? placed after a Result value is defined to
+The ? placed after a `Result` value is defined to
 work in almost the same way as the match expressions
-we defined to handle the Result values.
+we defined to handle the `Result` values.
 
-If the value of the Result is an Ok, the value
-inside the Ok will get returned from this
+If the value of the `Result` is an `Ok`, the value
+inside the `Ok` will get returned from this
 expression, and the program will continue.
 
-If the value is an Err, the Err will be returned
+If the value is an `Err`, the `Err` will be returned
 from the whole function as if we had used the
 return keyword so the error value gets
 propagated to the calling code.
@@ -742,17 +742,17 @@ fn read_username_from_file() -> Result<String, io::Error> {
 ```
 
 * The **?** Operator Can Be Used in
-  Functions That Return Result
+  **Functions That Return Result**
 
 ```
 The ? operator can be used in functions
-that have a return type of Result,
+that have a return type of `Result`,
 because it is defined to work in the
 same way as the match expression.
 The part of the match that requires a
-return type of Result is return Err(e),
+return type of `Result` is return `Err(e)`,
 so the return type of the function has
-to be a Result to be compatible
+to be a `Result` to be compatible
 with this return.
 ```
 
