@@ -6,6 +6,8 @@ date: 2021-10-28
 
 ## Go (1.18+)
 
+* [ent](https://github.com/ent/ent)
+
 ------------------
 
 ## Rust (2021)

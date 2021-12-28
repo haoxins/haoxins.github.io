@@ -138,8 +138,8 @@ and these restrictions take practice and experience to get used to.
 
 ```rust
 struct Point {
-    x: i32,
-    y: i32,
+  x: i32,
+  y: i32,
 }
 let p = Point { x: 1, y: 2 };
 let r: &Point = &p;

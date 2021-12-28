@@ -197,7 +197,7 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
 
 * `String` and `str`
 
-* Rust's `string` and `str` types are guaranteed
+* Rust's `String` and `str` types are guaranteed
   to hold only well-formed UTF-8. The library ensures
   this by restricting the ways you can create `String`
   and `str` values and the operations you can perform
@@ -211,7 +211,7 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
   `str` or `String` depending on whether the method
   needs a resizable buffer or is content just to
   use the text in place.
-* Since String dereferences to `&str`, every method
+* Since `String` dereferences to `&str`, every method
   defined on `str` is directly available on `String`
   as well.
 
@@ -568,7 +568,7 @@ assert_eq!(new_home, "Pinned? Not so much.");
   **not quite correct**. If your application is
   spending its time waiting for `I/O`, making
   it async will not make that `I/O` run faster.
-  There is nothing about the asynchronous `I/O`
+* There is nothing about the asynchronous `I/O`
   interfaces generally used today that makes
   them more efficient than their synchronous
   counterparts. The operating system has the
