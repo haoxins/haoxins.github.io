@@ -6,6 +6,7 @@ date: 2021-08-24
 
 ## K8s common
 
+* [Lens](https://github.com/lensapp/lens)
 * [kubectx + kubens](https://github.com/ahmetb/kubectx)
 
 ```zsh
