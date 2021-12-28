@@ -6,6 +6,31 @@ date: 2021-09-24
 
 ------------------
 
+* [Announcing the alpha availability of WebAssembly Plugins](https://istio.io/latest/blog/2021/wasm-api-alpha/)
+  - Introduction to the new Wasm Plugin API and
+    updates to the Wasm-based plugin
+    support in Envoy and Istio.
+
+```yaml
+apiVersion: extensions.istio.io/v1alpha1
+kind: WasmPlugin
+metadata:
+  name: your-filter
+spec:
+  selector:
+    matchLabels:
+      app: server
+  phase: AUTHN
+  priority: 10
+  pluginConfig:
+    someSetting: true
+    someOtherSetting: false
+    youNameIt:
+    - first
+    - second
+  url: docker.io/your-org/your-filter:1.0.0
+```
+
 * [WebAssembly for Proxies (ABI specification)](https://github.com/proxy-wasm/spec)
   - 正好最近打算写 `Envoy filter/plugin`
 
