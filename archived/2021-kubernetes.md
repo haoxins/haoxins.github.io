@@ -69,88 +69,6 @@ k get secret argocd-initial-admin-secret \
 
 ------------------
 
-## Grafana
-
-```zsh
-k port-forward svc/kube-prometheus-stack-grafana \
-  -n monitoring 3000:80
-# Username: admin
-k get secret kube-prometheus-stack-grafana \
-  -n monitoring \
-  -o jsonpath="{.data.admin-password}" | base64 -d
-```
-
-## Prometheus
-
-* [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator)
-* [kube-prometheus](https://github.com/prometheus-operator/kube-prometheus)
-
-```zsh
-# Whenever the Grafana dashboard doesn't provide
-# enough details we can query Prometheus directly.
-k port-forward svc/kube-prometheus-stack-prometheus \
-  -n monitoring 9090
-# Username: admin
-# Password: prom-operator
-```
-
-## Jaeger
-
-```zsh
-k port-forward svc/jaeger-query \
-  -n istio-system 8086:80
-```
-
-------------------
-
-## Cert Manager
-
-* An **`Issuer`** is scoped to a *single namespace*,
-  and can only fulfill Certificate resources
-  within its *own namespace*.
-
-* On the other hand, a **`ClusterIssuer`** is a
-  cluster wide version of an Issuer.
-  It is able to be referenced by Certificate
-  resources in *any namespace*.
-
-## External DNS
-
-### Let's Encrypt: DNS-01
-
-* [Configuring DNS01 Challenge Provider](https://cert-manager.io/docs/configuration/acme/dns01/)
-* [Let's Encrypt: DNS-01 challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge)
-* [GCP: Let's Encrypt DNS-01 Challenge](https://kosyfrances.com/letsencrypt-dns01/)
-  - *DNS-01 Challenge Provider* for
-    *Let's Encrypt Issuer*
-    using *Google CloudDNS*
-  - https://letsencrypt.org/docs/rate-limits/
-
-------------------
-
-## GCP/GKE
-
-* *Storage classes* (Default)
-
-```
-standard      kubernetes.io/gce-pd   pd-standard
-standard-rwo  pd.csi.storage.gke.io  pd-balanced
-premium-rwo   pd.csi.storage.gke.io  pd-ssd
-```
-
-* **Workload Identity**
-  - 基于 *Google Compute Engine (GCE)* `metadata service`.
-
-```zsh
-curl http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/?recursive=true \
-  --header "Metadata-Flavor: Google"
-```
-
-> - 如果报错: `Request cannot contain header: X-Forwarded-For`
-> - 十有八九: `Envoy` 的**锅**
-
-------------------
-
 ## Istio
 
 * https://istio.io/latest/docs/reference/config/istio.operator.v1alpha1/
@@ -239,6 +157,92 @@ k get secret \
 ```zsh
 k logs -n istio-system -l app=istiod --tail=10000
 ```
+
+------------------
+
+## Etcd
+
+------------------
+
+## Prometheus
+
+* [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator)
+* [kube-prometheus](https://github.com/prometheus-operator/kube-prometheus)
+
+```zsh
+# Whenever the Grafana dashboard doesn't provide
+# enough details we can query Prometheus directly.
+k port-forward svc/kube-prometheus-stack-prometheus \
+  -n monitoring 9090
+# Username: admin
+# Password: prom-operator
+```
+
+## Grafana
+
+```zsh
+k port-forward svc/kube-prometheus-stack-grafana \
+  -n monitoring 3000:80
+# Username: admin
+k get secret kube-prometheus-stack-grafana \
+  -n monitoring \
+  -o jsonpath="{.data.admin-password}" | base64 -d
+```
+
+## Jaeger
+
+```zsh
+k port-forward svc/jaeger-query \
+  -n istio-system 8086:80
+```
+
+------------------
+
+## Cert Manager
+
+* An **`Issuer`** is scoped to a *single namespace*,
+  and can only fulfill Certificate resources
+  within its *own namespace*.
+
+* On the other hand, a **`ClusterIssuer`** is a
+  cluster wide version of an Issuer.
+  It is able to be referenced by Certificate
+  resources in *any namespace*.
+
+## External DNS
+
+### Let's Encrypt: DNS-01
+
+* [Configuring DNS01 Challenge Provider](https://cert-manager.io/docs/configuration/acme/dns01/)
+* [Let's Encrypt: DNS-01 challenge](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge)
+* [GCP: Let's Encrypt DNS-01 Challenge](https://kosyfrances.com/letsencrypt-dns01/)
+  - *DNS-01 Challenge Provider* for
+    *Let's Encrypt Issuer*
+    using *Google CloudDNS*
+  - https://letsencrypt.org/docs/rate-limits/
+
+------------------
+
+## GCP/GKE
+
+* *Storage classes* (Default)
+
+```
+standard      kubernetes.io/gce-pd   pd-standard
+standard-rwo  pd.csi.storage.gke.io  pd-balanced
+premium-rwo   pd.csi.storage.gke.io  pd-ssd
+```
+
+* **Workload Identity**
+  - 基于 *Google Compute Engine (GCE)* `metadata service`.
+
+```zsh
+curl http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/?recursive=true \
+  --header "Metadata-Flavor: Google"
+```
+
+> - 如果报错: `Request cannot contain header: X-Forwarded-For`
+> - 十有八九: `Envoy` 的**锅**
 
 ------------------
 
