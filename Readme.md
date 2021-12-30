@@ -9,6 +9,10 @@
   *Graph computing*,
   and so on.
 
+### Currently
+
+* Machine learning & Cloud native development
+
 ### Formerly
 
 > - JVM stack developer (3Y+, Kotlin, Spring and others)
