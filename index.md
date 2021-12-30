@@ -18,7 +18,7 @@
 ### 2021
 * [关于技术, 次年度期待清单](archived/2021-worth-looking-forward.md)
 * [Web](archived/2021-web.md)
-* [Watching](archived/2021-watching.md)
+* [影视清单](archived/2021-watching.md)
 * [Watching long term](archived/2021-watching-long-term.md)
 * [TAOCP 排序与查找 - 计算机程序设计艺术](archived/2021-taocp-3.md)
 * [TAOCP 半数值算法 - 计算机程序设计艺术](archived/2021-taocp-2.md)
