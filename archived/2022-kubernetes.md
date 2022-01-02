@@ -51,6 +51,15 @@ k rollout restart deploy deploy_name
   - `"1.4"` or `1.4`
   - `v1.4`, `1.4.0` 是明确的 *String*
 
+* `deployment.pod_annotations.sidecar\.istio\.io\/inject`
+
+```yaml
+deployment:
+  pod_annotations:
+    sidecar.istio.io/inject:
+    ...
+```
+
 ------------------
 
 ## Argo
