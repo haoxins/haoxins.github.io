@@ -4,17 +4,21 @@ description: 结庐在人境, 而无车马喧. 问君何能尔? 心远地自偏.
 date: 2021-10-28
 ---
 
-## Go (1.18+)
-
-* [ent](https://github.com/ent/ent)
-
-------------------
-
 ## Rust (2021)
 
 * [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
 * [axum](https://github.com/tokio-rs/axum)
   - [Surf](https://github.com/http-rs/surf)
+
+```zsh
+cargo test -- --show-output
+```
+
+------------------
+
+## Go (1.18+)
+
+* [ent](https://github.com/ent/ent)
 
 ------------------
 
