@@ -29,3 +29,42 @@ date: 2022-01-02
   - GraphSAGE
   - TransE
   - DeepGL
+
+## Representing network structure
+
+> The most **basic** graph representation is the
+  mathematical data structure **adjacency matrix**.
+
+* An adjacency matrix is a **square matrix**, where
+  the matrix elements indicate whether pairs of
+  nodes are connected or not in the graph.
+* The adjancency matrix **dimensions** are
+  *equal to* the *number of nodes* in the graph.
+* Another mathematical structure to represent
+  networks is called the **edge list** data structure.
+* An edge or relationship list is a simple
+  data structure where each row represents a
+  relationship of a given network.
+  - Such as: `Source`, `Target`, `Weight`
+  - One limitation of the edge list is that it does not
+    allow isolated nodes to be present.
+  - Isolated nodes are nodes without any relationships.
+  - This limitation can be solved by introducing a
+    **node list** next to the **edge list**.
+
+```sql
+(:Person {name: "Thomas"})
+  -[:FRIEND {since: 2016}]
+  ->(:Person {name: "Elaine"})
+```
+
+* From a performance perspective, the `index-free`
+  adjacency versus a traditional join operation is
+  the most important thing to consider when
+  thinking about using a native graph database.
+* As you can observe, the key **difference** from
+  the RDF approach to graph modeling is that
+  **labeled-property** graph (LPG) supports both
+  node and relationship properties stored as
+  **key-value pairs**.
+
