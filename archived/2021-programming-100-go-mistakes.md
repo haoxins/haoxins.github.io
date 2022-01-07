@@ -1148,3 +1148,17 @@ if err != nil {
 * Using `errors.Is` instead of the `==` makes the
   comparison working even if the error was
   **wrapped** using `%w`.
+
+## Concurrency
+
+```
+Concurrency is about dealing with lots of things at once.
+Parallelism is about doing lots of things at once.
+
+-- Rob Pike
+```
+
+* Concurrency **isn't always faster**
+
+> A **thread** is the **smallest unit** of processing
+  that an **OS** can **perform**.
