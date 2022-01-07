@@ -1228,3 +1228,42 @@ Parallelism is about doing lots of things at once.
     **mutexes** for **parallel** goroutines and
     **channels** for **concurrent** ones.
 
+* Data races `vs.` race conditions
+  - A **data race** occurs when two or more goroutines
+    simultaneously access the same memory location,
+    and at least one is writing.
+  - A **race condition** occurs when the behavior depends
+    on the sequence or the timing of events that can't
+    be controlled.
+* So how should we prevent a data race from happening?
+  - **Atomic** operations can be done in Go
+    using the `atomic` package.
+  - In Go, the `sync` package provides a **Mutex** type.
+* We have also seen how to prevent data race with three
+  synchronization approaches:
+  - Using **atomic** operations
+  - Protecting a critical section with a **mutex**
+  - Using communication and **channels** to ensure
+    a variable is updated only by a single goroutine
+* Ensuring a specific sequence of execution among
+  goroutines is a question of coordination and orchestration.
+  - If we want to ensure that we first go from `state 0`
+    to `state 1`, then from `state 1` to `state 2`, we
+    should find a way to guarantee that goroutines are
+    executed in order.
+  - **Channels** can be a way to solve this problem.
+
+* In summary, when we work in concurrent applications,
+  it's essential to understand that a **data race**
+  is different from a **race condition**.
+* A **data race** occurs when multiple goroutines
+  simultaneously access the same memory location,
+  and at least one of them is writing.
+* A **data race** means an `unexpected behavior`.
+* However, a `data race-free` application doesn't
+  necessarily mean **deterministic** results. Indeed,
+  an application can be free of data races but can
+  still have its behavior depending on uncontrolled events
+  - e.g., goroutines execution, how fast will a message
+    be published to a channel, how long will last a call to a DB;
+  - this is a **race condition**.
