@@ -1159,6 +1159,10 @@ Parallelism is about doing lots of things at once.
 ```
 
 * Concurrency **isn't always faster**
+  - If the workload that we want to parallelize is
+    **too small**, meaning we're going to compute it
+    too fast, the benefit of distributing a job
+    across cores will be destroyed.
 
 > - A **thread** is the **smallest unit** of processing
     that an **OS** can **perform**.
@@ -1190,4 +1194,37 @@ Parallelism is about doing lots of things at once.
 * Indeed, the Go runtime handles two kinds of queues:
   - one local queue per **P**
   - and a global queue shared among all the **P**s.
+
+* Every `1/61` execution, the Go scheduler will check
+  whether goroutines from the global queue are available.
+  - If not, it will check its local queue.
+  - Meanwhile, if both the global and the local queues
+    are empty, it can pick up goroutines from other local queues.
+  - This principle in scheduling is called `work-stealing`,
+    and it allows an underutilized processor to actively
+    look for other processor's goroutine and **steal** some.
+* Since Go `1.14`, the Go scheduler is now preemptive.
+  - It means that when a goroutine is running for a specific
+    amount of time (`10 ms`), it will be marked preemptible
+    and can be context-switched off to be replaced by
+    another goroutine.
+  - It allows a long-running job to be forced to share CPU time.
+
+* If we're not sure that a parallel version will be faster,
+  perhaps the right approach is first to start with a simple
+  and sequential one and build from here thanks to profiling
+  and benchmarks.
+
+* **Mutexes** and **channels** have different semantics.
+  - Whenever we want to share a state or access a
+    shared resource, **mutexes** ensure exclusive
+    access to this resource.
+  - Conversely, **channels** are a mechanic for signaling
+    with or without data (`chan struct{}` or not).
+  - Coordination or ownership transfer should be achieved
+    via **channels**.
+  - It's important to know whether goroutines are parallel
+    or concurrent as in general, we should rather need
+    **mutexes** for **parallel** goroutines and
+    **channels** for **concurrent** ones.
 
