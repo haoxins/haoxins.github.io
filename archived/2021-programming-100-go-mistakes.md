@@ -1160,5 +1160,34 @@ Parallelism is about doing lots of things at once.
 
 * Concurrency **isn't always faster**
 
-> A **thread** is the **smallest unit** of processing
-  that an **OS** can **perform**.
+> - A **thread** is the **smallest unit** of processing
+    that an **OS** can **perform**.
+> - Context switching is considered an expensive operation
+    as the OS needs to save the current execution state of
+    a thread before the switch (e.g., the current register values).
+
+* Context switching a goroutine `vs.` a thread is about
+  `80%` to `90%` faster depending on the architecture.
+
+* Internally, the Go scheduler uses the following terminology:
+  - **G**: goroutine
+  - **M**: OS thread (stands for machine)
+  - **P**: CPU core (stands for processor)
+* The `GOMAXPROCS` variable defines the limit of `OS threads (M)`
+  in charge of executing user-level code simultaneously.
+  - Yet, if a thread is blocked in a system call (e.g., I/O),
+    the scheduler can spin up more OS threads (M).
+  - As of Go 1.5, `GOMAXPROCS` is by default equal to the
+    number of available CPU cores.
+* A goroutine has a simpler lifecycle than an OS thread.
+  It can be either:
+  - **Executing**: the goroutine is scheduled on an **M**
+    and executing its instructions
+  - **Runnable**: waiting for being in an executing state
+  - **Waiting**: stopped and pending for something to
+    complete, such as a system call or a
+    synchronization operation (e.g., mutex)
+* Indeed, the Go runtime handles two kinds of queues:
+  - one local queue per **P**
+  - and a global queue shared among all the **P**s.
+
