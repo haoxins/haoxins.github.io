@@ -1294,3 +1294,77 @@ Parallelism is about doing lots of things at once.
   a `cancellation` signal, and
   other values across API boundaries.
 
+* A **deadline** is either:
+  - A `time.Duration` (e.g., `250 ms`)
+  - A `time.Time` (e.g., `1999-02-07 00:00:00 UTC`)
+* The semantic of a `deadline` conveys that an ongoing
+  activity should be stopped if this deadline is met.
+  - An activity is, for example, an `I/O` request, or a
+    goroutine waiting to receive a message from a `channel`.
+
+* A context conveying values can be created this way:
+
+```go
+ctx := context.WithValue(parentCtx, "key", "value")
+```
+
+* Just like `context.WithTimeout`, `context.WithDeadline`,
+  and `context.WithCancel`, `context.WithValue` is created
+  from a parent context.
+
+* Consequently, a best practice while handling `context keys`
+  is to create an unexported custom type.
+* Hence, there's no risk that another package using
+  the `same context` could override the value already set.
+
+* Catching a context **cancellation**
+  - The `context.Context` type exports a `Done` method
+    that returns a `receive-only` notification channel:
+    `<- chan struct{}`.
+  - This channel is closed when the work associated
+    to the context should be canceled.
+* For example, the `Done` channel related to a context created with:
+  - `context.WithCancel` is closed when the
+    cancel function is called
+  - `context.WithDeadline` is closed when the
+    deadline has expired
+* One thing to mention, why should the internal channel
+  be closed when a context is canceled or has met
+  a deadline instead of receiving a specific value?
+  - Because the closure of a channel is the
+    only channel action that all the consumer goroutines
+    will receive.
+  - This way, all the consumers will be notified once
+    a context is canceled or a deadline is reached.
+* Furthermore, `context.Context` exports an `Err` method
+  that returns `nil` if the `Done` channel isn't yet closed;
+  otherwise, it returns a `non-nil` error explaining why
+  the `Done` channel was closed, for example:
+  - A `context.Canceled` error if the channel was cancelled
+  - A `context.DeadlineExceeded` error if the
+    context's deadline passed
+
+```go
+func handler(ctx context.Context, ch chan Message) error {
+  for {
+    select {
+    case msg := <-ch:
+      // Do something with msg
+    case <-ctx.Done():
+      return ctx.Err()
+    }
+  }
+}
+```
+
+* In summary, propagating a context should be done cautiously.
+  - We illustrated this section with an example of handling
+    an asynchronous action based on a context associated
+    with an HTTP request. As the context is canceled once we
+    return the response, the asynchronous action can also
+    get stopped unexpectedly.
+  - Let's bear in mind the impacts of propagating a given
+    context and if necessary, let's also keep in mind that
+    it would always be possible to create our custom
+    context for a specific action.
+
