@@ -1368,3 +1368,24 @@ func handler(ctx context.Context, ch chan Message) error {
     it would always be possible to create our custom
     context for a specific action.
 
+### Mistake - Starting a goroutine without knowing when to stop it
+
+* Not knowing when to stop a goroutine is a
+  design issue and a common
+  concurrency mistake in Go.
+
+* In summary, let's be mindful that a goroutine is a
+  resource like any other which have to be eventually closed,
+  be it to free memory or other resources.
+  - Starting a goroutine without knowing when to
+    stop it is a design issue.
+* Whenever a goroutine is started, we should have a clear
+  plan about when it will stop.
+* Last but not least, if a goroutine creates resources
+  and its lifetime is bound to the lifetime of the application,
+  it's probably **safer** to **wait for it to be closed**
+  **instead of notifying it**.
+  - This way, we can ensure the resources are
+    **freed before exiting** the application.
+
+### Mistake - Not being careful with goroutines and loop variables
