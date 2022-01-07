@@ -68,3 +68,35 @@ date: 2022-01-02
   node and relationship properties stored as
   **key-value pairs**.
 
+* The graph model depends on your task, and with
+  the **LPG** model, you can represent a literal
+  value both as an internal node property
+  (`key-value` pair) as well as a separate node.
+  - Similarly, you have the option to represent
+    the label as a separate node as well.
+
+```sql
+(:User)-[:PUBLISH]->(:Tweet)<-[:RETWEETS]-(:User)
+```
+
+> - With the LPG model, you can't create a relationship
+    that is pointing to another relationship.
+> - The beauty of the graph approach to data modeling
+    is that you can always connect new
+    information to an existing graph.
+
+* When considering whether you want to store information
+  **as separate nodes or node properties**, one thing
+  to note is to examine if the **values are standardized**.
+  - The whole point of using separate nodes to store
+    information is to allow faster traversals at query runtime.
+
+> One reason for that is that you **avoid** having nodes that
+  can be connected to large parts of the graphs.
+
+* An important consideration is that you want to
+  **avoid generic relationship** types like `HAS`,
+  where you could use it in many scenarios.
+* What you don't want to end up is with
+  a single relationship type that can lead to
+  many different node types.
