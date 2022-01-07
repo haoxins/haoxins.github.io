@@ -10,8 +10,13 @@ date: 2019-10-24
 
 ### 2021-12
 
+* [对手](https://movie.douban.com/subject/35235428/)
+
 * [雪中悍刀行](https://movie.douban.com/subject/27034752/)
   - 不错!
+  - 老黄 剑九黄
+  - 林探花
+  - 轩辕敬城
 
 * 重温 [误杀](https://movie.douban.com/subject/30176393/)
 
