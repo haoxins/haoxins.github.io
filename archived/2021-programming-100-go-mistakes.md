@@ -1389,3 +1389,60 @@ func handler(ctx context.Context, ch chan Message) error {
     **freed before exiting** the application.
 
 ### Mistake - Not being careful with goroutines and loop variables
+
+```go
+s := []int{1, 2, 3}
+
+for _, i := range s {
+  go func() {
+    fmt.Print(i)
+  }()
+}
+```
+
+* One may expect this code to print `123` in
+  no particular order.
+  - as there is no guarantee that a goroutine
+    created first will complete first
+* **However**, the output of this code isn't
+  deterministic.
+  - For example, sometimes it can print `233`,
+    sometimes `333`.
+* What's the reason?
+* We have to know that when a **closure goroutine**
+  is executed, it **doesn't** capture the values when
+  the goroutine is **created**.
+* Instead, all the goroutines rely on the same variable.
+* When a goroutine runs, it prints the value of `i` at
+  the time `fmt.Print` is **executed**.
+  - Hence, `i` may have been modified since
+    the goroutine was launched.
+
+```go
+s := []int{1, 2, 3}
+
+for _, i := range s {
+  v := i
+  go func() {
+    fmt.Print(v)
+  }()
+}
+```
+
+```go
+s := []int{1, 2, 3}
+
+for _, i := range s {
+  go func(i int) {
+    fmt.Print(i)
+  }(i)
+}
+```
+
+* We have to be **cautious** with `goroutines` and `loop` variables.
+* If the goroutine is a `closure` that accesses an iteration
+  variable from outside its body, it's a problem.
+  - We can fix it either by creating a local variable
+  - for example, as we have seen using `i := i` before
+    executing the goroutine
+  - or by making the function no longer a closure.
