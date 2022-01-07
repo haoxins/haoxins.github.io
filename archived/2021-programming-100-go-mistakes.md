@@ -1267,3 +1267,30 @@ Parallelism is about doing lots of things at once.
   - e.g., goroutines execution, how fast will a message
     be published to a channel, how long will last a call to a DB;
   - this is a **race condition**.
+
+* Creating a goroutine `happens before`
+  the goroutine's execution begins.
+* **Closing** a channel `happens before`
+  a **receive** of this closure.
+* A **send** on a channel `happens before`
+  the corresponding **receive**
+  from that channel completes.
+* A **receive** from an **unbuffered** channel
+  `happens before` the **send** on that
+  channel completes.
+
+* If the workload executed by the workers is `IO-bound`,
+  the value mainly depends on the external system.
+* Conversely, if the workload is `CPU-bound`, the most
+  optimal number of goroutines is close to the number
+  of available threads.
+  - It's why knowing the workload type
+    (either `I/O` or the `CPU`) is crucial when
+    designing concurrent applications.
+
+### Context
+
+> A **Context** carries a `deadline`,
+  a `cancellation` signal, and
+  other values across API boundaries.
+
