@@ -1471,3 +1471,40 @@ uniform pseudo-random selection.
   fast sender, for example.
   - To prevent this, the language designers have
     decided to use a random selection.
+* Using `default` in a `select` statement is chosen
+  only if none of the other cases match.
+
+* When using `select` with multiple channels, we have to
+  remember that if multiple options are possible,
+  it's not the first case in the source order that will win.
+* Instead, Go will **select** it **randomly**, so there's
+  no guarantee about which one will be chosen.
+  - To overcome this behavior, we can either change the
+    producer and receiver (if possible) to use a single
+    channel or use inner selects and `default` case to
+    handle prioritizations.
+
+### Not using notification channels
+
+* In Go, an **empty** `struct` is a `struct`
+  without any fields. Regardless of the architecture,
+  it occupies **zero** `bytes` of storage as we can
+  verify using `unsafe.Sizeof`:
+
+```go
+var s struct{}
+fmt.Println(unsafe.Sizeof(s))
+// 0
+```
+
+* We may wonder why not using an empty `interface`.
+  - `var i interface{}`
+* Yet, an empty `interface` isn't free;
+  - it occupies `8` bytes on `32-bit` architecture
+  - and `16` bytes on `64-bit` architecture.
+
+* Applied to channels, if we want to create a channel
+  to send notification without data, the appropriate
+  manner of doing it in Go is a `chan struct{}`.
+
+### Mistake - Not using nil channels
