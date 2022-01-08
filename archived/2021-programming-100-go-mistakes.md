@@ -1446,3 +1446,28 @@ for _, i := range s {
   - for example, as we have seen using `i := i` before
     executing the goroutine
   - or by making the function no longer a closure.
+
+### Mistake - Expecting a deterministic behavior using select and channels
+
+```
+If one or more of the communications can proceed,
+a single one that can proceed is chosen via a
+uniform pseudo-random selection.
+
+-- Programming Language Specification
+```
+
+* Unlike a `switch` statement where the first case
+  with a match wins, the `select` statement will
+  select one **randomly** if multiple
+  options are possible.
+* This behavior might look odd at first, but there's
+  a good reason for that:
+  - to prevent possible **starvation**.
+* Indeed, suppose the first possible communication
+  chosen is based on the source order. In that case,
+  we may fall into the situation where we would solely
+  receive from one single channel because of a
+  fast sender, for example.
+  - To prevent this, the language designers have
+    decided to use a random selection.
