@@ -1667,3 +1667,40 @@ consumption is evenly matched.
 -- LMAX Disruptor
 ```
 
+### Forgetting about possible side-effects with string formatting
+
+* Can you see what the problem is in this code?
+
+```go
+type Customer struct {
+  mutex sync.RWMutex
+  id    string
+  age   int
+}
+
+func (c *Customer) UpdateAge(age int) error {
+  c.mutex.Lock()
+  defer c.mutex.Unlock()
+
+  if age < 0 {
+    return errors.New("age should be positive")
+  }
+
+  c.age = age
+  return nil
+}
+
+func (c *Customer) String() string {
+  c.mutex.RLock()
+  defer c.mutex.RUnlock()
+  return fmt.Sprintf("id %s, age %d", c.id, c.age)
+}
+```
+
+* The problem here might not be that straightforward.
+  - If the provided `age` is negative, we return an error.
+  - As the error is formatted, using the `%s` directive
+    on the receiver, it will call the `String` method
+    to format `Customer`.
+  - Yet, as `UpdateAge` already acquires the `mutex` lock,
+    the `String` method won't be able to acquire it.
