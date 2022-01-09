@@ -1614,3 +1614,56 @@ func merge(ch1, ch2 <-chan int) <-chan int {
   dealing with concurrent code.
 
 ### Being puzzled about a channel size
+
+* An **unbuffered** channel is a channel without
+  any capacity.
+  - It can be created by either omitting the size
+    or providing a zero size:
+* Using an **unbuffered** channel
+  (also sometimes called **synchronous** channels),
+  the sender will *block until* the
+  *receiver receives* data from the channel.
+
+```go
+ch1 := make(chan int)
+ch2 := make(chan int, 0)
+```
+
+* With a **buffered** channel, a sender can send
+  messages while the channel isn't full.
+* Once the channel is full, it will block until
+  a receiver goroutine receives a message.
+
+* Regarding channels:
+  - A **buffered** channel enables **synchronization**.
+    Indeed, we have the guarantee that two goroutines
+    will be in a known state: one receiving and another
+    one sending a message.
+  - Yet, an **unbuffered** channel doesn't provide any
+    strong synchronization. Indeed, a producer goroutine
+    can send a message and then continue its execution
+    if the channel isn't full. The only guarantee is that
+    a goroutine won't receive a message before it is sent.
+    Yet, this is only a guarantee because of causality.
+* It's essential to keep in mind this fundamental distinction.
+  - Both channel types enable communication, but only one
+    provides synchronization.
+  - If we need synchronization, we must use unbuffered
+    channels. Also, unbuffered channels might be easier
+    to reason about.
+  - Indeed, buffered channels can lead to obscure
+    deadlocks that would have been immediately
+    apparent with unbuffered channels.
+
+```
+Queues are typically always close to full
+or close to empty due to the differences in
+pace between consumers and producers.
+
+They very rarely operate in a balanced middle
+ground where the rate of production and
+consumption is evenly matched.
+
+-- LMAX Disruptor
+```
+
