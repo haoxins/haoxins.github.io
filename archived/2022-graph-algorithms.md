@@ -100,3 +100,11 @@ date: 2022-01-02
 * What you don't want to end up is with
   a single relationship type that can lead to
   many different node types.
+
+* You might have noticed that a common theme to
+  network analysis is to translate indirect graph
+  patterns and relationships to direct ones.
+* Another frequent scenario is translating a
+  bipartite network to a monopartite network.
+
+## Your first steps with the Cypher query
