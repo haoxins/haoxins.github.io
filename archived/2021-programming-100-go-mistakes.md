@@ -1508,3 +1508,109 @@ fmt.Println(unsafe.Sizeof(s))
   manner of doing it in Go is a `chan struct{}`.
 
 ### Mistake - Not using nil channels
+
+* Receiving a message on a `nil` channel is
+  a valid operation. The goroutine won't panic;
+  however, it will **block forever**.
+
+```go
+func merge(ch1, ch2 <-chan int) <-chan int {
+  ch := make(chan int, 1)
+  ch1Closed := false
+  ch2Closed := false
+
+  go func() {
+    for {
+      select {
+      case v, open := <-ch1:
+        if !open {
+          ch1Closed = true
+          break
+        }
+        ch <- v
+      case v, open := <-ch2:
+        if !open {
+          ch2Closed = true
+          break
+        }
+        ch <- v
+      }
+
+      if ch1Closed && ch2Closed {
+        close(ch)
+        return
+      }
+    }
+  }()
+
+  return ch
+}
+```
+
+* There is one major **issue**: when one of the two
+  channels is closed, the for loop will act as a
+  busy-waiting one, meaning it will keep looping
+  even though there's no new message received in
+  the other channel.
+* Indeed, we have to keep in mind the behavior of
+  the select statement in our example.
+  - Let's say `ch1` was closed
+    (so we won't receive any new message in here);
+  - once we reach select again, it will wait for
+    one of these three conditions to happen:
+  - `ch1` is closed
+  - `ch2` has a new message
+  - `ch2` is closed
+
+```go
+func merge(ch1, ch2 <-chan int) <-chan int {
+  ch := make(chan int, 1)
+
+  go func() {
+    for ch1 != nil || ch2 != nil {
+      select {
+      case v, open := <-ch1:
+        if !open {
+          ch1 = nil
+          break
+        }
+        ch <- v
+      case v, open := <-ch2:
+        if !open {
+          ch2 = nil
+          break
+        }
+        ch <- v
+      }
+    }
+    close(ch)
+  }()
+
+  return ch
+}
+```
+
+* First, we loop as long as at least one channel
+  is still opened. Then, for example, if `ch1` is
+  closed, we assign `ch1` to `nil`.
+* Hence, during the next loop iteration, the `select`
+  statement will now only wait for two conditions:
+  - `ch2` has a new message
+  - `ch2` is closed
+* This is the implementation we've been waiting for.
+  We cover all the different cases, and it doesn't
+  require a busy loop that will waste CPU cycles.
+
+* In summary, we have seen that waiting or sending to
+  a `nil` channel is a blocking action, and this behavior
+  isn't useless at all.
+* As we have seen throughout the example of merging
+  two channels, we can use `nil` channels to implement
+  an elegant state machine that would remove one case
+  from a `select` statement.
+* Let's keep this idea in mind: `nil` channels are truly
+  useful in some conditions and should be part of the
+  Go developer toolset when it comes to
+  dealing with concurrent code.
+
+### Being puzzled about a channel size
