@@ -1775,3 +1775,54 @@ go func() {
     array index, whereas another execution may not.
   - The race detector handles this case by raising a
     warning, regardless if an actual data race occurs or not.
+
+### Using mutexes inaccurately with slices and maps
+
+* Internally, a map is a `runtime.hmap` struct containing
+  mostly some metadata (e.g., a counter) and a pointer
+  referencing data buckets.
+  - Hence, `balances := c.balances` doesn't
+    copy the actual data.
+
+### Misusing `sync.WaitGroup`
+
+```go
+wg := sync.WaitGroup{}
+var v uint64
+
+for i := 0; i < 3; i++ {
+  go func() {
+    wg.Add(1)
+    atomic.AddUint64(&v, 1)
+    wg.Done()
+  }()
+}
+
+wg.Wait()
+fmt.Println(v)
+
+// non-deterministic value
+// from 0 to 3
+```
+
+* The problem here is that `wg.Add(1)` is called
+  within the newly created goroutine,
+  not in the parent goroutine.
+* Hence, there is no guarantee that we have indicated
+  to the wait group that we wanted to wait for
+  three goroutines before calling `wg.Wait()`.
+
+* When dealing with goroutines, it's crucial to
+  remember that the execution isn't deterministic
+  without synchronization.
+* The CPU has to use a so-called memory fence
+  (also called a memory barrier) to ensure order.
+  - Go provides different synchronization techniques
+    for implementing memory fences,
+    `sync.WaitGroup` being one of them.
+* When using a `sync.WaitGroup`, the `Add` operation
+  must be done before spinning up a goroutine in the
+  parent one, whereas the `Done` operation must be
+  done within the goroutine.
+
+### Forgetting about `sync.Cond`
