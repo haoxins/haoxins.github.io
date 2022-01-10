@@ -1704,3 +1704,74 @@ func (c *Customer) String() string {
     to format `Customer`.
   - Yet, as `UpdateAge` already acquires the `mutex` lock,
     the `String` method won't be able to acquire it.
+
+### Creating data races with append
+
+```go
+s := make([]int, 1)
+
+go func() {
+  s1 := append(s, 1)
+  fmt.Println(s1)
+}()
+
+go func() {
+  s2 := append(s, 1)
+  fmt.Println(s2)
+}()
+```
+
+* Do you believe this example has a data race?
+  - The answer is `no`.
+* In this example, we created a slice with
+  `make([]int, 1)`.
+  - This example creates a `1-length`, `1-capacity` slice.
+  - Thus, as the slice is full, using append is in each
+    goroutine will return a slice backed by a new array.
+  - It doesn't mutate the existing array;
+    hence it doesn't lead to a data race.
+
+```go
+s := make([]int, 0, 1)
+
+go func() {
+  s1 := append(s, 1)
+  fmt.Println(s1)
+}()
+
+go func() {
+  s2 := append(s, 1)
+  fmt.Println(s2)
+}()
+// DATA RACE !!!
+```
+
+* Here, we created a slice with `make([]int, 0, 1)`.
+  - Therefore, the array isn't full.
+  - Consequently, both goroutines make an attempt to
+    update the same index of the backing array
+    (index `1`), which is a data race.
+
+* How much do data races impact slices and maps?
+  Having multiple goroutines:
+  - Accessing the same slice index with at least one
+    of them updating the value is a data race.
+    Indeed, the goroutines are accessing
+    the same memory location.
+  - Accessing different slice indices regardless of
+    the operation isn't a data race; different indices
+    mean different memory locations.
+  - Accessing the same map (regardless of whether it's
+    the same or a different key) with at least one of
+    them updating it is a data race.
+  - We may be wondering why it is different from a
+    slice data structure? As we mentioned in the data
+    types chapter, a map is an array of buckets,
+    each bucket being a pointer to an array of
+    `key/value` pairs. A hashing algorithm is used to
+    determine the array index of the bucket. As this
+    algorithm contains some randomness during the map
+    initialization, one execution may lead to the same
+    array index, whereas another execution may not.
+  - The race detector handles this case by raising a
+    warning, regardless if an actual data race occurs or not.
