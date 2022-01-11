@@ -1826,3 +1826,49 @@ fmt.Println(v)
   done within the goroutine.
 
 ### Forgetting about `sync.Cond`
+
+* The default distribution mode with multiple goroutines
+  receiving from a shared channel is `round-robin`.
+  - It can change if one goroutine isn't ready yet to
+    receive messages (not in a waiting state on the channel);
+  - in that case, Go would distribute the message to the
+    next available goroutine.
+* Only a channel `closure` is an event that can be
+  **broadcasted** to multiple goroutines.
+
+```
+Cond implements a condition variable,
+a rendezvous point for goroutines waiting for
+or announcing the occurrence of an event.
+
+-- sync package documentation
+```
+
+* A `condition` variable is a container of threads
+  (here, goroutines) waiting for a
+  certain condition.
+* Furthermore, `sync.Cond` relies on a `sync.Locker`
+  (a `*sync.Mutex` or `*sync.RWMutex`) to prevent data races.
+
+* Let's also note one possible drawback when using `sync.Cond`.
+* When we send a notification, for example, to a `chan struct`,
+  even if there's no active receiver, the message will be
+  buffered, which guarantees that this notification will be
+  received eventually.
+* Using `sync.Cond` with the `Broadcast` method wakes all
+  goroutines currently waiting on the condition, and if none,
+  the notification will be missed.
+  - This is also an essential principle that we
+    have to keep in mind.
+* Signaling in Go can be achieved with channels.
+  However, we should be aware that only a channel closure
+  is an event multiple goroutines can catch.
+  - Yet, this can happen only once.
+  - Therefore, if we repeatedly send notifications to
+    multiple goroutines, `sync.Cond` is a solution.
+  - This primitive is based on condition variables that
+    set up containers of threads waiting for
+    a specific condition.
+  - Using `sync.Cond`, we can broadcast signals that
+    will wake all the goroutines waiting on a condition.
+
