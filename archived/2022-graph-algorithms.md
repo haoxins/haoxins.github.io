@@ -310,3 +310,5 @@ AND NOT EXISTS {
 }
 RETURN count(*) AS countOfUsers
 ```
+
+### Node degree distribution
