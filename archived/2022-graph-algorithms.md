@@ -129,3 +129,56 @@ WHERE first_name = 'Elon'
 RETURN *
 ```
 
+* An important thing to note is that a `WHERE` clause
+  only looks at and filters the output of the `WITH`
+  statement and cannot stand on its own.
+
+```sql
+CREATE (elaine:Person{name:'Elaine'}), (michael:Person {name: 'Michael'})
+CREATE (elaine)-[f:FRIEND]->(michael)
+RETURN *
+```
+
+* I can safely say that if you have nodes without
+  a label in your graph, something is wrong with
+  either your model or your import process.
+
+```sql
+MATCH (p:Person {name:'Satish'})
+RETURN p
+```
+
+* *Inline pattern matching* uses Cypher pattern syntax
+  to describe a node or relationship pattern with its
+  labels and properties.
+* The opposite of inline pattern matching is using a
+  `WHERE` clause to describe a graph pattern.
+
+```sql
+MATCH (p)
+WHERE p:Person AND p.name = 'Satish'
+RETURN p
+```
+
+* You can always have multiple `MATCH` clauses in a sequence.
+  Similar to the `WITH` clause, the `WHERE` clause only
+  applies to the previous `MATCH` clause.
+* If you use many `MATCH` clauses in a sequence, make sure
+  to append a `WHERE` clause to each `MATCH` clause where needed.
+* A `WHERE` clause can only exist when it follows a
+  `WITH`, `MATCH`, or an `OPTIONAL MATCH` clause.
+
+```sql
+MATCH (from:Person), (to:Person)
+WHERE from.name = 'Satish' AND to.name = 'Elaine'
+CREATE (from)-[:FRIEND]->(to)
+RETURN *
+```
+
+* If only a single `MATCH` clause in the query
+  retrieves no pattern from the database, the
+  result of the query will be empty.
+* If you do not want your query to stop when a
+  single `MATCH` clause finds no existing graph
+  patterns in the database, you can use the
+  `OPTIONAL MATCH` clause.
