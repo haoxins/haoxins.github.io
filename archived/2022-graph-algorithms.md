@@ -237,3 +237,46 @@ DETACH DELETE n
 ```
 
 * The `MERGE` clause can be understood as a combination
+  of using both `MATCH` and `CREATE` clauses.
+  - Using the `MERGE` clause, you instruct the query
+    engine first to try to match a given graph pattern,
+    and if it does not exist,
+    it should then create this pattern.
+* The `MERGE` clause only supports inline graph pattern
+  description and cannot be used in
+  combination with a `WHERE` clause.
+* A `MERGE` clause can be followed by optional
+  `ON CREATE SET` and `ON MATCH SET`.
+
+* Handling **relationships** is a bit different.
+  - If there can be at most a single relationship of
+    one type between two nodes, then do not include
+    any relationship properties in the `MERGE` clause.
+  - Instead, use the `ON CREATE SET` or `ON MATCH SET`
+    clauses to set any relationship properties.
+  - However, if your graph model contains multiple
+    relationships of the same type between a pair of nodes,
+    then only use the unique identifier property of the
+    relationship in the `MERGE` statement and set any
+    additional properties the same as above.
+
+```sql
+CREATE CONSTRAINT IF NOT EXISTS ON (u:User) ASSERT u.id IS UNIQUE;
+```
+
+* There are, however, some **constraints** you can add
+  to your graph model to ensure data integrity.
+  - In my graph journey, I have only used the
+    *unique node property constraint* so far.
+
+```sql
+LOAD CSV WITH HEADERS FROM
+"https://raw.githubusercontent.com/a/b/main/users.csv" as row
+WITH row
+LIMIT 5
+RETURN row
+```
+
+* One thing to note is that the `LOAD CSV` clause returns
+  all values as `strings` and makes no
+  attempt to identify data types.
