@@ -312,3 +312,43 @@ RETURN count(*) AS countOfUsers
 ```
 
 ### Node degree distribution
+
+* With a directed network, you can split the
+  degree distribution into in-degree and
+  out-degree distribution.
+* The `apoc.agg.statistics` function returns
+  statistical values such as `mean`, `max`, and
+  `percentile` values of given values.
+
+```sql
+MATCH (u:User)
+WITH u, size((u)-[:FOLLOWS]->()) as outDegree
+RETURN apoc.agg.statistics(outDegree)
+```
+
+### Graph Catalog and Native projection
+
+* Graph algorithms in the **GDS** library are
+  executed on a projected in-memory graph structure
+  separate from the graph stored in the database.
+
+```sql
+CALL gds.graph.create(
+  graphName,
+  nodeProjection,
+  relationshipProjection,
+  optional configuration
+)
+```
+
+### Weakly Connected Component algorithm
+
+* The first graph algorithm you will execute is the
+  *Weakly Connected Component* algorithm, or **WCC**
+  in short.
+  - It is used to find disconnected parts or islands
+    within a network.
+  - The WCC algorithm is probably one graph algorithm
+    that should be executed as the first step of any
+    graph analysis to evaluate graph connectivity.
+
