@@ -352,3 +352,21 @@ CALL gds.graph.create(
     that should be executed as the first step of any
     graph analysis to evaluate graph connectivity.
 
+```sql
+CALL gds.wcc.write('follower-network', {writeProperty: 'followerWcc'})
+YIELD componentCount, componentDistribution
+```
+
+### Strongly Connected Components algorithm
+
+* The only difference between the **Weakly** and
+  *Strongly Connected Components* algorithm (**SCC**)
+  is that the SCC algorithms considers
+  relationship directions.
+* The *Strongly Connected Component* algorithm
+  is useful when directed paths and reachability
+  plays an important role.
+
+### Local clustering coefficient
+
+* The *local clustering coefficient*,
