@@ -370,3 +370,21 @@ YIELD componentCount, componentDistribution
 ### Local clustering coefficient
 
 * The *local clustering coefficient*,
+  or **LCC** for short, is a **metric** that
+  quantifies how connected or close the
+  neighbors of a particular node are.
+  - The LCC value ranges from `zero` to `one`.
+  - The LCC value of `0` indicates that the
+    neighboring nodes have no connections between
+    each other.
+  - On the other hand, the LCC value of `1` indicates
+    that the network of neighbors forms a complete
+    graph, where all the neighbors are connected.
+* The LCC algorithm provides a metric to evaluate
+  how strongly the neighbors of a node are connected.
+  - You can calculate the LCC value of a single node
+    by dividing the number of existing links between
+    neighbor nodes with the number of possible links
+    between neighbor nodes.
+  - You can use this formula to calculate the LCC on
+    a directed graph as well.
