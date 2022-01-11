@@ -280,3 +280,33 @@ RETURN row
 * One thing to note is that the `LOAD CSV` clause returns
   all values as `strings` and makes no
   attempt to identify data types.
+
+```sql
+LOAD CSV WITH HEADERS FROM
+"https://raw.githubusercontent.com/a/b/main/users.csv" as row
+MERGE (u:User{id:row.id})
+ON CREATE SET u.name = row.name,
+              u.username = row.username,
+              u.registeredAt = datetime(row.createdAt)
+```
+
+* When dealing with larger CSV files, you can use the
+  `USING PERIODIC COMMIT` clause to split the import
+  into several transactions.
+  - By default, `USING PERIODIC COMMIT` clause will
+    split the transaction for every `1000` rows.
+
+```sql
+CALL db.schema.visualization()
+```
+
+## Cypher aggregations and social network analysis
+
+```sql
+MATCH (n:User)
+WHERE (n)<-[:MENTIONS]-()
+AND NOT EXISTS {
+  MATCH (original)<-[:PUBLISH]-(n)<-[:MENTIONS]-()-[:RETWEETS]->(original)
+}
+RETURN count(*) AS countOfUsers
+```
