@@ -1893,9 +1893,9 @@ or announcing the occurrence of an event.
 * We can face the issue of unintentionally copying
   a `sync` field in some of the following conditions:
   - Calling a method with a value receiver
-  - Calling a function with a sync argument
+  - Calling a function with a `sync` argument
   - Calling a function with an argument
-    that contains a sync field
+    that contains a `sync` field
 
 * As a rule of thumb, whenever multiple goroutines have
   to access to a common `sync` element, we must ensure

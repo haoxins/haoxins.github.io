@@ -108,3 +108,24 @@ date: 2022-01-02
   bipartite network to a monopartite network.
 
 ## Your first steps with the Cypher query
+
+* Using the `WITH` clause, you can manipulate the
+  data as an intermediate step before passing the
+  results to the next part of the Cypher query.
+
+```sql
+WITH 'Tomaz' AS first_name
+WITH 'Bratanic' AS last_name, first_name
+RETURN first_name + ' ' + last_name AS result
+```
+
+* The `WITH` clause affects the variables in scope.
+  - Any variables not included in the `WITH` clause
+    are not carried over to the next part of the query.
+
+```sql
+WITH 'Elon' AS first_name, 'Musk' as last_name
+WHERE first_name = 'Elon'
+RETURN *
+```
+

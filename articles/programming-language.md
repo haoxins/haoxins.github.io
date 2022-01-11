@@ -8,6 +8,8 @@ date: 2021-10-28
 
 * [ent](https://github.com/ent/ent)
 
+* [Effective Go](https://go.dev/doc/effective_go)
+
 ------------------
 
 ## Rust (2021)
