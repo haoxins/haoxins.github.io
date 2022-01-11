@@ -1872,3 +1872,36 @@ or announcing the occurrence of an event.
   - Using `sync.Cond`, we can broadcast signals that
     will wake all the goroutines waiting on a condition.
 
+### Mistake - Copying a `sync` type
+
+* The `sync` package provides basic synchronization
+  primitives such as `mutexes`, condition variables,
+  and wait groups.
+  - For all these types, there's a hard rule to follow:
+  - they **should never be copied**.
+
+* `sync` types shouldn't be copied.
+  This rule applies to the following types:
+  - `sync.Cond`
+  - `sync.Map`
+  - `sync.Mutex`
+  - `sync.RWMutex`
+  - `sync.Once`
+  - `sync.Pool`
+  - `sync.WaitGroup`
+
+* We can face the issue of unintentionally copying
+  a `sync` field in some of the following conditions:
+  - Calling a method with a value receiver
+  - Calling a function with a sync argument
+  - Calling a function with an argument
+    that contains a sync field
+
+* As a rule of thumb, whenever multiple goroutines have
+  to access to a common `sync` element, we must ensure
+  they all rely on the same instance.
+  - This rule applies to all the types defined
+    in the `sync` package.
+  - Using `pointers` is a way to solve this problem:
+  - either by having a pointer to a `sync` element
+  - or a `pointer` to a struct containing a `sync` element.
