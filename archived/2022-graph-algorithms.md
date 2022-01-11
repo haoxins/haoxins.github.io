@@ -182,3 +182,58 @@ RETURN *
   single `MATCH` clause finds no existing graph
   patterns in the database, you can use the
   `OPTIONAL MATCH` clause.
+* The `OPTIONAL MATCH` clause would return a
+  `null` value if no matching patterns were found
+  in the database instead of returning no results,
+  behaving similarly as an `OUTER JOIN` in SQL.
+
+* A `SET` clause is used to update labels of nodes
+  and properties of both nodes and relationships.
+
+```sql
+MATCH (t:Person)
+WHERE t.name = 'Satish'
+SET t.interest = 'Gardening',
+    t.hungry = True
+```
+
+```sql
+MATCH (e:Person)
+WHERE e.name = 'Elaine'
+SET e += {hungry: false, pet: 'dog'}
+```
+
+* Note that if the `+=` operator of the `SET` clause
+  is replaced with only `=`, then it overrides all
+  existing properties with only those provided in the map.
+
+* A good guideline to follow when using *multiple node labels*
+  is that node labels should be **semantically orthogonal**.
+  - *Semantically orthogonal* means that node labels shouldn't
+    hold the same or similar meaning and should have nothing
+    to do with one another.
+  - Seconodary node labels are used to group nodes into
+    different buckets, so that each subset is easily accessible.
+
+* The `REMOVE` clause is the opposite of the `SET` clause.
+  It is used to remove node labels and node and
+  relationship properties.
+  - Removing a node property can also be understood as
+    setting its value to `null`.
+* The `DELETE` clause is used to delete nodes and
+  relationships in the database.
+  - You cannot delete a node that still has
+    relationships attached to it.
+* As deleting nodes with existing relationships is a
+  frequent procedure, the Cypher query language provides
+  a `DETACH DELETE` clause that first deletes all the
+  relationships attached to a node and
+  then deletes the node itself.
+
+```sql
+MATCH (n:Person)
+WHERE n.name = 'Elaine'
+DETACH DELETE n
+```
+
+* The `MERGE` clause can be understood as a combination
