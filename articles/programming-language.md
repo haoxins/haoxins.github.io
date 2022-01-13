@@ -4,11 +4,21 @@ description: 结庐在人境, 而无车马喧. 问君何能尔? 心远地自偏.
 date: 2021-10-28
 ---
 
+### Preference
+
+* **Memory** intensive
+  - Such as: `Apache Arrow`, `Flink`
+  - **Rust**
+
 ## Go (1.18+)
 
 * [ent](https://github.com/ent/ent)
 
 * [Effective Go](https://go.dev/doc/effective_go)
+
+* **Deprecated** `io/ioutil`: As of Go `1.16`,
+  the same functionality is now provided by
+  package `io` or package `os`.
 
 ------------------
 
