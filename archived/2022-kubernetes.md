@@ -234,6 +234,19 @@ k port-forward svc/jaeger-query \
 
 ## GCP/GKE
 
+```zsh
+export PROJECT_ID=$(gcloud config get-value project)
+
+gcloud container clusters create $PROJECT_ID-sg-test \
+  --project=$PROJECT_ID \
+  --workload-pool=$PROJECT_ID.svc.id.goog \
+  --machine-type=n1-standard-4 \
+  --enable-autoscaling --min-nodes 3 --max-nodes 99 \
+  --scopes compute-rw,gke-default,storage-rw \
+  --num-nodes=3 \
+  --zone=asia-southeast1-c
+```
+
 * *Storage classes* (Default)
 
 ```
