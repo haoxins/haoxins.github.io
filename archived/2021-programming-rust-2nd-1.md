@@ -112,10 +112,10 @@ and these restrictions take practice and experience to get used to.
 
 > In Rust, for most types, Rust doesn't copy the value but moves it.
 
-* The standard Copy types include all the machine integer
-  and floating-point numeric types, the char and bool types,
-  and a few others. A tuple or fixed-size array of
-  Copy types is itself a Copy type.
+* The standard `Copy` types include all the machine `integer`
+  and `floating-point` numeric types, the `char` and `bool` types,
+  and a few others. A `tuple` or fixed-size array of
+  `Copy` types is itself a `Copy` type.
 
 * A value owned by an `Rc` pointer is immutable.
 
@@ -181,7 +181,7 @@ assert!(rrx >= rry);
 * Note that in both cases, the path of ownership
   leading to the referent cannot be changed for
   the reference's lifetime.
-  For a shared borrow, the path is *read-only*;
+* For a shared borrow, the path is *read-only*;
   for a mutable borrow, it's completely in accessible.
   So there's no way for the program to do anything
   that will invalidate the reference.
