@@ -746,12 +746,12 @@ assert_eq!(new_home, "Pinned? Not so much.");
   create safe interfaces, without contracts. These are
   much easier to work with, since users can count
   on Rust's safety checks to ensure their code is free
-  of undefined behavior. Even if your implementation
-  uses `unsafe` features, it's best to use Rust's
-  `types`, `lifetimes`, and module system to meet
-  their contracts while using only what you can
-  guarantee yourself, rather than passing
-  responsibilities on to your callers.
+  of undefined behavior.
+* Even if your implementation uses `unsafe` features,
+  it's best to use Rust's `types`, `lifetimes`,
+  and module system to meet their contracts while
+  using only what you can guarantee yourself,
+  rather than passing responsibilities on to your callers.
 
 * Unfortunately, it's not unusual to come across
   *unsafe functions* in the wild whose documentation
