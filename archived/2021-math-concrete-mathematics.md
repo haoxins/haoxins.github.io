@@ -13,18 +13,6 @@ date: 2021-08-28
 * **葛立恒**
 * **高德纳**
 
-* [LaTeX 第五课: 数学公式排版](https://zhuanlan.zhihu.com/p/24502400)
-
-* **LaTeX**
-  - $$ a > b $$
-  - $$ a < b $$
-  - $$ a \ge b $$
-  - $$ a \le b $$
-  - $$ a \times b $$
-  - $$ a \mod b $$
-  - $$ \begin {bmatrix} a \\ b \end {bmatrix} $$
-  - $$ \begin {Bmatrix} a \\ b \end {Bmatrix} $$
-
 * **具体数学**究竟是什么呢?
   - 它融合了*连续数学*和*离散数学*. 更具体地说,
     它是利用一组求解问题的技术对数学公式进行有控制的操作.
