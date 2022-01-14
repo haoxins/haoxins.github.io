@@ -772,7 +772,7 @@ assert_eq!(new_home, "Pinned? Not so much.");
     way that compiles fine but still causes
     undefined behavior, you must mark it as `unsafe`.
     The rules for using the function correctly are
-    its contract; the existence of a contract is
+    its contract; the **existence of a contract** is
     what makes the function `unsafe`.
   - Otherwise, the function is **safe**: no
     well-typed call to it can cause undefined
@@ -787,5 +787,6 @@ assert_eq!(new_home, "Pinned? Not so much.");
   you use `unsafe` features in its body. This makes
   the function harder to use and confuses readers
   who will (correctly) expect to find a contract
-  explained somewhere. Instead, use an `unsafe` block,
-  *even if it's the function's entire body*.
+  explained somewhere.
+  - Instead, use an `unsafe` block,
+    *even if it's the function's entire body*.
