@@ -41,3 +41,9 @@ cargo test -- --show-output
 * [tiangolo/fastapi](https://github.com/tiangolo/fastapi)
   - [pydantic](https://github.com/samuelcolvin/pydantic)
   - [encode/httpx](https://github.com/encode/httpx)
+
+------------------
+
+* [Switch DataFusion to using arrow2](https://github.com/apache/arrow-datafusion/issues/1532)
+  - https://github.com/jorgecarleitao/arrow2
+  - https://github.com/jorgecarleitao/parquet2
