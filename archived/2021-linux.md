@@ -45,10 +45,16 @@ dig +short dashboard.awx.im
 
 ------------------
 
+## 2022
+
+* Linux `5.17` kernel is introducing mainline support for
+  the StarFive JH7100, which has been trying to make its
+  debut as the first usable and low-cost **RISC-V** platform.
+
 ## 2021
 
 * Linux kernel ***5.15***
-  - **ntfs3**: new `NTFS` driver for 5.15
+  - **ntfs3**: new `NTFS` driver for `5.15`
 
 | Version |  Released  | Projected EOL |
 | ------- |:----------:|:-------------:|
@@ -57,9 +63,9 @@ dig +short dashboard.awx.im
 * [Debian 11 **bullseye** released](https://www.debian.org/News/2021/20210814)
   - **bullseye**
   - *August 14th, 2021*
-  - Linux kernel *5.10* series
-  - Python 3, *3.9.1*
-  - Rustc *1.48*
+  - Linux kernel `5.10` series
+  - Python 3, `3.9.1`
+  - Rustc `1.48`
 
 * [Debian 11](https://www.debian.org/releases/bullseye/releasenotes)
 
