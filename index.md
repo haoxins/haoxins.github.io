@@ -1,5 +1,6 @@
 * [推荐 阅读 & 作者](articles/reading-recommended.md)
 * [Programming language](articles/programming-language.md)
+* [Programming ecosystem](articles/programming-ecosystem.md)
 * [健身, 冥想](articles/meditation-fitness.md)
 * [Graph machine learning](articles/graph-machine-learning.md)
 * [Blockchain & Cryptography](articles/cryptography.md)
