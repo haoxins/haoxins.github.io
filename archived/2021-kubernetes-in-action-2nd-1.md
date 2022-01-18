@@ -7,6 +7,8 @@ date: 2021-08-30
 * [Kubernetes in Action, Second Edition](https://book.douban.com/subject/34986745/)
   - https://www.manning.com/books/kubernetes-in-action-second-edition
 
+## Introducing
+
 > Each application must be small enough to
   fit on *one of* the worker nodes.
 
@@ -1412,7 +1414,7 @@ spec:
       readOnly: true
 ```
 
-## Organizing objects using labels, selectors, and Namespaces
+## Organizing objects using Namespaces, labels, and selectors
 
 * Most Kubernetes API object types are **namespaced**,
   but a few are not.
@@ -1678,7 +1680,7 @@ metadata:
     revision: "3"
 ```
 
-## Exposing Pods with Services
+## Exposing pods with Services
 
 * Each pod has its own network interface with
   its own IP address. All pods in the cluster
@@ -2015,6 +2017,8 @@ spec:
     specified port on the container. If the
     connection is established, the container
     is considered ready.
+
+## Exposing services externally using Ingresses
 
 ## Deploying applications using Deployments
 
