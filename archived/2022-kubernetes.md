@@ -270,6 +270,13 @@ curl http://metadata.google.internal/computeMetadata/v1/instance/service-account
 
 ## Cases & Tips
 
+* Ingress 常见报错
+
+```
+response 404 (backend NotFound),
+service rules for the path non-existent
+```
+
 * 更新 `Secrets` 之后, 最好 `Delete` *相关的* `Pods`
   - 否则不会立即生效
   - `Certificates` 本质上也是 `Secrets`
