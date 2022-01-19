@@ -2020,8 +2020,45 @@ spec:
 
 ## Exposing services externally using Ingresses
 
-## Deploying applications using Deployments
+* The **Ingress** function consists of the
+  following three components:
+  - The `Ingress API object`, which is used to
+    define and configure an ingress.
+  - An `L7 load balancer` or reverse proxy that
+    routes traffic to the backend services.
+  - The `ingress controller`, which monitors the
+    Kubernetes API for Ingress objects and deploys and
+    configures the load balancer or reverse proxy.
 
-## Deploying stateful applications using StatefulSets
+* Normally, each `Ingress` object gets its own IP address,
+  but some ingress implementations use a shared entrypoint
+  for all Ingress objects you create in the cluster.
+* **Not all** Kubernetes clusters support Ingresses
+  out of the box. This functionality is provided by a
+  cluster add-on component called Ingress controller.
+  - This controller is the link between the Ingress object
+    and the actual physical ingress (the reverse proxy).
+* Sometimes the controller or the proxy is
+  located outside the cluster.
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kiada-example-com
+spec:
+  rules:
+  - host: kiada.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: kiada
+            port:
+              number: 80
+```
+
 
 ## Running special workloads using DaemonSets, Jobs, and CronJobs
