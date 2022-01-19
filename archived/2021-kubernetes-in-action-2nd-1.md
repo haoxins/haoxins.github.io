@@ -2060,5 +2060,107 @@ spec:
               number: 80
 ```
 
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: api-example-com
+spec:
+  rules:
+  - host: api.example.com
+    http:
+      paths:
+      - path: /quote
+        pathType: Exact
+        backend:
+          service:
+            name: quote
+            port:
+              name: http
+      - path: /questions
+        pathType: Prefix
+        backend:
+          service:
+            name: quiz
+            port:
+              name: http
+```
 
-## Running special workloads using DaemonSets, Jobs, and CronJobs
+* If multiple paths are specified in the ingress rule
+  and the path in the request matches more than one
+  path in the rule, priority is given to paths
+  with the `Exact` path type.
+
+* Matching paths using the `Exact` path type
+* It's case sensitive, and the path in the request
+  **must** exactly match the path
+  specified in the ingress rule.
+* Matching paths using the `Prefix` path type
+* The request path isn't treated as a string and
+  checked to see if it begins with the specified prefix.
+* Instead, both the path in the rule and the request
+  path are split by `/` and then each element of the
+  request path is compared to the corresponding element
+  of the prefix.
+  - Take the path `/foo`, for example.
+  - It matches the request path `/foo/bar`,
+    but not `/foobar`.
+  - It also doesn't match the request path `/fooxyz/bar`.
+
+* The `host` field in the ingress rules supports the
+  use of wildcards. This allows you to capture all
+  requests sent to a host that matches
+  `*.example.com` and forward them to your services.
+* Look at the example with the wildcard. As you can see,
+  `*.example.com` matches `kiada.example.com`, but it
+  doesn't match `foo.kiada.example.com` or `example.com`.
+  - This is because a wildcard only covers a
+    single element of the DNS name.
+* As with rule paths, a rule that **exactly** matches
+  the host in the request takes precedence over
+  rules with host wildcards.
+
+* Specifying the default backend in an Ingress object
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kiada
+spec:
+  defaultBackend:
+    service:
+      name: fun404
+      port:
+        name: http
+  rules:
+  ...
+```
+
+* You may be surprised to learn that Kubernetes
+  doesn't provide a standard way to configure
+  TLS passthrough in Ingress objects.
+* If the ingress controller supports TLS passthrough,
+  you can usually configure it by adding
+  annotations to the Ingress object.
+
+* When you create an Ingress object, you specify the
+  ingress class by specifying the name of the
+  `IngressClass` object in the Ingress object's spec field.
+  - Each `IngressClass` specifies the name of the
+    controller and optional parameters. Thus, the class
+    you reference in your Ingress object determines
+    which ingress proxy is provisioned and how it's configured.
+
+* Specifying the IngressClass in the Ingress object
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kiada
+spec:
+  ingressClassName: nginx
+  rules:
+  ...
+```
