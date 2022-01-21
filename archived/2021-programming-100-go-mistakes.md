@@ -1942,3 +1942,59 @@ for 5 seconds, then I will ...".
 
 ---
 
+* What are the possible impacts of
+  **embedded fields** with **JSON marshaling**?
+
+```go
+type Event struct {
+  ID int
+  time.Time
+}
+
+event := Event{
+  ID:   1234,
+  Time: time.Now(),
+}
+
+b, _ := json.Marshal(event)
+
+fmt.Println(string(b))
+// Expect
+// {"ID": 1234, "Time": "2022-01-21T15:47:44.539103+08:00"}
+// But !!!
+// "2022-01-21T15:47:44.539103+08:00"
+```
+
+* **First**, if an embedded field type implements an
+  interface, the struct containing the embedded field
+  will also implement this interface.
+  - This is about promoting a behavior.
+* The **second** point to clarify is that we can change
+  the default marshaling behavior by making a type
+  implement `json.Marshaler` interface.
+  - This interface contains a single `MarshalJSON` function
+
+```go
+type Marshaler interface {
+  MarshalJSON() ([]byte, error)
+}
+```
+
+* We have to know that `time.Time` implements the
+  `json.Marshaler` interface. As `time.Time` is an
+  embedded field of `Event`, it promotes its methods.
+  - Therefore, `Event` also implement `json.Marshaler`.
+* Consequently, passing an `Event` to `json.Marshal`
+  will not use the default marshaling behavior
+  but the one provided by `time.Time`.
+  - We would also face the issue the other way around if
+    we were unmarshaling an `Event` using `json.Unmarshal`.
+* To fix this issue, there are **two** main possibilities.
+  - First, we can make the `time.Time` field not
+    embedded anymore by adding a name.
+  - If we want to keep or have to keep the `time.Time`
+    field embedded, the other option is to make `Event`
+    implementing the `json.Marshaler` interface.
+
+---
+
