@@ -1998,3 +1998,58 @@ type Marshaler interface {
 
 ---
 
+* An OS handles two different clock types:
+  - `wall` and `monotonic`.
+  - The wall clock is used to know the current time of the day.
+  - This clock is subject to potential variations.
+  - For example, if synchronized using NTP (Network Time Protocol),
+    the clock can jump backward or forward in time.
+  - The monotonic clock guarantees that the time will always move
+    forward and will not be impacted by jumps in time.
+  - It can be affected by potential frequency adjustments
+    but never by jumps in time.
+
+```go
+type Event struct {
+  Time time.Time
+}
+
+t := time.Now()
+event1 := Event{
+  Time: t,
+}
+
+b, _ := json.Marshal(event1)
+
+var event2 Event
+_ = json.Unmarshal(b, &event2)
+
+fmt.Println(event1 == event2)
+fmt.Println(event1.Time)
+fmt.Println(event2.Time)
+// false
+// 2022-01-21 16:13:30.740539 +0800 CST m=+0.000086873
+// 2022-01-21 16:13:30.740539 +0800 CST
+```
+
+* In Go, instead of splitting the two clocks into two
+  different APIs, the `time.Time` may contain both a
+  wall and monotonic time.
+  - When we get the local time using `time.Now()`, it
+    returns a `time.Time` with both times.
+* Conversely, when we unmarshal the JSON, the `time.Time`
+  field doesn't contain the monotonic time, only the wall time.
+* How can we fix this problem? There are **two** main options.
+  - When we used `==` operator to compare both `time.Time`,
+    it compared all the struct fields, including the
+    monotonic part.
+  - To avoid this, we can use the `Equal` method instead.
+  - The `Equal` method doesn't consider monotonic time.
+  - Therefore, `areTimesEqual` will be `true`.
+  - The second option is to keep the `==` to compare the
+    two structs but to strip away the monotonic time using
+    the `Truncate` method.
+  - This method returns the result of rounding the `time.Time`
+    value down to a multiple of a given duration.
+
+---
