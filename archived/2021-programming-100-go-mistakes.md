@@ -1905,3 +1905,40 @@ or announcing the occurrence of an event.
   - Using `pointers` is a way to solve this problem:
   - either by having a pointer to a `sync` element
   - or a `pointer` to a struct containing a `sync` element.
+
+## Standard Library
+
+* Yet, `time.Duration` represents the elapsed time
+  between two instants in **nanoseconds**.
+* Remember always to use the `time.Duration` API and
+  provide an `int64` **alongside a time unit**.
+
+* The advantage of `time.After` is that it can be used
+  to implement scenarios such as
+
+```
+"if I don't receive any message in this channel
+for 5 seconds, then I will ...".
+```
+
+* As we said, `time.After` returns a channel.
+* We may expect this channel to be closed during
+  each loop iteration; yet, this isn't the case.
+* The **resources** created by `time.After` (including the channel)
+  will *be released once the timeout expires* and
+  will **use some memory until it happens**.
+
+* `time.NewTimer`. This function creates a
+  `time.Timer` struct that exports:
+  - A `C` field, which is the internal timer channel
+  - A `Reset(time.Duration)` method to reset the duration
+  - A `Stop()` method to stop the timer
+* We should note that `time.After` also relies on
+  `time.Timer`.
+  - However, it only returns the `C` field.
+* In general, we should be cautious when using `time.After`.
+  - We have to remind ourselves that the resources created
+    will only be released when the timer expires.
+
+---
+
