@@ -2053,3 +2053,45 @@ fmt.Println(event2.Time)
     value down to a multiple of a given duration.
 
 ---
+
+* However, there's one **important** gotcha to remember if
+  we use a `map` of `any`:
+  - any numeric value, regardless if it contains a decimal,
+    is converted into a `float64` type.
+
+---
+
+* Let's remember that `sql.Open` doesn't necessarily establish
+  any connection, and the first connection can be opened lazily.
+  - If we want to test our configuration and that a
+    DB is reachable, we should follow `sql.Open` with a call to
+    the `Ping` or `PingContext` method.
+
+* Furthermore, it's important to remember that creating
+  a pool also means four available config parameters.
+  Each of these parameters is an exported method of `*sql.DB`:
+  - `SetMaxOpenConns`: maximum number of open connections to
+    the DB (default value: `unlimited`)
+  - `SetMaxIdleConns`: maximum number of idle connections
+    (default value: 2)
+  - `SetConnMaxIdleTime`: maximum amount of time a connection
+    can be idle before it's closed (default value: `unlimited`)
+  - `SetConnMaxLifetime`: maximum amount of time a connection
+    can be held open before it's closed (default value: `unlimited`)
+* So, why should we tweak these config parameters?
+  - Setting `SetMaxOpenConns` is important for production-grade
+    applications. Indeed, as the default value is `unlimited`,
+    we should rather set it to make sure it fits what
+    the underlying DB can handle.
+  - Setting `SetMaxIdleConns` should be increased
+    (default value of `two`) if our application generates a
+    significant number of concurrent requests.
+  - Setting `SetConnMaxIdleTime` is important if our application
+    can face a burst of requests. Indeed, when the application
+    is back to a more peaceful state, we want to make sure the
+    connections created are eventually released.
+  - Last but not least, setting `SetConnMaxLifetime` can also be
+    helpful if we connect to a load-balanced DB server, for example.
+
+---
+
