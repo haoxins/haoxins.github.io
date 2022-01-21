@@ -2095,3 +2095,8 @@ fmt.Println(event2.Time)
 
 ---
 
+* If we don't eventually close an `os.File`, it will not
+  lead to a leak. Indeed, the file will be closed
+  automatically when `os.File` will be garbage collected.
+* However, it's better to call `Close` explicitly
+  and not rely on some hidden finalizers.
