@@ -8,10 +8,10 @@ date: 2022-01-17
 
 > 此处特指: Engineering
 
-* [Linfa](https://github.com/rust-ml/linfa)
-  - `scikit-learn`
+* [Arrow](https://github.com/apache/arrow)
+  - [Polars](https://github.com/pola-rs/polars)
 
-* [Polars](https://github.com/pola-rs/polars)
+* [Ray](https://github.com/ray-project/ray)
 
 ## ML
 
