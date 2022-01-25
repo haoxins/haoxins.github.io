@@ -10,6 +10,8 @@ date: 2019-10-24
 
 ### 2022-01
 
+* [淘金](https://movie.douban.com/subject/35235299/)
+
 * [开端](https://movie.douban.com/subject/35332289/)
 
 * [铁道英雄](https://movie.douban.com/subject/35205446/)
