@@ -6,3 +6,11 @@ date: 2021-12-26
 
 * [动手学深度学习](https://zh.d2l.ai)
   - 第二版
+
+```py
+Z = tf.Variable(tf.zeros([3, 6]))
+id1 = id(Z)
+Z.assign(tf.ones([3, 6]))
+print(id1 == id(Z))
+# True
+```
