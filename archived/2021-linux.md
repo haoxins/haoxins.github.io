@@ -47,6 +47,10 @@ dig +short dashboard.awx.im
 
 ## 2022
 
+* 2022-01-27
+  - 由于 `License` 的原因, 卸载了 **Docker Desktop**, 一个短暂的技术时代结束了.
+  - 因 `Docker` 起, 由 `Kubernetes` 发展壮大, `Docker` 卒.
+
 * Linux `5.17` kernel is introducing mainline support for
   the StarFive JH7100, which has been trying to make its
   debut as the first usable and low-cost **RISC-V** platform.
