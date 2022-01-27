@@ -14,3 +14,11 @@ Z.assign(tf.ones([3, 6]))
 print(id1 == id(Z))
 # True
 ```
+
+* 范数
+
+```py
+u = tf.constant([3.0, -4.0])
+tf.norm(u).numpy()
+# 5.0
+```
