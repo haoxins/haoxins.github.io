@@ -148,15 +148,15 @@ k port-forward deploy/istio-ingressgateway \
 ### Kiali
 
 ```zsh
-kiali_token_name=$(kubectl get sa \
-  kiali-service-account \
-  -n monitoring \
-  -o jsonpath="{.secrets[0].name}")
+k get secret -A | grep kiali-service-account
 
-k get secret \
-  -n monitoring \
-  $kiali_token_name \
+k get secret the_secret_name \
+  -n istio-system \
   -o jsonpath={.data.token} | base64 -d
+
+k port-forward svc/kiali \
+  -n istio-system \
+  20001:20001
 ```
 
 ### WebAssembly
