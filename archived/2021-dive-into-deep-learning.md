@@ -20,3 +20,26 @@ u = tf.constant([3.0, -4.0])
 tf.norm(u).numpy()
 # 5.0
 ```
+
+* 矢量化
+
+```py
+import time
+
+n = 10000
+a = tf.ones(n)
+b = tf.ones(n)
+
+c = tf.Variable(tf.zeros(n))
+start = time.time()
+for i in range(n):
+  c[i].assign(a[i] + b[i])
+print(f"{(time.time() - start):.6f} sec")
+
+start = time.time()
+d = a + b
+print(f"{(time.time() - start):.6f} sec")
+# 4.471961 sec
+# 0.000032 sec
+# 矢量化代码通常会带来数量级的加速
+```
