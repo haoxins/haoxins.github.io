@@ -21,7 +21,7 @@
 * [Interpretable Machine Learning](archived/2022-machine-learning-interpretable.md)
 * [Kubernetes stack, components and cases](archived/2022-kubernetes.md)
 * [Chaos Mesh](archived/2022-kubernetes-chaos.md)
-* [Istio & WebAssembly](archived/2022-istio-webassembly.md)
+* [Istio & WebAssembly & Cilium](archived/2022-istio-wasm-cilium.md)
 * [Graph Algorithms for Data Science](archived/2022-graph-algorithms.md)
 * [人间词话 - 叶嘉莹讲评本](archived/2022-ci.md)
 * [Advanced Algorithms and Data Structures](archived/2022-algorithms-advanced.md)
