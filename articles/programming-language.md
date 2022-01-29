@@ -44,6 +44,9 @@ cargo test -- --show-output
 
 ------------------
 
+* macOS Monterey `12.3`
+  - Python `2.7` was removed from macOS in this update.
+
 * [Switch DataFusion to using arrow2](https://github.com/apache/arrow-datafusion/issues/1532)
   - https://github.com/jorgecarleitao/arrow2
   - https://github.com/jorgecarleitao/parquet2
