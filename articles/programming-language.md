@@ -10,7 +10,7 @@ date: 2021-10-28
   - Such as: `Apache Arrow`, `Flink`
   - **Rust**
 
-## Go (1.18+)
+## Go (1.19+)
 
 * [ent](https://github.com/ent/ent)
 
@@ -35,8 +35,6 @@ cargo test -- --show-output
 ------------------
 
 ## Python (3.10+)
-
-> - 个人角度, 如非必要, 不用 Python
 
 * [tiangolo/fastapi](https://github.com/tiangolo/fastapi)
   - [pydantic](https://github.com/samuelcolvin/pydantic)
