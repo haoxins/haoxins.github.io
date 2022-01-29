@@ -6,8 +6,6 @@ date: 2021-08-24
 
 ## Dapr
 
-### Dapr Concepts
-
 ### Dapr Components
 
 * State store component
@@ -36,7 +34,7 @@ date: 2021-08-24
 * `2021-11`, 基于 **Dapr** 打造自己的
   *Model serving*, 还是基于 **KServe**?
   - **KServe**: 专为 *Model serving* 而生, 但项目*半死不活*
-  - **Dapr**: 足够活跃, 需要自己做一些 *Model serving* 的逻辑
+  - **Dapr**: 足够活跃, 需要自己做一些 *Model serving* 的 *逻辑 & 调度*
   - 个人倾向于 **Dapr**
 
 ------------------
