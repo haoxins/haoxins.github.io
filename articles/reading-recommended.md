@@ -29,10 +29,6 @@ date: 2021-05-03
 
 ------------------
 
-* [宇宙的结构](https://book.douban.com/subject/30171307/)
-  - 作者: **布赖恩·格林**
-  - 原作名: *The Fabric of the Cosmos*
-
 * [通向实在之路](https://book.douban.com/subject/25823056/)
   - **罗杰•彭罗斯**
   - 副标题: **宇宙法则的完全指南**
