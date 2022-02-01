@@ -1,0 +1,8 @@
+---
+title: Chaos Engineering
+description: 金樽清酒斗十千, 玉盘珍羞直万钱. 停杯投箸不能食, 拔剑四顾心茫然.
+date: 2022-02-01
+---
+
+* [Chaos Engineering](https://www.manning.com/books/chaos-engineering)
+  - Site reliability through controlled disruption

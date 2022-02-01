@@ -22,6 +22,7 @@
 * [Istio & WebAssembly & Cilium](archived/2022-istio-wasm-cilium.md)
 * [Graph Algorithms for Data Science](archived/2022-graph-algorithms.md)
 * [人间词话 - 叶嘉莹讲评本](archived/2022-ci.md)
+* [Chaos Engineering](archived/2022-chaos-engineering.md)
 * [Advanced Algorithms and Data Structures](archived/2022-algorithms-advanced.md)
 ### 2021
 * [关于技术, 次年度期待清单](archived/2021-worth-looking-forward.md)
