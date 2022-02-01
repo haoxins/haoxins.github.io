@@ -15,7 +15,6 @@
 * [费曼物理学讲义 (卷三)](archived/2022-physics-feynman-lectures-3.md)
 * [费曼物理学讲义 (卷二)](archived/2022-physics-feynman-lectures-2.md)
 * [费曼物理学讲义 (卷一)](archived/2022-physics-feynman-lectures-1.md)
-* [Math for Programmers](archived/2022-math-for-programmers.md)
 * [复分析 可视化方法 Visual Complex Analysis](archived/2022-math-complex-analysis.md)
 * [MLOps](archived/2022-machine-learning-ops.md)
 * [Interpretable Machine Learning](archived/2022-machine-learning-interpretable.md)
