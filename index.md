@@ -10,7 +10,6 @@
 * [TAOCP 组合算法 - 计算机程序设计艺术](archived/2022-taocp-4.md)
 * [TAOCP 组合算法 习题 - 计算机程序设计艺术](archived/2022-taocp-4-exe.md)
 * [诗·文](archived/2022-shi.md)
-* [Self-Sovereign Identity](archived/2022-self-sovereign-identity.md)
 * [Shtetl-Optimized](archived/2022-scott-aaronson.md)
 * [费曼物理学讲义 (卷三)](archived/2022-physics-feynman-lectures-3.md)
 * [费曼物理学讲义 (卷二)](archived/2022-physics-feynman-lectures-2.md)
