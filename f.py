@@ -72,6 +72,8 @@ def gen_contents(sub_path):
             year = filename.split("-")[0]
             if not re.match(r"[0-9]{4}$", year):
                 year = None
+            elif year <= "2020":
+                continue
 
             file_infos.append({"path": p, "name": filename, "year": year})
 

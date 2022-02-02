@@ -96,3 +96,4 @@
 * [时间静悄悄](archived/2021-changing.md)
 * [Blockchain](archived/2021-blockchain.md)
 * [年度事件](archived/2021-annual-events.md)
+* [Algorithms](archived/2021-algorithm.md)
