@@ -96,14 +96,3 @@
 * [时间静悄悄](archived/2021-changing.md)
 * [Blockchain](archived/2021-blockchain.md)
 * [年度事件](archived/2021-annual-events.md)
-* [Algorithms](archived/2021-algorithm.md)
-### 2020
-* [游记](archived/2020-traveling.md)
-* [杂记](archived/2020-disorganized.md)
-### 2019
-* [杂思](archived/2019-thinking.md)
-* [Something about service](archived/2019-service.md)
-* [Machine learning](archived/2019-machine-learning.md)
-* [Cryptography](archived/2019-cryptography.md)
-### 2018
-* [睡眠, 运动, 正念冥想](archived/2018-sleeping-fitness-health.md)
