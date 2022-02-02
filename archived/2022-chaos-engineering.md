@@ -8,5 +8,3 @@ date: 2022-02-01
   - Site reliability through controlled disruption
 
 * [Principles of Chaos Engineering](https://principlesofchaos.org)
-
-* Estimating risk and cost, and setting SLIs, SLOs, and SLAs

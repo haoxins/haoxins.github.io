@@ -8,6 +8,15 @@ date: 2019-10-24
 
 ## 2022
 
+### 2022-02
+
+* [这个杀手不太冷静](https://movie.douban.com/subject/35505100/)
+
+* [扬名立万](https://movie.douban.com/subject/35422807/)
+  - bilibili 再看~
+
+* [长津湖之水门桥](https://movie.douban.com/subject/35613853/)
+
 ### 2022-01
 
 * [淘金](https://movie.douban.com/subject/35235299/)
