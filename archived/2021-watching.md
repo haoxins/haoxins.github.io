@@ -10,6 +10,14 @@ date: 2019-10-24
 
 ### 2022-02
 
+* [新网球王子 冰帝 vs 立海](https://movie.douban.com/subject/35054837/)
+  - 量子网球, 圣斗士网球
+  - 期待 **灌篮高手** `2022` 剧场版
+  - bilibili
+
+* 重温 [恐怖游轮](https://movie.douban.com/subject/3011051/)
+  - bilibili
+
 * [这个杀手不太冷静](https://movie.douban.com/subject/35505100/)
 
 * [扬名立万](https://movie.douban.com/subject/35422807/)
