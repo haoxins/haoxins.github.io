@@ -2100,3 +2100,66 @@ fmt.Println(event2.Time)
   automatically when `os.File` will be garbage collected.
 * However, it's better to call `Close` explicitly
   and not rely on some hidden finalizers.
+
+## Testing
+
+* **Build tags**
+  - A `build tag` is a special comment at the beginning
+    of a Go file, followed by an empty line.
+  - As Go `1.17`, the original syntax `// +build foo`
+    got replaced by `//go:build foo`.
+
+```go
+//go:build foo
+
+package bar
+```
+
+```go
+//go:build integration
+
+import (
+  "testing"
+)
+
+func TestInsert(t *testing.T) {
+}
+```
+
+* The benefit of using build tags is that we can
+  select which kind of tests to execute.
+
+```zsh
+go test --tags=integration -v .
+```
+
+```go
+//go:build !integration
+
+import (
+  "testing"
+)
+
+func TestContract(t *testing.T) {
+}
+```
+
+* **Short mode**
+
+```go
+func TestLongRunning(t *testing.T) {
+  if testing.Short() {
+    t.Skip("skipping long-running test")
+  }
+}
+```
+
+```zsh
+go test -short -v .
+```
+
+* In Go, the **race detector** isn't a static analysis tool
+  that would happen during the compilation; instead, it's a
+  tool to find data races that occur at runtime.
+  - To enable it, we have to set the `-race` command-line
+    while compiling or running a test
