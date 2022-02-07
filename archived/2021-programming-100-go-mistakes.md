@@ -2163,3 +2163,76 @@ go test -short -v .
   tool to find data races that occur at runtime.
   - To enable it, we have to set the `-race` command-line
     while compiling or running a test
+
+* First, the race detector can only be as good as our tests.
+  - Thus, we should ensure that a concurrent code is
+    tested thoroughly against data races.
+* Furthermore, given the possible false negatives, if we do
+  have a test to check data races, one option could be
+  to put this logic inside a loop.
+  - This way, we could increase the chances
+    to catch possible data races.
+
+* **Parallel**
+  - When marking a test using `t.Parallel()`,
+    it will be executed in parallel alongside
+    all the other parallel tests.
+  - In terms of execution, though, Go runs first all
+    the sequential tests one by one. Then, once the
+    sequential tests are completed,
+    it executes the parallel tests.
+
+```zsh
+go test -parallel 16 .
+```
+
+* **Shuffle**
+  - We should use the `-shuffle` flag to randomize tests.
+  - We can either provide `on` or `off` to enable or disable
+    tests shuffle (disabled by default).
+
+```zsh
+go test -shuffle=on -v .
+```
+
+* However, in some cases, we would like to run the tests
+  again in the same order. To do that, instead of passing
+  `on` to the `shuffle` flag, we can pass the `seed`
+  used to randomize the tests.
+* We can access this `seed` value when running shuffled
+  tests by enabling the verbose mode (`-v`).
+
+```zsh
+go test -shuffle=on -v .
+# -test.shuffle 1636399552801504000
+go test -shuffle=1636399552801504000 -v .
+# -test.shuffle 1636399552801504000
+```
+
+* **Table-driven** tests
+  - `Table-driven` tests rely on subtests,
+    meaning the option for a single test function
+    to include multiple subtests.
+
+```go
+func TestFoo(t *testing.T) {
+  t.Run("subtest 1", func(t *testing.T) {
+    if false {
+      t.Error()
+    }
+  })
+  t.Run("subtest 2", func(t *testing.T) {
+    if 2 != 2 {
+      t.Error()
+    }
+  })
+}
+```
+
+* We can also run a single test using the `-run` flag
+  and concatenating the parent test name with the subtest.
+  - For example, to run only `subtest 1`:
+
+```zsh
+go test -run=TestFoo/subtest_1 -v
+```
