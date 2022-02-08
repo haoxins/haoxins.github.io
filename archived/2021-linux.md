@@ -7,6 +7,19 @@ date: 2021-02-17
 * [Makefile](https://makefiletutorial.com)
   - Learn Makefile with the tastiest examples
 
+### Memory
+
+* The **OOM Killer** is one of the more interesting (and controversial)
+  memory management features in the Linux kernel.
+  - Under low-memory conditions, the **OOM Killer** kicks in and
+    tries to figure out which processes to kill in order to
+    reclaim some memory and for the system to regain some stability.
+  - It uses heuristics (including niceness, how recent the process is
+    and how much memory it uses) to score each process
+    and pick the unlucky winner.
+  - The **OOM Killer** behavior can be tweaked
+    via flags exposed by the kernel.
+
 ### Others
 
 * [Users and groups](https://wiki.archlinux.org/title/users_and_groups)
