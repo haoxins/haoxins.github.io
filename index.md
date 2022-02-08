@@ -1,4 +1,4 @@
-* [推荐 阅读](articles/reading-recommended.md)
+* [我的推荐书单~](articles/reading-recommended.md)
 * [Programming language](articles/programming-language.md)
 * [Programming ecosystem](articles/programming-ecosystem.md)
 * [健身, 冥想](articles/meditation-fitness.md)
