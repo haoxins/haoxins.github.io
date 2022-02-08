@@ -29,14 +29,14 @@ date: 2021-08-28
 
 ## 整值函数
 
-* **底** (`floor`, 最大整数)函数
-* **顶**(`ceiling`, 最小整数)函数
+* **底** (`floor`, 最大整数) 函数
+* **顶** (`ceiling`, 最小整数) 函数
 * 对所有实数 `x`, 其定义如下:
   - $$ \lfloor x \rfloor $$
   - 小于或等于 `x` 的最大整数
   - $$ \lceil x \rceil $$
   - 大于或等于 `x` 的最小整数
-* $$ \lfloor e \rfloor = 2$$
+* $$ \lfloor e \rfloor = 2 $$
 * $$ \lfloor -e \rfloor = -3 $$
 * $$ \lceil e \rceil = 3 $$
 * $$ \lceil -e \rceil = -2 $$
