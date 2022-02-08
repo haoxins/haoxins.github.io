@@ -8,3 +8,12 @@ date: 2022-02-01
   - Site reliability through controlled disruption
 
 * [Principles of Chaos Engineering](https://principlesofchaos.org)
+
+---
+
+* Finally, although some overlap exists,
+  chaos engineering doesn't stem from
+  chaos theory in mathematics and physics.
+  - 哈哈哈
+
+## First cup of chaos and blast radius
