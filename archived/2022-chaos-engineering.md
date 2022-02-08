@@ -16,4 +16,22 @@ date: 2022-02-01
   chaos theory in mathematics and physics.
   - 哈哈哈
 
-## First cup of chaos and blast radius
+## Observability
+
+## Database trouble and testing in production
+
+## Who you gonna call? Syscall-busters!
+
+## Injecting failure into the JVM
+
+## Application-level fault injection
+
+## There's a monkey in my browser!
+
+## Chaos in Kubernetes
+
+## Automating Kubernetes experiments
+
+## Under the hood of Kubernetes
+
+## Chaos engineering (for) people
