@@ -1,4 +1,4 @@
-* [推荐 阅读 & 作者](articles/reading-recommended.md)
+* [推荐 阅读](articles/reading-recommended.md)
 * [Programming language](articles/programming-language.md)
 * [Programming ecosystem](articles/programming-ecosystem.md)
 * [健身, 冥想](articles/meditation-fitness.md)
@@ -9,7 +9,6 @@
 ### 2022
 * [TAOCP 组合算法 - 计算机程序设计艺术](archived/2022-taocp-4.md)
 * [TAOCP 组合算法 习题 - 计算机程序设计艺术](archived/2022-taocp-4-exe.md)
-* [诗·文](archived/2022-shi.md)
 * [Shtetl-Optimized](archived/2022-scott-aaronson.md)
 * [费曼物理学讲义 (卷三)](archived/2022-physics-feynman-lectures-3.md)
 * [费曼物理学讲义 (卷二)](archived/2022-physics-feynman-lectures-2.md)
@@ -32,6 +31,7 @@
 * [TAOCP 排序与查找 - 计算机程序设计艺术](archived/2021-taocp-3.md)
 * [TAOCP 半数值算法 - 计算机程序设计艺术](archived/2021-taocp-2.md)
 * [TAOCP 基本算法 - 计算机程序设计艺术](archived/2021-taocp-1.md)
+* [诗·文](archived/2021-shi.md)
 * [Serverless for everything](archived/2021-serverless-for-all.md)
 * [阅读 书单 & 简记](archived/2021-reading.md)
 * [阅读 - 经典书籍](archived/2021-reading-long-term.md)
