@@ -10,6 +10,10 @@ date: 2019-10-24
 
 ### 2022-02
 
+
+* [大先生杨振宁](https://movie.douban.com/subject/35610429/)
+  - bilibili
+
 * [新网球王子 冰帝 vs 立海](https://movie.douban.com/subject/35054837/)
   - 量子网球, 圣斗士网球
   - 期待 **灌篮高手** `2022` 剧场版
