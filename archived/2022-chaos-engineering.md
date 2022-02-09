@@ -16,13 +16,9 @@ date: 2022-02-01
   chaos theory in mathematics and physics.
   - 哈哈哈
 
-## Observability
-
 ## Database trouble and testing in production
 
 ## Who you gonna call? Syscall-busters!
-
-## Injecting failure into the JVM
 
 ## Application-level fault injection
 

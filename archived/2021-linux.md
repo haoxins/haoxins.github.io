@@ -7,6 +7,27 @@ date: 2021-02-17
 * [Makefile](https://makefiletutorial.com)
   - Learn Makefile with the tastiest examples
 
+### Observability
+
+* **`uptime`**
+  - `cat /proc/loadavg`
+* **`sudo dmesg --human | less`**
+  - Think of it as kernel and driver logs.
+* **`df -h`**
+  - capacity
+* **`iostat -x`**
+  - throughput
+  - `sudo apt-get install sysstat`
+* **`sudo biotop-bpfcc`**
+  - `sudo apt-get install bpfcc-tools linux-headers-$(uname -r)`
+  - https://github.com/iovisor/bcc
+* `sar -n DEV 1 1`
+* `sar -n EDEV 1 1`
+* `sar -n TCP,ETCP 1 1`
+  - `/etc/default/sysstat`, `ENABLED="true"`
+  - `sudo service sysstat restart`
+* **`sudo tcptop-bpfcc 1 1`**
+
 ### Memory
 
 * The **OOM Killer** is one of the more interesting (and controversial)
