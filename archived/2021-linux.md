@@ -9,16 +9,16 @@ date: 2021-02-17
 
 ### Observability
 
-* **`uptime`**
+* `uptime`
   - `cat /proc/loadavg`
-* **`sudo dmesg --human | less`**
+* `sudo dmesg --human | less`
   - Think of it as kernel and driver logs.
-* **`df -h`**
+* `df -h`
   - capacity
-* **`iostat -x`**
+* `iostat -x`
   - throughput
   - `sudo apt-get install sysstat`
-* **`sudo biotop-bpfcc`**
+* `sudo biotop-bpfcc`
   - `sudo apt-get install bpfcc-tools linux-headers-$(uname -r)`
   - https://github.com/iovisor/bcc
 * `sar -n DEV 1 1`
@@ -26,7 +26,19 @@ date: 2021-02-17
 * `sar -n TCP,ETCP 1 1`
   - `/etc/default/sysstat`, `ENABLED="true"`
   - `sudo service sysstat restart`
-* **`sudo tcptop-bpfcc 1 1`**
+* `sudo tcptop-bpfcc 1 1`
+* `free -h`
+  - `df` for RAM
+  - https://www.linuxatemyram.com
+  - If the `available` column is showing a
+    reasonable amount left, you’re all right.
+* `top`
+  - `?`
+* `vmstat -s`
+* `sudo oomkill-bpfcc`
+* `mpstat -P ALL 1`
+  - `cat /proc/cpuinfo`
+* `sudo opensnoop-bpfcc`
 
 ### Memory
 
