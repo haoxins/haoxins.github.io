@@ -10,7 +10,7 @@
 * [TAOCP 组合算法 - 计算机程序设计艺术](archived/2022-taocp-4.md)
 * [TAOCP 组合算法 习题 - 计算机程序设计艺术](archived/2022-taocp-4-exe.md)
 * [人间词话 - 叶嘉莹讲评本](archived/2022-shi-ci.md)
-* [Shtetl-Optimized](archived/2022-scott-aaronson.md)
+* [Shtetl-Optimized, Scott Aaronson](archived/2022-scott-aaronson.md)
 * [费曼物理学讲义 (卷三)](archived/2022-physics-feynman-lectures-3.md)
 * [费曼物理学讲义 (卷二)](archived/2022-physics-feynman-lectures-2.md)
 * [费曼物理学讲义 (卷一)](archived/2022-physics-feynman-lectures-1.md)
@@ -20,7 +20,6 @@
 * [Kubernetes stack, components and cases](archived/2022-kubernetes.md)
 * [Istio & WebAssembly & Cilium](archived/2022-istio-wasm-cilium.md)
 * [Chaos Mesh](archived/2022-chaos-mesh.md)
-* [Chaos Engineering](archived/2022-chaos-engineering.md)
 * [Graph Algorithms for Data Science](archived/2022-algorithms-graph.md)
 * [Advanced Algorithms and Data Structures](archived/2022-algorithms-advanced.md)
 ### 2021
