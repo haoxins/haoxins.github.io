@@ -31,7 +31,7 @@ date: 2021-02-17
   - `df` for RAM
   - https://www.linuxatemyram.com
   - If the `available` column is showing a
-    reasonable amount left, you’re all right.
+    reasonable amount left, you're all right.
 * `top`
   - `?`
 * `vmstat -s`
@@ -39,6 +39,7 @@ date: 2021-02-17
 * `mpstat -P ALL 1`
   - `cat /proc/cpuinfo`
 * `sudo opensnoop-bpfcc`
+* `sudo execsnoop-bpfcc`
 
 ### Memory
 

@@ -16,14 +16,6 @@ date: 2022-02-01
   chaos theory in mathematics and physics.
   - 哈哈哈
 
-## Database trouble and testing in production
-
-## Who you gonna call? Syscall-busters!
-
-## Application-level fault injection
-
-## There's a monkey in my browser!
-
 ## Chaos in Kubernetes
 
 ## Automating Kubernetes experiments
