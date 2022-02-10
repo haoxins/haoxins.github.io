@@ -6,6 +6,10 @@ date: 2021-09-24
 
 ------------------
 
+* [Open Service Mesh (OSM)](https://github.com/openservicemesh/osm)
+  - [Announcing OSM v1.0.0](https://openservicemesh.io/blog/announcing-osm-v1/)
+  - 不看好, 注定凉凉的项目
+
 * [Announcing the alpha availability of WebAssembly Plugins](https://istio.io/latest/blog/2021/wasm-api-alpha/)
   - Introduction to the new Wasm Plugin API and
     updates to the Wasm-based plugin

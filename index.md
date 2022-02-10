@@ -15,7 +15,7 @@
 * [费曼物理学讲义 (卷二)](archived/2022-physics-feynman-lectures-2.md)
 * [费曼物理学讲义 (卷一)](archived/2022-physics-feynman-lectures-1.md)
 * [复分析 可视化方法 Visual Complex Analysis](archived/2022-math-complex-analysis.md)
-* [MLOps](archived/2022-machine-learning-ops.md)
+* [ML Ops](archived/2022-machine-learning-ops.md)
 * [Interpretable Machine Learning](archived/2022-machine-learning-interpretable.md)
 * [Kubernetes stack, components and cases](archived/2022-kubernetes.md)
 * [Istio & WebAssembly & Cilium](archived/2022-istio-wasm-cilium.md)
