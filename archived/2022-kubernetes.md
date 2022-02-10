@@ -232,6 +232,16 @@ k port-forward svc/jaeger-query \
 
 ------------------
 
+## Operator
+
+* Operator Lifecycle Manager (OLM)
+  - [Dependency Resolution](https://olm.operatorframework.io/docs/concepts/olm-architecture/dependency-resolution/)
+
+* With `CRDs`, however, each `Kind` will
+  correspond to a *single resource*.
+
+------------------
+
 ## GCP/GKE
 
 ```zsh
