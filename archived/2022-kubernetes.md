@@ -74,76 +74,7 @@ k get secret argocd-initial-admin-secret \
   -o jsonpath="{.data.password}" | base64 -d
 ```
 
-### Kyverno
-
 ------------------
-
-## Istio
-
-* https://istio.io/latest/docs/reference/config/istio.operator.v1alpha1/
-
-```
-downstream ->
-
-Gateway (Envoy Listeners)
-  - VirtualService (Envoy Routes)
-    - Host (from)
-      - Protocol
-        - Route
-          - DestinationRule (Envoy Clusters)
-            - host (dest)
-            - subset
-
-ServiceEntry
-```
-
-* `AuthorizationPolicy` enforcement is activated
-  **only if** one of its rules **matches** the
-  **source and the operation**.
-* The presence of an empty rule means that
-  all requests are allowed.
-
-```yaml
-kind: AuthorizationPolicy
-spec:
-  rules:
-  - {}
-```
-
-```zsh
-istioctl proxy-status
-istioctl analyze -n istio-system
-```
-
-```zsh
-k exec -it deploy/istiod \
-  -n istio-system \
-  -- curl localhost:15014/metrics
-
-# Aliases:
-#   proxy-config, pc
-
-istioctl pc secret \
-  deploy/istio-ingressgateway \
-  -n istio-system
-
-istioctl pc routes \
-  deploy/istio-ingressgateway \
-  -n istio-system
-
-istioctl pc listeners \
-  deploy/istio-ingressgateway \
-  -n istio-system
-
-# Envoy Administration dashboard
-k port-forward deploy/istio-ingressgateway \
-  -n istio-system 15000
-```
-
-### Envoy
-
-* 保留端口
-  - `:15021/healthz/ready`
 
 ### Kiali
 
@@ -158,14 +89,7 @@ k port-forward svc/kiali \
   -n istio-system \
   20001:20001
 ```
-
-### WebAssembly
-
-### Debug
-
-```zsh
-k logs -n istio-system -l app=istiod --tail=10000
-```
+## Kyverno
 
 ------------------
 
@@ -316,17 +240,3 @@ kube-system
   `.spec.acme.solvers.dns01.cloudDNS.serviceAccountSecretRef`
   需要与 **Cert Manager** 在同一个 **Namespace**
   - 比如 *Cert Manager* 默认的 `ns`: `cert-manager`
-
-### Istio
-
-* `spec.LoadBalancerSourceRanges`
-  - `Invalid value: "[59.100.192.6]"`
-  - `must be a list of IP ranges. For example, 10.240.0.0/24,10.250.0.0/24`
-  - `59.100.192.6` 不行, 得是 `59.100.192.6/32`
-
-* *Connection reset by peer*
-  - `EnvoyFilter`
-  - `LISTENER`
-
-* *upstream connect error or disconnect/reset before headers*
-  - `AuthorizationPolicy`
