@@ -17,6 +17,11 @@ date: 2022-01-17
 
 * JupyterLab `v4`
 
+## WASM & WASI
+
+* [WASI](https://wasi.dev)
+  - https://github.com/WebAssembly/WASI
+
 ## GUI
 
 * [SixtyFPS](https://github.com/sixtyfpsui/sixtyfps)

@@ -76,19 +76,6 @@ k get secret argocd-initial-admin-secret \
 
 ------------------
 
-### Kiali
-
-```zsh
-k get secret -A | grep kiali-service-account
-
-k get secret the_secret_name \
-  -n istio-system \
-  -o jsonpath={.data.token} | base64 -d
-
-k port-forward svc/kiali \
-  -n istio-system \
-  20001:20001
-```
 ## Kyverno
 
 ------------------
@@ -163,6 +150,9 @@ k port-forward svc/jaeger-query \
 
 * With `CRDs`, however, each `Kind` will
   correspond to a *single resource*.
+* Each controller focuses on one root Kind,
+  but may interact with other Kinds.
+
 
 ------------------
 

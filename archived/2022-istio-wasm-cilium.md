@@ -91,6 +91,17 @@ which the extensions can use.
 * 保留端口
   - `:15021/healthz/ready`
 
+## Kiali
+
+```zsh
+k get secret -A | grep kiali-service-account
+
+k get secret the_secret_name \
+  -o jsonpath={.data.token} | base64 -d
+
+k port-forward svc/kiali \
+  20001:20001
+```
 
 ## Debug
 
