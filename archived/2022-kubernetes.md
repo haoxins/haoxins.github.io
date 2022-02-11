@@ -152,6 +152,13 @@ k port-forward svc/jaeger-query \
   correspond to a *single resource*.
 * Each controller focuses on one root Kind,
   but may interact with other Kinds.
+* A reconciler takes the name of an object, and
+  returns whether or not we need to try again.
+  - We return an empty result and no error, which
+    indicates to controller-runtime that we've
+    successfully reconciled this object and don't
+    need to try again until there's some changes.
+* `config/manager/controller_manager_config.yaml`
 
 
 ------------------
