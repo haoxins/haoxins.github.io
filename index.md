@@ -3,6 +3,7 @@
 * [Programming ecosystem](articles/programming-ecosystem.md)
 * [健身, 冥想](articles/meditation-fitness.md)
 * [纯数学教程 (第9版)](articles/math-pure-mathematics.md)
+* [泛函分析导论及应用](articles/math-functional-analysis.md)
 * [复分析 可视化方法 Visual Complex Analysis](articles/math-complex-analysis.md)
 * [Graph machine learning](articles/graph-machine-learning.md)
 * [Blockchain & Cryptography](articles/cryptography.md)
