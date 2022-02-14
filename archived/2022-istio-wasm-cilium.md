@@ -94,12 +94,14 @@ which the extensions can use.
 ## Kiali
 
 ```zsh
-k get secret -A | grep kiali-service-account
-
-k get secret the_secret_name \
+k get secret -n istio-system \
+  $(kubectl get sa kiali-service-account \
+  -n istio-system \
+  -o "jsonpath={.secrets[0].name}") \
   -o jsonpath={.data.token} | base64 -d
 
 k port-forward svc/kiali \
+  -n istio-system \
   20001:20001
 ```
 
@@ -130,6 +132,10 @@ k logs -n istio-system -l app=istiod --tail=10000
 ## Events
 
 ### 2022
+
+* [Announcing Istio 1.13](https://istio.io/latest/news/releases/1.13.x/announcing-1.13/)
+  - Istio `1.13` is officially supported on
+    Kubernetes versions `1.20` to `1.23`.
 
 * [Open Service Mesh (OSM)](https://github.com/openservicemesh/osm)
   - [Announcing OSM v1.0.0](https://openservicemesh.io/blog/announcing-osm-v1/)

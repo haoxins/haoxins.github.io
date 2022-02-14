@@ -15,6 +15,8 @@ k config set-context --current --namespace new_ns
 
 k exec --stdin --tty pod_name -- bash
 k exec --stdin --tty pod_name -c container_name -- bash
+
+k top pod pod_name --containers
 ```
 
 * Options
