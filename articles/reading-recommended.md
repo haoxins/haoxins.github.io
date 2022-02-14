@@ -4,6 +4,10 @@ description: 夫人之相与, 俯仰一世. 或取诸怀抱, 悟言一室之内;
 date: 2021-05-03
 ---
 
+* [纯数学教程 (第9版)](https://book.douban.com/subject/35132451/)
+
+* [复分析: 可视化方法](https://book.douban.com/subject/35316347/)
+
 ------------------
 
 * [量子计算公开课](https://book.douban.com/subject/35467917/)
