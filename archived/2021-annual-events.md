@@ -4,14 +4,19 @@ description: 千年石上古人踪, 万丈岩前一点空
 date: 2019-05-26
 ---
 
+* 不再继续
+
+------------------
+
 ## 2022
 
 ### 个人年度关键词
 
-* **Blockchain**
+* **Machine learning**
+* **读书: 数学 物理**
 * **冥想**
 
-### Blockchain
+### Machine learning
 
 ------------------
 
