@@ -29,6 +29,17 @@ date: 2022-01-17
 
 ------------------
 
+## 2022
+
+* [Kubeflow pipelines v1.8.0](https://github.com/kubeflow/pipelines/blob/1.8.0/CHANGELOG.md)
+  - **BREAKING CHANGES**
+  - Use Argo Emissary Executor instead of Docker by default.
+  - `sdk.v2`: Block task dependency referencing tasks
+    inside a sibling condition or loop group.
+  - `sdk`: Deprecate `V2 compatible mode` in v1 compiler.
+  - `sdk.v2`: Merge v2 experimental change back to v2 namespace.
+  - 可以 `non-prod` 环境先试试水了
+
 * **Kubeflow** 的社区问题!
   - `2021` 年, 我个人对 [Kubeflow](https://github.com/kubeflow/kubeflow) 社区的评价较差
   - 几乎处于**无人维护**的状态
