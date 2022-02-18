@@ -24,7 +24,7 @@ date: 2022-01-17
 
 ## GUI
 
-* [SixtyFPS](https://github.com/sixtyfpsui/sixtyfps)
+* [Slint](https://github.com/slint-ui/slint)
   - 替代 `Qt`
 
 ------------------
