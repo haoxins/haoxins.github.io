@@ -1282,7 +1282,7 @@ containers:
 ```
 
 * *Kubernetes Downward API*, which allows
-  you to expose pod and container metadata
+  you to **expose** pod and container metadata
   via environment variables or files.
   - It's simply a way to inject values
     from the pod's `metadata`, `spec`,
