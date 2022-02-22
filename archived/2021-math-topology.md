@@ -7,8 +7,6 @@ date: 2021-08-24
 * [基础拓扑学 (修订版)](https://book.douban.com/subject/34899142/)
   - 原作名: **Basic Topology**
 
-## 引论
-
 ## 连续性
 
 ## 紧致性与连通性
