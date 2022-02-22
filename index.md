@@ -12,6 +12,7 @@
 ### 2022
 * [TAOCP 组合算法 - 计算机程序设计艺术](archived/2022-taocp-4.md)
 * [TAOCP 组合算法 习题 - 计算机程序设计艺术](archived/2022-taocp-4-exe.md)
+* [我的滑雪经历](archived/2022-skiing.md)
 * [人间词话 - 叶嘉莹讲评本](archived/2022-shi-ci.md)
 * [Shtetl-Optimized, Scott Aaronson](archived/2022-scott-aaronson.md)
 * [费曼物理学讲义 (卷三)](archived/2022-physics-feynman-lectures-3.md)
