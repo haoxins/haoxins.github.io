@@ -20,9 +20,4 @@ date: 2021-05-03
   - 原作名: *Quantum Computing since Democritus*
   - *自费曼以来, 还没有谁的公开课能如此精彩*
 
-------------------
-
-* [通向实在之路](https://book.douban.com/subject/25823056/)
-  - **罗杰•彭罗斯**
-  - 副标题: **宇宙法则的完全指南**
-  - 原作名: *The Road to Reality: A Complete Guide to the Laws of the Universe*
+* 标题其实和内容不是很匹配

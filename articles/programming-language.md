@@ -10,7 +10,7 @@ date: 2021-10-28
   - Such as: `Apache Arrow`, `Flink`
   - **Rust**
 
-## Go (1.19+)
+## Go (1.18+)
 
 * [ent](https://github.com/ent/ent)
 
@@ -22,7 +22,7 @@ date: 2021-10-28
 
 ------------------
 
-## Rust (2021)
+## Rust (1.58+)
 
 * [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
 * [axum](https://github.com/tokio-rs/axum)
