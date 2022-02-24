@@ -2343,3 +2343,68 @@ func sumBar(bar Bar) int64 {
   - The main reason is a better spatial locality that
     makes the CPU fetch fewer cache lines from memory.
 
+### Predictability
+
+* Predictability refers to the ability of a
+  CPU to anticipate what the application will
+  do to speed up its execution.
+
+* **Striding** relates to how CPUs work through our data.
+  There are `three` different types of strides:
+  - A **unit stride** is when all the values we want to
+    access are allocated contiguously; for example,
+    a slice of `int64` elements.
+  - This stride is predictable for a CPU and the most
+    efficient as it requires a minimum number of
+    cache lines to walk through the elements.
+  - A **constant stride** is still predictable for the CPU;
+    for example, a slice that iterates over every two elements.
+  - However, it requires more cache lines to walk through data,
+    so it's less efficient than a unit stride.
+  - A **non-unit stride** is a stride the CPU can't predict to
+    walk through data; for example, a linked list of a slice of
+    pointers.
+  - As the CPU doesn't know whether data are allocated
+    contiguously or not, it won't fetch any cache line.
+
+### Cache placement policy
+
+* When a CPU decides to copy a memory block and place
+  it into the cache, it must follow a particular strategy.
+  Assuming an `L1D` cache of `32KB` and a cache line of
+  `64` bytes, if a block was placed randomly into `L1D`,
+  the CPU would have to iterate over `512` cache lines in
+  the worst case to read a variable.
+  - This kind of cache is called fully associative.
+* To improve how fast an address can be accessed from a
+  CPU cache, designers work on different policies regarding
+  cache placement.
+  - Let's skip the history and discuss today's most widely used option:
+    `set-associative cache`, which relies on cache partitioning.
+* With the `set-associate cache` policy,
+  a cache is partitioned into sets. We will assume the cache is
+  `2-way` set associative, meaning each set contains two lines.
+* A memory block can belong to only one set, and the placement
+  is determined by its memory address. To understand it,
+  we have to dissect the memory block address into three parts,
+  *block offset*, *set index*, and *tag bits*:
+  - The *block offset* is based on the block size.
+    Here a block size is `512` bytes, and `512` equals `2^9`.
+    Therefore the first `9` bits of the address represent
+    the *block offset* (`bo`).
+  - The *set index* indicates to which set an address belongs.
+    As the cache is `2-way` set associative and contains
+    eight lines, we have `8 / 2 = 4` sets. Furthermore,
+    `4` equals `2^2`; therefore, the two next bits
+    represent the *set index* (`si`).
+  - The rest of the address are the *tag bits* (`tb`).
+    In the previous figure, we represented an address using
+    `13` bits for simplicity. To compute `tb`, we do
+    `13 - bo - si`. Here, it means the two remaining bits
+    represent the *tag bits*.
+
+* The cache replacement policy depends on the CPU,
+  but usually, it's a pseudo-LRU policy
+  (a real LRU would be too complex to handle).
+
+### Writing concurrent code leading to false sharing
