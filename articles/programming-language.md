@@ -42,6 +42,9 @@ cargo test -- --show-output
 
 ------------------
 
+* [s2n-quic](https://github.com/aws/s2n-quic)
+  - 不错
+
 * macOS Monterey `12.3`
   - Python `2.7` was removed from macOS in this update.
 

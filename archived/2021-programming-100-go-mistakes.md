@@ -2236,3 +2236,110 @@ func TestFoo(t *testing.T) {
 ```zsh
 go test -run=TestFoo/subtest_1 -v
 ```
+
+## Optimizations
+
+```
+Make it correct, make it clear,
+make it concise, make it fast, in that order.
+
+-- Wes Dyer
+```
+
+* Modern CPUs rely on caching to speed up memory access.
+  In most cases, via three different caching levels:
+  - `L1`, `L2`, and `L3`.
+
+* The concept of **cache lines** is crucial to understand.
+  But before presenting what it is,
+  let's understand why we need it.
+* When a specific memory location is accessed
+  (e.g., reading a variable),
+  it is likely that in the near future:
+  - The same location will be referenced again
+  - Nearby memory locations will be referenced
+* The former refers to temporal locality,
+  and the latter refers to spatial locality.
+  Both are part of a principle called locality of reference.
+
+```go
+func sum(s []int64) int64 {
+  var total int64
+  length := len(s)
+  for i := 0; i < length; i++ {
+    total += s[i]
+  }
+  return total
+}
+```
+
+* Temporal locality is part of why we need CPU caches:
+  to speed up repeated accesses to the same variables.
+* However, because of spatial locality, the CPU will copy
+  what we call a cache line instead of copying a
+  single variable from the main memory to a cache.
+* A cache line is a contiguous memory segment of a
+  fixed size, usually `64` bytes (eight `int64` variables).
+* Whenever a CPU decides to cache a memory block from the RAM,
+  it will copy it to a cache line. Then, as memory is a hierarchy,
+  when a CPU wants to access a specific memory location,
+  it will first check in `L1`, then in `L2`, then in `L3`,
+  and finally, if not present in these caches, in the main memory.
+
+* We have to know that different strategies exist.
+  - Sometimes, caches are inclusive
+  - (e.g., `L2` data are also present in `L3`),
+  - and sometimes caches are exclusive
+  - (e.g., `L3` is called a victim cache as it
+    contains only data evicted from L2).
+* In general, these strategies are **hidden** by
+  CPU vendors and not particularly useful to know.
+  - Therefore, let's not delve into these questions.
+
+### Slice of structs vs. struct of slices
+
+```go
+type Foo struct {
+  a int64
+  b int64
+}
+
+func sumFoo(foos []Foo) int64 {
+  var total int64
+  for i := 0; i < len(foos); i++ {
+    total += foos[i].a
+  }
+  return total
+}
+
+type Bar struct {
+  a []int64
+  b []int64
+}
+
+func sumBar(bar Bar) int64 {
+  var total int64
+  for i := 0; i < len(bar.a); i++ {
+    total += bar.a[i]
+  }
+  return total
+}
+```
+
+* In the case of `sumFoo`, we receive a slice of
+  structs containing two fields, `a` and `b`.
+  - Therefore, we will have a succession of
+    `a` and `b` in memory.
+* Conversely, in the case of `sumBar`, we receive
+  a struct containing two slices, `a` and `b`.
+  - Therefore, all the elements of a will be
+    allocated contiguously.
+* This difference doesn't lead to any memory
+  compaction optimization. However, as the goal of
+  both functions was to iterate over each `a`,
+  in one case, it requires four cache lines and
+  only two cache lines in the other case.
+* `sumBar` will be faster
+  - The main reason is a better spatial locality that
+    makes the CPU fetch fewer cache lines from memory.
+
