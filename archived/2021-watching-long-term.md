@@ -4,6 +4,15 @@ description: 画栋朝飞南浦云, 珠帘暮卷西山雨.
 date: 2021-02-12
 ---
 
+## 2022
+
+* [Rust crates 大巡礼: AWS 最新发布的 s2n-quic - 简介](https://www.bilibili.com/video/BV19m4y197Jm)
+  - https://github.com/aws/s2n-quic
+  - https://github.com/cloudflare/quiche
+  - quiche API 对 Rust 不友好 (目标是集成进 C 语言)
+  - https://github.com/quinn-rs/quinn
+  - quinn API 偏底层
+
 ## 2021
 
 * [RISC-V 上的操作系统](https://www.bilibili.com/video/BV1Q5411w7z5)
@@ -40,7 +49,7 @@ date: 2021-02-12
 所以, 准确性的损失 换取 可理解性的提升.
 ```
 
-* What's so special about Euler's number e?
+* What's so special about Euler's number `e`?
   - ???
 
 * [Taylor series](https://www.youtube.com/watch?v=3d6DsjIBzJ4)
@@ -52,6 +61,8 @@ date: 2021-02-12
 ## 海贼王
 
 * 2022
+  - 海贼王大致的剧情已经差不多了
+  - 2022 Q1, 大妈, 凯多, 败!
 
 * 2021
   - 和之国大战白热化
