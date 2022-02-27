@@ -38,6 +38,16 @@ date: 2022-01-17
   - 但是, 历史原因, 注定 `SQL` 是二等公民.
   - 不过, `SQL` 应该是**一等公民**
 
+* Spring Boot `3.0.0`
+  - Spring Boot `3.0` requires Java `17` as a minimum
+    version and Spring Framework `6`.
+  - Applications built with Gradle require
+    Gradle `7.3` or later.
+  - `2022` 年开始, 我基本脱离 `JVM/Java/Kotlin` 了
+  - 除了 `Flink` 相关, 至少远离 `Spring` 了
+  - 所以, Spring Boot `3`, 与我无关
+  - 哈哈哈, 开心
+
 * [Kubeflow pipelines v1.8.0](https://github.com/kubeflow/pipelines/blob/1.8.0/CHANGELOG.md)
   - **BREAKING CHANGES**
   - Use Argo Emissary Executor instead of Docker by default.

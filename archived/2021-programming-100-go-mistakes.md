@@ -2407,4 +2407,22 @@ func sumBar(bar Bar) int64 {
   but usually, it's a pseudo-LRU policy
   (a real LRU would be too complex to handle).
 
-### Writing concurrent code leading to false sharing
+### Not taking into account instruction-level parallelism
+
+* ILP (`instruction-level parallelism`), which allows
+  parallelizing the execution of a sequence of instructions.
+  - A processor that implements ILP within a single
+    virtual core is called a superscalar processor.
+
+### Not understanding stack vs. heap
+
+* The stack is the default memory, it's a LIFO
+  data structure storing all the local variables
+  for a specific goroutine.
+* When a goroutine starts, it gets `2KB` of
+  contiguous memory forming its stack space
+  - this size has evolved in the past and could change again.
+* However, this size isn't fixed at runtime and can
+  grow and shrink as necessary
+  - but it will always remain contiguous in memory,
+    preserving data locality.
