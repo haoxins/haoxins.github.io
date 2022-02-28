@@ -2467,3 +2467,115 @@ func sumBar(bar Bar) int64 {
   and then **optimize** allocations **if needed**.
 
 ### Not knowing how to reduce allocations
+
+* Therefore, sometimes even a slight change on an
+  API can positively impact allocations. When designing
+  an API, let's remain aware of the escape analysis
+  rules described in the previous section and use,
+  if needed, `gcflags` to understand compiler's decisions.
+
+* In summary, if we frequently allocate many objects
+  of the same type, we can consider using `sync.Pool`.
+* Indeed, `sync.Pool` is a set of temporary objects
+  that can help us prevent reallocating the same kind
+  of data repeatedly.
+* Also, `sync.Pool` is safe for use by multiple
+  goroutines simultaneously.
+
+### Not relying on inlining
+
+* However, inlining only works for functions with
+  a certain complexity, also known as inlining budget.
+* Inlining has two main benefits.
+  - First, it removes the overhead of a function call.
+  - Second, it allows the compiler to proceed to
+    further optimizations.
+  - For example, following inlining a function, the
+    compiler can decide that a variable supposed to
+    escape initially on the heap may stay on the stack.
+
+* *Mid stack inlining* is about inlining functions
+  that call other functions.
+* Thanks to *mid-stack inlining*, as Go developers,
+  we can now optimize an application using the concept
+  of fast path inlining to distinguish between a fast
+  and a slow path.
+
+### Not using Go diagnostics tooling
+
+* **Profiling**
+  - `CPU`: determines where an application spends its time
+  - `Goroutines`: reports the stack traces of the
+    ongoing goroutines
+  - `Heap`: reports heap memory allocation to monitor current
+    memory usage and check for possible memory leaks
+  - `Mutex`: reports lock contentions to see the behaviors
+    of the mutexes used in our code and whether an application
+    spend too much time in locking calls
+  - `Block`: shows where goroutines block waiting on
+    synchronization primitives
+
+* **Execution tracer**
+
+```zsh
+go test -bench=. -v -trace=trace.out
+go tool trace trace.out
+```
+
+### Not understanding how the GC works
+
+* A GC keeps a tree of the object references.
+  The Go GC is based on the `mark-and-sweep` algorithm,
+  which relies on two stages:
+  - **Mark stage**: traverse all the objects of the heap
+    and mark them whether they are still in use
+  - **Sweep stage**: traverse the tree of references from
+    the root and deallocate blocks of objects
+    no longer referenced
+* The Go GC is called concurrent `mark-and-sweep` as it
+  aims to reduce the amount of stop-the-world operations
+  per GC cycle to mostly run concurrently
+  alongside our application.
+
+* The Go GC also includes a way to free memory after
+  a peak of consumption. Imagine our application is
+  based on two phases:
+  - An init phase that would lead to frequent
+    allocations and a large heap
+  - A runtime phase with moderate allocations
+    and a small heap
+* How will Go tackle the fact that the large heap was
+  only helpful when the application started but not after?
+  - It's handled as part of the GC with a so-called
+    periodic scavenger. After a certain time, the GC
+    will detect that such a large heap
+    isn't necessary anymore.
+  - Hence, it will free some memory and return it to the OS.
+
+* `GOGC`. This variable defines the percentage of the heap
+  since the last GC before triggering another GC,
+  - by default: `100%`.
+
+* One concrete example to make sure we understand it.
+  Let's assume the current heap size is `128 MB`.
+* If `GOGC=100`, the next GC will be triggered when the
+  heap size reaches `256 MB`.
+* Hence, a GC is triggered by default every time the
+  heap size doubles.
+* Also, if a GC hasn't been executed during the last
+  two minutes, Go will force running one.
+
+```zsh
+GODEBUG=gctrace=1 go test -bench=. -v
+```
+
+* To conclude with GC, it's essential to understand how
+  it behaves to optimize it. As Go developers, we can use
+  `GOGC` to configure when the next GC cycle is triggered.
+* In most cases, keeping it to `100` should be enough.
+  However, if our application can face some peak of requests
+  leading to frequent GC and latency impacts,
+  we can increase this value.
+* Last but not least, in the event of an exceptional
+  peak of requests, using the trick to keep the virtual
+  heap size to a minimum can be something to consider.

@@ -21,6 +21,7 @@ date: 2021-10-28
 
 ```zsh
 go build -gcflags "-m=2"
+go tool pprof -http=:8080 ...
 ```
 
 ------------------
@@ -44,6 +45,10 @@ cargo test -- --show-output
   - [encode/httpx](https://github.com/encode/httpx)
 
 ------------------
+
+* [runtime: make GOMAXPROCS cfs-aware on GOOS=linux](https://github.com/golang/go/issues/33803)
+  - [automaxprocs](https://github.com/uber-go/automaxprocs)
+  - [CFS Bandwidth Control](https://www.kernel.org/doc/Documentation/scheduler/sched-bwc.txt)
 
 * [s2n-quic](https://github.com/aws/s2n-quic)
   - 不错
