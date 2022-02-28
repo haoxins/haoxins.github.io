@@ -33,11 +33,8 @@ date: 2022-01-17
 
 * 关于 `Flink` 的替代
   - 首先, `Flink` 的 *Scope* 其实和 `K8s` 是有重叠的;
-  - 同时, `Flink` 的各种细小问题也很多.
-  - 关键, 虽然 `Flink` 希望 **SQL First**;
-  - 但是, 历史原因, 注定 `SQL` 是二等公民.
-  - 不过, `SQL` 应该是**一等公民**!
-  - 此时, `Flink` 还没有真正的可替代品
+  - 同时, `Flink` 的各种历史包袱也很多.
+  - 此时, `Flink` 还没有真正的可替代品;
   - 但大概率会基于
     [DataFusion](https://github.com/apache/arrow-datafusion)
   - [Fluvio](https://github.com/infinyon/fluvio)
