@@ -36,7 +36,12 @@ date: 2022-01-17
   - 同时, `Flink` 的各种细小问题也很多.
   - 关键, 虽然 `Flink` 希望 **SQL First**;
   - 但是, 历史原因, 注定 `SQL` 是二等公民.
-  - 不过, `SQL` 应该是**一等公民**
+  - 不过, `SQL` 应该是**一等公民**!
+  - 此时, `Flink` 还没有真正的可替代品
+  - 但大概率会基于
+    [DataFusion](https://github.com/apache/arrow-datafusion)
+  - [Fluvio](https://github.com/infinyon/fluvio)
+    的开发力量稍显薄弱
 
 * Spring Boot `3.0.0`
   - Spring Boot `3.0` requires Java `17` as a minimum

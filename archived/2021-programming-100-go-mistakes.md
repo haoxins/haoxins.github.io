@@ -2426,3 +2426,44 @@ func sumBar(bar Bar) int64 {
   grow and shrink as necessary
   - but it will always remain contiguous in memory,
     preserving data locality.
+
+* A memory heap is a pool of memory
+  shared for all the goroutines.
+
+* Indeed, if the compiler cannot prove that a
+  variable isn't referenced after the function returns,
+  the variable is allocated on the heap.
+
+* As we said, a `stack` is self-cleaning and is accessed
+  by a single goroutine. Conversely, the `heap` has to
+  be cleaned by an external system: the GC.
+* Therefore, the more heap allocations are made, the more
+  we pressure the GC. When the GC runs, it will use `25%`
+  of the available CPU capacity and potentially create
+  milliseconds of "stop the world" latency.
+
+> Using pointers to avoid a copy isn't necessarily faster;
+  it depends on the context.
+
+* Escape analysis
+  - First of all, when an allocation cannot be done
+    on the stack, it will be done on the heap.
+  - Global variables as multiple goroutines can access them.
+  - A pointer sent to a channel.
+  - A variable referenced by a value sent to a channel.
+  - If a local variable is too large to fit on the stack.
+  - If the size of a local variable is unknown.
+  - The backing array of a slice reallocated using `append`.
+
+> It's not exhaustive and can also change
+  in future Go versions.
+
+*  In general, *sharing down* stays on the stack,
+  whereas *sharing up* escapes to the heap.
+* This should prevent common mistakes such as
+  premature optimizations where we may want to
+  return pointers, for example, because "it avoids a copy".
+* Let's **focus on readability and semantics first**
+  and then **optimize** allocations **if needed**.
+
+### Not knowing how to reduce allocations

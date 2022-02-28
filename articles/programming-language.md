@@ -9,6 +9,9 @@ date: 2021-10-28
 * **Memory** intensive
   - Such as: `Apache Arrow`, `Flink`
   - **Rust**
+  - Go: Heap management can be responsible for up to
+    `20` to `30%` of the total CPU time consumed in
+    some data-intensive applications.
 
 ## Go (1.18+)
 
@@ -16,9 +19,9 @@ date: 2021-10-28
 
 * [Effective Go](https://go.dev/doc/effective_go)
 
-* **Deprecated** `io/ioutil`: As of Go `1.16`,
-  the same functionality is now provided by
-  package `io` or package `os`.
+```zsh
+go build -gcflags "-m=2"
+```
 
 ------------------
 
@@ -51,3 +54,7 @@ cargo test -- --show-output
 * [Switch DataFusion to using arrow2](https://github.com/apache/arrow-datafusion/issues/1532)
   - https://github.com/jorgecarleitao/arrow2
   - https://github.com/jorgecarleitao/parquet2
+
+* **Deprecated** `io/ioutil`: As of Go `1.16`,
+  the same functionality is now provided by
+  package `io` or package `os`.
