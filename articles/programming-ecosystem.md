@@ -31,6 +31,16 @@ date: 2022-01-17
 
 ## 2022
 
+* `2022-02-28`, 公司隔壁团队终于得到结论:
+  - [YugabyteDB](https://github.com/yugabyte/yugabyte-db) 不可用
+  - 我先前看了看 Issues, Code, Docs 就早早得出了这个结论.
+  - 1) 直接 include PostgreSQL 代码, 且近`2`年未同步.
+    所谓的 PostgreSQL 兼容, 过度承诺.
+  - 2) 架构不合理, 本质上他们做的不是 DB, 只是围绕 DB 的 Services.
+    和 [TiDB](https://github.com/pingcap/tidb) 根本不具备可比性.
+  - 3) 过度宣传, 文档的描述不务实. 对比列表, 完胜所有对手, 很假.
+  - 4) 根据 GitHub Issues, 不像有较多人在用.
+
 * 关于 `Flink` 的替代
   - 首先, `Flink` 的 *Scope* 其实和 `K8s` 是有重叠的;
   - 同时, `Flink` 的各种历史包袱也很多.
