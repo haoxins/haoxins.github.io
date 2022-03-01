@@ -21,6 +21,7 @@ date: 2022-01-17
 
 * [WASI](https://wasi.dev)
   - https://github.com/WebAssembly/WASI
+  - https://github.com/bytecodealliance/wasi
 
 ## GUI
 
