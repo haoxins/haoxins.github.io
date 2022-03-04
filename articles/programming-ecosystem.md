@@ -26,11 +26,6 @@ date: 2022-01-17
 * [Krustlet](https://github.com/krustlet/krustlet)
   - Kubernetes Kubelet in Rust for running WASM
 
-## GUI
-
-* [Slint](https://github.com/slint-ui/slint)
-  - 替代 `Qt`
-
 ------------------
 
 ## 2022
