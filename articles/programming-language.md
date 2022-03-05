@@ -26,7 +26,7 @@ go tool pprof -http=:8080 ...
 
 ------------------
 
-## Rust (1.58+)
+## Rust (1.59+)
 
 * [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
 * [axum](https://github.com/tokio-rs/axum)

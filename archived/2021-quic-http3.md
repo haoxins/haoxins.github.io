@@ -171,6 +171,13 @@ Tag control information (TCI)
 
 ------------------
 
+
+* [HTTP/3 explained](https://github.com/bagder/http3-explained)
+  - A document describing the HTTP/3 and QUIC protocols
+  - 一般, 可以随便看看
+
+------------------
+
 # Events
 
 ------------------
