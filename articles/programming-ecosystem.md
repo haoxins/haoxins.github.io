@@ -30,6 +30,17 @@ date: 2022-01-17
 
 ## 2022
 
+* `2022-03`
+  - 有同事问我脑海中的技术的 `blueprint` 是啥样子的?
+  - **中心化**: `Kubernetes` 上面的 `functions/pipelines`
+  - 比如:
+    `Argo workflows`,
+    `Dapr functions`,
+    `Istio plugins`,
+    `Kubeflow pipelines`
+  - **去中心化**: 某几个公链的 `Smart contracts`
+  - 我不认为: `私有链`, `联盟链`有价值!
+
 * `2022-02-28`, 公司隔壁团队终于得到结论:
   - [YugabyteDB](https://github.com/yugabyte/yugabyte-db) 不可用
   - 我先前看了看 Issues, Code, Docs 就早早得出了这个结论.
