@@ -111,13 +111,6 @@ k get secret kube-prometheus-stack-grafana \
   -o jsonpath="{.data.admin-password}" | base64 -d
 ```
 
-## Jaeger
-
-```zsh
-k port-forward svc/jaeger-query \
-  -n istio-system 8086:80
-```
-
 ------------------
 
 ## Cert Manager
