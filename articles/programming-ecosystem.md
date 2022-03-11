@@ -37,6 +37,7 @@ date: 2022-01-17
     `Argo workflows`,
     `Dapr functions`,
     `Istio plugins`,
+    `Kubernetes operators`,
     `Kubeflow pipelines`
   - **去中心化**: 某几个公链的 `Smart contracts`
   - 我不认为: `私有链`, `联盟链`有价值!
