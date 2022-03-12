@@ -31,6 +31,30 @@ date: 2022-01-17
 ## 2022
 
 * `2022-03`
+  - 过去 `2` 个月, 一直在 `设计 & 实现` 基于 `Flink operator`
+    的一个团队内部平台的 `K8s operator`,
+    团队内部称为 `Metric platform operator`
+  - 基于 `Operator` 模式, 配合 `K8s CRD` 的 `GitOps`,
+    实现 `Metric platform` 的一些 `Flink job` 处理
+  - 一开始, `Flink operator` 选择
+    [spotify/flink-on-k8s-operator](https://github.com/spotify/flink-on-k8s-operator)
+  - 因为
+    [GCP/flink-on-k8s-operator](https://github.com/GoogleCloudPlatform/flink-on-k8s-operator)
+    几乎不维护了
+  - 当然, 前者 `Fork` 自后者
+  - 开发进行中的时候, `Flink` 官方团队也推出了
+    [apache/flink-kubernetes-operator](https://github.com/apache/flink-kubernetes-operator)
+  - 虽然打乱了原本的计划, 需要重新取舍, 但是整体而言却是**重大利好**, 理由如下:
+  - (1) 对于 `Flink on K8s` 的趋势是一大推进, `2022` 年,
+    可能 `K8s` 会是 `Flink` 社区第一推荐部署方式.
+    这也得感谢*阿里云*的推动.
+  - (2) 我一直认为, 结合 `K8s`, `Flink` 未来应该通过 `Operator` 彻底废除
+    `Job Manager`. 这一想法比较激进, 因为意味着 `Flink` 将来只能部署在 `K8s` 上.
+    但这个选择会简化 `Flink`, 使其专注于自己的专长.
+  - 总体而言, 先干掉 `Job Manager`, 再干掉 `Flink`, 会是我的 `2022` 的一个重点方向.
+  - 为什么要干掉 `Flink`? 理由后续说明.
+
+* `2022-03`
   - 有同事问我脑海中的技术的 `blueprint` 是啥样子的?
   - **中心化**: `Kubernetes` 上面的 `functions/pipelines`
   - 比如:

@@ -171,12 +171,28 @@ Tag control information (TCI)
 
 ------------------
 
+## HTTP/3 explained
 
 * [HTTP/3 explained](https://github.com/bagder/http3-explained)
   - A document describing the HTTP/3 and QUIC protocols
   - 一般, 可以随便看看
 
 ### TCP head of line blocking
+
+* With `HTTP/2`, typical browsers do tens or hundreds of
+  parallel transfers over a single TCP connection.
+* If a single packet is dropped, or lost in the network
+  somewhere between two endpoints that speak `HTTP/2`,
+  it means the entire TCP connection is brought to a halt
+  while the lost packet is re-transmitted and
+  finds its way to the destination.
+* As the packet loss rate increases, `HTTP/2` performs
+  less and less well. At `2%` packet loss,
+  tests have proven that `HTTP/1` users are usually better off
+  - because they typically have up to six TCP connections to
+    distribute lost packets over.
+  - This means for every lost packet the other
+    connections can still continue.
 
 ------------------
 
