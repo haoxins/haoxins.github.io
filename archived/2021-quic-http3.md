@@ -179,8 +179,8 @@ Tag control information (TCI)
 
 ### TCP head of line blocking
 
-* With `HTTP/2`, typical browsers do tens or hundreds of
-  parallel transfers over a single TCP connection.
+* With `HTTP/2`, typical **browsers** do tens or hundreds
+  of parallel transfers over a single TCP connection.
 * If a single packet is dropped, or lost in the network
   somewhere between two endpoints that speak `HTTP/2`,
   it means the entire TCP connection is brought to a halt
@@ -193,6 +193,48 @@ Tag control information (TCI)
     distribute lost packets over.
   - This means for every lost packet the other
     connections can still continue.
+
+* HTTP-over-QUIC (`HTTP/3`) builds upon `HTTP/2` and follows
+  many of the same concepts but moves some of the specifics
+  from the HTTP layer as they are covered by QUIC.
+
+* A QUIC **connection** is made to a UDP port and IP address,
+  but once established the connection is
+  associated by its `"connection ID"`.
+* Over an established connection, either side can create
+  streams and send data to the other end.
+* Streams are delivered in-order and they are reliable,
+  but different streams may be delivered out-of-order.
+* QUIC offers flow control on both connection and streams.
+* QUIC guarantees in-order delivery of streams,
+  but not between streams.
+  - This means that each stream will send data and
+    maintain data order, but each stream may reach
+    the destination in a different order
+    than the application sent it!
+  - In QUIC, a lost packet only affects the stream
+    to which the lost packet belongs.
+
+### Connections
+
+* QUIC's connection establishment combines
+  version negotiation with the cryptographic and
+  transport handshakes to reduce
+  connection establishment latency.
+  - To actually send data over such a connection,
+    one or more streams have to be created and used.
+* Each connection possesses a set of connection identifiers,
+  or connection IDs, each of which can be used to
+  identify the connection.
+  - Connection IDs are independently selected by endpoints;
+    each endpoint selects the connection IDs that its peer uses.
+* By taking advantage of the connection ID, connections can
+  thus migrate between IP addresses and network interfaces
+  in ways TCP never could.
+* There is no way to opt-out or avoid using
+  TLS for a QUIC connection.
+
+### Streams
 
 ------------------
 

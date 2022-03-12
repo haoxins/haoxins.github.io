@@ -35,7 +35,7 @@ date: 2022-01-17
     的一个团队内部平台的 `K8s operator`,
     团队内部称为 `Metric platform operator`
   - 基于 `Operator` 模式, 配合 `K8s CRD` 的 `GitOps`,
-    实现 `Metric platform` 的一些 `Flink job` 处理
+    实现 `Metric platform` 的一些 `Flink job` 调度和处理
   - 一开始, `Flink operator` 选择
     [spotify/flink-on-k8s-operator](https://github.com/spotify/flink-on-k8s-operator)
   - 因为
