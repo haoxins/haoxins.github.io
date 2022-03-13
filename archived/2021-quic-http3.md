@@ -236,6 +236,70 @@ Tag control information (TCI)
 
 ### Streams
 
+* Streams are individually flow controlled,
+  allowing an endpoint to limit memory commitment
+  and to apply back pressure.
+* The creation of streams is also flow controlled,
+  with each peer declaring the maximum stream ID
+  it is willing to accept at a given time.
+
+* Streams are identified by an unsigned `62-bit` integer,
+  referred to as the Stream ID.
+* The least significant **two bits** of the Stream ID are
+  used to identify the type of stream
+  (unidirectional or bidirectional) and
+  the initiator of the stream.
+* The **least** significant bit (`0x1`) of the Stream ID
+  identifies the initiator of the stream.
+  - Clients initiate even-numbered streams
+    (those with the least significant bit set to `0`);
+  - servers initiate odd-numbered streams
+    (with the bit set to `1`).
+* The **second least** significant bit (`0x2`) of the Stream ID
+  differentiates between unidirectional streams and bidirectional streams.
+  - Unidirectional streams always have this bit set to `1`
+  - and bidirectional streams have this bit set to `0`.
+
+* Streams are an ordered byte-stream abstraction.
+  - Separate streams are however not necessarily
+    delivered in the original order.
+
+* QUIC itself does not provide frames for exchanging
+  prioritization information. Instead it relies on
+  receiving priority information from
+  the application that uses QUIC.
+
+### HTTP/3
+
+* An HTTP server includes an `Alt-Svc:` header in its response:
+
+```
+Alt-Svc: h3=":50781"
+```
+
+* The client sends its HTTP request on a
+  client-initiated bidirectional QUIC stream.
+* A request consists of a single `HEADERS` frame and
+  might optionally be followed by one or two other frames:
+  - a series of `DATA` frames and possibly
+    a final `HEADERS` frame for trailers.
+* The server sends back its HTTP response
+  on the bidirectional stream.
+  - A `HEADERS` frame, a series of `DATA` frames and
+    possibly a trailing `HEADERS` frame.
+
+* **QPACK** headers
+  - QPACK itself uses two additional unidirectional
+    QUIC streams between the two end-points.
+  - They are used to carry dynamic table
+    information in either direction.
+
+* **Server pushes** are only allowed to happen if the
+  client side has agreed to them.
+  - In `HTTP/3` the client even sets a limit for
+    how many pushes it accepts by informing the server
+    what the max push stream ID is.
+
 ------------------
 
 # Events
