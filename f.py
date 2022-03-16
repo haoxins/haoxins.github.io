@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-import re
 from os import path, walk
 import subprocess
+import re
 from typing import List
 
 root_dir = path.dirname(path.realpath(__file__))
@@ -62,32 +62,18 @@ for file in get_files_from_git():
 
 # Build index
 def gen_contents(sub_path):
-    last_year = None
     file_infos = []
     article_dir = path.join(root_dir, sub_path)
     for (_, _, filenames) in walk(article_dir):
         for filename in filenames:
             p = path.join(article_dir, filename)
-
-            year = filename.split("-")[0]
-            if not re.match(r"[0-9]{4}$", year):
-                year = None
-            elif year <= "2020":
-                continue
-
-            file_infos.append({"path": p, "name": filename, "year": year})
+            file_infos.append({"path": p, "name": filename})
 
     file_infos.sort(key=lambda info: info["name"], reverse=True)
 
     for i in file_infos:
         with open(i["path"], "r") as f:
             lines = f.readlines()
-
-            year = i["year"]
-            if year != None and year != last_year:
-                last_year = year
-                index_contents.append(f"### {last_year}")
-
             title = lines[1].split(":").pop().strip()
             content = f'* [{title}]({sub_path}/{i["name"]})'
             index_contents.append(content)
@@ -95,7 +81,10 @@ def gen_contents(sub_path):
 
 def gen_index():
     gen_contents("articles")
-    gen_contents("archived")
+    index_contents.append("### 2022")
+    gen_contents("archived-2022")
+    index_contents.append("### 2021")
+    gen_contents("archived-2021")
 
     with open(path.join(root_dir, "index.md"), "w") as f:
         f.write("\n".join(index_contents))

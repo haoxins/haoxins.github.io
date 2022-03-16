@@ -46,6 +46,34 @@ cargo test -- --show-output
 
 ------------------
 
+* macOS `12.3`
+
+```zsh
+~ which python
+python not found
+
+~ which python2
+python2 not found
+
+~ /usr/bin/python3 -V
+Python 3.8.2
+```
+
+* [Go 1.18 is released!](https://go.dev/blog/go1.18)
+  - `15 March 2022`
+  - [Go 1.18 Release Notes](https://go.dev/doc/go1.18)
+  - There are three **experimental** packages using generics
+    that may be useful. These packages are in `x/exp` repository.
+  - `golang.org/x/exp/constraints`
+  - Constraints that are useful for generic code,
+    such as `constraints.Ordered`.
+  - `golang.org/x/exp/slices`
+  - A collection of generic functions that operate on
+    `slices` of any element type.
+  - `golang.org/x/exp/maps`
+  - A collection of generic functions that operate on
+    `maps` of any key or element type.
+
 * [runtime: make GOMAXPROCS cfs-aware on GOOS=linux](https://github.com/golang/go/issues/33803)
   - [automaxprocs](https://github.com/uber-go/automaxprocs)
   - [CFS Bandwidth Control](https://www.kernel.org/doc/Documentation/scheduler/sched-bwc.txt)

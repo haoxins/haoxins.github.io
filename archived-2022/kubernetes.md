@@ -154,8 +154,6 @@ k get secret kube-prometheus-stack-grafana \
     successfully reconciled this object and don't
     need to try again until there's some changes.
 * `config/manager/controller_manager_config.yaml`
-
-
 ------------------
 
 ## GCP/GKE
