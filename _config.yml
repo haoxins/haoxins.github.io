@@ -18,15 +18,18 @@ highlighter: rouge
 markdown: kramdown
 
 defaults:
-  -
-    scope:
-      path: articles
-      type: pages
-    values:
-      sectionid: articles
-  -
-    scope:
-      path: archived
-      type: pages
-    values:
-      sectionid: archived
+- scope:
+    path: archived-2021
+    type: pages
+  values:
+    sectionid: archived-2021
+- scope:
+    path: archived-2022
+    type: pages
+  values:
+    sectionid: archived-2022
+- scope:
+    path: articles
+    type: pages
+  values:
+    sectionid: articles

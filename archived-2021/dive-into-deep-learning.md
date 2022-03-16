@@ -43,3 +43,4 @@ print(f"{(time.time() - start):.6f} sec")
 # 0.000032 sec
 # 矢量化代码通常会带来数量级的加速
 ```
+
