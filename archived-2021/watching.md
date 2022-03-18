@@ -10,6 +10,8 @@ date: 2019-10-24
 
 ### 2022-03
 
+* 重温 [山海情](https://movie.douban.com/subject/35033654/)
+
 * 重温 [智取威虎山](https://movie.douban.com/subject/10807909/)
 
 ### 2022-02
