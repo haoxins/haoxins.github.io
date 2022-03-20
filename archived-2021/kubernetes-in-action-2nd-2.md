@@ -151,3 +151,114 @@ metadata:
 * A Deployment object doesn't directly manage the Pod objects,
   but manages them through a ReplicaSet object that's
   automatically created when you create the Deployment object.
+
+* The `spec` section of a Deployment object isn't much
+  different from a ReplicaSet's.
+  - The `replicas`, `selector`, and `template` fields serve
+    the same purpose as those in ReplicaSets.
+  - In the additional `strategy` field, you can configure
+    the update strategy to be used when you
+    update this Deployment.
+
+* The `Controlled By` line indicates that this ReplicaSet
+  has been created and is owned and controlled by the
+  `kiada` Deployment.
+  - You'll notice that the Pod template, selector, and
+    the ReplicaSet itself contain an additional label key
+    `pod-template-hash` that you never defined
+    in the Deployment object.
+  - The value of this label matches the last part of
+    the ReplicaSet's name.
+
+* The value of the `pod-template-hash` label isn't random
+  but calculated from the contents of the Pod template.
+  - Because the same value is used for the ReplicaSet name,
+    the name depends on the contents of the Pod template.
+  - It follows that every time you change the Pod template,
+    a new ReplicaSet is created.
+
+* Everything you learned about ReplicaSet scaling and
+  how the ReplicaSet controller ensures that the actual
+  number of Pods always matches the desired number of
+  replicas also applies to Pods deployed via a Deployment.
+
+* If you make changes to an object that is owned by another
+  object, you should expect that your changes will be undone
+  by the controller that manages the object.
+* As you might expect, the Deployment controller will undo
+  any changes you make to the ReplicaSet, not just when you
+  scale it. Even if you delete the ReplicaSet object,
+  the Deployment controller will recreate it.
+
+* When you `kubectl apply`, the value of the
+  `kubectl.kubernetes.io/last-applied-configuration`
+  is used to calculate the changes
+  needed to be made to the API object.
+
+* The **advantage** only becomes clear when you update
+  the Pod template in the Deployment.
+  - You may recall that this has no immediate effect
+    with a ReplicaSet. The updated template is only used
+    when the ReplicaSet controller creates a new Pod.
+  - However, when you update the Pod template in a
+    Deployment, the Pods are replaced immediately.
+
+* The way the Pods are replaced depends on the update
+  strategy configured in the Deployment.
+  - **Recreate**: All Pods are deleted at the same time,
+    and then, when all their containers are finished,
+    the new Pods are created at the same time.
+  - For a short time, while the old Pods are being
+    terminated and before the new Pods are ready,
+    the service is unavailable.
+  - **RollingUpdate**: When a Pod is removed,
+    Kubernetes waits until the new Pod is ready before
+    removing the next Pod.
+  - This way, the service provided by the Pods remains
+    available throughout the upgrade process.
+  - This is the **default** strategy.
+
+* The `Recreate` strategy has no configuration options,
+  while the `RollingUpdate` strategy lets you configure
+  how many Pods Kubernetes replaces at a time.
+
+* The labels you specify in the Pod template in a
+  Deployment are also applied to the ReplicaSet.
+* When you originally created the Deployment, only one
+  ReplicaSet was created and all Pods belonged to it.
+  - When you updated the Deployment,
+    a new ReplicaSet was created.
+
+```yaml
+spec:
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+  minReadySeconds: 10
+```
+
+* The two parameters that affect how fast Pods are replaced
+  during a rolling update are `maxSurge` and `maxUnavailable`.
+  - `maxSurge`: The maximum number of Pods above the
+    desired number of replicas that the Deployment can
+    have during the rolling update.
+  - The value can be an absolute number or a percentage
+    of the desired number of replicas.
+  - `maxUnavailable`: The maximum number of Pods relative
+    to the desired replica count that can be unavailable
+    during the rolling update.
+  - The value can be an absolute number or a percentage
+    of the desired number of replicas.
+* The most **important** thing about these two parameters
+  is that their values are relative to the
+  desired number of replicas.
+  - For example, if the desired number of replicas is three,
+    `maxUnavailable` is one, and the current number of Pods
+    is five, the number of Pods that must be
+    available is two, not four.
+* You can't set both `maxSurge` and `maxUnavailable` to zero,
+  as this wouldn't allow the Deployment to exceed the desired
+  number of replicas or remove Pods,
+  as one Pod would then be unavailable.
