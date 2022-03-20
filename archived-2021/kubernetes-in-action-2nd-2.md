@@ -262,3 +262,32 @@ spec:
   as this wouldn't allow the Deployment to exceed the desired
   number of replicas or remove Pods,
   as one Pod would then be unavailable.
+
+* The Deployment controller doesn't count the Pods itself,
+  but gets the information about the number of Pods
+  from the status of the underlying ReplicaSets.
+
+* Instead of setting `maxSurge` and `maxUnavailable` to
+  an absolute number, you can set them to a percentage of
+  the desired number of replicas.
+  - The controller calculates the absolute `maxSurge`
+    number by **rounding up**,
+  - and `maxUnavailable` by **rounding down**.
+  - The default value for `maxSurge`
+    and `maxUnavailable` is `25%`.
+
+* To **pause** an update in the middle of the rolling
+  update process, use the following command:
+  - `kubectl rollout pause deployment kiada`
+  - `kubectl rollout resume deployment kiada`
+
+* When a new Pod is created in a rolling update,
+  the Deployment controller waits until the Pod
+  is available before continuing the rollout process.
+  - By default, the Pod is considered available when
+    it's ready (as indicated by the Pod's readiness probe).
+  - If you specify `minReadySeconds`, the Pod isn't
+    considered available until the specified amount of
+    time has elapsed after the Pod is ready.
+  - If the Pod's containers crash or fail their readiness
+    probe during this time, the timer is reset.
