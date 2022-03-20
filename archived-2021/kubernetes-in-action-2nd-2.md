@@ -291,3 +291,35 @@ spec:
     time has elapsed after the Pod is ready.
   - If the Pod's containers crash or fail their readiness
     probe during this time, the timer is reset.
+
+* You can configure a different progress deadline by
+  setting the `spec.progressDeadlineSeconds` field in
+  the Deployment object.
+  - If you increase `minReadySeconds` to more than `600`,
+    you must set the `progressDeadlineSeconds`
+    field accordingly.
+
+* You may wonder where the revision history is stored.
+  You won't find it in the Deployment object.
+  - Instead, the history of a Deployment is represented
+    by the ReplicaSets associated with the Deployment.
+  - Each ReplicaSet represents one revision.
+  - This is the reason why the Deployment controller
+    **doesn't delete** the old ReplicaSet object after
+    the update process is complete.
+* The size of the revision history, and thus the number
+  of ReplicaSets that the Deployment controller keeps
+  for a given Deployment, is determined by the
+  `revisionHistoryLimit` field in the Deployment’s spec.
+  - The default value is `10`.
+* You might think that using `kubectl rollout undo` to
+  revert to the previous version of the Deployment manifest
+  is equivalent to applying the previous manifest file,
+  but that’s **not** the case.
+  - The `kubectl rollout undo` command reverts **only**
+    the Pod template and preserves any other changes
+    you made to the Deployment manifest.
+  - This includes changes to the update strategy and
+    the desired number of replicas.
+  - The `kubectl apply command`, on the other hand,
+    overwrites these changes.
