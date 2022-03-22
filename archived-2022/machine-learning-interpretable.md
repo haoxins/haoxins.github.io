@@ -90,3 +90,64 @@ date: 2021-09-20
   (on a modular level) or with
   explanations of individual instances.
 
+### Properties of Explanations
+
+* Properties of Explanation Methods
+  - **Expressive Power** is the "language" or structure of
+    the explanations the method is able to generate.
+  - An explanation method could generate `IF-THEN` rules,
+    decision trees, a weighted sum,
+    natural language or something else.
+  - **Translucency** describes how much the explanation method
+    relies on looking into the machine learning model,
+    like its parameters.
+  - The advantage of high translucency is that the method can
+    rely on more information to generate explanations.
+  - The advantage of low translucency is that the explanation
+    method is more portable.
+  - **Portability** describes the range of machine learning
+    models with which the explanation method can be used.
+  - Methods with a low translucency have a higher portability
+    because they treat the machine learning model as a black box.
+  - **Algorithmic Complexity** describes the computational
+    complexity of the method that generates the explanation.
+
+* Properties of Individual Explanations
+  - **Accuracy**: How well does an explanation predict unseen data?
+  - **Fidelity**: How well does the explanation approximate the
+    prediction of the black box model?
+  - High fidelity is one of the most important properties of
+    an explanation, because an explanation with low fidelity
+    is useless to explain the machine learning model.
+  - Accuracy and fidelity are closely related. If the black
+    box model has high accuracy and the explanation
+    has high fidelity, the explanation also has high accuracy.
+  - **Consistency**: How much does an explanation differ
+    between models that have been trained on the same task
+    and that produce similar predictions?
+  - High consistency is desirable if the models really
+    rely on similar relationships.
+  - **Stability**: How similar are the explanations for
+    similar instances?
+  - While consistency compares explanations between models,
+    stability compares explanations between similar
+    instances for a fixed model.
+  - High stability is always desirable.
+  - **Comprehensibility**: How well do humans understand
+    the explanations?
+  - **Certainty**: Does the explanation reflect the
+    certainty of the machine learning model?
+  - **Degree of Importance**: How well does the explanation
+    reflect the importance of features or
+    parts of the explanation?
+  - **Novelty**: Does the explanation reflect whether a
+    data instance to be explained comes from a "new"
+    region far removed from the distribution
+    of training data?
+  - The concept of novelty is related to the concept
+    of certainty. The higher the novelty, the more
+    likely it is that the model will have low
+    certainty due to lack of data.
+  - **Representativeness**: How many instances does
+    an explanation cover?
+
