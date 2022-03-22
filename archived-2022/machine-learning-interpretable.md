@@ -48,3 +48,45 @@ date: 2021-09-20
   The interpretable model itself is interpreted by
   looking at internal model parameters or
   feature summary statistics.
+
+### Algorithm Transparency
+
+* Algorithm transparency is about how the algorithm
+  learns a model from the data and what kind
+  of relationships it can learn.
+* Algorithm transparency only requires knowledge of
+  the algorithm and not of the data or learned model.
+  - This book focuses on model interpretability and
+    not algorithm transparency.
+
+### Model Interpretability
+
+* This level of interpretability is about understanding
+  how the model makes decisions, based on a holistic view
+  of its features and each of the learned components
+  such as weights, other parameters, and structures.
+  - Global model interpretability is very
+    difficult to achieve in practice.
+  - I argue that you cannot really imagine a linear model
+    with 5 features, because it would mean drawing the
+    estimated hyperplane mentally in a `5-dimensional` space.
+  - Usually, when people try to comprehend a model,
+    they consider only parts of it,
+    such as the weights in linear models.
+
+* While **global** model interpretability is usually out of reach,
+  there is a good chance of understanding at least
+  some models on a modular level.
+  - Not all models are interpretable at a parameter level.
+* If you look at an individual prediction, the behavior of
+  the otherwise complex model might behave more pleasantly.
+  **Locally**, the prediction might only depend linearly
+  or monotonically on some features, rather than having
+  a complex dependence on them.
+  - Local explanations can therefore be more accurate
+    than global explanations.
+* Model predictions for multiple instances can be explained
+  either with global model interpretation methods
+  (on a modular level) or with
+  explanations of individual instances.
+
