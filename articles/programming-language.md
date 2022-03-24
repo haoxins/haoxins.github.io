@@ -47,13 +47,68 @@ cargo test -- --show-output
 ------------------
 
 
-* https://deps.dev
-  - `2022-03`, 支持
-  - `Cargo/Rust`
-  - `Go`
-  - `Maven/Java`
-  - `PyPI/Python`
-  - `npm`
+* [An Introduction To Generics](https://go.dev/blog/intro-generics)
+  - Generics adds **three** new big things to the language:
+  - 1. Type parameters for function and types.
+  - 2. Defining interface types as sets of types,
+    including types that don't have methods.
+  - 3. Type inference, which permits omitting type
+    arguments in many cases when calling a function.
+  - **Instantiation** happens in two steps. `First`,
+    the compiler substitutes all type arguments for
+    their respective type parameters throughout the
+    generic function or type. `Second`, the compiler
+    verifies that each type argument satisfies
+    the respective constraint.
+  - Similarly, type parameter lists have a type for
+    each type parameter. Because a type parameter is
+    itself a type, the types of type parameters define
+    sets of types. This `meta-type` is called
+    a type constraint.
+  - In Go, **type constraints must be interfaces**.
+    That is, an interface type can be used as a value
+    type, and it can also be used as a `meta-type`.
+    Interfaces define methods, so obviously we can
+    express type constraints that require certain
+    methods to be present. But `constraints.Ordered`
+    is an interface type too, and the `<`
+    operator is not a method.
+  - Until recently, the Go spec said that an interface
+    defines a method set, which is roughly the set of methods
+    enumerated in the interface. Any type that implements
+    all those methods implements that interface.
+  - But another way of looking at this is to say that
+    the interface defines a set of types, namely the
+    types that implement those methods.
+    From this perspective, any type that is an element
+    of the interface's type set implements the interface.
+  - The two views lead to the same outcome: For each set
+    of methods we can imagine the corresponding set of
+    types that implement those methods, and that is the
+    set of types defined by the interface.
+  - For our purposes, though, the type set view has an
+    advantage over the method set view: we can explicitly
+    add types to the set, and thus control
+    the type set in new ways.
+  -  The expression `~string` means the set of all types
+    whose underlying type is `string`. This includes the
+    type `string` itself as well as all types declared with
+    definitions such as `type MyString string`.
+  -  In Go `1.18` an interface may contain methods and
+    embedded interfaces just as before, but it may also
+    embed `non-interface` types, unions, and
+    sets of underlying types.
+  - `[S interface{~[]E}, E interface{}]`
+  - Here `S` must be a slice type whose element type can be any type.
+  - `[S ~[]E, E interface{}]`
+  - `[S ~[]E, E any]`
+  - **Interfaces as type sets** is a powerful new mechanism
+    and is **key to making type constraints work in Go**.
+  - In many cases the compiler can **infer the type argument**
+    for `T` from the ordinary arguments.
+  - This kind of inference, which infers the type arguments
+    from the types of the arguments to the function,
+    is called *function argument type inference*.
 
 * macOS `12.3`
 
