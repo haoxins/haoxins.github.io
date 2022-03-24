@@ -46,6 +46,15 @@ cargo test -- --show-output
 
 ------------------
 
+
+* https://deps.dev
+  - `2022-03`, 支持
+  - `Cargo/Rust`
+  - `Go`
+  - `Maven/Java`
+  - `PyPI/Python`
+  - `npm`
+
 * macOS `12.3`
 
 ```zsh
