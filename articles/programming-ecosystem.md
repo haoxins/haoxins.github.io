@@ -30,6 +30,9 @@ date: 2022-01-17
 
 ## 2022
 
+* [Google Cloud](https://cloud.google.com) 是真不行!
+  - 哎~
+
 * `2022-03`
   - 过去 `2` 个月, 一直在 `设计 & 实现` 基于 `Flink operator`
     的一个团队内部平台的 `K8s operator`,
