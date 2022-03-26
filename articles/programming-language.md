@@ -102,7 +102,7 @@ cargo test -- --show-output
   - Here `S` must be a slice type whose element type can be any type.
   - `[S ~[]E, E interface{}]`
   - `[S ~[]E, E any]`
-  - **Interfaces as type sets** is a powerful new mechanism
+  - **Interfaces as type sets** is a powerful **new mechanism**
     and is **key to making type constraints work in Go**.
   - In many cases the compiler can **infer the type argument**
     for `T` from the ordinary arguments.

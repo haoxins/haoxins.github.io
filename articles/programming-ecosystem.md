@@ -30,6 +30,8 @@ date: 2022-01-17
 
 ## 2022
 
+* Cloud native = K8s native + Object storage
+
 * [Google Cloud](https://cloud.google.com) 是真不行!
   - 哎~
 
