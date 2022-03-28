@@ -151,3 +151,21 @@ date: 2021-09-20
   - **Representativeness**: How many instances does
     an explanation cover?
 
+## Interpretable Models
+
+* A model with monotonicity constraints ensures that the
+  relationship between a feature and the target outcome
+  always goes in the same direction over the
+  entire range of the feature:
+  - An increase in the feature value either always leads
+    to an increase or always to a decrease
+    in the target outcome.
+* Some models can automatically include interactions
+  between features to predict the target outcome.
+  You can include interactions in any type of model
+  by manually creating interaction features.
+  - Interactions can improve predictive performance,
+    but too many or too complex interactions
+    can hurt interpretability.
+
+### Linear Regression
