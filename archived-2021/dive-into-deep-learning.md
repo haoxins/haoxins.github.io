@@ -114,3 +114,24 @@ for _ in range(num_epochs):
   - 尽管 `Softmax` 是一个非线性函数, 但 `Softmax`
     回归的输出仍然由输入特征的仿射变换决定.
     因此, `Softmax` 回归是一个线性模型 (linear model).
+
+```py
+net = tf.keras.models.Sequential()
+
+net.add(tf.keras.layers.Flatten(input_shape=(28, 28)))
+weight_initializer = tf.keras.initializers.RandomNormal(mean=0.0, stddev=0.01)
+net.add(tf.keras.layers.Dense(10, kernel_initializer=weight_initializer))
+
+loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+trainer = tf.keras.optimizers.SGD(learning_rate=0.1)
+
+for _ in range(10):
+  for X, y in train_iter:
+    with tf.GradientTape() as tape:
+      l = loss(y, net(X))
+      params = net.trainable_variables
+      grads = tape.gradient(l, params)
+      trainer.apply_gradients(zip(grads, params))
+```
+
+### 多层感知机
