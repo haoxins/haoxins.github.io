@@ -133,6 +133,8 @@ k logs -n istio-system -l app=istiod --tail=10000
 
 ### 2022
 
+* [WAGI: WebAssembly Gateway Interface](https://github.com/deislabs/wagi)
+
 * [Announcing Istio 1.13](https://istio.io/latest/news/releases/1.13.x/announcing-1.13/)
   - Istio `1.13` is officially supported on
     Kubernetes versions `1.20` to `1.23`.

@@ -15,7 +15,9 @@ date: 2020-07-22
 * Query
   - SQL              (MySQL)
   - Streaming/Window (Flink SQL)
+  - [DataFusion](https://github.com/apache/arrow-datafusion)
   - Graph
+  - [GraphScope](https://github.com/alibaba/GraphScope)
 
 * [Databend](https://github.com/datafuselabs/databend)
 
@@ -36,6 +38,8 @@ date: 2020-07-22
 ------------------
 
 ## QUIC
+
+* [s2n-quic](https://github.com/aws/s2n-quic)
 
 ------------------
 
@@ -131,12 +135,13 @@ serverless state management.
 * Database instance, **落伍了**
 
 * Programing platform
-  - Flink
-  - Dapr
+  - [Dapr](https://github.com/dapr/dapr)
+  - [Ray](https://github.com/ray-project/ray)
 
 ### 云存储
 
 * 云计算的 **Top1** 产品, **没有之一**
+  - 对象存储 `Object storage`, 将会占据 `80%` 以上的`场景/市场`
 
 * [Network-attached storage](https://en.wikipedia.org/wiki/Network-attached_storage)
   - [Network File System](https://en.wikipedia.org/wiki/Network_File_System)
