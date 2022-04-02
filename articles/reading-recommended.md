@@ -18,6 +18,6 @@ date: 2021-05-03
 * [量子计算公开课](https://book.douban.com/subject/35467917/)
   - 副标题: *从德谟克利特, 计算复杂性到自由意志*
   - 原作名: *Quantum Computing since Democritus*
-  - *自费曼以来, 还没有谁的公开课能如此精彩*
+  - 标题其实和内容不是很匹配, 应改为: `计算复杂性: 从经典计算到量子计算`
 
-* 标题其实和内容不是很匹配
+* [数据库系统内幕](https://book.douban.com/subject/35078474/)

@@ -140,8 +140,8 @@ serverless state management.
 
 ### 云存储
 
-* 云计算的 **Top1** 产品, **没有之一**
-  - 对象存储 `Object storage`, 将会占据 `80%` 以上的`场景/市场`
+* 云计算的 **Top 1** 产品, **没有之一**
+  - 对象存储 `Object storage`, 将会占据 `80%` 以上的存储`场景/市场`
 
 * [Network-attached storage](https://en.wikipedia.org/wiki/Network-attached_storage)
   - [Network File System](https://en.wikipedia.org/wiki/Network_File_System)
