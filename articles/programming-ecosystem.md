@@ -26,11 +26,19 @@ date: 2022-01-17
 * [Krustlet](https://github.com/krustlet/krustlet)
   - Kubernetes Kubelet in Rust for running WASM
 
+## Cloud native
+
+* 我的定义:
+  - `2021`: Cloud native = K8s native + Object storage
+
 ------------------
 
 ## 2022
 
-* Cloud native = K8s native + Object storage
+* [Spin](https://github.com/fermyon/spin)
+  - Spin is a framework for building, deploying, and running fast,
+    secure, and composable cloud microservices with WebAssembly.
+  - [WAGI: WebAssembly Gateway Interface](https://github.com/deislabs/wagi)
 
 * [Google Cloud](https://cloud.google.com) 是真不行!
   - 哎~
