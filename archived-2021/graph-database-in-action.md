@@ -314,7 +314,7 @@ g.V()
 ```
 
 ```js
-g.V().has('person' ,'first_name', 'Dave')
+g.V().has('person', 'first_name', 'Dave')
   .bothE('works_with')
   .has('end_year', lte(2018))
   .otherV()
