@@ -154,6 +154,7 @@ k get secret kube-prometheus-stack-grafana \
     successfully reconciled this object and don't
     need to try again until there's some changes.
 * `config/manager/controller_manager_config.yaml`
+
 ------------------
 
 ## GCP/GKE
@@ -161,14 +162,11 @@ k get secret kube-prometheus-stack-grafana \
 ```zsh
 export PROJECT_ID=$(gcloud config get-value project)
 
-gcloud container clusters create $PROJECT_ID-sg-test \
+gcloud container clusters create $PROJECT_ID-test-only \
   --project=$PROJECT_ID \
-  --workload-pool=$PROJECT_ID.svc.id.goog \
   --machine-type=n1-standard-4 \
-  --enable-autoscaling --min-nodes 3 --max-nodes 99 \
-  --scopes compute-rw,gke-default,storage-rw \
-  --num-nodes=3 \
-  --zone=asia-southeast1-c
+  --zone=asia-southeast1-c \
+  --num-nodes=3
 ```
 
 * *Storage classes* (Default)
