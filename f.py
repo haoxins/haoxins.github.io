@@ -83,8 +83,6 @@ def gen_index():
     gen_contents("articles")
     index_contents.append("### 2022")
     gen_contents("archived-2022")
-    index_contents.append("### 2021")
-    gen_contents("archived-2021")
 
     with open(path.join(root_dir, "index.md"), "w") as f:
         f.write("\n".join(index_contents))
