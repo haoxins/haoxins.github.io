@@ -310,12 +310,12 @@ spec:
 * The size of the revision history, and thus the number
   of ReplicaSets that the Deployment controller keeps
   for a given Deployment, is determined by the
-  `revisionHistoryLimit` field in the Deployment’s spec.
+  `revisionHistoryLimit` field in the Deployment's spec.
   - The default value is `10`.
 * You might think that using `kubectl rollout undo` to
   revert to the previous version of the Deployment manifest
   is equivalent to applying the previous manifest file,
-  but that’s **not** the case.
+  but that's **not** the case.
   - The `kubectl rollout undo` command reverts **only**
     the Pod template and preserves any other changes
     you made to the Deployment manifest.
