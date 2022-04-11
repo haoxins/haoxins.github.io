@@ -90,7 +90,6 @@ serverless state management.
   - [Rust](https://github.com/rust-lang/rust)
   - [Dapr](https://github.com/dapr/dapr)
   - [Cilium](https://github.com/cilium/cilium)
-  - [Prometheus](https://github.com/prometheus/prometheus)
 
 * 关于 `Kubernetes`, `2021` 年之前基本完成的是:
   - 所有的东西都跑在了 `K8s` 上

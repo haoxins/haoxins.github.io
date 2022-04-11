@@ -205,12 +205,6 @@ service rules for the path non-existent
   - **Prod** 需要**平滑升级**,
     `Create new`, `Apply new`, `Delete later`
 
-* **Jaeger**: 2021-11
-  - 把自己的 K8s 上的 **Jaeger** *storage backend* 从
-    **Cassandra** 切换到了 **Elasticsearch**
-  - The *Jaeger* team recommends *Elasticsearch*
-    as the storage backend over *Cassandra*
-
 * **GKE**: 2021-09
   - Updates `default` kubectl from `1.18` to `1.20`.
 
@@ -228,3 +222,22 @@ kube-system
   `.spec.acme.solvers.dns01.cloudDNS.serviceAccountSecretRef`
   需要与 **Cert Manager** 在同一个 **Namespace**
   - 比如 *Cert Manager* 默认的 `ns`: `cert-manager`
+
+------------------
+
+## Events
+
+### 2022
+
+* 2022-04: 删除了自己维护的 K8s clusters 上的
+  [Jaeger](https://github.com/jaegertracing/jaeger)
+  和
+  [Prometheus](https://github.com/prometheus/prometheus)
+  - 期待 [Grafana Tempo](https://github.com/grafana/tempo)
+  - 还有 [Grafana Mimir](https://github.com/grafana/mimir)
+
+* **Jaeger**: 2021-11
+  - 把自己维护的 K8s clusters 上的 **Jaeger** *storage backend* 从
+    **Cassandra** 切换到了 **Elasticsearch**
+  - The *Jaeger* team recommends *Elasticsearch*
+    as the storage backend over *Cassandra*
