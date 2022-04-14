@@ -46,6 +46,14 @@ cargo test -- --show-output
 
 ------------------
 
+* **华为**, 新编程语言
+  - `2022-03-20`: 填写了**新语言内测**申请问卷
+  - `2022-03-22`: 收到了`报名确认! 签署保密承诺函`的邮件
+  - `2022-03-28`: 收到了`华为编程语言实验室生态合作-个人保密承诺函`
+  - `2022-03-31`: 由于正值上海疫情隔离在家,
+    只能通过编辑 PDF 完成签名, 回复邮件
+  - `2022-04-13`: 通过审核, 看到了文档
+  - 看见 `Cangjie` 的第一感觉:
 
 * [An Introduction To Generics](https://go.dev/blog/intro-generics)
   - Generics adds **three** new big things to the language:

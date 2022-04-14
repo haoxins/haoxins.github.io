@@ -35,6 +35,13 @@ date: 2022-01-17
 
 ## 2022
 
+* [Rayon](https://github.com/rayon-rs/rayon)
+  - Rayon is a data-parallelism library for Rust.
+  - It is extremely lightweight and makes it easy to
+    convert a sequential computation into a parallel one.
+  - It also guarantees data-race freedom.
+  - [DataFusion - Morsel-driven Parallelism using rayon](https://github.com/apache/arrow-datafusion/pull/2226)
+
 * [Spin](https://github.com/fermyon/spin)
   - Spin is a framework for building, deploying, and running fast,
     secure, and composable cloud microservices with WebAssembly.
