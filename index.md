@@ -16,6 +16,7 @@
 * [人间词话 - 叶嘉莹讲评本](archived-2022/shi-ci.md)
 * [Shtetl-Optimized, Scott Aaronson](archived-2022/scott-aaronson.md)
 * [QUIC & HTTP/3](archived-2022/quic-http3.md)
+* [量子计算公开课](archived-2022/quantum-computing.md)
 * [通向实在之路 (下)](archived-2022/physics-road-to-reality-2.md)
 * [卢昌海系列 - 黎曼猜想漫谈, 泡利的错误, 广义相对论专题选讲](archived-2022/physics-riemann-pauli.md)
 * [费曼物理学讲义 (卷三)](archived-2022/physics-feynman-lectures-3.md)
