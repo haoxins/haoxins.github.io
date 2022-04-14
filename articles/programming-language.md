@@ -53,7 +53,7 @@ cargo test -- --show-output
   - `2022-03-31`: 由于正值上海疫情隔离在家,
     只能通过编辑 PDF 完成签名, 回复邮件
   - `2022-04-13`: 通过审核, 看到了文档
-  - 看见 `Cangjie` 的第一感觉:
+  - 看见 `Cangjie` 的第一感觉: (保密期, 等 `Public` 再说)
 
 * [An Introduction To Generics](https://go.dev/blog/intro-generics)
   - Generics adds **three** new big things to the language:
