@@ -10,6 +10,8 @@ date: 2019-10-24
 
 ### 2022-04
 
+* [风起陇西](https://movie.douban.com/subject/26766214/)
+
 * [山河月明](https://movie.douban.com/subject/30122636/)
 
 ### 2022-03
