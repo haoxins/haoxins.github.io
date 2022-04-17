@@ -9,6 +9,7 @@ date: 2022-01-17
 > 此处特指: Engineering
 
 * [Arrow](https://github.com/apache/arrow)
+  - https://github.com/jorgecarleitao/arrow2
   - [Polars](https://github.com/pola-rs/polars)
 
 * [Ray](https://github.com/ray-project/ray)
@@ -22,9 +23,6 @@ date: 2022-01-17
 * [WASI](https://wasi.dev)
   - https://github.com/WebAssembly/WASI
   - https://github.com/bytecodealliance/wasi
-
-* [Krustlet](https://github.com/krustlet/krustlet)
-  - Kubernetes Kubelet in Rust for running WASM
 
 ## Cloud native
 
