@@ -6,7 +6,7 @@ date: 2021-10-28
 
 ### Preference
 
-* **Memory** intensive
+- **Memory** intensive
   - Such as: `Apache Arrow`, `Flink`
   - **Rust**
   - Go: Heap management can be responsible for up to
@@ -15,9 +15,9 @@ date: 2021-10-28
 
 ## Go (1.18+)
 
-* [ent](https://github.com/ent/ent)
+- [ent](https://github.com/ent/ent)
 
-* [Effective Go](https://go.dev/doc/effective_go)
+- [Effective Go](https://go.dev/doc/effective_go)
 
 ```zsh
 go build -gcflags "-m=2"
@@ -28,8 +28,8 @@ go tool pprof -http=:8080 ...
 
 ## Rust (1.59+)
 
-* [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
-* [axum](https://github.com/tokio-rs/axum)
+- [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
+- [axum](https://github.com/tokio-rs/axum)
   - [Surf](https://github.com/http-rs/surf)
 
 ```zsh
@@ -40,13 +40,13 @@ cargo test -- --show-output
 
 ## Python (3.10+)
 
-* [tiangolo/fastapi](https://github.com/tiangolo/fastapi)
+- [tiangolo/fastapi](https://github.com/tiangolo/fastapi)
   - [pydantic](https://github.com/samuelcolvin/pydantic)
   - [encode/httpx](https://github.com/encode/httpx)
 
 ------------------
 
-* **华为**, 新编程语言
+- **华为**, 新编程语言
   - `2022-03-20`: 填写了**新语言内测**申请问卷
   - `2022-03-22`: 收到了`报名确认! 签署保密承诺函`的邮件
   - `2022-03-28`: 收到了`华为编程语言实验室生态合作-个人保密承诺函`
@@ -56,7 +56,7 @@ cargo test -- --show-output
   - 看见 `Cangjie` 的第一感觉: (保密期, 等 `Public` 再说)
     `Kotlin` 为主, 参杂 `Rust`, `Go` 的影子, **没有惊喜**
 
-* [An Introduction To Generics](https://go.dev/blog/intro-generics)
+- [An Introduction To Generics](https://go.dev/blog/intro-generics)
   - Generics adds **three** new big things to the language:
   - 1. Type parameters for function and types.
   - 2. Defining interface types as sets of types,
@@ -119,7 +119,7 @@ cargo test -- --show-output
     from the types of the arguments to the function,
     is called *function argument type inference*.
 
-* macOS `12.3`
+- macOS `12.3`
 
 ```zsh
 ~ which python
@@ -132,7 +132,7 @@ python2 not found
 Python 3.8.2
 ```
 
-* [Go 1.18 is released!](https://go.dev/blog/go1.18)
+- [Go 1.18 is released!](https://go.dev/blog/go1.18)
   - `15 March 2022`
   - [Go 1.18 Release Notes](https://go.dev/doc/go1.18)
   - There are three **experimental** packages using generics
@@ -147,20 +147,20 @@ Python 3.8.2
   - A collection of generic functions that operate on
     `maps` of any key or element type.
 
-* [runtime: make GOMAXPROCS cfs-aware on GOOS=linux](https://github.com/golang/go/issues/33803)
+- [runtime: make GOMAXPROCS cfs-aware on GOOS=linux](https://github.com/golang/go/issues/33803)
   - [automaxprocs](https://github.com/uber-go/automaxprocs)
   - [CFS Bandwidth Control](https://www.kernel.org/doc/Documentation/scheduler/sched-bwc.txt)
 
-* [s2n-quic](https://github.com/aws/s2n-quic)
+- [s2n-quic](https://github.com/aws/s2n-quic)
   - 不错
 
-* macOS Monterey `12.3`
+- macOS Monterey `12.3`
   - Python `2.7` was removed from macOS in this update.
 
-* [Switch DataFusion to using arrow2](https://github.com/apache/arrow-datafusion/issues/1532)
+- [Switch DataFusion to using arrow2](https://github.com/apache/arrow-datafusion/issues/1532)
   - https://github.com/jorgecarleitao/arrow2
   - https://github.com/jorgecarleitao/parquet2
 
-* **Deprecated** `io/ioutil`: As of Go `1.16`,
+- **Deprecated** `io/ioutil`: As of Go `1.16`,
   the same functionality is now provided by
   package `io` or package `os`.

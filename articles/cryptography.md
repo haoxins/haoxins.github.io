@@ -4,14 +4,14 @@ description: 欲渡黄河冰塞川, 将登太行雪满山. 闲来垂钓碧溪上
 date: 2021-10-15
 ---
 
-* [Solana](https://github.com/solana-labs/solana)
+- [Solana](https://github.com/solana-labs/solana)
   - Solana is a decentralized blockchain built to
     enable scalable, user-friendly apps for the world.
   - [Anchor](https://github.com/project-serum/anchor)
   - Anchor is a framework for Solana's Sealevel runtime
     providing several convenient developer tools
     for writing smart contracts.
-* There are 8 key innovations that make the
+- There are 8 key innovations that make the
   Solana network possible:
   - Proof of History (POH)
   - Tower BFT - a PoH-optimized version of PBFT;
@@ -25,18 +25,18 @@ date: 2021-10-15
 
 ------------------
 
-* https://verifpal.com
+- https://verifpal.com
 
 ### ZKProof
 
-* [ZKProof](https://zkproof.org)
+- [ZKProof](https://zkproof.org)
 
 ### Homomorphic Encryption
 
-* Shai Halevi's "Homomorphic Encryption" report (2017)
+- Shai Halevi's "Homomorphic Encryption" report (2017)
 
-* [Homomorphic Encryption](https://homomorphicencryption.org)
+- [Homomorphic Encryption](https://homomorphicencryption.org)
 
 ### The OPAQUE Asymmetric PAKE Protocol
 
-* https://datatracker.ietf.org/doc/draft-irtf-cfrg-opaque/
+- https://datatracker.ietf.org/doc/draft-irtf-cfrg-opaque/
