@@ -231,6 +231,11 @@ kube-system
 
 ### 2022
 
+- [Google Cloud](https://cloud.google.com) 是真不行!
+  - 靠谱的产品估计只有: __GCS__ (对象存储), __GKE__ (K8s), BigQuery
+  - __GKE__ 的 `StorageClass` 居然不支持 `ReadWriteMany`
+  - 难怪 GCP 没啥市场份额
+
 * 2022-04: 删除了自己维护的 K8s clusters 上的
   [Jaeger](https://github.com/jaegertracing/jaeger)
   和

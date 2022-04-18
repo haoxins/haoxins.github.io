@@ -4,29 +4,30 @@ description: 风不定, 人初静, 明日落红应满径.
 date: 2022-01-17
 ---
 
+## Data Engineering
+
+- [Arrow2](https://github.com/jorgecarleitao/arrow2)
+
 ## ML Engineering
 
-> 此处特指: Engineering
+- [Polars](https://github.com/pola-rs/polars)
+  - __Polars__ has transitioned to __Arrow2__.
 
-* [Arrow](https://github.com/apache/arrow)
-  - https://github.com/jorgecarleitao/arrow2
-  - [Polars](https://github.com/pola-rs/polars)
-
-* [Ray](https://github.com/ray-project/ray)
+- [Ray](https://github.com/ray-project/ray)
 
 ## ML
 
-* JupyterLab `v4`
+- [JupyterLab v4](https://github.com/jupyterlab/jupyterlab/issues/9647)
 
 ## WASM & WASI
 
-* [WASI](https://wasi.dev)
+- [WASI](https://wasi.dev)
   - https://github.com/WebAssembly/WASI
   - https://github.com/bytecodealliance/wasi
 
 ## Cloud native
 
-* 我的定义:
+- 我的定义:
   - `2021`: Cloud native = K8s native + Object storage
 
 ------------------
@@ -44,9 +45,6 @@ date: 2022-01-17
   - Spin is a framework for building, deploying, and running fast,
     secure, and composable cloud microservices with WebAssembly.
   - [WAGI: WebAssembly Gateway Interface](https://github.com/deislabs/wagi)
-
-* [Google Cloud](https://cloud.google.com) 是真不行!
-  - 哎~
 
 * `2022-03`
   - 过去 `2` 个月, 一直在 `设计 & 实现` 基于 `Flink operator`
