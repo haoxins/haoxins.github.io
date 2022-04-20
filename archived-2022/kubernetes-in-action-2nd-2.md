@@ -98,7 +98,7 @@ metadata:
   3. Pods that aren't ready.
   4. Pods that have a lower deletion cost.
   5. Pods that are collocated with a
-    greater number of related replicas.
+     greater number of related replicas.
   6. Pods that have been ready for a shorter time.
   7. Pods with a greater number of container restarts.
   8. Pods that were created later than the other Pods.
@@ -121,7 +121,8 @@ metadata:
   - A ReplicaSet scaled to zero is very common when
     the ReplicaSet is owned by a Deployment object.
 
-* To add a label to the Pods that the ReplicaSet creates, you must add the label to its Pod template.
+* To add a label to the Pods that the ReplicaSet creates,
+  you must add the label to its Pod template.
 * Did you notice that the labels in the Pod template and
   those in the selector aren't identical?
   - They don't have to be identical, but the

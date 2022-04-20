@@ -814,9 +814,9 @@ func concat(ids []string) string {
   assigned it to `s`. At first sight, this function
   may not look wrong. Yet, with this implementation,
   we forget one of the core characteristics of a string:
-  its **immutability**. Therefore, each iteration
-  allocates a new string that needs to be allocated
-  in memory, which impacts performance.
+  - its **immutability**.
+* Therefore, each iteration allocates a new string that
+  needs to be allocated in memory, which impacts performance.
 
 ```go
 func concat(ids []string) string {
