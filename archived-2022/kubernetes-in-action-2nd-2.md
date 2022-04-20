@@ -91,7 +91,8 @@ metadata:
 
 * When you scale down a ReplicaSet, Kubernetes follows
   some well thought out rules to decide which Pod(s)
-  to delete first. It deletes Pods in the following order:
+  to delete first.
+* It deletes Pods in the following order:
   1. Pods that aren't yet assigned to a node.
   2. Pods whose phase is unknown.
   3. Pods that aren't ready.

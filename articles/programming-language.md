@@ -36,6 +36,8 @@ go tool pprof -http=:8080 ...
 cargo test -- --show-output
 ```
 
+- [RFC-0048 Traits](https://github.com/rust-lang/rfcs/blob/master/text/0048-traits.md)
+
 ------------------
 
 ## Python (3.10+)

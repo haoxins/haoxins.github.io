@@ -153,15 +153,15 @@ fn filter<P>(self, predicate: P) -> impl Iterator<Item=Self::Item>
 * **First**, simply calling an adapter on an iterator
   doesn't consume any items; it just returns a
   new iterator, ready to produce its own items by
-  drawing from the first iterator as `needed`. In a
-  chain of adapters, the only way to make any work
+  drawing from the first iterator as `needed`.
+* In a chain of adapters, the only way to make any work
   actually get done is to call `next`
   on the **final** iterator.
   - **No** work takes place until `collect` starts
     calling `next` on the `filter` iterator.
   - This point is especially important if you use
-    adapters that have *side effects*. For example,
-    this code prints **nothing** at all:
+    adapters that have *side effects*.
+  - For example, this code prints **nothing** at all:
 
 ```rust
 ["earth", "water", "air", "fire"]
