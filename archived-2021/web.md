@@ -12,6 +12,27 @@ date: 2021-04-05
 
 ## 2022
 
+- [Node.js 18 is now available!](https://nodejs.org/en/blog/announcements/v18-release-announce/)
+  - 2022-04-19
+  - New globally available browser-compatible APIs
+    - __fetch__ (experimental)
+    - __Web Streams API__ (experimental)
+  - **Test runner module** (experimental)
+
+```js
+import test from 'node:test'
+
+test('top level test', async (t) => {
+  await t.test('subtest 1', (t) => {
+    assert.strictEqual(1, 1)
+  })
+})
+```
+
+> - 为啥我又关注 Node.js 了? 因为:
+>   1. Kubeflow 相关工作
+>   2. 公司内部, 兼职 Lead 一个重度涉及 前端/Node.js 的项目
+
 * [Headless UI](https://github.com/tailwindlabs/headlessui)
   - https://headlessui.dev
   - A set of completely unstyled,
