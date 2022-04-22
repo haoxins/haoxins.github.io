@@ -42,11 +42,15 @@ cargo test -- --show-output
 
 ## Python (3.10+)
 
-- [tiangolo/fastapi](https://github.com/tiangolo/fastapi)
-  - [pydantic](https://github.com/samuelcolvin/pydantic)
   - [encode/httpx](https://github.com/encode/httpx)
-
 ------------------
+
+- `2022-04`: 把一个 __Model Serving Framework__ 从
+  - [Flask](https://github.com/pallets/flask) `v2`
+  - [Gunicorn](https://github.com/benoitc/gunicorn)
+  - 迁移到了
+  - [FastAPI](https://github.com/tiangolo/fastapi)
+  - [Uvicorn](https://github.com/encode/uvicorn)
 
 - 时至今日 (2022-04), 觉得 `go mod` 是最好的包管理方式
   - 核心点: __版本控制__ 和 __包管理__ 本就应该**合二为一**
