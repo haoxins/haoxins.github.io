@@ -91,6 +91,15 @@ dig +short dashboard.awx.im
 
 ## 2022
 
+* Ubuntu `22.04` LTS (Jammy Jellyfish)
+  - `GCC` was updated to the `11.2.0` release
+  - `Python` now ships at version `3.10.4`
+  - `LLVM` now defaults to version `14`
+  - `Golang` defaults to version `1.18`
+  - `rustc` defaults to version `1.58`
+  - `containerd` was updated to version `1.5.9`
+  - `runc` was updated to version `1.1.0`
+
 * 2022-01-27
   - 由于 `License` 的原因, 卸载了 **Docker Desktop**, 一个短暂的技术时代结束了.
   - 因 `Docker` 起, 由 `Kubernetes` 发展壮大, `Docker` 卒.
