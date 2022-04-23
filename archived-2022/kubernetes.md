@@ -166,6 +166,7 @@ export PROJECT_ID=$(gcloud config get-value project)
 
 gcloud container clusters create $PROJECT_ID-test-only \
   --project=$PROJECT_ID \
+  --workload-pool=$PROJECT_ID.svc.id.goog \
   --machine-type=n1-standard-4 \
   --zone=asia-southeast1-c \
   --num-nodes=3
