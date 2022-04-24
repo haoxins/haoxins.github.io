@@ -13,7 +13,7 @@ date: 2019-10-24
 - [风起陇西](https://movie.douban.com/subject/26766214/)
 
 - [方谬神探](https://movie.douban.com/subject/2299706/)
-  - 抖音短视频, 重温儿时金典
+  - 抖音短视频, 重温儿时经典
 
 - [山河月明](https://movie.douban.com/subject/30122636/)
 

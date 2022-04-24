@@ -34,6 +34,19 @@ date: 2022-01-17
 
 ## 2022
 
+- `2022-04`, 公司内部在推 [Splunk](https://www.splunk.com)
+  - 我个人是**不认可**这个选择的
+  - [OpenTelemetry](https://github.com/open-telemetry)
+  - __OpenTelemetry__: the merger of
+    `OpenCensus` (metrics and traces) and
+    `OpenTracing` projects.
+  - 个人现在对于 `Open xxx` 这种项目有点审美疲劳,
+    有**一点点**道德绑架的感觉.
+  - [Grafana](https://github.com/grafana)
+  - [Loki logs](https://github.com/grafana/loki)
+  - [Tempo tracing](https://github.com/grafana/tempo)
+  - [Mimir Prometheus](https://github.com/grafana/mimir)
+
 - [Rayon](https://github.com/rayon-rs/rayon)
   - Rayon is a data-parallelism library for Rust.
   - It is extremely lightweight and makes it easy to
