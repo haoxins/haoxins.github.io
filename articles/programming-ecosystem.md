@@ -34,19 +34,6 @@ date: 2022-01-17
 
 ## 2022
 
-- `2022-04`, 公司内部在推 [Splunk](https://www.splunk.com)
-  - 我个人是**不认可**这个选择的
-  - [OpenTelemetry](https://github.com/open-telemetry)
-  - __OpenTelemetry__: the merger of
-    `OpenCensus` (metrics and traces) and
-    `OpenTracing` projects.
-  - 个人现在对于 `Open xxx` 这种项目有点审美疲劳,
-    有**一点点**道德绑架的感觉.
-  - [Grafana](https://github.com/grafana)
-  - [Loki logs](https://github.com/grafana/loki)
-  - [Tempo tracing](https://github.com/grafana/tempo)
-  - [Mimir Prometheus](https://github.com/grafana/mimir)
-
 - [Rayon](https://github.com/rayon-rs/rayon)
   - Rayon is a data-parallelism library for Rust.
   - It is extremely lightweight and makes it easy to
@@ -132,14 +119,3 @@ date: 2022-01-17
   - `sdk`: Deprecate `V2 compatible mode` in v1 compiler.
   - `sdk.v2`: Merge v2 experimental change back to v2 namespace.
   - 可以 `non-prod` 环境先试试水了
-
-- **Kubeflow** 的社区问题!
-  - `2021` 年, 我个人对 [Kubeflow](https://github.com/kubeflow/kubeflow) 社区的评价较差
-  - 几乎处于**无人维护**的状态
-  - [Training operator](https://github.com/kubeflow/training-operator)
-  - [Kubeflow pipelines](https://github.com/kubeflow/pipelines)
-  - 等子项目还稍微好些
-  - 或许该思考下如何重新组装 `Kubeflow` 了
-  - [MLflow](https://github.com/mlflow)
-  - [Ray](https://github.com/ray-project)
-  - 是不错的候选, 尤其是 **Ray**

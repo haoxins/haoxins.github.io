@@ -1,5 +1,5 @@
 ---
-title: Kubernetes stack, components and cases
+title: Kubernetes, Kubeflow, and ML Ops
 description: 汉下白登道, 胡窥青海湾. 由来征战地, 不见有人还.
 date: 2021-08-24
 ---
@@ -61,6 +61,32 @@ deployment:
 
 ------------------
 
+## ML Ops
+
+### pip
+
+- `~/.config/pip/pip.conf`
+
+### Jupyter
+
+```py
+# %env GOOGLE_APPLICATION_CREDENTIALS="/home/jovyan/abc.json"
+# Not works, the error is:
+# File "/home/jovyan/abc.json" not found
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/jovyan/abc.json"
+# This works
+```
+
+### Training
+
+```
+Precision = TP / (TP + FP)
+Recall = TP / (TP + FN)
+F1 Score = 2 / ((1 / Precision) + (1 / Recall))
+```
+
+------------------
+
 ## Argo
 
 ```zsh
@@ -78,10 +104,6 @@ k get secret argocd-initial-admin-secret \
 ## Kyverno
 
 - [Kyverno](https://github.com/kyverno/kyverno)
-
-------------------
-
-## Etcd
 
 ------------------
 
@@ -219,6 +241,19 @@ kube-system
 
 ### 2022
 
+- `2022-04`, 公司内部在推 [Splunk](https://www.splunk.com)
+  - 我个人是**不认可**这个选择的
+  - [OpenTelemetry](https://github.com/open-telemetry)
+  - __OpenTelemetry__: the merger of
+    `OpenCensus` (metrics and traces) and
+    `OpenTracing` projects.
+  - 个人现在对于 `Open xxx` 这种项目有点审美疲劳,
+    有**一点点**道德绑架的感觉.
+  - [Grafana](https://github.com/grafana)
+  - [Loki logs](https://github.com/grafana/loki)
+  - [Tempo tracing](https://github.com/grafana/tempo)
+  - [Mimir Prometheus](https://github.com/grafana/mimir)
+
 - [Google Cloud](https://cloud.google.com) 是真不行!
   - 靠谱的产品估计只有: __GCS__ (对象存储), __GKE__ (K8s), BigQuery
   - __GKE__ 的 `StorageClass` 居然不支持 `ReadWriteMany`
@@ -231,6 +266,17 @@ kube-system
   - 期待 [Grafana Tempo](https://github.com/grafana/tempo)
   - 还有 [Grafana Mimir](https://github.com/grafana/mimir)
 
+- **Kubeflow** 的社区问题!
+  - `2021` 年, 我个人对 [Kubeflow](https://github.com/kubeflow/kubeflow) 社区的评价较差
+  - 几乎处于**无人维护**的状态
+  - [Training operator](https://github.com/kubeflow/training-operator)
+  - [Kubeflow pipelines](https://github.com/kubeflow/pipelines)
+  - 等子项目还稍微好些
+  - 或许该思考下如何重新组装 `Kubeflow` 了
+  - [MLflow](https://github.com/mlflow)
+  - [Ray](https://github.com/ray-project)
+  - 是不错的候选, 尤其是 **Ray**
+
 ### 2021
 
 - **Jaeger**: 2021-11
@@ -238,3 +284,22 @@ kube-system
     **Cassandra** 切换到了 **Elasticsearch**
   - The *Jaeger* team recommends *Elasticsearch*
     as the storage backend over *Cassandra*
+
+- [PyTorch 1.10 Release](https://pytorch.org/blog/pytorch-1.10-released/)
+  - including CUDA Graphs APIs, Frontend
+    and Compiler Improvements
+
+- [KServe: The next generation of KFServing](https://blog.kubeflow.org/release/official/2021/09/27/kfserving-transition.html)
+  - *KFServing* is now *KServe*
+  - The project has been rebranded from
+    *KFServing* to *KServe*, and we are planning
+    to *graduate* the project from
+    *Kubeflow Project* later this year.
+
+- [How We Used PyTorch Lightning to Make Our Deep Learning Pipeline 10x Faster](https://devblog.pytorchlightning.ai/how-we-used-pytorch-lightning-to-make-our-deep-learning-pipeline-10x-faster-731bd7ad318a)
+  - Parallel data loading
+  - Multi-GPU training
+  - Mixed precision training
+  - Sharded training
+  - Early stopping
+  - Optimizations during model evaluation & inference

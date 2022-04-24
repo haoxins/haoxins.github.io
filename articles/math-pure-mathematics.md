@@ -1,6 +1,6 @@
 ---
 title: 纯数学教程 (第9版)
-description: TODO
+description: 昨夜闲潭梦落花, 可怜春半不还家. 江水流春去欲尽, 江潭落月复西斜.
 date: 2022-02-11
 ---
 
