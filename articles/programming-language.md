@@ -4,27 +4,9 @@ description: 结庐在人境, 而无车马喧. 问君何能尔? 心远地自偏.
 date: 2021-10-28
 ---
 
-### Preference
-
-- **Memory** intensive
-  - Such as: `Apache Arrow`, `Flink`
-  - **Rust**
-  - Go: Heap management can be responsible for up to
-    `20` to `30%` of the total CPU time consumed in
-    some data-intensive applications.
-
-## Go (1.18+)
-
-- [ent](https://github.com/ent/ent)
-
-- [Effective Go](https://go.dev/doc/effective_go)
-
-```zsh
-go build -gcflags "-m=2"
-go tool pprof -http=:8080 ...
-```
-
-------------------
+- __Go__: Heap management can be responsible for up to
+  `20` to `30%` of the total CPU time consumed in
+  some __data-intensive__ applications.
 
 ## Rust (1.59+)
 
@@ -42,8 +24,29 @@ cargo test -- --show-output
 
 ## Python (3.10+)
 
-  - [encode/httpx](https://github.com/encode/httpx)
 ------------------
+
+## Go (1.18+)
+
+```zsh
+go build -gcflags "-m=2"
+go tool pprof -http=:8080 ...
+```
+
+------------------
+
+- [pydantic-core](https://github.com/samuelcolvin/pydantic-core)
+  - __pydantic__ 作者打造
+  - The plan is for `pydantic` to adopt `pydantic-core` in `v2`
+    and to generate the schema definition from type hints in
+    `pydantic`, then create a `SchemaValidator`
+    upon model creation.
+  - `pydantic-core` will be a separate package,
+    required by `pydantic`.
+  - `Pydantic-core` is currently around `17x` faster
+    than `pydantic` standard.
+  - The aim is to remain `10x` faster than current
+    `pydantic` for common use cases.
 
 - `2022-04`: 把一个 __Model Serving Framework__ 从
   - [Flask](https://github.com/pallets/flask) `v2`

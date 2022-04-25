@@ -21,10 +21,11 @@ date: 2021-04-05
 
 ```js
 import test from 'node:test'
+import strictEqual from 'node:assert'
 
 test('top level test', async (t) => {
-  await t.test('subtest 1', (t) => {
-    assert.strictEqual(1, 1)
+  await t.test('sub test 1', () => {
+    strictEqual(1, 1)
   })
 })
 ```

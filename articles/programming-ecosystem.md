@@ -34,6 +34,9 @@ date: 2022-01-17
 
 ## 2022
 
+- [TiDB 6.0 的元功能: Placement Rules in SQL 是什么?](https://pingcap.com/zh/blog/what-are-placement-rules-in-sql)
+  - 非常, 赞!!!
+
 - [Rayon](https://github.com/rayon-rs/rayon)
   - Rayon is a data-parallelism library for Rust.
   - It is extremely lightweight and makes it easy to
