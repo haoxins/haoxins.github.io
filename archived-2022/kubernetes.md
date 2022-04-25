@@ -176,7 +176,7 @@ export PROJECT_ID=$(gcloud config get-value project)
 gcloud container clusters create $PROJECT_ID-test-only \
   --project=$PROJECT_ID \
   --workload-pool=$PROJECT_ID.svc.id.goog \
-  --machine-type=n1-standard-4 \
+  --machine-type=e2-standard-4 \
   --zone=asia-southeast1-c \
   --num-nodes=3
 ```
@@ -240,6 +240,9 @@ kube-system
 ## Events
 
 ### 2022
+
+- 2022-04-25: Incident with GitHub Packages and GitHub Pages
+  - 尤其是很多开源项目的 Images, 逐步都迁移到了 GitHub
 
 - `2022-04`, 公司内部在推 [Splunk](https://www.splunk.com)
   - 我个人是**不认可**这个选择的

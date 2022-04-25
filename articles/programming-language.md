@@ -4,25 +4,18 @@ description: 结庐在人境, 而无车马喧. 问君何能尔? 心远地自偏.
 date: 2021-10-28
 ---
 
-- __Go__: Heap management can be responsible for up to
-  `20` to `30%` of the total CPU time consumed in
-  some __data-intensive__ applications.
+## Rust (1.60+) and Python (3.10+)
 
-## Rust (1.59+)
+> __Python__ 的正确使用姿势, `call` __Rust__
 
 - [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
 - [axum](https://github.com/tokio-rs/axum)
-  - [Surf](https://github.com/http-rs/surf)
 
 ```zsh
 cargo test -- --show-output
 ```
 
 - [RFC-0048 Traits](https://github.com/rust-lang/rfcs/blob/master/text/0048-traits.md)
-
-------------------
-
-## Python (3.10+)
 
 ------------------
 
