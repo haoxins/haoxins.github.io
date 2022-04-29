@@ -428,7 +428,7 @@ date: 2021-09-12
     that identifies the type of the relationship,
     a start node, and an end node.
   - An entity can have a set of properties, which
-    are typically represented as key/value pairs.
+    are typically represented as `key/value` pairs.
   - Nodes can be tagged with one or more labels,
     which group nodes and indicate the roles
     they play within the dataset.

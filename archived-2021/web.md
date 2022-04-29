@@ -12,6 +12,9 @@ date: 2021-04-05
 
 ## 2022
 
+- [Component Model design and specification](https://github.com/WebAssembly/component-model)
+  - 期待
+
 - [Node.js 18 is now available!](https://nodejs.org/en/blog/announcements/v18-release-announce/)
   - 2022-04-19
   - New globally available browser-compatible APIs

@@ -324,7 +324,7 @@ func handleOperations(id string) {
   the same key consistently.
 * To prevent wasting memory due to allocation
   alignment, in-memory, Go doesn't store a
-  sequence of key/values.
+  sequence of `key/values`.
   - e.g., `key1-value1-key2-value2-key3-value3`
 * Instead, all the keys are first stored
   contiguously, then all the values.
@@ -332,7 +332,7 @@ func handleOperations(id string) {
 * Ideally, there is only one pair of `key/value`
   per bucket. If it's the case, each operation
   takes `O(1)`. However, it isn't always possible.
-  Indeed, if applying the hashing function to two
+* Indeed, if applying the hashing function to two
   different keys return the same bucket index,
   it leads to a collision. In that case, both
   `key/value` pairs are stored in the same bucket

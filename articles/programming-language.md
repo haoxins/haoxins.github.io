@@ -29,6 +29,22 @@ go tool pprof -http=:8080 ...
 - Returning `structs` instead of `interfaces`.
   Meanwhile, it also means
   accepting `interfaces` whenever possible.
+- When designing `interfaces`,
+  we should __avoid__ distinguishing
+  `nil` and `empty` slices
+  - This principle is the same with `maps`.
+  - To check if a `map` is empty,
+    we should check its `length`,
+    not whether it's `nil`.
+  - `if len(ops) != 0`
+- When working with `maps` in Go, we have to know a
+  noteworthy property:
+  - the size of a `map` in memory can
+    __only increase__, __never decrease__.
+- In Go, everything we assign is a __copy__.
+  - The expression passed to `range` is
+    evaluated __only once__, before the
+    beginning of the loop.
 
 ------------------
 
