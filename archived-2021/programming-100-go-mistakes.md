@@ -542,9 +542,10 @@ for v := range ch {
   an `array`? As the range expression is evaluated
   before the beginning of the loop, what is
   assigned to the temporary loop variable is a
-  **copy** of the array. It's important to keep
-  this behavior in mind to avoid common mistakes
-  when updating the loop's iteration variable.
+  **copy** of the array.
+* It's important to keep this behavior in mind to
+  avoid common mistakes when updating the
+  loop's iteration variable.
 
 ```go
 a := [3]int{0, 1, 2}
@@ -637,13 +638,13 @@ loop:
   `switch` or `select` statement inside a loop.
 * When using `break`, we should always make sure
   to know which statement it will affect.
-  Using labels, as we have seen, is the easiest
+* Using labels, as we have seen, is the easiest
   solution to enforce breaking a
   specific statement.
 
 * We have to recall that `defer` schedules a
   function call when the surrounding function returns.
-  In this case, the `defer` calls will be executed not
+* In this case, the `defer` calls will be executed not
   during each iteration of the loop but when the
   `readFiles` function `return`. If `readFiles` doesn't
   `return`, the file descriptors will be kept open

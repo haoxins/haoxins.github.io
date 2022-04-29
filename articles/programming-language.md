@@ -24,6 +24,7 @@ cargo test -- --show-output
 ```zsh
 go build -gcflags "-m=2"
 go tool pprof -http=:8080 ...
+GODEBUG=gctrace=1 go test -bench=. -v
 ```
 
 - Returning `structs` instead of `interfaces`.

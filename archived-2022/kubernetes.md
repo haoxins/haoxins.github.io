@@ -241,6 +241,12 @@ kube-system
 
 ### 2022
 
+- 关于 K8s 下一代的遐想
+  - 下一代大概率不会影响到 使用者, 而是 提供者, 比如: 云厂商
+  - __kubelet__ 应该是改革重点
+  - kubelet 和 __Linux kernel__ 应该更紧密, 甚至整合
+  - kubelet 应该深度整合 __WebAssembly__
+
 - 2022-04-25: Incident with GitHub Packages and GitHub Pages
   - 尤其是很多开源项目的 Images, 逐步都迁移到了 GitHub
 

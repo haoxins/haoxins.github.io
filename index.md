@@ -1,4 +1,6 @@
 * [我的推荐书单~](articles/reading-recommended.md)
+* [写给自己的量子课 02 - 信息, 比特](articles/quantum-02.md)
+* [写给自己的量子课 01 - 从测量开始](articles/quantum-01.md)
 * [Programming language](articles/programming-language.md)
 * [Programming ecosystem](articles/programming-ecosystem.md)
 * [健身, 冥想](articles/meditation-fitness.md)
