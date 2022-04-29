@@ -153,9 +153,9 @@ file, err := os.OpenFile("foo", os.O_RDONLY, 0644)
 * To summarize, the slice length is the number of
   available elements in the slice, whereas the
   slice capacity is the number of elements
-  in the backing array. Adding an element to a
-  full slice (`length == capacity`) leads to
-  creating a new backing array with a new capacity,
+  in the backing array.
+* Adding an element to a full slice (`length == capacity`)
+  leads to creating a new backing array with a new capacity,
   copying all the elements from the previous array,
   and updating the slice pointer to the new array.
 

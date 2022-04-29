@@ -26,7 +26,18 @@ go build -gcflags "-m=2"
 go tool pprof -http=:8080 ...
 ```
 
+- Returning `structs` instead of `interfaces`.
+  Meanwhile, it also means
+  accepting `interfaces` whenever possible.
+
 ------------------
+
+- [Robyn](https://github.com/sansyrox/robyn)
+  - __Robyn__ is an `async` Python backend server
+    with a runtime written in __Rust__.
+  - 该来的, 终究还是来了, __FastAPI__ 其实也可以这么做, 期待后者
+    (主要是 __FastAPI__ 文档写得很好)
+  - __SQLAlchemy__ 其实更应该如此, 但是估计会是一个新的替代者
 
 - [pydantic-core](https://github.com/samuelcolvin/pydantic-core)
   - __pydantic__ 作者打造
