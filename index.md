@@ -29,7 +29,7 @@
 * [Kubernetes, Kubeflow, and ML Ops](archived-2022/kubernetes.md)
 * [Kubernetes in Action (下) - 2nd Edition](archived-2022/kubernetes-in-action-2nd-3.md)
 * [Kubernetes in Action (中) - 2nd Edition](archived-2022/kubernetes-in-action-2nd-2.md)
-* [Istio & WebAssembly & Cilium](archived-2022/istio-wasm-cilium.md)
+* [Istio, Cilium, WebAssembly](archived-2022/istio-wasm-cilium.md)
 * [数据库系统内幕](archived-2022/database-internals.md)
 * [Real-World Cryptography (下)](archived-2022/cryptography-real-world-2.md)
 * [Real-World Cryptography (上)](archived-2022/cryptography-real-world-1.md)

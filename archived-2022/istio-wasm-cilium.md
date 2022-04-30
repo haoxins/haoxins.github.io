@@ -1,10 +1,10 @@
 ---
-title: Istio & WebAssembly & Cilium
+title: Istio, Cilium, WebAssembly
 description: 弃我去者, 昨日之日不可留; 乱我心者, 今日之日多烦忧.
 date: 2021-09-24
 ---
 
-* https://istio.io/latest/docs/reference/config/istio.operator.v1alpha1/
+- https://istio.io/latest/docs/reference/config/istio.operator.v1alpha1/
 
 ```
 downstream ->
@@ -21,10 +21,10 @@ Gateway (Envoy Listeners)
 ServiceEntry
 ```
 
-* `AuthorizationPolicy` enforcement is activated
+- `AuthorizationPolicy` enforcement is activated
   **only if** one of its rules **matches** the
   **source and the operation**.
-* The presence of an empty rule means that
+- The presence of an empty rule means that
   all requests are allowed.
 
 ```yaml
@@ -64,33 +64,6 @@ k port-forward deploy/istio-ingressgateway \
   -n istio-system 15000
 ```
 
-## WASM
-
-* [WebAssembly for Proxies (ABI specification)](https://github.com/proxy-wasm/spec)
-  - 正好最近打算写 `Envoy filter/plugin`
-
-```
-Host environment
-
-Sandboxed Wasm VMs communicate with the embedding
-host environment (i.e. proxy) using clearly
-defined interfaces, that include:
-functions exported from the Wasm module,
-which proxy can invoke,
-helper functions which Wasm VM can invoke,
-and Wasm functions for memory management.
-
-Because this interface is very low-level and
-fairly stable, it allows us to define a stable ABI
-(function prototypes to be defined in a separate document),
-which the extensions can use.
-```
-
-## Envoy
-
-* 保留端口
-  - `:15021/healthz/ready`
-
 ## Kiali
 
 ```zsh
@@ -115,16 +88,16 @@ k logs -n istio-system -l app=istiod --tail=10000
 
 ## Cases & Tips
 
-* `spec.LoadBalancerSourceRanges`
+- `spec.LoadBalancerSourceRanges`
   - `Invalid value: "[59.100.192.6]"`
   - `must be a list of IP ranges. For example, 10.240.0.0/24,10.250.0.0/24`
   - `59.100.192.6` 不行, 得是 `59.100.192.6/32`
 
-* *Connection reset by peer*
+- *Connection reset by peer*
   - `EnvoyFilter`
   - `LISTENER`
 
-* *upstream connect error or disconnect/reset before headers*
+- *upstream connect error or disconnect/reset before headers*
   - `AuthorizationPolicy`
 
 ------------------
@@ -133,11 +106,15 @@ k logs -n istio-system -l app=istiod --tail=10000
 
 ### 2022
 
-* [Announcing Istio 1.13](https://istio.io/latest/news/releases/1.13.x/announcing-1.13/)
+- `2022-04-30`: 关于 Istio 的遐想
+  - Istio 越来越专注于 Ingress 了
+  - 或许 Mesh 部分将来就交与 Cilium 了
+
+- [Announcing Istio 1.13](https://istio.io/latest/news/releases/1.13.x/announcing-1.13/)
   - Istio `1.13` is officially supported on
     Kubernetes versions `1.20` to `1.23`.
 
-* [Open Service Mesh (OSM)](https://github.com/openservicemesh/osm)
+- [Open Service Mesh (OSM)](https://github.com/openservicemesh/osm)
   - [Announcing OSM v1.0.0](https://openservicemesh.io/blog/announcing-osm-v1/)
   - 不看好, 注定凉凉的项目
 
