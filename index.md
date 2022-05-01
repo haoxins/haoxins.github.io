@@ -1,4 +1,5 @@
 * [我的推荐书单~](articles/reading-recommended.md)
+* [写给自己的量子课 03 - 第五公设](articles/quantum-03.md)
 * [写给自己的量子课 02 - 信息, 比特](articles/quantum-02.md)
 * [写给自己的量子课 01 - 从测量开始](articles/quantum-01.md)
 * [Programming language](articles/programming-language.md)
@@ -10,6 +11,7 @@
 * [Graph machine learning](articles/graph-machine-learning.md)
 * [Blockchain & Cryptography](articles/cryptography.md)
 * [猫咪的那些事](articles/cat.md)
+* [跨越学科的边界](articles/bridge.md)
 * [Algorithms](articles/algorithms.md)
 ### 2022
 * [TAOCP 组合算法 - 计算机程序设计艺术](archived-2022/taocp-4.md)

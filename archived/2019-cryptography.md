@@ -52,26 +52,27 @@ date: 2019-06-30
 * 2000: NIST adopts Rijndael as AES to replace DES
 * PRPs and PRFs: a useful abstraction of block ciphers
 * AES
-  - ECB mode is not semanAcally secure
+  - ECB mode is not semantically secure
   - neither mode ensures data integrity
 * CPA security for nonce-based encrypAon
   - System should be secure when nonces are chosen adversarially
 * Tweakable block ciphers
-  - Use tweakable encryption when you need many independent PRPs from one key
+  - Use tweakable encryption when you need
+    many independent PRPs from one key
 * Format-preserving encryption
 
 ### MAC
 
-* Def: MAC I = (S, V) defined over (K, M, T) is a pair of algs:
-  - S(k, m) outputs t in T
-  - V(k, m, t) outputs `yes` or `no`
+* Def: MAC `I = (S, V)` defined over `(K, M, T)` is a pair of algs:
+  - `S(k, m)` outputs t in T
+  - `V(k, m, t)` outputs `yes` or `no`
 
 ### Auth encryption (introduced in 2000)
 
-* An authenticated encryption system (E, D) is a cipher where
-  - as usual: E: K * M * N -> C
-  - but D: K * C * N -> M & {⊥}
-  - (⊥ -> ciphertext is rejected)
+* An authenticated encryption system `(E, D)` is a cipher where
+  - as usual: `E: K * M * N -> C`
+  - but `D: K * C * N -> M & {⊥}`
+  - (`⊥` -> ciphertext is rejected)
 * Encrypt-then-MAC: always provides A.E.
 * MAC-then-encrypt: may be insecure against CCA attacks
 
@@ -86,36 +87,36 @@ date: 2019-06-30
   - can be feasibly extracted from the ciphertext
 * Chosen ciphertext security
 * CPA security cannot guarantee secrecy under active attacks
-* Authenticated encryption -> `CCA security` (chosen-ciphertext attack)
-* integrity -> `MAC`
-* integrity, confidentiality -> `authenticated encryption`
+* Authenticated encryption -> CCA security (chosen-ciphertext attack)
+* integrity -> MAC
+* integrity, confidentiality -> authenticated encryption
 
 ### 相关比较
 
-* `对称密码`:
+* 对称密码:
   - 共享密钥 `加&解` 密
-* `公钥密码`:
+* 公钥密码:
   - 公钥加密, 私钥解密
   - 公钥, 需要认证 (中间人攻击)
-* `消息认证码(MAC)`
-  - 共享密钥 -> `MAC`
-  - `不可` 防止否认
-* `数字签名`:
+* 消息认证码(MAC)
+  - 共享密钥 -> MAC
+  - 不可 防止否认
+* 数字签名:
   - 私钥生成签名
   - 公钥验证签名
   - 公钥, 需要认证 (中间人攻击)
-  - `可` 防止否认
+  - 可 防止否认
 
 ### RSA
 
-* 公钥: `E`, `N`
-* 私钥: `D`, `N`
+* 公钥: E, N
+* 私钥: D, N
 * 加密: 密文 = 明文 ** E % N
 * 解密: 明文 = 密文 ** D % N
 
 ### Diffie-Hellman
 
-* Public numbers: G, P, G ** A % P (Alice), G ** B % P (Bob)
+* Public numbers: G, P, `G ** A % P` (Alice), `G ** B % P` (Bob)
   - A (Alice), B (Bob) are private numbers
 * session key
 
@@ -132,21 +133,21 @@ session key = G ** (A * B) % P
 
 * HASH
   - no key
-  - `integrity`
+  - integrity
 * MAC
   - HMAC (hash MAC)
   - share key
-  - `integrity`, `auth`
-  - 攻击: `重放攻击`
+  - integrity, auth
+  - 攻击: 重放攻击
 * digital signature
   - public key
-  - `integrity`, `auth`, `deny`
-  - 攻击: `中间人攻击`
+  - integrity, auth, deny
+  - 攻击: 中间人攻击
 
 ### (公钥)证书
 
 * 公钥基础设施 (PKI) = 用户 (user) + 认证机构 (CA) + 仓库 (Repo)
-* 证书 至少包含: `public key`, `机构签名`
+* 证书 至少包含: public key, 机构签名
 * 证书信任链
 
 ### Hash
