@@ -17,6 +17,8 @@ cargo test -- --show-output
 
 - [RFC-0048 Traits](https://github.com/rust-lang/rfcs/blob/master/text/0048-traits.md)
 
+- __Pin__
+
 ------------------
 
 ## Go (1.18+)
@@ -46,7 +48,7 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - The expression passed to `range` is
     evaluated __only once__, before the
     beginning of the loop.
-- **Never** using named result parameters
+- __Never__ using named result parameters
 - The arguments passed to a `defer` function
   are evaluated right away.
   - Yet, the variables referenced by a `defer` closure
@@ -86,26 +88,26 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - [Uvicorn](https://github.com/encode/uvicorn)
 
 - 时至今日 (2022-04), 觉得 `go mod` 是最好的包管理方式
-  - 核心点: __版本控制__ 和 __包管理__ 本就应该**合二为一**
+  - 核心点: __版本控制__ 和 __包管理__ 本就应该 __合二为一__
 
-- **华为**, 新编程语言
-  - `2022-03-20`: 填写了**新语言内测**申请问卷
+- __华为__, 新编程语言
+  - `2022-03-20`: 填写了 __新语言内测__ 申请问卷
   - `2022-03-22`: 收到了`报名确认! 签署保密承诺函`的邮件
   - `2022-03-28`: 收到了`华为编程语言实验室生态合作-个人保密承诺函`
   - `2022-03-31`: 由于正值上海疫情隔离在家,
     只能通过编辑 PDF 完成签名, 回复邮件
   - `2022-04-13`: 通过审核, 看到了文档
   - 看见 `Cangjie` 的第一感觉: (保密期, 等 `Public` 再说)
-    `Kotlin` 为主, 参杂 `Rust`, `Go` 的影子, **没有惊喜**
+    `Kotlin` 为主, 参杂 `Rust`, `Go` 的影子, __没有惊喜__
 
 - [An Introduction To Generics](https://go.dev/blog/intro-generics)
-  - Generics adds **three** new big things to the language:
+  - Generics adds three new big things to the language:
   - 1) Type parameters for function and types.
   - 2) Defining interface types as sets of types,
     including types that don't have methods.
   - 3) Type inference, which permits omitting type
     arguments in many cases when calling a function.
-  - **Instantiation** happens in two steps. `First`,
+  - __Instantiation__ happens in two steps. `First`,
     the compiler substitutes all type arguments for
     their respective type parameters throughout the
     generic function or type. `Second`, the compiler
@@ -116,7 +118,7 @@ GODEBUG=gctrace=1 go test -bench=. -v
     itself a type, the types of type parameters define
     sets of types. This `meta-type` is called
     a type constraint.
-  - In Go, **type constraints must be interfaces**.
+  - In Go, __type constraints must be interfaces__.
     That is, an interface type can be used as a value
     type, and it can also be used as a `meta-type`.
     Interfaces define methods, so obviously we can
@@ -153,13 +155,13 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - Here `S` must be a slice type whose element type can be any type.
   - `[S ~[]E, E interface{}]`
   - `[S ~[]E, E any]`
-  - **Interfaces as type sets** is a powerful **new mechanism**
-    and is **key to making type constraints work in Go**.
-  - In many cases the compiler can **infer the type argument**
+  - __Interfaces as type sets__ is a powerful new mechanism
+    and is key to making type constraints work in Go.
+  - In many cases the compiler can __infer the type argument__
     for `T` from the ordinary arguments.
   - This kind of inference, which infers the type arguments
     from the types of the arguments to the function,
-    is called *function argument type inference*.
+    is called __function argument type inference__.
 
 - macOS `12.3`
 
@@ -177,7 +179,7 @@ Python 3.8.2
 - [Go 1.18 is released!](https://go.dev/blog/go1.18)
   - `15 March 2022`
   - [Go 1.18 Release Notes](https://go.dev/doc/go1.18)
-  - There are three **experimental** packages using generics
+  - There are three __experimental__ packages using generics
     that may be useful. These packages are in `x/exp` repository.
   - `golang.org/x/exp/constraints`
   - Constraints that are useful for generic code,
@@ -203,6 +205,6 @@ Python 3.8.2
   - https://github.com/jorgecarleitao/arrow2
   - https://github.com/jorgecarleitao/parquet2
 
-- **Deprecated** `io/ioutil`: As of Go `1.16`,
+- __Deprecated__ `io/ioutil`: As of Go `1.16`,
   the same functionality is now provided by
   package `io` or package `os`.

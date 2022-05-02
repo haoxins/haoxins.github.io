@@ -63,10 +63,10 @@ date: 2022-01-17
   - 当然, 前者 `Fork` 自后者
   - 开发进行中的时候, `Flink` 官方团队也推出了
     [apache/flink-kubernetes-operator](https://github.com/apache/flink-kubernetes-operator)
-  - 虽然打乱了原本的计划, 需要重新取舍, 但是整体而言却是**重大利好**, 理由如下:
+  - 虽然打乱了原本的计划, 需要重新取舍, 但是整体而言却是重大利好, 理由如下:
   - (1) 对于 `Flink on K8s` 的趋势是一大推进, `2022` 年,
     可能 `K8s` 会是 `Flink` 社区第一推荐部署方式.
-    这也得感谢*阿里云*的推动.
+    这也得感谢阿里云的推动.
   - (2) 我一直认为, 结合 `K8s`, `Flink` 未来应该通过 `Operator` 彻底废除
     `Job Manager`. 这一想法比较激进, 因为意味着 `Flink` 将来只能部署在 `K8s` 上.
     但这个选择会简化 `Flink`, 使其专注于自己的专长.
@@ -75,14 +75,14 @@ date: 2022-01-17
 
 - `2022-03`
   - 有同事问我脑海中的技术的 `blueprint` 是啥样子的?
-  - **中心化**: `Kubernetes` 上面的 `functions/pipelines`
+  - __中心化__: `Kubernetes` 上面的 `functions/pipelines`
   - 比如:
     `Argo workflows`,
     `Dapr functions`,
     `Istio plugins`,
     `Kubernetes operators`,
     `Kubeflow pipelines`
-  - **去中心化**: 某几个公链的 `Smart contracts`
+  - __去中心化__: 某几个公链的 `Smart contracts`
   - 我不认为: `私有链`, `联盟链`有价值!
 
 - `2022-02-28`, 公司隔壁团队终于得到结论:
@@ -96,7 +96,7 @@ date: 2022-01-17
   - 4) 根据 GitHub Issues, 不像有较多人在用.
 
 - 关于 `Flink` 的替代
-  - 首先, `Flink` 的 *Scope* 其实和 `K8s` 是有重叠的;
+  - 首先, `Flink` 的 `Scope` 其实和 `K8s` 是有重叠的;
   - 同时, `Flink` 的各种历史包袱也很多.
   - 此时, `Flink` 还没有真正的可替代品;
   - 但大概率会基于
@@ -115,7 +115,7 @@ date: 2022-01-17
   - 哈哈哈, 开心
 
 - [Kubeflow pipelines v1.8.0](https://github.com/kubeflow/pipelines/blob/1.8.0/CHANGELOG.md)
-  - **BREAKING CHANGES**
+  - __BREAKING CHANGES__
   - Use Argo Emissary Executor instead of Docker by default.
   - `sdk.v2`: Block task dependency referencing tasks
     inside a sibling condition or loop group.
