@@ -46,6 +46,15 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - The expression passed to `range` is
     evaluated __only once__, before the
     beginning of the loop.
+- **Never** using named result parameters
+- The arguments passed to a `defer` function
+  are evaluated right away.
+  - Yet, the variables referenced by a `defer` closure
+    are evaluated during the closure execution.
+- The expression `~string` means the set of all types
+  whose underlying type is `string`. This includes the
+  type `string` itself as well as all types declared with
+  definitions such as `type MyString string`.
 
 ------------------
 
