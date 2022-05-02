@@ -1166,7 +1166,7 @@ Parallelism is about doing lots of things at once.
     across cores will be destroyed.
 
 > - A **thread** is the **smallest unit** of processing
-    that an **OS** can **perform**.
+    that an OS can perform.
 > - Context switching is considered an expensive operation
     as the OS needs to save the current execution state of
     a thread before the switch (e.g., the current register values).
@@ -1180,7 +1180,7 @@ Parallelism is about doing lots of things at once.
   - **P**: CPU core (stands for processor)
 * The `GOMAXPROCS` variable defines the limit of `OS threads (M)`
   in charge of executing user-level code simultaneously.
-  - Yet, if a thread is blocked in a system call (e.g., I/O),
+  - Yet, if a thread is blocked in a system call (e.g., `I/O`),
     the scheduler can spin up more OS threads (M).
   - As of Go 1.5, `GOMAXPROCS` is by default equal to the
     number of available CPU cores.
@@ -2292,7 +2292,7 @@ func sum(s []int64) int64 {
   - (e.g., `L2` data are also present in `L3`),
   - and sometimes caches are exclusive
   - (e.g., `L3` is called a victim cache as it
-    contains only data evicted from L2).
+    contains only data evicted from `L2`).
 * In general, these strategies are **hidden** by
   CPU vendors and not particularly useful to know.
   - Therefore, let's not delve into these questions.
@@ -2459,7 +2459,7 @@ func sumBar(bar Bar) int64 {
 > It's not exhaustive and can also change
   in future Go versions.
 
-*  In general, *sharing down* stays on the stack,
+* In general, *sharing down* stays on the stack,
   whereas *sharing up* escapes to the heap.
 * This should prevent common mistakes such as
   premature optimizations where we may want to

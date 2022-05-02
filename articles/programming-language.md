@@ -91,10 +91,10 @@ GODEBUG=gctrace=1 go test -bench=. -v
 
 - [An Introduction To Generics](https://go.dev/blog/intro-generics)
   - Generics adds **three** new big things to the language:
-  - 1. Type parameters for function and types.
-  - 2. Defining interface types as sets of types,
+  - 1) Type parameters for function and types.
+  - 2) Defining interface types as sets of types,
     including types that don't have methods.
-  - 3. Type inference, which permits omitting type
+  - 3) Type inference, which permits omitting type
     arguments in many cases when calling a function.
   - **Instantiation** happens in two steps. `First`,
     the compiler substitutes all type arguments for
@@ -132,11 +132,11 @@ GODEBUG=gctrace=1 go test -bench=. -v
     advantage over the method set view: we can explicitly
     add types to the set, and thus control
     the type set in new ways.
-  -  The expression `~string` means the set of all types
+  - The expression `~string` means the set of all types
     whose underlying type is `string`. This includes the
     type `string` itself as well as all types declared with
     definitions such as `type MyString string`.
-  -  In Go `1.18` an interface may contain methods and
+  - In Go `1.18` an interface may contain methods and
     embedded interfaces just as before, but it may also
     embed `non-interface` types, unions, and
     sets of underlying types.

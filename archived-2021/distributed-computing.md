@@ -121,7 +121,7 @@ It turns out to be important that the channels have FIFO behavior
 for the Chandy-Lamport algorithm to work.
 
 One of the especially cool things about the Chandy-Lamport algorithm
-is that it is decentralized — any process (or multiple processes at once!)
+is that it is decentralized - any process (or multiple processes at once!)
 can begin taking a snapshot without coordinating with other processes.
 ```
 
