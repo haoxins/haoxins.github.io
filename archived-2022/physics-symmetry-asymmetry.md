@@ -1,6 +1,6 @@
 ---
 title: 对称与不对称 - 李政道
-description:
+description: 缺月挂疏桐, 漏断人初静. 谁见幽人独往来, 缥缈孤鸿影.
 date: 2022-05-03
 ---
 

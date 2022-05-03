@@ -98,7 +98,7 @@ date: 2021-09-20
   **candidate** and initiates an election. A **candidate**
   that receives votes from a majority of the full cluster
   becomes the new **leader**.
-  Leaders typically operate until they fail.
+  - Leaders typically operate until they fail.
 * Time is divided into **terms**, and each term begins with
   an **election**. After a successful election, a single
   leader manages the cluster until the end of the term.
