@@ -57,6 +57,21 @@ GODEBUG=gctrace=1 go test -bench=. -v
   whose underlying type is `string`. This includes the
   type `string` itself as well as all types declared with
   definitions such as `type MyString string`.
+- We can face the issue of unintentionally copying
+  a `sync` field in some of the following conditions:
+  - Calling a method with a value receiver
+  - Calling a function with a `sync` argument
+  - Calling a function with an argument
+    that contains a `sync` field
+- we should rather need
+  __mutexes__ for __parallel__ goroutines and
+  __channels__ for __concurrent__ ones.
+- A `send` on a channel `happens before`
+  the corresponding `receive`
+  from that channel completes.
+- A `receive` from an `unbuffered` channel
+  `happens before` the `send` on that
+  channel completes.
 
 ------------------
 
