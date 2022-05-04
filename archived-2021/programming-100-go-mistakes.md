@@ -1413,7 +1413,7 @@ for _, i := range s {
 * We have to know that when a **closure goroutine**
   is executed, it **doesn't** capture the values when
   the goroutine is **created**.
-* Instead, all the goroutines rely on the same variable.
+  - Instead, all the goroutines rely on the same variable.
 * When a goroutine runs, it prints the value of `i` at
   the time `fmt.Print` is **executed**.
   - Hence, `i` may have been modified since
@@ -1636,20 +1636,21 @@ ch2 := make(chan int, 0)
   a receiver goroutine receives a message.
 
 * Regarding channels:
-  - A **buffered** channel enables **synchronization**.
-    Indeed, we have the guarantee that two goroutines
+  - A **unbuffered** channel enables **synchronization**.
+  - Indeed, we have the guarantee that two goroutines
     will be in a known state: one receiving and another
     one sending a message.
-  - Yet, an **unbuffered** channel doesn't provide any
-    strong synchronization. Indeed, a producer goroutine
-    can send a message and then continue its execution
-    if the channel isn't full. The only guarantee is that
-    a goroutine won't receive a message before it is sent.
-    Yet, this is only a guarantee because of causality.
+  - Yet, an **buffered** channel doesn't provide any
+    strong synchronization.
+  - Indeed, a producer goroutine can send a message and
+    then continue its execution if the channel isn't full.
+  - The only guarantee is that a goroutine won't receive
+    a message before it is sent. Yet, this is only
+    a guarantee because of causality.
 * It's essential to keep in mind this fundamental distinction.
   - Both channel types enable communication, but only one
     provides synchronization.
-  - If we need synchronization, we must use unbuffered
+  - If we need **synchronization**, we must use **unbuffered**
     channels. Also, unbuffered channels might be easier
     to reason about.
   - Indeed, buffered channels can lead to obscure

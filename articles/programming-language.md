@@ -72,6 +72,15 @@ GODEBUG=gctrace=1 go test -bench=. -v
 - A `receive` from an `unbuffered` channel
   `happens before` the `send` on that
   channel completes.
+- Let's keep this idea in mind:
+  `nil` channels (set closed channel to nil)
+  are truly useful in some conditions.
+- Both channel types enable communication, but only one
+  provides synchronization.
+  - If we need synchronization, we must use unbuffered channels.
+- When using a `sync.WaitGroup`, the `Add` operation
+  must be done before spinning up a goroutine in the
+  parent one.
 
 ------------------
 
