@@ -82,7 +82,7 @@ date: 2022-01-17
     `Istio plugins`,
     `Kubernetes operators`,
     `Kubeflow pipelines`
-  - __去中心化__: 某几个公链的 `Smart contracts`
+  - __区块链__: 某几个公链的 `Smart contracts`
   - 我不认为: `私有链`, `联盟链`有价值!
 
 - `2022-02-28`, 公司隔壁团队终于得到结论:

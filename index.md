@@ -1,4 +1,5 @@
 * [我的推荐书单~](articles/reading-recommended.md)
+* [写给自己的量子课 05 - 对称](articles/quantum-05.md)
 * [写给自己的量子课 04 - 可计算](articles/quantum-04.md)
 * [写给自己的量子课 03 - 第五公设](articles/quantum-03.md)
 * [写给自己的量子课 02 - 信息, 比特](articles/quantum-02.md)

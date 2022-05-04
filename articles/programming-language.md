@@ -73,7 +73,7 @@ GODEBUG=gctrace=1 go test -bench=. -v
   `happens before` the `send` on that
   channel completes.
 - Let's keep this idea in mind:
-  `nil` channels (set closed channel to nil)
+  `nil` channels (set closed channel to `nil`)
   are truly useful in some conditions.
 - Both channel types enable communication, but only one
   provides synchronization.
@@ -123,6 +123,8 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - `2022-04-13`: 通过审核, 看到了文档
   - 看见 `Cangjie` 的第一感觉: (保密期, 等 `Public` 再说)
     `Kotlin` 为主, 参杂 `Rust`, `Go` 的影子, __没有惊喜__
+  - `Cangjie AI`: 不看好, `Python + Rust`
+    的生态已经初具规模, 且发展的很快
 
 - [An Introduction To Generics](https://go.dev/blog/intro-generics)
   - Generics adds three new big things to the language:
