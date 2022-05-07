@@ -241,6 +241,14 @@ kube-system
 
 ### 2022
 
+- 我喜欢的 JupyterLab `v3.4` 细节优化
+  - 即时地 Python __lint__ 提示
+  - 即时地 Python __hint__ 展示
+  - 字体等 UI 优化
+
+- [Indexed Job for Parallel Processing with Static Work Assignment](https://kubernetes.io/docs/tasks/job/indexed-parallel-processing-static/)
+  - FEATURE STATE: Kubernetes `v1.24`
+
 - `2022-04-30`: 关于 K8s 下一代的遐想
   - 下一代大概率不会影响到 使用者, 而是 提供者, 比如: 云厂商
   - __kubelet__ 应该是改革重点
