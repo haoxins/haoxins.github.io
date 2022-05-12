@@ -2,7 +2,6 @@
 
 from os import path, walk
 import subprocess
-import re
 from typing import List
 
 root_dir = path.dirname(path.realpath(__file__))
@@ -66,6 +65,8 @@ def gen_contents(sub_path):
     article_dir = path.join(root_dir, sub_path)
     for (_, _, filenames) in walk(article_dir):
         for filename in filenames:
+            if filename.startswith("quantum-0"):
+                continue
             p = path.join(article_dir, filename)
             file_infos.append({"path": p, "name": filename})
 

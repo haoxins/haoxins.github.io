@@ -8,10 +8,15 @@ date: 2019-10-24
 
 ## 2022
 
+### 2022-05
+
+- [重生之门](https://movie.douban.com/subject/35359490/)
+
 ### 2022-04
 
 - [风起陇西](https://movie.douban.com/subject/26766214/)
   - 不错, 不错!
+  - 全程精彩
 
 - [方谬神探](https://movie.douban.com/subject/2299706/)
   - 抖音短视频, 重温儿时经典
