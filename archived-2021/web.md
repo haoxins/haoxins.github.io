@@ -12,6 +12,10 @@ date: 2021-04-05
 
 ## 2022
 
+- [Announcing the Web-interoperable Runtimes Community Group](https://deno.com/blog/announcing-wintercg)
+  - https://wintercg.org
+  - https://github.com/wintercg/proposal-common-minimum-api
+
 - [Component Model design and specification](https://github.com/WebAssembly/component-model)
   - 期待
 
