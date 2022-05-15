@@ -10,6 +10,9 @@ date: 2019-10-24
 
 ### 2022-05
 
+- [无人区](https://movie.douban.com/subject/3804891/)
+  - bilibili 重温
+
 - [重生之门](https://movie.douban.com/subject/35359490/)
 
 ### 2022-04
