@@ -1,5 +1,5 @@
 ---
-title: Istio, Cilium, WebAssembly
+title: Cilium, Envoy, Istio and WebAssembly
 description: 弃我去者, 昨日之日不可留; 乱我心者, 今日之日多烦忧.
 date: 2021-09-24
 ---
@@ -105,6 +105,13 @@ k logs -n istio-system -l app=istiod --tail=10000
 ## Events
 
 ### 2022
+
+- [Envoy Gateway](https://github.com/envoyproxy/gateway)
+  - `2022-05`, 还只是个没代码的空壳 Repo
+  - [Kubernetes Gateway API](https://github.com/kubernetes-sigs/gateway-api)
+  - K8s 的号召力真强
+  - [wazero](https://github.com/tetratelabs/wazero)
+  - The zero dependency WebAssembly runtime for Go developers
 
 - `2022-04-30`: 关于 Istio 的遐想
   - Istio 越来越专注于 Ingress 了
