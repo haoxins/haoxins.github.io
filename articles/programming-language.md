@@ -84,6 +84,13 @@ GODEBUG=gctrace=1 go test -bench=. -v
 
 ------------------
 
+- `2022-05`, 有一个新的 Service 项目, 较简单, 所以上了 `Go 1.18`
+  - Go 用来开发 Web Service, 说实话, 体验还是较差
+  - 优势在于资源占用低, 相较于目前公司内部主流的 Spring + Kotlin
+  - [Gin Web Framework](https://github.com/gin-gonic/gin)
+  - [Sarama: Go client library for Kafka](https://github.com/Shopify/sarama)
+  - [Goavro: encodes and decodes Avro data](https://github.com/linkedin/goavro)
+
 - [Robyn](https://github.com/sansyrox/robyn)
   - __Robyn__ is an `async` Python backend server
     with a runtime written in __Rust__.
