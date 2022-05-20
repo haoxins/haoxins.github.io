@@ -40,7 +40,7 @@ date: 2021-08-28
 
 ---
 
-- $$ x - 1 \l \lfloor x \rfloor \le x \le \lceil x \rceil \l x + 1 $$
+- $$ x - 1 < \lfloor x \rfloor \le x \le \lceil x \rceil < x + 1 $$
 - $$ \lfloor -x \rfloor = - \lceil x \rceil $$
 - $$ \lceil -x \rceil = - \lfloor x \rfloor $$
 
