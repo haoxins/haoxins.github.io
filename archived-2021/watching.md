@@ -10,6 +10,8 @@ date: 2019-10-24
 
 ### 2022-05
 
+- [对决](https://movie.douban.com/subject/35258376/)
+
 - [无人区](https://movie.douban.com/subject/3804891/)
   - bilibili 重温
 
