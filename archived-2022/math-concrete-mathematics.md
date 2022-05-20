@@ -47,12 +47,12 @@ date: 2021-08-28
   $$ \lfloor x \rfloor $$
   之间的差称为 `x` 的分数部分 (fractional part),
   它在应用中经常出现, 所以值得拥有自己的记号:
-  - $$ \begin x \end = x - \lfloor x \rfloor $$
+  - $$ { x } = x - \lfloor x \rfloor $$
 - 我们有时称
   $$ \lfloor x \rfloor $$
   是 `x` 的整数部分 (integer part),
   - 因为
-    $$ x = \lfloor x \rfloor + \begin x \end $$.
+    $$ x = \lfloor x \rfloor + { x } $$.
 
 ## 数论
 
