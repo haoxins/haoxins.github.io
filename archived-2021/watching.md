@@ -10,6 +10,8 @@ date: 2019-10-24
 
 ### 2022-05
 
+- [黑社会2: 以和为贵](https://movie.douban.com/subject/1484760/)
+
 - [对决](https://movie.douban.com/subject/35258376/)
 
 - [无人区](https://movie.douban.com/subject/3804891/)
