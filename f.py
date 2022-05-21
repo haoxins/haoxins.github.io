@@ -70,7 +70,7 @@ def gen_contents(sub_path):
             p = path.join(article_dir, filename)
             file_infos.append({"path": p, "name": filename})
 
-    file_infos.sort(key=lambda info: info["name"], reverse=True)
+    file_infos.sort(key=lambda info: info["name"])
 
     for i in file_infos:
         with open(i["path"], "r") as f:
