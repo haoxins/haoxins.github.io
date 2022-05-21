@@ -83,9 +83,9 @@ date: 2021-08-28
 
 ## 数论
 
-- $$ m \ n \leftrightarrow m > 0 且对某个整数 k 有 n = mk $$
+- $$ m \setminus n \leftrightarrow m > 0 且对某个整数 k 有 n = mk $$
 - 两个整数 m 和 n 的最大公因子是能整除它们两者的最大整数:
-  - $$ gcd(m, n) = max\{ k | k \ m 且 k \ n \} $$.
+  - $$ gcd(m, n) = max\{ k | k \setminus m 且 k \setminus n \} $$.
 
 ## 二项式系数
 
