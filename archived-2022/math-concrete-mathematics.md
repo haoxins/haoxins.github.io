@@ -76,11 +76,11 @@ date: 2021-08-28
 
 ---
 
-- $$ x mod y = x - y \lfloor x / y \rfloor, y \ne 0 $$.
+- $$ x \mod y = x - y \lfloor x / y \rfloor, y \ne 0 $$.
 
-- 分配律是 mod 最重要的代数性质, 对所有实数 c, x 和 y, 我们有
+- 分配律是 `mod` 最重要的代数性质, 对所有实数 `c`, `x` 和 `y`, 我们有
 
-$$ c(x \mod y) = (cx) \mod (cy) $$
+$ c(x \mod y) = (cx) \mod (cy) $
 
 ## 数论
 
