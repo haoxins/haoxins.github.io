@@ -556,7 +556,7 @@ invented in 1996, and specified in `RFC 2104`.
   a special operation.
   - `3×2 = 6`
   - `3×2 mod 5 = 1`
-  - $$ 3^{-1} mod 5 = 2 $$
+  - $$ 3^{-1} \mod 5 = 2 $$
 
 > When the context is clear, the modulus part
   is often left out from equations.
