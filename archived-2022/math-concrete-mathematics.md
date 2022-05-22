@@ -117,7 +117,7 @@ date: 2021-08-28
 - $$ k \setminus m 和 k \setminus n \Leftrightarrow k \setminus gcd(m, n) $$
 
 - 有时我们需要对 `n` 的所有因子求和. 在这种情形下, 方便的法则
-  - $$ \sum_{m \setminus n} a_m = \sum_{m \setminus n} a_{a / m} , 整数 n > 0 $$
+  - $$ \sum_{m \setminus n} a_m = \sum_{m \setminus n} a_{n / m} , 整数 n > 0 $$
   - 常常很有用, 此式成立是由于当 `m` 取遍 `n` 所有的因子时
     `n / m` 也取遍 `n` 所有的因子.
 - 还有一个更一般的恒等式
