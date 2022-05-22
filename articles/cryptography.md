@@ -31,3 +31,27 @@ date: 2021-10-15
 ### The OPAQUE Asymmetric PAKE Protocol
 
 - https://github.com/cfrg/draft-irtf-cfrg-opaque
+
+------------------
+
+## Events
+
+```
+The 2022 Gödel Prize is awarded to the following papers:
+
+Zvika Brakerski, Vinod Vaikuntanathan:
+Efficient Fully Homomorphic Encryption from (Standard) LWE.
+FOCS 2011: 97-106. SIAM Journal of Computing 43(2): 831-871 (2014)
+
+Zvika Brakerski, Craig Gentry, Vinod Vaikuntanathan:
+(Leveled) fully homomorphic encryption without bootstrapping.
+ITCS 2012: 309-325. ACM Transactions on Computation Theory 6(3): 13:1-13:36 (2014)
+
+The above papers made transformative contributions to cryptography
+by constructing efficient fully homomorphic encryption (FHE) schemes.
+
+The above papers presented entirely new constructions of
+fully homomorphic encryption whose security relied only on
+the hardness of Regev's learning with errors (LWE) problem.
+They have led to a new generation of practically efficient FHE.
+```

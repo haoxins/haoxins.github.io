@@ -34,6 +34,9 @@ date: 2022-01-17
 
 ## 2022
 
+- [xDS API Working Group (xDS-WG)](https://github.com/cncf/xds)
+  - 从 `2021` 年开始, 本人坚定地唱衰 `Nginx`, `Apisix`
+
 - [TiDB 6.0 的元功能: Placement Rules in SQL 是什么?](https://pingcap.com/zh/blog/what-are-placement-rules-in-sql)
   - 非常, 赞!!!
 
