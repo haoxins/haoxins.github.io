@@ -114,14 +114,14 @@ date: 2021-08-28
   - 做法是: 如果 `m = 0`, 我们直接就取 `m' = 0` 以及 `n' = 1`;
   - 反之就令 `r = n mod m`, 并用 `r` 和 `m` 替换 `m` 和 `n`, ...
 
-- $$ k \\ m 和 k \\ n \Leftrightarrow k \\ gcd(m, n) $$
+- $$ k \setminus m 和 k \setminus n \Leftrightarrow k \setminus gcd(m, n) $$
 
 - 有时我们需要对 `n` 的所有因子求和. 在这种情形下, 方便的法则
-  - $$ \sum_{m \\ n} a_m = \sum_{m \\ n} a_{a / m} , 整数 n > 0 $$
+  - $$ \sum_{m \setminus n} a_m = \sum_{m \setminus n} a_{a / m} , 整数 n > 0 $$
   - 常常很有用, 此式成立是由于当 `m` 取遍 `n` 所有的因子时
     `n / m` 也取遍 `n` 所有的因子.
 - 还有一个更一般的恒等式
-  - $$ \sum_{m \\ n} a_m = \sum_{k} \sum_{m > 0} a_m[n = mk] $$
+  - $$ \sum_{m \setminus n} a_m = \sum_{k} \sum_{m > 0} a_m[n = mk] $$
 
 ---
 
