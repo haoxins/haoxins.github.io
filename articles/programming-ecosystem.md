@@ -34,6 +34,17 @@ date: 2022-01-17
 
 ## 2022
 
+- [Quickwit](https://github.com/quickwit-oss/quickwit)
+  - The new way to manage your logs at any scale
+  - Index data persisted on object storage
+  - Ingest JSON documents with or without a strict schema
+  - Ingest your documents with exactly-once semantics
+  - We estimate that Quickwit can be up to
+    `10x` cheaper on average than Elastic
+  - 真的假的? 等到 2023, 回头再看
+  - [Tantivy](https://github.com/quickwit-oss/tantivy)
+  - Tantivy is a full-text search engine library written in Rust
+
 - [xDS API Working Group (xDS-WG)](https://github.com/cncf/xds)
   - 从 `2021` 年开始, 本人坚定地唱衰 `Nginx`, `Apisix`
 
