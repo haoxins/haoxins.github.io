@@ -45,6 +45,10 @@ date: 2022-01-17
   - [Tantivy](https://github.com/quickwit-oss/tantivy)
   - Tantivy is a full-text search engine library written in Rust
 
+- [PyTorch 1.11, TorchData, and functorch are now available](https://github.com/pytorch/pytorch/releases/tag/v1.11.0)
+  - 这个 Release Notes 写得真是用心
+  - PyTorch 胜, TensorFlow 败
+
 - [xDS API Working Group (xDS-WG)](https://github.com/cncf/xds)
   - 从 `2021` 年开始, 本人坚定地唱衰 `Nginx`, `Apisix`
 
