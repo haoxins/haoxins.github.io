@@ -28,6 +28,9 @@ date: 2021-10-15
 - [Drand](https://github.com/drand/drand)
   - A Distributed Randomness Beacon Daemon
 
+- https://eprint.iacr.org/2011/344.pdf
+- https://eprint.iacr.org/2011/277.pdf
+
 ### The OPAQUE Asymmetric PAKE Protocol
 
 - https://github.com/cfrg/draft-irtf-cfrg-opaque

@@ -11,7 +11,6 @@
 * [我的推荐书单~](articles/reading-recommended.md)
 ### 2022
 * [Advanced Algorithms and Data Structures](archived-2022/algorithms-advanced.md)
-* [Graph Algorithms for Data Science](archived-2022/algorithms-graph.md)
 * [Real-World Cryptography (上)](archived-2022/cryptography-real-world-1.md)
 * [Real-World Cryptography (下)](archived-2022/cryptography-real-world-2.md)
 * [数据库系统内幕](archived-2022/database-internals.md)
@@ -24,6 +23,8 @@
 * [伽罗瓦理论 - 群论](archived-2022/math-galois-theory.md)
 * [哈代 - 纯数学教程 (第9版)](archived-2022/math-pure-mathematics.md)
 * [基础拓扑学 修订版](archived-2022/math-topology.md)
+* [特征工程的艺术 - 通用技巧与实用案例](archived-2022/ml-feature-engineering.md)
+* [Graph Algorithms for Data Science](archived-2022/ml-graph.md)
 * [费曼物理学讲义 (卷一) 上](archived-2022/physics-feynman-lectures-1-1.md)
 * [费曼物理学讲义 (卷一) 中](archived-2022/physics-feynman-lectures-1-2.md)
 * [费曼物理学讲义 (卷一) 下](archived-2022/physics-feynman-lectures-1-3.md)
