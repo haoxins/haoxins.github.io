@@ -34,7 +34,7 @@ date: 2022-01-17
 
 ## 2022
 
-- [RFC Introducing Ray AI Runtime](https://github.com/ray-project/ray/issues/22488)
+- [RFC: Introducing Ray AI Runtime](https://github.com/ray-project/ray/issues/22488)
   - 2022, 基本可以说 Kubeflow 凉凉了, 偶尔的维护罢了, 毫无社区活力
 
 - [Quickwit](https://github.com/quickwit-oss/quickwit)
