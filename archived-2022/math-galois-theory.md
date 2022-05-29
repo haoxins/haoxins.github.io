@@ -337,9 +337,9 @@ $$
   \left[ \mathbb{Q} \left( \sqrt{n} \right) : \mathbb{Q} \right]
   =
   \begin{cases}
-  1, & \mbox{ } \srqt{n} \in \mathbb{Q}
+  1, & \mbox{ } \sqrt{n} \in \mathbb{Q}
   \\
-  2, & \mbox{ } \srqt{n} \notin \mathbb{Q}
+  2, & \mbox{ } \sqrt{n} \notin \mathbb{Q}
   \end{cases}
   $$
 
