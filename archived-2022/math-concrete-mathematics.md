@@ -29,18 +29,18 @@ date: 2021-08-28
 - __底__ (`floor`, 最大整数) 函数
 - __顶__ (`ceiling`, 最小整数) 函数
 - 对所有实数 `x`, 其定义如下:
-- $$ \lfloor x \rfloor $$
-  - 小于或等于 `x` 的最大整数
-- $$ \lceil x \rceil $$
-  - 大于或等于 `x` 的最小整数
+- $$ \lfloor x \rfloor $$:
+  小于或等于 `x` 的最大整数
+- $$ \lceil x \rceil $$:
+  大于或等于 `x` 的最小整数
 
-$$ \lfloor e \rfloor = 2 $$
-$$ \lfloor -e \rfloor = -3 $$
-$$ \lceil e \rceil = 3 $$
-$$ \lceil -e \rceil = -2 $$
-$$ x - 1 < \lfloor x \rfloor \le x \le \lceil x \rceil < x + 1 $$
-$$ \lfloor -x \rfloor = - \lceil x \rceil $$
-$$ \lceil -x \rceil = - \lfloor x \rfloor $$
+- $$ \lfloor e \rfloor = 2 $$
+- $$ \lfloor -e \rfloor = -3 $$
+- $$ \lceil e \rceil = 3 $$
+- $$ \lceil -e \rceil = -2 $$
+- $$ x - 1 < \lfloor x \rfloor \le x \le \lceil x \rceil < x + 1 $$
+- $$ \lfloor -x \rfloor = - \lceil x \rceil $$
+- $$ \lceil -x \rceil = - \lfloor x \rfloor $$
 
 ---
 
