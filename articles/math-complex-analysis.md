@@ -5,7 +5,7 @@ date: 2021-11-16
 ---
 
 - [复分析: 可视化方法](https://book.douban.com/subject/35316347/)
-  - 原作名: **Visual Complex Analysis**
+  - 原作名: __Visual Complex Analysis__
   - 译者: 齐民友
   - 出版年: `2021-01`
-  - `2021年`买的, `2022年`开始阅读, 哈哈哈
+  - `2021`年买的, `2022`年开始阅读, 哈哈哈
