@@ -8,10 +8,13 @@ date: 2019-10-24
 
 ## 2022
 
+### 2022-06
+
 ### 2022-05
 
 - [风声](https://movie.douban.com/subject/27068534/)
   - 不错
+  - 金生火: 只可惜, 我们相识不短, 相知太晚
 
 - [黑社会2: 以和为贵](https://movie.douban.com/subject/1484760/)
 

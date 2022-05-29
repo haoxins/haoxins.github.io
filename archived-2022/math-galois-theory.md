@@ -333,6 +333,16 @@ $$
 
 ------------------
 
+- $$
+  \left[ \mathbb{Q} \left( \sqrt{n} \right) : \mathbb{Q} \right]
+  =
+  \begin{cases}
+  1, & \mbox{ } \srqt{n} \in \mathbb{Q}
+  \\
+  2, & \mbox{ } \srqt{n} \notin \mathbb{Q}
+  \end{cases}
+  $$
+
 ## 群论彩图版
 
 * [群论彩图版](https://book.douban.com/subject/34879608/)
