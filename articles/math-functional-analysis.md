@@ -1,7 +1,5 @@
 ---
 title: 泛函分析导论及应用
-description: TODO
+description: 帘外雨潺潺, 春意阑珊. 罗衾不耐五更寒.
 date: 2022-02-11
 ---
-
-## TODO

@@ -1,6 +1,6 @@
 ---
 title: 写给自己的量子课 01 - 从测量开始
-description:
+description: 梦里不知身是客, 一晌贪欢.
 date: 2022-04-30
 ---
 
