@@ -18,6 +18,7 @@ date: 2021-08-28
     求解复杂的递归关系, 以及发现数据中隐藏的精妙规律.
   - 你会对代数技巧得心应手, 从而常常会发现,
     得到精确的结果比求出仅在一定意义下成立的近似解更为容易.
+
 - 这本书要探讨的主题包括`和式`, `递归式`, `初等数论`, `二项式系数`,
   `生成函数`, `离散概率`以及`渐近方法`.
   - 其重点是强调处理技术, 而不是存在性定理或者组合推理,
@@ -26,21 +27,19 @@ date: 2021-08-28
 
 ## 整值函数
 
-- __底__ (`floor`, 最大整数) 函数
-- __顶__ (`ceiling`, 最小整数) 函数
+- __底__ (`floor`, 最大整数) 函数, __顶__ (`ceiling`, 最小整数) 函数
 - 对所有实数 `x`, 其定义如下:
-- $$ \lfloor x \rfloor $$:
-  小于或等于 `x` 的最大整数
-- $$ \lceil x \rceil $$:
-  大于或等于 `x` 的最小整数
-
-- $$ \lfloor e \rfloor = 2 $$
-- $$ \lfloor -e \rfloor = -3 $$
-- $$ \lceil e \rceil = 3 $$
-- $$ \lceil -e \rceil = -2 $$
-- $$ x - 1 < \lfloor x \rfloor \le x \le \lceil x \rceil < x + 1 $$
-- $$ \lfloor -x \rfloor = - \lceil x \rceil $$
-- $$ \lceil -x \rceil = - \lfloor x \rfloor $$
+  - $$ \lfloor x \rfloor $$:
+    小于或等于 `x` 的最大整数
+  - $$ \lceil x \rceil $$:
+    大于或等于 `x` 的最小整数
+  - $$ \lfloor e \rfloor = 2 $$
+  - $$ \lfloor -e \rfloor = -3 $$
+  - $$ \lceil e \rceil = 3 $$
+  - $$ \lceil -e \rceil = -2 $$
+  - $$ x - 1 < \lfloor x \rfloor \le x \le \lceil x \rceil < x + 1 $$
+  - $$ \lfloor -x \rfloor = - \lceil x \rceil $$
+  - $$ \lceil -x \rceil = - \lfloor x \rfloor $$
 
 ---
 
@@ -128,9 +127,11 @@ $$
 \frac{n(n-1)...(n-k+1)}{k(k-1)...(1)}
 $$
 
+---
+
 - `gcd` 的一个最好的性质是它容易计算, 可以用有`2300`年之久的欧几里得算法来计算它.
-  - 为了对给定的值 `0 ≤ m < n` 计算 `gcd(m, n)`,
-    欧几里得算法用到递归式
+- 为了对给定的值 `0 ≤ m < n` 计算 `gcd(m, n)`,
+  欧几里得算法用到递归式
   - `gcd(0, n) = n`;
   - `gcd(m, n) = gcd(n mod m, m), m > 0`.
 - 欧几里得算法还给我们更多的东西: 我们可以对它加以推广, 用它来计算满足
@@ -142,6 +143,8 @@ $$
 k \setminus m 和
 k \setminus n \Leftrightarrow k \setminus gcd(m, n)
 $$
+
+---
 
 - 有时我们需要对 `n` 的所有因子求和. 在这种情形下, 方便的法则
 
@@ -175,6 +178,8 @@ $$
 - 一个更加精密的近似会告诉我们渐近相对误差:
   - 斯特林公式与 `n!` 的相对误差大概是 `1/(12n)`.
   - 即便是对比较小的 `n`, 这个更加精确的估计也是非常好的了.
+
+---
 
 $$
 m \perp n \Leftrightarrow
