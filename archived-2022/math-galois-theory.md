@@ -69,7 +69,11 @@ date: 2021-05-24
 
 * 棣莫弗公式 (三角函数版)
 
-$$ \cos n\theta + i \sin n\theta = \left( \cos \theta + i \sin \theta \right)^n $$
+$$
+\cos n\theta + i \sin n\theta
+=
+\left( \cos \theta + i \sin \theta \right)^n
+$$
 
 * 棣莫弗公式 (指数函数版)
 
@@ -333,15 +337,15 @@ $$
 
 ------------------
 
-- $$
-  \left[ \mathbb{Q} \left( \sqrt{n} \right) : \mathbb{Q} \right]
-  =
-  \begin{cases}
-  1, & \mbox{ } \sqrt{n} \in \mathbb{Q}
-  \\
-  2, & \mbox{ } \sqrt{n} \notin \mathbb{Q}
-  \end{cases}
-  $$
+$$
+\left[ \mathbb{Q} \left( \sqrt{n} \right) : \mathbb{Q} \right]
+=
+\begin{cases}
+1, & \mbox{ } \sqrt{n} \in \mathbb{Q}
+\\
+2, & \mbox{ } \sqrt{n} \notin \mathbb{Q}
+\end{cases}
+$$
 
 ## 群论彩图版
 
