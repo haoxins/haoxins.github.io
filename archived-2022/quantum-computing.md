@@ -4,7 +4,7 @@ description: 从德谟克利特, 计算复杂性到自由意志
 date: 2021-07-16
 ---
 
-- [Shtetl-Optimized](https://www.scottaaronson.com)
+* [Shtetl-Optimized](https://www.scottaaronson.com)
   - The Blog of Scott Aaronson
   - 哇喔, 原来我早先就收藏了作者的博客
   - https://scottaaronson.blog
@@ -12,17 +12,17 @@ date: 2021-07-16
 
 ------------------
 
-- [PHYS771 Quantum Computing Since Democritus](https://www.scottaaronson.com/democritus/)
+* [PHYS771 Quantum Computing Since Democritus](https://www.scottaaronson.com/democritus/)
 
 ------------------
 
-- [量子计算公开课](https://book.douban.com/subject/35467917/)
+* [量子计算公开课](https://book.douban.com/subject/35467917/)
   - 副标题: 从德谟克利特, 计算复杂性到自由意志
   - 原作名: Quantum Computing since Democritus
   - 网络书评: 自费曼以来, 还没有谁的公开课能如此精彩
   - `2021`年`ACM计算奖`得主
 
-- [阿列夫数: Aleph number](https://en.wikipedia.org/wiki/Aleph_number)
+* [阿列夫数: Aleph number](https://en.wikipedia.org/wiki/Aleph_number)
 
 ```
 人们会好奇这本书的目标受众究竟是哪类人群.
@@ -59,7 +59,7 @@ date: 2021-07-16
 而现在想了解最新研究进展的计算机程序员和工程师.
 ```
 
-- 如果量子力学不是通常意义上的物理学
+* 如果量子力学不是通常意义上的物理学
   (如果它不是关于物质, 能量, 波或粒子的),
   那它到底是关于什么的呢?
   在我看来, 它是关于
@@ -89,7 +89,7 @@ date: 2021-07-16
 
 ## 集合
 
-- **一阶逻辑规则**
+* **一阶逻辑规则**
   - 这些规则关注的都是如何构造出有效的语句 -- "有效",
     不正式地说, 意指 "恒真" (对于变量的所有可能设定均为真);
   - 不过, 我们暂且可以只把它视为特定符号串的一种组合性质.
