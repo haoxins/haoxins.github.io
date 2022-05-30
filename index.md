@@ -37,7 +37,7 @@
 * [Programming language](archived-2022/programming-language.md)
 * [量子计算公开课](archived-2022/quantum-computing.md)
 * [Shtetl-Optimized, Scott Aaronson](archived-2022/scott-aaronson.md)
-* [叶嘉莹讲评人间词话 - 蒋勋说唐诗宋词](archived-2022/shi-ci.md)
+* [蒋勋说唐诗宋词 - 叶嘉莹讲评人间词话](archived-2022/shi-ci.md)
 * [我的滑雪经历](archived-2022/skiing.md)
 * [TAOCP 组合算法 习题 - 计算机程序设计艺术](archived-2022/taocp-4-exe.md)
 * [TAOCP 组合算法 - 计算机程序设计艺术](archived-2022/taocp-4.md)
