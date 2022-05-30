@@ -4,7 +4,7 @@ description: 从德谟克利特, 计算复杂性到自由意志
 date: 2021-07-16
 ---
 
-* [Shtetl-Optimized](https://www.scottaaronson.com)
+- [Shtetl-Optimized](https://www.scottaaronson.com)
   - The Blog of Scott Aaronson
   - 哇喔, 原来我早先就收藏了作者的博客
   - https://scottaaronson.blog
@@ -12,19 +12,17 @@ date: 2021-07-16
 
 ------------------
 
-* [PHYS771 Quantum Computing Since Democritus](https://www.scottaaronson.com/democritus/)
+- [PHYS771 Quantum Computing Since Democritus](https://www.scottaaronson.com/democritus/)
 
 ------------------
 
-* [量子计算公开课](https://book.douban.com/subject/35467917/)
-  - 副标题: *从德谟克利特, 计算复杂性到自由意志*
-  - 原作名: *Quantum Computing since Democritus*
-  - *自费曼以来, 还没有谁的公开课能如此精彩*
+- [量子计算公开课](https://book.douban.com/subject/35467917/)
+  - 副标题: 从德谟克利特, 计算复杂性到自由意志
+  - 原作名: Quantum Computing since Democritus
+  - 网络书评: 自费曼以来, 还没有谁的公开课能如此精彩
   - `2021`年`ACM计算奖`得主
 
-* [阿列夫数: Aleph number](https://en.wikipedia.org/wiki/Aleph_number)
-  - https://zh.wikipedia.org/wiki/阿列夫數
-  - https://zh.wikipedia.org/wiki/阿列夫数
+- [阿列夫数: Aleph number](https://en.wikipedia.org/wiki/Aleph_number)
 
 ```
 人们会好奇这本书的目标受众究竟是哪类人群.
