@@ -6,8 +6,6 @@
 * [泛函分析导论及应用](articles/math-functional-analysis.md)
 * [测度论](articles/math-measure-theory.md)
 * [健身, 冥想](articles/meditation-fitness.md)
-* [Programming ecosystem](articles/programming-ecosystem.md)
-* [Programming language](articles/programming-language.md)
 * [我的推荐书单~](articles/reading-recommended.md)
 ### 2022
 * [Advanced Algorithms and Data Structures](archived-2022/algorithms-advanced.md)
@@ -35,6 +33,8 @@
 * [费曼物理学讲义 (卷三) 下](archived-2022/physics-feynman-lectures-3-2.md)
 * [卢昌海系列 - 黎曼猜想漫谈, 泡利的错误, 广义相对论专题选讲](archived-2022/physics-riemann-pauli.md)
 * [对称与不对称 - 李政道](archived-2022/physics-symmetry-asymmetry.md)
+* [Programming ecosystem](archived-2022/programming-ecosystem.md)
+* [Programming language](archived-2022/programming-language.md)
 * [量子计算公开课](archived-2022/quantum-computing.md)
 * [Shtetl-Optimized, Scott Aaronson](archived-2022/scott-aaronson.md)
 * [叶嘉莹讲评人间词话 - 蒋勋说唐诗宋词](archived-2022/shi-ci.md)
