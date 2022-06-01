@@ -920,7 +920,7 @@ date: 2021-05-05
 
 $$
 \begin{align}
-L = x p_y - y p_x \\
+L & = x p_y - y p_x \\
   & = rp_切向 \\
   & = p·动量臂 \\
 \end{align}
