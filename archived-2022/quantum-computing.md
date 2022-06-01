@@ -21,6 +21,7 @@ date: 2021-07-16
   - 原作名: Quantum Computing since Democritus
   - 网络书评: 自费曼以来, 还没有谁的公开课能如此精彩
   - `2021`年`ACM计算奖`得主
+  - 标题其实和内容不是很匹配, __应改为__: `计算复杂性: 从经典计算到量子计算`
 
 * [阿列夫数: Aleph number](https://en.wikipedia.org/wiki/Aleph_number)
 
