@@ -112,6 +112,9 @@ k logs -n istio-system -l app=istiod --tail=10000
   - K8s 的号召力真强
   - [wazero](https://github.com/tetratelabs/wazero)
   - The zero dependency WebAssembly runtime for Go developers
+  - `2022-06`, 代码已经 Push 出来了, 个人感觉:
+    首先, 对 Istio 用户没影响;
+    其次, 估计是为了吸引 Nginx, Ingress Nginx 用户
 
 - `2022-04-30`: 关于 Istio 的遐想
   - Istio 越来越专注于 Ingress 了
