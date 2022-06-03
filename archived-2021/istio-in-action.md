@@ -5,15 +5,15 @@ date: 2021-08-04
 ---
 
 * [Service Mesh Comparison](https://servicemesh.es)
-  - *Istio*: Proxy sidecar
-  - *Dapr*: Service sidecar
+  - Istio: Proxy sidecar
+  - Dapr: Service sidecar
 
 ------------------
 
 * [Istio in Action](https://book.douban.com/subject/33406485/)
   - https://www.manning.com/books/istio-in-action
-  - 开篇先说, 要解决的**问题**, *赞*
-  - 新技术(在早期)有可能是*毒药*, 过了早期阶段, 大部分就消失了 :)
+  - 开篇先说, 要解决的**问题**, 赞
+  - 新技术(在早期)有可能是毒药, 过了早期阶段, 大部分就消失了 :)
 
 * Istio **1.10**
 * Kubernetes **1.18**
@@ -1910,3 +1910,44 @@ kubectl -n istio-system port-forward \
   - [Eventing](https://github.com/knative/eventing)
 
 > - [Build: Tekton Pipelines](https://github.com/tektoncd/pipeline)
+
+------------------
+
+## Events
+
+### 2021
+
+* [Announcing the alpha availability of WebAssembly Plugins](https://istio.io/latest/blog/2021/wasm-api-alpha/)
+  - Introduction to the new Wasm Plugin API and
+    updates to the Wasm-based plugin
+    support in Envoy and Istio.
+
+```yaml
+apiVersion: extensions.istio.io/v1alpha1
+kind: WasmPlugin
+metadata:
+  name: your-filter
+spec:
+  selector:
+    matchLabels:
+      app: server
+  phase: AUTHN
+  priority: 10
+  pluginConfig:
+    someSetting: true
+    someOtherSetting: false
+    youNameIt:
+    - first
+    - second
+  url: docker.io/your-org/your-filter:1.0.0
+```
+
+* [Announcing Istio 1.12](https://istio.io/latest/news/releases/1.12.x/announcing-1.12/)
+  - Istio `1.12` is officially supported on
+    Kubernetes versions `1.19` to `1.22`.
+  - [Wasm Plugin](https://istio.io/latest/docs/reference/config/proxy_extensions/wasm-plugin/)
+  - [Telemetry API](https://istio.io/latest/docs/reference/config/telemetry/)
+  - [Kubernetes Gateway API](https://gateway-api.sigs.k8s.io)
+  - Initial support has been added for
+    **gRPC native Proxyless Service Mesh**.
+  - Experimental support for `HTTP/3` Gateways.

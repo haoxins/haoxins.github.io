@@ -76,3 +76,23 @@ date: 2021-09-13
 * mysql-pv-claim
 * kube-prometheus-stack-prometheus-0
 * storage-loki-stack-0
+
+------------------
+
+## Events
+
+### 2021
+
+* **Jaeger**: 2021-11
+  - 把自己维护的 K8s clusters 上的 **Jaeger** *storage backend* 从
+    **Cassandra** 切换到了 **Elasticsearch**
+  - The Jaeger team recommends Elasticsearch
+    as the storage backend over Cassandra
+
+* [How We Used PyTorch Lightning to Make Our Deep Learning Pipeline 10x Faster](https://devblog.pytorchlightning.ai/how-we-used-pytorch-lightning-to-make-our-deep-learning-pipeline-10x-faster-731bd7ad318a)
+  - Parallel data loading
+  - Multi-GPU training
+  - Mixed precision training
+  - Sharded training
+  - Early stopping
+  - Optimizations during model evaluation & inference

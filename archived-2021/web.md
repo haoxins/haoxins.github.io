@@ -4,17 +4,12 @@ description: 闲云潭影日悠悠, 物换星移几度秋.
 date: 2021-04-05
 ---
 
-------------------
-
-# Timeline
-
-------------------
-
 ## 2022
 
 - [Announcing the Web-interoperable Runtimes Community Group](https://deno.com/blog/announcing-wintercg)
   - https://wintercg.org
   - https://github.com/wintercg/proposal-common-minimum-api
+  - 目测, 不会有太大的机会
 
 - [Component Model design and specification](https://github.com/WebAssembly/component-model)
   - 期待
