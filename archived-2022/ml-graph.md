@@ -32,7 +32,7 @@ date: 2022-01-02
 
 ## Representing network structure
 
-> The most **basic** graph representation is the
+> The most basic graph representation is the
   mathematical data structure **adjacency matrix**.
 
 * An adjacency matrix is a **square matrix**, where

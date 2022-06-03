@@ -110,16 +110,16 @@ so feel free to use them for those problems.
 ```
 
 * The main difference is that we must shift from an
-  *"entity first"* mindset
-  (or perhaps more accurately, an *"entity-only"* mindset) to an
-  ***"entity and relationship"*** mindset.
+  `"entity first"` mindset
+  (or perhaps more accurately, an `"entity-only"` mindset)
+  to an `"entity and relationship"` mindset.
 
-* ***Entity***,
-  ***Relationship***,
-  ***Attribute***,
-  ***Access pattern***
+* **Entity**,
+  **Relationship**,
+  **Attribute**,
+  **Access pattern**
   - We usually make our choice based on
-    the predominant *access patterns*.
+    the predominant `access patterns`.
 
 * Four-step process for data modeling
   - Understand the problem (core access patterns)
@@ -523,8 +523,8 @@ g.V().has('person', 'first_name', 'Dave')
   different traversal paths at
   the expense of *keeping data in sync*.
 
-> Unlike *relational* data models, both *technical*
-  and *non-technical* users can understand *graph* data models.
+> Unlike relational data models, both technical and
+  non-technical users can understand graph data models.
 
 ## Working with subgraphs
 
@@ -555,8 +555,8 @@ g.V().has('person', 'person_id', 2)
     the database supports geospatial data.
 
 * **Supernodes**
-  - *Monitoring*
-  - *Mitigating*
+  - Monitoring
+  - Mitigating
 
 ### anti-patterns
 
