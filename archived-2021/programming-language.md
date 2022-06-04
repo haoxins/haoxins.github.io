@@ -1,6 +1,6 @@
 ---
 title: Programming language
-description: 青山相待, 白云相爱, 紫罗袍共黄金带
+description: 一曲新词酒一杯, 去年天气旧亭台. 夕阳西下几时回?
 date: 2020-12-27
 ---
 
