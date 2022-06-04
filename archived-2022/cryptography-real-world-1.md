@@ -18,12 +18,12 @@ date: 2021-09-10
   kick off things that way. I want to
   *tell you about the practical*.
 
-* **Kerckhoff's principle**:
+* Kerckhoff's principle:
   - *Only the key is kept secret*
 
 * **Asymmetric cryptography**:
   - *Two keys are better than one*
-  - *key exchange*: Diffie-Hellman (**DH**)
+  - key exchange: Diffie-Hellman (**DH**)
   - DH: `man-in-the-middle`
 
 * **RSA** contains two different primitives:

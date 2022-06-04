@@ -292,14 +292,14 @@ let x = 1234.567 % 10.0; // approximately 4.567
 
 ## Traits & Generics
 
-* The type of *`out`* is **`&mut dyn Write`**, meaning
+* The type of `out` is **`&mut dyn Write`**, meaning
   *"a mutable reference to any value that implements the Write trait"*
 
 * Generics and traits are closely related:
   - *generic* functions use *traits* in bounds to spell out
     what types of arguments they can be applied to.
   - So we'll also talk about how *`&mut dyn Write`*
-    and *`<T: Write>`* are *similar*, how they're *different*,
+    and `<T: Write>` are *similar*, how they're *different*,
     and how to choose between these two ways of using *traits*.
 
 * There is one unusual rule about trait methods:

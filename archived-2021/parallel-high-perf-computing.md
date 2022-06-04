@@ -197,8 +197,8 @@ date: 2021-12-01
     all of the PEs on that CU. Local memory can be
     split between a scratchpad that can be used as a
     programmable cache and, by some vendors, a
-    traditional cache on GPUs. Local memory is around
-    `64-96` KB in size.
+    traditional cache on GPUs.
+  - Local memory is around `64-96` KB in size.
   - **Constant memory**: Read-only memory accessible
     and shared across all of the CUs.
   - **Global memory**: Memory that's located on the

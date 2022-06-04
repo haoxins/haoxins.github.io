@@ -4,31 +4,31 @@ description: 维摩一室虽多病, 亦要天花作道场
 date: 2021-09-20
 ---
 
-* [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
+- [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
   - A Guide for Making Black Box Models Explainable.
 
 ## Interpretability
 
-* **Feature summary statistic**: Many interpretation methods
+- **Feature summary statistic**: Many interpretation methods
   provide summary statistics for each feature. Some methods
   return a single number per feature, such as feature importance,
   or a more complex result, such as the pairwise
   feature interaction strengths, which consist of
   a number for each feature pair.
-* **Feature summary visualization**: Most of the feature
+- **Feature summary visualization**: Most of the feature
   summary statistics can also be visualized. Some feature
   summaries are actually only meaningful if they are
   visualized and a table would be a wrong choice.
   - The partial dependence of a feature is such a case.
     **Partial dependence** plots are curves that show a
     feature and the average predicted outcome.
-* **Model internals** (e.g. learned weights): The
+- **Model internals** (e.g. learned weights): The
   interpretation of intrinsically interpretable models
   falls into this category. Examples are the weights in
   linear models or the learned tree structure
   (the features and thresholds used for the splits)
   of decision trees.
-* **Data point**: This category includes all methods that
+- **Data point**: This category includes all methods that
   return data points (already existent or newly created)
   to make a model interpretable. One method is called
   **counterfactual explanations**.
@@ -42,7 +42,7 @@ date: 2021-09-20
     themselves can be interpreted. This works well for
     images and texts, but is less useful for
     tabular data with hundreds of features.
-* **Intrinsically interpretable model**: One solution to
+- **Intrinsically interpretable model**: One solution to
   interpreting black box models is to approximate them
   (either globally or locally) with an interpretable model.
   The interpretable model itself is interpreted by
@@ -51,17 +51,17 @@ date: 2021-09-20
 
 ### Algorithm Transparency
 
-* Algorithm transparency is about how the algorithm
+- Algorithm transparency is about how the algorithm
   learns a model from the data and what kind
   of relationships it can learn.
-* Algorithm transparency only requires knowledge of
+- Algorithm transparency only requires knowledge of
   the algorithm and not of the data or learned model.
   - This book focuses on model interpretability and
     not algorithm transparency.
 
 ### Model Interpretability
 
-* This level of interpretability is about understanding
+- This level of interpretability is about understanding
   how the model makes decisions, based on a holistic view
   of its features and each of the learned components
   such as weights, other parameters, and structures.
@@ -74,25 +74,25 @@ date: 2021-09-20
     they consider only parts of it,
     such as the weights in linear models.
 
-* While **global** model interpretability is usually out of reach,
+- While **global** model interpretability is usually out of reach,
   there is a good chance of understanding at least
   some models on a modular level.
   - Not all models are interpretable at a parameter level.
-* If you look at an individual prediction, the behavior of
+- If you look at an individual prediction, the behavior of
   the otherwise complex model might behave more pleasantly.
   **Locally**, the prediction might only depend linearly
   or monotonically on some features, rather than having
   a complex dependence on them.
   - Local explanations can therefore be more accurate
     than global explanations.
-* Model predictions for multiple instances can be explained
+- Model predictions for multiple instances can be explained
   either with global model interpretation methods
   (on a modular level) or with
   explanations of individual instances.
 
 ### Properties of Explanations
 
-* Properties of Explanation Methods
+- Properties of Explanation Methods
   - **Expressive Power** is the "language" or structure of
     the explanations the method is able to generate.
   - An explanation method could generate `IF-THEN` rules,
@@ -112,7 +112,7 @@ date: 2021-09-20
   - **Algorithmic Complexity** describes the computational
     complexity of the method that generates the explanation.
 
-* Properties of Individual Explanations
+- Properties of Individual Explanations
   - **Accuracy**: How well does an explanation predict unseen data?
   - **Fidelity**: How well does the explanation approximate the
     prediction of the black box model?
@@ -153,14 +153,14 @@ date: 2021-09-20
 
 ## Interpretable Models
 
-* A model with monotonicity constraints ensures that the
+- A model with monotonicity constraints ensures that the
   relationship between a feature and the target outcome
   always goes in the same direction over the
   entire range of the feature:
   - An increase in the feature value either always leads
     to an increase or always to a decrease
     in the target outcome.
-* Some models can automatically include interactions
+- Some models can automatically include interactions
   between features to predict the target outcome.
   You can include interactions in any type of model
   by manually creating interaction features.

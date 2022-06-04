@@ -130,10 +130,10 @@ so feel free to use them for those problems.
 > we have found that singular names tend to be
 > a better fit for graph data modeling.
 
-* Because *relationships* are *first-class*
+* Because relationships are first-class
   citizens in a graph data model,
-  both *vertices* and *edges* can have
-  *properties* associated with those.
+  both vertices and edges can have
+  properties associated with those.
 
 * **Naming**
   - We could have gone with the name *User*,
@@ -180,22 +180,22 @@ g.V()
   .values('first_name')
 ```
 
-* *`hasLabel(label)`*
-* *`has(key, value)`*
-* *`has(label, key, value)`*
-* *`out(label)`*
-* *`in(label)`*
-* *`both(label)`*
-* *`repeat(traversal)`*
-* *`times(integer)`*
-* *`until(traversal)`*
+* `hasLabel(label)`
+* `has(key, value)`
+* `has(label, key, value)`
+* `out(label)`
+* `in(label)`
+* `both(label)`
+* `repeat(traversal)`
+* `times(integer)`
+* `until(traversal)`
 
-> * **Remember**, an *outgoing vertex* is the vertex
+> - **Remember**, an *outgoing vertex* is the vertex
 >   where an *edge starts*,
 >   and an *incoming vertex* is a vertex
 >   where an *edge ends*.
 
-> - *Traversal* parameters are similar to *lambda expressions* in Java.
+> - Traversal parameters are similar to lambda expressions in Java.
 
 ```js
 g.V()
@@ -291,7 +291,7 @@ dave = g
 ### Paths
 
 * **`path()`**
-  - Using the *`path()`* step in Gremlin requires
+  - Using the `path()` step in Gremlin requires
     additional resource overhead on the server
     because each traverser needs to maintain the
     entire history of the steps it visits.

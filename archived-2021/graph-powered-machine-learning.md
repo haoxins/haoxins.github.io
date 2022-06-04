@@ -78,10 +78,10 @@ date: 2021-09-12
   also equal to the number of neighbors of that vertex.
 
 * In a *directed* graph, the degree of a vertex
-  $$ V_i $$ is split into the *`in-degree`* of the vertex,
+  $$ V_i $$ is split into the `in-degree` of the vertex,
   defined as the number of edges for which $$ V_i $$ is
   their *end node* (the *head* of the arrow) and the
-  *`out-degree`* of the vertex, which is the number of
+  `out-degree` of the vertex, which is the number of
   edges for which $$ V_i $$ is their *start node*
   (the *tail* of the arrow).
 
