@@ -87,14 +87,14 @@ date: 2018-04-01
 * [通向实在之路](https://book.douban.com/subject/25823056/)
   - **罗杰•彭罗斯**
   - 副标题: **宇宙法则的完全指南**
-  - 原作名: *The Road to Reality: A Complete Guide to the Laws of the Universe*
-  - 感恩: ***微信读书***
+  - 原作名: The Road to Reality: A Complete Guide to the Laws of the Universe
+  - 感恩: **微信读书**
 
 * [代数的历史](https://book.douban.com/subject/35428125/)
   - 副标题: 人类对未知量的不舍追踪 (修订版)
   - 原作名: Unknown Quantity: A Real and Imaginary History of Algebra
   - 出版年: 2021-4
-  - 感恩: ***微信读书***
+  - 感恩: **微信读书**
 
 * [Kubernetes in Action, Second Edition](https://book.douban.com/subject/34986745/)
   - https://www.manning.com/books/kubernetes-in-action-second-edition

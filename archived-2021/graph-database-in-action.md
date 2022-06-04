@@ -52,7 +52,7 @@ CREATE TABLE org_chart (
 );
 ```
 
-```zsh
+```js
 g.V().
   repeat(
     out('works_for')
@@ -69,7 +69,7 @@ B (the barley)
 _ (the river)
 ```
 
-```zsh
+```js
 g.V('TFGB_').
   repeat(
     out()
@@ -143,7 +143,7 @@ so feel free to use them for those problems.
     we might need to represent other types of people,
     such as *employees* or *owners*, in the future.
 
-* ***lower_snake_case***, ***singular***
+* **lower_snake_case**, **singular**
 
 > It is generally a safe bet that each vertex
 > in a graph database can only be associated
@@ -154,7 +154,7 @@ so feel free to use them for those problems.
   - single uniqueness edge
   - multiple uniqueness edge
 
-> ***Incorrect edge uniqueness*** is one of the most
+> **Incorrect edge uniqueness** is one of the most
 > common problems in graph data modeling,
 > and it is frequently a root cause of query issues.
 
@@ -560,7 +560,7 @@ g.V().has('person', 'person_id', 2)
 
 ### anti-patterns
 
-* ***Using graphs for non-graph use cases***
+* **Using graphs for non-graph use cases**
 
 * Traversal anti-patterns
   - *Not using parameterized traversals*

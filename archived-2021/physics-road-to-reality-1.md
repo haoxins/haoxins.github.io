@@ -7,8 +7,8 @@ date: 2021-08-26
 * [通向实在之路](https://book.douban.com/subject/25823056/)
   - **罗杰•彭罗斯**
   - 副标题: **宇宙法则的完全指南**
-  - 原作名: *The Road to Reality: A Complete Guide to the Laws of the Universe*
-  - 感恩: ***微信读书***
+  - 原作名: The Road to Reality: A Complete Guide to the Laws of the Universe
+  - 感恩: **微信读书**
 
 * 不使用一定量的数学符号和真正的数学概念,
   就不可能向读者传达我真正要表达的意思.

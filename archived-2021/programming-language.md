@@ -116,7 +116,7 @@ date: 2020-12-27
     overall Go experience.
 
 * [What's New In Python 3.10](https://docs.python.org/3/whatsnew/3.10.html)
-  - ***Structural Pattern Matching***
+  - **Structural Pattern Matching**
   - Parenthesized context managers
 
 * [Announcing Rust 1.56.0 and Rust 2021](https://blog.rust-lang.org/2021/10/21/Rust-1.56.0.html)

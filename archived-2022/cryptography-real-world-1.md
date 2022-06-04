@@ -1042,7 +1042,7 @@ if (len != sizeof(secret)) {
   language you're using.
 
 * Make sure that you use random libraries that
-  generate ***cryptographically strong*** random
+  generate **cryptographically strong** random
   numbers. Usually the name of the library helps
   (for example, you can probably guess which one
   you should use between the `math/rand` and

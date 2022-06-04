@@ -226,7 +226,7 @@ kubectl get ev --field-selector type=Warning
   allows you to debug running containers by
   attaching a debug container to them.
 
-* ***Envoy***
+* **Envoy**
 
 ```yaml
 apiVersion: v1
@@ -1373,7 +1373,7 @@ containers:
     mountPath: /pod-metadata
 ```
 
-* ***Projected volumes*** allow you to combine
+* **Projected volumes** allow you to combine
   information from multiple *config maps*,
   *secrets*, and the *Downward API* into a
   *single pod volume* that you can then mount

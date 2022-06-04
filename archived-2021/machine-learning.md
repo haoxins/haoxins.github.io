@@ -176,7 +176,7 @@ date: 2021-03-21
   provide an API for managing train models
   throughout the model development lifecycle.
 
-* ***Progressive Delivery***
+* **Progressive Delivery**
 
 ## Machine Learning Modeling Pipelines in Production
 

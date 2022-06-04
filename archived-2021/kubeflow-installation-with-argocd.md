@@ -4,7 +4,7 @@ description: 人生代代无穷已, 江月年年望相似. 不知江月待何人
 date: 2021-08-04
 ---
 
-* ***Outdated!!!***
+* **Outdated!!!**
 
 * [argoflow/argoflow](https://github.com/argoflow/argoflow)
   - [argoflow/argoflow-gcp](https://github.com/argoflow/argoflow-gcp)

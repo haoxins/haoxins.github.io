@@ -95,7 +95,7 @@ if tracing {
   **not created**.
 
 * **Don't design with interfaces, discover them.**
-  - ***Rob Pike***
+  - **Rob Pike**
 
 * Be conservative in what you do, be liberal
   in what you accept from others.
@@ -727,7 +727,7 @@ func readFiles(ch <-chan string) error {
   - Unicode is an extension of ASCII and
     contains `2^21` characters.
 
-* In Go, a ***rune*** is a **Unicode code point**.
+* In Go, a **rune** is a **Unicode code point**.
 * Some people believe that Go strings are
   always `UTF-8`, yet this is **not always true**.
 

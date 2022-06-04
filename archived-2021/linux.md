@@ -110,7 +110,7 @@ dig +short dashboard.awx.im
 
 ## 2021
 
-* Linux kernel ***5.15***
+* Linux kernel **5.15**
   - **ntfs3**: new `NTFS` driver for `5.15`
 
 | Version |  Released  | Projected EOL |

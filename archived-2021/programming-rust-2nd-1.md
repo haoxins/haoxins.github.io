@@ -187,7 +187,7 @@ assert!(rrx >= rry);
   that will invalidate the reference.
 
 * Most of the *control flow* tools in C are statements.
-  In Rust, they are ***all expressions***.
+  In Rust, they are **all expressions**.
 
 * It's never strictly necessary to use `if let`,
   because `match` can do everything `if let` can do.
@@ -238,13 +238,13 @@ let x = 1234.567 % 10.0; // approximately 4.567
   add it at the top of the `main.rs` or `lib.rs` file,
   before any items, and write **`#!`** instead of **`#`**.
 
-* ***Integration tests*** are `.rs` files that live in a **`tests`**
+* **Integration tests** are `.rs` files that live in a **`tests`**
   directory alongside your project's **`src`** directory.
   When you run `cargo test`, Cargo compiles each integration test
   as a separate, standalone crate, linked with your
   library and the Rust test harness.
 
-* ***Integration tests*** are valuable in part because
+* **Integration tests** are valuable in part because
   they see your crate from the *outside*, just as a user would.
   They test the crate's **public** API.
 

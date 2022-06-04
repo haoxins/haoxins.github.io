@@ -319,11 +319,11 @@ Alt-Svc: h3=":50781"
     to a *state synchronization* protocol.
   - **十分有趣**
 
-* ***Braid*** adds these features to HTTP:
-  - *Versioning* to HTTP resources
-  - *Subscriptions* to GET requests
-  - *Patches* to Range Requests
-  - *Merge-Types* to specify **OT**
+* **Braid** adds these features to HTTP:
+  - `Versioning` to HTTP resources
+  - `Subscriptions` to GET requests
+  - `Patches` to Range Requests
+  - `Merge-Types` to specify **OT**
     or **CRDT** behavior
 
 * [Envoy: HTTP3 overview (v1.20)](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/http/http3)
