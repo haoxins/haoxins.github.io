@@ -18,10 +18,10 @@ date: 2021-08-04
 * Istio **1.10**
 * Kubernetes **1.18**
 
-* Although *unit tests* are critical, a strong focus for
-  automated testing should be ***scenario or feature tests***.
+* Although unit tests are critical, a strong focus for
+  automated testing should be **scenario or feature tests**.
   - 赞同, 也是我的个人习惯
-  - 不能**单纯**面向数字 (*Coverage*) 写 tests
+  - 不能**单纯**面向数字 (`Coverage`) 写 tests
 
 * Lastly, as implementation details change because of
   refactoring, paying down technical debt, maintenance, etc.
@@ -124,12 +124,12 @@ date: 2021-08-04
 
 ## First steps with Istio
 
-* ***istioctl***
+* **istioctl**
 
 * Kubernetes is conceptually implemented as
   a set of *reconciliation controllers*.
-  An *operator* is just a user (or in this case, Istio)
-  supplied controller.
+  - An `operator` is just a user (or in this case, Istio)
+    supplied controller.
 
 * The **istio-system** namespace is special in that
   the *control plane* is deployed into it and is able to
@@ -701,7 +701,7 @@ spec:
   if it's explicitly whitelisted
   in the service-mesh registry.
 
-* ***ServiceEntry***
+* **ServiceEntry**
   - The Istio **ServiceEntry** encapsulates
     registry metadata that we can use to insert
     an *entry* into Istio's *service registry*
@@ -1484,7 +1484,7 @@ spec:
 * Using *`Kiali`* we can perform a quick
   *validation* of the configuration.
 
-* The ***Kiali validations*** are helpful and should be
+* The **Kiali validations** are helpful and should be
   one of the first steps when your workloads are not
   behaving according to your expectation.
   - **Kiali validations** 赞!
@@ -1673,7 +1673,7 @@ istioctl pc routes deploy/istio-ingressgateway \
   of Istio and is a "break glass" solution. The underlying
   *Envoy API* may change at any time between releases of
   Istio so be sure to validate any `EnvoyFilter` you deploy.
-* ***Do not assume any backward compatibility here***.
+* **Do not assume any backward compatibility here**.
 * Bad configuration with this API can potentially
   **take down the entire Istio data plane**.
 
@@ -1694,7 +1694,7 @@ istioctl pc routes deploy/istio-ingressgateway \
 * For example, if you have `VirtualService` or
   `DestinationRule` resources, those configurations
   will be applied to the data plane first.
-* Lastly, you should ***take great care*** when
+* Lastly, you should **take great care** when
   configuring a workload with the `EnvoyFilter`
   resource.
 
@@ -1758,7 +1758,7 @@ spec:
             end
 ```
 
-* Extending Istio's data plane with ***WebAssembly***
+* Extending Istio's data plane with **WebAssembly**
 
 * [solo-io/wasm](https://github.com/solo-io/wasm)
   - WebAssembly (WASM) is the future of
