@@ -225,10 +225,10 @@ g.V()
 * The `emit()` step is similar to the `until()` step,
   whether it's placed before or after the `repeat()` step,
   that impacts how it behaves.
-* If the `emit()` is placed before the `repeat()`,
-  it includes the starting vertex.
-  If it's placed after the `repeat()`,
-  it only emits the vertices traversed as part of the loop.
+  - If the `emit()` is placed before the `repeat()`,
+    it includes the starting vertex.
+  - If it's placed after the `repeat()`,
+    it only emits the vertices traversed as part of the loop.
 
 ## Pathfinding traversals and mutating graphs
 
@@ -266,7 +266,7 @@ g.addE('friends')
 
 * The `iterate()` step and the similar `next()` step
   both cause the traversal to execute.
-  The key *difference* between these is that the `iterate()` step
+* The key *difference* between these is that the `iterate()` step
   does not return a result, while the `next()` step
   returns the result of the traversal.
 
@@ -277,11 +277,10 @@ dave = g
   .next()
 ```
 
-* **`next()`**
-  - A terminal step that takes the iterable
-    traversal source composed from the previous steps,
-    iterates it once, and returns the first or
-    next item in the iterable.
+* `next()`: A terminal step that takes the iterable
+  traversal source composed from the previous steps,
+  iterates it once, and returns the first or
+  next item in the iterable.
 
 * Because *Gremlin* is **lazily evaluated**,
   we need to iterate our traversal in order to get a result.
@@ -290,11 +289,10 @@ dave = g
 
 ### Paths
 
-* **`path()`**
-  - Using the `path()` step in Gremlin requires
-    additional resource overhead on the server
-    because each traverser needs to maintain the
-    entire history of the steps it visits.
+* `path()`: Using the `path()` step in Gremlin requires
+  additional resource overhead on the server
+  because each traverser needs to maintain the
+  entire history of the steps it visits.
 
 * Cycles in graphs
 
@@ -368,7 +366,7 @@ g.V().has('person', 'first_name', 'Ted')
 * `by(key)`
 * `by(traversal)`
 
-* There are two forms of *`by()`*.
+* There are two forms of `by()`.
   - The first form takes the *property key* and returns
     the corresponding property value from the labeled element.
   - The second form takes a *traversal* that allows us to
@@ -413,15 +411,15 @@ g.V().hasLabel('person')
   .by(bothE().count())
 ```
 
-* *Selection* uses the `select()` step to
+* **Selection** uses the `select()` step to
   create a result set based on previously
   traversed elements of a graph.
-  To use the `select()` step, we alias
-  each of the elements with the `as()` step for later use.
-* *Projection* uses the `project()` step to
+  - To use the `select()` step, we alias each of the
+    elements with the `as()` step for later use.
+* **Projection** uses the `project()` step to
   branch from the current location within
   the graph and creates new objects.
-  In our present example, we had one element remain static,
+* In our present example, we had one element remain static,
   the person's name, but we needed the other elements
   to be calculated through further traversing of
   the graph to return the number of friends.
@@ -498,7 +496,7 @@ g.V().has('person', 'first_name', 'Dave')
 
 ## Advanced data modeling techniques
 
-* *`union(traversal, traversal, ...)`*
+* `union(traversal, traversal, ...)`
   - Processes each traversal separately and
     outputs the combined results as a single result set.
   - A `union()` step is a branching step that requires
@@ -507,7 +505,7 @@ g.V().has('person', 'first_name', 'Dave')
 
 * **Denormalizing** graph data
   - **precalculated** fields and **duplicated** data
-  - *copying* data into multiple locations at write time
+  - **copying** data into multiple locations at write time
     to increase performance at read time
   - In a graph database, denormalization is all about
     *reducing the length of the traversal* required to
@@ -520,8 +518,8 @@ g.V().has('person', 'first_name', 'Dave')
 
 * **Copying properties** into more than one location
   in our graph allows us to optimize for multiple,
-  different traversal paths at
-  the expense of *keeping data in sync*.
+  different traversal paths at the expense
+  of keeping data in sync.
 
 > Unlike relational data models, both technical and
   non-technical users can understand graph data models.
@@ -538,13 +536,13 @@ g.V().has('person', 'person_id', 2)
   .next()
 ```
 
-* *`subgraph(sideEffectKey)`*
-  - Defines an *edge-induced* subgraph within a larger set of graph data.
-  - The *sideEffectKey* is a reference to the full results of the side effect.
+* `subgraph(sideEffectKey)`
+  - Defines an `edge-induced` subgraph within a larger set of graph data.
+  - The `sideEffectKey` is a reference to the full results of the side effect.
 
-* *`cap(sideEffectKey)`*
+* `cap(sideEffectKey)`
   - Iterates the traversal up to itself and emits the results
-    of the side effect referenced by the *sideEffectKey*.
+    of the side effect referenced by the `sideEffectKey`.
 
 ## Performance, pitfalls, and anti-patterns
 

@@ -324,7 +324,7 @@ xnew[j][i] = (x[j][i] + x[j][i-1] + x[j][i+1] + x[j-1][i] + x[j+1][i]) / 5.0;
   - **Local (tile) information**: The local size in
     each dimension, which corresponds to the tile
     size in this dimension, or the local index in
-    each dimension, which cor- responds to the
+    each dimension, which corresponds to the
     tile index in this dimension
   - **Group information**: The number of groups in
     each dimension, which corresponds to the number
@@ -410,7 +410,7 @@ gid = blockIdx.x * blockDim.x + threadIdx.x;
     when to move the data and doing it for you behind
     the scenes. As this is such a major part of GPU
     programming, innovation continues to occur on the
-    hardware and soft- ware side for this functionality.
+    hardware and software side for this functionality.
   - **Synchronization**
   - A mechanism must be provided to specify the
     synchronization requirements between the CPU
