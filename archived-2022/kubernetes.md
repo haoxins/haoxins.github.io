@@ -241,6 +241,12 @@ kube-system
 
 ### 2022
 
+- [Apache Flink Kubernetes Operator 1.0.0 Release Announcement](https://flink.apache.org/news/2022/06/05/release-kubernetes-operator-1.0.0.html)
+  - `05 Jun 2022`
+  - Flink `1.15` (Recommended)
+  - What's Next?
+  - Auto-scaling using Horizontal Pod Autoscaler
+
 - 我喜欢的 JupyterLab `v3.4` 细节优化
   - 即时地 Python __lint__ 提示
   - 即时地 Python __hint__ 展示
