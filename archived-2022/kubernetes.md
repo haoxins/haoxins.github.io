@@ -190,7 +190,7 @@ premium-rwo   pd.csi.storage.gke.io  pd-ssd
 ```
 
 - **Workload Identity**
-  - 基于 *Google Compute Engine (GCE)* `metadata service`.
+  - 基于 Google Compute Engine (GCE) metadata service.
 
 ```zsh
 curl http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/?recursive=true \
