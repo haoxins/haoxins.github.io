@@ -1,7 +1,7 @@
 * [Algorithms](articles/algorithms.md)
 * [边界 连接](articles/bridge.md)
 * [Blockchain & Cryptography](articles/cryptography.md)
-* [泛函分析导论及应用](articles/math-functional-analysis.md)
+* [泛函分析导论](articles/math-functional-analysis.md)
 * [测度论](articles/math-measure-theory.md)
 * [我的推荐书单~](articles/reading-recommended.md)
 ### 2022
