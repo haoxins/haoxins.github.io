@@ -113,6 +113,10 @@ date: 2022-01-17
   - 3) 过度宣传, 文档的描述不务实. 对比列表, 完胜所有对手, 很假.
   - 4) 根据 GitHub Issues, 不像有较多人在用.
 
+- [Switch DataFusion to using arrow2](https://github.com/apache/arrow-datafusion/issues/1532)
+  - https://github.com/jorgecarleitao/arrow2
+  - https://github.com/jorgecarleitao/parquet2
+
 - 关于 `Flink` 的替代
   - 首先, `Flink` 的 `Scope` 其实和 `K8s` 是有重叠的;
   - 同时, `Flink` 的各种历史包袱也很多.

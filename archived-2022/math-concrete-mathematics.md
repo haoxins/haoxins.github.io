@@ -204,6 +204,12 @@ $$ k \perp m 且 k \perp n \Leftrightarrow k \perp mn  $$
 - 其思想是从两个分数
   $$ \left ( \frac{0}{1}, \frac{1}{0} \right ) $$
   出发, 然后依照你希望的次数重复下面的操作:
+  - 在两个相邻接的分数
+    $$ \frac{m}{n} $$
+    和
+    $$ \frac{m'}{n'} $$
+    之间插入
+    $$ \frac{m + m'}{n + n'} $$
 
 ## 特殊的数
 

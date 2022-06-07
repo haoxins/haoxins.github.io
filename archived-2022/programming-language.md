@@ -84,6 +84,9 @@ GODEBUG=gctrace=1 go test -bench=. -v
 
 ------------------
 
+- `2022-06`, 公司有团队在推 [Quarkus](https://github.com/quarkusio/quarkus)
+  - 其实, 只要不是 Spring boot, 都不错
+
 - `2022-05`, 有一个新的 Service 项目, 较简单, 所以上了 `Go 1.18`
   - Go 用来开发 Web Service, 说实话, 体验还是较差
   - 优势在于资源占用低, 相较于目前公司内部主流的 Spring + Kotlin
@@ -114,7 +117,7 @@ GODEBUG=gctrace=1 go test -bench=. -v
 - `2022-04`: 把一个 __Model Serving Framework__ 从
   - [Flask](https://github.com/pallets/flask) `v2`
   - [Gunicorn](https://github.com/benoitc/gunicorn)
-  - 迁移到了
+  - __迁移到了__
   - [FastAPI](https://github.com/tiangolo/fastapi)
   - [Uvicorn](https://github.com/encode/uvicorn)
 
@@ -236,10 +239,6 @@ Python 3.8.2
 
 - macOS Monterey `12.3`
   - Python `2.7` was removed from macOS in this update.
-
-- [Switch DataFusion to using arrow2](https://github.com/apache/arrow-datafusion/issues/1532)
-  - https://github.com/jorgecarleitao/arrow2
-  - https://github.com/jorgecarleitao/parquet2
 
 - __Deprecated__ `io/ioutil`: As of Go `1.16`,
   the same functionality is now provided by
