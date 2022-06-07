@@ -210,6 +210,8 @@ $$ k \perp m 且 k \perp n \Leftrightarrow k \perp mn  $$
     $$ \frac{m'}{n'} $$
     之间插入
     $$ \frac{m + m'}{n + n'} $$
+  - 新的分数 `(m + m')/(n + n')` 称为
+    `m/n` 和 `m'/n'` 的`中位分数`
 
 ## 特殊的数
 
