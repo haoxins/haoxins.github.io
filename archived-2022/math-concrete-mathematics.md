@@ -215,6 +215,8 @@ $$ k \perp m 且 k \perp n \Leftrightarrow k \perp mn  $$
 
 ## 特殊的数
 
+### 斯特林数
+
 ## 生成函数
 
 ## 离散概率
