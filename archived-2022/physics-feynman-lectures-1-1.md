@@ -1159,6 +1159,34 @@ $$
 
 ## 空间转动
 
+- 为什么转矩是一个矢量呢? 我们能够把一个平面和单一的一根轴联系起来,
+  从而能把矢量和转矩联系起来是十分幸运的奇迹; 这是三维空间的一个特性.
+  - 在二维空间中, 转矩是一个普通的标量, 没有规定方向的必要.
+  - 在三维空间中, 它是一个矢量.
+  - 假如是四维空间, 困难就很大, 因为 (例如我们取时间为第四维)
+    不仅有 `xy`, `yz` 和 `zx` 平面,
+    还有 `tx`, `ty` 和 `tz` 平面.
+  - 这里有`6`个面, 人们不能把`6`个量表示为四维空间中的一个矢量.
+
+$$
+\boldsymbol{a} \times (\boldsymbol{b} + \boldsymbol{c}) =
+\boldsymbol{a} \times \boldsymbol{b} + \boldsymbol{a} \times \boldsymbol{c} \\
+
+(α \boldsymbol{a}) \times \boldsymbol{b} =
+α(\boldsymbol{a} \times \boldsymbol{b}) \\
+
+\boldsymbol{a} \centerdot (\boldsymbol{a} \times \boldsymbol{c}) =
+(\boldsymbol{a} \times \boldsymbol{b}) \centerdot \boldsymbol{c} \\
+
+\boldsymbol{a} \times (\boldsymbol{a} \times \boldsymbol{c}) =
+\boldsymbol{b} (\boldsymbol{a} \centerdot \boldsymbol{c}) -
+\boldsymbol{c} (\boldsymbol{a} \centerdot \boldsymbol{b}) \\
+
+\boldsymbol{a} \times \boldsymbol{a} = 0 \\
+
+\boldsymbol{a} \centerdot (\boldsymbol{a} \times \boldsymbol{b}) = 0
+$$
+
 ```
 当我们深入到越来越高级的物理学时,
 将会看到很多简单的东西用数学的方法来推导要比从基本的或简单的意义上去真正理解它们来得快一些.
@@ -1175,7 +1203,7 @@ $$
   而对于第三根轴的转动惯量则处于两者之间 (或等于其中之一).
   - 这三根轴称为物体的主轴, 它们具有一个很重要的性质:
     如果物体绕其中一个轴转动, 它的角动量与角速度的方向相同.
-  - 对于具有对称轴的物体来说,它的主轴就是对称轴.
+  - 对于具有对称轴的物体来说, 它的主轴就是对称轴.
 
 ## 谐振子
 
