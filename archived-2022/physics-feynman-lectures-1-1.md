@@ -1170,19 +1170,19 @@ $$
 
 $$
 \boldsymbol{a} \times (\boldsymbol{b} + \boldsymbol{c}) =
-\boldsymbol{a} \times \boldsymbol{b} + \boldsymbol{a} \times \boldsymbol{c} \\
+\boldsymbol{a} \times \boldsymbol{b} + \boldsymbol{a} \times \boldsymbol{c} \newline
 
 (α \boldsymbol{a}) \times \boldsymbol{b} =
-α(\boldsymbol{a} \times \boldsymbol{b}) \\
+α(\boldsymbol{a} \times \boldsymbol{b}) \newline
 
 \boldsymbol{a} \centerdot (\boldsymbol{a} \times \boldsymbol{c}) =
-(\boldsymbol{a} \times \boldsymbol{b}) \centerdot \boldsymbol{c} \\
+(\boldsymbol{a} \times \boldsymbol{b}) \centerdot \boldsymbol{c} \newline
 
 \boldsymbol{a} \times (\boldsymbol{a} \times \boldsymbol{c}) =
 \boldsymbol{b} (\boldsymbol{a} \centerdot \boldsymbol{c}) -
-\boldsymbol{c} (\boldsymbol{a} \centerdot \boldsymbol{b}) \\
+\boldsymbol{c} (\boldsymbol{a} \centerdot \boldsymbol{b}) \newline
 
-\boldsymbol{a} \times \boldsymbol{a} = 0 \\
+\boldsymbol{a} \times \boldsymbol{a} = 0 \newline
 
 \boldsymbol{a} \centerdot (\boldsymbol{a} \times \boldsymbol{b}) = 0
 $$
