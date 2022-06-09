@@ -1188,7 +1188,7 @@ $$
 
 \boldsymbol{a} \centerdot (\boldsymbol{a} \times \boldsymbol{b}) = 0
 
-\begin{end}
+\end{align}
 $$
 
 ```
