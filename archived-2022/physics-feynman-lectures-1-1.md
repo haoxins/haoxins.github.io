@@ -1171,22 +1171,22 @@ $$
 $$
 \begin{align}
 
-\boldsymbol{a} \times (\boldsymbol{b} + \boldsymbol{c}) =
+\boldsymbol{a} \times (\boldsymbol{b} + \boldsymbol{c}) & =
 \boldsymbol{a} \times \boldsymbol{b} + \boldsymbol{a} \times \boldsymbol{c} \\
 
-(α \boldsymbol{a}) \times \boldsymbol{b} =
+(α \boldsymbol{a}) \times \boldsymbol{b} & =
 α(\boldsymbol{a} \times \boldsymbol{b}) \\
 
-\boldsymbol{a} \centerdot (\boldsymbol{a} \times \boldsymbol{c}) =
+\boldsymbol{a} \centerdot (\boldsymbol{a} \times \boldsymbol{c}) & =
 (\boldsymbol{a} \times \boldsymbol{b}) \centerdot \boldsymbol{c} \\
 
-\boldsymbol{a} \times (\boldsymbol{a} \times \boldsymbol{c}) =
+\boldsymbol{a} \times (\boldsymbol{a} \times \boldsymbol{c}) & =
 \boldsymbol{b} (\boldsymbol{a} \centerdot \boldsymbol{c}) -
 \boldsymbol{c} (\boldsymbol{a} \centerdot \boldsymbol{b}) \\
 
-\boldsymbol{a} \times \boldsymbol{a} = 0 \\
+\boldsymbol{a} \times \boldsymbol{a} & = 0 \\
 
-\boldsymbol{a} \centerdot (\boldsymbol{a} \times \boldsymbol{b}) = 0
+\boldsymbol{a} \centerdot (\boldsymbol{a} \times \boldsymbol{b}) & = 0
 
 \end{align}
 $$
