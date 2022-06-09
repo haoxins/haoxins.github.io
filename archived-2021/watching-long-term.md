@@ -6,6 +6,8 @@ date: 2021-02-12
 
 ## 2022
 
+* [Ready for Rust • Erik Doernenburg • GOTO 2021](https://www.youtube.com/watch?v=WgLlwjZNEtY)
+
 * [Rust crates 大巡礼: AWS 最新发布的 s2n-quic - 简介](https://www.bilibili.com/video/BV19m4y197Jm)
   - https://github.com/aws/s2n-quic
   - https://github.com/cloudflare/quiche
@@ -14,9 +16,6 @@ date: 2021-02-12
   - quinn API 偏底层
 
 ## 2021
-
-* [RISC-V 上的操作系统](https://www.bilibili.com/video/BV1Q5411w7z5)
-  - 循序渐进, 学习开发一个 RISC-V 上的操作系统 - 汪辰 - 2021春
 
 * [P vs. NP and the Computational Complexity Zoo](https://www.youtube.com/watch?v=YX40hbAHx3s)
 
@@ -65,6 +64,8 @@ date: 2021-02-12
   - 橡胶果实 `->` 人人果实 幻兽种 尼卡形态 (呵呵, 硬着头皮编完吧)
   - 2022-02: 大妈, 败!
   - 2022-05: 凯多, 败!
+  - 2022-06: 官宣, 即将到来的是: 最终章
+    希望完结之后不要再狗尾续貂
 
 * 2021
   - 和之国大战白热化
