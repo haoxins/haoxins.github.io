@@ -1177,10 +1177,10 @@ $$
 (α \boldsymbol{a}) \times \boldsymbol{b} & =
 α(\boldsymbol{a} \times \boldsymbol{b}) \\
 
-\boldsymbol{a} \centerdot (\boldsymbol{a} \times \boldsymbol{c}) & =
+\boldsymbol{a} \centerdot (\boldsymbol{b} \times \boldsymbol{c}) & =
 (\boldsymbol{a} \times \boldsymbol{b}) \centerdot \boldsymbol{c} \\
 
-\boldsymbol{a} \times (\boldsymbol{a} \times \boldsymbol{c}) & =
+\boldsymbol{a} \times (\boldsymbol{b} \times \boldsymbol{c}) & =
 \boldsymbol{b} (\boldsymbol{a} \centerdot \boldsymbol{c}) -
 \boldsymbol{c} (\boldsymbol{a} \centerdot \boldsymbol{b}) \\
 
@@ -1193,7 +1193,7 @@ $$
 
 - 现在我们要问, 是否在物理学中的任何方程都可以写成叉积的形式呢?
   回答是大多数的方程都可以这样写.
-  -例如, 我们立即可以看出转矩等于位置矢量和力的叉积
+  - 例如, 我们立即可以看出转矩等于位置矢量和力的叉积
 
 $$
 \tau = \boldsymbol{r} \times \boldsymbol{F}
@@ -1211,7 +1211,7 @@ $$
 
 - 对于三维空间转动来说, 与牛顿的
   $$ \boldsymbol{F} = d\boldsymbol{p} / dt $$
-  定律相类似的动力学定律是:转矩矢量等干角动量矢量随时间的变化率
+  定律相类似的动力学定律是: 转矩矢量等干角动量矢量随时间的变化率
 
 $$
 \boldsymbol{\tau} = d\boldsymbol{L} / dt
