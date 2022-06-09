@@ -1196,7 +1196,7 @@ $$
   - 例如, 我们立即可以看出转矩等于位置矢量和力的叉积
 
 $$
-\tau = \boldsymbol{r} \times \boldsymbol{F}
+\boldsymbol{\tau} = \boldsymbol{r} \times \boldsymbol{F}
 $$
 
 - 这是包含
@@ -1220,7 +1220,7 @@ $$
 - 假如对很多粒子求和, 那么作用在一个系统上的外转矩是总角动量的变化率
 
 $$
-\boldsymbol{tau}_{外} = d\boldsymbol{L}_{总} / dt
+\boldsymbol{\tau}_{外} = d\boldsymbol{L}_{总} / dt
 $$
 
 ---
