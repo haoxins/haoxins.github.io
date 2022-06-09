@@ -7,6 +7,7 @@ date: 2021-02-12
 ## 2022
 
 * [Ready for Rust • Erik Doernenburg • GOTO 2021](https://www.youtube.com/watch?v=WgLlwjZNEtY)
+  - Jun 1, 2022
 
 * [Rust crates 大巡礼: AWS 最新发布的 s2n-quic - 简介](https://www.bilibili.com/video/BV19m4y197Jm)
   - https://github.com/aws/s2n-quic
@@ -64,7 +65,7 @@ date: 2021-02-12
   - 橡胶果实 `->` 人人果实 幻兽种 尼卡形态 (呵呵, 硬着头皮编完吧)
   - 2022-02: 大妈, 败!
   - 2022-05: 凯多, 败!
-  - 2022-06: 官宣, 即将到来的是: 最终章
+  - 2022-06: 官宣, 即将到来的是: 最终章!
     希望完结之后不要再狗尾续貂
 
 * 2021
