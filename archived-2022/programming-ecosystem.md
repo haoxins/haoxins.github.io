@@ -34,6 +34,9 @@ date: 2022-01-17
 
 ## 2022
 
+- [Ray-1.13.0](https://github.com/ray-project/ray/releases/tag/ray-1.13.0)
+  - Python `3.10` support is now in alpha.
+
 - [RFC 9114 - HTTP3](https://www.rfc-editor.org/rfc/rfc9114)
 
 - [RFC: Introducing Ray AI Runtime](https://github.com/ray-project/ray/issues/22488)

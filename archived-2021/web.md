@@ -32,10 +32,6 @@ test('top level test', async (t) => {
 })
 ```
 
-> - 为啥我又关注 Node.js 了? 因为:
->   1. Kubeflow 相关工作
->   2. 公司内部, 兼职 Lead 一个重度涉及 前端/Node.js 的项目
-
 - [WebAssembly v2](https://github.com/WebAssembly/spec/pull/1443)
   - 真正意义上的 `v1`
 
