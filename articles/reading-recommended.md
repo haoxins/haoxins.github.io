@@ -20,7 +20,6 @@ date: 2021-05-03
 -- 理查德·费曼
 ```
 
-- [代数的历史](https://book.douban.com/subject/35428125/)
-  - 期待能有修订版, 干货比较少, 内容也不够翔实, 毕竟说了是历史
+- [数学及其历史](https://book.douban.com/subject/6028251/)
 
 - __TODO__ 近世代数概论
