@@ -23,3 +23,5 @@ date: 2021-05-03
 - [数学及其历史](https://book.douban.com/subject/6028251/)
 
 - __TODO__ 近世代数概论
+
+- __TODO__ [唐宋词十七讲](https://book.douban.com/subject/2005705/)
