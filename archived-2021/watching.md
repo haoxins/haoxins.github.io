@@ -10,6 +10,8 @@ date: 2019-10-24
 
 ### 2022-06
 
+- 重温 [神探狄仁杰2](https://movie.douban.com/subject/2377277/)
+
 - 重温 [神探狄仁杰](https://movie.douban.com/subject/2995948/)
 
 - 重温 [加勒比海盗5: 死无对证](https://movie.douban.com/subject/6311303/)
