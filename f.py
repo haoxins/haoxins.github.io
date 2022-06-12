@@ -76,7 +76,7 @@ def gen_contents(sub_path):
         with open(i["path"], "r") as f:
             lines = f.readlines()
             title = lines[1].split(":").pop().strip()
-            content = f'* [{title}]({sub_path}/{i["name"]})'
+            content = f'- [{title}]({sub_path}/{i["name"]})'
             index_contents.append(content)
 
 
