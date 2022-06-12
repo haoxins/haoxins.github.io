@@ -19,6 +19,7 @@
 * [复分析 可视化方法 (下)](archived-2022/math-complex-analysis-2.md)
 * [具体数学 计算机科学基础](archived-2022/math-concrete-mathematics.md)
 * [伽罗瓦理论 群论](archived-2022/math-galois-theory.md)
+* [数学及其历史, 代数的历史, 一个数学家的辩白](archived-2022/math-history.md)
 * [纯数学教程 哈代 (上)](archived-2022/math-pure-mathematics-1.md)
 * [纯数学教程 哈代 (下)](archived-2022/math-pure-mathematics-2.md)
 * [基础拓扑学 修订版](archived-2022/math-topology.md)
