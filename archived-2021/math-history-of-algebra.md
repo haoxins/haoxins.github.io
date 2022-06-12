@@ -1,8 +1,12 @@
 ---
-title: 代数的历史
+title: 数学及其历史, 代数的历史, 一个数学家的辩白
 description: 人类对未知量的不舍追踪 (修订版)
 date: 2021-08-23
 ---
+
+- [数学及其历史](https://book.douban.com/subject/6028251/)
+
+------------------
 
 * [代数的历史](https://book.douban.com/subject/35428125/)
   - 副标题: 人类对未知量的不舍追踪 (修订版)
