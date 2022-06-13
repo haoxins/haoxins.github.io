@@ -25,3 +25,5 @@ date: 2021-05-03
 - __TODO__ 近世代数概论
 
 - __TODO__ [唐宋词十七讲](https://book.douban.com/subject/2005705/)
+
+- __TODO__ 静候, 张朝阳物理学讲义
