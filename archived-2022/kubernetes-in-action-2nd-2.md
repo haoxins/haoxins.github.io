@@ -44,3 +44,107 @@ before creating the next one.
   - This is how stateful Pods maintain their stable network identity.
   - These DNS records don't exist when the __headless__ Service
     isn't associated with a StatefulSet.
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: quiz-pods
+spec:
+  clusterIP: None
+  publishNotReadyAddresses: true
+  selector:
+    app: quiz
+  ports:
+  - name: mongodb
+    port: 27017
+```
+
+- In the listing, the `clusterIP` field is set to `None`,
+  which makes this a `headless` Service.
+- If you set `publishNotReadyAddresses` to `true`,
+  the DNS records for each Pod are created immediately when
+  the Pod is created, rather than only when the Pod is ready.
+
+```yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: quiz
+spec:
+  serviceName: quiz-pods
+  podManagementPolicy: Parallel
+  replicas: 3
+  selector:
+    matchLabels:
+      app: quiz
+  template:
+    metadata:
+      labels:
+        app: quiz
+        ver: "0.1"
+    spec:
+      volumes:
+      - name: db-data
+        persistentVolumeClaim:
+          claimName: db-data
+      containers:
+      - name: quiz-api
+        ...
+      - name: mongo
+        ...
+        volumeMounts:
+        - name: db-data
+          mountPath: /data/db
+  volumeClaimTemplates:
+  - metadata:
+      name: db-data
+      labels:
+        app: quiz
+    spec:
+      resources:
+        requests:
+          storage: 10Gi
+      accessModes:
+      - ReadWriteOnce
+```
+
+- In the `serviceName` field, for example,
+  you specify the name of the headless Service
+  that governs this StatefulSet.
+- By setting `podManagementPolicy` to `Parallel`,
+  the StatefulSet controller creates all Pods simultaneously.
+- Unlike the Pod templates, where you omit the name field,
+  you __must__ specify the name in the `PersistentVolumeClaim` template.
+  - This name __must__ match the name in the
+    volumes section of the Pod template.
+
+- The only label you defined in the Pod template in the
+  StatefulSet manifest was `app`, but the StatefulSet
+  controller added two additional labels to the Pod:
+  - The label `controller-revision-hash` serves the same
+    purpose as the label `pod-template-hash` on the
+    Pods of a ReplicaSet.
+  - It allows the controller to determine to which
+    revision of the StatefulSet a particular Pod belongs.
+  - The label `statefulset.kubernetes.io/pod-name` specifies
+    the Pod name and allows you to create a Service for
+    a specific Pod instance by using this label in
+    the Service's label selector.
+- Since this Pod object is managed by the StatefulSet,
+  the `ownerReferences` field indicates this fact.
+  - Unlike Deployments, where Pods are owned by ReplicaSets,
+    which in turn are owned by the Deployment,
+  - StatefulSets own the Pods directly.
+- The Pod's containers match the containers defined
+  in the StatefulSet's Pod template, but that's
+  __not__ the case for the Pod's volumes.
+  - In the template you specified the `claimName` as `db-data`,
+    but here in the Pod it's been changed to `db-data-quiz-0`.
+  - This is because each Pod instance gets its own
+    `PersistentVolumeClaim`.
+  - The name of the claim is made up of the `claimName`
+    and the name of the Pod.
+
+
+### Understanding StatefulSet behavior
