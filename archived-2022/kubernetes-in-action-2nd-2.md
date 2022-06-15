@@ -38,9 +38,9 @@ Then the StatefulSet controller waits until the Pod is ready
 before creating the next one.
 ```
 
-- When using a headless Service with a StatefulSet,
+- When using a __headless__ Service with a StatefulSet,
   an additional DNS record is created for each Pod so that
   the IP address of each Pod can be looked up by its name.
   - This is how stateful Pods maintain their stable network identity.
-  - These DNS records don't exist when the headless Service
+  - These DNS records don't exist when the __headless__ Service
     isn't associated with a StatefulSet.
