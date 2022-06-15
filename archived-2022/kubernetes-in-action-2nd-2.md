@@ -61,7 +61,7 @@ spec:
 ```
 
 - In the listing, the `clusterIP` field is set to `None`,
-  which makes this a `headless` Service.
+  which makes this a __headless__ Service.
 - If you set `publishNotReadyAddresses` to `true`,
   the DNS records for each Pod are created immediately when
   the Pod is created, rather than only when the Pod is ready.
@@ -119,6 +119,8 @@ spec:
   - This name __must__ match the name in the
     volumes section of the Pod template.
 
+---
+
 - The only label you defined in the Pod template in the
   StatefulSet manifest was `app`, but the StatefulSet
   controller added two additional labels to the Pod:
@@ -145,6 +147,8 @@ spec:
     `PersistentVolumeClaim`.
   - The name of the claim is made up of the `claimName`
     and the name of the Pod.
+
+---
 
 
 ### Understanding StatefulSet behavior
