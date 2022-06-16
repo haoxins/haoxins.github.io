@@ -4,14 +4,17 @@ description: 料峭春风吹酒醒, 微冷, 山头斜照却相迎
 date: 2019-05-30
 ---
 
-* **Goodbye, Coursera!**
+## 2022
 
-* **未来, 期待 Coursera 能有一些优质的量子计算的课程**
+- [机器学习 专项课程 v2](https://www.coursera.org/specializations/machine-learning-introduction)
+  - 2022-06-16
 
-* [Cryptography II](https://www.coursera.org/learn/crypto2)
+- __未来, 期待 Coursera 能有一些优质的量子计算的课程__
+
+- [Cryptography II](https://www.coursera.org/learn/crypto2)
   - 跳票 几年了 ~
   - 授课大神 Dan Boneh 也研究 区块链 了 :)
-  - *BLS Signatures*
+  - _BLS Signatures_
   - 不抱期望了, ByeBye, Coursera
 
 ------------------
@@ -19,7 +22,7 @@ date: 2019-05-30
 ## 2021
 
 * [Machine Learning Engineering for Production (MLOps)](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops)
-  - 这个来的蛮及时的, 正好要做 *ML Platform* 了
+  - 这个来的蛮及时的, 正好要做 _ML Platform_ 了
   - **2020+** 的这几年, **ML 的工程化**
   - 像极了 **2015+** 的 **前端工程化**
   - 像极了 **2018+** 的 **微服务, 云原生**

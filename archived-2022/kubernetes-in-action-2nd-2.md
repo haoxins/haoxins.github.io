@@ -150,5 +150,15 @@ spec:
 
 ---
 
+- A Service object not only exposes a set of Pods at a stable
+  IP address but also makes the cluster DNS resolve the Service
+  name to this IP address.
+- With a headless Service, on the other hand, the name resolves
+  to the IPs of the Pods that belong to the Service.
+- __However__, when a headless Service is associated with a
+  StatefulSet, each Pod also gets its own `A` or `AAAA` record
+  that resolves directly to the individual Pod's IP.
+  - In addition to the `A` and `AAAA` records,
+    each stateful Pod also gets `SRV` records.
 
 ### Understanding StatefulSet behavior
