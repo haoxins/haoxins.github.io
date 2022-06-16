@@ -215,3 +215,46 @@ you must also delete the Pod object.
   - Retaining PersistentVolumeClaims is the default behavior,
     but you can configure the StatefulSet to delete them via
     the `persistentVolumeClaimRetentionPolicy` field.
+
+> It's common for a StatefulSet to be associated with __both__
+  a regular Service and a headless Service.
+
+```yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: quiz
+spec:
+  persistentVolumeClaimRetentionPolicy:
+    whenScaled: Delete
+    whenDeleted: Retain
+  ...
+```
+
+- If you want to delete a StatefulSet but keep the Pods and the
+  PersistentVolumeClaims, you can use the `--cascade=orphan` option.
+  - In this case, the PersistentVolumeClaims will be preserved
+    even if the retention policy is set to `Delete`.
+
+- Another way to ensure data retention is to set the
+  `reclaimPolicy` in the StorageClass referenced in the
+  PersistentVolumeClaim template to `Retain`.
+
+---
+
+- The default `podManagementPolicy` is `OrderedReady`,
+  but you can relax the StatefulSet ordering guarantees
+  by changing the policy to `Parallel`.
+  - __OrderedReady__
+  - Pods are created one at a time in ascending order.
+  - After creating each Pod, the controller waits until the
+    Pod is ready before creating the next Pod.
+  - When scaling down, the Pods are deleted in reverse order.
+  - The controller waits until each deleted Pod is
+    finished before deleting the next one.
+  - __Parallel__
+  - All Pods are created and deleted at the same time.
+  - The controller doesn't wait for individual Pods to be ready.
+- Another feature of the OrderedReady Pod management policy is
+  that the controller blocks the scale-down operation
+  if not all replicas are ready.
