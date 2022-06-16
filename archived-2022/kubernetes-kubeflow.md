@@ -168,20 +168,13 @@ k get secret kube-prometheus-stack-grafana \
 
 ------------------
 
-## GCP/GKE
+## GCP & GKE
 
 ```zsh
-export PROJECT_ID=$(gcloud config get-value project)
-
-gcloud container clusters create $PROJECT_ID-test-only \
-  --project=$PROJECT_ID \
-  --workload-pool=$PROJECT_ID.svc.id.goog \
-  --machine-type=e2-standard-4 \
-  --zone=asia-southeast1-c \
-  --num-nodes=3
+gcloud compute ssh node-id
 ```
 
-- *Storage classes* (Default)
+- Storage classes (Default)
 
 ```
 standard      kubernetes.io/gce-pd   pd-standard

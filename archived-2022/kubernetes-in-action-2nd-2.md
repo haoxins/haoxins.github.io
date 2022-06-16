@@ -11,11 +11,11 @@ date: 2021-09-07
 
 - Therefore, to deploy a MongoDB replica set in Kubernetes,
   you need to ensure that:
-  - each Pod has its own `PersistentVolume`,
+  - each Pod has its own PersistentVolume,
   - each Pod is addressable by its own unique address,
   - when a Pod is deleted and replaced,
     the new Pod is assigned the same
-    address and `PersistentVolume`.
+    address and PersistentVolume.
 
 ```
 As with Deployments, in a StatefulSet you specify a Pod template,
@@ -115,7 +115,7 @@ spec:
 - By setting `podManagementPolicy` to `Parallel`,
   the StatefulSet controller creates all Pods simultaneously.
 - Unlike the Pod templates, where you omit the name field,
-  you __must__ specify the name in the `PersistentVolumeClaim` template.
+  you __must__ specify the name in the PersistentVolumeClaim template.
   - This name __must__ match the name in the
     volumes section of the Pod template.
 
@@ -144,7 +144,7 @@ spec:
   - In the template you specified the `claimName` as `db-data`,
     but here in the Pod it's been changed to `db-data-quiz-0`.
   - This is because each Pod instance gets its own
-    `PersistentVolumeClaim`.
+    PersistentVolumeClaim.
   - The name of the claim is made up of the `claimName`
     and the name of the Pod.
 
@@ -153,8 +153,8 @@ spec:
 - A Service object not only exposes a set of Pods at a stable
   IP address but also makes the cluster DNS resolve the Service
   name to this IP address.
-- With a headless Service, on the other hand, the name resolves
-  to the IPs of the Pods that belong to the Service.
+- With a headless Service, __on the other hand__, the name
+  resolves to the IPs of the Pods that belong to the Service.
 - __However__, when a headless Service is associated with a
   StatefulSet, each Pod also gets its own `A` or `AAAA` record
   that resolves directly to the individual Pod's IP.
@@ -162,3 +162,56 @@ spec:
     each stateful Pod also gets `SRV` records.
 
 ### Understanding StatefulSet behavior
+
+- A StatefulSet guarantees __at-most-one__ semantics for its Pods.
+  Since two Pods with the same name can't be in the same namespace
+  at the same time, the ordinal-based naming scheme of StatefulSets
+  is sufficient to prevent two Pods with the same identity
+  from running at the same time.
+
+- This is an important fact because it explains why the StatefulSet
+  controller shouldn't delete and recreate the Pod.
+  - If the StatefulSet controller deletes and recreates the Pod
+    while the Kubelet is down, the new Pod would be scheduled to
+    another node and the Pod's containers would start.
+  - There would then be two instances of the same workload running
+    with the same identity.
+  - That's why the StatefulSet controller doesn't do that.
+  - If you want the Pod to be recreated elsewhere,
+    __manual__ intervention is __required__.
+
+```zsh
+# To delete the Pod without waiting for confirmation,
+# you must delete it as follows:
+kubectl delete pod quiz-1 --force --grace-period 0
+# Immediate deletion does not wait for confirmation
+# that the running resource has been terminated.
+# The resource may continue to run on the cluster indefinitely.
+```
+
+- If the PersistentVolume is a local volume on the failed node,
+  the Pod can't be scheduled and its `STATUS` remains `Pending`.
+- If the cluster uses network-attached volumes, the Pod will be
+  scheduled to another node but may not be able to run if the
+  volume can't be detached from the failed node and attached
+  to that other node.
+
+```
+What do you do if the Pod can't be attached to the same volume?
+
+If the workload running in the Pod can rebuild its data from scratch,
+for example by replicating the data from the other replicas,
+you can delete the PersistentVolumeClaim so that a new one can be
+created and bound to a new PersistentVolume.
+
+However, since the StatefulSet controller only creates the
+PersistentVolumeClaims when it creates the Pod,
+you must also delete the Pod object.
+```
+
+- __Unlike__ ReplicaSets, when you scale down a StatefulSet,
+  the Pod with the highest ordinal number is deleted first.
+- __Unlike__ Pods, their PersistentVolumeClaims are preserved.
+  - Retaining PersistentVolumeClaims is the default behavior,
+    but you can configure the StatefulSet to delete them via
+    the `persistentVolumeClaimRetentionPolicy` field.
