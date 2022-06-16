@@ -299,3 +299,56 @@ spec:
 > A ControllerRevision is a generic object that represents
   an immutable snapshot of the state of an
   object at a particular point in time.
+
+- StatefulSets don't have a `pause` field that you can use to
+  prevent a Deployment rollout from being triggered,
+  or to pause it halfway.
+
+- In a StatefulSet you can achieve the same result and more
+  with the `partition` parameter of the RollingUpdate strategy.
+  - The value of this field specifies the ordinal number at
+    which the StatefulSet should be partitioned.
+  - If you set the `partition` value appropriately, you can
+    implement a Canary deployment, control the rollout manually,
+    or stage an update instead of triggering it immediately.
+
+```yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: quiz
+spec:
+  updateStrategy:
+    type: RollingUpdate
+    rollingUpdate:
+      partition: 3
+  replicas: 3
+  ...
+```
+
+- To deploy a canary, set the `partition` value to
+  the number of replicas minus one.
+- You'll see that only the Pod `quiz-2` has been
+  updated because only its ordinal number is
+  __greater than or equal__ to the partition value.
+- When the `partition` field is set to `zero`,
+  the StatefulSet updates all Pods.
+
+---
+
+- If you use the `OnDelete` strategy, the rollout is semi-automatic.
+  - You manually delete each Pod, and the StatefulSet controller
+    then creates the replacement Pod with the new template.
+  - With this strategy, you can decide which Pod to update and when.
+  - You don't necessarily have to delete the Pod with
+    the highest ordinal number first.
+- Since the update strategy also applies when you use the
+  `kubectl rollout undo` command, the rollback process
+  is also semi-automatic.
+  - You must delete each Pod yourself if you want to
+    roll it back to the previous revision.
+- If you delete a Pod and the new Pod isn't ready,
+  but you still delete the next Pod, the controller will
+  update that second Pod as well.
+  - It's your responsibility to consider Pod readiness.
+
