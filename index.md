@@ -14,7 +14,7 @@
 - [Kubernetes in Action (中) - 2nd Edition](archived-2022/kubernetes-in-action-2nd-2.md)
 - [Kubernetes in Action (下) - 2nd Edition](archived-2022/kubernetes-in-action-2nd-3.md)
 - [Kubernetes, Kubeflow, and ML Ops](archived-2022/kubernetes-kubeflow.md)
-- [Interpretable Machine Learning](archived-2022/machine-learning-interpretable.md)
+- [Interpretable Machine Learning](archived-2022/machine-learning.md)
 - [复分析 可视化方法 (上)](archived-2022/math-complex-analysis-1.md)
 - [复分析 可视化方法 (下)](archived-2022/math-complex-analysis-2.md)
 - [具体数学 计算机科学基础](archived-2022/math-concrete-mathematics.md)
