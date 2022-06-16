@@ -255,6 +255,47 @@ spec:
   - __Parallel__
   - All Pods are created and deleted at the same time.
   - The controller doesn't wait for individual Pods to be ready.
-- Another feature of the OrderedReady Pod management policy is
+- Another feature of the __OrderedReady__ Pod management policy is
   that the controller blocks the scale-down operation
   if not all replicas are ready.
+- The __OrderedReady__ Pod management policy affects the
+  initial rollout of StatefulSet Pods,
+  their scaling, and how Pods are replaced when a node fails.
+  - However, the policy __doesn't__ apply when you delete the StatefulSet.
+  - If you want to terminate the Pods in order,
+    you should first scale the StatefulSet to zero,
+    wait until the last Pod finishes,
+    and only then delete the StatefulSet.
+
+---
+
+- You can also specify the update strategy in the `updateStrategy`
+  field in the spec section of the StatefulSet manifest,
+  but the available strategies are
+  different from those in a Deployment.
+  - __RollingUpdate__
+  - The Pod with the highest ordinal number is deleted first
+    and replaced with a Pod created with the new template.
+  - When this new Pod is ready, the Pod with the next highest
+    ordinal number is replaced.
+  - This is the default strategy.
+  - __OnDelete__
+  - The StatefulSet controller waits for
+    each Pod to be manually deleted.
+  - When you delete the Pod, the controller replaces it with
+    a Pod created with the new template.
+- The RollingUpdate strategy in a StatefulSet behaves
+  similarly to the RollingUpdate strategy in Deployments,
+  but only one Pod is replaced at a time.
+  - You may recall that you can configure the Deployment
+    to replace multiple Pods at once using the `maxSurge`
+    and `maxUnavailable` parameters.
+- If the StatefulSet is configured with the RollingUpdate
+  strategy and you trigger the update when not all
+  Pods are ready, the rollout is held back.
+  - If a new Pod fails to become ready during the update,
+    the update is also paused, just like a Deployment update.
+
+> A ControllerRevision is a generic object that represents
+  an immutable snapshot of the state of an
+  object at a particular point in time.
