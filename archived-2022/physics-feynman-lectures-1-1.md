@@ -1523,7 +1523,7 @@ $$
 $$
 \begin{align}
 
-A & = x_{0}
+A & = x_{0} \\
 B & = \frac{v_0}{\omega_{0}}
 
 \end{align}
