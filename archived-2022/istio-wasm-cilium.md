@@ -111,7 +111,7 @@ k logs -n istio-system -l app=istiod --tail=10000
   - 应该是某一次升级 (也或许是之前切换 Node pool) 导致
     Istiod 陷入一个 Check status 死循环,
   - 然后导致 Istiod CPU & Memory 上涨,
-  - 再导致 Istiod scale up,
+  - 再导致 Istiod & Istio IngressGateway scale up,
   - 网络流量就爆了.
 
 - [Envoy Gateway](https://github.com/envoyproxy/gateway)
