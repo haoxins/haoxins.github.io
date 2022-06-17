@@ -106,6 +106,14 @@ k logs -n istio-system -l app=istiod --tail=10000
 
 ### 2022
 
+- `2022-06-17`: Kubeflow 的 Cluster 有很大的 VMs 之间的网络流量
+  - `PILOT_ENABLE_STATUS: true` 删除之后, 解决
+  - 应该是某一次升级 (也或许是之前切换 Node pool) 导致
+    Istiod 陷入一个 Check status 死循环,
+  - 然后导致 Istiod CPU & Memory 上涨,
+  - 再导致 Istiod scale up,
+  - 网络流量就爆了.
+
 - [Envoy Gateway](https://github.com/envoyproxy/gateway)
   - `2022-05`, 还只是个没代码的空壳 Repo
   - [Kubernetes Gateway API](https://github.com/kubernetes-sigs/gateway-api)
