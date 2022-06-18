@@ -6,10 +6,9 @@ date: 2021-02-12
 
 ## 2022
 
-* [Ready for Rust • Erik Doernenburg • GOTO 2021](https://www.youtube.com/watch?v=WgLlwjZNEtY)
-  - Jun 1, 2022
+- [No Boilerplate](https://www.youtube.com/c/NoBoilerplate)
 
-* [Rust crates 大巡礼: AWS 最新发布的 s2n-quic - 简介](https://www.bilibili.com/video/BV19m4y197Jm)
+- [Rust crates 大巡礼: AWS 最新发布的 s2n-quic - 简介](https://www.bilibili.com/video/BV19m4y197Jm)
   - https://github.com/aws/s2n-quic
   - https://github.com/cloudflare/quiche
   - quiche API 对 Rust 不友好 (目标是集成进 C 语言)
