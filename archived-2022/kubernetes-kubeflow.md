@@ -9,13 +9,12 @@ date: 2021-08-24
 - [kubectx + kubens](https://github.com/ahmetb/kubectx)
 
 ```zsh
-k config get-contexts
-k config set-context --current --namespace new_ns
-
 k exec --stdin --tty pod_name -- bash
 k exec --stdin --tty pod_name -c container_name -- bash
 
 k top pod pod_name --containers
+
+k cp ns/pod:file_full_path target_file_full_path
 ```
 
 ```zsh
