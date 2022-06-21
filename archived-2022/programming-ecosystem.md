@@ -34,6 +34,14 @@ date: 2022-01-17
 
 ## 2022
 
+- Kafka `3.2.0`, 至少本地开发不需要 ZooKeeper 了
+
+```zsh
+./bin/kafka-storage.sh random-uuid
+./bin/kafka-storage.sh format -t <uuid> -c ./config/kraft/server.properties
+./bin/kafka-server-start.sh ./config/kraft/server.properties
+```
+
 - [Ray-1.13.0](https://github.com/ray-project/ray/releases/tag/ray-1.13.0)
   - Python `3.10` support is now in alpha.
 
