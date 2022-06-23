@@ -1687,7 +1687,9 @@ $$
 F = F_0 e^{-i \Delta}e^{i \omega t}= \widehat{F} e^{i \omega t}
 $$
 
-我们在 `F` 上写上小符号 (`Λ`) 是为了提醒我们, 这个量是复数, 即在上式中
+- 我们在 `F` 上写上小符号
+  $$ \widehat $$
+  是为了提醒我们, 这个量是复数, 即在上式中
 
 $$
 \widehat{F} = F_0 e^{-i \Delta}
