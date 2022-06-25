@@ -28,6 +28,9 @@ date: 2021-05-03
 - [数学及其历史](https://book.douban.com/subject/6028251/)
   - 貌似已经不再出版了, 希望能有修订本
 
+- [狭义与广义相对论浅说](https://book.douban.com/subject/1707050/)
+  - 作者: 阿尔伯特·爱因斯坦
+
 - __TODO__ 近世代数概论
 
 - __TODO__ [唐宋词十七讲](https://book.douban.com/subject/2005705/)
