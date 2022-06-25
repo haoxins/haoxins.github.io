@@ -169,3 +169,8 @@ date: 2021-09-20
     can hurt interpretability.
 
 ### Linear Regression
+
+------------------
+
+- https://www.coursera.org/specializations/machine-learning-introduction
+  - https://www.coursera.org/learn/machine-learning
