@@ -34,11 +34,13 @@ date: 2022-01-17
 
 ## 2022
 
-- `2022-06-27`, 由于 License 的问题, 用上了免费的
+- `2022-06-27`, 由于 License 的问题,
+  用上了免费的 Rancher Desktop,
+  替代 Docker Desktop
   - [Rancher Desktop](https://rancherdesktop.io)
   - [nerdctl](https://github.com/containerd/nerdctl)
 
-- Kafka `3.2.0`, 至少本地开发不需要 ZooKeeper 了
+- Kafka `3.2.0`, 至少本地开发不需要 __ZooKeeper__ 了
 
 ```zsh
 ./bin/kafka-storage.sh random-uuid
