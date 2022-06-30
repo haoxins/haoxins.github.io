@@ -173,6 +173,7 @@ date: 2018-04-01
   - https://book.douban.com/subject/35476832/
   - 卡洛·罗韦利 Carlo Rovelli
   - 借与 @`Frederic`
+  - 后, Frederic 转岗至新加坡, 赠与 Frederic
   - **独读书** 不如 **众读书**
 
 * [具体数学](https://book.douban.com/subject/21323941/)
