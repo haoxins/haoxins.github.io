@@ -14,7 +14,7 @@ date: 2019-10-24
   - Doctor Strange in the Multiverse of Madness
   - YouTube Movies
 
-- [神探狄仁杰3](https://movie.douban.com/subject/3012331/)
+- 重温 [神探狄仁杰3](https://movie.douban.com/subject/3012331/)
 
 ### 2022-06
 
@@ -126,7 +126,7 @@ date: 2019-10-24
   - 一般
 
 * [新·福音战士剧场版: 终](https://movie.douban.com/subject/10428501/)
-  - *一般般*, 一点点宗教文化, 神秘主义, 内心矛盾, 曲解一些量子力学名词
+  - 一般般, 一点点宗教文化, 神秘主义, 内心矛盾, 曲解一些量子力学名词
   - 已经没有中学时, 看 **EVA** 的那种感觉了
 
 * [扬名立万](https://movie.douban.com/subject/35422807/)
@@ -181,7 +181,7 @@ date: 2019-10-24
 
 ### 2021-09
 
-* *重温* [**琅琊榜**](https://movie.douban.com/subject/25754848/)
+* 重温 [**琅琊榜**](https://movie.douban.com/subject/25754848/)
 
 ### 2021-08
 
@@ -189,22 +189,22 @@ date: 2019-10-24
   - 这, 远不如 [灵笼](https://movie.douban.com/subject/27121260/) 啊!
 
 * [失控玩家](https://movie.douban.com/subject/30337388/)
-  - *剧情单薄*
+  - 剧情单薄
   - 视觉效果还行
 
 * [扫黑风暴](https://movie.douban.com/subject/35202793/)
   - 很不错
 
-* *重温* [**绣春刀**](https://movie.douban.com/subject/24745500/)
+* 重温 [**绣春刀**](https://movie.douban.com/subject/24745500/)
 
 ### 2021-07
 
 * [**怒火·重案**](https://movie.douban.com/subject/30174085/)
   - 邦主: `我们总是想着如何少做一点, 但其实应该想着如何做好一点.`
 
-* *重温* [绣春刀II: 修罗战场](https://movie.douban.com/subject/26270502/)
+* 重温 [绣春刀II: 修罗战场](https://movie.douban.com/subject/26270502/)
 
-* *重温* [老炮儿](https://movie.douban.com/subject/24751756/)
+* 重温 [老炮儿](https://movie.douban.com/subject/24751756/)
   - 当年不识 于和伟, 哈哈哈
 
 * [中国医生](https://movie.douban.com/subject/35087699/)
@@ -311,17 +311,17 @@ date: 2019-10-24
 
 * 重温 [复仇者联盟2: 奥创纪元](https://movie.douban.com/subject/10741834/)
 
-* 重温经典 [复仇者联盟4](https://movie.douban.com/subject/26100958/)
+* 重温 [复仇者联盟4](https://movie.douban.com/subject/26100958/)
   - 复仇者联盟4: 终局之战
   - 灭霸 真的是 有愿景 有情怀 赢得起 输得起
   - 钢铁侠 -> 蜘蛛侠
   - iPad 观影体验还是差了些, 期待 VR
   - 虽然还会有 黑寡妇 蜘蛛侠3 永恒族 奇异博士2, 但漫威时代, 基本高潮结束
 
-* 重温经典: [复仇者联盟3](https://movie.douban.com/subject/24773958/)
+* 重温 [复仇者联盟3](https://movie.douban.com/subject/24773958/)
   - 复仇者联盟3: 无限战争
 
-* 重温: [正义联盟](https://www.bilibili.com/bangumi/media/md28233973)
+* 重温 [正义联盟](https://www.bilibili.com/bangumi/media/md28233973)
 
 * [神奇女侠1984](https://www.bilibili.com/bangumi/media/md28224114)
 
