@@ -34,7 +34,7 @@
 - [费曼物理学讲义 (卷二) 下](archived-2022/physics-feynman-lectures-2-3.md)
 - [费曼物理学讲义 (卷三) 上](archived-2022/physics-feynman-lectures-3-1.md)
 - [费曼物理学讲义 (卷三) 下](archived-2022/physics-feynman-lectures-3-2.md)
-- [对称与不对称, 狭义与广义相对论浅说, 黎曼猜想漫谈, 广义相对论专题选讲](archived-2022/physics-riemann-pauli.md)
+- [对称与不对称, 狭义与广义相对论浅说, 黎曼猜想漫谈, 广义相对论专题选讲](archived-2022/physics.md)
 - [Programming ecosystem](archived-2022/programming-ecosystem.md)
 - [Programming language](archived-2022/programming-language.md)
 - [量子计算公开课 (计算复杂性)](archived-2022/quantum-computing.md)
