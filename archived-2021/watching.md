@@ -8,6 +8,14 @@ date: 2019-10-24
 
 ## 2022
 
+### 2022-07
+
+- [奇异博士2: 疯狂多元宇宙](https://movie.douban.com/subject/30304994/)
+  - Doctor Strange in the Multiverse of Madness
+  - YouTube Movies
+
+- [神探狄仁杰3](https://movie.douban.com/subject/3012331/)
+
 ### 2022-06
 
 - 重温 [神探狄仁杰2](https://movie.douban.com/subject/2377277/)
