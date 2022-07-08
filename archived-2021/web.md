@@ -6,6 +6,13 @@ date: 2021-04-05
 
 ## 2022
 
+- [bun](https://github.com/Jarred-Sumner/bun)
+  - All in one fast & easy-to-use tool.
+  - Instead of 1,000 node_modules for development,
+    you only need bun.
+  - 能不能冲击 Node.js? 难!
+  - 但是反而会冲击 Deno!
+
 - [Announcing the Web-interoperable Runtimes Community Group](https://deno.com/blog/announcing-wintercg)
   - https://wintercg.org
   - https://github.com/wintercg/proposal-common-minimum-api
