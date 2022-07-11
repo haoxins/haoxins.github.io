@@ -34,6 +34,9 @@ date: 2022-01-17
 
 ## 2022
 
+- [Strimzi Kafka Operator](https://github.com/strimzi/strimzi-kafka-operator)
+  - 开发环境用起来还蛮方便, 但是远不够 Production Ready!
+
 - `2022-06-27`, 由于 License 的问题,
   用上了免费的 Rancher Desktop,
   替代 Docker Desktop
