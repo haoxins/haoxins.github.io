@@ -6,7 +6,7 @@ date: 2021-04-05
 
 ## 2022
 
-- [bun](https://github.com/Jarred-Sumner/bun)
+- [bun](https://github.com/oven-sh/bun)
   - All in one fast & easy-to-use tool.
   - Instead of 1,000 node_modules for development,
     you only need bun.
