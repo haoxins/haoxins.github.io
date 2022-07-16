@@ -9,6 +9,8 @@ date: 2019-05-30
 - [机器学习 专项课程 v2](https://www.coursera.org/specializations/machine-learning-introduction)
   - 2022-06-16
   - 一般般, 不推荐
+  - https://www.coursera.org/learn/machine-learning
+  - https://www.coursera.org/account/accomplishments/certificate/THGATFHMCZ8T
 
 - __未来, 期待 Coursera 能有一些优质的量子计算的课程__
 

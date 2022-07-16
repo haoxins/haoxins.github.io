@@ -10,6 +10,10 @@ date: 2019-10-24
 
 ### 2022-07
 
+
+- [神探](https://movie.douban.com/subject/2027938/)
+  - https://www.bilibili.com/bangumi/play/ep333567
+
 - [奇异博士2: 疯狂多元宇宙](https://movie.douban.com/subject/30304994/)
   - Doctor Strange in the Multiverse of Madness
   - YouTube Movies
