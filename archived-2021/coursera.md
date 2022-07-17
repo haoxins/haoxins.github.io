@@ -8,7 +8,10 @@ date: 2019-05-30
 
 - [机器学习 专项课程 v2](https://www.coursera.org/specializations/machine-learning-introduction)
   - 2022-06-16
-  - 一般般, 不推荐
+  - 一般般, 不推荐.
+  - 相较于之前的版本:
+  - 弱化了算法的介绍, 只挑选不同类型下最基本的介绍;
+  - 强化了工程方法, 或者通用的实践流程.
   - https://www.coursera.org/learn/machine-learning
   - https://www.coursera.org/account/accomplishments/certificate/THGATFHMCZ8T
 
