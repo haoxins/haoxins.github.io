@@ -11,7 +11,7 @@ date: 2019-05-30
   - 一般般, 不推荐.
   - 相较于之前的版本:
   - 弱化了算法的介绍, 只挑选不同类型下最基本的介绍;
-  - 强化了工程方法, 或者通用的实践流程.
+  - 强化了工程方法, 或者通用的实践流程, 但也没有新意.
   - https://www.coursera.org/learn/machine-learning
   - https://www.coursera.org/account/accomplishments/certificate/THGATFHMCZ8T
 
