@@ -10,7 +10,6 @@ date: 2019-10-24
 
 ### 2022-07
 
-
 - [神探](https://movie.douban.com/subject/2027938/)
   - https://www.bilibili.com/bangumi/play/ep333567
 
