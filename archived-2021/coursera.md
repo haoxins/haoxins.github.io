@@ -15,6 +15,8 @@ date: 2019-05-30
   - 实验的质量也有所下降.
   - https://www.coursera.org/learn/machine-learning
   - https://www.coursera.org/account/accomplishments/certificate/THGATFHMCZ8T
+  - https://www.coursera.org/learn/advanced-learning-algorithms
+  - https://www.coursera.org/account/accomplishments/certificate/AVLQL2HQ9XTV
 
 - __未来, 期待 Coursera 能有一些优质的量子计算的课程__
 

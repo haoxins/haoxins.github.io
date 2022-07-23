@@ -10,6 +10,8 @@ date: 2019-10-24
 
 ### 2022-07
 
+- [疯狂的石头](https://movie.douban.com/subject/1862151/)
+
 - [神探](https://movie.douban.com/subject/2027938/)
   - https://www.bilibili.com/bangumi/play/ep333567
 
