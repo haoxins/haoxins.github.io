@@ -36,6 +36,8 @@
 - [费曼物理学讲义 (卷二) 下](archived-2022/physics-feynman-lectures-2-3.md)
 - [费曼物理学讲义 (卷三) 上](archived-2022/physics-feynman-lectures-3-1.md)
 - [费曼物理学讲义 (卷三) 下](archived-2022/physics-feynman-lectures-3-2.md)
+- [通向实在之路 (上)](archived-2022/physics-road-to-reality-1.md)
+- [通向实在之路 (下)](archived-2022/physics-road-to-reality-2.md)
 - [Programming ecosystem](archived-2022/programming-ecosystem.md)
 - [Programming language](archived-2022/programming-language.md)
 - [量子计算公开课 (计算复杂性)](archived-2022/quantum-computing.md)
