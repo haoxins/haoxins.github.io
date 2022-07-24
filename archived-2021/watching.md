@@ -10,6 +10,8 @@ date: 2019-10-24
 
 ### 2022-07
 
+- 重温 [霹雳皇龙纪](https://movie.douban.com/subject/2210389/)
+
 - [疯狂的石头](https://movie.douban.com/subject/1862151/)
 
 - [神探](https://movie.douban.com/subject/2027938/)
