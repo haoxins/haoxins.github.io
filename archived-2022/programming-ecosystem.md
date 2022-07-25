@@ -34,6 +34,11 @@ date: 2022-01-17
 
 ## 2022
 
+- [07-25: Apache Flink Kubernetes Operator 1.1.0 Release](https://flink.apache.org/news/2022/07/25/release-kubernetes-operator-1.1.0.html)
+  - [07-06: Apache Flink 1.15.1 Release](https://flink.apache.org/news/2022/07/06/release-1.15.1.html)
+  - 准备生产环境部署升级了!
+  - 删除 `FlinkDeployment` 之前需要先删除所有相关的 `FlinkSessionJob`
+
 - [Strimzi Kafka Operator](https://github.com/strimzi/strimzi-kafka-operator)
   - 开发环境用起来还蛮方便, 但是远不够 Production Ready!
 
