@@ -11,6 +11,7 @@
 - [Real-World Cryptography (下)](archived-2022/cryptography-real-world-2.md)
 - [数据库系统内幕](archived-2022/database-internals.md)
 - [Istio, Envoy and Cilium](archived-2022/istio-wasm-cilium.md)
+- [On Java](archived-2022/java.md)
 - [Kubernetes in Action (中) - 2nd Edition](archived-2022/kubernetes-in-action-2nd-2.md)
 - [Kubernetes in Action (下) - 2nd Edition](archived-2022/kubernetes-in-action-2nd-3.md)
 - [Kubernetes, Kubeflow, and ML Ops](archived-2022/kubernetes-kubeflow.md)
