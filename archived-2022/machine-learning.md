@@ -1,6 +1,6 @@
 ---
-title: Interpretable Machine Learning
-description: 维摩一室虽多病, 亦要天花作道场
+title: Interpretable Machine Learning & 特征工程的艺术
+description: 雁来音信无凭, 路遥归梦难成. 离恨恰如春草, 更行更远还生.
 date: 2021-09-20
 ---
 
@@ -181,3 +181,9 @@ date: 2021-09-20
   - 一般般, 不推荐
 
 - [XGBoost](https://github.com/dmlc/xgboost)
+
+------------------
+
+- [特征工程的艺术: 通用技巧与实用案例](https://www.ituring.com.cn/book/2817)
+  - [特征工程的艺术](https://book.douban.com/subject/35902261/)
+
