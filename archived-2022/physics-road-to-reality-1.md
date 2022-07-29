@@ -10,6 +10,8 @@ date: 2021-08-26
   - 原作名: The Road to Reality: A Complete Guide to the Laws of the Universe
   - 感恩: **微信读书**
 
+> 这本书刷了两遍
+
 * 不使用一定量的数学符号和真正的数学概念,
   就不可能向读者传达我真正要表达的意思.
 
