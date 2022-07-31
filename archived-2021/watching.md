@@ -22,6 +22,7 @@ date: 2019-10-24
   - YouTube Movies
 
 - 重温 [神探狄仁杰3](https://movie.douban.com/subject/3012331/)
+  - 重温了几集, 便不再继续了
 
 ### 2022-06
 
