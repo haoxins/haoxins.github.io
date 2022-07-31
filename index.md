@@ -26,6 +26,7 @@
 - [基础拓扑学 修订版](archived-2022/math-topology.md)
 - [健身, 冥想](archived-2022/meditation-fitness.md)
 - [Graph Algorithms for Data Science](archived-2022/ml-graph.md)
+- [西瓜, 南瓜, 樱花](archived-2022/ml.md)
 - [狭义与广义相对论浅说, 对称与不对称, 泡利的错误](archived-2022/physics-1.md)
 - [黎曼猜想漫谈, 广义相对论专题选讲](archived-2022/physics-2.md)
 - [费曼物理学讲义 (卷一) 上](archived-2022/physics-feynman-lectures-1-1.md)
