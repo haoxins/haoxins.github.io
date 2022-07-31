@@ -178,6 +178,8 @@ date: 2021-09-20
   - https://www.coursera.org/learn/advanced-learning-algorithms
   - https://www.coursera.org/account/accomplishments/certificate/AVLQL2HQ9XTV
   - https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning
+  - https://www.coursera.org/account/accomplishments/certificate/3F9VKTLHP3ZJ
+  - https://www.coursera.org/account/accomplishments/specialization/certificate/JZHGFEKRQ7RX
   - 一般般, 不推荐
 
 - [XGBoost](https://github.com/dmlc/xgboost)
