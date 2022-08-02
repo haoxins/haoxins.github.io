@@ -152,6 +152,15 @@ date: 2022-01-17
     [DataFusion](https://github.com/apache/arrow-datafusion)
   - [Fluvio](https://github.com/infinyon/fluvio)
     的开发力量稍显薄弱
+  - [Ballista Future Direction](https://github.com/apache/arrow-ballista/issues/30)
+  - `2022-08`: 放弃!
+    Fluvio 进展缓慢, 无望;
+    DataFusion, Ballista 发展路线暂不包含 Streaming
+  - 准确的说, Flink 的替代者将会是一个生态, 而不是另一个
+    `Stateful Computations over Data Streams`
+  - [Substrait](https://substrait.io)
+  - [Substrait](https://github.com/substrait-io/substrait)
+  - Cross-Language Serialization for Relational Algebra
 
 - Spring Boot `3.0.0`
   - Spring Boot `3.0` requires Java `17` as a minimum
