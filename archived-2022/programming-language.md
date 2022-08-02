@@ -84,6 +84,8 @@ GODEBUG=gctrace=1 go test -bench=. -v
 
 ------------------
 
+- [The Go Memory Model](https://tip.golang.org/ref/mem)
+
 - `2022-06`, 公司有团队在推 [Quarkus](https://github.com/quarkusio/quarkus)
   - 其实, 只要不是 Spring boot, 都不错
 
