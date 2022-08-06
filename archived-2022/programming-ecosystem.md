@@ -34,6 +34,9 @@ date: 2022-01-17
 
 ## 2022
 
+- [CeresDB](https://github.com/CeresDB/ceresdb)
+  - 蚂蚁出品, 预料之中, 果然基于 `Arrow`.
+
 - [07-25: Apache Flink Kubernetes Operator 1.1.0 Release](https://flink.apache.org/news/2022/07/25/release-kubernetes-operator-1.1.0.html)
   - [07-06: Apache Flink 1.15.1 Release](https://flink.apache.org/news/2022/07/06/release-1.15.1.html)
   - 准备生产环境部署升级了!

@@ -84,6 +84,11 @@ GODEBUG=gctrace=1 go test -bench=. -v
 
 ------------------
 
+- [Ent](https://github.com/ent/ent)
+  搭配
+  [Atlas](https://github.com/ariga/atlas)
+  - 体验不错~
+
 - [The Go Memory Model](https://tip.golang.org/ref/mem)
 
 - `2022-06`, 公司有团队在推 [Quarkus](https://github.com/quarkusio/quarkus)
