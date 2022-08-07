@@ -6,8 +6,40 @@ date: 2022-08-01
 
 - [Machine Learning Engineering in Action](https://book.douban.com/subject/35568115/)
 
-- The core tenets of ML engineering
-  - Planning
-
 > Nothing is more demoralizing than building an ML
   solution that solves the wrong problem.
+
+```
+不仅仅是 ML 项目, 公司内也有一些工程项目,
+从一开始, 便偏离了解决问题的目标,
+而是引入更多的看似炫酷的技术和高大上的架构模式!
+
+越是欠缺实战, 没有目标的所谓技术领导者,
+越是期望在一开始就设计一个完美的系统.
+而真正的务实派, 在早期阶段, 首先侧重于:
+1. 找准目标, 最关键的目标
+2. 技术上, 避免方向性的错误
+实现阶段, 及时的反馈和调整. 同时:
+1. 对于系统的薄弱环节和未来改进重点逐步了然于胸
+```
+
+> No one thinks that code quality matters until
+  it's 4 a.m. on a Saturday, you're 18 hours into
+  debugging a failure, and you still
+  haven't fixed the bug.
+
+```
+近年来, 经历了一些让人啼笑皆非的判断代码质量的标准, 比如:
+1. 只看 Unit Test 覆盖率
+2. 用什么编程语言写的
+3. 有没有名义上遵循某个架构模式, 比如: DDD
+
+代码或者项目质量其实是一个难以准确衡量的东西, 但截至 2022 年,
+我们至少可以肯定:
+1. 人的判断比机器更准确
+2. 最有愿望提升项目质量的人一定是那个一直在开发这个项目的人
+
+所以, 尊重人是最重要的! 而不是防备人! (你也防不住!)
+
+程序员修炼之道 (第2版) 对此也有一些讨论
+```
