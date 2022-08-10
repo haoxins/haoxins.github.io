@@ -135,10 +135,30 @@ Atlas currently only supports PostgreSQL.
   - The `k`th receive on a channel with capacity `C` is
     synchronized before the completion of the `k+C`th
     send from that channel completes.
+  - For any `sync.Mutex` or `sync.RWMutex` variable `l`
+    and `n < m`, call `n` of `l.Unlock()` is synchronized
+    before call `m` of `l.Lock()` returns.
+  - For any call to `l.RLock` on a `sync.RWMutex` variable `l`,
+    there is an `n` such that the `n`th call to `l.Unlock` is
+    synchronized before the return from `l.RLock`, and the
+    matching call to `l.RUnlock` is synchronized before the
+    return from call `n+1` to `l.Lock`.
+  - A successful call to `l.TryLock` (or `l.TryRLock`) is
+    equivalent to a call to `l.Lock` (or `l.RLock`).
+  - An unsuccessful call has no synchronizing effect at all.
+  - As far as the memory model is concerned, `l.TryLock`
+    (or `l.TryRLock`) may be considered to be able to return
+    `false` even when the mutex `l` is unlocked.
+  - The completion of a single call of `f()` from `once.Do(f)`
+    is synchronized before the return of any call of `once.Do(f)`.
+  - All the atomic operations executed in a program behave
+    as though executed in some sequentially consistent order.
+  - A call to `SetFinalizer(x, f)` is synchronized before
+    the finalization call `f(x)`.
 
 - [JEP 425: Virtual Threads (Preview)](https://openjdk.org/jeps/425)
   - 这个才能真正吸引大家升级
-  - 有那么一点点期待`2024`年的 LTS JDK 23 了
+  - 有那么一点点期待`2024`年的 LTS JDK `23` 了
 
 - `2022-06`, 公司有团队在推 [Quarkus](https://github.com/quarkusio/quarkus)
   - 其实, 只要不是 Spring boot, 都不错
