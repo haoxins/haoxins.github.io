@@ -88,8 +88,44 @@ GODEBUG=gctrace=1 go test -bench=. -v
   搭配
   [Atlas](https://github.com/ariga/atlas)
   - 体验不错~
+  - declarative and versioned migrations
+  - 从稳妥角度来讲, 显然 versioned 靠谱
+  - 但是从维护成本来看, 显然 declarative 更轻松
+
+```
+As part of the Atlas project we advocate for a third
+combined approach that we call "Versioned Migration Authoring".
+Versioned Migration Authoring is an attempt to combine
+the simplicity and expressiveness of the declarative approach
+with the control and explicitness of versioned migrations.
+
+With versioned migration authoring, users still declare
+their desired state and use the Atlas engine to plan a safe
+migration from the existing to the new state. However,
+instead of coupling planning and execution, plans are
+instead written into normal migration files which can be
+checked into source control, fine-tuned manually and
+reviewed in regular code review processes.
+```
+
+```
+Partitions:
+Atlas currently only supports PostgreSQL.
+```
+
+> 哈哈, 运气不错~
 
 - [The Go Memory Model](https://tip.golang.org/ref/mem)
+  - If a package `p` imports package `q`,
+    the completion of `q`'s `init` functions
+    happens before the start of any of `p`'s.
+  - The completion of all `init` functions is
+    synchronized before the start of
+    the function `main.main`.
+  - If the effects of a goroutine must be observed by
+    another goroutine, use a synchronization mechanism
+    such as a lock or channel communication
+    to establish a relative ordering.
 
 - `2022-06`, 公司有团队在推 [Quarkus](https://github.com/quarkusio/quarkus)
   - 其实, 只要不是 Spring boot, 都不错

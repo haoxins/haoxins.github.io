@@ -51,3 +51,12 @@ date: 2022-08-01
 
 程序员修炼之道 (第2版) 对此也有一些讨论
 ```
+
+> If you can't justify the benefits of your project
+  being in production, don't expect it to
+  remain there for very long.
+
+```
+The worst reason for getting an ML project
+cancelled or abandoned is budget.
+```
