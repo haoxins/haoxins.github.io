@@ -34,10 +34,6 @@ date: 2022-01-17
 
 ## 2022
 
-- [JEP 425: Virtual Threads (Preview)](https://openjdk.org/jeps/425)
-  - 这个才能真正吸引大家升级
-  - 有那么一点点期待`2024`年的 LTS JDK 23 了
-
 - [CeresDB](https://github.com/CeresDB/ceresdb)
   - 蚂蚁出品, 预料之中, 果然基于 `Arrow`.
 

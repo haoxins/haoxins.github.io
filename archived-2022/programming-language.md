@@ -126,6 +126,19 @@ Atlas currently only supports PostgreSQL.
     another goroutine, use a synchronization mechanism
     such as a lock or channel communication
     to establish a relative ordering.
+  - The closing of a channel is synchronized before a
+    receive that returns a zero value
+    because the channel is closed.
+  - A receive from an `unbuffered` channel is
+    synchronized before the completion of the
+    corresponding send on that channel.
+  - The `k`th receive on a channel with capacity `C` is
+    synchronized before the completion of the `k+C`th
+    send from that channel completes.
+
+- [JEP 425: Virtual Threads (Preview)](https://openjdk.org/jeps/425)
+  - 这个才能真正吸引大家升级
+  - 有那么一点点期待`2024`年的 LTS JDK 23 了
 
 - `2022-06`, 公司有团队在推 [Quarkus](https://github.com/quarkusio/quarkus)
   - 其实, 只要不是 Spring boot, 都不错
