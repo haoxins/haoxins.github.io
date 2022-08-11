@@ -155,6 +155,41 @@ Atlas currently only supports PostgreSQL.
     as though executed in some sequentially consistent order.
   - A call to `SetFinalizer(x, f)` is synchronized before
     the finalization call `f(x)`.
+  - Programs with races are incorrect and can exhibit
+    non-sequentially consistent executions. In particular,
+    note that a read `r` may observe the value written
+    by any write `w` that executes concurrently with `r`.
+    Even if this occurs, it does not imply that reads
+    happening after `r` will observe writes
+    that happened before `w`.
+  - The Go memory model restricts compiler optimizations as much
+    as it does Go programs. Some compiler optimizations that
+    would be valid in single-threaded programs
+    are not valid in all Go programs.
+  - In particular, a compiler __must not__ introduce writes that
+    do not exist in the original program, it __must not__ allow
+    a single read to observe multiple values, and it __must not__
+    allow a single write to write multiple values.
+
+```go
+var a, b int
+
+func f() {
+  a = 1
+  b = 2
+}
+
+func g() {
+  print(b)
+  print(a)
+}
+
+func main() {
+  go f()
+  g()
+}
+// it can happen that g prints 2 and then 0.
+```
 
 - [JEP 425: Virtual Threads (Preview)](https://openjdk.org/jeps/425)
   - 这个才能真正吸引大家升级
