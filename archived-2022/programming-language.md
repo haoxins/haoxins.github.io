@@ -155,13 +155,13 @@ Atlas currently only supports PostgreSQL.
     as though executed in some sequentially consistent order.
   - A call to `SetFinalizer(x, f)` is synchronized before
     the finalization call `f(x)`.
-  - Programs with races are incorrect and can exhibit
-    non-sequentially consistent executions. In particular,
-    note that a read `r` may observe the value written
-    by any write `w` that executes concurrently with `r`.
-    Even if this occurs, it does not imply that reads
-    happening after `r` will observe writes
-    that happened before `w`.
+  - Programs with races are incorrect and can
+    exhibit __non-sequentially consistent executions__.
+    In particular, note that a read `r` may observe the
+    value written by any write `w` that executes
+    concurrently with `r`. Even if this occurs,
+    it does not imply that reads happening after `r` will
+    observe writes that happened before `w`.
   - The Go memory model restricts compiler optimizations as much
     as it does Go programs. Some compiler optimizations that
     would be valid in single-threaded programs
