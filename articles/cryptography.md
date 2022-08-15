@@ -7,10 +7,6 @@ date: 2021-10-15
 - [Solana](https://github.com/solana-labs/solana)
   - Solana is a decentralized blockchain built to
     enable scalable, user-friendly apps for the world.
-  - [Anchor](https://github.com/project-serum/anchor)
-  - Anchor is a framework for Solana's Sealevel runtime
-    providing several convenient developer tools
-    for writing smart contracts.
 - There are 8 key innovations that make the
   Solana network possible:
   - Proof of History (POH)
@@ -38,6 +34,8 @@ date: 2021-10-15
 ------------------
 
 ## Events
+
+- 2022-08, 期待以太坊, 一鲸落, 万物生.
 
 ```
 The 2022 Gödel Prize is awarded to the following papers:
