@@ -258,3 +258,39 @@ date: 2021-09-20
 - 如果你在处理一个距离对于模型非常重要的问题,
   就可以考虑选择一些特殊元素计算距离, 得到距离的上下文,
   从而将领域知识加入问题中.
+
+------------------
+
+- [Machine Learning Engineering in Action](https://book.douban.com/subject/35568115/)
+  - __不推荐__
+
+> Nothing is more demoralizing than building an ML
+  solution that solves the wrong problem.
+
+```
+不仅仅是 ML 项目, 一些工程项目,
+从一开始, 便偏离了实际的解决问题的目标,
+而是为了引入看似炫酷的技术和四不像的架构模式!
+
+越是欠缺实战, 没有目标的所谓技术领导者,
+越是期望在一开始就设计一个完美的系统.
+
+而真正的务实派, 在早期阶段, 首先侧重于:
+1. 找准目标, 最关键的目标
+2. 技术上, 避免方向性的错误
+
+实现阶段, 及时的反馈和调整. 同时:
+1. 对于系统的薄弱环节和未来改进重点逐步了然于胸
+
+对于业界成熟的架构模式, 设计思想:
+1. 你是首先找到了自己真正面对的问题, 所拥有的资源 (技术, 人员), 要达到的合理的目标
+2. 还是逃避现实, 跳过上一步, 想通过所谓的 "X 模式在 Y 公司的实践" 来一蹴而就
+
+借鉴和模仿是有云泥之别的
+```
+
+> No one thinks that code quality matters until
+  it's 4 a.m. on a Saturday, you're 18 hours into
+  debugging a failure, and you still
+  haven't fixed the bug.
+
