@@ -321,6 +321,22 @@ $$
   $$ a_0 z^n + a_1 z^{n - 1} + ... + a_n = 0 $$
   的根不是实数的话, 则可以归结为具有两两成对共轭的形式.
 
+- De Moivre 定理的一般形式
+- 由上一节的结果推出, 如果 `q` 是正整数, 那么
+  $$ (\cos \theta + i \sin \theta)^{1 / q} $$
+  有一个值是
+  $$ \cos (\theta / q) + i \sin (\theta / q) $$.
+- 对这些表达式中的每一个取 `p` 次幂
+  (其中 `p` 是任意一个正整数或负整数),
+  我们就得到定理:
+  $$ (\cos \theta + i \sin \theta)^{p / q} $$
+  有一个值是
+  $$ \cos (p \theta / q) + i \sin(p \theta / q) $$,
+  或者说成: 如果 `a` 是任意一个有理数, 那么
+  $$ (\cos \theta + i \sin \theta)^a $$
+  有一个值是
+  $$ \cos (a \theta) + i \sin(a \theta) $$.
+
 ## 正整变量函数的极限
 
 - 假设
