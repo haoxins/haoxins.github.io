@@ -25,7 +25,7 @@
 - [健身, 冥想](archived-2022/meditation-fitness.md)
 - [深度学习 - 樱花](archived-2022/ml-dl.md)
 - [Graph Algorithms for Data Science](archived-2022/ml-graph.md)
-- [Interpretable & 特征工程的艺术 & Engineering](archived-2022/ml-interpretable.md)
+- [Interpretable & 特征工程的艺术 & Engineering](archived-2022/ml-interpretable-engineering.md)
 - [机器学习 - 西瓜, 南瓜](archived-2022/ml.md)
 - [狭义与广义相对论浅说, 对称与不对称, 泡利的错误](archived-2022/physics-1.md)
 - [黎曼猜想漫谈, 广义相对论专题选讲](archived-2022/physics-2.md)
