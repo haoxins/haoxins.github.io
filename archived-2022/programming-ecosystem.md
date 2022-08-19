@@ -34,6 +34,11 @@ date: 2022-01-17
 
 ## 2022
 
+- `2022-08-19` Colima
+  - container runtimes on macOS (and Linux) with minimal setup
+  - [Colima](https://github.com/abiosoft/colima)
+  - 用了一段时间, 不喜欢 Rancher Desktop
+
 - [CeresDB](https://github.com/CeresDB/ceresdb)
   - 蚂蚁出品, 预料之中, 果然基于 `Arrow`.
 
