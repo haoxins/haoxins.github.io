@@ -323,3 +323,7 @@ cancelled or abandoned is budget.
   - 现在在用的是 [Kubeflow](https://github.com/kubeflow/kubeflow)
   - 未来更看好 [Ray](https://github.com/ray-project/ray)
 
+- Artifact management
+- Feature stores
+- Prediction serving architecture
+
