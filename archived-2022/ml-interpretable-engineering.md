@@ -318,3 +318,8 @@ date: 2021-09-20
 The worst reason for getting an ML project
 cancelled or abandoned is budget.
 ```
+
+- [MLflow](https://github.com/mlflow/mlflow)
+  - 现在在用的是 [Kubeflow](https://github.com/kubeflow/kubeflow)
+  - 未来更看好 [Ray](https://github.com/ray-project/ray)
+

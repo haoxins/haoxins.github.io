@@ -8,6 +8,10 @@ date: 2019-10-24
 
 ## 2022
 
+### 2022-08
+
+- [一代宗师](https://movie.douban.com/subject/3821067/)
+
 ### 2022-07
 
 - 重温 [霹雳皇龙纪](https://movie.douban.com/subject/2210389/)

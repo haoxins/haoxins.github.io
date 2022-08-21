@@ -34,6 +34,10 @@ date: 2022-01-17
 
 ## 2022
 
+- `2022-08-20` GitHub 账号升级到了 Pro
+  - 每月 `$4`
+  - 确实做得不错
+
 - `2022-08-19` Colima
   - container runtimes on macOS (and Linux) with minimal setup
   - [Colima](https://github.com/abiosoft/colima)
