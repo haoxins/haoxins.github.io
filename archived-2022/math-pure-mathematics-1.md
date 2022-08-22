@@ -446,7 +446,7 @@ $$
   - 如果
     $$ \lim \phi (n) = a, \lim \psi (n) = b, \lim \chi (n) = c, ... $$,
     且
-    $$ Q(a,b,c,…·)≠o $$,
+    $$ Q( a, b, c, ... ) \ne 0 $$,
     那么就有
     $$
     \lim R \{ \phi (n), \psi (n), \chi (n), ... \}
