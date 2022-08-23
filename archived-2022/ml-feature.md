@@ -268,6 +268,44 @@ date: 2021-09-20
 
 ### Logistic Regression
 
+- A solution for classification is logistic regression.
+  Instead of fitting a straight line or hyperplane,
+  the logistic regression model uses the logistic
+  function to squeeze the output of
+  a linear equation between `0` and `1`.
+
+- These are the interpretations for the logistic regression
+  model with different feature types:
+  - `Numerical feature`:
+  - If you increase the value of feature
+    $$ x_j $$
+    by one unit, the estimated odds change by a factor of
+    $$ exp(β_j) $$.
+  - `Binary categorical feature`:
+  - One of the two values of the feature is the reference
+    category (in some languages, the one encoded in `0`).
+    Changing the feature
+    $$ x_j $$
+    from the reference category to the other category
+    changes the estimated odds by a factor of
+    $$ exp(β_j) $$.
+  - `Categorical feature with more than two categories`:
+  - One solution to deal with multiple categories is
+    `one-hot-encoding`, meaning that each category has
+    its own column.
+  - You only need `L-1` columns for a categorical feature
+    with `L` categories, otherwise it is over-parameterized.
+  - The `L-th` category is then the reference category.
+    You can use any other encoding that can be used in
+    linear regression. The interpretation for each category
+    then is equivalent to the interpretation of binary features.
+  - Intercept
+    $$ β_0 $$:
+  - When all numerical features are zero and the categorical
+    features are at the reference category, the estimated odds are
+    $$ exp(β_0) $$.
+  - The interpretation of the intercept weight is usually not relevant.
+
 ------------------
 
 - https://www.coursera.org/specializations/machine-learning-introduction
