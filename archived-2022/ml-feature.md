@@ -245,6 +245,29 @@ date: 2021-09-20
 
 ### Linear Regression
 
+- The interpretation of the features in the linear
+  regression model can be automated by using
+  following text templates.
+  - Interpretation of a `Numerical Feature`
+  - An increase of feature
+    $$ x_k $$
+    by one unit increases the prediction for `y` by
+    $$ β_k $$
+    units when all other feature values remain fixed.
+  - Interpretation of a `Categorical Feature`
+  - Changing feature
+    $$ x_k $$
+    from the reference category to the other category
+    increases the prediction for `y` by
+    $$ β_k $$
+    when all other features remain fixed.
+
+- The importance of a feature in a linear regression
+  model can be measured by the absolute
+  value of its `t-statistic`.
+
+### Logistic Regression
+
 ------------------
 
 - https://www.coursera.org/specializations/machine-learning-introduction
@@ -326,4 +349,3 @@ cancelled or abandoned is budget.
 - Artifact management
 - Feature stores
 - Prediction serving architecture
-
