@@ -306,6 +306,8 @@ date: 2021-09-20
     $$ exp(β_0) $$.
   - The interpretation of the intercept weight is usually not relevant.
 
+### GLM, GAM and more
+
 ------------------
 
 - https://www.coursera.org/specializations/machine-learning-introduction
