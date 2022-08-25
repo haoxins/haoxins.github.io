@@ -578,6 +578,87 @@ $$
 ---
 
 - 这些数有如下的性质:
+  - (1)
+    $$ m \le \leftthreetimes \le \wedge \le M $$;
+  - (2) 如果有任何一个`中数`存在的话,
+    那么
+    $$ \wedge $$
+    和
+    $$ \leftthreetimes $$
+    就是中数组成的集合的上界和下界;
+  - (3) 如果
+    $$ \delta $$
+    是任何一个正数, 那么对所有充分大的 `n` 值都有
+    $$ \phi (n) < \wedge + \delta $$,
+    对无穷多个 `n` 值有
+    $$ \phi (n) > \wedge - \delta $$;
+  - (4) 类似地, 对所有充分大的 `n` 值都有
+    $$ \phi (n) > \leftthreetimes - \delta $$,
+    对无穷多个 `n` 值有
+    $$ \phi (n) < \leftthreetimes + \delta $$;
+  - (5)
+    $$ \phi (n) $$
+    趋向一个极限的充分必要条件是
+    $$ \wedge = \leftthreetimes $$,
+    在此情形极限就是
+    $$ \leftthreetimes $$
+    和
+    $$ \wedge $$
+    共同的值 `l`
+
+---
+
+- 在这些性质中, (1) 是定义的直接推论, 我们可以如下来证明 (2).
+  如果
+  $$ \wedge = \leftthreetimes = l $$
+  那么就至多存在一个中数, 也就是 `l`, 也就没有什么需要证明的了.
+  然后假设
+  $$ \wedge > \leftthreetimes $$.
+  任何一个中数 `ξ` 都要小于任何一个优数, 且大于任何一个劣数, 所以
+  $$ \leftthreetimes \le \xi \le \wedge $$.
+- 但是, 如果
+  $$ \leftthreetimes < \xi < \wedge $$,
+  那么 `ξ` 必定是一个中数, 因为它显然既不是一个优数, 也不是一个劣数.
+  于是存在与
+  $$ \leftthreetimes $$
+  以及与
+  $$ \wedge $$
+  任意接近的中数.
+
+---
+
+- 为了证明 (3), 我们注意到:
+  $$ \wedge + \delta $$
+  是优数, 而
+  $$ \wedge - \delta $$
+  则是中数或者劣数, 于是这个结论就是定义的直接推论,
+  而 (4) 的证明本质上与之相同.
+- 最后, (5) 可以证明如下.
+- 如果
+  $$ \wedge = \leftthreetimes = l $$,
+  那么对每一个正的
+  $$ \delta $$
+  值以及充分大的 `n` 值都有
+  - $$ l - \delta < \phi (n) < l + \delta  $$,
+- 所以
+  $$ \phi (n) \rightarrow l $$.
+  - 反之, 如果
+  $$ \phi (n) \rightarrow l $$,
+  则上面所写的不等式对于所有充分大的 `n` 值成立.
+  - 从而
+    $$ l - \delta $$
+    就是劣数, 而
+    $$ l + \delta $$
+    就是优数, 所以
+  - $$ \leftthreetimes \ge l - \delta $$,
+    $$ \wedge \le l + \delta $$,
+- 这样就有
+  $$ \wedge - \leftthreetimes \le 2 \delta $$.
+  - 由于
+    $$ \wedge - \leftthreetimes \ge 0 $$,
+    从而这只能在
+    $$ \wedge = \leftthreetimes $$
+    时成立.
 
 ## 一个连续变量的函数之极限, 连续函数和不连续函数
 
