@@ -6,6 +6,8 @@ date: 2021-04-05
 
 ## 2022
 
+- Bye Bye!
+
 - [bun](https://github.com/oven-sh/bun)
   - All in one fast & easy-to-use tool.
   - Instead of 1,000 node_modules for development,
