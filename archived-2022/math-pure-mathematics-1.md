@@ -610,7 +610,7 @@ $$
 
 - 在这些性质中, (1) 是定义的直接推论, 我们可以如下来证明 (2).
   如果
-  $$ \wedge = \leftthreetimes = l $$
+  $$ \wedge = \leftthreetimes = l $$,
   那么就至多存在一个中数, 也就是 `l`, 也就没有什么需要证明的了.
   然后假设
   $$ \wedge > \leftthreetimes $$.
