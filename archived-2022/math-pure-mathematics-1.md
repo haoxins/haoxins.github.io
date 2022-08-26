@@ -571,9 +571,9 @@ $$
   分别称为当 `n` 趋向无穷大时
   $$ \phi (n) $$
   的`不定元的上极限`和`不定元的下极限`;
-  并记为
-  $$ \wedge = \lim \phi (n) $$,
-  $$ \leftthreetimes = \lim \phi (n) $$.
+  - 并记为
+  - $$ \wedge = \lim \phi (n) $$,
+  - $$ \leftthreetimes = \lim \phi (n) $$.
 
 ---
 
