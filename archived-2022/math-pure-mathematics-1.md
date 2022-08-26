@@ -572,8 +572,8 @@ $$
   $$ \phi (n) $$
   的`不定元的上极限`和`不定元的下极限`;
   - 并记为
-  - $$ \wedge = \lim \phi (n) $$,
-  - $$ \leftthreetimes = \lim \phi (n) $$.
+  - $$ \wedge = \overline{\lim} \phi (n) $$,
+  - $$ \leftthreetimes = \underline{\lim} \phi (n) $$.
 
 ---
 
