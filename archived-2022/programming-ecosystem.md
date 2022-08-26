@@ -35,6 +35,9 @@ date: 2022-01-17
 ## 2022
 
 - [Ray-2.0.0](https://github.com/ray-project/ray/releases/tag/ray-2.0.0)
+  - https://github.com/ray-project/ray/pull/24523
+  - `Polars` is significantly faster than the
+    current `PyArrow`-based sort.
 
 - `2022-08-20` GitHub 账号升级到了 Pro
   - 每月 `$4`
