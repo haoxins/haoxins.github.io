@@ -562,9 +562,9 @@ $$
   所以它有一个下界, 我们用
   $$ \wedge $$
   来记这个下界.
-- 类似地, 劣数的集合有一个上界, 我们记之为
-  $$ \leftthreetimes $$.
-  我们将
+  - 类似地, 劣数的集合有一个上界, 我们记之为
+    $$ \leftthreetimes $$.
+- 我们将
   $$ \wedge $$
   和
   $$ \leftthreetimes $$
