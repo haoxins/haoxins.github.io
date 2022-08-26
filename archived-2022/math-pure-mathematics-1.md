@@ -604,7 +604,7 @@ $$
     $$ \leftthreetimes $$
     和
     $$ \wedge $$
-    共同的值 `l`
+    共同的值 `l`.
 
 ---
 
