@@ -34,6 +34,8 @@ date: 2022-01-17
 
 ## 2022
 
+- [Diesel 2.0.0](https://github.com/diesel-rs/diesel/releases/tag/v2.0.0)
+
 - [Ray-2.0.0](https://github.com/ray-project/ray/releases/tag/ray-2.0.0)
   - https://github.com/ray-project/ray/pull/24523
   - `Polars` is significantly faster than the
