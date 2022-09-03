@@ -84,6 +84,9 @@ GODEBUG=gctrace=1 go test -bench=. -v
 
 ------------------
 
+- [Diesel 2.0.0](https://github.com/diesel-rs/diesel/releases/tag/v2.0.0)
+  - [SeaORM](https://github.com/SeaQL/sea-orm)
+
 - [Ent](https://github.com/ent/ent)
   搭配
   [Atlas](https://github.com/ariga/atlas)
