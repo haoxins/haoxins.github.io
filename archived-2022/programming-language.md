@@ -84,6 +84,14 @@ GODEBUG=gctrace=1 go test -bench=. -v
 
 ------------------
 
+- `2022-09` 开始正式评估在团队项目中引入 `Rust`
+  - 参照一些手头上的项目, 看看 `Rust` 生态还缺点啥
+  - 由于公司使用 `GCP` (很挫的云平台)
+  - https://github.com/googleapis/google-cloud-rust
+  - 这玩意还打算继续开发么?
+  - https://github.com/kafka-rust/kafka-rust
+  - 功能还很贫乏!
+
 - [Diesel 2.0.0](https://github.com/diesel-rs/diesel/releases/tag/v2.0.0)
   - [SeaORM](https://github.com/SeaQL/sea-orm)
 
