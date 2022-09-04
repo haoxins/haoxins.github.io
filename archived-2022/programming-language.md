@@ -91,6 +91,11 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - 这玩意还打算继续开发么?
   - https://github.com/kafka-rust/kafka-rust
   - 功能还很贫乏!
+  - https://github.com/tokio-rs/axum
+  - https://github.com/hyperium/tonic
+  - https://github.com/diesel-rs/diesel
+  - https://github.com/SeaQL/sea-orm
+  - 以上 gRPC, API, ORM 皆胜过 Go 社区!
 
 - [Diesel 2.0.0](https://github.com/diesel-rs/diesel/releases/tag/v2.0.0)
   - [SeaORM](https://github.com/SeaQL/sea-orm)
