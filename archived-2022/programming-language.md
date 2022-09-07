@@ -19,6 +19,11 @@ cargo test -- --show-output
 
 - __Pin__
 
+- __trait object__
+  - `&dyn Trait`
+  - `&mut dyn`
+  - `Box<dyn Trait>`
+
 ------------------
 
 ## Go (1.18+)
@@ -84,18 +89,27 @@ GODEBUG=gctrace=1 go test -bench=. -v
 
 ------------------
 
+- 除非是 K8s 密切相关的场景, 比如 K8s operator 开发,
+  否则, __都不应该选择__ Go 语言
+
 - `2022-09` 开始正式评估在团队项目中引入 `Rust`
   - 参照一些手头上的项目, 看看 `Rust` 生态还缺点啥
-  - 由于公司使用 `GCP` (很挫的云平台)
+  - 由于公司使用 `GCP` (很垃圾的云平台)
   - https://github.com/googleapis/google-cloud-rust
   - 这玩意还打算继续开发么?
   - https://github.com/kafka-rust/kafka-rust
-  - 功能还很贫乏!
+  - 功能还很贫乏! 看样子也不打算维护了
+  - 鉴于 [confluent-kafka-go](https://github.com/confluentinc/confluent-kafka-go)
+    基于 [librdkafka](https://github.com/edenhill/librdkafka),
+    所以还是选择基于 librdkafka 的
+    [rust-rdkafka](https://github.com/fede1024/rust-rdkafka)
   - https://github.com/tokio-rs/axum
   - https://github.com/hyperium/tonic
   - https://github.com/diesel-rs/diesel
   - https://github.com/SeaQL/sea-orm
   - 以上 gRPC, API, ORM 皆胜过 Go 社区!
+  - Diesel vs SeaORM, 还是用 Diesel,
+    毕竟存在很久了~
 
 - [Diesel 2.0.0](https://github.com/diesel-rs/diesel/releases/tag/v2.0.0)
   - [SeaORM](https://github.com/SeaQL/sea-orm)
