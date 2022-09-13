@@ -24,6 +24,23 @@ cargo test -- --show-output
   - `&mut dyn`
   - `Box<dyn Trait>`
 
+- `String`
+- `Box<T>`
+- `Rc<T>`
+  - 非线程安全
+- `Arc<T>`
+  - 线程安全
+- `Cell<T>`
+- `RefCell<T>`
+- `Cow<T>`
+- `Unique<T>`
+- `Shared<T>`
+- `Vec<T>`
+- `RawVec<T>`
+- Raw Pointer
+  - `*mut T`
+  - `*const T`
+
 ------------------
 
 ## Go (1.18+)
