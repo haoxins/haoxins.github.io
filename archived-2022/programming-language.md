@@ -33,10 +33,10 @@ cargo test -- --show-output
 - `Cell<T>`
 - `RefCell<T>`
 - `Cow<T>`
-- `Unique<T>`
-- `Shared<T>`
 - `Vec<T>`
 - `RawVec<T>`
+- `Unique<T>`
+- `Shared<T>`
 - Raw Pointer
   - `*mut T`
   - `*const T`
