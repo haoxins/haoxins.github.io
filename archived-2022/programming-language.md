@@ -4,9 +4,7 @@ description: 结庐在人境, 而无车马喧. 问君何能尔? 心远地自偏.
 date: 2021-10-28
 ---
 
-## Rust (1.60+) and Python (3.10+)
-
-> __Python__ 的正确使用姿势, `call` __Rust__
+## Rust (1.63+)
 
 - [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
 - [axum](https://github.com/tokio-rs/axum)
@@ -105,6 +103,8 @@ GODEBUG=gctrace=1 go test -bench=. -v
   parent one.
 
 ------------------
+
+- __Python__ 的正确使用姿势, `call` __Rust__
 
 - 除非是 K8s 密切相关的场景, 比如 K8s operator 开发,
   否则, __都不应该选择__ Go 语言
