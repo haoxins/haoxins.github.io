@@ -3,6 +3,7 @@
 - [Blockchain & Cryptography](articles/cryptography.md)
 - [泛函分析导论](articles/math-functional-analysis.md)
 - [测度论](articles/math-measure-theory.md)
+- [Programming Rust - 3nd Edition](articles/programming-rust-3nd.md)
 - [我的推荐书单~](articles/reading-recommended.md)
 ### 2022
 - [Advanced Algorithms and Data Structures](archived-2022/algorithms-advanced.md)
