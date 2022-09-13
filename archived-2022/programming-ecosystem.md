@@ -34,6 +34,10 @@ date: 2022-01-17
 
 ## 2022
 
+- [Citus 11 for Postgres goes fully open source, with query from any node](https://www.citusdata.com/blog/2022/06/17/citus-11-goes-fully-open-source)
+  - https://github.com/citusdata/citus
+  - 再次重申看衰 https://github.com/yugabyte/yugabyte-db
+
 - [Ray-2.0.0](https://github.com/ray-project/ray/releases/tag/ray-2.0.0)
   - https://github.com/ray-project/ray/pull/24523
   - `Polars` is significantly faster than the
