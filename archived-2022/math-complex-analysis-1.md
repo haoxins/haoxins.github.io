@@ -239,11 +239,12 @@ date: 2021-11-16
 - 欧拉公式的一个简单而重要的结论是:
   正弦和余弦可以用指数函数构造出来.
 - 准确地说:
-  - $$ e^{i \theta} + e{- i \theta} = 2 cos \theta $$,
-  - $$ e^{i \theta} - e{-i \theta} = 2 i sin \theta $$,
+  - $$ e^{i \theta} + e^{- i \theta} = 2 \cos \theta $$,
+  - $$ e^{i \theta} - e^{-i \theta} = 2 i \sin \theta $$,
 - 或者与此等价有
-  - $$ \cos \theta = \frac{e^{i \theta} + e{- i \theta}}{2} $$,
-  - $$ \sin \theta = \frac{e^{i \theta} - e{- i \theta}}{2 i} $$.
+  - $$ \cos \theta = \frac{e^{i \theta} + e^{- i \theta}}{2} $$,
+  - $$ \sin \theta = \frac{e^{i \theta} - e^{- i \theta}}{2 i} $$.
+
 
 ### 空间复数
 
