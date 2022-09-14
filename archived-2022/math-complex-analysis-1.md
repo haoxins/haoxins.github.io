@@ -205,11 +205,7 @@ date: 2021-11-16
   $$ e^{i \theta} $$
   有意义, 我们仍坚持用这个级数, 但令
   $$ x = i \theta $$:
-  - $$
-    e^{i \theta}
-    = 1 + i \theta + \frac{(i \theta)^2}{2!}
-    + \frac{(i \theta)^3}{3!} + ...
-    $$
+  - $$ e^{i \theta} = 1 + i \theta + \frac{(i \theta)^2}{2!} + \frac{(i \theta)^3}{3!} + ... $$
   - 这个级数与
     $$ e^{\theta} $$
     的级数同样有意义, 但是各项并不具有相同方向,
