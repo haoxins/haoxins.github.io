@@ -310,6 +310,12 @@ date: 2021-09-20
 
 ------------------
 
+- [人工智能](https://book.douban.com/subject/36093845/)
+  - 一般
+  - 纯粹是冲着 __姚期智__ 三个字买的~
+
+------------------
+
 - https://www.coursera.org/specializations/machine-learning-introduction
   - https://www.coursera.org/learn/machine-learning
   - https://www.coursera.org/account/accomplishments/certificate/THGATFHMCZ8T
