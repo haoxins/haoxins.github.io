@@ -7,6 +7,7 @@ date: 2021-10-28
 ## Rust (1.63+)
 
 - [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
+- [Rayon](https://github.com/rayon-rs/rayon)
 - [axum](https://github.com/tokio-rs/axum)
 
 ```zsh
@@ -127,6 +128,7 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - 以上 gRPC, API, ORM 皆胜过 Go 社区!
   - Diesel vs SeaORM, 还是用 Diesel,
     毕竟存在很久了~
+  - VS Code + `rust-analyzer` 插件, 体验还是有待改善~
 
 - [Diesel 2.0.0](https://github.com/diesel-rs/diesel/releases/tag/v2.0.0)
   - [SeaORM](https://github.com/SeaQL/sea-orm)
