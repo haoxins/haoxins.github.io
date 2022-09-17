@@ -105,6 +105,11 @@ GODEBUG=gctrace=1 go test -bench=. -v
 
 ------------------
 
+- 选择一个语言, 最重要的其实是生态, 而非语法特性.
+  - [Serde](https://github.com/serde-rs/serde)
+  - Serde is a framework for serializing and deserializing
+    Rust data structures efficiently and generically.
+
 - __Python__ 的正确使用姿势, `call` __Rust__
 
 - 除非是 K8s 密切相关的场景, 比如 K8s operator 开发,
