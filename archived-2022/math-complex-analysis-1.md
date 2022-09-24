@@ -397,13 +397,13 @@ $$
 \overline{a} b = \mathbf{a} · \mathbf{b} + i (a \times b)
 $$
 
-当然也可以通过简单的计算得出这个结果:
+- 当然也可以通过简单的计算得出这个结果:
 
 $$
 \begin{align}
-\overline{a} b & = (|a| e^{-i \alpha}) (|b| e^{i \beta})
-               & = |a| |b| e^{i(\beta - \alpha)}
-               & = |a| |b| e^{i \theta}
+\overline{a} b & = (|a| e^{-i \alpha}) (|b| e^{i \beta}) \\
+               & = |a| |b| e^{i(\beta - \alpha)}         \\
+               & = |a| |b| e^{i \theta}                  \\
                & = |a| |b| (\cos \theta + i \sin \theta)
 \end{align}
 $$
