@@ -110,10 +110,29 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - Serde is a framework for serializing and deserializing
     Rust data structures efficiently and generically.
 
+- 纯粹从语言角度而言, `2022` 以及接下来的 `2~3` 年,
+  Java 都会比 Go 迭代的更加迅速.
+  - Web service 本来就是 Java (Spring) 的优势
+  - 而原本 Go 的地盘, K8s operator, 搞不好都会被 Java 瓜分.
+    当然, 也会被 Rust 和 Python 瓜分.
+  - 但是由于内存效率的原因, 一些所谓的云原生应用, 不会被 Java 占领.
+    但是, 可能且个人也期待 Rust 的表现.
+- 个人的偏好或者期待:
+  - Python 做 prototype
+  - Rust ~
+- 有一点必须强调, 所谓的合适的语言做合适的事情,
+  和开发者的水平是有很大关系的.
+  (准确说是开发者关于某一语言的水平)
+  - 如果足够熟练, Rust 也可以做 prototype
+- 一言以蔽之: Go core team 有自己的坚持;
+  但开源社区同样有自己的发展趋势与选择!
+
 - __Python__ 的正确使用姿势, `call` __Rust__
 
 - 除非是 K8s 密切相关的场景, 比如 K8s operator 开发,
   否则, __都不应该选择__ Go 语言
+  - 好吧, 我有点后悔了,
+    其实 K8s operator 开发也不应该用 Go
 
 - `2022-09` 开始正式评估在团队项目中引入 `Rust`
   - 参照一些手头上的项目, 看看 `Rust` 生态还缺点啥
