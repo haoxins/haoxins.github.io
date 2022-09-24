@@ -389,12 +389,14 @@ $$
     乘
     $$ \mathbb{C} $$
     的任一点的净效果.
-  - 这就是旋转一个角 `-a` 再放大 `|a|` 倍,
+  - 这就是旋转一个角
+    $$ - \alpha $$
+    再放大 `|a|` 倍,
     如果再看斜边为 `b` 的有阴影的直角三角形在此变换下的象,
     则我们可以立刻看到
 
 $$
-\overline{a} b = \mathbf{a} · \mathbf{b} + i (a \times b)
+\overline{a} b = \mathbf{a} · \mathbf{b} + i (\mathbf{a} \times \mathbf{b})
 $$
 
 - 当然也可以通过简单的计算得出这个结果:
