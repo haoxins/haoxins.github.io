@@ -431,11 +431,11 @@ $$
     `F ~ F` 对一切 `F` 成立.
   - (ii) 若 `F` 等于 `F'`,
     则 `F'` 也等于 `F`:
-    $$ F ~ F' \Rightarrow F' ~ F $$.
+    $$ F \thicksim F' \Rightarrow F' \thicksim F $$.
   - (iii) 若 `F` 等于 `F'`,
     `F'` 等于 `F''`,
     则 `F` 也应与 `F''` 相等:
-    $$ F ~ F' \And F' ~ F'' \Rightarrow F ~ F'' $$.
+    $$ F \thicksim F' \And F' \thicksim F'' \Rightarrow F \thicksim F'' $$.
 - 符合这些要求的任何关系都称为等价关系.
 
 ---
