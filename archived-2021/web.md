@@ -8,6 +8,10 @@ date: 2021-04-05
 
 - Bye Bye!
 
+- [workerd](https://github.com/cloudflare/workerd)
+  - Cloudflare's JavaScript/Wasm Runtime
+  - 哈哈哈, 又一个
+
 - [bun](https://github.com/oven-sh/bun)
   - All in one fast & easy-to-use tool.
   - Instead of 1,000 node_modules for development,
