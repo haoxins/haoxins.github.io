@@ -4,6 +4,8 @@ description: Fast, Safe Systems Development
 date: 2022-09-16
 ---
 
+> 国庆节前后, 同时看了这两本. (`Programming Rust` 是重温)
+
 - [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
   - Covers Rust `1.50`
   - 难得有一本技术书籍, 让我读第二遍
@@ -12,6 +14,11 @@ date: 2022-09-16
 
 ------------------
 
+- [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
+  - `2022-09`: 最近有一些思考, 我觉得 Go 会比 Java 先被淘汰
+  - 淘汰不是指消失, 而是不再是主流
+  - 何为主流: `2022`年, C++ 可以勉强算主流, 但 C 肯定不算了
+  - 说白了就是平时用到的开源项目, 你需要偶尔去看代码 Debug 的
 
 ## 并发编程
 
