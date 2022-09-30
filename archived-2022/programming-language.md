@@ -4,7 +4,7 @@ description: 结庐在人境, 而无车马喧. 问君何能尔? 心远地自偏.
 date: 2021-10-28
 ---
 
-## Rust (1.63+)
+## Rust (1.64+)
 
 - [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
 - [Rayon](https://github.com/rayon-rs/rayon)
@@ -110,6 +110,13 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - Serde is a framework for serializing and deserializing
     Rust data structures efficiently and generically.
 
+- `2022`年国庆节前后, 同时看两本编程语言的书籍
+  - 重温 [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
+  - 和 [On Java 进阶卷](https://book.douban.com/subject/35751623/)
+  - Rust 是我接下来项目中, 唯一主动选择的语言
+  - Go, Java, Kotlin, Python 都会是被动选择项
+  - Rust 也是目前唯一值得认真把玩的语言
+
 - 纯粹从语言角度而言, `2022` 以及接下来的 `2~3` 年,
   Java 都会比 Go 迭代的更加迅速.
   - Web service 本来就是 Java (Spring) 的优势
@@ -150,8 +157,8 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - https://github.com/diesel-rs/diesel
   - https://github.com/SeaQL/sea-orm
   - 以上 gRPC, API, ORM 皆胜过 Go 社区!
-  - Diesel vs SeaORM, 还是用 Diesel,
-    毕竟存在很久了~
+  - Diesel vs SeaORM, 还是用 SeaORM,
+    因为不想再需要一个 https://github.com/weiznich/diesel_async
   - VS Code + `rust-analyzer` 插件, 体验还是有待改善~
 
 - [Diesel 2.0.0](https://github.com/diesel-rs/diesel/releases/tag/v2.0.0)
