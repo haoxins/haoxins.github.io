@@ -62,6 +62,9 @@ date: 2022-01-17
 
 - [Strimzi Kafka Operator](https://github.com/strimzi/strimzi-kafka-operator)
   - 开发环境用起来还蛮方便, 但是远不够 Production Ready!
+  - `2022-09`, 同事也搁置了公司内的 Kafka operator 迁移
+  - 使用的是 https://github.com/strimzi/strimzi-kafka-operator
+  - 对于这个项目的代码实现, 不予置评
 
 - `2022-06-27`, 由于 License 的问题,
   用上了免费的 Rancher Desktop,

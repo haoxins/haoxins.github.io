@@ -110,6 +110,19 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - Serde is a framework for serializing and deserializing
     Rust data structures efficiently and generically.
 
+- `2022`国庆节, 数落 Go 的几个问题
+  - `Enum` 迟迟不考虑
+  - Go `1.18` 带来的 `interface` 的语义变化 (这个, 倒也还好)
+  - Go `1.18` 带来的 `Generics` 导致的后续的 std APIs 变更
+  - `Error` 处理的改进可能带来的 broken
+  - 对 `map`, `filter` 等系列 func 的一味拒绝
+  - Rust Attributes 之类的语法, 对于在开发 K8s operator 时的
+    CRD by code 类似场景还是很便利的. Struct Tags 丑陋且呆板!
+  - Rust Option 解决了 Primitive Types, 到底是 `0`, `false`, `""`,
+    还是 `nil`. 这绝对是一个设计缺失!
+  - 最关键的, 语言发展缓慢!
+  - 2022: `Rust` > `Go` > `Java` > `Python`
+
 - `2022`年国庆节前后, 同时看两本编程语言的书籍
   - 重温 [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
   - 和 [On Java 进阶卷](https://book.douban.com/subject/35751623/)
