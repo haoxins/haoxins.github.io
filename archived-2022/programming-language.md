@@ -121,7 +121,7 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - Rust Option 解决了 Primitive Types, 到底是 `0`, `false`, `""`,
     还是 `nil`. 这绝对是一个设计缺失!
   - 最关键的, 语言发展缓慢!
-  - 2022: `Rust` > `Go` > `Java` > `Python`
+  - 2022: `Rust` > `Go` > `Java`
 
 - `2022`年国庆节前后, 同时看两本编程语言的书籍
   - 重温 [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
