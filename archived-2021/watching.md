@@ -10,6 +10,8 @@ date: 2019-10-24
 
 ### 2022-10
 
+- [活着 (1994)](https://movie.douban.com/subject/1292365/)
+
 - [北京遇上西雅图](https://movie.douban.com/subject/10574468/)
 
 ### 2022-08
