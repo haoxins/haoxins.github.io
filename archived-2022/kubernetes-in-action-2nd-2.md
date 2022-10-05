@@ -447,3 +447,30 @@ status:
 - In short, some Nodes may specify taints, and a Pod
   must tolerate a Node's taints to
   be scheduled to that Node.
+
+---
+
+- The DaemonSet controller sets the `nodeAffinity`
+  field and leaves the `nodeName` field empty.
+  - This leaves scheduling to the Scheduler,
+    which also takes into account the Pod's
+    resource requirements and other properties.
+- A DaemonSet deploys Pods to all cluster nodes that
+  don't have taints that the Pod doesn't tolerate,
+  but you may want a particular workload to run
+  only on a subset of those nodes.
+  - With a DaemonSet, you can do this by specifying a
+    node selector in the Pod template.
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+spec:
+  template:
+    spec:
+      nodeSelector:
+        gpu: cuda
+```
+
+- Unlike the Pod label selector,
+  the node selector is __mutable__.
