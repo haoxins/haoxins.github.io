@@ -421,3 +421,22 @@ status:
 - `currentNumberScheduled`
 - The number of Nodes that run at least one
   Pod associated with this DaemonSet.
+- `desiredNumberScheduled`
+- The number of Nodes that should run the daemon Pod,
+  regardless of whether they actually run it.
+- `numberAvailable`
+- The number of Nodes that run at least
+  one daemon Pod that's available.
+- `numberMisscheduled`
+- The number of Nodes that are running a
+  daemon Pod but shouldn't be running it.
+- `numberReady`
+- The number of Nodes that have at least
+  one daemon Pod running and ready.
+- `updatedNumberScheduled`
+- The number of Nodes whose daemon Pod is
+  current with respect to the
+  Pod template in the DaemonSet.
+
+---
+
