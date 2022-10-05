@@ -444,3 +444,6 @@ status:
   Nodes if you explicitly allow it.
   - This rule also applies to workloads
     deployed through a DaemonSet.
+- In short, some Nodes may specify taints, and a Pod
+  must tolerate a Node's taints to
+  be scheduled to that Node.
