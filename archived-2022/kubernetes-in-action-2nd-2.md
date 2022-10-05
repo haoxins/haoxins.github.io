@@ -440,3 +440,7 @@ status:
 
 ---
 
+- Kubernetes only schedules workloads to control plane
+  Nodes if you explicitly allow it.
+  - This rule also applies to workloads
+    deployed through a DaemonSet.
