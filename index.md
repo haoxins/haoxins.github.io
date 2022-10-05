@@ -3,7 +3,7 @@
 ### 2023
 - [Advanced Algorithms and Data Structures](archived-2023/algorithms-advanced.md)
 - [Algorithms](archived-2023/algorithms.md)
-- [Blockchain & Cryptography](archived-2023/cryptography.md)
+- [Cryptography](archived-2023/cryptography.md)
 - [Kubernetes in Action (下) - 2nd Edition](archived-2023/kubernetes-in-action-2nd-3.md)
 - [泛函分析导论](archived-2023/math-functional-analysis.md)
 - [测度论](archived-2023/math-measure-theory.md)

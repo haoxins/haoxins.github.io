@@ -363,4 +363,61 @@ each cluster node.
 By default, daemon Pods are deployed on every node,
 but you can use a node selector to restrict
 deployment to some of the nodes.
+
+Although you could run system software on your
+cluster nodes using standard methods such as
+init scripts or systemd, using a DaemonSet
+ensures that you manage all workloads
+in your cluster in the same way.
 ```
+
+```
+In each pass of its reconciliation loop,
+the DaemonSet controller finds the Pods
+that match the label selector, checks that
+each node has exactly one matching Pod,
+and creates or removes Pods to
+ensure that this is the case.
+```
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: demo
+spec:
+  selector:
+    matchLabels:
+      app: demo
+  template:
+    metadata:
+      labels:
+        app: demo
+    spec:
+      containers:
+      - name: demo
+        image: busybox
+        command:
+        - sleep
+        - infinity
+```
+
+> The `selector` is __immutable__, but you can
+  change the labels as long as they
+  still match the `selector`.
+
+```yaml
+...
+status:
+  currentNumberScheduled: 2
+  desiredNumberScheduled: 2
+  numberAvailable: 2
+  numberMisscheduled: 0
+  numberReady: 2
+  observedGeneration: 1
+  updatedNumberScheduled: 2
+```
+
+- `currentNumberScheduled`
+- The number of Nodes that run at least one
+  Pod associated with this DaemonSet.
