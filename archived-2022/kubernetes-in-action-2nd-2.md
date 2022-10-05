@@ -352,3 +352,15 @@ spec:
   update that second Pod as well.
   - It's your responsibility to consider Pod readiness.
 
+## Deploying node agents and daemons with DaemonSets
+
+> 2022年10月5日, 终于又更新了!
+
+```
+A DaemonSet is an API object that ensures that
+exactly one replica of a Pod is running on
+each cluster node.
+By default, daemon Pods are deployed on every node,
+but you can use a node selector to restrict
+deployment to some of the nodes.
+```

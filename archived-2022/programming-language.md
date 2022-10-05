@@ -110,6 +110,8 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - Serde is a framework for serializing and deserializing
     Rust data structures efficiently and generically.
 
+- [The Initial Rust Infrastructure Has Been Merged Into Linux 6.1](https://www.phoronix.com/news/Rust-Is-Merged-Linux-6.1)
+
 - `2022`国庆节, 数落 Go 的几个问题
   - `Enum` 迟迟不考虑
   - Go `1.18` 带来的 `interface` 的语义变化 (这个, 倒也还好)
