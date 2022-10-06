@@ -489,3 +489,27 @@ spec:
   - It waits for you to manually delete each Pod,
     and then replaces it with a new Pod
     from the updated template.
+
+---
+
+- If you set `maxSurge` above zero, two instances of the
+  Pod run on the Node during an update for the time
+  specified in the `minReadySeconds` field.
+  - Most daemons don't support this mode because they
+    use locks to prevent multiple instances
+    from running simultaneously.
+  - If you tried to update such a daemon in this way,
+    the new Pod would never be ready because it couldn't
+    obtain the lock, and the update would fail.
+- The `maxUnavailable` parameter is set to one,
+  which means that the DaemonSet controller updates
+  only one Node at a time.
+  - It doesn't start updating the Pod on the next Node
+    until the Pod on the previous node
+    is ready and available.
+- Likewise, if you delete an existing Pod during a
+  rolling update, it's replaced with a new Pod.
+  - The same thing happens if you configure the
+    DaemonSet with the `OnDelete` update strategy.
+
+### Special features in Pods running node agents and daemons
