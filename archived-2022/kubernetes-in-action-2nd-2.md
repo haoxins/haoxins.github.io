@@ -474,3 +474,18 @@ spec:
 
 - Unlike the Pod label selector,
   the node selector is __mutable__.
+
+- At the time of writing, DaemonSets support
+  the strategies listed in the following table.
+  - `RollingUpdate`
+  - In this update strategy, Pods are replaced one by one.
+  - When a Pod is deleted and recreated, the controller waits
+    until the new Pod is ready.
+  - Then it waits an additional amount of time, specified in the
+    `spec.minReadySeconds` field of the DaemonSet, before
+    updating the Pods on the other Nodes.
+  - This is the __default__ strategy.
+  - `OnDelete`
+  - It waits for you to manually delete each Pod,
+    and then replaces it with a new Pod
+    from the updated template.

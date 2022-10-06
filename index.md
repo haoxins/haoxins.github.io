@@ -7,8 +7,6 @@
 - [Kubernetes in Action (下) - 2nd Edition](archived-2023/kubernetes-in-action-2nd-3.md)
 - [泛函分析导论](archived-2023/math-functional-analysis.md)
 - [测度论](archived-2023/math-measure-theory.md)
-- [费曼物理学讲义 (卷三) 上](archived-2023/physics-feynman-lectures-3-1.md)
-- [费曼物理学讲义 (卷三) 下](archived-2023/physics-feynman-lectures-3-2.md)
 - [Shtetl-Optimized, Scott Aaronson](archived-2023/scott-aaronson.md)
 ### 2022
 - [猫咪的那些事](archived-2022/cat.md)
@@ -41,6 +39,8 @@
 - [费曼物理学讲义 (卷二) 上](archived-2022/physics-feynman-lectures-2-1.md)
 - [费曼物理学讲义 (卷二) 中](archived-2022/physics-feynman-lectures-2-2.md)
 - [费曼物理学讲义 (卷二) 下](archived-2022/physics-feynman-lectures-2-3.md)
+- [费曼物理学讲义 (卷三) 上](archived-2022/physics-feynman-lectures-3-1.md)
+- [费曼物理学讲义 (卷三) 下](archived-2022/physics-feynman-lectures-3-2.md)
 - [通向实在之路 (上)](archived-2022/physics-road-to-reality-1.md)
 - [通向实在之路 (下)](archived-2022/physics-road-to-reality-2.md)
 - [100 Go Mistakes, How to Avoid Them](archived-2022/programming-100-go-mistakes.md)
