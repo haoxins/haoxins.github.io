@@ -513,3 +513,98 @@ spec:
     DaemonSet with the `OnDelete` update strategy.
 
 ### Special features in Pods running node agents and daemons
+
+- If you want to give a process running in a
+  container full access to the operating
+  system kernel, you can mark the
+  container as __privileged__.
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+spec:
+  template:
+    spec:
+      containers:
+      - name: kube-proxy
+        securityContext:
+          privileged: true
+    ...
+```
+
+- This gives the process running in the `kube-proxy`
+  container root access to the host's kernel and
+  allows it to modify the node's
+  network packet filtering rules.
+
+---
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+spec:
+  template:
+    spec:
+      containers:
+      - name: kindnet-cni
+        securityContext:
+          capabilities:
+            add:
+            - NET_RAW
+            - NET_ADMIN
+          privileged: false
+```
+
+- Instead of being fully privileged, the capabilities
+  `NET_RAW` and `NET_ADMIN` are added to the container.
+
+---
+
+- As you know, each Pod gets its own network interface.
+  However, you may want some of your Pods,
+  especially those deployed through a DaemonSet,
+  to use the node's network interface(s)
+  instead of having their own.
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+spec:
+  template:
+    spec:
+      dnsPolicy: ClusterFirst
+      hostNetwork: true
+```
+
+- Another option is for the Pod to use its own network,
+  but forward one or more host ports to the container
+  by using the `hostPort` field in the container's port list.
+- Containers in a Pod configured with `hostNetwork: true`
+  continue to use the other namespace types,
+  so they remain isolated from the node in other respects.
+
+---
+
+- Each cluster usually comes with two priority classes:
+  - `system-cluster-critical` and `system-node-critical`,
+  - but you can also create your own.
+- Each priority class has a value. The higher the value,
+  the higher the priority.
+  - The preemption policy in each class determines whether
+    or not Pods with lower priority should be evicted
+    when a Pod with that class is
+    scheduled to an overbooked Node.
+- You specify which priority class a Pod belongs to by
+  specifying the class name in the `priorityClassName`
+  field of the Pod's spec section.
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+spec:
+  template:
+    spec:
+      priorityClassName: system-node-critical
+```
+
+### Communicating with the local daemon Pod
