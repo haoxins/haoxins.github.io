@@ -51,7 +51,7 @@ $$
 \begin{cases}
 P = 概率 \\
 \phi = 概率幅 \\
-P = |\phi|^2
+P = \mid \phi \mid ^2
 \end{cases}
 $$
 
@@ -62,7 +62,7 @@ $$
 $$
 \begin{cases}
 \phi = \phi_1 + \phi_2 \\
-P =|\phi_1 + \phi_2| ^2
+P = \mid \phi_1 + \phi_2 \mid ^2
 \end{cases}
 $$
 
