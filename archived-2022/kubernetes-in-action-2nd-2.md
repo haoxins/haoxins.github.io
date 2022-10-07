@@ -608,3 +608,108 @@ spec:
 ```
 
 ### Communicating with the local daemon Pod
+
+1. __Binding directly to a host port__
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: node-agent
+  ...
+spec:
+  template:
+    spec:
+      containers:
+      - name: node-agent
+        ...
+        ports:
+        - name: http
+          containerPort: 80
+          hostPort: 11559
+```
+
+- The manifest defines a DaemonSet that deploys
+  node agent Pods listening on port `80` of the
+  Pod's network interface.
+  - However, in the list of ports, the container's
+    port `80` is also accessible through port
+    `11559` of the host Node.
+  - The process in the container binds only to
+    port `80`, but Kubernetes ensures that traffic
+    received by the host Node on port `11559` is
+    forwarded to port `80` within
+    the node-agent container,
+
+- For the application to connect to the local agent,
+  you must pass the IP of the host node and port
+  `11559` in this variable.
+  - Of course, this IP depends on which Node the
+    individual Kiada Pod is scheduled, so you can't
+    just specify a fixed IP address in the Pod manifest.
+  - Instead, you use the Downward API to get the local
+    Node IP.
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiada
+spec:
+  template:
+    spec:
+      containers:
+      - name: kiada
+        env:
+        ...
+        - name: NODE_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.hostIP
+        - name: NODE_AGENT_URL
+          value: http://$(NODE_IP):11559
+```
+
+2. __Using the node's network stack__
+
+- A similar approach to the previous section is for
+  the agent Pod to directly use the Node's network
+  environment instead of having its own.
+  - In this case, the agent is reachable through the
+    node's IP address via the port to which it binds.
+  - When the agent binds to port `11559`, client Pods
+    can connect to the agent through this port on
+    the node's network interface.
+- From the client's point of view, this is exactly
+  like using the `hostPort` field in the previous section,
+  but from the agent's point of view, it's different
+  because the agent was previously bound to port `80`
+  and traffic from the node's port `11559` was
+  forwarded to the container's port `80`, whereas now
+  it's bound directly to port `11559`.
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: node-agent
+  ...
+spec:
+  template:
+    spec:
+      hostNetwork: true
+      ...
+      containers:
+      - name: node-agent
+        ...
+        ports:
+        - name: http
+          containerPort: 11559
+```
+
+3. __Using a local Service__
+
+- You can configure a Service to forward traffic only
+  within the same node by setting the
+  `internalTrafficPolicy` in the Service
+  manifest to `Local`.
