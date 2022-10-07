@@ -221,7 +221,7 @@ $$
 - 现在可将两者相加
 - $$ R = A_1 e^{i (wt + \phi_1)} + A_2 e^{i (wt + \phi_2)} = (A_1 e^{i \phi_1} + A_2 e^{i \phi_2}) e^{iwt} $$
   - 或
-    $$ \hat{R} = A_1 e^{i \phi_1} + A_2 e^{i \phi_2} = A_R e^{i \phi} R $$
+    $$ \hat{R} = A_1 e^{i \phi_1} + A_2 e^{i \phi_2} = A_R e^{i \phi_R} $$
 - 这样就解决了我们要求解的问题, 因为它代表叠加结果是模为
   $$ A_R $$,
   相角为
