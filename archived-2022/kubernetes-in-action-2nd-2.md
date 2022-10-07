@@ -713,3 +713,46 @@ spec:
   within the same node by setting the
   `internalTrafficPolicy` in the Service
   manifest to `Local`.
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-agent
+  labels:
+    app: node-agent
+spec:
+  internalTrafficPolicy: Local
+  selector:
+    app: node-agent
+  ports:
+  - name: http
+    port: 80
+```
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiada
+spec:
+  template:
+    spec:
+      containers:
+      - name: kiada
+        env:
+        ...
+        - name: NODE_AGENT_URL
+          value: http://node-agent
+```
+
+- Use the `hostPort` or `hostNetwork` approach only if
+  you need to reach the agent from outside the cluster.
+- If the agent exposes multiple ports, you may think
+  it's easier to use `hostNetwork` instead of `hostPort`
+  so you don't have to forward each port individually,
+  but that's not ideal from a security perspective.
+  - If the Pod is configured to use the host network,
+    an attacker can use the Pod to bind to any port
+    on the Node, potentially enabling
+    man-in-the-middle attacks.
