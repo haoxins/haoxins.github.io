@@ -34,6 +34,8 @@ date: 2022-01-17
 
 ## 2022
 
+- [K8s: Object Storage Support](https://github.com/kubernetes/enhancements/tree/master/keps/sig-storage/1979-object-storage-support)
+
 - [Citus 11 for Postgres goes fully open source, with query from any node](https://www.citusdata.com/blog/2022/06/17/citus-11-goes-fully-open-source)
   - https://github.com/citusdata/citus
   - 再次重申看衰 https://github.com/yugabyte/yugabyte-db
