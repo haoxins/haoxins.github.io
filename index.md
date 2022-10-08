@@ -23,6 +23,7 @@
 - [伽罗瓦理论 群论](archived-2022/math-galois-theory.md)
 - [数学及其历史, 代数的历史, 一个数学家的辩白](archived-2022/math-history.md)
 - [数学女孩6 - 庞加莱猜想](archived-2022/math-poincare-conjecture.md)
+- [普林斯顿数学指南 (第三卷)](archived-2022/math-princeton-companion.md)
 - [纯数学教程 哈代 (上)](archived-2022/math-pure-mathematics-1.md)
 - [纯数学教程 哈代 (下)](archived-2022/math-pure-mathematics-2.md)
 - [基础拓扑学 修订版](archived-2022/math-topology.md)
