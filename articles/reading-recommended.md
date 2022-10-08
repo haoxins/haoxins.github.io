@@ -29,6 +29,15 @@ date: 2021-05-03
 - [量子力学 (第一卷)](https://book.douban.com/subject/25954720/)
 - [量子力学 (第二卷)](https://book.douban.com/subject/26716232/)
   - 如果想了解量子力学, 任何科普都是雾里看花, 水中捞月.
-  - 或者说, 除了通过数学公式, 别无他法!
+  - 或者说, 除了通过数学, 别无他法!
+
+- [控制论](https://book.douban.com/subject/3805815/)
+
+- [泡利物理学讲义 (第1, 2, 3卷)](https://book.douban.com/subject/25970912/)
+- [泡利物理学讲义 (第4, 5, 6卷)](https://book.douban.com/subject/35192922/)
+
+- [普林斯顿数学指南 (第一卷) ](https://book.douban.com/subject/25817381/)
+- [普林斯顿数学指南 (第二卷) ](https://book.douban.com/subject/25817383/)
+  - 第三卷就不要看了, 多余~
 
 - __TODO__ 静候, 张朝阳物理学讲义
