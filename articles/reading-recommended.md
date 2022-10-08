@@ -26,4 +26,9 @@ date: 2021-05-03
 
 - [泛函分析导论及应用](https://book.douban.com/subject/35941956/)
 
+- [量子力学 (第一卷)](https://book.douban.com/subject/25954720/)
+- [量子力学 (第二卷)](https://book.douban.com/subject/26716232/)
+  - 如果想了解量子力学, 任何科普都是雾里看花, 水中捞月.
+  - 或者说, 除了通过数学公式, 别无他法!
+
 - __TODO__ 静候, 张朝阳物理学讲义
