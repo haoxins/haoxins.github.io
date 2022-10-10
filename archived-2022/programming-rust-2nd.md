@@ -12,6 +12,13 @@ date: 2022-09-16
   - 第二遍读的时候 (`2022-09` ~), 已经是 Rust `1.64`
   - 第一遍读的时候 (`2021-07` ~ `2022-01`), 貌似是 Rust `1.54+`
 
+---
+
+- It's common to initialize a struct's fields with
+  variables of the same name, so rather than forcing
+  you to write `Complex { re: re, im: im }`,
+  Rust lets you simply write `Complex { re, im }`.
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
