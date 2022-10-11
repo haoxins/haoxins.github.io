@@ -2,11 +2,12 @@
 - [我的推荐书单~](articles/reading-recommended.md)
 ### 2023
 - [Advanced Algorithms and Data Structures](archived-2023/algorithms-advanced.md)
-- [Algorithms](archived-2023/algorithms.md)
 - [Cryptography](archived-2023/cryptography.md)
 - [Kubernetes in Action (下) - 2nd Edition](archived-2023/kubernetes-in-action-2nd-3.md)
+- [控制论 - 维纳](archived-2023/math-cybernetics.md)
 - [泛函分析导论](archived-2023/math-functional-analysis.md)
 - [测度论](archived-2023/math-measure-theory.md)
+- [Graph Algorithms for Data Science](archived-2023/ml-graph.md)
 - [Shtetl-Optimized, Scott Aaronson](archived-2023/scott-aaronson.md)
 ### 2022
 - [猫咪的那些事](archived-2022/cat.md)
@@ -30,7 +31,6 @@
 - [健身, 冥想](archived-2022/meditation-fitness.md)
 - [深度学习 - 樱花](archived-2022/ml-dl.md)
 - [特征工程 & Interpretable & Engineering](archived-2022/ml-feature.md)
-- [Graph Algorithms for Data Science](archived-2022/ml-graph.md)
 - [机器学习 - 西瓜, 南瓜](archived-2022/ml.md)
 - [狭义与广义相对论浅说, 对称与不对称, 泡利的错误](archived-2022/physics-1.md)
 - [黎曼猜想漫谈, 广义相对论专题选讲](archived-2022/physics-2.md)
