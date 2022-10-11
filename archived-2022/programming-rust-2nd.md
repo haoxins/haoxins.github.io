@@ -15,8 +15,8 @@ date: 2022-09-16
 ---
 
 - It's common to initialize a struct's fields with
-  variables of the same name, so rather than forcing
-  you to write `Complex { re: re, im: im }`,
+  variables of the __same name__, so rather than
+  forcing you to write `Complex { re: re, im: im }`,
   Rust lets you simply write `Complex { re, im }`.
 
 ------------------

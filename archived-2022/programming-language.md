@@ -111,6 +111,7 @@ GODEBUG=gctrace=1 go test -bench=. -v
     Rust data structures efficiently and generically.
 
 - [The Initial Rust Infrastructure Has Been Merged Into Linux 6.1](https://www.phoronix.com/news/Rust-Is-Merged-Linux-6.1)
+  - `2022-10`
 
 - `2022`国庆节, 数落 Go 的几个问题
   - `Enum` 迟迟不考虑
