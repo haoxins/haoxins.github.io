@@ -4,4 +4,4 @@ description: 钟鼓馔玉不足贵, 但愿长醉不复醒. 古来圣贤皆寂寞
 date: 2022-10-14
 ---
 
-- [泡利物理学讲义 (第4, 5, 6卷)](https://book.douban.com/subject/35192922/)
+- [泡利物理学讲义 (4, 5, 6卷)](https://book.douban.com/subject/35192922/)

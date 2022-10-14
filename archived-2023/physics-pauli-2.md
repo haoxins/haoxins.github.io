@@ -4,4 +4,4 @@ description: 人生得意须尽欢, 莫使金尊空对月. 天生我材必有用
 date: 2022-10-14
 ---
 
-- [泡利物理学讲义 (第1, 2, 3卷)](https://book.douban.com/subject/25970912/)
+- [泡利物理学讲义 (1, 2, 3卷)](https://book.douban.com/subject/25970912/)

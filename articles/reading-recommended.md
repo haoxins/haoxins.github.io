@@ -33,8 +33,8 @@ date: 2021-05-03
 
 - [控制论](https://book.douban.com/subject/3805815/)
 
-- [泡利物理学讲义 (第1, 2, 3卷)](https://book.douban.com/subject/25970912/)
-- [泡利物理学讲义 (第4, 5, 6卷)](https://book.douban.com/subject/35192922/)
+- [泡利物理学讲义 (1, 2, 3卷)](https://book.douban.com/subject/25970912/)
+- [泡利物理学讲义 (4, 5, 6卷)](https://book.douban.com/subject/35192922/)
 
 - [普林斯顿数学指南 (第一卷) ](https://book.douban.com/subject/25817381/)
 - [普林斯顿数学指南 (第二卷) ](https://book.douban.com/subject/25817383/)

@@ -4,4 +4,4 @@ description: 君不见, 黄河之水天上来, 奔流到海不复回! 君不见,
 date: 2022-10-14
 ---
 
-- [泡利物理学讲义 (第1, 2, 3卷)](https://book.douban.com/subject/25970912/)
+- [泡利物理学讲义 (1, 2, 3卷)](https://book.douban.com/subject/25970912/)
