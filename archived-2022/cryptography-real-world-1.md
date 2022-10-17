@@ -96,9 +96,11 @@ date: 2021-09-10
   against all three attacks.
 * If our hash function generates random outputs
   of 256 bits, the space of all outputs
-  is of size $$ 2^256 $$.
+  is of size
+  $$ 2^{256} $$.
 * This means that collisions can be found with
-  good probability after generating $$ 2^128 $$
+  good probability after generating
+  $$ 2^{128} $$
   digests (due to the *birthday bound*).
 * In order to achieve `128-bit` security at a minimum,
   a digest must not be truncated under:
@@ -770,12 +772,16 @@ invented in 1996, and specified in `RFC 2104`.
   sound (Peggy cannot prove anything if she
   doesn't know the witness), and zero-knowledge
   (Victor learns nothing about the witness).
-  - Peggy: I'll prove that I know `x` in $$ Y = g^{x} \mod p $$
+  - Peggy: I'll prove that I know `x` in
+    $$ Y = g^{x} \mod p $$
   - Peggy: Here's a *commitment* of a
-    random value $$ R = g^k $$
+    random value
+    $$ R = g^k $$
   - Victor: Here's a random challenge `c`
-  - Peggy: Here's a *hidden witness* $$ s = k + c \times x $$
-  - Victor: Indeed, $$ g^s = Y^{c} \times R $$
+  - Peggy: Here's a *hidden witness*
+    $$ s = k + c \times x $$
+  - Victor: Indeed,
+    $$ g^s = Y^{c} \times R $$
 
 > - Signatures as `non-interactive` *zero-knowledge proofs*
 
@@ -799,9 +805,12 @@ invented in 1996, and specified in `RFC 2104`.
   *Schnorr signature scheme*.
 
 * **Schnorr signature**
-  - *Commitment*: $$ R = g^k $$
-  - *"Random" challenge*: $$ c = HASH(R, msg) $$
-  - *Hidden witness*: $$ s = k + c \times x $$
+  - Commitment:
+    $$ R = g^k $$
+  - "Random" challenge:
+    $$ c = HASH(R, msg) $$
+  - Hidden witness:
+    $$ s = k + c \times x $$
 
 * A *Schnorr signature* is essentially two values,
   `R` and `s`, where `R` is a *commitment* to some
@@ -1234,9 +1243,10 @@ if (len != sizeof(secret)) {
   partial keys. To recover a polynomial of degree
   `n` that defines a curve, one needs to know
   `n + 1` points on the curve. For example,
-  $$ f(x) = 3x + 5 $$ is of degree `1`, so you
-  need any two points `(x, f(x))` to recover the
-  polynomial, and $$ f(x) = 5x^2 + 2x + 3 $$
+  $$ f(x) = 3x + 5 $$
+  is of degree `1`, so you need any two points
+  `(x, f(x))` to recover the polynomial, and
+  $$ f(x) = 5x^2 + 2x + 3 $$
   is of degree `2`, so you need any three points
   to recover the polynomial.
 
