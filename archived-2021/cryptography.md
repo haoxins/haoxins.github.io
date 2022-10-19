@@ -40,7 +40,7 @@ date: 2021-03-22
 * The known-plaintext attack
 * The chosen-plaintext attack
   - The difference from the known-plaintext attack is that
-  - the attackers are the ones choosing the plaintext
+    the attackers are the ones choosing the plaintext
 
 ```
 Perfect Secrecy == One-Time Pad
@@ -50,7 +50,7 @@ Perfect Secrecy == One-Time Pad
 * Computational security relies on two assumptions
   - First, the attackers are computationally limited
   - Second, the cryptosystem relies on mathematical problems
-  - that are assumed to be difficult to solve
+    that are assumed to be difficult to solve
 
 * Side-Channel Attack
 
