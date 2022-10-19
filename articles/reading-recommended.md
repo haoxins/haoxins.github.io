@@ -36,8 +36,9 @@ date: 2021-05-03
 - [泡利物理学讲义 (1, 2, 3卷)](https://book.douban.com/subject/25970912/)
 - [泡利物理学讲义 (4, 5, 6卷)](https://book.douban.com/subject/35192922/)
 
-- [普林斯顿数学指南 (第一卷) ](https://book.douban.com/subject/25817381/)
 - [普林斯顿数学指南 (第二卷) ](https://book.douban.com/subject/25817383/)
-  - 第三卷就不要看了, 多余~
+  - 第一卷, 概括性介绍, 还行~
+  - 第三卷, 就不要看了, 多余~
+
 
 - __TODO__ 静候, 张朝阳物理学讲义
