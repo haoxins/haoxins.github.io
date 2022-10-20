@@ -9,7 +9,7 @@ date: 2021-10-15
 
 ## Secure transport
 
-* *Transport Layer Security* (**TLS**)
+* Transport Layer Security (**TLS**)
   - The most recent version of **TLS** is **TLS 1.3**,
     specified in **RFC 8446** and published in `2018`.
 
@@ -881,11 +881,12 @@ Certificate  ::=  SEQUENCE  {
   - Incidentally, the general-purpose MPC construction
     I explained earlier in this section is based on
     secret sharing, but there are more ways to
-    construct MPC protocols. A well-known alternative
-    is called **garbled circuits**, which is a type of
-    construction first proposed by Yao in his 1982
-    paper introducing MPC. Another alternative is
-    based on **fully homomorphic encryption**.
+    construct MPC protocols.
+  - A well-known alternative is called **garbled circuits**,
+    which is a type of construction first proposed
+    by Yao in his 1982 paper introducing MPC.
+  - Another alternative is based on
+    **fully homomorphic encryption**.
 
 * **Fully homomorphic encryption** (FHE) and
   the promises of an encrypted cloud
@@ -937,28 +938,28 @@ Certificate  ::=  SEQUENCE  {
   re-encrypt the noisy ciphertext under another
   public key (usually called the bootstrapping key)
   to obtain an encryption of that noisy ciphertext.
-  Notice that the new ciphertext has no noise.
+  - Notice that the new ciphertext has no noise.
 * Now comes the magic: you are provided with the
   initial private key, not in cleartext, but
   encrypted under that bootstrapping key. This
   means that you can use it with a decryption
   circuit to homomorphically decrypt the inner
-  noisy ciphertext. If the decryption circuit
-  produces an acceptable amount of noise, then
-  it works, and you will end up with the result
-  of the first homomorphic operation encrypted
-  under the bootstrapping key.
+  noisy ciphertext.
+  - If the decryption circuit produces an acceptable
+    amount of noise, then it works, and you will
+    end up with the result of the first homomorphic
+    operation encrypted under the bootstrapping key.
 * If the remaining amount of errors allows you
   to do at least one more homomorphic operation
   `(+ or ×)`, then you are gold: you have a
   fully homomorphic encryption algorithm because
   you can always, in practice, run the
   bootstrapping after or before every operation.
-  Note that you can set the bootstrapping
-  key pair to be the same as the initial key pair.
-  It's a bit weird as you get some circular
-  security oddity, but it seems to work and no
-  security issues are known.
+  - Note that you can set the bootstrapping
+    key pair to be the same as the initial key pair.
+  - It's a bit weird as you get some circular
+    security oddity, but it seems to work and no
+    security issues are known.
 
 * **General-purpose zero-knowledge proofs** (ZKPs)
 
@@ -967,8 +968,8 @@ Certificate  ::=  SEQUENCE  {
   (the inputs of a program and the outputs
   obtained after its execution) while hiding some of
   the inputs or outputs involved in the computation.
-  An example of this is a prover trying to prove
-  that a sudoku can be solved.
+  - An example of this is a prover trying to prove
+    that a sudoku can be solved.
 
 * In 2018, actors from the industry and academia
   joined together to form the ZKProof Standardization
