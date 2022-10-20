@@ -685,16 +685,16 @@ invented in 1996, and specified in `RFC 2104`.
 ## Asymmetric encryption and hybrid encryption
 
 * In reality, asymmetric encryption is quite
-  *limited* due to the restricted length
+  limited due to the restricted length
   of messages it can encrypt.
 
-* Today, `RSA` is often *not the preferred way*
+* Today, `RSA` is often not the preferred way
   of doing a key exchange, and it is being used
-  *less and less* in protocols *in favor of*
+  less and less in protocols **in favor of**
   **Elliptic Curve Diffie-Hellman** (`ECDH`).
 
-* In practice, *asymmetric encryption* can only
-  encrypt messages up to *a certain length*.
+* In practice, asymmetric encryption can only
+  encrypt messages up to a certain length.
 
 * **ECIES**
   - The main standard to perform hybrid encryption
@@ -722,7 +722,7 @@ invented in 1996, and specified in `RFC 2104`.
 ## Signatures and zero-knowledge proofs
 
 * Only you can use your signature to sign arbitrary messages.
-* Anybody can verify your signature on a message.
+  - Anybody can verify your signature on a message.
 
 * A signature scheme typically consists of
   *three different algorithms*:
@@ -909,10 +909,10 @@ invented in 1996, and specified in `RFC 2104`.
   key and the message, and the public key of the
   signer is included as part of the challenge.
 
-* The *most widely used* instantiation of
-  **EdDSA**, **Ed25519**, is defined with the
-  *Edwards25519* curve and the
-  *SHA-512* as a hash function.
+* The **most widely used** instantiation of
+  EdDSA, Ed25519, is defined with the
+  `Edwards25519` curve and the
+  `SHA-512` as a hash function.
 
 * Substitution attacks on signatures
   - Substitution attacks, also referred to as
