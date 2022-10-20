@@ -298,13 +298,13 @@ spec:
 
 ## Managing the lifecycle of the Pod's containers
 
-* A pod's *status* section contains the following information:
-  - the *IP* addresses of the pod and the worker *node* that hosts it
-  - *when* the pod was *started*
-  - the pod's *quality-of-service* (QoS) class
-  - what *phase* the pod is in,
-  - the *conditions* of the pod, and
-  - the *state* of its individual *containers*.
+* A pod's `status` section contains the following information:
+  - the IP addresses of the pod and the worker node that hosts it
+    when the pod was started
+  - the pod's quality-of-service (QoS) class
+  - what `phase` the pod is in,
+  - the conditions of the pod, and
+    the state of its individual containers.
 
 * **Pod Phase**
   - *Pending*

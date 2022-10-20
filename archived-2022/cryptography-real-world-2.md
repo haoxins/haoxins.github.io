@@ -761,7 +761,7 @@ Certificate  ::=  SEQUENCE  {
 * One limitation of these **PBFT-based**
   consensus algorithms is that they all
   require a known and fixed set of
-  *participants*.
+  participants.
 * More problematic, past a certain number
   of participants, they start breaking
   apart: communication complexity
@@ -798,12 +798,13 @@ Certificate  ::=  SEQUENCE  {
   a field of cryptography that came into existence
   in 1982 with the famous Millionaires' problem.
 * In his 1982 paper "Protocols for Secure Computations,"
-  Andrew C. Yao wrote, "Two millionaires wish to know
-  who is richer; however, they do not want to find
-  out inadvertently any additional information about
-  each other's wealth. How can they carry out such
-  a conversation?" Simply put, MPC is a way for
-  *multiple participants to compute a program together*.
+  Andrew C. Yao wrote,
+  - "Two millionaires wish to know who is richer;
+    however, they do not want to find out inadvertently
+    any additional information about each other's wealth.
+    How can they carry out such a conversation?"
+  - Simply put, MPC is a way for
+    *multiple participants to compute a program together*.
 
 * MPC allows us to completely remove trusted third
   parties from a distributed computation and enables
@@ -814,15 +815,15 @@ Certificate  ::=  SEQUENCE  {
 
 * NIST in mid-2019 kicking off a standardization
   process for **threshold cryptography**.
-* Another well-known *subfield* of **MPC** is the
+* Another well-known subfield of **MPC** is the
   field of **private set intersection** (PSI),
   which poses the following problem:
   - Alice and Bob have a list of words, and they
     want to know which words (or perhaps just how many)
     they have in common without revealing their
-    respective list of words. One way to solve this
-    problem is to use the oblivious pseudorandom
-    function (OPFR) construction.
+    respective list of words.
+    - One way to solve this problem is to use the
+      oblivious pseudorandom function (OPFR) construction.
 * **Private set intersection** (PSI) allows Alice
   to learn what words she has in common with Bob.
   - First, she blinds every word she has in her
@@ -861,12 +862,13 @@ Certificate  ::=  SEQUENCE  {
   the parts to all participants.
 * The second step of a general-purpose MPC with
   secret sharing is to have participants compute
-  each gate in the circuit. For example, a
-  participant can compute an addition gate by adding
-  the two input Shamir shares that they have, which
-  produces a Shamir share of the output.
+  each gate in the circuit.
+  - For example, a participant can compute an
+    addition gate by adding the two input Shamir
+    shares that they have, which produces a
+    Shamir share of the output.
 
-* The **state** of **MPC**
+* The state of **MPC**
   - There's been huge progress in the last decade
     to make MPC practical. It is a field of many
     different use cases, and one should be on the
@@ -886,7 +888,7 @@ Certificate  ::=  SEQUENCE  {
     based on **fully homomorphic encryption**.
 
 * **Fully homomorphic encryption** (FHE) and
-  the *promises of an encrypted cloud*
+  the promises of an encrypted cloud
   - This interesting concept, originally proposed
     in 1978 by Rivest, Adleman, and Dertouzos, is
     what we call fully homomorphic encryption (FHE)
@@ -903,7 +905,7 @@ Certificate  ::=  SEQUENCE  {
     homomorphic for one operation
     (addition or multiplication) and homomorphic
     for the other operation in limited ways.
-    For example, additions are unlimited up to a
+  - For example, additions are unlimited up to a
     certain number but only a few
     multiplications can be done.
   - **Leveled homomorphic** Both addition and
