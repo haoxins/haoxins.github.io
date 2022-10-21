@@ -133,32 +133,35 @@ date: 2021-09-10
   an attack (called a `length-extension attack`)
   if used to **hash secrets**.
 * Because of this, and the fact that `SHA-2` is vulnerable
-  to *length-extension attacks*, NIST decided in 2007 to
-  organize an open competition for a new standard: `SHA-3`.
+  to `length-extension attacks`, NIST decided in 2007 to
+  organize an open competition for a new standard:
+  - `SHA-3`.
 * `SHA-3` is a cryptographic algorithm
-  built on top of a *permutation*.
-* `SHA-3` is based on a particular *permutation* called
+  built on top of a permutation.
+* `SHA-3` is based on a particular permutation called
   `keccak-f` that takes an input and returns
   an output of the same size.
 
+---
+
 * Cryptographic protocols often necessitate this
   type of primitives but do not want to be
-  constrained by the *fixed sizes* of
+  constrained by the fixed sizes of
   a hash function's digest.
-* For this reason, the `SHA-3` standard introduced
-  a more versatile primitive called an
-  *extendable output function* or `XOF`.
+  - For this reason, the `SHA-3` standard introduced
+    a more versatile primitive called an
+    `extendable output function` or `XOF`.
 * This section introduces the two standardized XOFs:
   - `SHAKE` and `cSHAKE`.
-* **`SHAKE`**, specified in *FIPS 202* along with `SHA-3`,
+* **`SHAKE`**, specified in `FIPS 202` along with `SHA-3`,
   can be seen as a hash function that returns
-  an output of *an arbitrary length*.
+  an output of an arbitrary length.
 * **`cSHAKE`** is pretty much exactly like `SHAKE`,
-  except that it also takes a *customization string*.
+  except that it also takes a customization string.
 * **`TupleHash`**, which is based on `cSHAKE` and
   specified in the same standard as `cSHAKE`.
 * **`TupleHash`** is an interesting function
-  that allows one to hash a *tuple*.
+  that allows one to hash a tuple.
 
 ```zsh
 echo -n "Alice""Bob""100""15" | openssl dgst -sha3-256
@@ -171,18 +174,18 @@ echo -n "Alice""Bob""1001""5" | openssl dgst -sha3-256
   a brute force attack or an exhaustive search
   can be undertaken. This would test each
   attempt against the whole database.
-  - This issue has been commonly solved by using *salts*,
-    which in some sense is like using a
-    per-user customization string with `cSHAKE`.
+  - This issue has been commonly solved by using
+    **salts**, which in some sense is like using
+    a per-user customization string with `cSHAKE`.
   - It effectively creates a different
     hash function for every user.
 * Hash functions are supposed to be as fast.
   Attackers can leverage this to brute force
   (many, many passwords per second).
-  - This issue is solved with *password hashes*,
+  - This issue is solved with **password hashes**,
     which are designed to be slow.
   - The current state-of-the-art
-    choice for this is *Argon2*.
+    choice for this is `Argon2`.
 
 * [RFC 9106](https://datatracker.ietf.org/doc/rfc9106/)
   - Argon2 Memory-Hard Function for
@@ -190,16 +193,16 @@ echo -n "Alice""Bob""1001""5" | openssl dgst -sha3-256
 
 ## Message authentication codes
 
-* Mix a *hash function* with a *secret key* and
+* Mix a `hash` function with a `secret` key and
   you obtain something called a
-  *message authentication code* (**MAC**),
+  `message authentication code` (**MAC**),
   a cryptographic primitive to
   protect the **integrity** of data.
 
 * **`HMAC`** is a message authentication code
   that uses a hash function at its core.
-* It is compatible with different hash functions,
-  but it is mostly used in conjunction with `SHA-2`.
+  - It is compatible with different hash functions,
+    but it is mostly used in conjunction with `SHA-2`.
 
 * 哇喔, Rust!
 
