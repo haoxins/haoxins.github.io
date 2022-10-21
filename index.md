@@ -3,6 +3,7 @@
 ### 2023
 - [Advanced Algorithms and Data Structures](archived-2023/algorithms-advanced.md)
 - [Cryptography](archived-2023/cryptography.md)
+- [High-Dimensional Data Analysis with Low-Dimensional Models](archived-2023/high-dim-data-low-dim-model.md)
 - [Kubernetes in Action (下) - 2nd Edition](archived-2023/kubernetes-in-action-2nd-3.md)
 - [复分析 可视化方法 (下)](archived-2023/math-complex-analysis-2.md)
 - [控制论 - 维纳](archived-2023/math-cybernetics.md)

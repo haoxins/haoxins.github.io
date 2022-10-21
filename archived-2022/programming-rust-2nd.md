@@ -19,6 +19,18 @@ date: 2022-09-16
   forcing you to write `Complex { re: re, im: im }`,
   Rust lets you simply write `Complex { re, im }`.
 
+- The unit type, written `()`, is akin to `void` in C++.
+
+```
+It's a common beginner's mistake to attempt to
+use ? in the main function.
+However, since main itself doesn't return a value,
+this won't work; instead, you need to use a match statement,
+or one of the shorthand methods like unwrap and expect.
+There's also the option of simply changing main to
+return a Result.
+```
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
