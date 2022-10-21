@@ -92,43 +92,42 @@ date: 2021-09-10
   security properties mentioned earlier, it needs
   to provide at least `128 bits` of security
   against all three attacks.
-* If our hash function generates random outputs
-  of 256 bits, the space of all outputs
-  is of size
+* If our hash function generates random outputs of
+  `256` bits, the space of all outputs is of size
   $$ 2^{256} $$.
 * This means that collisions can be found with
   good probability after generating
   $$ 2^{128} $$
-  digests (due to the *birthday bound*).
+  digests (due to the `birthday bound`).
 * In order to achieve `128-bit` security at a minimum,
   a digest must not be truncated under:
-  - `256 bits` for *collision resistance*
-  - `128 bits` for *pre-image* and
-    *second pre-image resistance*
+  - `256 bits` for __collision resistance__
+  - `128 bits` for __pre-image__ and
+    __second pre-image resistance__
 
-> `CRC32` are not *cryptographic hash functions*
-  but *error-detecting code functions*.
+> `CRC32` are __not__ cryptographic hash functions
+  but `error-detecting` code functions.
 
 * `MD5` and `SHA-1` were shown to be broken
   in `2004` and `2016`.
 * `SHA-2` is based on the `Merkle-Damgard` construction,
   while `SHA-3` is based on the `sponge` construction.
-* `SHA-2` provides 4 different versions, producing
+* `SHA-2` provides `4` different versions, producing
   outputs of `224`, `256`, `384`, or `512` bits.
 
 * While there are different ways of building
-  a **compression function**, `SHA-2` uses the
+  a compression function, `SHA-2` uses the
   `Davies-Meyer` method, which relies on a
-  *block cipher*.
+  block cipher.
 * The `Merkle-Damgard` construction iteratively
   applies a compression function to each block
   of the input to be hashed and the output of
   the previous compression function.
-  The *final* call to the compression function
-  directly returns the *digest*.
+  - The final call to the compression function
+    directly returns the digest.
 
 * While `SHA-2` is a perfectly fine hash function
-  to use, it is *not suitable* for **hashing secrets**.
+  to use, it is **not** suitable for **hashing secrets**.
 * This is because of a downside of the `Merkle-Damgard`
   construction, which makes `SHA-2` vulnerable to
   an attack (called a `length-extension attack`)
