@@ -60,6 +60,6 @@
 - [Programming ecosystem](archived-2022/programming-ecosystem.md)
 - [Programming language](archived-2022/programming-language.md)
 - [Programming Rust - 2nd Edition](archived-2022/programming-rust-2nd.md)
-- [量子计算公开课 (计算复杂性)](archived-2022/quantum-computing.md)
+- [量子计算和计算复杂性](archived-2022/quantum-computing.md)
 - [蒋勋说唐诗 & 蒋勋说宋词](archived-2022/shi-ci.md)
 - [我的滑雪经历](archived-2022/skiing.md)
