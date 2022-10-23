@@ -62,7 +62,7 @@ date: 2022-01-02
   adjacency versus a traditional join operation is
   the most important thing to consider when
   thinking about using a native graph database.
-- As you can observe, the key **difference** from
+- As you can observe, the key difference from
   the RDF approach to graph modeling is that
   **labeled-property** graph (LPG) supports both
   node and relationship properties stored as
@@ -134,7 +134,7 @@ RETURN *
   statement and cannot stand on its own.
 
 ```sql
-CREATE (elaine:Person{name:'Elaine'}), (michael:Person {name: 'Michael'})
+CREATE (elaine:Person{name: 'Elaine'}), (michael:Person {name: 'Michael'})
 CREATE (elaine)-[f:FRIEND]->(michael)
 RETURN *
 ```
@@ -144,11 +144,11 @@ RETURN *
   either your model or your import process.
 
 ```sql
-MATCH (p:Person {name:'Satish'})
+MATCH (p:Person {name: 'Satish'})
 RETURN p
 ```
 
-- Inline pattern matching uses Cypher pattern syntax
+- `Inline pattern matching` uses Cypher pattern syntax
   to describe a node or relationship pattern with its
   labels and properties.
 - The opposite of inline pattern matching is using a
@@ -207,7 +207,7 @@ SET e += {hungry: false, pet: 'dog'}
   is replaced with only `=`, then it overrides all
   existing properties with only those provided in the map.
 
-- A good guideline to follow when using *multiple node labels*
+- A good guideline to follow when using `multiple node labels`
   is that node labels should be **semantically orthogonal**.
   - Semantically orthogonal means that node labels shouldn't
     hold the same or similar meaning and should have nothing
