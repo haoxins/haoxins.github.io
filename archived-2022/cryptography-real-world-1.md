@@ -242,17 +242,17 @@ fn main() {
   not be able to forge an authentication tag
   on a `never-seen-before` message by themselves.
 
-* If you are trying to authenticate *structures*,
-  make sure to *serialize* them before
-  authenticating them with a `MAC`; otherwise,
-  forgery might be trivial.
+* If you are trying to authenticate __structures__,
+  make sure to __serialize__ them before
+  authenticating them with a `MAC`;
+  - otherwise, __forgery might be trivial__.
 
 * Remember, finding a collision for a
-  *hash function* means finding two different
-  inputs X and Y such that `HASH(X) = HASH(Y)`.
+  `hash function` means finding two different
+  inputs `X` and `Y` such that `HASH(X) = HASH(Y)`.
 * We can extend this definition to `MACs` by
   defining a collision when `MAC(k, X) = MAC(k, Y)`
-  for inputs X and Y.
+  for inputs `X` and `Y`.
 
 * When verifying an authentication tag,
   the comparison between the received
@@ -271,17 +271,16 @@ for i := 0; i < len(x); i++ {
 * The pseudorandom function (PRF)
 
 * Many major applications use a `MAC` with a
-  random key in place of the *noncryptographic*
+  random key in place of the noncryptographic
   hash function.
 * This is the case for many programming languages
   (like Rust, Python).
 * They all make use of `SipHash`, a poorly-named
   `MAC` optimized for short authentication tags,
-  with a random key generated
-  at the start of the program.
+  with a random key generated at the start of the program.
 
-* The most widely used `MAC` is `HMAC` (for *hash-based MAC*),
-invented in 1996, and specified in `RFC 2104`.
+* The most widely used `MAC` is `HMAC` (for `hash-based MAC`),
+  invented in 1996, and specified in `RFC 2104`.
   - It first creates two keys from the main key.
   - It then concatenates a key, `k1`,
     with the message and hashes it.
@@ -290,18 +289,18 @@ invented in 1996, and specified in `RFC 2104`.
   - This produces the final authentication tag.
 
 > Because `HMAC` is customizable, the size of its
-  *authentication tag* is dictated by the
+  authentication tag is dictated by the
   hash function used.
 
 * `KMAC` is simply a wrapper around `cSHAKE`.
-  To use a `key`, it encodes (in a unambiguous way)
-  the *key*, the *input*, and the *output length*
-  as the `input` to `cSHAKE`.
+  To use a key, it encodes (in a unambiguous way)
+  the `key`, the `input`, and the `output length`
+  as the input to cSHAKE.
 
-* `SHA-2` has an *annoying peculiarity*:
+* `SHA-2` has an `annoying peculiarity`:
   - From a digest over an input, one can compute
     the digest of an input and more.
-* This vulnerability allows one to continue
+* This **vulnerability** allows one to continue
   hashing from a given digest, like the
   operation was not finished.
   - **length-extension attack**
@@ -311,21 +310,21 @@ invented in 1996, and specified in `RFC 2104`.
 
 * The Advanced Encryption Standard (**AES**) block cipher
 
-> *Bit security* is an *upper bound*
+> `Bit security` is an upper bound
 
 * The interface of `AES` for encryption:
-  - The algorithm takes a *variable-length key*.
-  - It also takes a *plaintext* of exactly `128` bits.
-  - It outputs a *ciphertext* of exactly `128` bits.
-  - Because `AES` encrypts a *fixed-size* plaintext,
+  - The algorithm takes a `variable-length key`.
+  - It also takes a plaintext of exactly `128` bits.
+  - It outputs a ciphertext of exactly `128` bits.
+  - Because `AES` encrypts a `fixed-size` plaintext,
     we call it a **block cipher**.
 
-* In technical terms, a *block cipher*
-  with a *key* is a **permutation**:
-  - it maps all the possible *plaintexts* to
-    all the possible *ciphertexts*.
-  - Changing the *key* changes that *mapping*.
-  - A *permutation* is also *reversible*.
+* In technical terms, a block cipher
+  with a key is a **permutation**:
+  - it maps all the possible plaintexts to
+    all the possible ciphertexts.
+  - Changing the `key` changes that `mapping`.
+  - A permutation is also `reversible`.
 
 * **AES**, which behave like *permutations*
   and are *randomized* by a *key*.
