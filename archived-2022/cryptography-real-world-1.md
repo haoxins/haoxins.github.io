@@ -240,7 +240,7 @@ fn main() {
   authentication tags for a large number of
   arbitrary messages, the attacker should still
   not be able to forge an authentication tag
-  on a never-seen-before message by themselves.
+  on a `never-seen-before` message by themselves.
 
 * If you are trying to authenticate *structures*,
   make sure to *serialize* them before
