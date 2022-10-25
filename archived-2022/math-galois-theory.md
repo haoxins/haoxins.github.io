@@ -497,7 +497,7 @@ $$
   - 我们只需对
     $$ \varphi_1 (x) = \frac{x}{2} $$
     和
-    $$ \varphi_1 (x) = - \frac{x}{2} $$
+    $$ \varphi_2 (x) = - \frac{x}{2} $$
     使用
     $$ x = V_1 $$
     与
