@@ -575,28 +575,29 @@ for i := 0; i < len(x); i++ {
 
 * `DH` defined over this type of group is sometimes
   called `Finite Field Diffie-Hellman` (**FFDH**).
-* A *subgroup* is just a group contained inside
-  your original group. That is, it's a subset of
-  the group elements. Operating on elements of the
-  *subgroup* results in another *subgroup* element,
-  and every *subgroup* element has an *inverse*
-  in the *subgroup*, etc.
-* A *cyclic subgroup* is a *subgroup* that can be
+* A `subgroup` is just a group contained inside
+  your original group.
+  - That is, it's a subset of the group elements.
+  - Operating on elements of the subgroup results in
+    another subgroup element,
+  - and every subgroup element has an inverse
+    in the subgroup, etc.
+* A `cyclic subgroup` is a subgroup that can be
   generated from a single generator (or base).
-* A generator generates a *cyclic subgroup* by
-  *multiplying* itself over and over.
-* For example, the generator 4 defines a *subgroup*
-  consisting of the numbers 1 and 4:
+* A generator generates a `cyclic subgroup` by
+  multiplying itself over and over.
+* For example, the generator `4` defines a subgroup
+  consisting of the numbers `1` and `4`:
   - `4 mod 5 = 4`
   - `4 × 4 mod 5 = 1`
   - `4 × 4 × 4 mod 5 = 4`
   - `4 × 4 × 4 × 4 mod 5 = 1`
 
-* It happens that when our modulus is *prime*,
+* It happens that when our modulus is __prime__,
   every element of our group is a generator
   of a subgroup.
-* These different *subgroups* can have
-  different *sizes*, which we call **orders**.
+  - These different subgroups can have
+    different sizes, which we call __orders__.
 
 * A group is a set of numbers with a binary
   operation that respects some properties
