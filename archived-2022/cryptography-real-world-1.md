@@ -386,43 +386,43 @@ for i := 0; i < len(x); i++ {
     one can guess just by looking at the
     ciphertext what was originally encrypted.
 
-* To encrypt more than 128 bits of plaintext safely,
+* To encrypt more than `128` bits of plaintext safely,
   better modes of operation exist that
-  "randomize" the encryption.
+  `"randomize"` the encryption.
 * One of the most popular modes of operation for
-  AES is *cipher block chaining* (**CBC**).
-* *CBC* works for any deterministic block cipher
+  AES is cipher block `chaining` (**CBC**).
+* **CBC** works for any deterministic block cipher
   (not just AES) by taking an additional value
-  called an *initialization vector* (**IV**)
+  called an `initialization vector` (**IV**)
   to randomize the encryption.
   - Because of this, the `IV` is the length of
-    the block size (16 bytes for AES) and
-    must be random and unpredictable.
+    the block size (`16` bytes for AES) and
+    must be __random__ and __unpredictable__.
 * To decrypt with the CBC mode of operation,
   reverse the operations.
 * As the `IV` is needed, it must be transmitted
   in clear text along with the ciphertext.
 
-> When an `IV` repeats or is *predictable*,
-  the encryption becomes *deterministic* again,
-  and a number of clever **attacks** become possible.
+> When an `IV` repeats or is __predictable__,
+  the encryption becomes __deterministic__ again,
+  and a number of clever attacks become possible.
 
-* We then apply the `MAC` after *padding* the *plaintext*
-  and *encrypting* it over *both* the ciphertext
-  and the IV; otherwise, an attacker can still modify
-  the IV without being caught.
+* We then apply the `MAC` after padding the plaintext
+  and encrypting it over __both__ the ciphertext
+  and the `IV`; otherwise, an attacker can still modify
+  the `IV` without being caught.
   - This construction is called `Encrypt-then-MAC`.
   - The alternatives (like `MAC-then-Encrypt`) can
     sometimes lead to clever attacks and are
     thus **avoided** in practice.
   - In addition, it is best practice to use
-    *different keys* for `AES` and `HMAC`.
+    different keys for `AES` and `HMAC`.
 
 * All-in-one constructions: Authenticated encryption
   - `AES-GCM`
   - `ChaCha20-Poly1305`
 
-* The `AES-GCM` AEAD (authenticated encryption with associated data)
+* The `AES-GCM` __AEAD__ (`authenticated encryption with associated data`)
   - It was designed for high performance by taking advantage of
     hardware support for AES and by using a MAC (GMAC)
     that can be implemented efficiently.
@@ -432,30 +432,30 @@ for i := 0; i < len(x); i++ {
     with a number instead of the plaintext.
   - The *nonce* of `AES-GCM` is sometimes
     referred to as an `IV`.
-  - The *nonce* in `AES-CTR` is `96` bits (`12` bytes)
-    and takes *most* of the `16` bytes to be encrypted.
+  - The nonce in `AES-CTR` is `96` bits (`12` bytes)
+    and takes most of the `16` bytes to be encrypted.
   - The `32` bits (`4` bytes) left serves as a counter,
     starting from `1` and incremented for each block
     encryption until it reaches its maximum value.
   - This means that, at most, `4,294,967,295` blocks
     of `128` bits can be encrypted with the
-    *same nonce* (so less than `69` GBs).
+    same nonce (so less than `69` GBs).
 
 * an interesting aspect of `CTR` mode:
-  - no padding is required.
+  - __no padding is required__.
 * We say that it turns a block cipher (`AES`)
   into a stream cipher.
 * It encrypts the plaintext byte by byte.
 
-* By default, encryption *doesn't* hides
+* By default, encryption __doesn't__ hides
   the length of what you are encrypting.
-* Because of this, the use of compression before
-  encryption can lead to attacks if an attacker
-  can influence parts of what is being encrypted.
+  - Because of this, the use of compression before
+    encryption can lead to attacks if an attacker
+    can influence parts of what is being encrypted.
 
 * `GMAC` is effectively the encryption of the
   `GHASH` output with `AES-CTR` (and a different key).
-* Again, the nonce must be *unique*.
+  - Again, the __nonce must be unique__.
 
 * `AES-GCM` works by using `AES-CTR` with a
   symmetric key *K* to encrypt the plaintext
@@ -466,21 +466,21 @@ for i := 0; i < len(x); i++ {
 * `ChaCha20-Poly1305`
   - It is the combination of two algorithms:
     the `ChaCha20` stream cipher and the
-    `Poly1305 MAC`.
+    `Poly1305` MAC.
   - In 2013, Google standardized the
-    `ChaCha20-Poly1305` AEAD in order to make
-    use of it in *Android* mobile phones
+    `ChaCha20-Poly1305` __AEAD__ in order to make
+    use of it in Android mobile phones
     relying on low-end processors.
   - Nowadays, it is widely adopted by internet
-    protocols like *OpenSSH*, *TLS*, and *Noise*.
+    protocols like OpenSSH, TLS, and Noise.
   - `ChaCha20` is a modification of
     the `Salsa20` stream cipher
-  - `ChaCha20` works by taking a symmetric key
-    and a unique nonce. It then generates a
-    keystream that is `XORed` with the plaintext
-    (or ciphertext) to produce the ciphertext
-    (or plaintext).
-    The encryption is *length-preserving* as
+- `ChaCha20` works by taking a symmetric key
+  and a unique nonce. It then generates a
+  keystream that is `XORed` with the plaintext
+  (or ciphertext) to produce the ciphertext
+  (or plaintext).
+  - The encryption is `length-preserving` as
     the ciphertext and the plaintext are
     of the same length.
   - While allowing a large number of messages
@@ -489,18 +489,18 @@ for i := 0; i < len(x); i++ {
     are available.
 
 * `Poly1305` is a `MAC` created via the
-  *Wegman-Carter* technique, much like the
+  Wegman-Carter technique, much like the
   `GMAC` we previously talked about.
 * Eventually, we can use `ChaCha20` and a
   counter set to `0` to generate a keystream
-  and derive the `16-byte` *r* and `16-byte` *s*
+  and derive the `16-byte` `r` and `16-byte` `s`
   values we need for `Poly1305`.
 
 * `ChaCha20-Poly1305` works by using `ChaCha20`
   to encrypt the plaintext and to derive the
-  keys required by the *Poly1305 MAC*.
-* `Poly1305` is then used to authenticate the
-  ciphertext as well as the associated data.
+  keys required by the `Poly1305` MAC.
+  - `Poly1305` is then used to authenticate the
+    ciphertext as well as the associated data.
 
 ## Key exchanges
 
