@@ -357,7 +357,7 @@ for i := 0; i < len(x); i++ {
 
 * There are several ways to specify how to
   choose these padding bytes, but the most important
-  aspect of padding is that it must be reversible.
+  aspect of padding is that it must be __reversible__.
 * Once we decrypt ciphertext, we should be able
   to remove the padding to retrieve
   the original unpadded message.
@@ -365,24 +365,24 @@ for i := 0; i < len(x); i++ {
 * `PKCS#7` padding specifies one rule:
   - the value of each padding byte must be
     set to the length of the required padding.
-* What if the plaintext is already 16 bytes?
+* What if the plaintext is already `16` bytes?
   - Then we add a full block of padding
-    set to the value 16.
+    set to the value `16`.
 * To remove the padding, you can easily check
   the value of the last byte of plaintext and
   interpret it as the length of padding to remove.
 
-* The electronic codebook (**ECB**) mode of operation.
+* The electronic codebook (__ECB__) mode of operation.
   - As you learned, encryption is deterministic,
     and so encrypting the same block of plaintext
     twice leads to the same ciphertext.
   - This means that by encrypting each block
-    *individually*, the resulting ciphertext
-    might have *repeating patterns*.
+    individually, the resulting ciphertext
+    might have __repeating patterns__.
   - The famous ECB penguin is an encryption
     of an image of a penguin using the
-    electronic codebook (ECB) mode of operation.
-  - As ECB does not hide repeating patterns,
+    electronic codebook (__ECB__) mode of operation.
+  - As ECB does not hide __repeating patterns__,
     one can guess just by looking at the
     ciphertext what was originally encrypted.
 

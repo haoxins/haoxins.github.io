@@ -744,14 +744,14 @@ Certificate  ::=  SEQUENCE  {
   usual ephemeral DH key exchange.
 
 * three techniques to pair two devices:
-  - (1) a user can either help the devices
+  - `(1)` a user can either help the devices
     obtain each other's public keys so that
     they can perform a key exchange;
-  - (2) a user can enter the same password
+  - `(2)` a user can enter the same password
     on two devices so that they can perform
     a symmetric password-authenticated
     key exchange; or
-  - (3) a user can verify a fingerprint of
+  - `(3)` a user can verify a fingerprint of
     the key exchange after the fact to
     confirm that no MITM attacker
     intercepted the pairing.
