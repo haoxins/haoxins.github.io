@@ -504,25 +504,25 @@ for i := 0; i < len(x); i++ {
 
 ## Key exchanges
 
-> A *key exchange* between two participants allows
-  them to agree on a *secret key*, while a
+> A key exchange between two participants allows
+  them to agree on a secret key, while a
   `man-in-the-middle` (**MITM**) adversary can't derive
-  the same *secret key* from passively
+  the same secret key from passively
   observing the key exchange.
 
-* The *key exchange* is **unauthenticated**!
-  - An *unauthenticated key exchange* is vulnerable
+* The key exchange is **unauthenticated**!
+  - An unauthenticated key exchange is vulnerable
     to an active `MITM` attacker.
   - Indeed, the attacker can simply impersonate
     both sides of the connection and perform
     two separate key exchanges.
 
-> By the way, when both sides are *authenticated*,
-  we call that a *mutually authenticated key exchange*.
+> By the way, when both sides are __authenticated__,
+  we call that a `mutually authenticated key exchange`.
 
-* While *key exchanges* are useful, they do not
+* While key exchanges are useful, they do not
   scale well in all scenarios without their
-  sister primitive: the *digital signature*.
+  sister primitive: the digital signature.
 
 > `X25519` key exchange algorithm
 
@@ -530,47 +530,47 @@ for i := 0; i < len(x); i++ {
 
 * **Group theory**
   - The DH key exchange is built on top of
-    a field of mathematics called *group theory*,
+    a field of mathematics called group theory,
     which is the base of most public key
     cryptography today.
-  - Note that DH works in a *multiplicative* group:
-    a group where the *multiplication* is used
+  - Note that DH works in a `multiplicative` group:
+    a group where the `multiplication` is used
     as the defined binary operation.
 
 * The four properties of a **group**:
-  *closure*, *associativity*, *identity* element,
-  and *inverse* element.
-  - *Closure*: Operating on two elements results
+  `closure`, `associativity`, `identity` element,
+  and `inverse` element.
+  - __Closure__: Operating on two elements results
     in another element of the same set.
-  - *Associativity*: Operating on several elements
+  - __Associativity__: Operating on several elements
     at a time can be done in any order.
-  - *Identity element*: Operating with this element
+  - __Identity element__: Operating with this element
     does not change the result of the other operand.
-  - *Inverse element*: Existing as an inverse to
+  - __Inverse element__: Existing as an inverse to
     all group elements.
 
 > To speed things up, most cryptographic libraries
   will instead look for pseudo-primes (numbers that
   have a high probability of being primes).
 
-* `DH` uses the *modular multiplication* as
+* `DH` uses the modular multiplication as
   a special operation.
-  - $$ 3×2 = 6 $$
-  - $$ 3×2 \mod 5 = 1 $$
+  - $$ 3 × 2 = 6 $$
+  - $$ 3 × 2 \mod 5 = 1 $$
   - $$ 3^{-1} \mod 5 = 2 $$
 
 > When the context is clear, the modulus part
   is often left out from equations.
 
 * We now have a group, which includes the set
-  of strictly positive integers `1, 2, ..., p-1`
+  of strictly positive integers `1, 2, ..., p - 1`
   for `p` a prime number, along with
-  *modular multiplication*.
+  modular multiplication.
 * The group we formed also happens to be two things:
-  - *Commutative*: The order of operations doesn't matter.
+  - __Commutative__: The order of operations doesn't matter.
     A group that has this property is
-    often called a *Galois group*.
-  - *A finite field*: A *Galois group* that has more
+    often called a `Galois` group.
+  - __A finite field__: A `Galois` group that has more
     properties, as well as an additional operation.
 
 * `DH` defined over this type of group is sometimes
@@ -588,9 +588,9 @@ for i := 0; i < len(x); i++ {
 * For example, the generator 4 defines a *subgroup*
   consisting of the numbers 1 and 4:
   - `4 mod 5 = 4`
-  - `4×4 mod 5 = 1`
-  - `4×4×4 mod 5 = 4`
-  - `4×4×4×4 mod 5 = 1`
+  - `4 × 4 mod 5 = 1`
+  - `4 × 4 × 4 mod 5 = 4`
+  - `4 × 4 × 4 × 4 mod 5 = 1`
 
 * It happens that when our modulus is *prime*,
   every element of our group is a generator
@@ -600,18 +600,20 @@ for i := 0; i < len(x); i++ {
 
 * A group is a set of numbers with a binary
   operation that respects some properties
-  (*closure*, *associativity*,
-  *identity element*, *inverse element*).
-* DH works in the *Galois group*
-  (a group with *commutativity*), formed by
+  - closure,
+  - associativity,
+  - identity element,
+  - inverse element.
+* DH works in the `Galois` group
+  (a group with `commutativity`), formed by
   the set of strictly positive numbers up to
   a prime number (not included) and the
-  *modular multiplication*.
-* In a `DH` group, every element is a
-  generator of a subgroup.
+  modular multiplication.
+  - In a `DH` group, every element is a
+    generator of a subgroup.
 
 * The security of the `DH` key exchange relies
-  on the *discrete logarithm problem* in a group,
+  on the __discrete logarithm problem__ in a group,
   a problem believed to be hard to solve.
 
 * [Diffie-Hellman key exchange](https://en.wikipedia.org/wiki/Diffie-Hellman_key_exchange)
