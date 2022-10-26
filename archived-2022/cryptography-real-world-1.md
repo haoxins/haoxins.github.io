@@ -326,33 +326,33 @@ for i := 0; i < len(x); i++ {
   - Changing the `key` changes that `mapping`.
   - A permutation is also `reversible`.
 
-* **AES**, which behave like *permutations*
-  and are *randomized* by a *key*.
-* We say that they are
-  *pseudorandom permutations* (**PRPs**).
+* **AES**, which behave like permutations
+  and are randomized by a key.
+  - We say that they are
+    `pseudorandom permutations` (**PRPs**).
 
 * When entering the `AES` algorithm,
-  a plaintext of *16 bytes* gets transformed
+  a plaintext of `16 bytes` gets transformed
   into a `4-by-4` matrix.
 * This state is then encrypted and finally
   transformed into a `16-byte` ciphertext.
 * `AES` iterates a **round function** over
   a state in order to encrypt it.
-* The *round function* takes several
+* The `round function` takes several
   arguments including a secret key.
-* Each call to the *round function*
+* Each call to the round function
   transforms the state further, eventually
   producing the ciphertext.
-* Each *round* uses a *different round key*,
-  which is derived *from the main symmetric key*
-  (*key schedule*).
-* This allows the *slightest change* in the bits
+* Each `round` uses a different round key,
+  which is derived from the main symmetric key
+  (key schedule).
+* This allows the __slightest change__ in the bits
   of the symmetric key to give a
-  *completely different encryption*
-  (a principle called *diffusion*).
+  __completely different__ encryption
+  (a principle called __`diffusion`__).
 
-> The *slightest change* in the plaintext also
-  returns a *completely different ciphertext*.
+> The slightest change in the plaintext also
+  returns a completely different ciphertext.
   This principle is called the **avalanche effect**.
 
 * There are several ways to specify how to
