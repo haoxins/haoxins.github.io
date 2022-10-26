@@ -424,13 +424,13 @@ for i := 0; i < len(x); i++ {
 
 * The `AES-GCM` __AEAD__ (`authenticated encryption with associated data`)
   - It was designed for high performance by taking advantage of
-    hardware support for AES and by using a MAC (GMAC)
+    hardware support for AES and by using a MAC (`GMAC`)
     that can be implemented efficiently.
-  - `AES-GCM` combines the *Counter* (`CTR`) mode of operation
-    with the `GMAC` message authentication code.
-  - `AES-CTR` uses AES to encrypt a nonce concatenated
-    with a number instead of the plaintext.
-  - The *nonce* of `AES-GCM` is sometimes
+- `AES-GCM` combines the `Counter` (`CTR`) mode of operation
+  with the `GMAC` message authentication code.
+- `AES-CTR` uses `AES` to encrypt a nonce concatenated
+  with a number instead of the plaintext.
+  - The nonce of `AES-GCM` is sometimes
     referred to as an `IV`.
   - The nonce in `AES-CTR` is `96` bits (`12` bytes)
     and takes most of the `16` bytes to be encrypted.
@@ -458,10 +458,10 @@ for i := 0; i < len(x); i++ {
   - Again, the __nonce must be unique__.
 
 * `AES-GCM` works by using `AES-CTR` with a
-  symmetric key *K* to encrypt the plaintext
+  symmetric key `K` to encrypt the plaintext
   and by using `GMAC` to authenticate the
-  *associated data* and the *ciphertext* using
-  an authentication key *H*.
+  associated data and the ciphertext using
+  an authentication key `H`.
 
 * `ChaCha20-Poly1305`
   - It is the combination of two algorithms:
