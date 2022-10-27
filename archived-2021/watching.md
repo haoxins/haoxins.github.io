@@ -10,8 +10,6 @@ date: 2019-10-24
 
 ### 2022-10
 
-- [布鲁特斯的心脏](https://movie.douban.com/subject/20495646/)
-
 - [暴雪将至](https://movie.douban.com/subject/26775933/)
 
 - [活着 (1994)](https://movie.douban.com/subject/1292365/)
