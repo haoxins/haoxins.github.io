@@ -11,18 +11,21 @@ date: 2021-09-10
 
 > The slightest mistake could be deadly.
 
-* While a typical cryptography book usually
-  starts with the discovery of cryptography
-  and takes you through its history, I think
-  that it makes little sense for me to
-  kick off things that way. I want to
-  *tell you about the practical*.
+```
+While a typical cryptography book usually
+starts with the discovery of cryptography
+and takes you through its history, I think
+that it makes little sense for me to
+kick off things that way.
+
+I want to tell you about the practical.
+```
 
 * Kerckhoff's principle:
-  - *Only the key is kept secret*
+  - Only the key is kept secret
 
 * **Asymmetric cryptography**:
-  - *Two keys are better than one*
+  - Two keys are better than one
   - key exchange: Diffie-Hellman (**DH**)
   - DH: `man-in-the-middle`
 
@@ -628,7 +631,7 @@ for i := 0; i < len(x); i++ {
   (**ECDH**) or using the groups defined in the better
   standard, [RFC 7919](https://www.rfc-editor.org/info/rfc7919).
 
-* The **Elliptic Curve Diffie-Hellman** (*ECDH*) key exchange
+* The `Elliptic Curve Diffie-Hellman` (**ECDH**) key exchange
   - Compared to the recommended `2,048-bit` parameters in **DH**,
     parameters of `256 bits` were possible with the
     elliptic curve variant of the algorithm.
@@ -637,32 +640,35 @@ for i := 0; i < len(x); i++ {
 * The **short Weierstrass equation**
   - $$ y^2 = x^3 + ax + b \, (Where \, 4a^3 + 27b^2 \neq 0) $$
 
-* Groups over *elliptic curves* are often
-  defined as additive groups.
-* *Elliptic curve cryptography* (**ECC**), in practice,
-  is mostly specified with *elliptic curves* in
-  *coordinates modulo* a large prime number `p`.
+* Groups over elliptic curves are often
+  defined as `additive groups`.
+* `Elliptic curve cryptography` (**ECC**), in practice,
+  is mostly specified with elliptic curves in
+  coordinates modulo a large prime number `p`.
 
-* The group we formed on top of *elliptic curves*
-  differs with the group we formed with the
+* The group we formed on top of elliptic curves
+  __differs__ with the group we formed with the
   strictly positive integers modulo a prime number.
-* Due to some of these differences, the strongest
-  attacks known against DH (known as
-  *index calculus or number field sieve attacks*)
-  do not work well on the *elliptic curve* groups.
-* This is the main reason why parameters for `ECDH`
-  can be much lower than the parameters for `DH`
-  at the same level of security.
+  - Due to some of these differences, the strongest
+    attacks known against `DH` (known as
+    index calculus or number field sieve attacks)
+    do not work well on the elliptic curve groups.
+  - This is the main reason why parameters for `ECDH`
+    can be __much lower than__ the parameters for `DH`
+    at the same level of security.
 * Nowadays, most of the curves in use come from
   a couple standards, and most applications have
-  fixated on two curves: **P-256** and **Curve25519**.
-* `RFC 7748`, "*Elliptic Curves for Security*,"
-  which was published in 2016, specifies two
-  curves: **Curve25519** and **Curve448**.
+  fixated on two curves:
+  - **P-256**
+  - and **Curve25519**.
+* `RFC 7748`, `"Elliptic Curves for Security,"`
+  which was published in 2016, specifies two curves:
+  - **Curve25519**
+  - and **Curve448**.
 * The combination of `ECDH` with **Curve25519**
   is often dubbed **X25519**.
 
-> A *small subgroup attack* impacts `DH` groups
+> A small subgroup attack impacts `DH` groups
   that have many subgroups. By choosing generators
   of small subgroups as public keys, an attacker
   can leak bits of someone's private key
