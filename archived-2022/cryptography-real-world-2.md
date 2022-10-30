@@ -634,61 +634,66 @@ Certificate  ::=  SEQUENCE  {
   you to authenticate without the server ever
   learning your real password.
 
-* A *one-time password* (**OTP**) algorithm
+---
+
+* A one-time password (**OTP**) algorithm
   allows you to create as many one-time
   passwords as you want from a symmetric
-  key and some additional data. The additional
-  data is different, depending on the
-  OTP algorithm.
+  key and some additional data.
+  - The additional data is different,
+    depending on the `OTP` algorithm.
 
 * There are two main schemes that one can
   use to produce OTPs:
   - The HMAC-based one-time password (**HOTP**)
     algorithm, standardized in `RFC 4226`,
-    which is an OTP algorithm where the
+    which is an `OTP` algorithm where the
     additional data is a counter.
   - The time-based one-time password (**TOTP**)
     algorithm, standardized in `RFC 6238`,
-    which is an OTP algorithm where the
+    which is an `OTP` algorithm where the
     additional data is the time.
 
 * Most applications nowadays use **TOTP**
-  because *HOTP* requires both the client
+  because `HOTP` requires both the client
   and the server to store a state (a counter).
-* Storing a state can lead to issues if
-  one side falls out of synchrony and
-  cannot produce (or validate)
-  legitimate OTPs anymore.
+  - Storing a state can lead to issues if
+    one side falls out of synchrony and
+    cannot produce (or validate)
+    legitimate OTPs anymore.
 
-* In most cases, this is how TOTP works:
+* In most cases, this is how __TOTP__ works:
   - When registering, the service communicates
     a symmetric key to the user
     (perhaps using a QR code). The user then
     adds this key to a TOTP application.
   - When logging in, the user can use the
     TOTP application to compute a one-time
-    password. This is done by computing
-    `HMAC(symmetric_key, time)`, where time
-    represents the current time
+    password.
+  - This is done by computing
+    `HMAC(symmetric_key, time)`,
+    where time represents the current time
     (rounded to the minute in order to make
-    a one-time password valid for 60 seconds). Then
+    a one-time password valid for `60` seconds).
+    Then
   - (a) The TOTP application displays to the
     user the derived one-time password, truncated
     and in a human-readable base (for example,
-    reduced to 6 characters in base 10
+    reduced to `6` characters in base `10`
     to make it all digits).
   - (b) The user either copies or types the
     one-time password into the relevant application.
   - (c) The application retrieves the user's
     associated symmetric key and computes the
     one-time password in the same way as the
-    user did. If the result matches the received
+    user did.
+  - If the result matches the received
     one-time password, the user is
     successfully authenticated.
 
 * One interesting standard in this space is the
   **Fast IDentity Online 2** (**FIDO2**).
-  *FIDO2* is an open standard that defines how
+  `FIDO2` is an open standard that defines how
   to use asymmetric keys to authenticate users.
   The standard specifically targets phishing
   attacks, and for this reason, FIDO2 is made to
@@ -703,29 +708,30 @@ Certificate  ::=  SEQUENCE  {
     communicate with one another. Roaming
     authenticators are hardware authenticators
     that are external to your main device.
-    A client in the CTAP specification is
+  - A client in the `CTAP` specification is
     defined as the software that wants to
     query these authenticators as part of
     an authentication protocol. Thus, a client
     can be an operating system, a native
     application like a browser, and so on.
-  - *Web Authentication* (**WebAuthn**)
-    WebAuthn is the protocol that web browsers
+  - `Web Authentication` (**WebAuthn**)
+    `WebAuthn` is the protocol that web browsers
     and web applications can use to authenticate
-    users with hardware authenticators. It,
-    thus, must be implemented by browsers to
+    users with hardware authenticators.
+  - It, thus, must be implemented by browsers to
     support authenticators. If you are building
     a web application and want to support user
     authentication via hardware authenticators,
-    WebAuthn is what you need to use.
+    `WebAuthn` is what you need to use.
 
 * To authenticate without using a password,
   applications can allow users to either use
   **symmetric keys** via **OTP-based** protocols
   or use **asymmetric keys** via the **FIDO2**
-  standard. FIDO2 supports different types of
-  authenticators, roaming authenticators
-  (via the CTAP standard) or built-in authenticators.
+  standard.
+  - FIDO2 supports different types of
+    authenticators, roaming authenticators
+    (via the CTAP standard) or built-in authenticators.
 
 * User-aided authentication protocols that
   allow a human to pair two devices are modeled
