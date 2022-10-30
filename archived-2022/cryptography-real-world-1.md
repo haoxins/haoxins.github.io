@@ -85,8 +85,8 @@ I want to tell you about the practical.
   - No one should be able to produce two different
     inputs that hash to the same output.
 
-> in **practice** *impossible*
-  but not **theoretically** *impossible*.
+> in practice impossible
+  but not theoretically impossible.
 
 * There is a `minimum` output size that a hash
   function must produce in practice:
@@ -109,10 +109,10 @@ I want to tell you about the practical.
     __second pre-image resistance__
 
 > `CRC32` are __not__ cryptographic hash functions
-  but `error-detecting` code functions.
+  __but__ `error-detecting` code functions.
 
-* `MD5` and `SHA-1` were shown to be broken
-  in `2004` and `2016`.
+* `MD5` and `SHA-1` were shown to be __broken__
+  in 2004 and 2016.
 * `SHA-2` is based on the `Merkle-Damgard` construction,
   while `SHA-3` is based on the `sponge` construction.
 * `SHA-2` provides `4` different versions, producing
@@ -131,19 +131,19 @@ I want to tell you about the practical.
 
 * While `SHA-2` is a perfectly fine hash function
   to use, it is **not** suitable for **hashing secrets**.
-* This is because of a downside of the `Merkle-Damgard`
-  construction, which makes `SHA-2` vulnerable to
-  an attack (called a `length-extension attack`)
-  if used to **hash secrets**.
+  - This is because of a downside of the `Merkle-Damgard`
+    construction, which makes `SHA-2` vulnerable to
+    an attack (called a `length-extension attack`)
+    if used to hash secrets.
 * Because of this, and the fact that `SHA-2` is vulnerable
   to `length-extension attacks`, NIST decided in 2007 to
   organize an open competition for a new standard:
   - `SHA-3`.
 * `SHA-3` is a cryptographic algorithm
   built on top of a permutation.
-* `SHA-3` is based on a particular permutation called
-  `keccak-f` that takes an input and returns
-  an output of the same size.
+  - `SHA-3` is based on a particular permutation called
+    `keccak-f` that takes an input and returns
+    an output of the same size.
 
 ---
 
@@ -153,10 +153,10 @@ I want to tell you about the practical.
   a hash function's digest.
   - For this reason, the `SHA-3` standard introduced
     a more versatile primitive called an
-    `extendable output function` or `XOF`.
+    `extendable output function` or __XOF__.
 * This section introduces the two standardized XOFs:
   - `SHAKE` and `cSHAKE`.
-* **`SHAKE`**, specified in `FIPS 202` along with `SHA-3`,
+* **`SHAKE`**, specified in FIPS 202 along with `SHA-3`,
   can be seen as a hash function that returns
   an output of an arbitrary length.
 * **`cSHAKE`** is pretty much exactly like `SHAKE`,
@@ -270,19 +270,18 @@ for i := 0; i < len(x); i++ {
 }
 ```
 
-* HMAC-based key derivation function (HKDF)
-* The pseudorandom function (PRF)
+> The pseudorandom function (PRF)
 
 * Many major applications use a `MAC` with a
   random key in place of the noncryptographic
   hash function.
-* This is the case for many programming languages
-  (like Rust, Python).
+  - This is the case for many programming languages
+    (like Rust, Python).
 * They all make use of `SipHash`, a poorly-named
   `MAC` optimized for short authentication tags,
   with a random key generated at the start of the program.
 
-* The most widely used `MAC` is `HMAC` (for `hash-based MAC`),
+* The most widely used `MAC` is __HMAC__ (for `hash-based MAC`),
   invented in 1996, and specified in `RFC 2104`.
   - It first creates two keys from the main key.
   - It then concatenates a key, `k1`,
