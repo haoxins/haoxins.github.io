@@ -696,14 +696,14 @@ Certificate  ::=  SEQUENCE  {
   `FIDO2` is an open standard that defines how
   to use asymmetric keys to authenticate users.
   The standard specifically targets phishing
-  attacks, and for this reason, FIDO2 is made to
-  work *only with hardware authenticators*.
-  Hardware authenticators are simply physical
-  components that can generate and store signing
-  keys and can sign arbitrary challenges.
-  **FIDO2** is *split into two specifications*:
-  - *Client to Authenticator Protocol* (**CTAP**)
-    CTAP specifies a protocol that roaming
+  attacks, and for this reason, `FIDO2` is made to
+  work **only with hardware authenticators**.
+  - Hardware authenticators are simply physical
+    components that can generate and store signing
+    keys and can sign arbitrary challenges.
+  - **FIDO2** is split into two specifications:
+  - `Client to Authenticator Protocol` (**CTAP**)
+    `CTAP` specifies a protocol that roaming
     authenticators and clients can use to
     communicate with one another. Roaming
     authenticators are hardware authenticators
