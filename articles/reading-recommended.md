@@ -37,7 +37,7 @@ date: 2021-05-03
 - [泡利物理学讲义 (4, 5, 6卷)](https://book.douban.com/subject/35192922/)
 
 - [普林斯顿数学指南 (第二卷) ](https://book.douban.com/subject/25817383/)
-  - 第一卷, 概括性介绍, 还行~
+- [普林斯顿数学指南 (第一卷)](https://book.douban.com/subject/25817381/)
   - 第三卷, 就不要看了, 多余~
 
 
