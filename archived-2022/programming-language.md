@@ -109,6 +109,8 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - [Serde](https://github.com/serde-rs/serde)
   - Serde is a framework for serializing and deserializing
     Rust data structures efficiently and generically.
+- 一些个人需要, 但是维护情况堪忧的项目
+  - [Kafka client: rust-rdkafka](https://github.com/fede1024/rust-rdkafka)
 
 - [The Initial Rust Infrastructure Has Been Merged Into Linux 6.1](https://www.phoronix.com/news/Rust-Is-Merged-Linux-6.1)
   - `2022-10`
