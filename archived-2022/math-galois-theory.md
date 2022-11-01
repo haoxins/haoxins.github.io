@@ -619,7 +619,7 @@ $$
   $$ ax^2 + bx + c = 0 $$
   的伽罗瓦群是对称群
   $$ S_2 $$.
-  - $$ S_2 = \left { \left [ 1 2 \right ], \left [ 2 1 \right ]  \right } $$
+  - $$ S_2 = \left{ \left[ 1 2 \right], \left[ 2 1 \right]  \right} $$
 - 确认
   $$ S_2 $$
   是否为二次方程的一般形式的伽罗瓦群, 只要确认性质`1`和性质`2`即可.
