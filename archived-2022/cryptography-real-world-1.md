@@ -336,18 +336,18 @@ for i := 0; i < len(x); i++ {
 * When entering the `AES` algorithm,
   a plaintext of `16 bytes` gets transformed
   into a `4-by-4` matrix.
-* This state is then encrypted and finally
-  transformed into a `16-byte` ciphertext.
+  - This state is then encrypted and finally
+    transformed into a `16-byte` ciphertext.
 * `AES` iterates a **round function** over
   a state in order to encrypt it.
 * The `round function` takes several
   arguments including a secret key.
-* Each call to the round function
-  transforms the state further, eventually
-  producing the ciphertext.
-* Each `round` uses a different round key,
-  which is derived from the main symmetric key
-  (key schedule).
+  - Each call to the round function
+    transforms the state further, eventually
+    producing the ciphertext.
+  - Each `round` uses a different round key,
+    which is derived from the main symmetric key
+    (key schedule).
 * This allows the __slightest change__ in the bits
   of the symmetric key to give a
   __completely different__ encryption
@@ -357,12 +357,14 @@ for i := 0; i < len(x); i++ {
   returns a completely different ciphertext.
   This principle is called the **avalanche effect**.
 
+---
+
 * There are several ways to specify how to
   choose these padding bytes, but the most important
   aspect of padding is that it must be __reversible__.
-* Once we decrypt ciphertext, we should be able
-  to remove the padding to retrieve
-  the original unpadded message.
+  - Once we decrypt ciphertext, we should be able
+    to remove the padding to retrieve
+    the original unpadded message.
 
 * `PKCS#7` padding specifies one rule:
   - the value of each padding byte must be
