@@ -93,11 +93,11 @@ k logs -n istio-system -l app=istiod --tail=10000
   - `must be a list of IP ranges. For example, 10.240.0.0/24,10.250.0.0/24`
   - `59.100.192.6` 不行, 得是 `59.100.192.6/32`
 
-- *Connection reset by peer*
+- Connection reset by peer
   - `EnvoyFilter`
   - `LISTENER`
 
-- *upstream connect error or disconnect/reset before headers*
+- upstream connect error or disconnect/reset before headers
   - `AuthorizationPolicy`
 
 ------------------
