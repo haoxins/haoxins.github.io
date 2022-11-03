@@ -31,11 +31,6 @@ date: 2021-05-03
   - 如果想了解量子力学, 任何科普都是雾里看花, 水中捞月.
   - 或者说, 除了通过数学, 别无他法!
 
-- [泡利物理学讲义 (1, 2, 3卷)](https://book.douban.com/subject/25970912/)
-- [泡利物理学讲义 (4, 5, 6卷)](https://book.douban.com/subject/35192922/)
-
 - [普林斯顿数学指南 (第二卷) ](https://book.douban.com/subject/25817383/)
 - [普林斯顿数学指南 (第一卷)](https://book.douban.com/subject/25817381/)
   - 第三卷, 就不要看了, 多余~
-
-- __TODO__ 静候, 张朝阳物理学讲义
