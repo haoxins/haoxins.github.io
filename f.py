@@ -35,6 +35,7 @@ def fmt_md(file: str):
             .replace("–", "-", -1)
             .replace("′", "'")
             .replace(" ", "", -1)
+            .replace("　", " ", -1)
         )
 
         f.seek(0)
