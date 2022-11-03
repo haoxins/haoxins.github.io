@@ -84,6 +84,8 @@ def gen_contents(sub_path):
 
 def gen_index():
     gen_contents("articles")
+    index_contents.append("### 2024")
+    gen_contents("archived-2024")
     index_contents.append("### 2023")
     gen_contents("archived-2023")
     index_contents.append("### 2022")
