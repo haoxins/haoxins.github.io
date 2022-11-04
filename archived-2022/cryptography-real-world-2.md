@@ -579,6 +579,8 @@ Certificate  ::=  SEQUENCE  {
     cryptographic operation without knowing the
     input provided by another party.
 
+---
+
 * Here is how an **OPRF** works at a high level:
   - Alice wants to compute a PRF over an input
     but wants the input to remain secret.
@@ -587,20 +589,21 @@ Certificate  ::=  SEQUENCE  {
   - Bob runs the OPRFs on this blinded value
     with his secret key, but the output is still
     blinded so it's useless for Bob.
-    Bob then sends this back to Alice.
+  - Bob then sends this back to Alice.
   - Alice finally "unblinds" the result using the
     same blinding factor she previously
     used to obtain the real output.
 * An oblivious PRF (OPRF) is a construction that
   allows one party to compute a PRF over the input
   of another party without learning that input.
-  To do this, Alice first generates a random
-  blinding factor, then blinds her input with that
-  before sending it to Bob. Bob uses his secret key
-  to compute the PRF over the blinded value, then
-  sends the blinded output to Alice who can
-  unblind it. The result does not depend on the
-  value of the blinding factor.
+  - To do this, Alice first generates a random
+    blinding factor, then blinds her input with that
+    before sending it to Bob.
+  - Bob uses his secret key to compute the PRF over
+    the blinded value, then sends the blinded output
+    to Alice who can unblind it.
+  - The result does not depend on the
+    value of the blinding factor.
 
 * https://github.com/cfrg/draft-irtf-cfrg-opaque
 * https://cfrg.github.io/draft-irtf-cfrg-opaque/draft-irtf-cfrg-opaque.html
@@ -610,29 +613,31 @@ Certificate  ::=  SEQUENCE  {
   Alice generates a long-term key pair
   and sends her public key to the server,
   which stores it and associates it with
-  Alice's identity. She then uses the **OPRF**
-  protocol to obtain a strong symmetric
-  key from her password and sends an encrypted
-  backup of her key pair to the server.
-  To log in, she obtains her encrypted key
-  pair from the server, then performs the **OPRF**
-  protocol with her password to obtain a symmetric
-  key capable of decrypting her key pair. All
-  that's left is to perform a mutually
-  authenticated key exchange
-  (or possibly sign a challenge) with this key.
+  Alice's identity.
+  - She then uses the **OPRF** protocol to
+    obtain a strong symmetric key from her password
+    and sends an encrypted backup of
+    her key pair to the server.
+  - To log in, she obtains her encrypted key
+    pair from the server, then performs the **OPRF**
+    protocol with her password to obtain a symmetric
+    key capable of decrypting her key pair.
+  - All that's left is to perform a mutually
+    authenticated key exchange
+    (or possibly sign a challenge) with this key.
 * Passwords are a handy way to authenticate
   users as they live in someone's head and can
   be used on any device. On the other hand,
   users have trouble creating strong passwords,
   and because users tend to reuse passwords
   across websites, password breaches can be
-  damaging. SSO allows you to connect to many
-  services using one (or a few) service(s),
-  while asymmetric (or augmented)
-  password-authenticated key exchanges allow
-  you to authenticate without the server ever
-  learning your real password.
+  damaging.
+  - SSO allows you to connect to many
+    services using one (or a few) service(s),
+    while asymmetric (or augmented)
+    password-authenticated key exchanges allow
+    you to authenticate without the server ever
+    learning your real password.
 
 ---
 
