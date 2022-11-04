@@ -394,7 +394,7 @@ for i := 0; i < len(x); i++ {
   better modes of operation exist that
   `"randomize"` the encryption.
 * One of the most popular modes of operation for
-  AES is cipher block `chaining` (**CBC**).
+  AES is `cipher block chaining` (**CBC**).
 * **CBC** works for any deterministic block cipher
   (not just AES) by taking an additional value
   called an `initialization vector` (**IV**)
@@ -402,10 +402,10 @@ for i := 0; i < len(x); i++ {
   - Because of this, the `IV` is the length of
     the block size (`16` bytes for AES) and
     must be __random__ and __unpredictable__.
-* To decrypt with the CBC mode of operation,
-  reverse the operations.
-* As the `IV` is needed, it must be transmitted
-  in clear text along with the ciphertext.
+  - To decrypt with the CBC mode of operation,
+    reverse the operations.
+  - As the `IV` is needed, it must be transmitted
+    in clear text along with the ciphertext.
 
 > When an `IV` repeats or is __predictable__,
   the encryption becomes __deterministic__ again,
