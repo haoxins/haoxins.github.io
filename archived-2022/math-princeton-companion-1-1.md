@@ -8,9 +8,9 @@ date: 2022-10-14
 
 $$
 \Delta f =
-\frac{\partial ^ f}{\partial x ^ 2} +
-\frac{\partial ^ f}{\partial y ^ 2} +
-\frac{\partial ^ f}{\partial z ^ 2}
+\frac{\partial ^2 f}{\partial x ^ 2} +
+\frac{\partial ^2 f}{\partial y ^ 2} +
+\frac{\partial ^2 f}{\partial z ^ 2}
 $$
 
 - $$ \Delta $$
