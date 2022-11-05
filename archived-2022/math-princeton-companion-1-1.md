@@ -6,6 +6,21 @@ date: 2022-10-14
 
 - [普林斯顿数学指南 (第一卷)](https://book.douban.com/subject/25817381/)
 
+$$
+\Delta f =
+\frac{\partial ^ f}{\partial x ^ 2} +
+\frac{\partial ^ f}{\partial y ^ 2} +
+\frac{\partial ^ f}{\partial z ^ 2}
+$$
+
+- $$ \Delta $$
+  称为拉普拉斯算子. 那么,
+  $$ \Delta f $$
+  关于函数 `f` 提供了什么信息呢? 答案是:
+  - 它告诉我们当这个邻域的大小趋于零时, `f` 在
+    `(x, y, z)` 点的值与它在
+    `(x, y, z)` 点的紧接着的邻域里的平均值的比较.
+
 ### 几何学
 
 ```
