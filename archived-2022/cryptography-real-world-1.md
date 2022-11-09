@@ -445,11 +445,11 @@ for i := 0; i < len(x); i++ {
     of `128` bits can be encrypted with the
     same nonce (so less than `69` GBs).
 
-* an interesting aspect of `CTR` mode:
+* An interesting aspect of `CTR` mode:
   - __no padding is required__.
 * We say that it turns a block cipher (`AES`)
   into a stream cipher.
-* It encrypts the plaintext byte by byte.
+ - It encrypts the plaintext byte by byte.
 
 * By default, encryption __doesn't__ hides
   the length of what you are encrypting.
@@ -466,6 +466,8 @@ for i := 0; i < len(x); i++ {
   and by using `GMAC` to authenticate the
   associated data and the ciphertext using
   an authentication key `H`.
+
+---
 
 * `ChaCha20-Poly1305`
   - It is the combination of two algorithms:

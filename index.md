@@ -50,6 +50,8 @@
 - [庞加莱猜想](archived-2022/math-poincare-conjecture.md)
 - [普林斯顿数学指南 第一卷 上](archived-2022/math-princeton-companion-1-1.md)
 - [普林斯顿数学指南 第一卷 下](archived-2022/math-princeton-companion-1-2.md)
+- [普林斯顿数学指南 第二卷 上](archived-2022/math-princeton-companion-2-1.md)
+- [普林斯顿数学指南 第二卷 下](archived-2022/math-princeton-companion-2-2.md)
 - [普林斯顿数学指南 第三卷 & 随椋鸟飞行](archived-2022/math-princeton-companion.md)
 - [纯数学教程 哈代 (上)](archived-2022/math-pure-mathematics-1.md)
 - [基础拓扑学 修订版](archived-2022/math-topology.md)

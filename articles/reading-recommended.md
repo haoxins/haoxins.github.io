@@ -24,13 +24,13 @@ date: 2021-05-03
 元光体技术的发展, 也是心理史学诞生的必要工具.
 ```
 
+- [普林斯顿数学指南 (第二卷)](https://book.douban.com/subject/25817383/)
+  - 第一卷, 蜻蜓点水
+  - 第三卷, 泛泛而谈
+
 - [泛函分析导论及应用](https://book.douban.com/subject/35941956/)
 
 - [量子力学 (第一卷)](https://book.douban.com/subject/25954720/)
 - [量子力学 (第二卷)](https://book.douban.com/subject/26716232/)
   - 如果想了解量子力学, 任何科普都是雾里看花, 水中捞月.
   - 或者说, 除了通过数学, 别无他法!
-
-- [普林斯顿数学指南 (第二卷) ](https://book.douban.com/subject/25817383/)
-  - 第一卷, 蜻蜓点水
-  - 第三卷, 泛泛而谈
