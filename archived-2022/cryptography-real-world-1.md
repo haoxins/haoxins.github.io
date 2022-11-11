@@ -671,7 +671,7 @@ for i := 0; i < len(x); i++ {
   fixated on two curves:
   - **P-256**
   - and **Curve25519**.
-* `RFC 7748`, `"Elliptic Curves for Security,"`
+* `RFC 7748`, "Elliptic Curves for Security,"
   which was published in 2016, specifies two curves:
   - **Curve25519**
   - and **Curve448**.
@@ -691,14 +691,17 @@ for i := 0; i < len(x); i++ {
   implementations, and the resistance against
   timing attacks by design.
 * **Curve25519** has one caveat though it is not
-  a *prime-order group*. The curve has two subgroups:
-  a small subgroup of size 8 and a large subgroup
-  used for `ECDH`. On top of that, the original
-  design did not prescribe validating received
-  points, and libraries, in turn, did not implement
-  these checks. This led to issues being found in
-  different types of protocols that were making
-  use of the primitive in more exotic ways.
+  a `prime-order group`.
+  - The curve has two subgroups:
+  - a small subgroup of size `8` and a large subgroup
+    used for `ECDH`.
+  - On top of that, the original design did not
+    prescribe validating received points,
+    and libraries, in turn, did not implement
+    these checks.
+  - This led to issues being found in different types
+    of protocols that were making use of
+    the primitive in more exotic ways.
 
 ## Asymmetric encryption and hybrid encryption
 
