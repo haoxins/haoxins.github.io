@@ -449,7 +449,7 @@ for i := 0; i < len(x); i++ {
   - __no padding is required__.
 * We say that it turns a block cipher (`AES`)
   into a stream cipher.
- - It encrypts the plaintext byte by byte.
+  - It encrypts the plaintext byte by byte.
 
 * By default, encryption __doesn't__ hides
   the length of what you are encrypting.
@@ -499,7 +499,7 @@ for i := 0; i < len(x); i++ {
   `GMAC` we previously talked about.
 * Eventually, we can use `ChaCha20` and a
   counter set to `0` to generate a keystream
-  and derive the `16-byte` `r` and `16-byte` `s`
+  and derive the 16-byte `r` and 16-byte `s`
   values we need for `Poly1305`.
 
 * `ChaCha20-Poly1305` works by using `ChaCha20`
@@ -528,9 +528,12 @@ for i := 0; i < len(x); i++ {
 
 * While key exchanges are useful, they do not
   scale well in all scenarios without their
-  sister primitive: the digital signature.
+  sister primitive:
+  - the digital signature.
 
 > `X25519` key exchange algorithm
+
+---
 
 * The `Diffie-Hellman` (**DH**) key exchange
 
@@ -605,6 +608,8 @@ for i := 0; i < len(x); i++ {
   - These different subgroups can have
     different sizes, which we call __orders__.
 
+---
+
 * A group is a set of numbers with a binary
   operation that respects some properties
   - closure,
@@ -633,6 +638,8 @@ for i := 0; i < len(x); i++ {
   `DH` in favor of *Elliptic Curve Diffie-Hellman*
   (**ECDH**) or using the groups defined in the better
   standard, [RFC 7919](https://www.rfc-editor.org/info/rfc7919).
+
+---
 
 * The `Elliptic Curve Diffie-Hellman` (**ECDH**) key exchange
   - Compared to the recommended `2,048-bit` parameters in **DH**,
