@@ -719,15 +719,16 @@ for i := 0; i < len(x); i++ {
 
 * **ECIES**
   - The main standard to perform hybrid encryption
-    with *Elliptic Curve Diffie-Hellman* (**ECDH**)
+    with `Elliptic Curve Diffie-Hellman` (**ECDH**)
 
 * Nowadays, most protocols and applications that
   use `RSA` either still implement the insecure
-  `PKCS#1` `v1.5` or `OAEP`. On the other hand,
-  more and more protocols are moving away from
-  `RSA` encryption **in favor of**
-  *Elliptic Curve Diffie-Hellman* (**ECDH**)
-  for both *key exchanges* and *hybrid encryption*.
+  `PKCS#1` v1.5 or `OAEP`.
+  - On the other hand, more and more protocols
+    are moving away from `RSA` encryption
+    **in favor of** `Elliptic Curve Diffie-Hellman`
+    (**ECDH**) for both key exchanges
+    and hybrid encryption.
 
 * First, if you want to encrypt a message
   to Alice, you use an `(EC)DH`-based key
@@ -746,50 +747,50 @@ for i := 0; i < len(x); i++ {
   - Anybody can verify your signature on a message.
 
 * A signature scheme typically consists of
-  *three different algorithms*:
-  - A *key pair generation algorithm* that
+  __three__ different algorithms:
+  - A `key pair generation algorithm` that
     a signer uses to create a new private
     and public key (the public key can
     then be shared with anyone).
-  - A *signing algorithm* that takes a
+  - A `signing algorithm` that takes a
     private key and a message to
     produce a signature.
-  - A *verifying algorithm* that takes a
+  - A `verifying algorithm` that takes a
     public key, a message, and a signature
     and returns a success or error message.
 
 * What are signatures good for? They are good for
-  *authenticating the origin* of a message
-  *as well as the integrity* of a message:
+  authenticating the origin of a message
+  as well as the integrity of a message:
   - **Origin**:
   - If my signature is on it, it came from me.
   - **Integrity**:
   - If someone modifies the message, it voids the signature.
 
-* *Key exchanges* didn't fully solve the problem
+* Key exchanges didn't fully solve the problem
   of setting up a secure connection between two
-  participants as an active **man-in-the-middle** (MITM)
+  participants as an active `man-in-the-middle` (__MITM__)
   attacker can trivially impersonate both sides of a
-  *key exchange*. This is where *signatures*
-  enter the ring.
+  key exchange.
+  - This is where signatures enter the ring.
 
 * **Public key infrastructures**
-  - *Transitivity of trust* allows you to scale trust
+  - `Transitivity of trust` allows you to scale trust
     in systems in extreme ways.
 
 * **Zero-knowledge proofs** (ZKPs):
   - The origin of signatures
 * **Schnorr identification protocol**:
-  - An **interactive** *zero-knowledge proof*
+  - An **interactive** zero-knowledge proof
 
-* So-called *interactive* ZKP systems that
+* So-called interactive ZKP systems that
   follow a three-movement pattern
-  (*commitment*, *challenge*, and *proof*)
-  are often referred to as *Sigma protocols*.
+  (`commitment`, `challenge`, and `proof`)
+  are often referred to as `Sigma` protocols.
 
-* The *Schnorr identification protocol* is an
 ---
 
+* The `Schnorr identification protocol` is an
   **interactive** ZKP that is complete
   (Peggy can prove she knows some witness),
   sound (Peggy cannot prove anything if she
@@ -797,27 +798,27 @@ for i := 0; i < len(x); i++ {
   (Victor learns nothing about the witness).
   - Peggy: I'll prove that I know `x` in
     $$ Y = g^{x} \mod p $$
-  - Peggy: Here's a *commitment* of a
+  - Peggy: Here's a `commitment` of a
     random value
     $$ R = g^k $$
   - Victor: Here's a random challenge `c`
-  - Peggy: Here's a *hidden witness*
+  - Peggy: Here's a `hidden witness`
     $$ s = k + c \times x $$
   - Victor: Indeed,
     $$ g^s = Y^{c} \times R $$
 
-> - Signatures as `non-interactive` *zero-knowledge proofs*
+> Signatures as `non-interactive` zero-knowledge proofs
 
 * In 1986, Amos Fiat and Adi Shamir published a
   technique that allowed one to easily convert
-  an *interactive* ZKP *into* a *non-interactive* ZKP.
+  an `interactive` ZKP into a `non-interactive` ZKP.
 * The trick they introduced (referred to as the Fiat-Shamir
   heuristic or Fiat-Shamir transformation) was to
   make the prover compute the challenge themselves,
   in a way they can't control.
 * Compute the challenge as a hash of all the messages
   sent and received as part of the protocol up to
-  that point (which we call the *transcript*).
+  that point (which we call the `transcript`).
 * If we assume that the hash function gives outputs
   that are indistinguishable from truly-random numbers
   (in other words, it looks random), then it can
