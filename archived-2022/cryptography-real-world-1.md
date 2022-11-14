@@ -870,9 +870,9 @@ for i := 0; i < len(x); i++ {
     able to forge a signature without
     knowledge of the private key.
 
-* The *Elliptic Curve Digital Signature Algorithm*
 ---
 
+* The Elliptic Curve Digital Signature Algorithm
   (**ECDSA**)
   - An elliptic curve variant of DSA that was itself
     invented only to circumvent patents
@@ -887,25 +887,24 @@ for i := 0; i < len(x); i++ {
 
 * The elliptic curves that tend to be used with
   **ECDSA** are pretty much the same curves that
-  are popular with the *Elliptic Curve Diffie-Hellman*
-  (**ECDH**) algorithm with *one notable exception*:
-  **Secp256k1**.
+  are popular with the Elliptic Curve Diffie-Hellman
+  (**ECDH**) algorithm with one notable exception:
+  - **Secp256k1**.
 * **Secp256k1** is a type of elliptic curve called
-  a *Koblitz curve*. A *Koblitz curve* is just an
+  a Koblitz curve. A Koblitz curve is just an
   elliptic curve with some constraints in its
   parameters that allow implementations to
   optimize some operations on the curve.
 
-* The *Edwards-curve Digital Signature Algorithm*
 ---
 
+* The Edwards-curve Digital Signature Algorithm
   (**EdDSA**)
-  - *EdDSA* is actually based on
-    *Schnorr signatures*
+  - EdDSA is actually based on Schnorr signatures
   - One particularity of EdDSA is that the scheme
     does not require new randomness for
     every signing operation.
-  - EdDSA produces signatures *deterministically*.
+  - EdDSA produces signatures deterministically.
   - EdDSA is on track to be included in NIST's
     upcoming update for its `FIPS 186-5` standard
     (still a draft as of early 2021).
@@ -919,8 +918,8 @@ for i := 0; i < len(x); i++ {
     key that is then used to derive the actual
     signing key and another key that
     we call the nonce key.
-  - That nonce key is important! It is the one used
-    to *deterministically* generate the
+  - __That nonce key is important!__ It is the one used
+    to deterministically generate the
     required per signature nonce.
   - To sign, EdDSA first deterministically generates
     the nonce by hashing the nonce key with the
@@ -951,7 +950,7 @@ for i := 0; i < len(x); i++ {
 * Substitution attacks on signatures
   - Substitution attacks, also referred to as
     duplicate signature key selection (DSKS),
-    are possible on both RSA `PKCS#1` `v1.5`
+    are possible on both RSA `PKCS#1` v1.5
     and `RSA-PSS`.
 * Signature malleability
 
