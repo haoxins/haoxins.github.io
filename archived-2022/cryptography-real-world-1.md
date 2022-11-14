@@ -788,6 +788,8 @@ for i := 0; i < len(x); i++ {
   are often referred to as *Sigma protocols*.
 
 * The *Schnorr identification protocol* is an
+---
+
   **interactive** ZKP that is complete
   (Peggy can prove she knows some witness),
   sound (Peggy cannot prove anything if she
@@ -825,6 +827,8 @@ for i := 0; i < len(x); i++ {
   *Schnorr identification protocol*, we obtain the
   *Schnorr signature scheme*.
 
+---
+
 * **Schnorr signature**
   - Commitment:
     $$ R = g^k $$
@@ -855,6 +859,8 @@ for i := 0; i < len(x); i++ {
   - *RSA-PSS* was standardized in the updated
     `PKCS#1` `v2.1` and included a proof of security.
   - (1) *Encode* the message using the
+---
+
     `PSS` encoding algorithm
   - (2) *Sign* the encoded message using `RSA`
     (as was done in the `PKCS#1` `v1.5` standard)
@@ -864,6 +870,8 @@ for i := 0; i < len(x); i++ {
     knowledge of the private key.
 
 * The *Elliptic Curve Digital Signature Algorithm*
+---
+
   (**ECDSA**)
   - An elliptic curve variant of DSA that was itself
     invented only to circumvent patents
@@ -888,11 +896,13 @@ for i := 0; i < len(x); i++ {
   optimize some operations on the curve.
 
 * The *Edwards-curve Digital Signature Algorithm*
+---
+
   (**EdDSA**)
   - *EdDSA* is actually based on
     *Schnorr signatures*
   - One particularity of EdDSA is that the scheme
-    does *not require new randomness* for
+    does not require new randomness for
     every signing operation.
   - EdDSA produces signatures *deterministically*.
   - EdDSA is on track to be included in NIST's
@@ -929,6 +939,8 @@ for i := 0; i < len(x); i++ {
   is generated deterministically from the nonce
   key and the message, and the public key of the
   signer is included as part of the challenge.
+
+---
 
 * The **most widely used** instantiation of
   EdDSA, Ed25519, is defined with the
