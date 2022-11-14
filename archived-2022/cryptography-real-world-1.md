@@ -823,10 +823,10 @@ for i := 0; i < len(x); i++ {
   that are indistinguishable from truly-random numbers
   (in other words, it looks random), then it can
   successfully simulate the role of the verifier.
-* *Digital signatures* are just *non-interactive* ZKPs.
-  Applying the *Fiat-Shamir transform* to the
-  *Schnorr identification protocol*, we obtain the
-  *Schnorr signature scheme*.
+* Digital signatures are just non-interactive ZKPs.
+  - Applying the Fiat-Shamir transform to the
+    Schnorr identification protocol, we obtain the
+    Schnorr signature scheme.
 
 ---
 
@@ -838,12 +838,12 @@ for i := 0; i < len(x); i++ {
   - Hidden witness:
     $$ s = k + c \times x $$
 
-* A *Schnorr signature* is essentially two values,
-  `R` and `s`, where `R` is a *commitment* to some
+* A Schnorr signature is essentially two values,
+  `R` and `s`, where `R` is a commitment to some
   secret random value (which is often called a
-  *nonce* as it needs to be unique per signature),
+  `nonce` as it needs to be unique per signature),
   and `s` is a value computed with the help of
-  the *commitment* `R`, the private key
+  the commitment `R`, the private key
   (the witness `x`), and a message.
 
 * *RSA* `PKCS#1` `v1.5`: A **bad** standard
