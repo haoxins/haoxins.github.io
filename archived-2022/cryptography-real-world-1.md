@@ -846,26 +846,27 @@ for i := 0; i < len(x); i++ {
   the commitment `R`, the private key
   (the witness `x`), and a message.
 
-* *RSA* `PKCS#1` `v1.5`: A **bad** standard
-* *RSA* for encryption was loosely standardized
-  in the `PKCS#1` `v1.5` document. The same document
-  contained a specification for signing with
-  *RSA* (without a security proof).
-* *RSA* was then standardized again in the
-  `PKCS#1` `v2` document with a better construction
-  (called `RSA-OAEP`). The same happened for *RSA*
-  signatures with `RSA-PSS` being standardized in
-  the same document (with a security proof).
-* *RSA-PSS*: A **better** standard
-  - *RSA-PSS* was standardized in the updated
-    `PKCS#1` `v2.1` and included a proof of security.
-  - (1) *Encode* the message using the
 ---
 
+* RSA `PKCS#1` v1.5: A **bad** standard
+* RSA for encryption was loosely standardized
+  in the `PKCS#1` v1.5 document.
+  - The same document contained a specification
+    for signing with RSA (without a security proof).
+* RSA was then standardized again in the
+  `PKCS#1` v2 document with a better construction
+  (called `RSA-OAEP`).
+  - The same happened for RSA signatures with `RSA-PSS`
+    being standardized in the same document
+    (with a security proof).
+* `RSA-PSS`: A **better** standard
+  - `RSA-PSS` was standardized in the updated
+    `PKCS#1` v2.1 and included a proof of security.
+  - (1) Encode the message using the
     `PSS` encoding algorithm
-  - (2) *Sign* the encoded message using `RSA`
-    (as was done in the `PKCS#1` `v1.5` standard)
-  - PSS (for *Probabilistic Signature Scheme*) is
+  - (2) Sign the encoded message using RSA
+    (as was done in the `PKCS#1` v1.5 standard)
+  - `PSS` (for Probabilistic Signature Scheme) is
     provably secure, meaning that no one should be
     able to forge a signature without
     knowledge of the private key.
