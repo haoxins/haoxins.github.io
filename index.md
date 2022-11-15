@@ -48,7 +48,7 @@
 - [伽罗瓦理论 群论](archived-2022/math-galois-theory.md)
 - [数学及其历史, 代数的历史, 一个数学家的辩白](archived-2022/math-history.md)
 - [庞加莱猜想](archived-2022/math-poincare-conjecture.md)
-- [普林斯顿数学指南 第一卷](archived-2022/math-princeton-companion-1-1.md)
+- [普林斯顿数学指南 第一卷](archived-2022/math-princeton-companion-1.md)
 - [普林斯顿数学指南 第二卷 上](archived-2022/math-princeton-companion-2-1.md)
 - [普林斯顿数学指南 第二卷 下](archived-2022/math-princeton-companion-2-2.md)
 - [普林斯顿数学指南 第三卷](archived-2022/math-princeton-companion-3.md)
