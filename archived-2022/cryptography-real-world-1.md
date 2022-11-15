@@ -848,7 +848,8 @@ for i := 0; i < len(x); i++ {
 
 ---
 
-* RSA `PKCS#1` v1.5: A **bad** standard
+* RSA `PKCS#1` v1.5:
+  - A **bad** standard
 * RSA for encryption was loosely standardized
   in the `PKCS#1` v1.5 document.
   - The same document contained a specification
@@ -879,7 +880,7 @@ for i := 0; i < len(x); i++ {
     invented only to circumvent patents
     in Schnorr signatures.
   - Unfortunately, ECDSA, like DSA, does not come with
-    a proof of security, while Schnorr signatures did.
+    a proof of security, __while Schnorr signatures did__.
   - The private key is a large number
     `x` generated randomly.
   - The public key is obtained by viewing `x` as
