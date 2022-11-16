@@ -1036,37 +1036,38 @@ for i := 0; i < len(x); i++ {
   based on hard mathematical problems
   (like the discrete logarithm) are too
   slow to be practical.
-* To be secure, a PRNG must be *seeded* with an
-  *unpredictable* secret. More accurately, we say
+* To be secure, a PRNG must be seeded with an
+  unpredictable secret. More accurately, we say
   that the PRNG takes a key of `n` bytes sampled
-  uniformly at random. This means that we should
-  pick the key randomly from the set of all
-  possible *n-byte* strings, where each byte
-  string has the same chance of being picked.
+  uniformly at random.
+  - This means that we should pick the key
+    randomly from the set of all possible
+    `n-byte` strings, where each byte string
+    has the same chance of being picked.
 
 * Actually, because AES is hardware-supported on
-  most machines, it is customary to see AES-CTR
-  being used to produce random numbers. The
-  symmetric key becomes the seed, and the
-  ciphertexts become the random numbers.
+  most machines, it is customary to see `AES-CTR`
+  being used to produce random numbers.
+  - The symmetric key becomes the seed, and the
+    ciphertexts become the random numbers.
 * In practice, there is a bit more complexity
   added to these constructions in order to provide
   forward and backward secrecy.
-* Generating random numbers on a *system* usually
-  means that entropy was *mixed* together from
-  different *noise* sources and used to
-  seed a *long-term* **PRNG**.
+* Generating random numbers on a system usually
+  means that entropy was mixed together from
+  different noise sources and used to
+  seed a `long-term` **PRNG**.
 
 * In `2021`, Linux uses a PRNG that's based on the
   `ChaCha20` stream cipher. In addition, the random
   number generator interface exposed to developers
   will be different depending on the OS.
-* For example, on Linux, one can read bytes from
-  the `/dev/urandom`.
-* One problem with `/dev/urandom` is that it might
-  not provide enough entropy
-  (its numbers won't be random enough)
-  if used too early after booting the device.
+  - For example, on Linux, one can read bytes from
+    the `/dev/urandom`.
+  - One problem with `/dev/urandom` is that it might
+    not provide enough entropy
+    (its numbers won't be random enough)
+    if used too early after booting the device.
 * I recommend that you use `getrandom` if it is
   available on your system. The following listing
   shows how one can securely use getrandom in C:
@@ -1083,7 +1084,7 @@ if (len != sizeof(secret)) {
 ```
 
 > It might be easy to forget that `getrandom`
-  only returns up to *256 bytes* per call,
+  only returns up to `256` bytes per call,
   for example. For this reason, you should always
   attempt to generate random numbers through the
   standard library of the programming
@@ -1096,10 +1097,13 @@ if (len != sizeof(secret)) {
   you should use between the `math/rand` and
   `crypto/rand` packages in Golang).
 
-* In most situations, sticking to what the
-  programming language's standard library or
-  what a good cryptography library
-  provides should be enough.
+```
+In most situations, sticking to what the
+programming language's standard library or
+what a good cryptography library
+provides should be enough.
+```
+
 * It is good to keep in mind the following
   edge cases should you run into them:
   - **Forking processes**: When using a userland
@@ -1108,30 +1112,30 @@ if (len != sizeof(secret)) {
     other choice), it is important to keep in mind
     that a program that forks will produce a new
     child process that will have the same PRNG
-    state as its parent. Consequently, both PRNGs will
-    produce the same sequence of random numbers
-    from there on.
+    state as its parent.
+  - Consequently, both PRNGs will produce the
+    same sequence of random numbers from there on.
   - **Virtual machines (VMs)**: Cloning of PRNG state
     can also become a problem when using the OS PRNG.
     Think about VMs. If the entire state of a VM is
     saved and then started several times from this
     point on, every instance might produce the exact
-    same sequence of random numbers. This is sometimes
-    fixed by hypervisors and OSs, but it is good to
-    look into what the hypervisor you're using is
-    doing before running applications that request
-    random numbers in VMs.
+    same sequence of random numbers.
+  - This is sometimes fixed by hypervisors and OSs,
+    but it is good to look into what the hypervisor
+    you're using is doing before running applications
+    that request random numbers in VMs.
   - **Early boot entropy**: While OSs should have no
     trouble gathering entropy in user-operated devices
     due to the noise produced by the user's interactions
     with the device, embedded devices and headless
     systems have more challenges to overcome in order to
-    produce good entropy at boot time. History has shown
-    that some devices tend to boot in a similar fashion
-    and end up amassing the same initial noise from
-    the system, leading to the same seed being used for
-    their internal PRNGs and the same series of random
-    numbers being generated.
+    produce good entropy at boot time.
+  - History has shown that some devices tend to boot in
+    a similar fashion and end up amassing the same
+    initial noise from the system, leading to the same
+    seed being used for their internal PRNGs and the
+    same series of random numbers being generated.
 
 * **Public randomness**
   - *One-to-many*: You want to produce randomness for others.
@@ -1139,6 +1143,8 @@ if (len != sizeof(secret)) {
     randomness together.
 
 * A *verifiable random function* (**VRF**) generates
+---
+
   verifiable randomness via public key cryptography.
   To generate a random number, simply use a signature
   scheme which produces unique signatures
