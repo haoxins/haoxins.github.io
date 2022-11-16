@@ -1138,28 +1138,32 @@ provides should be enough.
     same series of random numbers being generated.
 
 * **Public randomness**
-  - *One-to-many*: You want to produce randomness for others.
-  - *Many-to-many*: A set of participants want to produce
+  - `One-to-many`:
+  - You want to produce randomness for others.
+  - `Many-to-many`:
+  - A set of participants want to produce
     randomness together.
 
-* A *verifiable random function* (**VRF**) generates
 ---
 
+* A `verifiable random function` (**VRF**) generates
   verifiable randomness via public key cryptography.
-  To generate a random number, simply use a signature
-  scheme which produces unique signatures
-  (like **BLS**) to sign a seed, then hash the signature
-  to produce the public random number.
-* To validate the resulting randomness, make sure that
-  the hash of the signature is indeed the random number
-  and verify the signature over the seed.
+  - To generate a random number, simply use a
+    signature scheme which produces unique signatures
+    (like **BLS**) to sign a seed, then hash the
+    signature to produce the public random number.
+  - To validate the resulting randomness, make sure that
+    the hash of the signature is indeed the random number
+    and verify the signature over the seed.
 
-* One popular *decentralized randomness beacon* is
+* One popular decentralized randomness beacon is
   called drand and is run in concert by several
   organizations and universities. It is available at
   - https://leagueofentropy.com
   - **League of Entropy**:
     Decentralized Randomness Beacon
+
+---
 
 * Key derivation with HKDF
   - PRNGs are not the only constructions one can
@@ -1168,7 +1172,7 @@ provides should be enough.
   - Deriving several secrets from one secret is
     actually such a frequent pattern in
     cryptography that this concept has its
-    own name: *key derivation*.
+    own name: `key derivation`.
 
 * A key derivation function (**KDF**) is like
   a PRNG in many ways, except for a number of
@@ -1177,16 +1181,17 @@ provides should be enough.
     random secret (as long as it has enough entropy).
     This makes a KDF useful for deriving secrets
     from key exchange output, which produce high
-    entropy but biased results. The resulting
-    secrets are, in turn, uniformly random, so
-    you can use these in constructions that expect
+    entropy but biased results.
+  - The resulting secrets are, in turn, uniformly random,
+    so you can use these in constructions that expect
     uniformly random keys.
   - A KDF is generally used in protocols that
     require participants to rederive the same keys
-    several times. In this sense, a KDF is expected
-    to be deterministic, while PRNGs sometimes
-    provide backward secrecy by frequently reseeding
-    themselves with more entropy.
+    several times.
+  - In this sense, a KDF is expected to be
+    deterministic, while PRNGs sometimes
+    provide backward secrecy by frequently
+    reseeding themselves with more entropy.
   - A KDF is usually not designed to produce
     a LOT of random numbers. Instead, it is normally
     used to derive a limited number of keys.
