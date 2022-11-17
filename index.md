@@ -4,7 +4,7 @@
 ### 2023
 - [Advanced Algorithms and Data Structures](archived-2023/algorithms-advanced.md)
 - [计算机体系结构 - 量化研究方法 - 第6版](archived-2023/computer-architecture.md)
-- [Cryptography](archived-2023/cryptography.md)
+- [Confidence Computing](archived-2023/computing-confidence.md)
 - [High-Dimensional Data Analysis with Low-Dimensional Models](archived-2023/high-dim-data-low-dim-model.md)
 - [Kubernetes in Action (下) - 2nd Edition](archived-2023/kubernetes-in-action-2nd-3.md)
 - [复分析 可视化方法 (下)](archived-2023/math-complex-analysis-2.md)

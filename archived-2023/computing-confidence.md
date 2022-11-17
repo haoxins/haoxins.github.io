@@ -1,8 +1,12 @@
 ---
-title: Cryptography
+title: Confidence Computing
 description: 欲渡黄河冰塞川, 将登太行雪满山. 闲来垂钓碧溪上, 忽复乘舟梦日边.
 date: 2021-10-15
 ---
+
+- [Noise Protocol Framework](https://noiseprotocol.org)
+
+- [Schnorr's identification protocol](https://www.zkdocs.com/docs/zkdocs/zero-knowledge-protocols/schnorr/)
 
 - [Solana](https://github.com/solana-labs/solana)
   - Solana is a decentralized blockchain built to
