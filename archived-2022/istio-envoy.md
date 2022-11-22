@@ -106,6 +106,18 @@ k logs -n istio-system -l app=istiod --tail=10000
 
 ### 2022
 
+- `2022-11-15`: Announcing Istio `1.16`
+  - Kubernetes Gateway API Implementation Promoted to Beta
+
+```
+Istio's implementation of the Gateway API has been promoted to Beta.
+This is a significant step toward our goal of making the Gateway API
+the default API for traffic management in the future.
+```
+
+> `2022`年下半年, 个人手头上 Istio 相关项目都交接出去了.
+  所以能够以无事一身轻的心态看待这些变化.
+
 - `2022-06-17`: Kubeflow 的 Cluster 有很大的 VMs 之间的网络流量
   - `PILOT_ENABLE_STATUS: true` 删除之后, 解决
   - 应该是某一次升级 (也或许是之前切换 Node pool) 导致
