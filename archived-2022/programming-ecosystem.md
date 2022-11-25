@@ -4,35 +4,28 @@ description: 风不定, 人初静, 明日落红应满径.
 date: 2022-01-17
 ---
 
-## Data Engineering
+## Data & ML Engineering
 
-- [Arrow2](https://github.com/jorgecarleitao/arrow2)
-
-## ML Engineering
+- [DataFusion](https://github.com/apache/arrow-datafusion)
+  - [Ballista](https://github.com/apache/arrow-ballista)
+  - 期待 2023 能带来全新的 Streaming computing 生态
+  - `Streaming` vs `Mini batch` vs `Batch`
 
 - [Polars](https://github.com/pola-rs/polars)
   - __Polars__ has transitioned to __Arrow2__.
 
-- [Ray](https://github.com/ray-project/ray)
-
-## ML
-
-- [JupyterLab v4](https://github.com/jupyterlab/jupyterlab/issues/9647)
-
-## WASM & WASI
-
-- [WASI](https://wasi.dev)
-  - https://github.com/WebAssembly/WASI
-  - https://github.com/bytecodealliance/wasi
-
 ## Cloud native
 
 - 我的定义:
+  - `2022`:
   - `2021`: Cloud native = K8s native + Object storage
 
 ------------------
 
 ## 2022
+
+- [Fluvio](https://github.com/infinyon/fluvio)
+  - 基本不会有未来了~
 
 - [K8s: Object Storage Support](https://github.com/kubernetes/enhancements/tree/master/keps/sig-storage/1979-object-storage-support)
 

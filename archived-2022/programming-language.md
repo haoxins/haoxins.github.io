@@ -40,6 +40,9 @@ cargo test -- --show-output
   - `*mut T`
   - `*const T`
 
+---
+
+
 ------------------
 
 ## Go (1.18+)
@@ -109,8 +112,10 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - [Serde](https://github.com/serde-rs/serde)
   - Serde is a framework for serializing and deserializing
     Rust data structures efficiently and generically.
+- ML Ecosystem
   - [Polars](https://github.com/pola-rs/polars)
   - Blazingly fast DataFrames in Rust, and Python.
+  - https://github.com/fede1024/rust-rdkafka
 - 一些个人需要, 但是维护情况堪忧的项目
   - [Kafka client: rust-rdkafka](https://github.com/fede1024/rust-rdkafka)
 
