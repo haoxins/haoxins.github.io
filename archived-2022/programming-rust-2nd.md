@@ -40,4 +40,35 @@ return a Result.
   - 说白了就是平时用到的开源项目, 你需要偶尔去看代码 Debug 的
 
 ```java
+import java.util.*;
+
+sealed interface Transport {};
+record Bicycle(String id) implements Transport {};
+record Glider(int size) implements Transport {};
+record Surfboard(double weight) implements Transport {};
+
+public class SealedPatternMatch {
+    static String exhaustive(Transport t) {
+        return switch(t) {
+            case Bicycle b -> "Bicycle " + b.id();
+            case Glider g -> "Glider " + g.size();
+            case Surfboard s -> "Surfboard " + s.weight();
+        };
+    }
+
+    public static void main(String[] args) {
+        List.of(
+            new Bicycle("Bob"),
+            new Glider(65),
+            new Surfboard(6.4)
+        ).forEach(
+            t -> System.out.println(exhaustive(t))
+        );
+        try {
+            exhaustive(null);
+        } catch (NullPointerException e) {
+            System.out.println("Not exhaustive: " + e);
+        }
+    }
+}
 ```
