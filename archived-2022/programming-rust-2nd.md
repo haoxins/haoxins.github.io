@@ -31,6 +31,13 @@ There's also the option of simply changing main to
 return a Result.
 ```
 
+- When an integer arithmetic operation overflows,
+  Rust panics, in a debug build.
+- In a release build, the operation wraps around:
+  - it produces the value equivalent to the
+    mathematically correct result modulo
+    the range of the value.
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
