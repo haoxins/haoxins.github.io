@@ -57,7 +57,7 @@
 - [纯数学教程 哈代 (上)](archived-2022/math-pure-mathematics-1.md)
 - [基础拓扑学 修订版](archived-2022/math-topology.md)
 - [深度学习 (上)](archived-2022/ml-dl.md)
-- [特征工程 & Interpretable & Engineering](archived-2022/ml-feature.md)
+- [特征工程 & Interpretable](archived-2022/ml-feature.md)
 - [狭义与广义相对论浅说, 对称与不对称, 泡利的错误](archived-2022/physics-1.md)
 - [费曼物理学讲义 (卷一) 上](archived-2022/physics-feynman-lectures-1-1.md)
 - [费曼物理学讲义 (卷一) 中](archived-2022/physics-feynman-lectures-1-2.md)
