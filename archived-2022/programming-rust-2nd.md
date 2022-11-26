@@ -32,11 +32,18 @@ return a Result.
 ```
 
 - When an integer arithmetic operation overflows,
-  Rust panics, in a debug build.
-- In a release build, the operation wraps around:
+  Rust panics, in a `debug` build.
+- In a `release` build, the operation wraps around:
   - it produces the value equivalent to the
     mathematically correct result modulo
     the range of the value.
+
+---
+
+- Rust uses the `char` type for single characters in isolation,
+  but uses the UTF-8 encoding for strings and streams of text.
+  - So, a `String` represents its text as a sequence of
+    UTF-8 bytes, __not__ as an array of characters.
 
 ------------------
 
