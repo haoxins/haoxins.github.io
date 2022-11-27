@@ -82,7 +82,7 @@ date: 2022-05-14
     $$ v_x^2 $$
     取平均.
 - 即我们要求的是
-  $$ v_x $$,
+  $$ v_x $$
   平方对所有分子的平均值
   - $$ P = n m \left \langle v_x^2 \right \rangle $$.
     (`39.5`)
@@ -132,7 +132,7 @@ $$.
   是因为这是一个分子的质心运动的动能. 由此我们得出
 
 $$
-PV = N \frac{2}{3}
+PV = N (\frac{2}{3})
 \left \langle \frac{m v^2}{2} \right \rangle
 $$.
 (`39.9`)
