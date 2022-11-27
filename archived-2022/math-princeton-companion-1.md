@@ -165,13 +165,13 @@ $$
 
 $$
 P \left [ A | B \right ] =
-\frac{P \left [ A \and B \right ]}{P \left [ B \right ]}
+\frac{P \left [ A \land B \right ]}{P \left [ B \right ]}
 $$
 
 - 由此可得
 
 $$
-P \left [ A \and B \right ] =
+P \left [ A \land B \right ] =
 P \left [ A | B \right ] P \left [ B \right ]
 $$
 
@@ -183,7 +183,7 @@ $$ P \left [ A | B \right ] = P \left [ B | A \right ] $$,
 
 $$
 P \left [ A | B \right ] P \left [ B \right ] =
-\frac{P \left [ B \and A \right ] P \left [ A \right ]}{P \left [ B \right ]}
+\frac{P \left [ B \land A \right ] P \left [ A \right ]}{P \left [ B \right ]}
 $$.
 
 ### Calabi-Yau 流形
