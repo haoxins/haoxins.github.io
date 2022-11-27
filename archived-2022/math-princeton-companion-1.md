@@ -161,14 +161,31 @@ $$
 
 - 一般说来, 在条件 `B` 下出现 `A` 的概率定义为
   `A` 与 `B` 同时出现的概率再除以 `B` 出现的概率.
-  - 用记号表示为
-  - $$ P \[ A | B \] = \frac{P \[ A \and B \]}{P \[ B \]}
-  - 由此可得
-  - $$ P \[ A \and B \] = P \[ A | B \] P \[ B \] $$
-  - 但是
-  - $$ P \[ A | B \] = P \[ B | A \] $$,
-  - 所以
-  - $$ P \[ A | B \] P \[ B \] = \frac{}{P \[ B \]} $$.
+  用记号表示为
+
+$$
+P \left [ A | B \right ] =
+\frac{P \left [ A \and B \right ]}{P \left [ B \right ]}
+$$
+
+- 由此可得
+
+$$
+P \left [ A \and B \right ] =
+P \left [ A | B \right ] P \left [ B \right ]
+$$
+
+- 但是
+
+$$ P \left [ A | B \right ] = P \left [ B | A \right ] $$,
+
+- 所以
+
+$$
+P \left [ A | B \right ] P \left [ B \right ] =
+\frac{P \left [ B \and A \right ] P \left [ A \right ]}{P \left [ B \right ]}
+$$.
+
 ### Calabi-Yau 流形
 
 > 物理学中的 Calabi-Yau 流形
