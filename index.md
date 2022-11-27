@@ -3,6 +3,7 @@
 ### 2024
 ### 2023
 - [Advanced Algorithms and Data Structures](archived-2023/algorithms-advanced.md)
+- [猫咪的那些事](archived-2023/cat.md)
 - [计算机体系结构 - 量化研究方法 - 第6版](archived-2023/computer-architecture.md)
 - [Confidence Computing](archived-2023/computing-confidence.md)
 - [High-Dimensional Data Analysis with Low-Dimensional Models](archived-2023/high-dim-data-low-dim-model.md)
@@ -13,6 +14,7 @@
 - [测度论](archived-2023/math-measure-theory.md)
 - [普林斯顿概率论读本](archived-2023/math-probability-lifesaver.md)
 - [纯数学教程 哈代 (下)](archived-2023/math-pure-mathematics-2.md)
+- [基础拓扑学 修订版](archived-2023/math-topology.md)
 - [健身, 冥想](archived-2023/meditation-fitness.md)
 - [深度学习 (中)](archived-2023/ml-dl-1.md)
 - [深度学习 (下)](archived-2023/ml-dl-2.md)
@@ -37,7 +39,6 @@
 - [TAOCP 组合算法 习题 - 计算机程序设计艺术](archived-2023/taocp-4-exe.md)
 - [TAOCP 组合算法 - 计算机程序设计艺术](archived-2023/taocp-4.md)
 ### 2022
-- [猫咪的那些事](archived-2022/cat.md)
 - [Real-World Cryptography (上)](archived-2022/cryptography-real-world-1.md)
 - [Real-World Cryptography (下)](archived-2022/cryptography-real-world-2.md)
 - [数据库系统内幕](archived-2022/database-internals.md)
@@ -55,7 +56,6 @@
 - [普林斯顿数学指南 第二卷 下](archived-2022/math-princeton-companion-2-2.md)
 - [普林斯顿数学指南 第三卷](archived-2022/math-princeton-companion-3.md)
 - [纯数学教程 哈代 (上)](archived-2022/math-pure-mathematics-1.md)
-- [基础拓扑学 修订版](archived-2022/math-topology.md)
 - [深度学习 (上)](archived-2022/ml-dl.md)
 - [特征工程 & Interpretable](archived-2022/ml-feature.md)
 - [狭义与广义相对论浅说, 对称与不对称, 泡利的错误](archived-2022/physics-1.md)

@@ -14,8 +14,6 @@ date: 2021-05-03
 -- 理查德·费曼
 ```
 
-- [线性代数 第5版](https://book.douban.com/subject/34820335/)
-
 ------------------
 
 - [复分析: 可视化方法](https://book.douban.com/subject/35316347/)
