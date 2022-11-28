@@ -8,6 +8,11 @@ date: 2019-10-24
 
 ## 2022
 
+### 2022-12
+
+- [海贼王: Red](https://movie.douban.com/subject/35675082/)
+  - 好久没进电影院了
+
 ### 2022-10
 
 - [暴雪将至](https://movie.douban.com/subject/26775933/)
