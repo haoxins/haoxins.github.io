@@ -118,6 +118,56 @@ and fixed at compile time.
   to describe the new buffer,
   and finally freeing the old one.
 
+---
+
+- A slice, written `[T]` without specifying the length,
+  is a region of an array or vector.
+  - Slices are __always__ passed by reference.
+  - A reference to a slice is a fat pointer:
+  - a two-word value comprising a pointer to
+    the slice's first element, and
+    the number of elements in the slice.
+- Since slices __almost always__ appear behind
+  references, we often just refer to types like
+  `&[T]` or `&str` as "slices," using the
+  shorter name for the more common concept.
+
+### String
+
+- Rust offers __raw strings__. A raw string is
+  tagged with the lowercase letter `r`.
+  - All backslashes and whitespace characters inside
+    a raw string are included verbatim in the string.
+  - The start and end of a raw string can be
+    marked with pound signs:
+  - You can add as few or as many pound signs as needed
+    to make it clear where the raw string ends.
+- A string literal with the `b` prefix is a __byte string__.
+  - Such a string is a slice of `u8` values, that is,
+    bytes, rather than Unicode text.
+
+---
+
+- You can think of a `String` as a `Vec<u8>` that is
+  guaranteed to hold well-formed UTF-8;
+  - in fact, this is how `String` is implemented.
+- A `&str` is a reference to a run of UTF-8 text
+  owned by someone else: it "borrows" the text.
+  - A `&str` is a fat pointer, containing both
+    the address of the actual data and its length.
+  - You can think of a `&str` as being nothing
+    more than a `&[u8]` that is guaranteed to
+    hold well-formed UTF-8.
+- A `String` or `&str`'s `.len()` method returns its length.
+  - The length is measured in bytes, __not__ characters.
+- It is impossible to modify a `&str`.
+- The type `&mut str` does exist,
+  but it is not very useful.
+
+## Ownership and Moves
+
+### Moves
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
