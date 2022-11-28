@@ -84,7 +84,7 @@ date: 2022-05-14
 - 即我们要求的是
   $$ v_x $$
   平方对所有分子的平均值
-  - $$ P = n m \left \langle v_x^2 \right \rangle $$.
+  - $$ P = n m \langle v_x^2 \rangle $$.
     (`39.5`)
   - 这里我们是不是忘了写上因子 `2`?
   - 不, 在所有的原子中, 只有一半是朝着活塞跑的,
@@ -98,13 +98,13 @@ date: 2022-05-14
 - 当原子向四面八方运动时, 显然在`"x 方向"`上没有什么特殊之处;
   原子同样可以上下, 左右, 前后地运动.
   - 因此在运动过程中, 表征原子在一个方向上平均运动的
-    $$ \left \langle v_x^2 \right \rangle $$
+    $$ \langle v_x^2 \rangle $$
     值和在其他两个方向上的平均值全都相等
 
 $$
-\left \langle v_x^2 \right \rangle =
-\left \langle v_y^2 \right \rangle =
-\left \langle v_z^2 \right \rangle
+\langle v_x^2 \rangle =
+\langle v_y^2 \rangle =
+\langle v_z^2 \rangle
 $$.
 (`39.6`)
 
@@ -112,9 +112,9 @@ $$.
   而这三项之和当然就是速率的平方
 
 $$
-\left \langle v_x^2 \right \rangle =
-\frac{1}{3} \left \langle v_x^2 + v_y^2 + v_z^2 \right \rangle =
-\frac{\left \langle v^2 \right \rangle}{3}
+\langle v_x^2 \rangle =
+\frac{1}{3} \langle v_x^2 + v_y^2 + v_z^2 \rangle =
+\frac{\langle v^2 \rangle}{3}
 $$.
 (`39.7`)
 
@@ -123,17 +123,17 @@ $$.
 
 $$
 P = (\frac{2}{3}) n
-\left \langle \frac{m v^2}{2} \right \rangle
+\langle \frac{m v^2}{2} \rangle
 $$.
 (`39.8`)
 
 - 把最后一个因子写成
-  $$ \left \langle m v^2 / 2 \right \rangle $$
+  $$ \langle m v^2 / 2 \rangle $$
   是因为这是一个分子的质心运动的动能. 由此我们得出
 
 $$
 PV = N (\frac{2}{3})
-\left \langle \frac{m v^2}{2} \right \rangle
+\langle \frac{m v^2}{2} \rangle
 $$.
 (`39.9`)
 
