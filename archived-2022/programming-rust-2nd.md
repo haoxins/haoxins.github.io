@@ -45,6 +45,79 @@ return a Result.
   - So, a `String` represents its text as a sequence of
     UTF-8 bytes, __not__ as an array of characters.
 
+- Further, tuples allow only constants as indices, like `t.4`.
+  - You __can't__ write `t.i` or `t[i]` to get the `ith` element.
+- The other commonly used tuple type is the zero-tuple `()`.
+  - This is traditionally called the unit type because
+    it has only one value, also written `()`.
+
+### References
+
+- The expression `&x` produces a reference to `x`;
+  in Rust terminology, we say that it borrows
+  a reference to `x`.
+  - Given a reference `r`, the expression `*r`
+    refers to the value `r` points to.
+- Rust references come in two flavors:
+  - `&T`
+  - An immutable, shared reference.
+  - `&mut T`
+  - A mutable, exclusive reference.
+
+### Boxes
+
+- The simplest way to allocate a value
+  in the heap is to use `Box::new`.
+
+### Raw Pointers
+
+```
+Using a raw pointer is unsafe, because Rust
+makes no effort to track what it points to.
+```
+
+### Arrays, Vectors, and Slices
+
+- The type `[T; N]` represents an array of `N` values,
+  each of type `T`.
+  - An array's size is a constant determined at
+    compile time and is part of the type; you
+    can't append new elements or shrink an array.
+- The type `Vec<T>`, called a vector of `T`s, is a
+  dynamically allocated, growable sequence
+  of values of type `T`.
+- The types `&[T]` and `&mut [T]`, called a __shared slice__
+  of `T`s and __mutable slice__ of `T`s, are references to
+  a series of elements that are a part of some other value,
+  like an array or vector.
+  - A __mutable slice__ `&mut [T]` lets you read and modify
+    elements, but can't be shared;
+  - a __shared slice__ `&[T]` lets you share access among
+    several readers, but doesn't let you modify elements.
+
+```
+Rust has no notation for an uninitialized array.
+
+An array's length is part of its type
+and fixed at compile time.
+```
+
+- A `Vec<T>` consists of three values:
+  - a pointer to the heap-allocated
+    buffer for the elements, which is
+    created and owned by the `Vec<T>`;
+  - the number of elements that buffer
+    has the capacity to store;
+  - and the number it actually contains now
+    (in other words, its length).
+- When the buffer has reached its capacity,
+  adding another element to the vector
+  entails allocating a larger buffer,
+  copying the present contents into it,
+  updating the vector's pointer and capacity
+  to describe the new buffer,
+  and finally freeing the old one.
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
