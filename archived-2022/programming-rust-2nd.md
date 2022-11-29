@@ -168,6 +168,57 @@ and fixed at compile time.
 
 ### Moves
 
+- Returning values from a function
+- Constructing new values
+- Passing values to a function
+
+---
+
+- There are two things to keep in mind.
+  - First, the moves always apply to the value proper,
+    __not__ the heap storage they own.
+  - For vectors and strings, the value proper is the
+    three-word header alone; the potentially large
+    element arrays and text buffers sit
+    where they are in the heap.
+  - Second, the Rust compiler's code generation is
+    good at "seeing through" all these moves;
+    in practice, the machine code often stores
+    the value directly where it belongs.
+
+---
+
+- Assigning a value of a `Copy` type copies the value,
+  rather than moving it.
+  - Passing `Copy` types to functions and
+    constructors behaves similarly.
+  - A tuple or fixed-size array of
+    `Copy` types is itself a `Copy` type.
+  - Only types for which a simple
+    bit-for-bit copy suffices
+    can be `Copy`.
+  - `String` is __not__ a `Copy` type,
+    because it owns a
+    heap-allocated buffer.
+  - `Box<T>` is __not__ `Copy`; it owns
+    its heap-allocated referent.
+- As a rule of thumb, any type that needs to
+  do something special when a value is
+  dropped __cannot__ be `Copy`:
+  - a `Vec` needs to free its elements,
+    a `File` needs to close its file handle,
+    a `MutexGuard` needs to unlock its mutex,
+    and so on.
+  - Bit-for-bit duplication of such types would
+    leave it unclear which value was now
+    responsible for the original's resources.
+- If all the fields of your struct are themselves `Copy`,
+  then you can make the type `Copy` as well by placing
+  the attribute `#[derive(Copy, Clone)]`
+  above the definition.
+
+### Rc and Arc: Shared Ownership
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
