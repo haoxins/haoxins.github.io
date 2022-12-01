@@ -219,6 +219,31 @@ and fixed at compile time.
 
 ### Rc and Arc: Shared Ownership
 
+- The `Rc` and `Arc` types are very similar;
+  the only difference between them is that an
+  `Arc` is safe to share between threads directly.
+  - The name `Arc` is short for __atomic reference count__.
+- Cloning an `Rc<T>` value __does not__ copy the `T`;
+  instead, it simply creates another pointer to it
+  and increments the reference count.
+- A value owned by an `Rc` pointer is __immutable__.
+
+## References
+
+> Rust also has non-owning pointer types called __references__,
+  which have no effect on their referents' lifetimes.
+
+```
+In fact, it's rather the opposite:
+references must never outlive their referents.
+You must make it apparent in your code that no
+reference can possibly outlive the value it points to.
+To emphasize this, Rust refers to creating a reference
+to some value as borrowing the value:
+what you have borrowed,
+you must eventually return to its owner.
+```
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
