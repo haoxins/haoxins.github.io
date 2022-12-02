@@ -119,8 +119,26 @@ GODEBUG=gctrace=1 go test -bench=. -v
 - 一些个人需要, 但是维护情况堪忧的项目
   - [Kafka client: rust-rdkafka](https://github.com/fede1024/rust-rdkafka)
 
+---
+
+- Memory Safe Languages in Android `13`
+  - `Dec 1, 2022`
+
+```
+We're implementing userspace HALs in Rust.
+We're adding support for Rust in Trusted Applications.
+We've migrated VM firmware in the Android Virtualization Framework to Rust.
+With support for Rust landing in Linux 6.1 we're excited to
+bring memory-safety to the kernel, starting with kernel drivers.
+
+As Android migrates away from C/C++ to Java/Kotlin/Rust,
+we expect the number of memory safety vulnerabilities to continue to fall.
+```
+
 - [The Initial Rust Infrastructure Has Been Merged Into Linux 6.1](https://www.phoronix.com/news/Rust-Is-Merged-Linux-6.1)
   - `2022-10`
+
+---
 
 - `2022`国庆节, 数落 Go 的几个问题
   - `Enum` 迟迟不考虑
@@ -165,6 +183,8 @@ GODEBUG=gctrace=1 go test -bench=. -v
   否则, __都不应该选择__ Go 语言
   - 好吧, 我有点后悔了,
     其实 K8s operator 开发也不应该用 Go
+
+---
 
 - `2022-09` 开始正式评估在团队项目中引入 `Rust`
   - 参照一些手头上的项目, 看看 `Rust` 生态还缺点啥
@@ -310,6 +330,8 @@ func main() {
   - [Sarama: Go client library for Kafka](https://github.com/Shopify/sarama)
   - [Goavro: encodes and decodes Avro data](https://github.com/linkedin/goavro)
 
+---
+
 - [Robyn](https://github.com/sansyrox/robyn)
   - __Robyn__ is an `async` Python backend server
     with a runtime written in __Rust__.
@@ -354,6 +376,8 @@ func main() {
   - 2022-05-18, Gitee 仓库开源须审核,
     已开源仓库暂时关闭, 审核通过后再次公开.
     很好, 正好告别 Gitee, 也不再关注 Cangjie
+
+---
 
 - [An Introduction To Generics](https://go.dev/blog/intro-generics)
   - Generics adds three new big things to the language:
