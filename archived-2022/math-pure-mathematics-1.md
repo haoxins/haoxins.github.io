@@ -792,7 +792,7 @@ $$
   时有
   - $$ \mid \phi (x) - l \mid < \delta $$.
 - 当定义中的情形发生时, 我们可以记为
-  $$ \lim_{x \to \infty} \phi (x) = l $$,
+  - $$ \lim_{x \to \infty} \phi (x) = l $$,
   - 或者当不可能出现混淆时, 就简单记为
     $$ \lim \phi (x) = l $$,
     或者写成
