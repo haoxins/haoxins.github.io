@@ -10,7 +10,6 @@
 - [复分析 可视化方法 (下)](archived-2023/math-complex-analysis-2.md)
 - [泛函分析导论](archived-2023/math-functional-analysis.md)
 - [线性代数 (第5版)](archived-2023/math-linear-algebra.md)
-- [测度论](archived-2023/math-measure-theory.md)
 - [普林斯顿数学指南 第二卷 上](archived-2023/math-princeton-companion-2-1.md)
 - [普林斯顿数学指南 第二卷 下](archived-2023/math-princeton-companion-2-2.md)
 - [普林斯顿概率论读本](archived-2023/math-probability-lifesaver.md)
