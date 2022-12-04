@@ -849,7 +849,7 @@ $$
 - 于是
   $$ \lim_{x \to a} \phi (x) = l $$
   等价于两个结论
-  - $$ \[ \lim_{x \to a+0} \phi (x) = l \] $$,
+  - $$ \lim_{x \to a+0} \phi (x) = l $$,
   - $$ \lim_{x \to a-0} \phi (x) = l $$.
 
 ---
