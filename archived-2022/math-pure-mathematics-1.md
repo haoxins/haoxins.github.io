@@ -790,9 +790,67 @@ $$
   $$ \phi (y) $$
   趋向极限 `l`, 记为
   - $$ \lim_{y \to 0} \phi (y) = l $$.
+- 同样地, 如果当
+  $$ y \to +0 $$
+  时有
+  $$ \phi (y) \to \infty $$,
+  当
+  $$ y \to -0 $$
+  时也有
+  $$ \phi (y) \to \infty $$,
+  那么我们就称当
+  $$ y \to 0 $$
+  时有
+  $$ \phi (y) \to \infty $$.
+  - 类似地我们可以定义"当
+    $$ y \to 0 $$
+    时有
+    $$ \phi (y) \to - \infty $$
+    ".
+- 最后, 如果当
+  $$ y \to +0 $$
+  时
+  $$ \phi (y) $$
+  既不趋向极限, 也不趋向
+  $$ \infty $$
+  或者
+  $$ - \infty $$,
+  我们就称当
+  $$ y \to +0 $$
+  时
+  $$ \phi (y) $$
+  是振荡的, 它是有限振荡还是无限振荡则要根据具体情形来判断;
+  我们还可以类似地定义当
+  $$ y \to -0 $$
+  时函数是振荡的.
 
 ---
 
+- 如果对于给定的
+  $$ \delta $$,
+  我们总可以确定数
+  $$ \varepsilon (\delta) $$,
+  使得当
+  $$ 0 < \mid x - a \mid ≤ \varepsilon (\delta) $$
+  时有
+  - $$ \mid \phi (x) - l \mid < \delta $$,
+  - 那么
+  - $$ \lim_{x \to a} \phi (x) = l $$.
+- 限制 `x` 仅取大于 `a` 的值, 也就是用
+  $$ a < x ≤ a + \varepsilon (\delta) $$
+  代替
+  $$ 0 < \mid x - a \mid ≤ \varepsilon (\delta) $$,
+  我们就定义了"当 `x` 从右边趋向 `a` 时
+  $$ \phi (x) $$
+  趋向 `l`", 可以把它写成
+  - $$ \lim_{x \to a+0} \phi (x) = l $$.
+  - 用同样的方法我们可以定义
+  - $$ \lim_{x \to a-0} \phi (x) = l $$.
+- 于是
+  $$ \lim_{x \to a} \phi (x) = l $$
+  等价于两个结论
+  - $$ \lim_{x \to a+0} \phi (x) = l $$,
+  - $$ \lim_{x \to a-0} \phi (x) = l $$.
 
 ---
 
