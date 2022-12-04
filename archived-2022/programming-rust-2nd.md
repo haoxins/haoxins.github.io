@@ -244,6 +244,9 @@ what you have borrowed,
 you must eventually return to its owner.
 ```
 
+- Shared references are `Copy`.
+- Mutable references are __not__ `Copy`.
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
