@@ -891,7 +891,7 @@ $$
 $$
 E_{板后} =
 \underbrace{ e^{-w n'' \Delta z/c } }_{A}
-\underbrace{ e^{-iw (n' - 1) \Delta z/c E_0 e^{iw (t - z/c)} } }_{B}
+\underbrace{ e^{-iw (n' - 1) \Delta z/c} E_0 e^{iw (t - z/c)} }_{B}
 $$
 (`31.22`)
 
