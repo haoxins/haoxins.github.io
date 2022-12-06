@@ -247,6 +247,56 @@ you must eventually return to its owner.
 - Shared references are `Copy`.
 - Mutable references are __not__ `Copy`.
 
+### Working with References
+
+- In Rust, references are created explicitly
+  with the `&` operator, and dereferenced explicitly
+  with the `*` operator.
+  - To create a mutable reference,
+    use the `&mut` operator.
+- Since references are so widely used in Rust,
+  the `.` operator implicitly __dereferences__
+  its __left__ operand, if needed.
+- The `.` operator can also implicitly __borrow__ a
+  reference to its __left__ operand,
+  if needed for a method call.
+
+```rust
+let mut v = vec![1973, 1968];
+v.sort(); // implicitly borrows a mutable reference to v
+(&mut v).sort(); // equivalent, but more verbose
+```
+
+### References to References
+
+- The `.` operator follows as many references
+  as it takes to find its target
+
+### Comparing References
+
+- Like the `.` operator, Rust's comparison operators
+  "see through" any number of references
+
+```rust
+let x = 10;
+let y = 10;
+let rx = &x;
+let ry = &y;
+let rrx = &rx;
+let rry = &ry;
+
+assert!(rrx <= rry);
+assert!(rrx == rry);
+```
+
+- If you actually want to know whether two references
+  point to the same memory, you can use `std::ptr::eq`,
+  which compares them as addresses.
+  - Note that the operands of a comparison must have
+    exactly the same type, including the references.
+
+### References Are Never Null
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
