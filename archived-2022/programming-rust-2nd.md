@@ -295,7 +295,7 @@ assert!(rrx == rry);
   - Note that the operands of a comparison must have
     exactly the same type, including the references.
 
-### References Are Never Null
+### Receiving References as Function Arguments
 
 ------------------
 
