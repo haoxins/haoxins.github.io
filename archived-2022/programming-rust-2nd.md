@@ -317,6 +317,8 @@ assert!(rrx == rry);
 
 ```rust
 fn g<'a>(p: &'a i32) { ... }
+let x = 10;
+g(&x);
 ```
 
 - From `g's` signature alone, Rust knows it will not

@@ -1095,12 +1095,12 @@ $$
     其中 `R` 满足
     $$ Δs = R Δ \theta $$.
   - 将此关系与前一个表示式相结合, 可得
-    $$ R Δ \theta / Δ t = R \varepsilon = v = qv BR / p $$,
+    $$ R Δ \theta / Δ t = R \omega = v = qv BR / p $$,
     由此可得
   - $$ p = qBR $$
     (`34.7`)
   - 和
-  - $$ \varepsilon = \frac{qvB}{p} $$.
+  - $$ \omega = \frac{qvB}{p} $$.
     (`34.8`)
 - 因为同样的论证也适用于下一瞬时, 再下一瞬时, 等等, 故可得出结论,
   粒子必然作沿半径为 `R` 的圆周运动, 角速度为 `ω`.
