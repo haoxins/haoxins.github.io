@@ -297,6 +297,76 @@ assert!(rrx == rry);
 
 ### Receiving References as Function Arguments
 
+- Rust's equivalent of a global variable is called a `static`:
+  it's a value that's created when the program starts
+  and lasts until it terminates.
+  - Like any other declaration, Rust's module system controls
+    where statics are visible, so they're only "global" in
+    their lifetime, not their visibility.
+- Every static __must__ be initialized.
+- Mutable statics are inherently __not__ thread-safe,
+  and even in single-threaded programs,
+  they can fall prey to other sorts of reentrancy problems.
+  - For these reasons, you may access a mutable static
+    only within an `unsafe` block.
+
+> In Rust, a function's signature always
+  exposes the body's behavior.
+
+### Passing References to Functions
+
+```rust
+fn g<'a>(p: &'a i32) { ... }
+```
+
+- From `g's` signature alone, Rust knows it will not
+  save `p` anywhere that might outlive the call:
+  - any lifetime that encloses the call must work for `'a`.
+- So Rust chooses the smallest possible lifetime for `&x`:
+  - that of the call to `g`.
+- This meets all constraints:
+  - it doesn't outlive `x`,
+  - and it encloses the entire call to `g`.
+
+### Returning References
+
+- When a function takes a single reference as
+  an argument and returns a single reference,
+  Rust assumes that the two __must__
+  have the same lifetime.
+
+### Structs Containing References
+
+- Whenever a reference type appears inside another
+  type's definition, you must write out its lifetime.
+
+- Every type in Rust has a lifetime, including
+  `i32` and `String`.
+  - Most are simply `'static`, meaning that values
+    of those types can live for as long as you like;
+  - for example, a `Vec<i32>` is self-contained and
+    needn't be dropped before any particular variable
+    goes out of scope.
+- But a type like `Vec<&'a i32>` has a lifetime that
+  must be enclosed by `'a`:
+  - it must be dropped while its referents are still alive.
+
+### Omitting Lifetime Parameters
+
+- If there are multiple lifetimes among your parameters,
+  then there's no natural reason to prefer one over
+  the other for the return value, and Rust makes you
+  spell out what's going on.
+- If your function is a method on some type and takes
+  its `self` parameter by reference, then that
+  __breaks__ the tie:
+  - Rust assumes that `self`'s lifetime is the one to
+    give everything in your return value.
+  - Rust assumes that whatever you're borrowing,
+    you're borrowing from `self`.
+
+### Sharing Versus Mutation
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
