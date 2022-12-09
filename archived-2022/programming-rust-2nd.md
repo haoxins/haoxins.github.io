@@ -369,6 +369,42 @@ g(&x);
 
 ### Sharing Versus Mutation
 
+- Shared access is read-only access.
+
+```
+Values borrowed by shared references are read-only.
+Across the lifetime of a shared reference,
+neither its referent,
+nor anything reachable from that referent,
+can be changed by anything.
+There exist no live mutable references to anything
+in that structure, its owner is held read-only,
+and so on. It's really frozen.
+```
+
+- Mutable access is exclusive access.
+
+```
+A value borrowed by a mutable reference is
+reachable exclusively via that reference.
+Across the lifetime of a mutable reference,
+there is no other usable path to its referent
+or to any value reachable from there.
+The only references whose lifetimes may overlap
+with a mutable reference are those you borrow
+from the mutable reference itself.
+```
+
+## Expressions
+
+- Blocks are the most general kind of expression.
+  - A block produces a value and can be
+    used anywhere a value is needed.
+  - When you leave the semicolon off the last line
+    of a block, that makes the value of the block
+    the value of its final expression,
+    rather than the usual `()`.
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
