@@ -49,6 +49,7 @@
 - [Kubernetes in Action (上) - 2nd Edition](archived-2022/kubernetes-in-action-2nd-1.md)
 - [Kubernetes in Action (中) - 2nd Edition](archived-2022/kubernetes-in-action-2nd-2.md)
 - [Kubernetes, Kubeflow, and ML Ops](archived-2022/kubernetes-kubeflow.md)
+- [微积分的历程](archived-2022/math-calculus-gallery.md)
 - [复分析 可视化方法 (上)](archived-2022/math-complex-analysis-1.md)
 - [具体数学 计算机科学基础](archived-2022/math-concrete-mathematics.md)
 - [伽罗瓦理论 群论](archived-2022/math-galois-theory.md)
