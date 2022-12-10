@@ -405,6 +405,31 @@ from the mutable reference itself.
     the value of its final expression,
     rather than the usual `()`.
 
+- There is one more `if` form, the `if let` expression:
+
+```rust
+if let pattern = expr {
+  block1
+} else {
+  block2
+}
+```
+
+> Sometimes this is a nice way to get
+  data out of an `Option` or `Result`.
+
+- It's never strictly necessary to use `if let`,
+  because `match` can do everything `if let` can do.
+  - An `if let` expression is shorthand for a
+    `match` with just one pattern:
+
+```rust
+match expr {
+  pattern => { block1 }
+  _ => { block2 }
+}
+```
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
