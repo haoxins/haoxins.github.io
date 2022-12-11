@@ -430,6 +430,130 @@ match expr {
 }
 ```
 
+- Loops are expressions in Rust, but the value of a
+  `while` or `for` loop is always `()`,
+  so their value isn't very useful.
+  - A `loop` expression can produce a value
+    if you specify one.
+- Iterating over a `mut` reference provides a
+  `mut` reference to each element.
+
+---
+
+- Within the body of a `loop`, you can give `break`
+  an expression, whose value becomes
+  that of the `loop`:
+
+```rust
+let answer = loop {
+  if let Some(line) = next_line() {
+    if line.starts_with("answer: ") {
+      break line;
+    }
+  } else {
+    break "answer: nothing";
+  }
+};
+```
+
+- A `break` can have both a `label`
+  and a `value` expression:
+
+```rust
+let sqrt = 'outer: loop {
+  let n = next_number();
+  for i in 1.. {
+    let square = i * i;
+    if square == n {
+      break 'outer i;
+    }
+    if square > n {
+      break;
+    }
+  }
+};
+```
+
+- Labels can also be used with `continue`.
+
+- `return` without a value is shorthand for `return ()`.
+
+### Why Rust Has loop?
+
+```
+Rust went for simplicity. Its flow-sensitive analyses
+do not examine loop conditions at all, instead simply
+assuming that any condition in a program
+can be either true or false.
+```
+
+- Expressions that don't finish normally are assigned
+  the special type `!`, and they're exempt from the
+  rules about types having to match.
+
+---
+
+- One quirk of Rust syntax is that in a function call
+  or method call, the usual syntax for generic types,
+  `Vec<T>`, does not work:
+
+```rust
+return Vec<i32>::with_capacity(1000); // error
+let ramp = (0 .. n).collect<Vec<i32>>(); // same error
+```
+
+- The problem is that in expressions,
+  `<` is the less-than operator.
+  - The Rust compiler helpfully suggests writing
+    `::<T>` instead of `<T>` in this case,
+    and that solves the problem:
+
+```rust
+return Vec::<i32>::with_capacity(1000); // ok, using ::< let ramp = (0 .. n)
+collect::<Vec<i32>>(); // ok, using ::<
+```
+
+- The symbol `::<...>` is affectionately known
+  in the Rust community as the turbofish.
+- Alternatively, it is often possible to drop the
+  type parameters and let Rust infer them:
+
+```rust
+return Vec::with_capacity(10); // ok, if the fn return type is Vec<i32>
+let ramp: Vec<i32> = (0 .. n).collect(); // ok, variable's type is given
+```
+
+- The `..` operator allows either operand to be omitted;
+  it produces up to four different types of object
+  depending on which operands are present:
+
+```rust
+.. // RangeFull
+a .. // RangeFrom { start: a }
+.. b // RangeTo { end: b }
+a .. b // Range { start: a, end: b }
+```
+
+- The latter two forms are end-exclusive (or half-open):
+  - the end value is __not included__
+    in the range represented.
+- The `..=` operator produces end-inclusive (or closed)
+  ranges, which do include the end value:
+
+```rust
+..= b // RangeToInclusive { end: b }
+a ..= b // RangeInclusive::new(a, b)
+```
+
+- Only ranges that include a start value are iterable,
+  since a loop must have somewhere to start.
+  - But in array slicing, all six forms are useful.
+  - If the start or end of the range is omitted,
+    it defaults to the start or end of
+    the data being sliced.
+
+### Type Casts
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
