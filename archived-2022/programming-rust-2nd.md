@@ -554,6 +554,50 @@ a ..= b // RangeInclusive::new(a, b)
 
 ### Type Casts
 
+- Numbers may be cast from any of the
+  built-in numeric types to any other.
+  - Converting from a floating-point type to
+    an integer type rounds toward zero:
+    the value of `-1.99` as `i32` is `-1`.
+  - If the value is too large to fit in the
+    integer type, the cast produces the closest
+    value that the integer type can represent:
+    the value of `1e6` as `u8` is `255`.
+- Several more significant automatic conversions
+  can happen, though:
+  - Values of type `&String` auto-convert to
+    type `&str` without a cast.
+  - Values of type `&Vec<i32>` auto-convert to `&[i32]`.
+  - Values of type `&Box<Chessboard>`
+    auto-convert to `&Chessboard`.
+
+> These are called `deref coercions`, because they apply
+  to types that implement the `Deref` built-in trait.
+
+## Error Handling
+
+- Rust can either `unwind` the stack when a panic
+  happens or `abort` the process.
+  - `Unwinding` is the __default__.
+- Panic is __safe__. It doesn't violate any of Rust's safety rules.
+  - It would be unsafe to proceed, so Rust unwinds the stack.
+  - But the rest of the process can continue running.
+- Panic is __per thread__. One thread can be panicking while
+  other threads are going on about their normal business.
+- Stack unwinding is the default panic behavior,
+  but there are two circumstances in which Rust
+  does __not__ try to unwind the stack.
+  - If a `.drop()` method triggers a second panic while
+    Rust is still trying to clean up after the first,
+    this is considered fatal. Rust stops unwinding
+    and aborts the whole process.
+- Also, Rust's panic behavior is customizable.
+  If you compile with `-C panic=abort`,
+  the first panic in your program
+  immediately aborts the process.
+
+### Catching Errors
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)

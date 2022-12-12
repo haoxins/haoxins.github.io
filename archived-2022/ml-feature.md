@@ -337,6 +337,10 @@ date: 2021-09-20
 
 ------------------
 
+- [深度强化学习](https://book.douban.com/subject/36161659/)
+
+------------------
+
 - https://www.coursera.org/specializations/machine-learning-introduction
   - https://www.coursera.org/learn/machine-learning
   - https://www.coursera.org/account/accomplishments/certificate/THGATFHMCZ8T
