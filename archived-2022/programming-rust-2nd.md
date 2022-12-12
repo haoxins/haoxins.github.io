@@ -596,7 +596,84 @@ a ..= b // RangeInclusive::new(a, b)
   the first panic in your program
   immediately aborts the process.
 
-### Catching Errors
+### Result Type Aliases
+
+- Sometimes you'll see Rust documentation that
+  seems to omit the error type of a `Result`:
+
+```rust
+fn remove_file(path: &Path) -> Result<()>
+```
+
+- This means that a `Result` type alias is being used.
+- Modules often define a `Result` type alias to avoid
+  having to repeat an error type that's used
+  consistently by almost every
+  function in the module.
+
+### Printing Errors
+
+- Printing an error with the `{}` format specifier
+  typically displays only a brief error message.
+- Alternatively, you can print with the `{:?}` format
+  specifier, to get a Debug view of the error.
+
+### Propagating Errors
+
+- You can add a `?` to any expression that produces
+  a `Result`, such as the result of a function call:
+
+```rust
+let weather = get_weather(hometown)?;
+```
+
+- The behavior of `?` depends on whether this
+  function returns a success result
+  or an error result:
+  - On success, it unwraps the `Result` to
+    get the success value inside.
+  - On error, it immediately returns from the
+    enclosing function, passing the error
+    result up the call chain.
+  - To ensure that this works, `?` can only be
+    used on a `Result` in functions that
+    have a `Result` return type.
+
+- `?` also works similarly with the `Option` type.
+  - In a function that returns `Option`,
+    you can use `?` to unwrap a value and
+    return early in the case of None:
+
+```rust
+let weather = get_weather(hometown).ok()?;
+```
+
+### Working with Multiple Error Types
+
+- If you're calling a function that returns a
+  `GenericResult` and you want to handle one
+  particular kind of error but let all
+  others propagate out, use the generic method
+  `error.downcast_ref::<ErrorType>()`.
+  - It borrows a reference to the error,
+    if it happens to be the particular
+    type of error you're looking for:
+
+```rust
+loop {
+  match compile_project() {
+    Ok(()) => return Ok(()),
+    Err(err) => {
+      if let Some(mse) = err.downcast_ref:: <MissingSemicolonError>() {
+        insert_semicolon_in_source_code(mse.file(), mse.line())?;
+        continue; // try again!
+      }
+      return Err(err); }
+  }
+}
+```
+
+### Dealing with Errors That "Can't Happen"
 
 ------------------
 

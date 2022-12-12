@@ -116,8 +116,32 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - [Polars](https://github.com/pola-rs/polars)
   - Blazingly fast DataFrames in Rust, and Python.
   - https://github.com/fede1024/rust-rdkafka
-- 一些个人需要, 但是维护情况堪忧的项目
-  - [Kafka client: rust-rdkafka](https://github.com/fede1024/rust-rdkafka)
+- 一些常见需求
+  - [rust-rdkafka](https://github.com/fede1024/rust-rdkafka)
+  - [Anyhow](https://github.com/dtolnay/anyhow)
+  - [derive(Error)](https://github.com/dtolnay/thiserror)
+
+---
+
+- [JEP 434: Foreign Function & Memory API](https://openjdk.org/jeps/434)
+
+```
+This JEP proposes to incorporate refinements
+based on feedback, and to re-preview the
+API in JDK 20. In this version:
+
+The MemorySegment and MemoryAddress abstractions are
+unified (memory addresses are now modeled by
+zero-length memory segments);
+The sealed MemoryLayout hierarchy is enhanced to
+facilitate usage with pattern matching in
+switch expressions and statements (JEP 433), and
+MemorySession has been split into Arena and
+SegmentScope to facilitate sharing segments
+across maintenance boundaries.
+```
+
+> 期待 Flink call Rust
 
 ---
 
@@ -205,6 +229,8 @@ we expect the number of memory safety vulnerabilities to continue to fall.
   - Diesel vs SeaORM, 还是用 SeaORM,
     因为不想再需要一个 https://github.com/weiznich/diesel_async
   - VS Code + `rust-analyzer` 插件, 体验还是有待改善~
+
+---
 
 - [Diesel 2.0.0](https://github.com/diesel-rs/diesel/releases/tag/v2.0.0)
   - [SeaORM](https://github.com/SeaQL/sea-orm)
@@ -362,6 +388,8 @@ func main() {
 - 时至今日 (2022-04), 觉得 `go mod` 是最好的包管理方式
   - 核心点: __版本控制__ 和 __包管理__ 本就应该 __合二为一__
 
+---
+
 - __华为__, 新编程语言
   - 2022-03-20: 填写了 __新语言内测__ 申请问卷
   - 2022-03-22: 收到了`报名确认! 签署保密承诺函`的邮件
@@ -441,6 +469,8 @@ func main() {
   - This kind of inference, which infers the type arguments
     from the types of the arguments to the function,
     is called __function argument type inference__.
+
+---
 
 - macOS `12.3`
 
