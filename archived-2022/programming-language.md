@@ -115,7 +115,6 @@ GODEBUG=gctrace=1 go test -bench=. -v
 - ML Ecosystem
   - [Polars](https://github.com/pola-rs/polars)
   - Blazingly fast DataFrames in Rust, and Python.
-  - https://github.com/fede1024/rust-rdkafka
 - 一些常见需求
   - [rust-rdkafka](https://github.com/fede1024/rust-rdkafka)
   - [Anyhow](https://github.com/dtolnay/anyhow)

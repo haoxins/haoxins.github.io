@@ -37,7 +37,7 @@
 - [量子力学 第二卷 上](archived-2023/quantum-2-1.md)
 - [量子力学 第二卷 中](archived-2023/quantum-2-2.md)
 - [量子力学 第二卷 下](archived-2023/quantum-2-3.md)
-- [我的推荐书单~](archived-2023/reading-recommended.md)
+- [我的推荐书单 2023](archived-2023/reading-recommended.md)
 - [Shtetl-Optimized, Scott Aaronson](archived-2023/scott-aaronson.md)
 - [TAOCP 组合算法 习题 - 计算机程序设计艺术](archived-2023/taocp-4-exe.md)
 - [TAOCP 组合算法 - 计算机程序设计艺术](archived-2023/taocp-4.md)

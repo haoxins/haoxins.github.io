@@ -675,6 +675,36 @@ loop {
 
 ### Dealing with Errors That "Can't Happen"
 
+- The best choice then would be to use `.unwrap()`,
+  a `Result` method that panics if the result is an `Err`,
+  but simply returns the success value of an `Ok`:
+
+```rust
+let num = digits.parse::<u64>().unwrap();
+```
+
+- This is just like `?` except that if we're
+  wrong about this error, if it can happen,
+  then in that case we would panic.
+
+### Ignoring Errors
+
+```rust
+writeln!(stderr(), "error: {}", err);
+// warning: unused result
+```
+
+- The idiom `let _ = ...` is used to silence this warning:
+
+```rust
+let _ = writeln!(stderr(), "error: {}", err);
+// ok, ignore result
+```
+
+> 相较之下, 截止 Go `1.19`, ignore error 不会 warning.
+
+### Declaring a Custom Error Type
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
