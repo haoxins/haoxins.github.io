@@ -701,9 +701,47 @@ let _ = writeln!(stderr(), "error: {}", err);
 // ok, ignore result
 ```
 
-> 相较之下, 截止 Go `1.19`, ignore error 不会 warning.
+> 相较之下, 截止 Go `1.19`, unused error 不会 warning.
 
 ### Declaring a Custom Error Type
+
+```rust
+use std::fmt;
+
+#[derive(Debug, Clone)]
+pub struct JsonError {
+    pub message: String,
+    pub line: usize,
+    pub column: usize,
+}
+
+impl fmt::Display for JsonError {
+    fn fmt(&self, f: &mut fmt::Formatter) -> Result<(), fmt::Error> {
+        write!(f, "{} ({}:{})", self.message, self.line, self.column)
+    }
+}
+
+impl std::error::Error for JsonError {}
+```
+
+- `thiserror`, which does all of the previous work
+  for you, allowing you to write errors like this:
+
+```rust
+use thiserror::Error;
+
+#[derive(Error, Debug)]
+#[error("{message:} ({line:}, {column})")]
+pub struct JsonError {
+    message: String,
+    line: usize,
+    column: usize,
+}
+```
+
+## Crates and Modules
+
+> Go 相形见绌
 
 ------------------
 
