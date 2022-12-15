@@ -743,6 +743,53 @@ pub struct JsonError {
 
 > Go 相形见绌
 
+- One function is marked `pub(crate)`, meaning that
+  it is available anywhere inside this crate,
+  but isn't exposed as part of the external interface.
+  - It can't be used by other crates, and it won't
+    show up in this crate's documentation.
+- Anything that isn't marked `pub` is private and can
+  only be used in the same module in which
+  it is defined, or any child modules.
+- If you want an item in a nested module to be visible
+  to other crates, be sure to mark it and all
+  enclosing modules as public.
+- It's also possible to specify `pub(super)`,
+  making an item visible to the parent module only,
+  and `pub(in <path>)`, which makes it visible in
+  a specific parent module and its descendants.
+  - This is especially useful with deeply nested modules.
+
+---
+
+- A module can have its own directory.
+  - When Rust sees mod `spores`;, it checks for both
+    `spores.rs` and `spores/mod.rs`;
+    if neither file exists, or both exist,
+    that's an error.
+- It's also possible to use a file and directory with
+  the same name to make up a module.
+  - For instance, if `stems` needed to include modules
+    called `xylem` and `phloem`, we could choose to keep
+    `stems` in `plant_structures/stems.rs` and
+    add a `stems` directory:
+
+```
+fern_sim/
+  Cargo.toml
+  src/
+    main.rs
+    spores.rs
+    plant_structures/
+      mod.rs
+      leaves.rs
+      roots.rs
+      stems/
+        phloem.rs
+        xylem.rs
+      stems.rs
+```
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
