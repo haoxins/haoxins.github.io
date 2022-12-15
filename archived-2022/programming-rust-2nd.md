@@ -815,6 +815,78 @@ pub mod phloem;
   - and `crate` refers to the crate
     containing the current module.
 
+```
+Using paths relative to the crate root rather than
+the current module makes it easier to move code
+around the project, since all the imports won't
+break if the path of the current module changes.
+```
+
+- Submodules can access private items in their
+  parent modules with `use super::*`.
+- Rust has a special kind of path called an
+  absolute path, starting with `::`,
+  which always refers to an external crate.
+
+```rust
+use ::image::Pixels; // the `image` crate's `Pixels`
+```
+
+- To refer to your own module's `Sampler` type,
+  you can write:
+
+```rust
+use self::image::Sampler; // the `image` module's `Sampler`
+```
+
+### Making use Declarations pub
+
+```rust
+// in plant_structures/mod.rs
+pub use self::leaves::Leaf;
+pub use self::roots::Root;
+```
+
+- This means that `Leaf` and `Root` are public
+  items of the `plant_structures` module.
+  - They are still simple aliases for
+    `plant_structures::leaves::Leaf` and
+    `plant_structures::roots::Root`.
+
+### Making Struct Fields pub
+
+- A struct's fields, even private fields,
+  are accessible throughout the module
+  where the struct is declared,
+  and its submodules.
+  - Outside the module, __only__
+    public fields are accessible.
+
+### Statics and Constants
+
+- A __constant__ is a bit like a C++ `#define`:
+  the value is compiled into your
+  code every place it's used.
+- A __static__ is a variable that's set up before
+  your program starts running
+  and lasts until it exits.
+
+---
+
+- By default, `cargo build` looks at the files
+  in our source directory and figures out
+  what to build.
+  - When it sees the file `src/lib.rs`,
+    it knows to build a library.
+  - The code in `src/lib.rs` forms the
+    root module of the library.
+  - Other crates that use our library can only
+    access the public items of this root module.
+- Cargo treats `.rs` files in `src/bin`
+  as extra programs to build.
+
+### Attributes
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
