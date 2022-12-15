@@ -767,8 +767,9 @@ pub struct JsonError {
     `spores.rs` and `spores/mod.rs`;
     if neither file exists, or both exist,
     that's an error.
-- It's also possible to use a file and directory with
-  the same name to make up a module.
+- It's also possible to use a __file__ and
+  __directory__ with the __same__ name
+  to make up a module.
   - For instance, if `stems` needed to include modules
     called `xylem` and `phloem`, we could choose to keep
     `stems` in `plant_structures/stems.rs` and
@@ -789,6 +790,30 @@ fern_sim/
         xylem.rs
       stems.rs
 ```
+
+- Then, in `stems.rs`, we declare the two new submodules:
+
+```rust
+// in plant_structures/stems.rs
+pub mod xylem;
+pub mod phloem;
+```
+
+### Paths and Imports
+
+- You can use `as` to import an item but
+  give it a different name locally.
+- Modules __do not__ automatically inherit
+  names from their parent modules.
+- By default, paths are relative to
+  the current module.
+  - `self` is also a synonym for the current module,
+    so we could write either.
+- The keywords `super` and `crate` have a
+  special meaning in paths:
+  - `super` refers to the parent module,
+  - and `crate` refers to the crate
+    containing the current module.
 
 ------------------
 
