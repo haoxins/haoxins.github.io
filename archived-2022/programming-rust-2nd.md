@@ -903,6 +903,62 @@ pub use self::roots::Root;
 
 - The `#!` tells Rust to attach an attribute to the
   enclosing item rather than whatever comes next.
+- `#!` can also be used inside functions, structs,
+  and so on, but it's only typically used at the
+  beginning of a file, to attach an attribute
+  to the whole module or crate.
+
+### Tests and Documentation
+
+- To test error cases, add the
+  `#[should_panic]` attribute to your test:
+
+```rust
+#[test]
+#[allow(unconditional_panic, unused_must_use)]
+#[should_panic(expected = "divide by zero")]
+fn test_divide_by_zero_error() {
+    // ...
+}
+```
+
+- So the convention, when your tests get substantial
+  enough to require support code, is to put them in
+  a tests module and declare the whole module to be
+  testing-only using the `#[cfg]` attribute:
+
+```rust
+#[cfg(test)] // include this module only when testing
+mod tests {
+  fn roughly_equal(a: f64, b: f64) -> bool {
+    // ...
+  }
+
+  #[test]
+  fn trig_works() {
+    use std::f64::consts::PI;
+    assert!(roughly_equal(PI.sin(), 0.0));
+  }
+}
+```
+
+- Integration tests are `.rs` files that live in a
+  `tests` directory alongside your
+  project's src directory.
+- `cargo test` runs both unit tests and integration tests.
+
+---
+
+- But when Rust sees comments that start with `three slashes`,
+  it treats them as a `#[doc]` attribute instead.
+- Likewise, comments starting with `//!` are treated as
+  `#![doc]` attributes and are attached to the
+  enclosing feature, typically a module or crate.
+- When you run tests in a Rust library crate, Rust checks
+  that all the code that appears in your documentation
+  actually runs and works.
+
+## Structs
 
 ------------------
 
