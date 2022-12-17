@@ -887,6 +887,23 @@ pub use self::roots::Root;
 
 ### Attributes
 
+- Some attributes, like `#[cfg]` and `#[allow]`,
+  can be attached to a whole module and
+  apply to everything in it.
+  - Others, like `#[test]` and `#[inline]`,
+    must be attached to individual items.
+- To attach an attribute to a whole crate,
+  add it at the top of the `main.rs` or `lib.rs` file,
+  before any items, and write `#!` instead of `#`,
+  like this:
+
+```rust
+#![allow(non_camel_case_types)]
+```
+
+- The `#!` tells Rust to attach an attribute to the
+  enclosing item rather than whatever comes next.
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)

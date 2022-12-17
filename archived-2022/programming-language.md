@@ -122,6 +122,33 @@ GODEBUG=gctrace=1 go test -bench=. -v
 
 ---
 
+- [Rust in 2023](https://www.ncameron.org/blog/rust-in-2023/)
+
+```
+Async. Work on async programming is progressing nicely
+and I hope that things start coming together and producing
+tangible results in 2023. I'm kind of frustrated with my
+own slow progress here, and unfortunately most of the async
+WG are busy with many other things, but things are moving
+and I think 2023 will be an exciting year for async.
+It should remain a high priority for the project.
+```
+
+```
+Kind of a wildcard to finish off: I'm really excited to
+see how data analysis/numeric computing with Rust is
+going to go next year. This is an entirely community-led
+effort and there is some really exciting stuff happening
+(Polars in particular is very cool).
+
+I think it's a really good fit for Rust, it seems to be
+reaching an inflection point in terms of maturity,
+and I'm genuinely curious to see if it will
+take off and where it goes.
+```
+
+---
+
 - [JEP 434: Foreign Function & Memory API](https://openjdk.org/jeps/434)
 
 ```
