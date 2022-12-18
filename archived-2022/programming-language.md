@@ -7,7 +7,6 @@ date: 2021-10-28
 ## Rust (1.64+)
 
 - [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
-- [Rayon](https://github.com/rayon-rs/rayon)
 - [axum](https://github.com/tokio-rs/axum)
 
 ```zsh
@@ -112,6 +111,8 @@ GODEBUG=gctrace=1 go test -bench=. -v
   - [Serde](https://github.com/serde-rs/serde)
   - Serde is a framework for serializing and deserializing
     Rust data structures efficiently and generically.
+  - [Rayon](https://github.com/rayon-rs/rayon)
+  - A data parallelism library for Rust
 - ML Ecosystem
   - [Polars](https://github.com/pola-rs/polars)
   - Blazingly fast DataFrames in Rust, and Python.

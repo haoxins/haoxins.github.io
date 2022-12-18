@@ -960,6 +960,128 @@ mod tests {
 
 ## Structs
 
+- The struct expression `GrayscaleMap { pixels, size }` is
+  short for `GrayscaleMap { pixels: pixels, size: size }`.
+- Like all other items, structs are private by default,
+  visible only in the module where they're
+  declared and its submodules.
+- That is, creating a struct value requires all the
+  struct's fields to be visible.
+  - This is why you can't write a struct expression
+    to create a new `String` or `Vec`.
+- In a struct expression, if the named fields are
+  followed by `.. EXPR`, then any fields not mentioned
+  take their values from `EXPR`, which must be another
+  value of the same struct type.
+
+---
+
+- Individual elements of a tuple-like struct may be
+  public or not:
+
+```rust
+pub struct Bounds(pub usize, pub usize);
+```
+
+- The expression `Bounds(1024, 768)` looks like a
+  function call, and in fact it is:
+  - defining the type also implicitly
+    defines a function:
+
+```rust
+fn Bounds(elem0: usize, elem1: usize) -> Bounds { ... }
+```
+
+---
+
+- The third kind of struct is a little obscure:
+  - it declares a struct type with
+    no elements at all:
+
+```rust
+struct Onesuch;
+```
+
+- A value of such a type occupies no memory,
+  much like the unit type `()`.
+
+### Defining Methods with impl
+
+- Rust passes a method the value it's being
+  called on as its first argument, which
+  __must__ have the special name `self`.
+
+### Passing Self as a Box, Rc, or Arc
+
+- A method's `self` argument can also be a
+  `Box<Self>`, `Rc<Self>`, or `Arc<Self>`.
+  - Such a method can only be called on a
+    value of the given pointer type.
+  - Calling the method passes ownership
+    of the pointer to it.
+- For most methods, `&self`, `&mut self`, and
+  `self` (by value) are all you need.
+  - But if a method's purpose is to affect the
+    ownership of the value, using other pointer
+    types for `self` can be just the right thing.
+
+### Type-Associated Functions
+
+- An `impl` block for a given type can also define
+  functions that don't take `self` as an argument at all.
+
+### Associated Consts
+
+- As the name implies, associated consts are constant values.
+  - They're often used to specify commonly
+    used values of a type.
+
+### Generic Structs
+
+```rust
+pub struct Queue<T> {
+  older: Vec<T>,
+  younger: Vec<T>
+}
+```
+
+```rust
+impl<T> Queue<T> {
+  pub fn new() -> Queue<T> {
+    // ...
+  }
+  pub fn push(&mut self, t: T) {
+    // ...
+  }
+  pub fn is_empty(&self) -> bool {
+    // ...
+  }
+  // ...
+}
+```
+
+- However, you'll __always__ need to supply
+  type parameters in function signatures
+  and type definitions.
+  - Rust __doesn't__ infer those; instead,
+    it uses those explicit types as the
+    basis from which it infers types
+    within function bodies.
+- `Self` can also be used in this way;
+  we could have written `Self { ... }` instead.
+- For associated function calls, you can supply
+  the type parameter explicitly using the
+  `::<>` (turbofish) notation:
+
+```rust
+let mut q = Queue::<char>::new();
+```
+
+> But in practice, you can usually just let
+  Rust figure it out for you.
+
+### Structs with Lifetime Parameters
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
