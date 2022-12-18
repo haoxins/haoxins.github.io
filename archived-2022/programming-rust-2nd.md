@@ -1082,6 +1082,68 @@ let mut q = Queue::<char>::new();
 
 ### Structs with Lifetime Parameters
 
+- Because it's so common for the return type
+  to use the same lifetime as an argument,
+  Rust lets us omit the lifetimes when
+  there's one obvious candidate.
+
+### Deriving Common Traits for Struct Types
+
+```rust
+#[derive(Copy, Clone, Debug, PartialEq)]
+struct Point {
+  x: f64,
+  y: f64
+}
+```
+
+> We can ask Rust to derive `PartialEq` for `Point`
+  because its two fields are both of type `f64`,
+  which already implements `PartialEq`.
+
+### Interior Mutability
+
+- What we need is a little bit of mutable data
+  inside an otherwise immutable value.
+  - This is called __interior mutability__.
+- Rust offers several flavors of it; in this section,
+  we'll discuss the two most straightforward types:
+  - `Cell<T>` and `RefCell<T>`,
+    both in the `std::cell` module.
+- A `Cell<T>` is a struct that contains a single
+  private value of type `T`. The only special thing
+  about a `Cell` is that you can get and set the
+  field even if you don't have `mut`
+  access to the `Cell` itself:
+  - `Cell::new(value)` Creates a new `Cell`,
+    moving the given value into it.
+  - `cell.get()` Returns a copy of the value in the cell.
+  - `cell.set(value)` Stores the given value in the cell,
+    dropping the previously stored value.
+  - This method takes `self` as a non-mut reference:
+  - `fn set(&self, value: T)`
+  - note: not `&mut self`
+- Like `Cell<T>`, `RefCell<T>` is a generic type that
+  contains a single value of type `T`.
+  - Unlike `Cell`, `RefCell` supports borrowing
+    references to its `T` value:
+  - `RefCell::new(value)` Creates a new `RefCell`,
+    moving value into it.
+  - `ref_cell.borrow()` Returns a `Ref<T>`,
+    which is essentially just a shared reference to
+    the value stored in `ref_cell`.
+  - This method panics if the value is already mutably borrowed.
+  - `ref_cell.borrow_mut()` Returns a `RefMut<T>`, essentially a
+    mutable reference to the value in `ref_cell`.
+  - This method panics if the value is already borrowed.
+  - `ref_cell.try_borrow(), ref_cell.try_borrow_mut()`
+  - Work just like `borrow()` and `borrow_mut()`,
+    but return a `Result`.
+  - Instead of panicking if the value is already mutably borrowed,
+    they return an `Err` value.
+
+> `cells`, and any types that contain them, are __not__ thread-safe.
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
