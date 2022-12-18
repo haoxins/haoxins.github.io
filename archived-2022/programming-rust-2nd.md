@@ -1144,6 +1144,78 @@ struct Point {
 
 > `cells`, and any types that contain them, are __not__ thread-safe.
 
+## Enums and Patterns
+
+- In memory, values of C-style enums are stored as integers.
+  - Occasionally it's useful to tell
+    Rust which integers to use:
+
+```rust
+enum HttpStatus {
+  Ok = 200,
+  NotModified = 304,
+  NotFound = 404,
+  // ...
+}
+```
+
+- Otherwise Rust will assign the numbers for you,
+  starting at `0`.
+- By default, Rust stores C-style enums using the
+  smallest built-in integer type that
+  can accommodate them.
+  - __Most__ fit in a single byte.
+- Casting a C-style enum to an integer is allowed:
+  - `assert_eq!(HttpStatus::Ok as i32, 200);`
+- However, casting in the other direction,
+  from the integer to the enum, is not.
+
+### Enums with Data
+
+> In all, Rust has three kinds of enum variant,
+  echoing the three kinds of struct
+  we showed in the previous chapter.
+
+- Variants with no data correspond to unit-like structs.
+- Tuple variants look and function just like tuple structs.
+- Struct variants have curly braces and named fields.
+
+- All constructors and fields of an enum share the
+  __same__ visibility as the enum itself.
+
+### Enums in Memory
+
+- In memory, enums with data are stored as a
+  small integer tag, plus enough memory to
+  hold all the fields of the largest variant.
+  - The tag field is for Rust's internal use.
+  - It tells which constructor created the value
+    and therefore which fields it has.
+
+### Generic Enums
+
+```rust
+enum Option<T> {
+  None,
+  Some(T),
+}
+
+enum Result<T, E> {
+  Ok(T),
+  Err(E),
+}
+```
+
+- One unobvious detail is that Rust can eliminate
+  the tag field of `Option<T>` when the type `T` is
+  a reference, `Box`, or other smart pointer type.
+  - Since none of those pointer types is allowed
+    to be zero, Rust can represent `Option<Box<i32>>`,
+    say, as a single machine word: `0` for `None` and
+    nonzero for `Some` pointer.
+
+### Patterns
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
