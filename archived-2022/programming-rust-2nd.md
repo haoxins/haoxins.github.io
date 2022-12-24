@@ -1214,7 +1214,86 @@ enum Result<T, E> {
     say, as a single machine word: `0` for `None` and
     nonzero for `Some` pointer.
 
-### Patterns
+## Patterns
+
+> Expressions produce values; patterns consume values.
+  The two use a lot of the same syntax.
+
+### Literals, Variables, and Wildcards in Patterns
+
+```rust
+match meadow.count_rabbits() {
+  0 => {}
+  1 => println!("..."),
+  n => println!("There are {} ...", n),
+}
+```
+
+### Tuple and Struct Patterns
+
+```rust
+fn describe_point(x: i32, y: i32) -> &'static str {
+  use std::cmp::Ordering::*;
+  match (x.cmp(&0), y.cmp(&0)) {
+    (Equal, Equal) => "at the origin",
+    (_, Equal) => "on the x axis",
+    (Equal, _) => "on the y axis",
+    (Greater, Greater) => "in the first quadrant",
+    (Less, Greater) => "in the second quadrant",
+    _ => "somewhere else",
+  }
+}
+```
+
+```rust
+match balloon.location {
+  Point { x: 0, y: height } => println!("straight up {} meters", height),
+  Point { x: x, y: y } => println!("at ({}m, {}m)", x, y),
+}
+```
+
+- Patterns like `Point { x: x, y: y }` are common when
+  matching structs, and the redundant names are
+  visual clutter, so Rust has a shorthand
+  for this:
+  - `Point {x, y}`.
+
+### Array and Slice Patterns
+
+```rust
+fn hsl_to_rgb(hsl: [u8; 3]) -> [u8; 3] {
+  match hsl {
+    [_, _, 0] => [0, 0, 0],
+    [_, _, 255] => [255, 255, 255],
+    // ...
+  }
+}
+```
+
+```rust
+fn greet_people(names: &[&str]) {
+  match names {
+    [] => {
+      println!("Hello, nobody.")
+    }
+    [a] => {
+      println!("Hello, {}.", a)
+    }
+    [a, b] => {
+      println!("Hello, {} and {}.", a, b)
+    }
+    [a, .., b] => {
+      println!(
+        "Hello, everyone from {} to {}.",
+        a, b
+      )
+    }
+  }
+}
+```
+
+### Reference Patterns
+
 
 ------------------
 
