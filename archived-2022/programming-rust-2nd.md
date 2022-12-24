@@ -1144,7 +1144,7 @@ struct Point {
 
 > `cells`, and any types that contain them, are __not__ thread-safe.
 
-## Enums and Patterns
+## Enums
 
 - In memory, values of C-style enums are stored as integers.
   - Occasionally it's useful to tell
@@ -1294,6 +1294,99 @@ fn greet_people(names: &[&str]) {
 
 ### Reference Patterns
 
+- Rust patterns support two features for
+  working with references.
+  - `ref` patterns borrow parts of a matched value.
+  - `&` patterns match references.
+- Matching a noncopyable value moves the value.
+- You can use `ref mut` to borrow mut references.
+
+---
+
+- The opposite kind of reference pattern is the `&` pattern.
+  - A pattern starting with `&` matches a reference.
+- This is a bit tricky because Rust is following a
+  pointer here, an action we usually associate
+  with the `*` operator, not the `&` operator.
+- The thing to remember is that patterns and
+  expressions are natural opposites.
+  - The expression `(x, y)` makes two values into a new tuple,
+  - but the pattern `(x, y)` does the opposite:
+  - it matches a tuple and breaks out the two values.
+- It's the same with `&`.
+  - In an expression, `&` creates a reference.
+  - In a pattern, `&` matches a reference.
+
+### Match Guards
+
+```rust
+match point_to_hex(click) {
+  None => Err("That's not a game space."),
+  Some(hex) if hex == current_hex => Err("You must click somewhere else!"),
+  Some(hex) => Ok(hex),
+}
+```
+
+- If the pattern matches, but the condition is false,
+  matching continues with the next arm.
+
+### Matching Multiple Possibilities
+
+- The vertical bar (`|`) can be used to combine
+  several patterns in a single match arm:
+
+```rust
+let at_end = match chars.peek() {
+  Some(&'\r') | Some(&'\n') | None => true,
+  _ => false,
+};
+```
+
+- Use `..=` to match a whole range of values.
+
+```rust
+match next_char {
+  '0'..='9' => self.read_number(),
+  'a'..='z' | 'A'..='Z' => self.read_word(),
+  ' ' | '\t' | '\n' => self.skip_whitespace(),
+  _ => self.handle_punctuation(),
+}
+```
+
+- Rust does not (yet) permit the use of
+  end-exclusive ranges like `0..100` in patterns.
+
+### Binding with @ Patterns
+
+- Finally, `x @` pattern matches exactly like the
+  given pattern, but on success, instead of
+  creating variables for parts of the matched value,
+  it creates a single variable `x` and
+  moves or copies the whole value into it.
+
+### Where Patterns Are Allowed
+
+- Patterns that always match are special in Rust.
+- They're called __irrefutable patterns__,
+  and they're the only patterns allowed
+  in the four places shown here
+  (after `let`, in function arguments,
+  after `for`, and in closure arguments).
+
+## Traits and Generics
+
+> The type of `out` is `&mut dyn Write`, meaning
+  "a mutable reference to any value that implements the `Write` trait."
+
+- Generics and traits are closely related:
+  - generic functions use traits in bounds to spell out
+    what types of arguments they can be applied to.
+  - So we'll also talk about how `&mut dyn Write` and
+    `<T: Write>` are similar, how they're different,
+    and how to choose between these
+    two ways of using traits.
+
+### Using Traits
 
 ------------------
 

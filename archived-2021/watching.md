@@ -10,6 +10,10 @@ date: 2019-10-24
 
 ### 2022-12
 
+
+- [阿凡达: 水之道](https://movie.douban.com/subject/4811774/)
+  - 特效不错, 其他一般
+
 - [海贼王: Red](https://movie.douban.com/subject/35675082/)
   - 好久没进电影院了
 
