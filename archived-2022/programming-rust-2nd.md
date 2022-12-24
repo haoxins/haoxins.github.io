@@ -1388,6 +1388,41 @@ match next_char {
 
 ### Using Traits
 
+- There is one unusual rule about trait methods:
+  __the trait itself must be in scope__.
+  - Otherwise, all its methods are hidden.
+- Rust has this rule because, you can use traits to add
+  new methods to any type, even standard library types
+  like `u32` and `str`.
+  - Third-party crates can do the same thing.
+  - Clearly, this could lead to naming conflicts!
+  - But since Rust makes you import the traits you
+    plan to use, crates are free to take advantage
+    of this superpower.
+
+### Trait Objects
+
+- A reference to a trait type, is called a trait object.
+  - Like any other reference, a trait object points
+    to some value, it has a lifetime, and it can
+    be either `mut` or `shared`.
+- What makes a trait object different is that Rust
+  usually doesn't know the type of the
+  referent at compile time.
+  - So a trait object includes a little extra
+    information about the referent's type.
+- In memory, a trait object is a fat pointer consisting
+  of a pointer to the value, plus a pointer to a table
+  representing that value's type.
+  - Again, these aren't fields and data structures
+    that you can access directly.
+  - Instead, the language automatically uses the
+    `vtable` when you call a method of a trait object,
+    to determine which implementation to call.
+
+> Rust automatically converts ordinary references
+  into trait objects when needed.
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
