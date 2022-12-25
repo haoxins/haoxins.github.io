@@ -1503,6 +1503,21 @@ where
 }
 ```
 
+- Lifetimes never have any impact on machine code.
+  - Two calls to `nearest()` using the same type `P`,
+    but different lifetimes, will call the
+    same compiled function.
+  - Only differing types cause Rust to compile
+    multiple copies of a generic function.
+
+```
+All the features introduced in this section -- bounds,
+where clauses, lifetime parameters, and so forth -- can
+be used on all generic items, not just functions.
+```
+
+### Defining and Implementing Traits
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
