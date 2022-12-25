@@ -1516,7 +1516,7 @@ where clauses, lifetime parameters, and so forth -- can
 be used on all generic items, not just functions.
 ```
 
-### Defining and Implementing Traits
+### Default Methods
 
 ------------------
 
