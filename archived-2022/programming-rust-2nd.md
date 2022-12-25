@@ -1423,6 +1423,86 @@ match next_char {
 > Rust automatically converts ordinary references
   into trait objects when needed.
 
+- Likewise, Rust will happily convert a
+  `Box<File>` to a `Box<dyn Write>`,
+  a value that owns a writer in the heap:
+
+```rust
+let w: Box<dyn Write> = Box::new(local_file);
+```
+
+- `Box<dyn Write>`, like `&mut dyn Write`,
+  is a fat pointer: it contains the address of the
+  writer itself and the address of the vtable.
+  - The same goes for other pointer types,
+    like `Rc<dyn Write>`.
+
+### Generic Functions and Type Parameters
+
+```rust
+fn say_hello(out: &mut dyn Write) // plain function
+fn say_hello<W: Write>(out: &mut W) // generic function
+```
+
+- If the generic function you're calling doesn't
+  have any arguments that provide useful clues,
+  you may have to spell it out:
+
+```rust
+let v1 = (0..1000).collect(); // error: type annotations needed
+let v2 = (0..1000).collect::<Vec<i32>>();
+```
+
+```
+It's also possible for a type parameter to have
+no bounds at all, but you can't do much with a
+value if you haven't specified any bounds for it.
+You can move it. You can put it into a box or vector.
+That's about it.
+```
+
+- Generic functions can have multiple type parameters:
+
+```rust
+fn run_query<M: Mapper + Serialize, R: Reducer + Serialize>(
+  data: &DataSet,
+  map: M,
+  reduce: R,
+) -> Results {
+  unimplemented!()
+}
+```
+
+- Rust provides an alternative syntax using the keyword `where`:
+
+```rust
+fn run_query<M, R>(data: &DataSet, map: M, reduce: R) -> Results
+where
+  M: Mapper + Serialize,
+  R: Reducer + Serialize,
+{
+  !unimplemented!()
+}
+```
+
+```
+This kind of where clause is also allowed on
+generic structs, enums, type aliases, and methods
+-- anywhere bounds are permitted.
+```
+
+- A generic function can have both lifetime parameters
+  and type parameters. Lifetime parameters come first.
+
+```rust
+fn nearest<'t, 'c, P>(target: &'t P, candidates: &'c [P]) -> &'c P
+where
+  P: MeasureDistance,
+{
+  !unimplemented!()
+}
+```
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
