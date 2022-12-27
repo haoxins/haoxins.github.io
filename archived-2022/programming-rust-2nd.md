@@ -1518,6 +1518,127 @@ be used on all generic items, not just functions.
 
 ### Default Methods
 
+```rust
+trait Write {
+  fn write(&mut self, buf: &[u8]) -> Result<usize>;
+
+  fn flush(&mut self) -> Result<()>;
+
+  fn write_all(&mut self, buf: &[u8]) -> Result<()> {
+    let mut bytes_written = 0;
+    while bytes_written < buf.len() {
+      bytes_written += self.write(&buf[bytes_written..])?;
+    }
+    Ok(())
+  }
+  // ...
+}
+```
+
+```
+Your own traits can include default implementations
+using the same syntax.
+
+The most dramatic use of default methods in the
+standard library is the Iterator trait,
+which has one required method (.next())
+and dozens of default methods.
+```
+
+### Traits and Other People's Types
+
+- Rust lets you implement any trait on any type,
+  as long as either the trait or the type
+  is introduced in the current crate.
+  - This means that any time you want to add a
+    method to any type, you can use
+    a trait to do it:
+
+```rust
+trait IsEmoji {
+  fn is_emoji(&self) -> bool;
+}
+
+impl IsEmoji for char {
+  fn is_emoji(&self) -> bool {
+    unimplemented!()
+  }
+}
+```
+
+> Like any other trait method, this new `is_emoji` method
+  is only visible when `IsEmoji` is in scope.
+
+- The sole purpose of this particular trait is to
+  add a method to an existing type, `char`.
+  - This is called an __extension trait__.
+- You can even use a generic impl block to add an
+  extension trait to a whole family of types at once.
+  - This trait could be implemented on any type:
+
+```rust
+use std::io::{self, Write};
+
+trait WriteHtml {
+  fn write_html(&mut self, html: &HtmlDocument) -> io::Result<()>;
+}
+
+impl<W: Write> WriteHtml for W {
+  fn write_html(&mut self, html: &HtmlDocument) -> io::Result<()> {
+    unimplemented!()
+  }
+}
+```
+
+- The line `impl<W: Write> WriteHtml for W` means
+  "for every type `W` that implements `Write`,
+  here's an implementation of `WriteHtml` for `W`."
+
+### Self in Traits
+
+- A trait can use the keyword `Self` as a type.
+
+```rust
+pub trait Spliceable {
+  fn splice(&self, other: &Self) -> Self;
+}
+```
+
+- A trait that uses the `Self` type is
+  incompatible with trait objects:
+
+```rust
+// error: the trait `Spliceable` cannot be made into an object
+fn splice_anything(left: &dyn Spliceable, right: &dyn Spliceable) {
+  let combo = left.splice(right);
+  // ...
+}
+```
+
+- Rust rejects this code because it has no way to
+  type-check the call `left.splice(right)`.
+- The whole point of trait objects is that the
+  type isn't known until run time.
+
+---
+
+- Now, had we wanted genetically improbable splicing,
+  we could have designed a trait-object-friendly trait:
+
+```rust
+pub trait MegaSpliceable {
+  fn splice(&self, other: &dyn MegaSpliceable) -> Box<dyn MegaSpliceable>;
+}
+```
+
+- This trait is compatible with trait objects.
+- There's no problem type-checking calls to this
+  `.splice()` method because the type of the argument
+  `other` is not required to match the type of `self`,
+  as long as both types are `MegaSpliceable`.
+
+### Subtraits
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
