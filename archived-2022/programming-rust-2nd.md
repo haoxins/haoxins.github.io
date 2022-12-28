@@ -1639,6 +1639,185 @@ pub trait MegaSpliceable {
 
 ### Subtraits
 
+```rust
+trait Creature: Visible {
+  // ...
+}
+```
+
+- In Rust, a subtrait does not inherit the associated
+  items of its supertrait; each trait still needs to be
+  in scope if you want to call its methods.
+- In fact, Rust's subtraits are really just a shorthand
+  for a bound on `Self`.
+  - A definition of `Creature` like this is exactly
+    equivalent to the one shown earlier:
+
+```rust
+trait Creature where Self: Visible {
+  // ...
+}
+```
+
+### Fully Qualified Method Calls
+
+- First of all, it helps to know that a method is
+  just a special kind of function.
+  - These two calls are equivalent:
+
+```rust
+"hello".to_string()
+str::to_string("hello")
+```
+
+- Since `to_string` is a method of the standard
+  `ToString` trait, there are two more
+  forms you can use:
+
+```rust
+ToString::to_string("hello")
+<str as ToString>::to_string("hello")
+```
+
+- All four of these method calls do exactly the same thing.
+  - Most often, you'll just write `value.method()`.
+  - The other forms are qualified method calls.
+  - They specify the type or trait that a
+    method is associated with.
+  - The last form, with the angle brackets,
+    specifies both: a fully qualified method call.
+
+### Associated Types (or How Iterators Work)
+
+- Rust has a standard Iterator trait,
+  defined like this:
+
+```rust
+pub trait Iterator {
+  type Item;
+  fn next(&mut self) -> Option<Self::Item>;
+  // ...
+}
+```
+
+- The type is written as `Self::Item`,
+  not just plain `Item`, because `Item`
+  is a feature of each type of iterator,
+  not a standalone type.
+
+---
+
+- Here's what it looks like to implement
+  `Iterator` for a type:
+
+```rust
+impl Iterator for Args {
+  type Item = String;
+  fn next(&mut self) -> Option<String> {
+    unimplemented!()
+  }
+  // ...
+}
+```
+
+### Generic Traits (or How Operator Overloading Works)
+
+- Multiplication in Rust uses this trait:
+
+```rust
+pub trait Mul<RHS> {
+  type Output;
+  fn mul(self, rhs: RHS) -> Self::Output;
+}
+```
+
+> `Mul` is a generic trait. The type parameter,
+  `RHS`, is short for righthand side.
+
+```
+Generic traits get a special dispensation when it
+comes to the orphan rule: you can implement a
+foreign trait for a foreign type, so long as
+one of the trait's type parameters is a
+type defined in the current crate.
+```
+
+- The trait shown earlier is missing one minor detail.
+  - The real `Mul` trait looks like this:
+
+```rust
+pub trait Mul<RHS=Self> {
+  // ...
+}
+```
+
+- The syntax `RHS=Self` means that `RHS` defaults to `Self`.
+  - If I write `impl Mul for Complex`, without specifying
+    `Mul`'s type parameter, it means `impl Mul<Complex> for Complex`.
+  - In a bound, if I write `where T: Mul`, it means `where T: Mul<T>`.
+- In Rust, the expression `lhs * rhs` is shorthand for
+  `Mul::mul(lhs, rhs)`.
+  - So overloading the `*` operator in Rust is as simple as
+    implementing the `Mul` trait.
+
+### impl Trait
+
+- `impl Trait` allows us to "erase" the type of a return value,
+  specifying only the trait or traits it implements,
+  without dynamic dispatch or a heap allocation:
+
+```rust
+fn cyclical_zip(v: Vec<u8>, u: Vec<u8>) -> impl Iterator<Item = u8> {
+  v.into_iter().chain(u.into_iter()).cycle()
+}
+```
+
+- It might be tempting to use `impl Trait` to approximate a
+  statically dispatched version of the factory pattern
+  that's commonly used in object-oriented languages.
+  - For example, you might define a trait like this:
+
+```rust
+trait Shape {
+  fn new() -> Self;
+  fn area(&self) -> f64;
+}
+```
+
+- It's important to note that Rust doesn't allow
+  trait methods to use `impl Trait` return values.
+
+---
+
+- `impl Trait` can also be used in functions
+  that take generic arguments.
+  - For instance, consider this simple generic function:
+
+```rust
+fn print<T: Display>(val: T) {
+  println!("{}", val);
+}
+```
+
+- It is identical to this version using `impl Trait`:
+
+```rust
+fn print(val: impl Display) {
+  println!("{}", val);
+}
+```
+
+- There is one important exception. Using generics allows
+  callers of the function to specify the type of the
+  generic arguments, like `print::<i32>(42)`,
+  while using `impl Trait` does not.
+- Each `impl Trait` argument is assigned its own
+  anonymous type parameter, so `impl Trait` for arguments
+  is limited to only the simplest generic functions,
+  with no relationships between the types of arguments.
+
+### Associated Consts
+
 ------------------
 
 - [On Java 中文版 进阶卷](https://book.douban.com/subject/35751623/)
