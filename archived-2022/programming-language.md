@@ -116,6 +116,11 @@ GODEBUG=gctrace=1 go test -bench=. -v
 - ML Ecosystem
   - [Polars](https://github.com/pola-rs/polars)
   - Blazingly fast DataFrames in Rust, and Python.
+  - [rust-gpu](https://github.com/EmbarkStudios/rust-gpu)
+  - Rust as a first-class language and ecosystem
+    for GPU graphics & compute shaders
+  - [BastionLab](https://github.com/mithril-security/bastionlab)
+  - A simple privacy framework for data science collaboration.
 - 一些常见需求
   - [rust-rdkafka](https://github.com/fede1024/rust-rdkafka)
   - [Anyhow](https://github.com/dtolnay/anyhow)
