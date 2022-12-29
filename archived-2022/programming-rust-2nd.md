@@ -9,7 +9,7 @@ date: 2022-09-16
 - [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
   - Covers Rust `1.50`
   - 难得有一本技术书籍, 让我读第二遍
-  - 第二遍读的时候 (`2022-09` ~), 已经是 Rust `1.64`
+  - 第二遍读的时候 (`2022-09` ~ `2022-12`), 已经是 Rust `1.64 ~ 1.66`
   - 第一遍读的时候 (`2021-07` ~ `2022-01`), 貌似是 Rust `1.54+`
 
 ---
@@ -1817,6 +1817,53 @@ fn print(val: impl Display) {
   with no relationships between the types of arguments.
 
 ### Associated Consts
+
+- You can declare a trait with an associated constant
+  using the same syntax as for a struct or enum:
+
+```rust
+trait Greet {
+  const GREETING: &'static str = "Hello";
+  fn greet(&self) -> String;
+}
+```
+
+- Like associated types and functions,
+  you can declare them but not give them a value:
+
+```rust
+trait Float {
+  const ZERO: Self;
+  const ONE: Self;
+}
+```
+
+- Then, implementors of the trait can define these values:
+
+```rust
+impl Float for f64 {
+  const ZERO: f64 = 0.0;
+  const ONE: f64 = 1.0;
+}
+```
+
+- This allows you to write generic code that uses these values:
+
+```rust
+fn add_one<T: Float + Add<Output = T>>(value: T) -> T {
+  value + T::ONE
+}
+```
+
+## Operator Overloading
+
+## Utility Traits
+
+## Closures
+
+## Iterators
+
+## Collections
 
 ------------------
 

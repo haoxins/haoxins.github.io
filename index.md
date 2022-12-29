@@ -35,6 +35,7 @@
 - [泡利物理学讲义 5 波动力学](archived-2023/physics-pauli-5.md)
 - [泡利物理学讲义 6 场量子化选题](archived-2023/physics-pauli-6.md)
 - [张朝阳的物理课](archived-2023/physics-zhang.md)
+- [Programming Rust](archived-2023/programming-rust-2nd.md)
 - [量子力学 第一卷 上](archived-2023/quantum-1-1.md)
 - [量子力学 第一卷 中](archived-2023/quantum-1-2.md)
 - [量子力学 第一卷 下](archived-2023/quantum-1-3.md)
