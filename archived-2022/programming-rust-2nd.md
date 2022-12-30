@@ -1950,13 +1950,187 @@ trait AddAssign<Rhs = Self> {
 
 ### Equivalence Comparisons
 
+- These get tedious to write, and equality is a common
+  operation to support, so if you ask, Rust will generate
+  an implementation of `PartialEq` for you automatically.
+  - Simply add `PartialEq` to the type definition's
+    derive attribute like so:
+
+```rust
+#[derive(Clone, Copy, Debug, PartialEq)]
+struct Complex<T> {
+  // ...
+}
+```
+
+- Since `str` implements `PartialEq<str>`, the
+  following assertions are equivalent:
+
+```rust
+assert!("ungula" != "ungulate");
+assert!("ungula".ne("ungulate"));
+```
+
+- So while Rust's `==` operator meets the first two
+  requirements for equivalence relations, it clearly
+  doesn't meet the third when used on
+  IEEE floating-point values.
+  - This is called a partial equivalence relation, so
+    Rust uses the name `PartialEq` for the `==`
+    operator's built-in trait.
+  - If you write generic code with type parameters
+    known only to be `PartialEq`, you may assume the
+    first two requirements hold, but you should not
+    assume that values always equal themselves.
+- If you'd prefer your generic code to require a
+  full equivalence relation, you can instead use the
+  `std::cmp::Eq` trait as a bound, which represents a
+  full equivalence relation:
+  - if a type implements `Eq`, then `x == x` must be
+    `true` for every value `x` of that type.
+- In practice, almost every type that implements
+  `PartialEq` should implement `Eq` as well;
+  `f32` and `f64` are the __only__ types in the
+  standard library that are `PartialEq` but __not__ `Eq`.
+
+---
+
+- The standard library defines `Eq` as an
+  extension of `PartialEq`, adding no new methods:
+
+```rust
+trait Eq: PartialEq<Self> {}
+```
+
+- If your type is `PartialEq` and you would like
+  it to be `Eq` as well, you __must__ explicitly
+  implement `Eq`, even though you need not actually
+  define any new functions or types to do so.
+  - So implementing `Eq` for our `Complex` type is quick:
+
+```rust
+impl<T: Eq> Eq for Complex<T> {}
+```
+
+- We could implement it even more succinctly by just
+  including `Eq` in the derive attribute
+  on the `Complex` type definition:
+
+```rust
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
+struct Complex<T> {
+  // ...
+}
+```
+
+- Derived implementations on a generic type may
+  depend on the type parameters.
+  - With the derive attribute, `Complex<i32>`
+    would implement `Eq`, because `i32` does,
+  - but `Complex<f32>` would only implement `PartialEq`,
+    since `f32` doesn't implement `Eq`.
+- When you implement `std::cmp::PartialEq` yourself,
+  Rust can't check that your definitions for the
+  `eq` and `ne` methods actually behave as required
+  for partial or full equivalence.
+
+### Ordered Comparisons
+
+- Rust specifies the behavior of the
+  ordered comparison operators
+  `<`, `>`, `<=`, and `>=` all in
+  terms of a single trait,
+  `std::cmp::PartialOrd`:
+
+```rust
+trait PartialOrd<Rhs = Self>: PartialEq<Rhs>
+where
+  Rhs: ?Sized,
+{
+  fn partial_cmp(&self, other: &Rhs) -> Option<Ordering>;
+  fn lt(&self, other: &Rhs) -> bool {
+    todo!()
+  }
+  fn le(&self, other: &Rhs) -> bool {
+    todo!()
+  }
+  fn gt(&self, other: &Rhs) -> bool {
+    todo!()
+  }
+  fn ge(&self, other: &Rhs) -> bool {
+    todo!()
+  }
+}
+```
+
+- The only method of `PartialOrd` you must implement
+  yourself is `partial_cmp`.
+  - When `partial_cmp` returns `Some(o)`, then `o`
+    indicates self's relationship to other:
+
+```rust
+enum Ordering {
+  Less, // self < other
+  Equal, // self == other
+  Greater, // self > other
+}
+```
+
+- But if `partial_cmp` returns `None`, that means `self` and
+  other are unordered with respect to each other:
+  - neither is greater than the other,
+  - nor are they equal.
+- Among all of Rust's primitive types, only comparisons between
+  floating-point values ever return `None`:
+  - specifically, comparing a `NaN` (not-a-number) value
+    with anything else returns `None`.
+
+> If you know that values of two types are always ordered
+  with respect to each other, then you can implement the
+  stricter `std::cmp::Ord` trait.
+
+- Almost all types that implement `PartialOrd` should
+  also implement `Ord`.
+  - In the standard library, `f32` and `f64` are
+    the only exceptions to this rule.
+
+### Index and IndexMut
+
+- You can specify how an indexing expression like
+  `a[i]` works on your type by implementing the
+  `std::ops::Index` and `std::ops::IndexMut` traits.
+  - Arrays support the `[]` operator __directly__,
+    but on any other type, the expression `a[i]` is
+    normally shorthand for `*a.index(i)`, where index
+    is a method of the `std::ops::Index` trait.
+  - However, if the expression is being assigned to
+    or borrowed mutably, it's instead shorthand for
+    `*a.index_mut(i)`, a call to the method of the
+    `std::ops::IndexMut` trait.
+
+```rust
+trait Index<Idx> {
+  type Output: ?Sized;
+  fn index(&self, index: Idx) -> &Self::Output;
+}
+trait IndexMut<Idx>: Index<Idx> {
+  fn index_mut(&mut self, index: Idx) -> &mut Self::Output;
+}
+```
+
 ## Utility Traits
+
+### Drop
 
 ## Closures
 
 ## Iterators
 
 ## Collections
+
+## Strings and Text
+
+## Input and Output
 
 ------------------
 
