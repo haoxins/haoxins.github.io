@@ -1901,6 +1901,17 @@ where
 
 ### Unary Operators
 
+```rust
+trait Neg {
+  type Output;
+  fn neg(self) -> Self::Output;
+}
+trait Not {
+  type Output;
+  fn not(self) -> Self::Output;
+}
+```
+
 ### Binary Operators
 
 - The definition of `std::ops::BitXor`,
@@ -1912,6 +1923,32 @@ trait BitXor<Rhs = Self> {
   fn bitxor(self, rhs: Rhs) -> Self::Output;
 }
 ```
+
+### Compound Assignment Operators
+
+> In Rust, the value of a compound assignment expression
+  is always `()`, never the value stored.
+
+- Instead, `x += y` is shorthand for the method call
+  `x.add_assign(y)`, where `add_assign` is the sole method
+  of the `std::ops::AddAssign` trait:
+
+```rust
+trait AddAssign<Rhs = Self> {
+  fn add_assign(&mut self, rhs: Rhs);
+}
+```
+
+- The built-in trait for a compound assignment operator
+  is completely independent of the built-in trait for the
+  corresponding binary operator.
+  - Implementing `std::ops::Add` does __not__ automatically
+    implement `std::ops::AddAssign`;
+  - if you want Rust to permit your type as the lefthand
+    operand of a `+=` operator, you must
+    implement `AddAssign` yourself.
+
+### Equivalence Comparisons
 
 ## Utility Traits
 
