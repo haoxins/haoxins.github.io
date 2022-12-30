@@ -2122,6 +2122,134 @@ trait IndexMut<Idx>: Index<Idx> {
 
 ### Drop
 
+```
+Drops occur under a variety of circumstances:
+when a variable goes out of scope;
+at the end of an expression statement;
+when you truncate a vector,
+removing elements from its end; and so on.
+```
+
+- When a value is dropped, if it implements
+  `std::ops::Drop`, Rust calls its `drop` method,
+  before proceeding to drop whatever values its
+  fields or elements own, as it normally would.
+
+```
+If a variable's value gets moved elsewhere,
+so that the variable is uninitialized when
+it goes out of scope, then Rust
+will not try to drop that variable:
+there is no value in it to drop.
+```
+
+> Although a value may be moved from place to place,
+  Rust drops it only once.
+
+- If a type implements `Drop`,
+  it cannot implement the `Copy` trait.
+  - If a type is `Copy`, that means that simple
+    byte-for-byte duplication is sufficient to
+    produce an independent copy of the value.
+  - But it is typically a mistake to call the same
+    drop method more than once on the same data.
+
+### Sized
+
+- A sized type is one whose values all have
+  the same size in memory.
+  - Almost all types in Rust are sized:
+  - every `u64` takes eight bytes,
+  - every `(f32, f32, f32)` tuple twelve.
+- Even enums are sized:
+  - no matter which variant is actually present,
+  - an enum always occupies enough space
+    to hold its __largest__ variant.
+- And although a `Vec<T>` owns a heap-allocated buffer
+  whose size can vary, the `Vec` value itself is a
+  pointer to the buffer, its capacity, and its length,
+  so `Vec<T>` is a sized type.
+- All sized types implement the `std::marker::Sized` trait,
+  which has no methods or associated types.
+  - Rust implements it automatically for all types to
+    which it applies; you can't implement it yourself.
+  - The only use for `Sized` is as a bound for type variables:
+  - a bound like `T: Sized` requires `T` to be a type whose
+    size is known at compile time.
+  - Traits of this sort are called marker traits,
+    because the Rust language itself uses them to mark
+    certain types as having characteristics of interest.
+
+---
+
+- Rust can't store unsized values in variables or
+  pass them as arguments. You can only deal with
+  them through pointers like `&str` or `Box<dyn Write>`,
+  which themselves are sized.
+- Since unsized types are so limited, most generic type
+  variables should be restricted to `Sized` types.
+  - In fact, this is necessary so often that it is the
+    implicit default in Rust:
+  - if you write struct `S<T> { ... }`, Rust understands
+    you to mean struct `S<T: Sized> { ... }`.
+  - If you do not want to constrain `T` this way, you must
+    explicitly opt out, writing struct `S<T: ?Sized> { ... }`.
+  - The `?Sized` syntax is specific to this case and means
+    "not necessarily Sized."
+  - For example, if you write struct `S<T: ?Sized> { b: Box<T> }`,
+    then Rust will allow you to write `S<str>` and `S<dyn Write>`,
+    where the box becomes a fat pointer, as well as
+    `S<i32>` and `S<String>`, where the box is an ordinary pointer.
+- When a type variable has the `?Sized` bound, people often
+  say it is questionably sized:
+  - it might be `Sized`, or it might not.
+
+---
+
+- Aside from slices and trait objects,
+  there is one more kind of unsized type.
+  - A struct type's last field (but only its last)
+    may be unsized, and such a struct is itself unsized.
+  - For example, an `Rc<T>` reference-counted pointer is
+    implemented internally as a pointer to the private
+    type `RcBox<T>`, which stores the reference count
+    alongside the `T`.
+- Here's a simplified definition of `RcBox`:
+
+```rust
+struct RcBox<T: ?Sized> {
+  ref_count: usize,
+  value: T,
+}
+```
+
+- The value field is the `T` to which `Rc<T>` is counting references;
+  `Rc<T>` dereferences to a pointer to this field.
+  - The `ref_count` field holds the reference count.
+
+### Clone
+
+- Cloning a value usually entails allocating copies of
+  anything it owns, as well, so a clone can be expensive,
+  in both time and memory.
+- The reference-counted pointer types like `Rc<T>` and
+  `Arc<T>` are exceptions:
+  - cloning one of these simply increments the
+    reference count and hands you a new pointer.
+
+### Copy
+
+- But because `Copy` is a marker trait with special
+  meaning to the language, Rust permits a type to
+  implement `Copy` only if a shallow byte-for-byte
+  copy is all it needs.
+  - Types that own any other resources, like
+    heap buffers or operating system handles,
+    cannot implement `Copy`.
+- Any type that implements the `Drop` trait cannot be `Copy`.
+
+### Deref and DerefMut
+
 ## Closures
 
 ## Iterators
