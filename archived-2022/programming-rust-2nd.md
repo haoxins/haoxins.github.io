@@ -1857,6 +1857,62 @@ fn add_one<T: Float + Add<Output = T>>(value: T) -> T {
 
 ## Operator Overloading
 
+- In Rust, the expression `a + b` is actually shorthand for
+  `a.add(b)`, a call to the `add` method of the
+  standard library's `std::ops::Add` trait.
+  - Similar traits cover the other operators:
+    `a * b` is shorthand for `a.mul(b)`,
+    a method from the `std::ops::Mul` trait,
+    `std::ops::Neg` covers the prefix `-`
+    negation operator, and so on.
+
+> Here's the definition of `std::ops::Add`:
+
+```rust
+trait Add<Rhs = Self> {
+  type Output;
+  fn add(self, rhs: Rhs) -> Self::Output;
+}
+```
+
+> The trait's type parameter `Rhs` defaults to `Self`.
+
+```rust
+use std::ops::Add;
+impl<T> Add for Complex<T>
+where
+  T: Add<Output = T>,
+{
+  type Output = Self;
+  fn add(self, rhs: Self) -> Self {
+    Complex {
+      re: self.re + rhs.re,
+      im: self.im + rhs.im,
+    }
+  }
+}
+```
+
+- Rust's built-in traits for arithmetic and bitwise
+  operators come in three groups:
+  - unary operators,
+  - binary operators,
+  - and compound assignment operators.
+
+### Unary Operators
+
+### Binary Operators
+
+- The definition of `std::ops::BitXor`,
+  for the `^` operator, looks like this:
+
+```rust
+trait BitXor<Rhs = Self> {
+  type Output;
+  fn bitxor(self, rhs: Rhs) -> Self::Output;
+}
+```
+
 ## Utility Traits
 
 ## Closures
