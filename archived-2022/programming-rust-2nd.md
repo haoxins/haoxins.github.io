@@ -2257,6 +2257,58 @@ struct RcBox<T: ?Sized> {
     these traits so that they can behave as
     Rust's built-in pointer types do.
 
+---
+
+- Although the deref coercions aren't anything you
+  couldn't write out explicitly yourself,
+  they're convenient:
+  - If you have some `Rc<String>` value `r` and want to
+    apply `String::find` to it, you can simply write
+    `r.find('?')`, instead of `(*r).find('?')`:
+  - the method call implicitly borrows `r`, and
+    `&Rc<String>` coerces to `&String`, because
+    `Rc<T>` implements `Deref<Target=T>`.
+  - You can use methods like `split_at` on `String` values,
+    even though `split_at` is a method of the `str` slice type,
+    because `String` implements `Deref<Target=str>`.
+  - There's no need for `String` to reimplement
+    all of `str`'s methods, since you can
+    coerce a `&str` from a `&String`.
+  - If you have a vector of bytes `v` and you want to pass
+    it to a function that expects a byte slice `&[u8]`,
+    you can simply pass `&v` as the argument,
+    since `Vec<T>` implements `Deref<Target=[T]>`.
+- Rust will apply several deref coercions in succession if necessary.
+  - For example, using the coercions mentioned before,
+    you can apply `split_at` directly to an `Rc<String>`, since
+    `&Rc<String>` dereferences to `&String`,
+    which dereferences to `&str`,
+    which has the `split_at` method.
+
+### Default
+
+- All of Rust's collection types: `Vec`, `HashMap`,
+  `BinaryHeap`, and so on, implement `Default`,
+  with default methods that return an empty collection.
+- Another common use of `Default` is to produce default
+  values for structs that represent a large collection
+  of parameters, most of which you won't
+  usually need to change.
+- If a type `T` implements `Default`, then the
+  standard library implements `Default` automatically
+  for `Rc<T>`, `Arc<T>`, `Box<T>`, `Cell<T>`,
+  `RefCell<T>`, `Cow<T>`, `Mutex<T>`, and `RwLock<T>`.
+- If all the element types of a tuple type implement
+  `Default`, then the tuple type does too,
+  defaulting to a tuple holding each
+  element's default value.
+- Rust does not implicitly implement `Default` for
+  struct types, but if all of a struct's fields
+  implement `Default`, you can implement `Default` for
+  the struct automatically using `#[derive(Default)]`.
+
+### AsRef and AsMut
+
 ## Closures
 
 ## Iterators
