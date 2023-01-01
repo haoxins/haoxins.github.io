@@ -2250,6 +2250,13 @@ struct RcBox<T: ?Sized> {
 
 ### Deref and DerefMut
 
+- You can specify how dereferencing operators like
+  `*` and `.` behave on your types by implementing
+  the `std::ops::Deref` and `std::ops::DerefMut` traits.
+  - Pointer types like `Box<T>` and `Rc<T>` implement
+    these traits so that they can behave as
+    Rust's built-in pointer types do.
+
 ## Closures
 
 ## Iterators

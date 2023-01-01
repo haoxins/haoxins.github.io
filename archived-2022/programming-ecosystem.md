@@ -22,6 +22,12 @@ date: 2022-01-17
 
 ------------------
 
+## 2023
+
+- Kafka 压缩 gzip vs zstd
+  - 简单的对比, 93 million messages
+  - gzip storage: `41.8` GB
+
 ## 2022
 
 - [Fluvio](https://github.com/infinyon/fluvio)
