@@ -2309,15 +2309,183 @@ struct RcBox<T: ?Sized> {
 
 ### AsRef and AsMut
 
+- When a type implements `AsRef<T>`, that means you can
+  borrow a `&T` from it efficiently.
+  - `AsMut` is the analogue for mutable references.
+- So, for example, `Vec<T>` implements `AsRef<[T]>`, and
+  `String` implements `AsRef<str>`.
+  - You can also borrow a `String`'s contents as an
+    array of bytes, so `String`
+    implements `AsRef<[u8]>` as well.
+- Although `AsRef` and `AsMut` are pretty simple,
+  providing standard, generic traits for reference
+  conversion avoids the proliferation of more
+  specific conversion traits.
+  - You should avoid defining your own `AsFoo` traits
+    when you could just implement `AsRef<Foo>`.
+
+### Borrow and BorrowMut
+
+- The `std::borrow::Borrow` trait is similar to `AsRef`:
+  - if a type implements `Borrow<T>`, then its borrow method
+    efficiently borrows a `&T` from it.
+- But `Borrow` imposes more restrictions:
+  - a type should implement `Borrow<T>` only when a `&T`
+    hashes and compares the same way as the
+    value it's borrowed from.
+  - (Rust doesn't enforce this; it's just the
+    documented intent of the trait.)
+  - This makes `Borrow` valuable in dealing with keys
+    in hash tables and trees or when dealing with
+    values that will be hashed or
+    compared for some other reason.
+- `Borrow` is designed to address a specific situation
+  with generic hash tables and
+  other associative collection types.
+
+### From and Into
+
+- `From` and `Into` take ownership of their argument,
+  transform it, and then return ownership
+  of the result back to the caller.
+- Given an appropriate `From` implementation,
+  the standard library automatically implements
+  the corresponding `Into` trait.
+- The `?` operator uses `From` and `Into` to help
+  clean up code in functions that could fail in
+  multiple ways by automatically converting from
+  specific error types to general ones when needed.
+
+### TryFrom and TryInto
+
+- Where `From` and `Into` relate types with simple
+  conversions, `TryFrom` and `TryInto` extend the
+  simplicity of `From` and `Into` conversions with
+  the expressive error handling afforded by Result.
+
+### ToOwned
+
+- Unlike `clone`, which must return exactly `Self`,
+  `to_owned` can return anything you could borrow a
+  `&Self` from:
+  - the `Owned` type must implement `Borrow<Self>`.
+  - You can borrow a `&[T]` from a `Vec<T>`, so
+    `[T]` can implement `ToOwned<Owned=Vec<T>>`,
+    as long as `T` implements `Clone`,
+  - so that we can copy the slice's elements into the vector.
+  - Similarly, `str` implements `ToOwned<Owned=String>`,
+    `Path` implements `ToOwned<Owned=PathBuf>`, and so on.
+
 ## Closures
 
-## Iterators
+- Rust thus offers two ways for closures to
+  get data from enclosing scopes:
+  - moves and borrowing.
+- Just as everywhere else in the language,
+  if a closure would move a value of a copyable type,
+  like `i32`, it copies the value instead.
+- Values of noncopyable types,
+  like `Vec<City>`, really are moved.
 
-## Collections
+---
 
-## Strings and Text
+- Well, a closure is callable, but it's not a `fn`.
+- In fact, every closure you write has its own type,
+  because a closure may contain data:
+  - values either borrowed or stolen from enclosing scopes.
+  - This could be any number of variables,
+    in any combination of types.
+  - So every closure has an ad hoc type created
+    by the compiler, large enough to hold that data.
+- No two closures have exactly the same type.
+  - But every closure implements an `Fn` trait;
+    the closure in our example implements
+    `Fn(&City) -> i64`.
 
-## Input and Output
+### FnOnce
+
+> As with functions, the return type can be omitted
+  if it's `()`; `Fn()` is shorthand for `Fn() -> ()`.
+
+```rust
+trait Fn() -> R {
+  fn call(&self) -> R;
+}
+
+trait FnOnce() -> R {
+  fn call_once(self) -> R;
+}
+```
+
+- Just as an arithmetic expression like `a + b` is
+  shorthand for a method call, `Add::add(a, b)`,
+  Rust treats `closure()` as shorthand for one
+  of the two trait methods shown in the preceding example.
+  - For an `Fn` closure, `closure()` expands to `closure.call()`.
+  - This method takes `self` by reference,
+    so the closure is not moved.
+  - But if the closure is only safe to call once, then
+    `closure()` expands to `closure.call_once()`.
+  - That method takes `self` by value, so the closure is used up.
+
+### FnMut
+
+```rust
+trait Fn() -> R {
+  fn call(&self) -> R;
+}
+
+trait FnMut() -> R {
+  fn call_mut(&mut self) -> R;
+}
+
+trait FnOnce() -> R {
+  fn call_once(self) -> R;
+}
+```
+
+- Any closure that requires `mut` access to a value,
+  but doesn't drop any values, is an `FnMut` closure.
+
+---
+
+- `Fn` is the family of closures and functions that
+  you can call multiple times without restriction.
+  - This highest category also includes all `fn` functions.
+- `FnMut` is the family of closures that can be called
+  multiple times if the closure itself is declared `mut`.
+- `FnOnce` is the family of closures that can be
+  called once, if the caller owns the closure.
+
+---
+
+- Every `Fn` meets the requirements for `FnMut`,
+  and every `FnMut` meets the requirements for `FnOnce`.
+  - Instead, `Fn()` is a subtrait of `FnMut()`,
+    which is a subtrait of `FnOnce()`.
+  - This makes `Fn` the most exclusive and
+    most powerful category.
+  - `FnMut` and `FnOnce` are broader categories that
+    include closures with usage restrictions.
+
+### Copy and Clone for Closures
+
+- Just as Rust automatically figures out which closures
+  can be called only once, it can figure out which
+  closures can implement `Copy` and `Clone`, and which cannot.
+- As we explained earlier, closures are represented as
+  structs that contain either the values
+  (for move closures) or references to the values
+  (for non-move closures) of the variables they capture.
+  - The rules for `Copy` and `Clone` on closures are just
+    like the `Copy` and `Clone` rules for regular structs.
+
+### Callbacks
+
+- In fact, closures that don't capture anything from
+  their environment are identical to function pointers,
+  since they don't need to hold any extra
+  information about captured variables.
 
 ------------------
 
