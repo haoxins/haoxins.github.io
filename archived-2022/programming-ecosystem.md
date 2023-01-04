@@ -26,7 +26,7 @@ date: 2022-01-17
 
 - Kafka 压缩 gzip vs zstd, 简单的对比:
   - gzip storage: `93` million messages, `41.8` GB
-  - zstd storage: `101` million messages, `36.2` GB
+  - zstd storage: `103` million messages, `35.4` GB
 
 ## 2022
 
