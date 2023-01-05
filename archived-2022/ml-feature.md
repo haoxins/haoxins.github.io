@@ -400,10 +400,6 @@ CatBoost 开源于 2017 年, 它修改了传统的梯度提升过程, 进一步�
 
 ------------------
 
-- [深度强化学习](https://book.douban.com/subject/36161659/)
-
-------------------
-
 - https://www.coursera.org/specializations/machine-learning-introduction
   - https://www.coursera.org/learn/machine-learning
   - https://www.coursera.org/account/accomplishments/certificate/THGATFHMCZ8T
