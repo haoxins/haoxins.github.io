@@ -1,7 +1,7 @@
 ---
 title: 普林斯顿概率论读本
-description:
-date:
+description: 秋山敛余照, 飞鸟逐前侣. 彩翠时分明, 夕岚无处所.
+date: 2023-01-08
 ---
 
 - [普林斯顿概率论读本](https://book.douban.com/subject/35193606/)

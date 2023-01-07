@@ -1,7 +1,7 @@
 ---
 title: 普林斯顿概率论读本
-description:
-date:
+description: 空山不见人, 但闻人语响. 返景入深林, 复照青苔上.
+date: 2023-01-08
 ---
 
 - [普林斯顿概率论读本](https://book.douban.com/subject/35193606/)
