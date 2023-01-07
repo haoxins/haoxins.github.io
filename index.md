@@ -48,3 +48,4 @@
 - [我的推荐书单 2023](archived-2023/reading-recommended.md)
 - [Shtetl-Optimized, Scott Aaronson](archived-2023/scott-aaronson.md)
 - [TAOCP 组合算法 习题 - 计算机程序设计艺术](archived-2023/taocp-4-exe.md)
+- [TAOCP 组合算法 - 计算机程序设计艺术](archived-2023/taocp-4.md)

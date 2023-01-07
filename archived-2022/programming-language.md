@@ -4,6 +4,12 @@ description: 结庐在人境, 而无车马喧. 问君何能尔? 心远地自偏.
 date: 2021-10-28
 ---
 
+- Rust vs Go
+  - 两者都内置了 test 支持, 但是 Rust (Cargo) 区分了 unit tests `vs` integration tests.
+    很多时候, 我只想在本地跑 unit tests, 而在 CI 当中跑所有的 tests.
+    因为 integration tests 可能依赖数据库等额外环境, 但我本地没有.
+    Rust 可以直接覆盖类似场景.
+
 ## Rust (1.64+)
 
 - [Crossbeam](https://github.com/crossbeam-rs/crossbeam)
