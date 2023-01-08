@@ -45,9 +45,6 @@ cargo test -- --show-output
   - `*mut T`
   - `*const T`
 
----
-
-
 ------------------
 
 ## Go (1.18+)
@@ -114,6 +111,7 @@ GODEBUG=gctrace=1 go test -bench=. -v
 ------------------
 
 - 选择一个语言, 最重要的其实是生态, 而非语法特性.
+- 一些 Rust 领先其他语言的生态~
   - [Serde](https://github.com/serde-rs/serde)
   - Serde is a framework for serializing and deserializing
     Rust data structures efficiently and generically.

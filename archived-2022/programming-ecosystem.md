@@ -24,6 +24,13 @@ date: 2022-01-17
 
 ## 2023
 
+- Streaming computing
+  - [Fluvio](https://github.com/infinyon/fluvio)
+  - [RisingWave](https://github.com/risingwavelabs/risingwave)
+  - [Materialize](https://github.com/MaterializeInc/materialize)
+
+---
+
 - Kafka 压缩 gzip vs zstd, 简单的对比:
   - gzip storage: `93` million messages, `41.8` GB
   - zstd storage: `103` million messages, `35.4` GB
