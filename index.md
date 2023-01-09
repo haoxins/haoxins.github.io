@@ -7,7 +7,6 @@
 - [Math and Architectures of Deep Learning](archived-2023/math-and-arch-of-dl.md)
 - [复分析 可视化方法 (上)](archived-2023/math-complex-analysis-1.md)
 - [复分析 可视化方法 (下)](archived-2023/math-complex-analysis-2.md)
-- [具体数学 计算机科学基础](archived-2023/math-concrete-mathematics.md)
 - [泛函分析导论 上](archived-2023/math-functional-analysis-1.md)
 - [泛函分析导论 下](archived-2023/math-functional-analysis-2.md)
 - [线性代数 (第5版)](archived-2023/math-linear-algebra.md)
