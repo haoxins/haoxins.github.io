@@ -10,6 +10,26 @@ date: 2023-01-08
 
 ---
 
+- Go `1.20`
+
+```go
+package errors
+
+// Join returns an error that wraps the given errors.
+// Any nil error values are discarded.
+// Join returns nil if errs contains no non-nil values.
+// The error formats as the concatenation of the strings obtained
+// by calling the Error method of each element of errs, with a newline
+// between each string.
+func Join(errs ...error) error {
+  // ...
+}
+```
+
+> 前进一小步, 真的是一小步~
+
+---
+
 - [Generic associated types to be stable in Rust 1.65](https://blog.rust-lang.org/2022/10/28/gats-stabilization.html)
 
 ---
