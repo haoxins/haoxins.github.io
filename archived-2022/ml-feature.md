@@ -398,6 +398,20 @@ CatBoost 开源于 2017 年, 它修改了传统的梯度提升过程, 进一步�
 以上提到的正则项, 每个叶子的样本数下限以及随机采样等都可以在以上的开源版本中进行选择和设定.
 ```
 
+- 分类结果混淆矩阵
+
+```
+真实情况      预测结果
+        正例        反例
+正例    TP (真正例)  FN (假反例)
+
+反例    FP (假正例)  TN (真反例)
+```
+
+- 查准率 `P` 与查全率 `R` 分别定义为
+  - $$ P = \frac{TP}{TP + FP} $$
+  - $$ R = \frac{TP}{TP + FN} $$
+
 ------------------
 
 - https://www.coursera.org/specializations/machine-learning-introduction
