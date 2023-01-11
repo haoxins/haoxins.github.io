@@ -475,7 +475,7 @@ $$
   $$ π^{*} $$,
   最大化下述折扣奖励:
   - $$
-    J^{*} = \overset{max}{\pi} \mathbb{E} \{
+    J^{*} = \underset{\pi}{max} \mathbb{E} \{
     \sum_{t = 0}^{\infty} \gamma^{t} r(s(t), a(t)) \mid s(0), π \}
     $$
 
