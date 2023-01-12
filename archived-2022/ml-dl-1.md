@@ -114,9 +114,9 @@ date: 2022-08-02
     对应着特征值
     $$ \{ \lambda_{1}, ..., \lambda_{n} \} ^{\top} $$.
   - 我们将特征向量连接成一个矩阵, 使得每一列是一个特征向量:
-    $$ \mathbf{V} = \[ \mathbf{v}^{(1)}, ..., \mathbf{v}^{(n)} \] $$.
+    $$ \mathbf{V} = \left [ \mathbf{v}^{(1)}, ..., \mathbf{v}^{(n)} \right ] $$.
   - 类似地, 我们也可以将特征值连接成一个向量
-    $$ \lambda = \[ \lambda_{1}, ..., \lambda_{n} \] ^{\top} $$.
+    $$ \lambda = \left [ \lambda_{1}, ..., \lambda_{n} \right ] ^{\top} $$.
   - 因此 `A` 的特征分解可以记作
     $$ \mathbf{A} = \mathbf{V} diag(\lambda) \mathbf{V}^{-1} $$
 
