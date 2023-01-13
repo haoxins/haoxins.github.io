@@ -1481,7 +1481,7 @@ where
   M: Mapper + Serialize,
   R: Reducer + Serialize,
 {
-  !unimplemented!()
+  unimplemented!()
 }
 ```
 
@@ -1499,7 +1499,7 @@ fn nearest<'t, 'c, P>(target: &'t P, candidates: &'c [P]) -> &'c P
 where
   P: MeasureDistance,
 {
-  !unimplemented!()
+  unimplemented!()
 }
 ```
 
