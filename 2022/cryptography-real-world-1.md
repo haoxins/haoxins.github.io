@@ -1255,7 +1255,7 @@ provides should be enough.
     in rare scenarios, surprise protocol designers.
   - It is good to keep this in mind.
 
-* The extended output functions (XOFs)
+* The extended output functions (`XOFs`)
   (SHAKE and cSHAKE) can be used as a KDF
   as well! __Remember__, a XOF
   - Does not expect a uniformly random input
@@ -1283,13 +1283,13 @@ provides should be enough.
   - Here, a secret can be anything you want:
   - a symmetric key,
   - a signing private key, and so on.
-* Given a key and a number of shares n, the
+* Given a key and a number of shares `n`, the
   **Shamir's Secret Sharing** scheme creates `n`
   partial keys of the same size
   as the original key.
 * The **Shamir's Secret Sharing** scheme used to
-  split a secret in n partial keys requires all
-  of the n partial keys to reconstruct
+  split a secret in `n` partial keys requires all
+  of the `n` partial keys to reconstruct
   the original key.
 * The idea behind the **Shamir's Secret Sharing**
   scheme is to see a polynomial defining a curve
@@ -1336,10 +1336,9 @@ provides should be enough.
     associated private key in the clear during the
     process (unlike SSS, there is no dealer).
   - If participants want to sign a message, they can
-    then collaboratively create a signature using
-    each participant's private shares, which can be
-    verified using the public key they previously
-    created.
-  - __Again__, the private key never exists
+    then collaboratively create a signature using each
+    participant's private shares, which can be verified
+    using the public key they previously created.
+  - __Again__, the private key __never__ exists
     physically, preventing the single point of
     failure problem SSS has.
