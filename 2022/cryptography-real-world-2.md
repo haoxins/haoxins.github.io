@@ -29,6 +29,8 @@ date: 2021-10-15
   - This phase uses an authenticated encryption algorithm
     and the set of keys produced at the end of the handshake.
 
+---
+
 * The handshake itself has four aspects:
   - **Negotiation** TLS is highly configurable.
     Both a client and a server can be configured to
@@ -70,7 +72,7 @@ date: 2021-10-15
   could be relevant for the rest of the
   handshake or for the application. The suite of
   cryptographic algorithms include
-  - One or more key exchange algorithms (RFC 7919)
+  - One or more key exchange algorithms (`RFC 7919`)
   - Two (for different parts of the handshake)
     or more digital signature algorithms
   - One or more hash functions to be used
@@ -81,7 +83,9 @@ date: 2021-10-15
   cryptographic algorithm, cherry-picked from the
   client's selection.
 
-* **TLS 1.3** optimizes this flow by attempting
+---
+
+* TLS `1.3` optimizes this flow by attempting
   to do __both__ the `negotiation` and the
   `key exchange` at the same time:
   - the client speculatively chooses a key exchange algorithm
@@ -107,112 +111,118 @@ date: 2021-10-15
     info parameters to derive
     the encryption keys.
 
-* A TLS **1.3** handshake is actually split
-  into three different stages
+---
+
+* A TLS `1.3` handshake is actually split
+  into __three__ different stages
   - **Key exchange** This phase contains the
     `ClientHello` and `ServerHello` messages
     that provide some negotiation and perform
-    the key exchange. All messages including
-    handshake messages *after* this phase
-    are *encrypted*.
+    the key exchange.
+  - All messages including handshake messages
+    after this phase are encrypted.
   - **Server parameters** Messages in this phase
     contain additional negotiation data from
-    the server. This is negotiation data that
-    does not have to be contained in the first
-    message of the server and that could
-    benefit from being encrypted.
+    the server.
+  - This is negotiation data that does not have to
+    be contained in the first message of the server
+    and that could benefit from being encrypted.
   - **Authentication** This phase includes
     authentication information from both
     the server and the client.
 
+---
+
 * Client authentication is often delegated to
   the application layer for the web, most
   often via a form asking you for your
-  credentials. That being said, client
-  authentication can also happen in TLS if
-  requested by the server during the
-  *server parameters* phase. When both sides
-  of the connection are authenticated, we talk
-  about mutually-authenticated TLS
-  (sometimes abbreviated as **mTLS**).
+  credentials.
+  - That being said, client authentication can also
+    happen in TLS if requested by the server during
+    the server parameters phase.
+  - When both sides of the connection are authenticated,
+    we talk about mutually-authenticated TLS
+    (sometimes abbreviated as **mTLS**).
 * Client authentication is done the same way
-  as server authentication. This can happen at
-  any point after the authentication
-  of the server (for example, during the
-  handshake or in the post-handshake phase).
+  as server authentication.
+  - This can happen at any point after the
+    authentication of the server
+  - (for example, during the handshake or
+    in the post-handshake phase).
+
+---
 
 * There are two sides to the web PKI.
-  - First, browsers must trust a set of
+  - __First__, browsers must trust a set of
     root public keys that we call
-    *certificate authorities* (**CAs**).
-    Usually, browsers will either use a
+    certificate authorities (**CAs**).
+  - Usually, browsers will either use a
     hardcoded set of trusted public keys
     or will rely on the operating system
     to provide them.
-  - Second, websites that want to use HTTPS
+  - __Second__, websites that want to use HTTPS
     must have a way to obtain a certification
     (a signature of their signing public key)
-    from these CAs. In order to do this,
-    a website owner must prove to a CA
-    that they own a specific domain.
+    from these CAs.
+  - In order to do this, a website owner must
+    prove to a CA that they own a specific domain.
 
 * More specifically, CAs do not actually
   sign public keys, but instead they sign
-  **certificates** (more on this later).
-* A **certificate** *contains* the
-  *long-term public key*, along with some
-  *additional important metadata* like
-  the web page's domain name.
+  certificates (more on this later).
+  - A certificate contains the long-term public key,
+    along with some additional important metadata
+    like the web page's domain name.
 
 * The signature in the `CertificateVerify`
   message proves to the client what the
-  server has so far seen. Without this
-  signature, a MITM attacker could intercept
-  the server's handshake messages and
-  replace the ephemeral public key of the
-  server contained in the ServerHello message,
-  allowing the attacker to successfully
-  impersonate the server.
+  server has so far seen.
+  - Without this signature, a MITM attacker could
+    intercept the server's handshake messages and
+    replace the ephemeral public key of the
+    server contained in the ServerHello message,
+    allowing the attacker to successfully
+    impersonate the server.
 * The authentication part of a handshake
   starts with the server sending a
   certificate chain to the client.
-  The certificate chain starts with the
-  leaf certificate (the certificate
-  containing the website's public key
-  and additional metadata like
-  the domain name) and ends with a root
-  certificate that is trusted by the browser.
-  Each certificate contains a signature
-  from the certificate above it in the chain.
+  - The certificate chain starts with the leaf certificate
+    (the certificate containing the website's public key
+    and additional metadata like the domain name)
+    and ends with a root certificate that is
+    trusted by the browser.
+  - Each certificate contains a signature from the
+    certificate above it in the chain.
 
-* Finally, in order to officially end the
-  handshake, both sides of the connection must
-  send a `Finished` message as part of the
-  authentication phase.
+* Finally, in order to officially end the handshake,
+  both sides of the connection must send a `Finished`
+  message as part of the authentication phase.
 * A Finished message contains an authentication
   tag produced by HMAC, instantiated with the
   negotiated hash function for the session.
-  This allows both the client and the server
-  to tell the other side,
-  "These are all the messages I have sent
-  and received in order during this handshake."
-  If the handshake is intercepted and tampered
-  with by MITM attackers, this integrity check
-  allows the participants to detect and
-  abort the connection.
+  - This allows both the client and the server
+    to tell the other side,
+    "These are all the messages I have sent
+    and received in order during this handshake."
+  - If the handshake is intercepted and tampered
+    with by MITM attackers, this integrity check
+    allows the participants to detect and
+    abort the connection.
 
-* While certificates are optional in TLS 1.3
+---
+
+* While certificates are __optional__ in TLS `1.3`
   (you can always use plain keys),
   many applications and protocols,
   not just the web, make heavy use of them
   in order to certify additional metadata.
-  Specifically, the `X.509` certificate
-  standard **version 3** is used.
-* The `X.509` standard uses a description
-  language called **Abstract Syntax Notation One**
+  - Specifically, the `X.509` certificate
+    standard version `3` is used.
+* The `X.509` standard uses a description language
+  called **Abstract Syntax Notation One**
   to specify information contained in a certificate.
-  A data structure described in **ASN.1**
-  looks like this:
+  - A data structure described in `ASN.1`
+    looks like this:
 
 ```
 Certificate  ::=  SEQUENCE  {
@@ -231,29 +241,33 @@ Certificate  ::=  SEQUENCE  {
   certificates into bytes.
 * **DER** only encodes information as
   "here is an integer" or "this is a bytearray."
-  Field names described in `ASN.1`
-  (like `tbsCertificate`) are lost after encoding.
+  - Field names described in `ASN.1`
+    (like `tbsCertificate`) are lost after encoding.
 * Decoding **DER** without the knowledge of the
   original `ASN.1` description of what each
   field truly means is thus pointless.
-* **DER** encoding is a *difficult* protocol
-  *to parse correctly*, and the complexity of
+* **DER** encoding is a difficult protocol
+  to parse correctly, and the complexity of
   `X.509` certificates makes for many mistakes
-  to be potentially devastating. For this reason,
-  I **don't recommend** any modern application
-  **to use** `X.509` certificates unless it has to.
+  to be potentially devastating.
+  - For this reason, I **don't recommend** any
+    modern application **to use** `X.509`
+    certificates unless it has to.
 
-* In `TLS 1.3`, a **PSK** handshake works by having
+---
+
+* In TLS `1.3`, a **PSK** handshake works by having
   the client advertise in its `ClientHello` message
   that it supports a list of **PSK** identifiers.
-  If the server recognizes one of the **PSK** IDs,
-  it can say so in its response
-  (the `ServerHello` message), and both can then
-  avoid doing a key exchange (if they want to).
-  By doing this, the *authentication phase* is
-  *skipped*, making the `Finished` message at
-  the end of the handshake important
-  to prevent **MITM** attacks.
+  - If the server recognizes one of the **PSK** IDs,
+    it can say so in its response
+    (the `ServerHello` message),
+    and both can then avoid doing a key exchange
+    (if they want to).
+  - By doing this, the authentication phase is
+    skipped, making the `Finished` message at
+    the end of the handshake important
+    to prevent **MITM** attacks.
 
 * Both the `ClientHello` and `ServerHello`
   messages have a random field, which is
