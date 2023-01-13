@@ -1219,29 +1219,31 @@ provides should be enough.
     as `input` and `is`, thus, usually ran after
     HKDF-Extract.
 
-* HKDF-Extract is the first function specified by HKDF.
-  It takes an optional salt that is used as the key in
-  HMAC and the input secret that might be nonuniformly
-  random. Using different salts with the same input
-  secret produces different outputs.
+* HKDF-Extract is the __first__ function specified by HKDF.
+  It takes an optional salt that is used as the key
+  in HMAC and the input secret that might be
+  nonuniformly random.
+  - Using different salts with the same input
+    secret produces different outputs.
 
-* HKDF-Expand is the second function specified
+* HKDF-Expand is the __second__ function specified
   by HKDF. It takes an optional `info` byte string
-  and an `input` secret that needs to be uniformly
-  random. Using different `info` byte strings
-  with the same `input` secret produces different
-  outputs. The length of the output is controlled
-  by a `length` argument.
+  and an `input` secret that needs to be
+  uniformly random.
+  - Using different `info` byte strings with the
+    same `input` secret produces different outputs.
+  - The length of the output is controlled
+    by a `length` argument.
 
 * HKDF does not expect the `salt` to be a secret;
   it can be known to everyone, including adversaries.
-  Instead of a hash function, HKDF-Extract uses a MAC
-  (specifically HMAC), which coincidentally has an
-  interface that accepts two arguments.
+  - Instead of a hash function, HKDF-Extract uses a MAC
+    (specifically HMAC), which coincidentally has an
+    interface that accepts two arguments.
 
 * HKDF is limited by the size of the hash function
-  you use; more precisely, if you use SHA-512
-  (which produces outputs of 512 bits) with HKDF,
+  you use; more precisely, if you use `SHA-512`
+  (which produces outputs of `512` bits) with HKDF,
   you are limited to `512 × 255` bits = `16,320` bytes
   of output for a given key and an info byte string.
 
@@ -1249,13 +1251,13 @@ provides should be enough.
   the same arguments, except for the output length,
   produces the same output truncated to the different
   length requested.
-* This property is called **related outputs** and can,
-  in rare scenarios, surprise protocol designers.
-  It is good to keep this in mind.
+  - This property is called **related outputs** and can,
+    in rare scenarios, surprise protocol designers.
+  - It is good to keep this in mind.
 
-* The *extended output functions* (XOFs)
+* The extended output functions (XOFs)
   (SHAKE and cSHAKE) can be used as a KDF
-  as well! Remember, a XOF
+  as well! __Remember__, a XOF
   - Does not expect a uniformly random input
   - Can produce a practically infinitely
     large uniformly random output
@@ -1265,21 +1267,22 @@ provides should be enough.
   - **Key rotation**: By associating an expiration date
     to a key (usually a public key) and by replacing
     your key with a new key periodically, you can "heal"
-    from an eventual compromise. The shorter the
-    expiration date and rotation frequency, the faster
-    you can replace a key that might be
+    from an eventual compromise.
+  - The shorter the expiration date and rotation frequency,
+    the faster you can replace a key that might be
     known to an attacker.
   - **Key revocation**: Key rotation is not always
     enough, and you might want to cancel a key
     as soon as you hear it has been compromised.
-    For this reason, some systems allow you to ask
+  - For this reason, some systems allow you to ask
     if a key has been revoked before making use of it.
 
 * **Secret splitting** allows you to break a secret
   into multiple parts that can be shared among
-  a set of participants. Here, a secret can be
-  anything you want: a symmetric key, a signing
-  private key, and so on.
+  a set of participants.
+  - Here, a secret can be anything you want:
+  - a symmetric key,
+  - a signing private key, and so on.
 * Given a key and a number of shares n, the
   **Shamir's Secret Sharing** scheme creates `n`
   partial keys of the same size
@@ -1291,15 +1294,17 @@ provides should be enough.
 * The idea behind the **Shamir's Secret Sharing**
   scheme is to see a polynomial defining a curve
   as the secret and random points on the curve as
-  partial keys. To recover a polynomial of degree
-  `n` that defines a curve, one needs to know
-  `n + 1` points on the curve. For example,
-  $$ f(x) = 3x + 5 $$
-  is of degree `1`, so you need any two points
-  `(x, f(x))` to recover the polynomial, and
-  $$ f(x) = 5x^2 + 2x + 3 $$
-  is of degree `2`, so you need any three points
-  to recover the polynomial.
+  partial keys.
+  - To recover a polynomial of degree
+    `n` that defines a curve, one needs to know
+    `n + 1` points on the curve.
+  - For example,
+    $$ f(x) = 3x + 5 $$
+    is of degree `1`, so you need any two points
+    `(x, f(x))` to recover the polynomial, and
+    $$ f(x) = 5x^2 + 2x + 3 $$
+    is of degree `2`, so you need any three points
+    to recover the polynomial.
 
 * To avoid this single point of failure issue, there
   exist several cryptographic techniques that can be
@@ -1310,30 +1315,31 @@ provides should be enough.
     Alice, we can, instead, change the protocol to
     accept (on the same transaction) a number `n`
     of signatures from `n` different public keys,
-    including Alice's. An attacker would have to
-    compromise all n signatures in order to forge
-    a valid transaction! Such systems are called
-    **multi-signature** (often shortened as
-    **multi-sig**) and are widely adopted in the
-    cryptocurrency space.
+    including Alice's.
+  - An attacker would have to compromise all `n`
+    signatures in order to forge a valid transaction!
+  - Such systems are called **multi-signature**
+    (often shortened as **multi-sig**) and are widely
+    adopted in the cryptocurrency space.
   - Some signature schemes (like the **BLS**
     signature scheme) can compress several
-    signatures down to a single one. This is called
-    **signature aggregation**. Some *multi-signature*
-    schemes go even further in the compression
-    by allowing the `n` public keys to be aggregated
-    into a single public key. This technique is
-    called *distributed key generation* (*DKG*) and
-    is part of a field of cryptography called
+    signatures down to a single one.
+  - This is called **signature aggregation**.
+  - Some multi-signature schemes go even further
+    in the compression by allowing the `n` public keys
+    to be aggregated into a single public key.
+  - This technique is called distributed key generation (`DKG`)
+    and is part of a field of cryptography called
     **secure multi-party computation**.
   - DKG lets `n` participants collaboratively
     compute a public key without ever having the
     associated private key in the clear during the
     process (unlike SSS, there is no dealer).
-    If participants want to sign a message, they can
+  - If participants want to sign a message, they can
     then collaboratively create a signature using
     each participant's private shares, which can be
     verified using the public key they previously
-    created. Again, the private key never exists
+    created.
+  - __Again__, the private key never exists
     physically, preventing the single point of
     failure problem SSS has.
