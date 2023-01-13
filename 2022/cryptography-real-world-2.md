@@ -279,59 +279,61 @@ Certificate  ::=  SEQUENCE  {
   resumption. Session resumption is about
   reusing secrets created from a
   previous session or connection.
-* TLS 1.3 offers a way to generate a PSK
-  after a handshake is successfully
-  performed, which can be used in subsequent
+* TLS `1.3` offers a way to generate a PSK
+  after a handshake is successfully performed,
+  which can be used in subsequent
   connections to avoid having to
   redo a full handshake.
 * If the server wants to offer this feature,
-  it can send a *New Session Ticket* message
-  at any time during the *post-handshake* phase.
+  it can send a `New Session Ticket` message
+  at any time during the post-handshake phase.
 
-* Starting with TLS 1.3, if a server decides
+---
+
+* Starting with TLS `1.3`, if a server decides
   to allow it, clients have the possibility
   to send encrypted data as part of their
   first series of messages, right after the
-  `ClientHello` message. This means that
-  browsers do not necessarily have to wait
-  until the end of the handshake to start
-  sending application data to the server.
-  This mechanism is called *early data* or
-  **0-RTT** (for *zero round trip time*).
-  It can only be used with the combination
-  of a PSK as it allows derivation of
-  symmetric keys during the `ClientHello` message.
+  `ClientHello` message.
+  - This means that browsers do not necessarily
+    have to wait until the end of the handshake
+    to start sending application data to the server.
+  - This mechanism is called `early data` or
+    **0-RTT** (for `zero round trip time`).
+  - It can only be used with the combination
+    of a PSK as it allows derivation of
+    symmetric keys during the `ClientHello` message.
 * This feature was quite controversial during
-  the development of the TLS 1.3 standard
+  the development of the TLS `1.3` standard
   because a passive attacker can replay an
   observed `ClientHello` followed by the
-  encrypted 0-RTT data. This is why 0-RTT
-  must be used only with application data
-  that can be replayed safely.
+  encrypted `0-RTT` data.
+  - This is why `0-RTT` must be used only with
+    application data that can be replayed safely.
 
-* *Certificate revocation* As the name
+---
+
+* `Certificate revocation` As the name
   indicates, this allows a CA to revoke
   a certificate and warn browsers about it.
-* *Certificate monitoring* This is a
+* `Certificate monitoring` This is a
   relatively new system that forces CAs
   to publicly log every certificate signed.
 
-* **Secure Shell (SSH)**
-* **Wi-Fi Protected Access (WPA)**
 * **IPSec**: One of the most popular
   virtual network protocols (**VPNs**) used
   to connect different private networks together.
-  It is mostly used by companies to link
-  different office networks. As its name
-  indicates, it acts at the IP layer and
-  is often found in routers, firewalls,
-  and other network appliances. Another
-  popular VPN is OpenVPN, which
-  makes direct use of TLS.
+  - It is mostly used by companies to link
+    different office networks.
+  - As its name indicates, it acts at the IP layer
+    and is often found in routers, firewalls,
+    and other network appliances.
+  - Another popular VPN is OpenVPN, which
+    makes direct use of TLS.
 
-* **the Noise protocol framework**.
-  - **Noise** is a much more modern
-    *alternative* to *TLS*.
+* the Noise protocol framework.
+  - Noise is a much more modern
+    alternative to TLS.
 
 * The **Noise protocol framework** removes
   the run-time complexity of TLS by avoiding
