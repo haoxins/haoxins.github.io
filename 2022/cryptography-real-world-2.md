@@ -467,71 +467,75 @@ Certificate  ::=  SEQUENCE  {
   - Displaying the concatenation of the two
     series of numbers to the user
 
+---
+
 * **X3DH**: the Signal protocol's handshake
 * Signal's key exchange, **X3DH**, combines three
   (or more) DH key exchanges into one.
-* The three different types of DH keys that Signal uses:
-  - *Identity keys* These are the long-term keys that
+* The __three__ different types of DH keys that Signal uses:
+  - `Identity keys` These are the long-term keys that
     represent the users. You can imagine that if
     Signal only used identity keys, then the scheme
     would be fairly similar to PGP, and there would
     be no forward secrecy.
-  - *One-time prekeys* In order to add forward
+  - `One-time prekeys` In order to add forward
     secrecy to the key exchange, even when the
     recipient of a new conversation is not online,
     Signal has users upload multiple single-use
-    public keys. They are simply ephemeral keys
-    that are uploaded in advance and are
-    deleted after being used.
-  - *Signed prekeys* We could stop here, but
+    public keys.
+  - They are simply ephemeral keys that are uploaded
+    in advance and are deleted after being used.
+  - `Signed prekeys` We could stop here, but
     there's one edge case missing. Because the
     one-time prekeys that a user uploads can,
     at some point, be depleted, users also have
     to upload a medium-term public key that
-    they sign: a signed prekey. This way, if no
-    more one-time prekeys are available on the
-    server under your username, someone can still
+    they sign: a signed prekey.
+  - This way, if no more one-time prekeys are available
+    on the server under your username, someone can still
     use your signed prekey to add forward secrecy
-    up to the last time you changed your
-    signed prekey. This also means that you have
-    to periodically rotate your signed prekey.
+    up to the last time you changed your signed prekey.
+  - This also means that you have to
+    periodically rotate your signed prekey.
 * Signal's flow starts with a user registering
   with a number of public keys. If Alice wants
   to talk to Bob, she first retrieves Bob's
   public keys (called a prekey bundle), then
   she performs an X3DH key exchange with these
   keys and creates an initial message using
-  the output of the key exchange. After receipt
-  of the message, Bob can perform the same on his
-  side to initialize and continue the conversation.
+  the output of the key exchange.
+  - After receipt of the message, Bob can perform the
+    same on his side to initialize and
+    continue the conversation.
 
 * https://signal.org/docs/specifications/x3dh/
 
-* **Double Ratchet**: Signal's *post-handshake* protocol
+* **Double Ratchet**: Signal's post-handshake protocol
 
 * https://signal.org/docs/
 
-* The state of end-to-end encryption
-
 * Signal has open sourced a lot of its code, but it
-  lacks documentation and can be hard to use correctly.
+  lacks documentation and can be __hard__ to use correctly.
 * On the other hand, you might have better luck using
   a decentralized open source solution like **Matrix**,
   which might prove easier to integrate with.
-  This is what the French government has done.
+  - This is what the French government has done.
+
+---
 
 * Other protocols, like **Matrix**, attempt to
   standardize federated protocols for end-to-end
-  encrypted messaging. Federated protocols are
-  open protocols that anyone can interoperate
-  with (as opposed to centralized protocols
-  that are limited to a single application).
+  encrypted messaging.
+  - Federated protocols are open protocols that
+    anyone can interoperate with
+    (as opposed to centralized protocols that
+    are limited to a single application).
 
 ## User authentication
 
 * You should think of **authentication** as
   a term used in cryptography to convey
-  *two different concepts* depending
+  two __different__ concepts depending
   on the context:
   - **Message/payload authentication** You're
     proving that a message is genuine and
@@ -542,16 +546,18 @@ Certificate  ::=  SEQUENCE  {
 
 * **Authentication** is about proving that
   something is what it is supposed to be,
-  and that *something* can be *a person*,
-  *a message*, or *something else*.
+  and that something can be a person,
+  a message, or something else.
+
+---
 
 * *User authentication*, or how machines
   authenticate humans
-* *User-aided authentication*, or how humans
+* `User-aided authentication`, or how humans
   can help machines authenticate one another
 
-* In this book, I talk about *origin authentication*
-  in three types of scenarios.
+* In this book, I talk about origin authentication
+  in __three__ types of scenarios.
   - User authentication happens when a
     device authenticates a human being.
   - Machine authentication happens when a
@@ -562,37 +568,36 @@ Certificate  ::=  SEQUENCE  {
 
 * Today, two protocols are the main competitors
   when it comes to setting up SSO:
-  - *Security Assertion Markup Language 2.0 (SAML)*
+  - Security Assertion Markup Language 2.0 (SAML)
     A protocol using the
-    *Extensible Markup Language (XML)* encoding.
-  - *OpenID Connect (OIDC)* An extension to the
-    *OAuth 2.0 (RFC 6749)* authorization protocol
-    using the JavaScript Object Notation
-    (JSON) encoding.
+    Extensible Markup Language (XML) encoding.
+  - OpenID Connect (OIDC) An extension to the
+    OAuth 2.0 (`RFC 6749`) authorization protocol
+    using the JavaScript Object Notation (JSON) encoding.
   - https://openid.net
 
 * Cryptographic protocols called asymmetric
   (or augmented) password-authenticated key exchanges
   (PAKEs) attempt to provide user authentication
   without having users ever communicate their
-  passwords directly to the server. This contrasts
-  with symmetric or balanced PAKEs protocols,
-  where both sides know the password.
+  passwords directly to the server.
+  - This contrasts with symmetric or balanced PAKEs protocols,
+    where both sides know the password.
 
 * In the summer of 2019, the Crypto Forum Research
   Group (CFRG) of the IETF started a PAKE selection
   process with the goal to pick one algorithm to
   standardize for each category of PAKEs:
-  *symmetric/balanced* and *asymmetric/augmented*.
+  `symmetric/balanced` and `asymmetric/augmented`.
 * In March 2020, the CFRG announced the end of the
   PAKE selection process, selecting
-  - **CPace** The recommended *symmetric/balanced*
+  - **CPace** The recommended `symmetric/balanced`
     PAKE.
-  - **OPAQUE** The recommended *asymmetric/augmented*
+  - **OPAQUE** The recommended `asymmetric/augmented`
     PAKE.
 
-* *oblivious pseudorandom function* (**OPRF**).
-  - The term *oblivious* in cryptography generally
+* `oblivious pseudorandom function` (**OPRF**).
+  - The term oblivious in cryptography generally
     refers to protocols where one party computes a
     cryptographic operation without knowing the
     input provided by another party.
