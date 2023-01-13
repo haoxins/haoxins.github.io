@@ -331,72 +331,70 @@ Certificate  ::=  SEQUENCE  {
   - Another popular VPN is OpenVPN, which
     makes direct use of TLS.
 
-* the Noise protocol framework.
-  - Noise is a much more modern
+* the __Noise__ protocol framework.
+  - __Noise__ is a much more modern
     alternative to TLS.
 
-* The **Noise protocol framework** removes
+* The Noise protocol framework removes
   the run-time complexity of TLS by avoiding
-  all negotiation in the handshake. A client
-  and a server running Noise follow a
-  linear protocol that does not branch.
-* Contrast this to TLS, which can take many
-  different paths, depending on the information
-  contained in the different handshake messages.
+  all negotiation in the handshake.
+  - A client and a server running Noise follow
+    a linear protocol that does not branch.
+  - Contrast this to TLS, which can take many
+    different paths, depending on the information
+    contained in the different handshake messages.
 * What Noise does is that it pushes all the
   complexity to the design phase.
 
 * The Noise protocol framework offers different
-  *handshake patterns* that you can choose from.
-  Handshake patterns typically come with a name
-  that indicates what is going on.
-* For example, the `IK` handshake pattern
-  indicates that the client's public key is sent
-  as part of the handshake
-  (the first I stands for immediate), and that
-  the server's public key is known to the client
-  in advance (the `K` stands for known).
+  handshake patterns that you can choose from.
+  - Handshake patterns typically come with a name
+    that indicates what is going on.
+  - For example, the `IK` handshake pattern
+    indicates that the client's public key
+    is sent as part of the handshake
+    (the first I stands for immediate),
+    and that the server's public key is known to
+    the client in advance (the `K` stands for known).
 * Once a handshake pattern is chosen, applications
   making use of it will never attempt to perform
   any of the other possible handshake patterns.
-* As opposed to TLS, this makes Noise a simple
-  and linear protocol in practice.
+  - As opposed to TLS, this makes Noise a simple
+    and linear protocol in practice.
 
 * One particularity of Noise is that it
   continuously authenticates its handshake
-  transcript. To achieve this, both sides
-  maintain two variables: a **hash (h)** and
-  a **chaining key (ck)**. Each handshake
-  message sent or received is hashed with
-  the previous `h` value.
+  transcript.
+  - To achieve this, both sides maintain two variables:
+  - a **hash (h)** and a **chaining key (ck)**.
+  - Each handshake message sent or received is
+    hashed with the previous `h` value.
 * In the Noise protocol framework, each
   side of the connection keeps track of a
   digest `h` of all messages that have been
   sent and received during the handshake.
-  When a message is sent and encrypted with
-  an authenticated encryption with associated
-  data (AEAD) algorithm, the current `h` value
-  is used as associated data in order to
-  authenticate the handshake up to this point.
+  - When a message is sent and encrypted with
+    an authenticated encryption with associated
+    data (AEAD) algorithm, the current `h` value
+    is used as associated data in order to
+    authenticate the handshake up to this point.
 * At the end of each message pattern, a
   (potentially empty) payload is encrypted
   with an authenticated encryption with
-  associated data (AEAD) algorithm. When this
-  happens, the `h` value is authenticated by
-  the associated data field of the AEAD.
-  This allows Noise to continuously verify
-  that both sides of the connection are
-  seeing the exact same series of messages
-  and in the same order.
-* In addition, every time a DH key exchange
-  happens (several can happen during a handshake),
+  associated data (AEAD) algorithm.
+  - When this happens, the `h` value is authenticated
+    by the associated data field of the AEAD.
+  - This allows Noise to continuously verify
+    that both sides of the connection are
+    seeing the exact same series of messages
+    and in the same order.
+* In addition, every time a DH key exchange happens
+  (several can happen during a handshake),
   its output is fed along with the previous
   chaining key (ck) to HKDF, which derives a
   new chaining key and a new set of symmetric
   keys to use for authenticating and
   encrypting subsequent messages.
-
-* **TLS** and **Noise**
 
 ## End-to-end encryption
 
@@ -419,7 +417,7 @@ Certificate  ::=  SEQUENCE  {
   - All of the intended recipients' encrypted
     versions of the symmetric key are
     concatenated with the encrypted message.
-    The email body is replaced with this blob
+  - The email body is replaced with this blob
     of data and sent to all recipients.
   - To decrypt an email, a recipient uses their
     private key to decrypt the symmetric key,
@@ -427,31 +425,34 @@ Certificate  ::=  SEQUENCE  {
     using the decrypted symmetric key.
 
 * how do you obtain and how can you trust
-  other people's public keys? The answer is
-  that in **PGP**, **you build trust yourself**!
+  other people's public keys?
+  - The answer is that in **PGP**,
+    **you build trust yourself**!
 * The web of trust (WOT) is the concept that
   users can transitively trust other users
-  by relying on signatures. Alice trusts Bob
-  who trusts Charles. Alice can use Bob's
-  signature over Charles's identity and
-  public key to trust Charles as well.
+  by relying on signatures.
+  - Alice trusts Bob who trusts Charles.
+  - Alice can use Bob's signature over Charles's
+    identity and public key to trust Charles as well.
 
 * PGP did try another way to solve the issue
-  of *discovering public keys*:
-  **key registries**. The concept is pretty
-  simple: publish your PGP public key and
-  associated signatures from others that
-  attest to your identity on some public
-  list so that people can find it.
+  of discovering public keys: **key registries**.
+  - The concept is pretty simple:
+  - publish your PGP public key and
+    associated signatures from others that
+    attest to your identity on some public
+    list so that people can find it.
 * In practice, this doesn't work as anyone
   can publish a key and associated signature
   purportedly matching your email.
+
+---
 
 * more and more real-world cryptography
   applications are aiming at
   **replacing PGP** and solving its
   usability problems.
-* **If not PGP, then what?**
+* If not PGP, then what?
 * **Secure messaging**: A modern look at
   end-to-end encryption with **Signal**
 
