@@ -551,7 +551,7 @@ Certificate  ::=  SEQUENCE  {
 
 ---
 
-* *User authentication*, or how machines
+* `User authentication`, or how machines
   authenticate humans
 * `User-aided authentication`, or how humans
   can help machines authenticate one another
