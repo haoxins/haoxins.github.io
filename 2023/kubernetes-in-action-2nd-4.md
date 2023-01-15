@@ -1,7 +1,7 @@
 ---
-title: Kubernetes in Action (3/4) - 2nd Edition
-description: 少年不识愁滋味, 爱上层楼, 爱上层楼, 为赋新词强说愁.
-date: 2021-09-20
+title: Kubernetes in Action (4/4) - 2nd Edition
+description: 而今识得愁滋味, 欲说还休, 欲说还休, 却道天凉好个秋.
+date: 2023-01-16
 ---
 
 - [Kubernetes in Action, Second Edition](https://book.douban.com/subject/34986745/)
