@@ -21,7 +21,7 @@ date: 2022-07-31
     是满足
     $$ V^{T} V = I $$
     的 `n` 阶酉矩阵;
-  - $$ \Sigma \in \mathbb{R}^{m \times n}
+  - $$ \Sigma \in \mathbb{R}^{m \times n} $$
     是
     $$ m \times n $$
     的矩阵,
