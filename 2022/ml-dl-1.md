@@ -296,7 +296,9 @@ $$
 
 $$
 Var(f(x)) =
-\mathbb{E} \left [ (f(x) - \{E} \left[ f(x) \right ] )^{2} \right ]
+\mathbb{E} \left [ (
+  f(x) - \{E} \left [ f(x) \right ]
+)^{2} \right ]
 $$
 
 - 当方差很小时, `f(x)` 的值形成的簇比较接近它们的期望值.
