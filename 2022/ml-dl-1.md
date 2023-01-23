@@ -297,7 +297,7 @@ $$
 $$
 Var(f(x)) =
 \mathbb{E} \left [ (
-  f(x) - \{E} \left [ f(x) \right ]
+  f(x) - \mathbb{E} \left [ f(x) \right ]
 )^{2} \right ]
 $$
 
