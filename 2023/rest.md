@@ -16,6 +16,9 @@ date: 2023-01-08
 
 
 
+- [狂飙](https://movie.douban.com/subject/35465232/)
+  - 春节假期, 开始看的. 感觉不错~
+
 - [满江红](https://movie.douban.com/subject/35766491/)
   - 春节档, 还不错~
 

@@ -52,3 +52,8 @@ func Join(errs ...error) error {
   - [Engula](https://github.com/engula/engula)
   - A highly scalable, low latency key-value store
   - 关注原因: Redis 有点贵
+
+---
+
+- [sqld](https://github.com/libsql/sqld)
+  - 蛮适合用在测试环境的
