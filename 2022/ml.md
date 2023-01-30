@@ -101,7 +101,7 @@ $$
   优化问题
 
 $$
-\underset{min}{h \in \mathbb{H}} F(h) =
+\underset{h \in \mathbb{H}}{min} F(h) =
 Ω(\| h \|_{\mathbb{H}}) +
 \ell (h(x_1), h(x_2), ..., h(x_m))
 $$
