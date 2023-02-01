@@ -55,9 +55,9 @@ date: 2022-11-24
 
 $$
 \mathcal{P} (A) =
-  \left { ø,
-  \left { x \right },
-  \left { y \right },
+  \left { \varnothing,
+    \left { x \right },
+    \left { y \right },
   A \right }
 $$.
 
