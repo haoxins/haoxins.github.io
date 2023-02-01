@@ -54,12 +54,11 @@ date: 2022-11-24
   如果 `A = {x, y}`, 那么
 
 $$
-\mathcal{P} (A) = \left {
-  ø,
+\mathcal{P} (A) =
+  \left { ø,
   \left { x \right },
   \left { y \right },
-  A
-\right }
+  A \right }
 $$.
 
 > 注意,
