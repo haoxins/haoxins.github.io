@@ -12,6 +12,13 @@ date: 2023-01-08
 
 ---
 
+- [Generic associated types to be stable in Rust 1.65](https://blog.rust-lang.org/2022/10/28/gats-stabilization.html)
+
+```
+```
+
+---
+
 - Go `1.20` is released!
   - `1 Feb 2023`
 
@@ -39,10 +46,6 @@ func Join(errs ...error) error {
   - In almost all cases, `crypto/rand.Read` is more appropriate.
 
 > 前进一小步, 真的是一小步, 无聊~
-
----
-
-- [Generic associated types to be stable in Rust 1.65](https://blog.rust-lang.org/2022/10/28/gats-stabilization.html)
 
 ---
 
