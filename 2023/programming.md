@@ -12,7 +12,8 @@ date: 2023-01-08
 
 ---
 
-- Go `1.20`
+- Go `1.20` is released!
+  - `1 Feb 2023`
 
 ```go
 package errors
@@ -28,7 +29,16 @@ func Join(errs ...error) error {
 }
 ```
 
-> 前进一小步, 真的是一小步~
+- The `math/rand` package now automatically seeds
+  the global random number generator
+  (used by top-level functions like `Float64` and `Int`)
+  with a random value, and the top-level
+  `Seed` function has been __deprecated__.
+
+- The top-level `Read` function has been __deprecated__.
+  - In almost all cases, `crypto/rand.Read` is more appropriate.
+
+> 前进一小步, 真的是一小步, 无聊~
 
 ---
 
