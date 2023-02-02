@@ -55,10 +55,16 @@ date: 2022-11-24
 
 $$
 \mathcal{P} (A) =
-  \left { \varnothing,
-    \left { x \right },
-    \left { y \right },
-  A \right }
+  \left {
+    \varnothing,
+    \left {
+      x
+    \right },
+    \left {
+      y
+    \right },
+    A
+  \right }
 $$.
 
 > 注意,
