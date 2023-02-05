@@ -15,6 +15,9 @@ date: 2023-01-08
 
 ## 影视
 
+- [流浪地球2](https://movie.douban.com/subject/35267208/)
+  - 剧情一般
+  - 画面优于`流浪地球1`, 整体制作工艺已经蛮不错了~
 
 - [狂飙](https://movie.douban.com/subject/35465232/)
   - 春节假期, 开始看的. 感觉不错~
