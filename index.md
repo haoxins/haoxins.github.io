@@ -24,6 +24,8 @@
 - [黎曼猜想漫谈, 广义相对论专题选讲](2023/physics-2.md)
 - [费曼物理学讲义 卷三 (上)](2023/physics-feynman-lectures-3-1.md)
 - [费曼物理学讲义 卷三 (下)](2023/physics-feynman-lectures-3-2.md)
+- [泡利物理学讲义 1 电动力学](2023/physics-pauli-1.md)
+- [泡利物理学讲义 2 光学和电子论](2023/physics-pauli-2.md)
 - [张朝阳的物理课](2023/physics-zhang.md)
 - [Programming Rust](2023/programming-rust-2nd.md)
 - [码农碎碎念~](2023/programming.md)
