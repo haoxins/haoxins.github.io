@@ -19,6 +19,21 @@ date: 2023-01-08
 
 ---
 
+- [Enso](https://github.com/enso-org/enso)
+  - An award-winning interactive programming language
+    with dual visual and textual representations.
+  - 年底再看看~
+
+- ChatGPT 最近是热点话题, 预期无聊的讨论什么职位会被替代,
+  我更期待何时 AI 能帮助完成那些必定无法仅靠人力解决的事情.
+  - 比如: 编纂`数学史`;
+  - 再比如: 评审`数学证明`;
+  - 再比如: 全人类知识图谱.
+
+- [RustPython](https://github.com/RustPython/RustPython)
+  - A Python-3 (CPython >= `3.10`) Interpreter written in Rust.
+  - 有点意思, 哈哈哈~
+
 - Go `1.20` is released!
   - `1 Feb 2023`
 
