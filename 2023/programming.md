@@ -5,8 +5,8 @@ date: 2023-01-08
 ---
 
 - Rust 实用的小型库
-  - [Anyhow](https://github.com/dtolnay/anyhow)
-  - [derive(Error)](https://github.com/dtolnay/thiserror)
+  - [anyhow](https://github.com/dtolnay/anyhow)
+  - [thiserror](https://github.com/dtolnay/thiserror)
 - Rust math
   - [argmin](https://www.argmin-rs.org)
 

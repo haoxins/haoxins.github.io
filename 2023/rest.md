@@ -15,8 +15,6 @@ date: 2023-01-08
 
 ## 影视
 
-- [三体](https://movie.douban.com/subject/26647087/)
-
 
 - [显微镜下的大明之丝绢案](https://movie.douban.com/subject/35465011/)
   - 徽派建筑, 独具美感
