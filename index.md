@@ -5,7 +5,6 @@
 - [High-Dimensional Data Analysis with Low-Dimensional Models](2023/high-dim-data-low-dim-model.md)
 - [Kubernetes in Action (3/4) - 2nd Edition](2023/kubernetes-in-action-2nd-3.md)
 - [Kubernetes in Action (4/4) - 2nd Edition](2023/kubernetes-in-action-2nd-4.md)
-- [Math and Architectures of Deep Learning](2023/math-and-arch-of-dl.md)
 - [复分析 可视化方法 (上)](2023/math-complex-analysis-1.md)
 - [复分析 可视化方法 (下)](2023/math-complex-analysis-2.md)
 - [泛函分析导论 (上)](2023/math-functional-analysis-1.md)
