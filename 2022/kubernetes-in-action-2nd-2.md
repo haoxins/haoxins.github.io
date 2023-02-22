@@ -945,3 +945,60 @@ spec:
   jobTemplate:
     ...
 ```
+
+- In the CronJob's spec, you can use the fields
+  `successfulJobsHistoryLimit` and `failedJobsHistoryLimit`
+  to specify how many successful and failed Jobs to keep.
+  - By default, CronJobs keeps `3` successful and `1` failed Job.
+  - The Pods associated with each kept Job are also preserved,
+    so you can view their logs.
+
+```yaml
+apiVersion: batch/v1
+kind: CronJob
+spec:
+  schedule: "* * * * *"
+  startingDeadlineSeconds: 30
+  ...
+```
+
+- If the CronJob controller can't create the Job within
+  `30` seconds of the scheduled time, it won't create it.
+  - Instead, a `MissSchedule` event will be generated to
+    inform you why the Job wasn't created.
+- If the `startingDeadlineSeconds` field isn't set and the
+  CronJob controller is offline for an extended period of time,
+  undesirable behavior may occur when the
+  controller comes back online.
+  - This is because the controller will immediately create all
+    the Jobs that should have been created while it was offline.
+- However, this will only happen if the number of missing jobs
+  is less than `100`. If the controller detects that more than
+  `100` Jobs were missed, it doesn't create any Jobs.
+  - Instead, it generates a `TooManyMissedTimes` event.
+  - By setting the start deadline, you can
+    prevent this from happening.
+
+---
+
+- By default, the CronJob controller creates new Jobs
+  regardless of how many previous Jobs are still active.
+  - However, you can change this behavior by setting the
+    `concurrencyPolicy` in the CronJob spec.
+- The following are the three supported concurrency policies.
+  - `Allow`
+  - Multiple Jobs are allowed to run at the same time.
+  - This is the __default__ setting.
+  - `Forbid`
+  - Concurrent runs are prohibited.
+  - If the previous run is still active when a new run
+    is to be scheduled, the CronJob controller records a
+    `JobAlreadyActive` event and skips creating a new Job.
+  - `Replace`
+  - The active Job is canceled and replaced by a new one.
+  - The CronJob controller cancels the active
+    Job by deleting the Job object.
+  - The Job controller then deletes the Pods,
+    but they're allowed to terminate gracefully.
+  - This means that two Jobs are still running at the
+    same time, but one of them is being terminated.
