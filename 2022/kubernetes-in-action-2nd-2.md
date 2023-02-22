@@ -758,3 +758,190 @@ spec:
     man-in-the-middle attacks.
 
 ## Running finite workloads with Jobs and CronJobs
+
+> Unlike Deployments and other resources that contain
+  a Pod template, you can't modify the template in a
+  Job object after creating the object.
+
+- In a Job's pod template, you must explicitly set the
+  restart policy to either `OnFailure` or `Never`.
+
+---
+
+- By default, you must delete Job objects manually.
+  However, you can flag the Job for automatic deletion
+  by setting the `ttlSecondsAfterFinished`
+  field in the Job's spec.
+  - As the name implies, this field specifies how long the
+    Job and its Pods are kept after the Job is finished.
+  - If you set the `ttlSecondsAfterFinished` field in a Job,
+    the Job and its pods are deleted whether the
+    Job completes successfully or not.
+
+```yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: generate-responses
+  labels:
+    app: quiz
+spec:
+  completions: 5
+  parallelism: 2
+  template:
+    metadata:
+      labels:
+        app: quiz
+    spec:
+      restartPolicy: OnFailure
+    ...
+```
+
+- The `completions` field specifies the number of
+  Pods that must be successfully completed
+  for this Job to be complete.
+- The `parallelism` field specifies how many of
+  these Pods may run in parallel.
+- If you set `parallelism` higher than `completions`,
+  the Job controller creates only as many Pods as
+  you specified in the `completions` field.
+- If `parallelism` is lower than `completions`, the
+  Job controller runs at most `parallelism` Pods in
+  parallel but creates additional Pods
+  when those first Pods complete.
+
+---
+
+- When a container in the Pod fails, the Pod's `restartPolicy`
+  determines whether the failure is handled at the Pod level
+  by the Kubelet or at the Job level by the Job controller.
+  - If the `restartPolicy` is `OnFailure`, the failed
+    container is restarted within the same Pod.
+  - However, if the policy is `Never`, the entire Pod is
+    marked as failed and the Job controller creates a new Pod.
+
+---
+
+- At the time of writing, two completion modes are supported:
+  - `Indexed` and `NonIndexed`.
+  - __NonIndexed__
+  - The Job is considered complete when the number of successfully
+    completed Pods created by this Job equals the value of the
+    `spec.completions` field in the Job manifest.
+  - All Pods are equal to each other.
+  - This is the __default__ mode.
+  - __Indexed__
+  - Each Pod is given a completion index (starting at `0`) to
+    distinguish the Pods from each other.
+  - The Job is considered complete when there is one
+    successfully completed Pod for each index.
+  - If a Pod with a particular index fails, the Job controller
+    creates a new Pod with the same index.
+  - The completion index assigned to each Pod is specified in
+    the Pod annotation `batch.kubernetes.io/job-completion-index`
+    and in the `JOB_COMPLETION_INDEX` environment variable
+    in the Pod's containers.
+
+```yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: aggregate-responses-2021
+  labels:
+    app: aggregate-responses
+    year: "2021"
+spec:
+  completionMode: Indexed
+  completions: 12
+  parallelism: 3
+  template:
+    metadata:
+      labels:
+        app: aggregate-responses
+        year: "2021"
+    spec:
+      restartPolicy: OnFailure
+      containers:
+      ...
+```
+
+- In addition to setting the environment variable, the Job
+  controller also sets the job completion index in the
+  `batch.kubernetes.io/job-completion-index`
+  annotation of the Pod.
+  - Instead of using the `JOB_COMPLETION_INDEX` environment
+    variable, you can pass the index via any environment
+    variable by using the Downward API.
+
+```yaml
+env:
+- name: MONTH
+  valueFrom:
+    fieldRef:
+      fieldPath: metadata.annotations['batch.kubernetes.io/job-completion-index']
+```
+
+---
+
+1. Headless Service for communication between Job Pods
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-service
+spec:
+  clusterIP: none
+  selector:
+    job-name: comm-demo
+  ports:
+  - name: http
+    port: 80
+```
+
+2. A Job manifest enabling pod-to-pod communication
+
+```yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: comm-demo
+spec:
+  completionMode: Indexed
+  completions: 2
+  parallelism: 2
+  template:
+    spec:
+      subdomain: demo-service
+      restartPolicy: Never
+      containers:
+      - name: comm-demo
+        image: busybox
+        command:
+        - sleep
+        - "600"
+```
+
+- So the second Pod can connect to the first Pod
+  using the address `comm-demo-0.demo-service`.
+
+---
+
+- A CronJob is just a thin wrapper around a Job.
+  There are only two parts in the CronJob spec:
+  - the `schedule` and the `jobTemplate`.
+- By default, the time zone isn't specified.
+  However, you can specify it using the `timeZone`
+  field in the spec section of the CronJob manifest.
+
+```yaml
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: runs-at-3am-cet
+spec:
+  schedule: "0 3 * * *"
+  timeZone: CET
+  jobTemplate:
+    ...
+```
