@@ -91,13 +91,11 @@ $$.
   - (2)
     $$ Pr(A \cup B) = Pr(A) + Pr(B) - Pr(A \cap B) $$.
   - 这个式子可以进一步推广, 例如, 如果有三个事件, 那么
-    $$
-    Pr(A_1 \cup A_2 \cup A_3) =
-    Pr(A_1) + Pr(A_2) + Pr(A_3)
-    - Pr(A_1 \cap A_2) - Pr(A_1 \cap A_3)- Pr(A_2 \cap A_3)
-    + Pr(A_1 \cap A_2 \cap A_3)
-    $$
-    这也被称为"`容斥原理`"
+  - $$ Pr(A_1 \cup A_2 \cup A_3) =
+       Pr(A_1) + Pr(A_2) + Pr(A_3) -
+       Pr(A_1 \cap A_2) - Pr(A_1 \cap A_3)- Pr(A_2 \cap A_3) +
+       Pr(A_1 \cap A_2 \cap A_3) $$.
+  - 这也被称为"`容斥原理`".
   - (3) 如果
     $$ A \subset B $$,
     那么
