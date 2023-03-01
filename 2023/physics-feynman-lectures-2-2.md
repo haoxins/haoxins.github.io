@@ -15,6 +15,42 @@ date: 2022-05-14
 但对于一个物理学家来说却是绝对必需的.
 ```
 
+- 下面列举一些来自矢量代数的等式, 并假定你们都已知道了.
+  - $$ \mathbf{A} · \mathbf{B} = 标量 = A_x B_x + A_y B_y + A_z B_z $$
+  - $$ \mathbf{A} \times \mathbf{B} = 矢量 $$
+  - $$ (\mathbf{A} \times \mathbf{B})_z = A_x B_y - A_y B_x $$
+  - $$ (\mathbf{A} \times \mathbf{B})_x = A_y B_z - A_z B_y $$
+  - $$ (\mathbf{A} \times \mathbf{B})_y = A_z B_x - A_x B_z $$
+  - $$ \mathbf{A} \times \mathbf{A} = 0 $$
+  - $$ \mathbf{A} · (\mathbf{A} \times \mathbf{B}) = 0 $$
+  - $$
+      \mathbf{A} · (\mathbf{B} \times \mathbf{C}) =
+      (\mathbf{A} \times \mathbf{B})·\mathbf{C}
+    $$
+  - $$
+      \mathbf{A} \times (\mathbf{B} \times \mathbf{C}) =
+      \mathbf{B} (\mathbf{A} · \mathbf{C}) -
+      \mathbf{C} (\mathbf{A} · \mathbf{B})
+    $$
+- 我们也要用到从微分学方面得来的下列两个等式:
+  - $$
+      Δf(x, y, z) =
+      \frac{\partial f}{\partial x} Δx +
+      \frac{\partial f}{\partial y} Δy +
+      \frac{\partial f}{\partial z} Δz
+    $$
+  - $$
+      \frac{\partial ^2 f}{\partial x \partial y} =
+      \frac{\partial ^2 f}{\partial y \partial x}
+    $$
+  - 当然, 第一个等式只有在
+    $$ Δx $$,
+    $$ △y $$,
+    $$ Δz $$
+    都趋于零的极限时才正确.
+
+---
+
 ## 矢量积分运算
 
 ## 矢势
