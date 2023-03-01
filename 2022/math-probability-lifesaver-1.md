@@ -256,14 +256,17 @@ $$.
   ), 于是
 
 $$
-\mid \cup_{i=1}^{n} A_i \mid =
-\sum_{i=1}^{n} \mid A_i \mid -
-\sum_{1 \le i < j \le n} \mid A_{ij} \mid +
-\sum_{1 \le i < j < k \le n} \mid A_{ijk} \mid -
-... +
-(-1)^{n-2} \sum_{1 \le l_1 < l_2 < ... < l_{n-1} \le n}
-\mid A_{l_1 l_2 l_{n-1}} \mid +
-(-1)^{n-1} \mid A_{1 2 ... n} \mid
+\begin{align}
+  \mid \cup_{i=1}^{n} A_i \mid
+  & = \sum_{i=1}^{n} \mid A_i \mid                   \\
+  & - \sum_{1 \le i < j \le n} \mid A_{ij} \mid      \\
+  & + \sum_{1 \le i < j < k \le n} \mid A_{ijk} \mid \\
+  & - ...                                            \\
+  & + (-1)^{n-2}
+      \sum_{1 \le l_1 < l_2 < ... < l_{n-1} \le n}
+      \mid A_{l_1 l_2 l_{n-1}} \mid                  \\
+  & + (-1)^{n-1} \mid A_{1 2 ... n} \mid             \\
+\end{align}
 $$.
 
 - 如果
