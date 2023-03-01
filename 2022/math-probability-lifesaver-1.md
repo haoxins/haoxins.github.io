@@ -288,10 +288,10 @@ $$.
 $$
 \begin{align}
   \mid \cup_{i=1}^{n} A_i \mid
-    & = n \mid A_1 \mid
-    & - \tbinom{n}{2} \mid A_{12} \mid
-    & + \tbinom{n}{3} \mid A_{123} \mid
-    & - ...
+    & = n \mid A_1 \mid                 \\
+    & - \tbinom{n}{2} \mid A_{12} \mid  \\
+    & + \tbinom{n}{3} \mid A_{123} \mid \\
+    & - ...                             \\
     & + (-1)^{n-1} \mid A_{1 2 ... n} \mid
 \end{align}
 $$.
