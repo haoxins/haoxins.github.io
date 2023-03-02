@@ -119,9 +119,9 @@ $$
   因而已被赋予一个专用名称, 即`拉普拉斯算符`.
   - $$
       拉普拉斯算符 = \nabla^2 =
-      \frac{\partial ^2 f}{\partial x^2} +
-      \frac{\partial ^2 f}{\partial y^2} +
-      \frac{\partial ^2 f}{\partial z^2}
+      \frac{\partial ^2}{\partial x^2} +
+      \frac{\partial ^2}{\partial y^2} +
+      \frac{\partial ^2}{\partial z^2}
     $$.
     (`2.54`)
 - 由于拉普拉斯算符是一个标量算符, 就可以用它来对一矢量进行运算,
