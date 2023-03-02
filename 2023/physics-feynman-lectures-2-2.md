@@ -45,7 +45,7 @@ date: 2022-05-14
     $$
   - 当然, 第一个等式只有在
     $$ Δx $$,
-    $$ △y $$,
+    $$ Δy $$,
     $$ Δz $$
     都趋于零的极限时才正确.
 
@@ -71,11 +71,11 @@ date: 2022-05-14
     等于
     $$ grad \psi $$.
 - 换句话说, 我们有`定理`: 如果
-  $$ \mathbf{▽} \times \mathbf{A} = 0 $$,
+  $$ \mathbf{\nabla} \times \mathbf{A} = 0 $$,
   就有一个
   $$ \psi $$
   使得
-  $$ \mathbf{A} = \mathbf{▽} \psi $$.
+  $$ \mathbf{A} = \mathbf{\nabla} \psi $$.
   (`2.50`)
 - 若
   $$ \mathbf{A} $$
@@ -91,21 +91,21 @@ date: 2022-05-14
     $$ \mathbf{C} $$
     的旋度.
   - 定理: 如果
-    $$ \mathbf{▽} · \mathbf{D} = 0 $$,
+    $$ \mathbf{\nabla} · \mathbf{D} = 0 $$,
     就有一个
     $$ \mathbf{C} $$
     使得
-    $$ \mathbf{D} = \mathbf{▽} \times \mathbf{C} $$.
+    $$ \mathbf{D} = \mathbf{\nabla} \times \mathbf{C} $$.
     (`2.51`)
 
 ---
 
 - 我们把
-  $$ ▽^2 $$
+  $$ \nabla^2 $$
   看成一个新的算符. 这是一个标量算符. 由于它经常出现在物理学中,
   因而已被赋予一个专用名称, 即`拉普拉斯算符`.
   - $$
-      拉普拉斯算符 = ▽^2 =
+      拉普拉斯算符 = \nabla^2 =
       \frac{\partial ^2 f}{\partial x^2} +
       \frac{\partial ^2 f}{\partial y^2} +
       \frac{\partial ^2 f}{\partial z^2}
@@ -113,33 +113,33 @@ date: 2022-05-14
     (`2.54`)
 - 由于拉普拉斯算符是一个标量算符, 就可以用它来对一矢量进行运算,
   这意味着对在直角坐标系的每一个分量进行同一种运算:
-  - $$ ▽^{2} \mathbf{h} = (▽^{2} h_x, ▽^{2} h_y, ▽^{2} h_z) $$.
+  - $$ \nabla^{2} \mathbf{h} = (\nabla^{2} h_x, \nabla^{2} h_y, \nabla^{2} h_z) $$.
 
 ---
 
 - (a)
-  $$ \mathbf{▽} · (\mathbf{▽} T)= ▽^2 T = 标量场 $$;
+  $$ \mathbf{\nabla} · (\mathbf{\nabla} T)= \nabla^2 T = 标量场 $$;
 - (b)
-  $$ \mathbf{▽} \times (\mathbf{▽} T) = 0 $$;
+  $$ \mathbf{\nabla} \times (\mathbf{\nabla} T) = 0 $$;
 - (c)
-  $$ \mathbf{▽} (\mathbf{▽} · \mathbf{h}) = 矢量场 $$;
+  $$ \mathbf{\nabla} (\mathbf{\nabla} · \mathbf{h}) = 矢量场 $$;
 - (d)
-  $$ \mathbf{▽} · (\mathbf{▽} \times \mathbf{h}) = 0 $$;
+  $$ \mathbf{\nabla} · (\mathbf{\nabla} \times \mathbf{h}) = 0 $$;
 - (e)
   $$
-    \mathbf{▽} \times (\mathbf{▽} \times \mathbf{h}) =
-    \mathbf{▽} (\mathbf{▽} · \mathbf{h}) -
-    ▽^2 \mathbf{h}
+    \mathbf{\nabla} \times (\mathbf{\nabla} \times \mathbf{h}) =
+    \mathbf{\nabla} (\mathbf{\nabla} · \mathbf{h}) -
+    \nabla^2 \mathbf{h}
   $$;
 - (f)
   $$
-    (\mathbf{▽} · \mathbf{▽}) \mathbf{h} =
-    \mathbf{▽}^2 \mathbf{h} =
+    (\mathbf{\nabla} · \mathbf{\nabla}) \mathbf{h} =
+    \mathbf{\nabla}^2 \mathbf{h} =
     矢量场
   $$.
 
 > 你可能会注意到, 我们从未试图发明一个新的矢量算符
-  $$ (\mathbf{▽} \times \mathbf{▽}) $$.
+  $$ (\mathbf{\nabla} \times \mathbf{\nabla}) $$.
   你看这是为什么?
 
 ## 矢量积分运算
