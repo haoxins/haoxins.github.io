@@ -16,7 +16,6 @@ date: 2022-05-14
 ```
 
 - 下面列举一些来自矢量代数的等式, 并假定你们都已知道了.
-  - $$ \mathbf{A} · \mathbf{B} = 标量 = A_x B_x + A_y B_y + A_z B_z $$
   - $$ \mathbf{A} \times \mathbf{B} = 矢量 $$
   - $$ (\mathbf{A} \times \mathbf{B})_z = A_x B_y - A_y B_x $$
   - $$ (\mathbf{A} \times \mathbf{B})_x = A_y B_z - A_z B_y $$
@@ -32,6 +31,7 @@ date: 2022-05-14
 $$
 \begin{cases}
 
+\mathbf{A} · \mathbf{B} = 标量 = A_x B_x + A_y B_y + A_z B_z
 
 
 
