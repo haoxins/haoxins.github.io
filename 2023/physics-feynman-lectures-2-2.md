@@ -23,15 +23,26 @@ date: 2022-05-14
   - $$ (\mathbf{A} \times \mathbf{B})_y = A_z B_x - A_x B_z $$
   - $$ \mathbf{A} \times \mathbf{A} = 0 $$
   - $$ \mathbf{A} · (\mathbf{A} \times \mathbf{B}) = 0 $$
-  - $$
       \mathbf{A} · (\mathbf{B} \times \mathbf{C}) =
       (\mathbf{A} \times \mathbf{B})·\mathbf{C}
-    $$
-  - $$
       \mathbf{A} \times (\mathbf{B} \times \mathbf{C}) =
       \mathbf{B} (\mathbf{A} · \mathbf{C}) -
       \mathbf{C} (\mathbf{A} · \mathbf{B})
-    $$
+
+$$
+\begin{cases}
+
+
+
+
+
+
+
+
+
+\end{cases}
+$$
+
 - 我们也要用到从微分学方面得来的下列两个等式:
   - $$
       Δf(x, y, z) =
