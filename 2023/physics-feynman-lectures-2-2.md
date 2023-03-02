@@ -73,37 +73,37 @@ $$
   - 于是, 有可能肯定
     $$ \mathbf{A} $$
     是某一个量的梯度, 这样它的旋度才必然等于零.
-  - 这个有趣的定理说明, 如果
-    $$ curl \mathbf{A} $$
-    等于零, 则
-    $$ \mathbf{A} $$
-    总是某种东西的梯度, 存在某一标量场
-    $$ \psi $$
-    使得
-    $$ \mathbf{A} $$
-    等于
-    $$ grad \psi $$.
-- 换句话说, 我们有`定理`: 如果
-  $$ \boldsymbol{\nabla} \times \mathbf{A} = 0 $$,
-  就有一个
+- 这个有趣的定理说明, 如果
+  $$ curl \mathbf{A} $$
+  等于零, 则
+  $$ \mathbf{A} $$
+  总是某种东西的梯度, 存在某一标量场
   $$ \psi $$
   使得
-  $$ \mathbf{A} = \boldsymbol{\nabla} \psi $$.
-  (`2.50`)
+  $$ \mathbf{A} $$
+  等于
+  $$ grad \psi $$.
+  - 换句话说, 我们有`定理`: 如果
+    $$ \boldsymbol{\nabla} \times \mathbf{A} = 0 $$,
+    就有一个
+    $$ \psi $$
+    使得
+    $$ \mathbf{A} = \boldsymbol{\nabla} \psi $$.
+    (`2.50`)
 - 若
   $$ \mathbf{A} $$
   的散度为零, 则有一个相似的定理.
   - 我们已看到, 某个矢量旋度的散度总是零.
-  - 如果你遇到
-    $$ div \mathbf{D} $$
-    为零的一个矢量场
-    $$ \mathbf{D} $$,
-    那你就可以得出结论,
-    $$ \mathbf{D} $$
-    是某个矢量场
-    $$ \mathbf{C} $$
-    的旋度.
-  - 定理: 如果
+- 如果你遇到
+  $$ div \mathbf{D} $$
+  为零的一个矢量场
+  $$ \mathbf{D} $$,
+  那你就可以得出结论,
+  $$ \mathbf{D} $$
+  是某个矢量场
+  $$ \mathbf{C} $$
+  的旋度.
+  - `定理`: 如果
     $$ \boldsymbol{\nabla} · \mathbf{D} = 0 $$,
     就有一个
     $$ \mathbf{C} $$
