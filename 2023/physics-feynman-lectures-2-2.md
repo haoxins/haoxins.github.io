@@ -71,11 +71,11 @@ date: 2022-05-14
     等于
     $$ grad \psi $$.
 - 换句话说, 我们有`定理`: 如果
-  $$ \mathbf{\nabla} \times \mathbf{A} = 0 $$,
+  $$ \boldsymbol{\nabla} \times \mathbf{A} = 0 $$,
   就有一个
   $$ \psi $$
   使得
-  $$ \mathbf{A} = \mathbf{\nabla} \psi $$.
+  $$ \mathbf{A} = \boldsymbol{\nabla} \psi $$.
   (`2.50`)
 - 若
   $$ \mathbf{A} $$
@@ -91,11 +91,11 @@ date: 2022-05-14
     $$ \mathbf{C} $$
     的旋度.
   - 定理: 如果
-    $$ \mathbf{\nabla} · \mathbf{D} = 0 $$,
+    $$ \boldsymbol{\nabla} · \mathbf{D} = 0 $$,
     就有一个
     $$ \mathbf{C} $$
     使得
-    $$ \mathbf{D} = \mathbf{\nabla} \times \mathbf{C} $$.
+    $$ \mathbf{D} = \boldsymbol{\nabla} \times \mathbf{C} $$.
     (`2.51`)
 
 ---
@@ -118,28 +118,28 @@ date: 2022-05-14
 ---
 
 - (a)
-  $$ \mathbf{\nabla} · (\mathbf{\nabla} T)= \nabla^2 T = 标量场 $$;
+  $$ \boldsymbol{\nabla} · (\boldsymbol{\nabla} T)= \nabla^2 T = 标量场 $$;
 - (b)
-  $$ \mathbf{\nabla} \times (\mathbf{\nabla} T) = 0 $$;
+  $$ \boldsymbol{\nabla} \times (\boldsymbol{\nabla} T) = 0 $$;
 - (c)
-  $$ \mathbf{\nabla} (\mathbf{\nabla} · \mathbf{h}) = 矢量场 $$;
+  $$ \boldsymbol{\nabla} (\boldsymbol{\nabla} · \mathbf{h}) = 矢量场 $$;
 - (d)
-  $$ \mathbf{\nabla} · (\mathbf{\nabla} \times \mathbf{h}) = 0 $$;
+  $$ \boldsymbol{\nabla} · (\boldsymbol{\nabla} \times \mathbf{h}) = 0 $$;
 - (e)
   $$
-    \mathbf{\nabla} \times (\mathbf{\nabla} \times \mathbf{h}) =
-    \mathbf{\nabla} (\mathbf{\nabla} · \mathbf{h}) -
+    \boldsymbol{\nabla} \times (\boldsymbol{\nabla} \times \mathbf{h}) =
+    \boldsymbol{\nabla} (\boldsymbol{\nabla} · \mathbf{h}) -
     \nabla^2 \mathbf{h}
   $$;
 - (f)
   $$
-    (\mathbf{\nabla} · \mathbf{\nabla}) \mathbf{h} =
-    \mathbf{\nabla}^2 \mathbf{h} =
+    (\boldsymbol{\nabla} · \boldsymbol{\nabla}) \mathbf{h} =
+    \boldsymbol{\nabla}^2 \mathbf{h} =
     矢量场
   $$.
 
 > 你可能会注意到, 我们从未试图发明一个新的矢量算符
-  $$ (\mathbf{\nabla} \times \mathbf{\nabla}) $$.
+  $$ (\boldsymbol{\nabla} \times \boldsymbol{\nabla}) $$.
   你看这是为什么?
 
 ## 矢量积分运算
