@@ -25,8 +25,6 @@ date: 2022-05-14
       \mathbf{A} · (\mathbf{B} \times \mathbf{C}) =
       (\mathbf{A} \times \mathbf{B})·\mathbf{C}
       \mathbf{A} \times (\mathbf{B} \times \mathbf{C}) =
-      \mathbf{B} (\mathbf{A} · \mathbf{C}) -
-      \mathbf{C} (\mathbf{A} · \mathbf{B})
 
 $$
 \begin{cases}
@@ -40,6 +38,8 @@ $$
 
 
 
+\mathbf{B} (\mathbf{A} · \mathbf{C}) -
+\mathbf{C} (\mathbf{A} · \mathbf{B})
 
 \end{cases}
 $$
