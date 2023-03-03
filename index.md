@@ -27,7 +27,6 @@
 - [费曼物理学讲义 (卷一) 下](2023/physics-feynman-lectures-1-3.md)
 - [费曼物理学讲义 (卷二) 上](2023/physics-feynman-lectures-2-1.md)
 - [费曼物理学讲义 (卷二) 中](2023/physics-feynman-lectures-2-2.md)
-- [费曼物理学讲义 (卷二) 下](2023/physics-feynman-lectures-2-3.md)
 - [费曼物理学讲义 卷三 (上)](2023/physics-feynman-lectures-3-1.md)
 - [费曼物理学讲义 卷三 (下)](2023/physics-feynman-lectures-3-2.md)
 - [泡利物理学讲义 1 电动力学](2023/physics-pauli-1.md)
