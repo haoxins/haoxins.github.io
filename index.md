@@ -24,7 +24,6 @@
 - [黎曼猜想漫谈, 广义相对论专题选讲](2023/physics-2.md)
 - [费曼物理学讲义 (卷一) 上](2023/physics-feynman-lectures-1-1.md)
 - [费曼物理学讲义 (卷一) 中](2023/physics-feynman-lectures-1-2.md)
-- [费曼物理学讲义 (卷一) 下](2023/physics-feynman-lectures-1-3.md)
 - [费曼物理学讲义 (卷二) 上](2023/physics-feynman-lectures-2-1.md)
 - [费曼物理学讲义 (卷二) 中](2023/physics-feynman-lectures-2-2.md)
 - [费曼物理学讲义 卷三 (上)](2023/physics-feynman-lectures-3-1.md)
