@@ -271,7 +271,7 @@ $$
     左边的表示终了状况, 为了方便, 有时候可以进一步缩写,
     各用一个字母分别表示初始状况和终了状况.
   - 例如, 有时我们可以把振幅式 (`3.1`) 写成:
-  - $$ \langlex \mid s \ranglex $$.
+  - $$ \langle \mid s \rangle $$.
     (`3.2`)
   - 我们要强调一下, 这个振幅当然只是一个单独的数字: 一个复数.
 - 在第`1`章的讨论中, 我们已经看到, 粒子到达探测器有两条可能的路径时,
@@ -286,9 +286,9 @@ $$
   用新的符号表示:
 
 $$
-\langlex x \mid s \ranglex_{两个小孔都打开} =
-\langlex x \mid s \ranglex_{通过 1} +
-\langlex x \mid s \ranglex_{通过 2}
+\langle x \mid s \rangle_{两个小孔都打开} =
+\langle x \mid s \rangle_{通过 1} +
+\langle x \mid s \rangle_{通过 2}
 $$.
 (`3.4`)
 
@@ -310,9 +310,9 @@ $$.
   - 从 `s` 通过小孔 `1` 到达 `x` 的振幅等于从 `s` 到孔 `1` 的振幅乘以从孔 `1`
     到 `x` 的振幅;
   - $$
-      \langlex x \mid s \ranglex_{通过 1} =
-      \langlex x \mid 1 \ranglex
-      \langlex 1 \mid s \ranglex
+      \langle x \mid s \rangle_{通过 1} =
+      \langle x \mid 1 \rangle
+      \langle 1 \mid s \rangle
     $$.
     (`3.5`)
   - 这个结果也不是完全精确的.
@@ -325,11 +325,11 @@ $$.
   则将各相继事件的振幅相乘即可求出该路线的总振幅.
   - 运用这个定律, 我们可以将式 (`3.4`) 重新写成:
   - $$
-      \langlex x \mid s \ranglex_{通过 1, 2} =
-      \langlex x \mid 1 \ranglex
-      \langlex 1 \mid s \ranglex +
-      \langlex x \mid 2 \ranglex
-      \langlex 2 \mid s \ranglex
+      \langle x \mid s \rangle_{通过 1, 2} =
+      \langle x \mid 1 \rangle
+      \langle 1 \mid s \rangle +
+      \langle x \mid 2 \rangle
+      \langle 2 \mid s \rangle
     $$.
 
 - 假设有一个具有一定能量的粒子, 在真空中从位置
@@ -344,7 +344,7 @@ $$.
   的振幅是:
 
 $$
-\langlex \mathbf{r}_2 \mid \mathbf{r}_1 \ranglex =
+\langle \mathbf{r}_2 \mid \mathbf{r}_1 \rangle =
 \frac{e^{i\mathbf{p} \cdot \mathbf{r}_{12} / \hbar}}{\mathbf{r}_{12}}
 $$
 (`3.7`)
