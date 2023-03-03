@@ -159,7 +159,7 @@ $$
 
 - 这就证明, 一无限小立方体表面向外的通量等于该矢量的散度乘以该立方体的体积.
   现在我们看到了一个矢量的散度的"意义".
-  - 一个矢量在 `P` 点的散度就是 `P` 点附近单位体积的通量,
+  - 一个矢量在 `P` 点的散度就是 `P` 点附近`单位体积`的通量,
     $$ \mathbf{C} $$
     的向外"流量".
 - 我们已把
@@ -170,14 +170,14 @@ $$
   - 对于任何有限体积来说, 我们可用上面证明过的事实:
     来自一体积的总通量等于从其中每一部分出来的通量之和.
   - 这就是说, 我们可遍及整个体积对散度进行积分.
-  - 它向我们提供了这样一个定理:
-    任何矢量的法向分量对任何闭合曲面的积分,
-    也可以写成该矢量的散度对该曲面所包围的体积的积分.
+- 它向我们提供了这样一个定理:
+  任何矢量的法向分量对任何闭合曲面的积分,
+  也可以写成该矢量的散度对该曲面所包围的体积的积分.
   - 这个定理以高斯命名.
 - __高斯定理__:
   - $$
-      \int_{s} \mathbf{C} \cdot \mathbf{n} da =
-      \int_{v} \nabla \cdot \mathbf{C} dV
+      \int_{S} \mathbf{C} \cdot \mathbf{n} da =
+      \int_{V} \nabla \cdot \mathbf{C} dV
     $$,
     (`3.18`)
   - 式中 `S` 是任一闭合曲面, 而 `V` 是这个曲面内的体积.
@@ -188,8 +188,8 @@ $$
   这个和可以写成一个积分. 其结果是以斯托克斯命名的一个十分有用的定理.
   - __斯托克斯定理__:
   - $$
-      \oint_{\Gamma} \mathbf{C} · d\mathbf{s} =
-      \int_{s} (\nabla \times \mathbf{C})_{n} d a
+      \oint_{\Gamma} \mathbf{C} · d \mathbf{s} =
+      \int_{S} (\nabla \times \mathbf{C})_{n} d a
     $$,
     (`3.38`)
   - 式中 `S` 是以
@@ -221,13 +221,13 @@ $$
   - $$
       \int_{闭合曲面} \mathbf{C} \cdot \mathbf{n} da =
       \int_{曲面内体积} \boldsymbol{\nabla} \cdot \mathbf{C} dV
-    $$
+    $$.
     (`3.43`)
 4. 任意矢量的切向分量绕一闭合回路的线积分,
   等于该矢量旋度的法向分量对以该回路为边界的任意曲面的面积分, 即
   - $$
       \int_{边界} \mathbf{C} \cdot d \mathbf{s} =
-      \int_{曲面} (\boldsymbol{\nabla} \times \mathbf(C))
+      \int_{曲面} (\boldsymbol{\nabla} \times \mathbf{C})
       \cdot \mathbf{n} da
     $$.
     (`3.44`)
