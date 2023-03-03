@@ -192,9 +192,45 @@ $$
       \int_{s} (\nabla \times \mathbf{C})_{n} d a
     $$,
     (`3.38`)
-  - 式中 `S` 是以 `Γ` 为边界的任意曲面.
+  - 式中 `S` 是以
+    $$ \Gamma $$
+    为边界的任意曲面.
 
 ---
+
+1. 算符
+  $$ \partial / \partial x $$,
+  $$ \partial / \partial y $$,
+  $$ \partial / \partial z $$
+  可以认为是矢量算符
+  $$ \boldsymbol{\nabla} $$
+  的三个分量, 而把这一算符
+  - $$ \boldsymbol{\nabla} =
+      (\partial / \partial x,
+      \partial / \partial y,
+      \partial / \partial z) $$
+  - 作为矢量处理后, 从矢量代数所获得的那些公式都是正确的.
+2. 标量场在两点的差值等于该标量梯度的切向分量沿连接
+  `(1)` 和 `(2)` 这两点间`任意曲线`的线积分:
+  - $$
+      \psi(2) - \psi(1) = \int_{(1)}^{(2)}
+      \boldsymbol{\nabla} \psi \cdot ds
+    $$.
+    (`3.42`)
+3. 任意矢量的法向分量在一个闭合曲面上的面积分等于该矢量的散度对该闭合曲面内体积的积分:
+  - $$
+      \int_{闭合曲面} \mathbf{C} \cdot \mathbf{n} da =
+      \int_{曲面内体积} \boldsymbol{\nabla} \cdot \mathbf{C} dV
+    $$
+    (`3.43`)
+4. 任意矢量的切向分量绕一闭合回路的线积分,
+  等于该矢量旋度的法向分量对以该回路为边界的任意曲面的面积分, 即
+  - $$
+      \int_{边界} \mathbf{C} \cdot d \mathbf{s} =
+      \int_{曲面} (\boldsymbol{\nabla} \times \mathbf(C))
+      \cdot \mathbf{n} da
+    $$.
+    (`3.44`)
 
 ## 矢势
 
