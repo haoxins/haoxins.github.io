@@ -19,6 +19,17 @@ date: 2023-01-08
 
 ---
 
+- [nannou](https://github.com/nannou-org/nannou)
+  - An open-source creative-coding toolkit for Rust.
+  - 蛮有趣的~
+
+- [Service Weaver](https://serviceweaver.dev)
+  - Service Weaver is a programming framework for
+    writing and deploying cloud applications.
+  - https://github.com/ServiceWeaver/weaver
+  - 感觉现在才出, 有点晚了~
+  - 看看会不会有一个活跃的社区
+
 - [Enso](https://github.com/enso-org/enso)
   - An award-winning interactive programming language
     with dual visual and textual representations.
