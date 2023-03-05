@@ -14,6 +14,8 @@
 - [庞加莱猜想](2023/math-poincare-conjecture.md)
 - [普林斯顿数学指南 第二卷 (上)](2023/math-princeton-companion-2-1.md)
 - [普林斯顿数学指南 第二卷 (下)](2023/math-princeton-companion-2-2.md)
+- [普林斯顿概率论读本 (下)](2023/math-probability-lifesaver-2.md)
+- [纯数学教程 哈代 (下)](2023/math-pure-mathematics-2.md)
 - [普林斯顿数学分析读本](2023/math-real-analysis.md)
 - [物理学家用的张量和群论导论](2023/math-tensors-and-group-theory.md)
 - [基础拓扑学](2023/math-topology.md)
