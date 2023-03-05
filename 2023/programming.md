@@ -19,16 +19,11 @@ date: 2023-01-08
 
 ---
 
-- [Eclipse Zenoh](https://github.com/eclipse-zenoh/zenoh)
 
 ```
-Zenoh (pronounce /zeno/) unifies data in motion,
-data at rest and computations. It carefully blends
-traditional pub/sub with geo-distributed storages,
-queries and computations, while retaining a level of
-time and space efficiency that is well beyond
-any of the mainstream stacks.
 ```
+
+---
 
 - [nannou](https://github.com/nannou-org/nannou)
   - An open-source creative-coding toolkit for Rust.
@@ -47,9 +42,30 @@ any of the mainstream stacks.
   - 再比如: 评审`数学证明`;
   - 再比如: 全人类知识图谱.
 
-- [RustPython](https://github.com/RustPython/RustPython)
-  - A Python-3 (CPython >= `3.10`) Interpreter written in Rust.
-  - 有点意思, 哈哈哈~
+- [Lance](https://github.com/eto-ai/lance)
+  - Alternative to Parquet
+
+- [Oxen](https://github.com/Oxen-AI/Oxen)
+  - Library, tools, and server to manage local
+    and remote Oxen repositories.
+  - Includes:
+  - `oxen` (command line interface)
+  - `oxen-server` (remote server to sync data to)
+  - `liboxen` (shared lib between cli and server)
+
+- [Eclipse Zenoh](https://github.com/eclipse-zenoh/zenoh)
+
+```
+Zenoh (pronounce /zeno/) unifies data in motion,
+data at rest and computations. It carefully blends
+traditional pub/sub with geo-distributed storages,
+queries and computations, while retaining a level of
+time and space efficiency that is well beyond
+any of the mainstream stacks.
+```
+
+- [RisingWave](https://github.com/risingwavelabs/risingwave)
+- [Materialize](https://github.com/MaterializeInc/materialize)
 
 - Go `1.20` is released!
   - `1 Feb 2023`
