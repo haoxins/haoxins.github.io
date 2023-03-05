@@ -19,6 +19,17 @@ date: 2023-01-08
 
 ---
 
+- [Eclipse Zenoh](https://github.com/eclipse-zenoh/zenoh)
+
+```
+Zenoh (pronounce /zeno/) unifies data in motion,
+data at rest and computations. It carefully blends
+traditional pub/sub with geo-distributed storages,
+queries and computations, while retaining a level of
+time and space efficiency that is well beyond
+any of the mainstream stacks.
+```
+
 - [nannou](https://github.com/nannou-org/nannou)
   - An open-source creative-coding toolkit for Rust.
   - 蛮有趣的~
@@ -29,11 +40,6 @@ date: 2023-01-08
   - https://github.com/ServiceWeaver/weaver
   - 感觉现在才出, 有点晚了~
   - 看看会不会有一个活跃的社区
-
-- [Enso](https://github.com/enso-org/enso)
-  - An award-winning interactive programming language
-    with dual visual and textual representations.
-  - 年底再看看~
 
 - ChatGPT 最近是热点话题, 与其无聊的讨论什么职位会被替代,
   我更期待何时 AI 能帮助完成那些必定无法仅靠人力解决的事情.
@@ -90,11 +96,3 @@ func Join(errs ...error) error {
     data science collaboration,
     covering data exploration and AI traning.
   - 关注原因: 早期探索者
-  - [Engula](https://github.com/engula/engula)
-  - A highly scalable, low latency key-value store
-  - 关注原因: Redis 有点贵
-
----
-
-- [sqld](https://github.com/libsql/sqld)
-  - 蛮适合用在测试环境的
