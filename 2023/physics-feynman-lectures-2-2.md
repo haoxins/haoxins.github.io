@@ -22,26 +22,17 @@ $$
 
 \mathbf{A} · \mathbf{B} & = 标量 \\
                         & = A_x B_x + A_y B_y + A_z B_z \\
-
 \mathbf{A} \times \mathbf{B} & = 矢量 \\
-
 (\mathbf{A} \times \mathbf{B})_z & = A_x B_y - A_y B_x \\
-
 (\mathbf{A} \times \mathbf{B})_x & = A_y B_z - A_z B_y \\
-
 (\mathbf{A} \times \mathbf{B})_y & = A_z B_x - A_x B_z \\
-
 \mathbf{A} \times \mathbf{A} & = 0 \\
-
 \mathbf{A} · (\mathbf{A} \times \mathbf{B}) & = 0 \\
-
 \mathbf{A} · (\mathbf{B} \times \mathbf{C}) & =
 (\mathbf{A} \times \mathbf{B})·\mathbf{C} \\
-
 \mathbf{A} \times (\mathbf{B} \times \mathbf{C}) & =
 \mathbf{B} (\mathbf{A} · \mathbf{C}) -
 \mathbf{C} (\mathbf{A} · \mathbf{B})
-
 \end{cases}
 $$
 
@@ -259,7 +250,3 @@ $$
 ## 电磁质量
 
 ## 电荷在电场和磁场中的运动
-
-## 张量
-
-## 弯曲空间
