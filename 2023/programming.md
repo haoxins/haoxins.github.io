@@ -25,6 +25,12 @@ date: 2023-01-08
 
 ---
 
+- [Databend](https://github.com/datafuselabs/databend)
+- [RisingWave](https://github.com/risingwavelabs/risingwave)
+- [Materialize](https://github.com/MaterializeInc/materialize)
+
+---
+
 - [nannou](https://github.com/nannou-org/nannou)
   - An open-source creative-coding toolkit for Rust.
   - 蛮有趣的~
@@ -64,8 +70,7 @@ time and space efficiency that is well beyond
 any of the mainstream stacks.
 ```
 
-- [RisingWave](https://github.com/risingwavelabs/risingwave)
-- [Materialize](https://github.com/MaterializeInc/materialize)
+---
 
 - Go `1.20` is released!
   - `1 Feb 2023`
