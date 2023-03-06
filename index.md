@@ -7,6 +7,7 @@
 - [Kubernetes in Action (4/4) - 2nd Edition](2023/kubernetes-in-action-2nd-4.md)
 - [复分析 可视化方法 (上)](2023/math-complex-analysis-1.md)
 - [复分析 可视化方法 (下)](2023/math-complex-analysis-2.md)
+- [具体数学 计算机科学基础 (上)](2023/math-concrete-mathematics-1.md)
 - [具体数学 计算机科学基础 (下)](2023/math-concrete-mathematics-2.md)
 - [泛函分析导论 (上)](2023/math-functional-analysis-1.md)
 - [泛函分析导论 (下)](2023/math-functional-analysis-2.md)
