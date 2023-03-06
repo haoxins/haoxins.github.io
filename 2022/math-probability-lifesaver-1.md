@@ -389,6 +389,32 @@ $$.
 
 ---
 
+- __期望值, 矩__: 设 `X` 是定义在
+  $$ \mathbb{R} $$
+  上的随机变量, 它的概率密度函数是
+  $$ f_{X} $$.
+  函数 `g(X)` 的`期望值`是:
+
+$$
+\mathbb{E} \left [ g(X) \right ] =
+\begin{cases}
+  \int_{- \infty}^{\infty} g(x) \cdot f_{X} (x) dx & \mbox{若 }X\mbox{ 是连续的} \\
+  \sum_{n} g(x_n) \cdot f_{X} (x_n) & \mbox{若 }X\mbox{ 是离散的}
+\end{cases}
+$$
+
+- 最重要的情形是
+  $$ g(x) = x^r $$.
+  我们把
+  $$ \mathbb{E} \left [ X^r \right ] $$
+  称为 `X` 的 `r` 阶`矩`, 把
+  $$ \mathbb{E} \left [ ( X - \mathbb{E} \left [ X \right ] )^r \right ] $$
+  称为 `X` 的 `r` 阶`中心矩`.
+
+---
+
+---
+
 - __联合概率密度函数__: 设
   $$ X_1 $$,
   $$ X_2 $$,
