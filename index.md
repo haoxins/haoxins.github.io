@@ -31,7 +31,6 @@
 - [费曼物理学讲义 (卷二) 中](2023/physics-feynman-lectures-2-2.md)
 - [费曼物理学讲义 卷三 (上)](2023/physics-feynman-lectures-3-1.md)
 - [费曼物理学讲义 卷三 (下)](2023/physics-feynman-lectures-3-2.md)
-- [泡利物理学讲义 5 波动力学](2023/physics-pauli-5.md)
 - [张朝阳的物理课](2023/physics-zhang.md)
 - [Programming Rust](2023/programming-rust-2nd.md)
 - [码农碎碎念~](2023/programming.md)
