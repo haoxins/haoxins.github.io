@@ -8,7 +8,7 @@ date: 2023-01-08
   - [anyhow](https://github.com/dtolnay/anyhow)
   - [thiserror](https://github.com/dtolnay/thiserror)
 - Rust math
-  - [argmin](https://www.argmin-rs.org)
+  - [argmin](https://github.com/argmin-rs/argmin)
 
 ---
 
@@ -17,11 +17,8 @@ date: 2023-01-08
 ```
 ```
 
----
-
-
-```
-```
+- [DataFusion: Streaming execution support roadmap](https://github.com/apache/arrow-datafusion/issues/4285)
+  - 暂时 (2023) 不抱太大期望~
 
 ---
 
@@ -30,10 +27,6 @@ date: 2023-01-08
 - [Materialize](https://github.com/MaterializeInc/materialize)
 
 ---
-
-- [nannou](https://github.com/nannou-org/nannou)
-  - An open-source creative-coding toolkit for Rust.
-  - 蛮有趣的~
 
 - [Service Weaver](https://serviceweaver.dev)
   - Service Weaver is a programming framework for
