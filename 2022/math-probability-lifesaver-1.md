@@ -416,12 +416,51 @@ $$
 - __均值和方差__: 设 `X` 是一个连续型或离散型的随机变量,
   它的概率密度函数是
   $$ f_X $$
-  - (1) `X` 的均值 (即平均值或期望值) 是一阶矩.
+  - `(1)` `X` 的均值 (即平均值或期望值) 是一阶矩.
     我们把它表示为
     $$ \mathbb{E} \left [ X \right ] $$
     或
     $$ μX $$
     (当随机变量很明确时, 通常不给出下标 `X`, 而只写 `μ`). 具体地说,
+  - $$
+      μ =
+      \begin{cases}
+        \int_{- \infty}^{\infty} x \cdot f_{X} (x) dx & \mbox{若 }X\mbox{ 是连续的} \\
+        \sum_{n} x(n) \cdot f_{X} (x_n) & \mbox{若 }X\mbox{ 是离散的}
+      \end{cases}
+    $$.
+  - `(2)` `X` 的方差, 记作
+    $$ \sigma_{X}^2 $$
+    或
+    $$ Var(X) $$,
+    是二阶中心距, 也可以说是
+    $$ g(X) = (X - μ_{X})^2 $$
+    的期望值. 同样, 当随机变量很明确时, 通常不给出下标 `X`, 而只写
+    $$ \sigma^2 $$.
+    把它完整地写出来, 就是
+  - $$
+      \sigma_{X}^2 =
+      \begin{cases}
+        \int_{- \infty}^{\infty} (x - μ_{X})^{2} f_{X} (x) dx & \mbox{若 }X\mbox{ 是连续的} \\
+        \sum_{n} (x_{n} - μ_{X})^{2} f_{X} (x_n) & \mbox{若 }X\mbox{ 是离散的}
+      \end{cases}
+    $$.
+  - 因为
+    $$ μ_{X} = \mathbb{E} \left [ X \right ] $$,
+    所以在一系列代数运算后, 我们有
+  - $$
+      \sigma^2 =
+      \mathbb{E} \left [ (X - \mathbb{E} \left [ X \right ] )^2 \right ] =
+      \mathbb{E} \left [ X^2 \right ] - \mathbb{E} \left [ X \right ] ^2
+    $$.
+  - 这个式子把方差和 `X` 的前二阶矩联系起来, 在很多计算中都非常有用.
+    标准差是方差的平方根, 即
+    $$ \sigma_{X} =\sqrt{\sigma_{X}^2} $$.
+  - `(3)` 技术说明: 为了保证均值存在, 我们希望
+    $$ \int_{- \infty}^{\infty} \mid x_n \mid f_{X} (x_n) dx $$
+    (在连续的情形下) 或
+    $$ \sum_n \mid x_n \mid f_{X} (x_n) $$
+    (在离散的情形下) 是有限的.
 
 - __方差与标准差__: 与方差相比, 标准差的优势在于它和均值有相同的单位.
   - 因此, 标准差是衡量结果在均值附近波动幅度的自然尺度.
