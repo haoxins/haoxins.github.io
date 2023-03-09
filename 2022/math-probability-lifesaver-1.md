@@ -428,7 +428,7 @@ $$
         \int_{- \infty}^{\infty} x \cdot f_{X} (x) dx & \mbox{若 }X\mbox{ 是连续的} \\
         \sum_{n} x_n \cdot f_{X} (x_n) & \mbox{若 }X\mbox{ 是离散的}
       \end{cases}
-    $$.
+    $$
   - `(2)` `X` 的方差, 记作
     $$ \sigma_{X}^2 $$
     或
@@ -444,7 +444,7 @@ $$
         \int_{- \infty}^{\infty} (x - μ_{X})^{2} f_{X} (x) dx & \mbox{若 }X\mbox{ 是连续的} \\
         \sum_{n} (x_{n} - μ_{X})^{2} f_{X} (x_n) & \mbox{若 }X\mbox{ 是离散的}
       \end{cases}
-    $$.
+    $$
   - 因为
     $$ μ_{X} = \mathbb{E} \left [ X \right ] $$,
     所以在一系列代数运算后, 我们有
@@ -457,7 +457,7 @@ $$
     标准差是方差的平方根, 即
     $$ \sigma_{X} =\sqrt{\sigma_{X}^2} $$.
   - `(3)` 技术说明: 为了保证均值存在, 我们希望
-    $$ \int_{- \infty}^{\infty} \mid x_n \mid f_{X} (x_n) dx $$
+    $$ \int_{- \infty}^{\infty} \mid x \mid f_{X} (x) dx $$
     (在连续的情形下) 或
     $$ \sum_n \mid x_n \mid f_{X} (x_n) $$
     (在离散的情形下) 是有限的.
