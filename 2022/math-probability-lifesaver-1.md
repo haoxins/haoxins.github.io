@@ -415,7 +415,7 @@ $$
 
 - __均值和方差__: 设 `X` 是一个连续型或离散型的随机变量,
   它的概率密度函数是
-  $$ f_X $$
+  $$ f_X $$.
   - `(1)` `X` 的均值 (即平均值或期望值) 是一阶矩.
     我们把它表示为
     $$ \mathbb{E} \left [ X \right ] $$
@@ -426,7 +426,7 @@ $$
       μ =
       \begin{cases}
         \int_{- \infty}^{\infty} x \cdot f_{X} (x) dx & \mbox{若 }X\mbox{ 是连续的} \\
-        \sum_{n} x(n) \cdot f_{X} (x_n) & \mbox{若 }X\mbox{ 是离散的}
+        \sum_{n} x_n \cdot f_{X} (x_n) & \mbox{若 }X\mbox{ 是离散的}
       \end{cases}
     $$.
   - `(2)` `X` 的方差, 记作
