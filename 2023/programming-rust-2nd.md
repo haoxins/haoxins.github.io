@@ -25,3 +25,4 @@ date: 2022-12-29
 
 ------------------
 
+- [Modern Polars](https://github.com/kevinheavey/modern-polars)
