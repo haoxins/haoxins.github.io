@@ -15,7 +15,27 @@ date: 2023-01-08
 - [Generic associated types to be stable in Rust 1.65](https://blog.rust-lang.org/2022/10/28/gats-stabilization.html)
 
 ```
+- [Introducing Rust-Based Ztunnel for Istio Ambient Service Mesh](https://istio.io/latest/blog/2023/rust-based-ztunnel/)
+  - https://github.com/istio/ztunnel
+
 ```
+This purpose-built ztunnel involved two key areas:
+
+1. The configuration protocol between ztunnel and its Istiod
+2. The runtime implementation of ztunnel
+
+We chose to build on top of the Tokio and Hyper libraries,
+two of the de-facto standards in the ecosystem that
+are extensively battle-tested and easy to write
+highly performant asynchronous code with.
+```
+
+> 所以, [Linkerd 2](https://github.com/linkerd/linkerd2)
+  和 [Linkerd 2 Proxy](https://github.com/linkerd/linkerd2-proxy)
+  彻底没戏了.
+> 当然, [Istio](https://github.com/istio/istio)
+  和 [Envoy](https://github.com/envoyproxy/envoy)
+  也逐渐分道扬镳了~
 
 - [DataFusion: Streaming execution support roadmap](https://github.com/apache/arrow-datafusion/issues/4285)
   - 暂时 (2023) 不抱太大期望~
