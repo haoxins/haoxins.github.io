@@ -21,6 +21,14 @@ date: 2022-11-16
 
 ## 经典力学问题
 
+- $$ \overrightarrow{a} = \frac{d \overrightarrow{v}}{dt} $$
+- $$ \overrightarrow{F} = m \overrightarrow{a} $$
+- $$ F = G \frac{m_{1} m_{2}}{r^2} $$
+  - 在地球附近, 有如下关系:
+  - $$ F = mg = G \frac{Mm}{R^2} $$
+
+> 相对于`粗体`表示矢量, 貌似还是`箭头`更清晰~
+
 ## 光电问题
 
 ## 热力学与统计物理问题
