@@ -42,6 +42,13 @@ date: 2022-11-16
   (可记作 `A` 点) 产生的电磁场是:
 
 $$
+\overrightarrow{E} =
+\frac{q}{4 \pi \varepsilon_0}
+\left [
+  \frac{\overrightarrow{e}_{r'}}{r'^2} +
+  \frac{r'}{c} \frac{d}{dt} \frac{\overrightarrow{e}_{r'}}{r'^2} +
+  \frac{1}{c^2} \frac{d^2}{dt^2} \overrightarrow{e}_{r'}
+\right ]
 $$
 
 - 其中 `r'` 是电荷在时间为
