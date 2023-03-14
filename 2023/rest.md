@@ -20,6 +20,8 @@ date: 2023-01-08
 
 ## 影视
 
+- [三体](https://movie.douban.com/subject/26647087/)
+
 - [中国奇谭](https://movie.douban.com/subject/35674355/)
   - 鹅鹅鹅, 没看懂
 

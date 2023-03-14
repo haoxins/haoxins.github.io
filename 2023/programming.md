@@ -15,6 +15,19 @@ date: 2023-01-08
 - [Generic associated types to be stable in Rust 1.65](https://blog.rust-lang.org/2022/10/28/gats-stabilization.html)
 
 ```
+
+- https://blyss.dev
+  - Access data privately using homomorphic encryption.
+  - Privately scan for breached credentials,
+    block malicious URLs, access blockchain data, and more.
+  - 先看看能活多久~
+
+- Avro vs Protobuf (2023-03)
+  - Avro + Zstd
+  - Protobuf + Zstd
+
+---
+
 - [Introducing Rust-Based Ztunnel for Istio Ambient Service Mesh](https://istio.io/latest/blog/2023/rust-based-ztunnel/)
   - https://github.com/istio/ztunnel
 
@@ -37,11 +50,10 @@ highly performant asynchronous code with.
   和 [Envoy](https://github.com/envoyproxy/envoy)
   也逐渐分道扬镳了~
 
-- [DataFusion: Streaming execution support roadmap](https://github.com/apache/arrow-datafusion/issues/4285)
-  - 暂时 (2023) 不抱太大期望~
-
 ---
 
+- [DataFusion: Streaming execution support roadmap](https://github.com/apache/arrow-datafusion/issues/4285)
+  - 暂时 (2023) 不抱太大期望~
 - [Databend](https://github.com/datafuselabs/databend)
 - [RisingWave](https://github.com/risingwavelabs/risingwave)
 - [Materialize](https://github.com/MaterializeInc/materialize)
@@ -71,6 +83,8 @@ highly performant asynchronous code with.
   - `oxen` (command line interface)
   - `oxen-server` (remote server to sync data to)
   - `liboxen` (shared lib between cli and server)
+
+---
 
 - [Eclipse Zenoh](https://github.com/eclipse-zenoh/zenoh)
 
