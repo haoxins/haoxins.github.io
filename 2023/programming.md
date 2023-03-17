@@ -15,6 +15,7 @@ date: 2023-01-08
 - [Generic associated types to be stable in Rust 1.65](https://blog.rust-lang.org/2022/10/28/gats-stabilization.html)
 
 ```
+```
 
 - https://github.com/apache/incubator-opendal
   - From [Databend](https://github.com/datafuselabs)
