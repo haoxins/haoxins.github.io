@@ -20,6 +20,9 @@ date: 2023-01-08
 
 ## 影视
 
+- [回廊亭](https://movie.douban.com/subject/35401290/)
+  - 冲着`东野圭吾`去的, 失望
+
 - [三体](https://movie.douban.com/subject/26647087/)
 
 - [中国奇谭](https://movie.douban.com/subject/35674355/)

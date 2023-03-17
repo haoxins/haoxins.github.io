@@ -16,6 +16,14 @@ date: 2023-01-08
 
 ```
 
+- https://github.com/apache/incubator-opendal
+  - From [Databend](https://github.com/datafuselabs)
+  - 赞!
+
+- https://zed.dev
+  - 就用它来写 Rust
+  - 初体验, 还很简陋
+
 - https://blyss.dev
   - Access data privately using homomorphic encryption.
   - Privately scan for breached credentials,
