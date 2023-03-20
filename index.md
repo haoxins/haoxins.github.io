@@ -2,7 +2,6 @@
 - [Advanced Algorithms and Data Structures](2023/algorithms-advanced.md)
 - [猫咪的那些事](2023/cat.md)
 - [Confidence Computing](2023/computing-confidence.md)
-- [High-Dimensional Data Analysis with Low-Dimensional Models](2023/high-dim-data-low-dim-model.md)
 - [Kubernetes in Action (3/4) - 2nd Edition](2023/kubernetes-in-action-2nd-3.md)
 - [Kubernetes in Action (4/4) - 2nd Edition](2023/kubernetes-in-action-2nd-4.md)
 - [复分析 可视化方法 (上)](2023/math-complex-analysis-1.md)

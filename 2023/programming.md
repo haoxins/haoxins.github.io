@@ -31,10 +31,6 @@ date: 2023-01-08
     block malicious URLs, access blockchain data, and more.
   - 先看看能活多久~
 
-- Avro vs Protobuf (2023-03)
-  - Avro + Zstd
-  - Protobuf + Zstd
-
 ---
 
 - [Introducing Rust-Based Ztunnel for Istio Ambient Service Mesh](https://istio.io/latest/blog/2023/rust-based-ztunnel/)
