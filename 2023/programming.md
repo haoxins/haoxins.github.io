@@ -15,15 +15,30 @@ date: 2023-01-08
 - [Generic associated types to be stable in Rust 1.65](https://blog.rust-lang.org/2022/10/28/gats-stabilization.html)
 
 ```
+
+---
+
+
 ```
+Oracle intends to make future LTS releases every
+two years meaning the next planned LTS release
+is Java 21 in September 2023.
+```
+
+> 今天 (2023-03-28) 才知道, 期待 Java 21
+
+---
+
+- [DataFusion: Streaming execution support roadmap](https://github.com/apache/arrow-datafusion/issues/4285)
+  - 暂时 (2023) 不抱太大期望~
+- [Lance](https://github.com/eto-ai/lance)
+  - Alternative to Parquet
+
+---
 
 - https://github.com/apache/incubator-opendal
   - From [Databend](https://github.com/datafuselabs)
   - 赞!
-
-- https://zed.dev
-  - 就用它来写 Rust
-  - 初体验, 还很简陋
 
 - https://blyss.dev
   - Access data privately using homomorphic encryption.
@@ -57,8 +72,6 @@ highly performant asynchronous code with.
 
 ---
 
-- [DataFusion: Streaming execution support roadmap](https://github.com/apache/arrow-datafusion/issues/4285)
-  - 暂时 (2023) 不抱太大期望~
 - [Databend](https://github.com/datafuselabs/databend)
 - [RisingWave](https://github.com/risingwavelabs/risingwave)
 - [Materialize](https://github.com/MaterializeInc/materialize)
@@ -77,9 +90,6 @@ highly performant asynchronous code with.
   - 比如: 编纂`数学史`;
   - 再比如: 评审`数学证明`;
   - 再比如: 全人类知识图谱.
-
-- [Lance](https://github.com/eto-ai/lance)
-  - Alternative to Parquet
 
 - [Oxen](https://github.com/Oxen-AI/Oxen)
   - Library, tools, and server to manage local
