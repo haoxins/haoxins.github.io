@@ -21,6 +21,8 @@ date: 2023-01-08
 
 ## 影视
 
+- [尘封十三载](https://movie.douban.com/subject/35725856/)
+
 - [回廊亭](https://movie.douban.com/subject/35401290/)
   - 冲着`东野圭吾`去的, 失望
 

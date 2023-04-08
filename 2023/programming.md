@@ -7,6 +7,7 @@ date: 2023-01-08
 - Rust 实用的小型库
   - [anyhow](https://github.com/dtolnay/anyhow)
   - [thiserror](https://github.com/dtolnay/thiserror)
+  - [itertools](https://github.com/rust-itertools/itertools)
 - Rust math
   - [argmin](https://github.com/argmin-rs/argmin)
 
@@ -19,6 +20,19 @@ date: 2023-01-08
 ---
 
 
+- [sea-streamer](https://github.com/SeaQL/sea-streamer)
+  - [rdkafka](https://github.com/fede1024/rust-rdkafka)
+
+- [Announcing the Release of Apache Flink 1.17](https://flink.apache.org/2023/03/23/announcing-the-release-of-apache-flink-1.17/)
+  - 有不少东西值得测试~
+
+```
+Generic Incremental Checkpoint (GIC)
+  有望缓解 Multi partitions 的性能波动
+Watermark Alignment Support
+  有望缓解 Big window/state 的性能波动
+```
+
 ```
 Oracle intends to make future LTS releases every
 two years meaning the next planned LTS release
@@ -29,10 +43,21 @@ is Java 21 in September 2023.
 
 ---
 
+- [Arroyo](https://github.com/ArroyoSystems/arroyo)
+  - 2023-04 突然冒出来的
+  - 只有十几个 commits, 但是貌似完成度蛮高
+  - deps: arrow, axum, datafusion, parquet,
+    prost, serde, tokio, tonic
 - [DataFusion: Streaming execution support roadmap](https://github.com/apache/arrow-datafusion/issues/4285)
   - 暂时 (2023) 不抱太大期望~
+
 - [Lance](https://github.com/eto-ai/lance)
   - Alternative to Parquet
+- [LanceDB](https://github.com/lancedb/lancedb)
+  - An open-source database for vector-search
+    built with persistent storage,
+    which greatly simplifies retrevial,
+    filtering and management of embeddings.
 
 ---
 
@@ -75,9 +100,6 @@ highly performant asynchronous code with.
 - [Databend](https://github.com/datafuselabs/databend)
 - [RisingWave](https://github.com/risingwavelabs/risingwave)
 - [Materialize](https://github.com/MaterializeInc/materialize)
-
----
-
 - [Service Weaver](https://serviceweaver.dev)
   - Service Weaver is a programming framework for
     writing and deploying cloud applications.
