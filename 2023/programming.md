@@ -48,8 +48,27 @@ is Java 21 in September 2023.
   - 只有十几个 commits, 但是貌似完成度蛮高
   - deps: arrow, axum, datafusion, parquet,
     prost, serde, tokio, tonic
+  - The query is parsed and planned via
+    [Datafusion](https://github.com/apache/arrow-datafusion)
+  - Arroyo can also be configured to schedule workers on a
+    [Nomad](https://github.com/hashicorp/nomad)
+    cluster.
+  - [Lightweight Asynchronous Snapshots for Distributed Dataflows](https://arxiv.org/pdf/1506.08603.pdf)
+  - Support for scheduling workers on a
+    __Kubernetes__ cluster is __coming soon__.
+  - Arroyo uses __Postgres__ to store configuration
+    (sources, connections, sinks, pipelines, etc)
+    and the status of the system.
+  - Arroyo uses __Prometheus__ for metrics collection.
+  - https://github.com/rust-db/refinery
+  - Checkpoints are stored on __S3__ for recovery.
+  - `2023-04-10`: 活跃度先超越
+    [Fluvio](https://github.com/infinyon/fluvio)
+    再说吧!
 - [DataFusion: Streaming execution support roadmap](https://github.com/apache/arrow-datafusion/issues/4285)
   - 暂时 (2023) 不抱太大期望~
+
+---
 
 - [Lance](https://github.com/eto-ai/lance)
   - Alternative to Parquet
@@ -58,8 +77,6 @@ is Java 21 in September 2023.
     built with persistent storage,
     which greatly simplifies retrevial,
     filtering and management of embeddings.
-
----
 
 - https://github.com/apache/incubator-opendal
   - From [Databend](https://github.com/datafuselabs)
