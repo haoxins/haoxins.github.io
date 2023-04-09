@@ -159,14 +159,14 @@ date: 2021-11-16
 - 与此类似, 如果 `k` 是一个实常数, 则
   $$ e^{kx} $$
   可以由以下性质来定义:
-  - $$ \frac{d}{dx} f(x) = kf(x) $$,
+  - $$ \frac{d}{dx} f(x) = k f(x) $$,
     且
     $$ f(0) = 1 $$.
   - 为了把通常的指数函数
     $$ e^x $$
     从 `x` 的实数值推广到虚数值, 我们可以抓住这一点不放,
     坚持认定, 当 `k = i` 时此式为真, 即
-  - $$ \frac{d}{dt} e^{it} = ie^{it} $$
+  - $$ \frac{d}{dt} e^{it} = i e^{it} $$
 
 - 所以, 给定了一个实自变量 `t` 的复函数 `Z(t)`,
   我们总可以把 `Z` 可视化地看作一个动点的位置, 而
@@ -239,11 +239,11 @@ date: 2021-11-16
 - 欧拉公式的一个简单而重要的结论是:
   正弦和余弦可以用指数函数构造出来.
 - 准确地说:
-  - $$ e^{i \theta} + e^{- i \theta} = 2 \cos \theta $$,
+  - $$ e^{i \theta} + e^{-i \theta} = 2 \cos \theta $$,
   - $$ e^{i \theta} - e^{-i \theta} = 2 i \sin \theta $$,
 - 或者与此等价有
-  - $$ \cos \theta = \frac{e^{i \theta} + e^{- i \theta}}{2} $$,
-  - $$ \sin \theta = \frac{e^{i \theta} - e^{- i \theta}}{2 i} $$.
+  - $$ \cos \theta = \frac{e^{i \theta} + e^{-i \theta}}{2} $$,
+  - $$ \sin \theta = \frac{e^{i \theta} - e^{-i \theta}}{2 i} $$.
 
 ---
 

@@ -28,9 +28,9 @@ date: 2023-01-08
 
 ```
 Generic Incremental Checkpoint (GIC)
-  有望缓解 Multi partitions 的性能波动
-Watermark Alignment Support
   有望缓解 Big window/state 的性能波动
+Watermark Alignment Support
+  有望缓解 Multi partitions 的性能波动
 ```
 
 ```
@@ -97,9 +97,6 @@ highly performant asynchronous code with.
 
 ---
 
-- [Databend](https://github.com/datafuselabs/databend)
-- [RisingWave](https://github.com/risingwavelabs/risingwave)
-- [Materialize](https://github.com/MaterializeInc/materialize)
 - [Service Weaver](https://serviceweaver.dev)
   - Service Weaver is a programming framework for
     writing and deploying cloud applications.
