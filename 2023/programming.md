@@ -59,8 +59,10 @@ is Java 21 in September 2023.
   - Arroyo uses __Postgres__ to store configuration
     (sources, connections, sinks, pipelines, etc)
     and the status of the system.
+  - Arroyo uses
+    [refinery](https://github.com/rust-db/refinery)
+    to manage migrations.
   - Arroyo uses __Prometheus__ for metrics collection.
-  - https://github.com/rust-db/refinery
   - Checkpoints are stored on __S3__ for recovery.
   - `2023-04-10`: 活跃度先超越
     [Fluvio](https://github.com/infinyon/fluvio)
