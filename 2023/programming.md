@@ -60,8 +60,11 @@ is Java 21 in September 2023.
     (sources, connections, sinks, pipelines, etc)
     and the status of the system.
   - Arroyo uses
-    [refinery](https://github.com/rust-db/refinery)
+    [Refinery](https://github.com/rust-db/refinery)
     to manage migrations.
+  - 我个人还是更喜欢
+    [Atlas](https://github.com/ariga/atlas),
+    哈哈哈. Refinery 只是 Flyway 的模仿者~
   - Arroyo uses __Prometheus__ for metrics collection.
   - Checkpoints are stored on __S3__ for recovery.
   - `2023-04-10`: 活跃度先超越
