@@ -19,7 +19,6 @@ date: 2023-01-08
 
 ---
 
-
 - [sea-streamer](https://github.com/SeaQL/sea-streamer)
   - [rdkafka](https://github.com/fede1024/rust-rdkafka)
 
@@ -53,9 +52,10 @@ is Java 21 in September 2023.
   - Arroyo can also be configured to schedule workers on a
     [Nomad](https://github.com/hashicorp/nomad)
     cluster.
-  - [Lightweight Asynchronous Snapshots for Distributed Dataflows](https://arxiv.org/pdf/1506.08603.pdf)
   - Support for scheduling workers on a
     __Kubernetes__ cluster is __coming soon__.
+  - 对 Nomad 没兴趣, 静候 K8s ready.
+  - [Lightweight Asynchronous Snapshots for Distributed Dataflows](https://arxiv.org/pdf/1506.08603.pdf)
   - Arroyo uses __Postgres__ to store configuration
     (sources, connections, sinks, pipelines, etc)
     and the status of the system.
@@ -67,9 +67,10 @@ is Java 21 in September 2023.
     哈哈哈. Refinery 只是 Flyway 的模仿者~
   - Arroyo uses __Prometheus__ for metrics collection.
   - Checkpoints are stored on __S3__ for recovery.
-  - `2023-04-10`: 活跃度先超越
+  - 2023-04-10: 活跃度先超越
     [Fluvio](https://github.com/infinyon/fluvio)
     再说吧!
+  - 2023-04-10: `Hello, world!` 初体验, 并不顺畅!
 - [DataFusion: Streaming execution support roadmap](https://github.com/apache/arrow-datafusion/issues/4285)
   - 暂时 (2023) 不抱太大期望~
 
@@ -132,6 +133,8 @@ highly performant asynchronous code with.
   - 再比如: 评审`数学证明`;
   - 再比如: 全人类知识图谱.
 
+- [Cog](https://github.com/replicate/cog)
+  - Containers for machine learning
 - [Oxen](https://github.com/Oxen-AI/Oxen)
   - Library, tools, and server to manage local
     and remote Oxen repositories.
