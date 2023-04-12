@@ -13,11 +13,11 @@ date: 2023-03-02
   都对应着一个集合
   $$ A_i $$,
   那么
-  $$ \mathcal{A} = \left { A_i \mid i \in I \right } $$
+  $$ \mathcal{A} = \left \{ A_i \mid i \in I \right \} $$
   就是`索引集`为 `I` 的集合 `A` 的`索引族`.
   - 在某些情况下, 当我们要处理任意索引集 (其元素为 `a`) 时,
     可以将集合的索引族写成
-    $$ \left { A_a \right } $$.
+    $$ \left \{ A_a \right \} $$.
   - 这种类型的索引族也称为`集合族`.
 
 ## 上确界
