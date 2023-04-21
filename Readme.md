@@ -2,4 +2,5 @@
 ### Awesome websites
 
 - [Excalidraw](https://github.com/excalidraw/excalidraw)
-- [LaTeX Symbol Tables - Mathematics](https://wikieducator.org/Help:LaTeX_Symbol_Tables_-_Mathematics)
+- [LaTeX Symbol Tables](https://wikieducator.org/Help:LaTeX_Symbol_Tables_-_Mathematics)
+

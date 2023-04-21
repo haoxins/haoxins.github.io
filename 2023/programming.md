@@ -71,10 +71,22 @@ is Java 21 in September 2023.
     [Fluvio](https://github.com/infinyon/fluvio)
     再说吧!
   - 2023-04-10: `Hello, world!` 初体验, 并不顺畅!
+  - [petgraph](https://github.com/petgraph/petgraph)
+  - Graph data structure library.
+    Provides graph types and graph algorithms.
+  - [tracing](https://github.com/tokio-rs/tracing)
+  - `tracing` is a framework for instrumenting
+    Rust programs to collect structured,
+    event-based diagnostic information.
+    `tracing` is maintained by the Tokio project,
+    but does not require the tokio runtime to be used.
+  - BTW,
+    [InfluxDB IOx](https://github.com/influxdata/influxdb_iox)
+    同样.
+    It is built using Apache Arrow and DataFusion among other things.
+
 - [DataFusion: Streaming execution support roadmap](https://github.com/apache/arrow-datafusion/issues/4285)
   - 暂时 (2023) 不抱太大期望~
-
----
 
 - [Lance](https://github.com/eto-ai/lance)
   - Alternative to Parquet
@@ -83,6 +95,8 @@ is Java 21 in September 2023.
     built with persistent storage,
     which greatly simplifies retrevial,
     filtering and management of embeddings.
+
+---
 
 - https://github.com/apache/incubator-opendal
   - From [Databend](https://github.com/datafuselabs)

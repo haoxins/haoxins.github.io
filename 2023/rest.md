@@ -21,7 +21,11 @@ date: 2023-01-08
 
 ## 影视
 
+- [灌篮高手](https://movie.douban.com/subject/35315950/)
+  - 国内4月20日凌晨上映, 晚上去影院看的~
+
 - [尘封十三载](https://movie.douban.com/subject/35725856/)
+  - 剧情并无特别之处, 就是看着质感不错
 
 - [回廊亭](https://movie.douban.com/subject/35401290/)
   - 冲着`东野圭吾`去的, 失望
