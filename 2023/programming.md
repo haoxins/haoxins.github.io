@@ -5,9 +5,10 @@ date: 2023-01-08
 ---
 
 - Rust 实用的小型库
-  - [anyhow](https://github.com/dtolnay/anyhow)
-  - [thiserror](https://github.com/dtolnay/thiserror)
   - [itertools](https://github.com/rust-itertools/itertools)
+  - [thiserror](https://github.com/dtolnay/thiserror)
+  - [anyhow](https://github.com/dtolnay/anyhow)
+  - [snafu](https://github.com/shepmaster/snafu)
 - Rust math
   - [argmin](https://github.com/argmin-rs/argmin)
 
@@ -15,6 +16,19 @@ date: 2023-01-08
 
 - [Generic associated types to be stable in Rust 1.65](https://blog.rust-lang.org/2022/10/28/gats-stabilization.html)
 
+```rust
+```
+
+---
+
+- 2023-04 Rust 生态
+
+```
+pola-rs/polars
+
+---
+
+apache/arrow-rs rust-ndarray/ndarray
 ```
 
 ---
@@ -71,6 +85,7 @@ is Java 21 in September 2023.
     [Fluvio](https://github.com/infinyon/fluvio)
     再说吧!
   - 2023-04-10: `Hello, world!` 初体验, 并不顺畅!
+  - 透过 Arroyo 去看一下 Rust 的生态
   - [petgraph](https://github.com/petgraph/petgraph)
   - Graph data structure library.
     Provides graph types and graph algorithms.

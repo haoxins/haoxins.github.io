@@ -21,6 +21,9 @@ date: 2023-01-08
 
 ## 影视
 
+- [三体](https://movie.douban.com/subject/26647087/)
+  - 最喜欢的是三体游戏里面的情节
+
 - [灌篮高手](https://movie.douban.com/subject/35315950/)
   - 国内4月20日凌晨上映, 晚上去影院看的~
 
@@ -29,8 +32,6 @@ date: 2023-01-08
 
 - [回廊亭](https://movie.douban.com/subject/35401290/)
   - 冲着`东野圭吾`去的, 失望
-
-- [三体](https://movie.douban.com/subject/26647087/)
 
 - [中国奇谭](https://movie.douban.com/subject/35674355/)
   - 鹅鹅鹅, 没看懂
