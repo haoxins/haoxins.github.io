@@ -24,11 +24,19 @@ date: 2023-01-08
 - 2023-04 Rust 生态
 
 ```
-pola-rs/polars
+ArroyoSystems/arroyo apache/arrow-ballista
+
+---
+
+pola-rs/polars apache/arrow-datafusion
 
 ---
 
 apache/arrow-rs rust-ndarray/ndarray
+
+eto-ai/lance
+
+serde-rs/serde
 ```
 
 ---
