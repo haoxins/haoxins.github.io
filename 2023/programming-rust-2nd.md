@@ -13,6 +13,10 @@ lance = { git = "https://github.com/eto-ai/lance.git", rev = "bdbd5ba" }
 - [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
   - 部分 2022 没有看完的章节
 
+## Concurrency
+
+## Asynchronous Programming
+
 ## Iterators
 
 ## Collections
@@ -20,10 +24,6 @@ lance = { git = "https://github.com/eto-ai/lance.git", rev = "bdbd5ba" }
 ## Strings and Text
 
 ## Input and Output
-
-## Concurrency
-
-## Asynchronous Programming
 
 ------------------
 

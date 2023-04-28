@@ -19,6 +19,20 @@ date: 2023-01-08
 ```rust
 ```
 
+- 2023-04-27, 为了 `#![feature(async_fn_in_trait)]`,
+
+```zsh
+$ rustup install nightly
+$ rustup default nightly
+```
+
+> `rustup` 确实方便!
+
+```zsh
+$ rustup update stable
+$ rustup update nightly
+```
+
 ---
 
 - 2023-04 Rust 生态
@@ -38,6 +52,11 @@ eto-ai/lance
 
 serde-rs/serde
 ```
+
+- Rust 加持下的新 Python 生态
+
+- [Ruff](https://github.com/charliermarsh/ruff)
+  - An extremely fast Python linter, written in Rust.
 
 ---
 
