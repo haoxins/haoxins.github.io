@@ -27,13 +27,6 @@ $ rustup install nightly
 $ rustup default nightly
 ```
 
-> `rustup` 确实方便!
-
-```zsh
-$ rustup update stable
-$ rustup update nightly
-```
-
 ------------------
 
 - [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/)
@@ -45,15 +38,15 @@ $ rustup update nightly
 
 ## Concurrency
 
-- `Sender<T>` implements the Clone trait.
+- `Sender<T>` implements the `Clone` trait.
   To get a channel with multiple senders,
   simply create a regular channel and clone
   the sender as many times as you like.
-  - You can move each Sender value
+  - You can move each `Sender` value
     to a different thread.
 - A `Receiver<T>` can't be cloned, so if you
   need to have multiple threads receiving values
-  from the same channel, you need a Mutex.
+  from the same channel, you need a `Mutex`.
 
 - A synchronous channel is exactly like a
   regular channel except that when you create it,
@@ -72,15 +65,21 @@ $ rustup update nightly
     by value to another thread.
   - Types that implement `Sync` are safe to pass
     by non-mut reference to another thread.
-
-> `Sync` 是 `Send` 子集
-
 - When you spawn a thread, the closure you pass
   __must__ be `Send`, which means all the values
   it contains must be `Send`.
 - Similarly, if you want to send values through a
   channel to another thread,
   the values __must__ be `Send`.
+
+---
+
+- Creating a new `Mutex` looks like creating a new
+  `Box` or `Arc`, but while `Box` and `Arc` signify
+  heap allocation, `Mutex` is solely about locking.
+- `Arc` is handy for sharing things across threads,
+  and `Mutex` is handy for mutable data
+  that's shared across threads.
 
 ## Asynchronous Programming
 
