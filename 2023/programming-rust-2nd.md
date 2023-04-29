@@ -4,9 +4,39 @@ description: 松风吹解带, 山月照弹琴. 君问穷通理, 渔歌入浦深.
 date: 2022-12-29
 ---
 
-```toml
-lance = { git = "https://github.com/eto-ai/lance.git", rev = "bdbd5ba" }
+- Rust 实用的库
+  - [rayon](https://github.com/rayon-rs/rayon)
+  - [itertools](https://github.com/rust-itertools/itertools)
+  - [thiserror](https://github.com/dtolnay/thiserror)
+  - [anyhow](https://github.com/dtolnay/anyhow)
+  - [snafu](https://github.com/shepmaster/snafu)
+- Rust math
+  - [argmin](https://github.com/argmin-rs/argmin)
+
+---
+
+- [Generic associated types to be stable in Rust 1.65](https://blog.rust-lang.org/2022/10/28/gats-stabilization.html)
+
+```rust
 ```
+
+- 2023-04-27, 为了 `#![feature(async_fn_in_trait)]`,
+
+```zsh
+$ rustup install nightly
+$ rustup default nightly
+```
+
+> `rustup` 确实方便!
+
+```zsh
+$ rustup update stable
+$ rustup update nightly
+```
+
+------------------
+
+- [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/)
 
 ------------------
 
@@ -35,6 +65,23 @@ lance = { git = "https://github.com/eto-ai/lance.git", rev = "bdbd5ba" }
 
 ### Thread Safety: Send and Sync
 
+- Rust's full thread safety story hinges on
+  two built-in traits, `std::marker::Send`
+  and `std::marker::Sync`.
+  - Types that implement `Send` are safe to pass
+    by value to another thread.
+  - Types that implement `Sync` are safe to pass
+    by non-mut reference to another thread.
+
+> `Sync` 是 `Send` 子集
+
+- When you spawn a thread, the closure you pass
+  __must__ be `Send`, which means all the values
+  it contains must be `Send`.
+- Similarly, if you want to send values through a
+  channel to another thread,
+  the values __must__ be `Send`.
+
 ## Asynchronous Programming
 
 ## Strings and Text
@@ -44,10 +91,6 @@ lance = { git = "https://github.com/eto-ai/lance.git", rev = "bdbd5ba" }
 ## Iterators
 
 ## Collections
-
-------------------
-
-- [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/)
 
 ------------------
 

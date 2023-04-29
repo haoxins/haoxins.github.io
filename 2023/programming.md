@@ -4,38 +4,6 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
-- Rust 实用的库
-  - [rayon](https://github.com/rayon-rs/rayon)
-  - [itertools](https://github.com/rust-itertools/itertools)
-  - [thiserror](https://github.com/dtolnay/thiserror)
-  - [anyhow](https://github.com/dtolnay/anyhow)
-  - [snafu](https://github.com/shepmaster/snafu)
-- Rust math
-  - [argmin](https://github.com/argmin-rs/argmin)
-
----
-
-- [Generic associated types to be stable in Rust 1.65](https://blog.rust-lang.org/2022/10/28/gats-stabilization.html)
-
-```rust
-```
-
-- 2023-04-27, 为了 `#![feature(async_fn_in_trait)]`,
-
-```zsh
-$ rustup install nightly
-$ rustup default nightly
-```
-
-> `rustup` 确实方便!
-
-```zsh
-$ rustup update stable
-$ rustup update nightly
-```
-
----
-
 - 2023-04 Rust 生态
 
 ```
