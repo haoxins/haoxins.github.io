@@ -15,15 +15,35 @@ lance = { git = "https://github.com/eto-ai/lance.git", rev = "bdbd5ba" }
 
 ## Concurrency
 
+- `Sender<T>` implements the Clone trait.
+  To get a channel with multiple senders,
+  simply create a regular channel and clone
+  the sender as many times as you like.
+  - You can move each Sender value
+    to a different thread.
+- A `Receiver<T>` can't be cloned, so if you
+  need to have multiple threads receiving values
+  from the same channel, you need a Mutex.
+
+- A synchronous channel is exactly like a
+  regular channel except that when you create it,
+  you specify how many values it can hold.
+  - For a synchronous channel, `sender.send(value)`
+    is potentially a blocking operation.
+  - After all, the idea is that
+    blocking is not always bad.
+
+### Thread Safety: Send and Sync
+
 ## Asynchronous Programming
-
-## Iterators
-
-## Collections
 
 ## Strings and Text
 
 ## Input and Output
+
+## Iterators
+
+## Collections
 
 ------------------
 

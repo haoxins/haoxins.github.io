@@ -129,7 +129,7 @@ and fixed at compile time.
     the number of elements in the slice.
 - Since slices __almost always__ appear behind
   references, we often just refer to types like
-  `&[T]` or `&str` as "slices," using the
+  `&[T]` or `&str` as "slices", using the
   shorter name for the more common concept.
 
 ### String

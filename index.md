@@ -22,6 +22,7 @@
 - [物理学家用的张量和群论导论](2023/math-tensors-and-group-theory.md)
 - [基础拓扑学](2023/math-topology.md)
 - [健身, 冥想](2023/meditation-fitness.md)
+- [深度学习 (下)](2023/ml-dl-3.md)
 - [Graph Algorithms for Data Science](2023/ml-graph.md)
 - [深度强化学习 (上)](2023/ml-rl-1.md)
 - [深度强化学习 (下)](2023/ml-rl-2.md)

@@ -4,7 +4,8 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
-- Rust 实用的小型库
+- Rust 实用的库
+  - [rayon](https://github.com/rayon-rs/rayon)
   - [itertools](https://github.com/rust-itertools/itertools)
   - [thiserror](https://github.com/dtolnay/thiserror)
   - [anyhow](https://github.com/dtolnay/anyhow)
