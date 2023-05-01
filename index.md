@@ -31,7 +31,7 @@
 - [费曼物理学讲义 (卷二) 中](2023/physics-feynman-lectures-2-2.md)
 - [费曼物理学讲义 卷三 (上)](2023/physics-feynman-lectures-3-1.md)
 - [费曼物理学讲义 卷三 (下)](2023/physics-feynman-lectures-3-2.md)
-- [Programming Rust](2023/programming-rust-2nd.md)
+- [Programming Rust](2023/programming-rust.md)
 - [码农碎碎念~](2023/programming.md)
 - [量子力学 第一卷 (上)](2023/quantum-1-1.md)
 - [量子力学 第一卷 (中)](2023/quantum-1-2.md)
