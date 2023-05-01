@@ -36,6 +36,40 @@ $ rustup default nightly
 - [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
   - 部分 2022 没有看完的章节
 
+## Asynchronous Programming
+
+## Iterators
+
+- An iterator is any value that implements the
+  `std::iter::Iterator` trait:
+
+```rust
+trait Iterator {
+  type Item;
+
+  fn next(&mut self) -> Option<Self::Item>;
+
+  // ...
+  // many default methods
+}
+```
+
+- If there's a natural way to iterate over some type,
+  that type can implement `std::iter::IntoIterator`,
+  whose `into_iter` method takes a value and
+  returns an iterator over it:
+
+```rust
+trait IntoIterator where Self::IntoIter: Iterator<Item=Self::Item> {
+  type Item;
+  type IntoIter: Iterator;
+  fn into_iter(self) -> Self::IntoIter;
+}
+```
+
+- `IntoIter` is the type of the iterator value itself,
+  and `Item` is the type of value it produces.
+
 ## Concurrency
 
 - `Sender<T>` implements the `Clone` trait.
@@ -91,15 +125,60 @@ have shared (non-mut) access to the Mutex itself.
 > Rust's borrow system can't protect you from deadlock.
 > It's also possible to get deadlock with channels.
 
-## Asynchronous Programming
+- If a thread panics while holding a `Mutex`,
+  Rust marks the `Mutex` as __poisoned__.
+  - Any subsequent attempt to lock the poisoned
+    `Mutex` will get an error result.
 
-## Strings and Text
+### Condition Variables (Condvar)
+
+- In Rust, the `std::sync::Condvar` type implements
+  condition variables.
+  - A `Condvar` has methods `.wait()` and `.notify_all()`;
+  - `.wait()` blocks until some other
+    thread calls `.notify_all()`.
 
 ## Input and Output
 
-## Iterators
+- Rust's standard library features for input and output
+  are organized around three traits,
+  `Read`, `BufRead`, and `Write`:
+  - Values that implement `Read` have methods for
+    byte-oriented input. They're called __readers__.
+  - Values that implement `BufRead` are buffered readers.
+    They support all the methods of `Read`,
+    plus methods for reading lines of text and so forth.
+  - Values that implement `Write` support both
+    byte-oriented and UTF-8 text output.
+    They're called __writers__.
 
-## Collections
+## Strings and Text
+
+- The char type implements `Copy` and `Clone`,
+  along with all the usual traits for
+  comparison, hashing, and formatting.
+  - A string slice can produce an iterator over its
+    characters with `slice.chars()`.
+
+### String and str
+
+- Rust places text-handling methods on either `str`
+  or `String` depending on whether the method needs
+  a resizable buffer or is content just
+  to use the text in place.
+- Since `String` dereferences to `&str`, every method
+  defined on `str` is directly available
+  on `String` as well.
+  - These methods index text by byte offsets and
+    measure its length in bytes,
+    rather than characters.
+- A `String` is implemented as a wrapper around a
+  `Vec<u8>` that ensures the vector's contents are
+  always well-formed UTF-8.
+  - Rust will never change `String` to use a more
+    complicated representation,
+  - so you can assume that `String` shares
+    `Vec`'s performance characteristics.
 
 ------------------
 
