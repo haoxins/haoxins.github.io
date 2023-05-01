@@ -81,6 +81,16 @@ $ rustup default nightly
   and `Mutex` is handy for mutable data
   that's shared across threads.
 
+```
+In fact, a mutex is little more than a way to
+do exactly this, to provide exclusive (mut) access
+to the data inside, even though many threads may
+have shared (non-mut) access to the Mutex itself.
+```
+
+> Rust's borrow system can't protect you from deadlock.
+> It's also possible to get deadlock with channels.
+
 ## Asynchronous Programming
 
 ## Strings and Text
