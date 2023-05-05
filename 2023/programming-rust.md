@@ -13,16 +13,41 @@ date: 2022-12-29
 - Rust math
   - [argmin](https://github.com/argmin-rs/argmin)
 
+- [The Rust Reference](https://doc.rust-lang.org/stable/reference/)
+
 ---
+
+- [Stabilizing async fn in traits in 2023](https://blog.rust-lang.org/inside-rust/2023/05/03/stabilizing-async-fn-in-trait.html)
+  - 期待
+
+```
+Our goal is to stabilize the MVP for Rust 1.74,
+which will be released on 2023-11-16.
+
+So, once this MVP is done, what next?
+Our next immediate goals are to ship
+dynamic dispatch and async closures
+support in 2024.
+```
+
+- 2023-04-27, 为了 `#![feature(async_fn_in_trait)]`
+  - `rustup install nightly`
+  - `rustup default nightly`
 
 - [Generic associated types to be stable in Rust 1.65](https://blog.rust-lang.org/2022/10/28/gats-stabilization.html)
 
+```
+At its core, generic associated types allow you
+to have generics (type, lifetime, or const)
+on associated types.
+```
+
 ```rust
+trait LendingIterator {
+  type Item<'a> where Self: 'a;
+
+  fn next<'a>(&'a mut self) -> Self::Item<'a>;
+}
 ```
 
-- 2023-04-27, 为了 `#![feature(async_fn_in_trait)]`,
-
-```zsh
-$ rustup install nightly
-$ rustup default nightly
-```
+- Traits with GATs are not object safe

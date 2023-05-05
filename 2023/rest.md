@@ -21,6 +21,8 @@ date: 2023-01-08
 
 ## 影视
 
+- [漫长的季节](https://movie.douban.com/subject/35588177/)
+
 - [三体](https://movie.douban.com/subject/26647087/)
   - 最喜欢的是体现三体游戏的情节
   - 期待这款游戏能够真做出来
