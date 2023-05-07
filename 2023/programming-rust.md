@@ -5,7 +5,6 @@ date: 2022-12-29
 ---
 
 - Rust 实用的库
-  - [rayon](https://github.com/rayon-rs/rayon)
   - [itertools](https://github.com/rust-itertools/itertools)
   - [thiserror](https://github.com/dtolnay/thiserror)
   - [anyhow](https://github.com/dtolnay/anyhow)

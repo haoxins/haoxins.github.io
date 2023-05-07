@@ -26,6 +26,8 @@ serde-rs/serde
 
 - [Ruff](https://github.com/charliermarsh/ruff)
   - An extremely fast Python linter, written in Rust.
+- [Rye](https://github.com/mitsuhiko/rye)
+  - 确实好用!
 
 ---
 
