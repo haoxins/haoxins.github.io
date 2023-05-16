@@ -33,8 +33,8 @@ date: 2023-03-02
     $$ α = sup E $$
     即:
   - $$
-    α \in S; x \in E \to x \le α;
-    且 \gamma \in S, \gamma < α \to 不是 E 的上界
+    α \in S; x \in E \Longrightarrow x \le α;
+    且 \gamma \in S, \gamma < α \Longrightarrow \gamma 不是 E 的上界
     $$.
 - 同样地, 如果 `S` 中存在 `E` 的一个下界 `β`,
   使得 `S` 中任何大于 `β` 的元素都不是 `E` 的下界,
@@ -43,8 +43,8 @@ date: 2023-03-02
     $$ β = inf E $$
     即:
   - $$
-    β \in S; x \in E \to x \ge β;
-    且 \gamma \in S, \gamma > β \to \gamma 不是 E 的下界
+    β \in S; x \in E \Longrightarrow x \ge β;
+    且 \gamma \in S, \gamma > β \Longrightarrow \gamma 不是 E 的下界
     $$.
 
 ---
@@ -57,8 +57,8 @@ date: 2023-03-02
 
 ---
 
-- 定义: 设 `S` 是有序集. 如果 `S` 的每一个有上界的非空子集都在
-  `S` 中存在 `sup E`, 那么称有序集 `S` 具有`最小上界性`.
+- 定义: 设 `S` 是有序集. 如果 `S` 的每一个有上界的非空子集 `E`
+  都在 `S` 中存在 `sup E`, 那么称有序集 `S` 具有`最小上界性`.
 
 ---
 
