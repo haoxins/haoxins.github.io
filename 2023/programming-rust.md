@@ -16,6 +16,27 @@ date: 2022-12-29
 
 ---
 
+- Arrow, DataFusion 生态
+  - `cargo tree --depth 1`
+
+```
+arroyo-sql v0.2
+├── arrow v37
+├── datafusion v23
+
+lance v0.4
+├── arrow v37
+├── datafusion v23
+
+Polars
+  https://github.com/pola-rs/polars/issues/6197
+```
+
+---
+
+
+---
+
 - [Stabilizing async fn in traits in 2023](https://blog.rust-lang.org/inside-rust/2023/05/03/stabilizing-async-fn-in-trait.html)
   - 期待
 

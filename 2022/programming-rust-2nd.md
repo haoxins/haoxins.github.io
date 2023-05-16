@@ -198,8 +198,7 @@ and fixed at compile time.
     bit-for-bit copy suffices
     can be `Copy`.
   - `String` is __not__ a `Copy` type,
-    because it owns a
-    heap-allocated buffer.
+    because it owns a heap-allocated buffer.
   - `Box<T>` is __not__ `Copy`; it owns
     its heap-allocated referent.
 - As a rule of thumb, any type that needs to
@@ -321,7 +320,7 @@ let x = 10;
 g(&x);
 ```
 
-- From `g's` signature alone, Rust knows it will not
+- From `g`'s signature alone, Rust knows it will not
   save `p` anywhere that might outlive the call:
   - any lifetime that encloses the call must work for `'a`.
 - So Rust chooses the smallest possible lifetime for `&x`:
@@ -509,8 +508,8 @@ let ramp = (0 .. n).collect<Vec<i32>>(); // same error
     and that solves the problem:
 
 ```rust
-return Vec::<i32>::with_capacity(1000); // ok, using ::< let ramp = (0 .. n)
-collect::<Vec<i32>>(); // ok, using ::<
+return Vec::<i32>::with_capacity(1000); // ok, using ::<
+let ramp = (0 .. n).collect::<Vec<i32>>(); // ok, using ::<
 ```
 
 - The symbol `::<...>` is affectionately known
@@ -616,7 +615,7 @@ fn remove_file(path: &Path) -> Result<()>
 - Printing an error with the `{}` format specifier
   typically displays only a brief error message.
 - Alternatively, you can print with the `{:?}` format
-  specifier, to get a Debug view of the error.
+  specifier, to get a `Debug` view of the error.
 
 ### Propagating Errors
 
@@ -642,7 +641,7 @@ let weather = get_weather(hometown)?;
 - `?` also works similarly with the `Option` type.
   - In a function that returns `Option`,
     you can use `?` to unwrap a value and
-    return early in the case of None:
+    return early in the case of `None`:
 
 ```rust
 let weather = get_weather(hometown).ok()?;
@@ -664,11 +663,12 @@ loop {
   match compile_project() {
     Ok(()) => return Ok(()),
     Err(err) => {
-      if let Some(mse) = err.downcast_ref:: <MissingSemicolonError>() {
+      if let Some(mse) = err.downcast_ref::<MissingSemicolonError>() {
         insert_semicolon_in_source_code(mse.file(), mse.line())?;
         continue; // try again!
       }
-      return Err(err); }
+      return Err(err);
+    }
   }
 }
 ```

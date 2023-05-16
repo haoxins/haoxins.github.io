@@ -4,30 +4,19 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
-- 2023-04 Rust 生态
-
-```
-ArroyoSystems/arroyo apache/arrow-ballista
-
----
-
-pola-rs/polars apache/arrow-datafusion
-
----
-
-apache/arrow-rs rust-ndarray/ndarray
-
-eto-ai/lance
-
-serde-rs/serde
-```
-
 - Rust 加持下的新 Python 生态
 
 - [Ruff](https://github.com/charliermarsh/ruff)
   - An extremely fast Python linter, written in Rust.
 - [Rye](https://github.com/mitsuhiko/rye)
   - 确实好用!
+
+---
+
+- [酷壳 - CoolShell](https://coolshell.cn)
+  - 享受编程和技术所带来的快乐
+  - 2023-05-15 网络消息传播开来
+  - 陈皓, 网名: 左耳朵耗子, 2023年5月13日, 心梗逝世, 享年 47 岁
 
 ---
 
