@@ -763,7 +763,7 @@ pub struct JsonError {
 ---
 
 - A module can have its own directory.
-  - When Rust sees mod `spores`;, it checks for both
+  - When Rust sees `mod spores;`, it checks for both
     `spores.rs` and `spores/mod.rs`;
     if neither file exists, or both exist,
     that's an error.
@@ -944,7 +944,7 @@ mod tests {
 
 - Integration tests are `.rs` files that live in a
   `tests` directory alongside your
-  project's src directory.
+  project's `src` directory.
 - `cargo test` runs both unit tests and integration tests.
 
 ---
