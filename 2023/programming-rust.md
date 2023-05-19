@@ -34,6 +34,19 @@ Polars
 
 ---
 
+---
+
+```toml
+lance = { git = "https://github.com/eto-ai/lance", rev = "6af670a" }
+```
+
+```
+error: all dependencies must have a version specified when publishing.
+Note: The published dependency will use the version from crates.io,
+the `git` specification will be removed from the dependency declaration.
+```
+
+> Why not?
 
 ---
 

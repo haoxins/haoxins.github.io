@@ -1122,7 +1122,7 @@ struct Point {
     dropping the previously stored value.
   - This method takes `self` as a non-mut reference:
   - `fn set(&self, value: T)`
-  - note: not `&mut self`
+  - note: __not__ `&mut self`
 - Like `Cell<T>`, `RefCell<T>` is a generic type that
   contains a single value of type `T`.
   - Unlike `Cell`, `RefCell` supports borrowing
@@ -1142,7 +1142,7 @@ struct Point {
   - Instead of panicking if the value is already mutably borrowed,
     they return an `Err` value.
 
-> `cells`, and any types that contain them, are __not__ thread-safe.
+> cells, and any types that contain them, are __not__ thread-safe.
 
 ## Enums
 
