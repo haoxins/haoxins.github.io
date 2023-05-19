@@ -10,6 +10,8 @@ date: 2023-01-08
   - An extremely fast Python linter, written in Rust.
 - [Rye](https://github.com/mitsuhiko/rye)
   - 确实好用!
+- [PyO3](https://github.com/PyO3/pyo3)
+  - [Maturin](https://github.com/PyO3/maturin)
 
 ---
 
