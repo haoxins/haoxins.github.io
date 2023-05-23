@@ -1492,7 +1492,8 @@ generic structs, enums, type aliases, and methods
 ```
 
 - A generic function can have both lifetime parameters
-  and type parameters. Lifetime parameters come first.
+  and type parameters.
+  - Lifetime parameters come first.
 
 ```rust
 fn nearest<'t, 'c, P>(target: &'t P, candidates: &'c [P]) -> &'c P
@@ -1689,7 +1690,7 @@ ToString::to_string("hello")
 
 ### Associated Types (or How Iterators Work)
 
-- Rust has a standard Iterator trait,
+- Rust has a standard `Iterator` trait,
   defined like this:
 
 ```rust
