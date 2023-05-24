@@ -4,7 +4,7 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
-- Rust 加持下的新 Python 生态
+- Rust 加持下的 Python 新生态
 
 - [Ruff](https://github.com/charliermarsh/ruff)
   - An extremely fast Python linter, written in Rust.

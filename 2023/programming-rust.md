@@ -34,6 +34,12 @@ Polars
 
 ---
 
+> For example, in floating point numbers `NaN != NaN`,
+  so floating point types implement `PartialEq`
+  but not `Eq`.
+
+---
+
 ---
 
 ```toml

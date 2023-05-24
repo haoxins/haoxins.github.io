@@ -2100,7 +2100,7 @@ enum Ordering {
 - You can specify how an indexing expression like
   `a[i]` works on your type by implementing the
   `std::ops::Index` and `std::ops::IndexMut` traits.
-  - Arrays support the `[]` operator __directly__,
+  - Arrays support the `[]` operator directly,
     but on any other type, the expression `a[i]` is
     normally shorthand for `*a.index(i)`, where index
     is a method of the `std::ops::Index` trait.
