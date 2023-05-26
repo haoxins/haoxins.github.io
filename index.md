@@ -4,6 +4,7 @@
 - [Confidence Computing](2023/computing-confidence.md)
 - [Kubernetes in Action (3/4) - 2nd Edition](2023/kubernetes-in-action-2nd-3.md)
 - [Kubernetes in Action (4/4) - 2nd Edition](2023/kubernetes-in-action-2nd-4.md)
+- [Math and Architectures of Deep Learning](2023/math-and-arch-of-dl.md)
 - [复分析 可视化方法 (上)](2023/math-complex-analysis-1.md)
 - [复分析 可视化方法 (下)](2023/math-complex-analysis-2.md)
 - [具体数学 计算机科学基础](2023/math-concrete-mathematics.md)

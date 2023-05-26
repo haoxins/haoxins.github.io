@@ -2362,7 +2362,7 @@ struct RcBox<T: ?Sized> {
 - Where `From` and `Into` relate types with simple
   conversions, `TryFrom` and `TryInto` extend the
   simplicity of `From` and `Into` conversions with
-  the expressive error handling afforded by Result.
+  the expressive error handling afforded by `Result`.
 
 ### ToOwned
 
@@ -2633,7 +2633,8 @@ have shared (non-mut) access to the Mutex itself.
   are organized around three traits,
   `Read`, `BufRead`, and `Write`:
   - Values that implement `Read` have methods for
-    byte-oriented input. They're called __readers__.
+    byte-oriented input.
+    They're called __readers__.
   - Values that implement `BufRead` are buffered readers.
     They support all the methods of `Read`,
     plus methods for reading lines of text and so forth.
@@ -2643,7 +2644,7 @@ have shared (non-mut) access to the Mutex itself.
 
 ## Strings and Text
 
-- The char type implements `Copy` and `Clone`,
+- The `char` type implements `Copy` and `Clone`,
   along with all the usual traits for
   comparison, hashing, and formatting.
   - A string slice can produce an iterator over its

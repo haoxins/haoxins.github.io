@@ -95,7 +95,7 @@ is Java 21 in September 2023.
 - [DataFusion: Streaming execution support roadmap](https://github.com/apache/arrow-datafusion/issues/4285)
   - 暂时 (2023) 不抱太大期望~
 
-- [Lance](https://github.com/eto-ai/lance)
+- [Lance](https://github.com/lancedb/lance)
   - Alternative to Parquet
 - [LanceDB](https://github.com/lancedb/lancedb)
   - An open-source database for vector-search

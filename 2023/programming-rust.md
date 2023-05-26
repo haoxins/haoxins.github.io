@@ -11,6 +11,7 @@ date: 2022-12-29
   - [snafu](https://github.com/shepmaster/snafu)
 - Rust math
   - [argmin](https://github.com/argmin-rs/argmin)
+  - [nalgebra](https://github.com/dimforge/nalgebra)
 
 - [The Rust Reference](https://doc.rust-lang.org/stable/reference/)
 
@@ -38,12 +39,17 @@ Polars
   so floating point types implement `PartialEq`
   but not `Eq`.
 
+- If a type `T` implements `Default`, then the
+  standard library implements `Default` automatically
+  for `Rc<T>`, `Arc<T>`, `Box<T>`, `Cell<T>`,
+  `RefCell<T>`, `Cow<T>`, `Mutex<T>`, and `RwLock<T>`.
+
 ---
 
 ---
 
 ```toml
-lance = { git = "https://github.com/eto-ai/lance", rev = "6af670a" }
+lance = { git = "https://github.com/lancedb/lance", rev = "6af670a" }
 ```
 
 ```
