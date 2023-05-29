@@ -15,6 +15,8 @@ date: 2023-01-08
 
 ---
 
+- [JEP 444: Virtual Threads](https://openjdk.org/jeps/444)
+  - 终于来了, 但也就仅此而已
 
 ---
 
