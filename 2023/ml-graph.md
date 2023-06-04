@@ -6,6 +6,8 @@ date: 2022-01-02
 
 - [Graph Algorithms for Data Science](https://www.manning.com/books/graph-algorithms-for-data-science)
 
+> 一般般, 不推荐
+
 - Pathfinding algorithms
   - Dijkstra algorithm
   - Minimum weight spanning tree

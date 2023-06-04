@@ -6,9 +6,9 @@ date: 2022-12-29
 
 - Rust 实用的库
   - [itertools](https://github.com/rust-itertools/itertools)
-  - [thiserror](https://github.com/dtolnay/thiserror)
-  - [anyhow](https://github.com/dtolnay/anyhow)
   - [snafu](https://github.com/shepmaster/snafu)
+  - [anyhow](https://github.com/dtolnay/anyhow)
+  - [thiserror](https://github.com/dtolnay/thiserror)
 - Rust math
   - [argmin](https://github.com/argmin-rs/argmin)
   - [nalgebra](https://github.com/dimforge/nalgebra)

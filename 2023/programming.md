@@ -15,6 +15,19 @@ date: 2023-01-08
 
 ---
 
+- [SQL: 2023 is finished: Here is what's new](http://peter.eisentraut.org/blog/2023/04/04/sql-2023-is-finished-here-is-whats-new)
+
+```
+Property Graph Queries
+
+A whole new part 16 was added to the SQL standard,
+titled "Property Graph Queries (SQL/PGQ)".
+(Including this new part,
+there are now 11 active parts of SQL (ISO/IEC 9075).
+The part that most people know as the core language is part 2.)
+This allows data in tables to be queried as if it were a graph database.
+```
+
 - [JEP 444: Virtual Threads](https://openjdk.org/jeps/444)
   - 终于来了, 但也就仅此而已
 
