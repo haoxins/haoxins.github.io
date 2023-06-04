@@ -391,5 +391,3 @@ YIELD componentCount, componentDistribution
   - You can use this formula to calculate the LCC on
     a directed graph as well.
 
-## Introduction to social network analysis
-
