@@ -4,6 +4,14 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
+- [Arroyo v0.3.0](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.3.0)
+  - With this release we are shipping initial support for writing
+    user-defined functions (UDFs) in Rust, allowing users to
+    extend SQL with custom business logic.
+  - 嗯, 开始像点样子了~
+
+---
+
 - Rust 加持下的 Python 新生态
 
 - [Ruff](https://github.com/charliermarsh/ruff)
