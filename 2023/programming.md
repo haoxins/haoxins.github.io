@@ -4,6 +4,22 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
+---
+
+
+- [Go 1.21 Release Notes](https://tip.golang.org/doc/go1.21)
+  - New built-in functions: `min`, `max` and `clear`.
+  - New `log/slog` package for structured logging.
+  - New `slices` package for common operations
+    on slices of any element type.
+  - This includes sorting functions that are
+    generally faster and more ergonomic
+    than the `sort` package.
+  - New `maps` package for common operations on
+    maps of any key or element type.
+  - New `cmp` package with new utilities
+    for comparing ordered values.
+
 - [Arroyo v0.3.0](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.3.0)
   - With this release we are shipping initial support for writing
     user-defined functions (UDFs) in Rust, allowing users to
