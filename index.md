@@ -21,6 +21,8 @@
 - [健身, 冥想](2023/meditation-fitness.md)
 - [深度学习 (中)](2023/ml-dl-2.md)
 - [深度学习 (下)](2023/ml-dl-3.md)
+- [动手学深度学习 (上)](2023/ml-dl-torch-1.md)
+- [动手学深度学习 (中)](2023/ml-dl-torch-2.md)
 - [Graph Algorithms for Data Science](2023/ml-graph.md)
 - [Math and Architectures of Deep Learning](2023/ml-math-and-arch-of-dl.md)
 - [深度强化学习 (上)](2023/ml-rl-1.md)

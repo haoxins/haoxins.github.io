@@ -20,6 +20,8 @@ date: 2023-01-08
   - New `cmp` package with new utilities
     for comparing ordered values.
 
+> 可以逐渐放弃 [lo](https://github.com/samber/lo) 了~
+
 - [Arroyo v0.3.0](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.3.0)
   - With this release we are shipping initial support for writing
     user-defined functions (UDFs) in Rust, allowing users to
