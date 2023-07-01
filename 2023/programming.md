@@ -4,13 +4,14 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
+
 ---
 
-- [Kvrocks](https://github.com/apache/kvrocks)
-  - Redis 逐渐开始用不起了, 哈哈哈~
-
-- 2023-06, Spring Boot 2 `to` Spring Boot 3
+- 2023-07, Spring Boot 2 `to` Spring Boot 3
   - 手上一个小项目, 正好用来看看真正跑起来的差异~
+
+- [Kvrocks](https://github.com/apache/kvrocks)
+  - Redis 太贵了~
 
 - [Go 1.21 Release Notes](https://tip.golang.org/doc/go1.21)
   - New built-in functions: `min`, `max` and `clear`.
