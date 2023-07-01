@@ -391,3 +391,9 @@ YIELD componentCount, componentDistribution
   - You can use this formula to calculate the LCC on
     a directed graph as well.
 
+## Projecting monopartite networks with Cypher Projection
+
+> Due to worse performance, Cypher Projection is __not__
+  recommended for larger graphs or the production phase.
+
+## Inferring co-occurrence networks based off bipartite networks

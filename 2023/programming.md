@@ -6,6 +6,11 @@ date: 2023-01-08
 
 ---
 
+- [Kvrocks](https://github.com/apache/kvrocks)
+  - Redis 逐渐开始用不起了, 哈哈哈~
+
+- 2023-06, Spring Boot 2 `to` Spring Boot 3
+  - 手上一个小项目, 正好用来看看真正跑起来的差异~
 
 - [Go 1.21 Release Notes](https://tip.golang.org/doc/go1.21)
   - New built-in functions: `min`, `max` and `clear`.
@@ -19,6 +24,7 @@ date: 2023-01-08
     maps of any key or element type.
   - New `cmp` package with new utilities
     for comparing ordered values.
+- 2023-07: `slog` 已经用上了, 还不错~
 
 > 可以逐渐放弃 [lo](https://github.com/samber/lo) 了~
 
