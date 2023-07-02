@@ -32,5 +32,4 @@
 - [费曼物理学讲义 卷三 (下)](2023/physics-feynman-lectures-3-2.md)
 - [Programming Rust](2023/programming-rust.md)
 - [码农碎碎念~](2023/programming.md)
-- [我的推荐书单 2023](2023/reading-recommended.md)
 - [休憩](2023/rest.md)
