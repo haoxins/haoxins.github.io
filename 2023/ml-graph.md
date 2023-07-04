@@ -397,3 +397,16 @@ YIELD componentCount, componentDistribution
   recommended for larger graphs or the production phase.
 
 ## Inferring co-occurrence networks based off bipartite networks
+
+- A bipartite network contains two sets or types of nodes.
+  - The relationships always points from
+    one type of nodes to another.
+- The term co-occurrence network refers to a network
+  construction method that analyzes relationships
+  between various entities in a text.
+- Co-occurrence networks are constructed by
+  connecting pairs of entities in the text
+  using a set of criteria defining co-occurrence.
+  - The co-occurrence definition can
+    vary from scenario to scenario.
+

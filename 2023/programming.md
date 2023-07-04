@@ -9,8 +9,7 @@ date: 2023-01-08
 
 ---
 
-- 2023-07, Spring Boot 2 `to` Spring Boot 3
-  - 手上一个小项目, 正好用来看看真正跑起来的差异~
+  - 手上正好有一个小项目, 可以用来看看跑起来的差异~
 
 - [Kvrocks](https://github.com/apache/kvrocks)
   - Redis 太贵了~
