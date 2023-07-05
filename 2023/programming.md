@@ -45,7 +45,6 @@ for _, print := range prints {
 
 ```go
 s := []int{1, 2, 3}
-
 for _, i := range s {
   go func() {
     fmt.Print(i)

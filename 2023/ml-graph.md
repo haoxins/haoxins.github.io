@@ -410,3 +410,18 @@ YIELD componentCount, componentDistribution
   - The co-occurrence definition can
     vary from scenario to scenario.
 
+```
+Jaccard similarity coefficient ranges from values 0 to 1.
+When there is no intersection of members between two sets,
+the Jaccard similarity coefficient equals 0.
+```
+
+```
+In graph context, a typical input to the Jaccard similarity
+algorithm is a bipartite network consisting of two types
+or sets of nodes. The idea behind using the Jaccard similarity
+algorithm is to project a monopartite graph
+based on the bipartite input graph.
+```
+
+## Constructing a nearest neighbor similarity network
