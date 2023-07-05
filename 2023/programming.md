@@ -30,6 +30,32 @@ date: 2023-01-08
 
 > 可以逐渐放弃 [lo](https://github.com/samber/lo) 了~
 
+```go
+var prints []func()
+for i := 1; i <= 3; i++ {
+  prints = append(prints, func() { fmt.Print(i) })
+}
+for _, print := range prints {
+  print()
+}
+// print 444
+// with `GOEXPERIMENT=loopvar`
+// print 123
+```
+
+```go
+s := []int{1, 2, 3}
+
+for _, i := range s {
+  go func() {
+    fmt.Print(i)
+  }()
+}
+// print 333
+// with `GOEXPERIMENT=loopvar`
+// print 321 or 213 or 312 or others (random)
+```
+
 - [Arroyo v0.3.0](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.3.0)
   - With this release we are shipping initial support for writing
     user-defined functions (UDFs) in Rust, allowing users to
