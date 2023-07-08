@@ -6,6 +6,14 @@ date: 2023-01-30
 
 - [物理学家用的张量和群论导论](https://book.douban.com/subject/25934965/)
 
+## Tensors
+
+## Groups, Lie Groups, and Lie Algebras
+
+## Basic Representation Theory
+
+## The Wigner-Eckart Theorem and Other Applications
+
 ------------------
 
 - [从矢量到张量](https://book.douban.com/subject/36000538/)

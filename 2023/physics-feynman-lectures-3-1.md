@@ -345,7 +345,7 @@ $$.
 
 $$
 \langle \mathbf{r}_2 \mid \mathbf{r}_1 \rangle =
-\frac{e^{i\mathbf{p} \cdot \mathbf{r}_{12} / \hbar}}{\mathbf{r}_{12}}
+\frac{e^{i \mathbf{p} \cdot \mathbf{r}_{12} / \hbar}}{\mathbf{r}_{12}}
 $$
 (`3.7`)
 

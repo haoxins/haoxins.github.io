@@ -517,7 +517,8 @@ $$
   $$ \mathbf{A} $$
   等于
   $$ grad \psi $$.
-  - 换句话说, 我们有`定理`: 如果
+  - 换句话说, 我们有定理:
+  - 如果
     $$ \boldsymbol{\nabla} \times \mathbf{A} = 0 $$,
     就有一个
     $$ \psi $$
@@ -537,7 +538,8 @@ $$
   是某个矢量场
   $$ \mathbf{C} $$
   的旋度.
-  - `定理`: 如果
+  - 定理:
+  - 如果
     $$ \boldsymbol{\nabla} · \mathbf{D} = 0 $$,
     就有一个
     $$ \mathbf{C} $$
@@ -565,7 +567,7 @@ $$
 ---
 
 - (a)
-  $$ \boldsymbol{\nabla} · (\boldsymbol{\nabla} T)= \nabla^2 T = 标量场 $$;
+  $$ \boldsymbol{\nabla} · (\boldsymbol{\nabla} T) = \nabla^2 T = 标量场 $$;
 - (b)
   $$ \boldsymbol{\nabla} \times (\boldsymbol{\nabla} T) = 0 $$;
 - (c)
@@ -639,10 +641,12 @@ $$
   可以认为是矢量算符
   $$ \boldsymbol{\nabla} $$
   的三个分量, 而把这一算符
-  - $$ \boldsymbol{\nabla} =
+  - $$
+      \boldsymbol{\nabla} =
       (\partial / \partial x,
       \partial / \partial y,
-      \partial / \partial z) $$
+      \partial / \partial z)
+    $$
   - 作为矢量处理后, 从矢量代数所获得的那些公式都是正确的.
 2. 标量场在两点的差值等于该标量梯度的切向分量沿连接
   `(1)` 和 `(2)` 这两点间`任意曲线`的线积分:
