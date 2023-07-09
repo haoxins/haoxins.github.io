@@ -425,3 +425,9 @@ based on the bipartite input graph.
 ```
 
 ## Constructing a nearest neighbor similarity network
+
+- The most common metric to evaluate the similarity
+  between two vectors is `cosine similarity`.
+  - `Cosine similarity` is defined as the `cosine`
+    of the angle between two vectors.
+
