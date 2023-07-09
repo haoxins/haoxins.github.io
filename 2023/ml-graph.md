@@ -431,3 +431,4 @@ based on the bipartite input graph.
   - `Cosine similarity` is defined as the `cosine`
     of the angle between two vectors.
 
+## Node embeddings and classification
