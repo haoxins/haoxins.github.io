@@ -432,3 +432,101 @@ based on the bipartite input graph.
     of the angle between two vectors.
 
 ## Node embeddings and classification
+
+> Node embedding models fall under the
+  dimensionality reduction category.
+
+- Every graph can be represented as an adjacency matrix.
+  - An adjacency matrix is a square matrix where the elements
+    indicate whether pairs of nodes are connected.
+  - An adjacency matrix is regarded as a high-dimensional
+    network representation as it grows with the
+    number of nodes in the graph.
+
+- The node embedding step is a unsupervised process since
+  it has no training examples to learn from.
+  - Node embedding models use techniques based on
+    deep learning and nonlinear dimensionality
+    reduction to achieve this.
+
+---
+
+- When dealing with a __transductive__ node embedding algorithm,
+  you cannot calculate embeddings for nodes not seen during
+  the initial embedding calculation.
+  - You can think that transductive models create a vocabulary
+    during initial computation, where the key of the vocabulary
+    represents a node, and its value represents the embedding.
+- On the other hand, __inductive__ node embedding models can
+  calculate embeddings for unseen nodes
+  during the initial computation.
+  - For example, you can train a model based on the initial
+    computation of node embeddings.
+  - When a new node is introduced, you can calculate the
+    embedding for the new node without re-calculating
+    embeddings for the whole graph.
+
+> One of the most simple and broadly used node
+  embedding models is the `node2vec`.
+
+-  Most node embedding models encode isolated nodes identically.
+
+### Node2vec algorithm
+
+- The `node2vec` algorithm is transductive and can be
+  fine-tuned to capture either homophily
+  or role-based embeddings.
+  - The `node2vec` algorithm is heavily inspired by
+    the `word2vec` skip-gram model.
+- `Word2Vec` is a shallow, two-layer neural network
+  that is trained to reconstruct linguistic
+  contexts of words.
+  - The objective of the `word2vec` model is to
+    produce word representation (vectors)
+    given a text corpus.
+  - Word representations are positioned in the
+    embedding space such that words that share
+    common contexts in the text corpus are located
+    close to one another in the embedding space.
+- There are two main models used within
+  the context of `word2vec`.
+  - `Continuous Bag-of-Words (CBOW)`
+  - `Skip-gram model`
+- `Node2vec` is inspired by the skip-gram model.
+  - The skip-gram model predicts the
+    context for a given word.
+  - The context is defined as the adjacent
+    words to the input term.
+
+---
+
+- `Node2vec` uses random walks to generate a corpus
+  of "sentences" from a given network.
+  - The `node2vec` algorithm uses random walks to
+    produce the sentences, which can be used as
+    input to the `word2vec` model.
+  - Each node in the random walk is treated as a
+    word in the sentence, where the size of the sentence
+    is defined with the walk length parameter.
+  - Random walks start from all the nodes in the graph
+    to make sure to capture all the nodes in the sentences.
+  - These sentences are then passed to the `word2vec`
+    skip-gram model as training examples.
+
+---
+
+- The `node2vec` algorithm implements
+  second-order biased random walks.
+  - The second-order walks take into account both the
+    current as well as the previous state.
+  - To put it simply, when the algorithm calculates the
+    traversal probabilities, it also considers where
+    it was at the previous step.
+- Authors of the `node2vec` algorithm claim that
+  approximating depth-first search will produce more
+  community or homophily-based node embeddings.
+  - On the other hand, the breadth-first search
+    strategy for random walks encourages
+    structural role embeddings.
+
+## Link prediction

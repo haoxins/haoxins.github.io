@@ -10,6 +10,7 @@ date: 2023-01-08
 ---
 
   - 手上正好有一个小项目, 可以用来看看跑起来的差异~
+  - Java `11` to Java `17`
 
 - [Kvrocks](https://github.com/apache/kvrocks)
   - Redis 太贵了~
