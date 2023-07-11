@@ -6,6 +6,8 @@ date: 2023-01-16
 
 - [线性代数 第5版](https://book.douban.com/subject/34820335/)
 
+- [Graphic notes on Gilbert Strang's "Linear Algebra for Everyone"](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra)
+
 ## The Singular Value Decomposition (SVD)
 
 ## Linear Transformations

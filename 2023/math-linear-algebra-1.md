@@ -13,6 +13,8 @@ date: 2022-11-24
 致敬!
 ```
 
+- [Graphic notes on Gilbert Strang's "Linear Algebra for Everyone"](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra)
+
 ```
 Gilbert Strang, an MIT mathematics professor,
 received a standing ovation after giving his

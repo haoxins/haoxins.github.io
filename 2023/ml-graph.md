@@ -530,3 +530,58 @@ based on the bipartite input graph.
     structural role embeddings.
 
 ## Link prediction
+
+- You might run into data leakage problems if you
+  used the same relationships to generate the
+  network features and train the classification model.
+- Data leakage occurs when your training data contains
+  information about the output, but similar data will
+  not be available when the model is used for predictions.
+  - Leakage frequently leads to high performance during
+    the training and possibly evaluation of the model,
+    but unfortunately doesn't perform well for new predictions.
+  - If you are using any graph features with the link
+    prediction model, you have to take extra care to
+    prevent any feature leakage.
+  - Leakage in features refers to when a feature contains
+    the same or comparable information as the output.
+
+```
+Remember, when a feature contains the same or comparable
+information as the output variable but is unavailable
+when making predictions, you have introduced
+data leakage into the workflow.
+The most obvious example is the network distance
+between nodes in the graph. If the network features
+and training examples are calculated on the same set
+of relationships, then the model would simply learn that
+relationships exist between nodes that are only one hop away.
+However, none of the pairs of nodes without a link in the
+network will be classified as probable to form a connection,
+as none are one hop away. Even node embeddings based on the
+homophily principle, could be problematic if you didn't
+perform a proper dataset split.
+```
+
+- Overall, most of the graph-based features might
+  introduce some data leakage issues. It is common
+  to split the relationships into three sets
+  to avoid data leakage problems.
+  - Relationship set used to generate features
+  - Relationship set used to train the model
+  - Relationship set used to evaluate the model
+
+> Therefore, it is common to subsample the negative
+  examples and use about the same number of positive
+  and negative samples in most link prediction workflows.
+
+### Network feature engineering
+
+> Remember, all the graph-based features for the
+  train and test sets will be calculated strictly
+  only on the feature set of relationships
+  to prevent any data leakage.
+
+1. The __network distance__ is calculated by finding
+  the shortest path between the pair of nodes and then
+  counting the number of relationships in the shortest path.
