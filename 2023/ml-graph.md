@@ -585,3 +585,42 @@ perform a proper dataset split.
 1. The __network distance__ is calculated by finding
   the shortest path between the pair of nodes and then
   counting the number of relationships in the shortest path.
+2. Another popular metric used in link prediction is the
+  so-called __preferential attachment__.
+  - Preferential attachment is an underlying organizing
+    principle occurring in real-world networks where
+    nodes with a higher number of relationships are
+    more likely to make new relationships.
+  - In the social network example, people with more friends
+    are more likely to make new connections.
+3. The next metric you will calculate as a link
+  prediction feature is the __common neighbors__ metric.
+  - The intuition behind the common neighbor metric is simple.
+  - The more common neighbors two nodes have,
+    the higher the chance of a link forming in the future.
+4. The idea behind the __Adamic-Adar__ index is that the
+  smaller degree the common neighbors between
+  a pair of nodes have, the more likely that they will
+  form a connection in the future.
+5. The last link prediction that you will calculate is the
+  __clustering coefficient__ of common neighbors.
+  - A clustering coefficient measures the connectedness
+    of the neighbors of a particular node.
+  - The value ranges from `zero` to `one`.
+  - A value of `zero` indicates that the neighboring nodes
+    have no connections with each other.
+  - On the other hand, the value of `1` indicates that the
+    network of neighbors forms a complete graph where all
+    the neighbors are connected.
+
+## Knowledge graph completion
+
+- Knowledge graph embedding models use triples to
+  describe graphs. A triple consists of two nodes
+  known as head `(h)` and tail `(t)`, and a
+  labeled directed relationship `(r)`.
+- `TransE` is one of the earliest and most intuitive
+  knowledge graph embedding models. The objective of
+  the `TransE` method is to calculate low-dimensional
+  vector representations, also known as embeddings,
+  for all the nodes and relationships in the graph.
