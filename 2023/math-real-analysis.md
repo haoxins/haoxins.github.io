@@ -170,7 +170,7 @@ date: 2023-03-02
   - 用符号表示, 即:
   - $$ x, y \in \mathbb{R} $$
     且
-    $$ x < y \Rightarrow \exists p \ni \mathbb{Q} $$
+    $$ x < y \Rightarrow \exists p \notin \mathbb{Q} $$
     使得
     $$ x < p < y $$.
 
