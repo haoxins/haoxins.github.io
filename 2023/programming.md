@@ -9,8 +9,31 @@ date: 2023-01-08
 
 ---
 
+- 2023-07, Spring Boot `2` to Spring Boot `3`
   - 手上正好有一个小项目, 可以用来看看跑起来的差异~
   - Java `11` to Java `17`
+  - Spring Web to Spring WebFlux
+  - 内存占用降低约 `40%`
+
+- [Govulncheck v1.0.0 is released!](https://go.dev/blog/govulncheck)
+
+> 找个项目试一下, 然后
+
+```
+Scanning your code and ... packages across ... dependent modules
+for known vulnerabilities...
+
+panic: ...
+```
+
+> 换个项目
+
+```
+Scanning your code and ... packages across ... dependent modules
+for known vulnerabilities...
+
+No vulnerabilities found.
+```
 
 - [Kvrocks](https://github.com/apache/kvrocks)
   - Redis 太贵了~
