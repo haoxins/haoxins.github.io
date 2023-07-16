@@ -15,6 +15,13 @@ date: 2023-01-30
   - $$ T(v_1 + c v_2, w) = T(v_1, w) + c T(v_2, w) $$
   - $$ T(v, w_1 + c w_2) = T(v, w_1) + c T(v, w_2) $$
 
+```
+One possible objection to our approach is that matrices
+and tensors are often thought of as linear operators which
+take vectors into vectors, as opposed to objects which
+eat vectors and spit out numbers.
+```
+
 ## Groups, Lie Groups, and Lie Algebras
 
 ## Basic Representation Theory
