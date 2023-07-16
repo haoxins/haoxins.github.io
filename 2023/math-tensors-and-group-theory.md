@@ -8,6 +8,13 @@ date: 2023-01-30
 
 ## Tensors
 
+- To make this concrete, consider a rank `2` tensor `T`,
+  whose job it is to eat two vectors `v` and `w` and produce
+  a number which we will denote as `T(v, w)`.
+  - For such a tensor, __multilinearity__ means
+  - $$ T(v_1 + c v_2, w) = T(v_1, w) + c T(v_2, w) $$
+  - $$ T(v, w_1 + c w_2) = T(v, w_1) + c T(v, w_2) $$
+
 ## Groups, Lie Groups, and Lie Algebras
 
 ## Basic Representation Theory
