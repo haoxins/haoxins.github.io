@@ -84,6 +84,7 @@ def gen_contents(sub_path):
 
 
 def gen_index():
+    index_contents.append("# 自乐")
     index_contents.append("### 2023")
     gen_contents("2023")
 
