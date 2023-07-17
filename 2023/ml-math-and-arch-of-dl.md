@@ -6,3 +6,27 @@ date: 2023-01-03
 
 - [Math and Architectures of Deep Learning](https://book.douban.com/subject/34986154/)
 
+- If one wants the agreement score to be neutral to
+  the vector length, one can use a normalized dot product -
+  between unit length vectors along same directions.
+- Geometrically speaking, given a plane (in any dimension),
+  we will be able to find a direction,
+  called __normal direction__.
+- __Closure__: A set of vectors is said to be closed under
+  linear combination if and only if the linear combination
+  of any pair of vectors in the set
+  also belongs to the same set.
+  - The set of points on the surface of a sphere is not
+    closed under linear combination, because,
+    the line joining an arbitrary pair of of points
+    on this set will not wholly lie on
+    the surface of that sphere.
+- A transform is __linear__ if and only if the transform of
+  the linear combination of two vectors is same as the
+  linear combination (with same weights) of the
+  transforms of individual vectors.
+  - linear transform means transforms of linear combinations
+    are same as linear combinations of transforms.
+- In __finite__ dimensions, multiplication with a matrix and
+  linear transformation are one and the same thing.
+
