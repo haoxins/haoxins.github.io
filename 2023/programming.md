@@ -9,6 +9,11 @@ date: 2023-01-08
 
 ---
 
+- 2023-07-18, 你妹的 [PyYAML](https://github.com/yaml/pyyaml/issues/724)
+  - [kfp](https://github.com/kubeflow/pipelines/issues/9745)
+  - 折腾了一个下午!
+  - 教训总结: Python 需要 Rust inside!
+
 - 2023-07, Spring Boot `2` to Spring Boot `3`
   - 手上正好有一个小项目, 可以用来看看跑起来的差异~
   - Java `11` to Java `17`
