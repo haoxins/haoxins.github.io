@@ -37,3 +37,6 @@ date: 2023-01-03
 
 - The __pseudo-inverse__ of matrix __A__, denoted
   $$ \mathbf{A}^{+} = (\mathbf{A}^{T} \mathbf{A})^{−1} \mathbf{A}^{T} $$.
+  - Unlike the inverse, the pseudo-inverse does not need
+    the matrix to be square with linearly independent rows.
+
