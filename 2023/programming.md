@@ -9,6 +9,9 @@ date: 2023-01-08
 
 ---
 
+- [Changes in MySQL 8.1.0](https://dev.mysql.com/doc/relnotes/mysql/8.1/en/news-8-1-0.html)
+  - 最大的 Change, 让你知道 MySQL 还活着~ 哈哈哈!
+
 - 2023-07-18, 你妹的 [PyYAML](https://github.com/yaml/pyyaml/issues/724)
   - [kfp](https://github.com/kubeflow/pipelines/issues/9745)
   - 折腾了一个下午!

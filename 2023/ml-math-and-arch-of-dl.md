@@ -30,3 +30,10 @@ date: 2023-01-03
 - In __finite__ dimensions, multiplication with a matrix and
   linear transformation are one and the same thing.
 
+- Sometimes, the determinant is not exactly zero,
+  but close to zero. Such systems, although solvable is theory,
+  are numerically unstable.
+  - Small changes in input causes the result to change drastically.
+
+- The __pseudo-inverse__ of matrix __A__, denoted
+  $$ \mathbf{A}^{+} = (\mathbf{A}^{T} \mathbf{A})^{−1} \mathbf{A}^{T} $$.
