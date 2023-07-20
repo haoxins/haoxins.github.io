@@ -5,6 +5,8 @@ date: 2023-01-03
 ---
 
 - [Math and Architectures of Deep Learning](https://book.douban.com/subject/34986154/)
+  - 一开始对这本书没啥期待, 主要是想熟悉英文的数学书.
+  - 不过看下来还是有一些小惊喜~
 
 - If one wants the agreement score to be neutral to
   the vector length, one can use a normalized dot product -
@@ -40,3 +42,16 @@ date: 2023-01-03
   - Unlike the inverse, the pseudo-inverse does not need
     the matrix to be square with linearly independent rows.
 
+- Transforms generally map vectors (points) in one space to
+  different vectors (points) in the same or a different space.
+  But a typical linear transform will leave a few points in
+  the space (almost) unaffected.
+  - These points are called __eigenvectors__.
+- These are the so called eigenvectors -
+  they do not change direction when undergoing
+  linear transformation by a matrix __A__.
+
+- All rotations matrices are orthogonal matrices.
+- All orthogonal matrices represent some rotation.
+
+## Introduction to Vector Calculus from Machine Learning point of view
