@@ -22,6 +22,39 @@ take vectors into vectors, as opposed to objects which
 eat vectors and spit out numbers.
 ```
 
+---
+
+- That said, an (__abstract__) __vector space__ is a set
+  __V__ (whose elements are called vectors),
+  together with a set of scalars __C__
+  (for us __C__ is always
+  $$ \mathbb{R} $$
+  or
+  $$ \mathbb{C} $$
+  ) and operations of addition and scalar multiplication
+  that satisfy the following axioms:
+  1. `v + w = w + v`
+    for all `v`, `w` in `V` (__Commutativity__)
+  2. `u + (w + x) = (v + w) + x`
+    for all `v`, `w`, `x` in `V` (__Associativity__)
+  3. There exists a vector `0` in `V` such that
+    `v + 0 = v` for all `v` in `V`
+  4. For all `v` in `V` there is a vector `-v`
+    such that `v + (-v) = 0`
+  5. `c(v + w) = cv + cw` for all `v` and `w` in
+    `V` and scalars `c` (__Distributivity__)
+  6. `1v = v` for all `v` in `V`
+  7. $$ (c_1 + c_2)v = c_1 v + c_2 v $$
+    for all scalars
+    $$ c_1 $$,
+    $$ c_2 $$
+    and vectors `v`
+  8. $$ (c_1 c_2)v = c_1(c_2 v) $$
+    for all scalars
+    $$ c_1 $$,
+    $$ c_2 $$
+    and vectors `v`
+
 ## Groups, Lie Groups, and Lie Algebras
 
 ## Basic Representation Theory
