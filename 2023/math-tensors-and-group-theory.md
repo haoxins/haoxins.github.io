@@ -31,7 +31,7 @@ eat vectors and spit out numbers.
   $$ \mathbb{R} $$
   or
   $$ \mathbb{C} $$
-  ), and operations of addition and scalar multiplication
+  ) and operations of addition and scalar multiplication
   that satisfy the following axioms:
   1. `v + w = w + v`
     for all `v`, `w` in `V` (__Commutativity__)
