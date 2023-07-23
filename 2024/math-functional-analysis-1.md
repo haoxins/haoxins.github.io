@@ -103,4 +103,33 @@ date: 2022-02-11
   - $$ X^C = \varnothing $$,
   - $$ \varnothing^C = X $$.
 
+---
+
+- `德·摩根定律`是 (`A` 和 `B` 是 `X` 的任意子集)
+  - $$ (A \bigcup B)^C = A^C \bigcap B^C $$,
+  - $$ (A \bigcap B)^C = A^C \bigcup B^C $$.
+  - 显然,
+  - $$ A \subseteq B \Longleftrightarrow A^C \supseteq B^C $$,
+  - $$
+      A \bigcap B = \varnothing \Longleftrightarrow
+      A \subseteq B^C \Longleftrightarrow
+      B \subseteq A^C
+    $$,
+  - $$
+      A \bigcup B = X \Longleftrightarrow
+      A^C \subseteq B \Longleftrightarrow
+      B^C \subseteq A
+    $$.
+- 给定的集合 `S` 的所有子集的集合, 叫作 `S` 的`幂集`, 记为
+  $$ \mathfrak{P}(S) $$.
+- 两个给定的非空集合 `X` 和 `Y` 的`笛卡儿积` (或积)
+  $$ X \times Y $$
+  是所有序偶 `(x, y)` 的集合, 其中
+  $$ x \in X $$
+  且
+  $$ y \in Y $$.
+- 若集合 `M` 是有限的 (有有限个元素), 或者 `M`
+  的每个元素唯一地对应一个正整数, 并且反过来每个正整数 `1`, `2`, `3`, ...
+  也唯一地对应 `M` 中的一个元素, 则称 `M` 是`可数集合`.
+
 ### 映射
