@@ -130,6 +130,9 @@ date: 2023-01-08
 
 ## 影视
 
+- [封神第一部: 朝歌风云](https://movie.douban.com/subject/10604086/)
+  - 不错~
+
 - [消失的她](https://movie.douban.com/subject/35660795/)
   - 还行吧, 可以一看
 
