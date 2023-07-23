@@ -66,10 +66,10 @@ date: 2022-02-11
   且把 `d` 限制在
   $$ Y \times Y $$
   上, 则可得 `(X, d)` 的一个`子空间`
-  $$ (Y, \overset{\cong}{d}) $$;
+  $$ (Y, \overset{\sim}{d}) $$;
   因而 `Y` 上的度量就是限制
-  - $$ \overset{\cong}{d} = d \mid_{Y \times Y} $$.
-  - $$ \overset{\cong}{d} $$
+  - $$ \overset{\sim}{d} = d \mid_{Y \times Y} $$.
+  - $$ \overset{\sim}{d} $$
     叫作 `d` 在 `Y` 上`导出`的度量.
 
 > 符号
@@ -102,3 +102,5 @@ date: 2022-02-11
   - $$ (A^C)^C = A $$,
   - $$ X^C = \varnothing $$,
   - $$ \varnothing^C = X $$.
+
+### 映射
