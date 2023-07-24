@@ -46,7 +46,9 @@ Polars
 
 ---
 
+- [Crust of Rust: std::collections](https://www.youtube.com/watch?v=EF3Z4jdD1EQ)
   - https://doc.rust-lang.org/std/collections/index.html
+  - 太长了, 看不完~
 
 ---
 

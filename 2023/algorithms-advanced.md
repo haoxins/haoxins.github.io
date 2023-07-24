@@ -8,18 +8,18 @@ date: 2021-09-12
 
 ## Introducing data structures
 
-- An abstract data type (**ADT**) specifies the
+- An abstract data type (`ADT`) specifies the
   operations that can be performed on some data and
   the computational complexity of those operations.
   - No details are provided on how data is stored
     or how physical memory is used.
-- A data structure (**DS**) is a concrete
+- A data structure (`DS`) is a concrete
   implementation of the specification
-  provided by an **ADT**.
-- A more formal definition would describe an **ADT** as
+  provided by an `ADT`.
+- A more formal definition would describe an `ADT` as
   a set of types, a designated type from that type set,
   a set of functions, and a set of axioms.
-- In contrast, a *data structure*, which is a concrete
+- In contrast, a data structure, which is a concrete
   representation of data, is described from
   the point of view of an implementer, not a user.
 
