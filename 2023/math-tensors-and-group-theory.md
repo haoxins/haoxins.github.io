@@ -63,6 +63,12 @@ eat vectors and spit out numbers.
 
 ------------------
 
+- [线性代数入门](https://book.douban.com/subject/36432607/)
+
+> 支持一下`图灵数学经典`, 希望后面的翻译能快一点~
+
+------------------
+
 - [从矢量到张量](https://book.douban.com/subject/36000538/)
   - 副标题: 细说矢量与矢量分析, 张量与张量分析
 
