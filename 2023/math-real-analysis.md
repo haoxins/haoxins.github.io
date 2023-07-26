@@ -691,7 +691,7 @@ date: 2023-03-02
   $$ p \in Y $$:
   - $$ N_{r} (p) \bigcap E ≠ \left \{ \varnothing \right \} $$
     且
-    $$ ≠ \left { p \right \} $$,
+    $$ ≠ \left \{ p \right \} $$,
   - 均有
     $$ p \in E $$,
     那么 `E` __相对于__ `Y` 是`闭集`.
