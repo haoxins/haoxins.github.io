@@ -17,6 +17,14 @@ date: 2022-12-29
 
 ---
 
+- 2023-07-27, PyPI Programming Language
+  - Rust: 964
+  - C++: 1620
+  - C: 1590
+  - Cython: 1101
+
+---
+
 - Arrow, DataFusion 生态
   - `cargo tree --depth 1`
 
