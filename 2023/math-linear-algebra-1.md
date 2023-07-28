@@ -36,8 +36,6 @@ and continues to fall within the top 10
 most viewed lecturers at MIT.
 ```
 
-## Introduction to Vectors
-
 ## Solving Linear Equations
 
 ## Vector Spaces and Subspaces
