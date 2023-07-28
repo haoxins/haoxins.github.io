@@ -55,3 +55,23 @@ date: 2023-01-03
 - All orthogonal matrices represent some rotation.
 
 ## Introduction to Vector Calculus from Machine Learning point of view
+
+> It should be noted that the gradient is
+  with respect to weights and not the input.
+
+- The total change can be estimated by taking a
+  weighted combination of the partial derivatives.
+- This yields a physical interpretation of the gradient vector:
+  its direction is the direction in parameter space along
+  which the multi-dimensional function is changing fastest.
+- The gradient of a function at any point is normal to the
+  level surface through that point.
+  - This is the direction along which the
+    function value is changing fastest.
+  - Moving along the gradient, one passes from
+    one level surface to another.
+
+- [Convex function](https://en.wikipedia.org/wiki/Convex_function)
+
+## Linear Algebraic Tools in Machine Learning and Data Science
+

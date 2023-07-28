@@ -1,5 +1,5 @@
 ---
-title: Shtetl-Optimized, Scott Aaronson
+title: Scott Aaronson, 卢昌海
 description: 金樽清酒斗十千, 玉盘珍羞直万钱. 停杯投箸不能食, 拔剑四顾心茫然.
 date: 2021-10-06
 ---
@@ -11,3 +11,7 @@ date: 2021-10-06
 
 - https://www.scottaaronson.com
   - https://www.scottaaronson.com/papers/
+
+------------------
+
+- [卢昌海](https://www.changhai.org)
