@@ -136,6 +136,9 @@ date: 2023-01-08
 
 ## 影视
 
+- [长安三万里](https://movie.douban.com/subject/36035676/)
+  - 还行
+
 - [封神第一部: 朝歌风云](https://movie.douban.com/subject/10604086/)
   - 不错~
 

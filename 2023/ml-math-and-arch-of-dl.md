@@ -75,3 +75,5 @@ date: 2023-01-03
 
 ## Linear Algebraic Tools in Machine Learning and Data Science
 
+- [Quadratic form](https://en.wikipedia.org/wiki/Quadratic_form)
+
