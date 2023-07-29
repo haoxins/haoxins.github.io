@@ -38,6 +38,12 @@ most viewed lecturers at MIT.
 
 ## Solving Linear Equations
 
+> 首先, 强调`线性变换`的概念.
+
+- You may like the row picture better,
+  but only for one day.
+  - 哈哈哈
+
 ## Vector Spaces and Subspaces
 
 ## Orthogonality

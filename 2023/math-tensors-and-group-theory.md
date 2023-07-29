@@ -55,6 +55,18 @@ eat vectors and spit out numbers.
     $$ c_2 $$
     and vectors `v`
 
+---
+
+- A `linear operator` on a vector space __V__ is a
+  function __T__ from __V__ to itself satisfying
+  the `linearity condition`.
+- So __T__ is `invertible` if and only if the only
+  vector it sends to `0` is the zero vector.
+- An important point to keep in mind is that a
+  `linear operator` is not the same thing as a matrix;
+  just as with vectors, the identification can only
+  be made once a basis is chosen.
+
 ## Groups, Lie Groups, and Lie Algebras
 
 ## Basic Representation Theory
@@ -71,7 +83,7 @@ eat vectors and spit out numbers.
 - 映射是一般化的函数概念.
 
 > 第一章 平面向量和空间向量:
-  先把线性变换的定义拎出来, 再在二三阶矩阵下验证.
+  先把`线性变换`的定义拎出来, 再在二三阶矩阵下验证.
   提了一下二三阶行列式的几何意义.
 
 ```
