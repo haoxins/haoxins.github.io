@@ -67,6 +67,15 @@ eat vectors and spit out numbers.
   just as with vectors, the identification can only
   be made once a basis is chosen.
 
+```
+Roughly speaking, a dual vector is an object that
+eats a vector and spits out a number.
+```
+
+- Given a vector space __V__ with scalars `C`,
+  a __dual vector__ (or __linear functional__)
+  on __V__ is a C-valued linear function `f` on __V__.
+
 ## Groups, Lie Groups, and Lie Algebras
 
 ## Basic Representation Theory
