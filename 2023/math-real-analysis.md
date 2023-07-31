@@ -628,7 +628,7 @@ date: 2023-03-02
 - __闭包是每个闭超集的子集__.
   设 `E` 是度量空间 `X` 的任意一个子集,
   $$ F \subset X $$
-  是任意一个闭集, 如果
+  是任意一个闭集. 如果
   $$ E \subset F $$,
   那么
   $$ \bar{E} \subset F $$.
@@ -658,7 +658,7 @@ date: 2023-03-02
   $$ E \in E $$.
   - 注意, 这个推论的逆命题 (
     $$ sup $$
-    $$ E \in \Longrightarrow E $$
+    $$ E \in E \Longrightarrow E $$
     是闭集) 不一定为真.
 
 ---
