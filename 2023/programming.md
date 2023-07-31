@@ -9,6 +9,9 @@ date: 2023-01-08
 
 ---
 
+- [PEP 703 - Making the Global Interpreter Lock Optional in CPython](https://peps.python.org/pep-0703/)
+  - 还是值得期待的~
+
 - [Changes in MySQL 8.1.0](https://dev.mysql.com/doc/relnotes/mysql/8.1/en/news-8-1-0.html)
   - 最大的 Change, 让你知道 MySQL 还活着~ 哈哈哈!
 

@@ -76,12 +76,6 @@ eats a vector and spits out a number.
   a __dual vector__ (or __linear functional__)
   on __V__ is a C-valued linear function `f` on __V__.
 
-## Groups, Lie Groups, and Lie Algebras
-
-## Basic Representation Theory
-
-## The Wigner-Eckart Theorem and Other Applications
-
 ------------------
 
 - [线性代数入门](https://book.douban.com/subject/36432607/)
