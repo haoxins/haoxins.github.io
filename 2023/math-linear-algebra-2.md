@@ -8,8 +8,6 @@ date: 2023-01-16
 
 - [Graphic notes on Gilbert Strang's "Linear Algebra for Everyone"](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra)
 
-## The Singular Value Decomposition (SVD)
-
 ## Linear Transformations
 
 ## Complex Vectorsand Matrices

@@ -51,3 +51,5 @@ most viewed lecturers at MIT.
 ## Determinants
 
 ## Eigenvalues and Eigenvectors
+
+## The Singular Value Decomposition (SVD)
