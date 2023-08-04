@@ -10,12 +10,6 @@ date: 2023-01-08
 ---
 
 
-- [Polars 开公司啦](https://www.pola.rs/posts/company-announcement/)
-  - We are excited to announce the start of company
-    that will build around Polars, enabling
-    data processing at any scale.
-  - 有意思, 期待!
-
 - [PEP 703 - Making the Global Interpreter Lock Optional in CPython](https://peps.python.org/pep-0703/)
   - 还是值得期待的~
 

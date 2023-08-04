@@ -17,6 +17,19 @@ date: 2022-12-29
 
 ---
 
+- [Polars 开公司啦](https://www.pola.rs/posts/company-announcement/)
+  - We are excited to announce the start of company
+    that will build around Polars, enabling
+    data processing at any scale.
+  - 有意思, 期待!
+
+```
+Polars is entirely based on Arrow data types and
+backed by Arrow memory arrays.
+This makes data processing cache-efficient and
+well-supported for Inter Process Communication.
+```
+
 - 2023-07-27, PyPI Programming Language
   - Rust: 964
   - C++: 1620

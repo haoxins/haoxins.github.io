@@ -60,3 +60,8 @@ fully homomorphic encryption whose security relied only on
 the hardness of Regev's learning with errors (LWE) problem.
 They have led to a new generation of practically efficient FHE.
 ```
+
+------------------
+
+- [机密计算](https://book.douban.com/subject/36319416/)
+  - 不抱期待, 估计没啥干货
