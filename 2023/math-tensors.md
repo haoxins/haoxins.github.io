@@ -151,7 +151,7 @@ eats a vector and spits out a number.
   $$ T (\mathbf{V}) $$
   的维数称为 `T` 的`秩`.
   - 可知, `T` 的秩与
-    $$ dim \mathbf{V} - dim T^{-1} (0') $$
+    $$ dim \mathbf{V} - dim T^{-1} (\mathbf{0}') $$
     相等.
 
 ## 特征值和特征向量
