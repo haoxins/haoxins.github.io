@@ -44,6 +44,8 @@ most viewed lecturers at MIT.
   but only for one day.
   - 哈哈哈
 
+---
+
 - If `A` and `B` are `n` by `n`, so is `AB`. It contains
   $$ n^2 $$
   dot products, row of `A` times column of `B`.
@@ -57,7 +59,7 @@ most viewed lecturers at MIT.
 - Mathematicians thought until recently that `AB`
   absolutely needed
   $$ 2^3 = 8 $$
-  multiplica tions. Then somebody found a way to do it with `7`
+  multiplications. Then somebody found a way to do it with `7`
   (and extra additions). By breaking `n` by `n` matrices into
   `2` by `2` blocks, this idea also reduced the count
   to multiply large matrices.
@@ -65,7 +67,9 @@ most viewed lecturers at MIT.
     $$ n^3 $$
     multiplications the count has now dropped to
     $$ n^{2.376} $$.
-  - Maybe `n` is possible?
+  - Maybe
+    $$ n^2 $$
+    is possible?
   - But the algorithms are so awkward that scientific
     computing is done the regular
     $$ n^3 $$
@@ -80,3 +84,13 @@ most viewed lecturers at MIT.
 ## Eigenvalues and Eigenvectors
 
 ## The Singular Value Decomposition (SVD)
+
+## Linear Transformations
+
+## Complex Vectorsand Matrices
+
+## Applications
+
+## Numerical Linear Algebra
+
+## Linear Algebrain Probability & Statistics
