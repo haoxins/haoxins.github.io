@@ -9,6 +9,9 @@ date: 2023-01-08
 
 ---
 
+- 从 [Gin](https://github.com/gin-gonic/gin) 切换到 [Hertz](https://github.com/cloudwego/hertz)
+  - 项目对 Web 框架依赖很少, 切换成本较低~
+  - CPU, Memory 使用略有下降, 不明显~
 
 - [PEP 703 - Making the Global Interpreter Lock Optional in CPython](https://peps.python.org/pep-0703/)
   - 还是值得期待的~

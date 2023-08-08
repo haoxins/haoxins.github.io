@@ -154,34 +154,40 @@ eats a vector and spits out a number.
     $$ dim \mathbf{V} - dim T^{-1} (\mathbf{0}') $$
     相等.
 
-- 对于 __V__ 的两个元素 `x`, `y`, 规定其内积为
+- 对于 __V__ 的两个元素 __x__, __y__, 规定其内积为
   $$ \mathbb{K} $$
-  的元素 (记作 `(x, y)`). 具体性质如下.
+  的元素 (记作 (__x__, __y__)). 具体性质如下.
   - (1)
-    $$ (x, y_1 + y_2) = (x, y_1) + (x, y_2) $$,
-    $$ (x_1 + x_2, y) = (x_1, y) + (x_2, y) $$.
+    $$
+      (\mathbf{x}, \mathbf{y}_1 + \mathbf{y}_2) =
+      (\mathbf{x}, \mathbf{y}_1) + (\mathbf{x}, \mathbf{y}_2)
+    $$,
+    $$
+      (\mathbf{x}_1 + \mathbf{x}_2, \mathbf{y}) =
+      (\mathbf{x}_1, \mathbf{y}) + (\mathbf{x}_2, \mathbf{y})
+    $$.
   - (2)
-    $$ (cx, y) = c(x, y) $$,
-    $$ (x, cy) = \bar{c}(x, y) $$.
+    $$ (c \mathbf{x}, \mathbf{y}) = c (\mathbf{x}, \mathbf{y}) $$,
+    $$ (\mathbf{x}, c \mathbf{y}) = \bar{c}(\mathbf{x}, \mathbf{y}) $$.
   - (3)
-    $$ (x, y) = \bar{(y, x)} $$.
+    $$ (\mathbf{x}, \mathbf{y}) = \bar{(\mathbf{y}, \mathbf{x})} $$.
   - (4)
-    $$ (x, x) $$
+    $$ (\mathbf{x}, \mathbf{x}) $$
     的值可为 `0` 或正数, 当且仅当
-    $$ x = 0 $$
+    $$ \mathbf{x} = 0 $$
     时,
-    $$ (x, x) = 0 $$.
+    $$ (\mathbf{x}, \mathbf{x}) = 0 $$.
 - 当
   $$ \mathbb{K} = \mathbb{R} $$
   时, 即不存在共轭复数, 字母上的横杠可以去掉.
   实度量线性空间也称为`欧几里得空间`, 简称`欧氏空间`.
   复度量线性空间称为`酉空间`.
-- $$ (x, x) $$
-  的非负平方根称为 `x` 的`长度`或`范数`, 记作
-  $$ \| x \| $$.
+- $$ (\mathbf{x}, \mathbf{x}) $$
+  的非负平方根称为 __x__ 的`长度`或`范数`, 记作
+  $$ \| \mathbf{x} \| $$.
   - 当
-    $$ (x, y) = 0 $$
-    时, 我们称 `x` 和 `y` 正交.
+    $$ (\mathbf{x}, \mathbf{y}) = 0 $$
+    时, 我们称 __x__ 和 __y__ 正交.
 
 - 对于度量空间 __V__ 的子空间 __W__, __V__ 中正交于 __W__
   中所有元素的元素集合也是 __V__ 的子空间.
