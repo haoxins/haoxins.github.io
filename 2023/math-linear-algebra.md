@@ -77,7 +77,18 @@ most viewed lecturers at MIT.
 
 ## Vector Spaces and Subspaces
 
+- A matrix multiplies a vector: __A__ _times_ __x__.
+  - At the first level this is only numbers.
+  - At the second level __Ax__ is a
+    combination of column vectors.
+  - The third level shows subspaces.
+
 ## Orthogonality
+
+- The __orthogonal complement__ of a subspace __V__
+  contains every vector that is perpendicular to __V__.
+  - This orthogonal subspace is denoted by
+    $$ V^{\perp} $$.
 
 ## Determinants
 

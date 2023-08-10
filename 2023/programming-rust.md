@@ -17,6 +17,12 @@ date: 2022-12-29
 
 ---
 
+- [Candle](https://github.com/huggingface/candle)
+  - Candle is a minimalist ML framework for Rust
+    with a focus on easiness of use and on
+    performance (including GPU support).
+  - Hugging Face 出品!
+
 - [Polars 开公司啦](https://www.pola.rs/posts/company-announcement/)
   - We are excited to announce the start of company
     that will build around Polars, enabling

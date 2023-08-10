@@ -4,8 +4,12 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
-  - [Polkadot](https://github.com/paritytech/polkadot)
-  - [Substrate](https://github.com/paritytech/substrate)
+- [Aptos](https://github.com/aptos-labs/aptos-core)
+
+```
+Aptos Labs & Microsoft Partnership: Making Web3 Accessible on Aptos
+August 09, 2023
+```
 
 ---
 
@@ -68,6 +72,7 @@ No vulnerabilities found.
 - 2023-07: `slog` 已经用上了, 还不错~
 
 > 可以逐渐放弃 [lo](https://github.com/samber/lo) 了~
+> 更正 (2023-08): 放弃 `lo` 不可能!
 
 ```go
 var prints []func()

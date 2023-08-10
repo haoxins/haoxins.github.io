@@ -624,3 +624,5 @@ perform a proper dataset split.
   the `TransE` method is to calculate low-dimensional
   vector representations, also known as embeddings,
   for all the nodes and relationships in the graph.
+
+## Construct a graph using NLP techniques
