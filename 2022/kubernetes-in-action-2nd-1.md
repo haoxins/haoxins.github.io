@@ -123,7 +123,7 @@ date: 2021-08-30
 
 ## Introducing the Kubernetes API objects
 
-* *`~/.kube/config`*
+* `~/.kube/config`
 
 * Each pod has its own `IP`, `hostname`, `processes`,
   `network interfaces` and `other` resources.
@@ -290,7 +290,7 @@ spec:
   - `kubectl apply -f apps/`
   - `kubectl delete -f apps/`
 
-* *`kubectl delete all --all`*
+* `kubectl delete all --all`
   - The first `all` in the command indicates that
     you want to delete *objects of all types*.
   - The `--all` option indicates that you want to
@@ -321,7 +321,7 @@ spec:
 
 * Each condition is either `fulfilled` or `not`.
 
-* *Container State*
+* Container State
   - *Waiting*
   - *Running*
   - *Terminated*
@@ -441,7 +441,7 @@ spec:
   - **`emptyDir`**: A simple directory that allows the
     pod to store data for the duration of its life cycle.
   - **`hostPath`**: Used for mounting files from the
-    *`worker node's filesystem`* into the pod.
+    `worker node's filesystem` into the pod.
   - **`nfs`**
   - `gcePersistentDisk`, `awsElasticBlockStore`
   - `azureFile`, `azureDisk`
@@ -461,9 +461,9 @@ spec:
     when data must be preserved even if the
     container is restarted.
   - It's also used when the container's filesystem
-    is marked *`read-only`*, and you want part of it
+    is marked `read-only`, and you want part of it
     to be writable.
-  - In pods with two or more containers, an *`emptyDir`*
+  - In pods with two or more containers, an `emptyDir`
     volume is used to share data between them.
 
 ```yaml
@@ -538,9 +538,9 @@ kubectl get node node_name -o json \
   *mount point*.
 * The underlying storage technology may not allow
   a volume to be attached to more than one node
-  at a time in *`read/write` mode*, but multiple
+  at a time in `read/write` mode, but multiple
   pods on the *same node* can all use the
-  volume in *`read/write` mode*.
+  volume in `read/write` mode.
 
 * Replicas of the same pod typically can't use
   the same network volume in `read/write` mode.
@@ -555,7 +555,7 @@ kubectl get node node_name -o json \
   where the pod needs to read or write files in the
   node's filesystem that the processes running on the
   node read or generate, such as *system-level logs*.
-  - The *`hostPath`* volume type is one of the
+  - The `hostPath` volume type is one of the
     *most dangerous volume* types in Kubernetes and
     is usually reserved for use in privileged pods only.
 
@@ -564,9 +564,9 @@ kubectl get node node_name -o json \
 * To make pod manifests *portable* across different
   cluster environments, the environment-specific
   information about the actual storage volume is
-  moved to a *`PersistentVolume`* object.
-  - A *`PersistentVolumeClaim`* object connects the
-    pod to this *`PersistentVolume`* object.
+  moved to a `PersistentVolume` object.
+  - A `PersistentVolumeClaim` object connects the
+    pod to this `PersistentVolume` object.
 
 * Before a user can use a *persistent volume* in
   their pods, they must first *claim* the volume by
@@ -599,7 +599,7 @@ spec:
     fsType: ext4
 ```
 
-* The *`capacity`* of the volume indicates the
+* The `capacity` of the volume indicates the
   size of the underlying volume.
   - Each persistent volume must specify its
     capacity so that Kubernetes can determine
@@ -608,23 +608,23 @@ spec:
     the persistent volume claim
     before it can bind them.
 * Each persistent volume must specify a
-  list of *`accessModes`* it supports.
+  list of `accessModes` it supports.
   - The access mode determines how many
-    **nodes**, not *pods*, can
+    nodes, not pods, can
     attach the volume at a time.
-  - *`ReadWriteOnce`*: The volume can be
-    mounted by a *single* worker *node*
-    in *`read/write` mode*.
-  - *`ReadOnlyMany`*: The volume can be
-    mounted on *multiple* worker *nodes*
-    simultaneously in *`read-only` mode*.
-  - *`ReadWriteMany`*: The volume can be
-    mounted in *`read/write` mode* on
+  - `ReadWriteOnce`: The volume can be
+    mounted by a single worker node
+    in `read/write` mode.
+  - `ReadOnlyMany`: The volume can be
+    mounted on multiple worker nodes
+    simultaneously in `read-only` mode.
+  - `ReadWriteMany`: The volume can be
+    mounted in `read/write` mode on
     multiple worker nodes at the same time.
 
 * **Volume Mode**
-  - *Filesystem* (default)
-  - *Block*
+  - `Filesystem` (default)
+  - `Block`
 
 ```yaml
 apiVersion: v1
@@ -703,9 +703,9 @@ spec:
   - **`Delete`**: This is the *default* policy for
     *dynamically provisioned* persistent volumes
 
-* The *`ReadWriteOnce`* mode doesn't mean that only a
+* The `ReadWriteOnce` mode doesn't mean that only a
   single pod can use it, but that a single node can
-  *attach the volume*.
+  attach the volume.
 * You don't need `ReadWriteMany` for multiple pods to
   write to the volume if they are on the *same node*.
   - As explained before, the word `"Once"` in
@@ -715,10 +715,10 @@ spec:
   run the reader pods?
   - This is caused by the writer pods.
   - The first node attached the persistent volume in
-    *`read-write`* mode. This **prevents** other nodes
-    from attaching the volume, *even in `read-only` mode*.
-* Kubernetes can't *detach the volume* or
-  *change the mode* in which it is attached
+    `read-write` mode. This **prevents** other nodes
+    from attaching the volume, even in `read-only` mode.
+* Kubernetes can't detach the volume or
+  change the mode in which it is attached
   while it's being used by pods.
 
 * The `ReadOnlyMany` access mode doesn't need
@@ -760,16 +760,16 @@ spec:
   and bound to the claim.
 
 * You'll notice that `StorageClass` objects have
-  no *`spec`* or *`status`* sections.
+  no `spec` or `status` sections.
   This is because the object only contains
   *static* information.
   - Regardless of what provisioner is used,
     the volume's *reclaim policy* is set to
     whatever is specified in the *storage class*.
 
-* In summary, a *`StorageClass`* object
+* In summary, a `StorageClass` object
   represents a class of storage that
-  can be *dynamically provisioned*.
+  can be dynamically provisioned.
 
 ```yaml
 apiVersion: v1
@@ -793,8 +793,8 @@ spec:
   because the system needs to know where the pod is
   scheduled before it can provision the volume.
 * This is the case with provisioners that create
-  *`node-local`* volumes, such as the one you find
-  in clusters created with the *kind* tool.
+  `node-local` volumes, such as the one you find
+  in clusters created with the `kind` tool.
 
 * **Volume binding mode**
   - **`Immediate`**
@@ -884,16 +884,16 @@ spec:
 
 * Values that the **YAML** parser might
   interpret as something other than a string
-  must be enclosed in *quotes*.
-  - This includes *numeric* values such as `1234`,
-  - and *Boolean* values such as `true` and `false`.
-  - Some other *special strings* must also be *quoted*,
+  must be enclosed in quotes.
+  - This includes numeric values such as `1234`,
+  - and `Boolean` values such as `true` and `false`.
+  - Some other special strings must also be quoted,
     otherwise they would also be interpreted as
     `Boolean` or other types.
   - These include the values
-    `true`, `false`, *`yes`*, *`no`*, *`on`*, *`off`*,
-    **`y`**, **`n`**, **`t`**, **`f`**,
-    `null`, and *others*.
+    `true`, `false`, `yes`, `no`, `on`, `off`,
+    `y`, `n`, `t`, `f`,
+    `null`, and others.
 
 ```yaml
 kind: Pod
@@ -908,9 +908,9 @@ spec:
       value: kiada
 ```
 
-* Since *environment variables* values must be
-  *strings*, you must enclose values that aren't
-  strings in *quotes* to prevent the YAML parser
+* Since environment variables values must be
+  strings, you must enclose values that aren't
+  strings in quotes to prevent the YAML parser
   from treating them as anything
   other than a string.
 
@@ -926,19 +926,19 @@ env:
 ```
 
 * You can only use the `$(VAR_NAME)` syntax to
-  refer to variables defined in the *same manifest*.
-* The referenced variable must be *defined*
-  *before* the variable that *references* it.
+  refer to variables defined in the same manifest.
+* The referenced variable must be defined
+  before the variable that references it.
 * When you want a variable to contain the
-  *literal string* `$(VAR_NAME)` and don't want
-  Kubernetes to resolve it, use a *double dollar*
+  literal string `$(VAR_NAME)` and don't want
+  Kubernetes to resolve it, use a double dollar
   sign as in `$$(VAR_NAME)`.
-  - Kubernetes will remove one of the *dollar*
+  - Kubernetes will remove one of the dollar
     signs and skip resolving the variable.
 
 * However, you can use a different approach.
-  If you run the command through a *shell*,
-  you can have the *shell* resolve the variable.
+  If you run the command through a shell,
+  you can have the shell resolve the variable.
 
 * By default, the hostname is the same as
   the pod's name, but you can override it using
@@ -1174,31 +1174,31 @@ immutable: true
   `Base64-encoded` strings.
 
 * *Built-in secret type*
-  - *`Opaque`* (Default): This type of secret can
+  - `Opaque` (Default): This type of secret can
     contain secret data stored under arbitrary keys.
-  - *`bootstrap.kubernetes.io/token`*: This type of
+  - `bootstrap.kubernetes.io/token`: This type of
     secret is used for tokens that are used when
     bootstrapping new cluster nodes.
-  - *`kubernetes.io/basic-auth`*: This type of secret
+  - `kubernetes.io/basic-auth`: This type of secret
     stores the *credentials* required for basic
     authentication. It must contain the
     `username` and `password` keys.
-  - *`kubernetes.io/service-account-token`*: This type
+  - `kubernetes.io/service-account-token`: This type
     of secret stores a token that identifies
     a Kubernetes service account.
-  - *`kubernetes.io/ssh-auth`*: This type of secret
-    stores the *private key* used for SSH authentication.
+  - `kubernetes.io/ssh-auth`: This type of secret
+    stores the private key used for SSH authentication.
     The private key must be stored under the
-    key *`ssh-privatekey`* in the secret.
-  - *`kubernetes.io/tls`*: This type of secrets stores
+    key `ssh-privatekey` in the secret.
+  - `kubernetes.io/tls`: This type of secrets stores
     a TLS certificate and the associated private key.
     They must be stored in the secret under the key
-    *`tls.crt`* and *`tls.key`*, respectively.
+    `tls.crt` and `tls.key`, respectively.
 
-* Like *config maps*, the maximum size of a
+* Like config maps, the maximum size of a
   secret is approximately `1MB`.
 * For obvious reasons, it's not the best idea to
-  create `YAML` *manifests* for your *secrets*
+  create `YAML` manifests for your secrets
   and store them in your version control system,
   as you do with config maps.
 
@@ -1226,7 +1226,7 @@ stringData:
   pass: my-password
 ```
 
-* The `stringData` field is *`write-only`* and
+* The `stringData` field is `write-only` and
   can only be used to set values. If you create
   this secret and read it back with
   `kubectl get -o yaml`, the `stringData` field

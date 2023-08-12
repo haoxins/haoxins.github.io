@@ -86,7 +86,7 @@ most viewed lecturers at MIT.
 ## Orthogonality
 
 - The __orthogonal complement__ of a subspace __V__
-  contains every vector that is perpendicular to __V__.
+  contains __every__ vector that is perpendicular to __V__.
   - This orthogonal subspace is denoted by
     $$ V^{\perp} $$.
 

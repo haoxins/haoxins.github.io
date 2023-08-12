@@ -77,3 +77,15 @@ date: 2023-01-03
 
 - [Quadratic form](https://en.wikipedia.org/wiki/Quadratic_form)
 
+- Thus, the quadratic form
+  $$ Q = x^{T} A x $$
+  attains its maximum when `x` is along the eigenvector
+  corresponding to the largest eigenvalue of `A`.
+  - The corresponding maximum `Q` is equal to the
+    largest eigenvalue of `A`.
+  - Similarly, the minimum of the quadratic form occurs
+    when `x` is along the eigenvector corresponding to
+    the smallest eigenvalue.
+- As stated above, many machine learning problems
+  boil down to minimizing a quadratic form.
+
