@@ -89,3 +89,23 @@ date: 2023-01-03
 - As stated above, many machine learning problems
   boil down to minimizing a quadratic form.
 
+```
+The variation along the direction perpendicular to
+the true pattern is caused by measurement errors.
+PCA finds the underlying straight line pattern as
+first principal axis.
+Rotating the coordinate system so that this becomes
+the X axis and then replacing every point by its projection
+on the new X axis converts the data from 2D to 1D.
+The projected data is less noisy.
+And it captures the true distribution.
+```
+
+```
+The cosine similarity between document vectors is often
+used to measure similarity between two documents.
+It is a principled way of measuring the degree of
+term sharing between the two documents.
+```
+
+## Probability Distributions for Machine Learning and Data Science

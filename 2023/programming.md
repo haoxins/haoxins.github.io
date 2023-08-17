@@ -4,6 +4,16 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
+- [Apache Flink Kubernetes Operator 1.6.0](https://flink.apache.org/2023/08/15/apache-flink-kubernetes-operator-1.6.0-release-announcement/)
+  - 主要期待: `General Autoscaler Improvements`
+
+- [Arroyo 0.5](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.5.0)
+  - The biggest of these is the new FileSystem connector,
+    which is a high-performance, transactional sink for
+    writing data to filesystems and object stores like S3.
+  - This allows Arroyo to write into
+    data lakes and data warehouses.
+
 - [Aptos](https://github.com/aptos-labs/aptos-core)
 
 ```
@@ -99,7 +109,7 @@ for _, i := range s {
 // print 321 or 213 or 312 or others (random)
 ```
 
-- [Arroyo v0.3.0](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.3.0)
+- [Arroyo 0.3](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.3.0)
   - With this release we are shipping initial support for writing
     user-defined functions (UDFs) in Rust, allowing users to
     extend SQL with custom business logic.

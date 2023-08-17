@@ -4,6 +4,12 @@ description: 欲渡黄河冰塞川, 将登太行雪满山. 闲来垂钓碧溪上
 date: 2021-10-15
 ---
 
+- [OpenSK](https://github.com/google/OpenSK)
+  - This repository contains a Rust implementation
+    of a FIDO2 authenticator.
+
+------------------
+
 - [Noise Protocol Framework](https://noiseprotocol.org)
 
 - [Schnorr's identification protocol](https://www.zkdocs.com/docs/zkdocs/zero-knowledge-protocols/schnorr/)
