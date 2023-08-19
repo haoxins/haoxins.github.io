@@ -136,6 +136,9 @@ date: 2023-01-08
 
 ## 影视
 
+- [孤注一掷](https://movie.douban.com/subject/35267224/)
+  - 一般般
+
 - [长安三万里](https://movie.douban.com/subject/36035676/)
   - 还行
 
