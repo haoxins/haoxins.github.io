@@ -109,3 +109,26 @@ term sharing between the two documents.
 ```
 
 ## Probability Distributions for Machine Learning and Data Science
+
+```
+Thus, the total area under a univariate
+probability density curve is always one.
+In higher dimensions, the volume under the
+hyper-surface for a multivariate probability
+density function is always one.
+```
+
+- We will show that the expected value of a function
+  of a random variable can be viewed as a dot product
+  between a vector representing the probability and
+  the another vector representing the function itself.
+
+```
+Covariance of a multidimensional point distribution is a
+matrix that allows us to easily measure the spread or
+packing density along any desired direction.
+It also allows us to easily figure out the direction along
+which maximum spread occurs and what that spread is.
+```
+
+## Bayesian Tools for Machine Learning and Data Science
