@@ -7,6 +7,7 @@ date: 2023-01-03
 - [Math and Architectures of Deep Learning](https://book.douban.com/subject/34986154/)
   - 一开始对这本书没啥期待, 主要是想熟悉英文的数学书.
   - 不过看下来还是有一些小惊喜~
+  - 整体上, 还是不推荐~
 
 - If one wants the agreement score to be neutral to
   the vector length, one can use a normalized dot product -
@@ -132,3 +133,13 @@ which maximum spread occurs and what that spread is.
 ```
 
 ## Bayesian Tools for Machine Learning and Data Science
+
+- Entropy then is a measure which becomes high if
+  everything is more or less equally probable,
+  and becomes low if a few of the items have much
+  higher probability than others.
+
+> In Maximum Likelihood Estimation of parameters (abbreviated MLE),
+> we ask the question:
+> "what parameter values will maximize the joint likelihood
+> of the training data instances"?

@@ -138,10 +138,10 @@ date: 2023-01-08
 
 
 - [Hello! 树先生](https://movie.douban.com/subject/4135710/)
-  - 好
+  - 还不错
 
 - [孤注一掷](https://movie.douban.com/subject/35267224/)
-  - 一般般, 周末打发下时间
+  - 没啥剧情, 周末打发下时间
 
 - [长安三万里](https://movie.douban.com/subject/36035676/)
   - 还行

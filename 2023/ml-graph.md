@@ -626,3 +626,17 @@ perform a proper dataset split.
   for all the nodes and relationships in the graph.
 
 ## Construct a graph using NLP techniques
+
+```
+Large Language Models, such as the GPT-4 from OpenAI [2023],
+have been a game-changing introduction to the world of
+natural language procesing. Their ability to understand
+human-like text has presented remarkable opportunities in
+the field of information extraction. With a model trained on
+diverse internet text, they can sift through massive amounts
+of data, understanding the context, and pull out relevant details,
+making the information extraction pipelines more accessible.
+Their ability to generalize allows them to be applied to a
+variety of domains, from academic research to business analytics,
+extracting valuable insights from unstructured data.
+```
