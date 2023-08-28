@@ -4,6 +4,22 @@ description: 欲渡黄河冰塞川, 将登太行雪满山. 闲来垂钓碧溪上
 date: 2021-10-15
 ---
 
+- [FIPS 203](https://csrc.nist.gov/pubs/fips/203/ipd)
+  - Module-Lattice-Based Key-Encapsulation Mechanism Standard
+- [FIPS 204](https://csrc.nist.gov/pubs/fips/204/ipd)
+  - Module-Lattice-Based Digital Signature Standard
+- [FIPS 205](https://csrc.nist.gov/pubs/fips/205/ipd)
+  - Stateless Hash-Based Digital Signature Standard
+
+```
+Initial Public Draft
+
+Date Published: August 24, 2023
+Comments Due:   November 22, 2023
+```
+
+------------------
+
 - [OpenSK](https://github.com/google/OpenSK)
   - This repository contains a Rust implementation
     of a FIDO2 authenticator.
@@ -71,3 +87,14 @@ They have led to a new generation of practically efficient FHE.
 
 - [机密计算](https://book.douban.com/subject/36319416/)
   - 不抱期待, 估计没啥干货
+
+```
+全同态加密相对于部分同态加密和类同态加密,
+在运算形式和电路深度方面更为自由,
+可以支持任意次数的加法与乘法运算.
+```
+
+```
+GSW 方案在功能上得到了扩展, 不需要计算密钥, 只需要公钥就可以进行同态运算,
+所以基于 GSW 方案可以构造基于身份的同态加密方案和基于属性的同态加密方案.
+```

@@ -73,6 +73,9 @@ Polars
 
 ---
 
+- [Decrusting the axum crate](https://www.youtube.com/watch?v=Wnb_n5YktO8)
+  - [axum::extract::State](https://docs.rs/axum/latest/axum/extract/struct.State.html)
+
 - [Crust of Rust: std::collections](https://www.youtube.com/watch?v=EF3Z4jdD1EQ)
   - https://doc.rust-lang.org/std/collections/index.html
   - 太长了, 看不完~
