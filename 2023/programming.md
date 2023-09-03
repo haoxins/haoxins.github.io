@@ -4,6 +4,10 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
+  - 强迫症患者必看
+
+---
+
 - [Apache Flink Kubernetes Operator 1.6.0](https://flink.apache.org/2023/08/15/apache-flink-kubernetes-operator-1.6.0-release-announcement/)
   - 主要期待: `General Autoscaler Improvements`
 

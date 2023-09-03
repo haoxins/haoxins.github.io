@@ -136,6 +136,13 @@ date: 2023-01-08
 
 ## 影视
 
+- [罗曼蒂克消亡史](https://movie.douban.com/subject/24751763/)
+
+- [奥本海默](https://movie.douban.com/subject/35593344/)
+  - 很好~ 会二刷!
+
+- [雾山五行之犀川幻紫林篇](https://movie.douban.com/subject/35178776/)
+  - 为此开通了一个月的 bilibili 大会员, 25 元~
 
 - [Hello! 树先生](https://movie.douban.com/subject/4135710/)
   - 还不错
@@ -294,6 +301,8 @@ date: 2023-01-08
 
 ### 特斯拉
 
+
+- 2023年9月1日, 2016 年首发的 Model 3 改款了～
 
 - 特斯拉超充, 2023-05:
   - `16:43`, 58km, 16%
