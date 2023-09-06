@@ -4,6 +4,15 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
+
+- 2023年9月, 用来测试`文心一言`的问题
+  - 详细描述`20`世纪的数学成果
+  - 详细描述`20`世纪的物理成果
+
+```
+2023-09-04 不满意
+```
+
   - 强迫症患者必看
 
 ---
@@ -29,7 +38,7 @@ August 09, 2023
 
 - 从 [Gin](https://github.com/gin-gonic/gin) 切换到 [Hertz](https://github.com/cloudwego/hertz)
   - 项目对 Web 框架依赖很少, 切换成本较低~
-  - CPU, Memory 使用略有下降, 不明显~
+  - OpenTelemetry 的支持是一个亮点
 
 - [PEP 703 - Making the Global Interpreter Lock Optional in CPython](https://peps.python.org/pep-0703/)
   - 还是值得期待的~

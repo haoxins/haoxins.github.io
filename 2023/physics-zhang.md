@@ -4,6 +4,10 @@ description: 月既不解饮, 影徒随我身. 暂伴月将影, 行乐须及春.
 date: 2022-11-16
 ---
 
+- [张朝阳的物理课 第二卷](https://book.douban.com/subject/36514936/)
+
+------------------
+
 - [张朝阳的物理课](https://book.douban.com/subject/36150946/)
 
 ```

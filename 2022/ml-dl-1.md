@@ -201,13 +201,13 @@ date: 2022-08-02
   而矩阵 `D` 定义为对角矩阵.
   - 注意, 矩阵 `D` 不一定是方阵.
 - 对角矩阵 `D` 对角线上的元素称为矩阵 `A` 的奇异值 (singular value).
-  - 矩阵 `U` 的列向量称为`左奇异向量` (left singular vector),
-    矩阵 `V` 的列向量称`右奇异向量` (right singular vector).
+  - 矩阵 `U` 的列向量称为左奇异向量 (left singular vector),
+    矩阵 `V` 的列向量称右奇异向量 (right singular vector).
 - 事实上, 我们可以用与 `A` 相关的特征分解去解释 `A` 的奇异值分解.
-  - `A` 的`左奇异向量` (left singular vector) 是
+  - `A` 的左奇异向量 (left singular vector) 是
     $$ \mathbf{A} \mathbf{A} ^{\top} $$
     的特征向量.
-  - `A` 的`右奇异向量` (right singular vector) 是
+  - `A` 的右奇异向量 (right singular vector) 是
     $$ \mathbf{A} ^{\top} \mathbf{A} $$
     的特征向量.
   - `A` 的非零奇异值是
