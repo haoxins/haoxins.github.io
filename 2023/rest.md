@@ -139,7 +139,8 @@ date: 2023-01-08
 - [罗曼蒂克消亡史](https://movie.douban.com/subject/24751763/)
 
 - [奥本海默](https://movie.douban.com/subject/35593344/)
-  - 很好~ 会二刷!
+  - 很好~
+  - 貌似是第一部在电影院看了两遍的电影
 
 - [雾山五行之犀川幻紫林篇](https://movie.douban.com/subject/35178776/)
   - 为此开通了一个月的 bilibili 大会员, 25 元~

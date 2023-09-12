@@ -21,7 +21,7 @@ date: 2023-01-03
   also belongs to the same set.
   - The set of points on the surface of a sphere is not
     closed under linear combination, because,
-    the line joining an arbitrary pair of of points
+    the line joining an arbitrary pair of points
     on this set will not wholly lie on
     the surface of that sphere.
 - A transform is __linear__ if and only if the transform of

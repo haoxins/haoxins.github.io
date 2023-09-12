@@ -31,3 +31,7 @@ DeepWalk 作者发现, 短距离随机游走中节点的概率分布与自然语
 
 - [扩散模型](https://book.douban.com/subject/36489324/)
 - [扩散模型](https://book.douban.com/subject/36482946/)
+
+------------------
+
+- [这就是 ChatGPT](https://book.douban.com/subject/36449803/)

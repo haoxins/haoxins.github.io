@@ -469,7 +469,7 @@ based on the bipartite input graph.
 > One of the most simple and broadly used node
   embedding models is the `node2vec`.
 
--  Most node embedding models encode isolated nodes identically.
+- Most node embedding models encode isolated nodes identically.
 
 ### Node2vec algorithm
 
