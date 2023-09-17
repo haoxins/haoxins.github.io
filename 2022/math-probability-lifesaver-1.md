@@ -122,15 +122,15 @@ $$.
   - $$ Pr(A \mid B) = Pr(A \cap B) / Pr(B) $$.
 
 - __一般乘法法则__: 我们有
-  - $$ Pr(A \cap B) = Pr(A \mid B)·Pr(B) $$.
+  - $$ Pr(A \cap B) = Pr(A \mid B) · Pr(B) $$.
 
 - __独立性 (两个事件)__: 如果事件 `A` 和 `B` 满足
-  - $$ Pr(A \cap B) = Pr(A)·Pr(B) $$,
+  - $$ Pr(A \cap B) = Pr(A) · Pr(B) $$,
   - 那么 `A` 和 `B` 就是独立的.
 
 - __独立性 (三个事件)__: 如果事件 `A`, `B` 和 `C` 满足
   - (1)
-    $$ Pr(A \cap B \cap C) = Pr(A)·Pr(B)·Pr(C) $$,
+    $$ Pr(A \cap B \cap C) = Pr(A) · Pr(B) · Pr(C) $$,
     并且
   - (2) 其中任意两个事件都是独立的,
   - 那么 `A`, `B` 和 `C` 就是相互独立的.
@@ -155,11 +155,11 @@ $$.
 
 - __贝叶斯定理__: 由一般乘法法则可以推出:
   对于事件 `A` 和 `B`, 有
-  - $$ Pr(B \mid A)·Pr(A) = Pr(A \mid B)·Pr(B) $$.
+  - $$ Pr(B \mid A) · Pr(A) = Pr(A \mid B) · Pr(B) $$.
   - 因此, 只要
     $$ Pr(B) ≠ 0 $$,
     我们就有
-  - $$ Pr(A \mid B) = Pr(B \mid A)·\frac{Pr(A)}{Pr(B)} $$.
+  - $$ Pr(A \mid B) = Pr(B \mid A) · \frac{Pr(A)}{Pr(B)} $$.
 
 - __划分成两部分__: 设 `B` 是满足
   $$ 0 < Pr(B) < 1 $$
@@ -212,7 +212,7 @@ $$.
   构成了样本空间 `S` 的一个划分 (分成了至多可数个部分), 那么对于任意的
   $$ A \subset S $$,
   我们有
-  - $$ Pr(A) = \sum_{n} Pr(A \mid B_n)·Pr(B_n) $$.
+  - $$ Pr(A) = \sum_{n} Pr(A \mid B_n) · Pr(B_n) $$.
 - 对于所有的 `n`, 都应该有
   $$ 0 < Pr(B_n) < 1 $$,
   否则条件概率就是无定义的.
@@ -231,8 +231,8 @@ $$.
   是样本空间的一个划分, 那么
   - $$
       Pr(A \mid B) = \frac
-      {Pr(B \mid A)·Pr(A)}
-      {\sum_{i=1}^{n}Pr(B \mid A_i)·Pr(A_i)}
+      {Pr(B \mid A) · Pr(A)}
+      {\sum_{i=1}^{n}Pr(B \mid A_i) · Pr(A_i)}
     $$.
   - 通常情况下, `A` 就是某个
     $$ A_i $$.

@@ -16,6 +16,17 @@ date: 2023-01-08
 
 ---
 
+- [Arroyo 0.6](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.6.0)
+  - [Announcing Arroyo 0.6.0](https://www.arroyo.dev/blog/arroyo-0-6-0)
+  - [Example GKE configuration](https://doc.arroyo.dev/deployment/kubernetes#example-gke-configuration)
+
+```
+We've finished our migration from gRPC
+to REST for the public-facing Arroyo API.
+```
+
+> 版本发布越发频繁了.
+
 - [Apache Flink Kubernetes Operator 1.6.0](https://flink.apache.org/2023/08/15/apache-flink-kubernetes-operator-1.6.0-release-announcement/)
   - 主要期待: `General Autoscaler Improvements`
 
