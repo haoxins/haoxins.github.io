@@ -362,10 +362,12 @@ most viewed lecturers at MIT.
   Almost all vectors change direction,
   when they are multiplied by `A`.
   - Certain exceptional vectors __x__ are in the same
-    direction as `A`__x__.
+    direction as
+    $$ A \mathbf{x} $$.
   - Those are the "eigenvectors".
   - Multiply an eigenvector by `A`, and the vector
-    `A`__x__ is a number
+    $$ A \mathbf{x} $$
+    is a number
     $$ \lambda $$
     `times` the original __x__.
 - The basic equation is
