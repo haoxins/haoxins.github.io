@@ -358,9 +358,30 @@ most viewed lecturers at MIT.
 
 ## Eigenvalues and Eigenvectors
 
+- To explain eigenvalues, we first explain eigenvectors.
+  Almost all vectors change direction,
+  when they are multiplied by `A`.
+  - Certain exceptional vectors __x__ are in the same
+    direction as `A`__x__.
+  - Those are the "eigenvectors".
+  - Multiply an eigenvector by `A`, and the vector
+    `A`__x__ is a number
+    $$ \lambda $$
+    `times` the original __x__.
+- The basic equation is
+  $$ A \mathbf{x} = \lambda \mathbf{x} $$.
+  - The number
+    $$ \lambda $$
+    is an eigenvalue of `A`.
+
 ## The Singular Value Decomposition (SVD)
 
-## Linear Algebrain Probability & Statistics
+- The singular value theorem for `A` is the eigenvalue theorem for
+  $$ A^{T} A $$
+  and
+  $$ A A^{T} $$.
+- The Singular Value Decomposition (SVD) separates any matrix
+  into simple pieces.
 
 ------------------
 
