@@ -10,9 +10,12 @@ date: 2022-12-29
   - [anyhow](https://github.com/dtolnay/anyhow)
   - [thiserror](https://github.com/dtolnay/thiserror)
 - Rust math
-  - [argmin](https://github.com/argmin-rs/argmin)
   - [nalgebra](https://github.com/dimforge/nalgebra)
-
+  - nalgebra is a linear algebra library
+    written for Rust targeting:
+  - General-purpose linear algebra.
+  - Real-time computer graphics.
+  - Real-time computer physics.
 - [The Rust Reference](https://doc.rust-lang.org/stable/reference/)
 
 ---

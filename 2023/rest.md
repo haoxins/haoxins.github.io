@@ -6,8 +6,6 @@ date: 2023-01-08
 
 ## 科普
 
-- [现代数学的概念](https://book.douban.com/subject/36301166/)
-
 - [世界是概率的](https://book.douban.com/subject/36294447/)
   - 买这本书其实只是为了其中一篇文章:
     `柯尔莫哥洛夫的数学观与成就`

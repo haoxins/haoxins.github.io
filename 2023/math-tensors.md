@@ -44,12 +44,12 @@ eat vectors and spit out numbers.
   5. `c(v + w) = cv + cw` for all `v` and `w` in
     `V` and scalars `c` (__Distributivity__)
   6. `1v = v` for all `v` in `V`
-  7. $$ (c_1 + c_2)v = c_1 v + c_2 v $$
+  7. $$ (c_1 + c_2) v = c_1 v + c_2 v $$
     for all scalars
     $$ c_1 $$,
     $$ c_2 $$
     and vectors `v`
-  8. $$ (c_1 c_2)v = c_1(c_2 v) $$
+  8. $$ (c_1 c_2) v = c_1 (c_2 v) $$
     for all scalars
     $$ c_1 $$,
     $$ c_2 $$
