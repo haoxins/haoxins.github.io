@@ -4,77 +4,13 @@ description: 碧云天, 黄叶地, 秋色连波, 波上寒烟翠. 山映斜阳�
 date: 2023-01-30
 ---
 
-- [物理学家用的张量和群论导论](https://book.douban.com/subject/25934965/)
+- [张量学习三讲](https://book.douban.com/subject/30236465/)
 
-## Tensors
+## 第一讲 基础篇: 坐标系
 
-- To make this concrete, consider a rank `2` tensor `T`,
-  whose job it is to eat two vectors `v` and `w` and produce
-  a number which we will denote as `T(v, w)`.
-  - For such a tensor, __multilinearity__ means
-  - $$ T(v_1 + c v_2, w) = T(v_1, w) + c T(v_2, w) $$
-  - $$ T(v, w_1 + c w_2) = T(v, w_1) + c T(v, w_2) $$
+## 第二讲 运算篇: 运算规则
 
-```
-One possible objection to our approach is that matrices
-and tensors are often thought of as linear operators which
-take vectors into vectors, as opposed to objects which
-eat vectors and spit out numbers.
-```
-
----
-
-- That said, an (__abstract__) __vector space__ is a set
-  __V__ (whose elements are called vectors),
-  together with a set of scalars __C__
-  (for us, __C__ is always
-  $$ \mathbb{R} $$
-  or
-  $$ \mathbb{C} $$
-  ) and operations of addition and scalar multiplication
-  that satisfy the following axioms:
-  1. `v + w = w + v`
-    for all `v`, `w` in `V` (__Commutativity__)
-  2. `v + (w + x) = (v + w) + x`
-    for all `v`, `w`, `x` in `V` (__Associativity__)
-  3. There exists a vector `0` in `V` such that
-    `v + 0 = v` for all `v` in `V`
-  4. For all `v` in `V` there is a vector `-v`
-    such that `v + (-v) = 0`
-  5. `c(v + w) = cv + cw` for all `v` and `w` in
-    `V` and scalars `c` (__Distributivity__)
-  6. `1v = v` for all `v` in `V`
-  7. $$ (c_1 + c_2) v = c_1 v + c_2 v $$
-    for all scalars
-    $$ c_1 $$,
-    $$ c_2 $$
-    and vectors `v`
-  8. $$ (c_1 c_2) v = c_1 (c_2 v) $$
-    for all scalars
-    $$ c_1 $$,
-    $$ c_2 $$
-    and vectors `v`
-
----
-
-- A `linear operator` on a vector space __V__ is a
-  function __T__ from __V__ to itself satisfying
-  the `linearity condition`.
-- So __T__ is `invertible` if and only if the only
-  vector it sends to `0` is the zero vector.
-- An important point to keep in mind is that a
-  `linear operator` is not the same thing as a matrix;
-  just as with vectors, the identification can only
-  be made once a basis is chosen.
-
-```
-Roughly speaking, a dual vector is an object that
-eats a vector and spits out a number.
-```
-
-- Given a vector space __V__ with scalars `C`,
-  a __dual vector__ (or __linear functional__)
-  on __V__ is a C-valued linear function `f` on __V__.
+## 第三讲 应用篇: 场论中的张量
 
 ------------------
 
@@ -384,6 +320,80 @@ most viewed lecturers at MIT.
   $$ A A^{T} $$.
 - The Singular Value Decomposition (SVD) separates any matrix
   into simple pieces.
+
+------------------
+
+- [物理学家用的张量和群论导论](https://book.douban.com/subject/25934965/)
+
+## Tensors
+
+- To make this concrete, consider a rank `2` tensor `T`,
+  whose job it is to eat two vectors `v` and `w` and produce
+  a number which we will denote as `T(v, w)`.
+  - For such a tensor, __multilinearity__ means
+  - $$ T(v_1 + c v_2, w) = T(v_1, w) + c T(v_2, w) $$
+  - $$ T(v, w_1 + c w_2) = T(v, w_1) + c T(v, w_2) $$
+
+```
+One possible objection to our approach is that matrices
+and tensors are often thought of as linear operators which
+take vectors into vectors, as opposed to objects which
+eat vectors and spit out numbers.
+```
+
+---
+
+- That said, an (__abstract__) __vector space__ is a set
+  __V__ (whose elements are called vectors),
+  together with a set of scalars __C__
+  (for us, __C__ is always
+  $$ \mathbb{R} $$
+  or
+  $$ \mathbb{C} $$
+  ) and operations of addition and scalar multiplication
+  that satisfy the following axioms:
+  1. `v + w = w + v`
+    for all `v`, `w` in `V` (__Commutativity__)
+  2. `v + (w + x) = (v + w) + x`
+    for all `v`, `w`, `x` in `V` (__Associativity__)
+  3. There exists a vector `0` in `V` such that
+    `v + 0 = v` for all `v` in `V`
+  4. For all `v` in `V` there is a vector `-v`
+    such that `v + (-v) = 0`
+  5. `c(v + w) = cv + cw` for all `v` and `w` in
+    `V` and scalars `c` (__Distributivity__)
+  6. `1v = v` for all `v` in `V`
+  7. $$ (c_1 + c_2) v = c_1 v + c_2 v $$
+    for all scalars
+    $$ c_1 $$,
+    $$ c_2 $$
+    and vectors `v`
+  8. $$ (c_1 c_2) v = c_1 (c_2 v) $$
+    for all scalars
+    $$ c_1 $$,
+    $$ c_2 $$
+    and vectors `v`
+
+---
+
+- A `linear operator` on a vector space __V__ is a
+  function __T__ from __V__ to itself satisfying
+  the `linearity condition`.
+- So __T__ is `invertible` if and only if the only
+  vector it sends to `0` is the zero vector.
+- An important point to keep in mind is that a
+  `linear operator` is not the same thing as a matrix;
+  just as with vectors, the identification can only
+  be made once a basis is chosen.
+
+```
+Roughly speaking, a dual vector is an object that
+eats a vector and spits out a number.
+```
+
+- Given a vector space __V__ with scalars `C`,
+  a __dual vector__ (or __linear functional__)
+  on __V__ is a C-valued linear function `f` on __V__.
 
 ------------------
 
