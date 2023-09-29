@@ -164,8 +164,10 @@ date: 2023-01-08
 
 ## 影视
 
+- [通灵神探 Solace](https://movie.douban.com/subject/3217142/)
+
 - [罗曼蒂克消亡史](https://movie.douban.com/subject/24751763/)
-  - 看不下去
+  - 看不下去, 放弃
 
 - [奥本海默](https://movie.douban.com/subject/35593344/)
   - 很好~

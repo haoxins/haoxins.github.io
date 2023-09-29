@@ -16,7 +16,9 @@ date: 2022-12-29
   - General-purpose linear algebra.
   - Real-time computer graphics.
   - Real-time computer physics.
-- [The Rust Reference](https://doc.rust-lang.org/stable/reference/)
+- Graph
+  - [petgraph](https://github.com/petgraph/petgraph)
+  - Graph data structure library.
 
 ---
 
