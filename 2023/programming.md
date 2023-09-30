@@ -17,6 +17,20 @@ date: 2023-01-08
 
 ---
 
+- [InfluxDB Edge](https://github.com/influxdata/influxdb)
+  - Apache DataFusion 生态终于崭露头角~
+  - 期待 Arroyo
+
+```
+InfluxDB is an open source time series database written in Rust, using
+Apache Arrow, Apache Parquet, and Apache DataFusion as its foundational
+building blocks. This latest version (3.x) of InfluxDB focuses on
+providing a real-time buffer for observational data of all kinds
+(metrics, events, logs, traces, etc.) that is queryable via SQL or InfluxQL,
+and persisted in bulk to object storage as Parquet files,
+which other third-party systems can then use.
+```
+
 - [Arroyo 0.6](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.6.0)
   - [Announcing Arroyo 0.6.0](https://www.arroyo.dev/blog/arroyo-0-6-0)
   - [Example GKE configuration](https://doc.arroyo.dev/deployment/kubernetes#example-gke-configuration)
@@ -240,7 +254,7 @@ is Java 21 in September 2023.
     `tracing` is maintained by the Tokio project,
     but does not require the tokio runtime to be used.
   - BTW,
-    [InfluxDB IOx](https://github.com/influxdata/influxdb_iox)
+    [InfluxDB Edge](https://github.com/influxdata/influxdb)
     同样.
     It is built using Apache Arrow and DataFusion among other things.
 
