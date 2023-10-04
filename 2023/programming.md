@@ -15,6 +15,23 @@ date: 2023-01-08
 
   - 强迫症患者必看
 
+- [Deconstructing Type Parameters](https://go.dev/blog/deconstructing-type-parameters)
+
+```
+To repeat, writing type parameters and constraints [S []E, E any]
+means that the type argument for S can be any unnamed slice type,
+but it can't be a named type defined as a slice literal.
+Writing [S ~[]E, E any], with a ~, means that the type argument
+for S can be any type whose underlying type is a slice type.
+```
+
+```go
+// We can constrain the component types any way we like.
+func WithStrings[S ~[]E, E interface { String() string }](s S) (S, []string)
+// This says that the argument of WithStrings must be a
+// slice type for which the element type has a String method.
+```
+
 ---
 
 - [InfluxDB Edge](https://github.com/influxdata/influxdb)

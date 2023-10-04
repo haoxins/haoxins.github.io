@@ -22,6 +22,25 @@ date: 2022-12-29
 
 ---
 
+- [All Rust string types explained](https://www.youtube.com/watch?v=CpvzeyzgQdw)
+
+```
+String -> Vec<u8>
+  create/modify strings
+
+&str -> & str -> &[u8]
+  read/analyze strings
+  Box<str>
+  Rc<str>
+  Arc<str>
+
+&'static str
+
+OsString & OsStr
+  no need utf-8
+
+Path & PathBuf
+```
 
 ---
 
