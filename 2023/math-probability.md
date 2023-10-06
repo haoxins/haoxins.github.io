@@ -1,10 +1,10 @@
 ---
-title: 应用随机过程 (第 11 版)
+title: 应用随机过程
 description: 戍客望边色, 思归多苦颜. 高楼当此夜, 叹息未应闲.
 date: 2023-09-25
 ---
 
-- [应用随机过程 (第 11 版)](https://book.douban.com/subject/26761202/)
+- [应用随机过程](https://book.douban.com/subject/26761202/)
 
 ```
 原书已经出了第 12 版, 网上评价这一版翻译很差!
