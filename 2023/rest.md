@@ -188,6 +188,7 @@ date: 2023-01-08
 
 - [长安三万里](https://movie.douban.com/subject/36035676/)
   - 还行
+  - 国庆假期之后, 爱奇艺再观~
 
 - [封神第一部: 朝歌风云](https://movie.douban.com/subject/10604086/)
   - 不错~
