@@ -4,6 +4,25 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
+---
+
+- [NebulaGraph](https://docs.nebula-graph.com.cn)
+
+```
+下列操作是异步实现的, 要在下一个心跳周期之后才能生效, 否则访问会报错.
+为确保数据同步, 后续操作能顺利进行, 请等待 2 个心跳周期 (20 秒).
+
+CREATE SPACE
+CREATE TAG
+CREATE EDGE
+ALTER TAG
+ALTER EDGE
+CREATE TAG INDEX
+CREATE EDGE INDEX
+```
+
+---
+
 - 2023年9月, 用来测试`文心一言`的问题
   - 详细描述`20`世纪的数学成果
   - 详细描述`20`世纪的物理成果
