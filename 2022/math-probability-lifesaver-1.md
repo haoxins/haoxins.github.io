@@ -112,7 +112,7 @@ $$.
     均有
     $$ A_i \subset B $$,
     那么
-    $$Pr(\cup_i A_i) \leqslant Pr(B) $$.
+    $$ Pr(\cup_i A_i) \leqslant Pr(B) $$.
 
 ## 条件概率, 独立性和贝叶斯定理
 
