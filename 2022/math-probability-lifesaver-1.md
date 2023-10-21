@@ -232,7 +232,7 @@ $$.
   - $$
       Pr(A \mid B) = \frac
       {Pr(B \mid A) · Pr(A)}
-      {\sum_{i=1}^{n}Pr(B \mid A_i) · Pr(A_i)}
+      {\sum_{i=1}^{n} Pr(B \mid A_i) · Pr(A_i)}
     $$.
   - 通常情况下, `A` 就是某个
     $$ A_i $$.
