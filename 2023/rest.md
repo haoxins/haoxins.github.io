@@ -170,6 +170,7 @@ date: 2023-01-08
 
 - [繁城之下](https://movie.douban.com/subject/35725842/)
   - 喜爱徽派建筑的美感
+  - 小宝子, 大义; 宋典史, 才情!
 
 - [通灵神探 Solace](https://movie.douban.com/subject/3217142/)
 
