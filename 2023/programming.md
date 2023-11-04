@@ -33,6 +33,15 @@ CREATE TAG INDEX
 CREATE EDGE INDEX
 ```
 
+```
+$^      起始点
+$$      目的点
+```
+
+- GO 复合语句中如需引用子查询的结果, 需要为该结果设置别名,
+  并使用管道符 `|` 传递给下一个子查询,
+  同时在下一个子查询中使用 `$-` 引用该结果的别名.
+
 ---
 
 - 2023年9月, 用来测试`文心一言`的问题
@@ -257,8 +266,8 @@ for _, i := range s {
 
 - [Ruff](https://github.com/charliermarsh/ruff)
   - An extremely fast Python linter, written in Rust.
-  - Bye! `Black` & `isort`
-  - 优势: lint 功能
+  - Bye! Black & isort
+  - 优势: lint & format (Black & isort) 一体
 - [Rye](https://github.com/mitsuhiko/rye)
   - 确实好用!
 - [PyO3](https://github.com/PyO3/pyo3)
