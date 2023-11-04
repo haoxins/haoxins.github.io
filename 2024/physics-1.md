@@ -144,7 +144,7 @@ date: 2023-09-27
 ```
 
 - 周期性的波函数可以写成下列形式:
-  - $$ \psi (x, t) = \sin 2 \pi x+-2元 $$
+  - $$ \psi (x, t) = \sin (\frac{2 \pi}{\lambda} x + \frac{2 \pi}{\tau} t) $$
 
 - $$ 速度 = 波长 \times 频率 $$
 
