@@ -34,8 +34,12 @@ CREATE EDGE INDEX
 ```
 
 ```
-$^      起始点
-$$      目的点
+DELETE VERTEX <vid> WITH EDGE;
+```
+
+```
+$^  起始点
+$$  目的点
 ```
 
 - GO 复合语句中如需引用子查询的结果, 需要为该结果设置别名,
@@ -53,6 +57,7 @@ $$      目的点
 ```
 
 
+- [Go Style Decisions](https://google.github.io/styleguide/go/decisions)
   - 强迫症患者必看
 
 - [Deconstructing Type Parameters](https://go.dev/blog/deconstructing-type-parameters)
