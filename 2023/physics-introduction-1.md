@@ -10,6 +10,12 @@ date: 2023-09-27
   - 个人对这本书的定位是: `严肃科普`, 翻译还是不错的,
     (翻译) 比 `费恩曼物理学讲义: 新千年 (珍藏版)` 要好.
 
+```
+数学观念与物理观念同步推进, 是一个风格特色, 更是关键理念!
+定位并非是物理教材~ 门槛不高.
+不要被书的厚度吓倒, 数理相关的书籍, 厚度与阅读难度 (耗时) 不成比例~
+```
+
 > 第 1, 2, 7, 8 章可以删除~
 > 初看下来, 能够感受到作者同步推进物理概念和数学工具, 点缀一些哲学思考.
 > (我依然认为所谓的哲学思考在数理书籍中属于没太大意义的冗余,
@@ -360,19 +366,20 @@ date: 2023-09-27
 
 $$
 \begin{cases}
-  (1) ▽ \cdot \mathbf{E} = 4π \rho
+  (1) ▽ \cdot \mathbf{E} = 4π \rho \\
       (库仑定律) \\
-  (2) ▽ \cdot \mathbf{B} = 0
+  (2) ▽ \cdot \mathbf{B} = 0 \\
       (不存在磁荷) \\
   (3) [ ▽ \times \mathbf{E} ] = - \frac{1}{c}
-      \frac{\partial \mathbf{B}}{\partial t}
+      \frac{\partial \mathbf{B}}{\partial t} \\
       (法拉第定律) \\
   (4) [ ▽ \times \mathbf{B} ] = \frac{4π}{c} \mathbf{J} +
-      \frac{1}{c} \frac{\partial \mathbf{E}}{\partial t}
+      \frac{1}{c} \frac{\partial \mathbf{E}}{\partial t} \\
       (经麦克斯韦修正后的安培定律) \\
-  (0) ▽ \cdot \mathbf{J} + \frac{\partial \rho}{\partial t} = 0
+  (0) ▽ \cdot \mathbf{J} + \frac{\partial \rho}{\partial t} = 0 \\
       (电荷守恒) \\
-  (5) \mathbf{F} = q \mathbf{E} + q [ \frac{\mathbf{v}}{c} \times \mathbf{B} ]
+  (5) \mathbf{F} = q \mathbf{E} + q
+      [ \frac{\mathbf{v}}{c} \times \mathbf{B} ] \\
       (洛伦兹力)
 \end{cases}
 $$
