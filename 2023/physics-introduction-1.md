@@ -366,21 +366,21 @@ date: 2023-09-27
 
 $$
 \begin{cases}
-  (1) ▽ \cdot \mathbf{E} = 4π \rho \\
-      (库仑定律) \\
-  (2) ▽ \cdot \mathbf{B} = 0 \\
-      (不存在磁荷) \\
+  (1) ▽ \cdot \mathbf{E} = 4π \rho
+      & (库仑定律) \\
+  (2) ▽ \cdot \mathbf{B} = 0
+      & (不存在磁荷) \\
   (3) [ ▽ \times \mathbf{E} ] = - \frac{1}{c}
-      \frac{\partial \mathbf{B}}{\partial t} \\
-      (法拉第定律) \\
+      \frac{\partial \mathbf{B}}{\partial t}
+      & (法拉第定律) \\
   (4) [ ▽ \times \mathbf{B} ] = \frac{4π}{c} \mathbf{J} +
-      \frac{1}{c} \frac{\partial \mathbf{E}}{\partial t} \\
-      (经麦克斯韦修正后的安培定律) \\
-  (0) ▽ \cdot \mathbf{J} + \frac{\partial \rho}{\partial t} = 0 \\
-      (电荷守恒) \\
+      \frac{1}{c} \frac{\partial \mathbf{E}}{\partial t}
+      & (经麦克斯韦修正后的安培定律) \\
+  (0) ▽ \cdot \mathbf{J} + \frac{\partial \rho}{\partial t} = 0
+      & (电荷守恒) \\
   (5) \mathbf{F} = q \mathbf{E} + q
-      [ \frac{\mathbf{v}}{c} \times \mathbf{B} ] \\
-      (洛伦兹力)
+      [ \frac{\mathbf{v}}{c} \times \mathbf{B} ]
+      & (洛伦兹力)
 \end{cases}
 $$
 
