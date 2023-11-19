@@ -168,6 +168,9 @@ date: 2023-01-08
 
 ## 影视
 
+- [电锯惊魂10](https://movie.douban.com/subject/36116844/)
+  - 一般, 主要是情怀
+
 - [繁城之下](https://movie.douban.com/subject/35725842/)
   - 喜爱徽派建筑的美感
   - 小宝子, 大义; 宋典史, 才情!
