@@ -168,7 +168,7 @@ date: 2023-01-08
 
 ## 影视
 
-- [电锯惊魂10](https://movie.douban.com/subject/36116844/)
+- [电锯惊魂 10](https://movie.douban.com/subject/36116844/)
   - 一般, 主要是情怀
 
 - [繁城之下](https://movie.douban.com/subject/35725842/)
