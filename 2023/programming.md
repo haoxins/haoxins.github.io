@@ -4,6 +4,12 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
+- Kafka Protocol Buffers (zstd) to JSON (zstd)
+  - Messages `236 M`, Disk `112.7 Gb`
+  - to
+
+---
+
 - 吐槽一下 [maturin](https://github.com/PyO3/maturin), publish 的时候提示
   - `Please enter your username`
   - 然后统一输入
@@ -18,7 +24,7 @@ date: 2023-01-08
 在一个图空间中, 一个点由点的 ID 唯一标识, 即 VID 或 Vertex ID.
 ```
 
-> `vid` space 全局唯一!
+> `vid`: Space 全局唯一!
 
 ```
 下列操作是异步实现的, 要在下一个心跳周期之后才能生效, 否则访问会报错.

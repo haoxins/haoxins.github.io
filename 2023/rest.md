@@ -163,12 +163,14 @@ date: 2023-01-08
 
 ## 小说
 
+- [绝叫](https://book.douban.com/subject/35031587/)
+
 - [白鸟与蝙蝠](https://book.douban.com/subject/36074757/)
   - 一般～
 
 ## 影视
 
-- [93国际列车大劫案: 莫斯科行动](https://movie.douban.com/subject/10810266/)
+- [93 国际列车大劫案: 莫斯科行动](https://movie.douban.com/subject/10810266/)
   - 在家, 一边走椭圆机, 一边看, 还行~
 
 - [电锯惊魂 10](https://movie.douban.com/subject/36116844/)
@@ -350,6 +352,12 @@ date: 2023-01-08
   - __皮卡丘__
 
 ### 特斯拉
+
+- 2023-12, Cybertruck 开始交付
+  - 车身尺寸对比
+  - Cybertruck: 5683 mm, 2413 mm, 1791 mm
+  - Model Y: 4750 mm, 2129 mm, 1624 mm
+  - 长 `+20%`, 宽 `+13%`, 高 `+10%`
 
 - 上海, 特斯拉超充
   - 优惠时段: 1.59 / kWh

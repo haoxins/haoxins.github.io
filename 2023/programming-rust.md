@@ -19,6 +19,22 @@ date: 2022-12-29
 - Graph
   - [petgraph](https://github.com/petgraph/petgraph)
   - Graph data structure library.
+  - [Arroy](https://github.com/meilisearch/arroy)
+  - `Arroy` (Approximate Rearest Reighbors) is a
+    Rust library with the interface of the
+    [Annoy](https://github.com/spotify/annoy/#full-python-api)
+    Python library to search for vectors in
+    space that are close to a given query vector.
+  - It is based on `LMDB`, a memory-mapped key-value store,
+    so many processes may share the same data and
+    atomically modify the vectors.
+
+---
+
+- Rust `1.75`
+
+---
+
 
 ---
 

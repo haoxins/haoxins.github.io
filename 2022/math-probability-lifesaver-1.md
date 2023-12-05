@@ -398,8 +398,10 @@ $$.
 $$
 \mathbb{E} \left [ g(X) \right ] =
 \begin{cases}
-  \int_{- \infty}^{\infty} g(x) \cdot f_{X} (x) dx & \mbox{若 }X\mbox{ 是连续的} \\
-  \sum_{n} g(x_n) \cdot f_{X} (x_n) & \mbox{若 }X\mbox{ 是离散的}
+  \int_{- \infty}^{\infty} g(x) \cdot f_{X} (x) dx &
+  \mbox{若 } X \mbox{ 是连续的} \\
+  \sum_{n} g(x_n) \cdot f_{X} (x_n) &
+  \mbox{若 } X \mbox{ 是离散的}
 \end{cases}
 $$
 
