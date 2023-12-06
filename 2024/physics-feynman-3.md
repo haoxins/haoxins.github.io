@@ -66,13 +66,13 @@ date: 2021-08-15
   $$ \phi $$
   的绝对值平方给出,
   $$ \phi $$
-  称为 __概率幅__:
+  称为`概率幅`:
 
 $$
 \begin{cases}
-P = 概率 \\
-\phi = 概率幅 \\
-P = \mid \phi \mid ^2
+  P = 概率 \\
+  \phi = 概率幅 \\
+  P = \mid \phi \mid ^2
 \end{cases}
 $$
 
@@ -82,8 +82,8 @@ $$
 
 $$
 \begin{cases}
-\phi = \phi_{1} + \phi_{2} \\
-P = \mid \phi_{1} + \phi_{2} \mid ^2
+  \phi = \phi_{1} + \phi_{2} \\
+  P = \mid \phi_{1} + \phi_{2} \mid ^2
 \end{cases}
 $$
 
@@ -281,9 +281,9 @@ $$
   用新的符号表示:
 
 $$
-\langle x \mid s \rangle_{两个小孔都打开} =
-\langle x \mid s \rangle_{通过 1} +
-\langle x \mid s \rangle_{通过 2}
+  \langle x \mid s \rangle_{两个小孔都打开} =
+  \langle x \mid s \rangle_{通过 1} +
+  \langle x \mid s \rangle_{通过 2}
 $$.
 (`3.4`)
 
@@ -339,8 +339,8 @@ $$.
   的振幅是:
 
 $$
-\langle \mathbf{r}_2 \mid \mathbf{r}_1 \rangle =
-\frac{e^{i \mathbf{p} \cdot \mathbf{r}_{12} / \hbar}}{\mathbf{r}_{12}}
+  \langle \mathbf{r}_2 \mid \mathbf{r}_1 \rangle =
+  \frac{e^{i \mathbf{p} \cdot \mathbf{r}_{12} / \hbar}}{\mathbf{r}_{12}}
 $$
 (`3.7`)
 
@@ -415,7 +415,7 @@ $$
   - (3)
     $$
       \langle \phi \mid \chi \rangle =
-      \langle \chi \mid \phi \rangle
+      \langle \chi \mid \phi \rangle ^{*}
     $$
 - 在这些方程式里 `i` 和 `j` 代表某一表象的所有基础态, 而
   $$ \phi $$
@@ -435,6 +435,7 @@ $$
 只要改变状态的数目就可使讨论普遍化.
 在任一特殊情况中可以包括 n 个基础态而不只是 3 个基础态.
 我们的上述基本定律具有完全相同的形式 -- 只是 i 和 j 要理解为遍及于所有 n 个基础态.
+
 任何现象都可以这样来分析: 求出它出发时在每一基础态的振幅以及终止于另一组基础态中的振幅,
 然后对整个基础态组求和. 任何适当的基础态组都可以采用. 如果有人愿意用另外的一组也同样合适.
 两个基础态组可用 n 行 n 列的变换矩阵相联系, 关于这种变换, 我们以后还有更多的东西要讲.
@@ -450,15 +451,15 @@ $$
     每一个乘积为从初态进入某一基础态的振幅乘以从该基础态到终态的振幅,
     最后每个基础态的项求和:
   - $$
-    \langle \chi \mid \psi \rangle =
-    \sum_{i} \langle \chi \mid i \rangle
-    \langle i \mid \psi \rangle
+      \langle \chi \mid \psi \rangle =
+      \sum_{i} \langle \chi \mid i \rangle
+      \langle i \mid \psi \rangle
     $$
   - 基础态是相互正交的 -- 一个基础态的振幅在另一个基础态中等于零:
   - $$ \langle i \mid j \rangle = \delta_{ij} $$
   - 从一个状态过渡到另一个状态的振幅等于其逆过程的振幅的复共轭:
   - $$
-      \langle \chi \mid \psi \rangle =
+      \langle \chi \mid \psi \rangle ^{*} =
       \langle \psi \mid \chi \rangle
     $$
 
