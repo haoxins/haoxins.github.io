@@ -427,8 +427,10 @@ $$
   - $$
       μ =
       \begin{cases}
-        \int_{- \infty}^{\infty} x \cdot f_{X} (x) dx & \mbox{若 }X\mbox{ 是连续的} \\
-        \sum_{n} x_n \cdot f_{X} (x_n) & \mbox{若 }X\mbox{ 是离散的}
+        \int_{- \infty}^{\infty} x \cdot f_{X} (x) dx &
+        \mbox{若 } X \mbox{ 是连续的} \\
+        \sum_{n} x_n \cdot f_{X} (x_n) &
+        \mbox{若 } X \mbox{ 是离散的}
       \end{cases}
     $$
   - `(2)` `X` 的方差, 记作
@@ -443,8 +445,10 @@ $$
   - $$
       \sigma_{X}^2 =
       \begin{cases}
-        \int_{- \infty}^{\infty} (x - μ_{X})^{2} f_{X} (x) dx & \mbox{若 }X\mbox{ 是连续的} \\
-        \sum_{n} (x_{n} - μ_{X})^{2} f_{X} (x_n) & \mbox{若 }X\mbox{ 是离散的}
+        \int_{- \infty}^{\infty} (x - μ_{X})^{2} f_{X} (x) dx &
+        \mbox{若 } X \mbox{ 是连续的} \\
+        \sum_{n} (x_{n} - μ_{X})^{2} f_{X} (x_n) &
+        \mbox{若 } X \mbox{ 是离散的}
       \end{cases}
     $$
   - 因为

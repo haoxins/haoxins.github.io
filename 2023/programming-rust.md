@@ -22,7 +22,7 @@ date: 2022-12-29
   - [Arroy](https://github.com/meilisearch/arroy)
   - `Arroy` (Approximate Rearest Reighbors) is a
     Rust library with the interface of the
-    [Annoy](https://github.com/spotify/annoy/#full-python-api)
+    [Annoy](https://github.com/spotify/annoy)
     Python library to search for vectors in
     space that are close to a given query vector.
   - It is based on `LMDB`, a memory-mapped key-value store,
