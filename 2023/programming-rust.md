@@ -35,9 +35,6 @@ date: 2022-12-29
 
 ---
 
-
----
-
 - [All Rust string types explained](https://www.youtube.com/watch?v=CpvzeyzgQdw)
 
 ```
