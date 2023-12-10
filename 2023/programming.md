@@ -7,8 +7,8 @@ date: 2023-01-08
 - Kafka Protocol Buffers (zstd) to JSON (zstd)
   - Messages `236 M`, Disk `112.7 Gb`
   - to
-  - Messages `217 M`, Disk `139.5 Gb`
-  - `+ 34.6 %`
+  - Messages `214 M`, Disk `138.0 Gb`
+  - `+ 35%`
 
 ---
 
