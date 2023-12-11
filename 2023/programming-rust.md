@@ -16,6 +16,9 @@ date: 2022-12-29
   - General-purpose linear algebra.
   - Real-time computer graphics.
   - Real-time computer physics.
+  - [faer](https://github.com/sarah-ek/faer-rs)
+  - faer is a collection of crates that implement
+    low level linear algebra routines in pure Rust.
 - Graph
   - [petgraph](https://github.com/petgraph/petgraph)
   - Graph data structure library.

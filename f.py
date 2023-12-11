@@ -66,7 +66,7 @@ for file in get_files_from_git():
 def gen_contents(sub_path):
     file_infos = []
     article_dir = path.join(root_dir, sub_path)
-    for (_, _, filenames) in walk(article_dir):
+    for _, _, filenames in walk(article_dir):
         for filename in filenames:
             if filename.startswith("quantum-0"):
                 continue
@@ -84,10 +84,10 @@ def gen_contents(sub_path):
 
 
 def gen_index():
-    index_contents.append("# 自乐")
-
+    index_contents.append("## 2024")
+    gen_contents("2024")
     with open(path.join(root_dir, "index.md"), "w") as f:
         f.write("\n".join(index_contents))
 
 
-gen_index()
+# gen_index()
