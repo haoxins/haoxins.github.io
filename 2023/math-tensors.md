@@ -115,7 +115,7 @@ date: 2023-01-30
     $$.
   - (2)
     $$ (c \mathbf{x}, \mathbf{y}) = c (\mathbf{x}, \mathbf{y}) $$,
-    $$ (\mathbf{x}, c \mathbf{y}) = \bar{c}(\mathbf{x}, \mathbf{y}) $$.
+    $$ (\mathbf{x}, c \mathbf{y}) = \bar{c} (\mathbf{x}, \mathbf{y}) $$.
   - (3)
     $$ (\mathbf{x}, \mathbf{y}) = \bar{(\mathbf{y}, \mathbf{x})} $$.
   - (4)

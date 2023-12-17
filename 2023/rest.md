@@ -1,10 +1,13 @@
 ---
-title: 休憩
+title: 休憩 阅读 游乐
 description: 文杏裁为梁, 香茅结为宇. 不知栋里云, 去作人间雨.
 date: 2023-01-08
 ---
 
-## 科普
+## 科普 & 法律
+
+- [法律的悖论](https://book.douban.com/subject/36624253/)
+  - 罗翔
 
 - [现代数学的概念](https://book.douban.com/subject/36301166/)
   - 译者`张卜天`的初心让人感佩!
@@ -164,11 +167,16 @@ date: 2023-01-08
 ## 小说
 
 - [绝叫](https://book.douban.com/subject/35031587/)
+  - `打造避风港吧!`
+  - 不错, 不错~
 
 - [白鸟与蝙蝠](https://book.douban.com/subject/36074757/)
   - 一般～
 
 ## 影视
+
+
+- [命运之夜前传 第一季 Fate/Zero](https://movie.douban.com/subject/5416070/)
 
 - [93 国际列车大劫案: 莫斯科行动](https://movie.douban.com/subject/10810266/)
   - 在家, 一边走椭圆机, 一边看, 还行~

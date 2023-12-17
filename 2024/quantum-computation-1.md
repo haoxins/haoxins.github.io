@@ -4,7 +4,7 @@ description: 槛菊愁烟兰泣露, 罗幕轻寒, 燕子双飞去. 明月不谙�
 date: 2023-01-17
 ---
 
-- [量子计算与量子信息](https://book.douban.com/subject/35777059/)
+- [量子计算与量子信息: 10 周年版](https://book.douban.com/subject/35777059/)
 
 ```
 为什么量子算法的突破如此艰难?

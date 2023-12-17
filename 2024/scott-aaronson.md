@@ -1,6 +1,6 @@
 ---
 title: Scott Aaronson
-description: 金樽清酒斗十千, 玉盘珍羞直万钱. 停杯投箸不能食, 拔剑四顾心茫然.
+description: 花间一壶酒, 独酌无相亲. 举杯邀明月, 对影成三人.
 date: 2021-10-06
 ---
 

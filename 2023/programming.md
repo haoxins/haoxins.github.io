@@ -4,6 +4,15 @@ description: 分行接绮树, 倒影入清漪. 不学御沟上, 春风伤别离.
 date: 2023-01-08
 ---
 
+- [Finding unreachable functions with deadcode](https://go.dev/blog/deadcode)
+  - 甚是喜爱
+
+```zsh
+go install golang.org/x/tools/cmd/deadcode@latest
+```
+
+---
+
 - Kafka Protocol Buffers (zstd) to JSON (zstd)
   - Messages `236 M`, Disk `112.7 Gb`
   - to
@@ -62,6 +71,7 @@ $$  目的点
 
 ```
 2023-09-04 不满意
+2023-12-14 物理: 基本满意, 数学: 不满意
 ```
 
 
