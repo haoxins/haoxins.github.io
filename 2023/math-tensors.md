@@ -25,6 +25,13 @@ date: 2023-01-30
 
 ------------------
 
+- [从矢量到张量](https://book.douban.com/subject/36000538/)
+  - 副标题: 细说矢量与矢量分析, 张量与张量分析
+
+> 非严肃数学读物, 适合随便翻翻
+
+------------------
+
 - [线性代数入门](https://book.douban.com/subject/36432607/)
   - 语言简练
   - 排版较差
@@ -172,8 +179,8 @@ date: 2023-01-30
 - 当 `a` 是 `T` 的特征值时, 零向量和对应于 `a` 的所有 `T`
   的特征向量构成的集合
   $$ \mathbf{W}_{a} $$
-  是 __V__ 的非零线性空间`T-不变子空间`, 我们把它称为对应于特征值 `a`
-  的 `T` 的`特征空间`.
+  是 __V__ 的非零线性空间 `T-不变子空间`,
+  我们把它称为对应于特征值 `a` 的 `T` 的`特征空间`.
   - `T` 到
     $$ \mathbf{W}_{a} $$
     上的限制
@@ -405,10 +412,3 @@ eats a vector and spits out a number.
 - Given a vector space __V__ with scalars `C`,
   a __dual vector__ (or __linear functional__)
   on __V__ is a C-valued linear function `f` on __V__.
-
-------------------
-
-- [从矢量到张量](https://book.douban.com/subject/36000538/)
-  - 副标题: 细说矢量与矢量分析, 张量与张量分析
-
-> 非严肃数学读物, 适合随便翻翻
