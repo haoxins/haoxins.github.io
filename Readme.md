@@ -1,4 +1,6 @@
 
-### Awesome websites
-
-- [LaTeX Symbol Tables](https://wikieducator.org/Help:LaTeX_Symbol_Tables_-_Mathematics)
+```
+夫人之相与, 俯仰一世.
+或取诸怀抱, 悟言一室之内;
+或因寄所托, 放浪形骸之外!
+```

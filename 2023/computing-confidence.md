@@ -98,3 +98,7 @@ They have led to a new generation of practically efficient FHE.
 GSW 方案在功能上得到了扩展, 不需要计算密钥, 只需要公钥就可以进行同态运算,
 所以基于 GSW 方案可以构造基于身份的同态加密方案和基于属性的同态加密方案.
 ```
+
+------------------
+
+- [从区块链到 Web3: 构建未来互联网生态](https://book.douban.com/subject/36686046/)
