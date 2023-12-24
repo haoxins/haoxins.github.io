@@ -6,7 +6,12 @@ date: 2023-12-21
 
 - [LaTeX Symbol Tables](https://wikieducator.org/Help:LaTeX_Symbol_Tables_-_Mathematics)
 
-### Quantum
+### Quantum computing
 
+- [Quantum Algorithm Zoo](https://quantumalgorithmzoo.org)
 - [Quantum logic gate](https://en.wikipedia.org/wiki/Quantum_logic_gate)
 - [List of quantum logic gates](https://en.wikipedia.org/wiki/List_of_quantum_logic_gates)
+
+### Quantum mechanics
+
+- [List of equations in quantum mechanics](https://en.wikipedia.org/wiki/List_of_equations_in_quantum_mechanics)

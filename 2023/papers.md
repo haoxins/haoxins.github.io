@@ -12,6 +12,7 @@ date: 2023-09-24
 
 - [A Review on Graph Neural Network Methods in Financial Applications](https://arxiv.org/abs/2111.15367)
   - 2021 (v1), 2022 (v2)
+  - https://github.com/ProsusAI/finBERT
 
 > 综述性质, 比较容易阅读
 

@@ -74,9 +74,11 @@ $$  目的点
 2023-12-14 物理: 基本满意, 数学: 不满意
 ```
 
-
 - [Go Style Decisions](https://google.github.io/styleguide/go/decisions)
   - 强迫症患者必看
+
+- [Inside the Matrix: Visualizing Matrix Multiplication, Attention and Beyond](https://pytorch.org/blog/inside-the-matrix/)
+  - https://bhosmer.github.io/mm/ref.html
 
 - [Deconstructing Type Parameters](https://go.dev/blog/deconstructing-type-parameters)
 
