@@ -403,10 +403,11 @@ $$
 
 $$
 \begin{align}
-\overline{a} b & = (|a| e^{-i \alpha}) (|b| e^{i \beta}) \\
-               & = |a| |b| e^{i(\beta - \alpha)}         \\
-               & = |a| |b| e^{i \theta}                  \\
-               & = |a| |b| (\cos \theta + i \sin \theta)
+  \overline{a} b
+    & = (|a| e^{-i \alpha}) (|b| e^{i \beta}) \\
+    & = |a| |b| e^{i(\beta - \alpha)}         \\
+    & = |a| |b| e^{i \theta}                  \\
+    & = |a| |b| (\cos \theta + i \sin \theta)
 \end{align}
 $$
 

@@ -387,21 +387,19 @@ date: 2021-08-15
 
 $$
 \begin{cases}
-
-\mathbf{A} · \mathbf{B} & = 标量 \\
-                        & = A_x B_x + A_y B_y + A_z B_z \\
-\mathbf{A} \times \mathbf{B} & = 矢量 \\
-(\mathbf{A} \times \mathbf{B})_z & = A_x B_y - A_y B_x \\
-(\mathbf{A} \times \mathbf{B})_x & = A_y B_z - A_z B_y \\
-(\mathbf{A} \times \mathbf{B})_y & = A_z B_x - A_x B_z \\
-\mathbf{A} \times \mathbf{A} & = 0 \\
-\mathbf{A} · (\mathbf{A} \times \mathbf{B}) & = 0 \\
-\mathbf{A} · (\mathbf{B} \times \mathbf{C}) & =
-(\mathbf{A} \times \mathbf{B}) · \mathbf{C} \\
-\mathbf{A} \times (\mathbf{B} \times \mathbf{C}) & =
-\mathbf{B} (\mathbf{A} · \mathbf{C}) -
-\mathbf{C} (\mathbf{A} · \mathbf{B})
-
+  \mathbf{A} · \mathbf{B} & = 标量 \\
+                          & = A_x B_x + A_y B_y + A_z B_z \\
+  \mathbf{A} \times \mathbf{B} & = 矢量 \\
+  (\mathbf{A} \times \mathbf{B})_z & = A_x B_y - A_y B_x \\
+  (\mathbf{A} \times \mathbf{B})_x & = A_y B_z - A_z B_y \\
+  (\mathbf{A} \times \mathbf{B})_y & = A_z B_x - A_x B_z \\
+  \mathbf{A} \times \mathbf{A} & = 0 \\
+  \mathbf{A} · (\mathbf{A} \times \mathbf{B}) & = 0 \\
+  \mathbf{A} · (\mathbf{B} \times \mathbf{C}) & =
+  (\mathbf{A} \times \mathbf{B}) · \mathbf{C} \\
+  \mathbf{A} \times (\mathbf{B} \times \mathbf{C}) & =
+  \mathbf{B} (\mathbf{A} · \mathbf{C}) -
+  \mathbf{C} (\mathbf{A} · \mathbf{B})
 \end{cases}
 $$
 
@@ -655,7 +653,7 @@ $$
   - 这个定律 -- 定律 (1) -- 在任何运动系统内都应该是正确的,
     这是伟大的引力定律之一, 称为`爱因斯坦场方程`.
   - 另一个伟大定律是定律 (2) -- 物体必须这样运动,
-    使得固有时为极大一这被称为`爱因斯坦运动方程`.
+    使得固有时为极大 -- 这被称为`爱因斯坦运动方程`.
 
 ## 最小作用量原理
 
