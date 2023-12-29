@@ -14,6 +14,9 @@ date: 2023-09-07
 
 ---
 
+
+### 图相关
+
 - [Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687)
   - 2023 (v1), 2023 (v2)
   - https://github.com/spcl/graph-of-thoughts
@@ -22,3 +25,12 @@ date: 2023-09-07
 
 - [Thermodynamic Linear Algebra](https://arxiv.org/abs/2308.05660)
   - 2023
+
+---
+
+- [A Review on Graph Neural Network Methods in Financial Applications](https://arxiv.org/abs/2111.15367)
+  - 2021 (v1), 2022 (v2)
+  - https://github.com/ProsusAI/finBERT
+
+> 综述性质, 比较容易阅读
+

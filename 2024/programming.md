@@ -13,7 +13,10 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
-- Rust `1.75`
+- [Announcing Rust 1.75.0](https://blog.rust-lang.org/2023/12/28/Rust-1.75.0.html)
+  - [Announcing `async fn` and return-position `impl Trait` in traits](https://blog.rust-lang.org/2023/12/21/async-fn-rpit-in-traits.html)
+  - 终于可以切换回 `stable` 了!
+
 - [Go Wiki: Rangefunc Experiment](https://go.dev/wiki/RangefuncExperiment)
   - `GOEXPERIMENT=rangefunc`
 
