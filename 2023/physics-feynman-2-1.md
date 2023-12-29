@@ -244,8 +244,8 @@ date: 2021-08-15
   (`4.34`)
 - 或
 - $$
-  \int_{任意闭合曲面 S} \mathbf{E} \cdot \mathbf{n} da =
-  \frac{Q_内}{\epsilon_0}
+    \int_{任意闭合曲面 S} \mathbf{E} \cdot \mathbf{n} da =
+    \frac{Q_内}{\epsilon_0}
   $$
   (`4.35`)
 - 式中
@@ -324,8 +324,8 @@ date: 2021-08-15
   $$ \phi $$
   所应服从的微分方程
   - $$
-    \boldsymbol{\nabla} \cdot \boldsymbol{\nabla} \phi = -
-    \frac{\rho}{\epsilon_{0}}
+      \boldsymbol{\nabla} \cdot \boldsymbol{\nabla} \phi = -
+      \frac{\rho}{\epsilon_{0}}
     $$.
     (`6.4`)
 - $$ \phi $$
@@ -335,11 +335,11 @@ date: 2021-08-15
   $$ \phi $$
   进行运算的结果相同, 即
   - $$
-    \boldsymbol{\nabla} \cdot \boldsymbol{\nabla} \phi =
-    \nabla^2 \phi =
-    \frac{\partial^2 \phi}{\partial x^2} +
-    \frac{\partial^2 \phi}{\partial y^2} +
-    \frac{\partial^2 \phi}{\partial z^2}
+      \boldsymbol{\nabla} \cdot \boldsymbol{\nabla} \phi =
+      \nabla^2 \phi =
+      \frac{\partial^2 \phi}{\partial x^2} +
+      \frac{\partial^2 \phi}{\partial y^2} +
+      \frac{\partial^2 \phi}{\partial z^2}
     $$.
     (`6.5`)
 - 因此, 我们便可将式 (`6.4`) 写成
@@ -642,7 +642,7 @@ $$
   - 它告诉我们"空间"的特征如何因带电物质的存在而改变, 对于重力的情况,
     这种变化是由定律 (1) 完成的.
   - 另外, 还有一个关于粒子如何在给定场中运动的定律
-    $$ d(m \{v}) / dt = q (\{E} + \{v} \times \{B}) $$.
+    $$ d(m \mathbf{v}) / dt = q (\mathbf{E} + \mathbf{v} \times \mathbf{B}) $$.
   - 对于重力来说, 这是由定律 (2) 处理的.
 - 在定律 (1) 和 (2) 中包含了关于爱因斯坦引力理论的精确表述 --
   虽然你们通常会发现更好地讲是
