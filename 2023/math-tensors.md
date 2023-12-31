@@ -19,6 +19,24 @@ date: 2023-01-30
 既区分不同的坐标系和它的基矢量, 又便于微分和乘法运算.
 ```
 
+### 斜角直线坐标系
+
+- 由此给出了基矢量的定义
+  $$ \mathbf{g}_i = \frac{\partial \mathbf{r}}{\partial x^i} $$
+  或
+  $$ \mathbf{g}^i = \frac{\partial \mathbf{r}}{\partial x_i} $$,
+  它与笛卡儿坐标系的单位矢量之间的关系很容易得出
+  - $$
+      \mathbf{g}_i =
+      \frac{d \mathbf{r}}{d x^i} =
+      \frac{\partial \mathbf{r}}{\partial x^i} =
+      \frac{\partial x}{\partial x^1} \mathbf{i} +
+      \frac{\partial y}{\partial x^2} \mathbf{j} +
+      \frac{\partial z}{\partial x^3} \mathbf{k}
+    $$
+
+### 曲线坐标系
+
 ## 第二讲 运算篇: 运算规则
 
 ## 第三讲 应用篇: 场论中的张量
