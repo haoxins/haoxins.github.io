@@ -172,8 +172,10 @@ date: 2023-01-08
 
 ## 影视
 
+- [命运之夜前传 第二季 Fate/Zero 2nd](https://movie.douban.com/subject/6874729/)
 
 - [命运之夜前传 第一季 Fate/Zero](https://movie.douban.com/subject/5416070/)
+  - 三王论王
 
 - [93 国际列车大劫案: 莫斯科行动](https://movie.douban.com/subject/10810266/)
   - 在家, 一边走椭圆机, 一边看, 还行~
