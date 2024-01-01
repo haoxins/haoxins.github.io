@@ -23,8 +23,6 @@ date: 2023-09-07
 
 ---
 
-- [Thermodynamic Linear Algebra](https://arxiv.org/abs/2308.05660)
-  - 2023
 
 ---
 
