@@ -4,7 +4,7 @@ description: 风朝露夜阴晴里, 万户千门开闭时. 曾苦伤春不忍听
 date: 2023-10-25
 ---
 
-- [陶哲轩实分析 (第3版)](https://book.douban.com/subject/30227556/)
+- [陶哲轩实分析 (第 3 版)](https://book.douban.com/subject/30227556/)
 
 ## 度量空间
 
