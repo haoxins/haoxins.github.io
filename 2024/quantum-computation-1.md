@@ -97,9 +97,11 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     $$ \mid \cdot \rangle $$
     用来表示其中的对象是向量.
 - 常见符号
-  - $$ \mid ψ \rangle $$, 向量
+  - $$ \mid ψ \rangle $$,
+    向量
   - $$ \langle ψ \mid $$,
-    $$ \mid ψ \rangle $$ 的对偶向量
+    $$ \mid ψ \rangle $$
+    的对偶向量
   - $$ \langle φ \mid ψ \rangle $$,
     向量
     $$ \mid φ \rangle $$
@@ -113,7 +115,7 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     的张量积
   - $$ \mathbf{A}^{\dagger} $$,
     矩阵 __A__ 的厄米共轭或伴随,
-    $$ \mathbf{A}^{\dagger} = (A^{T})^{*} $$
+    $$ \mathbf{A}^{\dagger} = (\mathbf{A}^{T})^{*} $$
   - $$
       \begin{bmatrix}
         a & b \\
@@ -131,7 +133,15 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     $$ \mathbf{A} \mid ψ \rangle $$
     的内积
 
----
+> __注__: 符号
+  $$ \mathbf{A}^{*} $$,
+  在线性代数中表示:
+  [共轭转置](https://en.wikipedia.org/wiki/Conjugate_transpose),
+  但在量子力学中, 仅仅表示`共轭`.
+> $$ \mathbf{A}^{\dagger} $$
+  在量子力学中替代了
+  $$ \mathbf{A}^{*} $$
+  在线性代数中的含义.
 
 - 向量空间 __V__ 和 __W__ 之间的线性算子定义为对输入具有线性性质的映射
   $$ \mathbf{A}: \mathbf{V} \to \mathbf{W} $$:
