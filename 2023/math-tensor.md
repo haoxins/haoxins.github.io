@@ -89,7 +89,7 @@ date: 2023-01-30
   - 如果上述过程中途进行不下去了, 可说明 __A__ 不可逆.
   - 换言之, 这个方法还可以判断 __A__ 是否可逆.
 
-- [酉矩阵](https://zh.wikipedia.org/zh-cn/酉矩阵)
+- [酉矩阵](https://en.wikipedia.org/wiki/Unitary_matrix)
 
 > 第二章 矩阵:
   可惜了, `酉矩阵`未详细展开
@@ -114,7 +114,7 @@ date: 2023-01-30
 > 第三章 行列式:
   从`置换`与`群`的视角开始.
 
-## 线性空间
+### 线性空间
 
 > 从`集合`与`映射`的现代视角开始.
 
@@ -192,7 +192,7 @@ date: 2023-01-30
   - 反之, 若 __V__ 的线性变换 `T` 在任意标准正交基下的矩阵为酉矩阵 (正交矩阵),
     则 `T` 为酉变换 (正交变换).
 
-## 特征值和特征向量
+### 特征值和特征向量
 
 - 若非零向量 __x__ 是 `T` 的特征向量, 则 __x__ 张成的一维子空间
   $$ \left \{ c \mathbf{x} \mid c \in \mathbb{K} \right \} $$
@@ -239,18 +239,16 @@ date: 2023-01-30
   - 若 __A__ 为实矩阵且其特征根全为实数,
     则选取的 __P__ 一定是实可逆矩阵.
 
-## 不变因子和若尔当标准形
-
-## 向量和矩阵的解析处理
+### 向量和矩阵的解析处理
 
 ------------------
 
-- [线性代数 第5版](https://book.douban.com/subject/34820335/)
+- [线性代数](https://book.douban.com/subject/34820335/)
 
 > 需要开始习惯英文的数学, 物理书籍了.
 
 ```
-2023年5月, Gilbert Strang 大师, 正式退休.
+2023 年 5 月, Gilbert Strang 大师, 正式退休.
 致敬!
 ```
 
@@ -277,7 +275,7 @@ and continues to fall within the top 10
 most viewed lecturers at MIT.
 ```
 
-## Solving Linear Equations
+### Solving Linear Equations
 
 > 首先, 强调`线性变换`的概念.
 
@@ -316,7 +314,7 @@ most viewed lecturers at MIT.
     $$ n^3 $$
     way.
 
-## Vector Spaces and Subspaces
+### Vector Spaces and Subspaces
 
 - A matrix multiplies a vector: __A__ _times_ __x__.
   - At the first level this is only numbers.
@@ -324,14 +322,14 @@ most viewed lecturers at MIT.
     combination of column vectors.
   - The third level shows subspaces.
 
-## Orthogonality
+### Orthogonality
 
 - The __orthogonal complement__ of a subspace __V__
   contains __every__ vector that is perpendicular to __V__.
   - This orthogonal subspace is denoted by
     $$ V^{\perp} $$.
 
-## Eigenvalues and Eigenvectors
+### Eigenvalues and Eigenvectors
 
 - To explain eigenvalues, we first explain eigenvectors.
   Almost all vectors change direction,
@@ -351,7 +349,7 @@ most viewed lecturers at MIT.
     $$ \lambda $$
     is an eigenvalue of `A`.
 
-## The Singular Value Decomposition (SVD)
+### The Singular Value Decomposition (SVD)
 
 - The singular value theorem for `A` is the eigenvalue theorem for
   $$ A^{T} A $$
@@ -364,7 +362,7 @@ most viewed lecturers at MIT.
 
 - [物理学家用的张量和群论导论](https://book.douban.com/subject/25934965/)
 
-## Tensors
+### Tensors
 
 - To make this concrete, consider a rank `2` tensor `T`,
   whose job it is to eat two vectors `v` and `w` and produce
