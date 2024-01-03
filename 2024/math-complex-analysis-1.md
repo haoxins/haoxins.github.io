@@ -131,8 +131,7 @@ date: 2021-11-16
   $$ A = R \angle \phi $$
   就是把平面旋转一个角
   $$ \phi $$,
-  且放大一个因子 `R`.
-  - 需要提醒几点:
+  且放大一个因子 `R`. 需要提醒几点:
   - 旋转与放大都以原点为中心.
   - 先旋转再放大或者先放大再旋转都是一样.
   - 如果 `R < 1`, 所谓"放大"其实是缩小.
@@ -205,7 +204,11 @@ date: 2021-11-16
   $$ e^{i \theta} $$
   有意义, 我们仍坚持用这个级数, 但令
   $$ x = i \theta $$:
-  - $$ e^{i \theta} = 1 + i \theta + \frac{(i \theta)^2}{2!} + \frac{(i \theta)^3}{3!} + ... $$
+  - $$
+      e^{i \theta} = 1 + i \theta +
+      \frac{(i \theta)^2}{2!} +
+      \frac{(i \theta)^3}{3!} + ...
+    $$
   - 这个级数与
     $$ e^{\theta} $$
     的级数同样有意义. 但是各项并不具有相同方向,
@@ -373,9 +376,8 @@ $$ z = x + iy \Longleftrightarrow \mathbf{z} = \binom{x}{y} $$
     平行四边形的 (有符号的) 面积:
 
 $$
-\mathbf{a} \times \mathbf{b} = |a| |b| \sin \theta
-=
-- (\mathbf{b} \times \mathbf{a})
+  \mathbf{a} \times \mathbf{b} = |a| |b| \sin \theta =
+  - (\mathbf{b} \times \mathbf{a})
 $$
 
 - 若有两个复数
@@ -396,7 +398,7 @@ $$
     则我们可以立刻看到
 
 $$
-\overline{a} b = \mathbf{a} · \mathbf{b} + i (\mathbf{a} \times \mathbf{b})
+  \overline{a} b = \mathbf{a} · \mathbf{b} + i (\mathbf{a} \times \mathbf{b})
 $$
 
 - 当然也可以通过简单的计算得出这个结果:
