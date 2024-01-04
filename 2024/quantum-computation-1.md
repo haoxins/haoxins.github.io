@@ -146,6 +146,10 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     $$ \mid φ \rangle $$
     和
     $$ \mathbf{A} \mid ψ \rangle $$
+    的内积. 等价的,
+    $$ \mathbf{A}^{\dagger} \mid φ \rangle $$
+    和
+    $$ \mid ψ \rangle $$
     的内积
 
 > __注__: 符号
@@ -377,7 +381,6 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
       (\mid w \rangle \langle v \mid)(\mid v' \rangle) \equiv
       \mid w \rangle \langle v \mid v' \rangle =
       \langle v \mid v' \rangle \mid w \rangle
-
     $$
 - 这个方程与我们的记号约定完美吻合, 表达式
   $$ \mid w \rangle \langle v \mid v' \rangle $$
