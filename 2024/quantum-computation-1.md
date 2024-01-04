@@ -335,7 +335,7 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 
 - [格拉姆-施密特正交化](https://en.wikipedia.org/wiki/Gram-Schmidt_process)
 
-- __又是本书约定__
+- __下面又是本书约定__
 
 ```
 从现在起, 当我们说一个线性算子的矩阵表示时,
@@ -353,6 +353,8 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     作为行向量有一个好的解释, 它的元素是向量
     $$ \mid v \rangle $$
     的列向量表示中对应分量的复共轭.
+
+- [柯西-施瓦茨不等式](https://en.wikipedia.org/wiki/Cauchy-Schwarz_inequality)
 
 ## 量子计算机: 物理实现
 

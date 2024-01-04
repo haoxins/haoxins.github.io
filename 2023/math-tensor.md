@@ -49,6 +49,8 @@ date: 2023-01-30
 
 ## 第二讲: 运算规则
 
+- [Jacobian matrix and determinant](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant)
+
 ## 第三讲: 场论中的张量
 
 ------------------
@@ -238,8 +240,6 @@ date: 2023-01-30
   - 若 __A__ 的特征根全部不同, 则 __A__ 与对角矩阵相似.
   - 若 __A__ 为实矩阵且其特征根全为实数,
     则选取的 __P__ 一定是实可逆矩阵.
-
-### 向量和矩阵的解析处理
 
 ------------------
 
