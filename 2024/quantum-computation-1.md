@@ -123,6 +123,11 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     和
     $$ \mid ψ \rangle $$
     的张量积
+  - $$ \mid φ \rangle \mid ψ \rangle $$,
+    $$ \mid φ \rangle $$
+    和
+    $$ \mid ψ \rangle $$
+    张量积的缩写
   - $$ \mathbf{A}^{\dagger} $$,
     矩阵 __A__ 的厄米共轭或伴随,
     $$ \mathbf{A}^{\dagger} = (\mathbf{A}^{T})^{*} $$
@@ -354,7 +359,42 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     $$ \mid v \rangle $$
     的列向量表示中对应分量的复共轭.
 
-- [柯西-施瓦茨不等式](https://en.wikipedia.org/wiki/Cauchy-Schwarz_inequality)
+> 注: 下面注意区别:
+  [Outer product](https://en.wikipedia.org/wiki/Outer_product)
+  与
+  [Cross product](https://en.wikipedia.org/wiki/Cross_product).
+  量子领域感觉`张量积`用的多一些,
+  [Tensor product](https://en.wikipedia.org/wiki/Tensor_product).
+
+- 有一种表示线性算子的有用方式, 充分地利用了内积, 称为外积表示. 假设
+  $$ \mid v \rangle $$
+  是内积空间 __V__ 的一个向量,
+  $$ \mid w \rangle $$
+  是内积空间 __W__ 的一个向量. 定义
+  $$ \mid w \rangle \langle v \mid $$
+  为从 __V__ 到 __W__ 的一个线性算子, 其作用为
+  - $$
+      (\mid w \rangle \langle v \mid)(\mid v' \rangle) \equiv
+      \mid w \rangle \langle v \mid v' \rangle =
+      \langle v \mid v' \rangle \mid w \rangle
+
+    $$
+- 这个方程与我们的记号约定完美吻合, 表达式
+  $$ \mid w \rangle \langle v \mid v' \rangle $$
+  可能含有以下两种含义之一:
+  - 我们用它表示算子
+    $$ \mid w \rangle \langle v \mid $$
+    作用在
+    $$ \mid v' \rangle $$
+    上的结果,
+  - 也可以解释为
+    $$ \mid w \rangle $$
+    被一个复数
+    $$ \langle v \mid v' \rangle $$
+    相乘.
+- 我们选择的定义使得这两种潜在意思是一致的, 事实上我们通过后者定义了前者!
+
+> [柯西-施瓦茨不等式](https://en.wikipedia.org/wiki/Cauchy-Schwarz_inequality)
 
 ## 量子计算机: 物理实现
 
