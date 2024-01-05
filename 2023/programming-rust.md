@@ -9,7 +9,6 @@ date: 2022-12-29
   - [snafu](https://github.com/shepmaster/snafu)
   - [anyhow](https://github.com/dtolnay/anyhow)
   - [thiserror](https://github.com/dtolnay/thiserror)
-  - [refinery](https://github.com/rust-db/refinery)
 - Rust math
   - [nalgebra](https://github.com/dimforge/nalgebra)
   - nalgebra is a linear algebra library
