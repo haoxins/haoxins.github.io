@@ -264,7 +264,7 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
   $$ \mathbb{C} $$
   的一个线性算子, 其中
   $$
-    \mid v \rangle (\mid w \rangle) \equiv
+    \langle v \mid (\mid w \rangle) \equiv
     \langle v \mid w \rangle \equiv
     (\mid v \rangle, \mid w \rangle)
   $$.
@@ -364,11 +364,10 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     的列向量表示中对应分量的复共轭.
 
 > 注: 下面注意区别:
-  [Outer product](https://en.wikipedia.org/wiki/Outer_product)
-  与
-  [Cross product](https://en.wikipedia.org/wiki/Cross_product).
-  量子领域感觉`张量积`用的多一些,
+  [Cross product](https://en.wikipedia.org/wiki/Cross_product),
+  [Outer product](https://en.wikipedia.org/wiki/Outer_product),
   [Tensor product](https://en.wikipedia.org/wiki/Tensor_product).
+  量子领域感觉译作`张量积`多一些, 而且上文刚刚出现过`张量积`.
 
 - 有一种表示线性算子的有用方式, 充分地利用了内积, 称为外积表示. 假设
   $$ \mid v \rangle $$
