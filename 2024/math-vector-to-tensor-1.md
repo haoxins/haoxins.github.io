@@ -128,7 +128,7 @@ date: 2023-12-26
     $$ \mathbf{e}^1 $$,
     $$ \mathbf{e}^2 $$,
     $$ \mathbf{e}^3 $$
-    $$ \longrightarrow $$
+    $$ \longleftrightarrow $$
     $$ \mathbf{e}_1 $$,
     $$ \mathbf{e}_2 $$,
     $$ \mathbf{e}_3 $$

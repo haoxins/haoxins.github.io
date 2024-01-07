@@ -316,9 +316,9 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
   [Inner product space](https://en.wikipedia.org/wiki/Inner_product_space).
   计算结果共轭, 无实质区别~ 量子领域取本书的定义.
 > 关于对偶, 参看
-  [从矢量到张量](math-vector-to-tensor-1.md)
-  或
-  [对偶空间](https://en.wikipedia.org/wiki/Dual_space).
+  [如何直观的理解对偶?](https://mp.weixin.qq.com/s/IHzQNZdhWx6ZtWjiYvcD_Q),
+  [对偶空间](https://en.wikipedia.org/wiki/Dual_space),
+  [从矢量到张量](math-vector-to-tensor-1.md).
 
 ```
 量子力学的讨论总是关系到希尔伯特空间.
