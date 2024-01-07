@@ -16,6 +16,10 @@ date: 2023-12-21
 
 - [List of equations in quantum mechanics](https://en.wikipedia.org/wiki/List_of_equations_in_quantum_mechanics)
 
+### 一些好的微信文章
+
+- [如何直观的理解对偶?](https://mp.weixin.qq.com/s/IHzQNZdhWx6ZtWjiYvcD_Q)
+
 ### 一些有灵性的中文翻译
 
 - unitary
