@@ -98,10 +98,9 @@ date: 2022-02-11
 
 - $$ A^C = X - A $$,
   `A` 在 `X` 中的余集 (其中
-  $$ A \subseteq X $$
-  ) (当省略 `X` 有可能产生混乱时, 记为
-  $$ C_{X} A $$
-  )
+  $$ A \subseteq X $$)
+  (当省略 `X` 有可能产生混乱时, 记为
+  $$ C_{X} A $$)
   - $$ (A^C)^C = A $$,
   - $$ X^C = \varnothing $$,
   - $$ \varnothing^C = X $$.
