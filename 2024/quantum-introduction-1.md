@@ -81,7 +81,7 @@ date: 2023-12-11
   和
   $$ \mathbf{T}_1 $$
   `相似`.
-  - 我们得到的结论是, 对于不同的基矢, 表示相同线性变换的矩阵是相似的.
+  - 我们得到的结论是, __对于不同的基矢__, __表示相同线性变换的矩阵是相似的__.
   - 顺便提一下, 如果第一组基是正交基, 则当且仅当
     $$ \mathbf{S} $$
     是幺正矩阵时, 第二组基也将是正交归一基.
@@ -91,7 +91,7 @@ date: 2023-12-11
   - 矩阵的`行列式`和`迹`.
 - 乘积的行列式等于行列式的积, 因此
   - $$
-      del(\mathbf{T}^{f}) =
+      det(\mathbf{T}^{f}) =
       det(\mathbf{S} \mathbf{T}^{e} \mathbf{S}^{-1}) =
       det(\mathbf{S}) det(\mathbf{T}^{e}) det(\mathbf{S}^{-1}) =
       det(\mathbf{T}^{e})
@@ -100,7 +100,7 @@ date: 2023-12-11
   - $$ Tr(\mathbf{T}) \equiv \sum_{i=1}^{m} \mathbf{T}_{ii} $$,
   - 具有如下性质:
   - $$
-      Tr(\mathbf{T}_{1}, \mathbf{T}_{2}) =
+      Tr(\mathbf{T}_{1} \mathbf{T}_{2}) =
       Tr(\mathbf{T}_{2} \mathbf{T}_{1})
     $$
   - 对任意两个矩阵
@@ -114,6 +114,8 @@ date: 2023-12-11
       Tr(\mathbf{T}^{e} \mathbf{S}^{-1} \mathbf{S}) =
       Tr(\mathbf{T}^{e})
     $$.
+
+- [迹](https://en.wikipedia.org/wiki/Trace_(linear_algebra))
 
 ---
 
