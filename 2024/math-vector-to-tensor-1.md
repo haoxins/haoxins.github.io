@@ -136,6 +136,106 @@ date: 2023-12-26
 
 ---
 
+- $$ \mathbf{e}_1 = \sqrt{g} (\mathbf{e}^2 \times \mathbf{e}^3) $$,
+  $$ \mathbf{e}_2 = \sqrt{g} (\mathbf{e}^3 \times \mathbf{e}^1) $$,
+  $$ \mathbf{e}_3 = \sqrt{g} (\mathbf{e}^1 \times \mathbf{e}^2) $$
+
+- 设定三重系
+  $$ \mathbf{e}_1 $$,
+  $$ \mathbf{e}_2 $$,
+  $$ \mathbf{e}_3 $$
+  和它的对偶系
+  $$ \mathbf{e}^1 $$,
+  $$ \mathbf{e}^2 $$,
+  $$ \mathbf{e}^3 $$,
+  于是对任意矢量
+  $$ \mathbf{V} $$
+  有
+  - $$ \mathbf{V} = v^i \mathbf{e}_i = v_i \mathbf{e}^i $$
+- 这样, 客观量
+  $$ \mathbf{V} $$
+  在
+  $$ \mathbf{e}_1 $$,
+  $$ \mathbf{e}_2 $$,
+  $$ \mathbf{e}_3 $$
+  的构架中用分量
+  $$ (v^1, v^2, v^3) $$
+  来描述, 而在
+  $$ \mathbf{e}^1 $$,
+  $$ \mathbf{e}^2 $$,
+  $$ \mathbf{e}^3 $$
+  的构架中用分量
+  $$ (v_1, v_2, v_3) $$
+  来描述. 那么这两种描述之间有怎样的联系呢?
+
+---
+
+- 用矩阵形式表示就有
+  - $$
+      \begin{pmatrix}
+        v_1 \\
+        v_2 \\
+        v_3
+      \end{pmatrix} =
+      \begin{pmatrix}
+        g_{11} & g_{12} & g_{13} \\
+        g_{21} & g_{22} & g_{23} \\
+        g_{31} & g_{32} & g_{33}
+      \end{pmatrix}
+      \begin{pmatrix}
+        v^1 \\
+        v^2 \\
+        v^3
+      \end{pmatrix}
+    $$
+- 利用
+  $$ (g_{ij}) $$
+  的逆矩阵
+  $$ (g^{ij}) $$,
+  可得
+  - $$
+      \begin{pmatrix}
+        v^1 \\
+        v^2 \\
+        v^3
+      \end{pmatrix} =
+      \begin{pmatrix}
+        g^{11} & g^{12} & g^{13} \\
+        g^{21} & g^{22} & g^{23} \\
+        g^{31} & g^{32} & g^{33}
+      \end{pmatrix}
+      \begin{pmatrix}
+        v_1 \\
+        v_2 \\
+        v_3
+      \end{pmatrix}
+    $$
+
+- 我们把
+  $$ v^1 $$,
+  $$ v^2 $$,
+  $$ v^3 $$,
+  也即由
+  $$ \mathbf{V} = v^i \mathbf{e}_i $$
+  得出的分量称为
+  $$ \mathbf{V} $$
+  的`逆变分量`, 而把
+  $$ v_1 $$,
+  $$ v_2 $$,
+  $$ v_3 $$,
+  也即由
+  $$ \mathbf{V} = v_i \mathbf{e}^i $$
+  得出的分量称为
+  $$ \mathbf{V} $$
+  的协变分量.
+  - 不过,
+    $$ v_1 $$,
+    $$ v_2 $$,
+    $$ v_3 $$
+    不必用对偶系的线性表示得出, 而直接可以用
+    $$ \mathbf{V} $$
+    与三重系的内积得出, 即
+  - $$ v_j = \mathbf{e}_j \cdot \mathbf{V} $$
 
 ### 三重系之间的变换
 

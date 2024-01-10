@@ -412,6 +412,67 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 
 > [柯西-施瓦茨不等式](https://en.wikipedia.org/wiki/Cauchy-Schwarz_inequality)
 
+- 外积记号的有用性可以从标准正交向量满足的完备性关系中看清楚. 令
+  $$ \mid i \rangle $$
+  为向量空间
+  $$ \mathbf{V} $$
+  的任意一组标准正交基, 那么任意向量
+  $$ \mid v \rangle $$
+  可以写为
+  $$ \mid v \rangle = \sum_{i} v_i \mid i \rangle $$,
+  $$ v_i $$
+  是一组复数. 注意到
+  $$ \langle i \mid v \rangle = v_i $$,
+  因此
+  - $$
+      (\sum_{i} \mid i \rangle \langle i \mid) \mid v \rangle =
+      \sum_{i} \mid i \rangle \langle i \mid v \rangle =
+      \sum_{i} v_i \mid i \rangle =
+      \mid v \rangle
+    $$
+- 由于最后的等式对于任意的
+  $$ \mid v \rangle $$
+  成立, 这等于说
+  - $$ \sum_{i} \mid i \rangle \langle i \mid = \mathbf{I} $$
+- 这个等式就是著名的`完备性关系`.
+  完备性关系的一个应用是用外积的记号给出任意算子的表示方式. 假设
+  $$ \mathbf{A}: \mathbf{V} \to \mathbf{W} $$
+  是一个线性算子,
+  $$ \mid v_i \rangle $$
+  是
+  $$ \mathbf{V} $$
+  的一组标准正交基,
+  $$ \mid w_i \rangle $$
+  是
+  $$ \mathbf{W} $$
+  的一组标准正交基. 运用两次完备性关系, 可以得到
+  - $$
+      \begin{align}
+        \mathbf{A}
+          & = \mathbf{I}_{W} \mathbf{A} \mathbf{I}_{V} \\
+          & = \sum_{ij}
+              \mid w_j \rangle
+              \langle w_j \mid A \mid v_i \rangle
+              \langle v_i \mid \\
+          & = \sum_{ij}
+              \mid w_j \rangle
+              \langle w_j \mid A \mid v_i \rangle
+              \langle v_i \mid \\
+      \end{align}
+    $$
+- 这是
+  $$ \mathbf{A} $$
+  的外积表示. 从这个方程我们还看到,
+  $$ \mathbf{A} $$
+  的第 `i` 列第 `j` 行的矩阵元素为
+  $$ \langle w_j \mid \mathbf{A} \mid v_i \rangle $$,
+  与输入基
+  $$ \mid v_j \rangle $$
+  和输出基
+  $$ \mid w_j \rangle $$
+  有关.
+
+---
 
 - [特征值和特征向量](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors)
   - [本征函数](https://en.wikipedia.org/wiki/Eigenfunction)
@@ -420,6 +481,26 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
   - 它是 __A__ 作用的向量空间的子空间.
   - 当特征空间高于一维时, 我们说它是`退化`的.
 
+- 假设 __A__ 是希尔伯特空间 __V__ 上的任意一个线性算子. 事实上在
+  __V__ 上存在一个唯一的线性算子
+  $$ \mathbf{A}^{\dagger} $$,
+  满足对所有的向量
+  $$ \mid v \rangle, \mid w \rangle \in \mathbf{V} $$
+  都有
+  - $$
+      (\mid v \rangle, \mathbf{A} \mid w \rangle) =
+      (\mathbf{A}^{\dagger} \mid v \rangle, \mid w \rangle)
+    $$
+- 这个线性算子称为
+  $$ \mathbf{A} $$
+  算子的`伴随`或`厄米共轭`. 根据定义易知
+  $$ (\mathbf{AB})^{\dagger} = \mathbf{B}^{\dagger} \mathbf{A}^{\dagger} $$.
+  - 一般地, 如果
+    $$ \mid v \rangle $$
+    是一个向量, 那么我们定义
+    $$ \mathbf{v}^{\dagger} \equiv \langle v \mid $$.
+  - 根据这个定义不难看出
+    $$ (\mathbf{A} \mid v \rangle)^{\dagger} = \langle v \mid \mathbf{A}^{\dagger} $$.
 
 ### 量子力学的假设
 
