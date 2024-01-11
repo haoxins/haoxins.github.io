@@ -20,6 +20,8 @@ date: 2023-12-26
 - `矢量积`即`叉乘`
 
 - [拉格朗日恒等式](https://en.wikipedia.org/wiki/Lagrange%27s_identity)
+- [爱因斯坦求和约定](https://en.wikipedia.org/wiki/Einstein_notation)
+  - [抽象指标记号](https://en.wikipedia.org/wiki/Abstract_index_notation)
 
 ### 矢量的矢量混合积和矢量三重积
 
@@ -31,12 +33,12 @@ date: 2023-12-26
 
 - 引入符号
   $$
-    [ \mathbf{A} \mathbf{B} \mathbf{C} ] =
+    [ \mathbf{A} \mbox{ } \mathbf{B} \mbox{ } \mathbf{C} ] =
     \mathbf{A} \cdot (\mathbf{B} \times \mathbf{C})
   $$,
   则最后有
   - $$
-      [ \mathbf{A} \mathbf{B} \mathbf{C} ] =
+      [ \mathbf{A} \mbox{ } \mathbf{B} \mbox{ } \mathbf{C} ] =
       \mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) =
       \begin{vmatrix}
         a_1 & a_2 & a_3 \\
@@ -52,7 +54,7 @@ date: 2023-12-26
   $$ \mathbf{e}_2 $$,
   $$ \mathbf{e}_3 $$,
   而且我们还要求它们是正向的, 即
-  $$ [\mathbf{e}_1 \mathbf{e}_2 \mathbf{e}_3] > 0 $$,
+  $$ [ \mathbf{e}_1 \mbox{ } \mathbf{e}_2 \mbox{ } \mathbf{e}_3 ] > 0 $$,
   因此它们就形成一个广义的`右手系`.
 
 - 对于矢量三重系
@@ -133,6 +135,16 @@ date: 2023-12-26
     $$ \mathbf{e}_2 $$,
     $$ \mathbf{e}_3 $$
     的`对偶系`.
+
+- $$ [ \mathbf{e}_1 \mbox{ } \mathbf{e}_2 \mbox{ } \mathbf{e}_3 ] = \sqrt{g} $$
+- $$ [ \mathbf{e}^1 \mbox{ } \mathbf{e}^2 \mbox{ } \mathbf{e}^3 ] = 1 / \sqrt{g} $$
+  - `g` 是
+    $$ g_{ij} $$
+    的行列式
+  - 即
+    $$ g = det \mid g_{ij} \mid $$
+    和
+    $$ \frac{1}{g} = det \mid g^{ij} \mid $$
 
 ---
 
@@ -237,9 +249,9 @@ date: 2023-12-26
     与三重系的内积得出, 即
   - $$ v_j = \mathbf{e}_j \cdot \mathbf{V} $$
 
-### 三重系之间的变换
-
 ### 三重系变换下的张量
+
+- [张量](https://en.wikipedia.org/wiki/Tensor)
 
 ### 三维空间正交变换下的张量 - 笛卡儿张量
 
