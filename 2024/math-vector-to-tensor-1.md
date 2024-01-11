@@ -136,8 +136,8 @@ date: 2023-12-26
     $$ \mathbf{e}_3 $$
     的`对偶系`.
 
-- $$ [ \mathbf{e}_1 \mbox{ } \mathbf{e}_2 \mbox{ } \mathbf{e}_3 ] = \sqrt{g} $$
-- $$ [ \mathbf{e}^1 \mbox{ } \mathbf{e}^2 \mbox{ } \mathbf{e}^3 ] = 1 / \sqrt{g} $$
+- $$ [ \mathbf{e}_1 \mbox{ } \mathbf{e}_2 \mbox{ } \mathbf{e}_3 ] = \sqrt{g} $$,
+  $$ [ \mathbf{e}^1 \mbox{ } \mathbf{e}^2 \mbox{ } \mathbf{e}^3 ] = 1 / \sqrt{g} $$
   - `g` 是
     $$ g_{ij} $$
     的行列式

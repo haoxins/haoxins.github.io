@@ -455,8 +455,8 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
               \langle w_j \mid A \mid v_i \rangle
               \langle v_i \mid \\
           & = \sum_{ij}
-              \mid w_j \rangle
               \langle w_j \mid A \mid v_i \rangle
+              \mid w_j \rangle
               \langle v_i \mid \\
       \end{align}
     $$
