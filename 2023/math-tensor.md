@@ -6,6 +6,8 @@ date: 2023-01-30
 
 - [张量学习三讲](https://book.douban.com/subject/30236465/)
 
+> 印刷错误很多!
+
 ## 第一讲: 坐标系
 
 > 对偶坐标系, 指标表示, 求和约定, 坐标变换.
@@ -59,10 +61,46 @@ date: 2023-01-30
 - 张量在这个意义下, 可以说张量是矢量的矢量或多重矢量,
   它的分量组成作用力 __F__ 的二阶张量
   - $$
-
+      \begin{align}
+        \mathbf{F}_{ij}
+          & = \mathbf{F} \mathbf{e}_i \mathbf{g}_j \\
+          & = \begin{bmatrix}
+                F_{xx} & F_{xy} & F_{xz} \\
+                F_{yx} & F_{yy} & F_{yz} \\
+                F_{zx} & F_{zy} & F_{zz}
+              \end{bmatrix}
+      \end{align}
     $$
   - 换句话说, 当一个作用量的分量在不同的方向上对物体均有影响或作用时,
     就需要张量描述.
+
+---
+
+- 其实两个矢量 __a__ 和 __b__ 的并矢就是二者的相互作用, 各自有 `3` 个分量,
+  相互作用形成 `9` 个分量 (
+  $$ a_i b_j $$
+  或
+  $$ a^i b^j $$
+  ) 的集合就是张量, 这种相互作用用
+  $$ \otimes $$
+  符号表示 (或称作直积或线性投影算子), 也可以省略, 如下式所示
+  - $$
+      \mathbf{a} \otimes \mathbf{b} =
+      \mathbf{a} \mathbf{b} =
+      a^i b^j \mathbf{g}_i \mathbf{g}_j =
+      a_i b_j \mathbf{g}^i \mathbf{g}^j =
+      a_i b^j \mathbf{g}^i \mathbf{g}_j =
+      a^i b_j \mathbf{g}_i \mathbf{g}^j
+    $$
+
+- 张量的并矢表示 (
+  $$ T^{ij} \mathbf{g}_i \mathbf{g}_j $$
+  ) 在新旧坐标系中具有相同的形式, 即:
+  $$
+    T^{ij} \mathbf{g}_i \mathbf{g}_j =
+    T^{i'j'} \mathbf{g}_{i'} \mathbf{g}_{j'}
+  $$,
+  因此, 这种表示也称作不变性表示, 意指不随坐标系的不同而改变, 反映了物理规律的客观性.
 
 ## 第三讲: 场论中的张量
 
