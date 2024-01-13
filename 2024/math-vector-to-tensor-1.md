@@ -33,12 +33,12 @@ date: 2023-12-26
 
 - 引入符号
   $$
-    [ \mathbf{A} \mbox{ } \mathbf{B} \mbox{ } \mathbf{C} ] =
+    [\mathbf{A} \mbox{ } \mathbf{B} \mbox{ } \mathbf{C}] =
     \mathbf{A} \cdot (\mathbf{B} \times \mathbf{C})
   $$,
   则最后有
   - $$
-      [ \mathbf{A} \mbox{ } \mathbf{B} \mbox{ } \mathbf{C} ] =
+      [\mathbf{A} \mbox{ } \mathbf{B} \mbox{ } \mathbf{C}] =
       \mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) =
       \begin{vmatrix}
         a_1 & a_2 & a_3 \\
@@ -54,7 +54,7 @@ date: 2023-12-26
   $$ \mathbf{e}_2 $$,
   $$ \mathbf{e}_3 $$,
   而且我们还要求它们是正向的, 即
-  $$ [ \mathbf{e}_1 \mbox{ } \mathbf{e}_2 \mbox{ } \mathbf{e}_3 ] > 0 $$,
+  $$ [\mathbf{e}_1 \mbox{ } \mathbf{e}_2 \mbox{ } \mathbf{e}_3] > 0 $$,
   因此它们就形成一个广义的`右手系`.
 
 - 对于矢量三重系
@@ -136,8 +136,8 @@ date: 2023-12-26
     $$ \mathbf{e}_3 $$
     的`对偶系`.
 
-- $$ [ \mathbf{e}_1 \mbox{ } \mathbf{e}_2 \mbox{ } \mathbf{e}_3 ] = \sqrt{g} $$,
-  $$ [ \mathbf{e}^1 \mbox{ } \mathbf{e}^2 \mbox{ } \mathbf{e}^3 ] = 1 / \sqrt{g} $$
+- $$ [\mathbf{e}_1 \mbox{ } \mathbf{e}_2 \mbox{ } \mathbf{e}_3] = \sqrt{g} $$,
+  $$ [\mathbf{e}^1 \mbox{ } \mathbf{e}^2 \mbox{ } \mathbf{e}^3] = 1 / \sqrt{g} $$
   - `g` 是
     $$ g_{ij} $$
     的行列式
