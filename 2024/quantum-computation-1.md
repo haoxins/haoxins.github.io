@@ -564,7 +564,7 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     ...,
     $$ \mid k \rangle $$
     是 __W__ 的一组标准正交基. 根据定义,
-  - $$ \mathbf{P} \equiv = \sum_{i=1}^{k} \mid i \rangle \langle i \mid $$
+  - $$ \mathbf{P} \equiv \sum_{i=1}^{k} \mid i \rangle \langle i \mid $$
   - 是在子空间 __W__ 上的投影.
   - 很容易验证这个定义不依赖于 __W__ 中的正交基
     $$ \mid 1 \rangle $$,
@@ -573,7 +573,7 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     的选取.
   - 根据定义可知, 对任意的向量
     $$ \mid v \rangle $$,
-    $$ \mid i \rangle \langle i \mid $$
+    $$ \mid v \rangle \langle v \mid $$
     是厄米的, 因此 __P__ 是厄米的,
     $$ \mathbf{P}^{\dagger} = \mathbf{P} $$.
 - 我们通常将"向量空间" __P__ 称为投影算子 __P__ 到向量空间投影的简写.
@@ -635,9 +635,3 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 ### 核磁共振
 
 ### 其他实现方案
-
-## 附录
-
-### B. 群论
-
-### D. 数论
