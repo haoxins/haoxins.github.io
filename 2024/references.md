@@ -19,6 +19,7 @@ date: 2023-12-21
 
 ### 一些好的微信文章
 
+- [物质的态与相](https://mp.weixin.qq.com/s/Pz2j4zxWfsogQ3WP1aZdXw)
 - [如何直观的理解对偶?](https://mp.weixin.qq.com/s/IHzQNZdhWx6ZtWjiYvcD_Q)
 
 ### 一些有灵性的中文翻译

@@ -88,7 +88,8 @@ date: 2023-12-11
   - 因为我们总是研究正交归一基, 所以我们主要对幺正相似变换感兴趣.
 - 虽然表示给定线性变换的矩阵元在新基中可能看起来很不一样,
   但与矩阵相关的两个特殊数值却保持不变:
-  - 矩阵的行列式和`迹`.
+  - 矩阵的行列式和
+    [迹](https://en.wikipedia.org/wiki/Trace_(linear_algebra)).
 - 乘积的行列式等于行列式的积, 因此
   - $$
       det(\mathbf{T}^{f}) =
@@ -114,8 +115,6 @@ date: 2023-12-11
       Tr(\mathbf{T}^{e} \mathbf{S}^{-1} \mathbf{S}) =
       Tr(\mathbf{T}^{e})
     $$.
-
-- [迹](https://en.wikipedia.org/wiki/Trace_(linear_algebra))
 
 ---
 

@@ -458,7 +458,7 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     相乘.
 - 我们选择的定义使得这两种潜在意思是一致的, 事实上我们通过后者定义了前者!
 
-> [柯西-施瓦茨不等式](https://en.wikipedia.org/wiki/Cauchy-Schwarz_inequality)
+- [柯西-施瓦茨不等式](https://en.wikipedia.org/wiki/Cauchy-Schwarz_inequality)
 
 - 外积记号的有用性可以从标准正交向量满足的完备性关系中看清楚. 令
   $$ \mid i \rangle $$
@@ -583,9 +583,9 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     $$ \mid k + 1 \rangle $$,
     ...,
     $$ \mid d \rangle $$
-    张成的向量空间上的投影, 它也被称为 __P__ 的`正交补`, 记为 __Q__.
-
-- [正交补](https://en.wikipedia.org/wiki/Orthogonal_complement)
+    张成的向量空间上的投影, 它也被称为 __P__ 的
+    [正交补](https://en.wikipedia.org/wiki/Orthogonal_complement)
+    , 记为 __Q__.
 
 ### 量子力学的假设
 
@@ -616,11 +616,9 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 
 - 实现量子计算有 `4` 项基本要求:
   1. 量子比特表示,
-  2. 可控酉演化,
-  3. 初始量子比特态的制备, 以及
+  2. 可控酉变换,
+  3. 初始量子比特态的制备,
   4. 最终量子比特态的测量.
-
-### 指导性原则
 
 ### 量子计算的条件
 
