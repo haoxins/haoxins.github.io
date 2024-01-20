@@ -16,22 +16,21 @@ go install golang.org/x/tools/cmd/deadcode@latest
 - [Arroyo 0.9](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.9.0)
   - User-defined functions (UDFs) and user-defined aggregate functions
     (UDAFs) allow you to extend Arroyo with custom logic.
-    New in Arroyo 0.9 is support for what we call async UDFs.
+    New in Arroyo `0.9` is support for what we call async UDFs.
 
 ```rust
 pub async fn get_city(ip: String) -> Option<String> {
   let body: serde_json::Value =
-    reqwest::get(
-      format!("http://geoip-service:8000/{ip}"))
-        .await
-        .ok()?
-        .json()
-        .await
-        .ok()?;
+    reqwest::get(format!("http://geoip-service:8000/{ip}"))
+      .await
+      .ok()?
+      .json()
+      .await
+      .ok()?;
 
-  body.pointer("/names/en").and_then(|t|
-    t.as_str()
-  ).map(|t| t.to_string())
+  body.pointer("/names/en")
+    .and_then(|t| t.as_str())
+    .map(|t| t.to_string())
 }
 ```
 
@@ -43,13 +42,15 @@ from logs;
 SELECT * FROM (
   SELECT *, ROW_NUMBER() OVER (
     PARTITION BY window
-    ORDER BY count DESC) as row_num
+    ORDER BY count DESC
+  ) as row_num
   FROM (SELECT count(*) as count,
     city,
     hop(interval '5 seconds', interval '15 minutes') as window
       FROM cities
       WHERE city IS NOT NULL
-      group by city, window)) WHERE row_num <= 5;
+      group by city, window)
+) WHERE row_num <= 5;
 ```
 
 - [Announcing Rust 1.75](https://blog.rust-lang.org/2023/12/28/Rust-1.75.0.html)
