@@ -14,6 +14,8 @@ date: 2023-09-07
 
 ---
 
+- [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
+  - 这也太多页了, 好在引用占了不少~
 
 ### 图相关
 
@@ -21,9 +23,6 @@ date: 2023-09-07
   - 2023 (v1), 2023 (v2)
   - https://github.com/spcl/graph-of-thoughts
 
----
-
-  - https://github.com/snap-stanford/relbench
 
 ---
 
@@ -33,3 +32,16 @@ date: 2023-09-07
 
 > 综述性质, 比较容易阅读
 
+
+---
+
+- [Relational Deep Learning: Graph Representation Learning on Relational Databases](https://arxiv.org/abs/2312.04615)
+  - https://github.com/snap-stanford/relbench
+
+
+---
+
+- [GraphScope Flex: LEGO-like Graph Computing Stack](https://arxiv.org/abs/2312.12107)
+  - [GART](https://github.com/GraphScope/GART)
+  - [GRIN](https://github.com/GraphScope/GRIN)
+  - 嗯, GraphScope 又改架构了?
