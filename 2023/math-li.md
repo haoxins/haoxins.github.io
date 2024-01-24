@@ -6,6 +6,12 @@ date: 2024-01-02
 
 - [李群与李代数基础](https://book.douban.com/subject/35533338/)
 
+---
+
+- [柯西-利普希茨定理](https://en.wikipedia.org/wiki/Picard-Lindelöf_theorem)
+  - [利普希茨连续](https://en.wikipedia.org/wiki/Lipschitz_continuity)
+- [隐函数定理](https://en.wikipedia.org/wiki/Implicit_function_theorem)
+
 ### 流形与解析空间
 
 ### 切空间与向量场

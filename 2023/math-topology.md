@@ -109,6 +109,9 @@ date: 2021-08-24
 即空间是所谓可单纯剖分的空间, 这两个问题都能得到有效的处理.
 ```
 
+- [单纯复形](https://en.wikipedia.org/wiki/Simplicial_complex)
+  - [单纯形](https://en.wikipedia.org/wiki/Simplex)
+
 ### 曲面
 
 ### 单纯同调
