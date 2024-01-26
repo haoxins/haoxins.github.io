@@ -184,8 +184,8 @@ H(p) 叫作亏格为 p 的标准可定向曲面, M(q) 叫作亏格为 q 的标�
   - 如果表达成问题的形式, 它问道, 是否每一个单连通的三维闭流形同胚于
     $$ S^3 $$.
 
+---
+
 - [同调](https://en.wikipedia.org/wiki/Homology_(mathematics))
-
 - [映射度](https://en.wikipedia.org/wiki/Degree_of_a_continuous_mapping)
-
 - [Lefschetz fixed-point](https://en.wikipedia.org/wiki/Lefschetz_fixed-point_theorem)
