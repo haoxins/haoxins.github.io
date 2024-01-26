@@ -871,6 +871,15 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 
 ### 关于计算科学的观点
 
+> 这一章真希望 Scott Aaronson 能够出一本著作
+
+- 作者推荐的一些书籍和资料
+  - [Introduction to Algorithms](https://en.wikipedia.org/wiki/Introduction_to_Algorithms)
+  - [Computers and Intractability](https://en.wikipedia.org/wiki/Computers_and_Intractability)
+  - [Karp's 21 NP-complete problems](https://en.wikipedia.org/wiki/Karp%27s_21_NP-complete_problems)
+  - [结构复杂性理论](https://en.wikipedia.org/wiki/Structural_complexity_theory)
+  - [兰道尔原理](https://en.wikipedia.org/wiki/Landauer%27s_principle)
+
 ## 量子计算机: 物理实现
 
 > 这一章比较鸡肋~

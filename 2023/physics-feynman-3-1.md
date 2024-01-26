@@ -682,6 +682,7 @@ $$
   又在另一态
   $$ \mid ϕ \rangle $$
   中的振幅为
+  $$ \langle ϕ \mid \hat{A} \mid ψ \rangle $$.
   - 这个振幅的共轭复数是否有意义呢? 你们应该能够证明
   - $$
       \langle ϕ \mid \hat{A} \mid ψ \rangle ^{*} =

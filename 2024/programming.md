@@ -13,6 +13,30 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- [Arroyo: What is stateful stream processing?](https://www.arroyo.dev/blog/stateful-stream-processing)
+  - In stream processing, statelessness also goes hand-in-hand with a
+    property that I'll call __map-only__. This means that there are no
+    operations that require reorganizing ("shuffling") or sorting data;
+    only operators that are like "map" or "filter" (in SQL terms,
+    `SELECT` and `WHERE`) are supported. In particular,
+    `GROUP BY`, `JOIN`, and `ORDER BY` can't be implemented.
+  - [10x faster sliding windows: how our Rust streaming engine beats Flink](https://www.arroyo.dev/blog/how-arroyo-beats-flink-at-sliding-windows)
+  - Early stateful systems like Flink and ksqlDB were designed at a
+    time when memory was expensive and networks were slow.
+    They relied on embedded key-value stores like RocksDB
+    in order to provide large, relatively fast storage.
+    __However, in practice__ many users rely on the in-memory backend
+    due to the complexity of tuning RocksDB.
+  - `... due to the complexity of tuning RocksDB.`
+    哈哈哈, 蛮现实的~
+  - While Flink supports storing TBs of state in RocksDB,
+    in practice this proves operationally difficult because of
+    the need to load all of the state onto the processing nodes.
+  - Newer systems like Rising Wave and Arroyo have adopted
+    remote state backends that allow only live data to be
+    loaded onto the processing nodes which enables much faster
+    operations at large state sizes.
+
 - [Arroyo 0.9](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.9.0)
   - User-defined functions (UDFs) and user-defined aggregate functions
     (UDAFs) allow you to extend Arroyo with custom logic.

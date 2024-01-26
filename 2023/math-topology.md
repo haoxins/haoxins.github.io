@@ -111,11 +111,81 @@ date: 2021-08-24
 
 - [单纯复形](https://en.wikipedia.org/wiki/Simplicial_complex)
   - [单纯形](https://en.wikipedia.org/wiki/Simplex)
+- [自由群](https://en.wikipedia.org/wiki/Free_group)
+  - [自由积](https://en.wikipedia.org/wiki/Free_product)
+- [同调论](https://en.wikipedia.org/wiki/Homology_(mathematics))
+- [塞弗特-范坎彭定理](https://en.wikipedia.org/wiki/Seifert-Van_Kampen_theorem)
+
+```
+这里给出无穷复形的一个尝试性的定义, 并不算最广义的, 但对我们的需要来说已经足够.
+```
+
+- __定义__ 欧氏空间
+  $$ \mathbf{E}^n $$
+  内一个由单纯形构成的无穷集合, 如果满足下列条件就叫作无穷单纯复形:
+  - (a) 若某个单纯形属于这个集合, 则它所有的面也属于该集合;
+  - (b) 这个集合的单纯形很好地拼合;
+  - (c) 这个集合全体单纯形的并集是
+    $$ \mathbf{E}^n $$
+    内的闭集;
+  - (d) 在这个并集上, 诱导拓扑与粘合拓扑重合.
+
+- __定理__ 设 `K` 为
+  $$ \mathbf{E}^n $$
+  内的无穷单纯复形, 以
+  $$ \mid K \mid $$
+  表示它的多面体, 则
+  - (a) `K` 是有限维的;
+  - (b) `K` 的单纯形总数是可数的;
+  - (c) `K` 是局部有限的 (就是说, `K` 的每个顶点只在有限多个单纯形上);
+  - (d)
+    $$ \mathbf{E}^n $$
+    的每一点有那样的邻域, 它至多只与有限多个 `K` 的单纯形相交.
 
 ### 曲面
 
-### 单纯同调
+- [曲面](https://en.wikipedia.org/wiki/Surface_(topology))
 
-### 映射度与 Lefschetz 数
+- [欧拉示性数](https://en.wikipedia.org/wiki/Euler_characteristic)
 
-### 纽结与覆叠空间
+- __定理__ 每个闭曲面同胚于标准闭曲面之中的一个.
+
+```
+H(p) 叫作亏格为 p 的标准可定向曲面, M(q) 叫作亏格为 q 的标准不可定向曲面.
+一旦知道一个闭曲面的亏格以及是否可定向, 这个闭曲面就完全决定了.
+```
+
+---
+
+- 近来拓扑学方面的许多工作围绕着关于流形的研究. 这是类似于曲面的高维对象.
+  一个 `n` 维流形, 或简称 `n` 流形, 是一个第二可数的 Hausdorff 空间,
+  它的每一点有邻域同胚于
+  $$ \mathbf{E}^n $$.
+- 空间
+  $$ \mathbf{E}^n $$,
+  $$ S^n $$,
+  $$ P^n $$
+  都是 `n` 流形;
+  $$ S^3 \times S^1 $$
+  是闭的 `4` 流形 ("闭"意思是紧致连通);
+  `n` 流形内的任何开集是 `n` 流形, 因此,
+  $$ GL(n) $$
+  是
+  $$ n^2 $$
+  维流形;
+  $$ SO(n) $$
+  是一个
+  $$ n (n-1) / 2 $$
+  维闭流形; 最后, 透镜空间
+  $$ L(p, q) $$
+  都是闭 `3` 流形.
+  - 这方面的研究虽然取得了很大进展, 但许多基本问题尚未得到解答.
+  - 最重要的是著名的 `Poincaré` 猜想.
+  - 如果表达成问题的形式, 它问道, 是否每一个单连通的三维闭流形同胚于
+    $$ S^3 $$.
+
+- [同调](https://en.wikipedia.org/wiki/Homology_(mathematics))
+
+- [映射度](https://en.wikipedia.org/wiki/Degree_of_a_continuous_mapping)
+
+- [Lefschetz fixed-point](https://en.wikipedia.org/wiki/Lefschetz_fixed-point_theorem)
