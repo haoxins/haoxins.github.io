@@ -1,5 +1,5 @@
 ---
-title: Kubernetes in Action (4/4) - 2nd Edition
+title: Kubernetes in Action (4/4)
 description: 而今识得愁滋味, 欲说还休, 欲说还休, 却道天凉好个秋.
 date: 2023-01-16
 ---
