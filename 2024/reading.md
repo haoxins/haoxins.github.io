@@ -8,7 +8,18 @@ date: 2023-07-17
   - __阅读之前__: 终于有一本细分点切入, 一以贯之的书了~
     市面上泛泛而谈的科普书太多了, 不是量子就是相对论,
     照葫芦画瓢, 没啥特色~
+  - 同时支持一下国人作品!
+
+---
 
 - [法律的悖论](https://book.douban.com/subject/36624253/)
   - 罗翔
   - 实话实说, 对我而言, 没太大的阅读吸引力~
+
+---
+
+- [量子计算: 一种应用方法](https://book.douban.com/subject/35812490/)
+  - 嗯, 这本书其实没啥新意! 买来是为了赞助
+    [Qiskit/qiskit](https://github.com/Qiskit/qiskit).
+  - 为啥要赞助 __Qiskit__? 因为孵化了
+    [Qiskit/rustworkx](https://github.com/Qiskit/rustworkx).

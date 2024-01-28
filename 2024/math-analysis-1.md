@@ -4,7 +4,7 @@ description: 明月出天山, 苍茫云海间. 长风几万里, 吹度玉门关.
 date: 2023-07-25
 ---
 
-- [陶哲轩实分析 (第 3 版)](https://book.douban.com/subject/30227556/)
+- [陶哲轩实分析](https://book.douban.com/subject/30227556/)
 
 ```
 因为实分析所包含的内容非常广泛,
