@@ -1,28 +1,37 @@
 ---
-title: Papers & Specs
+title: Papers - 机器学习
 description: 惊起却回头, 有恨无人省. 拣尽寒枝不肯栖, 寂寞沙洲冷.
 date: 2023-09-07
 ---
 
-- [Module-Lattice-Based Key-Encapsulation Mechanism Standard](https://csrc.nist.gov/pubs/fips/203/ipd)
+- [Thermodynamic Linear Algebra](https://arxiv.org/abs/2308.05660)
+  - 2023
 
-- [Module-Lattice-Based Digital Signature Standard](https://csrc.nist.gov/pubs/fips/204/ipd)
-  - [Stateless Hash-Based Digital Signature Standard](https://csrc.nist.gov/pubs/fips/205/ipd)
+### 机器学习
+
+- [Deconstructing Denoising Diffusion Models for Self-Supervised Learning](https://arxiv.org/abs/2401.14404)
 
 ---
 
+- [Mixtral of Experts](https://arxiv.org/abs/2401.04088)
+
+---
+
+- [State Sequences Prediction via Fourier Transform for Representation Learning](https://arxiv.org/abs/2310.15888)
 
 ---
 
 - [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
   - 这也太多页了, 好在引用占了不少~
 
-### 图相关
+### 图
 
 - [Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687)
   - 2023 (v1), 2023 (v2)
   - https://github.com/spcl/graph-of-thoughts
 
+```
+```
 
 ---
 
@@ -32,6 +41,8 @@ date: 2023-09-07
 
 > 综述
 
+```
+```
 
 ---
 
@@ -41,6 +52,8 @@ date: 2023-09-07
 - [Relational Deep Learning: Graph Representation Learning on Relational Databases](https://arxiv.org/abs/2312.04615)
   - https://github.com/snap-stanford/relbench
 
+```
+```
 
 ---
 
@@ -48,3 +61,6 @@ date: 2023-09-07
   - [GART](https://github.com/GraphScope/GART)
   - [GRIN](https://github.com/GraphScope/GRIN)
   - 嗯, GraphScope 又改架构了?
+
+```
+```
