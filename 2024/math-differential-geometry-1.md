@@ -9,8 +9,25 @@ date: 2023-10-06
   - 等了 `2` 年!
   - __致敬: 齐民友先生!__
 
+```
+齐民友因病医治无效于 2021 年 8 月 8 日在武汉逝世, 享年 92 岁.
+```
+
 > 齐民友先生若能得见译作出版, 当甚感欣慰!
   尚不知刘伟安先生能否再现齐民友先生风采, 译作更比原作精彩!
+
+- [本书网站](https://www.vdgf.space)
+  - [MacTutor](https://mathshistory.st-andrews.ac.uk)
+  - MacTutor is a free online resource containing
+    biographies of more than 3000 mathematicians and
+    over 2000 pages of essays and supporting materials.
+
+```
+当年, 齐民友老师在翻译了尼达姆的第一本书 <复分析> 之后,
+又得到了这第二本书的消息, 所以出版社马上就找齐老师, 想请他再次翻译.
+因为齐老师觉得自己已年近九十了, 而这本书的篇幅也不小,
+所以为了不耽误此书的翻译, 特向出版社推荐刘伟安教授作为帮手来参与翻译.
+```
 
 # 第一幕 空间的本质
 

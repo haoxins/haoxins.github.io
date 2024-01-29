@@ -23,3 +23,9 @@ date: 2023-07-17
     [Qiskit/qiskit](https://github.com/Qiskit/qiskit).
   - 为啥要赞助 __Qiskit__? 因为孵化了
     [Qiskit/rustworkx](https://github.com/Qiskit/rustworkx).
+  - 本书的篇幅主要就两部分, 一部分是代码, 另一部分是数学 (线性代数);
+    剩余章节均很薄弱! 倒是印刷质量确实不错~
+  - 既然作者自己的定位已经是
+    [量子计算与量子信息](https://book.douban.com/subject/35777059/)
+    的补充, 还不如直接删除数学部分.
+  - 至于所谓的前沿, 也没啥展开描述, 所以也就剩下个代码部分了~
