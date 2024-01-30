@@ -29,6 +29,24 @@ date: 2023-10-06
 所以为了不耽误此书的翻译, 特向出版社推荐刘伟安教授作为帮手来参与翻译.
 ```
 
+- 我们将使用符号
+  $$ \asymp $$
+  来表示这个最终相等的概念. 简而言之,
+  - $$
+      "A 最终等于 B" \Leftrightarrow
+      A \asymp B \Leftrightarrow
+      lim_{\epsilon \rightarrow 0} \frac{A}{B} = 1
+    $$.
+  - 根据关于极限的几个定理: 最终相等是一种等价关系, 而且
+    具有与普通相等同样的一些性质.
+  - 例如:
+    $$ X \asymp Y \And P \asymp Q \Rightarrow X \cdot P \asymp Y \cdot Q $$,
+    以及
+    $$ A \asymp B \cdot C \Leftrightarrow (A / B) \asymp C $$.
+
+> $$ \asymp $$
+  在 LaTeX 里找了半天!
+
 # 第一幕 空间的本质
 
 ## 欧几里得几何与非欧几何

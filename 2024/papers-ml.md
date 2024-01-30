@@ -59,7 +59,7 @@ date: 2023-09-07
 - [GraphScope Flex: LEGO-like Graph Computing Stack](https://arxiv.org/abs/2312.12107)
   - [GART](https://github.com/GraphScope/GART)
   - [GRIN](https://github.com/GraphScope/GRIN)
-  - 嗯, GraphScope 又改架构了?
+  - 一晃两年过去了, GraphScope 也改架构了~
 
 ```
 ```
