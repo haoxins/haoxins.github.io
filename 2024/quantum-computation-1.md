@@ -440,8 +440,8 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     的内积
 
 > __注__: 符号
-  $$ \mathbf{A}^{*} $$,
-  在线性代数中表示:
+  $$ \mathbf{A}^{*} $$
+  在线性代数中一般表示
   [共轭转置](https://en.wikipedia.org/wiki/Conjugate_transpose),
   但在量子力学中, 仅仅表示`共轭`.
 > $$ \mathbf{A}^{\dagger} $$
@@ -598,13 +598,13 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 - 我们称定义了内积的向量空间为`内积空间`.
 
 > 注: 复向量内积的定义有差异, 参见
-  [Dot product](https://en.wikipedia.org/wiki/Dot_product)
-  和
-  [Inner product space](https://en.wikipedia.org/wiki/Inner_product_space).
-  计算结果共轭, 无实质区别~ 量子领域取本书的定义.
+  [点积](https://en.wikipedia.org/wiki/Dot_product),
+  [内积空间](https://en.wikipedia.org/wiki/Inner_product_space).
+  计算结果共轭, __量子领域取本书的定义__, 不确定哪一种更主流.
+> 另: 点积一般对应实数, 可视作内积的特例.
 > 关于对偶, 参看
-  [如何直观的理解对偶?](https://mp.weixin.qq.com/s/IHzQNZdhWx6ZtWjiYvcD_Q),
   [对偶空间](https://en.wikipedia.org/wiki/Dual_space),
+  [如何直观的理解对偶?](https://mp.weixin.qq.com/s/IHzQNZdhWx6ZtWjiYvcD_Q),
   [从矢量到张量](math-vector-to-tensor-1.md).
 
 ```
@@ -656,11 +656,12 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     $$ \mid v \rangle $$
     的列向量表示中对应分量的复共轭.
 
-> 注: 下面注意区别:
-  [Cross product](https://en.wikipedia.org/wiki/Cross_product),
-  [Outer product](https://en.wikipedia.org/wiki/Outer_product),
-  [Tensor product](https://en.wikipedia.org/wiki/Tensor_product).
-  量子领域感觉译作`张量积`多一些, 而且上文刚刚出现过`张量积`.
+> 注:
+  [叉积](https://en.wikipedia.org/wiki/Cross_product),
+  [外积](https://en.wikipedia.org/wiki/Outer_product),
+  [张量积](https://en.wikipedia.org/wiki/Tensor_product).
+  叉积没啥要说的; 外积可视作张量积的特例, 或者说张量积是外积的推广.
+  量子领域感觉称`张量积`多一些, 而且上文刚刚出现过`张量积`.
 
 - 有一种表示线性算子的有用方式, 充分地利用了内积, 称为外积表示. 假设
   $$ \mid v \rangle $$
