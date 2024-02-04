@@ -29,10 +29,16 @@ date: 2023-01-08
 
 - [马尔可夫不等式](https://en.wikipedia.org/wiki/Markov%27s_inequality)
 - [切比雪夫不等式](https://en.wikipedia.org/wiki/Chebyshev%27s_inequality)
+- [布尔不等式](https://en.wikipedia.org/wiki/Boole%27s_inequality)
+- [大数定律](https://en.wikipedia.org/wiki/Law_of_large_numbers)
 
 ### 斯特林公式
 
+- [Γ 函数](https://en.wikipedia.org/wiki/Gamma_function)
+
 ### 生成函数与卷积
+
+- [斐波那契数](https://en.wikipedia.org/wiki/Fibonacci_sequence)
 
 ### 中心极限定理的证明
 

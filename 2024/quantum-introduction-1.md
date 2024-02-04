@@ -256,6 +256,8 @@ date: 2023-12-11
 
 ## 定态薛定谔方程
 
+- [分离变量法](https://en.wikipedia.org/wiki/Separation_of_variables)
+
 ### 定态
 
 ### 无限深方势阱

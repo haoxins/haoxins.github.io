@@ -617,7 +617,7 @@ $$
   $$ △ t $$,
   则得到不同的态. 我们说, "对一个状态进行一次操作产生了一个新的态."
   我们可以用一个方程式来表示同一概念:
-  - $$ \mid ϕ \rangle = \hat{A} \mid ψ \rangle $$
+  - $$ \mid ϕ \rangle = \hat{A} \mid ψ \rangle $$.
     (`20.2`)
   - 对态的一次操作产生另一个态. 算符
     $$ \hat{A} $$
@@ -633,7 +633,7 @@ $$
   按式 (`20.1`) 展开, 则得到
   - $$
       \langle i \mid ϕ \rangle =
-      \sum_{i}
+      \sum_{j}
       \langle i \mid \hat{A} \mid j \rangle
       \langle j \mid ψ \rangle
     $$.

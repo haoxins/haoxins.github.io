@@ -290,8 +290,6 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 - [量子隐形传态](https://en.wikipedia.org/wiki/Quantum_teleportation)
   - [贝尔态](https://en.wikipedia.org/wiki/Bell_state)
 
-### 量子算法
-
 ### 实验量子信息处理
 
 - [施特恩-格拉赫实验](https://en.wikipedia.org/wiki/Stern-Gerlach_experiment)
@@ -902,6 +900,194 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 
 > 这一章节比`格里菲斯`有诚意的多了~
 
+- 设
+  $$ V $$
+  和
+  $$ W $$
+  分别是 `m` 维和 `n` 维的向量空间. 方便起见, 我们设
+  $$ V $$
+  和
+  $$ W $$
+  都是希尔伯特空间. 那么
+  $$ V \otimes W $$
+  是一个 `mn` 维的向量空间.
+  $$ V \otimes W $$
+  里的元素是
+  $$ V $$
+  空间中的元素
+  $$ \mid v \rangle $$
+  和
+  $$ W $$
+  空间中的元素
+  $$ \mid w \rangle $$
+  的张量积
+  $$ \mid v \rangle \otimes \mid w \rangle $$
+  的线性组合.
+  - 特别地, 如果
+    $$ \mid i \rangle $$
+    和
+    $$ \mid j \rangle $$
+    是空间
+    $$ V $$
+    和
+    $$ W $$
+    中的标准正交基, 那么
+    $$ \mid i \rangle \otimes \mid j \rangle $$
+    是
+    $$ V \otimes W $$
+    的一组基.
+  - 我们常用缩写符号
+    $$ \mid v \rangle \mid w \rangle $$,
+    $$ \mid v, w \rangle $$,
+    甚至
+    $$ \mid vw \rangle $$
+    表示张量积
+    $$ \mid v \rangle \otimes \mid w \rangle $$.
+- 根据定义, 张量积满足以下基本性质:
+  - 对任意的标量
+    $$ z $$,
+    $$ V $$
+    中元素
+    $$ \mid v \rangle $$
+    和
+    $$ W $$
+    中元素
+    $$ \mid w \rangle $$,
+    有
+    $$
+      z (\mid v \rangle \otimes \mid w \rangle) =
+      (z \mid v \rangle) \otimes \mid w \rangle =
+      \mid v \rangle \otimes (z \mid w \rangle)
+    $$
+  - 对
+    $$ V $$
+    中的任意向量
+    $$ \mid v_1 \rangle $$
+    和
+    $$ \mid v_2 \rangle $$,
+    以及
+    $$ W $$
+    中任意向量
+    $$ \mid w \rangle $$,
+    有
+    $$
+      (\mid v_1 \rangle + \mid v_2 \rangle) \otimes \mid w \rangle =
+      \mid v_1 \rangle \otimes \mid w \rangle +
+      \mid v_2 \rangle \otimes \mid w \rangle
+    $$
+  - 对
+    $$ V $$
+    中任意向量
+    $$ \mid v \rangle $$
+    和
+    $$ W $$
+    中任意向量
+    $$ \mid w_1 \rangle $$,
+    $$ \mid w_2 \rangle $$,
+    有
+    $$
+      \mid v \rangle \otimes (\mid w_1 \rangle + \mid w_2 \rangle) =
+      \mid v \rangle \otimes \mid w_1 \rangle +
+      \mid v \rangle \otimes \mid w_2 \rangle
+    $$
+- $$ V \otimes W $$
+  空间上的线性算子类型有哪些? 假设
+  $$ \mid v \rangle $$
+  和
+  $$ \mid w \rangle $$
+  分别是
+  $$ V $$
+  和
+  $$ W $$
+  中的向量,
+  $$ A $$
+  和
+  $$ B $$
+  分别是
+  $$ V $$
+  和
+  $$ W $$
+  中的线性算子. 那么我们可以根据以下等式来定义
+  $$ V \otimes W $$
+  上的线性算子
+  $$ A \otimes B $$:
+  - $$
+      (A \otimes B) (\mid v \rangle \otimes \mid w \rangle)
+      \equiv
+      A \mid v \rangle \otimes B \mid w \rangle
+    $$
+  - 为确保
+    $$ A \otimes B $$
+    的线性,
+    $$ A \otimes B $$
+    的定义可以很自然地扩展到
+    $$ V \otimes W $$
+    上的所有元素, 也就是
+  - $$
+      (A \otimes B) (\sum_{i} a_i \mid v_i \rangle \otimes \mid w_i \rangle)
+      \equiv
+      \sum_{i} a_i A \mid v_i \rangle \otimes B \mid w_i \rangle
+    $$
+
+---
+
+- 有很多重要的函数可以通过算子和矩阵来定义.
+  一般来说, 给定一个从复数域映射到复数域的函数
+  $$ f $$,
+  就可以根据下面的步骤定义正规矩阵 (或者是其子类, 例如厄米矩阵) 上的相应矩阵函数.
+  - 设
+    $$ A = \sum_{a} a \mid a \rangle \langle a \mid $$
+    是正规算子
+    $$ A $$
+    的一个谱分解.
+  - 定义
+    $$ f(A) ≡ \sum_{a} f(a) \mid a \rangle \langle a \mid $$.
+  - 易知
+    $$ f(A) $$
+    是唯一定义的. 这个过程可用于一些情况,
+    例如定义一个正算子的平方根, 正定算子的对数, 或者正规算子的指数.
+  - 例如:
+    $$
+      exp(\theta Z) =
+      \begin{bmatrix}
+        e^{\theta} & 0          \\
+        0          & e^{- \theta}
+      \end{bmatrix}
+    $$
+  - 其中
+    $$ \mid 0 \rangle $$
+    和
+    $$ \mid 1 \rangle $$
+    是
+    $$ Z $$
+    的特征向量.
+- 另外一个重要的矩阵函数是矩阵的`迹`.
+  $$ A $$
+  的迹定义为其对角元素的和:
+  - $$ tr(A) ≡ \sum_{i} A_{ii} $$
+  - 很容易看到迹是循环的,
+    $$ tr(AB) = tr(BA) $$,
+    也是线性的,
+    $$ tr(A + B) = tr(A) + tr(B) $$,
+    $$ tr(zA) = z \mbox{ } tr(A) $$,
+    其中
+    $$ A $$
+    和
+    $$ B $$
+    是任意的矩阵,
+    $$ z $$
+    是一个复数.
+  - 进一步, 由循环性可知, 矩阵的迹在酉相似变换
+    $$ A \rightarrow UAU^{\dagger} $$
+    下是不变的, 因为
+    $$ tr(UAU^{\dagger}) = tr(U^{\dagger}UA) = tr(A) $$.
+  - 根据这个结果, 可以定义算子
+    $$ A $$
+    的迹为
+    $$ A $$
+    的任意矩阵表示的迹.
+  - 迹在酉相似变换下的不变性确保了算子的迹是定义良好的.
+
 ### 量子力学的假设
 
 > 这一章节让我眼前一亮, 甚至兴奋.
@@ -1083,7 +1269,7 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 基于可逆计算模型的复杂性类比基于不可逆模型的复杂性类更自然,
 从量子计算和量子信息的角度来看, 可逆计算非常重要.
 为了利用量子计算的全部功能, 量子计算中的任何经典子程序必须可逆地执行,
-而且不能产生依赖于经典输人的冗余比特.
+而且不能产生依赖于经典输入的冗余比特.
 ```
 
 ### 关于计算科学的观点

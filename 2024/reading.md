@@ -92,10 +92,10 @@ date: 2023-07-17
     $$ \mathbf{u}, \mathbf{v} \in \mathbf{S} $$,
     $$ \mathbf{u} + \mathbf{v} \in S $$.
   - __数乘封闭性__: 对任意
-    $$ \mathbf{a} \in \mathbf{F} $$
+    $$ a \in \mathbb{F} $$
     以及任意
     $$ \mathbf{v} \in \mathbf{S} $$,
-    $$ \mathbf{a} \cdot \mathbf{v} \in S $$.
+    $$ a \cdot \mathbf{v} \in S $$.
 
 - [希尔伯特空间](https://en.wikipedia.org/wiki/Hilbert_space)
 
