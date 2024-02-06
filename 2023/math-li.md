@@ -11,6 +11,7 @@ date: 2024-01-02
 - [柯西-利普希茨定理](https://en.wikipedia.org/wiki/Picard-Lindelöf_theorem)
   - [利普希茨连续](https://en.wikipedia.org/wiki/Lipschitz_continuity)
 - [隐函数定理](https://en.wikipedia.org/wiki/Implicit_function_theorem)
+- [魏尔斯特拉斯预备定理](https://en.wikipedia.org/wiki/Weierstrass_preparation_theorem)
 
 ### 流形与解析空间
 
