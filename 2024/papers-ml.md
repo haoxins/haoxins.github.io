@@ -1,13 +1,6 @@
----
-title: Papers - 机器学习
-description: 惊起却回头, 有恨无人省. 拣尽寒枝不肯栖, 寂寞沙洲冷.
-date: 2023-09-07
----
-
 - [Thermodynamic Linear Algebra](https://arxiv.org/abs/2308.05660)
   - 2023
 
-### 机器学习
 
 - [Deconstructing Denoising Diffusion Models for Self-Supervised Learning](https://arxiv.org/abs/2401.14404)
 
@@ -24,7 +17,6 @@ date: 2023-09-07
 - [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
   - 这也太多页了, 好在引用占了不少~
 
-### 图
 
 - [Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687)
   - 2023 (v1), 2023 (v2)
@@ -50,16 +42,6 @@ date: 2023-09-07
 
 - [Relational Deep Learning: Graph Representation Learning on Relational Databases](https://arxiv.org/abs/2312.04615)
   - https://github.com/snap-stanford/relbench
-
-```
-```
-
----
-
-- [GraphScope Flex: LEGO-like Graph Computing Stack](https://arxiv.org/abs/2312.12107)
-  - [GART](https://github.com/GraphScope/GART)
-  - [GRIN](https://github.com/GraphScope/GRIN)
-  - 一晃两年过去了, GraphScope 也改架构了~
 
 ```
 ```
