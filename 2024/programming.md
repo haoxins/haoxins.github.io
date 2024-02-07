@@ -11,6 +11,50 @@ go install golang.org/x/vuln/cmd/govulncheck@latest
 go install golang.org/x/tools/cmd/deadcode@latest
 ```
 
+
+---
+
+- [Go 1.22 Release Notes](https://go.dev/doc/go1.22)
+  - 春节前~
+  - Functions that shrink the size of a slice
+    (`Delete`, `DeleteFunc`, `Compact`, `CompactFunc`, and `Replace`)
+    now zero the elements between the new length and the old length.
+
+```go
+type Item struct {
+  Name   string
+  Amount int
+}
+
+items := []*Item{
+  {Name: "Car", Amount: 1},
+  {Name: "Car", Amount: 1},
+}
+
+l1 := len(slices.CompactFunc(items, func(a *Item, b *Item) bool {
+  return a.Name == b.Name
+}))
+
+l2 := len(slices.CompactFunc(items, func(a *Item, b *Item) bool {
+  return a.Amount == b.Amount
+}))
+
+fmt.Println(l1, l2)
+
+// Go 1.21:
+// 1 1
+// Go 1.22:
+// panic: runtime error: invalid memory address or nil pointer dereference
+```
+
+> 这个 Case 因为我使用
+  [ent](https://github.com/ent/ent),
+  比较容易出现 `[]*ent.Entity`.
+> 所以我切换到了
+  [lo.UniqBy](https://github.com/samber/lo).
+  一方面是 `slices` 目前无法替代 `lo`;
+  另一方面是 `lo` 使用体验更加.
+
 ---
 
 - [Arroyo: What is stateful stream processing?](https://www.arroyo.dev/blog/stateful-stream-processing)
