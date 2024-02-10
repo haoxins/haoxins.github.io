@@ -4,6 +4,8 @@ description: 浮云游子意, 落日故人情. 挥手自兹去, 萧萧班马鸣.
 date: 2023-07-17
 ---
 
+- [热辣滚烫](https://movie.douban.com/subject/36081094/)
+
 - [目中无人](https://movie.douban.com/subject/35295405/)
   - 因为听说了`目中无人 2`, 所以看了`目中无人`.
   - 剧情简单, 甚至没啥剧情.

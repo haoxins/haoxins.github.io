@@ -10,6 +10,16 @@ date: 2023-01-17
 
 ### B. 群论
 
+- [隐藏子群问题](https://en.wikipedia.org/wiki/Hidden_subgroup_problem)
+- [生成元](https://en.wikipedia.org/wiki/Generating_set_of_a_group)
+- [矩阵群](https://en.wikipedia.org/wiki/Linear_group)
+  - [表示](https://en.wikipedia.org/wiki/Group_representation)
+  - [特征](https://en.wikipedia.org/wiki/Character_theory)
+
+- [有限群上的傅立叶变换](https://en.wikipedia.org/wiki/Fourier_transform_on_finite_groups)
+
+> 最后 `4` 页的信息量蛮大~
+
 ### D. 数论
 
 ## 量子电路
