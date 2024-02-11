@@ -260,6 +260,18 @@ date: 2023-12-11
 
 ### 定态
 
+- [定态](https://en.wikipedia.org/wiki/Stationary_state)
+  - 概率密度与时间无关;
+  - 哈密顿量不变.
+
+```
+一旦解出了定态薛定谔方程的分离变量解,
+就可以从中得到含时薛定谔方程的通解,
+这在原则上是简单明了的.
+```
+
+- [哈密顿算符](https://en.wikipedia.org/wiki/Hamiltonian_(quantum_mechanics))
+
 ### 无限深方势阱
 
 ### 谐振子
