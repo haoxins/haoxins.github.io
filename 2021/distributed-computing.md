@@ -557,7 +557,7 @@ Some of the things that you can use an operator to automate include:
    without an internal member election process
 ```
 
-* [CNCF Operator White Paper - Final Version](https://github.com/cncf/tag-app-delivery/blob/master/operator-wg/whitepaper/Operator-WhitePaper_v1-0.md)
+* [CNCF Operator White Paper - Final Version](https://github.com/cncf/tag-app-delivery/blob/main/operator-wg/whitepaper/Operator-WhitePaper_v1-0.md)
 
 ```
 The Operator Pattern can be used to solve the problem of managing state.
