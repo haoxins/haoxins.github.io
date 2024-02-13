@@ -5,6 +5,10 @@ date: 2023-07-17
 ---
 
 - [第二十条](https://movie.douban.com/subject/36208094/)
+  - 首先, 藏着掖着拍是肯定的;
+  - 但是, 确实是一个小小的进步!
+  - 可能是春节档唯一算有点内涵的影片吧~
+  - 推荐 [法律的悖论](https://book.douban.com/subject/36624253/)
 
 - [目中无人 2](https://movie.douban.com/subject/36212386/)
   - 爱奇艺: `9` 元
