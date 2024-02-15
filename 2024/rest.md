@@ -4,6 +4,8 @@ description: 浮云游子意, 落日故人情. 挥手自兹去, 萧萧班马鸣.
 date: 2023-07-17
 ---
 
+- [首尔之春](https://movie.douban.com/subject/35712804/)
+
 - [飞驰人生 2](https://movie.douban.com/subject/36369452/)
   - 春节档最精彩的电影!
   - 中年人的极致浪漫~
@@ -40,5 +42,6 @@ date: 2023-07-17
 - [年会不能停](https://movie.douban.com/subject/35725869/)
   - 主要是应景加分吧~
 
-### 电动车
+### 电子产品
+
 

@@ -8,10 +8,10 @@
 ## 2024
 
 - [猫咪的那些事](2024/cat.md)
-- [陶哲轩实分析](2024/math-analysis.md)
 - [复分析 可视化方法 - 微分](2024/math-complex-analysis-1.md)
-- [可视化微分几何和形式 - 度量](2024/math-differential-geometry-1.md)
-- [从矢量到张量 (上)](2024/math-vector-to-tensor-1.md)
+- [可视化微分几何和形式 - 曲率](2024/math-differential-geometry-1.md)
+- [可视化微分几何和形式 - 平移](2024/math-differential-geometry-2.md)
+- [从矢量到张量 - 矢量场](2024/math-vector-to-tensor-1.md)
 - [Paper & Blog - 机器学习](2024/paper-blog-ml.md)
 - [物理世界 (2023)](2024/physics-introduction.md)
 - [码农碎碎念~](2024/programming.md)
