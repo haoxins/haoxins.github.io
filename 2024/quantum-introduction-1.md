@@ -272,6 +272,13 @@ date: 2023-12-11
 
 - [哈密顿算符](https://en.wikipedia.org/wiki/Hamiltonian_(quantum_mechanics))
 
+- 最后要注意一点, 由于常数
+  $$ | c_n |^2 $$
+  与时间无关, 得到一个特定能量值的几率也是如此; 更不用说
+  $$ H $$
+  的期望值了.
+  - 这些都是`能量守恒`定律在量子力学中的表现.
+
 ### 无限深方势阱
 
 - [无限深方势阱](https://en.wikipedia.org/wiki/Particle_in_a_box)

@@ -12,11 +12,6 @@
 
 - [State Sequences Prediction via Fourier Transform for Representation Learning](https://arxiv.org/abs/2310.15888)
 
----
-
-- [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
-  - 这也太多页了, 好在引用占了不少~
-
 
 - [Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687)
   - 2023 (v1), 2023 (v2)
