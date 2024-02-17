@@ -12,6 +12,16 @@ go install golang.org/x/tools/cmd/deadcode@latest
 ```
 
 
+
+- [uv](https://github.com/astral-sh/uv)
+  - 春节假期, 一经发布, 便收获了不少关注~
+  - 目前在用
+    [Rye](https://github.com/mitsuhiko/rye),
+    体验很不错~
+  - 下半年再看!
+
+- [UI = f(statesⁿ)](https://daverupert.com/2024/02/ui-states/)
+
 ---
 
 - [Go 1.22 Release Notes](https://go.dev/doc/go1.22)
