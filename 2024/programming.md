@@ -21,6 +21,12 @@ go install golang.org/x/tools/cmd/deadcode@latest
   - 下半年再看!
 
 - [UI = f(statesⁿ)](https://daverupert.com/2024/02/ui-states/)
+  - 多年前有一些类似的思考, 不过这篇文章无疑要细致一些.
+  - 由于已经不做前端了, 所以没有细看~
+
+- [Post-Quantum Cryptography Alliance](https://github.com/pqca)
+  - https://github.com/pq-code-package
+  - 目前啥都没有~
 
 ---
 
