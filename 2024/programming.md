@@ -18,7 +18,7 @@ go install golang.org/x/tools/cmd/deadcode@latest
   - 目前在用
     [Rye](https://github.com/mitsuhiko/rye),
     体验很不错~
-  - 下半年再看!
+  - [Rye: Better uv integration](https://github.com/mitsuhiko/rye/issues/668)
 
 - [UI = f(statesⁿ)](https://daverupert.com/2024/02/ui-states/)
   - 多年前有一些类似的思考, 不过这篇文章无疑要细致一些.
