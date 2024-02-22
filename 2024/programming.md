@@ -19,6 +19,8 @@ go install golang.org/x/tools/cmd/deadcode@latest
     [Rye](https://github.com/mitsuhiko/rye),
     体验很不错~
   - [Rye: Better uv integration](https://github.com/mitsuhiko/rye/issues/668)
+  - [Rye Grows With UV](https://lucumr.pocoo.org/2024/2/15/rye-grows-with-uv/)
+  - 来自 Rye 的作者, 终归 uv!
 
 - [UI = f(statesⁿ)](https://daverupert.com/2024/02/ui-states/)
   - 多年前有一些类似的思考, 不过这篇文章无疑要细致一些.
