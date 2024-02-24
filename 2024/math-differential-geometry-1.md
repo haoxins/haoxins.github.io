@@ -537,7 +537,7 @@ date: 2023-10-06
 
 - 正向等距变换构成全群
   $$ \mathcal{G} (\mathcal{S}) $$
-  的一个子群
+  的一个`子群`
   $$ \mathcal{G}_{+} (\mathcal{S}) $$.
 - 然而, 反向等距变换根本不会构成一个群. 但它们确实属于全群
   $$ \mathcal{G} (\mathcal{S}) $$,
@@ -552,25 +552,28 @@ date: 2023-10-06
   $$ ζ $$
   是任意一个反向等距变换, 想象它可以取遍所有可能的反向等距变换. 那么,
   $$
-    ξ^{-1} o ζ \in \mathcal{G}_{+} (\mathcal{S})
+    ξ^{-1} \circ ζ \in \mathcal{G}_{+} (\mathcal{S})
     \Rightarrow
-    ζ \in ξ o \mathcal{G}_{+} (\mathcal{S})
+    ζ \in ξ \circ \mathcal{G}_{+} (\mathcal{S})
   $$.
   同理,
-  $$ ζ \in \mathcal{G}_{+} (\mathcal{S}) o ξ $$.
+  $$ ζ \in \mathcal{G}_{+} (\mathcal{S}) \circ ξ $$.
 - 因此, 如果
   $$ ξ $$
   是任意一个反向等距变换, 则所有反向等距变换组成的集合为
-  $$ ξ o \mathcal{G}_{+} (\mathcal{S}) = \mathcal{G} (\mathcal{S}) o ξ $$,
+  $$
+    ξ \circ \mathcal{G}_{+} (\mathcal{S}) =
+    \mathcal{G}_{+} (\mathcal{S}) \circ ξ
+  $$,
   因此,
-  $$ \mathcal{G}_{+} (\mathcal{S}) $$
+  $$ \mathcal{G} (\mathcal{S}) $$
   是全对称群, 且
   $$
     \mathcal{G} (\mathcal{S}) =
     \mathcal{G}_{+} (\mathcal{S}) \cup
-    [ ξ o \mathcal{G}_{+} (\mathcal{S}) ] =
+    [ ξ \circ \mathcal{G}_{+} (\mathcal{S}) ] =
     \mathcal{G}_{+} (\mathcal{S}) \cup
-    [ \mathcal{G}_{+} (\mathcal{S}) o ξ ]
+    [ \mathcal{G}_{+} (\mathcal{S}) \circ ξ ]
   $$.
 
 > 还是有多处印刷错误的!
