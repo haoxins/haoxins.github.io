@@ -13,14 +13,22 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 
 
+---
+
+- [Warp](https://www.warp.dev)
+  - Warp is the terminal reimagined with AI and
+    collaborative tools for better productivity.
+  - [GitHub](https://github.com/warpdotdev)
+  - 体验很棒! Bye Bye, iTerm2~
+
 - [uv](https://github.com/astral-sh/uv)
   - 春节假期, 一经发布, 便收获了不少关注~
   - 目前在用
     [Rye](https://github.com/mitsuhiko/rye),
     体验很不错~
   - [Rye: Better uv integration](https://github.com/mitsuhiko/rye/issues/668)
-  - [Rye Grows With UV](https://lucumr.pocoo.org/2024/2/15/rye-grows-with-uv/)
-  - 来自 Rye 的作者, 终归 uv!
+  - [Rye: Hi Astral, Hi uv!](https://github.com/mitsuhiko/rye/discussions/659)
+  - [uv: Python packaging in Rust](https://astral.sh/blog/uv)
 
 - [UI = f(statesⁿ)](https://daverupert.com/2024/02/ui-states/)
   - 多年前有一些类似的思考, 不过这篇文章无疑要细致一些.
