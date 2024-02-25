@@ -15,6 +15,67 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+
+---
+
+- [Robust generic functions on slices](https://go.dev/blog/generic-slice-functions)
+  - `Delete` need not allocate a new array,
+    as it shifts the elements in place.
+    Like `append`, it returns a new slice.
+  - Many other functions in the `slices` package
+    follow this pattern, including
+    `Compact`, `CompactFunc`, `DeleteFunc`,
+    `Grow`, `Insert`, and `Replace`.
+  - When calling these functions we must consider
+    the original slice invalid, because the
+    underlying array has been modified.
+  - `go vet` 应该检测这些~
+  - Out of pragmatism, we chose to modify the implementation
+    of the five functions `Compact`, `CompactFunc`, `Delete`,
+    `DeleteFunc`, `Replace` to "clear the tail".
+  - The code changed in the five functions uses the new
+    built-in function `clear` (Go 1.21) to set the obsolete
+    elements to the zero value of the element type.
+
+```go
+first, second, third, fourth := 11, 22, 33, 44
+s := []*int{&first, &second, &third, &fourth}
+
+if len(s) >= 4 {
+  s = slices.Delete(s, 2, 3)
+  fmt.Println("New length is", len(s))
+}
+
+for _, v := range s {
+  fmt.Println(*v)
+}
+
+// New length is 3
+// 11
+// 22
+// 44
+```
+
+```go
+first, second, third, fourth := 11, 22, 33, 44
+s := []*int{&first, &second, &third, &fourth}
+
+if len(s) >= 4 {
+  s := slices.Delete(s, 2, 3)
+  fmt.Println("New length is", len(s))
+}
+
+for _, v := range s {
+  fmt.Println(*v)
+}
+
+// New length is 3
+// 11
+// 22
+// 44
+// panic: runtime error: invalid memory address or nil pointer dereference
+```
+
 - [Warp](https://www.warp.dev)
   - Warp is the terminal reimagined with AI and
     collaborative tools for better productivity.
