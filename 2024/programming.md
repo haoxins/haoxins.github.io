@@ -18,6 +18,13 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- [Blixt](https://github.com/kubernetes-sigs/blixt)
+  - An experimental layer 4 load-balancer for Kubernetes.
+  - The __control-plane__ is built using Gateway API and
+    written in Golang with `Operator SDK/Controller Runtime`.
+  - The __data-plane__ is built using eBPF and is
+    written in Rust using Aya.
+
 - [Robust generic functions on slices](https://go.dev/blog/generic-slice-functions)
   - `Delete` need not allocate a new array,
     as it shifts the elements in place.
