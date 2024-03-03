@@ -293,7 +293,7 @@ for _, i := range s {
   - An extremely fast Python linter, written in Rust.
   - Bye! Black & isort
   - 优势: lint & format (Black & isort) 一体
-- [Rye](https://github.com/mitsuhiko/rye)
+- [Rye](https://github.com/astral-sh/rye)
   - 确实好用!
 - [PyO3](https://github.com/PyO3/pyo3)
   - [Maturin](https://github.com/PyO3/maturin)

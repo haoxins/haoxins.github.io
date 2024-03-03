@@ -24,6 +24,7 @@ date: 2023-12-21
 
 ### 一些好的微信文章
 
+- [事件, 洛伦兹变换, 狭义相对论!](https://mp.weixin.qq.com/s/l0vfZsxH3sJeTH6rZCyGFA)
 - [弹性波可以有自旋吗?](https://mp.weixin.qq.com/s/YeZsY-xcSnLM3_Qced1jQA)
 - [电子粒子观的蜕变](https://mp.weixin.qq.com/s/Z_vnPUVWaPTe5BgflC7D-w)
 - [物质的态与相](https://mp.weixin.qq.com/s/Pz2j4zxWfsogQ3WP1aZdXw)

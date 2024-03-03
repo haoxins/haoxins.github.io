@@ -18,6 +18,12 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- [River](https://github.com/memorysafety/river)
+  - Reverse Proxy Application, based on the
+    [Pingora](https://github.com/cloudflare/pingora)
+    library from Cloudflare.
+  - 嗯, 期待下一步, API Gateway!
+
 - [Blixt](https://github.com/kubernetes-sigs/blixt)
   - An experimental layer 4 load-balancer for Kubernetes.
   - The __control-plane__ is built using Gateway API and
@@ -92,10 +98,10 @@ for _, v := range s {
 - [uv](https://github.com/astral-sh/uv)
   - 春节假期, 一经发布, 便收获了不少关注~
   - 目前在用
-    [Rye](https://github.com/mitsuhiko/rye),
+    [Rye](https://github.com/astral-sh/rye),
     体验很不错~
-  - [Rye: Better uv integration](https://github.com/mitsuhiko/rye/issues/668)
-  - [Rye: Hi Astral, Hi uv!](https://github.com/mitsuhiko/rye/discussions/659)
+  - [Rye: Better uv integration](https://github.com/astral-sh/rye/issues/668)
+  - [Rye: Hi Astral, Hi uv!](https://github.com/astral-sh/rye/discussions/659)
   - [uv: Python packaging in Rust](https://astral.sh/blog/uv)
 
 - [UI = f(statesⁿ)](https://daverupert.com/2024/02/ui-states/)
