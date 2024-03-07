@@ -30,13 +30,3 @@
 
 ```
 ```
-
-
-
----
-
-- [Relational Deep Learning: Graph Representation Learning on Relational Databases](https://arxiv.org/abs/2312.04615)
-  - https://github.com/snap-stanford/relbench
-
-```
-```

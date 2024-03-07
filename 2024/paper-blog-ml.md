@@ -6,6 +6,34 @@ date: 2023-09-07
 
 ### 机器学习
 ### 图
+- [Relational Deep Learning: Graph Representation Learning on Relational Databases](https://arxiv.org/abs/2312.04615)
+  - https://github.com/snap-stanford/relbench
+  - 其实这里上下文中的 Databases 是 Datasets
+
+```
+Crucially, RDL models natively integrate temporality by
+only allowing entities to receive messages from
+other entities with earlier timestamps.
+```
+
+```
+Dimension tables tend to have relatively few rows,
+as it is limited to one per real-world object.
+
+Typically, features in dimension tables are static
+over their whole lifetime, while fact tables usually
+contain temporal information with a dedicated time
+column that denotes the time of appearance.
+```
+
+```
+In practice, training tables can be computed using
+time-conditioned SQL queries from
+historic data in the database.
+```
+
+---
+
 - [GraphScope Flex: LEGO-like Graph Computing Stack](https://arxiv.org/abs/2312.12107)
   - [GART](https://github.com/GraphScope/GART)
   - [GRIN](https://github.com/GraphScope/GRIN)
