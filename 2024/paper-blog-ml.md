@@ -4,7 +4,6 @@ description: 惊起却回头, 有恨无人省. 拣尽寒枝不肯栖, 寂寞沙�
 date: 2023-09-07
 ---
 
-### 机器学习
 ### 图
 - [Relational Deep Learning: Graph Representation Learning on Relational Databases](https://arxiv.org/abs/2312.04615)
   - https://github.com/snap-stanford/relbench
