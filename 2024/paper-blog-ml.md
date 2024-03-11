@@ -31,6 +31,18 @@ time-conditioned SQL queries from
 historic data in the database.
 ```
 
+```
+Given a relational entity graph and a training table,
+we need to be able to query the graph at specific points
+in time which then serve as explicit training examples
+used as input to the model.
+
+The computational graphs obtained via neighbor sampling
+allow the scalability of our proposed approach to modern
+large-scale relational data with billions of table rows,
+while ensuring the temporal constraints.
+```
+
 ---
 
 - [GraphScope Flex: LEGO-like Graph Computing Stack](https://arxiv.org/abs/2312.12107)
