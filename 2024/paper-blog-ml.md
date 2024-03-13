@@ -4,7 +4,25 @@ description: 惊起却回头, 有恨无人省. 拣尽寒枝不肯栖, 寂寞沙�
 date: 2023-09-07
 ---
 
+
+---
+
+  - [OasysDB](https://github.com/oasysai/oasysdb)
+  - OasysDB is an embeddable, efficient, and
+    easy to use vector database. It is designed to be used
+    as a library and embedded inside your AI application.
+  - It is written in Rust and uses
+    [Sled](https://github.com/spacejam/sled)
+    as its persistence storage engine to save
+    vector collections to the disk.
+  - OasysDB implements __HNSW__
+    (Hierachical Navigable Small World)
+    as its indexing algorithm.
+
 ### 图
+
+---
+
 - [Relational Deep Learning: Graph Representation Learning on Relational Databases](https://arxiv.org/abs/2312.04615)
   - https://github.com/snap-stanford/relbench
   - 其实这里上下文中的 Databases 是 Datasets
@@ -44,7 +62,7 @@ while ensuring the temporal constraints.
 ```
 
 ```
-Heterogeneous Message Passing -> TemporalMessagePassing
+Heterogeneous Message Passing -> Temporal Message Passing
 ```
 
 ```
