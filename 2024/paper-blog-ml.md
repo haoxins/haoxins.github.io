@@ -43,6 +43,33 @@ large-scale relational data with billions of table rows,
 while ensuring the temporal constraints.
 ```
 
+```
+Heterogeneous Message Passing -> TemporalMessagePassing
+```
+
+```
+The model described so far is task-agnostic and simply
+propagates information through the relational entity graph
+to produce generic node embeddings.
+We obtain a task-specific model by combining our graph with a
+training table, leading to specific model heads and loss functions.
+We distinguish between (but are not limited to) two types of tasks:
+node-level prediction and link-level prediction.
+```
+
+```
+In practice, we rely on PyTorch Frame that supports a variety of
+modality-specific encoders, such as pre-trained text embedding models,
+and as well as state-of-the-art deep learning models on tabular data.
+```
+
+```
+In other words, the GNN is an exact neural version of SQL
+JOIN+AGGREGATE operations. We believe this is another important
+reason why message passing-based architectures are a natural learned
+replacement for hand-engineered features on relational tables.
+```
+
 ---
 
 - [GraphScope Flex: LEGO-like Graph Computing Stack](https://arxiv.org/abs/2312.12107)
