@@ -88,6 +88,26 @@ reason why message passing-based architectures are a natural learned
 replacement for hand-engineered features on relational tables.
 ```
 
+```
+Unfortunately, recent studies find that many GNN architectures
+fail to distinguish biconnected graphs.
+Further work is needed to design expressive n-partite graph models.
+```
+
+> Query Language Inspired Models. 不敢苟同~
+
+```
+Because of this, Relational Deep Learning seeks to
+leverage relations to learn entity representations,
+but does not need to learn an embedding space that
+perfectly preserves all relation semantics.
+This gives more freedom and flexibility to our models,
+which may discard certain relational information
+it finds unhelpful.
+Nonetheless, adopting ideas from knowledge graph
+embedding may yet be fruitful.
+```
+
 ---
 
 - [GraphScope Flex: LEGO-like Graph Computing Stack](https://arxiv.org/abs/2312.12107)

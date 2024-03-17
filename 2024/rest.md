@@ -4,9 +4,18 @@ description: 浮云游子意, 落日故人情. 挥手自兹去, 萧萧班马鸣.
 date: 2023-07-17
 ---
 
+- [沙丘 2](https://movie.douban.com/subject/35575567/)
+  - 画面倒是不错, 莫名有一种塞尔达的即视感~
+  - 剧情么, 老调重弹!
+
+- [周处除三害](https://movie.douban.com/subject/36151692/)
+  - 为赋新词强说愁
+
 - [唐人街探案 2](https://movie.douban.com/subject/35626867/)
+  - 有点审美疲劳
 
 - [首尔之春](https://movie.douban.com/subject/35712804/)
+  - 亮点是一句台词~ 哈哈哈
 
 - [飞驰人生 2](https://movie.douban.com/subject/36369452/)
   - 春节档最精彩的电影!
