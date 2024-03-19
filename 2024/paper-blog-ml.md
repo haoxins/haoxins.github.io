@@ -21,6 +21,41 @@ date: 2023-09-07
 
 ### 图
 
+
+---
+
+- [A Review on Graph Neural Network Methods in Financial Applications](https://arxiv.org/abs/2111.15367)
+  - 2021 (v1), 2022 (v2)
+  - https://github.com/ProsusAI/finBERT
+
+```
+While GCN equally treats the neighbors of the target node,
+it often occurs that some neighbors may be
+more influential than others.
+
+It is also worth mentioning that since GAT can learn
+the weights of the neighboring node, we could interpret
+the learned attention weights as a relative
+importance measure, to better understand the model.
+```
+
+```
+An undirected graph has a symmetric adjacency matrix that
+guarantees a semi-definite Laplacian matrix, which lays
+the foundation for applying GCN.
+The directed graph, on the other hand, may have an
+asymmetric adjacency matrix and could be handled by
+spatial-based GNN methods, such as GAT.
+
+In practice, there is not much work developing methodologies
+for directed graphs, since they could be processed by
+spatial-based GNN methods or
+making the adjacency matrix symmetric.
+However, there is also a line of work developing GNN
+methodology to predict sequences of events
+represented as a directed graph.
+```
+
 ---
 
 - [Relational Deep Learning: Graph Representation Learning on Relational Databases](https://arxiv.org/abs/2312.04615)
