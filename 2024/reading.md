@@ -18,6 +18,43 @@ date: 2023-07-17
 - [图解 TCP/IP (第 6 版)](https://book.douban.com/subject/36739612/)
   - 有些年头没看网络相关的东西了~
   - 废话不少~
+  - [IPv6](https://en.wikipedia.org/wiki/IPv6)
+  - [IPv4](https://en.wikipedia.org/wiki/Internet_Protocol_version_4)
+  - [IP address](https://en.wikipedia.org/wiki/IP_address)
+  - [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+  - [NAT](https://en.wikipedia.org/wiki/Network_address_translation)
+
+```
+全局单播地址是世界上唯一的地址.
+它是互联网通信及各个组织内部通信中最常用的 IPv6 地址.
+
+现在的 IPv6 网络中所使用的格式为,
+全局路由前缀 n = 48, 子网 ID m = 16,
+接口 ID 128 - n - m = 64,
+即前 64 位为网络标识, 后 64 位为主机标识.
+
+通常, 接口 ID 中保存着基于 64 位的 MAC 地址产生的值.
+不过, 由于 MAC 地址属于设备固有的信息, 因此有时不希望让对端知道.
+这时的接口 ID 可设置为与 MAC 地址没有关系的"临时地址".
+这种临时地址通常随机产生, 并会定期更新.
+```
+
+```
+链路本地单播地址是同一数据链路内唯一的地址.
+它用于不经过路由器, 在同一数据链路中的通信.
+通常, 接口 ID 保存 64 位的 MAC 地址.
+```
+
+```
+在 IPv6 中, 从 IP 地址到 MAC 地址的协议从 ARP 转为 ICMP 的邻居探索消息.
+邻居探索消息融合了 IPv4 的 ARP, ICMP 重定向及
+ICMP 路由器选择消息等功能于一体, 甚至还提供自动设置 IP 地址的功能.
+
+ICMPv6 中将 ICMP 大致分为两类: 一类是错误消息, 另一类是信息消息.
+类型 0~127 属于错误消息, 类型 128~255 属于信息消息.
+若 IP 包未能到达目标主机, 感知到错误的主机或路由器会发送类型 0~127 的错误消息.
+类型 133~137 的消息属于特殊的信息消息, 称为邻居探索消息.
+```
 
 - [图数据库: 理论与实践](https://book.douban.com/subject/36730737/)
   - 首先是推销自家产品;
