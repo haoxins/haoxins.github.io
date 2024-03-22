@@ -56,6 +56,13 @@ methodology to predict sequences of events
 represented as a directed graph.
 ```
 
+```
+To capture the sequential pattern in the dynamic graph,
+a common approach is to train a GNN to generate the
+node embedding at each time stamp and then utilize a
+recurrent neural network to aggregate the information.
+```
+
 ---
 
 - [Relational Deep Learning: Graph Representation Learning on Relational Databases](https://arxiv.org/abs/2312.04615)

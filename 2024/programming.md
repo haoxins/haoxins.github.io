@@ -19,6 +19,8 @@ go install golang.org/x/tools/cmd/deadcode@latest
 ---
 
 
+- [The magic of Rust's type system](https://www.youtube.com/watch?v=NDIU1GSBrVI&t=11s)
+
 - [Burn](https://github.com/tracel-ai/burn)
   - 自从
     [Candle](https://github.com/huggingface/candle)
@@ -26,7 +28,7 @@ go install golang.org/x/tools/cmd/deadcode@latest
   - 2024, 但愿胜负揭晓~
 
 - [We built a new SQL Engine on Arrow and DataFusion](https://www.arroyo.dev/blog/why-arrow-and-datafusion)
-  - 难得的好文!
+  - 难得的务实好文!
 
 ```
 Arroyo 0.10 ships as a single, compact binary that
