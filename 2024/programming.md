@@ -18,6 +18,25 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- [Flink Kubernetes Operator 1.8 Release](https://flink.apache.org/2024/03/21/apache-flink-kubernetes-operator-1.8.0-release-announcement/)
+
+```
+Resource savings are nice to have, but the real power of
+Flink Autotuning is the reduced time to production.
+
+With Flink Autoscaling and Flink Autotuning, all users
+need to do is set a max memory size for the TaskManagers,
+just like they would normally configure TaskManager memory.
+Flink Autotuning then automatically adjusts the various
+memory pools and brings down the total container memory size.
+It does that by observing the actual max memory usage on
+the TaskMangers or by calculating the exact number of
+network buffers required for the job topology.
+The adjustments are made together with Flink Autoscaling,
+so there is no extra downtime involved.
+```
+
+> 很实用的理念, 实际效果有待检验!
 
 - [The magic of Rust's type system](https://www.youtube.com/watch?v=NDIU1GSBrVI&t=11s)
 

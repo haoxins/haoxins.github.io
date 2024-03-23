@@ -7,6 +7,10 @@ date: 2023-09-07
 
 ---
 
+
+---
+
+- [Hierarchical Navigable Small Worlds (HNSW)](https://www.pinecone.io/learn/series/faiss/hnsw/)
   - [OasysDB](https://github.com/oasysai/oasysdb)
   - OasysDB is an embeddable, efficient, and
     easy to use vector database. It is designed to be used
@@ -18,9 +22,21 @@ date: 2023-09-07
   - OasysDB implements __HNSW__
     (Hierachical Navigable Small World)
     as its indexing algorithm.
+  - [Benchmarking nearest neighbors](https://github.com/erikbern/ann-benchmarks)
 
 ### 图
 
+
+
+---
+
+- [Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687)
+  - 2023 (v1), 2024 (v4)
+  - https://github.com/spcl/graph-of-thoughts
+
+```
+
+```
 
 ---
 
@@ -61,6 +77,17 @@ To capture the sequential pattern in the dynamic graph,
 a common approach is to train a GNN to generate the
 node embedding at each time stamp and then utilize a
 recurrent neural network to aggregate the information.
+```
+
+```
+How to improve the scalability of GNNs is vital but challenging.
+Computing the Laplacian matrix becomes hard with millions of
+nodes and for a graph of irregular Euclidean space,
+optimizing the algorithm is also difficult.
+Sampling techniques may partially solve the problem with
+the cost of losing structural information.
+Thus, how to maintain the graph structure and improve the
+efficiency of GNN algorithms is worth further exploration.
 ```
 
 ---
