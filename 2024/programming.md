@@ -36,7 +36,7 @@ The adjustments are made together with Flink Autoscaling,
 so there is no extra downtime involved.
 ```
 
-> 很实用的理念, 实际效果有待检验!
+> 很实用的功能, 实际效果有待检验!
 
 - [The magic of Rust's type system](https://www.youtube.com/watch?v=NDIU1GSBrVI&t=11s)
 
