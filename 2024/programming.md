@@ -18,6 +18,63 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+
+- [Beyond Self-Attention: How a Small Language Model Predicts the Next Token](https://shyam.blog/posts/beyond-self-attention/)
+
+```
+For those readers familiar with transformers
+and eager for the punchline, here it is:
+
+Each transformer block (containing a multi-head self-attention
+layer and feed-forward network) learns weights that associate a
+given prompt with a class of strings found in the training corpus.
+The distribution of tokens that follow those strings in the
+training corpus is, approximately, what the block outputs as
+its predictions for the next token.
+
+Each block may associate the same prompt with a different
+class of training corpus strings, resulting in a different
+distribution of the next tokens and thus different predictions.
+The final transformer output is a linear combination of
+each block's predictions.
+```
+
+```
+The takeaway is that simplifying the transformation performed
+by the blocks to just the contributions of the feed-forward
+networks results in a shorter output vector (has a smaller norm)
+than the original output but points in roughly the same direction.
+
+And the difference in norms would have no impact on the
+transformer's final output, because of the LayerNorm operation
+after the stack of blocks. That LayerNorm step will adjust the
+norm of any input vector to a similar value regardless of its
+initial magnitude; the final linear layer that follows it will
+always see inputs of approximately the same norm.
+```
+
+```
+I think the model has learned a complex, non-linear embedding
+subspace corresponding to each token. Any embedding within that
+subspace results in an output distribution that assigns the
+token near a certain probability.
+Each embedding I was able to learn is probably a point in
+the embedding subspace for the corresponding token.
+```
+
+```
+Within a block, adding the feed-forward network output
+vector to the input produces an output embedding that
+better aligns with the embedding subspaces of specific tokens.
+
+And those tokens are the same ones predicted in the approximation:
+they're the tokens that follow the strings in the training
+corpus that yield similar feed-forward network
+outputs to the current prompt.
+```
+
+> 哈哈, 作者蛮逗的~ 结论一般, 过程值得尊敬~
+
 - [Flink Kubernetes Operator 1.8 Release](https://flink.apache.org/2024/03/21/apache-flink-kubernetes-operator-1.8.0-release-announcement/)
 
 ```
