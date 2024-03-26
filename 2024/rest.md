@@ -4,6 +4,8 @@ description: 浮云游子意, 落日故人情. 挥手自兹去, 萧萧班马鸣.
 date: 2023-07-17
 ---
 
+- [追风者](https://movie.douban.com/subject/36206860/)
+
 - [沙丘 2](https://movie.douban.com/subject/35575567/)
   - 画面倒是不错, 莫名有一种塞尔达的即视感~
   - 剧情么, 老调重弹!
