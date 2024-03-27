@@ -18,6 +18,21 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- 记一个开发 K8s Operator 的时候容易遇到的忽略点:
+  - [Multiple Reconcile() invocations on single object creation](https://github.com/kubernetes-sigs/kubebuilder/issues/980)
+
+```go
+func (r *TheController) SetupWithManager(mgr ctrl.Manager) error {
+  return ctrl.NewControllerManagedBy(mgr).
+    For(&op.MetricJob{}).
+    // This is useful because we don't want to
+    // reconcile again when the generation is not changed.
+    // The generation is changed when the spec is updated.
+    // The generation is not changed when the status is updated.
+    WithEventFilter(predicate.GenerationChangedPredicate{}).
+    Complete(r)
+}
+```
 
 - [Beyond Self-Attention: How a Small Language Model Predicts the Next Token](https://shyam.blog/posts/beyond-self-attention/)
 
