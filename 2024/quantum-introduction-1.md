@@ -341,10 +341,10 @@ date: 2023-12-11
   $$ \{ a_n \} $$
   来表示.
   - 两个矢量的`内积` (三维空间标量积的推广)
-    $$ \langle α | β \rangle $$
+    $$ \langle α \mid β \rangle $$
     是一个复数:
   - $$
-      \langle α | β \rangle =
+      \langle α \mid β \rangle =
       a_1^{*} b_1 +
       a_2^{*} b_2 +
       ...
@@ -363,11 +363,11 @@ date: 2023-12-11
   它确实太大了. 为了表示一个可能的物理状态, 波函数
   $$ \boldsymbol{ψ} $$
   必须是归一化的:
-  - $$ \int | \boldsymbol{ψ} |^2 dx = 1 $$.
+  - $$ \int \mid \boldsymbol{ψ} \mid^2 dx = 1 $$.
   - 在一个特定区间内, 所有的`平方可积`函数的集合,
   - $$ f(x) $$
     满足
-    $$ \int_{a}^{b} | f(x) |^2 dx < \infty $$,
+    $$ \int_{a}^{b} \mid f(x) \mid^2 dx < \infty $$,
   - 构成一个 (非常小) 矢量空间. 数学家称之为
     $$ L^2 (a, b) $$;
     而物理学家称它为"希尔伯特空间".
@@ -377,7 +377,7 @@ date: 2023-12-11
   和
   $$ g(x) $$
   的`内积`定义如下:
-  - $$ \langle f | g \rangle \equiv \int_a^b f(x)^{*} g(x) dx $$.
+  - $$ \langle f \mid g \rangle \equiv \int_a^b f(x)^{*} g(x) dx $$.
   - 如果
     $$ f $$
     和
@@ -387,11 +387,11 @@ date: 2023-12-11
     [施瓦茨不等式](https://en.wikipedia.org/wiki/Cauchy-Schwarz_inequality)
     给出.
   - 特别注意到
-    $$ \langle g | f \rangle = \langle f | g \rangle^{*} $$.
+    $$ \langle g \mid f \rangle = \langle f \mid g \rangle^{*} $$.
   - 此外,
     $$ f(x) $$
     与本身的内积,
-  - $$ \langle f | f \rangle = \int_a^b | f(x) |^2 dx $$,
+  - $$ \langle f \mid f \rangle = \int_a^b \mid f(x) |^2 dx $$,
   - 它是一个非负实数, 仅当
     $$ f(x) = 0 $$
     时为零.

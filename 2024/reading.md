@@ -17,6 +17,10 @@ date: 2023-07-17
 
 ---
 
+- [庞特里亚金自传](https://book.douban.com/subject/36480251/)
+
+---
+
 - [惰者集](https://book.douban.com/subject/27603987/)
   - 感知!
   - 行文轻松, 语言平实. 很适合闲来碎片化阅读!
