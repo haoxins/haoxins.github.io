@@ -19,6 +19,11 @@ go install golang.org/x/tools/cmd/deadcode@latest
 ---
 
 
+---
+
+- [Nebula: 恭喜郝鑫成为 2024 年度首位 Committer](https://mp.weixin.qq.com/s/JvnW-M9MdbiYqxircLxz8w)
+  - 哈哈哈~
+  - 同一天, 3 月 28 日, 雷军发布小米 SU7~
 
 - 记一个开发 K8s Operator 的时候容易忽略的点:
   - [Multiple Reconcile() invocations on single object creation](https://github.com/kubernetes-sigs/kubebuilder/issues/980)

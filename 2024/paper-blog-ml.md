@@ -56,6 +56,48 @@ date: 2023-09-07
 
 ---
 
+---
+
+- [GraphRAG: Unlocking LLM discovery on narrative private data](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)
+  - [graspologic](https://github.com/microsoft/graspologic)
+
+```
+Baseline RAG struggles to connect the dots.
+This happens when answering a question requires traversing
+disparate pieces of information through their shared
+attributes in order to provide new synthesized insights.
+
+Baseline RAG performs poorly when being asked to holistically
+understand summarized semantic concepts over large data
+collections or even singular large documents.
+```
+
+```
+Creating LLM-generated knowledge graphs
+
+The LLM processes the entire private dataset,
+creating references to all entities and relationships
+within the source data, which are then used to create
+an LLM-generated knowledge graph.
+
+This graph is then used to create a bottom-up clustering
+that organizes the data hierarchically into semantic clusters.
+This partitioning allows for pre-summarization of semantic
+concepts and themes, which aids in holistic
+understanding of the dataset.
+
+At query time, both of these structures are used to provide
+materials for the LLM context window when answering a question.
+```
+
+```
+Looking forward, we plan to work closely with customers on
+a variety of new domains as we continue to apply this
+technology while working on metrics and robust evaluation.
+```
+
+---
+
 - [A Review on Graph Neural Network Methods in Financial Applications](https://arxiv.org/abs/2111.15367)
   - 2021 (v1), 2022 (v2)
   - https://github.com/ProsusAI/finBERT
