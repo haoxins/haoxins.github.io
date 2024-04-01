@@ -56,6 +56,55 @@ date: 2023-09-07
 
 ---
 
+- [Monte-Carlo Graph Search from First Principles](https://github.com/lightvector/KataGo/blob/master/docs/GraphSearch.md)
+
+```
+All else equal, under this naive way of extending MCTS from
+trees to graphs, if a node's top-preferred moves are visited
+a lot by transposing lines, the node will tend to favor
+exploring other moves that didn't receive as many visits instead,
+leading to artificial biases in the utilities of the playouts
+being averaged at different nodes.
+
+Our algorithm is unsound to the point where even with
+unbounded amounts of search, it's not obvious that we
+will converge to the optimal move.
+```
+
+```
+Overall, this gives us an equivalent but different
+perspective on how MCTS works. MCTS is continuously
+optimizing a policy at every node to maximize the
+Q utility values that child nodes are reporting,
+while continuously updating the node's own Q to be
+the latest best guess of the expected utility
+achievable by that policy.
+
+In the limit of infinite search, if the child node Q
+values converge to game-theoretic optimal, then the
+node's policy converges to optimal, so the node's Q
+converges to the game-theoretic optimal value too,
+and so by recursion/induction we can
+see easily that MCTS is sound.
+```
+
+```
+All of the problems when extending MCTS naively to graphs
+are a result of implicitly assuming that the only visits
+to children of a parent node come from the parent.
+When a child node can instead also receive visits from a
+transposing path, we have problems:
+
+The visit counts of the child nodes can deviate arbitrarily
+much from what PUCT would have wanted to allocate, and so the
+child visits distribution can no longer be interpreted as a
+reasonable posterior policy.
+
+The Q values of parent and child nodes are updated in inconsistent
+ways, such that the Q value can no longer be interpreted as the
+expected value of the posterior policy either.
+```
+
 ---
 
 - [GraphRAG: Unlocking LLM discovery on narrative private data](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)

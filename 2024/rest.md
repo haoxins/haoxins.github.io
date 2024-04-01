@@ -4,6 +4,11 @@ description: 浮云游子意, 落日故人情. 挥手自兹去, 萧萧班马鸣.
 date: 2023-07-17
 ---
 
+- [霹雳英雄战纪: 刜伐世界](https://movie.douban.com/subject/36121853/)
+  - 大约六, 七, 八年未见, 竟然依旧能衔接上.
+  - 虽然记忆淡忘, 但熟悉的感觉涌现~ 素还真!
+  - 跳过中间这些年稀奇古怪的剧情, 再续霹雳新的传奇~
+
 - [追风者](https://movie.douban.com/subject/36206860/)
 
 - [沙丘 2](https://movie.douban.com/subject/35575567/)

@@ -21,6 +21,27 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- [Ethereum has blobs. Where do we go from here?](https://vitalik.eth.limo/general/2024/03/28/blobs.html)
+
+```
+This milestone represents a key transition in
+Ethereum's long-term roadmap:
+blobs are the moment where Ethereum scaling ceased
+to be a "zero-to-one" problem,
+and became a "one-to-N" problem.
+```
+
+```
+```
+
+- [Changes to u128/i128 layout in 1.77 and 1.78](https://blog.rust-lang.org/2024/03/30/i128-layout-update.html)
+  - 嗯, 没直接用过 `u128` 和 `i128`
+
+```rust
+// rustc 1.77.0
+alignment of i128: 16
+```
+
 - [Nebula: 恭喜郝鑫成为 2024 年度首位 Committer](https://mp.weixin.qq.com/s/JvnW-M9MdbiYqxircLxz8w)
   - 哈哈哈~
   - 同一天, 3 月 28 日, 雷军发布小米 SU7~
