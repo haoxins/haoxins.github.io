@@ -29,6 +29,7 @@ date: 2023-12-21
 
 ### 一些好的微信文章
 
+- [美丽的莫比乌斯反演, 解决了一类物理问题](https://mp.weixin.qq.com/s/7HL2HeOKhVVaajSd2raQiw)
 - [热力学与量子力学在 21 世纪重新相遇](https://mp.weixin.qq.com/s/7VcuucFkqeNPvfsutOoDog)
 - [几何在物理学中的妙用](https://mp.weixin.qq.com/s/uQt7P-1QzLlr-qmkscPiqg)
 - [事件, 洛伦兹变换, 狭义相对论!](https://mp.weixin.qq.com/s/l0vfZsxH3sJeTH6rZCyGFA)

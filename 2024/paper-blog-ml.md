@@ -51,7 +51,10 @@ date: 2023-09-07
   - https://github.com/spcl/graph-of-thoughts
 
 ```
-
+Overall, we observe that GoT is particularly
+well-suited for tasks that can be naturally
+decomposed into smaller subtasks that are solved
+individually and then merged for a final solution.
 ```
 
 ---

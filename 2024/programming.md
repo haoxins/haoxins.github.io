@@ -26,12 +26,19 @@ go install golang.org/x/tools/cmd/deadcode@latest
 ```
 This milestone represents a key transition in
 Ethereum's long-term roadmap:
-blobs are the moment where Ethereum scaling ceased
-to be a "zero-to-one" problem,
-and became a "one-to-N" problem.
+
+blobs are the moment where Ethereum scaling ceased to be
+a "zero-to-one" problem, and became a "one-to-N" problem.
 ```
 
 ```
+The next stage is likely to be a simplified version of
+DAS called PeerDAS. In PeerDAS, each node stores a significant
+fraction (eg. 1/8) of all blob data, and nodes maintain
+connections to many peers in the p2p network.
+When a node needs to sample for a particular piece of data,
+it asks one of the peers that it knows is
+responsible for storing that piece.
 ```
 
 - [Changes to u128/i128 layout in 1.77 and 1.78](https://blog.rust-lang.org/2024/03/30/i128-layout-update.html)
