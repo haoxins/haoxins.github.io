@@ -18,6 +18,12 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- [Loco](https://github.com/loco-rs/loco)
+  - Loco is "Rust on Rails".
+  - 基于
+    [axum](https://github.com/tokio-rs/axum)
+    和
+    [sea-orm](https://github.com/SeaQL/sea-orm).
 
 ---
 
