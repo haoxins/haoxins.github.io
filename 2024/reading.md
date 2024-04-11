@@ -17,6 +17,10 @@ date: 2023-07-17
 
 ---
 
+- [用数学的语言看宇宙](https://book.douban.com/subject/36791629/)
+
+---
+
 - [庞特里亚金自传](https://book.douban.com/subject/36480251/)
 
 ---
