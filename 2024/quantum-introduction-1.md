@@ -43,7 +43,7 @@ date: 2023-12-11
 ### 统计诠释
 
 - $$
-    \int_{a}^{b} \mid \psi (x, t) \mid ^2 dx =
+    \int_{a}^{b} \mid Ψ (x, t) \mid ^2 dx =
     \begin{Bmatrix}
       在 \mbox{ } t \mbox{ } 时刻发现粒子位于 \\
       a \mbox{ } 和 \mbox{ } b \mbox{ } 之间的几率.
