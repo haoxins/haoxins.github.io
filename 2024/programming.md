@@ -18,6 +18,11 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+
+- [Fluence](https://github.com/fluencelabs)
+  - Fluence is a decentralized serverless computing platform.
+  - 2024-04-15, 因 Fluence Developer Reward Airdrop 结缘~ 祝好!
+
 - [Loco](https://github.com/loco-rs/loco)
   - Loco is "Rust on Rails".
   - 基于

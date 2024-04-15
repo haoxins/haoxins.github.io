@@ -231,9 +231,14 @@ date: 2022-10-31
 则这个粒子未受力的作用, 我们说它是自由的.
 ```
 
-> 详见页 19. 另, 附录 I 在卷二.
+> 详见页 19. 另, 附录 I (傅立叶级数和傅立叶变换) 在卷二.
 
 ### 海森伯不确定度关系
+
+> 附录 II (狄拉克的 δ 函数) 也在卷二.
+
+- [帕塞瓦尔定理](https://en.wikipedia.org/wiki/Parseval%27s_theorem)
+  - [贝塞尔不等式](https://en.wikipedia.org/wiki/Bessel%27s_inequality)
 
 ```
 附注:
@@ -245,7 +250,11 @@ date: 2022-10-31
 将波和物质粒子联系起来, 并规定波长和动量要满足德布罗意关系式.
 ```
 
-> 详见页 26.
+> 上面这一段, 就通俗性描述而言, 不如`格里菲斯`.
+
+- [色散](https://en.wikipedia.org/wiki/Dispersion_(optics))
+  - [相速度](https://en.wikipedia.org/wiki/Phase_velocity)
+  - [群速度](https://en.wikipedia.org/wiki/Group_velocity)
 
 ## D 在与时间无关的标量势场中的粒子
 
