@@ -1,5 +1,5 @@
 ---
-title: Paper & Blog - ML
+title: Paper & Blog - Data, ML
 description: 惊起却回头, 有恨无人省. 拣尽寒枝不肯栖, 寂寞沙洲冷.
 date: 2023-09-07
 ---
@@ -13,7 +13,13 @@ date: 2023-09-07
 
 
 ```
-
+In a nutshell, all the image-only contrastive learning methods,
+share the same high-level framework, detailed below.
+1. Given one image, two separate data augmentations are applied;
+2. A base encoder is followed by a project head,
+which is trained to maximize agreement using a contrastive loss
+(i.e., they are from the same image or not);
+3. The project head is thrown away for downstream tasks.
 ```
 
 ---
