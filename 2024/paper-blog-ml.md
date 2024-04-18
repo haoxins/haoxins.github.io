@@ -55,9 +55,62 @@ which is trained to maximize agreement using a contrastive loss
 
 ---
 
+- [Enhancing Data Lakes with GraphAr: Efficient Graph Data Management with a Specialized Storage Scheme](https://arxiv.org/abs/2312.09577)
+  - [GitHub](https://github.com/apache/incubator-graphar)
+
+```
+However, integrating LPGs into data lakes
+introduces unique challenges:
+
+Firstly, there is no standardized way to encapsulate
+an LPG within the existing data lake architecture.
+
+Secondly, executing graph-specific operations,
+particularly neighbor retrieval, and label filtering,
+can be highly inefficient in this setup.
+```
+
+```
+Firstly, Parquet provides flexible and efficient
+support for various datatypes, including atomic
+types (e.g., bools and integers), and nested
+and/or repeated structures (e.g., arrays and maps).
+Using Parquet as the fundamental building block,
+GraphAr further introduces standardized YAML files
+to represent the schema metadata for LPGs.
+This combination of data organization and metadata
+management enables the complete expression of LPG
+semantics while ensuring compatibility with both
+data lakes and graph-related systems.
+
+Secondly, GraphAr incorporates specialized
+optimization techniques to improve the performance
+of two critical graph operations:
+neighbor retrieval and label filtering,
+which are not inherently optimized in existing formats.
+
+GraphAr facilitates neighbor retrieval by organizing
+edges as sorted tables in Parquet to enable an efficient
+CSR/CSC-like representation and leveraging Parquet's delta
+encoding to reduce overhead in data storage and loading.
+GraphAr also introduces a novel decoding algorithm that
+utilizes BMI and SIMD instructions, along with a unique
+structure named PAC (page-aligned collections), to further
+accelerate the neighbor retrieval process.
+In addressing another critical aspect of LPGs, GraphAr
+adapts the run-length encoding (RLE) technique from Parquet
+and introduces a unique merge-based decoding algorithm.
+This tailored approach significantly improves label filtering
+performance, whether it involves simple or complex conditions.
+```
+
+> 至此, 已可确认值得一读!
+
+---
+
 - [Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687)
-  - 2023 (v1), 2024 (v4)
-  - https://github.com/spcl/graph-of-thoughts
+  - Submitted on 18 Aug 2023 (v1)
+  - [GitHub](https://github.com/spcl/graph-of-thoughts)
 
 ```
 Overall, we observe that GoT is particularly
@@ -65,6 +118,31 @@ well-suited for tasks that can be naturally
 decomposed into smaller subtasks that are solved
 individually and then merged for a final solution.
 ```
+
+```
+The GoT architecture consists of a set of interacting modules.
+These modules are the Prompter
+(which prepares the messages for the LLM),
+the Parser (extracts information from LLM thoughts),
+the Scoring module (verifies and scores the LLM thoughts),
+and the Controller
+(coordinates the entire reasoning process,
+and decides on how to progress it).
+
+The Controller contains two further important elements:
+the Graph of Operations (GoO) and the Graph Reasoning State (GRS).
+GoO is a static structure that specifies the graph decomposition
+of a given task, i.e., it prescribes transformations to be
+applied to LLM thoughts, together with their order & dependencies.
+GRS is a dynamic structure that maintains the state of the ongoing
+LLM reasoning process (the history of its thoughts and their states).
+```
+
+> 举的例子`不具有`代表性,
+  Analysis results 也就参考价值不大.
+  所以通篇的说服力不足~
+
+> 总的来说, __阅读价值不大__!
 
 ---
 
