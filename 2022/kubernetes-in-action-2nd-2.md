@@ -1,6 +1,6 @@
 ---
 title: Kubernetes in Action (2/4) - 2nd Edition
-description: 树木丛生, 百草丰茂. 秋风萧瑟, 洪波涌起.
+description: 澹泊之守, 须从秾艳场中试来; 镇定之操, 还向纷纭境上勘过.
 date: 2021-09-07
 ---
 

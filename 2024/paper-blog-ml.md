@@ -106,6 +106,17 @@ performance, whether it involves simple or complex conditions.
 
 > 至此, 已可确认值得一读!
 
+```
+Parquet files contain three layers of metadata:
+file metadata, column metadata, and page header metadata.
+The file metadata directs to the starting points of each
+column's metadata. Inside the column chunks and pages,
+the respective column and page header metadata are stored,
+offering a detailed description of the data. This includes
+data types, encoding, and compression schemes, facilitating
+efficient and selective access to data pages within columns.
+```
+
 ---
 
 - [Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687)
