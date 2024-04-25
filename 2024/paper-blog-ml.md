@@ -117,6 +117,64 @@ data types, encoding, and compression schemes, facilitating
 efficient and selective access to data pages within columns.
 ```
 
+> 花了过多的篇幅去描述: Why GraphAr?
+
+```
+Parquet is utilized as the payload file format for
+storing the data in the physical storage,
+while YAML files are used to capture schema metadata.
+```
+
+```
+Edges are sorted first by source vertex IDs
+and then by destination vertice IDs.
+
+An auxiliary index table, denoted as <offset>, is introduced
+to enable more efficient vertex-centric operations.
+The <offset> table aligns with the partitions in the
+vertex table, and when applied to the source vertices,
+facilitates retrieval patterns similar
+to Compressed Sparse Row (CSR).
+
+GraphAr allows for efficient retrieval of neighbors
+in both outgoing and incoming directions,
+through two sorted tables for the same edge type.
+CSR, CSC, and COO are widely adopted for representing graphs,
+by emulating these formats, GraphAr ensures
+compatibility with existing graph systems.
+```
+
+```
+Delta encoding works by representing the gaps (deltas) between
+consecutive values instead of storing each value individually.
+The deltas, which often have small values,
+can be stored more compactly, requiring fewer bits.
+
+However, delta encoding involves data dependencies that make
+vectorization challenging. The decoding of the (i + 1)-th
+neighbor depends on the prior decoding of the i-th neighbor.
+```
+
+```
+Therefore, we utilize this BMI-based approach for miniblocks
+with a bit width of 1 to 4 bits, while resorting to the default
+delta decoding of Parquet for larger bit widths.
+The combination of data layout, delta encoding, and this
+adaptive decoding strategy results in an advanced topology
+management paradigm, enabling efficient neighbor retrieval.
+```
+
+```
+This run-length format naturally transforms the binary
+representation of a label into an interval-based structure.
+We then adopt a list P to define the positions of intervals.
+The i-th interval is represented by [P[i], P[i + 1]),
+where P[i] refers to the i-th element within P.
+Besides, it is required to record whether the vertices of
+the first interval [P[0], P[1]) contain the label or not,
+i.e., the first value.
+```
+
 ---
 
 - [Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687)
