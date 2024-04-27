@@ -19,6 +19,75 @@ go install golang.org/x/tools/cmd/deadcode@latest
 ---
 
 
+---
+
+- [GQL Database Language](https://jtc1info.org/slug/gql-database-language/)
+  - ISO/IEC 39075 Database Language GQL
+  - 其实也带来了命名规范:
+  - `label`, __not__ `tag`
+  - `property`: pairs of `names` and `values`
+  - `node`, __not__ `vertex`
+  - `edge`, __not__ `relationship`
+
+```
+The GQL standard does not specify how the
+returned data is displayed to the user.
+```
+
+```sql
+MATCH ((a)-[r]->(b)){1,5}
+RETURN a, r, b
+
+-- This example will find paths where one node
+-- knows another node, up to five hops long.
+```
+
+```
+Nodes are enclosed in parenthesis while
+edges are enclosed in square brackets.
+```
+
+```sql
+INSERT (:Person {
+  firstname: 'Avery',
+  lastname: 'Stare',
+  joined: date("2022-08-23")
+})
+- [:LivesIn {
+  since: date("2022-07-15")
+}]
+-> (:City {
+  name: 'Granville',
+  state: 'OH',
+  country: 'USA'
+})
+```
+
+```sql
+MATCH (a {
+  firstname: 'Avery'
+}), (d {
+  name: 'Unique'
+})
+INSERT (a) - [:HasPet] -> (d)
+```
+
+```sql
+-- GQL data is deleted by identifying nodes,
+-- detaching them to delete relationships,
+-- then deleting the nodes.
+MATCH (a {firstname: 'Avery'}) - [b] -> (c)
+DETACH DELETE a, c
+```
+
+```
+A schema-free graph will accept any data that is inserted.
+This allows for quick startup but leaves the control of
+the data with the application developer(s) and/or users.
+```
+
+---
+
 - [Fluence](https://github.com/fluencelabs)
   - Fluence is a decentralized serverless computing platform.
   - 2024-04-15, 因 Fluence Developer Reward Airdrop 结缘~ 祝好!

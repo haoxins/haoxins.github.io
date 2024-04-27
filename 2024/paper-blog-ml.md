@@ -12,6 +12,8 @@ date: 2023-09-07
 ---
 
 
+- [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
+
 ```
 In a nutshell, all the image-only contrastive learning methods,
 share the same high-level framework, detailed below.
@@ -52,6 +54,30 @@ which is trained to maximize agreement using a contrastive loss
 
 ---
 
+
+---
+
+- [Graph Pattern Matching in GQL and SQL/PGQ](https://arxiv.org/abs/2112.06217)
+
+```
+The identical core of both PGQ and GQL is a graph
+pattern matching sub-language, here termed GPML.
+```
+
+```
+In contrast, property graphs are multigraphs
+(there can be multiple edges between two endpoint nodes);
+pseudo-graphs (there can be an edge looping from a node to itself);
+they are mixed, or partially directed:
+an edge can be undirected,
+or can have source and target nodes,
+in which case it is directed from the source to the target.
+
+They are also attributed: graph elements can have attributes
+(a disjoint union of labels and properties).
+```
+
+> 为啥要回顾过去种种? 哈哈
 
 ---
 
@@ -173,6 +199,49 @@ where P[i] refers to the i-th element within P.
 Besides, it is required to record whether the vertices of
 the first interval [P[0], P[1]) contain the label or not,
 i.e., the first value.
+```
+
+> Arrow, Parquet, 要是 Rust 重写就好了~ 哈哈哈
+
+```
+Since graphs generally have significantly more edges than
+vertices and GraphAr employs CSR/CSC-like layouts requiring
+edge sorting, generating topological data becomes
+the most time-intensive part.
+```
+
+```
+We can generate topological data for over
+3.9 million edges per second.
+The process involves three steps:
+1) sorting the edges using Arrow/Acero's
+   internal order_by operator, labeled as "sort";
+2) generating vertex offsets, labeled as "offset"; and
+3) writing the sorted and offset data into Parquet files
+   with a specific encoding, labeled as "output".
+
+Generally, this process has a time complexity of
+O(|E| log|E|) sequentially.
+Considering this transformation is a one-time, offline operation
+that substantially reduces future data retrieval times,
+the associated overhead is acceptable.
+```
+
+> benchmarks 蛮务实~
+
+```
+Storage efficiency: GraphAr remarkably reduces storage requirements,
+using only 27.3% of the storage compared to baseline methods for
+storing topology, and as low as 2.9% for label storage on average.
+```
+
+```
+Graph databases: There are also graph databases that are designed
+to store and manage graph data. While they offer various features
+that are tailored for LPGs, they primarily focus on in-memory
+mutable data management, operating at a higher level compared to
+GraphAr. GraphAr, with its format compatible with the LPG model,
+can be utilized as an archival format for graph databases.
 ```
 
 ---
