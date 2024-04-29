@@ -24,6 +24,19 @@ which is trained to maximize agreement using a contrastive loss
 3. The project head is thrown away for downstream tasks.
 ```
 
+```
+For dual encoders such as CLIP, image and text are encoded separately,
+and modality interaction is only handled via a simple dot product of
+image and text feature vectors. This can be very effective for
+zero-shot image classification and image-text retrieval.
+However, due to the lack of deep multimodal fusion,
+CLIP alone performs poorly on the image captioning and
+visual question answering tasks.
+This requires the pre-training of a fusion encoder,
+where additional transformer layers are typically employed to
+model the deep interaction between image and text representations.
+```
+
 ---
 
 - [Hierarchical Navigable Small Worlds (HNSW)](https://www.pinecone.io/learn/series/faiss/hnsw/)
@@ -78,6 +91,162 @@ They are also attributed: graph elements can have attributes
 ```
 
 > 为啥要回顾过去种种? 哈哈
+
+```sql
+-- label expressions
+
+MATCH (x:Account)
+```
+
+```
+label expressions allow
+conjunctions (&),
+disjunctions (|),
+negations (!),
+and grouping of individual labels by using parentheses.
+```
+
+```sql
+-- all undirected edges can be recovered by
+
+MATCH ~[e]~
+
+-- if we want edges that are either undirected,
+-- or directed from right to left, we could write
+
+<~[e]~
+```
+
+```
+Similarly to node patterns, edge patterns
+need not specify an element variable.
+```
+
+```
+Orientation               Edge pattern
+
+Pointing left              <−[ spec ]−
+Undirected                 ~[ spec ]~
+Pointing right             −[ spec ]−>
+Left or undirected         <~[ spec ]~
+Undirected or right        ~[ spec ]~>
+Left or right              <−[ spec ]−>
+Left, undirected or right  −[ spec ]−
+```
+
+```
+If we do not specify direction and write
+(x)−[e]−(y),
+then each edge will be returned twice,
+once for each direction in which it is traversed.
+```
+
+```sql
+-- the reuse of variable s ensures that one
+-- starts and ends in the same node:
+
+MATCH (s)−[:Transfer]−>(s1)−[:Transfer]−>(s2)−[:Transfer]−>(s)
+```
+
+```sql
+-- Path patterns permit the use of path variables:
+-- in the returned bindings,
+-- such a path variable is bound to a whole path. In
+
+MATCH p = (s)−[:Transfer]−>(s1)−[:Transfer]−>(s2)−[:Transfer]−>(s)
+
+-- the variable p will be bound to paths of length three of
+-- Transfer edges that start and end in the same node.
+```
+
+```sql
+-- In general, we can put arbitrarily many path patterns together.
+-- For example, we can modify the above query by adding a
+-- condition that another login attempt into an account
+-- was made that did not use a phone:
+
+MATCH (s:Account)−[:SignInWithIP]−(),
+      (s)−[t:Transfer WHERE t.amount > 1M]−>(),
+      (s)~[:hasPhone]~(p:Phone WHERE p.isBlocked = 'yes')
+```
+
+```
+Quantifier  Description
+{m, n}      between m and n repetitions
+{m,}        m or more repetitions
+*           equivalent to{0,}
++           equivalent to{1,}
+```
+
+```sql
+-- a path of length 2 to 5 of Transfer edges
+-- can be sought as follows:
+
+MATCH (a:Account)−[:Transfer]−>{2, 5}(b:Account)
+```
+
+```
+Keyword  Description
+
+TRAIL    No repeated edges.
+ACYCLIC  No repeated nodes.
+SIMPLE   No repeated nodes,
+         except that the first and last nodes may be the same.
+```
+
+```
+Keyword           Description
+
+ANY SHORTEST      Selects one path with shortest length
+                  from each partition. Non-deterministic.
+ALL SHORTEST      Selects all paths in each partition that
+                  have the minimal length in the partition.
+                  Deterministic.
+ANY               Selects one path in each partition arbitrarily.
+                  Non-deterministic.
+ANY 𝑘             Selects arbitrary 𝑘 paths in each partition
+                  (if fewer than 𝑘, then all are re- tained).
+                  Non-deterministic.
+SHORTEST 𝑘        Selects the shortest 𝑘 paths
+                  (if fewer than 𝑘, then all are retained).
+                  Non-deterministic.
+SHORTEST 𝑘 GROUP  Partitions by endpoints, sorts each partition
+                  by path length, groups paths with the same length,
+                  then selects all paths in the first 𝑘 groups
+                  from each partition (if fewer than 𝑘,
+                  then all are retained). Deterministic.
+```
+
+```
+The key steps in the pattern-matching execution model,
+as reflected in the forthcoming standard, are as follows.
+
+Normalization
+GPML provides syntactic sugar to help write patterns;
+this step puts patterns in a canonical form.
+
+Expansion
+The pattern is expanded into a set of rigid patterns
+without any kind of disjunction. Intuitively,
+a rigid pattern is one that could be expressed by an
+SQL equi-join query. Formally, it is a pattern without
+quantifiers, union, or multiset alternation.
+The expansion also annotates each rigid pattern to enable
+tracking the provenance of the syntax constructs.
+
+Rigid-pattern matching
+For each rigid pattern, one computes a set of path bindings.
+Each elementary construct of the rigid pattern is computed
+independently and then the results are joined together
+on variables with the same name.
+
+Reduction and deduplication
+The path bindings matched by the rigid patterns are reduced
+by removing annotations. The reduced path bindings are then
+collected into a set. This implies a deduplication step
+since different path bindings might become equal
+after reduction, and only one copy is kept.
+```
 
 ---
 
