@@ -35,7 +35,7 @@ returned data is displayed to the user.
 ```
 
 ```sql
-MATCH ((a)-[r]->(b)){1,5}
+MATCH ((a)-[r]->(b)){1, 5}
 RETURN a, r, b
 
 -- This example will find paths where one node

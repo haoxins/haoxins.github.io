@@ -10,6 +10,11 @@ date: 2023-07-17
 ---
 
 - [用数学的语言看宇宙](https://book.douban.com/subject/36791629/)
+  - 所以, 本书, 挂羊头卖狗肉!
+
+---
+
+- [脉络: 小我与大势](https://book.douban.com/subject/36858606/)
 
 ---
 
