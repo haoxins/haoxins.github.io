@@ -4,6 +4,8 @@ description: 浮云游子意, 落日故人情. 挥手自兹去, 萧萧班马鸣.
 date: 2023-07-17
 ---
 
+- [老狐狸](https://movie.douban.com/subject/35611467/)
+
 - [霹雳英雄战纪: 刜伐世界](https://movie.douban.com/subject/36121853/)
   - 大约六, 七, 八年未见, 竟然依旧能衔接上.
   - 虽然记忆淡忘, 但熟悉的感觉涌现~ 素还真!
