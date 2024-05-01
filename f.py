@@ -84,9 +84,10 @@ def gen_contents(sub_path):
 
 
 def gen_index():
-    index_contents.append("## 2024")
+    index_contents.append("### 2024")
+    index_contents.append("\n")
     gen_contents("2024")
-    with open(path.join(root_dir, "index.md"), "w") as f:
+    with open(path.join(root_dir, "index.md"), "a") as f:
         f.write("\n".join(index_contents))
 
 
