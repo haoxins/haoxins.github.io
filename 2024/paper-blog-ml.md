@@ -5,12 +5,66 @@ date: 2023-09-07
 ---
 
 
-
 ```
 ```
 
 ---
 
+- [OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework](https://arxiv.org/abs/2404.14619)
+  - Submitted on 22 Apr 2024
+  - [CoreNet](https://github.com/apple/corenet)
+
+```
+At the core of OpenELM lies layer-wise scaling,
+enabling more efficient parameter allocation across layers.
+This method utilizes smaller latent dimensions in the attention
+and feed-forward modules of the transformer layers closer to the input,
+and gradually widens the layers as they approach the output.
+```
+
+```
+We adopt the decoder-only transformer-based architecture.
+Following state-of-the-art LLMs, we:
+(1) do not use learnable bias parameters in any fully-connected
+(a.k.a., linear) layers,
+(2) apply pre-normalization using RMSNorm and also,
+use rotatory positional embedding (ROPE)
+for encoding positional information,
+(3) use grouped query attention (GQA)
+instead of multi-head attention (MHA),
+(4) replace the feed-forward network (FFN) with SwiGLU FFN,
+(5) use flash attention for computing the scaled
+dot-product attention, and
+(6) use the same tokenizer as LLama.
+```
+
+```
+Existing LLMs use the same configuration for each
+transformer layer in the model, resulting in a uniform
+allocation of parameters across layers.
+Unlike these models, each transformer layer in OpenELM
+has a different configuration
+(e.g., number of heads and feed-forward network dimension),
+resulting in a variable number of parameters in each layer of the model.
+This lets OpenELM to better utilize the available parameter budget
+for achieving higher accuracies. We implement this non-uniform
+allocation of parameters across layers using layer-wise scaling.
+```
+
+```
+Layer-wise scaling.
+A standard transformer layer is composed of
+multi-head attention (MHA) and feed-forward network (FFN).
+For non-uniform allocation of parameters in the
+transformer layer, we adjust the number of attention heads
+and the FFN multiplier in each transformer layer.
+```
+
+> 其实没啥内容! 大体上就是项目介绍;
+  然后就是宣布 Apple 入场了.
+  有点赶紧拼凑个成果的感觉~
+
+---
 
 - [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
 
@@ -56,14 +110,13 @@ model the deep interaction between image and text representations.
 ### 图
 
 
+---
+
+  - [GitHub](https://github.com/HKUDS/OpenGraph)
 
 ---
 
-  - https://github.com/HKUDS/OpenGraph
-
----
-
-  - https://github.com/HKUDS/GraphEdit
+  - [GitHub](https://github.com/HKUDS/GraphEdit)
 
 ---
 
@@ -546,7 +599,7 @@ technology while working on metrics and robust evaluation.
 
 - [A Review on Graph Neural Network Methods in Financial Applications](https://arxiv.org/abs/2111.15367)
   - 2021 (v1), 2022 (v2)
-  - https://github.com/ProsusAI/finBERT
+  - [GitHub](https://github.com/ProsusAI/finBERT)
 
 ```
 While GCN equally treats the neighbors of the target node,
@@ -597,7 +650,7 @@ efficiency of GNN algorithms is worth further exploration.
 ---
 
 - [Relational Deep Learning: Graph Representation Learning on Relational Databases](https://arxiv.org/abs/2312.04615)
-  - https://github.com/snap-stanford/relbench
+  - [GitHub](https://github.com/snap-stanford/relbench)
   - 其实这里上下文中的 Databases 是 Datasets
 
 ```

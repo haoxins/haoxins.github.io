@@ -25,7 +25,8 @@ date: 2023-12-21
 
 ### Crypto
 
-- [coinglass](https://www.coinglass.com)
+- [CoinGlass](https://www.coinglass.com)
+- [BrowserLeaks](https://browserleaks.com)
 
 ### 一些好的微信文章
 
