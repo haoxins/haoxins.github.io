@@ -6,7 +6,12 @@ date: 2023-09-07
 
 
 ```
+
 ```
+
+---
+
+  - [GitHub](https://github.com/alibaba/GraphTranslator)
 
 ---
 
@@ -62,7 +67,8 @@ and the FFN multiplier in each transformer layer.
 
 > 其实没啥内容! 大体上就是项目介绍;
   然后就是宣布 Apple 入场了.
-  有点赶紧拼凑个成果的感觉~
+
+> 急急忙忙地拼凑个成果出来的感觉~
 
 ---
 
@@ -106,20 +112,6 @@ model the deep interaction between image and text representations.
     (Hierachical Navigable Small World)
     as its indexing algorithm.
   - [Benchmarking nearest neighbors](https://github.com/erikbern/ann-benchmarks)
-
-### 图
-
-
----
-
-  - [GitHub](https://github.com/HKUDS/OpenGraph)
-
----
-
-  - [GitHub](https://github.com/HKUDS/GraphEdit)
-
----
-
 
 ---
 

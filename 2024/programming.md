@@ -18,6 +18,57 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- [Compiling fast GPU kernels](https://luminalai.com/blog/gpu)
+
+---
+
+- [Secure Randomness in Go 1.22](https://go.dev/blog/chacha8rand)
+  - 值得一读!
+
+```
+Our new generator, which we unimaginatively named ChaCha8Rand
+for specification purposes and implemented as
+math/rand/v2's rand.ChaCha8,
+is a lightly modified version of ChaCha stream cipher.
+ChaCha is widely used in a 20-round form called ChaCha20,
+including in TLS and SSH.
+We used ChaCha8 as the core of ChaCha8Rand.
+```
+
+```
+Most stream ciphers, including ChaCha8, work by defining a
+function that is given a key and a block number and produces a
+fixed-size block of apparently random data.
+The cryptographic standard these aim for (and usually meet) is
+for this output to be indistinguishable from actual random data in
+the absence of some kind of exponentially costly brute-force search.
+A message is encrypted or decrypted by XOR'ing successive blocks of
+input data with successive randomly generated blocks.
+To use ChaCha8 as a rand.Source, we use the generated blocks directly
+instead of XOR'ing them with input data
+(this is equivalent to encrypting or decrypting all zeros).
+We changed a few details to make ChaCha8Rand more
+suitable for generating random numbers.
+```
+
+```
+The Go runtime now maintains a per-core ChaCha8Rand state
+(300 bytes), seeded with operating system-supplied
+cryptographic randomness, so that random numbers can be
+generated quickly without any lock contention.
+Dedicating 300 bytes per core may sound expensive,
+but on a 16-core system, it is about the same as storing
+a single shared Go 1 generator state (4,872 bytes).
+The speed is worth the memory.
+```
+
+```
+Overall, ChaCha8Rand is slower than the Go 1 generator,
+but it is never more than twice as slow,
+and on typical servers, the difference is never more than 3ns.
+Very few programs will be bottlenecked by this difference,
+and many programs will enjoy the improved security.
+```
 
 ---
 
