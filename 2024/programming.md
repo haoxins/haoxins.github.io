@@ -16,9 +16,41 @@ go install golang.org/x/tools/cmd/deadcode@latest
 ---
 
 
+- [云风的 Blog: 重新启程](https://blog.codingnow.com/2024/05/farewell.html)
+
+```
+2018 年开始, 我决定安心做一点想做而擅长的事.
+人生短暂, 学习如何管理很多人做事并非我期望的发展方向.
+尤其当我逐步融入开源社区后, 我发现,
+这个世界上许多软件基础设施往往都是由一两个人支撑.
+早在 2011 年时, 我就怀疑过, 软件项目需要很多人一起完成可能是一个骗局,
+那么, 当处于一个稳定的环境而自己又有能力时,
+这种机遇并不多见, 就应该尝试做点什么.
+```
+
 ---
 
 - [Compiling fast GPU kernels](https://luminalai.com/blog/gpu)
+
+```
+The typical approach in Luminal for supporting new backends would be:
+
+1. Swap out each primitive operation with a backend-specific operation.
+2. Add in operations to copy to device and copy from device
+   before and after Function operations.
+3. Pattern-match to swap out chunks of
+   operations with specialized variants.
+4. All other optimizations.
+```
+
+```
+One more note: The core of Luminal has no idea about any of this!
+GPUs are a foreign concept to it, which is nessecary since we
+want to add backends to TPUs, Groq chips, and whatever else
+may come in the future without changing anything in the core.
+```
+
+> 拭目以待!
 
 ---
 

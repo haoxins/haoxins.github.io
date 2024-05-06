@@ -11,6 +11,8 @@ date: 2023-09-07
 
 ---
 
+  - Submitted on 11 Feb 2024 (v1),
+    last revised 28 Feb 2024 (this version, v4)
   - [GitHub](https://github.com/alibaba/GraphTranslator)
 
 ---
