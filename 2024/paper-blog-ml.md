@@ -17,6 +17,63 @@ date: 2023-09-07
 
 ---
 
+- [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
+
+```
+In a nutshell, all the image-only contrastive learning methods,
+share the same high-level framework, detailed below.
+1. Given one image, two separate data augmentations are applied;
+2. A base encoder is followed by a project head,
+which is trained to maximize agreement using a contrastive loss
+(i.e., they are from the same image or not);
+3. The project head is thrown away for downstream tasks.
+```
+
+```
+For dual encoders such as CLIP, image and text are encoded separately,
+and modality interaction is only handled via a simple dot product of
+image and text feature vectors. This can be very effective for
+zero-shot image classification and image-text retrieval.
+However, due to the lack of deep multimodal fusion,
+CLIP alone performs poorly on the image captioning and
+visual question answering tasks.
+This requires the pre-training of a fusion encoder,
+where additional transformer layers are typically employed to
+model the deep interaction between image and text representations.
+```
+
+```
+Stable Diffusion (SD), and its academic version latent diffusion,
+contains mainly three modules, i.e.,
+an image VAE, a denoising U-Net, and a condition encoder.
+
+The denoising U-Net is the core module for the
+diffusion image generation process. The module is trained to
+predict the noise to subtract in the latent space at
+each denoising timestep, such that it can step-by-step evolve
+the initial random noise into a meaningful image latent.
+The module is trained with the L2 loss between the
+predicted noise and the target noise, which is added to the
+target image latent encoded by the VAE encoder.
+
+At inference, the iteratively denoised latent started
+from the random noise, is sent through the
+VAE decoder for the final generated image.
+
+The denoising U-Net, similar to a classic U-Net,
+consists of a series of spatial downsampling and upsampling
+blocks with skip connections in between.
+In SD's U-Net, each down/upsampling block has a cross-attention
+layer and a 2D convolutional down/upsampling layer.
+Each block takes the visual latent feature, text feature,
+and denoising step as input and
+generates the next visual latent feature.
+The image-text interaction happens in the
+image-text cross-attention layer.
+```
+
+---
+
 - [OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework](https://arxiv.org/abs/2404.14619)
   - Submitted on 22 Apr 2024
   - [CoreNet](https://github.com/apple/corenet)
@@ -71,33 +128,6 @@ and the FFN multiplier in each transformer layer.
   然后就是宣布 Apple 入场了.
 
 > 急急忙忙地拼凑个成果出来的感觉~
-
----
-
-- [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
-
-```
-In a nutshell, all the image-only contrastive learning methods,
-share the same high-level framework, detailed below.
-1. Given one image, two separate data augmentations are applied;
-2. A base encoder is followed by a project head,
-which is trained to maximize agreement using a contrastive loss
-(i.e., they are from the same image or not);
-3. The project head is thrown away for downstream tasks.
-```
-
-```
-For dual encoders such as CLIP, image and text are encoded separately,
-and modality interaction is only handled via a simple dot product of
-image and text feature vectors. This can be very effective for
-zero-shot image classification and image-text retrieval.
-However, due to the lack of deep multimodal fusion,
-CLIP alone performs poorly on the image captioning and
-visual question answering tasks.
-This requires the pre-training of a fusion encoder,
-where additional transformer layers are typically employed to
-model the deep interaction between image and text representations.
-```
 
 ---
 

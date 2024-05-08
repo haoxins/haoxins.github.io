@@ -16,6 +16,18 @@ go install golang.org/x/tools/cmd/deadcode@latest
 ---
 
 
+- 正好手头有个场景, 简单 benchmark 了一下
+  [NetworkX](https://github.com/networkx/networkx)
+  vs
+  [rustworkx](https://github.com/Qiskit/rustworkx)
+  - rustworkx 这个名字起的不好~
+  - rustworkx 可以添加 object 作为 node,
+    但是会导致 (`.neighbors(node_id)`) 显著变慢;
+    也有可能是 `.get_node_data(node_id)` 导致的.
+    没有细究~
+  - 同样的使用模式下, 最简单的 `neighbors()`, 粗略估计:
+    NetworkX 耗时是 rustworkx 2.76 倍.
+
 - [云风的 Blog: 重新启程](https://blog.codingnow.com/2024/05/farewell.html)
 
 ```
