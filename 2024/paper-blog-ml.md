@@ -1,5 +1,5 @@
 ---
-title: Paper & Blog - Data, ML
+title: Paper & Blog - 数据, 模型
 description: 惊起却回头, 有恨无人省. 拣尽寒枝不肯栖, 寂寞沙洲冷.
 date: 2023-09-07
 ---
