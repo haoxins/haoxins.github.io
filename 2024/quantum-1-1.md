@@ -597,6 +597,99 @@ date: 2022-10-31
 > 至此, 才正式介绍`狄拉克符号`,
   前面的铺垫还是很用心的~
 
+- [线性泛函](https://en.wikipedia.org/wiki/Linear_form)
+
+- 绝不要把线性泛函与线性算符混为一谈.
+  虽然两者都涉及线性运算,
+  但是前者给每一个右矢联系上一个复数,
+  而后者给每一个右矢联系上另一个右矢.
+  - 可以证明, 定义在右矢
+    $$ \mid ψ \rangle \in \mathcal{E} $$
+    上的线性泛函的集合构成一个矢量空间, 叫做
+    $$ \mathcal{E} $$
+    的`对偶空间`, 记作
+    $$ \mathcal{E}^{*} $$.
+
+- 事实上, 右矢
+  $$ \mid φ \rangle $$
+  可以决定这样一个线性泛函, 它按线性方式使得每一个右矢
+  $$ \mid ψ \rangle \in \mathcal{E} $$
+  都有一个对应的复数, 而且这个复数就是
+  $$ \mid φ \rangle $$
+  和
+  $$ \mid ψ \rangle $$
+  的标量积
+  $$ (\mid φ \rangle, \mid ψ \rangle) $$.
+  假设
+  $$ \langle φ \mid $$
+  就是这个线性泛函, 那么它应由下式所决定
+  - $$ \langle φ \mid ψ \rangle = (\mid φ \rangle, \mid ψ \rangle) $$
+
+- 关于
+  $$ \mid φ \rangle $$
+  和
+  $$ \mid ψ \rangle $$
+  的标量积, 我们现在已有两种不同的符号:
+  $$ (\mid φ \rangle, \mid ψ \rangle) $$
+  或
+  $$ \langle φ \mid ψ \rangle $$,
+  这里的
+  $$ \langle φ \mid $$
+  是右矢
+  $$ \mid φ \rangle $$
+  的对应左矢. 今后我们只用一种符号:
+  $$ \langle φ \mid ψ \rangle $$,
+  即狄拉克符号.
+  - 在之前已经给出的标量积的性质, 可用狄拉克符号重新归纳如下:
+  - $$ \langle φ \mid ψ \rangle = \langle ψ \mid φ \rangle^{*} $$
+  - $$
+      \langle φ (\mid λ_1 ψ_1 + λ_2 ψ_2) \rangle
+      =
+      λ_1 \langle φ \mid ψ_1 \rangle
+      +
+      λ_2 \langle φ \mid ψ_2 \rangle
+    $$
+  - $$
+      \langle (\mid λ_1 φ_1 + λ_2 φ_2) \mid ψ \rangle
+      =
+      λ_1^{*} \langle φ_1 \mid ψ \rangle
+      +
+      λ_2^{*} \langle φ_2 \mid ψ \rangle
+    $$
+  - $$ \langle ψ \mid ψ \rangle $$
+    为正实数, 当而且仅当
+    $$ \mid ψ \rangle = 0 $$
+    时, 其值为零.
+
+> 每一个左矢都有对应的右矢吗? Page 109 ~ 111
+
+- 一般地说, 态空间
+  $$ \mathcal{E} $$
+  和它的对偶空间
+  $$ \mathcal{E}^{*} $$
+  并不是同构的 (当然, 除非
+  $$ \mathcal{E} $$
+  是有限多维的), 这就是说,
+  如果对于每一个右矢
+  $$ \mid ψ \rangle \in \mathcal{E} $$,
+  对应着一个左矢
+  $$ \langle ψ \mid \in \mathcal{E}^{*} $$,
+  那么, 相反的对应关系并不存在.
+  - 但是, 我们约定, 除了使用
+    $$ \mathcal{E} $$
+    空间的矢量 (它们的模方是有限的) 以外, 还可以使用`广义右矢`,
+    它们的模方虽是无限的, 但它们与
+    $$ \mathcal{E} $$
+    空间中任何右矢的标量积却都是有限的.
+  - 这样一来, 对于每一个左矢
+    $$ \langle φ \mid \in \mathcal{E}^{*} $$,
+    就都对应着一个右矢.
+  - __但是广义右矢并不表示体系的物理状态__.
+
+### 线性算符
+
+### 厄米共轭
+
 ## C 态空间中的表象
 
 ## D 本征值方程; 观察算符
@@ -909,7 +1002,7 @@ date: 2022-10-31
 
 ## 经典力学中的拉格朗日函数和哈密顿函数
 
-> 添加这一章作为附录, 作者属实用心~
+> 添加这一章作为附录, 作者也是用心~
 
 > 质点组
 
