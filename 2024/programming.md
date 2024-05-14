@@ -16,17 +16,30 @@ go install golang.org/x/tools/cmd/deadcode@latest
 ---
 
 
-- 正好手头有个场景, 简单 benchmark 了一下
+- [Introducing Istio v1 APIs](https://preliminary.istio.io/latest/blog/2024/v1-apis/)
+  - Reflecting the stability of Istio's features, our networking,
+    security and telemetry APIs are promoted to v1 in 1.22.
+  - 嗯, 我也远离了 Istio 了, 哈哈哈~
+
+---
+
+- 2024-05, 正好手头有个场景, 简单 benchmark 了一下
   [NetworkX](https://github.com/networkx/networkx)
+  vs
+  [Raphtory](https://github.com/Pometry/Raphtory)
   vs
   [rustworkx](https://github.com/Qiskit/rustworkx)
   - rustworkx 这个名字起的不好~
+  - __Python 3.12__
   - rustworkx 可以添加 object 作为 node,
-    但是会导致 (`.neighbors(node_id)`) 显著变慢;
+    但是会导致 `.neighbors(node_id)` 显著变慢;
     也有可能是 `.get_node_data(node_id)` 导致的.
     没有细究~
-  - 同样的使用模式下, 最简单的 `neighbors()`, 粗略估计:
-    NetworkX 耗时是 rustworkx 2.76 倍.
+  - 同样的使用模式下, 不包含构图过程, 最简单的 `neighbors()`, 粗略估计:
+    NetworkX (6.864 s) 耗时是 rustworkx (0.728 s) ~9.4 倍;
+    Raphtory (0.748 s) 耗时与 rustworkx (0.728 s) 基本持平.
+  - 但是, 查询结果上, Raphtory 与 NetworkX 相对接近;
+    rustworkx 则有一定的差异, 想来准确性有待提升.
 
 - [云风的 Blog: 重新启程](https://blog.codingnow.com/2024/05/farewell.html)
 

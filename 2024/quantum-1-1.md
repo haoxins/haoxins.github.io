@@ -643,14 +643,14 @@ date: 2022-10-31
   - 在之前已经给出的标量积的性质, 可用狄拉克符号重新归纳如下:
   - $$ \langle φ \mid ψ \rangle = \langle ψ \mid φ \rangle^{*} $$
   - $$
-      \langle φ (\mid λ_1 ψ_1 + λ_2 ψ_2) \rangle
+      \langle φ \mid (λ_1 ψ_1 + λ_2 ψ_2) \rangle
       =
       λ_1 \langle φ \mid ψ_1 \rangle
       +
       λ_2 \langle φ \mid ψ_2 \rangle
     $$
   - $$
-      \langle (\mid λ_1 φ_1 + λ_2 φ_2) \mid ψ \rangle
+      \langle \mid (λ_1 φ_1 + λ_2 φ_2) \mid ψ \rangle
       =
       λ_1^{*} \langle φ_1 \mid ψ \rangle
       +
@@ -685,6 +685,10 @@ date: 2022-10-31
     $$ \langle φ \mid \in \mathcal{E}^{*} $$,
     就都对应着一个右矢.
   - __但是广义右矢并不表示体系的物理状态__.
+
+> `但是广义右矢并不表示体系的物理状态`. 好吧~
+  时至今日, 对于只存在于计算的中间步骤, 而不代表物理实在性.
+  嗯, 还是觉得似懂非懂! 哈哈哈.
 
 ### 线性算符
 
