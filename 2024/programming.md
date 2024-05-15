@@ -11,7 +11,10 @@ go install golang.org/x/vuln/cmd/govulncheck@latest
 go install golang.org/x/tools/cmd/deadcode@latest
 ```
 
+- Rust 的一些容易犯的小错误 (Coding 的时候)
+  - 忘记引入相应的 `trait`
 
+---
 
 ---
 

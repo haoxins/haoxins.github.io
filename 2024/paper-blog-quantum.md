@@ -79,3 +79,37 @@ but there are more restrictions on what SIMD operations
 are available on these packed messages
 that I'll discuss in later sections.
 ```
+
+```
+So nearly all of the complexity in FHE is based around how
+to avoid noise growth or how to reduce noise mid-program.
+The latter is called bootstrapping, which deserves some
+special attention. The idea of bootstrapping is trippy.
+Its technical details are beyond the scope of this article,
+but I can summarize the main idea:
+you can homomorphically decrypt an FHE ciphertext and
+re-encrypt it under a new secret key without ever seeing
+the underlying message. In doing so, the noise of the
+resulting ciphertext is "reset" to a smaller value.
+But to make it work, the user has to provide the server
+with a special encryption of the user's secret key, which
+adds an extra security assumption called circular security,
+or key-dependent message security. With bootstrapping,
+you can extend an FHE program indefinitely.
+The downside is that bootstrapping can be expensive,
+taking milliseconds in some schemes and
+seconds to minutes in others.
+```
+
+```
+If you don't want to do bootstrapping, then you are
+left with putting a hard limit on noise growth.
+This is often called leveled homomorphic encryption
+because the noise growth is discretized into levels,
+and programs are prohibited from exceeding the max level.
+These two techniques roughly split the FHE community in half.
+```
+
+> These two techniques roughly split the FHE community in half.
+
+> 嗯, 确实蛮 High-Level 的~ (No details)
