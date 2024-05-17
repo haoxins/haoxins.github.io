@@ -11,12 +11,6 @@ date: 2023-09-07
 
 ---
 
-  - Submitted on 11 Feb 2024 (v1),
-    last revised 28 Feb 2024 (this version, v4)
-  - [GitHub](https://github.com/alibaba/GraphTranslator)
-
----
-
 - [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
 
 ```
@@ -72,6 +66,23 @@ The image-text interaction happens in the
 image-text cross-attention layer.
 ```
 
+```
+Before 2018, different NLP tasks are addressed with different
+task-specific models, such as translation, semantic parsing,
+summarization, and so on.
+With the emergence of the transformer architecture,
+language models for different NLP tasks are unified with
+a decoder-only architecture, e.g., the GPT models (2020).
+```
+
+```
+A number of works have been proposed to transform different
+computer vision tasks by replacing the label space
+with language space, such as UniCL, GLIP and OpenSeeD.
+```
+
+```
+```
 ---
 
 - [OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework](https://arxiv.org/abs/2404.14619)

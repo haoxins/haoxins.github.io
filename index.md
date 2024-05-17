@@ -1,11 +1,8 @@
 ## Xin Hao's Blog
 
-### 外部链接
-
-- [NebulaGraph 社区的专访](https://mp.weixin.qq.com/s/cKcmK3Cpvq870sTSyCVOiw)
-
 ### 2024
 
+- [NebulaGraph 社区的专访](https://mp.weixin.qq.com/s/cKcmK3Cpvq870sTSyCVOiw)
 - [猫咪的那些事](2024/cat.md)
 - [陶哲轩实分析](2024/math-analysis.md)
 - [复分析 可视化方法 - 微分](2024/math-complex-analysis-1.md)
