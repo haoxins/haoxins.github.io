@@ -718,6 +718,35 @@ date: 2022-10-31
 
 > Page 116, 图: 从右矢和左矢之间的对应关系来定义算符的`伴随算符`
 
+- 在前面我们曾经提到两个容易混淆的记号:
+  $$ \mid λψ \rangle $$
+  和
+  $$ \langle λψ \mid $$,
+  其中
+  $$ λ $$
+  是标量. 对于记号
+  $$ \mid Aψ \rangle $$
+  和
+  $$ \langle Aψ \mid $$
+  (其中
+  $$ A $$
+  是线性算符) 也会出现同样的问题.
+  - $$ \mid Aψ \rangle $$
+    就是右矢
+    $$ A \mid ψ \rangle $$
+    的另一种记法:
+  - $$ \mid Aψ \rangle = A \mid ψ \rangle $$
+- 但
+  $$ \langle Aψ \mid $$
+  则是对应于右矢
+  $$ \mid Aψ \rangle $$
+  的左矢.
+  - 可以看出:
+  - $$ \langle Aψ \mid = \langle ψ \mid A^{\dagger}
+- 这就是说, 如果要把一个线性算符
+  $$ A $$
+  从左矢的符号中提出去, 就必须将它放到该左矢符号的右边并且换成它的伴随算符
+  $$ A^{\dagger} $$.
 
 ---
 
@@ -737,6 +766,27 @@ date: 2022-10-31
   - 即颠倒各因子的顺序 (但常数的位置无关紧要).
 
 ---
+
+- 如果算符
+  $$ A $$
+  等于它的伴随算符, 即
+  - $$ A = A^{\dagger} $$
+  - 我们就称它为`厄米算符`.
+- 厄米算符满足下列关系式:
+  - $$
+      \langle ψ \mid A \mid φ \rangle =
+      \langle φ \mid A \mid ψ \rangle^{*}
+    $$
+  - 此式对任意的
+    $$ \mid φ \rangle $$
+    和
+    $$ \mid ψ \rangle $$
+    都成立.
+- 最后, 对于厄米算符:
+  - $$
+      \langle A φ \mid ψ \rangle =
+      \langle φ \mid A ψ \rangle
+    $$
 
 ## C 态空间中的表象
 
