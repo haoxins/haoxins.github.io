@@ -87,6 +87,9 @@ recognition is that all textual concepts are embedded in
 the same feature space through large-scale pre-training,
 and the feature distributions are coherent to the semantic
 meanings without the need for a pre-defined vocabulary.
+As such, the aligned visual-semantic space can be easily
+transferred to a wide range of image recognition
+tasks in a zero-shot manner.
 ```
 ---
 

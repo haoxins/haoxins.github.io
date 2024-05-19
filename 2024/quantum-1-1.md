@@ -834,7 +834,7 @@ date: 2022-10-31
   就是与
   $$ \langle φ \mid $$
   相联系的右矢
-  $$ \mid φ \langle $$
+  $$ \mid φ \rangle $$
   的诸分量
   $$ b_i = \langle u_i \mid φ \rangle $$
   的共轭复数.
