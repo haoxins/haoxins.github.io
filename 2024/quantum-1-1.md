@@ -742,7 +742,7 @@ date: 2022-10-31
   $$ \mid Aψ \rangle $$
   的左矢.
   - 可以看出:
-  - $$ \langle Aψ \mid = \langle ψ \mid A^{\dagger}
+  - $$ \langle Aψ \mid = \langle ψ \mid A^{\dagger} $$
 - 这就是说, 如果要把一个线性算符
   $$ A $$
   从左矢的符号中提出去, 就必须将它放到该左矢符号的右边并且换成它的伴随算符
