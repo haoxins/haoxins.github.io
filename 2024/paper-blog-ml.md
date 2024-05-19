@@ -82,6 +82,11 @@ with language space, such as UniCL, GLIP and OpenSeeD.
 ```
 
 ```
+The reason why a text encoder can help achieve open-set
+recognition is that all textual concepts are embedded in
+the same feature space through large-scale pre-training,
+and the feature distributions are coherent to the semantic
+meanings without the need for a pre-defined vocabulary.
 ```
 ---
 

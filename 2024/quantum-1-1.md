@@ -788,9 +788,56 @@ date: 2022-10-31
       \langle φ \mid A ψ \rangle
     $$
 
+- 两个厄米算符
+  $$ A $$
+  和
+  $$ B $$
+  的`乘积`, 仅当
+  $$ [ A, B ] = 0 $$
+  时, 才是厄米算符.
+
+> 注: 是`乘积`才是`厄米算符`.
+
 ## C 态空间中的表象
 
 > `表象`: 这个翻译是个败笔~
+
+> 正交归一关系式 vs 封闭性关系式
+
+### 一个正交归一基的特征关系式
+
+- 离散的
+  - $$ \langle u_i \mid u_j \rangle = δ_{ij} $$
+  - $$
+      P_{ \{ u_i \} } =
+      \sum_{i} \mid u_i \rangle \langle u_i \mid =
+      \mathbb{1}
+    $$
+- 连续的
+  - $$ \langle ω_α \mid ω_{α'} \rangle = δ (α - α') $$
+  - $$
+      P_{ \{ ω_α \} } =
+      \int dα \mid ω_α \rangle \langle ω_α \mid =
+      \mathbb{1}
+    $$
+
+### 右矢和左矢的表示法
+
+- 可见
+  $$ \langle φ \mid $$
+  可以唯一地按这些左矢
+  $$ \langle u_i \mid $$
+  展开;
+  $$ \langle φ \mid $$
+  的诸分量
+  $$ \langle φ \mid u_i \rangle $$
+  就是与
+  $$ \langle φ \mid $$
+  相联系的右矢
+  $$ \mid φ \langle $$
+  的诸分量
+  $$ b_i = \langle u_i \mid φ \rangle $$
+  的共轭复数.
 
 ## D 本征值方程; 观察算符
 
