@@ -4,13 +4,6 @@ description: 惊起却回头, 有恨无人省. 拣尽寒枝不肯栖, 寂寞沙�
 date: 2023-09-07
 ---
 
-
-```
-
-```
-
----
-
 - [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
 
 ```
@@ -90,6 +83,58 @@ meanings without the need for a pre-defined vocabulary.
 As such, the aligned visual-semantic space can be easily
 transferred to a wide range of image recognition
 tasks in a zero-shot manner.
+```
+
+```
+Recently, X-Decoder (2023) uses a generalized encoder-decoder
+architecture to unify all these segmentation tasks.
+The referring segmentation task is reformulated as a
+conditioned panoptic segmentation that takes some
+textual phrases as input to the decoder.
+UNINEXT (2023) is another work that attempts to unify all
+instance-level segmentation in images and videos.
+Different from X-Decoder, UNINEXT uses early fusion to
+fuse the various prompts and vision features, which are
+then fed to the transformer encoder-decoder.
+```
+
+```
+I/O Unification.
+
+Following the development of unified LLMs, a number of recent works
+reformulate many vision tasks as a sequence-to-sequence problem.
+They typically use a tokenizer to tokenize the original
+inputs and outputs (I/O) in different modalities used in
+various tasks into a coherent sequence (visual or text)
+tokens and then exploit a unified, sequence-to-sequence model.
+
+Functionality Unification.
+
+In addition to I/O unification, one might build a generic model
+via functionality unification. Extending multi-task learning methods,
+many recently used a coherent encoder-decoder architecture.
+This line of work usually does not need task-specific or
+modality-specific tokenizers but require a sophisticated
+model design to accommodate various tasks.
+```
+
+```
+For I/O unification, the I/O unification module always
+generates a sequence of tokens and exploits a separate
+decoder to decode the final outputs for different tasks.
+
+For functionality unification, the functional unification
+module generates heterogeneous outputs for different tasks,
+e.g., semantic outputs and spatial outputs.
+Then, these different types of outputs are combined to
+produce the final task-specific outputs.
+
+Both unification methods strive to make use of synergy
+across tasks with different levels of granularity.
+For example, coarse-grained data is expected to contribute to
+the rich semantic understanding required by fine-grained tasks,
+while fine-trained data enhances the grounding ability
+for coarse-grained tasks.
 ```
 ---
 
