@@ -79,7 +79,7 @@ date: 2022-02-11
   - $$ M_1 $$
     到
     $$ M_4 $$
-    叫作度量公理.
+    叫作`度量公理`.
 - 在不引起混淆的情况下, 我们常将度量空间
   $$ (X, d) $$
   简写成
@@ -103,28 +103,33 @@ date: 2022-02-11
     $$ d $$
     在
     $$ Y $$
-    上`导出`的度量.
+    上导出的度量.
 
 - 符号
   $$ \times $$
-  表示集合的笛卡儿积:
+  表示集合的`笛卡儿积`:
   $$ A \times B $$
-  是所有序偶
+  是所有`序偶`
   $$ (a, b) $$
   的集合, 其中
   $$ a \in A $$,
   $$ b \in B $$.
-  因此,
-  $$ X \times X $$
-  是
-  $$ X $$
-  的元素构成的所有序偶的集合.
+  - 因此,
+    $$ X \times X $$
+    是
+    $$ X $$
+    的元素构成的所有序偶的集合.
 
 ```
 读者将体会到, 这里考虑问题的方式与微积分大不相同.
 在微积分中, 我们通常研究一个函数或同时研究几个函数.
 而这里, 一个函数变成了更大的空间中的点.
 ```
+
+- [赫尔德不等式](https://en.wikipedia.org/wiki/Hölder%27s_inequality)
+  - [共轭指数](https://en.wikipedia.org/wiki/Conjugate_index)
+- [柯西-施瓦茨不等式](https://en.wikipedia.org/wiki/Cauchy-Schwarz_inequality)
+- [闵可夫斯基不等式](https://en.wikipedia.org/wiki/Minkowski_inequality)
 
 ### 开集, 闭集和邻域
 
@@ -259,7 +264,7 @@ date: 2022-02-11
   $$ Y $$
   的`笛卡儿积` (或积)
   $$ X \times Y $$
-  是所有序偶
+  是所有`序偶`
   $$ (x, y) $$
   的集合, 其中
   $$ x \in X $$

@@ -136,6 +136,21 @@ the rich semantic understanding required by fine-grained tasks,
 while fine-trained data enhances the grounding ability
 for coarse-grained tasks.
 ```
+
+```
+Unlike I/O unification, functionality unification attempts to unify
+different tasks based on the task characteristics, with the awareness
+that they are neither fully isolated nor fully aligned.
+At a high level, vision tasks produce three types of outputs:
+(i) location outputs,
+(ii) semantic outputs, and
+(iii) pixel-level outputs.
+For example, both object detection and phrase grounding need to
+localize objects in the image, while both generic segmentation
+and referring segmentation produce masks.
+On the other hand, many tasks require semantic (or text) outputs to
+represent either concept names or textual descriptions.
+```
 ---
 
 - [OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework](https://arxiv.org/abs/2404.14619)
