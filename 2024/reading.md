@@ -369,6 +369,9 @@ Ensemble 被汉译成系综, 割裂统计物理同其它数学的联系.
 
 > 书籍结尾确实有点乏味了
 
+> 承蒙作者感召, 决定今年下半年, 拜读:
+  [Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer](https://arxiv.org/abs/quant-ph/9508027)
+
 ---
 
 - [庞特里亚金自传](https://book.douban.com/subject/36480251/)
