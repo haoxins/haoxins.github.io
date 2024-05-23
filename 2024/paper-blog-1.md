@@ -105,7 +105,7 @@ These two techniques roughly split the FHE community in half.
 
 > 嗯, 确实蛮 High-Level 的~ (No details)
 
----
+### Multimodal Foundation Models: From Specialists to General-Purpose Assistants
 
 - [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
 
@@ -255,7 +255,7 @@ On the other hand, many tasks require semantic (or text) outputs to
 represent either concept names or textual descriptions.
 ```
 
----
+### OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework
 
 - [OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework](https://arxiv.org/abs/2404.14619)
   - Submitted on 22 Apr 2024
@@ -312,7 +312,7 @@ and the FFN multiplier in each transformer layer.
 
 > 急急忙忙地拼凑个成果出来的感觉~
 
----
+### Hierarchical Navigable Small Worlds (HNSW)
 
 - [Hierarchical Navigable Small Worlds (HNSW)](https://www.pinecone.io/learn/series/faiss/hnsw/)
   - [OasysDB](https://github.com/oasysai/oasysdb)
@@ -328,7 +328,7 @@ and the FFN multiplier in each transformer layer.
     as its indexing algorithm.
   - [Benchmarking nearest neighbors](https://github.com/erikbern/ann-benchmarks)
 
----
+### Graph Pattern Matching in GQL and SQL/PGQ
 
 - [Graph Pattern Matching in GQL and SQL/PGQ](https://arxiv.org/abs/2112.06217)
 
@@ -508,7 +508,7 @@ since different path bindings might become equal
 after reduction, and only one copy is kept.
 ```
 
----
+### Enhancing Data Lakes with GraphAr: Efficient Graph Data Management with a Specialized Storage Scheme
 
 - [Enhancing Data Lakes with GraphAr: Efficient Graph Data Management with a Specialized Storage Scheme](https://arxiv.org/abs/2312.09577)
   - [GitHub](https://github.com/apache/incubator-graphar)
@@ -673,7 +673,7 @@ GraphAr. GraphAr, with its format compatible with the LPG model,
 can be utilized as an archival format for graph databases.
 ```
 
----
+### Graph of Thoughts: Solving Elaborate Problems with Large Language Models
 
 - [Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687)
   - Submitted on 18 Aug 2023 (v1)
@@ -711,7 +711,7 @@ LLM reasoning process (the history of its thoughts and their states).
 
 > 总的来说, __阅读价值不大__!
 
----
+### Monte-Carlo Graph Search from First Principles
 
 - [Monte-Carlo Graph Search from First Principles](https://github.com/lightvector/KataGo/blob/master/docs/GraphSearch.md)
 
@@ -762,7 +762,7 @@ ways, such that the Q value can no longer be interpreted as the
 expected value of the posterior policy either.
 ```
 
----
+### GraphRAG: Unlocking LLM discovery on narrative private data
 
 - [GraphRAG: Unlocking LLM discovery on narrative private data](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)
   - [graspologic](https://github.com/microsoft/graspologic)
@@ -802,7 +802,7 @@ a variety of new domains as we continue to apply this
 technology while working on metrics and robust evaluation.
 ```
 
----
+### A Review on Graph Neural Network Methods in Financial Applications
 
 - [A Review on Graph Neural Network Methods in Financial Applications](https://arxiv.org/abs/2111.15367)
   - 2021 (v1), 2022 (v2)
@@ -854,7 +854,7 @@ Thus, how to maintain the graph structure and improve the
 efficiency of GNN algorithms is worth further exploration.
 ```
 
----
+### Relational Deep Learning: Graph Representation Learning on Relational Databases
 
 - [Relational Deep Learning: Graph Representation Learning on Relational Databases](https://arxiv.org/abs/2312.04615)
   - [GitHub](https://github.com/snap-stanford/relbench)
@@ -941,7 +941,7 @@ Nonetheless, adopting ideas from knowledge graph
 embedding may yet be fruitful.
 ```
 
----
+### GraphScope Flex: LEGO-like Graph Computing Stack
 
 - [GraphScope Flex: LEGO-like Graph Computing Stack](https://arxiv.org/abs/2312.12107)
   - [GART](https://github.com/GraphScope/GART)
