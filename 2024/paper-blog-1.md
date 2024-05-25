@@ -154,6 +154,27 @@ On the other hand, many tasks require semantic (or text) outputs to
 represent either concept names or textual descriptions.
 ```
 
+```
+(i) GPT-2 (2019) is the auto-regressive counterpart in the
+BERT era (2019) for the pre-train-then-finetune paradigm.
+Compared with GPT-2, GPT-3 (2020) is a 175B model trained on
+web-scale text corpus, which exhibits two emerging properties
+with a frozen model: in-context-learning (2020) and
+chain-of-thoughts (CoT) reasoning (2022).
+This means, without any additional training, the model can
+tackle a wide range of new problems with just a few task-specific
+examples and by properly prompting it step-by-step, respectively.
+It further leads to the modeling paradigm from task-specific
+finetuning to prompting frozen models, where the latter shows
+higher generalizability and lower adaptation cost in task transfer.
+
+(ii) ChatGPT and InstructGPT (2022) show the importance of
+instruction-following and alignment with human intents for LLMs,
+by finetuning the base language model GPT-3/GPT-3.5 on high-quality
+instruction-following data, and improving them with a reward model via
+reinforcement learning with human feedback.
+
+```
 
 ### A High-Level Technical Overview of Fully Homomorphic Encryption
 
