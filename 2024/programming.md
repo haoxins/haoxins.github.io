@@ -18,6 +18,13 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- 时至今日, 个人承认
+  [Hertz](https://github.com/cloudwego/hertz/pull/1119)
+  算是一个可用的 Go Web 框架吧~
+  - 首先, Go 的语言特性限制, 导致不可能出现功能丰富的 Web 框架;
+    所以, Go 的 Web 框架基本属于大同小异.
+  - 但是 Hertz 属于在大同小异之中做到了细节完善度较高~
+    比如: binding & validation.
 
 - [Introducing Istio v1 APIs](https://preliminary.istio.io/latest/blog/2024/v1-apis/)
   - Reflecting the stability of Istio's features, our networking,

@@ -174,6 +174,11 @@ by finetuning the base language model GPT-3/GPT-3.5 on high-quality
 instruction-following data, and improving them with a reward model via
 reinforcement learning with human feedback.
 
+(iii) GPT-4 not only improves the language ability of previous models,
+but also allows visual signals as additional input for visual
+understanding and reasoning. We see that the newer generation model
+maintains/improves the existing properties of the
+previous ones, and enable new properties.
 ```
 
 ### A High-Level Technical Overview of Fully Homomorphic Encryption
