@@ -4,6 +4,12 @@ description: 惊起却回头, 有恨无人省. 拣尽寒枝不肯栖, 寂寞沙�
 date: 2023-09-07
 ---
 
+### Attention Is All You Need
+
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+  - Submitted on 12 Jun 2017 (v1),
+    last revised 2 Aug 2023 (v7)
+  - [Attention in transformers, visually explained](https://www.youtube.com/watch?v=eMlx5fFNoYc)
 ### Multimodal Foundation Models: From Specialists to General-Purpose Assistants
 
 - [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
@@ -179,6 +185,13 @@ but also allows visual signals as additional input for visual
 understanding and reasoning. We see that the newer generation model
 maintains/improves the existing properties of the
 previous ones, and enable new properties.
+```
+
+```
+It turns out that the line of instruction-tuning research
+has produced effective means to improve zero-shot and
+few-shot generalization abilities of LLMs. Self-instruct
+leverages the in-context-learning ability of LLM.
 ```
 
 ### A High-Level Technical Overview of Fully Homomorphic Encryption
