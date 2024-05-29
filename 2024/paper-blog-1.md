@@ -194,6 +194,26 @@ few-shot generalization abilities of LLMs. Self-instruct
 leverages the in-context-learning ability of LLM.
 ```
 
+```
+As the training objectives and network architectures are
+becoming similar or even identical to GPT-like models,
+the key differential factor is data.
+```
+
+> 哈哈
+
+```
+To align the discussions, we argue that there are two
+distinctive abilities for LLMs:
+the instruction-following ability to know which task to perform,
+and massive knowledge storage to complete the task with high quality.
+Imitation models are good at the former, by mimicking ChatGPT's style
+but perform poorly in terms of factuality in their responses.
+In Gudibande et al. (2023), the authors conclude that there exists
+a substantial capabilities gap between open and closed LLMs that,
+with current methods, can only be bridged using an unwieldy amount
+of imitation data or by using more capable base LLMs.
+```
 ### A High-Level Technical Overview of Fully Homomorphic Encryption
 
 - [A High-Level Technical Overview of Fully Homomorphic Encryption](https://www.jeremykun.com/2024/05/04/fhe-overview/)
