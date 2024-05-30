@@ -213,6 +213,10 @@ In Gudibande et al. (2023), the authors conclude that there exists
 a substantial capabilities gap between open and closed LLMs that,
 with current methods, can only be bridged using an unwieldy amount
 of imitation data or by using more capable base LLMs.
+They also advocate that the highest leverage action for improving
+open-source models is to tackle the difficult challenge of developing
+better base LLMs. However, unfortunately, the resources to train such
+base LLMs are only available in a few industry labs.
 ```
 ### A High-Level Technical Overview of Fully Homomorphic Encryption
 
