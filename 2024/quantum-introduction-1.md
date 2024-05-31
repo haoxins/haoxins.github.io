@@ -843,6 +843,54 @@ date: 2023-12-11
 - 正如矢量的表示一样, 算符 (对某个特殊的基) 是用它们的`矩阵元`来表示:
   - $$ \langle e_m \mid \hat{Q} \mid e_n \rangle \equiv Q_{mn} $$.
 
+- 假如
+  $$ \mid α \rangle $$
+  是一个归一化矢量, 算符
+  - $$ \hat{P} \equiv \mid α \rangle \langle α \mid $$
+  - 将会从其他的任意矢量中挑选出 "沿
+    $$ \mid α \rangle $$
+    方向" 的部分:
+  - $$ \hat{P} \mid β \rangle \equiv \langle α \mid β \rangle \mid α \rangle $$;
+  - 我们称它为投影到由
+    $$ \mid α \rangle $$
+    张开的一维子空间上的`投影算符`.
+- 如果
+  $$ \{ \mid e_n \rangle \} $$
+  是一离散的正交归一基,
+  - $$ \langle e_m \mid e_n \rangle = δ_{mn} $$,
+  - 则有
+  - $$ \sum_{n} \mid e_n \rangle \langle e_n \mid = 1 $$
+  - (称`恒等算符`).
+- 如果我们把该算符作用在任意矢量
+  $$ \mid α \rangle $$
+  上, 得到
+  $$ \mid α \rangle $$
+  以
+  $$ \{ \mid e_n \rangle \} $$
+  为基的展开式:
+  - $$
+      \sum_{n} \mid e_n \rangle \langle e_n \mid α \rangle =
+      \mid α \rangle
+    $$.
+  - 类似地, 假如
+    $$ \{ e_z \rangle \} $$
+    是一组狄拉克正交归一的连续基,
+  - $$ \langle e_z \mid e_{z'} \rangle = δ (z - z') $$,
+  - 那么
+  - $$ \int \mid e_z \rangle \langle e_z \mid dz = 1 $$.
+
+- 我们该如何看待
+  $$ \langle \hat{Q} f \mid f \rangle $$
+  呢?
+  - $$ \langle \hat{Q} f \mid $$
+    是
+    $$ \hat{Q} \mid f \rangle $$
+    的对偶.
+
+```
+偶尔我们也会遇到算符是个函数形式, 它们通常由幂级数展开式来定义.
+```
+
 ## 三维空间中的量子力学
 
 ### 薛定谔方程

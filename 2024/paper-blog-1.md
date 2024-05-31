@@ -218,6 +218,47 @@ open-source models is to tackle the difficult challenge of developing
 better base LLMs. However, unfortunately, the resources to train such
 base LLMs are only available in a few industry labs.
 ```
+
+```
+While finetuning very large models often leads to high performance,
+it is prohibitively expensive; For example,
+regular 16-bit finetuning of an LLaMA-65B model (2023)
+requires more than 780 GB of GPU memory (2023).
+```
+
+```
+Parameter-efficient training is an effective approach for
+LMM adaptation. It freezes most of the model parameters
+and only allows a fraction of trainable parameters to update
+with domain-specific data. For example, LLaMA Adapter v2 (2023)
+and LAVIN (2023) only have 14M and 3.8M trainable parameters,
+compared with 7B/13B LLM parameters, respectively.
+
+Another efficient training method is quantization. The recent
+QLoRA (2023) finetunes 65B LLaMA for 24 hours on a single GPU,
+achieving 99.3% of the performance level of ChatGPT.
+
+Since instruction tuning typically involves a small amount
+of data, it makes parameter-efficient training or model
+quantization the practical approach, especially when with
+limited GPU resources. Both LoRA (2021) and QLoRA are supported
+in the LLaVA codebase to allow LMM training with fewer GPUs.
+
+It is empirically shown (2023) that LoRA/QLoRA can achieve
+similar performance with full-modal tuning when scaling
+LLaVA to 33B and 65B, when training with around 150K
+instruct data and evaluate with LLaVA-Bench.
+```
+
+```
+Furthermore, a fundamental limitation of not only LLMs
+but also other large-scale models nowadays, is that they
+only represent the world described by their training data,
+which will inevitably become outdated over time.
+Regularly re-training the model with the latest
+information is simply not feasible.
+```
+
 ### A High-Level Technical Overview of Fully Homomorphic Encryption
 
 - [A High-Level Technical Overview of Fully Homomorphic Encryption](https://www.jeremykun.com/2024/05/04/fhe-overview/)
