@@ -213,8 +213,6 @@ date: 2023-12-11
 
 - [厄米多项式](https://en.wikipedia.org/wiki/Hermite_polynomials)
 
-- [罗德里格斯公式](https://en.wikipedia.org/wiki/Rodrigues%27_formula)
-
 ### 自由粒子
 
 ```
@@ -879,23 +877,38 @@ date: 2023-12-11
   - 那么
   - $$ \int \mid e_z \rangle \langle e_z \mid dz = 1 $$.
 
+```
+偶尔我们也会遇到算符是个函数形式, 它们通常由幂级数展开式来定义.
+```
+
 - 我们该如何看待
   $$ \langle \hat{Q} f \mid f \rangle $$
   呢?
   - $$ \langle \hat{Q} f \mid $$
-    是
+    的意思是
     $$ \hat{Q} \mid f \rangle $$
     的对偶.
-
-```
-偶尔我们也会遇到算符是个函数形式, 它们通常由幂级数展开式来定义.
-```
 
 ## 三维空间中的量子力学
 
 ### 薛定谔方程
 
+- [拉普拉斯算符](https://en.wikipedia.org/wiki/Laplace_operator)
+
+- [伴随勒让德多项式](https://en.wikipedia.org/wiki/Associated_Legendre_polynomials)
+  - [勒让德多项式](https://en.wikipedia.org/wiki/Legendre_polynomials)
+  - [罗德里格斯公式](https://en.wikipedia.org/wiki/Rodrigues%27_formula)
+- [球谐函数](https://en.wikipedia.org/wiki/Spherical_harmonics)
+  - [球贝塞尔函数](https://en.wikipedia.org/wiki/Bessel_function#Spherical_Bessel_functions)
+- [主量子数](https://en.wikipedia.org/wiki/Principal_quantum_number)
+
 ### 氢原子
+
+- [玻尔模型](https://en.wikipedia.org/wiki/Bohr_model)
+  - [玻尔半径](https://en.wikipedia.org/wiki/Bohr_radius)
+  - [基态](https://en.wikipedia.org/wiki/Ground_state)
+
+- [拉盖尔多项式](https://en.wikipedia.org/wiki/Laguerre_polynomials)
 
 ### 角动量
 

@@ -259,6 +259,12 @@ Regularly re-training the model with the latest
 information is simply not feasible.
 ```
 
+```
+In current literature, the tool allocator is usually a LLM.
+To achieve the user's goal, the LLM will outline all the
+steps necessary with either a single tool or collaborating
+```
+
 ### A High-Level Technical Overview of Fully Homomorphic Encryption
 
 - [A High-Level Technical Overview of Fully Homomorphic Encryption](https://www.jeremykun.com/2024/05/04/fhe-overview/)

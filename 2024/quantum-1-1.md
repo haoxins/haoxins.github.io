@@ -1157,9 +1157,7 @@ date: 2022-10-31
 
 ## E 表象和观察算符的两个重要例子
 
-> Page 144 ~ 151
-
-> __重点!__ @TODO
+> @TODO Page 144 ~ 151 @TODO
 
 ## F 态空间的张量积
 
@@ -1233,6 +1231,158 @@ date: 2022-10-31
 
 > 忘了谁说过或者在哪看见过: 定义, 性质是可以组织编排的.
   相应的可见作者的眼界见识. (大概这个意思, 未必准确~)
+
+- 于是, 一个张量积矢量的分量就是该乘积中的两个矢量的分量之积.
+- 在
+  $$ \mathcal{E} $$
+  空间中, 存在着这样的矢量, 它们并不是
+  $$ \mathcal{E}_1 $$
+  空间中的矢量和
+  $$ \mathcal{E}_2 $$
+  空间中的矢量的张量积.
+  - 事实上, 根据假设,
+    $$ \{ \mid u_i (1) \rangle \otmes \mid v_l (2) \} $$
+    是
+    $$ \mathcal{E} $$
+    空间中的一个基, 因此,
+    $$ \mathcal{E} $$
+    空间中最普遍的矢量可表示为:
+  - $$
+      \mid ψ \rangle =
+      \sum_{i, l} c_{i, l}
+      \mid u_i (1) \rangle
+      \otimes
+      \mid v_l (2) \rangle
+    $$
+  - 任意给定了
+    $$ N_1 N_2 $$
+    个复数
+    $$ c_{i, l} $$,
+    我们不一定能将它们写成
+    $$ N_1 $$
+    个数
+    $$ a_i $$
+    和
+    $$ N_2 $$
+    个数
+    $$ b_l $$
+    的乘积
+    $$ a_i b_l $$
+    的形式, 因此, 一般说来, 并不存在这样的矢量
+    $$ \mid φ(1) \rangle $$
+    和
+    $$ \mid χ(2) \rangle $$,
+    它们的张量积刚好就是
+    $$ \mid ψ \rangle $$.
+  - 但是
+    $$ \mathcal{E} $$
+    空间中的任意一个矢量总可以分解为张量积矢量的线性组合, 如上式所示.
+
+- 在
+  $$ \mathcal{E}_1 $$
+  空间和
+  $$ \mathcal{E}_2 $$
+  空间中存在着标量积, 这就使我们可以同样定义空间
+  $$ \mathcal{E} $$
+  中的标量积.
+  - 首先, 我们定义矢量
+    $$
+      \mid φ(1) χ(2) \rangle =
+      \mid φ(1) \rangle \otimes
+      \mid χ(2) \rangle
+    $$
+    和矢量
+    $$
+      \mid φ'(1) χ'(2) \rangle =
+      \mid φ'(1) \rangle \otimes
+      \mid χ'(2) \rangle
+    $$
+    的标量积为:
+  - $$
+      \langle φ'(1) χ'(2) \mid φ(1) χ(2) \rangle =
+      \langle φ'(1) \mid φ(1) \rangle
+      \langle χ'(2) \mid χ(2) \rangle
+    $$
+- 对于
+  $$ \mathcal{E} $$
+  空间中的任意两个矢量, 由于其中的每一个都是张量积矢量的线性组合,
+  因此, 可以直接应用标量积的基本性质.
+  - 特别地, 我们注意, 如果每一个基
+    $$ \{ mid u_i (1) \rangle \} $$
+    和
+    $$ \{ \mid v_l (2) \rangle \} $$
+    都是正交归一的, 那么基
+    $$
+      \{ \mid u_i (1) v_l (2) \rangle =
+      \mid u_i (1) \rangle \otimes \mid v_l (2) \rangle \}
+    $$
+    也是正交归一的, 即
+  - $$
+      \langle u_{i'} (1) v_{l'} (2) \mid u_i (1) v_l (2) \rangle =
+      \langle u_{i'} (1) \mid u_i (1) \rangle
+      \langle v_{l'} (2) \mid v_l (2) \rangle =
+      δ_{ii'} δ_{ll'}
+    $$
+
+---
+
+- 我们首先考虑定义在
+  $$ \mathcal{E}_1 $$
+  空间中的一个线性算符
+  $$ A(1) $$.
+  现在给这个算符联系上
+  $$ \mathcal{E} $$
+  空间中的一个线性算符
+  $$ \widetilde{A}(1) $$,
+  叫做
+  $$ A(1) $$
+  在
+  $$ \mathcal{E} $$
+  空间中的`延伸算符`, 它的定义如下:
+  - 将
+    $$ \widetilde{A}(1) $$
+    作用于一个张量积矢量
+    $$ \mid φ(1) \rangle \otimes \mid χ(2) \rangle $$
+    的结果是:
+  - $$
+      \widetilde{A}(1) [ \mid φ(1) \rangle \otimes \mid χ(2) \rangle ] =
+      [ A(1) \mid φ(1) \rangle ] \otimes \mid χ(2) \rangle
+
+- 假设
+  $$ A(1) $$
+  和
+  $$ B(2) $$
+  分别为在
+  $$ \mathcal{E}_1 $$
+  空间和
+  $$ \mathcal{E}_2 $$
+  空间中起作用的两个线性算符. 张量积
+  $$ A(1) \otimes B(2) $$
+  是
+  $$ \mathcal{E} $$
+  空间中的一个线性算符, 它的定义就是规定它对张量积矢量的作用的下列关系式:
+  - $$
+      [ A(1) \otimes B(2) ]
+      [ \mid φ(1) \rangle \otimes \mid χ(2) \rangle ] =
+      [ A(1) \mid φ(1) \rangle ] \otimes
+      [ B(2) \mid χ(2) \rangle ]
+    $$
+
+- 张量积矢量
+  $$ \mid φ(1) χ(2) \rangle = \mid φ(1) \rangle \otimes \mid χ(2) \rangle $$
+  上的投影算符是
+  $$ \mathcal{E} $$
+  空间的一种算符, 也就是
+  $$ \mid φ(1) \rangle $$
+  上及
+  $$ \mid χ(2) \rangle $$
+  上的两个投影算符的张量积:
+  - $$
+      \mid φ(1) χ(2) \rangle
+      \langle φ(1) χ(2) \mid =
+      \mid φ(1) \rangle \langle φ(1) \mid
+      \mid χ(2) \rangle \langle χ(2) \mid
+    $$
 
 # 量子力学的假定
 
