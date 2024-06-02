@@ -1241,7 +1241,7 @@ date: 2022-10-31
   $$ \mathcal{E}_2 $$
   空间中的矢量的张量积.
   - 事实上, 根据假设,
-    $$ \{ \mid u_i (1) \rangle \otmes \mid v_l (2) \} $$
+    $$ \{ \mid u_i (1) \rangle \otimes \mid v_l (2) \} $$
     是
     $$ \mathcal{E} $$
     空间中的一个基, 因此,
@@ -1347,6 +1347,7 @@ date: 2022-10-31
   - $$
       \widetilde{A}(1) [ \mid φ(1) \rangle \otimes \mid χ(2) \rangle ] =
       [ A(1) \mid φ(1) \rangle ] \otimes \mid χ(2) \rangle
+    $$
 
 - 假设
   $$ A(1) $$
@@ -1384,17 +1385,114 @@ date: 2022-10-31
       \mid χ(2) \rangle \langle χ(2) \mid
     $$
 
+- 本书的符号约定:
+  - $$ \mid φ(1) \rangle \mid χ (2) \rangle $$
+    表示
+    $$ \mid φ(1) \rangle \otimes \mid χ (2) \rangle $$
+  - $$ A(1) B(2) $$
+    表示
+    $$ A(1) \otimes B(2) $$
+  - $$ A(1) $$
+    表示
+    $$ \widetilde{A}(1) $$
+    或
+    $$ A(1) $$
+
+### 张量积空间中的本征值方程
+
+- (a) 若
+  $$ A(1) $$
+  是
+  $$ \mathcal{E}_1 $$
+  空间中的一个观察算符, 则它也是
+  $$ \mathcal{E} $$
+  空间中的观察算符.
+- (b)
+  $$ A(1) $$
+  在
+  $$ \mathcal{E} $$
+  空间中的谱和它在
+  $$ \mathcal{E}_1 $$
+  空间中的谱一样.
+- (c) 但是, 在
+  $$ \mathcal{E}_1 $$
+  空间中
+  $$ g_n $$
+  度简并的本征值
+  $$ a_n $$
+  在
+  $$ \mathcal{E} $$
+  空间中的简并度为
+  $$ N_2 \times g_n $$.
+
+---
+
+- 因此,
+  $$ C = A(1) + B(2) $$
+  的本征值是
+  $$ A(1) $$
+  的一个本征值与
+  $$ B(2) $$
+  的一个本征值之和; 我们可以得到由
+  $$ C $$
+  的本征矢构成的一个基, 其中的基矢是
+  $$ A(1) $$
+  的一个本征矢和
+  $$ B(2) $$
+  的一个本征矢的张量积 (不一定).
+
+> 不一定: 详见 Page 158 附注;
+  其中的基矢是
+  $$ A(1) $$
+  的一个本征矢和
+  $$ B(2) $$
+  的一个本征矢的张量积, 或者张量积的线性组合.
+
+- 若在
+  $$ \mathcal{E}_1 $$
+  与
+  $$ \mathcal{E}_2 $$
+  中各有一个可对易观察算符的完全集合, 则将此两集合合并起来便得到
+  $$ \mathcal{E} $$
+  中的一个可对易观察算符的完全集合.
+
+> 本书二三章对比于: 格里菲斯 - 形式理论;
+  明显更加章法有度, 脉络分明, 内容翔实!
+
+### 应用举例
+
+> @TODO Page 160 ~ 163 @TODO
+
 # 量子力学的假定
 
-## A 引言
+- [拉格朗日力学](https://en.wikipedia.org/wiki/Lagrangian_mechanics)
+  - [广义坐标](https://en.wikipedia.org/wiki/Generalized_coordinates)
+  - [哈密顿-雅可比方程](https://en.wikipedia.org/wiki/Hamilton-Jacobi_equation)
+  - [哈密顿力学](https://en.wikipedia.org/wiki/Hamiltonian_mechanics)
+
+- 对一个物理体系的经典描述可以归结如下:
 
 ## B 假定的陈述
 
+### 物理量的测量
+
+### 量子化规则
+
 ## C 关于可观察量及其测量的假定的物理解释
+
+### 可观察量的相容性
 
 ## D 薛定谔方程的物理意义
 
+### 薛定谔方程的普遍性质
+
+### 保守体系的情况
+
 ## E 叠加原理和物理上的预言
+
+### 概率幅与干涉效应
+
+### 若干个态与同一测量结果相联系的情况
 
 # 附录
 
