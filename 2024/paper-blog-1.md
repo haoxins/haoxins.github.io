@@ -263,6 +263,20 @@ information is simply not feasible.
 In current literature, the tool allocator is usually a LLM.
 To achieve the user's goal, the LLM will outline all the
 steps necessary with either a single tool or collaborating
+multiple tools together.
+```
+
+```
+On one hand, instruction tuning enables an end-to-end model
+that directly interprets rich semantics in multi-modal inputs,
+but requires data curation and training,
+hence more computationally expensive.
+However, limited instruction tuning data may limit its
+capabilities in certain scenarios, such as OCR.
+On the other hand, one can build a multimodal agent without
+any training by chaining LLMs with abundant off-the-shelf
+models/APIs/code interpreters as tools, and leveraging
+in-context few-shot examples to teach LLMs on planning.
 ```
 
 ### A High-Level Technical Overview of Fully Homomorphic Encryption

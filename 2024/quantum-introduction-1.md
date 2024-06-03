@@ -912,6 +912,20 @@ date: 2023-12-11
 
 ### 角动量
 
+- 一般说来, 粒子的角动量 (相对于原点) 可由下式给出:
+  - $$ \mathbf{L} = \mathbf{r} \times \mathbf{p} $$,
+  - 也就是,
+  - $$ L_x = y p_z - z p_y $$,
+    $$ L_y = z p_x - x p_z $$,
+    $$ L_z = x p_y - y p_x $$.
+  - 对应的量子算符由标准公式
+    $$ p_x \rightarrow -i \hbar \partial / \partial x $$,
+    $$ p_y \rightarrow -i \hbar \partial / \partial y $$,
+    $$ p_z \rightarrow -i \hbar \partial / \partial z $$
+    得到.
+
+- [阶梯算符](https://en.wikipedia.org/wiki/Ladder_operator)
+
 ### 自旋
 
 ### 电磁相互作用
