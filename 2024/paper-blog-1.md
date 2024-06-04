@@ -4,6 +4,7 @@ description: 惊起却回头, 有恨无人省. 拣尽寒枝不肯栖, 寂寞沙�
 date: 2023-09-07
 ---
 
+### Transformers are SSMs
 ### Attention Is All You Need
 
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
