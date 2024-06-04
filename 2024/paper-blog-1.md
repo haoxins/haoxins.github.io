@@ -277,6 +277,8 @@ On the other hand, one can build a multimodal agent without
 any training by chaining LLMs with abundant off-the-shelf
 models/APIs/code interpreters as tools, and leveraging
 in-context few-shot examples to teach LLMs on planning.
+However, as there is no training, the system may
+fail to invoke the right tool.
 ```
 
 ### A High-Level Technical Overview of Fully Homomorphic Encryption

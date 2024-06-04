@@ -871,7 +871,7 @@ date: 2023-12-11
       \mid α \rangle
     $$.
   - 类似地, 假如
-    $$ \{ e_z \rangle \} $$
+    $$ \{ \mid e_z \rangle \} $$
     是一组狄拉克正交归一的连续基,
   - $$ \langle e_z \mid e_{z'} \rangle = δ (z - z') $$,
   - 那么
