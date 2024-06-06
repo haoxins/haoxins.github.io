@@ -26,6 +26,15 @@ go install golang.org/x/tools/cmd/deadcode@latest
   - 然后统一输入
   - `__token__`
   - 多此一举~
+  - 2024-06: 新版本不需要了~ 哈哈
+
+> `~/.pypirc`
+
+```
+[pypi]
+  username = __token__
+  password = YOUR_TOKEN
+```
 
 ---
 

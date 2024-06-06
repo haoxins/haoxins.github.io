@@ -11,6 +11,71 @@ date: 2023-09-07
   - Submitted on 12 Jun 2017 (v1),
     last revised 2 Aug 2023 (v7)
   - [Attention in transformers, visually explained](https://www.youtube.com/watch?v=eMlx5fFNoYc)
+
+```
+Recurrent models typically factor computation along the
+symbol positions of the input and output sequences.
+This inherently sequential nature precludes
+parallelization within training examples,
+which becomes critical at longer sequence lengths,
+as memory constraints limit batching across examples.
+```
+
+```
+The goal of reducing sequential computation also forms
+the foundation of the Extended Neural GPU, ByteNet,
+and ConvS2S, all of which use convolutional neural
+networks as basic building blocks, computing
+hidden representations in parallel for
+all input and output positions.
+
+In these models, the number of operations required to
+relate signals from two arbitrary input or output
+positions grows in the distance between positions,
+linearly for ConvS2S and logarithmically for ByteNet.
+
+This makes it more difficult to learn dependencies
+between distant positions. In the Transformer this is
+reduced to a constant number of operations,
+albeit at the cost of reduced effective resolution
+due to averaging attention-weighted positions,
+an effect we counteract with Multi-Head Attention.
+```
+
+```
+The decoder is also composed of a stack of N = 6
+identical layers. In addition to the two sub-layers
+in each encoder layer, the decoder inserts a third
+sub-layer, which performs multi-head attention over
+the output of the encoder stack.
+Similar to the encoder, we employ residual connections
+around each of the sub-layers, followed by a layer
+normalization. We also modify the self-attention
+sub-layer in the decoder stack to prevent positions
+from attending to subsequent positions.
+This masking, combined with the fact that the output
+embeddings are offset by one position, ensuring that
+the predictions for position i can depend only on the
+known outputs at positions less than i.
+```
+
+```
+An attention function can be described as mapping a query
+and a set of key-value pairs to an output, where the
+query, keys, values, and output are all vectors.
+The output is computed as a weighted sum of the values, where
+the weight assigned to each value is computed by a
+compatibility function of the query with the corresponding key.
+```
+
+- We suspect that for large values of
+  $$ d_k $$,
+  the dot products grow large in magnitude,
+  pushing the softmax function into regions where
+  it has extremely small gradients.
+  - To counteract this effect, we scale the dot products by
+    $$ \frac{1}{\sqrt{d_k}} $$.
+
 ### Multimodal Foundation Models: From Specialists to General-Purpose Assistants
 
 - [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)

@@ -18,6 +18,24 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+
+- [How to build a plugin system in Rust](https://www.arroyo.dev/blog/rust-plugin-systems)
+
+```
+But there is a workaround: use the C ABI.
+Unlike Rust, C does have a stable ABI on
+every major OS and processor architecture.
+So if we can constrain our plugin interface
+to only use C-compatible data structures and
+functions we can safely link against plugins
+compiled by any Rust compiler.
+
+Even better: as the C ABI is the lingua franca
+in the systems world, many other languages are
+able to emit it, opening the door to supporting
+UDFs in a variety of compiled languages.
+```
+
 - 时至今日, 个人承认
   [Hertz](https://github.com/cloudwego/hertz/pull/1119)
   算是一个可用的 Go Web 框架吧~
