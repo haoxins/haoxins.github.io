@@ -21,6 +21,8 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 - [How to build a plugin system in Rust](https://www.arroyo.dev/blog/rust-plugin-systems)
 
+> 为啥不 WASM 的那一段很务实.
+
 ```
 But there is a workaround: use the C ABI.
 Unlike Rust, C does have a stable ABI on

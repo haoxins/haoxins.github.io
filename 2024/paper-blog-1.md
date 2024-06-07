@@ -76,6 +76,12 @@ compatibility function of the query with the corresponding key.
   - To counteract this effect, we scale the dot products by
     $$ \frac{1}{\sqrt{d_k}} $$.
 
+```
+Multi-head attention allows the model to jointly attend
+to information from different representation subspaces
+at different positions.
+With a single attention head, averaging inhibits this.
+```
 ### Multimodal Foundation Models: From Specialists to General-Purpose Assistants
 
 - [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
