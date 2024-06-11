@@ -82,6 +82,19 @@ to information from different representation subspaces
 at different positions.
 With a single attention head, averaging inhibits this.
 ```
+
+```
+There are many choices of positional encodings,
+learned and fixed.
+
+We also experimented with using learned positional
+embeddings instead, and found that the two versions
+produced nearly identical results.
+
+We chose the sinusoidal version because it may allow
+the model to extrapolate to sequence lengths longer
+than the ones encountered during training.
+```
 ### Multimodal Foundation Models: From Specialists to General-Purpose Assistants
 
 - [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
