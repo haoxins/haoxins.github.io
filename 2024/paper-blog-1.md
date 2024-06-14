@@ -5,6 +5,11 @@ date: 2023-09-07
 ---
 
 ### Transformers are SSMs
+
+### How does in-context learning work?
+
+- [How does in-context learning work? A framework for understanding the differences from traditional supervised learning](https://ai.stanford.edu/blog/understanding-incontext/)
+
 ### Attention Is All You Need
 
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
@@ -95,7 +100,20 @@ We chose the sinusoidal version because it may allow
 the model to extrapolate to sequence lengths longer
 than the ones encountered during training.
 ```
-### Multimodal Foundation Models: From Specialists to General-Purpose Assistants
+
+```
+The shorter these paths between any combination of
+positions in the input and output sequences, the
+easier it is to learn long-range dependencies.
+
+A self-attention layer connects all positions with
+a constant number of sequentially executed operations,
+whereas a recurrent layer requires
+O(n) sequential operations.
+
+```
+
+### Multimodal Foundation Models
 
 - [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)
 
@@ -487,7 +505,7 @@ corresponds to the convolution of their coefficients.
   - Zama is an open source cryptography company building
     state-of-the-art FHE solutions for blockchain and AI.
 
-### OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework
+### OpenELM
 
 - [OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework](https://arxiv.org/abs/2404.14619)
   - Submitted on 22 Apr 2024
@@ -740,7 +758,7 @@ since different path bindings might become equal
 after reduction, and only one copy is kept.
 ```
 
-### Enhancing Data Lakes with GraphAr: Efficient Graph Data Management with a Specialized Storage Scheme
+### Enhancing Data Lakes with GraphAr
 
 - [Enhancing Data Lakes with GraphAr: Efficient Graph Data Management with a Specialized Storage Scheme](https://arxiv.org/abs/2312.09577)
   - [GitHub](https://github.com/apache/incubator-graphar)
@@ -905,7 +923,7 @@ GraphAr. GraphAr, with its format compatible with the LPG model,
 can be utilized as an archival format for graph databases.
 ```
 
-### Graph of Thoughts: Solving Elaborate Problems with Large Language Models
+### Graph of Thoughts
 
 - [Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687)
   - Submitted on 18 Aug 2023 (v1)
@@ -994,7 +1012,7 @@ ways, such that the Q value can no longer be interpreted as the
 expected value of the posterior policy either.
 ```
 
-### GraphRAG: Unlocking LLM discovery on narrative private data
+### GraphRAG
 
 - [GraphRAG: Unlocking LLM discovery on narrative private data](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)
   - [graspologic](https://github.com/microsoft/graspologic)
@@ -1086,7 +1104,7 @@ Thus, how to maintain the graph structure and improve the
 efficiency of GNN algorithms is worth further exploration.
 ```
 
-### Relational Deep Learning: Graph Representation Learning on Relational Databases
+### Relational Deep Learning
 
 - [Relational Deep Learning: Graph Representation Learning on Relational Databases](https://arxiv.org/abs/2312.04615)
   - [GitHub](https://github.com/snap-stanford/relbench)
@@ -1173,7 +1191,7 @@ Nonetheless, adopting ideas from knowledge graph
 embedding may yet be fruitful.
 ```
 
-### GraphScope Flex: LEGO-like Graph Computing Stack
+### GraphScope Flex
 
 - [GraphScope Flex: LEGO-like Graph Computing Stack](https://arxiv.org/abs/2312.12107)
   - [GART](https://github.com/GraphScope/GART)
