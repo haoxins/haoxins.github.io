@@ -582,7 +582,7 @@ be guided by a much more powerful force, life itself.
   - 国内计算机 `专业|科普` 书籍尚差一定水准. `不够真心` (`奇妙量子世界` 是真心作品)
 
 * [穿越平行宇宙](https://book.douban.com/subject/27045352/)
-  - 中文书名估计是为了 `畅销` :)
+  - 中文书名估计是为了畅销~
   - 英文原名 `Our Mathematical Universe - My Quest for the Ultimate Nature of Reality`
   - 个人觉得, 不如: **现实不似你所见: 量子引力之旅**, 更专注于讲透一条线索
   - 任何物体都不能相对空间做超光速运动, 但空间本身可以被随意拉伸, 不管多快都行
