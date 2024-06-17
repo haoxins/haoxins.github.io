@@ -111,6 +111,9 @@ a constant number of sequentially executed operations,
 whereas a recurrent layer requires
 O(n) sequential operations.
 
+The complexity of a separable convolution is equal
+to the combination of a self-attention layer
+and a point-wise feed-forward layer,
 ```
 
 ### Multimodal Foundation Models
