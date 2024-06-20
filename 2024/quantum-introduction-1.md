@@ -1010,21 +1010,21 @@ date: 2023-12-11
       \langle e_i \mid Ψ \rangle \langle Ψ \mid e_j \rangle
     $$.
 - 对于纯态, 密度矩阵有几个有趣的性质:
-  - $$ ρ^2 = ρ $$,
+  - $$ \mathbf{ρ}^2 = \mathbf{ρ} $$,
     (__幂等性__)
-  - $$ ρ^{\dagger} = ρ $$,
+  - $$ \mathbf{ρ}^{\dagger} = \mathbf{ρ} $$,
     (__厄米性__)
-  - $$ Tr(ρ) = \sum ρ_{ii} = 1 $$,
+  - $$ Tr(\mathbf{ρ}) = \sum \mathbf{ρ}_{ii} = 1 $$,
     (`迹`是 `1`)
   - 可观测量
     $$ A $$
     的期望值为
-  - $$ \langle A \rangle = Tr (ρA) $$.
+  - $$ \langle A \rangle = Tr (\mathbf{ρ} \mathbf{A}) $$.
 - 我们可以用密度矩阵代替波函数来表示粒子的状态.
 
 ```
 不要将两个纯态的线性组合 (其本身仍然是个纯态) 与混合态相混淆,
-混合态不能用希尔伯特空间中的任何一 (单个) 矢量来表示
+混合态不能用希尔伯特空间中的任何一个 (单个) 矢量来表示
 (希尔伯特空间中两个矢量的和仍是希尔伯特空间中的一个矢量).
 ```
 
@@ -1062,23 +1062,21 @@ date: 2023-12-11
     且
     $$ \sum_{k} p_k = 1 $$.
 - 混合态的密度矩阵保留了前面讨论过的纯态密度矩阵的大多数特性:
-  - $$ ρ^{\dagger} = ρ $$,
-  - $$ Tr (ρ) = 1 $$,
-  - $$ \langle A \rangle = Tr (ρA) $$,
+  - $$ \mathbf{ρ}^{\dagger} = \mathbf{ρ} $$,
+  - $$ Tr (\mathbf{ρ}) = 1 $$,
+  - $$ \langle A \rangle = Tr (\mathbf{ρ} \mathbf{A}) $$,
   - $$ i \hbar \frac{d \hat{ρ}}{dt} = [\hat{H}, \hat{ρ}] $$
   - (对所有的
     $$ k $$,
     有
     $$ \frac{d p_k}{dt} = 0 $$).
 - 但
-  $$ ρ $$
+  $$ \mathbf{ρ} $$
   只有在表示纯态时才是幂等的:
-  - $$ ρ^2 ≠ ρ $$,
+  - $$ \mathbf{ρ}^2 ≠ \mathbf{ρ} $$,
   - (事实上, __这是一种快速检验体系状态是否为纯态的方法__.)
 
 - [布洛赫球面](https://en.wikipedia.org/wiki/Bloch_sphere)
-
-### 不可克隆定理
 
 ## 附录 线性代数
 
