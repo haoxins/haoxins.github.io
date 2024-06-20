@@ -1469,8 +1469,6 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
   - 然而, 直接检验完备性方程要容易得多, 这也是它出现在公设叙述中的原因.
 
 - [量子测量](https://en.wikipedia.org/wiki/Measurement_in_quantum_mechanics)
-  - [PVM](https://en.wikipedia.org/wiki/Projection-valued_measure)
-  - [POVM](https://en.wikipedia.org/wiki/POVM)
 
 - __投影测量__: 一个投影测量由被观测系统状态空间上的一个可观测量
   $$ M $$
@@ -1552,6 +1550,15 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
     被称为与测量相关联的 __POVM__ 元素. 完整的集合
     $$ \{ E_m \} $$
     称为一个 __POVM__.
+
+> [POVM](https://en.wikipedia.org/wiki/POVM)
+  vs
+  [PVM](https://en.wikipedia.org/wiki/Projection-valued_measure),
+  类同于:
+  [混合态](https://en.wikipedia.org/wiki/Density_matrix)
+  vs
+  [纯态](https://en.wikipedia.org/wiki/Density_matrix).
+
 - 上面提到, __POVM__ 算子是半正定的并且满足
   $$ \sum_{m} E_m = I $$.
   设
