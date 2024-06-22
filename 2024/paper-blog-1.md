@@ -117,6 +117,8 @@ and a point-wise feed-forward layer,
 the approach we take in our model.
 ```
 
+- [Beam search](https://en.wikipedia.org/wiki/Beam_search)
+
 ### Multimodal Foundation Models
 
 - [Multimodal Foundation Models: From Specialists to General-Purpose Assistants](https://arxiv.org/abs/2309.10020)

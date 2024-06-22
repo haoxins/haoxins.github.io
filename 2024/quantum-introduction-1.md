@@ -1019,7 +1019,7 @@ date: 2023-12-11
   - 可观测量
     $$ A $$
     的期望值为
-  - $$ \langle A \rangle = Tr (\mathbf{ρ} \mathbf{A}) $$.
+  - $$ \langle A \rangle = Tr(\mathbf{ρ} \mathbf{A}) $$.
 - 我们可以用密度矩阵代替波函数来表示粒子的状态.
 
 ```
@@ -1063,10 +1063,10 @@ date: 2023-12-11
     $$ \sum_{k} p_k = 1 $$.
 - 混合态的密度矩阵保留了前面讨论过的纯态密度矩阵的大多数特性:
   - $$ \mathbf{ρ}^{\dagger} = \mathbf{ρ} $$,
-  - $$ Tr (\mathbf{ρ}) = 1 $$,
-  - $$ \langle A \rangle = Tr (\mathbf{ρ} \mathbf{A}) $$,
+  - $$ Tr(\mathbf{ρ}) = 1 $$,
+  - $$ \langle A \rangle = Tr(\mathbf{ρ} \mathbf{A}) $$,
   - $$ i \hbar \frac{d \hat{ρ}}{dt} = [\hat{H}, \hat{ρ}] $$
-  - (对所有的
+    (对所有的
     $$ k $$,
     有
     $$ \frac{d p_k}{dt} = 0 $$).
@@ -1080,7 +1080,12 @@ date: 2023-12-11
 
 ## 附录 线性代数
 
-> 其实放在附录不合适, 应该作为第一章. 同时本章内容略显简陋了~
+> 这里内容略显简陋了~
+
+```
+A vector space with an inner product is called
+an inner product space.
+```
 
 - [柯西-施瓦茨不等式](https://en.wikipedia.org/wiki/Cauchy-Schwarz_inequality)
 

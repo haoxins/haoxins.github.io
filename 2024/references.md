@@ -32,6 +32,7 @@ date: 2023-12-21
 
 ### 一些好的微信文章
 
+- [不确定性原理到底在说什么?](https://mp.weixin.qq.com/s/QcjZDSJj-3kfxGNl1E5lZg)
 - [美丽的莫比乌斯反演, 解决了一类物理问题](https://mp.weixin.qq.com/s/7HL2HeOKhVVaajSd2raQiw)
 - [热力学与量子力学在 21 世纪重新相遇](https://mp.weixin.qq.com/s/7VcuucFkqeNPvfsutOoDog)
 - [几何在物理学中的妙用](https://mp.weixin.qq.com/s/uQt7P-1QzLlr-qmkscPiqg)
