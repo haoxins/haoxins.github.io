@@ -1090,15 +1090,15 @@ an inner product space.
 > 注: 本书原本用`上面加一个波浪号`表示转置矩阵, 一律改为
   $$ \mathbf{A}^T $$
 
-- `厄米共轭`矩阵, 或称`伴随`矩阵, 用
+- 厄米共轭矩阵, 或称`伴随`矩阵, 用
   $$ \mathbf{T}^{\dagger} $$
-  表示, 是`转置共轭`矩阵.
+  表示, 是转置共轭矩阵.
 
-- 如果一个方矩阵等于它的`厄米共轭`, 则它就是`厄米`矩阵, 或`自伴`矩阵;
-  如果`厄米共轭`引入一个负号, 则矩阵为`斜厄米`矩阵, 或`反厄米`.
-  - __厄米矩阵__:
+- 如果一个方矩阵等于它的厄米共轭, 则它就是`厄米`矩阵, 或`自伴`矩阵;
+  如果厄米共轭引入一个负号, 则矩阵为斜厄米矩阵, 或`反厄米`.
+  - 厄米矩阵:
     $$ \mathbf{T}^{\dagger} = \mathbf{T} $$;
-  - __斜厄米矩阵__:
+  - 反厄米矩阵:
     $$ \mathbf{T}^{\dagger} = - \mathbf{T} $$.
 
 - 一般来说, 矩阵乘法不是可交换的 (即
@@ -1174,7 +1174,7 @@ an inner product space.
 ---
 
 - 矩阵的`特征方程`: 它的解决定了矩阵本征值. 注意到它是一个 `n` 阶方程,
-  根据`代数基本定理`, 所以它有 `n` 个 (复数) 根.
+  根据代数基本定理, 所以它有 `n` 个 (复数) 根.
   - 然而, 其中一些可能是重根, 所以我们可以肯定地说, 一个
     $$ n \times n $$
     矩阵至少有一个且最多有 `n` 个不同的本征值.
@@ -1191,7 +1191,7 @@ an inner product space.
     矩阵也可能是可对角化的.
 - 在计算出所有本征矢之前, 事先知道给定的矩阵是否可对角化是很方便的. 一个有用的充分
   (尽管不是必要) 条件是: 如果矩阵与其厄米共轭对易, 则称其为`正规`矩阵:
-  - __正规矩阵__:
+  - 正规矩阵:
     $$ [\mathbf{N}^{\dagger}, \mathbf{N}] = 0 $$.
 - 每个正规矩阵都是可对角化的 (其本征矢张开整个空间).
   - 特别是,
@@ -1208,7 +1208,21 @@ an inner product space.
   - 事实上, __当且仅当两个矩阵对易时答案是肯定的__.
   - 顺便说一句, 如果两个矩阵在一组基矢对易, 那么它们相对于任何一组基矢都对易.
 
----
+```
+Suppose we have two diagonalizable matrices;
+in quantum applications, the question often arises:
+Can they be simultaneously diagonalized
+(by the same similarity matrix S)?
+
+That is to say, does there exist a basis all of
+whose members are eigenvectors of both matrices?
+On this basis, both matrices would be diagonal.
+
+The answer is yes if and only if the two matrices
+commute, as we shall now prove. (By the way,
+if two matrices commute with respect to one basis,
+they commute with respect to any basis.)
+```
 
 - 在量子力学中, `厄米变换`起着基础作用.
   厄米变换的本征值和本征矢有如下重要特性.
@@ -1216,5 +1230,7 @@ an inner product space.
   - 厄米变换属于不同本征值的本征矢彼此正交
   - 更多特性参见:
     [厄米矩阵](https://en.wikipedia.org/wiki/Hermitian_matrix)
+
+- [矩阵函数](https://en.wikipedia.org/wiki/Analytic_function_of_a_matrix)
 
 > 这就戛然而止了?
