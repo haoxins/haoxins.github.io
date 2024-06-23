@@ -984,9 +984,7 @@ date: 2023-12-11
 
 ### 混合态和密度矩阵
 
-- 但还有其他方法来阐述该理论, 一个特别有用的方法是从定义
-  [密度算符](https://en.wikipedia.org/wiki/Density_matrix)
-  开始,
+- 但还有其他方法来阐述该理论, 一个特别有用的方法是从定义`密度算符`开始,
   - $$ \hat{ρ} \equiv \mid Ψ \rangle \langle Ψ \mid $$.
   - 它实际上是状态
     $$ \mid Ψ \rangle $$
