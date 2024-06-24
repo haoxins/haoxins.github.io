@@ -15,11 +15,3 @@ date: 2024-01-28
 ### Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer
 
 - [Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer](https://arxiv.org/abs/quant-ph/9508027)
-
-### The Platonic Representation Hypothesis
-
-- [The Platonic Representation Hypothesis](https://arxiv.org/abs/2405.07987)
-
-```
-
-```

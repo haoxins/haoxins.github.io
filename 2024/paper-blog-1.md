@@ -6,6 +6,11 @@ date: 2023-09-07
 
 ### Transformers are SSMs
 
+
+### The Platonic Representation Hypothesis
+
+- [The Platonic Representation Hypothesis](https://arxiv.org/abs/2405.07987)
+
 ### How does in-context learning work?
 
 - [How does in-context learning work? A framework for understanding the differences from traditional supervised learning](https://ai.stanford.edu/blog/understanding-incontext/)
