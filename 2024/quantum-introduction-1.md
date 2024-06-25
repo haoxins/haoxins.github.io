@@ -102,6 +102,56 @@ date: 2023-12-11
 
 - [埃伦费斯特定理](https://en.wikipedia.org/wiki/Ehrenfest_theorem)
 
+- Actually, it is customary to work with __momentum__ (
+  $$ p = mv $$
+  ), rather than velocity:
+  - $$
+      \langle p \rangle =
+      m \frac{d \langle x \rangle}{dt} =
+      -i \hbar \int (Ψ^{*} \frac{\partial Ψ}{\partial x}) dx
+    $$.
+- Let me write the expressions for
+  $$ \langle x \rangle $$
+  and
+  $$ \langle p \rangle $$
+  in a more suggestive way:
+  - $$ \langle x \rangle = \int Ψ^{*} [x] Ψ dx $$,
+  - $$ \langle p \rangle = \int Ψ^{*} [-i \hbar (\partial / \partial x)] Ψ dx $$.
+- We say that the operator
+  $$ x $$
+  "represents" position, and the operator
+  $$ -i \hbar (\partial / \partial x) $$
+  "represents" momentum; to calculate expectation values
+  we "sandwich" the appropriate operator between
+  $$ Ψ^{*} $$
+  and
+  $$ Ψ $$,
+  and integrate.
+  - An "operator" is an instruction to do something to the
+    function that follows; it takes in one function,
+    and spits out some other function.
+  - The position operator tells you to multiply by
+    $$ x $$;
+    the momentum operator tells you to differentiate with respect to
+    $$ x $$
+    (and multiply the result by
+    $$ -i \hbar $$).
+- To calculate the expectation value of any such quantity,
+  $$ Q(x, p) $$,
+  we simply replace every
+  $$ p $$
+  by
+  $$ -i \hbar (\partial / \partial x) $$,
+  insert the resulting operator between
+  $$ Ψ^{*} $$
+  and
+  $$ Ψ $$,
+  and integrate:
+  - $$
+      \langle Q(x, p) \rangle =
+      \int Ψ^{*} [Q(x, -i \hbar \partial / \partial x)] Ψ dx
+    $$.
+
 ### 不确定性原理
 
 ```
