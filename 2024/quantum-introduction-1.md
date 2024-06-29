@@ -197,6 +197,8 @@ date: 2023-12-11
   - 概率密度与时间无关;
   - 哈密顿量不变.
 
+> 定态: time independent; stationary state
+
 ```
 一旦解出了定态薛定谔方程的分离变量解,
 就可以从中得到含时薛定谔方程的通解,
@@ -1049,9 +1051,9 @@ date: 2023-12-11
     $$ A_{ij} $$
     是
   - $$ A_{ij} = \langle e_i \mid \hat{A} \mid e_j \rangle $$.
-  - 特别地, `密度矩阵`的矩阵元
-    $$ ρ_{ij} $$
-    为
+- 特别地, `密度矩阵`的矩阵元
+  $$ ρ_{ij} $$
+  为
   - $$
       ρ_{ij} =
       \langle e_i \mid \hat{ρ} \mid e_j \rangle =
@@ -1110,18 +1112,18 @@ date: 2023-12-11
     且
     $$ \sum_{k} p_k = 1 $$.
 - 混合态的密度矩阵保留了前面讨论过的纯态密度矩阵的大多数特性:
-  - $$ \mathbf{ρ}^{\dagger} = \mathbf{ρ} $$,
-  - $$ Tr(\mathbf{ρ}) = 1 $$,
-  - $$ \langle A \rangle = Tr(\mathbf{ρ} \mathbf{A}) $$,
+  - $$ ρ^{\dagger} = ρ $$,
+  - $$ Tr(ρ) = 1 $$,
+  - $$ \langle A \rangle = Tr(ρ A) $$,
   - $$ i \hbar \frac{d \hat{ρ}}{dt} = [\hat{H}, \hat{ρ}] $$
-    (对所有的
+    (当对所有的
     $$ k $$,
     有
     $$ \frac{d p_k}{dt} = 0 $$).
 - 但
-  $$ \mathbf{ρ} $$
+  $$ ρ $$
   只有在表示纯态时才是幂等的:
-  - $$ \mathbf{ρ}^2 ≠ \mathbf{ρ} $$,
+  - $$ ρ^2 ≠ ρ $$,
   - (事实上, __这是一种快速检验体系状态是否为纯态的方法__.)
 
 - [布洛赫球面](https://en.wikipedia.org/wiki/Bloch_sphere)
