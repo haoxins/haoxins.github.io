@@ -755,6 +755,8 @@ date: 2023-12-11
     态的几率."
   - 但是这是完全不同的论述.
 
+> `再说一下`: 说的不错~
+
 > 参见: 科恩, 卷一, 页 17, `波函数; 薛定谔方程`
 
 - [位置空间与动量空间](https://en.wikipedia.org/wiki/Position_and_momentum_spaces)
