@@ -19,6 +19,22 @@ go install golang.org/x/tools/cmd/deadcode@latest
 ---
 
 
+- [BLAKE3](https://github.com/BLAKE3-team/BLAKE3)
+  - __Much faster__ than MD5, SHA-1, SHA-2, SHA-3, and BLAKE2.
+  - Secure, unlike MD5 and SHA-1.
+    And secure against length extension, unlike SHA-2.
+  - Highly parallelizable across any number of threads and
+    SIMD lanes, because it's a Merkle tree on the inside.
+  - [Go lukechampine/blake3](https://github.com/lukechampine/blake3)
+
+```
+简单 bench 了下 (1_000_000 次):
+
+blake3:     417.502 ms
+md5:        1252.75 ms
+sha2 (256): 6666.56 ms
+```
+
 - [How to build a plugin system in Rust](https://www.arroyo.dev/blog/rust-plugin-systems)
 
 > 为啥不 WASM 的那一段很务实.

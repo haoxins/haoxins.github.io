@@ -205,6 +205,19 @@ date: 2023-12-11
 这在原则上是简单明了的.
 ```
 
+```
+I claimed that the most general solution to the
+(time-dependent) Schrödinger equation is a
+linear combination of stationary states.
+```
+
+- That does it: Given the initial wave function
+  $$ Ψ(x, 0) $$,
+  we first compute the expansion coefficients
+  $$ C_n $$,
+  and then plug these to obtain
+  $$ Ψ(x, t) $$.
+
 - [哈密顿算符](https://en.wikipedia.org/wiki/Hamiltonian_(quantum_mechanics))
 
 - 最后要注意一点, 由于常数
