@@ -11,9 +11,14 @@ date: 2023-09-07
 
 - [The Platonic Representation Hypothesis](https://arxiv.org/abs/2405.07987)
 
-### How does in-context learning work?
+```
+The Platonic Representation Hypothesis
 
-- [How does in-context learning work? A framework for understanding the differences from traditional supervised learning](https://ai.stanford.edu/blog/understanding-incontext/)
+Neural networks, trained with different objectives on
+different data and modalities, are converging to a
+shared statistical model of reality
+in their representation spaces.
+```
 
 ### Attention Is All You Need
 

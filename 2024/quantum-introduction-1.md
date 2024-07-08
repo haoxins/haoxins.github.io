@@ -214,7 +214,7 @@ linear combination of stationary states.
 - That does it: Given the initial wave function
   $$ Ψ(x, 0) $$,
   we first compute the expansion coefficients
-  $$ C_n $$,
+  $$ c_n $$,
   and then plug these to obtain
   $$ Ψ(x, t) $$.
 

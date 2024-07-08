@@ -28,11 +28,17 @@ go install golang.org/x/tools/cmd/deadcode@latest
   - [Go lukechampine/blake3](https://github.com/lukechampine/blake3)
 
 ```
-简单 bench 了下 (1_000_000 次):
+简单 bench 了下
 
-blake3:     417.502 ms
-md5:        1252.75 ms
+(1_000_000 次):
 sha2 (256): 6666.56 ms
+md5:        1252.75 ms
+blake3:     417.502 ms
+
+(10_000_000 次):
+sha2 (256)  66.40 s
+md5         12.74 s
+blake3      3.47  s
 ```
 
 - [How to build a plugin system in Rust](https://www.arroyo.dev/blog/rust-plugin-systems)
