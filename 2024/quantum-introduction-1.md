@@ -628,6 +628,26 @@ linear combination of stationary states.
   - 有时候两个 (或者更多) 线性独立的本征函数具有相同的本征值;
     在这种情况下称为谱的`简并`.
 
+```
+The collection of all the eigenvalues of
+an operator is called its spectrum.
+Sometimes two (or more) linearly independent
+eigenfunctions share the same eigenvalue;
+in that case, the spectrum is said to be degenerate.
+```
+
+> 下面摘录一个极简特征方程的例子:
+
+- The eigenvalue equation,
+  - $$ i \frac{d}{d ϕ} f(ϕ) = q f(ϕ) $$.
+  - has the general solution
+  - $$ f(ϕ) = A e^{-i q ϕ} $$.
+  - Also restricts the possible values of the
+    $$ q $$:
+  - $$ e^{-i q 2π} = 1 \Rightarrow q = 0, ±1, ±2, ... $$.
+  - The spectrum of this operator is the set of
+    all integers, and it is nondegenerate.
+
 - 现在, 我们把注意力集中在厄米算符的本征函数上
   (从物理角度: 可观测量的确定值态). 它们可分成两类情况:
   - 如果谱是`离散`的 (即, 本征值是分离的),
@@ -714,6 +734,9 @@ linear combination of stationary states.
     其中
     $$ c(z) = \langle f_z \mid Ψ \rangle $$.
   - 测量之后, 波函数坍缩于相应的本征态.
+
+> 无处不在的傅里叶
+
 - 可观测量算符的本征函数是完备的, 所以波函数可以写成它们的线性组合:
   - $$ Ψ (x, t) = \sum_{n} c_n (t) f_n (x) $$.
   - (简单起见, 假设谱是离散的.)
