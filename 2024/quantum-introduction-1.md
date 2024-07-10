@@ -791,11 +791,58 @@ in that case, the spectrum is said to be degenerate.
     态的几率."
   - 但是这是完全不同的论述.
 
-> `再说一下`: 说的不错~
-
 > 参见: 科恩, 卷一, 页 17, `波函数; 薛定谔方程`
 
+- Similarly, the expectation value of
+  $$ Q $$
+  should be the sum over all possible outcomes of the
+  eigenvalue times the probability of getting that eigenvalue:
+  - $$ \langle Q \rangle = \sum_{n} q_n \mid c_n \mid^2 $$.
+  - Indeed,
+  - $$
+      \langle Q \rangle =
+      \langle Ψ \mid \hat{Q} Ψ \rangle =
+      \langle (\sum_{n'} c_{n'} f_{n'})
+      \mid
+      (\hat{Q} \sum_{n} c_n f_n) \rangle
+    $$,
+  - but
+    $$ \hat{Q} f_n = q_n f_n $$,
+    so
+  - $$
+      \langle Q \rangle =
+      \sum_{n'} \sum_{n} c_{n'}^{*} c_n q_n
+      \langle f_{n'} \mid f_n \rangle =
+      \sum_{n'} \sum_{n} c_{n'}^{*} c_n q_n δ_{n' n} =
+      \sum_{n} q_n \mid c_n \mid^2
+    $$.
+  - So far, at least, everything looks consistent.
+
 - [位置空间与动量空间](https://en.wikipedia.org/wiki/Position_and_momentum_spaces)
+
+- The __momentum space wave function__,
+  $$ Φ(p, t) $$.
+  It is essentially the Fourier transform of the
+  (position space) wave function
+  $$ Ψ(x, t) $$,
+  which, by Plancherel's theorem,
+  is its _inverse_ Fourier transform:
+  - $$
+      Φ(p, t) = \frac{1}{\sqrt{2 \pi \hbar}}
+      \int_{- \infty}^{+ \infty}
+      e^{-ipx / \hbar} Ψ(x, t) dx
+    $$;
+  - $$
+      Ψ(x, t) = \frac{1}{\sqrt{2 \pi \hbar}}
+      \int_{- \infty}^{+ \infty}
+      e^{ipx / \hbar} Φ(p, t) dp
+    $$.
+- According to the generalized statistical interpretation,
+  the probability that a measurement of momentum would
+  yield a result in the range
+  $$ dp $$
+  is
+  - $$ \mid Φ(p, t) \mid^2 dp $$.
 
 ### 不确定性原理
 

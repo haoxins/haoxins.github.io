@@ -217,7 +217,8 @@ date: 2023-01-17
   $$ U $$
   作用于目标比特上, 否则目标比特不变, 即
   $$
-    \mid c \rangle \mid t \rangle \
+    \mid c \rangle \mid t \rangle
+    \rightarrow
     \mid c \rangle U^c \mid t \rangle
   $$.
 

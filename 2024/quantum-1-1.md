@@ -2522,13 +2522,13 @@ date: 2022-10-31
   的共轭动量
   $$ p_i $$
   定义为:
-  - p_i = \frac{\partial \mathcal{L}}{\partial \dot{q}_i} $$
+  - $$ p_i = \frac{\partial \mathcal{L}}{\partial \dot{q}_i} $$
   - $$ p_i $$
     又叫做`广义动量`.
   - 在粒子体系所受的力导自一个势能的情况下, 位置变量
     $$ \mathbf{r}_i (x_i, y_i, z_i) $$
     的共轭动量其实就是机械动量:
-  - $$ \mathbf{p}_i = m_i \dot{\mathbf{r}}_i
+  - $$ \mathbf{p}_i = m_i \dot{\mathbf{r}}_i $$
   - 但是, 后面我们将会看到, 存在着磁场时, 情况并不如此.
 - 今后, 我们不再用
   $$ N $$
