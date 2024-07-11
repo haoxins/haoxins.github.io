@@ -639,7 +639,7 @@ in that case, the spectrum is said to be degenerate.
 > 下面摘录一个极简特征方程的例子:
 
 - The eigenvalue equation,
-  - $$ i \frac{d}{d ϕ} f(ϕ) = q f(ϕ) $$.
+  - $$ i \frac{d}{d ϕ} f(ϕ) = q f(ϕ) $$,
   - has the general solution
   - $$ f(ϕ) = A e^{-i q ϕ} $$.
   - Also restricts the possible values of the
@@ -788,7 +788,7 @@ in that case, the spectrum is said to be degenerate.
     $$ \hat{Q} $$
     值进行测量后将处于
     $$ f_n $$
-    态的几率."
+    态的几率".
   - 但是这是完全不同的论述.
 
 > 参见: 科恩, 卷一, 页 17, `波函数; 薛定谔方程`
@@ -823,7 +823,7 @@ in that case, the spectrum is said to be degenerate.
 - The __momentum space wave function__,
   $$ Φ(p, t) $$.
   It is essentially the Fourier transform of the
-  (position space) wave function
+  (__position space__) wave function
   $$ Ψ(x, t) $$,
   which, by Plancherel's theorem,
   is its _inverse_ Fourier transform:
@@ -985,6 +985,108 @@ in that case, the spectrum is said to be degenerate.
 
 - 正如矢量的表示一样, 算符 (对某个特殊的基) 是用它们的`矩阵元`来表示:
   - $$ \langle e_m \mid \hat{Q} \mid e_n \rangle \equiv Q_{mn} $$.
+
+- The same is true for the state of a system in quantum mechanics.
+  It is represented by a _vector_,
+  $$ \mid S(t) \rangle $$,
+  that lives "out there in Hilbert space",
+  but we can express it with respect to any number of different bases.
+  The wave function
+  $$ Ψ(x, t) $$
+  is actually the
+  $$ x $$
+  "component" in the expansion of
+  $$ \mid S(t) \rangle $$
+  in the basis of position eigenfunctions:
+  - $$ Ψ(x, t) = \langle x \mid S(t) \rangle $$,
+  - (the analog to
+    $$ \hat{l} \cdot A $$
+    ) with
+    $$ \mid x \rangle $$
+    standing for the eigenfunction of
+    $$ \hat{x} $$
+    with eigenvalue
+    $$ x $$.
+- The momentum space wave function
+  $$ Φ(p, t) $$
+  is the
+  $$ p $$
+  component in the expansion of
+  $$ \mid S(t) \rangle $$
+  in the basis of momentum eigenfunctions:
+  - $$ Φ(p, t) = \langle p \mid S(t) \rangle $$
+  - (with
+    $$ \mid p \rangle $$
+    standing for the eigenfunction of
+    $$ \hat{p} $$
+    with eigenvalue
+    $$ p $$).
+- Or we could expand
+  $$ \mid S(t) \rangle $$
+  in the basis of energy eigenfunctions
+  (supposing for simplicity that the spectrum is discrete):
+  - $$ c_n (t) = \langle n \mid S(t) \rangle $$
+  - (with
+    $$ \mid n \rangle $$
+    standing for the `n`th eigenfunction of
+    $$ \hat{H} $$).
+  - But it's all the same state; the functions
+    $$ Ψ $$
+    and
+    $$ Φ $$,
+    and the collection of coefficients
+    $$ \{ c_n \} $$,
+    contain exactly the same information, they are simply
+    three different ways of identifying the same vector.
+
+- Just as vectors look different when expressed in
+  different bases, so too do operators (or,
+  in the discrete case, the matrices that represent them).
+  We have already encountered a particularly nice example:
+  - $$
+      \hat{x} \mbox{ } (the position operator) \rightarrow
+      \begin{cases}
+        x \mbox{ } (in position space) \\
+        i \hbar \partial / \partial p
+        \mbox{ } (in momentum space)
+      \end{cases}
+    $$;
+  - $$
+      \hat{p} \mbox{ } (the momentum operator) \rightarrow
+      \begin{cases}
+        -i \hbar \partial / \partial x \mbox{ } (in position space), \\
+        p \mbox{ } (in momentum space)
+      \end{cases}
+    $$.
+- ("Position space" is nothing but the position basis;
+  "momentum space" is the momentum basis.)
+  If someone asked you, "What is the operator,
+  $$ \hat{x} $$,
+  representing position, in quantum mechanics?"
+  - you would probably answer "Just
+    $$ x $$
+    itself". But an equally correct reply would be
+    "$$ i \hbar \partial / \partial p $$",
+    and the best response would be "With respect to what basis?"
+
+- I have often said "the state of a system is
+  represented by its wave function,
+  $$ Ψ(x, t) $$",
+  and this is true, in the same sense that an
+  ordinary vector in three dimensions is
+  "represented by" the triplet of its components;
+  but really, I should always add "in the position basis".
+  - After all, the state of the system
+    is a vector in Hilbert space,
+    $$ \mid S(t) \rangle $$;
+    it makes no reference to any particular basis.
+  - Its connection to
+    $$ Ψ(x, t) $$
+    is given by equation:
+    $$ Ψ(x, t) = \langle x \mid S(t) \rangle $$.
+  - Having said that, for the most part we do in fact work
+    in position space, and no serious harm comes from referring
+    to the wave function as "the state of the system".
 
 - 假如
   $$ \mid α \rangle $$
