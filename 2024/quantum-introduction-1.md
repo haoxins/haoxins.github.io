@@ -1043,21 +1043,28 @@ in that case, the spectrum is said to be degenerate.
   different bases, so too do operators (or,
   in the discrete case, the matrices that represent them).
   We have already encountered a particularly nice example:
-  - $$
-      \hat{x} \mbox{ } (the position operator) \rightarrow
+  - $$ \hat{x} $$
+    (the position operator)
+    $$ \rightarrow $$
+    $$
       \begin{cases}
-        x \mbox{ } (in position space) \\
+        x
+        & \mbox{ } (in \mbox{ } position \mbox{ } space) \\
         i \hbar \partial / \partial p
-        \mbox{ } (in momentum space)
+        & \mbox{ } (in \mbox{ } momentum \mbox{ } space)
       \end{cases}
-    $$;
-  - $$
-      \hat{p} \mbox{ } (the momentum operator) \rightarrow
+    $$
+  - $$ \hat{p} $$
+    (the momentum operator)
+    $$ \rightarrow $$
+    $$
       \begin{cases}
-        -i \hbar \partial / \partial x \mbox{ } (in position space), \\
-        p \mbox{ } (in momentum space)
+        -i \hbar \partial / \partial x
+        & \mbox{ } (in \mbox{ } position \mbox{ } space) \\
+        p
+        & \mbox{ } (in \mbox{ } momentum \mbox{ } space)
       \end{cases}
-    $$.
+    $$
 - ("Position space" is nothing but the position basis;
   "momentum space" is the momentum basis.)
   If someone asked you, "What is the operator,
@@ -1135,6 +1142,33 @@ in that case, the spectrum is said to be degenerate.
     的意思是
     $$ \hat{Q} \mid f \rangle $$
     的对偶.
+
+- Just as the wave function takes different forms in
+  different bases, so do operators.
+  The position operator is given by
+  - $$ \hat{x} \rightarrow x $$
+  - in the position basis, or
+  - $$ \hat{x} \rightarrow i \hbar \frac{\partial}{\partial p} $$
+  - in the momentum basis.
+- However, Dirac notation allows us to do away with the arrows
+  and stick to equalities. Operators act on kets (for instance,
+  $$ \hat{x} S(t) \rangle $$
+  ); the outcome of this operation can be expressed in any basis
+  by taking the inner product with an appropriate basis vector.
+  - That is,
+  - $$ \langle x \mid \hat{x} \mid S(t) \rangle = $$
+    action of position operator in
+    $$ x $$
+    basis
+    $$ = x Ψ(x, t) $$,
+  - or
+  - $$ \langle p \mid \hat{x} \mid S(t) \rangle = $$
+    action of position operator in
+    $$ p $$
+    basis
+    $$ = i \hbar \frac{\partial Φ}{\partial p} $$.
+  - In this notation it is straightforward to
+    transform operators between bases.
 
 ## 三维空间中的量子力学
 
