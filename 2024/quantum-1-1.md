@@ -1161,7 +1161,205 @@ date: 2022-10-31
 
 ## E 表象和观察算符的两个重要例子
 
-> @TODO Page 144 ~ 151 @TODO
+> 此章节值得反复阅读
+
+- 对于每一个波函数
+  $$ ψ(r) $$,
+  我们取
+  $$ \mathcal{E}_r $$
+  空间中的一个右矢
+  $$ \mid ψ \rangle $$
+  和它对应, 使这种对应关系是线性的;
+  而且使两个右矢的标量积和两个对应函数的标量积一致, 即
+  - $$ \langle φ \mid ψ \rangle = \int d^{3} r φ^{*}(r) ψ(r) $$
+  - 这样的
+    $$ \mathcal{E}_r $$
+    就是一个无自旋粒子的态空间.
+
+- 由此可见, 波函数在点
+  $$ r_0 $$
+  处的值
+  $$ ψ(r_0) $$
+  就是右矢
+  $$ \mid ψ \rangle $$
+  在
+  $$ \{ \mid r_0 \rangle \} $$
+  表象中的基矢
+  $$ \mid r_0 \rangle $$
+  上的分量; "动量空间中的波函数"
+  $$ \overline{ψ} (p) $$
+  也可以得到类似的解释.
+
+- 既然我们已经重新解释过波函数
+  $$ ψ(r) $$
+  及其傅里叶变换
+  $$ \overline{ψ} (p) $$,
+  我们将用
+  $$ \mid r \rangle $$
+  和
+  $$ \mid p \rangle $$
+  代替
+  $$ \mid r_0 \rangle $$
+  和
+  $$ \mid p_0 \rangle $$
+  来表示我们在这里所研究的两种表象的基矢. 于是:
+  - $$ \langle r \mid ψ \rangle = ψ(r) $$
+  - $$ \langle p \mid ψ \rangle = \overline{ψ} (p) $$
+- 正交归一关系式和封闭性关系式可以写作:
+  - (a)
+    $$ \langle r \mid r' \rangle = δ(r - r') $$
+  - (b)
+    $$ \int d^{3} r \mid r \rangle \langle r \mid = \mathbb{1} $$
+  - (c)
+    $$ \langle p \mid p' \rangle = δ(p - p') $$
+  - (d)
+    $$ \int d^{3} p \mid p \rangle \langle p \mid = \mathbb{1} $$
+  - 当然, 在这里我们总是把
+    $$ \mathbf{r} $$
+    及
+    $$ \mathbf{p} $$
+    看作分别在两种表象中标记基右矢的连续指标
+    $$ \{ x, y, z \} $$
+    及
+    $$ \{ p_x, p_y, p_z \} $$
+    的两个集合.
+
+> Page 147
+
+### 算符 R 和算符 P
+
+- 假设
+  $$ \mid ψ \rangle $$
+  是
+  $$ \mathcal{E}_r $$
+  空间中的一个任意右矢, 则
+  $$ \langle r \mid ψ \rangle = ψ(r) ≡ ψ(x, y, z) $$
+  表示对应的波函数. 按算符
+  $$ X $$
+  的定义, 右矢
+  - $$ \mid ψ' \rangle = X \mid ψ \rangle $$
+  - 在基
+    $$ \{ \mid r \rangle \} $$
+    中由函数
+    $$ \langle r \mid ψ' \rangle = ψ'(r) ≡ ψ'(x, y, z) $$
+    来表示; 这里
+  - $$ ψ'(x, y, z) = x ψ(x, y, z) $$
+- 因此, 在
+  $$ \{ \mid r \rangle \} $$
+  表象中,
+  $$ X $$
+  算符与表示 "乘以
+  $$ x $$"
+  的倍乘算符一致.
+  - 虽然这里是通过波函数的变换来引入算符
+    $$ X $$
+    的, 但
+    $$ X $$
+    是在态空间
+    $$ \mathcal{E}_r $$
+    中起作用的算符.
+
+---
+
+- 在
+  $$ \{ \mid r \rangle \} $$
+  表象中, 也可以计算算符
+  $$ X $$,
+  $$ Y $$,
+  $$ Z $$,
+  $$ P_x $$,
+  $$ P_y $$,
+  $$ P_z $$
+  之间的对易子. 例如
+  - $$
+      \begin{align}
+        \langle r \mid [ X, P_x ] \mid ψ \rangle
+          & = \langle r \mid (X P_x - P_x X) \mid ψ \rangle \\
+          & = x \langle r \mid P_x \mid ψ \rangle -
+              \frac{\hbar}{i} \frac{\partial}{\partial x}
+              \langle r \mid X \mid ψ \rangle \\
+          & = \frac{\hbar}{i} x \frac{\partial}{\partial x}
+              \langle r \mid ψ \rangle -
+              \frac{\hbar}{i} \frac{\partial}{\partial x} x
+              \langle r \mid ψ \rangle \\
+          & = i \hbar \langle r \mid ψ \rangle \\
+      \end{align}
+    $$
+  - 上面的计算对于任意右矢
+    $$ \mid ψ \rangle $$
+    和任意一个基右矢
+    $$ \mid r \rangle $$
+    都成立, 因此便得到:
+  - $$ [ X, P_x ] = i \hbar $$
+- 用同样的方法可以得到
+  $$ R $$
+  的诸分量和
+  $$ P $$
+  的诸分量之间的其他对易子. 我们将结果归纳在下面:
+  - $$ [ R_i, R_j ] = 0 $$
+  - $$ [ P_i, P_j ] = 0 $$
+  - $$ [ R_i, P_j ] = i \hbar δ_{ij} $$
+  - $$ i, j = 1, 2, 3 $$
+  - 式中
+    $$ R_1 $$,
+    $$ R_2 $$,
+    $$ R_3 $$
+    和
+    $$ P_1 $$,
+    $$ P_2 $$,
+    $$ P_3 $$
+    分别代表
+    $$ X $$,
+    $$ Y $$,
+    $$ Z $$
+    和
+    $$ P_x $$,
+    $$ P_y $$,
+    $$ P_z $$.
+- 上述公式叫做`正则对易关系式`.
+
+---
+
+- $$
+    \begin{align}
+      X \mid r \rangle = x \mid r \rangle \\
+      Y \mid r \rangle = y \mid r \rangle \\
+      Z \mid r \rangle = z \mid r \rangle
+    \end{align}
+  $$
+  - 于是, 右矢
+    $$ \mid r \rangle $$
+    是算符
+    $$ X $$,
+    $$ Y $$,
+    $$ Z $$
+    的共同本征右矢; 现在可以说明, 为什么一开始要选用
+    $$ \mid r \rangle $$
+    这个符号: 这是由于, 每一个本征矢都是由矢量
+    $$ r $$
+    来标记的,
+    $$ r $$
+    的坐标
+    $$ x $$,
+    $$ y $$,
+    $$ z $$
+    就是对应于
+    $$ X $$,
+    $$ Y $$,
+    $$ Z $$
+    的本征值的三个连续指标.
+- 对于算符
+  $$ P $$,
+  我们应该在
+  $$ \{ \mid p \rangle \} $$
+  表象中去讨论, 这样便能建立起类似的概念和公式. 我们可以得到:
+  - $$
+      \begin{align}
+        P_x \mid p \rangle = p_x \mid p \rangle \\
+        P_y \mid p \rangle = p_y \mid p \rangle \\
+        P_z \mid p \rangle = p_z \mid p \rangle
+      \end{align}
+    $$
 
 ## F 态空间的张量积
 
@@ -1469,7 +1667,39 @@ date: 2022-10-31
 
 ### 应用举例
 
-> @TODO Page 160 ~ 163 @TODO
+- 因此,
+  $$ \mathcal{E}_{xyz} $$
+  空间与三维空间中的一个粒子的态空间
+  $$ \mathcal{E}_{r} $$
+  完全一致, 而
+  $$ \mid x, y, z \rangle $$
+  就是
+  $$ \mid r \rangle $$:
+  - $$
+      \mid x, y, z \rangle ≡ \mid r \rangle =
+      \mid x \rangle \mid y \rangle \mid z \rangle
+    $$
+  - 式中
+    $$ x $$,
+    $$ y $$,
+    $$ z $$
+    正是
+    $$ r $$
+    在直角坐标系中的分量.
+
+- 假设体系的态可以用张量积右矢
+  $$ \mid ψ \rangle = \mid ψ_1 \rangle \mid ψ_2 \rangle $$
+  来描述. 于是, 对应的波函数可分解因子为:
+  - $$
+      ψ(r_1, r_2) =
+      \langle r_1, r_2 \mid ψ \rangle =
+      \langle r_1 \mid ψ_1 \rangle
+      \langle r_2 \mid ψ_2 \rangle =
+      ψ_1 (r_1) ψ_2 (r_2)
+    $$
+  - 在这种情况下, 我们说两个粒子之间没有联系. 到后面我们再分析这种情况的物理后果.
+- 上面得到的结论可以推广: 如果一个物理体系由两个或更多的简单体系组合而成,
+  则它的态空间就是对应于每一个组分体系的态空间的张量积.
 
 # 量子力学的假定
 
@@ -2115,6 +2345,8 @@ date: 2022-10-31
 - 归结一下, 从这一段的讨论中, 必须抓住的基本概念可以简要地叙述如下:
   - __将对应于同一末态的诸概率幅相加__,
   - __然后将对应于正交末态的诸概率相加__.
+
+> Page 266 ~ 268
 
 # 附录
 

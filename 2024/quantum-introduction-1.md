@@ -1074,7 +1074,7 @@ in that case, the spectrum is said to be degenerate.
     $$ x $$
     itself". But an equally correct reply would be
     "$$ i \hbar \partial / \partial p $$",
-    and the best response would be "With respect to what basis?"
+    and the best response would be "With respect to what basis"?
 
 - I have often said "the state of a system is
   represented by its wave function,
@@ -1152,7 +1152,7 @@ in that case, the spectrum is said to be degenerate.
   - in the momentum basis.
 - However, Dirac notation allows us to do away with the arrows
   and stick to equalities. Operators act on kets (for instance,
-  $$ \hat{x} S(t) \rangle $$
+  $$ \hat{x} \mid S(t) \rangle $$
   ); the outcome of this operation can be expressed in any basis
   by taking the inner product with an appropriate basis vector.
   - That is,
