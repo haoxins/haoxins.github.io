@@ -19,6 +19,16 @@ go install golang.org/x/tools/cmd/deadcode@latest
 ---
 
 
+- 特别喜欢
+  [Dependi](https://github.com/filllabs/dependi)
+  这个 VSCode 插件
+  - 原本的插件
+    [Crates](https://github.com/serayuzgur/crates)
+    只支持 Rust (archived)
+  - Now: Rust, Go, JavaScript, Python
+
+---
+
 - [BLAKE3](https://github.com/BLAKE3-team/BLAKE3)
   - __Much faster__ than MD5, SHA-1, SHA-2, SHA-3, and BLAKE2.
   - Secure, unlike MD5 and SHA-1.
