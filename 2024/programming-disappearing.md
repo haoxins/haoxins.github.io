@@ -10,7 +10,7 @@ date: 2024-07-13
 哈哈, 顺着这个契机, 就开始记录各个编程语言的消亡吧.
 
 后来决定不仅仅局限于编程语言, 而是 (开源) 软件项目.
-且必须是自己直接/间接使用过的!
+且必须是自己"直接/间接"使用过的!
 ```
 
 - 首先, 给出几个定义
@@ -23,7 +23,7 @@ date: 2024-07-13
 
 - No 1. __ZooKeeper__
   - 曾几何时, 几乎是分布式系统的标配组件.
-  - 最后的一次出现在技术新闻,
+  - 最后的一次出现在开源社区视野,
     应该就是
     [Kafka](https://github.com/apache/kafka)
     宣布移除
@@ -70,9 +70,16 @@ cluster can survive two failures, and so on.
   - [Scala 2](https://github.com/scala/scala)
   - [Scala 3](https://github.com/scala/scala3)
   - 个人没写过 Scala, 所以这里是间接使用 Scala,
-    嗯, 因为 Spark, 哈哈哈~
-  - Scala 开发的主流应用在 2024 几乎唯一剩下了 Spark
+    嗯, 因为 Spark, 哈哈~
+  - Scala 开发的主流应用在 2024 几乎唯一剩下了 Spark,
+    且 Spark 没有计划迁移到 Scala 3.
 
+- No 3. __Kubeflow__
+  - [Kubeflow](https://github.com/kubeflow/kubeflow)
+  - [Kubeflow pipelines](https://github.com/kubeflow/pipelines)
+  - 作为自己贡献过的项目, 还是很惋惜的.
+  - 理念其实不错, 也在较早的时候给出了一个可用版本.
+    然后就是数年的停滞不前~ 错过了最该发力的时间窗口!
 
 - No 4. __Spark__
   - [Spark](https://github.com/apache/spark)
@@ -85,6 +92,14 @@ cluster can survive two failures, and so on.
   - [Flink Kubernetes Operator](https://github.com/apache/flink-kubernetes-operator)
   - [Java Operator SDK](https://github.com/operator-framework/java-operator-sdk)
 
-- No 2. __Node.js__
+- No 6. __Node.js__
   - [Node.js](https://github.com/nodejs/node)
+  - [Deno](https://github.com/denoland/deno)
+  - [Bun](https://github.com/oven-sh/bun)
+  - 个人从未正经使用过 Deno 和 Bun, 这里单纯作为 Node.js 的同类出现.
+    然后十分意外的是, Rust 的出现莫名其妙的影响了这一类项目.
+  - 因为这一类项目, 一个最主流的场景, 就是前端工具生态. 然后, 2024 年开始,
+    前端的工具链生态, 开始用 Rust 重写 (嗯, 不是重构).
+  - 2024-07, 本人觉得这三者的消亡时间顺序是:
+    Bun 最先, Deno 其次, Node.js 最后~
 
