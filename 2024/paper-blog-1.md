@@ -25,6 +25,7 @@ in their representation spaces.
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
   - Submitted on 12 Jun 2017 (v1),
     last revised 2 Aug 2023 (v7)
+  - [But what is a GPT? Visual intro to transformers](https://www.youtube.com/watch?v=wjZofJX0v4M&t=32s)
   - [Attention in transformers, visually explained](https://www.youtube.com/watch?v=eMlx5fFNoYc)
 
 ```
