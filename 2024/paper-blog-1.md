@@ -12,6 +12,11 @@ date: 2023-09-07
 - [The Platonic Representation Hypothesis](https://arxiv.org/abs/2405.07987)
 
 ```
+我个人有一个疑问:
+可否把不同的数学分支看作数学的客观逻辑 (本体) 在不同维度的投影?
+```
+
+```
 The Platonic Representation Hypothesis
 
 Neural networks, trained with different objectives on

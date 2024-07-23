@@ -93,7 +93,7 @@ date: 2023-01-17
       T = e^{iπ / 8}
       \begin{bmatrix}
         e^{-iπ / 8} & 0 \\
-        0 & e^{iπ / 8}
+        0           & e^{iπ / 8}
       \end{bmatrix}
     $$
   - 尽管如此, 这个命名在某些方面还是不恰当的, 我们这里常将其称为
@@ -106,7 +106,7 @@ date: 2023-01-17
   其中
   $$ a = \cos (θ / 2) $$,
   $$ b = e^{i φ} \sin (θ / 2) $$,
-  鉴于全局相位不可观测
+  鉴于全局相位不可观测,
   $$ a $$
   可取作实数, 这便是布洛赫球面表示, 向量
   $$ (\cos φ \sin θ, \sin φ \sin θ, \cos θ) $$
@@ -124,7 +124,7 @@ date: 2023-01-17
       R_{x} (θ) \equiv e^{-i θ X / 2} =
       \cos \frac{θ}{2} I - i \sin \frac{θ}{2} X =
       \begin{bmatrix}
-        \cos \frac{θ}{2} & -i \sin \frac{θ}{2} \\
+        \cos \frac{θ}{2}    & -i \sin \frac{θ}{2} \\
         -i \sin \frac{θ}{2} & \cos \frac{θ}{2}
       \end{bmatrix}
     $$
@@ -141,7 +141,7 @@ date: 2023-01-17
       \cos \frac{θ}{2} I - i \sin \frac{θ}{2} Z =
       \begin{bmatrix}
         e^{-iθ / 2} & 0 \\
-        0 & e^{iθ / 2}
+        0           & e^{iθ / 2}
       \end{bmatrix}
     $$
 
