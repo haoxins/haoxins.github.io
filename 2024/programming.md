@@ -19,6 +19,15 @@ go install golang.org/x/tools/cmd/deadcode@latest
 ---
 
 
+---
+
+- [Pin](https://without.boats/blog/pin/)
+  - [Pinned places](https://without.boats/blog/pinned-places/)
+
+
+
+---
+
 - 特别喜欢
   [Dependi](https://github.com/filllabs/dependi)
   这个 VSCode 插件
