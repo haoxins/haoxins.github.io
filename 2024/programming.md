@@ -24,7 +24,42 @@ go install golang.org/x/tools/cmd/deadcode@latest
 - [Pin](https://without.boats/blog/pin/)
   - [Pinned places](https://without.boats/blog/pinned-places/)
 
+```rs
+// The problem was that those references might be
+// self-references, meaning they point to
+// other fields of the same object.
+async fn foo<'a>(z: &'a mut i32) {
+  // ...
+}
 
+async fn bar(x: i32, y: i32) -> i32 {
+  let mut z = x + y;
+  foo(&mut z).await;
+  z
+}
+```
+
+```rs
+// Let's ask ourselves, what would the internal
+// states of `Bar` be? Something like this:
+
+enum Bar {
+  // When it starts, it contains only its arguments
+  Start { x: i32, y: i32 },
+
+  // At the first await, it must contain `z` and
+  // the `Foo` future that references `z`
+  FirstAwait { z: i32, foo: Foo<'?> }
+
+  // When its finished it needs no data
+  Complete,
+}
+// The `Foo` object instead borrows the `z` field of `Bar`,
+// which is stored along side it in the same struct.
+// This is why these future types are said to be
+// "self-referential:" they contain fields which
+// reference other fields in themselves.
+```
 
 ---
 
