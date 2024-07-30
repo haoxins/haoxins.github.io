@@ -40,7 +40,11 @@ date: 2023-10-06
   - 根据关于极限的几个定理: 最终相等是一种等价关系,
     而且具有与普通相等同样的一些性质.
   - 例如:
-    $$ X \asymp Y \And P \asymp Q \Rightarrow X \cdot P \asymp Y \cdot Q $$,
+    $$
+      X \asymp Y \mbox{ } \And \mbox{ } P \asymp Q
+      \Rightarrow
+      X \cdot P \asymp Y \cdot Q
+    $$,
     以及
     $$ A \asymp B \cdot C \Leftrightarrow (A / B) \asymp C $$.
 
@@ -671,7 +675,7 @@ date: 2023-10-06
     $$ [M] $$,
     另一个是
     $$ - [M] $$.
-  - 换言之, 默比乌斯变换对应的矩阵在`"不计正负号的情况下"`是唯一的.
+  - 换言之, 默比乌斯变换对应的矩阵在`不计正负号的情况下`是唯一的.
 
 ### 主要结果
 

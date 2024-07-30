@@ -19,6 +19,31 @@ go install golang.org/x/tools/cmd/deadcode@latest
 ---
 
 
+```
+7 月末, 体验了一下 Axum (Rust) 的 Web 开发.
+说实话, 纯粹个人的角度, 比 Hertz (Go) 要好得多!
+
+但是, 很快发现意义不大, 因为, Rust 的生态优势目前有三处:
+1. 区块链/密码学/同态加密 (隐私计算)
+2. 围绕着 Arrow(-rs) 与 DataFusion 的数据生态
+3. Rust powered 的 Python 生态
+
+其实绝大多数纯 Web 开发者很大概率都不会接受 Rust 的学习曲线.
+所以, 除非是个人开发者或者 (独立) 开源项目,
+否则, Rust 的纯 Web 开发意义不大~
+(包括用 Rust 写 K8s operator 等.)
+
+嗯, 如果团队成员大多数是 Rust 掌握者呢? 比如: Data, ML 团队~
+再熟练的 Rust 玩家在 Web 开发领域得到的优势也抵不过消耗.
+(比如: 编译时间, 编译报错的处理等.)
+
+打一个不恰当的比喻: Rust 大多处于 Data Plane (数据处理, 计算密集).
+
+有一个特殊情况, 很多 Rust 编写的数据计算组件,
+K8s operator 也就用 Rust 写了, 单一代码库, 同一种语言, 也合理.
+否则, 其实我不觉得 Rust 写 K8s operator 有任何好处~
+```
+
 ---
 
 - [Pin](https://without.boats/blog/pin/)

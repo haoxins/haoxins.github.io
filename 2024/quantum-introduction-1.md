@@ -1261,7 +1261,7 @@ in that case, the spectrum is said to be degenerate.
   - $$ \hat{ρ} \equiv \mid Ψ \rangle \langle Ψ \mid $$.
   - 它实际上是状态
     $$ \mid Ψ \rangle $$
-    上的`"投影算符"`.
+    上的`投影算符`.
   - 对于一组正交归一基
     $$ \{ \mid e_j \rangle \} $$,
     算符用一个矩阵表示; 矩阵
