@@ -18,6 +18,16 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- [Announcing Swift Homomorphic Encryption](https://www.swift.org/blog/announcing-swift-homomorphic-encryption/)
+  - 文章本身没啥信息量~
+  - [Swift Homomorphic Encryption](https://github.com/apple/swift-homomorphic-encryption)
+  - [TFHE-rs](https://github.com/zama-ai/tfhe-rs)
+  - 个人不觉得 Apple 能真正改变啥, 但是, 多少会推进一丢丢吧?
+  - 不看好
+    [Swift Crypto](https://github.com/apple/swift-crypto),
+    貌似只有 Apple 自己在用~
+
+---
 
 ```
 7 月末, 体验了一下 Axum (Rust) 的 Web 开发.
@@ -28,7 +38,7 @@ go install golang.org/x/tools/cmd/deadcode@latest
 2. 围绕着 Arrow(-rs) 与 DataFusion 的数据生态
 3. Rust powered 的 Python 生态
 
-其实绝大多数纯 Web 开发者很大概率都不会接受 Rust 的学习曲线.
+其实绝大多数纯 Web 开发者很大概率不会接受 Rust 的学习曲线.
 所以, 除非是个人开发者或者 (独立) 开源项目,
 否则, Rust 的纯 Web 开发意义不大~
 (包括用 Rust 写 K8s operator 等.)
@@ -38,6 +48,7 @@ go install golang.org/x/tools/cmd/deadcode@latest
 (比如: 编译时间, 编译报错的处理等.)
 
 打一个不恰当的比喻: Rust 大多处于 Data Plane (数据处理, 计算密集).
+(Data Plane 对立面是 Control Plane)
 
 有一个特殊情况, 很多 Rust 编写的数据计算组件,
 K8s operator 也就用 Rust 写了, 单一代码库, 同一种语言, 也合理.
