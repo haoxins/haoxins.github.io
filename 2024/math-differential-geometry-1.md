@@ -1090,7 +1090,7 @@ date: 2023-10-06
       \mathcal{K}_{ext} ≡
       球面映射的局部面积放大系数
       \asymp
-      \frac{δ {\overset{\sim}\mathcal{A}}}{δ \mathcal{A}}
+      \frac{δ \overset{\sim}{\mathcal{A}}}{δ \mathcal{A}}
     $$
 
 ---
@@ -1134,7 +1134,7 @@ date: 2023-10-06
 - __绝妙定理__. 外在曲率
   $$
     \mathcal{K}_{ext} \asymp
-    (\frac{δ {\overset{\sim}\mathcal{A}}}{δ \mathcal{A}})
+    (\frac{δ \overset{\sim}{\mathcal{A}}}{δ \mathcal{A}})
   $$
   在
   $$ \mathcal{S} $$
@@ -1146,13 +1146,29 @@ date: 2023-10-06
   - $$ κ_1 κ_2 $$
     在等距变换下是不变的.
 
+- 用外在方式定义的曲率
+  $$ \mathcal{K}_{ext} = κ_1 κ_2 $$
+  与用内蕴方式定义的高斯曲率
+  $$ \mathcal{K} $$
+  的值是相等的:
+  - $$ \mathcal{K}_{ext} = \mathcal{K} $$.
+
 ## 尖刺的曲率
 
-### 锥形尖刺的曲率
+- $$ \mathcal{K} (尖刺) ≡ 钝顶端的全曲率 = 球面像 (球冠) 的面积 $$.
+
+> 贯穿全书的视角: 内蕴 vs 外在
 
 ### 多面角的内蕴曲率与外在曲率
 
-### 多面体的绝妙定理
+- $$ \mathcal{K}_{ext} (v) = \mathbb{S}^2 $$
+  上连接多面角法向量的像形成的
+  $$ m $$
+  边形的面积.
+
+- 和圆锥角的情况完全一样, 多面角的内蕴曲率和外在曲率也是相等的.
+  我们当然有理由将这个结论称为`多面体的绝妙定理`:
+  - $$ \mathcal{K}_{ext} (v) = \mathcal{K}_{int} (v) $$.
 
 ## 形状导数
 

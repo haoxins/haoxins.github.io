@@ -1507,3 +1507,4 @@ they commute with respect to any basis.)
 - [矩阵函数](https://en.wikipedia.org/wiki/Analytic_function_of_a_matrix)
 
 > 这就戛然而止了?
+
