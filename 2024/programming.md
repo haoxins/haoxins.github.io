@@ -19,11 +19,11 @@ go install golang.org/x/tools/cmd/deadcode@latest
 ---
 
 - [SeaORM](https://github.com/SeaQL/sea-orm/releases/tag/1.0.0)
-  已经发布 `v1.0` 了, 然后
+  已经发布 `v1.0` 了, 然而
   [ent](https://github.com/ent/ent)
   还是迟迟未至~ 感觉以目前作者的重心来看,
   [Atlas](https://github.com/ariga/atlas)
-  会更早发布 `v1.0` 了.
+  会更早发布 `v1.0`.
   - [Announcing SeaORM 1.0](https://www.sea-ql.org/blog/2024-08-04-sea-orm-1.0/)
 
 - [Announcing Swift Homomorphic Encryption](https://www.swift.org/blog/announcing-swift-homomorphic-encryption/)
