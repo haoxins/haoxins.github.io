@@ -1008,29 +1008,29 @@ $$
   和
   $$ b $$
   映为
-  $$ \overset{\sim}{a} $$
+  $$ \tilde{a} $$
   和
-  $$ \overset{\sim}{b} $$,
+  $$ \tilde{b} $$,
   则三角形
   $$ aqb $$
   与
-  $$ \overset{\sim}{b} q \overset{\sim}{a} $$
+  $$ \tilde{b} q \tilde{a} $$
   相似.
 - 第二个性质是求两点的间隔
   $$ [ ab ] $$
   与其反演象的间隔
-  $$ [ \overset{\sim}{a} \overset{\sim}{b} ] $$
+  $$ [ \tilde{a} \tilde{b} ] $$
   的关系. 利用性质一, 有
   - $$
-      [ \overset{\sim}{a} \overset{\sim}{b} ] / [ a b ] =
-      [ q \overset{\sim}{b} ] / [ qa ] =
+      [ \tilde{a} \tilde{b} ] / [ a b ] =
+      [ q \tilde{b} ] / [ qa ] =
       R^2 / [ qa ] [ qb ]
     $$
   - 所以, 象点的间隔
-    $$ [ \overset{\sim}{a} \overset{\sim}{b} ] $$
+    $$ [ \tilde{a} \tilde{b} ] $$
     可由下式给出:
   - $$
-      [ \overset{\sim}{a} \overset{\sim}{b} ] =
+      [ \tilde{a} \tilde{b} ] =
       (\frac{R^2}{[ qa ] [ qb ]})
       [ a b ]
     $$.
@@ -1061,7 +1061,7 @@ $$
   对
   $$ K $$
   的反演
-  $$ \overset{\sim}{z} $$
+  $$ \tilde{z} $$
   是任意两个过
   $$ z $$
   而且正交于
@@ -1111,12 +1111,12 @@ $$
   对称, 则它们在对任意圆周
   $$ J $$
   的反演之象
-  $$ \overset{\sim}{a} $$,
-  $$ \overset{\sim}{b} $$
+  $$ \tilde{a} $$,
+  $$ \tilde{b} $$
   关于
   $$ K $$
   的反演象
-  $$ \overset{\sim}{K} $$
+  $$ \tilde{K} $$
   仍对称.
 
 ```
@@ -1132,7 +1132,7 @@ $$
   被映成一个包含
   $$ q $$
   点的球面
-  $$ \overset{\sim}{\Pi} $$,
+  $$ \tilde{\Pi} $$,
   其在
   $$ q $$
   点的切平面平行于
@@ -1140,7 +1140,7 @@ $$
   - 反之, 一个包含
     $$ q $$
     点的球面
-    $$ \overset{\sim}{\Pi} $$
+    $$ \tilde{\Pi} $$
     则被映为一平面
     $$ \Pi $$,
     而与此球面在

@@ -2451,7 +2451,7 @@ date: 2022-10-31
     重合.
 - 我们若令
   - $$
-      \overset{\sim}{f} (k) = \frac{1}{\sqrt{2 \pi}}
+      \tilde{f} (k) = \frac{1}{\sqrt{2 \pi}}
       \int_{- \infty}^{+ \infty} dx e^{-ikx} f(x)
     $$
   - 则在
@@ -2459,13 +2459,13 @@ date: 2022-10-31
     为无穷大的极限情况下:
   - $$
       f(x) = \frac{1}{\sqrt{2 \pi}}
-      \int_{- \infty}^{+ \infty} dke^{ikx}
-      \overset{\sim}{f}(k)
+      \int_{- \infty}^{+ \infty}
+      dke^{ikx} \tilde{f}(k)
     $$
   - 我们称
     $$ f(x) $$
     和
-    $$ \overset{\sim}{f} (k) $$
+    $$ \tilde{f} (k) $$
     __互为傅里叶变换__.
 
 - __量子力学中的傅里叶变换__

@@ -93,12 +93,12 @@ date: 2022-02-11
   上, 则可得
   $$ (X, d) $$
   的一个`子空间`
-  $$ (Y, \overset{\sim}{d}) $$;
+  $$ (Y, \tilde{d}) $$;
   因而
   $$ Y $$
   上的度量就是限制
-  - $$ \overset{\sim}{d} = d \mid_{Y \times Y} $$.
-  - $$ \overset{\sim}{d} $$
+  - $$ \tilde{d} = d \mid_{Y \times Y} $$.
+  - $$ \tilde{d} $$
     叫作
     $$ d $$
     在
