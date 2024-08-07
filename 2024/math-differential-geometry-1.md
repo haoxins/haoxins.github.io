@@ -951,7 +951,7 @@ date: 2023-10-06
   为中心线的窄带平放在平面上, 使得
   $$ \mathcal{C} $$
   放平后对应于平面曲线
-  $$ \overset{\sim}{\mathcal{C}} $$.
+  $$ \tilde{\mathcal{C}} $$.
   令
   $$ κ_g (p) $$
   为曲面曲线
@@ -959,19 +959,19 @@ date: 2023-10-06
   在点
   $$ p $$
   的测地曲率,
-  $$ \overset{\sim}{p} $$
+  $$ \tilde{p} $$
   是
   $$ p $$
   在平面曲线
-  $$ \overset{\sim}{\mathcal{C}} $$
+  $$ \tilde{\mathcal{C}} $$
   上的对应点,
-  $$ \overset{\sim}{κ} (\overset{\sim}{p}) $$
+  $$ \tilde{κ} (\tilde{p}) $$
   为平面曲线
-  $$ \overset{\sim}{\mathcal{C}} $$
+  $$ \tilde{\mathcal{C}} $$
   在点
-  $$ \overset{\sim}{p} $$
+  $$ \tilde{p} $$
   的曲率, 则
-  $$ κ_g (p) = \overset{\sim}{κ} (\overset{\sim}{p}) $$.
+  $$ κ_g (p) = \tilde{κ} (\tilde{p}) $$.
 
 ### 旋转曲面上的测地线
 
@@ -1077,11 +1077,11 @@ date: 2023-10-06
   上的法向量分布在
   $$ δφ $$
   上, 这些法向量的端点充满了单位圆周上一段长度为
-  $$ \overset{\sim}{s} = δφ $$
+  $$ \tilde{s} = δφ $$
   的圆弧. 这些法向量的局部分布可以量化为 (在法向映射
   $$ N $$
   下) 局部弧长的大小:
-  - $$ κ = 映射 N 的局部长度放大系数 \asymp \frac{δ \overset{\sim}{s}}{δs} $$
+  - $$ κ = 映射 N 的局部长度放大系数 \asymp \frac{δ \tilde{s}}{δs} $$
 
 - 外在曲率
   $$ \mathcal{K}_{ext} $$
@@ -1090,7 +1090,7 @@ date: 2023-10-06
       \mathcal{K}_{ext} ≡
       球面映射的局部面积放大系数
       \asymp
-      \frac{δ \overset{\sim}{\mathcal{A}}}{δ \mathcal{A}}
+      \frac{δ \tilde{\mathcal{A}}}{δ \mathcal{A}}
     $$
 
 ---
@@ -1134,7 +1134,7 @@ date: 2023-10-06
 - __绝妙定理__. 外在曲率
   $$
     \mathcal{K}_{ext} \asymp
-    (\frac{δ \overset{\sim}{\mathcal{A}}}{δ \mathcal{A}})
+    (\frac{δ \tilde{\mathcal{A}}}{δ \mathcal{A}})
   $$
   在
   $$ \mathcal{S} $$
@@ -1318,7 +1318,6 @@ date: 2023-10-06
   $$ \mid [S] \mid = κ_1 κ_2 $$,
   这也是所有面积的扩张系数.
   - 于是, 再一次得到我们熟悉的高斯曲率的外在表达式:
-  - $$ \{K}_{ext} = 形状导数的面积扩张系数 = \mid [S] \mid = κ_1 κ_2 $$.
   - $$
       \mathcal{K}_{ext} =
       形状导数的面积扩张系数 =
@@ -1328,7 +1327,7 @@ date: 2023-10-06
 ### 绕道线性代数: 奇异值分解和转置运算的几何学
 
 > 本节虽是蜻蜓点水, 但也足够特色鲜明!
-  仅此一招, 已然胜过不少线性代数教材~
+  仅此一处, 已然胜过不少线性代数教材~
 
 ### S 的一般矩阵
 

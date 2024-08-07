@@ -1881,44 +1881,44 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 ```
 
 - 为了方便给出答案, 我们使用未归一化到单位长度的向量
-  $$ \mid \overset{\sim}{ψ}_i \rangle $$.
+  $$ \mid \tilde{ψ}_i \rangle $$.
   设集合
-  $$ \{ \mid \overset{\sim}{ψ}_i \rangle \} $$
+  $$ \{ \mid \tilde{ψ}_i \rangle \} $$
   生成算子
   $$
     ρ ≡ \sum_{i}
-    \mid \overset{\sim}{ψ}_i \rangle
-    \langle \overset{\sim}{ψ}_i \mid
+    \mid \tilde{ψ}_i \rangle
+    \langle \tilde{ψ}_i \mid
   $$,
   于是, 与普通的密度算子系综的关联由式子
   $$
-    \mid \overset{\sim}{ψ}_i \rangle =
+    \mid \tilde{ψ}_i \rangle =
     \sqrt{p_i} \mid {ψ}_i \rangle
   $$
   表示.
   - 两组向量
-    $$ \mid \overset{\sim}{ψ}_i \rangle $$
+    $$ \mid \tilde{ψ}_i \rangle $$
     和
-    $$ \mid \overset{\sim}{φ}_j \rangle $$
+    $$ \mid \tilde{φ}_j \rangle $$
     何时生成同一算子
     $$ ρ $$?
 
 - 定理 (__密度矩阵系综中的酉自由度__) 向量组
-  $$ \mid \overset{\sim}{ψ}_i \rangle $$
+  $$ \mid \tilde{ψ}_i \rangle $$
   和
-  $$ \mid \overset{\sim}{φ}_j \rangle $$
+  $$ \mid \tilde{φ}_j \rangle $$
   生成相同的密度矩阵, 当且仅当
   - $$
-      \mid \overset{\sim}{ψ}_i \rangle =
+      \mid \tilde{ψ}_i \rangle =
       \sum_{j} u_{ij}
-      \mid \overset{\sim}{φ}_j \rangle
+      \mid \tilde{φ}_j \rangle
     $$
   - 其中
     $$ u_{ij} $$
     是一个带指标 `i` 和 `j` 的复酉矩阵, 并且我们在向量集合
-    $$ \mid \overset{\sim}{ψ}_i \rangle $$
+    $$ \mid \tilde{ψ}_i \rangle $$
     和
-    $$ \mid \overset{\sim}{φ}_j \rangle $$
+    $$ \mid \tilde{φ}_j \rangle $$
     中向量较少的一个里面补充若干 `0` 向量, 以使两个集合的向量个数相等.
 - 作为这个定理的一个结论, 注意到
   $$

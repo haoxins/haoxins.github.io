@@ -1308,7 +1308,7 @@ $$
   为一有定向的圆周, 而且使
   $$ C $$
   左侧的区域被映到
-  $$ \overset{\sim}{C} $$
+  $$ \tilde{C} $$
   左侧的区域.
 
 ```
@@ -1398,22 +1398,22 @@ $$
   $$ r $$,
   $$ s $$
   为另外三点
-  $$ \overset{\sim}{q} $$,
-  $$ \overset{\sim}{r} $$,
-  $$ \overset{\sim}{s} $$
+  $$ \tilde{q} $$,
+  $$ \tilde{r} $$,
+  $$ \tilde{s} $$
   的唯一的默比乌斯变换
   $$ z \mapsto w = M(z) $$
   由下式给出:
   - $$
       \frac{
-        (w - \overset{\sim}{q})
-        (\overset{\sim}{r} - \overset{\sim}{s})
+        (w - \tilde{q})
+        (\tilde{r} - \tilde{s})
       }
       {
-        (w - \overset{\sim}{s})
-        (\overset{\sim}{r} - \overset{\sim}{q})
+        (w - \tilde{s})
+        (\tilde{r} - \tilde{q})
       } =
-      [ w, \overset{\sim}{q}, \overset{\sim}{r}, \overset{\sim}{s} ] =
+      [ w, \tilde{q}, \tilde{r}, \tilde{s} ] =
       [ z, q, r, s ] =
       \frac{(z - q) (r - s)}{(z - s) (r - q)}
     $$
@@ -1844,13 +1844,13 @@ p 点处的解析映射就是那些其局部效果是伸扭的映射:
 - 恰有一个保向运动
   $$ \mathcal{M} $$
   (和恰有一个反向运动
-  $$ \overset{\sim}{\mathcal{M}} $$
+  $$ \tilde{\mathcal{M}} $$
   ) 把一个直线段
   $$ ab $$
   映为另一个同样长度的直线段
   $$ a'b' $$.
   - 进一步还有
-    $$ \overset{\sim}{\mathcal{M}} = (\mathcal{R}_L \circ \mathcal{M}) $$,
+    $$ \tilde{\mathcal{M}} = (\mathcal{R}_L \circ \mathcal{M}) $$,
     这里
     $$ L $$
     是过
@@ -2027,7 +2027,7 @@ p 点处的解析映射就是那些其局部效果是伸扭的映射:
 - 恰好有一个保向运动
   $$ \mathcal{M} $$
   (以及恰好一个反向运动
-  $$ \overset{\sim}{\mathcal{M}} $$
+  $$ \tilde{\mathcal{M}} $$
   ) 把一已知的
   $$ h $$
   直线段
@@ -2039,7 +2039,7 @@ p 点处的解析映射就是那些其局部效果是伸扭的映射:
   直线段
   $$ a'b' $$.
   - 此外,
-    $$ \overset{\sim}{\mathcal{M}} = (\mathfrak{R}_{L'} \circ \mathcal{M}) $$,
+    $$ \tilde{\mathcal{M}} = (\mathfrak{R}_{L'} \circ \mathcal{M}) $$,
     $$ L' $$
     是过
     $$ a' $$
