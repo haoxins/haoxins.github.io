@@ -5,6 +5,7 @@ date: 2023-07-17
 ---
 
 - 自己在用的一些 Go 的官方命令行工具:
+  - [Go Telemetry](https://telemetry.go.dev)
 
 ```sh
 go install golang.org/x/vuln/cmd/govulncheck@latest
