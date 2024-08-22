@@ -17,6 +17,153 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+
+---
+
+- [NIST Releases First 3 Finalized Post-Quantum Encryption Standards](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards)
+  - [Cryspen: High Assurance Cryptography](https://github.com/cryspen)
+  - [libcrux - the formally verified crypto library](https://github.com/cryspen/libcrux)
+
+---
+
+- [Go: Range Over Function Types](https://go.dev/blog/range-functions)
+
+```
+We've now seen two different approaches (Push/Pull)
+to looping over all the elements of a set.
+Different Go packages use these approaches and several others.
+That means that when you start using a new Go container package
+you may have to learn a new looping mechanism.
+It also means that we can't write one function that
+works with several different types of containers,
+as the container types will handle looping differently.
+
+We want to improve the Go ecosystem by developing
+standard approaches for looping over containers.
+```
+
+```
+As of Go 1.23 it now supports ranging over functions that
+take a single argument. The single argument must itself be a
+function that takes zero to two arguments and returns a bool;
+by convention, we call it the yield function.
+```
+
+```go
+func(yield func() bool)
+
+func(yield func(V) bool)
+
+func(yield func(K, V) bool)
+```
+
+```
+When we speak of an iterator in Go, we mean a function
+with one of these three types. As we'll discuss below,
+there is another kind of iterator in the
+standard library: a pull iterator.
+When it is necessary to distinguish between
+standard iterators and pull iterators,
+we call the standard iterators push iterators.
+```
+
+```
+As a matter of convention, we encourage all container types
+to provide an All method that returns an iterator,
+so that programmers don't have to remember whether to range
+over All directly or whether to call All
+to get a value they can range over.
+```
+
+```
+A pull iterator works the other way around:
+it is a function that is written such that each time
+you call it, it returns the next value in the sequence.
+
+We'll repeat the difference between the two types
+of iterators to help you remember:
+
+A push iterator pushes each value in a sequence to
+a yield function. Push iterators are standard iterators
+in the Go standard library, and are supported
+directly by the for/range statement.
+
+A pull iterator works the other way around. Each time you
+call a pull iterator, it pulls another value from a sequence
+and returns it. Pull iterators are not supported directly by
+the for/range statement; however, it's straightforward to write
+an ordinary for statement that loops through a pull iterator.
+```
+
+```
+The first function returned by iter.Pull, the pull iterator,
+returns a value and a boolean that reports
+whether that value is valid.
+The boolean will be false at the end of the sequence.
+```
+
+```
+iter.Pull returns a stop function in case we don't read
+through the sequence to the end. In the general case the
+push iterator, the argument to iter.Pull, may
+start goroutines, or build new data structures that need
+to be cleaned up when iteration is complete.
+
+The push iterator will do any cleanup when the yield
+function returns false, meaning that no more values
+are required. When used with a for/range statement,
+the for/range statement will ensure that if the loop
+exits early, through a break statement or for any
+other reason, then the yield function will return false.
+
+With a pull iterator, on the other hand, there is no way
+to force the yield function to return false,
+so the stop function is needed.
+```
+
+```go
+// EqSeq reports whether two iterators contain the same
+// elements in the same order.
+func EqSeq[E comparable](s1, s2 iter.Seq[E]) bool {
+  next1, stop1 := iter.Pull(s1)
+  defer stop1()
+  next2, stop2 := iter.Pull(s2)
+  defer stop2()
+  for {
+    v1, ok1 := next1()
+    v2, ok2 := next2()
+    if !ok1 {
+      return !ok2
+    }
+    if ok1 != ok2 || v1 != v2 {
+      return false
+    }
+  }
+}
+```
+
+---
+
+```
+自 GitOps 理念以来, 至少在长驻的任务上, 带来的便利是毋庸置疑的~
+之前也实施过一个项目, 基于:
+https://github.com/apache/flink-kubernetes-operator
+开发了公司内部的 Flink Job 的调度, 也颇有收益~
+但是, 对于 Batch Job, GitOps 还合适么?
+比如:
+https://github.com/kubeflow/spark-operator
+https://github.com/apache/spark-kubernetes-operator
+
+我不觉得!
+
+从一个十分粗暴的角度而言, GitOps 就是声明了长驻资源~
+一切皆 GitOps 显然不合适.
+或许, 简单的原则是:
+GitOps 适用于手动 (包括通过一些: 工具/CI/CD) 提交的资源定义.
+而这些资源定义, 一般而言是相对不容易变更的.
+此处不容易变更, 是相对的, 大体上不会超过 (微) 服务发布.
+```
+
 ---
 
 - [SeaORM](https://github.com/SeaQL/sea-orm/releases/tag/1.0.0)
