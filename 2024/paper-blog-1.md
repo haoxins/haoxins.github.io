@@ -4,7 +4,6 @@ description: 惊起却回头, 有恨无人省. 拣尽寒枝不肯栖, 寂寞沙�
 date: 2023-09-07
 ---
 
-### Transformers are SSMs
 
 
 ### The Platonic Representation Hypothesis
