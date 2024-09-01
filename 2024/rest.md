@@ -6,6 +6,7 @@ date: 2023-07-17
 
 - [边水往事](https://movie.douban.com/subject/36097760/)
   - 不拖拉~
+  - 结尾不行! 弃剧~
 
 - [异形: 夺命舰](https://movie.douban.com/subject/35792500/)
   - 没啥剧情, 画面不错; 最后的闪现, 咯噔了下~

@@ -446,13 +446,14 @@ linear combination of stationary states.
   必须是归一化的:
   - $$ \int \mid Ψ \mid^2 dx = 1 $$.
   - 在一个特定区间内, 所有的`平方可积`函数的集合,
-  - $$ f(x) $$
+    $$ f(x) $$
     满足
     $$ \int_{a}^{b} \mid f(x) \mid^2 dx < \infty $$,
-  - 构成一个 (非常小) 矢量空间. 数学家称之为
+    构成一个 (非常小) 矢量空间.
+  - 数学家称之为
     $$ L^2 (a, b) $$;
     而物理学家称它为`希尔伯特空间`.
-  - 因此, 在量子力学中, __波函数存在于希尔伯特空间中__.
+    因此, 在量子力学中, 波函数存在于希尔伯特空间中.
 - 两个函数
   $$ f(x) $$
   和
@@ -472,8 +473,8 @@ linear combination of stationary states.
   - 此外,
     $$ f(x) $$
     与`本身`的内积,
-  - $$ \langle f \mid f \rangle = \int_a^b \mid f(x) \mid^2 dx $$,
-  - 它是一个非负实数, 仅当
+    $$ \langle f \mid f \rangle = \int_a^b \mid f(x) \mid^2 dx $$,
+    它是一个非负实数, 仅当
     $$ f(x) = 0 $$
     时为零.
 
@@ -513,6 +514,8 @@ linear combination of stationary states.
     $$ | f_n (x) | $$
     是正交归一的, 上式中的常数可以由傅里叶变换得到:
     $$ c_n = \langle f_n \mid f \rangle $$.
+
+> 函数, 矢量, 傅里叶
 
 ### 可观测量
 

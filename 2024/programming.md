@@ -17,6 +17,11 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- [bon](https://github.com/elastio/bon)
+  - `bon` is a Rust crate for generating
+    compile-time-checked builders for
+    functions and structs.
+  - 我想说的是: Go 做不到! 哈哈~
 
 ---
 
