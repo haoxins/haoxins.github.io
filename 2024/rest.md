@@ -4,6 +4,8 @@ description: 浮云游子意, 落日故人情. 挥手自兹去, 萧萧班马鸣.
 date: 2023-07-17
 ---
 
+- [圣兽之王](https://www.douban.com/game/36560036/)
+
 - [边水往事](https://movie.douban.com/subject/36097760/)
   - 不拖拉~
   - 结尾不行! 弃剧~

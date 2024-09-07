@@ -15,6 +15,10 @@ go install golang.org/x/tools/cmd/deadcode@latest
 - Rust 的一些容易犯的小错误 (Coding 的时候)
   - 忘记引入相应的 `trait`
 
+
+---
+
+- [Programming ZKPs: From Zero to Hero](https://zkintro.com/articles/programming-zkps-from-zero-to-hero)
 ---
 
 - [bon](https://github.com/elastio/bon)

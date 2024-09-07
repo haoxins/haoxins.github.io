@@ -529,9 +529,9 @@ linear combination of stationary states.
     $$.
   - 现在, 一次测量的结果应该是实数,
     更确切地说, 它是多次测量值的平均值:
-  - $$ \langle Q \rangle = \langle Q \rangle^{*} $$.
+    $$ \langle Q \rangle = \langle Q \rangle^{*} $$.
   - 但一个内积的复共轭是颠倒两个函数乘积顺序, 因此
-  - $$
+    $$
       \langle ψ \mid \hat{Q} ψ \rangle =
       \langle \hat{Q} ψ \mid ψ \rangle
     $$,
@@ -562,7 +562,7 @@ linear combination of stationary states.
     成立.
   - 事实证明, 尽管表面上看来不同, 但这完全等同于我们的定义.
     因此, 这两种形式无论哪一个都可以随意使用.
-  - 本质是厄米算符既可以作用于内积中的第一项也可以作用于第二项,
+  - __本质是厄米算符既可以作用于内积中的第一项也可以作用于第二项__,
     其结果一样, 由于厄米算符的期望值是实数, 它们很自然出现在量子力学中:
   - __可观测量由厄米算符表示__.
 
@@ -652,8 +652,8 @@ in that case, the spectrum is said to be degenerate.
   - has the general solution
   - $$ f(ϕ) = A e^{-i q ϕ} $$.
   - Also restricts the possible values of the
-    $$ q $$:
-  - $$ e^{-i q 2π} = 1 \Rightarrow q = 0, ±1, ±2, ... $$.
+    $$ q $$,
+  - $$ e^{-i q 2π} = 1 \Rightarrow q = 0, ±1, ±2, ... $$
   - The spectrum of this operator is the set of
     all integers, and it is nondegenerate.
 
@@ -683,8 +683,8 @@ in that case, the spectrum is said to be degenerate.
 ```
 这就是无限深方势阱的定态, 或者谐振子的定态, 都是正交的原因.
 它们是哈密顿量具有不同本征值的本征函数.
-但这一性质并不单单是它们所特有的,
-甚至仅是哈密顿量所特有 -- 对任何可观测量的定态都是如此.
+但这一性质并不单单是它们所特有的, 甚至仅是哈密顿量所特有 --
+对任何可观测量的定态都是如此.
 ```
 
 - 遗憾的是, 定理 `2` 没有涉及任何关于简并态
@@ -697,7 +697,7 @@ in that case, the spectrum is said to be degenerate.
   - 依据基函数的正交归一性, 这就允许我们使用相应的傅里叶技巧.
 - 在一个有限维的矢量空间中, 厄米矩阵的本征矢量具有第三个基本性质:
   - 它们贯穿整个空间 (任何一个矢量都可以用它们的线性组合来表示).
-  - 遗憾的是, 其证明不能推广到无限维的空间.
+    遗憾的是, 其证明不能推广到无限维的空间.
   - 但是这个性质本身对量子力学内在的自洽性是必需的, 所以 (遵从狄拉克)
     我们将它作为一个公理 (或者, 更确切地说,
     可以看作是加在可观测量厄米算符上的一个限制条件):
