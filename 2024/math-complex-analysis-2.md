@@ -129,7 +129,7 @@ date: 2022-06-12
     中, 这个动点画出了
     $$ L $$,
     则
-  - $$ \int_{L} f(z) dz = \int_{b}^{a} f[z(t)] v dt $$
+  - $$ \int_{L} f(z) dz = \int_{a}^{b} f[z(t)] v dt $$
 
 ### 一般的柯西定理
 
@@ -180,9 +180,7 @@ date: 2022-06-12
   为
   $$ L $$
   内域中的一点, 则
-  - $$
-      \frac{1}{2πi} \oint_{L} \frac{f(z)}{z - a} dz = f(a)
-    $$.
+  - $$ \frac{1}{2πi} \oint_{L} \frac{f(z)}{z - a} dz = f(a) $$.
   - 此式称为`柯西公式`.
     这个公式说的就是:
   - $$ f $$
@@ -212,7 +210,9 @@ date: 2022-06-12
     $$ f = u + iv $$,
     则立即有
     $$
-      \langle u \rangle_{C} + i \langle v \rangle_{C} = u(a) + i v(a)
+      \langle u \rangle_{C} +
+      i \langle v \rangle_{C} =
+      u(a) + i v(a)
     $$,
     所以
   - $$ \langle u \rangle_{C} = u(a) $$

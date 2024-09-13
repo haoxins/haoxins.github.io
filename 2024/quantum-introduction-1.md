@@ -52,8 +52,8 @@ date: 2023-12-11
 - $$
     \int_{a}^{b} \mid Ψ (x, t) \mid ^2 dx =
     \begin{Bmatrix}
-      在 \mbox{ } t \mbox{ } 时刻发现粒子位于 \\
-      a \mbox{ } 和 \mbox{ } b \mbox{ } 之间的几率.
+      \mbox{在 t 时刻发现粒子位于} \\
+      \mbox{a 和 b 之间的几率.}
     \end{Bmatrix}
   $$
 
@@ -800,7 +800,7 @@ in that case, the spectrum is said to be degenerate.
     态的几率".
   - 但是这是完全不同的论述.
 
-> 参见: 科恩, 卷一, 页 17, `波函数; 薛定谔方程`
+> 参见: 科恩, 卷一, Page 17, `波函数; 薛定谔方程`
 
 - Similarly, the expectation value of
   $$ Q $$
@@ -901,13 +901,13 @@ in that case, the spectrum is said to be degenerate.
   $$ t $$
   (或者说
   $$ ct $$
-  ) 合在一起为坐标-时间空间的四矢量, 而
+  ) 合在一起为`坐标-时间空间`的四矢量, 而
   $$ p $$
   和
   $$ E $$
   (或者说
   $$ E/c $$
-  ) 一起为能量-动量空间的四矢量.
+  ) 一起为`能量-动量空间`的四矢量.
   - 但现在我们不是在讨论相对论量子力学. 薛定谔方程显然是非相对论的: 式中赋予
     $$ x $$
     和
@@ -923,7 +923,7 @@ in that case, the spectrum is said to be degenerate.
   - 毕竟, 位置, 动量和能量都是系统的动力学变量,
     体系在任何给定时刻的可观测特性. 但时间本身并不是动力学变量
     (在非相对论理论中, 任何情况下都不是):
-    你不可能像测量位置或者能量一样去测量粒子的`时间`.
+    你不可能像测量位置或者能量一样去测量粒子的时间.
   - 时间是一个独立变量, 动力学量是它的函数.
     特别是, `能量-时间不确定`原理中的
     $$ Δt $$
@@ -983,13 +983,13 @@ in that case, the spectrum is said to be degenerate.
 
 - 量子力学中体系的状态也是如此. 它由`希尔伯特空间`中的一个矢量来描述,
   $$ \mid S(t) \rangle $$,
-  且我们可以用任何数目的不同基矢来表示它. 波函数
+  且我们可以用任何数目的不同基矢来表示它. __波函数__
   $$ Ψ(x, t) $$
-  实际上是
+  __实际上是__
   $$ \mid S(t) \rangle $$
   在坐标本征函数为基上展开的
   $$ x $$
-  分量:
+  __分量__:
   - $$ Ψ(x, t) = \langle x \mid S(t) \rangle $$
 
 - 正如矢量的表示一样, 算符 (对某个特殊的基) 是用它们的`矩阵元`来表示:
@@ -1048,6 +1048,8 @@ in that case, the spectrum is said to be degenerate.
     contain exactly the same information, they are simply
     three different ways of identifying the same vector.
 
+---
+
 - Just as vectors look different when expressed in
   different bases, so too do operators (or,
   in the discrete case, the matrices that represent them).
@@ -1058,9 +1060,9 @@ in that case, the spectrum is said to be degenerate.
     $$
       \begin{cases}
         x
-        & \mbox{ } (in \mbox{ } position \mbox{ } space) \\
+        & \mbox{ } (\mbox{in position space}) \\
         i \hbar \partial / \partial p
-        & \mbox{ } (in \mbox{ } momentum \mbox{ } space)
+        & \mbox{ } (\mbox{in momentum space})
       \end{cases}
     $$
   - $$ \hat{p} $$
@@ -1069,9 +1071,9 @@ in that case, the spectrum is said to be degenerate.
     $$
       \begin{cases}
         -i \hbar \partial / \partial x
-        & \mbox{ } (in \mbox{ } position \mbox{ } space) \\
+        & \mbox{ } (\mbox{in position space}) \\
         p
-        & \mbox{ } (in \mbox{ } momentum \mbox{ } space)
+        & \mbox{ } (\mbox{in momentum space})
       \end{cases}
     $$
 - ("Position space" is nothing but the position basis;
