@@ -1076,9 +1076,13 @@ in that case, the spectrum is said to be degenerate.
         & \mbox{ } (\mbox{in momentum space})
       \end{cases}
     $$
-- ("Position space" is nothing but the position basis;
-  "momentum space" is the momentum basis.)
-  If someone asked you, "What is the operator,
+
+```
+"Position space" is nothing but the position basis;
+"momentum space" is the momentum basis.
+```
+
+- If someone asked you, "What is the operator,
   $$ \hat{x} $$,
   representing position, in quantum mechanics?"
   - you would probably answer "Just
@@ -1120,10 +1124,10 @@ in that case, the spectrum is said to be degenerate.
 - 如果
   $$ \{ \mid e_n \rangle \} $$
   是一离散的正交归一基,
-  - $$ \langle e_m \mid e_n \rangle = δ_{mn} $$,
+  $$ \langle e_m \mid e_n \rangle = δ_{mn} $$,
   - 则有
-  - $$ \sum_{n} \mid e_n \rangle \langle e_n \mid = 1 $$
-  - (称`恒等算符`).
+    $$ \sum_{n} \mid e_n \rangle \langle e_n \mid = 1 $$
+    (称`恒等算符`).
 - 如果我们把该算符作用在任意矢量
   $$ \mid α \rangle $$
   上, 得到
@@ -1140,7 +1144,7 @@ in that case, the spectrum is said to be degenerate.
     是一组狄拉克正交归一的连续基,
   - $$ \langle e_z \mid e_{z'} \rangle = δ (z - z') $$,
   - 那么
-  - $$ \int \mid e_z \rangle \langle e_z \mid dz = 1 $$.
+    $$ \int \mid e_z \rangle \langle e_z \mid dz = 1 $$.
 
 ```
 偶尔我们也会遇到算符是个函数形式, 它们通常由幂级数展开式来定义.
@@ -1157,10 +1161,11 @@ in that case, the spectrum is said to be degenerate.
 - Just as the wave function takes different forms in
   different bases, so do operators.
   The position operator is given by
-  - $$ \hat{x} \rightarrow x $$
-  - in the position basis, or
-  - $$ \hat{x} \rightarrow i \hbar \frac{\partial}{\partial p} $$
-  - in the momentum basis.
+  $$ \hat{x} \rightarrow x $$
+  in the position basis,
+  - or
+    $$ \hat{x} \rightarrow i \hbar \frac{\partial}{\partial p} $$
+    in the momentum basis.
 - However, Dirac notation allows us to do away with the arrows
   and stick to equalities. Operators act on kets (for instance,
   $$ \hat{x} \mid S(t) \rangle $$
