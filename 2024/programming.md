@@ -18,6 +18,12 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- [Announcing Arroyo 0.12](https://www.arroyo.dev/blog/arroyo-0-12-0)
+  - [v0.12.0](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.12.0)
+
+
+---
+
 - [Programming ZKPs: From Zero to Hero](https://zkintro.com/articles/programming-zkps-from-zero-to-hero)
 ---
 
