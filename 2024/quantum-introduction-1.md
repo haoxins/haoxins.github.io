@@ -858,7 +858,7 @@ in that case, the spectrum is said to be degenerate.
 
 ### 不确定性原理
 
-- $$ σ_A^2 σ_B^2 \ge (\frac{1}{2i} \langle [ \hat{A}, \hat{B} ] \rangle )^2 $$.
+- $$ σ_A^2 σ_B^2 \ge (\frac{1}{2i} \langle [\hat{A}, \hat{B}] \rangle)^2 $$.
   - 这就是 (广义的) __不确定原理__.
   - 你或许会认为复数
     $$ i $$
@@ -871,6 +871,10 @@ in that case, the spectrum is said to be degenerate.
     且它的期望值是虚数.
   - 非对易的矩阵不能同时对角化 (即它们不能被同一个相似变换变为对角矩阵),
     而对易厄米矩阵可以同时被对角化.
+
+> 注: 尝试理解
+  $$ i $$
+  代表的对称性~
 
 > [不确定性原理](https://en.wikipedia.org/wiki/Uncertainty_principle),
   这个词条好详细!
@@ -1295,7 +1299,7 @@ in that case, the spectrum is said to be degenerate.
 ### 混合态和密度矩阵
 
 - 但还有其他方法来阐述该理论, 一个特别有用的方法是从定义`密度算符`开始,
-  - $$ \hat{ρ} \equiv \mid Ψ \rangle \langle Ψ \mid $$.
+  $$ \hat{ρ} \equiv \mid Ψ \rangle \langle Ψ \mid $$.
   - 它实际上是状态
     $$ \mid Ψ \rangle $$
     上的`投影算符`.
@@ -1308,7 +1312,7 @@ in that case, the spectrum is said to be degenerate.
     其矩阵元
     $$ A_{ij} $$
     是
-  - $$ A_{ij} = \langle e_i \mid \hat{A} \mid e_j \rangle $$.
+    $$ A_{ij} = \langle e_i \mid \hat{A} \mid e_j \rangle $$.
 - 特别地, `密度矩阵`的矩阵元
   $$ ρ_{ij} $$
   为
@@ -1327,7 +1331,7 @@ in that case, the spectrum is said to be degenerate.
   - 可观测量
     $$ A $$
     的期望值为
-  - $$ \langle A \rangle = Tr(\mathbf{ρ} \mathbf{A}) $$.
+    $$ \langle A \rangle = Tr(\mathbf{ρ} \mathbf{A}) $$.
 - 我们可以用密度矩阵代替波函数来表示粒子的状态.
 
 ```
@@ -1417,7 +1421,7 @@ an inner product space.
   - $$ [\mathbf{S}, \mathbf{T}] = \mathbf{S} \mathbf{T} - \mathbf{T} \mathbf{S} $$.
 - 两个矩阵积的转置矩阵是两个矩阵分别转置按逆次序的乘积:
   - $$ (\mathbf{S} \mathbf{T})^{T} = \mathbf{T}^{T} \mathbf{S}^{T} $$.
-  - __厄米共轭矩阵同样也是这样的__:
+  - 厄米共轭矩阵同样也是这样的:
   - $$
       (\mathbf{S} \mathbf{T})^{\dagger} =
       \mathbf{T}^{\dagger} \mathbf{S}^{\dagger}
@@ -1429,8 +1433,8 @@ an inner product space.
   两个矩阵积的逆 (假设存在) 是各自逆矩阵按逆次序的乘积:
   - $$ (\mathbf{S} \mathbf{T})^{-1} = \mathbf{T}^{-1} \mathbf{S}^{-1} $$.
 - 如果矩阵的逆等于它的厄米共轭, 则该矩阵是`幺正`矩阵:
-  - __幺正矩阵__:
-  - $$ \mathbf{U}^{\dagger} = \mathbf{U}^{-1} $$.
+  - 幺正矩阵:
+    $$ \mathbf{U}^{\dagger} = \mathbf{U}^{-1} $$.
 - 假设基矢是正交归一的, 幺正矩阵的列构成正交归一集, 其行也构成正交集.
   - __幺正矩阵表示的线性变换保持内积不变__.
 
@@ -1463,8 +1467,8 @@ an inner product space.
       det(\mathbf{T}^{e})
     $$.
 - `迹`是对角线元素的代数和:
-  - $$ Tr(\mathbf{T}) \equiv \sum_{i=1}^{m} \mathbf{T}_{ii} $$,
-  - 具有如下性质:
+  $$ Tr(\mathbf{T}) \equiv \sum_{i=1}^{m} \mathbf{T}_{ii} $$,
+  具有如下性质:
   - $$
       Tr(\mathbf{T}_{1} \mathbf{T}_{2}) =
       Tr(\mathbf{T}_{2} \mathbf{T}_{1})
@@ -1483,13 +1487,18 @@ an inner product space.
 
 ---
 
-- 矩阵的`特征方程`: 它的解决定了矩阵本征值. 注意到它是一个 `n` 阶方程,
-  根据代数基本定理, 所以它有 `n` 个 (复数) 根.
+- 矩阵的`特征方程`: 它的解决定了矩阵本征值. 注意到它是一个
+  $$ n $$
+  阶方程, 根据代数基本定理, 所以它有
+  $$ n $$
+  个 (复数) 根.
   - 然而, 其中一些可能是重根, 所以我们可以肯定地说, 一个
     $$ n \times n $$
-    矩阵至少有一个且最多有 `n` 个不同的本征值.
+    矩阵至少有一个且最多有
+    $$ n $$
+    个不同的本征值.
   - 矩阵所有本征值的集合称为它的`谱`;
-  - 如果两个 (或更多) 线性无关的本征矢有相同的本征值, 则称谱线是`简并`的.
+    如果两个 (或更多) 线性无关的本征矢有相同的本征值, 则称谱线是`简并`的.
 
 > 注: 原书此处翻译为`根据线性代数基本定理`, 是个错误!
   应为`根据代数基本定理`.
@@ -1497,14 +1506,15 @@ an inner product space.
 - 将矩阵转化为对角形式有一个明显的优势: 很容易处理问题.
   遗憾的是, 并不是每一个矩阵都能对角化 --
   __本征矢量必须张开整个空间__.
-  - 如果特征方程有 `n` 个不同的根, 那么矩阵肯定是可对角化的, 即使是有多个重根,
+  - 如果特征方程有
+    $$ n $$
+    个不同的根, 那么矩阵肯定是可对角化的, 即使是有多个重根,
     矩阵也可能是可对角化的.
 - 在计算出所有本征矢之前, 事先知道给定的矩阵是否可对角化是很方便的. 一个有用的充分
   (尽管不是必要) 条件是: 如果矩阵与其厄米共轭对易, 则称其为`正规`矩阵:
   - 正规矩阵:
     $$ [\mathbf{N}^{\dagger}, \mathbf{N}] = 0 $$.
-- 每个正规矩阵都是可对角化的 (其本征矢张开整个空间).
-  - 特别是,
+- 每个正规矩阵都是可对角化的 (其本征矢张开整个空间). 特别是,
   - __每个厄米矩阵都是对角化的__,
   - __每个幺正矩阵也是对角化的__.
 
@@ -1528,13 +1538,13 @@ That is to say, does there exist a basis all of
 whose members are eigenvectors of both matrices?
 On this basis, both matrices would be diagonal.
 
-The answer is yes if and only if the two matrices
-commute, as we shall now prove. (By the way,
+The answer is yes if and only if the two matrices commute,
+as we shall now prove. (By the way,
 if two matrices commute with respect to one basis,
 they commute with respect to any basis.)
 ```
 
-- 在量子力学中, `厄米变换`起着基础作用.
+- 在量子力学中, 厄米变换起着基础作用.
   厄米变换的本征值和本征矢有如下重要特性.
   - 厄米变换的本征值是实的
   - 厄米变换属于不同本征值的本征矢彼此正交

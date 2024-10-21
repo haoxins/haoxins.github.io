@@ -34,10 +34,6 @@ date: 2023-07-17
 而复数是关于这种平面的代数.
 ```
 
-### 强化学习
-
-- [强化学习](https://book.douban.com/subject/36991430/)
-
 ### 从矢量到张量
 
 - [从矢量到张量](https://book.douban.com/subject/36000538/)
