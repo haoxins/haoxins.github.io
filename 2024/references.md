@@ -32,9 +32,9 @@ date: 2023-12-21
 
 ### 一些好的微信文章
 
-- [中国"天元"量子模拟器率先取得量子计算第二阶段重大进展](https://mp.weixin.qq.com/s/yr4u8YZonNxOEI6K-cFXKA)
 - [从广义相对论到规范理论 (上)](https://mp.weixin.qq.com/s/rZjondEYljjGVdNjc3pDwA)
 - [从广义相对论到规范理论 (中)](https://mp.weixin.qq.com/s/7AAHhWEEWEBQZ2nCKhS04w)
+- [从广义相对论到规范理论 (下) ](https://mp.weixin.qq.com/s/-8bHacwggE9C6tcQFTniCA)
 - [不确定性原理到底在说什么?](https://mp.weixin.qq.com/s/QcjZDSJj-3kfxGNl1E5lZg)
 - [你也能懂的质能方程 E = mc^2](https://mp.weixin.qq.com/s/Eg_gDd6uV_PukcQQDw60gA)
 - [美丽的莫比乌斯反演, 解决了一类物理问题](https://mp.weixin.qq.com/s/7HL2HeOKhVVaajSd2raQiw)
