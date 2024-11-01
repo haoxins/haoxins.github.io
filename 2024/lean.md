@@ -1,5 +1,5 @@
 ---
-title: 学习 Lean 4
+title: 关于 Lean 4
 description: 东风夜放花千树, 更吹落, 星如雨. 宝马雕车香满路. 凤箫声动, 玉壶光转, 一夜鱼龙舞.
 date: 2024-10-13
 ---
@@ -25,6 +25,10 @@ cd lean-snippet
 lake build
 ./.lake/build/bin/lean-snippet
 ```
+
+> 顺便提一下本人的第一个 Lean4 PR
+  [5789](https://github.com/leanprover/lean4/pull/5789),
+  哈哈~
 
 
 ### Functional Programming in Lean
