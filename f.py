@@ -63,7 +63,7 @@ for file in get_files_from_git():
 
 
 # Build index
-def gen_contents(sub_path):
+def gen_index_contents(sub_path):
     file_infos = []
     article_dir = path.join(root_dir, sub_path)
     for _, _, filenames in walk(article_dir):
@@ -86,13 +86,13 @@ def gen_contents(sub_path):
 years = ["2024", "2025"]
 
 
-def gen_index():
+def write_index_file():
     for year in years:
-        index_contents.append(f"### {year}")
-        gen_contents(year)
+        index_contents.append(f"### {year}\n")
+        gen_index_contents(year)
         index_contents.append("")
-        with open(path.join(root_dir, "index.md"), "a") as f:
-            f.write("\n".join(index_contents))
+    with open(path.join(root_dir, "index.md"), "a") as f:
+        f.write("\n".join(index_contents))
 
 
-# gen_index()
+# write_index_file()
