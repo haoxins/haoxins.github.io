@@ -102,9 +102,9 @@ date: 2023-12-11
 
 - [埃伦费斯特定理](https://en.wikipedia.org/wiki/Ehrenfest_theorem)
 
-- Actually, it is customary to work with __momentum__ (
-  $$ p = mv $$
-  ), rather than velocity:
+- Actually, it is customary to work with __momentum__
+  ($$ p = mv $$),
+  rather than velocity:
   - $$
       \langle p \rangle =
       m \frac{d \langle x \rangle}{dt} =
@@ -907,14 +907,14 @@ in that case, the spectrum is said to be degenerate.
   和
   $$ t $$
   (或者说
-  $$ ct $$
-  ) 合在一起为`坐标-时间空间`的四矢量, 而
+  $$ ct $$)
+  合在一起为`坐标-时间空间`的四矢量, 而
   $$ p $$
   和
   $$ E $$
   (或者说
-  $$ E/c $$
-  ) 一起为`能量-动量空间`的四矢量.
+  $$ E/c $$)
+  一起为`能量-动量空间`的四矢量.
   - 但现在我们不是在讨论相对论量子力学. 薛定谔方程显然是非相对论的: 式中赋予
     $$ x $$
     和
@@ -1016,8 +1016,8 @@ in that case, the spectrum is said to be degenerate.
   in the basis of position eigenfunctions:
   - $$ Ψ(x, t) = \langle x \mid S(t) \rangle $$,
   - (the analog to
-    $$ \hat{l} \cdot A $$
-    ) with
+    $$ \hat{l} \cdot A $$)
+    with
     $$ \mid x \rangle $$
     standing for the eigenfunction of
     $$ \hat{x} $$
@@ -1175,8 +1175,8 @@ in that case, the spectrum is said to be degenerate.
     in the momentum basis.
 - However, Dirac notation allows us to do away with the arrows
   and stick to equalities. Operators act on kets (for instance,
-  $$ \hat{x} \mid S(t) \rangle $$
-  ); the outcome of this operation can be expressed in any basis
+  $$ \hat{x} \mid S(t) \rangle $$);
+  the outcome of this operation can be expressed in any basis
   by taking the inner product with an appropriate basis vector.
   - That is,
   - $$ \langle x \mid \hat{x} \mid S(t) \rangle = $$
@@ -1552,6 +1552,4 @@ they commute with respect to any basis.)
     [厄米矩阵](https://en.wikipedia.org/wiki/Hermitian_matrix)
 
 - [矩阵函数](https://en.wikipedia.org/wiki/Analytic_function_of_a_matrix)
-
-> 这就戛然而止了?
 

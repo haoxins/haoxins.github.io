@@ -81,16 +81,16 @@ cluster can survive two failures, and so on.
   - 理念其实不错, 也在较早的时候给出了一个可用版本.
     然后就是数年的停滞不前~ 错过了最该发力的时间窗口!
 
-- No 4. __Spark__
+- No 4. __Flink__
+  - [Flink](https://github.com/apache/flink)
+  - [Flink Kubernetes Operator](https://github.com/apache/flink-kubernetes-operator)
+  - [Java Operator SDK](https://github.com/operator-framework/java-operator-sdk)
+
+- No 5. __Spark__
   - [Spark](https://github.com/apache/spark)
   - 2024-07, Spark 依旧广泛应用于数据领域,
     各大云计算厂商也有基于 Spark 的云服务.
     但是很少有人使用 Scala 3, 基本都是使用 Scala 2.
-
-- No 5. __Flink__
-  - [Flink](https://github.com/apache/flink)
-  - [Flink Kubernetes Operator](https://github.com/apache/flink-kubernetes-operator)
-  - [Java Operator SDK](https://github.com/operator-framework/java-operator-sdk)
 
 - No 6. __Node.js__
   - [Node.js](https://github.com/nodejs/node)
@@ -102,4 +102,11 @@ cluster can survive two failures, and so on.
     前端的工具链生态, 开始用 Rust 重写 (嗯, 不是重构).
   - 2024-07, 本人觉得这三者的消亡时间顺序是:
     Bun 最先, Deno 其次, Node.js 最后~
+
+- No 7. __MySQL__
+  - [MySQL](https://github.com/mysql/mysql-server)
+  - 被 Oracle 玩死了~
+
+- No 8. __Kotlin__
+  - [Kotlin](https://github.com/JetBrains/kotlin)
 

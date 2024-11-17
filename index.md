@@ -27,6 +27,7 @@
 - [量子计算与量子信息 - 量子](2024/quantum-computation-1.md)
 - [量子计算与量子信息 - 计算](2024/quantum-computation-2.md)
 - [量子力学概论 格里菲斯 (上)](2024/quantum-introduction-1.md)
+- [现代量子力学](2024/quantum-modern.md)
 - [年度推荐书单](2024/reading-recommended.md)
 - [阅读的闲书](2024/reading.md)
 - [一些链接及其它](2024/references.md)

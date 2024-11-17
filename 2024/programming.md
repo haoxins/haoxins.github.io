@@ -15,6 +15,15 @@ go install golang.org/x/tools/cmd/deadcode@latest
 - Rust 的一些容易犯的小错误 (Coding 的时候)
   - 忘记引入相应的 `trait`
 
+---
+
+> Move 生态, 半死不活~
+
+- [Sui (SUI)](https://github.com/MystenLabs/sui)
+- [Movement](https://github.com/movementlabsxyz/movement)
+  - 不过, 感觉 Ethereum 终于将在 2025 迎来下坡, 最终消亡~
+- [Aptos (APT)](https://github.com/aptos-labs/aptos-core)
+  - [Aptos Keyless ZK proofs](https://github.com/aptos-labs/keyless-zk-proofs)
 
 ---
 
