@@ -21,7 +21,7 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 - [Sui (SUI)](https://github.com/MystenLabs/sui)
 - [Movement](https://github.com/movementlabsxyz/movement)
-  - 不过, 感觉 Ethereum 终于将在 2025 迎来下坡, 最终消亡~
+  - 不过, 感觉 Ethereum 将在 2025 迎来下坡, 最终消亡~
 - [Aptos (APT)](https://github.com/aptos-labs/aptos-core)
   - [Aptos Keyless ZK proofs](https://github.com/aptos-labs/keyless-zk-proofs)
 
