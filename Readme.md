@@ -19,7 +19,6 @@
 - [复分析 可视化方法 (下)](2024/math-complex-analysis-2.md)
 - [可视化微分几何和形式 (上)](2024/math-differential-geometry-1.md)
 - [可视化微分几何和形式 (下)](2024/math-differential-geometry-2.md)
-- [泛函分析导论及应用 - 空间](2024/math-functional-analysis-1.md)
 - [伊藤清概率论](2024/math-ito.md)
 - [阅读 Paper & Blog](2024/paper-blog.md)
 - [狄拉克讲广义相对论](2024/physics-dirac.md)

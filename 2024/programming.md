@@ -15,6 +15,31 @@ go install golang.org/x/tools/cmd/deadcode@latest
 - Rust 的一些容易犯的小错误 (Coding 的时候)
   - 忘记引入相应的 `trait`
 
+
+---
+
+- [Delta Lake](https://github.com/delta-io)
+
+```
+其实我想说的是:
+有不少项目一开始 Scala/Java 开发, 后来也开发 Rust 版本.
+但这个项目是极少数 Rust 版本活跃度赶超 Scala/Java 的.
+
+对比:
+https://github.com/apache/hudi
+https://github.com/apache/iceberg
+```
+
+---
+
+- [Kubernetes in Action, Second Edition](https://book.douban.com/subject/34986745/)
+  - https://www.manning.com/books/kubernetes-in-action-second-edition
+
+> 不得不吐槽, 作者在 manning.com 几乎停更了 2023 & 2024 两年整!
+  很多读者 (包括本人) 在论坛催更无效~
+
+> 后续就算更新也不会再阅读了~ 差评!
+
 ---
 
 > Move 生态, 半死不活~
