@@ -10,7 +10,7 @@ date: 2021-08-30
 ## Introducing
 
 > Each application must be small enough to
-  fit on *one of* the worker nodes.
+  fit on one of the worker nodes.
 
 * a Kubernetes cluster consists of nodes divided into **two groups**:
   - A set of **master nodes** that host the *Control Plane* components,

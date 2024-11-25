@@ -5,8 +5,8 @@ date: 2023-09-07
 ---
 
 - [Asynchronous Verifiable Secret Sharing with Elastic Thresholds and Distributed Key Generation](https://eprint.iacr.org/2024/1463)
-  - 这篇 Paper 没看, 也不打算看, 2025 会开始阅读一些经典的论文.
-  - 把这篇摘录下来, 是因为有配合的源码实现~
+  - 这篇 Paper 没看, 也不打算看, 2025 会开始阅读一些经典的密码学论文.
+    把这篇摘录下来, 是因为有配合的源码实现~
   - [Implementation of the BLS12-381 pairing-friendly elliptic curve group](https://github.com/mikelodder7/bls12_381_plus)
 
 ### The Platonic Representation Hypothesis

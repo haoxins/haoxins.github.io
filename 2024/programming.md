@@ -15,6 +15,8 @@ go install golang.org/x/tools/cmd/deadcode@latest
 - Rust 的一些容易犯的小错误 (Coding 的时候)
   - 忘记引入相应的 `trait`
 
+- Rust 的一些 libs
+  - [bon](https://github.com/elastio/bon)
 
 ---
 
@@ -196,18 +198,19 @@ func EqSeq[E comparable](s1, s2 iter.Seq[E]) bool {
 ```
 自 GitOps 理念以来, 至少在长驻的任务上, 带来的便利是毋庸置疑的~
 之前也实施过一个项目, 基于:
+
 https://github.com/apache/flink-kubernetes-operator
+
 开发了公司内部的 Flink Job 的调度, 也颇有收益~
-但是, 对于 Batch Job, GitOps 还合适么?
-比如:
+但是, 对于 Batch Job (not scheduled), GitOps 还合适么? 比如:
+
 https://github.com/kubeflow/spark-operator
 https://github.com/apache/spark-kubernetes-operator
 
-我不觉得!
+我不觉得! (至少, 对于 no schedule 的)
 
 从一个十分粗暴的角度而言, GitOps 就是声明了长驻资源~
-一切皆 GitOps 显然不合适.
-或许, 简单的原则是:
+一切皆 GitOps 显然不合适. 或许, 简单的原则是:
 GitOps 适用于手动 (包括通过一些: 工具/CI/CD) 提交的资源定义.
 而这些资源定义, 一般而言是相对不容易变更的.
 此处不容易变更, 是相对的, 大体上不会超过 (微) 服务发布的频率.
