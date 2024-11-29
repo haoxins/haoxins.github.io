@@ -93,10 +93,10 @@ cluster can survive two failures, and so on.
     但是很少有人使用 Scala 3, 基本都是使用 Scala 2.
 
 - No 6. __Node.js__
-  - [Node.js](https://github.com/nodejs/node)
+  - [Node](https://github.com/nodejs/node)
   - [Deno](https://github.com/denoland/deno)
   - [Bun](https://github.com/oven-sh/bun)
-  - 个人从未正经使用过 Deno 和 Bun, 这里单纯作为 Node.js 的同类出现.
+  - 个人从未正经使用过 Deno 和 Bun, 这里单纯作为 Node 的同类出现.
     然后十分意外的是, Rust 的出现莫名其妙的影响了这一类项目.
   - 因为这一类项目, 一个最主流的场景, 就是前端工具生态. 然后, 2024 年开始,
     前端的工具链生态, 开始用 Rust 重写 (嗯, 不是重构).
