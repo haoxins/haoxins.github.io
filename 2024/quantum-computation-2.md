@@ -419,7 +419,7 @@ QED 相互作用 Jaynes-Cummings 哈密顿量, 构建出电磁波与物质相互
     的`共轭类`
     $$ G_x $$,
     定义为
-    $$ G_x ≡ \{ g^{-1} x g | g \in G \} $$.
+    $$ G_x ≡ \{ g^{-1} x g \mbox{ } | \mbox{ } g \in G \} $$.
 
 - [生成元](https://en.wikipedia.org/wiki/Generating_set_of_a_group)
 
@@ -463,9 +463,9 @@ QED 相互作用 Jaynes-Cummings 哈密顿量, 构建出电磁波与物质相互
   在
   $$ G $$
   中的`左陪集`定义为集合
-  $$ gH ≡ \{ gh | h \in H \} $$.
+  $$ gH ≡ \{ gh \mbox{ } | \mbox{ } h \in H \} $$.
   - 右陪集定义类似.
-  - 陪集是左陪集还是右陪集可以从上下文看出.
+    陪集是左陪集还是右陪集可以从上下文看出.
   - 对像
     $$ \mathbb{Z}_n $$
     的群运算为加法的群, 习惯上把子群
@@ -506,7 +506,7 @@ QED 相互作用 Jaynes-Cummings 哈密顿量, 构建出电磁波与物质相互
     蕴含
     $$ ρ(g_1) ρ(g_2) = ρ(g_3) $$.
   - 如果映射是多对一的, 则称之为`同态`;
-  - 如果是一对一的, 则称之为`同构`.
+    如果是一对一的, 则称之为`同构`.
 - 一个映射到
   $$ M_n $$
   的表示
@@ -522,7 +522,7 @@ QED 相互作用 Jaynes-Cummings 哈密顿量, 构建出电磁波与物质相互
 
 - [有限群上的傅立叶变换](https://en.wikipedia.org/wiki/Fourier_transform_on_finite_groups)
 
-> 最后 `4` 页的信息量蛮大~
+> 最后 4 页的信息量蛮大~
 
 ### 数论
 

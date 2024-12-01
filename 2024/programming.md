@@ -57,10 +57,22 @@ https://github.com/apache/iceberg
 - [Announcing Arroyo 0.12](https://www.arroyo.dev/blog/arroyo-0-12-0)
   - [v0.12.0](https://github.com/ArroyoSystems/arroyo/releases/tag/v0.12.0)
 
-
 ---
 
 - [Programming ZKPs: From Zero to Hero](https://zkintro.com/articles/programming-zkps-from-zero-to-hero)
+  - [Circom](https://github.com/iden3/circom)
+
+```
+The prover key embeds all the information necessary to
+generate proof in a zero-knowledge-preserving fashion
+for that specific circuit. Similarly, the verifier key
+embeds all the required information to verify that the
+proof is indeed correct. These aren't private keys but
+information that can and should be publicly distributed.
+Any party that needs to generate or verify proof
+should have access to them.
+```
+
 ---
 
 - [bon](https://github.com/elastio/bon)
