@@ -20,6 +20,82 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- [Temporal](https://github.com/temporalio/temporal)
+
+```
+By default, Temporal SDKs set a Worker Identity to
+${process.pid}@${os.hostname}, which combines the
+Worker's process ID (process.pid) and the hostname of
+the machine is running the Worker (os.hostname).
+
+When running Workers inside Docker containers, the
+process ID is always 1, as each container typically
+runs a single process. This makes the process
+identifier meaningless for identification purposes.
+
+Include relevant context: Incorporate information that
+helps establish the context of the Worker, such as the
+deployment environment (staging or production), region,
+or any other relevant details.
+
+Ensure uniqueness: Make sure that the Worker Identity is unique
+within your system to avoid ambiguity when debugging issues.
+
+Keep it concise: While including relevant information is important,
+try to keep the Worker Identity concise and easily readable to
+facilitate quick identification and troubleshooting.
+```
+
+```
+The Temporal Service (including the Temporal Cloud) doesn't execute
+any of your code (Workflow and Activity Definitions) on Temporal Service
+machines. The Temporal Service is solely responsible for orchestrating
+State Transitions and providing Tasks to the next available Worker Entity.
+
+A Worker Process can be both a Workflow Worker Process and an
+Activity Worker Process. Many SDKs support the ability to have
+multiple Worker Entities in a single Worker Process.
+(Worker Entity creation and management differ between SDKs.)
+
+A single Worker Entity can listen to only a single Task Queue.
+But if a Worker Process has multiple Worker Entities, the
+Worker Process could be listening to multiple Task Queues.
+
+There are two types of Task Queues,
+Activity Task Queues and Workflow Task Queues.
+
+Task Queues do not require explicit registration but instead
+are created on demand when a Workflow Execution or Activity
+spawns or when a Worker Process subscribes to it.
+
+When a Task Queue is created, both a Workflow Task Queue and
+an Activity Task Queue are created under the same name.
+```
+
+```
+A Sticky Execution is when a Worker Entity caches the Workflow
+in memory and creates a dedicated Task Queue to listen on.
+A Sticky Execution occurs after a Worker Entity completes the
+first Workflow Task in the chain of Workflow Tasks
+for the Workflow Execution.
+
+Some SDKs provide a Session API that provides a straightforward
+way to ensure that Activity Tasks are executed with the same
+Worker without requiring you to manually specify Task Queue names.
+```
+
+
+---
+
+```
+2024-12-02: 想到一个好玩的问题
+
+给出一个具体的数学定理 (或者大一点, 主题),
+你觉得它最大程度上桥接了不同的数学, 物理, 计算科学.
+```
+
+---
+
 - [Delta Lake](https://github.com/delta-io)
 
 ```
@@ -28,9 +104,15 @@ go install golang.org/x/tools/cmd/deadcode@latest
 但这个项目是极少数 Rust 版本活跃度赶超 Scala/Java 的.
 
 对比:
-https://github.com/apache/hudi
+https://github.com/apache/iceberg-rust
 https://github.com/apache/iceberg
+
+https://github.com/apache/hudi
+https://github.com/apache/hudi-rs
 ```
+
+> 2024-12, 看来 Hudi 最先出局了~
+  然后 Databricks 自己放弃 Delta Lake, all in Iceberg~
 
 ---
 

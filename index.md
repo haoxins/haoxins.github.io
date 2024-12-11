@@ -18,7 +18,7 @@
 - [伊藤清概率论](2024/math-ito.md)
 - [阅读 Paper & Blog](2024/paper-blog.md)
 - [狄拉克讲广义相对论](2024/physics-dirac.md)
-- [引力和宇宙学 - 广义相对论的原理和应用](2024/physics-gravitation-cosmology.md)
+- [广义相对论的原理 温伯格](2024/physics-gravitation-cosmology.md)
 - [物理世界 (2023)](2024/physics-introduction.md)
 - [空间-时间-物质](2024/physics-space-time-matter.md)
 - [码农碎碎念~](2024/programming.md)
