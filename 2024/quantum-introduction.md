@@ -2192,7 +2192,7 @@ in that case, the spectrum is said to be degenerate.
     $$ ψ $$
     的级数是
   - $$
-      ψ = ψ_0 + \int g V ψ_0 + \int \int gV gV ψ_0
+      ψ = ψ_0 + \int gV ψ_0 + \int \int gV gV ψ_0
         + \int \int \int gV gV gV ψ_0 + ...
     $$.
   - 在每个被积函数中, 只出现入射波函数
