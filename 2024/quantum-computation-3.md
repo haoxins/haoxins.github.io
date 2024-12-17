@@ -60,6 +60,114 @@ date: 2023-01-30
 
 ### 量子操作
 
+- 设
+  $$ \mid e_k \rangle $$
+  是环境 (有限维) 状态空间的标准正交基, 令
+  $$ ρ_{env} $$
+  是环境的初始状态. 不失一般性, 可以假设环境以纯态开始,
+  因为如果它以混合态开始, 我们总可以引入额外的系统来`纯化`.
+  虽然这个额外的系统是"虚构的", 但它对主系统所经历的动力学没有影响,
+  因此可以用作计算的中间步骤. 于是
+  - $$
+      \begin{align}
+        ε(ρ)
+          & = \sum_{k} \langle e_k \mid U
+              [ρ \otimes \mid e_0 \rangle \langle e_0 \mid]
+              U^{\dagger} \mid e_k \rangle \\
+          & = \sum_{k} E_k ρ E_k^{\dagger} \\
+      \end{align}
+    $$
+  - 其中
+    $$ E_k ≡ \langle e_k \mid U \mid e_0 \rangle $$
+    是作用于主系统态空间中的一个算子. 上式被称为算子和表示
+    $$ ε $$.
+    算子
+    $$ \{ E_k \} $$
+    被称为量子操作
+    $$ ε $$
+    的`操作元`.
+
+> 注: 留意维度
+
+- 操作元满足称为完备性关系的重要约束,
+  类似于经典噪声的描述中演化矩阵的完备性关系.
+  在经典案例中, 完备性关系源于概率分布被归一化的要求.
+  在量子情形中, 完备性关系源于
+  $$ ε(ρ) $$
+  的迹等于
+  $$ 1 $$
+  这个类似的限制,
+  - $$
+      \begin{align}
+        1
+          & = tr(ε(ρ)) \\
+          & = tr(\sum_{k} E_k ρ E_k^{\dagger}) \\
+          & = tr(\sum_{k} E_k^{\dagger} E_k ρ) \\
+      \end{align}
+    $$
+  - 既然这个关系对于所有
+    $$ ρ $$
+    都成立, 于是必然有
+  - $$ \sum_{k} E_k^{\dagger} E_k = I $$
+  - `保迹`的量子操作满足这个方程. 也存在非保迹的量子操作, 对它们有
+    $$ \sum_{k} E_k^{\dagger} E_k ≤ I $$,
+    但在其描述的过程中发生了什么额外信息是由测量获得的.
+
+- 可以给算子和表示一个很好的解释. 想象一下, 在施加酉变换
+  $$ U $$
+  之后, 在基矢
+  $$ e_k $$
+  上执行对环境的测量. 应用隐式测量原理,
+  我们发现这种测量只影响环境的状态,
+  而不会改变主系统的状态. 假设结果
+  $$ k $$
+  出现, 那就让
+  $$ ρ_k $$
+  成为主系统的状态, 于是
+  - $$
+      \begin{align}
+        ρ_k \varpropto tr_E(
+          \mid e_k \rangle \langle e_k \mid U
+          (ρ \otimes \mid e_0 \rangle \langle e_0 \mid)
+          U^{\dagger} \mid e_k \rangle \langle e_k \mid
+        )
+        & = \langle e_k \mid U
+            (ρ \otimes \mid e_0 \rangle \langle e_0 \mid)
+            U^{\dagger} \mid e_k \rangle \\
+        & = E_k ρ E_k^{\dagger} \\
+      \end{align}
+    $$
+  - 归一化
+    $$ ρ_k $$:
+  - $$ ρ_k = \frac{E_k ρ E_k^{\dagger}}{tr(E_k ρ E_k^{\dagger})} $$
+  - 我们发现结果
+    $$ k $$
+    出现的概率为
+  - $$
+      \begin{align}
+        p(k)
+          & = tr(
+            \mid e_k \rangle \langle e_k \mid U
+            (ρ \otimes \mid e_0 \rangle \langle e_0 \mid)
+            U^{\dagger} \mid e_k \rangle \langle e_k \mid
+          ) \\
+          & = tr(E_k ρ E_k^{\dagger}) \\
+      \end{align}
+    $$
+  - 因此
+  - $$ ε(ρ) = \sum_{k} p(k) ρ_k = \sum_{k} E_k ρ E_k^{\dagger} $$
+  - 这给我们提供了一个美妙的物理解释, 用于操作元
+    $$ \{ E_k \} $$
+    的量子操作. 量子操作的作用相当于选取态
+    $$ ρ $$,
+    然后以概率
+    $$ tr(E_k ρ E_k^{\dagger}) $$
+    用
+    $$ E_k ρ E_k^{\dagger} / tr(E_k ρ E_k^{\dagger}) $$
+    随机地替换它.
+  - 在此意义上, 这与经典信息论中噪声通信信道的概念很相似; 在这种情况下,
+    我们有时会将描述量子噪声过程的某些量子操作看成有噪声的量子信道.
+
 ### 量子噪声与量子操作的例子
 
 ### 量子操作的应用
@@ -241,7 +349,7 @@ date: 2023-01-30
 ```
 
 - 为了真正理解迹距离, 一个很好的起始点是对经典迹距离的刻画推广到量子情形:
-  - $$ D(ρ, σ) = max_{P} tr(P(ρ - σ)) $$
+  - $$ D(ρ, σ) = \max_{P} tr(P(ρ - σ)) $$
   - 这里, 最大值是取值在所有可能的投影算子
     $$ P $$,
     或者所有满足
