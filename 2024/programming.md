@@ -84,7 +84,6 @@ way to ensure that Activity Tasks are executed with the same
 Worker without requiring you to manually specify Task Queue names.
 ```
 
-
 ---
 
 ```
