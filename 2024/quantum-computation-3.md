@@ -1079,8 +1079,73 @@ date: 2023-01-30
     $$ \mid RQ \rangle $$
     的细节无关.
 
+- 关于纠缠保真度, 一个吸引人的特点是它有一个简单的形式,
+  使得精确计算变得很方便. 假设
+  $$ E_i $$
+  是量子操作
+  $$ ε $$
+  的元素, 那么
+  - $$
+      F(ρ, ε) = \langle RQ \mid ρ^{R'Q'} \mid RQ \rangle =
+      \sum \mid \langle RQ \mid E_i \mid RQ \rangle \mid^2
+    $$
+  - 假设我们将
+    $$ \mid RQ \rangle $$
+    写作
+    $$
+      \mid RQ \rangle = \sum_{j}
+      \sqrt{p_j} \mid j \rangle \mid j \rangle
+    $$,
+    其中
+    $$ ρ = \sum_{j} p_j \mid j \rangle \langle j \mid $$,
+    则
+  - $$
+      \begin{align}
+        \langle RQ \mid E_i \mid RQ \rangle
+          & = \sum_{jk} \sqrt{p_j p_k}
+              \langle j \mid k \rangle
+              \langle j \mid E_i \mid k \rangle \\
+          & = \sum_{j} p_j \langle j \mid E_i \mid j \rangle \\
+          & = tr(E_i ρ) \\
+      \end{align}
+    $$
+  - 将这个表达式代入, 我们就得到一个很有用的计算形式
+  - $$
+      F(ρ, ε) = \sum_{i} \mid tr(ρ E_i) \mid^2
+    $$
+
 
 - __本章小结__
+  - __迹距离__:
+    $$ D(ρ, σ) ≡ \frac{1}{2} tr \mid ρ - σ \mid $$.
+    密度算子上的双重凸度量, 在量子操作下会收缩.
+  - __保真度__:
+    $$
+      F(ρ, σ) ≡ tr \sqrt{ρ^{1/2} σ ρ^{1/2}} =
+      \max_{\mid ψ \rangle, \mid φ \rangle}
+      \mid \langle ψ \mid φ \rangle \mid
+    $$
+    具有强凹性,
+    $$
+      F(\sum_{i} p_i ρ_i, \sum_{i} q_i σ_i) ≥
+      \sum_{i} \sqrt{p_i q_i} F(ρ_i, σ_i)
+    $$.
+  - __纠缠保真度__:
+    $$ F(ρ, ε) $$.
+    度量量子纠缠在一个量子力学过程中被保护的程度. 在这个过程中, 主系统
+    $$ Q $$
+    的状态是
+    $$ ρ $$,
+    且
+    $$ Q $$
+    与另一个量子系统
+    $$ R $$
+    之间存在纠缠, 量子操作
+    $$ ε $$
+    作用在系统
+    $$ Q $$
+    上.
+
 ## 量子纠错
 
 ### Shor 编码

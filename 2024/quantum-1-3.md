@@ -121,7 +121,7 @@ date: 2024-06-22
   和
   $$ P $$
   的情况, 它们的对易子是:
-  - $$ [X, P] = i \hbar
+  - $$ [X, P] = i \hbar $$
   - 且有:
   - $$ [X, F(P)] = i \hbar F'(P) $$
   - $$ [P, G(X)] = -i \hbar G'(X) $$
@@ -129,14 +129,14 @@ date: 2024-06-22
 ### 算符的导数
 
 - $$ (\frac{dA}{dt})_{ij} = \frac{d}{dt} A_{ij} $$
-  - 是于是我们得到一个很简单的规则: 要得到表示
+  - 于是我们得到一个很简单的规则: 要得到表示
     $$ \frac{dA}{dt} $$
     的矩阵的各元素, 只须将表示
     $$ A $$
     的矩阵中的各元素求导 (但不改变元素的位置).
 - 这些法则和我们熟知的普通函数的求导法则相似:
-  - $$ \frac{d}{dt} (F + G) = \frac{dF}{dt} + frac{dG}{dt} $$
-  - $$ \frac{d}{dt} (FG) = \frac{dF}{dt}G + F\frac{dG}{dt} $$
+  - $$ \frac{d}{dt} (F + G) = \frac{dF}{dt} + \frac{dG}{dt} $$
+  - $$ \frac{d}{dt} (FG) = \frac{dF}{dt} G + F \frac{dG}{dt} $$
   - 但是必须注意, __公式中算符的顺序不能改动__.
 
 ## 幺正算符
