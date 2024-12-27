@@ -92,16 +92,12 @@ cluster can survive two failures, and so on.
     各大云计算厂商也有基于 Spark 的云服务.
     但是很少有人使用 Scala 3, 基本都是使用 Scala 2.
 
-- No 6. __Node.js__
+- No 6. __Deno__
   - [Node](https://github.com/nodejs/node)
   - [Deno](https://github.com/denoland/deno)
   - [Bun](https://github.com/oven-sh/bun)
-  - 个人从未正经使用过 Deno 和 Bun, 这里单纯作为 Node 的同类出现.
-    然后十分意外的是, Rust 的出现莫名其妙的影响了这一类项目.
-  - 因为这一类项目, 一个最主流的场景, 就是前端工具生态. 然后, 2024 年开始,
-    前端的工具链生态, 开始用 Rust 重写 (嗯, 不是重构).
-  - 2024-07, 本人觉得这三者的消亡时间顺序是:
-    Bun 最先, Deno 其次, Node.js 最后~
+  - 个人从未正经使用过 Deno 和 Bun, 这里纯粹是追忆陪伴 Node 的青春岁月.
+  - Deno 大概率最先消亡~
 
 - No 7. __MySQL__
   - [MySQL](https://github.com/mysql/mysql-server)
