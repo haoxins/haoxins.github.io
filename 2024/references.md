@@ -6,7 +6,6 @@ date: 2023-12-21
 
 - [LaTeX Symbol Tables](https://wikieducator.org/Help:LaTeX_Symbol_Tables_-_Mathematics)
   - [LaTeX mathematical symbols](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols)
-- [excalidraw](https://excalidraw.com)
 
 ### Quantum computing
 
