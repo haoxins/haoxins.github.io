@@ -20,6 +20,9 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+
+---
+
 - [Temporal](https://github.com/temporalio/temporal)
 
 ```
@@ -153,6 +156,8 @@ information that can and should be publicly distributed.
 Any party that needs to generate or verify proof
 should have access to them.
 ```
+
+> 既没有 From Zero, 也没有 to Hero; 文章水了一些~
 
 ---
 

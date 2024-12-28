@@ -49,7 +49,6 @@ date: 2021-02-12
 ```
 
 * What's so special about Euler's number `e`?
-  - ???
 
 * [Taylor series](https://www.youtube.com/watch?v=3d6DsjIBzJ4)
 

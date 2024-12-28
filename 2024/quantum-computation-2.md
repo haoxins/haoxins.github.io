@@ -877,3 +877,7 @@ QED 相互作用 Jaynes-Cummings 哈密顿量, 构建出电磁波与物质相互
     $$ x $$
     连分式展开中的一个渐进分数.
 
+### Solovay-Kitaev 定理
+
+- [Solovay-Kitaev 定理](https://en.wikipedia.org/wiki/Solovay-Kitaev_theorem)
+
