@@ -7,12 +7,12 @@
 
 ### 2025
 
+- [猫咪的那些事](2024/cat.md)
 - [再读彭罗斯的通向实在之路 (上)](2025/physics-road-to-reality-1.md)
 
 ### 2024
 
 - [NebulaGraph 社区的专访](https://mp.weixin.qq.com/s/cKcmK3Cpvq870sTSyCVOiw)
-- [猫咪的那些事](2024/cat.md)
 - [关于 Lean 4](2024/lean.md)
 - [算法数论 - 格, 数域, 曲线和密码学](2024/math-algorithmic-number.md)
 - [陶哲轩实分析](2024/math-analysis.md)
@@ -37,5 +37,4 @@
 - [现代量子力学 樱井纯](2024/quantum-modern.md)
 - [年度推荐书单](2024/reading-recommended.md)
 - [阅读的闲书](2024/reading.md)
-- [一些链接及其它](2024/references.md)
 - [休憩 游乐](2024/rest.md)
