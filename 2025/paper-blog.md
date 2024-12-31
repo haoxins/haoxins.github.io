@@ -4,7 +4,7 @@ description: 欲渡黄河冰塞川, 将登太行雪满山. 闲来垂钓碧溪上
 date: 2024-01-28
 ---
 
-### 配合我的博客内容的数学物理本地 Agent
+### 实验: 我的博客的数学物理本地 Agent
 
 - [Phi-4 Technical Report](https://arxiv.org/abs/2412.08905)
 
