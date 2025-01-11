@@ -126,7 +126,7 @@ date: 2023-01-30
   成为主系统的状态, 于是
   - $$
       \begin{align}
-        ρ_k \varpropto tr_E(
+        ρ_k \propto tr_E(
           \mid e_k \rangle \langle e_k \mid U
           (ρ \otimes \mid e_0 \rangle \langle e_0 \mid)
           U^{\dagger} \mid e_k \rangle \langle e_k \mid

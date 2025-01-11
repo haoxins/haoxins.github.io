@@ -14,18 +14,18 @@ date: 2024-07-13
 ```
 
 - 首先, 给出几个定义
-  - 何为消亡?
-  - 编程技术的 GitHun repository archived
+  - Q: 何为消亡?
+  - A: 编程技术的 GitHun repository archived
     或者超过 1 年没有新的 commits
-  - 如何排除小众项目或者实验项目?
-  - 该项目必须有主流应用, 即该项目必须有其他的基于它的应用,
+  - Q: 如何排除小众项目或者实验项目?
+  - A: 该项目必须有主流应用, 即该项目必须有其他的基于它的应用,
     且该应用有一定的行业影响.
 
 - No 1. __Hive__
   - [Hive](https://github.com/apache/hive)
-  - 传统老兵~
+  - 传统老兵, 似乎都不需要给出淘汰的理由~
 
-- No 1. __ZooKeeper__
+- No 2. __ZooKeeper__
   - 曾几何时, 几乎是分布式系统的标配组件.
   - 最后的一次出现在开源社区视野,
     应该就是
@@ -70,31 +70,38 @@ controller cluster can survive one failure. A five-node controller
 cluster can survive two failures, and so on.
 ```
 
-- No 2. __Scala__
-  - [Scala 2](https://github.com/scala/scala)
-  - [Scala 3](https://github.com/scala/scala3)
-  - 个人没写过 Scala, 所以这里是间接使用 Scala,
-    嗯, 因为 Spark, 哈哈~
-  - Scala 开发的主流应用在 2024 几乎唯一剩下了 Spark,
-    且 Spark 没有计划迁移到 Scala 3.
-
 - No 3. __Kubeflow__
   - [Kubeflow](https://github.com/kubeflow/kubeflow)
   - [Kubeflow pipelines](https://github.com/kubeflow/pipelines)
   - 作为自己贡献过的项目, 还是很惋惜的.
   - 理念其实不错, 也在较早的时候给出了一个可用版本.
     然后就是数年的停滞不前~ 错过了最该发力的时间窗口!
+  - 2024 年, Databricks 攻城略地~
+
+- No 4. __Scala__
+  - [Scala 2](https://github.com/scala/scala)
+  - [Scala 3](https://github.com/scala/scala3)
+  - 个人没写过 Scala, 所以这里是间接使用 Scala,
+    嗯, 因为 Spark ~
+  - Scala 开发的主流应用在 2024 几乎唯一剩下了 Spark,
+    且 Spark 没有计划迁移到 Scala 3.
+    Scala 3 会比 Scala 2 更早停止维护!
 
 - No 4. __Flink__
   - [Flink](https://github.com/apache/flink)
   - [Flink Kubernetes Operator](https://github.com/apache/flink-kubernetes-operator)
   - [Java Operator SDK](https://github.com/operator-framework/java-operator-sdk)
+  - 替代者
+    [RisingWave](https://github.com/risingwavelabs/risingwave)
 
 - No 5. __Spark__
   - [Spark](https://github.com/apache/spark)
   - 2024-07, Spark 依旧广泛应用于数据领域,
     各大云计算厂商也有基于 Spark 的云服务.
     但是很少有人使用 Scala 3, 基本都是使用 Scala 2.
+  - 替代者
+    [DataFusion Comet](https://github.com/apache/datafusion-comet),
+    Databricks 也可能开源自己的 Spark native (c++) 版本的代码.
 
 - No 6. __Deno__
   - [Node](https://github.com/nodejs/node)

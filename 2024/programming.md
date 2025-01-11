@@ -23,6 +23,17 @@ go install golang.org/x/tools/cmd/deadcode@latest
 
 ---
 
+- [Quickwit joins Datadog](https://quickwit.io/blog/quickwit-joins-datadog)
+  - [Quickwit](https://github.com/quickwit-oss/quickwit)
+  - Quickwit is the fastest search engine on cloud storage.
+    It's the perfect fit for observability use cases
+  - 印象中, 这是缩小了原初的愿景? 聚焦了~
+  - 看看后面
+    [Meilisearch](https://github.com/meilisearch/meilisearch)
+    花落谁家?
+
+---
+
 - [Temporal](https://github.com/temporalio/temporal)
 
 ```
