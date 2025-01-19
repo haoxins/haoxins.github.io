@@ -27,7 +27,7 @@ go install golang.org/x/tools/cmd/deadcode@latest
   - [Quickwit](https://github.com/quickwit-oss/quickwit)
   - Quickwit is the fastest search engine on cloud storage.
     It's the perfect fit for observability use cases
-  - 印象中, 这是缩小了原初的愿景? 聚焦了~
+  - 印象中, 这是缩小了当初的愿景? 聚焦了?
   - 看看后面
     [Meilisearch](https://github.com/meilisearch/meilisearch)
     花落谁家?
