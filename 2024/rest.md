@@ -4,9 +4,23 @@ description: 浮云游子意, 落日故人情. 挥手自兹去, 萧萧班马鸣.
 date: 2023-07-17
 ---
 
+
+- [记忆大师](https://movie.douban.com/subject/25884801/)
+
+- [催眠大师](https://movie.douban.com/subject/24743711/)
+
+- [哪吒之魔童闹海](https://movie.douban.com/subject/34780991/)
+  - 改编的不错!
+
+- [唐探 1900](https://movie.douban.com/subject/36282639/)
+  - 超出预期~
+
 - [射雕英雄传: 侠之大者](https://movie.douban.com/subject/36289423/)
+  - 剧情草率, 就剩画质了~
 
 - [手机](https://movie.douban.com/subject/1308747/)
+
+- [漂白](https://movie.douban.com/subject/36678419/)
 
 - [误杀 3](https://movie.douban.com/subject/35815771/)
 
