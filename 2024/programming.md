@@ -26,7 +26,7 @@ go install golang.org/x/tools/cmd/deadcode@latest
 - [Go: reduce error handling boilerplate using ?](https://github.com/golang/go/discussions/71460)
   - 我还是偏支持的, 语法糖有意义吗? 有! 如果使用频率高的话~
   - 多年前, 已经有过类似的提案, Go 官方的独断是个事实~
-    治理的事情是个外人不好过多评论的事情.
+    不过, 社区治理的事情很难评价, 未见不良行为.
   - 我个人还是希望下一个版本 (1.25) 能用上~
 
 ---

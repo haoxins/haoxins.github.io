@@ -87,7 +87,9 @@ date: 2023-01-30
     $$ ε $$
     的`操作元`.
 
-> 注: 留意维度
+> 注: 留意
+  $$ E_k $$
+  维度
 
 - 操作元满足称为`完备性`关系的重要约束,
   类似于经典噪声的描述中演化矩阵的完备性关系.
@@ -126,15 +128,17 @@ date: 2023-01-30
   成为主系统的状态, 于是
   - $$
       \begin{align}
-        ρ_k \propto tr_E(
-          \mid e_k \rangle \langle e_k \mid U
-          (ρ \otimes \mid e_0 \rangle \langle e_0 \mid)
-          U^{\dagger} \mid e_k \rangle \langle e_k \mid
-        )
+        ρ_k
+        & \propto
+            tr_E(
+              \mid e_k \rangle \langle e_k \mid U
+              (ρ \otimes \mid e_0 \rangle \langle e_0 \mid)
+              U^{\dagger} \mid e_k \rangle \langle e_k \mid
+            )                            \\
         & = \langle e_k \mid U
             (ρ \otimes \mid e_0 \rangle \langle e_0 \mid)
             U^{\dagger} \mid e_k \rangle \\
-        & = E_k ρ E_k^{\dagger} \\
+        & = E_k ρ E_k^{\dagger}          \\
       \end{align}
     $$
   - 归一化
