@@ -4,6 +4,12 @@ description: 薄雾浓云愁永昼, 瑞脑销金兽. 佳节又重阳, 玉枕纱�
 date: 2023-07-17
 ---
 
+- [Go: reduce error handling boilerplate using ?](https://github.com/golang/go/discussions/71460)
+  - 我还是偏支持的, 语法糖有意义吗? 有! 如果使用频率高的话~
+  - 多年前, 已经有过类似的提案, Go 官方的独断是个事实~
+    不过, 社区治理的事情很难评价, 未见不良行为.
+  - 我个人还是希望下一个版本 (1.25) 能用上~
+
 - 自己在用的一些 Go 的官方命令行工具:
   - [Go Telemetry](https://telemetry.go.dev)
 
@@ -12,22 +18,91 @@ go install golang.org/x/vuln/cmd/govulncheck@latest
 go install golang.org/x/tools/cmd/deadcode@latest
 ```
 
-- Rust 的一些容易犯的小错误 (Coding 的时候)
-  - 忘记引入相应的 `trait`
-
-- Rust 的一些 libs
-  - [bon](https://github.com/elastio/bon)
-
 ---
 
+- [A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro/)
   - 配图 (动图) 是个亮点~
----
 
-- [Go: reduce error handling boilerplate using ?](https://github.com/golang/go/discussions/71460)
-  - 我还是偏支持的, 语法糖有意义吗? 有! 如果使用频率高的话~
-  - 多年前, 已经有过类似的提案, Go 官方的独断是个事实~
-    不过, 社区治理的事情很难评价, 未见不良行为.
-  - 我个人还是希望下一个版本 (1.25) 能用上~
+```
+GNNs adopt a "graph-in, graph-out" architecture.
+```
+
+```
+We need a way to collect information from edges
+and give them to nodes for prediction.
+We can do this by pooling.
+Pooling proceeds in two steps:
+1. For each item to be pooled, gather each of their
+   embeddings and concatenate them into a matrix.
+2. The gathered embeddings are then aggregated,
+   usually via a sum operation.
+```
+
+```
+If we only have node-level features and need to predict
+a binary global property, we need to gather all available
+node information together and aggregate them.
+This is similar to Global Average Pooling layers in CNNs.
+The same can be done for edges.
+```
+
+```
+Note that in this simplest GNN formulation,
+we're not using the connectivity of the graph
+at all inside the GNN layer.
+We only use connectivity when
+pooling information for prediction.
+```
+
+```
+We could make more sophisticated predictions by
+using pooling within the GNN layer, to make our
+learned embeddings aware of graph connectivity.
+We can do this using message passing, where
+neighboring nodes or edges exchange information
+and influence each other's updated embeddings.
+```
+
+```
+Message passing works in three steps:
+1. For each node in the graph, gather all the
+   neighboring node embeddings (or messages).
+2. Aggregate all messages via an aggregate function (like sum).
+3. All pooled messages are passed through an update function,
+   usually a learned neural network.
+```
+
+```
+By stacking messages passing GNN layers together,
+a node can eventually incorporate information from
+across the entire graph:
+after three layers, a node has information
+about the nodes three steps away from it.
+```
+
+```
+One solution to this problem is by using the global
+representation of a graph (U), which is sometimes
+called a master node or context vector.
+This global context vector is connected to all other
+nodes and edges in the network and can act as a bridge
+between them to pass information, building up a
+representation for the graph as a whole.
+```
+
+```
+A common practice for training neural networks is to
+update network parameters with gradients calculated
+on randomized constant size (batch size) subsets of
+the training data (mini-batches).
+This practice presents a challenge for graphs due to the
+variability in the number of nodes and edges adjacent to
+each other, meaning that we cannot have a constant batch size.
+The main idea for batching with graphs is to create subgraphs
+that preserve essential properties of the larger graph.
+```
+
+> 全文偏概述, 也值得一阅.
 
 ---
 
@@ -185,6 +260,9 @@ should have access to them.
     compile-time-checked builders for
     functions and structs.
   - 我想说的是: Go 做不到! 哈哈~
+
+- Rust 的一些容易犯的小错误 (Coding 的时候)
+  - 忘记引入相应的 `trait`
 
 ---
 
