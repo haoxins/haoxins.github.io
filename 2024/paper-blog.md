@@ -27,6 +27,79 @@ shared statistical model of reality
 in their representation spaces.
 ```
 
+```
+With the continuing trend of models scaling up,
+this suggests model alignment will increase over time -
+we might expect that the next generation of bigger,
+better models will be even more aligned with each other.
+```
+
+```
+we might say: all strong models are alike,
+each weak model is weak in its own way.
+
+Do models trained on different data modalities also converge?
+Several works indicate that the answer is yes.
+
+The converse effect also holds:
+the better a vision models is,
+the more it tends to align with LLMs.
+```
+
+- __The Multitask Scaling Hypothesis__
+
+```
+There are fewer representations that are competent
+for N tasks than there are for M < N tasks.
+As we train more general models that solve more tasks
+at once, we should expect fewer possible solutions.
+```
+
+```
+As more models are trained on internet-scale data,
+the set of solutions that satisfies all
+data constraints must become relatively small.
+```
+
+- __The Capacity Hypothesis__
+
+```
+Bigger models are more likely to converge to
+a shared representation than smaller models.
+```
+
+- __The Simplicity Bias Hypothesis__
+
+```
+Deep networks are biased toward finding simple fits to
+the data, and the bigger the model, the stronger the bias.
+Therefore, as models get bigger, we should expect
+convergence to a smaller solution space.
+```
+
+```
+个人总结:
+不同数据: 文本, 图片 (视频),
+真实世界的 event (with time window),
+具有不同的空间维度.
+但是在同一个子空间的投影, 有着接近的表象.
+不过, 额外的维度数据必然有着更多的信息
+(暂且忽略同一维的的投影数据的相对较小的差异).
+```
+
+```
+数据的多样性会产生更高效的 (更简单的) 表征 (答案).
+即使单纯的语言模型, 引入图片等数据, 也会增加同一子空间的多样性
+(在相同方向的矢量的局部偏移的多样性).
+```
+
+```
+低维的数据模型 (语言模型) 同样可以表征高维数据 (视觉模型).
+所以 LLM 具有一定的 Vision 知识. 可以节约 Vision 模型的训练.
+```
+
+> 总的来说, 本文偏直觉解释~
+
 ### Attention Is All You Need
 
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
