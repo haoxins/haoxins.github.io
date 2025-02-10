@@ -165,6 +165,9 @@ the weight assigned to each value is computed by a
 compatibility function of the query with the corresponding key.
 ```
 
+> 能够设计这样一个简单方式 (当然, 或多或少在前人的积累上),
+  然后真的有很棒的效果~ 确实是一个值得铭记的闪光时刻!
+
 - We suspect that for large values of
   $$ d_k $$,
   the dot products grow large in magnitude,
