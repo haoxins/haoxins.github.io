@@ -4,6 +4,27 @@ description: 薄雾浓云愁永昼, 瑞脑销金兽. 佳节又重阳, 玉枕纱�
 date: 2023-07-17
 ---
 
+- [Go 1.24 Release Notes](https://go.dev/doc/go1.24)
+  - [Swiss Tables](https://abseil.io/about/design/swisstables)
+  - When marshaling, a struct field with the new
+    `omitzero` option in the struct field tag will
+    be omitted if its value is zero. If the field
+    type has an `IsZero()` bool method, that will be
+    used to determine whether the value is zero.
+  - Otherwise, the value is zero if it is the zero
+    value for its type. The `omitzero` field tag is
+    clearer and less error-prone than `omitempty`
+    when the intent is to omit zero values.
+  - In particular, unlike `omitempty`, `omitzero`
+    omits zero-valued `time.Time` values,
+    which is a common source of friction.
+  - If both `omitempty` and `omitzero` are specified,
+    the field will be omitted if the value is either
+    empty or zero (or both).
+  - 总体上, Always `omitzero` only.
+
+---
+
 - [Go: reduce error handling boilerplate using ?](https://github.com/golang/go/discussions/71460)
   - 我还是偏支持的, 语法糖有意义吗? 有! 如果使用频率高的话~
   - 多年前, 已经有过类似的提案, Go 官方的独断是个事实~
