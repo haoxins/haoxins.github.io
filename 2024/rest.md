@@ -4,6 +4,8 @@ description: 浮云游子意, 落日故人情. 挥手自兹去, 萧萧班马鸣.
 date: 2023-07-17
 ---
 
+- [神探夏洛克 第二季](https://movie.douban.com/subject/6522269/)
+
 - [神探夏洛克 第一季](https://movie.douban.com/subject/3986493/)
 
 - [记忆大师](https://movie.douban.com/subject/25884801/)
@@ -95,7 +97,8 @@ Manner 冷萃续美式;
   - 首先, 藏着掖着拍是肯定的;
   - 但是, 确实是一个小小的进步!
   - 可能是春节档唯一算有内涵的影片吧~
-  - 推荐 [法律的悖论](https://book.douban.com/subject/36624253/)
+  - 推荐
+    [法律的悖论](https://book.douban.com/subject/36624253/)
 
 - [目中无人 2](https://movie.douban.com/subject/36212386/)
   - 爱奇艺: `9` 元
