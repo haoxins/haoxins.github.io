@@ -10,3 +10,6 @@ date: 2025-02-05
   - The Hierarchical Unified Graph Representation (HUGR)
     is the common representation of quantum circuits
     and operations in the Quantinuum ecosystem.
+- [Fusion Blossom](https://github.com/yuewuo/fusion-blossom)
+  - A fast Minimum-Weight Perfect Matching (MWPM)
+    solver for Quantum Error Correction (QEC).
