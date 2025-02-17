@@ -360,9 +360,9 @@ linear combination of stationary states.
   - 因此唯一重要的是无限远处的势:
   - $$
       \begin{cases}
-        E < [ V(- \infty) \mbox{ } 和 \mbox{ } V(\infty) ]
+        E < [ V(- \infty) \mbox{ 和 } V(\infty) ]
         \Rightarrow 束缚态, \\
-        E > [ V(- \infty) \mbox{ } 或 \mbox{ } V(\infty) ]
+        E > [ V(- \infty) \mbox{ 或 } V(\infty) ]
         \Rightarrow 散射态
       \end{cases}
     $$

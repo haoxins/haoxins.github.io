@@ -33,7 +33,7 @@ date: 2023-10-06
   $$ \asymp $$
   来表示这个最终相等的概念. 简而言之,
   - $$
-      A \mbox{ } 最终等于 \mbox{ } B \Leftrightarrow
+      A \mbox{ 最终等于 } B \Leftrightarrow
       A \asymp B \Leftrightarrow
       \lim_{\epsilon \rightarrow 0} \frac{A}{B} = 1
     $$.
@@ -290,7 +290,7 @@ date: 2023-10-06
       \mathcal{K} (p) =
       \lim_{△_{p} \rightarrow p}
       \frac{ε (△_{p})}{\mathcal{A} (△_{p})} =
-      点 \mbox{ } p \mbox{ } 处单位面积的角盈
+      \mbox{ 点 } p \mbox{ } 处单位面积的角盈
     $$.
 - 上述定义可以推广到三角形以外的情形.
   如果我们用一个小 `n` 边形来代替
@@ -1431,7 +1431,7 @@ date: 2023-10-06
   是任意单位切向量, 则在这个方向上的法截痕的曲率由
   $$ κ(\hat{v}) = \hat{v} \cdot S(\hat{v}) $$
   给出. 因此,
-  - $$ κ(\hat{v}) = S(\hat{v}) 在 \mbox{ } \hat{v} \mbox{ } 方向的投影 $$.
+  - $$ κ(\hat{v}) = S(\hat{v}) \mbox{ 在 } \hat{v} \mbox{ } 方向的投影 $$.
 - 根据默尼耶定理,
   $$ κ(\hat{v}) $$
   不仅是法截痕的曲率, 它还等于曲面上沿
@@ -1621,7 +1621,7 @@ date: 2023-10-06
 ## 全局高斯-博内定理 - 启发性证明
 
 - `旋转定理`可以重新表述为闭曲线的`全曲率`具有拓扑不变性:
-  - $$ \oint_{C} κ ds = \oint_{C} dφ = \mathbf{v} \mbox{ } 的净旋转角 = 2π $$,
+  - $$ \oint_{C} κ ds = \oint_{C} dφ = \mathbf{v} \mbox{ 的净旋转角 } = 2π $$,
   - 与
     $$ \mathcal{C} $$
     的形状无关.
@@ -2117,7 +2117,7 @@ date: 2023-10-06
   - $$
       \mathcal{K} (p) =
       \lim_{L_p → p} \frac{\mathcal{R}(L_p)}{\mathcal{A}(L_p)} =
-      在点 \mbox{ } p \mbox{ } 的单位面积的和乐性
+      \mbox{ 在点 } p \mbox{ } 的单位面积的和乐性
     $$.
 
 > Page 288, 配图
