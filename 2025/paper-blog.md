@@ -14,4 +14,5 @@ date: 2024-01-28
 
 - [Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer](https://arxiv.org/abs/quant-ph/9508027)
 
+### Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention
 ### DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning

@@ -23,7 +23,12 @@ date: 2023-07-17
     empty or zero (or both).
   - 总体上, Always `omitzero` only.
 
----
+```
+2025-02-11 发布, 这次正好可以借助
+Go Telemetry 看看一个月之后,
+Go 1.23 有多大比例迁移至 Go 1.24!
+
+```
 
 - [Go: reduce error handling boilerplate using ?](https://github.com/golang/go/discussions/71460)
   - 我还是偏支持的, 语法糖有意义吗? 有! 如果使用频率高的话~
