@@ -4,6 +4,20 @@ description: 寻芳不觉醉流霞, 倚树沉眠日已斜. 客散酒醒深夜后
 date: 2025-02-02
 ---
 
+### Posts
+
+- [Announcing Rust 1.85 and Rust 2024](https://blog.rust-lang.org/2025/02/20/Rust-1.85.0.html)
+
+```rust
+let mut vec: Vec<String> = vec![];
+
+let closure = async || {
+  vec.push(ready(String::from("")).await);
+};
+```
+
+---
+
 - __数学的碎碎念__: 2025-02-10 凌晨, 洗澡的时候想出来的.
   - 如何通过一道简单的题目, 测试数学的思维水平?
     洗澡的时候编了一道.

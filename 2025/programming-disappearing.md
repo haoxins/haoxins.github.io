@@ -103,12 +103,12 @@ cluster can survive two failures, and so on.
     [DataFusion Comet](https://github.com/apache/datafusion-comet),
     Databricks 也可能开源自己的 Spark native (c++) 版本的代码.
 
-- No 6. __Deno__
+- No 6. __Node__
   - [Node](https://github.com/nodejs/node)
   - [Deno](https://github.com/denoland/deno)
   - [Bun](https://github.com/oven-sh/bun)
   - 个人从未正经使用过 Deno 和 Bun, 这里纯粹是追忆陪伴 Node 的青春岁月.
-  - Deno 大概率最先消亡~
+    Deno 大概率最先消亡~, Bun 其次, Node 最后.
 
 - No 7. __MySQL__
   - [MySQL](https://github.com/mysql/mysql-server)
