@@ -130,7 +130,7 @@ date: 2022-02-11
 而这里, 一个函数变成了更大的空间中的点.
 ```
 
-- [赫尔德不等式](https://en.wikipedia.org/wiki/Hölder%27s_inequality)
+- [赫尔德不等式](https://en.wikipedia.org/wiki/Hölder's_inequality)
   - [共轭指数](https://en.wikipedia.org/wiki/Conjugate_index)
 - [柯西-施瓦茨不等式](https://en.wikipedia.org/wiki/Cauchy-Schwarz_inequality)
 - [闵可夫斯基不等式](https://en.wikipedia.org/wiki/Minkowski_inequality)
@@ -2122,13 +2122,110 @@ date: 2022-02-11
   - $$ u_k (t) = \cos kt $$,
     $$ v_k (t) = \sin kt $$.
 
+
+- 定义 (__完全规范正交集__) 赋范空间
+  $$ X $$
+  中的完全集 (或基本集) 是其张成的子空间在
+  $$ X $$
+  中稠密的子集
+  $$ M \subseteq X $$.
+  - 因此, 内积空间中的规范正交集 (或序列或族) 如果是
+    $$ X $$
+    中的完全集, 则称为
+    $$ X $$
+    中的完全规范正交集 (或序列或族).
+
+
+- 定理 (__完全性__) 希尔伯特空间
+  $$ H $$
+  中的规范正交集
+  $$ M $$
+  在
+  $$ H $$
+  中是完全的, 当且仅当对于所有
+  $$ x \in H $$
+  帕塞瓦尔等式成立 (即
+  $$ x $$
+  相对于
+  $$ M $$
+  的所有非零傅里叶系数的模的平方和等于
+  $$ x $$
+  的范数的平方).
+  - [帕塞瓦尔等式](https://en.wikipedia.org/wiki/Parseval's_identity)
+
+- 定理 (__可分希尔伯特空间__) 设
+  $$ H $$
+  是希尔伯特空间, 则
+  - (a) 若
+    $$ H $$
+    是可分的, 则
+    $$ H $$
+    中的每一个规范正交集都是可数的.
+  - (b) 若
+    $$ H $$
+    包含完全规范正交序列, 则
+    $$ H $$
+    是可分的.
+
 ### 勒让德, 埃尔米特和拉盖尔多项式
+
+- [勒让德多项式](https://en.wikipedia.org/wiki/Legendre_polynomials)
+
+- [埃尔米特多项式](https://en.wikipedia.org/wiki/Hermite_polynomials)
+
+- [拉盖尔多项式](https://en.wikipedia.org/wiki/Laguerre_polynomials)
 
 ### 希尔伯特空间中泛函的表示
 
-### 希尔伯特伴随算子
+- __里斯定理__ (希尔伯特空间中的泛函) 希尔伯特空间
+  $$ H $$
+  上的每一个有界线性泛函都能表示成内积的形式, 即
+  $$ f(x) = \langle x, z \rangle $$,
+  - 其中
+    $$ z $$
+    依赖于
+    $$ f $$
+    且由
+    $$ f $$
+    唯一确定, 并且范数
+    $$ \| z \| = \| f \| $$.
 
-### 自伴算子, 酉算子和正规算子
+- 引理 (__等式__) 若对于内积空间
+  $$ X $$
+  中的所有
+  $$ w $$
+  有
+  $$ \langle v_1, w \rangle = \langle v_2, w \rangle $$,
+  则
+  $$ v_1 = v_2 $$.
+  - 特别是, 若对于所有
+    $$ w \in X $$
+    有
+    $$ \langle v_1, w \rangle = 0 $$,
+    则
+    $$ v_1 = 0 $$.
+
+
+- 定理 (__里斯表示__) 设
+  $$ H_1 $$
+  和
+  $$ H_2 $$
+  是希尔伯特空间, 且
+  $$ h: H_1 \times H_2 \to K $$
+  是有界一个半线性形式, 则
+  $$ h $$
+  有表示
+  $$ h(x, y) = \langle Sx, y \rangle $$,
+  - 其中
+    $$ S: H_1 \to H_2 $$
+    是有界线性算子.
+    $$ S $$
+    由
+    $$ h $$
+    唯一确定, 并且范数
+    $$ \| S \| = \| h \| $$.
+
+### 希尔伯特伴随算子, 自伴算子, 酉算子和正规算子
 
 ## 赋范空间和巴拿赫空间的基本定理
 
