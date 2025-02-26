@@ -260,7 +260,7 @@ U 算符的矩阵元由旧基左矢和新基右矢的内积构成.
     $$ |ψ|^2 $$
     作为概率密度的较为满意的统计解释首先是由玻恩提出来的.
 
-- [格林函数](https://en.wikipedia.org/wiki/Green%27s_function)
+- [格林函数](https://en.wikipedia.org/wiki/Green's_function)
 
 ### 传播子和费曼路径积分
 

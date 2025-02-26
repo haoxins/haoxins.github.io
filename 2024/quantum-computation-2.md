@@ -1628,7 +1628,7 @@ date: 2023-01-17
   $$ a^{p - 1} = 1 $$
   $$ (mod \mbox{ } p) $$.
 
-- [欧拉定理 (欧拉-费马小定理)](https://en.wikipedia.org/wiki/Euler%27s_theorem)
+- [欧拉定理 (欧拉-费马小定理)](https://en.wikipedia.org/wiki/Euler's_theorem)
 
 > 因数分解 -> 求阶问题
 

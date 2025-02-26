@@ -2490,7 +2490,7 @@ p 点处的解析映射就是那些其局部效果是伸扭的映射:
 
 ---
 
-- [鲁歇定理](https://en.wikipedia.org/wiki/Rouché%27s_theorem)
+- [鲁歇定理](https://en.wikipedia.org/wiki/Rouché's_theorem)
 
 - 若在
   $$ Γ $$

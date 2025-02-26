@@ -246,8 +246,8 @@ date: 2022-10-31
 
 > 附录 II (狄拉克的 δ 函数) 也在卷二.
 
-- [帕塞瓦尔定理](https://en.wikipedia.org/wiki/Parseval%27s_theorem)
-  - [贝塞尔不等式](https://en.wikipedia.org/wiki/Bessel%27s_inequality)
+- [帕塞瓦尔定理](https://en.wikipedia.org/wiki/Parseval's_theorem)
+  - [贝塞尔不等式](https://en.wikipedia.org/wiki/Bessel's_inequality)
 
 ```
 附注:
@@ -2428,8 +2428,8 @@ date: 2022-10-31
 
 > 余弦级数和正弦级数: Page 542
 
-- [帕塞瓦尔定理](https://en.wikipedia.org/wiki/Parseval%27s_theorem)
-  - [帕塞瓦尔恒等式](https://en.wikipedia.org/wiki/Parseval%27s_identity)
+- [帕塞瓦尔定理](https://en.wikipedia.org/wiki/Parseval's_theorem)
+  - [帕塞瓦尔恒等式](https://en.wikipedia.org/wiki/Parseval's_identity)
 
 - $$
     \frac{1}{L} \int_{x_0}^{x_0 + L}

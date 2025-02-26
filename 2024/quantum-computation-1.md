@@ -2252,7 +2252,7 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 ### EPR 和贝尔不等式
 
 - [EPR](https://en.wikipedia.org/wiki/Einstein-Podolsky-Rosen_paradox)
-- [贝尔不等式](https://en.wikipedia.org/wiki/Bell%27s_theorem)
+- [贝尔不等式](https://en.wikipedia.org/wiki/Bell's_theorem)
 
 - 物理性质
   $$ P_Q $$,
@@ -2477,9 +2477,9 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 > 这一章真希望 Scott Aaronson 能够出一本专著
 
 - 作者推荐的一些资料
-  - [Karp's 21 NP-complete problems](https://en.wikipedia.org/wiki/Karp%27s_21_NP-complete_problems)
+  - [Karp's 21 NP-complete problems](https://en.wikipedia.org/wiki/Karp's_21_NP-complete_problems)
   - [结构复杂性理论](https://en.wikipedia.org/wiki/Structural_complexity_theory)
-  - [兰道尔原理](https://en.wikipedia.org/wiki/Landauer%27s_principle)
+  - [兰道尔原理](https://en.wikipedia.org/wiki/Landauer's_principle)
 
 ## 量子计算机: 物理实现
 

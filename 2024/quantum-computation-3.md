@@ -2205,7 +2205,7 @@ date: 2023-01-30
     量, 有时记为
     $$ χ $$.
 
-- [费诺不等式](https://en.wikipedia.org/wiki/Fano%27s_inequality)
+- [费诺不等式](https://en.wikipedia.org/wiki/Fano's_inequality)
 
 - 通过费诺不等式, 可以给霍列沃界赋予更多的意义. 假设 Bob 基于他的测量结果
   $$ Y $$

@@ -215,7 +215,7 @@ a + b√2 当然是实数, 但笔者觉得它似乎已经有二元数的意思�
 
 - `矢量积`即`叉乘`
 
-- [拉格朗日恒等式](https://en.wikipedia.org/wiki/Lagrange%27s_identity)
+- [拉格朗日恒等式](https://en.wikipedia.org/wiki/Lagrange's_identity)
 - [爱因斯坦求和约定](https://en.wikipedia.org/wiki/Einstein_notation)
   - [抽象指标记号](https://en.wikipedia.org/wiki/Abstract_index_notation)
 

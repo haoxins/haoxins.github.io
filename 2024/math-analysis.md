@@ -4544,6 +4544,6 @@ C(R/Z; C) 中的一般函数上, 而不仅仅是三角多项式上.
 
 > 相对而言, 最后两章, 略显单薄~
 
-- [富比尼定理](https://en.wikipedia.org/wiki/Fubini%27s_theorem)
+- [富比尼定理](https://en.wikipedia.org/wiki/Fubini's_theorem)
 
 > 结: 2024 年 10 月

@@ -1,8 +1,10 @@
 ---
 title: 休憩 游乐
-description: 浮云游子意, 落日故人情. 挥手自兹去, 萧萧班马鸣.
+description: 少年不识愁滋味, 爱上层楼, 爱上层楼, 为赋新词强说愁.
 date: 2023-07-17
 ---
+
+- [余烬之上](https://movie.douban.com/subject/36449287/)
 
 - [神探夏洛克 第二季](https://movie.douban.com/subject/6522269/)
 
@@ -101,7 +103,7 @@ Manner 冷萃续美式;
     [法律的悖论](https://book.douban.com/subject/36624253/)
 
 - [目中无人 2](https://movie.douban.com/subject/36212386/)
-  - 爱奇艺: `9` 元
+  - 爱奇艺: 9 元
   - 低配版: 画江湖之天罡
   - 有一说一, 比第一部好, 但整体一般~
 
@@ -116,12 +118,11 @@ Manner 冷萃续美式;
   - 一边吃饭一边看, 质感也还凑合吧~
 
 - [画江湖之天罡](https://movie.douban.com/subject/36066128/)
-  - 腾讯视频, `9` 元
+  - 腾讯视频, 9 元
   - 剧情一般, 没期待中的精彩
 
 - [涉过愤怒的海](https://movie.douban.com/subject/33456512/)
-  - 抖音, `4.9` 元
-  - 还行
+  - 抖音, 4.9 元, 还行
 
 - [年会不能停](https://movie.douban.com/subject/35725869/)
   - 主要是应景加分吧~

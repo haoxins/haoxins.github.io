@@ -271,7 +271,7 @@ linear combination of stationary states.
 
 ### 谐振子
 
-- [胡克定律](https://en.wikipedia.org/wiki/Hooke%27s_law)
+- [胡克定律](https://en.wikipedia.org/wiki/Hooke's_law)
 
 ```
 事实上, 对于任何振动来说,
@@ -1201,7 +1201,7 @@ in that case, the spectrum is said to be degenerate.
 
 - [伴随勒让德多项式](https://en.wikipedia.org/wiki/Associated_Legendre_polynomials)
   - [勒让德多项式](https://en.wikipedia.org/wiki/Legendre_polynomials)
-  - [罗德里格斯公式](https://en.wikipedia.org/wiki/Rodrigues%27_formula)
+  - [罗德里格斯公式](https://en.wikipedia.org/wiki/Rodrigues'_formula)
 - [球谐函数](https://en.wikipedia.org/wiki/Spherical_harmonics)
   - [球贝塞尔函数](https://en.wikipedia.org/wiki/Bessel_function#Spherical_Bessel_functions)
 - [主量子数](https://en.wikipedia.org/wiki/Principal_quantum_number)
