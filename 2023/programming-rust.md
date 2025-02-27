@@ -1,9 +1,3 @@
----
-title: Programming Rust
-description: 松风吹解带, 山月照弹琴. 君问穷通理, 渔歌入浦深.
-date: 2022-12-29
----
-
 - Rust 实用的库
   - [itertools](https://github.com/rust-itertools/itertools)
   - [snafu](https://github.com/shepmaster/snafu)

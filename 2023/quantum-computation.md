@@ -92,3 +92,85 @@ date: 2023-12-08
 但是为了有更高的效率, 必须要有一个观点表明能将正确答案从其他可能的错误答案中分离出来.
 量子计算机能够比经典计算机更快地解决问题, 这需要一个只有在我们使用正交矩阵变换它时才可见的结构.
 ```
+
+------------------
+
+## Confidence Computing
+
+- [FIPS 203](https://csrc.nist.gov/pubs/fips/203/ipd)
+  - Module-Lattice-Based Key-Encapsulation Mechanism Standard
+- [FIPS 204](https://csrc.nist.gov/pubs/fips/204/ipd)
+  - Module-Lattice-Based Digital Signature Standard
+- [FIPS 205](https://csrc.nist.gov/pubs/fips/205/ipd)
+  - Stateless Hash-Based Digital Signature Standard
+
+```
+Initial Public Draft
+
+Date Published: August 24, 2023
+Comments Due:   November 22, 2023
+```
+
+- [OpenSK](https://github.com/google/OpenSK)
+  - This repository contains a Rust implementation
+    of a FIDO2 authenticator.
+
+- [Noise Protocol Framework](https://noiseprotocol.org)
+
+- [Schnorr's identification protocol](https://www.zkdocs.com/docs/zkdocs/zero-knowledge-protocols/schnorr/)
+
+- [Solana](https://github.com/solana-labs/solana)
+  - Solana is a decentralized blockchain built to
+    enable scalable, user-friendly apps for the world.
+- There are 8 key innovations that make the
+  Solana network possible:
+  - Proof of History (POH)
+  - Tower BFT - a PoH-optimized version of PBFT;
+  - Turbine - a block propagation protocol;
+  - Gulf Stream - Mempool-less transaction forwarding protocol;
+  - Sealevel - Parallel smart contracts runtime;
+  - Pipelining - a Transaction Processing Unit
+    for validation optimization;
+  - Cloudbreak - Horizontally-Scaled Accounts Database;
+  - Archivers - Distributed ledger store.
+
+- [Drand](https://github.com/drand/drand)
+  - A Distributed Randomness Beacon Daemon
+
+- https://eprint.iacr.org/2011/344.pdf
+- https://eprint.iacr.org/2011/277.pdf
+
+### The OPAQUE Asymmetric PAKE Protocol
+
+- https://github.com/cfrg/draft-irtf-cfrg-opaque
+
+### Events
+
+- 2022-08, 期待以太坊, 一鲸落, 万物生.
+
+```
+The 2022 Gödel Prize is awarded to the following papers:
+
+Zvika Brakerski, Vinod Vaikuntanathan:
+Efficient Fully Homomorphic Encryption from (Standard) LWE.
+FOCS 2011: 97-106. SIAM Journal of Computing 43(2): 831-871 (2014)
+
+Zvika Brakerski, Craig Gentry, Vinod Vaikuntanathan:
+(Leveled) fully homomorphic encryption without bootstrapping.
+ITCS 2012: 309-325. ACM Transactions on Computation Theory 6(3): 13:1-13:36 (2014)
+
+The above papers made transformative contributions to cryptography
+by constructing efficient fully homomorphic encryption (FHE) schemes.
+
+The above papers presented entirely new constructions of
+fully homomorphic encryption whose security relied only on
+the hardness of Regev's learning with errors (LWE) problem.
+They have led to a new generation of practically efficient FHE.
+```
+
+
+------------------
+
+- [从区块链到 Web3: 构建未来互联网生态](https://book.douban.com/subject/36686046/)
+  - 差评!
+  - 乱七八糟!

@@ -1,9 +1,3 @@
----
-title: 深度强化学习
-description: 吹箫凌极浦, 日暮送夫君. 湖上一回首, 山青卷白云.
-date: 2023-01-05
----
-
 - [深度强化学习](https://book.douban.com/subject/36161659/)
 
 ---

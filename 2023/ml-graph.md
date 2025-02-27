@@ -1,5 +1,5 @@
 ---
-title: Graph Algorithms for Data Science
+title: Graph Algorithms, 图表征学习, 扩散模型
 description: 东城渐觉风光好, 縠皱波纹迎客棹. 绿杨烟外晓寒轻, 红杏枝头春意闹.
 date: 2022-01-02
 ---
