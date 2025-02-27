@@ -168,9 +168,23 @@ the hardness of Regev's learning with errors (LWE) problem.
 They have led to a new generation of practically efficient FHE.
 ```
 
+------------------
+
+- [机密计算](https://book.douban.com/subject/36319416/)
+  - 不抱期待, 没啥干货!
+
+```
+全同态加密相对于部分同态加密和类同态加密,
+在运算形式和电路深度方面更为自由,
+可以支持任意次数的加法与乘法运算.
+```
+
+```
+GSW 方案在功能上得到了扩展, 不需要计算密钥, 只需要公钥就可以进行同态运算,
+所以基于 GSW 方案可以构造基于身份的同态加密方案和基于属性的同态加密方案.
+```
 
 ------------------
 
 - [从区块链到 Web3: 构建未来互联网生态](https://book.douban.com/subject/36686046/)
-  - 差评!
-  - 乱七八糟!
+  - 差评! 乱七八糟!
