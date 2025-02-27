@@ -2187,13 +2187,13 @@ in that case, the spectrum is said to be degenerate.
   - 取此式为
     $$ ψ $$
     的表达式, 并将其代入积分符号中:
-  - $$ ψ = ψ_0 + \int gV ψ_0 + \int \int gV gV ψ $$.
+  - $$ ψ = ψ_0 + \int gV ψ_0 + \iint gV gV ψ $$.
   - 重复迭代该过程, 可得到
     $$ ψ $$
     的级数是
   - $$
-      ψ = ψ_0 + \int gV ψ_0 + \int \int gV gV ψ_0
-        + \int \int \int gV gV gV ψ_0 + ...
+      ψ = ψ_0 + \int gV ψ_0 + \iint gV gV ψ_0
+        + \iiint gV gV gV ψ_0 + ...
     $$.
   - 在每个被积函数中, 只出现入射波函数
     ($$ ψ_0 $$)

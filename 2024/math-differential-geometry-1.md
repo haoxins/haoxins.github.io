@@ -5,8 +5,8 @@ date: 2023-10-06
 ---
 
 - [可视化微分几何和形式](https://book.douban.com/subject/36369485/)
-  - 副标题: `一部五幕数学正剧`
-  - 等了 `2` 年!
+  - 副标题: 一部五幕数学正剧
+  - 等了 2 年!
   - __致敬: 齐民友先生!__
 
 ```
@@ -74,7 +74,7 @@ date: 2023-10-06
 > 非常喜欢这一段话!
 
 ```
-前四幕实现了我的承诺, 相互独立, 有 "几何" 味地介绍了微分几何.
+前四幕实现了我的承诺, 相互独立, 有几何味地介绍了微分几何.
 第四幕是真正的 "数学动力站", 它使得我们最终可以用几何方法证明前三幕中的许多论断.
 
 这几幕主题的几个方面是非正统的, 处理它们的几何方法也是非正统的.
@@ -82,7 +82,7 @@ date: 2023-10-06
 ```
 
 ```
-第一, 第三幕是整部剧的高潮, 而这一幕的高潮是全局高斯-博内定理 --
+第一, 第三幕是整部剧的高潮, 而这一幕的高潮是全局高斯-博内定理:
 这是连接局部几何与全局拓扑的著名定理.
 这个话题的内容是标准的, 但我们的处理方法就不是标准的了.
 为了突出这个定理的中心地位和根本重要性, 我们燃放了一组豪华的 "数学烟花":
@@ -311,7 +311,7 @@ date: 2023-10-06
 ```
 
 - 定理说的是, __三角形的角盈就是三角形内的总曲率__:
-  - $$ ε(△) = α + β + γ - π = \int \int_{△} \mathcal{K} d \mathcal{A} $$.
+  - $$ ε(△) = α + β + γ - π = \iint_{△} \mathcal{K} d \mathcal{A} $$.
   - 证明思路: 角盈具有可加性.
 
 > 第二章: 拉开序幕
@@ -1452,7 +1452,7 @@ date: 2023-10-06
   的`全曲率`
   $$ \mathcal{K} (P) $$
   (很自然地) 定义为
-  - $$ \mathcal{K} (P) = \int \int_{P} \mathcal{K} d \mathcal{A} $$.
+  - $$ \mathcal{K} (P) = \iint_{P} \mathcal{K} d \mathcal{A} $$.
   - (注记: 即使在现代, 这个概念仍然偶尔用它的古拉丁语名字, 直译为`曲率积分`.)
   - 例如, 如果
     $$ P $$
@@ -1738,9 +1738,9 @@ date: 2023-10-06
   的角盈同样是由内部的全曲率给出的.
   推广到测地线多边形,
   - $$
-      ε(△) = \int \int_{△} \mathcal{K} d \mathcal{A}
+      ε(△) = \iint_{△} \mathcal{K} d \mathcal{A}
       \Rightarrow
-      ε(P_j) = \int \int_{P_j} \mathcal{K} d \mathcal{A}
+      ε(P_j) = \iint_{P_j} \mathcal{K} d \mathcal{A}
       =
       \mathcal{K} (P_j)
     $$.
@@ -2090,8 +2090,8 @@ date: 2023-10-06
     $$ △ $$
     上的全曲率为
   - $$
-      \mathcal{K} (△) = \int \int_{△} \mathcal{K} d \mathcal{A} =
-      \frac{1}{R^2} \int \int_{△} d \mathcal{A} =
+      \mathcal{K} (△) = \iint_{△} \mathcal{K} d \mathcal{A} =
+      \frac{1}{R^2} \iint_{△} d \mathcal{A} =
       \frac{1}{R^2} [R^2 Θ] = Θ
     $$,
   - 因此, 当
@@ -2116,7 +2116,7 @@ date: 2023-10-06
   的曲率:
   - $$
       \mathcal{K} (p) =
-      \lim_{L_p → p} \frac{\mathcal{R}(L_p)}{\mathcal{A}(L_p)} =
+      \lim_{L_p \to p} \frac{\mathcal{R}(L_p)}{\mathcal{A}(L_p)} =
       \mbox{ 在点 } p \mbox{ } 的单位面积的和乐性
     $$.
 
@@ -2216,7 +2216,7 @@ date: 2023-10-06
     内`外在`曲率的总量:
     $$
       \mathcal{K}_{ext} (Ω) =
-      \int \int_{Ω} \mathcal{K}_{ext} d \mathcal{A}
+      \iint_{Ω} \mathcal{K}_{ext} d \mathcal{A}
     $$,
   - 设
     $$ \mathcal{K}(Ω) $$
@@ -2225,11 +2225,10 @@ date: 2023-10-06
     内`内蕴`曲率的总量:
     $$
       \mathcal{K}(Ω) =
-      \int \int_{Ω} \mathcal{K} d \mathcal{A} =
+      \iint_{Ω} \mathcal{K} d \mathcal{A} =
       \mathcal{R} (L)
     $$.
 
-## 全局高斯-博内定理的第四个证明 (利用和乐性)
 
 ## 度量曲率公式的几何证明
 
