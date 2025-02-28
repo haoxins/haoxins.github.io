@@ -251,3 +251,10 @@ which maximum spread occurs and what that spread is.
 其中一个主要原因是独热向量不能准确表达不同词之间的相似度,
 如我们经常使用的"余弦相似度".
 ```
+
+------------------
+
+- [深度强化学习](https://book.douban.com/subject/36161659/)
+
+---
+

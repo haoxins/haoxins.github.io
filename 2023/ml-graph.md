@@ -640,3 +640,15 @@ Their ability to generalize allows them to be applied to a
 variety of domains, from academic research to business analytics,
 extracting valuable insights from unstructured data.
 ```
+
+------------------
+
+- [图表征学习](https://book.douban.com/subject/36477924/)
+  - 干货不多, 勉强算个入门书籍~
+
+### 图嵌入
+
+- 若游走中的边不存在重复, 则该游走也称为`迹`;
+  此外, 若游走中的节点和边均不存在重复,
+  则该游走称为一条`路径`.
+

@@ -1,35 +1,3 @@
-- Rust 实用的库
-  - [itertools](https://github.com/rust-itertools/itertools)
-  - [snafu](https://github.com/shepmaster/snafu)
-  - [anyhow](https://github.com/dtolnay/anyhow)
-  - [thiserror](https://github.com/dtolnay/thiserror)
-- Rust math
-  - [nalgebra](https://github.com/dimforge/nalgebra)
-  - nalgebra is a linear algebra library
-    written for Rust targeting:
-  - General-purpose linear algebra.
-  - Real-time computer graphics.
-  - Real-time computer physics.
-  - [faer](https://github.com/sarah-ek/faer-rs)
-  - faer is a collection of crates that implement
-    low level linear algebra routines in pure Rust.
-- Graph
-  - [petgraph](https://github.com/petgraph/petgraph)
-  - Graph data structure library.
-  - [Arroy](https://github.com/meilisearch/arroy)
-  - `Arroy` (Approximate Rearest Reighbors) is a
-    Rust library with the interface of the
-    [Annoy](https://github.com/spotify/annoy)
-    Python library to search for vectors in
-    space that are close to a given query vector.
-  - It is based on `LMDB`, a memory-mapped key-value store,
-    so many processes may share the same data and
-    atomically modify the vectors.
-
----
-
-- [All Rust string types explained](https://www.youtube.com/watch?v=CpvzeyzgQdw)
-
 ```
 String -> Vec<u8>
   create/modify strings
