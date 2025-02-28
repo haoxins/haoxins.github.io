@@ -110,6 +110,67 @@ date: 2023-12-08
 还是那句话: 希望这本书只是开始~
 ```
 
+### 经典力学问题
+
+- $$ \overrightarrow{a} = \frac{d \overrightarrow{v}}{dt} $$
+- $$ \overrightarrow{F} = m \overrightarrow{a} $$
+- $$ F = G \frac{m_{1} m_{2}}{r^2} $$
+  - 在地球附近, 有如下关系:
+  - $$ F = mg = G \frac{Mm}{R^2} $$
+
+> 相对于`粗体`表示矢量, 貌似还是`箭头`更清晰~
+
+```
+虽然电磁现象可以通过麦克斯韦理论描述, 但是电磁力可以被区分成很多种力,
+这里介绍的是电荷间的作用力, 更严格地说是静电荷之间的力.
+```
+
+- $$ F = k \frac{q_{1} q_{2}}{r^2} $$
+
+### 光电问题
+
+- 一个带电量为 `q` 的运动电荷在距其 `r` 处的某一点
+  (可记作 `A` 点) 产生的电磁场是:
+
+$$
+\overrightarrow{E} =
+\frac{q}{4 \pi \varepsilon_0}
+\left [
+  \frac{\overrightarrow{e}_{r'}}{r'^2} +
+  \frac{r'}{c} \frac{d}{dt} \frac{\overrightarrow{e}_{r'}}{r'^2} +
+  \frac{1}{c^2} \frac{d^2}{dt^2} \overrightarrow{e}_{r'}
+\right ]
+$$
+
+- 其中 `r'` 是电荷在时间为
+  $$ t - \frac{r'}{c} $$
+  时刻与点 `A` 的距离,
+  $$ \overrightarrow{e}_{r'} $$,
+  为在
+  $$ t - \frac{r'}{c} $$
+  时刻电荷指向 `A` 点的单位向量.
+
+### 热力学与统计物理问题
+
+- 得到气体粒子平均动能与温度之间的关系.
+
+$$
+\langle \frac{1}{2} mv^2 \rangle = \frac{3}{2} kT
+$$
+
+- 从微观上讲, 温度表征了气体粒子运动的剧烈程度.
+  - 温度越高, 微观粒子运动越剧烈, 气体越热.
+- 根据能量均分定理, 以上公式表明每个自由度上平均分配的能量是
+  $$ \frac{1}{2} kT $$,
+  假设在某温度下理想气体粒子可以激发的自由度总共为 `i`,
+  那么理想气体的总内能为
+  $$ U = \frac{i}{2} NkT = \frac{1}{\gamma - 1} NkT $$,
+  其中
+  $$ \gamma $$
+  是新引入的参量, 其意义会在后面的绝热膨胀中体现出来.
+
+---
+
 ## Confidence Computing
 
 - [FIPS 203](https://csrc.nist.gov/pubs/fips/203/ipd)

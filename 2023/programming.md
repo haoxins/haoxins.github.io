@@ -568,3 +568,48 @@ func Join(errs ...error) error {
 
 - [All Rust string types explained](https://www.youtube.com/watch?v=CpvzeyzgQdw)
 
+```
+String -> Vec<u8>
+  create/modify strings
+
+&str -> & str -> &[u8]
+  read/analyze strings
+  Box<str>
+  Rc<str>
+  Arc<str>
+
+&'static str
+
+OsString & OsStr
+  no need utf-8
+
+Path & PathBuf
+```
+
+---
+
+- [Candle](https://github.com/huggingface/candle)
+  - Candle is a minimalist ML framework for Rust
+    with a focus on easiness of use and on
+    performance (including GPU support).
+  - Hugging Face 出品!
+
+- [Polars 开公司啦](https://www.pola.rs/posts/company-announcement/)
+  - We are excited to announce the start of company
+    that will build around Polars, enabling
+    data processing at any scale.
+  - 有意思, 期待!
+
+```
+Polars is entirely based on Arrow data types and
+backed by Arrow memory arrays.
+This makes data processing cache-efficient and
+well-supported for Inter Process Communication.
+```
+
+
+---
+
+- Arrow, DataFusion 生态
+  - `cargo tree --depth 1`
+
