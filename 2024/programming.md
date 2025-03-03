@@ -4,6 +4,79 @@ description: 薄雾浓云愁永昼, 瑞脑销金兽. 佳节又重阳, 玉枕纱�
 date: 2023-07-17
 ---
 
+- [Faster Go maps with Swiss Tables](https://go.dev/blog/swisstable)
+
+```
+In an open-addressed hash table, all items are
+stored in a single backing array. We'll call
+each location in the array a slot.
+The slot to which a key belongs is primarily
+determined by the hash function, hash(key).
+The hash function maps each key to an integer,
+where the same key always maps to the same integer,
+and different keys ideally follow a uniform random
+distribution of integers.
+The defining feature of open-addressed hash tables
+is that they resolve collisions by storing the key
+elsewhere in the backing array.
+So, if the slot is already full (a collision),
+then a probe sequence is used to consider other
+slots until an empty slot is found.
+
+The proportion of used slots is called the load factor,
+and most hash tables define a maximum load factor
+(typically 70-90%) at which point they will grow to avoid
+the extremely long probe sequences of very full hash tables.
+```
+
+```
+The Swiss Table design is also a form of open-addressed hash table.
+We still have a single backing array for storage,
+but we will break the array into logical groups of 8 slots each.
+```
+
+```
+In addition, each group has a 64-bit control word for metadata.
+Each of the 8 bytes in the control word corresponds to one of
+the slots in the group.
+The value of each byte denotes whether that slot is empty,
+deleted, or in use. If it is in use, the byte contains the
+lower 7 bits of the hash for that slot's key (called h2).
+```
+
+```
+Insertion works as follows:
+
+1 Compute hash(key) and break the hash into two parts:
+  the upper 57-bits (called h1) and
+  the lower 7 bits (called h2).
+2 The upper bits (h1) are used to select
+  the first group to consider.
+3 Within a group, all slots are equally eligible to
+  hold the key. We must first determine whether
+  any slot already contains this key, in which case
+  this is an update rather than a new insertion.
+3 If no slot contains the key, then we look for
+  an empty slot to place this key.
+4 If no slot is empty, then we continue the
+  probe sequence by searching the next group.
+```
+
+```
+Step 3 is where the Swiss Table magic happens.
+We need to check whether any slot in a group
+contains the desired key. Naively, we could just
+do a linear scan and compare all 8 keys.
+
+However, the control word lets us do this more efficiently.
+Each byte contains the lower 7 bits of the hash (h2)
+for that slot. If we determine which bytes of the
+control word contain the h2 we are looking for,
+we'll have a set of candidate matches.
+```
+
+> __SIMD__
+
 - [Go 1.24 Release Notes](https://go.dev/doc/go1.24)
   - [Swiss Tables](https://abseil.io/about/design/swisstables)
   - When marshaling, a struct field with the new

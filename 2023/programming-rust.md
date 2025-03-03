@@ -1,5 +1,0 @@
-- 2023-07-27, PyPI Programming Language
-  - Rust: 964
-  - C++: 1620
-  - C: 1590
-  - Cython: 1101

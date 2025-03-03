@@ -378,7 +378,6 @@ which maximum spread occurs and what that spread is.
   - 注意, 高估并不是 `DQN` 自身的属性, 而纯粹是算法造成的.
     想要避免高估, 就要用更好的算法替代原始的 `Q` 学习算法.
 
-
 ```
                         三种 TD 算法的对比
 
