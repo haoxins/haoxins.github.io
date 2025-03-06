@@ -47,19 +47,19 @@ lower 7 bits of the hash for that slot's key (called h2).
 ```
 Insertion works as follows:
 
-1 Compute hash(key) and break the hash into two parts:
-  the upper 57-bits (called h1) and
-  the lower 7 bits (called h2).
-2 The upper bits (h1) are used to select
-  the first group to consider.
-3 Within a group, all slots are equally eligible to
-  hold the key. We must first determine whether
-  any slot already contains this key, in which case
-  this is an update rather than a new insertion.
-3 If no slot contains the key, then we look for
-  an empty slot to place this key.
-4 If no slot is empty, then we continue the
-  probe sequence by searching the next group.
+1. Compute hash(key) and break the hash into two parts:
+   the upper 57-bits (called h1) and
+   the lower 7 bits (called h2).
+2. The upper bits (h1) are used to select
+   the first group to consider.
+3. Within a group, all slots are equally eligible to
+   hold the key. We must first determine whether
+   any slot already contains this key, in which case
+   this is an update rather than a new insertion.
+4. If no slot contains the key, then we look for
+   an empty slot to place this key.
+5. If no slot is empty, then we continue the
+   probe sequence by searching the next group.
 ```
 
 ```

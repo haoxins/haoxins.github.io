@@ -13,12 +13,15 @@ date: 2023-12-21
 
 - [Quantum logic gate](https://en.wikipedia.org/wiki/Quantum_logic_gate)
   - [List of quantum logic gates](https://en.wikipedia.org/wiki/List_of_quantum_logic_gates)
+
+- [Quantum Algorithm Zoo](https://quantumalgorithmzoo.org)
+- [Quantum error correction zoo](https://errorcorrectionzoo.org)
+- [Complexity Zoo](https://complexityzoo.net/Complexity_Zoo)
+
 - [Shtetl-Optimized](https://scottaaronson.blog)
   - The Blog of __Scott Aaronson__
   - https://www.scottaaronson.com
   - https://www.scottaaronson.com/papers/
-- [Quantum Algorithm Zoo](https://quantumalgorithmzoo.org)
-- [Complexity Zoo](https://complexityzoo.net/Complexity_Zoo)
 
 ### Quantum mechanics
 
