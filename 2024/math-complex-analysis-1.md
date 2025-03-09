@@ -2135,16 +2135,16 @@ p 点处的解析映射就是那些其局部效果是伸扭的映射:
   - $$ \mathbf{I}^2 = \mathbf{J}^2 = \mathbf{K}^2 = -1 $$
   - 和
   - $$ \mathbf{I} \mathbf{J} = \mathbf{K} = - \mathbf{J} \mathbf{I} $$,
-    $$ \mathbf{J} \mathbf{K} = \mathbf{I} = - \mathbf{K} \mathbf{J} $$,
-    $$ \mathbf{K} \mathbf{I} = \mathbf{J} = - \mathbf{I} \mathbf{K} $$.
-- 由此可知, 四元数的乘法, 与把
-  $$ \mathbf{1} $$,
-  $$ \mathbf{I} $$,
-  $$ \mathbf{J} $$,
-  $$ \mathbf{K} $$
-  用上述矩阵取代以后所得的
-  $$ 2 \times 2 $$
-  矩阵的乘法, 互相是等价的.
+  - $$ \mathbf{J} \mathbf{K} = \mathbf{I} = - \mathbf{K} \mathbf{J} $$,
+  - $$ \mathbf{K} \mathbf{I} = \mathbf{J} = - \mathbf{I} \mathbf{K} $$.
+  - 由此可知, 四元数的乘法, 与把
+    $$ \mathbf{1} $$,
+    $$ \mathbf{I} $$,
+    $$ \mathbf{J} $$,
+    $$ \mathbf{K} $$
+    用上述矩阵取代以后所得的
+    $$ 2 \times 2 $$
+    矩阵的乘法, 互相是等价的.
 
 ### 双曲几何
 

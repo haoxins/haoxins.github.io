@@ -16,3 +16,26 @@ date: 2024-01-28
 
 ### Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention
 ### DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
+
+### DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models
+
+- [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)
+
+```
+we notice that starting from a code training model
+is a better choice compared to a general LLM.
+
+Furthermore, we observe the math training also
+improves model capability, indicating it does
+not only enhance the model's mathematical abilities
+but also amplify general reasoning capabilities.
+```
+
+```
+Although training on arXiv papers is common, especially in
+many math-related papers, it brings no notable improvements
+on all mathematical benchmarks adopted in this paper.
+```
+
+#### Math Pre-Training
+
