@@ -2185,6 +2185,210 @@ date: 2022-02-11
   - $$ u_k (t) = \cos kt $$,
     $$ v_k (t) = \sin kt $$.
 
+- 因此, 我们可以把傅里叶级数写成
+  $$
+    x(t) = a_0 u_0 (t) + \sum_{k = 1}^{\infty}
+    [a_k u_k (t) + b_k v_k (t)]
+  $$.
+  - 用固定的
+    $$ u_j $$
+    乘上式的两端, 再关于
+    $$ t $$
+    从
+    $$ 0 $$
+    到
+    $$ 2π $$
+    积分, 这意味着取
+    $$ x(t) $$
+    和
+    $$ u_j $$
+    的内积.
+  - 假定允许逐项积分 (一致收敛便足够了), 并利用
+    $$ (u_k) $$
+    和
+    $$ (v_k) $$
+    的正交性, 以及对所有
+    $$ j $$,
+    $$ k $$
+    有
+    $$ u_j \perp v_k $$,
+    便可得到
+  - $$
+      \begin{align}
+        \langle x, u_j \rangle
+          & = a_0 \langle u_0, u_j \rangle + \sum
+            [a_k \langle u_k, u_j \rangle + b_k \langle v_k, u_j \rangle] \\
+          & = a_j \langle u_j, u_j \rangle \\
+          & = a_j \| u_j \|^2
+          & = \begin{cases}
+            2π a_0, & \mbox{ 若 } j = 0 \\
+            π a_j,  & \mbox{ 若 } j = 1, 2, ...
+          \end{cases}
+      \end{align}
+    $$.
+
+- 类似地, 将上述过程中的
+  $$ u_j $$
+  换成
+  $$ v_j $$
+  便可得到:
+  - 对于
+    $$ j = 1, 2, ... $$
+    有
+    $$ \langle x, v_j \rangle = b_j \| v_j \|^2 = π b_j $$.
+  - 求解
+    $$ a_j $$
+    和
+    $$ b_j $$,
+    并利用规范正交序列
+    $$ (e_j) $$
+    和
+    $$ (\widetilde{e}_j) $$,
+    其中
+    $$ e_j = \| u_j \|^{-1} u_j $$
+    且
+    $$ \widetilde{e}_j = \| v_j \|^{-1} v_j $$,
+    便可得到
+  - $$
+      a_j =
+        \frac{1}{\| u_j \|^2} \langle x, u_j \rangle =
+        \frac{1}{\| u_j \|} \langle x, e_j \rangle
+    $$,
+  - $$
+      b_j =
+        \frac{1}{\| v_j \|^2} \langle x, v_j \rangle =
+        \frac{1}{\| v_j \|} \langle x, \widetilde{e}_j \rangle
+    $$.
+  - 也有
+  - $$
+      a_k u_k (t) =
+        \frac{1}{\| u_k \|} \langle x, e_k \rangle u_k (t) =
+        \langle x, e_k \rangle e_k (t)
+    $$,
+  - $$
+      b_k v_k (t) =
+        \frac{1}{\| v_k \|} \langle x, \widetilde{e}_k \rangle v_k (t) =
+        \langle x, \widetilde{e}_k \rangle \widetilde{e}_k (t)
+    $$.
+- 因而能够把傅里叶级数写成
+  - $$
+      x(t) = \langle x, e_0 \rangle e_0 + \sum_{k = 1}^{\infty}
+        [ \langle x, e_k \rangle e_k +
+        \langle x, \widetilde{e}_k \rangle \widetilde{e}_k ]
+    $$.
+
+> 赞
+
+- 给定希尔伯特空间
+  $$ H $$
+  中的任意规范正交序列
+  $$ (e_k) $$,
+  我们可以考虑形如
+  $$ \sum_{k = 1}^{\infty} α_k e_k $$
+  的级数, 其中
+  $$ α_1 $$,
+  $$ α_2 $$,
+  ... 是任意标量.
+  - 若存在
+    $$ s \in H $$
+    使得这个级数的部分和
+    $$ s_n = α_1 e_1 + ... + α_n e_n $$
+    的序列
+    $$ (s_n) $$
+    收敛到
+    $$ s $$,
+    即当
+    $$ n \to ∞ $$
+    时有
+    $$ \| s_n - s \| \to 0 $$,
+    则称这个级数是`收敛`的, 并且有和
+    $$ s $$.
+
+- 定理 (__收敛性__) 设
+  $$ (e_k) $$
+  是希尔伯特空间
+  $$ H $$
+  中的规范正交序列, 则
+  - (a) 级数
+    $$ \sum_{k = 1}^{\infty} α_k e_k $$
+    (按
+    $$ H $$
+    上的范数) 收敛当且仅当以下级数收敛.
+  - $$ \sum_{k = 1}^{\infty} \mid α_k \mid^2 $$.
+  - (b) 若
+    $$ \sum_{k = 1}^{\infty} α_k e_k $$
+    收敛, 则系数
+    $$ a_k $$
+    等于傅里叶系数
+    $$ \langle x, e_k \rangle $$,
+    其中
+    $$ x $$
+    为
+    $$ \sum_{k = 1}^{\infty} α_k e_k $$
+    的和, 因而在这种情况下能够把
+    $$ \sum_{k = 1}^{\infty} α_k e_k $$
+    写成
+  - $$ x = \sum_{k = 1}^{\infty} \langle x, e_k \rangle e_k $$.
+  - (c) 对于任意
+    $$ x \in H $$
+    且
+    $$ α_k = \langle x, e_k \rangle $$,
+    级数
+    $$ \sum_{k = 1}^{\infty} α_k e_k $$
+    (按
+    $$ H $$
+    上的范数) 收敛.
+
+- 若内积空间
+  $$ X $$
+  中的规范正交族
+  $$ (e_κ) $$
+  $$ (κ \in I) $$
+  是不可数的 (即指标集
+  $$ I $$
+  是不可数的), 我们仍然能构成
+  $$ x \in X $$
+  的傅里叶系数
+  $$ \langle x, e_κ \rangle $$,
+  其中
+  $$ κ \in I $$.
+  - 对于固定的每个
+    $$ m = 1, 2, 3, ... $$,
+    可以推出满足
+    $$ \mid \langle x, e_κ \rangle \mid > 1 / m $$
+    的傅里叶系数的数目是有限的.
+  - 这就是下述值得注意的引理.
+
+- 引理 (__傅里叶系数__) 内积空间
+  $$ X $$
+  中的任意
+  $$ x $$
+  相对于
+  $$ X $$
+  中的规范正交族
+  $$ (e_κ) $$
+  $$ (κ \in I) $$
+  至多能够有可数个非零傅里叶系数
+  $$ \langle x, e_κ \rangle $$.
+  - 因此, 对给定的任意
+    $$ x \in H $$,
+    我们也有类似于
+    $$ x = \sum_{k = 1}^{\infty} \langle x, e_k \rangle e_k $$
+    的级数
+    $$ \sum_{κ \in I} \langle x, e_κ \rangle e_κ $$,
+  - 并且可以按照非零系数
+    $$ \langle x, e_κ \rangle $$
+    排列
+    $$ e_κ $$,
+    得到序列
+    $$ (e_1, e_2, ...) $$,
+    所以
+    $$ \sum_{κ \in I} \langle x, e_κ \rangle e_κ $$
+    取形式
+    $$ x = \sum_{k = 1}^{\infty} \langle x, e_k \rangle e_k $$.
+  - 另外, 可推出其收敛性. 并且还能证明这个和与
+    $$ e_κ $$
+    的排列次序无关.
 
 - 定义 (__完全规范正交集__) 赋范空间
   $$ X $$
@@ -2307,7 +2511,7 @@ date: 2022-02-11
 
 - [埃尔米特多项式](https://en.wikipedia.org/wiki/Hermite_polynomials)
 
-- 埃尔米特多项式有实用价值的空间还有
+- __埃尔米特多项式__ 有实用价值的空间还有
   $$ L^2 (-∞, +∞) $$,
   $$ L^2 [a, +∞) $$,
   $$ L^2 (-∞, b] $$.
@@ -2403,8 +2607,6 @@ date: 2022-02-11
 ### 希尔伯特伴随算子, 自伴算子, 酉算子和正规算子
 
 
-- 定义 (自伴算子, 酉算子和正规算子)
-  对于希尔伯特空间
 
 - 定义 (自伴算子, 酉算子和正规算子) 对于希尔伯特空间
   $$ H $$

@@ -101,6 +101,8 @@ we'll have a set of candidate matches.
 Go Telemetry 看看一个月之后,
 Go 1.23 有多大比例迁移至 Go 1.24!
 
+2025-03-13
+v1.24 / (v1.23 + v1.24) > 0.33
 ```
 
 - [Go: reduce error handling boilerplate using ?](https://github.com/golang/go/discussions/71460)
