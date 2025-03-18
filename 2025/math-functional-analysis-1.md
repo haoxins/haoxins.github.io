@@ -2219,10 +2219,10 @@ date: 2022-02-11
           & = a_0 \langle u_0, u_j \rangle + \sum
             [a_k \langle u_k, u_j \rangle + b_k \langle v_k, u_j \rangle] \\
           & = a_j \langle u_j, u_j \rangle \\
-          & = a_j \| u_j \|^2
+          & = a_j \| u_j \|^2 \\
           & = \begin{cases}
-            2π a_0, & \mbox{ 若 } j = 0 \\
-            π a_j,  & \mbox{ 若 } j = 1, 2, ...
+            2π a_0 & \mbox{ 若 } j = 0 \\
+            π a_j  & \mbox{ 若 } j = 1, 2, ...
           \end{cases}
       \end{align}
     $$.
@@ -2318,7 +2318,7 @@ date: 2022-02-11
   - (b) 若
     $$ \sum_{k = 1}^{\infty} α_k e_k $$
     收敛, 则系数
-    $$ a_k $$
+    $$ α_k $$
     等于傅里叶系数
     $$ \langle x, e_k \rangle $$,
     其中
