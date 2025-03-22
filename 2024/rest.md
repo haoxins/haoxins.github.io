@@ -6,6 +6,7 @@ date: 2023-07-17
 
 - [大明王朝 1566](https://movie.douban.com/subject/2210001/)
   - 百姓, 苦!
+  - 人人皆知, 人人不言!
 
 - [余烬之上](https://movie.douban.com/subject/36449287/)
   - 不错~
