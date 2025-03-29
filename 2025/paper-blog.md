@@ -39,3 +39,10 @@ on all mathematical benchmarks adopted in this paper.
 
 #### Math Pre-Training
 
+```
+To filter out low-quality mathematical content,
+we rank the collected pages according to their
+scores predicted by the fastText model,
+and only preserve the top-ranking ones.
+```
+
