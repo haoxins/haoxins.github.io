@@ -1236,6 +1236,8 @@ in that case, the spectrum is said to be degenerate.
     $$ p_z \rightarrow -i \hbar \partial / \partial z $$
     得到.
 
+> 赝矢量
+
 - [阶梯算符](https://en.wikipedia.org/wiki/Ladder_operator)
 
 ### 自旋
