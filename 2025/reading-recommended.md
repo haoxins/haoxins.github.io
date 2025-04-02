@@ -15,7 +15,7 @@ date: 2025-02-19
 
 ------------------
 
-- [狄拉克讲广义相对论](https://book.douban.com/subject/36415054/)
+- [伊藤清概率论](https://book.douban.com/subject/35349476/)
 
 ------------------
 

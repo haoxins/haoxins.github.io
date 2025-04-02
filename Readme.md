@@ -15,7 +15,8 @@
 
 - [NebulaGraph 社区的专访](https://mp.weixin.qq.com/s/cKcmK3Cpvq870sTSyCVOiw)
 - [关于 Lean 4](2024/lean.md)
-- [陶哲轩实分析](2024/math-analysis.md)
+- [陶哲轩实分析](2024/math-analysis-1.md)
+- [陶哲轩实分析](2024/math-analysis-2.md)
 - [复分析 可视化方法 (上)](2024/math-complex-analysis-1.md)
 - [复分析 可视化方法 (下)](2024/math-complex-analysis-2.md)
 - [可视化微分几何和形式 (上)](2024/math-differential-geometry-1.md)
