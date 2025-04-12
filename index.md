@@ -3,6 +3,7 @@
 ### 2025
 
 - [猫咪的那些事](2025/cat.md)
+- [个人的分享: NebulaGraph 的应用](https://mp.weixin.qq.com/s/nP2mc8ZkouSzHPy0OTRm9g)
 - [泛函分析导论及应用 - (上)](2025/math-functional-analysis-1.md)
 - [阅读的闲书](2025/reading.md)
 
