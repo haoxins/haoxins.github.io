@@ -31,6 +31,12 @@ date: 2023-12-21
 
 - [BrowserLeaks](https://browserleaks.com)
 
+### 我的藏书目录
+
+- [量子力学 (第一卷)](https://book.douban.com/subject/25954720/)
+- [量子力学 (第二卷)](https://book.douban.com/subject/26716232/)
+- [量子场论 (第一卷)](https://book.douban.com/subject/35493043/)
+
 ### 一些好的微信文章
 
 - [到底什么是赝矢量? 如何彻底理解角速度?](https://mp.weixin.qq.com/s/8M412961B5uQNGUCXR80dQ)

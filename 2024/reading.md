@@ -75,8 +75,8 @@ date: 2023-07-17
     的复数, 相应矩阵的一般形式为
   - $$
       z = \begin{pmatrix}
-        cosθ & -sinθ \\
-        sinθ & cosθ
+        \cos θ & - \sin θ \\
+        \sin θ & \cos θ
       \end{pmatrix}
     $$
 
