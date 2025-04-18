@@ -39,6 +39,7 @@ date: 2023-12-21
 
 ### 一些好的微信文章
 
+- [诺贝尔物理学奖与人工智能: 跨越学科的智慧交融](https://mp.weixin.qq.com/s/vfJkJ4hcrjzgqxnaVVK9VA)
 - [到底什么是赝矢量? 如何彻底理解角速度?](https://mp.weixin.qq.com/s/8M412961B5uQNGUCXR80dQ)
 - [从广义相对论到规范理论 (上)](https://mp.weixin.qq.com/s/rZjondEYljjGVdNjc3pDwA)
 - [从广义相对论到规范理论 (中)](https://mp.weixin.qq.com/s/7AAHhWEEWEBQZ2nCKhS04w)
