@@ -33,7 +33,6 @@ date: 2023-12-21
 
 ### 我的藏书目录
 
-- [量子力学 (第一卷)](https://book.douban.com/subject/25954720/)
 - [量子力学 (第二卷)](https://book.douban.com/subject/26716232/)
 - [量子场论 (第一卷)](https://book.douban.com/subject/35493043/)
 
