@@ -302,7 +302,7 @@ date: 2024-01-24
       \mathcal{R}(v, w)u +
       \mathcal{R}(w, u)v = 0
       \Longleftrightarrow
-      R_{jikm} + R_{jkim} + R_{kijkm} = 0
+      R_{ijkm} + R_{jkim} + R_{kijm} = 0
     $$.
   - 其次, 黎曼张量关于交换第一对和第二对向量也是对称的:
   - $$
@@ -420,13 +420,14 @@ date: 2024-01-24
   $$ v $$
   的任意两个相互正交平面的截面曲率之和:
   - $$
-      (\ddot{δ \mathcal{A}}) (0) =
-      -[\mathcal{K} (0) + \mathcal{K} (π / 2)] δ \mathcal{A} (0)
+      (\ddot{δ \mathcal{A}}) (0) = -
+      [\mathcal{K} (0) + \mathcal{K} (π / 2)] δ \mathcal{A} (0)
     $$,
   - 因此
     $$
-      δ \mathcal{A} (t) - δ \mathcal{A} (t) \asymp
-      - \frac{1}{2} [\mathcal{K} (0) + \mathcal{K} (π / 2)]
+      δ \mathcal{A} (t) - δ \mathcal{A} (t)
+      \asymp - \frac{1}{2}
+      [\mathcal{K} (0) + \mathcal{K} (π / 2)]
       δ \mathcal{A} (0) t^2
     $$.
 
@@ -625,7 +626,7 @@ date: 2024-01-24
         & = ω(v) + φ(v) \\
         & = v(ω) + v(φ)
       \end{align}
-    $$,
+    $$
   - 且
     $$ v(kω) = kω(v) = kv(ω) $$.
 
