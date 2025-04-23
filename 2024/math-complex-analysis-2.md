@@ -678,33 +678,33 @@ date: 2022-06-12
     还有两个非常简单的局部性质等价于上面两个非局部的性质.
 
 - 量
-  $$ ▽ · X $$
+  $$ \nabla · X $$
   称为
   $$ X $$
   的`散度` (许多书上记作
   $$ \mbox{div} X $$),
   利用这个概念就有
-  - $$ \mathcal{F} [X, ◻] = [▽ · X(z)] (◻ \mbox{ 的面积}) $$.
+  - $$ \mathcal{F} [X, ◻] = [\nabla · X(z)] (◻ \mbox{ 的面积}) $$.
   - 我们将看到, 即使将
     $$ ◻ $$
     代以任意形状的无穷小环路, 上式仍然成立.
   - 这个重要结果还可以解释"散度"一词的来由, 因为这个公式说的就是
-    $$ ▽ · X $$
+    $$ \nabla · X $$
     即为穿过每个包围着
     $$ z $$
     的单位面积流出 (即散出) 的局部流量.
     以后我们就把"单位面积的局部流量"简单地说成"流量密度".
 
 - 对于功, 我们就会得到
-  - $$ \mathcal{W} [X, ◻] = [▽ \times X(z)] (◻ \mbox{ 的面积}) $$,
+  - $$ \mathcal{W} [X, ◻] = [\nabla \times X(z)] (◻ \mbox{ 的面积}) $$,
   - 这里的形式叉积定义为
   - $$
-      ▽ \times X =
+      \nabla \times X =
       \binom{\partial_x}{\partial_y} \times \binom{P}{Q} =
       \partial_x Q - \partial_y P
     $$.
 - 量
-  $$ ▽ \times X $$
+  $$ \nabla \times X $$
   称为
   $$ X $$
   的`旋度` (许多书上记作
@@ -728,7 +728,7 @@ date: 2022-06-12
   - 可以证明,
     $$ X $$
     的决定角速度的方面就是其旋度:
-  - $$ ω(z) = \frac{1}{2} [▽ \times X(z)] $$.
+  - $$ ω(z) = \frac{1}{2} [\nabla \times X(z)] $$.
   - 正因为如此, curl 在许多书上记作 rot, 即旋转 (rotation) 的简写.
 
 - 叉积本来是向量, 这个概念内蕴地只能用于三维空间.
@@ -736,10 +736,10 @@ date: 2022-06-12
   $$ X $$
   可以看作三维向量的特例:
   $$ X = (X_1(x, y), X_2(x, y), 0) $$,
-  $$ ▽ = (\partial_x, \partial_y, \partial_z) $$.
+  $$ \nabla = (\partial_x, \partial_y, \partial_z) $$.
   - 按三维叉积的定义, 应该有
     $$
-      ▽ \times X = (
+      \nabla \times X = (
         \partial_y 0 - \partial_z X_2,
         \partial_z X_1 - \partial_x 0,
         \partial_x X_2 - \partial_y X_1
@@ -750,12 +750,12 @@ date: 2022-06-12
     即
     $$ z $$.
   - 这样
-    $$ ▽ \times X $$
+    $$ \nabla \times X $$
     就成了"标量" (更准确地说应该是一个"赝标量",
     因为若采用了左手坐标系, 它将为反号).
     所以在复分析的框架下, 叉积成了一个标量.
   - 所以这里只是泛称
-    $$ ▽ \times X $$
+    $$ \nabla \times X $$
     为一个"量". 如果想要更加协调地解释这个问题,
     或者想要推广到更高维的空间, 通用的也是最简单的方法,
     是应用外代数理论. (译者注)
@@ -767,9 +767,9 @@ date: 2022-06-12
   中为无源且无旋的, 则在
   $$ R $$
   的每一点均有
-  - $$ ▽ \cdot X = 0 $$
+  - $$ \nabla \cdot X = 0 $$
     以及
-    $$ ▽ \times X = 0 $$.
+    $$ \nabla \times X = 0 $$.
   - 这时我们就说
     $$ X $$
     在
@@ -817,13 +817,13 @@ date: 2022-06-12
   为解析的.
   - 证明只不过是简单的计算:
   - $$
-      ▽ · \bar{H} =
+      \nabla · \bar{H} =
       \binom{\partial_x}{\partial_y} · \binom{u}{-v} =
       \partial_x u - \partial_y v
     $$,
   - 以及
   - $$
-      ▽ \times \bar{H} =
+      \nabla \times \bar{H} =
       \binom{\partial_x}{\partial_y} \times \binom{u}{-v} =
       -(\partial_x v + \partial_y u)
     $$.
@@ -835,7 +835,7 @@ date: 2022-06-12
     请注意这两个方程只是一个复方程的两个侧面:
   - $$
       i \partial_x H - \partial_y H =
-      ▽ \times \bar{H} + i ▽ · \bar{H}
+      \nabla \times \bar{H} + i \nabla · \bar{H}
     $$,
   - 令其左方为零就是 CR 方程的紧凑写法.
 
@@ -1063,7 +1063,7 @@ date: 2022-06-12
 - 已知调和函数
   $$ Φ $$
   的调和对偶就是向量场
-  $$ ▽ Φ $$
+  $$ \nabla Φ $$
   的流函数.
 
 ```
@@ -1091,9 +1091,9 @@ date: 2022-06-12
   到
   $$ p $$
   的路径, 我们就会有流量公式
-  - $$ Ψ(p) = \int_K (▽ Φ) \cdot Nds $$.
+  - $$ Ψ(p) = \int_K (\nabla Φ) \cdot Nds $$.
   - 换成用复积分来表示, 就是
-  - $$ Ψ(p) = \mbox{Im} [\int_K \bar{(▽ Φ)} dz] $$.
+  - $$ Ψ(p) = \mbox{Im} [\int_K \bar{(\nabla Φ)} dz] $$.
   - 正如我们所看到的, 如果限制于一个单连通区域,
     $$ Φ $$
     在其中调和, 则这些积分必为单值的.

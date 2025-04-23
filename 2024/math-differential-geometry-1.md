@@ -1281,10 +1281,10 @@ date: 2023-10-06
   沿方向
   $$ \hat{v} $$
   的`方向导数`
-  $$ \mathbf{▽}_{\hat{v}} $$
+  $$ \nabla_{\hat{v}} $$
   可以定义为:
   - $$
-      \mathbf{▽}_{\hat{v}} \mathbf{n} ≡
+      \nabla_{\hat{v}} \mathbf{n} ≡
       \lim_{ϵ \rightarrow 0} \frac{δ \mathbf{n}}{ϵ}
     $$
   - 这个导数向量在切平面
@@ -1297,9 +1297,9 @@ date: 2023-10-06
   $$ \mathbf{v} = v \hat{v} $$
   的导数, 就要乘以这个长度:
   - $$
-      \mathbf{▽}_{\mathbf{v}} \mathbf{n} =
-      \mathbf{▽}_{v \hat{v}} \mathbf{n} =
-      v \mathbf{▽}_{\hat{v}} \mathbf{n}
+      \nabla_{\mathbf{v}} \mathbf{n} =
+      \nabla_{v \hat{v}} \mathbf{n} =
+      v \nabla_{\hat{v}} \mathbf{n}
     $$.
 
 ---
@@ -1317,10 +1317,10 @@ date: 2023-10-06
   而且它们之间夹角的极限也为零.
   - 由此:
     $$
-      \mathbf{▽}_{\hat{v}} \mathbf{n} \asymp \frac{δ \mathbf{n}}{ϵ}
+      \nabla_{\hat{v}} \mathbf{n} \asymp \frac{δ \mathbf{n}}{ϵ}
       \Longleftrightarrow
-      δ \mathbf{n} \asymp ϵ \mathbf{▽}_{\hat{v}} \mathbf{n} =
-      \mathbf{▽}_{ϵ \hat{v}} \mathbf{n}
+      δ \mathbf{n} \asymp ϵ \nabla_{\hat{v}} \mathbf{n} =
+      \nabla_{ϵ \hat{v}} \mathbf{n}
     $$
 - 因此得出以下观点, 这是我们在本书的其余部分要反复使用的:
   - 当
@@ -1328,7 +1328,7 @@ date: 2023-10-06
     趋于零时,
     $$ \mathbf{v} = ϵ \hat{v} $$
     趋于零向量,
-    $$ \mathbf{▽}_{\mathbf{v}} \mathbf{n} $$
+    $$ \nabla_{\mathbf{v}} \mathbf{n} $$
     最终等于
     $$ \mathbf{n} $$
     从
@@ -1336,7 +1336,7 @@ date: 2023-10-06
     的起点到终点的变化量
     $$
       δ \mathbf{n}:
-      \mathbf{▽}_{\mathbf{v}} \mathbf{n}
+      \nabla_{\mathbf{v}} \mathbf{n}
       \asymp δ \mathbf{n}
     $$.
 
@@ -2060,9 +2060,9 @@ date: 2023-10-06
 
 - 内蕴导数使得我们对早先关于`测地曲率`的讨论有了新的认识.
   回忆一下, 以单位速率在曲面上运动的质点的全加速度
-  $$ κ ≡ \mathbf{▽}_{\mathbf{v}} \mathbf{v} $$
+  $$ κ ≡ \nabla_{\mathbf{v}} \mathbf{v} $$
   可以分解为两个分量:
-  $$ \mathbf{▽}_{\mathbf{v}} \mathbf{v} = κ = κ_g + κ_n $$.
+  $$ \nabla_{\mathbf{v}} \mathbf{v} = κ = κ_g + κ_n $$.
   - 第一个分量
     $$ κ_g $$
     是`测地曲率向量`: 它是加速度与

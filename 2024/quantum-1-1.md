@@ -2694,7 +2694,7 @@ date: 2022-10-31
 - 如果所有的力都导自一个势, 则上述运动方程组便可写作:
   - $$ m_i \ddot{\mathbf{r}}_i = - \nabla_{i} V $$
   - 其中
-    $$ \mathbf{▽}_i $$
+    $$ \nabla_i $$
     表示对于坐标
     $$ \mathbf{r}_i $$
     的梯度, 势能
@@ -2838,7 +2838,7 @@ date: 2022-10-31
   - $$
       \begin{align}
         \frac{d \mathbf{r}_i}{dt} & = \frac{\mathbf{p}_i}{m_i} \\
-        \frac{d \mathbf{p}_i}{dt} & = - \mathbf{▽}_i V \\
+        \frac{d \mathbf{p}_i}{dt} & = - \nabla_i V \\
       \end{align}
     $$
   - 等价于牛顿方程组.
