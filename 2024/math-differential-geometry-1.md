@@ -547,8 +547,7 @@ date: 2023-10-06
 地图上表现为纵向半直线的测地线与表现为半圆的测地线是完全不可区分的.
 
 但是, 半圆在天际线上有两个端点,
-纵向半直线在天际线上似乎只有一个端点,
-这是怎么回事呢?
+纵向半直线在天际线上似乎只有一个端点, 这是怎么回事呢?
 答案是, 除了天际线上的这些点, 在无穷远处还有一个点,
 所有的纵向半直线都在此处相交.
 ```
@@ -1282,10 +1281,10 @@ date: 2023-10-06
   沿方向
   $$ \hat{v} $$
   的`方向导数`
-  $$ ▽_{\hat{v}} $$
+  $$ \mathbf{▽}_{\hat{v}} $$
   可以定义为:
   - $$
-      ▽_{\hat{v}} \mathbf{n} ≡
+      \mathbf{▽}_{\hat{v}} \mathbf{n} ≡
       \lim_{ϵ \rightarrow 0} \frac{δ \mathbf{n}}{ϵ}
     $$
   - 这个导数向量在切平面
@@ -1298,9 +1297,9 @@ date: 2023-10-06
   $$ \mathbf{v} = v \hat{v} $$
   的导数, 就要乘以这个长度:
   - $$
-      ▽_{\mathbf{v}} \mathbf{n} =
-      ▽_{v \hat{v}} \mathbf{n} =
-      v ▽_{\hat{v}} \mathbf{n}
+      \mathbf{▽}_{\mathbf{v}} \mathbf{n} =
+      \mathbf{▽}_{v \hat{v}} \mathbf{n} =
+      v \mathbf{▽}_{\hat{v}} \mathbf{n}
     $$.
 
 ---
@@ -1318,10 +1317,10 @@ date: 2023-10-06
   而且它们之间夹角的极限也为零.
   - 由此:
     $$
-      ▽_{\hat{v}} \mathbf{n} \asymp \frac{δ \mathbf{n}}{ϵ}
+      \mathbf{▽}_{\hat{v}} \mathbf{n} \asymp \frac{δ \mathbf{n}}{ϵ}
       \Longleftrightarrow
-      δ \mathbf{n} \asymp ϵ ▽_{\hat{v}} \mathbf{n} =
-      ▽_{ϵ \hat{v}} \mathbf{n}
+      δ \mathbf{n} \asymp ϵ \mathbf{▽}_{\hat{v}} \mathbf{n} =
+      \mathbf{▽}_{ϵ \hat{v}} \mathbf{n}
     $$
 - 因此得出以下观点, 这是我们在本书的其余部分要反复使用的:
   - 当
@@ -1329,13 +1328,17 @@ date: 2023-10-06
     趋于零时,
     $$ \mathbf{v} = ϵ \hat{v} $$
     趋于零向量,
-    $$ ▽_{\mathbf{v}} \mathbf{n} $$
+    $$ \mathbf{▽}_{\mathbf{v}} \mathbf{n} $$
     最终等于
     $$ \mathbf{n} $$
     从
     $$ \mathbf{v} $$
     的起点到终点的变化量
-    $$ δ \mathbf{n}: ▽_{\mathbf{v}} \mathbf{n} \asymp δ \mathbf{n} $$.
+    $$
+      δ \mathbf{n}:
+      \mathbf{▽}_{\mathbf{v}} \mathbf{n}
+      \asymp δ \mathbf{n}
+    $$.
 
 ### 形状导数 S
 
@@ -2057,9 +2060,9 @@ date: 2023-10-06
 
 - 内蕴导数使得我们对早先关于`测地曲率`的讨论有了新的认识.
   回忆一下, 以单位速率在曲面上运动的质点的全加速度
-  $$ κ ≡ ▽_{\mathbf{v}} \mathbf{v} $$
+  $$ κ ≡ \mathbf{▽}_{\mathbf{v}} \mathbf{v} $$
   可以分解为两个分量:
-  $$ ▽_{\mathbf{v}} \mathbf{v} = κ = κ_g + κ_n $$.
+  $$ \mathbf{▽}_{\mathbf{v}} \mathbf{v} = κ = κ_g + κ_n $$.
   - 第一个分量
     $$ κ_g $$
     是`测地曲率向量`: 它是加速度与

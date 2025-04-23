@@ -51,11 +51,11 @@ date: 2024-01-24
   微小的内蕴变化, 则
   - $$ δ_{pq} \mathbf{w} = \mathbf{w} $$
     从
-    $$ \mathbf{ϵ} \asymp ▽_ϵ \mathbf{w} $$
+    $$ \mathbf{ϵ} \asymp \mathbf{▽}_ϵ \mathbf{w} $$
     的尾端到顶端的内蕴变化.
   - 从这个定义, 立即可得
   - $$
-      ▽_v \mathbf{w}_{\parallel} = 0
+      \mathbf{▽}_v \mathbf{w}_{\parallel} = 0
       \Longleftrightarrow \mathbf{w}_{\parallel}
     $$
     沿着
@@ -65,10 +65,10 @@ date: 2024-01-24
     $$ \mathbf{v} $$
     是测地线的速度向量, 则它沿自身的平行移动就是它自己,
     因此`测地线方程`现在具有形式:
-    $$ ▽_v \mathbf{v} = 0 $$.
+    $$ \mathbf{▽}_v \mathbf{v} = 0 $$.
   - 应该指出, 如果我们允许质点沿测地线运动的速率可以加快或减慢,
     则得到测地线方程更一般的形式, 即
-    $$ ▽_v \mathbf{v} \varpropto \mathbf{v} $$.
+    $$ \mathbf{▽}_v \mathbf{v} \varpropto \mathbf{v} $$.
     也就是说,
     $$ \mathbf{v} $$
     的`方向`是内蕴不变的, 但其大小是可以变化的.
@@ -168,13 +168,16 @@ date: 2024-01-24
   - $$
       -\frac{δ w_{\parallel}}{δu δv} \asymp
       \mathcal{R} (u, v) w =
-      \{ [▽_u, ▽_v] - ▽_{[u, v]} \} w
+      \{ [\mathbf{▽}_u, \mathbf{▽}_v] - \mathbf{▽}_{[u, v]} \} w
     $$.
 - 现在我们就知道了, `黎曼曲率算子`事实上是
-  $$ \mathcal{R} (u, v) = [▽_u, ▽_v] - ▽_{[u, v]} $$.
+  $$
+    \mathcal{R} (u, v) =
+    [\mathbf{▽}_u, \mathbf{▽}_v] - \mathbf{▽}_{[u, v]}
+  $$.
   - $$ -\frac{δ w_{\parallel}}{δu δv} $$
     的负号是非常重要的, 所以要提醒读者注意它的起源和几何意义.
-  - $$ \{ [▽_u, ▽_v] - ▽_{[u, v]} \} w $$
+  - $$ \{ [\mathbf{▽}_u, \mathbf{▽}_v] - \mathbf{▽}_{[u, v]} \} w $$
     说的是, 当我们走过闭合回路时, (任意) 基准向量场
     $$ w $$
     (相对于
@@ -206,7 +209,7 @@ date: 2024-01-24
   $$ R(u, v; w) $$:
   - $$
       R(u, v; w) ≡ \mathcal{R} (u, v) w =
-      \{[▽_u, ▽_v] - ▽_{[u, v]} \} w
+      \{[\mathbf{▽}_u, \mathbf{▽}_v] - \mathbf{▽}_{[u, v]} \} w
     $$.
   - 当三个输入向量中的任意两个保持不变时,
     $$ R(u, v; w) $$
@@ -314,9 +317,9 @@ date: 2024-01-24
 - 最后, 在以上四种对称性之外, 还有第五种不同的对称性
   (对爱因斯坦引力理论至关重要), 称为`微分比安基恒等式`:
   - $$
-      ▽_x \mathcal{R} (u, v)w +
-      ▽_u \mathcal{R} (v, x)w +
-      ▽_v \mathcal{R} (x, u)w = 0
+      \mathbf{▽}_x \mathcal{R} (u, v)w +
+      \mathbf{▽}_u \mathcal{R} (v, x)w +
+      \mathbf{▽}_v \mathcal{R} (x, u)w = 0
     $$,
   - 也就是说, 它是
     $$ e_2 $$
@@ -365,14 +368,14 @@ date: 2024-01-24
 ### n 维流形的雅可比方程
 
 - 之前我们用牛顿上标点来表示沿测地线的导数, 现在则用更标准的
-  $$ ▽_v $$
+  $$ \mathbf{▽}_v $$
   记法. 所以, 现在的相对速度记为
-  $$ ▽_v ξ $$,
+  $$ \mathbf{▽}_v ξ $$,
   相对加速度记为
-  $$ ▽_v ▽_v ξ $$.
+  $$ \mathbf{▽}_v \mathbf{▽}_v ξ $$.
 
 - 总之, 相对加速度
-  $$ ▽_v ▽_v ξ $$
+  $$ \mathbf{▽}_v \mathbf{▽}_v ξ $$
   有一个分量在
   $$ Π $$
   内, 其作用是将两条测地线拉近 (或推开); 还有一个分量正交于
@@ -381,14 +384,14 @@ date: 2024-01-24
   - 我们现在关注的是在平面
     $$ Π $$
     内产生吸引力或排斥力的分量, 记为
-    $$ \mathcal{P} [▽_v ▽_v ξ] $$.
+    $$ \mathcal{P} [\mathbf{▽}_v \mathbf{▽}_v ξ] $$.
   - 如我们先前看到的那样, 如果将平行移动生成的向量投影到
     $$ Π $$
     内, 则和乐性还是由曲率乘以矩形的面积决定的, 只是这次用的是`截面曲率`
     $$ \mathcal{K} (Π) $$.
 
 - __截面雅可比方程__:
-  $$ \mathcal{P} [▽_v ▽_v ξ] = - \mathcal{K} (Π) ξ $$.
+  $$ \mathcal{P} [\mathbf{▽}_v \mathbf{▽}_v ξ] = - \mathcal{K} (Π) ξ $$.
   - 对于
     $$ n $$
     流形, 有
@@ -397,13 +400,13 @@ date: 2024-01-24
     $$ Π $$.
 
 - 这样, 我们就得到了`测地线偏离方程`, 也就是`雅可比方程`:
-  $$ ▽_v ▽_v ξ = - \mathcal{R} (ξ, v) v $$.
+  $$ \mathbf{▽}_v \mathbf{▽}_v ξ = - \mathcal{R} (ξ, v) v $$.
   - 这就是在所有教科书中都能看到的雅可比方程的标准形式.
   - 将投影算子
     $$ \mathcal{P} $$
     作用于雅可比方程的两边, 就得到了`截面雅可比方程`:
   - $$
-      \mathcal{P} [▽_v ▽_v ξ] =
+      \mathcal{P} [\mathbf{▽}_v \mathbf{▽}_v ξ] =
       -\mathcal{P} [\mathcal{R} (ξ, v) v] =
       -\mathcal{K} (Π) ξ
     $$.
@@ -770,12 +773,12 @@ date: 2024-01-24
   的`梯度` `1-形式`
   $$ \mathbf{d} f $$
   是由它对向量的作用来定义的:
-  - $$ \mathbf{d} f(v) ≡ ▽_v f $$.
+  - $$ \mathbf{d} f(v) ≡ \mathbf{▽}_v f $$.
   - 加粗的
     $$ \mathbf{d} $$
     算子称为`外导数`, 它将在后面的讨论中发挥核心作用.
   - 注意到求导算子
-    $$ ▽_v $$
+    $$ \mathbf{▽}_v $$
     服从莱布尼茨法则 (又名乘积公式法则), 所以外导数也服从
   - $$ \mathbf{d} (fg) = f \mathbf{d} g + g \mathbf{d} f $$.
 
