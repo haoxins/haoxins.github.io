@@ -27,7 +27,6 @@
 - [狄拉克量子力学原理 & 狄拉克讲广义相对论](2024/physics-dirac.md)
 - [广义相对论的原理 温伯格](2024/physics-gravitation-cosmology.md)
 - [物理世界](2024/physics-introduction.md)
-- [空间-时间-物质](2024/physics-space-time-matter.md)
 - [码农碎碎念~](2024/programming.md)
 - [量子力学 科恩 第一卷 (上)](2024/quantum-1-1.md)
 - [量子力学 科恩 第一卷 (下)](2024/quantum-1-2.md)
