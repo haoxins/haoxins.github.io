@@ -2,14 +2,19 @@
 
 ### 2025
 
-- [猫咪的那些事](2025/cat.md)
-- [个人的分享: NebulaGraph 的应用](https://mp.weixin.qq.com/s/nP2mc8ZkouSzHPy0OTRm9g)
+- [个人分享: NebulaGraph 的应用](https://mp.weixin.qq.com/s/nP2mc8ZkouSzHPy0OTRm9g)
+- [猫咪的那些事, 葡萄和提子](2025/cat.md)
 - [泛函分析导论及应用 - (上)](2025/math-functional-analysis-1.md)
+- [数学及其历史 第三版](2025/math-history.md)
+- [阅读 Paper & Blog](2025/paper-blog.md)
+- [再读 通向实在之路 彭罗斯 (上)](2025/physics-road-to-reality-1.md)
+- [码农碎碎念](2025/programming.md)
+- [群论与量子力学 外尔](2025/quantum-group.md)
 - [阅读的闲书](2025/reading.md)
 
 ### 2024
 
-- [NebulaGraph 社区的专访](https://mp.weixin.qq.com/s/cKcmK3Cpvq870sTSyCVOiw)
+- [NebulaGraph 社区专访](https://mp.weixin.qq.com/s/cKcmK3Cpvq870sTSyCVOiw)
 - [关于 Lean 4](2024/lean.md)
 - [陶哲轩实分析 (上)](2024/math-analysis-1.md)
 - [陶哲轩实分析 (下)](2024/math-analysis-2.md)
@@ -22,6 +27,7 @@
 - [狄拉克量子力学原理 & 狄拉克讲广义相对论](2024/physics-dirac.md)
 - [广义相对论的原理 温伯格](2024/physics-gravitation-cosmology.md)
 - [物理世界](2024/physics-introduction.md)
+- [空间-时间-物质 外尔](2024/physics-space-time-matter.md)
 - [码农碎碎念~](2024/programming.md)
 - [量子力学 科恩 第一卷 (上)](2024/quantum-1-1.md)
 - [量子力学 科恩 第一卷 (下)](2024/quantum-1-2.md)

@@ -4,6 +4,9 @@ description: 少年不识愁滋味, 爱上层楼, 爱上层楼, 为赋新词强�
 date: 2023-07-17
 ---
 
+- [黑镜 第七季](https://movie.douban.com/subject/36653963/)
+  - [黑镜 第六季](https://movie.douban.com/subject/35901863/)
+
 - [神探夏洛克 第二季](https://movie.douban.com/subject/6522269/)
 
 - [大明王朝 1566](https://movie.douban.com/subject/2210001/)
