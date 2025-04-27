@@ -15,6 +15,7 @@
 - [再读 通向实在之路 彭罗斯 (上)](2025/physics-road-to-reality-1.md)
 - [码农碎碎念](2025/programming.md)
 - [群论与量子力学 外尔](2025/quantum-group.md)
+- [量子菜根谭 现代量子理论专题分析 第三版 (选读)](2025/quantum-modern.md)
 - [阅读的闲书](2025/reading.md)
 
 ### 2024
@@ -23,8 +24,8 @@
 - [关于 Lean 4](2024/lean.md)
 - [陶哲轩实分析 (上)](2024/math-analysis-1.md)
 - [陶哲轩实分析 (下)](2024/math-analysis-2.md)
-- [复分析 可视化方法 (上)](2024/math-complex-analysis-1.md)
-- [复分析 可视化方法 (下)](2024/math-complex-analysis-2.md)
+- [可视化复分析 (上)](2024/math-complex-analysis-1.md)
+- [可视化复分析 (下)](2024/math-complex-analysis-2.md)
 - [可视化微分几何和形式 (上)](2024/math-differential-geometry-1.md)
 - [可视化微分几何和形式 (下)](2024/math-differential-geometry-2.md)
 - [伊藤清概率论](2024/math-ito.md)
