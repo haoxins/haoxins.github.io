@@ -6,6 +6,7 @@ date: 2023-07-17
 
 - [黑镜 第七季](https://movie.douban.com/subject/36653963/)
   - [黑镜 第六季](https://movie.douban.com/subject/35901863/)
+  - 没啥吸引力~
 
 - [神探夏洛克 第二季](https://movie.douban.com/subject/6522269/)
 

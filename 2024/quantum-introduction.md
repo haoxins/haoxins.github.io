@@ -1252,21 +1252,22 @@ in that case, the spectrum is said to be degenerate.
     $$ S_z $$
     的本征矢满足
   - $$
-      S^2 \mid s \mbox{ } m \rangle =
-      \hbar^2 s (s + 1) \mid s \mbox{ } m \rangle
+      S^2 \mid s m \rangle =
+      \hbar^2 s (s + 1) \mid s m \rangle
     $$;
-    $$
-      S_z \mid s \mbox{ } m \rangle =
-      \hbar m \mid s \mbox{ } m \rangle
+  - $$
+      S_z \mid s m \rangle =
+      \hbar m \mid s m \rangle
     $$;
   - 以及
   - $$
-      S_± \mid s \mbox{ } m \rangle =
-      \hbar \sqrt{s (s + 1) - m(m ± 1)} \mid s \mbox{ } m ± 1 \rangle
+      S_± \mid s m \rangle =
+      \hbar \sqrt{s (s + 1) - m (m ± 1)}
+      \mid s (m ± 1) \rangle
     $$,
   - 式中,
     $$ S_± ≡ S_x ± i S_y $$.
-    但现在的本征矢不再是球谐函数 (它们根本不是
+  - 但现在的本征矢不再是球谐函数 (它们根本不是
     $$ θ $$
     和
     $$ ϕ $$
@@ -1277,7 +1278,7 @@ in that case, the spectrum is said to be degenerate.
     的半整数值排除在外:
   - $$ s = 0, \frac{1}{2}, 1, \frac{3}{2}, ... $$;
     $$ m = -s, -s+1, ..., s-1, s $$.
-- 碰巧的是每个基本粒子都有一个`特定且不变`的
+- 碰巧的是每个基本粒子都有一个特定且`不变`的
   $$ s $$
   值, 我们称之为特定粒子的`自旋` (spin):
   $$ π $$
@@ -1301,17 +1302,20 @@ in that case, the spectrum is said to be degenerate.
     $$ s $$
     都是固定不变的, 这使得自旋理论相对比较简单.
 
+> 轨道角动量 vs 自旋角动量
+
 - 自旋
   $$ 1/2 $$
   粒子的一般状态可由二元的列矩阵 (或`旋量`) 表示:
-  $$ χ = \binom{a}{b} = a χ_+ + b χ_- $$,
-  其中
-  - $$ χ_+ = \binom{1}{0} $$
-  - 代表自旋向上, 而
-  - $$ χ_- = \binom{0}{1} $$
-  - 代表自旋向下.
+  - $$ χ = \binom{a}{b} = a χ_+ + b χ_- $$,
+  - 其中
+    $$ χ_+ = \binom{1}{0} $$
+    代表自旋向上,
+  - 而
+    $$ χ_- = \binom{0}{1} $$
+    代表自旋向下.
 
----
+> 旋量
 
 - 由于
   $$ S_x $$,
@@ -1359,12 +1363,12 @@ in that case, the spectrum is said to be degenerate.
 - (当然)
   $$ S_z $$
   的本征旋量是
-  - $$ χ_+ = \binom{1}{0} $$,
-    本征值为
-    $$ + \frac{\hbar}{2} $$;
-  - $$ χ_- = \binom{0}{1} $$,
-    本征值为
-    $$ - \frac{\hbar}{2} $$.
+  $$ χ_+ = \binom{1}{0} $$,
+  本征值为
+  $$ + \frac{\hbar}{2} $$;
+  $$ χ_- = \binom{0}{1} $$,
+  本征值为
+  $$ - \frac{\hbar}{2} $$.
   - 如果对粒子状态
     $$ χ $$
     的
@@ -1387,20 +1391,21 @@ in that case, the spectrum is said to be degenerate.
   正比于其自旋角动量
   $$ S $$:
   - $$ μ = γS $$,
-  - 式中, 比例常数
+    式中, 比例常数
     $$ γ $$
     称为`旋磁比`.
 - 当一个磁偶极子处在磁场
   $$ B $$
   中时, 它受到力矩
   $$ μ \times B $$
-  作用, 使得磁偶极子趋于与磁场方向平行 (像指南针一样). 与力矩相关的能量为
-  - $$ H = -μ \cdot B $$,
+  作用, 使得磁偶极子趋于与磁场方向平行 (像指南针一样).
+  - 与力矩相关的能量为
+    $$ H = -μ \cdot B $$,
   - 所以静止在磁场
     $$ B $$
     中带电自旋粒子的哈密顿是
-  - $$ H = -γ B \cdot S $$,
-  - 式中,
+    $$ H = -γ B \cdot S $$,
+    式中,
     $$ S $$
     是相应的自旋矩阵.
 
