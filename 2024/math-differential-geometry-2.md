@@ -428,7 +428,7 @@ date: 2024-01-24
     $$,
   - 因此
     $$
-      δ \mathcal{A} (t) - δ \mathcal{A} (t)
+      δ \mathcal{A} (t) - δ \mathcal{A} (0)
       \asymp - \frac{1}{2}
       [\mathcal{K} (0) + \mathcal{K} (π / 2)]
       δ \mathcal{A} (0) t^2
@@ -473,7 +473,7 @@ date: 2024-01-24
   - 因此得到了一个非常简单的雅可比式方程, 它支配以速度
     $$ v $$
     发射的测地线束围的面积的加速度:
-  - $$ \ddot(δ \mathcal{A}) = - \mbox{Ricci} (v, v) δ \mathcal{A} $$.
+  - $$ \ddot{δ \mathcal{A}} = - \mbox{Ricci} (v, v) δ \mathcal{A} $$.
   - 高斯曲率在 2 曲面 (或截面曲率在
     $$ n $$
     流形) 的雅可比方程中的作用在这里被里奇曲率所取代.
@@ -491,8 +491,8 @@ date: 2024-01-24
     比例系数由里奇曲率决定:
   - $$
       δ \mathcal{V} (t) - δ \mathcal{V} (0)
-      \asymp
-      - \frac{1}{2} \mbox{Ricci} (v, v) δ \mathcal{V} (0) t^2
+      \asymp - \frac{1}{2}
+      \mbox{Ricci} (v, v) δ \mathcal{V} (0) t^2
     $$.
 
 ## 爱因斯坦的弯曲时空
