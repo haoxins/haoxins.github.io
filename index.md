@@ -5,7 +5,7 @@
 - [个人分享: NebulaGraph 的应用](https://mp.weixin.qq.com/s/nP2mc8ZkouSzHPy0OTRm9g)
 - [猫咪的那些事, 葡萄和提子](2025/cat.md)
 - [泛函分析导论及应用 - (上)](2025/math-functional-analysis-1.md)
-- [数学及其历史 第三版](2025/math-history.md)
+- [数学及其历史 第三版 & 数学史 第三版](2025/math-history.md)
 - [阅读 Paper & Blog](2025/paper-blog.md)
 - [再读 通向实在之路 彭罗斯 (上)](2025/physics-road-to-reality-1.md)
 - [码农碎碎念](2025/programming.md)
