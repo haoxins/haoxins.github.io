@@ -15,7 +15,6 @@
 - [再读 通向实在之路 彭罗斯 (上)](2025/physics-road-to-reality-1.md)
 - [码农碎碎念](2025/programming.md)
 - [群论与量子力学 外尔](2025/quantum-group.md)
-- [量子菜根谭 现代量子理论专题分析 第三版 (选读)](2025/quantum-modern.md)
 - [阅读的闲书](2025/reading.md)
 
 ### 2024
@@ -31,7 +30,6 @@
 - [伊藤清概率论](2024/math-ito.md)
 - [阅读 Paper & Blog](2024/paper-blog.md)
 - [狄拉克量子力学原理 & 狄拉克讲广义相对论](2024/physics-dirac.md)
-- [广义相对论的原理 温伯格](2024/physics-gravitation-cosmology.md)
 - [物理世界](2024/physics-introduction.md)
 - [空间-时间-物质 外尔](2024/physics-space-time-matter.md)
 - [码农碎碎念~](2024/programming.md)
