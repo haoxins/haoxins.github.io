@@ -1561,17 +1561,17 @@ in that case, the spectrum is said to be degenerate.
       \langle e_i \mid Ψ \rangle \langle Ψ \mid e_j \rangle
     $$.
 - 对于纯态, 密度矩阵有几个有趣的性质:
-  - $$ \mathbf{ρ}^2 = \mathbf{ρ} $$,
-    (__幂等性__)
-  - $$ \mathbf{ρ}^{\dagger} = \mathbf{ρ} $$,
-    (__厄米性__)
-  - $$ Tr(\mathbf{ρ}) = \sum \mathbf{ρ}_{ii} = 1 $$,
-    (`迹`是
+  - $$ ρ^2 = ρ $$,
+    (幂等性)
+  - $$ ρ^{\dagger} = ρ $$,
+    (厄米性)
+  - $$ Tr(ρ) = \sum ρ_{ii} = 1 $$,
+    (迹是
     $$ 1 $$)
   - 可观测量
     $$ A $$
     的期望值为
-    $$ \langle A \rangle = Tr(\mathbf{ρ} \mathbf{A}) $$.
+    $$ \langle A \rangle = Tr(ρ A) $$.
 - 我们可以用密度矩阵代替波函数来表示粒子的状态.
 
 ```
@@ -1625,8 +1625,8 @@ in that case, the spectrum is said to be degenerate.
 - 但
   $$ ρ $$
   只有在表示纯态时才是幂等的:
-  - $$ ρ^2 ≠ ρ $$,
-  - (事实上, __这是一种快速检验体系状态是否为纯态的方法__.)
+  $$ ρ^2 ≠ ρ $$,
+  - 事实上, __这是一种快速检验体系状态是否为纯态的方法__.
 
 - [布洛赫球面](https://en.wikipedia.org/wiki/Bloch_sphere)
 
@@ -1652,8 +1652,6 @@ in that case, the spectrum is said to be degenerate.
     $$ x - a $$
     处的值, 函数本身已向右移动了
     $$ a $$.
-
----
 
 - 函数通过原点反射对称的算符称一维`宇称算符`, 定义如下:
   - $$ \hat{Π} ψ(x) = ψ'(x) = ψ(-x) $$.
