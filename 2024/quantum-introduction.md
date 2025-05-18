@@ -1688,8 +1688,8 @@ in that case, the spectrum is said to be degenerate.
       \end{align}
     $$
   - 方程的右边是指数函数, 因此
-  - $$ \hat{T}(a) = \exp [- \frac{ia}{\hbar} \hat{p}] $$.
-  - 我们说动量是平移算符的`生成元`.
+    $$ \hat{T}(a) = \exp [- \frac{ia}{\hbar} \hat{p}] $$.
+    我们说动量是平移算符的`生成元`.
 
 - 思考一下平移一个算符的意义是什么. 平移后算符
   $$ \hat{Q}' $$
@@ -1700,16 +1700,17 @@ in that case, the spectrum is said to be degenerate.
   在平移状态
   $$ ψ' $$
   中的期望值相同:
-  - $$
-      \langle ψ' \mid \hat{Q} \mid ψ' \rangle =
-      \langle ψ \mid \hat{Q}' \mid ψ \rangle
-    $$.
+  $$
+    \langle ψ' \mid \hat{Q} \mid ψ' \rangle =
+    \langle ψ \mid \hat{Q}' \mid ψ \rangle
+  $$.
   - 平移对期望值的影响有两种方法可以计算. 我们可以将波函数移动一段距离
     (这称为主动变换); 或者将波函数留在原来的位置,
-    把坐标系原点向相反方向移动等同的量 (被动变换). 算符
+    把坐标系原点向相反方向移动等同的量 (被动变换).
+  - 算符
     $$ \hat{Q}' $$
     是这个移动坐标系中的算符. 所以,
-  - $$
+    $$
       \langle ψ \mid \hat{T}^{\dagger} \hat{Q} \hat{T} \mid ψ \rangle
       = \langle ψ \mid \hat{Q}' \mid ψ \rangle
     $$.
@@ -1717,22 +1718,20 @@ in that case, the spectrum is said to be degenerate.
     $$ \hat{T} \mid f \rangle ≡ \mid Tf \rangle $$,
     那么
     $$ \langle Tf \mid = \langle f \mid \hat{T}^{\dagger} $$.
-  - 由此可见
+    由此可见
     $$ \hat{Q}' = \hat{T}^{\dagger} \hat{Q} \hat{T} $$.
-
----
 
 - 如果系统哈密顿量在平移变换下保持不变,
   则系统是`平移不变`的 (等同于说它具有平移对称性):
-  - $$ \hat{H}' = \hat{T}^{\dagger} \hat{H} \hat{T} = \hat{H} $$.
+  $$ \hat{H}' = \hat{T}^{\dagger} \hat{H} \hat{T} = \hat{H} $$.
   - 由于
     $$ \hat{T} $$
     是幺正的, 方程两端同时乘上
     $$ \hat{T} $$
     得到
-  - $$ \hat{H} \hat{T} = \hat{T} \hat{H} $$.
+    $$ \hat{H} \hat{T} = \hat{T} \hat{H} $$.
   - 因此, 如果系统哈密顿量与平移算符对易, 则系统具有平移对称性:
-  - $$ [ \hat{H}, \hat{T} ] = 0 $$.
+    $$ [ \hat{H}, \hat{T} ] = 0 $$.
 
 - 如果系统具有连续平移对称性, 那么对于选择任意的
   $$ a $$
@@ -1756,11 +1755,10 @@ in that case, the spectrum is said to be degenerate.
       [\hat{H}, \hat{p}] = 0
     $$.
   - 所以, 如果系统哈密顿量具有连续平移对称性, 它必须与动量对易.
-    如果系统哈密顿量与动量对易, 那么按照`广义埃伦菲斯特定理`
-  - $$
+    如果系统哈密顿量与动量对易, 那么按照广义埃伦菲斯特定理
+    $$
       \frac{d}{dt} \langle p \rangle =
-      \frac{i}{\hbar} \langle [\hat{H}, \hat{p}] \rangle
-      = 0
+      \frac{i}{\hbar} \langle [\hat{H}, \hat{p}] \rangle = 0
     $$.
   - 这就是`动量守恒`的表述, 现在我们已经证明,
     连续平移对称性意味着系统动量守恒.
@@ -1770,15 +1768,15 @@ in that case, the spectrum is said to be degenerate.
 ### 宇称
 
 - 如果系统哈密顿量在宇称变换下保持不变, 则系统具有`反演对称性`:
-  - $$ \hat{H}' = \hat{Π}^{\dagger} \hat{H} \hat{Π} = \hat{H} $$,
+  $$ \hat{H}' = \hat{Π}^{\dagger} \hat{H} \hat{Π} = \hat{H} $$,
   - 或者, 利用宇称算符的幺正性,
-  - $$ [\hat{H}, \hat{Π}] = 0 $$.
+    $$ [\hat{H}, \hat{Π}] = 0 $$.
 - 若系统哈密顿量描述的是处在一维势场
   $$ V(x) $$
   中质量为
   $$ m $$
   的粒子, 那么, 反演对称性表明势是位置的偶函数:
-  - $$ V(x) = V(-x) $$.
+  $$ V(x) = V(-x) $$.
   - 反演对称性的含义有两个: 首先, 可以找到
     $$ \hat{Π} $$
     和
@@ -1786,16 +1784,16 @@ in that case, the spectrum is said to be degenerate.
     的一组完备的共同本征态. 把这样的本征态写成
     $$ ψ_n $$;
     则满足
-  - $$ \hat{Π} ψ_n(x) = ψ_n(-x) = ± ψ_n(x) $$,
-  - 由于宇称算符的本征值必须为
+    $$ \hat{Π} ψ_n(x) = ψ_n(-x) = ± ψ_n(x) $$,
+    由于宇称算符的本征值必须为
     $$ ±1 $$.
-    因此, 若势函数是位置的偶函数, 其定态本身就是偶函数或奇函数
+  - 因此, 若势函数是位置的偶函数, 其定态本身就是偶函数或奇函数
     (或者, 在简并的情况下, 可以这样选择).
-  - 这个性质在谐振子, 无限深方势阱 (如果原点位于势阱的中心) 和狄拉克
+    这个性质在谐振子, 无限深方势阱 (如果原点位于势阱的中心) 和狄拉克
     $$ δ $$
     函数势中很普遍.
   - 其次, 根据埃伦菲斯特定理, 如果哈密顿量具有反演对称性, 有
-  - $$
+    $$
       \frac{d}{dt} \langle \hat{Π} \rangle =
       \frac{i}{\hbar} \langle [\hat{H}, \hat{Π}] \rangle = 0
     $$.
@@ -1807,10 +1805,8 @@ in that case, the spectrum is said to be degenerate.
     $$ t $$
     它都将是偶函数.
 
----
-
 - 三维宇称算符的空间反演是
-  - $$ \hat{Π} ψ(r) = ψ'(r) = ψ(-r) $$.
+  $$ \hat{Π} ψ(r) = ψ'(r) = ψ(-r) $$.
   - 算符
     $$ \hat{r} $$
     和
@@ -1819,7 +1815,7 @@ in that case, the spectrum is said to be degenerate.
   - $$ \hat{r}' = \hat{Π}^{\dagger} \hat{r} \hat{Π} = - \hat{r} $$,
   - $$ \hat{p}' = \hat{Π}^{\dagger} \hat{p} \hat{Π} = - \hat{p} $$.
   - 任意算符变换为
-  - $$
+    $$
       \hat{Q}'(\hat{r}, \hat{p}) =
       \hat{Π}^{\dagger} \hat{Q}(\hat{r}, \hat{p}) \hat{Π} =
       \hat{Q}(- \hat{r}, - \hat{p})
@@ -1856,7 +1852,7 @@ in that case, the spectrum is said to be degenerate.
   这等同于说标量算符和角动量
   $$ \hat{L} $$
   对易:
-  - $$ [\hat{L}_i, \hat{f}] = 0 $$.
+  $$ [\hat{L}_i, \hat{f}] = 0 $$.
   - 现在我们可以根据算符与
     $$ \hat{L} $$
     的对易关系 (它们在转动操作下如何变换) 将算符分为标量算符或矢量算符,
@@ -1864,33 +1860,30 @@ in that case, the spectrum is said to be degenerate.
     $$ \hat{Π} $$
     的对易关系 (它们在宇称操作下如何变换) 将算符分为`真`或赝矢 (标) 量.
 
----
-
 - __连续旋转对称__ 质量为
   $$ m $$
   的粒子在势场
   $$ V(\mathbf{r}) $$
   中运动,
-  - $$ \hat{H} = \frac{\hat{p}^2}{2m} + V(\mathbf{r}) $$,
-  - 如果
-    $$ V(\mathbf{r}) = V(r) $$
-    (中心势), 则哈密顿量具有旋转不变性.
+  $$ \hat{H} = \frac{\hat{p}^2}{2m} + V(\mathbf{r}) $$,
+  如果
+  $$ V(\mathbf{r}) = V(r) $$
+  (中心势), 则哈密顿量具有旋转不变性.
   - 在这种情况下, 哈密顿量与绕任意轴和任意角度的旋转算符都对易:
-  - $$ [\hat{H}, \hat{R}_n (φ)] = 0 $$.
+    $$ [\hat{H}, \hat{R}_n (φ)] = 0 $$.
   - 特别是, 对`无限小角度`的转动,
-  - $$
+    $$
       \hat{R}_n (φ) ≈
       1 - \frac{iδ}{\hbar} \mathbf{n} \cdot \hat{L}
     $$,
-  - 也就是说, 哈密顿量与
+    也就是说, 哈密顿量与
     $$ L $$
     的三个分量对易:
-  - $$ [\hat{H}, \hat{L}] = 0 $$.
+    $$ [\hat{H}, \hat{L}] = 0 $$.
   - 那么, 旋转不变性的结果是什么呢? 对于中心势, 由埃伦菲斯特定理得
-  - $$
+    $$
       \frac{d}{dt} \langle L \rangle =
-      \frac{i}{\hbar} \langle [\hat{H}, \hat{L}] \rangle
-      = 0
+      \frac{i}{\hbar} \langle [\hat{H}, \hat{L}] \rangle = 0
     $$.
   - 因此, __角动量守恒是旋转不变性的结果__.
     角动量守恒还意味着几率分布 (角动量的每个分量) 与时间无关.
@@ -1962,7 +1955,7 @@ in that case, the spectrum is said to be degenerate.
   $$ t_1 $$
   和
   $$ t_2 $$,
-  - $$ \hat{U} (t_1 + δ, t_1) = \hat{U} (t_2 + δ, t_2) $$,
+  $$ \hat{U} (t_1 + δ, t_1) = \hat{U} (t_2 + δ, t_2) $$,
   - 这确保了如果体系在
     $$ t_1 $$
     时刻从状态
@@ -1988,26 +1981,26 @@ in that case, the spectrum is said to be degenerate.
     和
     $$ t_2 $$
     都成立, 所以哈密顿量必须是不含时的 (时间平移不变性成立):
-  - $$ \frac{\partial \hat{H}}{\partial t} = 0 $$.
+    $$ \frac{\partial \hat{H}}{\partial t} = 0 $$.
   - 这种情况下, 广义埃伦菲斯特定理给出
-  - $$
+    $$
       \frac{d}{dt} \langle \hat{H} \rangle =
       \frac{i}{\hbar} \langle [ \hat{H}, \hat{H} ] \rangle +
       \langle \frac{\partial \hat{H}}{\partial t} \rangle = 0
     $$.
-  - 因此, __能量守恒是时间平移不变性的结果__.
+    因此, __能量守恒是时间平移不变性的结果__.
 
 ## 定态微扰理论
 
 > 从此处开始, 后续属于应用部分, 选择性略读~
 
 - 首先, 把新的系统哈密顿量写成两项之和:
-  - $$ H = H^0 + λH' $$,
-  - 式中,
-    $$ H' $$
-    是微扰项 (上标
-    $$ 0 $$
-    总是表示未微扰的物理量).
+  $$ H = H^0 + λH' $$,
+  式中,
+  $$ H' $$
+  是微扰项 (上标
+  $$ 0 $$
+  总是表示未微扰的物理量).
   - 开始, 将
     $$ λ $$
     取为一个很小的数; 稍后我们将它调大到
@@ -2199,16 +2192,16 @@ in that case, the spectrum is said to be degenerate.
 ## 散射
 
 - 薛定谔方程的积分形式是
-  - $$ ψ(r) = ψ_0 (r) + \int g(r - r_0) V(r_0) ψ(r_0) d^3 r_0 $$,
-  - 其中
-    $$ ψ_0 $$
-    为入射波,
+  $$ ψ(r) = ψ_0 (r) + \int g(r - r_0) V(r_0) ψ(r_0) d^3 r_0 $$,
+  其中
+  $$ ψ_0 $$
+  为入射波,
   - $$ g(r) ≡ - \frac{m}{2π \hbar^2} \frac{e^{ikr}}{r} $$
-  - 是格林函数 (方便起见, 这里合并了因子
+    是格林函数 (方便起见, 这里合并了因子
     $$ 2m / \hbar^2 $$),
     $$ V $$
     是散射势. 简略地表示为
-  - $$ ψ = ψ_0 + \int gV ψ $$.
+    $$ ψ = ψ_0 + \int gV ψ $$.
   - 取此式为
     $$ ψ $$
     的表达式, 并将其代入积分符号中:
@@ -2266,14 +2259,12 @@ an inner product space.
   这两种次序之间所产生差别称为`对易子`:
   - $$ [\mathbf{S}, \mathbf{T}] = \mathbf{S} \mathbf{T} - \mathbf{T} \mathbf{S} $$.
 - 两个矩阵积的转置矩阵是两个矩阵分别转置按逆次序的乘积:
-  - $$ (\mathbf{S} \mathbf{T})^{T} = \mathbf{T}^{T} \mathbf{S}^{T} $$.
+  $$ (\mathbf{S} \mathbf{T})^{T} = \mathbf{T}^{T} \mathbf{S}^{T} $$.
   - 厄米共轭矩阵同样也是这样的:
-  - $$
+    $$
       (\mathbf{S} \mathbf{T})^{\dagger} =
       \mathbf{T}^{\dagger} \mathbf{S}^{\dagger}
     $$.
-
----
 
 - 没有逆矩阵的矩阵称为`奇异`矩阵.
   两个矩阵积的逆 (假设存在) 是各自逆矩阵按逆次序的乘积:
@@ -2281,8 +2272,12 @@ an inner product space.
 - 如果矩阵的逆等于它的厄米共轭, 则该矩阵是`幺正`矩阵:
   - 幺正矩阵:
     $$ \mathbf{U}^{\dagger} = \mathbf{U}^{-1} $$.
-- 假设基矢是正交归一的, 幺正矩阵的列构成正交归一集, 其行也构成正交集.
-  - __幺正矩阵表示的线性变换保持内积不变__.
+
+```
+假设基矢是正交归一的, 幺正矩阵的列构成正交归一集, 其行也构成正交集.
+```
+
+- __幺正矩阵表示的线性变换保持内积不变__.
 
 - 一般来说, 对于某个 (非奇异) 矩阵
   $$ \mathbf{S} $$,
@@ -2301,10 +2296,13 @@ an inner product space.
   - 顺便提一下, 如果第一组基是正交基, 则当且仅当
     $$ \mathbf{S} $$
     是幺正矩阵时, 第二组基也将是正交归一基.
-  - 因为我们总是研究正交归一基, 所以我们主要对幺正相似变换感兴趣.
-- 虽然表示给定线性变换的矩阵元在新基中可能看起来很不一样,
-  但与矩阵相关的两个特殊数值却保持不变:
-  - 矩阵的`行列式`和`迹`.
+
+```
+因为我们总是研究正交归一基, 所以我们主要对幺正相似变换感兴趣.
+虽然表示给定线性变换的矩阵元在新基中可能看起来很不一样,
+但与矩阵相关的两个特殊数值却保持不变: 矩阵的行列式和迹.
+```
+
 - 乘积的行列式等于行列式的积, 因此
   - $$
       det(\mathbf{T}^{f}) =
@@ -2315,10 +2313,10 @@ an inner product space.
 - `迹`是对角线元素的代数和:
   $$ Tr(\mathbf{T}) \equiv \sum_{i=1}^{m} \mathbf{T}_{ii} $$,
   具有如下性质:
-  - $$
-      Tr(\mathbf{T}_{1} \mathbf{T}_{2}) =
-      Tr(\mathbf{T}_{2} \mathbf{T}_{1})
-    $$
+  $$
+    Tr(\mathbf{T}_{1} \mathbf{T}_{2}) =
+    Tr(\mathbf{T}_{2} \mathbf{T}_{1})
+  $$
   - 对任意两个矩阵
     $$ \mathbf{T}_{1} $$
     和
@@ -2330,8 +2328,6 @@ an inner product space.
       Tr(\mathbf{T}^{e} \mathbf{S}^{-1} \mathbf{S}) =
       Tr(\mathbf{T}^{e})
     $$.
-
----
 
 - 矩阵的`特征方程`: 它的解决定了矩阵本征值. 注意到它是一个
   $$ n $$
@@ -2350,8 +2346,7 @@ an inner product space.
   应为`根据代数基本定理`.
 
 - 将矩阵转化为对角形式有一个明显的优势: 很容易处理问题.
-  遗憾的是, 并不是每一个矩阵都能对角化 --
-  __本征矢量必须张开整个空间__.
+  遗憾的是, 并不是每一个矩阵都能对角化: __本征矢量必须张开整个空间__.
   - 如果特征方程有
     $$ n $$
     个不同的根, 那么矩阵肯定是可对角化的, 即使是有多个重根,
@@ -2360,9 +2355,11 @@ an inner product space.
   (尽管不是必要) 条件是: 如果矩阵与其厄米共轭对易, 则称其为`正规`矩阵:
   - 正规矩阵:
     $$ [\mathbf{N}^{\dagger}, \mathbf{N}] = 0 $$.
-- 每个正规矩阵都是可对角化的 (其本征矢张开整个空间). 特别是,
-  - __每个厄米矩阵都是对角化的__,
-  - __每个幺正矩阵也是对角化的__.
+
+```
+每个正规矩阵都是可对角化的 (其本征矢张开整个空间).
+特别是, 每个厄米矩阵都是对角化的, 每个幺正矩阵也是对角化的.
+```
 
 > 这翻译质量, 太仓促了.
 
@@ -2371,7 +2368,7 @@ an inner product space.
   它们能同时对角化吗?
   - 也就是说, 是否存在一组基矢, 其所有分量都是两个矩阵的本征矢?
   - 在这种基矢下, 两个矩阵都是对角的.
-  - 事实上, __当且仅当两个矩阵对易时答案是肯定的__.
+    事实上, __当且仅当两个矩阵对易时答案是肯定的__.
   - 顺便说一句, 如果两个矩阵在一组基矢对易, 那么它们相对于任何一组基矢都对易.
 
 ```
@@ -2392,10 +2389,8 @@ they commute with respect to any basis.)
 
 - 在量子力学中, 厄米变换起着基础作用.
   厄米变换的本征值和本征矢有如下重要特性.
-  - 厄米变换的本征值是实的
-  - 厄米变换属于不同本征值的本征矢彼此正交
-  - 更多特性参见:
-    [厄米矩阵](https://en.wikipedia.org/wiki/Hermitian_matrix)
+  - 厄米变换的本征值是实的;
+  - 厄米变换属于不同本征值的本征矢彼此正交.
 
 - [矩阵函数](https://en.wikipedia.org/wiki/Analytic_function_of_a_matrix)
 
