@@ -32,3 +32,7 @@ let closure = async || {
     并且过去并没有再次系统的看过群论的书籍资料, 仅仅偶尔接触到.
 
 ### 文章/视频
+
+- [Terence Tao on how we measure the cosmos (part 1)](https://www.youtube.com/watch?v=YdOXS_9_P4U)
+  - Part 1, 访谈的形式不错, 内容一般~
+    亮点部分是开普勒如何根据大量数据得出开普勒定律!
