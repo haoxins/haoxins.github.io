@@ -6,6 +6,8 @@ date: 2025-02-02
 
 ### Posts
 
+- [PEP 750 - Template Strings](https://peps.python.org/pep-0750/)
+
 - [Announcing Rust 1.85 and Rust 2024](https://blog.rust-lang.org/2025/02/20/Rust-1.85.0.html)
 
 ```rust
