@@ -4,9 +4,9 @@ description: 虽趣舍万殊, 静躁不同, 当其欣于所遇, 暂得于己, �
 date: 2021-01-28
 ---
 
-# 始于 2019
+> 始于 2019
 
-* 卡洛·罗韦利 **诗意** 科普
+* 卡洛·罗韦利的诗意科普
   - [Wiki - Carlo Rovelli](https://en.wikipedia.org/wiki/Carlo_Rovelli)
 
 * 对于我个人而言
@@ -44,26 +44,23 @@ date: 2021-01-28
 4. 文笔优美, 恰到好处的阐释.
    应该假设读者有一定的背景知识, 避免过于低阶的说明.
 
-## 卡洛·罗韦利 Carlo Rovelli
-
 * [卡洛·罗韦利 Carlo Rovelli](https://book.douban.com/author/1987750/)
-  - 最近几年, 这个哥们几乎每年一本书 :)
+  - 最近几年, 这个哥们几乎每年一本书~
 
 ------------------
 
-* [Helgoland](https://book.douban.com/subject/35265189/)
-  - https://book.douban.com/subject/35476832/
+* [Helgoland](https://book.douban.com/subject/35476832/)
   - 等不及翻译了, 京东 (jd.com) 预定了英文版
 
 ------------------
 
 * [现实不似你所见: 量子引力之旅](https://book.douban.com/subject/27156306/)
-  - 在 2021 年, *五一小长假*期间, 又重新读了一遍
-  - 五一出游, 书留在了民宿 `在田间`
-  - 颇有缘分的是, 屋内恰好有一本: *人生若只如初见*
+  - 在 2021 年, 五一小长假期间, 又重新读了一遍
+  - 五一出游, 书留在了民宿: `在田间`
+  - 颇有缘分的是, 屋内恰好有一本: 人生若只如初见
 
 * [时间的秩序](https://book.douban.com/subject/33424487/)
-  - 在 2021 年, *五一小长假*前后, 又重新读了一遍
+  - 在 2021 年, 五一小长假前后, 又重新读了一遍
   - 赠与 @`Jan Li`, 因为这本书有点**哲学**向
   - [Forget time - Carlo Rovelli (August 2008)](https://arxiv.org/pdf/0903.3832.pdf)
 

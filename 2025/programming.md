@@ -8,6 +8,21 @@ date: 2025-02-02
 
 - [PEP 750 - Template Strings](https://peps.python.org/pep-0750/)
 
+```py
+name = "World"
+tmpl = t"Hello {name}"
+assert tmpl.strings[0] == "Hello "
+assert tmpl.interpolations[0].value == "World"
+assert tmpl.interpolations[0].expression == "name"
+
+tmpl = t"Hello {name!r}"
+assert tmpl.interpolations[0].conversion == "r"
+
+val = 42
+tmpl = t"Value: {val:.2f}"
+assert tmpl.interpolations[0].format_spec == ".2f"
+```
+
 - [Announcing Rust 1.85 and Rust 2024](https://blog.rust-lang.org/2025/02/20/Rust-1.85.0.html)
 
 ```rust
