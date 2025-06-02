@@ -15,6 +15,7 @@
 - [再读 通向实在之路 彭罗斯 (上)](2025/physics-road-to-reality-1.md)
 - [码农碎碎念](2025/programming.md)
 - [群论与量子力学 外尔](2025/quantum-group.md)
+- [量子信息物理原理 (上)](2025/quantum-information-1.md)
 - [阅读的闲书](2025/reading.md)
 
 ### 2024
