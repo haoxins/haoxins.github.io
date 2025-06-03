@@ -89,6 +89,7 @@ date: 2021-05-03
   - 即使对于已然学习过实分析的人而言, 最后四章也会让人爱不释手;
   - 陶哲轩: 语言平实, 犹显深厚; 言简意赅, 更显通达; 一气呵成, 大师风范.
     个人浅薄, 所阅实分析书籍, __第一人__!
+  - [Partial Lean formalization of Analysis I](https://github.com/teorth/analysis)
 
 ------------------
 

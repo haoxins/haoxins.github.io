@@ -214,8 +214,10 @@ we expect the number of memory safety vulnerabilities to continue to fall.
   - 2022: `Rust` > `Go` > `Java`
 
 - `2022`年国庆节前后, 同时看两本编程语言的书籍
-  - 重温 [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
-  - 和 [On Java 进阶卷](https://book.douban.com/subject/35751623/)
+  - 重温
+    [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
+    和
+    [On Java 进阶卷](https://book.douban.com/subject/35751623/)
   - Rust 是我接下来项目中, 唯一主动选择的语言
   - Go, Java, Kotlin, Python 都会是被动选择项
   - Rust 也是目前唯一值得认真把玩的语言

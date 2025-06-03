@@ -329,13 +329,13 @@ date: 2018-04-01
   - [第三卷](https://book.douban.com/subject/1139361/)
   - [第四卷](https://book.douban.com/subject/1125024/)
 
-* [深入Java虚拟机: JVM G1GC 的算法与实现](https://book.douban.com/subject/35292560/)
+* [深入 Java 虚拟机: JVM G1GC 的算法与实现](https://book.douban.com/subject/35292560/)
 
 * [gRPC 与云原生应用开发](https://book.douban.com/subject/35309194/)
   - 副标题: 以 Go 和 Java 为例
   - **不推荐** 也就 第4章 还凑合
 
-* [编程珠玑 第2版 修订版](https://book.douban.com/subject/26302533/)
+* [编程珠玑 第二版 修订版](https://book.douban.com/subject/26302533/)
 * [编程珠玑 续 修订版](https://book.douban.com/subject/26302596/)
   - 移步 [Reading long term](reading-long-term.md)
 
@@ -343,7 +343,7 @@ date: 2018-04-01
   - 副标题: 算法工程师带你去面试
   - 是一本值得推荐的好书
 
-* [程序员修炼之道 (第2版)](https://book.douban.com/subject/35006892/)
+* [程序员修炼之道 (第二版)](https://book.douban.com/subject/35006892/)
   - 副标题: 通向务实的最高境界
   - 赠与 @`Ye Qing`
 
@@ -363,12 +363,12 @@ date: 2018-04-01
 > 下面这几本书都是 2020-08 买的, 但是呢, 估计不可能看完 :)
 
 * 计算机程序设计艺术 全4卷 **TAOCP**
-  - [计算机程序设计艺术 卷4A](https://book.douban.com/subject/34452973/)
-  - [计算机程序设计艺术 卷3](https://book.douban.com/subject/26953756/)
-  - [计算机程序设计艺术 卷2](https://book.douban.com/subject/26850558/)
-  - [计算机程序设计艺术 卷1](https://book.douban.com/subject/26681685/)
-  - *卷1* 赠与 @*Gary*
-  - *卷3* 赠与 @*Gary*
+  - [计算机程序设计艺术 卷 4A](https://book.douban.com/subject/34452973/)
+  - [计算机程序设计艺术 卷 3](https://book.douban.com/subject/26953756/)
+  - [计算机程序设计艺术 卷 2](https://book.douban.com/subject/26850558/)
+  - [计算机程序设计艺术 卷 1](https://book.douban.com/subject/26681685/)
+  - 卷 1 赠与 @Gary
+  - 卷 3 赠与 @Gary
 
 * [费曼物理学讲义: 新千年版](https://book.douban.com/subject/26662048/)
   - 面向本科一, 二年级的学生
