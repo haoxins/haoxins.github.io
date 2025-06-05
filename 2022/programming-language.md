@@ -200,7 +200,7 @@ we expect the number of memory safety vulnerabilities to continue to fall.
 
 ---
 
-- `2022`国庆节, 数落 Go 的几个问题
+- 2022 国庆节, 数落 Go 的几个问题
   - `Enum` 迟迟不考虑
   - Go `1.18` 带来的 `interface` 的语义变化 (这个, 倒也还好)
   - Go `1.18` 带来的 `Generics` 导致的后续的 std APIs 变更
@@ -211,9 +211,9 @@ we expect the number of memory safety vulnerabilities to continue to fall.
   - Rust Option 解决了 Primitive Types, 到底是 `0`, `false`, `""`,
     还是 `nil`. 这绝对是一个设计缺失!
   - 最关键的, 语言发展缓慢!
-  - 2022: `Rust` > `Go` > `Java`
+  - 2022: Rust > Go > Java
 
-- `2022`年国庆节前后, 同时看两本编程语言的书籍
+- 2022 年国庆节前后, 同时看两本编程语言的书籍
   - 重温
     [Programming Rust, 2nd Edition](https://book.douban.com/subject/34973905/)
     和
@@ -222,7 +222,7 @@ we expect the number of memory safety vulnerabilities to continue to fall.
   - Go, Java, Kotlin, Python 都会是被动选择项
   - Rust 也是目前唯一值得认真把玩的语言
 
-- 纯粹从语言角度而言, `2022` 以及接下来的 `2~3` 年,
+- 纯粹从语言角度而言, 2022 以及接下来的 `2~3` 年,
   Java 都会比 Go 迭代的更加迅速.
   - Web service 本来就是 Java (Spring) 的优势
   - 而原本 Go 的地盘, K8s operator, 搞不好都会被 Java 瓜分.
@@ -248,15 +248,17 @@ we expect the number of memory safety vulnerabilities to continue to fall.
 
 ---
 
-- `2022-09` 开始正式评估在团队项目中引入 `Rust`
-  - 参照一些手头上的项目, 看看 `Rust` 生态还缺点啥
-  - 由于公司使用 `GCP` (很垃圾的云平台)
+- `2022-09` 开始正式评估在团队项目中引入 Rust
+  - 参照一些手头上的项目, 看看 Rust 生态还缺点啥
+  - 由于公司使用 GCP (很垃圾的云平台)
   - https://github.com/googleapis/google-cloud-rust
   - 这玩意还打算继续开发么?
   - https://github.com/kafka-rust/kafka-rust
   - 功能还很贫乏! 看样子也不打算维护了
-  - 鉴于 [confluent-kafka-go](https://github.com/confluentinc/confluent-kafka-go)
-    基于 [librdkafka](https://github.com/edenhill/librdkafka),
+  - 鉴于
+    [confluent-kafka-go](https://github.com/confluentinc/confluent-kafka-go)
+    基于
+    [librdkafka](https://github.com/edenhill/librdkafka),
     所以还是选择基于 librdkafka 的
     [rust-rdkafka](https://github.com/fede1024/rust-rdkafka)
   - https://github.com/tokio-rs/axum
