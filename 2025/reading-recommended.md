@@ -44,6 +44,17 @@ date: 2025-02-19
 
 ------------------
 
+- [通向实在之路](https://book.douban.com/subject/25823056/)
+
+------------------
+
+- [量子信息物理原理](https://book.douban.com/subject/1725295/)
+  - 首先, 期待能出新版~
+  - 对比:
+   [量子计算与量子信息](https://book.douban.com/subject/35777059/)
+
+------------------
+
 - [量子力学 (第二卷)](https://book.douban.com/subject/26716232/)
 
 ------------------

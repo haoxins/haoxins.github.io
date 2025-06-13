@@ -811,7 +811,7 @@ in that case, the spectrum is said to be degenerate.
     态的几率".
   - 但是这是完全不同的论述.
 
-> 参见: 科恩, 卷一, Page 17, `波函数; 薛定谔方程`
+> 参见: 科恩, 卷一, `波函数; 薛定谔方程`
 
 - Similarly, the expectation value of
   $$ Q $$
