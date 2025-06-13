@@ -51,7 +51,7 @@ date: 2024-01-24
   微小的内蕴变化, 则
   - $$ δ_{pq} \mathbf{w} = \mathbf{w} $$
     从
-    $$ \mathbf{ϵ} \asymp \nabla_ϵ \mathbf{w} $$
+    $$ \mathbf{ϵ} \asymp \nabla_{ϵ} \mathbf{w} $$
     的尾端到顶端的内蕴变化.
   - 从这个定义, 立即可得
   - $$
