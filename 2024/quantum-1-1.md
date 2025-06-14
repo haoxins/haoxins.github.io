@@ -463,7 +463,7 @@ date: 2022-10-31
 
 - [施瓦茨不等式](https://en.wikipedia.org/wiki/Cauchy-Schwarz_inequality)
   - 详见
-    [量子力学 科恩 第一卷 (补充材料选读)](quantum-1-3.md)
+    [量子力学 科恩 第一卷 (补充材料 上)](quantum-1-3.md)
 
 - 按定义, 线性算符
   $$ A $$
@@ -474,7 +474,7 @@ date: 2022-10-31
   而且它们的对应关系是线性的:
   - $$ ψ'(\mathbf{r}) = A ψ(\mathbf{r}) $$
   - $$
-      A [ λ_1 ψ_1 (\mathbf{r}) + λ_2 ψ_2 (\mathbf{r}) ] =
+      A [λ_1 ψ_1 (\mathbf{r}) + λ_2 ψ_2 (\mathbf{r})] =
       λ_1 A ψ_1 (\mathbf{r}) + λ_2 A ψ_2 (\mathbf{r})
     $$
 - 两个线性算符
@@ -484,7 +484,7 @@ date: 2022-10-31
   的乘积
   $$ AB $$
   由下式定义:
-  $$ (AB) ψ(\mathbf{r}) = A [ B ψ(\mathbf{r}) ] $$
+  $$ (AB) ψ(\mathbf{r}) = A [B ψ(\mathbf{r})] $$
   - 即先将
     $$ B $$
     作用于
@@ -498,9 +498,9 @@ date: 2022-10-31
 - 一般说来,
   $$ AB ≠ BA $$,
   我们定义:
-  $$ [ A, B ] = AB - BA $$
+  $$ [A, B] = AB - BA $$
   - 并把算符
-    $$ [ A, B ] $$
+    $$ [A, B] $$
     称为
     $$ A $$
     与
@@ -553,6 +553,74 @@ date: 2022-10-31
 ### 连续的正交归一基
 
 > 注: 此处改了原书的章节名
+
+- 同样, 我们也可以引入
+  $$ \mathbf{r} $$
+  的函数的一个集合
+  $$ \{ ξ_{\mathbf{r}_0} (\mathbf{r}) \} $$,
+  其中的函数是以连续指标
+  $$ \mathbf{r}_0 $$
+  ($$ x_0 $$,
+  $$ y_0 $$,
+  $$ z_0 $$
+  的缩并记号) 为标记的, 它们的定义是:
+  $$ ξ_{\mathbf{r}_0} (\mathbf{r}) = δ(\mathbf{r} - \mathbf{r}_0) $$
+  - 因此,
+    $$ \{ ξ_{\mathbf{r}_0} (\mathbf{r}) \} $$
+    表示以空间的不同点
+    $$ \mathbf{r}_0 $$
+    为中心的
+    $$ δ $$
+    函数的集合;
+    $$ ξ_{\mathbf{r}_0} (\mathbf{r}) $$
+    显然不是平方可积的, 即
+    $$ ξ_{\mathbf{r}_0} (\mathbf{r}) \notin \mathcal{F} $$.
+
+> 这里
+  $$ \mathbf{r}_0 $$
+  容易误导~
+
+- 现在来考虑对于空间
+  $$ \mathcal{F} $$
+  中的一切函数
+  $$ ψ(\mathbf{r}) $$
+  都能成立的下列等式:
+  - $$
+      ψ(\mathbf{r}) = \int d^3 r_0
+      ψ(\mathbf{r}_0) δ(\mathbf{r} - \mathbf{r}_0)
+    $$
+  - $$
+      ψ(\mathbf{r}_0) = \int d^3 r
+      δ(\mathbf{r}_0 - \mathbf{r}) ψ(\mathbf{r})
+    $$
+  - 根据
+    $$ ξ_{\mathbf{r}_0} (\mathbf{r}) = δ(\mathbf{r} - \mathbf{r}_0) $$,
+    可将此两式改写为下列形式:
+  - $$
+      ψ(\mathbf{r}) = \int d^3 r_0
+      ψ(\mathbf{r}_0) ξ_{\mathbf{r}_0} (\mathbf{r})
+    $$
+  - $$
+      ψ(\mathbf{r}_0) = (ξ_{\mathbf{r}_0}, ψ) = \int d^3 r
+      ξ^{*}_{\mathbf{r}_0} (\mathbf{r}) ψ(\mathbf{r})
+    $$
+  - 因而,
+    $$ ψ(\mathbf{r}_0) $$
+    的意义和
+    $$ c_i $$
+    的相同, 是
+    $$ c_i $$
+    的相当量; 这两个复数, 一个依赖于
+    $$ \mathbf{r}_0 $$,
+    一个依赖于
+    $$ i $$,
+    表示同一个函数
+    $$ ψ(\mathbf{r}) $$
+    在
+    $$ \{ ξ_{\mathbf{r}_0} (\mathbf{r}) \} $$
+    及
+    $$ \{ u_i (\mathbf{r}) \} $$
+    这两个不同的基中的坐标 (分量).
 
 - 引入的连续基的用途在后面将会显得更清楚. 但是, 绝不能忘记这一点:
   __和某一物理状态对应的总是一个平方可积的波函数__. 在任何情况下,
@@ -818,7 +886,7 @@ date: 2022-10-31
   和
   $$ B $$
   的`乘积`, 仅当
-  $$ [ A, B ] = 0 $$
+  $$ [A, B] = 0 $$
   时, 才是厄米算符.
 
 > 注: 是`乘积`才是厄米算符.
@@ -1291,7 +1359,7 @@ date: 2022-10-31
   之间的对易子. 例如
   - $$
       \begin{align}
-        \langle r \mid [ X, P_x ] \mid ψ \rangle
+        \langle r \mid [X, P_x] \mid ψ \rangle
           & = \langle r \mid (X P_x - P_x X) \mid ψ \rangle \\
           & = x \langle r \mid P_x \mid ψ \rangle -
               \frac{\hbar}{i} \frac{\partial}{\partial x}
@@ -1308,15 +1376,15 @@ date: 2022-10-31
     和任意一个基右矢
     $$ \mid r \rangle $$
     都成立, 因此便得到:
-  - $$ [ X, P_x ] = i \hbar $$
+  - $$ [X, P_x] = i \hbar $$
 - 用同样的方法可以得到
   $$ R $$
   的诸分量和
   $$ P $$
   的诸分量之间的其他对易子. 我们将结果归纳在下面:
-  - $$ [ R_i, R_j ] = 0 $$
-  - $$ [ P_i, P_j ] = 0 $$
-  - $$ [ R_i, P_j ] = i \hbar δ_{ij} $$
+  - $$ [R_i, R_j] = 0 $$
+  - $$ [P_i, P_j] = 0 $$
+  - $$ [R_i, P_j] = i \hbar δ_{ij} $$
   - $$ i, j = 1, 2, 3 $$
   - 式中
     $$ R_1 $$,
@@ -1564,8 +1632,8 @@ date: 2022-10-31
     $$ \mid φ(1) \rangle \otimes \mid χ(2) \rangle $$
     的结果是:
   - $$
-      \widetilde{A}(1) [ \mid φ(1) \rangle \otimes \mid χ(2) \rangle ] =
-      [ A(1) \mid φ(1) \rangle ] \otimes \mid χ(2) \rangle
+      \widetilde{A}(1) [\mid φ(1) \rangle \otimes \mid χ(2) \rangle] =
+      [A(1) \mid φ(1) \rangle] \otimes \mid χ(2) \rangle
     $$
 
 - 假设
@@ -1582,10 +1650,10 @@ date: 2022-10-31
   $$ \mathcal{E} $$
   空间中的一个线性算符, 它的定义就是规定它对张量积矢量的作用的下列关系式:
   - $$
-      [ A(1) \otimes B(2) ]
-      [ \mid φ(1) \rangle \otimes \mid χ(2) \rangle ] =
-      [ A(1) \mid φ(1) \rangle ] \otimes
-      [ B(2) \mid χ(2) \rangle ]
+      [A(1) \otimes B(2)]
+      [\mid φ(1) \rangle \otimes \mid χ(2) \rangle] =
+      [A(1) \mid φ(1) \rangle] \otimes
+      [B(2) \mid χ(2) \rangle]
     $$
 
 > 原书印刷错误~
@@ -1921,7 +1989,7 @@ date: 2022-10-31
     才表示同一个态, 这时
   - $$
       \mid φ \rangle =
-      e^{i θ_1} [ λ_1 \mid ψ_1 \rangle + λ_2 \mid ψ_2 \rangle ] =
+      e^{i θ_1} [λ_1 \mid ψ_1 \rangle + λ_2 \mid ψ_2 \rangle] =
       e^{i θ_1} \mid ψ \rangle
     $$
 
@@ -2238,7 +2306,7 @@ date: 2022-10-31
   - $$
       \begin{cases}
         \frac{\partial A}{\partial t} = 0 \\
-        [ A, H ] = 0
+        [A, H] = 0
       \end{cases}
     $$
   - 由此可见, 对于保守体系来说,
@@ -2345,14 +2413,14 @@ date: 2022-10-31
   $$ A $$
   和
   $$ B $$
-  所辐射的电场加起来, 然后将所得结果平方 (即 `和的平方`).
+  所辐射的电场加起来, 然后将所得结果平方 (即`和的平方`).
   - 在区间
-    $$ [ x_1, x_2 ] $$
+    $$ [x_1, x_2] $$
     中找到光子的概率则等于在
     $$ x_1 $$
     和
     $$ x_2 $$
-    之间各点的概率密度的总和 (即 `平方的和`).
+    之间各点的概率密度的总和 (即`平方的和`).
 
 ```
 归结一下, 从这一段的讨论中, 必须抓住的基本概念可以简要地叙述如下:
