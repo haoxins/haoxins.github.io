@@ -12,6 +12,7 @@
 - [数学及其历史 第三版 & 数学史 第三版](2025/math-history.md)
 - [阅读 Paper & Blog](2025/paper-blog.md)
 - [再读 通向实在之路 彭罗斯 (上)](2025/physics-road-to-reality-1.md)
+- [再读 通向实在之路 彭罗斯 (中)](2025/physics-road-to-reality-2.md)
 - [码农碎碎念](2025/programming.md)
 - [群论与量子力学 外尔](2025/quantum-group.md)
 - [量子信息物理原理 (上)](2025/quantum-information-1.md)
