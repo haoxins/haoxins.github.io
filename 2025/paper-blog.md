@@ -46,3 +46,6 @@ scores predicted by the fastText model,
 and only preserve the top-ranking ones.
 ```
 
+#### Supervised Fine-Tuning
+#### Reinforcement Learning
+#### Discussion, Conclusion, and Limitation
