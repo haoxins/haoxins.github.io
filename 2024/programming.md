@@ -878,7 +878,7 @@ it asks one of the peers that it knows is
 responsible for storing that piece.
 ```
 
-- [Changes to u128/i128 layout in 1.77 and 1.78](https://blog.rust-lang.org/2024/03/30/i128-layout-update.html)
+- [Changes to u128/i128 layout in 1.77 and 1.78](https://blog.rust-lang.org/2024/03/30/i128-layout-update/)
   - 嗯, 没直接用过 `u128` 和 `i128`
 
 ```rust
@@ -1232,8 +1232,8 @@ SELECT * FROM (
 ) WHERE row_num <= 5;
 ```
 
-- [Announcing Rust 1.75](https://blog.rust-lang.org/2023/12/28/Rust-1.75.0.html)
-  - [Announcing `async fn` and return-position `impl Trait` in traits](https://blog.rust-lang.org/2023/12/21/async-fn-rpit-in-traits.html)
+- [Announcing Rust 1.75](https://blog.rust-lang.org/2023/12/28/Rust-1.75.0/)
+  - [Announcing `async fn` and return-position `impl Trait` in traits](https://blog.rust-lang.org/2023/12/21/async-fn-rpit-in-traits/)
   - 终于可以切换回 `stable` 了!
 
 ---

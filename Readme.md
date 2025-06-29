@@ -7,7 +7,6 @@
 
 ### 2025
 
-- [个人分享: NebulaGraph 的应用](https://mp.weixin.qq.com/s/nP2mc8ZkouSzHPy0OTRm9g)
 - [泛函分析导论及应用 - (上)](2025/math-functional-analysis-1.md)
 - [数学及其历史 第三版 & 数学史 第三版](2025/math-history.md)
 - [阅读 Paper & Blog](2025/paper-blog.md)
@@ -17,11 +16,11 @@
 - [群论与量子力学 外尔](2025/quantum-group.md)
 - [量子信息物理原理 (上)](2025/quantum-information-1.md)
 - [阅读的闲书](2025/reading.md)
+- [个人分享: NebulaGraph 的应用](https://mp.weixin.qq.com/s/nP2mc8ZkouSzHPy0OTRm9g)
 
 ### 2024
 
-- [猫咪的那些事, 葡萄和提子](2025/cat.md)
-- [NebulaGraph 社区专访](https://mp.weixin.qq.com/s/cKcmK3Cpvq870sTSyCVOiw)
+- [猫咪的那些事, 葡萄和提子](2024/cat.md)
 - [关于 Lean 4](2024/lean.md)
 - [陶哲轩实分析 (上)](2024/math-analysis-1.md)
 - [陶哲轩实分析 (下)](2024/math-analysis-2.md)
@@ -46,3 +45,4 @@
 - [年度推荐书单](2024/reading-recommended.md)
 - [阅读的闲书](2024/reading.md)
 - [休憩 游乐](2024/rest.md)
+- [NebulaGraph 社区专访](https://mp.weixin.qq.com/s/cKcmK3Cpvq870sTSyCVOiw)

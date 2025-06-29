@@ -673,7 +673,7 @@ the `git` specification will be removed from the dependency declaration.
 
 ---
 
-- [Stabilizing async fn in traits in 2023](https://blog.rust-lang.org/inside-rust/2023/05/03/stabilizing-async-fn-in-trait.html)
+- [Stabilizing async fn in traits in 2023](https://blog.rust-lang.org/inside-rust/2023/05/03/stabilizing-async-fn-in-trait/)
   - 期待
 
 ```
@@ -690,7 +690,7 @@ support in 2024.
   - `rustup install nightly`
   - `rustup default nightly`
 
-- [Generic associated types to be stable in Rust 1.65](https://blog.rust-lang.org/2022/10/28/gats-stabilization.html)
+- [Generic associated types to be stable in Rust 1.65](https://blog.rust-lang.org/2022/10/28/gats-stabilization/)
 
 ```
 At its core, generic associated types allow you

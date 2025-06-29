@@ -119,7 +119,7 @@ date: 2020-12-27
   - **Structural Pattern Matching**
   - Parenthesized context managers
 
-* [Announcing Rust 1.56.0 and Rust 2021](https://blog.rust-lang.org/2021/10/21/Rust-1.56.0.html)
+* [Announcing Rust 1.56.0 and Rust 2021](https://blog.rust-lang.org/2021/10/21/Rust-1.56.0/)
   - **Rust 2021**
 
 * [Go 1.17 is released](https://blog.golang.org/go1.17)
@@ -162,7 +162,7 @@ responsible for integrations with reactive frameworks to stable API.
 BTW: 讨厌分号!
 ```
 
-* [Announcing Rust 1.50](https://blog.rust-lang.org/2021/02/11/Rust-1.50.0.html)
+* [Announcing Rust 1.50](https://blog.rust-lang.org/2021/02/11/Rust-1.50.0/)
 
 * [Mozilla Welcomes the Rust Foundation](https://blog.mozilla.org/blog/2021/02/08/mozilla-welcomes-the-rust-foundation/)
   - [Hello World!](https://foundation.rust-lang.org/posts/2021-02-08-hello-world/)

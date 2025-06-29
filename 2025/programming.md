@@ -6,6 +6,18 @@ date: 2025-02-02
 
 ### Posts
 
+- [Rust 1.88](https://blog.rust-lang.org/2025/06/26/Rust-1.88.0/)
+
+```rust
+if let Channel::Stable(v) = release_info()
+    && let Semver { major, minor, .. } = v
+    && major == 1
+    && minor == 88
+{
+    println!("`let_chains` was stabilized in this version");
+}
+```
+
 - [PEP 750 - Template Strings](https://peps.python.org/pep-0750/)
 
 ```py
@@ -23,7 +35,7 @@ tmpl = t"Value: {val:.2f}"
 assert tmpl.interpolations[0].format_spec == ".2f"
 ```
 
-- [Announcing Rust 1.85 and Rust 2024](https://blog.rust-lang.org/2025/02/20/Rust-1.85.0.html)
+- [Rust 1.85 and Rust 2024](https://blog.rust-lang.org/2025/02/20/Rust-1.85.0/)
 
 ```rust
 let mut vec: Vec<String> = vec![];
@@ -53,3 +65,5 @@ let closure = async || {
 - [Terence Tao on how we measure the cosmos (part 1)](https://www.youtube.com/watch?v=YdOXS_9_P4U)
   - Part 1, 访谈的形式不错, 但是内容一般~
     亮点部分是开普勒如何根据大量数据得出开普勒定律!
+  - [The cosmic distance ladder with Terence Tao (part 2)](https://www.youtube.com/watch?v=hFMaT9oRbs4)
+  - Part 2, 一般
