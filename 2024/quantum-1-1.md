@@ -2610,6 +2610,53 @@ date: 2022-10-31
         {\langle ψ \mid ψ \rangle}
     $$
 
+- 现在引入方均根偏差
+  $$ ΔA $$,
+  它的定义是
+  $$ ΔA = \sqrt{\langle (A - \langle A \rangle)^2 \rangle} $$
+  进而, 我们有:
+  $$
+    ΔA =
+    \sqrt{\langle ψ \mid (A - \langle A \rangle)^2 \mid ψ \rangle}
+  $$
+  - 这个关系式还可写成略微不同的形式. 由于
+  - $$
+      \begin{align}
+        \langle (A - \langle A \rangle)^2 \rangle
+        & = \langle (A^2 -
+          2 \langle A \rangle A +
+            \langle A \rangle^2) \rangle \\
+        & = \langle A^2 \rangle -
+          2 \langle A \rangle^2 +
+            \langle A \rangle^2 \\
+        & = \langle A^2 \rangle -
+            \langle A \rangle^2 \\
+      \end{align}
+    $$
+  - 因此, 方均根偏差
+    $$ ΔA $$
+    又可由下式给出:
+    $$ ΔA = \sqrt{\langle A^2 \rangle - \langle A \rangle^2} $$
+
+- 如果将定义式
+  $$ ΔA = \sqrt{\langle (A - \langle A \rangle)^2 \rangle} $$
+  应用于可观察量
+  $$ R $$
+  和
+  $$ P $$,
+  再利用它们之间的对易关系, 可以证明: 对于任意的态
+  $$ \mid ψ \rangle $$,
+  有
+  - $$
+      \begin{cases}
+        ΔX \cdot ΔP_x ≥ \frac{\hbar}{2} \\
+        ΔY \cdot ΔP_y ≥ \frac{\hbar}{2} \\
+        ΔZ \cdot ΔP_z ≥ \frac{\hbar}{2} \\
+      \end{cases}
+    $$
+  - 这就是说, 我们又得到海森伯的不确定度关系式,
+    不过下限是精确的, 这是由于不确定度已有精确定义.
+
 ### 可观察量的相容性
 
 - 如果两个可观察量
@@ -2816,7 +2863,7 @@ date: 2022-10-31
   $$ t $$
   时刻波包的中心. 对应于相继各时刻
   $$ t $$
-  的这些点的集合便构成了波包中心所走过的轨道.
+  的这些点的集合便构成了`波包中心所走过的轨道`.
 
 ```
 但是, 我们要提醒一下, 严格说来, 粒子本身是永远没有什么轨道可言的;
