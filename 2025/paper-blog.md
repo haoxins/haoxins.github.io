@@ -50,5 +50,13 @@ and only preserve the top-ranking ones.
   这段写得很简陋~
 
 #### Supervised Fine-Tuning
+
+```
+The total number of training examples is 776K.
+
+Training examples are randomly concatenated until
+reaching a maximum context length of 4K tokens.
+```
+
 #### Reinforcement Learning
 #### Discussion, Conclusion, and Limitation

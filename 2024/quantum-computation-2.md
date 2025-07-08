@@ -517,9 +517,9 @@ date: 2023-01-17
     逼近门
     $$ U_j $$.
     为了在逼近电路上不同测量结果的概率和正确概率相比偏差在
-    $$ △ > 0 $$
+    $$ Δ > 0 $$
     之内, 那么, 只需满足
-    $$ E(U_j, V_j) ≤ △ / 2m $$.
+    $$ E(U_j, V_j) ≤ Δ / 2m $$.
 
 - 由于阿达玛门和
   $$ π / 8 $$
@@ -647,13 +647,13 @@ date: 2023-01-17
   量子比特态
   $$ \mid \widetilde{ψ} \rangle $$
   逼近系统, 且
-  $$ e^{-i H_k △t} $$
+  $$ e^{-i H_k Δt} $$
   有有效的量子电路逼近. 选择一种逼近方法且
-  $$ △t $$
+  $$ Δt $$
   使得期望的错误率是可以接受的 (且
-  $$ j △t = t_f $$
+  $$ j Δt = t_f $$
   是一个整数), 对于迭代步骤构造对应的量子电路
-  $$ U_{△t} $$
+  $$ U_{Δt} $$
   且做:
   - (1)
     $$ \mid \widetilde{ψ}_0 \rangle \gets \mid ψ_0 \rangle $$;
@@ -662,12 +662,12 @@ date: 2023-01-17
   - (2)
     $$
       \to \mid \widetilde{ψ}_{j + 1} \rangle =
-      U_{△t} \mid \widetilde{ψ}_j \rangle
+      U_{Δt} \mid \widetilde{ψ}_j \rangle
     $$
     迭代更新
   - (3)
     $$ \to j = j + 1 $$;
-    $$ \mbox{goto } 2 \mbox{ until } j △t ≥ t_f $$
+    $$ \mbox{goto } 2 \mbox{ until } j Δt ≥ t_f $$
     循环
   - (4)
     $$

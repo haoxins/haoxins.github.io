@@ -231,7 +231,7 @@ date: 2023-10-06
   - 因此, 双曲三角形表现得就像绘制在鞍面上的三角形.
 
 - 在球面几何和双曲几何里都有
-  $$ \mathcal{E}(△) = \mathcal{K} \mathcal{A} (△) $$,
+  $$ \mathcal{E}(Δ) = \mathcal{K} \mathcal{A} (Δ) $$,
   - 在球面几何里
     $$ \mathcal{K} $$
     为正常数, 在双曲几何里
@@ -296,7 +296,7 @@ date: 2023-10-06
 ## 高斯曲率
 
 - 高斯引入这个概念用来量度不规则的一般曲面上每个点的曲率.
-  - $$ \mathcal{K} = \frac{\mathcal{E}(△)}{\mathcal{A}(△)} = 单位面积的角盈 $$.
+  - $$ \mathcal{K} = \frac{\mathcal{E}(Δ)}{\mathcal{A}(Δ)} = 单位面积的角盈 $$.
   - 在球面几何和双曲几何里, 这个解释对任意位置, 任意大小的三角形都成立.
   - 但是, 在更一般的曲面上, 这个定义就有问题了,
     因为位于曲面不同部分的三角形的角盈
@@ -311,15 +311,15 @@ date: 2023-10-06
   的测地线三角形的单位面积角盈的极限:
   - $$
       \mathcal{K} (p) =
-      \lim_{△_{p} \rightarrow p}
-      \frac{\mathcal{E} (△_{p})}{\mathcal{A} (△_{p})} =
+      \lim_{Δ_{p} \rightarrow p}
+      \frac{\mathcal{E} (Δ_{p})}{\mathcal{A} (Δ_{p})} =
       \mbox{点 } p \mbox{ 处单位面积的角盈}
     $$.
 - 上述定义可以推广到三角形以外的情形.
   如果我们用一个小
   $$ n $$
   边形来代替
-  $$ △_{p} $$,
+  $$ Δ_{p} $$,
   则其角盈为
   - $$ \mathcal{E} (n \mbox{ 边形}) ≡ (内角和) - (n - 2) π $$,
   - 而曲率的定义依旧一样, 为单位面积的角盈.
@@ -350,7 +350,7 @@ date: 2023-10-06
 ```
 
 - 定理说的是, __三角形的角盈就是三角形内的总曲率__:
-  - $$ \mathcal{E}(△) = α + β + γ - π = \iint_{△} \mathcal{K} d \mathcal{A} $$.
+  - $$ \mathcal{E}(Δ) = α + β + γ - π = \iint_{Δ} \mathcal{K} d \mathcal{A} $$.
   - 证明思路: 角盈具有可加性.
 
 > 第二章: 拉开序幕
@@ -1775,11 +1775,11 @@ date: 2023-10-06
   $$ 2 $$.
 
 - 一般曲面上测地线三角形
-  $$ △ $$
+  $$ Δ $$
   的角盈同样是由内部的全曲率给出的.
   推广到测地线多边形,
   - $$
-      \mathcal{E}(△) = \iint_{△} \mathcal{K} d \mathcal{A}
+      \mathcal{E}(Δ) = \iint_{Δ} \mathcal{K} d \mathcal{A}
       \Rightarrow
       \mathcal{E}(P_j) = \iint_{P_j} \mathcal{K} d \mathcal{A} =
       \mathcal{K}(P_j)
@@ -2118,22 +2118,22 @@ date: 2023-10-06
   - 我们可以将和乐性看作整个切平面沿环路平行移动的旋转角.
   - 和乐性与环路的起点无关; 也与初始的切向量无关.
 
-- $$ △ $$
+- $$ Δ $$
   的曲率不仅决定了
   $$ \mathcal{R}(L) $$
   的正负号, 也决定它的大小!
   - 球面具有常曲率
     $$ \mathcal{K} = (1 / R^2) $$,
     使得在
-    $$ △ $$
+    $$ Δ $$
     上的全曲率为
   - $$
-      \mathcal{K} (△) = \iint_{△} \mathcal{K} d \mathcal{A} =
-      \frac{1}{R^2} \iint_{△} d \mathcal{A} =
+      \mathcal{K} (Δ) = \iint_{Δ} \mathcal{K} d \mathcal{A} =
+      \frac{1}{R^2} \iint_{Δ} d \mathcal{A} =
       \frac{1}{R^2} [R^2 Θ] = Θ
     $$,
   - 因此, 当
-    $$ L = △ $$
+    $$ L = Δ $$
     时,
   - $$ \mathcal{R} (L) = \mathcal{K} (L) $$.
 
@@ -2200,11 +2200,11 @@ date: 2023-10-06
     $$ \mathbb{S}^2 $$
     上的面积.
   - 设
-    $$ \mathcal{E}(△) $$
+    $$ \mathcal{E}(Δ) $$
     为
     $$ \mathcal{S} $$
     上测地线三角形
-    $$ △ $$
+    $$ Δ $$
     的角盈, 或者更一般地, 设
     $$ \mathcal{E}(P_m) $$
     表示测地线
@@ -2338,15 +2338,15 @@ date: 2023-10-06
     设为一个包含
     $$ p $$
     的小测地线三角形
-    $$ △_p $$,
+    $$ Δ_p $$,
     设
-    $$ \mathcal{A} (△_p) $$
+    $$ \mathcal{A} (Δ_p) $$
     表示
-    $$ △_p $$
+    $$ Δ_p $$
     内部的面积. 然后, 根据曲率最初的内蕴定义, 我们也会发现绝妙定理的最初形式:
   - $$
-      κ_1 κ_2 = \lim_{△_p \to p}
-      \frac{\mathcal{R} (△_p)}{\mathcal{A} (△_p)} =
+      κ_1 κ_2 = \lim_{Δ_p \to p}
+      \frac{\mathcal{R} (Δ_p)}{\mathcal{A} (Δ_p)} =
       m K(p)
     $$.
   - 因为前面两个方程右边的量都是内蕴于
