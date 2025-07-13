@@ -59,4 +59,19 @@ reaching a maximum context length of 4K tokens.
 ```
 
 #### Reinforcement Learning
+
+> 正文开始~
+
+```
+As the value function employed in PPO is typically
+another model of comparable size to the policy model,
+it brings a substantial memory and computational burden.
+Additionally, during RL training, the value function is
+treated as a baseline in the calculation of the advantage
+for variance reduction. While in the LLM context,
+usually only the last token is assigned a reward score
+by the reward model, which may complicate the training
+of a value function that is accurate at each token.
+```
+
 #### Discussion, Conclusion, and Limitation
