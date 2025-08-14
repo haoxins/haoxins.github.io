@@ -106,6 +106,9 @@ v1.24 / (v1.23 + v1.24) > 0.33
 
 2025-04-14
 v1.24 > v1.23
+
+2025-08-13 Go 1.25 发布
+
 ```
 
 - [Go: reduce error handling boilerplate using ?](https://github.com/golang/go/discussions/71460)
