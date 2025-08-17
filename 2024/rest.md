@@ -4,6 +4,8 @@ description: 少年不识愁滋味, 爱上层楼, 爱上层楼, 为赋新词强�
 date: 2023-07-17
 ---
 
+- [JOJO 的奇妙冒险 星尘斗士 埃及篇](https://movie.douban.com/subject/25984031/)
+
 - [长安的荔枝](https://movie.douban.com/subject/36185502/)
   - 长安城外, 劫杀的戏码比较出戏; 其它还好~
 
