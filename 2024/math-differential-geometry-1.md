@@ -1506,12 +1506,12 @@ date: 2023-10-06
 - 最后, 法向量
   $$ \mathbf{n} $$
   沿方向
-  $$ \hat{v} $$
+  $$ \hat{\mathbf{v}} $$
   的`方向导数`
-  $$ \nabla_{\hat{v}} $$
+  $$ \nabla_{\hat{\mathbf{v}}} $$
   可以定义为:
   - $$
-      \nabla_{\hat{v}} \mathbf{n} ≡
+      \nabla_{\hat{\mathbf{v}}} \mathbf{n} ≡
       \lim_{ϵ \rightarrow 0} \frac{δ \mathbf{n}}{ϵ}
     $$
   - 这个导数向量在切平面
@@ -1521,12 +1521,12 @@ date: 2023-10-06
 - 这只是关于单位长度的方向导数. 如果考虑长度为
   $$ v $$
   的一般切向量
-  $$ \mathbf{v} = v \hat{v} $$
+  $$ \mathbf{v} = v \hat{\mathbf{v}} $$
   的导数, 就要乘以这个长度:
   - $$
       \nabla_{\mathbf{v}} \mathbf{n} =
-      \nabla_{v \hat{v}} \mathbf{n} =
-      v \nabla_{\hat{v}} \mathbf{n}
+      \nabla_{v \hat{\mathbf{v}}} \mathbf{n} =
+      v \nabla_{\hat{\mathbf{v}}} \mathbf{n}
     $$.
 
 - 如果两个向量
@@ -1542,16 +1542,16 @@ date: 2023-10-06
   而且它们之间夹角的极限也为零.
   - 由此:
     $$
-      \nabla_{\hat{v}} \mathbf{n} \asymp \frac{δ \mathbf{n}}{ϵ}
+      \nabla_{\hat{\mathbf{v}}} \mathbf{n} \asymp \frac{δ \mathbf{n}}{ϵ}
       \Longleftrightarrow
-      δ \mathbf{n} \asymp ϵ \nabla_{\hat{v}} \mathbf{n} =
-      \nabla_{ϵ \hat{v}} \mathbf{n}
+      δ \mathbf{n} \asymp ϵ \nabla_{\hat{\mathbf{v}}} \mathbf{n} =
+      \nabla_{ϵ \hat{\mathbf{v}}} \mathbf{n}
     $$
 - 因此得出以下观点, 这是我们在本书的其余部分要反复使用的:
   - 当
     $$ ϵ $$
     趋于零时,
-    $$ \mathbf{v} = ϵ \hat{v} $$
+    $$ \mathbf{v} = ϵ \hat{\mathbf{v}} $$
     趋于零向量,
     $$ \nabla_{\mathbf{v}} \mathbf{n} $$
     最终等于
@@ -1621,7 +1621,7 @@ date: 2023-10-06
 > 本节虽是蜻蜓点水, 但也足够特色鲜明!
   仅此一处, 已然胜过不少线性代数教材~
 
-- __奇异值分解__ (`SVD`).
+- __奇异值分解__ (SVD).
   平面上的每一个线性变换等价于两个正交方向的拉伸 (拉伸系数分别为
   $$ σ_1 $$
   和
@@ -1629,6 +1629,11 @@ date: 2023-10-06
   称为`奇异值`, 一般是不同的), 再接一个旋转角为
   $$ τ $$
   的旋转 (称为`扭转`).
+
+```
+矩阵由四个独立的数组成, 我们的变换也要求由四个几何信息组成:
+d 的方向, 这个方向的拉伸系数, 垂直方向的拉伸系数, 以及扭转角.
+```
 
 - 由
   $$
@@ -1702,17 +1707,21 @@ date: 2023-10-06
     是什么样的呢?
 
 - 如果
-  $$ \hat{v} $$
+  $$ \hat{\mathbf{v}} $$
   是任意单位切向量, 则在这个方向上的法截痕的曲率由
-  $$ κ(\hat{v}) = \hat{v} \cdot S(\hat{v}) $$
+  $$ κ(\hat{\mathbf{v}}) = \hat{\mathbf{v}} \cdot S(\hat{\mathbf{v}}) $$
   给出. 因此,
-  - $$ κ(\hat{v}) = S(\hat{v}) \mbox{ 在 } \hat{v} \mbox{ } 方向的投影 $$.
+  - $$
+      κ(\hat{\mathbf{v}}) =
+      S(\hat{\mathbf{v}}) \mbox{ 在 }
+      \hat{\mathbf{v}} \mbox{ 方向的投影}
+    $$.
 - 根据默尼耶定理,
-  $$ κ(\hat{v}) $$
+  $$ κ(\hat{\mathbf{v}}) $$
   不仅是法截痕的曲率, 它还等于曲面上沿
-  $$ \hat{v} $$
+  $$ \hat{\mathbf{v}} $$
   方向通过该点的`任何`曲线的法曲率
-  $$ κ_n (\hat{v}) $$.
+  $$ κ_n (\hat{\mathbf{v}}) $$.
 
 ```
 任意两个垂直方向上曲率的和等于两个主曲率的和.
