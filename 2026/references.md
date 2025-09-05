@@ -33,12 +33,12 @@ date: 2023-12-21
 
 ### 我的藏书目录
 
-- [量子力学 (第二卷)](https://book.douban.com/subject/26716232/)
 - [量子场论 (第一卷)](https://book.douban.com/subject/35493043/)
 
 ### 一些好的微信文章
 
-- [在量子世界, 崂山道士的"穿墙术"能成真吗?](https://mp.weixin.qq.com/s/2Lkq3D9fX1KIoRQowjaayA)
+- [现代微分几何学的发展](https://mp.weixin.qq.com/s/Jy1lX-jzoX2l-AoteZc6BA)
+- [在量子世界, 崂山道士的 "穿墙术" 能成真吗?](https://mp.weixin.qq.com/s/2Lkq3D9fX1KIoRQowjaayA)
   - 那个动画很好!
 - [自举思想在共形场论中的应用](https://mp.weixin.qq.com/s/08e3NaJIVJxmiBdtreA6IA)
 - [化繁为简的局域化方法](https://mp.weixin.qq.com/s/aAKSxAefnLIW2ZaR14LeZQ)
