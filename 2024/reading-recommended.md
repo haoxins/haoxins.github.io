@@ -192,6 +192,12 @@ date: 2021-05-03
 
 ------------------
 
+
+- [空间-时间-物质](https://book.douban.com/subject/36351918/)
+  - 极好的一块历史拼图, 对于近代数学和物理的交织过程~
+
+- [群论与量子力学](https://book.douban.com/subject/35886757/)
+
 - [叫魂](https://book.douban.com/subject/10471333/)
   - 记 2022 年~
 
