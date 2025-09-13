@@ -4,6 +4,8 @@ description: 少年不识愁滋味, 爱上层楼, 爱上层楼, 为赋新词强�
 date: 2023-07-17
 ---
 
+- [JOJO 的奇妙冒险 不灭钻石](https://movie.douban.com/subject/26650051/)
+
 - [捕风追影](https://movie.douban.com/subject/36600459/)
 
 - [JOJO 的奇妙冒险 星尘斗士 埃及篇](https://movie.douban.com/subject/25984031/)

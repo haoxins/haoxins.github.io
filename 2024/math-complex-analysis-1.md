@@ -1871,6 +1871,91 @@ Q 的元素称为四元数, 它们可以画成四维的点或向量,
     之比.
     $$ z = \frac{\mathfrak{z}_1}{\mathfrak{z}_2} $$
 
+- 有序的复数对
+  $$ [\mathfrak{z}_1, \mathfrak{z}_2] $$
+  称为复数
+  $$ z $$
+  的`齐次`坐标. 为使这个比有适当的定义, 我们要求
+  $$ [\mathfrak{z}_1, \mathfrak{z}_2] ≠ [0, 0] $$,
+  对每一个有序对
+  $$ [\mathfrak{z}_1 \mbox{ 任意}, \mathfrak{z}_2 ≠ 0] $$,
+  恰有一个复数
+  $$ z = (\mathfrak{z}_1 / \mathfrak{z}_2) $$
+  与之对应, 但对复平面的每一个点
+  $$ z $$,
+  有齐次坐标的无穷集合
+  $$
+    [k \mathfrak{z}_1, k \mathfrak{z}_2] =
+    k [\mathfrak{z}_1, \mathfrak{z}_2]
+  $$
+  与之对应, 这里的
+  $$ k $$
+  是一任意非零复数.
+  - 形如
+    $$ [\mathfrak{z}_1, 0] $$
+    这样的复数对表示什么? 令
+    $$ \mathfrak{z}_1 $$
+    固定而
+    $$ \mathfrak{z}_2 $$
+    趋于
+    $$ 0 $$,
+    很清楚, 必须把
+    $$ [\mathfrak{z}_1, 0] $$
+    与无穷远点等同起来. 所以, 复数对
+    $$ [\mathfrak{z}_1, \mathfrak{z}_2] $$
+    的全体为扩充的复平面提供了坐标.
+  - 引入齐次坐标就在代数上完成了引入黎曼球面对于几何学所做到的事: 它免除了
+    $$ ∞ $$
+    的特殊作用.
+  - 正如用
+    $$ \mathbb{R}^2 $$
+    来记实数对
+    $$ (x, y) $$
+    的集合一样, 我们用
+    $$ \mathbb{C}^2 $$
+    来记复数对
+    $$ [\mathfrak{z}_1, \mathfrak{z}_2] $$
+    的集合. 为了凸显
+    $$ \mathbb{R}^2 $$
+    与
+    $$ \mathbb{C}^2 $$
+    的区别, 我们用圆括号
+    $$ (x, y) $$
+    表示
+    $$ \mathbb{R}^2 $$
+    之元, 而用方括号
+    $$ [\mathfrak{z}_1, \mathfrak{z}_2] $$
+    表示
+    $$ \mathbb{C}^2 $$
+    之元.
+  - 正如
+    $$ \mathbb{R}^2 $$
+    中的线性变换可以用实
+    $$ 2 \times 2 $$
+    矩阵来表示一样,
+    $$ \mathbb{C}^2 $$
+    中的线性变换则用复
+    $$ 2 \times 2 $$
+    矩阵来表示:
+  - 但若把
+    $$ [\mathfrak{z}_1, \mathfrak{z}_2] $$
+    和
+    $$ [\mathfrak{w}_1, \mathfrak{w}_2] $$
+    分别看作
+    $$ \mathbb{C} $$
+    中的点
+    $$ z = (\mathfrak{z}_1 / \mathfrak{z}_2) $$
+    及其象点
+    $$ w = (\mathfrak{w}_1 / \mathfrak{w}_2) $$
+    的
+    $$ \mathbb{C}^2 $$
+    齐次坐标, 则上述
+    $$ \mathbb{C}^2 $$
+    中的线性变换将诱导出
+    $$ \mathbb{C} $$
+    中的下述 (非线性) 变换:
+  - $$ z = \frac{\mathfrak{z}_1}{\mathfrak{z}_2} $$
+  - 这正是最一般的默比乌斯变换!
 
 - 就这样我们解释了, 何以
   $$ \mathbb{C} $$
