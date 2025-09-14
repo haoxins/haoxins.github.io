@@ -23,7 +23,7 @@ date: 2018-12-02
 
 * **Spring Framework**
   - [Spring Native](https://github.com/spring-projects-experimental/spring-native)
-  - 打败 *Spring Framework* 的一定不是另一个 **Web Framework**
+  - 打败 Spring Framework 的一定不是另一个 **Web Framework**
 
 ### Machine learning
 
@@ -33,7 +33,7 @@ date: 2018-12-02
   - [Pipelines](https://github.com/kubeflow/pipelines)
   - [Katib](https://github.com/kubeflow/katib)
 
-> *社区的治理存在风险*
+> 社区的治理存在风险
 
 ### Data Computing
 
@@ -41,9 +41,9 @@ date: 2018-12-02
   - https://github.com/apache/arrow-cookbook
   - https://github.com/apache/arrow-rs
 
-* [Datafuse](https://github.com/datafuselabs/datafuse)
-  - https://datafuse.rs
-  - [Roadmap 2021](https://github.com/datafuselabs/datafuse/issues/746)
+* [Databend](https://github.com/databendlabs/databend)
+  - https://www.databend.com
+  - [Roadmap 2021](https://github.com/databendlabs/databend/issues/746)
 
 * [Vineyard (v6d)](https://github.com/v6d-io/v6d)
 

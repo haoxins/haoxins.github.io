@@ -6,8 +6,8 @@ date: 2022-01-17
 
 ## Data & ML Engineering
 
-- [DataFusion](https://github.com/apache/arrow-datafusion)
-  - [Ballista](https://github.com/apache/arrow-ballista)
+- [DataFusion](https://github.com/apache/datafusion)
+  - [Ballista](https://github.com/apache/datafusion-ballista)
   - 期待 2023 能带来全新的 Streaming computing 生态
   - `Streaming` vs `Mini batch` vs `Batch`
 
@@ -61,7 +61,7 @@ date: 2022-01-17
   - 用了一段时间, 不喜欢 Rancher Desktop
   - `2023-08-22`, 迁移至 [Podman](https://github.com/containers/podman)
 
-- [CeresDB](https://github.com/CeresDB/ceresdb)
+- [HoraeDB](https://github.com/apache/horaedb)
   - 蚂蚁出品, 预料之中, 果然基于 `Arrow`.
 
 - [07-25: Apache Flink Kubernetes Operator 1.1.0 Release](https://flink.apache.org/news/2022/07/25/release-kubernetes-operator-1.1.0.html)
@@ -113,14 +113,14 @@ date: 2022-01-17
   - PyTorch 胜, TensorFlow 败
 
 - [xDS API Working Group (xDS-WG)](https://github.com/cncf/xds)
-  - 从 `2021` 年开始, 本人坚定地唱衰 `Nginx`, `Apisix`
+  - 从 2021 年开始, 本人坚定地唱衰 `Nginx`, `Apisix`
 
 - [Rayon](https://github.com/rayon-rs/rayon)
   - Rayon is a data-parallelism library for Rust.
   - It is extremely lightweight and makes it easy to
     convert a sequential computation into a parallel one.
   - It also guarantees data-race freedom.
-  - [DataFusion - Morsel-driven Parallelism using rayon](https://github.com/apache/arrow-datafusion/pull/2226)
+  - [DataFusion - Morsel-driven Parallelism using rayon](https://github.com/apache/datafusion/pull/2226)
 
 - [Spin](https://github.com/fermyon/spin)
   - Spin is a framework for building, deploying, and running fast,
@@ -128,7 +128,7 @@ date: 2022-01-17
   - [WAGI: WebAssembly Gateway Interface](https://github.com/deislabs/wagi)
 
 - `2022-03`
-  - 过去 `2` 个月, 一直在 `设计 & 实现` 基于 `Flink operator`
+  - 过去 2 个月, 一直在设计, 实现基于 `Flink operator`
     的一个团队内部平台的 `K8s operator`,
     团队内部称为 `Metric platform operator`
   - 基于 `Operator` 模式, 配合 `K8s CRD` 的 `GitOps`,
@@ -138,30 +138,30 @@ date: 2022-01-17
   - 因为
     [GCP/flink-on-k8s-operator](https://github.com/GoogleCloudPlatform/flink-on-k8s-operator)
     几乎不维护了
-  - 当然, 前者 `Fork` 自后者
-  - 开发进行中的时候, `Flink` 官方团队也推出了
+  - 当然, 前者 Fork 自后者
+  - 开发进行中的时候, Flink 官方团队也推出了
     [apache/flink-kubernetes-operator](https://github.com/apache/flink-kubernetes-operator)
   - 虽然打乱了原本的计划, 需要重新取舍, 但是整体而言却是重大利好, 理由如下:
-  - (1) 对于 `Flink on K8s` 的趋势是一大推进, `2022` 年,
-    可能 `K8s` 会是 `Flink` 社区第一推荐部署方式.
+  - (1) 对于 Flink on K8s 的趋势是一大推进, 2022 年,
+    可能 K8s 会是 Flink 社区第一推荐部署方式.
     这也得感谢阿里云的推动.
-  - (2) 我一直认为, 结合 `K8s`, `Flink` 未来应该通过 `Operator` 彻底废除
-    `Job Manager`. 这一想法比较激进, 因为意味着 `Flink` 将来只能部署在 `K8s` 上.
-    但这个选择会简化 `Flink`, 使其专注于自己的专长.
-  - 总体而言, 先干掉 `Job Manager`, 再干掉 `Flink`, 会是我的 `2022` 的一个重点方向.
-  - 为什么要干掉 `Flink`? 理由后续说明.
+  - (2) 我一直认为, 结合 K8s, Flink 未来应该通过 Operator 彻底废除
+    Job Manager. 这一想法比较激进, 因为意味着 Flink 将来只能部署在 K8s 上.
+    但这个选择会简化 Flink, 使其专注于自己的专长.
+  - 总体而言, 先干掉 Job Manager, 再干掉 Flink, 会是我的 2022 的一个重点方向.
+  - 为什么要干掉 Flink? 理由后续说明.
 
 - `2022-03`
-  - 有同事问我脑海中的技术的 `blueprint` 是啥样子的?
-  - __中心化__: `Kubernetes` 上面的 `functions/pipelines`
+  - 有同事问我脑海中的技术的 blueprint 是啥样子的?
+  - __中心化__: Kubernetes 上面的 `functions/pipelines`
   - 比如:
-    `Argo workflows`,
-    `Dapr functions`,
-    `Istio plugins`,
-    `Kubernetes operators`,
-    `Kubeflow pipelines`
-  - __区块链__: 某几个公链的 `Smart contracts`
-  - 我不认为: `私有链`, `联盟链`有价值!
+    Argo workflows,
+    Dapr functions,
+    Istio plugins,
+    Kubernetes operators,
+    Kubeflow pipelines
+  - __区块链__: 某几个公链的 Smart contracts
+  - 我不认为: 私有链, 联盟链有价值!
 
 - `2022-02-28`, 公司隔壁团队终于得到结论:
   - [YugabyteDB](https://github.com/yugabyte/yugabyte-db) 不可用
@@ -173,19 +173,19 @@ date: 2022-01-17
   - (3) 过度宣传, 文档的描述不务实. 对比列表, 完胜所有对手, 很假.
   - (4) 根据 GitHub Issues, 不像有较多人在用.
 
-- [Switch DataFusion to using arrow2](https://github.com/apache/arrow-datafusion/issues/1532)
+- [Switch DataFusion to using arrow2](https://github.com/apache/datafusion/issues/1532)
   - https://github.com/jorgecarleitao/arrow2
   - https://github.com/jorgecarleitao/parquet2
 
-- 关于 `Flink` 的替代
-  - 首先, `Flink` 的 `Scope` 其实和 `K8s` 是有重叠的;
-  - 同时, `Flink` 的各种历史包袱也很多.
-  - 此时, `Flink` 还没有真正的可替代品;
+- 关于 Flink 的替代
+  - 首先, Flink 的 Scope 其实和 K8s 是有重叠的;
+  - 同时, Flink 的各种历史包袱也很多.
+  - 此时, Flink 还没有真正的可替代品;
   - 但大概率会基于
-    [DataFusion](https://github.com/apache/arrow-datafusion)
+    [DataFusion](https://github.com/apache/datafusion)
   - [Fluvio](https://github.com/infinyon/fluvio)
     的开发力量稍显薄弱
-  - [Ballista Future Direction](https://github.com/apache/arrow-ballista/issues/30)
+  - [Ballista Future Direction](https://github.com/apache/datafusion-ballista/issues/30)
   - `2022-08`: 放弃!
     Fluvio 进展缓慢, 无望;
     DataFusion, Ballista 发展路线暂不包含 Streaming
@@ -196,13 +196,13 @@ date: 2022-01-17
   - Cross-Language Serialization for Relational Algebra
 
 - Spring Boot `3.0.0`
-  - Spring Boot `3.0` requires Java `17` as a minimum
-    version and Spring Framework `6`.
+  - Spring Boot `3.0` requires Java 17 as a minimum
+    version and Spring Framework 6.
   - Applications built with Gradle require
     Gradle `7.3` or later.
-  - `2022` 年开始, 我基本脱离 `JVM/Java/Kotlin` 了
-  - 除了 `Flink` 相关, 至少远离 `Spring` 了
-  - 所以, Spring Boot `3`, 与我无关
+  - 2022 年开始, 我基本脱离 `JVM/Java/Kotlin` 了
+  - 除了 Flink 相关, 至少远离 Spring 了
+  - 所以, Spring Boot 3, 与我无关
   - 哈哈哈, 开心
 
 - [Kubeflow pipelines v1.8.0](https://github.com/kubeflow/pipelines/blob/1.8.0/CHANGELOG.md)
