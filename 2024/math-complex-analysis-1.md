@@ -1862,14 +1862,14 @@ Q 的元素称为四元数, 它们可以画成四维的点或向量,
 - 很清楚, 以上一切不可能是巧合, 那么, 究竟发生了什么?!
   答案是简单的, 然而也很微妙. 为了理解这一切,
   我们先用一类完全新的坐标系来描述复平面.
-  我们不再把复数用两个实数来表示:
-  - $$ z = x + iy $$,
-    而把它写成两个复数
+  - 我们不再把复数用两个实数来表示:
+    $$ z = x + iy $$,
+  - 而把它写成两个复数
     $$ \mathfrak{z}_1 $$
     与
     $$ \mathfrak{z}_2 $$
-    之比.
-    $$ z = \frac{\mathfrak{z}_1}{\mathfrak{z}_2} $$
+    之比:
+  - $$ z = \frac{\mathfrak{z}_1}{\mathfrak{z}_2} $$
 
 - 有序的复数对
   $$ [\mathfrak{z}_1, \mathfrak{z}_2] $$
@@ -1937,6 +1937,38 @@ Q 的元素称为四元数, 它们可以画成四维的点或向量,
     中的线性变换则用复
     $$ 2 \times 2 $$
     矩阵来表示:
+  - $$
+      \begin{bmatrix}
+        \mathfrak{z}_1 \\
+        \mathfrak{z}_2 \\
+      \end{bmatrix}
+
+      \mapsto
+
+      \begin{bmatrix}
+        \mathfrak{w}_1 \\
+        \mathfrak{w}_2 \\
+      \end{bmatrix}
+
+      =
+
+      \begin{bmatrix}
+        a & b \\
+        c & d \\
+      \end{bmatrix}
+
+      \begin{bmatrix}
+        \mathfrak{z}_1 \\
+        \mathfrak{z}_2 \\
+      \end{bmatrix}
+
+      =
+
+      \begin{bmatrix}
+        a \mathfrak{z}_1 + b \mathfrak{z}_2 \\
+        c \mathfrak{z}_1 + d \mathfrak{z}_2 \\
+      \end{bmatrix}
+    $$
   - 但若把
     $$ [\mathfrak{z}_1, \mathfrak{z}_2] $$
     和
@@ -1954,8 +1986,17 @@ Q 的元素称为四元数, 它们可以画成四维的点或向量,
     中的线性变换将诱导出
     $$ \mathbb{C} $$
     中的下述 (非线性) 变换:
+  - $$
+      z = \frac{\mathfrak{z}_1}{\mathfrak{z}_2} \mapsto
+      w = \frac{\mathfrak{w}_1}{\mathfrak{w}_2} =
+      frac{a \mathfrak{z}_1 + b \mathfrak{z}_2}
+      {c \mathfrak{z}_1 + d \mathfrak{z}_2} =
+      frac{a(\mathfrak{z}_1 / \mathfrak{z}_2) + b}
+      {c(\mathfrak{z}_1 / \mathfrak{z}_2) + d} =
+      frac{az + b}{cz + d}
+    $$
   - $$ z = \frac{\mathfrak{z}_1}{\mathfrak{z}_2} $$
-  - 这正是最一般的默比乌斯变换!
+  - __这正是最一般的默比乌斯变换__!
 
 - 就这样我们解释了, 何以
   $$ \mathbb{C} $$
