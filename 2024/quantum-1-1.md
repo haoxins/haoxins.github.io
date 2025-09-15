@@ -3295,7 +3295,7 @@ date: 2022-10-31
 - 在量子力学中, 我们通常使用略微不同的惯例: 设
   $$ ψ(x) $$
   是一个 (一维的) 波函数, 则其傅里叶变换
-  $$ \overset{-}{ψ}(p) $$
+  $$ \overset{-}{ψ} (p) $$
   的定义为:
   - $$
       \overset{-}{ψ} (p) =
@@ -3307,10 +3307,29 @@ date: 2022-10-31
   - $$
       ψ(x) = \frac{1}{\sqrt{2 \pi \hbar}}
       \int_{- \infty}^{+ \infty}
-      dpe^{ipx / \hbar}
+      dp e^{ipx / \hbar}
       \overset{-}{ψ} (p)
     $$
-
+  - (若
+    $$ x $$
+    为长度, 则
+    $$ p $$
+    具有动量的量纲), 和:
+  - $$
+      \overset{-}{ψ} (p) =
+      \frac{1}{\sqrt{\hbar}} \tilde{ψ} (k) =
+      \frac{1}{\sqrt{\hbar}} \tilde{ψ} (frac{p}{\hbar})
+    $$
+  - 若
+    $$ ψ(x) $$
+    具有宽度为
+    $$ Δx $$
+    的高峰形状, 则
+    $$ \overset{-}{ψ} (p) $$
+    的宽度
+    $$ Δp $$
+    满足:
+    $$ Δx ⋅ Δp \gtrsim \hbar $$
 
 - 两个函数
   $$ ψ_1 (x) $$
