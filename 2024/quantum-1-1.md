@@ -3318,7 +3318,7 @@ date: 2022-10-31
   - $$
       \overset{-}{ψ} (p) =
       \frac{1}{\sqrt{\hbar}} \tilde{ψ} (k) =
-      \frac{1}{\sqrt{\hbar}} \tilde{ψ} (frac{p}{\hbar})
+      \frac{1}{\sqrt{\hbar}} \tilde{ψ} (\frac{p}{\hbar})
     $$
   - 若
     $$ ψ(x) $$
