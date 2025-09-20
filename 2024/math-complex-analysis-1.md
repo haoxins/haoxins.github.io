@@ -1989,11 +1989,11 @@ Q 的元素称为四元数, 它们可以画成四维的点或向量,
   - $$
       z = \frac{\mathfrak{z}_1}{\mathfrak{z}_2} \mapsto
       w = \frac{\mathfrak{w}_1}{\mathfrak{w}_2} =
-      frac{a \mathfrak{z}_1 + b \mathfrak{z}_2}
+      \frac{a \mathfrak{z}_1 + b \mathfrak{z}_2}
       {c \mathfrak{z}_1 + d \mathfrak{z}_2} =
-      frac{a(\mathfrak{z}_1 / \mathfrak{z}_2) + b}
+      \frac{a(\mathfrak{z}_1 / \mathfrak{z}_2) + b}
       {c(\mathfrak{z}_1 / \mathfrak{z}_2) + d} =
-      frac{az + b}{cz + d}
+      \frac{az + b}{cz + d}
     $$
   - $$ z = \frac{\mathfrak{z}_1}{\mathfrak{z}_2} $$
   - __这正是最一般的默比乌斯变换__!
