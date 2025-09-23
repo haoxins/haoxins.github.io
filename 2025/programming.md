@@ -6,6 +6,12 @@ date: 2025-02-02
 
 ### Posts
 
+- 2025-09, 从
+  [Warp](https://www.warp.dev)
+  迁移到了
+  [Ghostty](https://ghostty.org)
+  - [Ghostty code](https://github.com/ghostty-org/ghostty)
+
 - [Rust 1.88](https://blog.rust-lang.org/2025/06/26/Rust-1.88.0/)
 
 ```rust

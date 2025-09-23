@@ -1995,7 +1995,6 @@ Q 的元素称为四元数, 它们可以画成四维的点或向量,
       {c(\mathfrak{z}_1 / \mathfrak{z}_2) + d} =
       \frac{az + b}{cz + d}
     $$
-  - $$ z = \frac{\mathfrak{z}_1}{\mathfrak{z}_2} $$
   - __这正是最一般的默比乌斯变换__!
 
 - 就这样我们解释了, 何以
