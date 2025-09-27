@@ -4,7 +4,7 @@ description: 寻芳不觉醉流霞, 倚树沉眠日已斜. 客散酒醒深夜后
 date: 2025-02-02
 ---
 
-### Posts
+### Posts / Events
 
 - 2025-09, 从
   [Warp](https://www.warp.dev)
@@ -16,11 +16,11 @@ date: 2025-02-02
 
 ```rust
 if let Channel::Stable(v) = release_info()
-    && let Semver { major, minor, .. } = v
-    && major == 1
-    && minor == 88
+  && let Semver { major, minor, .. } = v
+  && major == 1
+  && minor == 88
 {
-    println!("`let_chains` was stabilized in this version");
+  println!("`let_chains` was stabilized in this version");
 }
 ```
 
@@ -66,7 +66,7 @@ let closure = async || {
     但是现在, 基本也能自然的顺着思路独自给出来.
     并且过去并没有再次系统的看过群论的书籍资料, 仅仅偶尔接触到.
 
-### 文章/视频
+### 文章 / 视频
 
 - [Terence Tao on how we measure the cosmos (part 1)](https://www.youtube.com/watch?v=YdOXS_9_P4U)
   - Part 1, 访谈的形式不错, 但是内容一般~

@@ -1238,7 +1238,26 @@ in that case, the spectrum is said to be degenerate.
 
 > 赝矢量
 
-- [阶梯算符](https://en.wikipedia.org/wiki/Ladder_operator)
+- For a given value of
+  $$ λ $$,
+  then, we obtain a "ladder" of states,
+  with each "rung" separated from its neighbors by one unit of
+  $$ \hbar $$
+  in the eigenvalue of
+  $$ L_z $$.
+  To ascend the ladder we apply the raising operator,
+  and to descend, the lowering operator.
+  - But this process cannot go on forever:
+    Eventually we're going to reach a state
+    for which the z-component exceeds the total,
+    and that cannot be.
+  - There must exist a "top rung",
+    $$ f_t $$,
+    such that
+    $$ L_{+} f_t = 0 $$.
+
+> [阶梯算符](https://en.wikipedia.org/wiki/Ladder_operator)
+
 
 ### 自旋
 
@@ -2396,4 +2415,3 @@ they commute with respect to any basis.)
   - 厄米变换属于不同本征值的本征矢彼此正交.
 
 - [矩阵函数](https://en.wikipedia.org/wiki/Analytic_function_of_a_matrix)
-
