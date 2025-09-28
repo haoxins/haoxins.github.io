@@ -1258,6 +1258,29 @@ in that case, the spectrum is said to be degenerate.
 
 > [阶梯算符](https://en.wikipedia.org/wiki/Ladder_operator)
 
+- "Why can't I just pick my axes so that z points
+  along the direction of the angular momentum vector?"
+  Well, to do that you would have to know all three
+  components simultaneously, and the uncertainty principle
+  says that's impossible.
+  - "Well, all right, but surely once in a while,
+    by good fortune, I will just happen to aim my z axis
+    along the direction of
+    $$ L $$."
+  - No, no! You have missed the point. It's not merely that
+    you don't know all three components of
+    $$ L $$;
+    there just aren't three components:
+    a particle simply __cannot__ have a determinate
+    angular momentum vector, any more than it can
+    simultaneously have a determinate position and momentum.
+  - If
+    $$ L_z $$
+    has a well-defined value, then
+    $$ L_x $$
+    and
+    $$ L_y $$
+    do not.
 
 ### 自旋
 
@@ -1404,6 +1427,79 @@ in that case, the spectrum is said to be degenerate.
     则
     $$ |a|^2 + |b|^2 = 1 $$,
     即旋量必须是归一化的.
+
+> 作者说明了为什么他认为量子力学教材不应该从自旋 1/2 开始.
+  (比如: 现代量子力学 樱井纯)
+  因为自旋 1/2 虽然简单且具有代表性, 但不够基本性.
+  所以从入门教材的角度而言, 科恩的书籍编排确实是最佳的.
+
+- What we have just done (combining spin
+  $$ 1/2 $$
+  with spin
+  $$ 1/2 $$
+  to get spin
+  $$ 1 $$
+  and spin
+  $$ 0 $$)
+  is the simplest example of a larger problem:
+  If you combine spin
+  $$ s_1 $$
+  with spin
+  $$ s_2 $$,
+  what total spins
+  $$ s $$
+  can you get? The answer is that you get every spin from
+  $$ (s_1 + s_2) $$
+  down to
+  $$ (s_1 - s_2) $$,
+  or
+  $$ (s_2 - s_1) $$,
+  if
+  $$ s_2 > s_1 $$,
+  in integer steps:
+  - $$
+      s =
+      (s_1 + s_2),
+      (s_1 + s_2 - 1),
+      (s_1 + s_2 - 2),
+      ...,
+      \mid s_1 - s_2 \mid
+    $$.
+  - (Roughly speaking, the highest total spin occurs when
+    the individual spins are aligned parallel to one another,
+    and the lowest occurs when they are antiparallel.)
+  - For example, if you package together a particle of spin
+    $$ 3/2 $$
+    with a particle of spin
+    $$ 2 $$,
+    you could get a total spin of
+    $$ 7/2 $$,
+    $$ 5/2 $$,
+    $$ 3/2 $$,
+    or
+    $$ 1/2 $$,
+    depending on the configuration.
+  - Another example: If a hydrogen atom is in the state
+    $$ φ_{n \ell m} $$,
+    the net angular momentum of the electron
+    (spin plus orbital) is
+    $$ \ell + 1/2 $$
+    or
+    $$ \ell - 1/2 $$;
+    if you now throw in spin of the proton,
+    the atom's total angular momentum quantum number is
+    $$ \ell + 1 $$,
+    $$ \ell $$,
+    or
+    $$ \ell - 1 $$
+    (and
+    $$ \ell $$
+    can be achieved in two distinct ways,
+    depending on whether the electron alone is in the
+    $$ \ell + 1/2 $$
+    configuration or the
+    $$ \ell - 1/2 $$
+    configuration).
 
 - 一个带电旋转粒子构成一个磁偶极子. 它的磁偶极矩
   $$ μ $$
@@ -2414,4 +2510,4 @@ they commute with respect to any basis.)
   - 厄米变换的本征值是实的;
   - 厄米变换属于不同本征值的本征矢彼此正交.
 
-- [矩阵函数](https://en.wikipedia.org/wiki/Analytic_function_of_a_matrix)
+> [矩阵函数](https://en.wikipedia.org/wiki/Analytic_function_of_a_matrix)
