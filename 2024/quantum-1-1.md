@@ -3365,6 +3365,44 @@ date: 2022-10-31
 
 > __三维空间中的傅里叶变换__
 
+- 对于依赖于三个空间变量
+  $$ x $$,
+  $$ y $$,
+  $$ z $$
+  的波函数
+  $$ ψ(\mathbf{r}) $$,
+  公式可换为:
+  - $$
+      \overset{-}{ψ} (\mathbf{p}) =
+      \frac{1}{(2 \pi \hbar)^{3 / 2}}
+      \int d^3 r e^{-i \mathbf{p} \cdot \mathbf{r} / \hbar}
+      ψ(\mathbf{r})
+    $$
+  - $$
+      ψ(\mathbf{r}) =
+      \frac{1}{(2 \pi \hbar)^{3 / 2}}
+      \int d^3 p e^{i \mathbf{p} \cdot \mathbf{r} / \hbar}
+      \overset{-}{ψ} (\mathbf{p})
+    $$
+  - 前面列举的各项性质很容易推广到三维情况.
+  - 如果
+    $$ ψ $$
+    只依赖于矢径
+    $$ \mathbf{r} $$
+    的模
+    $$ r $$,
+    那么,
+    $$ \overset{-}{ψ} $$
+    只依赖于动量
+    $$ \mathbf{p} $$
+    的模
+    $$ p $$,
+    并可用下列公式来计算:
+  - $$
+      \overset{-}{ψ} (p) = \frac{1}{\sqrt{2 \pi \hbar}}
+      \frac{2}{p} \int_{0}^{\infty} r dr
+      \sin \frac{pr}{\hbar} ψ(r)
+    $$
 
 > 此章节可对比阅读: 陶哲轩实分析, 傅里叶级数;
   陶哲轩的推进顺序会更加一气呵成~

@@ -106,6 +106,10 @@ we'll have a set of candidate matches.
   - 2025-04-14:
     `v1.24 > v1.23`
   - 2025-08-13, Go 1.25 发布
+  - 2025-09-30:
+    `v1.23 - 21.6%`,
+    `v1.24 - 47.8%`,
+    `v1.25 - 30.5%`
 
 - [Go: reduce error handling boilerplate using ?](https://github.com/golang/go/discussions/71460)
   - 我还是偏支持的, 语法糖有意义吗? 有! 如果使用频率高的话~

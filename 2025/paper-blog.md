@@ -87,3 +87,35 @@ and continually train the policy model with the new reward model.
 ```
 
 #### Discussion, Conclusion, and Limitation
+
+```
+A popular yet unverified hypothesis suggests that code
+training improves reasoning. We attempt to offer a partial
+response to this, particularly within the mathematical domain:
+code training improves models' ability to do mathematical
+reasoning both with and without tool use.
+```
+
+```
+Code training also improves mathematical reasoning without
+tool use. Under the two-stage training setting, the initial
+stage of code training already results in moderate enhancements.
+It also boosts the efficiency of the subsequent math training,
+eventually leading to the best performance.
+
+However, combining code tokens and math tokens for one-stage
+training compromises mathematical reasoning without tool use.
+One conjecture is that DeepSeek-LLM 1.3B, due to its
+limited scale, lacks the capacity to fully assimilate both
+code and mathematical data simultaneously.
+```
+
+```
+Perhaps counter-intuitively, according to our experiments,
+arXiv papers seem ineffective in improving mathematical
+reasoning. When trained on a arXiv-only corpus, both
+models display no notable improvements or even
+deterioration across various mathematical benchmarks
+of different complexities employed in this study.
+```
+
