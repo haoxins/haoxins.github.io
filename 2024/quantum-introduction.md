@@ -1282,6 +1282,10 @@ in that case, the spectrum is said to be degenerate.
     $$ L_y $$
     do not.
 
+> a particle simply __cannot__ have a determinate angular
+  momentum vector, any more than it can simultaneously
+  have a determinate position and momentum.
+
 ### 自旋
 
 - 自旋代数理论是轨道角动量理论的翻版, 从基本的对易关系出发:
@@ -1480,7 +1484,7 @@ in that case, the spectrum is said to be degenerate.
     $$ 1/2 $$,
     depending on the configuration.
   - Another example: If a hydrogen atom is in the state
-    $$ φ_{n \ell m} $$,
+    $$ ψ_{n \ell m} $$,
     the net angular momentum of the electron
     (spin plus orbital) is
     $$ \ell + 1/2 $$

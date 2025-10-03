@@ -162,7 +162,7 @@ I can safely say that nobody understands quantum mechanics.
   接收屏上电子所处状态是经历两条途径的两种状态
   (概率幅) 的相干叠加:
   - $$
-      \mid ψ \rangle =
+      \mid Ψ \rangle =
       \mid \mbox{up} \rangle +
       \mid \mbox{down} \rangle
     $$
