@@ -3470,11 +3470,47 @@ date: 2022-10-31
 
 ### δ 函数和傅里叶变换
 
+- 可以算出
+  $$ δ(x - x_0) $$
+  的傅里叶变换式
+  $$ \overset{-}{δ}_{x_0} (p) $$:
+  - $$
+      \overset{-}{δ}_{x_0} (p) = \frac{1}{\sqrt{2π \hbar}}
+      \int_{- \infty}^{+ \infty} dx e^{-ipx / \hbar} δ(x - x_0) =
+      \frac{1}{\sqrt{2π \hbar}} e^{-ip x_0 / \hbar}
+    $$
+  - 特别地,
+    $$ δ(x) $$
+    的傅里叶变换式是一个常数:
+    $$ \overset{-}{δ}_0 (p) = \frac{1}{\sqrt{2π \hbar}} $$
+  - 从而, 逆傅里叶变换给出:
+  - $$
+      δ(x - x_0) = \frac{1}{2π \hbar}
+      \int_{- \infty}^{+ \infty} dp e^{ip (x - x_0) / \hbar} =
+      \frac{1}{2π} \int_{- \infty}^{+ \infty} dk e^{ik (x - x_0)}
+    $$
 
 - $$ δ $$
   函数是`阶跃`函数的导数
 
 ### 三维空间中的 δ 函数
+
+- 三维空间中的
+  $$ δ $$
+  函数, 我们将它简单地记作
+  $$ δ(\mathbf{r}) $$,
+  由类似的关系式来定义:
+  - $$
+      \int d^3 r
+      δ(\mathbf{r}) f(\mathbf{r}) =
+      f(\mathbf{0})
+    $$
+  - 更普遍的形式为:
+  - $$
+      \int d^3 r
+      δ(\mathbf{r} - \mathbf{r}_0) f(\mathbf{r}) =
+      f(\mathbf{r}_0)
+    $$
 
 - $$
     \int d^3 r δ(\mathbf{r} - \mathbf{r}_0) f(\mathbf{r}) =
@@ -3689,10 +3725,73 @@ date: 2022-10-31
     我们就可以唯一地确定各
     $$ \dot{q}_i (t) $$.
 
+- 体系的哈密顿函数或哈密顿量的定义是:
+  - $$
+      \mathcal{H} = \sum_{i = 1}^{N}
+      p_i \dot{q}_i - \mathcal{L}
+    $$
+  - 按照约定, 我们消去各
+    $$ \dot{q}_i $$,
+    而将哈密顿量看作是坐标及它们的共轭动量的函数, 如同
+    $$ \mathcal{L} $$
+    那样,
+    $$ \mathcal{H} $$
+    也可能明显地依赖于时间:
+  - $$ \mathcal{H} (q_i, p_i; t) $$
+
+- 我们可将拉格朗日方程组写成下列形式:
+  $$
+    \frac{d}{dt} p_i = -
+    \frac{∂ \mathcal{H}}{∂ q_i}
+  $$,
+  进一步便得到`运动方程`:
+  - $$
+      \begin{cases}
+        \frac{d q_i}{dt} & = \frac{∂ \mathcal{H}}{∂ p_i} \\
+        \frac{d p_i}{dt} & = - \frac{∂ \mathcal{H}}{∂ q_i}
+      \end{cases}
+    $$
+  - 这叫做`哈密顿-雅可比`正则方程组,
+    如同前面已提到的, `运动方程`是
+    $$ 2N $$
+    个一阶微分方程的方程组, 共有
+    $$ 2N $$
+    个未知函数, 即全体
+    $$ q_i (t) $$
+    和
+    $$ p_i (t) $$.
+
 > [哈密顿-雅可比方程](https://en.wikipedia.org/wiki/Hamilton-Jacobi_equation)
 
-- 注意, 哈密顿量总是等于体系的`总能量`.
-  - 正则方程组:
+- 对于势能为
+  $$ V(\mathbf{r}_i) $$
+  的
+  $$ n $$
+  个粒子的体系, 我们有:
+  - $$
+      \begin{align}
+        \mathcal{H}
+          & = \sum_{i = 1}^{n}
+            \mathbf{p}_i \cdot \dot{\mathbf{r}}_i -
+            \mathcal{L} \\
+          & = \sum_{i = 1}^{n}
+            \mathbf{p}_i \cdot \dot{\mathbf{r}}_i -
+            \frac{1}{2} \sum_{i = 1}^{n}
+            m_i \dot{\mathbf{r}}_i^2 +
+            V(\mathbf{r}_i) \\
+      \end{align}
+    $$
+  - 为将哈密顿量表示为变量
+    $$ \mathbf{r}_i $$
+    和
+    $$ \mathbf{p}_i $$
+    的函数, 我们最后得到:
+  - $$
+      \mathcal{H} (\mathbf{r}_i, \mathbf{p}_i) =
+      \sum_{i = 1}^{n} \frac{\mathbf{p}_i^2}{2 m_i} +
+      V(\mathbf{r}_i)
+    $$
+  - 注意, 哈密顿量总是等于体系的`总能量`. 正则方程组:
   - $$
       \begin{align}
         \frac{d \mathbf{r}_i}{dt} & = \frac{\mathbf{p}_i}{m_i} \\
@@ -3765,5 +3864,32 @@ date: 2022-10-31
     作用量没有第一级的变化.
   - 我们还可注意这和其他一些变分原理, 诸如光学中的`费马原理`的相似性.
 
+- 如果在体系的实际运动过程中得以遵循的`空-时`途径是
+  $$ Γ $$,
+  那么, 根据最小作用量原理, 作用量的增量
+  $$ δ S $$
+  等于零. 果真如此, 那么, 必须而且只需:
+  - $$
+      \frac{d}{dt} \frac{∂ \mathcal{L}}{∂ \dot{q}_i} -
+      \frac{∂ \mathcal{L}}{∂ q_i} = 0
+    $$;
+    $$ i = 1, 2, ..., N $$
+  - 显然, 这个条件是充分的; 它又是必要的, 那是因为:
+    假设有这样一段时间间隔, 在其中, 当指标
+    $$ i $$
+    取某一给定值
+    $$ k $$
+    时, 上式竟然不等于零, 那么, 我们就可任意选择各
+    $$ δ q_i (t) $$,
+    使得它们对应的
+    $$ δ S $$
+    不等于零
+  - (例如, 只需这样选择以使乘积
+    $$
+      δ_{q_k} [\frac{∂ \mathcal{L}}{∂ q_k} -
+      \frac{d}{dt} \frac{∂ \mathcal{L}}{∂ \dot{q}_k}]
+    $$
+    恒为正或为零).
+  - 由此可见, __最小作用量原理等价于拉格朗日方程__.
 
 > 结: 2024 年 7 月
