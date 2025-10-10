@@ -2620,7 +2620,7 @@ d 的方向, 这个方向的拉伸系数, 垂直方向的拉伸系数, 以及扭
   的内蕴不变性现在就可以简单地表达为它的内蕴导数为
   $$ 0 $$:
   - $$
-      D_{\mathbf{v}} \mathbf{w}_{\shortparallel}
+      D_{\mathbf{v}} \mathbf{w}_{\shortparallel} = 0
       \Longleftrightarrow
       \mathbf{w}_{\shortparallel}
       \mbox { 沿 }

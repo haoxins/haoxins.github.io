@@ -5,11 +5,14 @@ date: 2023-07-17
 ---
 
 
+- [JOJO 的奇妙冒险 黄金之风](https://movie.douban.com/subject/27666505/)
+
 - [毕正明的证明](https://movie.douban.com/subject/36402017/)
   - 可以一看
 
 - [JOJO 的奇妙冒险 不灭钻石](https://movie.douban.com/subject/26650051/)
-  - 中间比较无聊
+  - 中间比较无聊;
+  - 最后, 没有替身能力的小学生是全剧最强!
 
 - [捕风追影](https://movie.douban.com/subject/36600459/)
 

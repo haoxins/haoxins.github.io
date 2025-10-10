@@ -204,7 +204,7 @@ Young 氏双缝实验. 这是采用激励原子内部自由度的办法去查明
     和
     $$ \mid \mbox{No} \rangle $$,
     $$
-      \mid ψ \rangle =
+      \mid Ψ \rangle =
       α \mid \mbox{Yes} \rangle +
       β \mid \mbox{No} \rangle
     $$,
