@@ -1852,6 +1852,26 @@ in that case, the spectrum is said to be degenerate.
   - 因此, 如果系统哈密顿量与平移算符对易, 则系统具有平移对称性:
     $$ [ \hat{H}, \hat{T} ] = 0 $$.
 
+```
+Bloch's theorem says that the stationary states of
+a particle in a periodic potential is periodic
+functions multiplying traveling waves.
+Note that just because the Hamiltonian is translationally
+invariant, that doesn't mean the stationary states
+themselves are translationally invariant, it simply means
+that they can be chosen to be eigenstates
+of the translation operator.
+
+Bloch's theorem is truly remarkable. It tells us that the
+stationary states of a particle in a periodic potential
+(such as an electron in a crystal) are, apart from
+a periodic modulation, traveling waves. As such,
+they have a nonzero velocity. This means that an electron
+could travel through a perfect crystal without scattering!
+That has dramatic implications for electronic
+conduction in solids.
+```
+
 - 如果系统具有连续平移对称性, 那么对于选择任意的
   $$ a $$
   值, 系统哈密顿量与
@@ -1883,6 +1903,10 @@ in that case, the spectrum is said to be degenerate.
     连续平移对称性意味着系统动量守恒.
     这是得到的第一个非常重要的普遍原理的例子:
     __对称意味着存在守恒定律__.
+
+- In any event, the point to remember is that
+  __conservation of momentum__ is a consequence
+  of __translational symmetry__.
 
 ### 宇称
 
@@ -1924,6 +1948,14 @@ in that case, the spectrum is said to be degenerate.
     时刻为偶函数, 那么, 在以后的任何时刻
     $$ t $$
     它都将是偶函数.
+
+- Scalars that are __odd__ under parity are called
+  __pseudoscalars__, since they do not behave under
+  parity the way that "true" scalars do.
+  - Note: The labels __scalar__ and __vector__ describe
+    how the operators behave under rotations.
+  - "True" vectors and pseudovectors behave the same way
+    under a rotation: they are both vectors.
 
 - 三维宇称算符的空间反演是
   $$ \hat{Π} ψ(r) = ψ'(r) = ψ(-r) $$.
@@ -1980,6 +2012,16 @@ in that case, the spectrum is said to be degenerate.
     $$ \hat{Π} $$
     的对易关系 (它们在宇称操作下如何变换) 将算符分为`真`或`赝`矢 (标) 量.
 
+```
+Of course, not every operator will fit into one of
+these categories. Scalar and vector operators are
+simply the first two instances in a hierarchy of
+tensor operators. Next come second-rank tensors
+(the inertia tensor from classical mechanics or the
+quadrupole tensor from electrodynamics are examples),
+third-rank tensors, and so forth.
+```
+
 - __连续旋转对称__: 质量为
   $$ m $$
   的粒子在势场
@@ -2009,6 +2051,81 @@ in that case, the spectrum is said to be degenerate.
     角动量守恒还意味着几率分布 (角动量的每个分量) 与时间无关.
 
 ### 简并
+
+- Symmetry is the source of most degeneracy in
+  quantum mechanics. We have seen that a symmetry
+  implies the existence of an operator
+  $$ \hat{Q} $$
+  that commutes with the Hamiltonian
+  - $$ [ \hat{A}, \hat{Q} ] = 0 $$.
+  - So why does symmetry lead to degeneracy in the
+    energy spectrum? The basic idea is this:
+  - if we have a stationary state
+    $$ \mid ψ_n \rangle $$,
+    then
+    $$ \mid ψ'_n \rangle = \hat{Q} \mid ψ_n \rangle $$
+    is a stationary state with the same energy.
+    The proof is straightforward:
+  - $$
+      \hat{H} \mid ψ'_n \rangle =
+      \hat{H} (\hat{Q} \mid ψ_n \rangle) =
+      \hat{Q} \hat{H} \mid ψ_n \rangle =
+      \hat{Q} E_n \mid ψ_n \rangle =
+      E_n (\hat{Q} \mid ψ_n \rangle) =
+      E_n \mid ψ'_n \rangle
+    $$.
+  - For example, if you have an eigenstate of a
+    spherically-symmetric Hamiltonian and you rotate
+    that state about some axis, you must get back
+    another state of the same energy.
+
+- You might think that symmetry would always lead
+  to degeneracy, and that continuous symmetries would
+  lead to infinite degeneracy, but that is not the case.
+  - The reason is that the two states
+    $$ \mid ψ_n \rangle $$
+    and
+    $$ \mid ψ'_n \rangle $$
+    might be the same.
+
+- In fact, if there is only a single symmetry operator
+  $$ \hat{Q} $$
+  (or if there are multiple symmetry operators that all commute),
+  you do not get degeneracy in the spectrum.
+  - The reason is the same theorem we've
+    now quoted many times: since
+    $$ \hat{Q} $$
+    and
+    $$ \hat{H} $$
+    commute, we can find simultaneous eigenstates
+    $$ \mid ψ_n \rangle $$
+    of
+    $$ \hat{Q} $$
+    and
+    $$ \hat{H} $$
+    and these states transform into themselves
+    under the symmetry operation:
+    $$ \hat{Q} \mid ψ_n \rangle = q_n \mid ψ_n \rangle $$.
+  - But what if there are two operators that commute
+    with the Hamiltonian (call them
+    $$ \hat{Q} $$
+    and
+    $$ \hat{Λ} $$),
+    but do not commute with each other? In this case,
+    degeneracy in the energy spectrum is inevitable.
+  - This is precisely the situation we have encountered
+    in the case of central potentials. Here the
+    Hamiltonian commutes with rotations about any axis
+    (or equivalently with the generators
+    $$ \hat{L}_x $$,
+    $$ \hat{L}_y $$,
+    and
+    $$ \hat{L}_z $$)
+    but those rotations don't commute with each other.
+  - So we know that there will be degeneracy in the
+    spectrum of a particle in a central potential.
+    The following example shows exactly how much
+    degeneracy is explained by rotational invariance.
 
 ### 旋转对称选择定则
 
