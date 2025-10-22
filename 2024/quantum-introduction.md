@@ -2124,10 +2124,6 @@ third-rank tensors, and so forth.
     but those rotations don't commute with each other.
   - So we know that there will be degeneracy in the
     spectrum of a particle in a central potential.
-    The following example shows exactly how much
-    degeneracy is explained by rotational invariance.
-
-### 旋转对称选择定则
 
 ### 时间变换
 
