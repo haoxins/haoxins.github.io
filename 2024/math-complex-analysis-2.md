@@ -1239,13 +1239,106 @@ date: 2022-06-12
   $$ \widetilde{Φ} (w) $$
   才是调和的.
 
+- $$ Φ $$
+  在
+  $$ p $$
+  处的拉普拉斯算子, 度量
+  $$ Φ $$
+  在以
+  $$ p $$
+  为中心的无穷小圆周上的平均值与
+  $$ Φ $$
+  本身在
+  $$ p $$
+  的值的偏离. 准确些说, 若
+  $$ r $$
+  为此圆周的无穷小半径, 则
+  - $$
+      \langle Φ \rangle - Φ(p) =
+      \frac{1}{4} r^2 Δ Φ
+    $$.
+  - 请注意, 这个结果与高斯平均值定理是一致的, 这个定理指出若
+    $$ Φ $$
+    是调和函数, 则对于任意大小的圆周, 而不只是无穷小半径的圆周, 都有
+    $$ \langle Φ \rangle - Φ(p) = 0 $$.
+
 ### 一个强有力的计算工具
 
+- 向量分析中的梯度算子
+  $$ \nabla $$
+  是作用在一个实函数
+  $$ R(x, y) $$
+  上的, 从而生成了梯度向量场
+  - $$
+      \nabla R(x, y) =
+      \binom{\partial_x}{\partial_y} R(x, y) =
+      \binom{\partial_x R}{\partial_y R}
+    $$,
+  - 我们可自由地把这个向量想做一个复函数
+  - $$ \nabla R = \partial_x R + i \partial_y R $$.
+
+- 由此, 我们可以抽选出复梯度算子
+  $$ \nabla $$
+  及其伴随算子 (或称共轭算子)
+  $$ \bar{\nabla} $$
+  的概念如下:
+  - $$ \nabla = \partial_x + i \partial_y $$
+    以及
+    $$ \bar{\nabla} = \partial_x - i \partial_y $$;
+  - 这两个算子开辟了令人激动的新计算方法的道路.
 
 > $$ \nabla $$
   与
   $$ \boldsymbol{\nabla} $$,
   本文不做特别区分, 根据上下文区分~
+
+- 设已给一个向量场
+  - $$ f = \binom{u}{v} $$,
+  - 我们已经看到了
+    $$ \nabla $$
+    对应的实算子
+    $$ \boldsymbol{\nabla} $$,
+    可以形式地与
+    $$ f $$
+    做点乘和叉乘, 从而给出
+    $$ f $$
+    的散度
+    $$ \boldsymbol{\nabla} \cdot f $$
+    和旋度
+    $$ \boldsymbol{\nabla} \times f $$.
+  - 把这些量解释为流量密度和功密度, 说明它们真正是几何量,
+    就是说它们是与坐标无关的. 但是, 似乎找不到一种自然的方法把
+    $$ \boldsymbol{\nabla} $$
+    直接应用于
+    $$ f $$
+    以得出一个新向量场
+    $$ \boldsymbol{\nabla} f $$.
+  - 然而, 如果我们用复算子
+    $$ \nabla $$
+    来取代
+    $$ \boldsymbol{\nabla} $$,
+    并且把
+    $$ f $$
+    换成一个复函数
+    $$ f = u + iv $$,
+    那么确实有一个很自然的定义如下:
+  - $$
+      \nabla f = (\partial_x + i \partial_y) (u + iv) =
+      (\partial_x u - \partial_y v) +
+      i (\partial_x v + \partial_y u)
+    $$.
+  - 等价的表达式
+  - $$
+      \nabla f = \nabla u + i \nabla v =
+      \nabla u + (\nabla v \mbox{ 旋转 } π/2)
+    $$
+  - 能够使我们看到
+    $$ \nabla f $$
+    在几何上是有意义的 (因为
+    $$ \nabla u $$
+    和
+    $$ \nabla v $$
+    都在几何上有意义).
 
 ### 回顾复曲率
 

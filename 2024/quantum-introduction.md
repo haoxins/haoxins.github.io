@@ -2057,7 +2057,7 @@ third-rank tensors, and so forth.
   implies the existence of an operator
   $$ \hat{Q} $$
   that commutes with the Hamiltonian
-  - $$ [ \hat{A}, \hat{Q} ] = 0 $$.
+  - $$ [ \hat{H}, \hat{Q} ] = 0 $$.
   - So why does symmetry lead to degeneracy in the
     energy spectrum? The basic idea is this:
   - if we have a stationary state

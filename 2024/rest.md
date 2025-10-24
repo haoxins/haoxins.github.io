@@ -5,6 +5,8 @@ date: 2023-07-17
 ---
 
 
+- [JOJO 的奇妙冒险 石之海](https://movie.douban.com/subject/34605404/)
+
 - [JOJO 的奇妙冒险 黄金之风](https://movie.douban.com/subject/27666505/)
 
 - [毕正明的证明](https://movie.douban.com/subject/36402017/)
