@@ -119,3 +119,16 @@ deterioration across various mathematical benchmarks
 of different complexities employed in this study.
 ```
 
+```
+These findings indicate that RL enhances the model's
+overall performance by rendering the output
+distribution more robust, in other words,
+it seems that the improvement is attributed to
+boosting the correct response from TopK rather than
+the enhancement of fundamental capabilities.
+```
+
+> the improvement is attributed to boosting the
+  correct response from TopK rather than the
+  enhancement of fundamental capabilities.
+

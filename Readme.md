@@ -17,7 +17,6 @@
 - [量子信息物理原理 (上)](2025/quantum-information-1.md)
 - [量子菜根谭 现代量子理论专题分析 第三版](2025/quantum-modern.md)
 - [阅读的闲书](2025/reading.md)
-- [个人分享: NebulaGraph 的应用](https://mp.weixin.qq.com/s/nP2mc8ZkouSzHPy0OTRm9g)
 
 ### 2024
 
@@ -46,4 +45,3 @@
 - [年度推荐书单](2024/reading-recommended.md)
 - [阅读的闲书](2024/reading.md)
 - [休憩 游乐](2024/rest.md)
-- [NebulaGraph 社区专访](https://mp.weixin.qq.com/s/cKcmK3Cpvq870sTSyCVOiw)

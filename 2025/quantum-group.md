@@ -33,6 +33,82 @@ date: 2025-04-24
 
 > 其实译者应该把本书的符号改掉的~
 
+- 假设
+  $$ \mathfrak{R}' $$
+  是一个
+  $$ n $$
+  维子空间, 如果两个向量
+  $$ \mathfrak{x} $$
+  和
+  $$ \mathfrak{y} $$
+  的差在
+  $$ \mathfrak{R}' $$
+  中, 我们就说它们模
+  $$ \mathfrak{R}' $$
+  同余:
+  - $$ \mathfrak{x} ≡ \mathfrak{y} (mod. \mathfrak{R}') $$.
+- 同余满足任何相等关系所要求的公理:
+  - 每一个向量都与自身同余;
+  - 如果
+    $$ \mathfrak{x} ≡ \mathfrak{y} (mod. \mathfrak{R}') $$,
+    那么
+    $$ \mathfrak{y} ≡ \mathfrak{x} (mod. \mathfrak{R}') $$;
+  - 如果
+    $$ \mathfrak{x} ≡ \mathfrak{y} (mod. \mathfrak{R}') $$
+    且
+    $$ \mathfrak{y} ≡ \mathfrak{z} (mod. \mathfrak{R}') $$,
+    那么
+    $$ \mathfrak{x} ≡ \mathfrak{z} (mod. \mathfrak{R}') $$.
+  - 因此, 可以把模
+    $$ \mathfrak{R}' $$
+    同余的向量看作彼此是绝无差别的.
+- 通过这种可称为关于
+  $$ \mathfrak{R}' $$
+  的`投影`的抽象,
+  $$ n $$
+  维空间
+  $$ \mathfrak{R} $$
+  产生了一个
+  $$ (n - n') $$
+  维空间
+  $$ \bar{\mathfrak{R}} $$.
+  $$ \bar{\mathfrak{R}} $$
+  也是一个向量空间, 因为从
+  - $$ \mathfrak{x}_1 ≡ \mathfrak{x}_2 $$,
+    $$ \mathfrak{y}_1 ≡ \mathfrak{y}_2 (mod. \mathfrak{R}') $$
+  - 得到下列关系
+    $$ a \mathfrak{x}_1 ≡ a \mathfrak{x}_2 $$,
+    $$
+      \mathfrak{x}_1 + \mathfrak{y}_1 ≡
+      \mathfrak{x}_2 + \mathfrak{y}_2 (mod. \mathfrak{R}')
+    $$.
+- 因此, 数乘运算和加法运算可以被认为是直接作用于
+  $$ \bar{\mathfrak{R}} $$
+  的向量
+  $$ \bar{\mathfrak{x}} $$
+  上的运算. 所有模
+  $$ \mathfrak{R}' $$
+  同余的
+  $$ \mathfrak{R} $$
+  向量
+  $$ \mathfrak{x} $$
+  都给出相同的
+  $$ \bar{\mathfrak{R}} $$
+  的向量
+  $$ \bar{\mathfrak{x}} $$.
+  - 如果
+    $$ \mathfrak{R}' $$
+    是一维的, 并且由
+    $$ \mathfrak{e}_i $$
+    张成, 那么上面的过程就是我们熟悉的
+    $$ \mathfrak{e}_i $$
+    方向上的平行投影.
+  - 没有必要给出
+    $$ \mathfrak{R} $$
+    的一个向其投影的
+    $$ (n - 1) $$
+    维子空间.
+
 ### 对偶向量空间
 - 设
   $$ \mathfrak{R}' $$
@@ -55,7 +131,9 @@ date: 2025-04-24
     $$ \mathfrak{R} $$
     到其自身的一个对应
     $$ A $$
-    使子空间不变, 那么
+    使子空间
+    $$ \mathfrak{R}' $$
+    不变, 那么
     $$ P $$
     到其自身的对偶对应
     $$ A^{*} $$

@@ -922,13 +922,13 @@ date: 2022-06-12
   $$ H $$
   为解析的.
   - 证明只不过是简单的计算:
-  - $$
+    $$
       \nabla · \bar{H} =
       \binom{\partial_x}{\partial_y} · \binom{u}{-v} =
       \partial_x u - \partial_y v
     $$,
-  - 以及
-  - $$
+    以及
+    $$
       \nabla \times \bar{H} =
       \binom{\partial_x}{\partial_y} \times \binom{u}{-v} =
       -(\partial_x v + \partial_y u)
@@ -943,7 +943,7 @@ date: 2022-06-12
       i \partial_x H - \partial_y H =
       \nabla \times \bar{H} + i \nabla · \bar{H}
     $$,
-  - 令其左方为零就是 CR 方程的紧凑写法.
+    令其左方为零就是 CR 方程的紧凑写法.
 
 - 有必要弄清有关向量场
   $$ z $$
@@ -960,7 +960,7 @@ date: 2022-06-12
 
 - 总结起来说, 洛朗级数和留数定理可以从物理上这样来理解:
   会生成非零的环流和流量的唯一一项是
-  $$ \bar{(ρ / z)} $$,
+  $$ \widebar{(ρ / z)} $$,
   它又可以分解成一个强度为
   $$ \mathcal{W} = -2πi \mbox{Im} (ρ) $$
   的涡旋和一个强度为
