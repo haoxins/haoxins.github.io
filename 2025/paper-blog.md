@@ -129,6 +129,6 @@ the enhancement of fundamental capabilities.
 ```
 
 > the improvement is attributed to boosting the
-  correct response from TopK rather than the
+  __correct response from TopK__ rather than the
   enhancement of fundamental capabilities.
 

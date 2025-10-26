@@ -960,7 +960,7 @@ date: 2022-06-12
 
 - 总结起来说, 洛朗级数和留数定理可以从物理上这样来理解:
   会生成非零的环流和流量的唯一一项是
-  $$ \widebar{(ρ / z)} $$,
+  $$ \bar{(ρ / z)} $$,
   它又可以分解成一个强度为
   $$ \mathcal{W} = -2πi \mbox{Im} (ρ) $$
   的涡旋和一个强度为
@@ -1284,7 +1284,7 @@ date: 2022-06-12
   的概念如下:
   - $$ \nabla = \partial_x + i \partial_y $$
     以及
-    $$ \bar{\nabla} = \partial_x - i \partial_y $$;
+    $$ \bar{\nabla} = \partial_x - i \partial_y $$.
   - 这两个算子开辟了令人激动的新计算方法的道路.
 
 > $$ \nabla $$
@@ -1293,19 +1293,19 @@ date: 2022-06-12
   本文不做特别区分, 根据上下文区分~
 
 - 设已给一个向量场
-  - $$ f = \binom{u}{v} $$,
-  - 我们已经看到了
-    $$ \nabla $$
-    对应的实算子
-    $$ \boldsymbol{\nabla} $$,
-    可以形式地与
-    $$ f $$
-    做点乘和叉乘, 从而给出
-    $$ f $$
-    的散度
-    $$ \boldsymbol{\nabla} \cdot f $$
-    和旋度
-    $$ \boldsymbol{\nabla} \times f $$.
+  $$ f = \binom{u}{v} $$,
+  我们已经看到了
+  $$ \nabla $$
+  对应的实算子
+  $$ \boldsymbol{\nabla} $$,
+  可以形式地与
+  $$ f $$
+  做点乘和叉乘, 从而给出
+  $$ f $$
+  的散度
+  $$ \boldsymbol{\nabla} \cdot f $$
+  和旋度
+  $$ \boldsymbol{\nabla} \times f $$.
   - 把这些量解释为流量密度和功密度, 说明它们真正是几何量,
     就是说它们是与坐标无关的. 但是, 似乎找不到一种自然的方法把
     $$ \boldsymbol{\nabla} $$
@@ -1339,6 +1339,43 @@ date: 2022-06-12
     和
     $$ \nabla v $$
     都在几何上有意义).
+
+- 复梯度算子的力量来自以下的基本结果:
+  - 复函数
+    $$ f $$
+    为解析的, 当且仅当
+    $$ \nabla f = 0 $$,
+    这时
+    $$ \bar{\nabla} f = 2 f' $$.
+- 容易验证
+  $$ \nabla $$
+  有以下的有用的性质:
+  - $$ \nabla (f + g) = \nabla f + \nabla g $$.
+  - $$ \nabla (fg) = f \nabla g + g \nabla f $$.
+  - 若
+    $$ f $$
+    为解析的, 则
+    $$ \nabla f [g(z)] = f' [g(z)] \nabla g $$.
+    例如
+    $$ \nabla e^{g(z)} = e^{g(z)} \nabla g $$.
+  - 散度和旋度的概念可以干净地包含在
+    $$ \nabla $$
+    中:
+    $$
+      \bar{\nabla} f = \nabla \cdot f +
+      i \nabla \times f
+    $$.
+    类似地还有
+    $$
+      \nabla f = \nabla \cdot \bar{f} -
+      i \nabla \times \bar{f}
+    $$,
+    此式又一次证明了, 一个向量场为无源且无旋的,
+    当且仅当它是解析函数的波利亚向量场.
+  - 拉普拉斯算子
+    $$ Δ $$
+    可以干净地表示为
+    $$ \nabla \bar{\nabla} = Δ = \bar{\nabla} \nabla $$.
 
 ### 回顾复曲率
 
