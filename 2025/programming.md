@@ -6,6 +6,8 @@ date: 2025-02-02
 
 ### Posts / Events
 
+- [The Green Tea Garbage Collector](https://go.dev/blog/greenteagc)
+
 - 2025-09, 从
   [Warp](https://www.warp.dev)
   迁移到了
