@@ -6,6 +6,27 @@ date: 2025-02-02
 
 ### Posts / Events
 
+- [Abandonware of the web: do you know that there is an HTML tables API?](https://christianheilmann.com/2025/10/08/abandonware-of-the-web-do-you-know-that-there-is-an-html-tables-api/)
+
+```js
+let b = document.body
+let t = document.createElement('table')
+b.appendChild(t)
+let table = [
+  ['one','two','three'],
+  ['four','five','six']
+]
+let c
+let r
+table.forEach((row,ri) => {
+  let r = t.insertRow(ri)
+  row.forEach((l,i) => {
+    c = r.insertCell(i)
+    c.innerText = l
+  })
+})
+```
+
 - [The Green Tea Garbage Collector](https://go.dev/blog/greenteagc)
 
 - 2025-09, 从

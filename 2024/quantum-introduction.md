@@ -2263,6 +2263,16 @@ third-rank tensors, and so forth.
     $$ ψ_n^2 $$
     分别为相应的`二阶修正`, 以此类推.
 
+```
+This is the fundamental result of first-order
+perturbation theory; as a practical matter,
+it may well be the most frequently used
+equation in quantum mechanics.
+It says that the first-order correction to the
+energy is the expectation value of the
+perturbation, in the unperturbed state.
+```
+
 ### 非简并微扰理论
 
 - $$ E_n^1 = \langle Ψ_n^0 \mid H' \mid Ψ_n^0 \rangle $$
@@ -2286,6 +2296,22 @@ third-rank tensors, and so forth.
 
 ### 简并微扰理论
 
+```
+In the degenerate case, therefore, there is no reason
+to trust even the first-order correction to the energy,
+and we must look for some other way to handle the problem.
+Note this is not a minor problem; almost all applications
+of perturbation theory involve degeneracy.
+```
+
+```
+It would be greatly to our advantage if we could somehow
+guess the "good" states right from the start, then we
+could go ahead and use nondegenerate perturbation theory.
+As it turns out, we can very often do this by exploiting
+the theorem in the following section.
+```
+
 - "好"态定理: 设一厄米算符
   $$ A $$
   分别和
@@ -2308,6 +2334,30 @@ third-rank tensors, and so forth.
     和
     $$ ψ_b^0 $$
     是微扰理论可以使用的"好"态.
+
+```
+Once we identify the "good" states, we can use
+these "good" states as our unperturbed states and
+apply ordinary nondegenerate perturbation theory.
+In most cases, the operator A will be suggested by symmetry;
+symmetries are associated with operators that commute with H,
+precisely what are required to identify the good states.
+```
+
+- If you're faced with degenerate states,
+  look around for some hermitian operator
+  $$ A $$
+  that commutes with
+  $$ H^0 $$
+  and
+  $$ H' $$;
+  pick as your unperturbed states ones that
+  are simultaneously eigenfunctions of
+  $$ H^0 $$
+  and
+  $$ A $$
+  (with distinct eigenvalues).
+  - Then use ordinary first-order perturbation theory.
 
 ## 变分原理
 

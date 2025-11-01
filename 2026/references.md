@@ -35,6 +35,8 @@ date: 2023-12-21
 
 ### 一些好的微信文章
 
+- [矩阵力学与波力学的等价性问题 (上)](https://mp.weixin.qq.com/s/bblSmTzdYmyKr_0C022isQ)
+- [矩阵力学与波力学的等价性问题 (下)](https://mp.weixin.qq.com/s/Ul_Em-YmQcVzDVWO2etP4g)
 - [现代微分几何学的发展](https://mp.weixin.qq.com/s/Jy1lX-jzoX2l-AoteZc6BA)
 - [在量子世界, 崂山道士的 "穿墙术" 能成真吗?](https://mp.weixin.qq.com/s/2Lkq3D9fX1KIoRQowjaayA)
   - 那个动画很好!
