@@ -261,7 +261,7 @@ date: 2025-04-24
     $$;
     $$ α_i = L(\mathfrak{e}_i) $$.
 - 在过渡到另一个坐标系, 使得任意向量
-  $$ L(\mathfrak{x}) $$
+  $$ \mathfrak{x} $$
   的分量
   $$ x_i $$
   经过变换时, 线性形式变为
@@ -344,6 +344,8 @@ date: 2025-04-24
     $$ A $$
     的`对偶`或`转置`矩阵
     $$ A^{*} $$.
+
+> 对偶, 逆变, 协变
 
 - 对应
   $$ A $$
@@ -567,6 +569,98 @@ date: 2025-04-24
     的一个对应,我们称之为
     $$ A $$
     的`厄米共轭`.
+  - $$ \tilde{A} A $$
+    是
+    $$ \mathfrak{R} $$
+    到其自身的一个对应,
+    $$ A \tilde{A} $$
+    是
+    $$ \mathfrak{S} $$
+    到其自身的一个对应.
+    $$ \mathfrak{S} $$
+    的一个对应若将一般向量
+    $$ \mathfrak{x} $$
+    变换成
+    $$ \mathfrak{x}' = S \mathfrak{x} $$,
+    而保持
+    $$ \mathfrak{x} $$
+    的绝对量不变:
+    $$ \mathfrak{x}'^2 = \mathfrak{x}^2 $$,
+    那么它就是酉变换.
+
+```
+如果由向量组成的两种构形,
+其中任何一种都可以通过酉变换从另一种构形得到,
+那么它们在酉几何中就是全同的. 也就是说,
+酉几何是关于那些在任意酉变换下不变的关系的理论.
+```
+
+- 在处理面对应或酉变换时,
+  总是有可能找到一个不变的子空间
+  $$ \mathfrak{R}'' $$,
+  它与给定的一个不变子空间
+  $$ \mathfrak{R}' $$
+  相关联, 从而使
+  $$ \mathfrak{R} = \mathfrak{R}' + \mathfrak{R}'' $$.
+  前面关于投影的评注表明, 在酉几何中, 我们把
+  $$ \mathfrak{R} $$
+  关于
+  $$ \mathfrak{R}' $$
+  投影而得出的空间与子空间
+  $$ \mathfrak{R}'' $$
+  等同起来:
+  - 我们投射到垂直于
+    $$ \mathfrak{R}' $$
+    的空间
+    $$ \mathfrak{R}'' $$
+    上. 为此, 我们注意到, 在
+    $$ \mathfrak{R} $$
+    中所有关于模
+    $$ \mathfrak{R}' $$
+    同余的向量
+    $$ \mathfrak{a} $$
+    中, 有一个位于
+    $$ \mathfrak{R}'' $$
+    中的
+    $$ (\mathfrak{a}) $$.
+    于是我们有
+  - $$
+      (a \cdot \mathfrak{a}) =
+      a (\mathfrak{a})
+    $$,
+    $$
+      (\mathfrak{a} + \mathfrak{b}) =
+      (\mathfrak{a}) + (\mathfrak{b})
+    $$.
+  - 正如我们已经看到的, 与到
+    $$ \mathfrak{R} $$
+    自身的一个任意线性对应
+    $$ A $$
+  - $$
+      \mathfrak{y} \to \mathfrak{y}' =
+      A \mathfrak{y} :
+      y'_i = \sum_k a_{ik} y_k
+    $$
+  - 相关的是双线性形式
+    $$ \sum_{ik} = a_{ik} ξ_i y_k $$,
+  - 这个形式线性地依赖于
+    $$ P $$
+    中的一个向量
+    $$ ξ $$
+    和
+    $$ \mathfrak{R} $$
+    中的一个向量
+    $$ \mathfrak{y} $$.
+  - 因此在酉空间中, 我们可以将线性依赖于
+    $$ \mathfrak{y} = (y_i) $$
+    和
+    $$ \bar{\mathfrak{x}} = (\bar{x}_i) $$
+    的形式
+    $$
+      A(\mathfrak{x}, \mathfrak{y}) =
+      \sum_{ik} a_{ik} \bar{x}_i y_k
+    $$
+
 - 从仿射几何到度量几何的过渡于是可以通过引入以下公理来实现:
   - ($$ δ $$)
     一个向量
