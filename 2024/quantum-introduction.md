@@ -866,7 +866,10 @@ in that case, the spectrum is said to be degenerate.
 
 ### 不确定性原理
 
-- $$ σ_A^2 σ_B^2 \ge (\frac{1}{2i} \langle [\hat{A}, \hat{B}] \rangle)^2 $$.
+- $$
+    σ_A^2 σ_B^2 \ge
+    (\frac{1}{2i} \langle [\hat{A}, \hat{B}] \rangle)^2
+  $$.
   - 这就是 (广义的) __不确定原理__.
   - 你或许会认为复数
     $$ i $$
@@ -2513,8 +2516,6 @@ precisely what are required to identify the good states.
     它告诉你微扰是如何在相邻两次相互作用之间传播的.
   - 玻恩级数是相对论量子力学费曼表述形式的灵感来源,
     它完全用由顶点因子 (V) 和传播子 (g) 连接在一起的`费曼图`表示.
-
-## 量子动力学
 
 ## 附录 线性代数
 

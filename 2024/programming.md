@@ -110,6 +110,10 @@ we'll have a set of candidate matches.
     `v1.23 - 21.6%`,
     `v1.24 - 47.8%`,
     `v1.25 - 30.5%`
+  - 2025-11-09:
+    `v1.23 - 18.1%`,
+    `v1.24 - 40.2%`,
+    `v1.25 - 41.6%`
 
 - [Go: reduce error handling boilerplate using ?](https://github.com/golang/go/discussions/71460)
   - 我还是偏支持的, 语法糖有意义吗? 有! 如果使用频率高的话~
