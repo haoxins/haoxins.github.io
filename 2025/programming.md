@@ -4,7 +4,14 @@ description: 寻芳不觉醉流霞, 倚树沉眠日已斜. 客散酒醒深夜后
 date: 2025-02-02
 ---
 
-### Posts / Events
+### Posts, Events
+- 做个短暂的观察, Go vs Java
+  - 选择一些新项目, 同时有 Go and Java (Kotlin) 的版本
+  - [Agent Development Kit (ADK) for Go](https://github.com/google/adk-go)
+  - [Agent Development Kit (ADK) for Java](https://github.com/google/adk-java)
+  - [MCP Go SDK](https://github.com/modelcontextprotocol/go-sdk)
+  - [MCP Java SDK](https://github.com/modelcontextprotocol/java-sdk)
+  - [MCP Kotlin SDK](https://github.com/modelcontextprotocol/kotlin-sdk)
 
 - [Abandonware of the web: do you know that there is an HTML tables API?](https://christianheilmann.com/2025/10/08/abandonware-of-the-web-do-you-know-that-there-is-an-html-tables-api/)
 
@@ -89,7 +96,7 @@ let closure = async || {
     但是现在, 基本也能自然的顺着思路独自给出来.
     并且过去并没有再次系统的看过群论的书籍资料, 仅仅偶尔接触到.
 
-### 文章 / 视频
+### 视频
 
 - [Terence Tao on how we measure the cosmos (part 1)](https://www.youtube.com/watch?v=YdOXS_9_P4U)
   - Part 1, 访谈的形式不错, 但是内容一般~

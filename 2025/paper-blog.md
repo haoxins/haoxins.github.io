@@ -17,6 +17,18 @@ date: 2024-01-28
 ### Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention
 ### DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
 
+- [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
+
+```
+Our goal is to explore the potential of LLMs
+to develop reasoning capabilities without any
+supervised data, focusing on their self-evolution
+through a pure RL process.
+Specifically, we use DeepSeek-V3-Base as the
+base model and employ GRPO as the RL framework to
+improve model performance in reasoning.
+```
+
 ### DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models
 
 - [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)
@@ -131,4 +143,3 @@ the enhancement of fundamental capabilities.
 > the improvement is attributed to boosting the
   __correct response from TopK__ rather than the
   enhancement of fundamental capabilities.
-
