@@ -28,6 +28,12 @@ date: 2024-11-17
 
 ### 哈珀模型中的 SO4 对称性
 
+- [深度学习入门 4](https://book.douban.com/subject/36991430/)
+- [深度学习入门 5](https://book.douban.com/subject/37383541/)
+
+- [大模型技术 30 讲](https://book.douban.com/subject/37258887/)
+- [从零构建大模型](https://book.douban.com/subject/37305124/)
+
 ## 白洞
 
 - [白洞](https://book.douban.com/subject/36815024/)

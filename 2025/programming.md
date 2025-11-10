@@ -5,8 +5,8 @@ date: 2025-02-02
 ---
 
 ### Posts, Events
-- 做个短暂的观察, Go vs Java
-  - 选择一些新项目, 同时有 Go and Java (Kotlin) 的版本
+- 做个短暂的观察, Go vs Java (Kotlin),
+  选择一些新项目, 同时有 Go and Java (Kotlin) 的版本
   - [Agent Development Kit (ADK) for Go](https://github.com/google/adk-go)
   - [Agent Development Kit (ADK) for Java](https://github.com/google/adk-java)
   - [MCP Go SDK](https://github.com/modelcontextprotocol/go-sdk)
