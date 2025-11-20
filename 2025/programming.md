@@ -13,6 +13,8 @@ date: 2025-02-02
   - [MCP Java SDK](https://github.com/modelcontextprotocol/java-sdk)
   - [MCP Kotlin SDK](https://github.com/modelcontextprotocol/kotlin-sdk)
 
+- [Arroyo is joining Cloudflare](https://www.arroyo.dev/blog/arroyo-is-joining-cloudflare/)
+
 - [Abandonware of the web: do you know that there is an HTML tables API?](https://christianheilmann.com/2025/10/08/abandonware-of-the-web-do-you-know-that-there-is-an-html-tables-api/)
 
 ```js
