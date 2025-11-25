@@ -1012,36 +1012,38 @@ date: 2024-01-24
     $$.
 
 - 和通常一样, 设
-  $$ \{ e_i \} $$
+  $$ \{ \mathbf{e}_i \} $$
   是一个标准正交向量基, 设
-  $$ \{ d x^j \} $$
+  $$ \{ \mathbf{d} x^j \} $$
   是 `1-形式`的对偶笛卡儿基. 就像我们得到向量和 `1-形式`的分量一样,
   可以把基底的 `1-形式`和向量填入它的空位来得到一个更一般的张量的分量.
   - 例如,
-    $$ T(v, w) $$
+    $$ \mathbf{T} (\mathbf{v}, \mathbf{w}) $$
     的分量是
-    $$ T_{ij} = T(e_i, e_j) $$.
+    $$ T_{ij} = \mathbf{T} (\mathbf{e}_i, \mathbf{e}_j) $$.
     我们可以将整个张量
-    $$ T $$
+    $$ \mathbf{T} $$
     分解为张量分量, 如下所示:
   - $$
       \begin{align}
-        T(v, w)
-        & = T(v^i e_i, w^j e_j) \\
-        & = T(e_i, e_j) v^i w^j \\
+        \mathbf{T} (\mathbf{v}, \mathbf{w})
+        & = \mathbf{T} (v^i \mathbf{e}_i, w^j \mathbf{e}_j) \\
+        & = \mathbf{T} (\mathbf{e}_i, \mathbf{e}_j) v^i w^j \\
         & = T_{ij} v^i w^j \\
-        & = T_{ij} [d x^i (v)] [d x^j (w)] \\
-        & = T_{ij} (d x^i \otimes d x^j) (v, w)
+        & = T_{ij} [\mathbf{d} x^i (\mathbf{v})]
+                   [\mathbf{d} x^j (\mathbf{w})] \\
+        & = T_{ij} (\mathbf{d} x^i \otimes \mathbf{d} x^j)
+                   (\mathbf{v}, \mathbf{w})
       \end{align}
     $$.
   - 因为
-    $$ v $$
+    $$ \mathbf{v} $$
     和
-    $$ w $$
+    $$ \mathbf{w} $$
     都是一般的向量, 所以可以将它们抽出来, 于是这个张量可以表示为
-  - $$ T = T_{ij} (d x^i \otimes d x^j) $$.
+  - $$ \mathbf{T} = T_{ij} (\mathbf{d} x^i \otimes \mathbf{d} x^j) $$.
   - 由此可知: 由张量
-    $$ (d x^i \otimes d x^j) $$
+    $$ (\mathbf{d} x^i \otimes \mathbf{d} x^j) $$
     组成的集合形成
     $$
       \begin{Bmatrix}
@@ -1110,6 +1112,36 @@ date: 2024-01-24
     和 `1-形式`基
     $$ \{ d x^i \} $$
     无关.
+
+### 用度量张量来改变张量的阶
+
+- 我们已经知道阶为
+  $$
+    \begin{Bmatrix}
+      0 \\
+      2
+    \end{Bmatrix}
+  $$
+  的度量张量
+  $$ \mathbf{g} $$
+  是流形的基本结构: 它为我们提供测地线, 平行移动和曲率的信息. 此外,
+  $$ \mathbf{g} $$
+  还扮演一个重要的角色: __我们可以借助它来改变张量的阶__.
+  - 先来看看如何用度量张量将一个特定的
+    `1-形式`变换成一个特定的向量, 以及反过来的变换.
+
+- __关于记号的注释__: 按照通常的约定, `1-形式`对应于向量
+  $$ \mathbf{n} $$
+  的分量表示为
+  $$ n_i $$,
+  但是这违反了我们用希腊字母表示
+  `1-形式`和用罗马字母表示向量的二分法.
+  因此, 必须比以前更加仔细地注意:
+  - 如果一个字母的指标是上标, 那么它就表示一个向量;
+    如果是下标, 那么它就表示一个 `1-形式`.
+
+
+### 对称张量和反对称张量
 
 - 现在我们将这些类似的性质推广到阶为
   $$
