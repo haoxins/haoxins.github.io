@@ -994,10 +994,10 @@ the most time-intensive part.
 We can generate topological data for over
 3.9 million edges per second.
 The process involves three steps:
-1) sorting the edges using Arrow/Acero's
+1. sorting the edges using Arrow/Acero's
    internal order_by operator, labeled as "sort";
-2) generating vertex offsets, labeled as "offset"; and
-3) writing the sorted and offset data into Parquet files
+2. generating vertex offsets, labeled as "offset"; and
+3. writing the sorted and offset data into Parquet files
    with a specific encoding, labeled as "output".
 
 Generally, this process has a time complexity of
