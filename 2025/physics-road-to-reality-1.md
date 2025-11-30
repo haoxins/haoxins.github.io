@@ -2441,7 +2441,10 @@ r 阶楔积的分量可由各矢量分量的反对称积表示. 因此,
       \begin{pmatrix}
         λ_1    & 0      &        \cdots        & 0 \\
         0      & λ_2    &        \cdots        & 0 \\
-        \vdots & \vdots & \vdots \vdots \vdots & \vdots \\
+        \vdots &
+        \vdots &
+        \vdots \mbox{ } \vdots \mbox{ } \vdots &
+        \vdots \\
         0      & 0      &        \cdots        & λ_n \\
       \end{pmatrix}
     $$,
