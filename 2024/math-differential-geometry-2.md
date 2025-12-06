@@ -127,8 +127,8 @@ date: 2024-01-24
     的尾端到顶端的内蕴变化.
   - 从这个定义, 立即可得
   - $$
-      \nabla_v \mathbf{w}_{\parallel} = 0
-      \Longleftrightarrow \mathbf{w}_{\parallel}
+      \nabla_v \mathbf{w}_{\shortparallel} = 0
+      \Longleftrightarrow \mathbf{w}_{\shortparallel}
     $$
     沿着
     $$ \mathbf{v} $$
@@ -159,17 +159,17 @@ date: 2024-01-24
   平行移动
   $$ w_o $$,
   生成
-  $$ w_{\parallel} $$,
+  $$ w_{\shortparallel} $$,
   返回到点
   $$ o $$
   成为
-  $$ w_{\parallel} (o) $$.
+  $$ w_{\shortparallel} (o) $$.
   于是我们可以定义`向量和乐性`为由曲率引起的
-  $$ w_{\parallel} $$
+  $$ w_{\shortparallel} $$
   的净变化量:
   - $$
-      δ w_{\parallel} ≡
-      w_{\parallel} (\mbox{在返回点 } o \mbox{ 时}) -
+      δ w_{\shortparallel} ≡
+      w_{\shortparallel} (\mbox{在返回点 } o \mbox{ 时}) -
       w(\mbox{从点 } o \mbox{ 出发时})
     $$.
 - 在 2 曲面内, 我们引入了和乐性算子
@@ -208,7 +208,7 @@ date: 2024-01-24
   和平行移动返回到起点
   $$ o $$
   时的向量
-  $$ w_{\parallel} (o) $$
+  $$ w_{\shortparallel} (o) $$
   之间产生了夹角
   $$ δ Θ $$.
   - 由于
@@ -230,7 +230,7 @@ date: 2024-01-24
   同样定义为单位面积的旋转量.
   - 然而, 这显然不再是一个令人满意的曲率度量,
     因为我们已经完全丢失了关于向量和乐性
-    $$ δ w_{\parallel} $$
+    $$ δ w_{\shortparallel} $$
     的`方向`这个关键信息.
 
 ### 黎曼曲率张量
@@ -238,7 +238,7 @@ date: 2024-01-24
 - 我们已经到了这出数学剧的一个重要情节,
   用`黎曼曲率`表示的`向量和乐性`:
   - $$
-      -\frac{δ w_{\parallel}}{δu δv} \asymp
+      -\frac{δ w_{\shortparallel}}{δu δv} \asymp
       \mathcal{R} (u, v) w =
       \{ [\nabla_u, \nabla_v] - \nabla_{[u, v]} \} w
     $$.
@@ -247,18 +247,18 @@ date: 2024-01-24
     \mathcal{R} (u, v) =
     [\nabla_u, \nabla_v] - \nabla_{[u, v]}
   $$.
-  - $$ -\frac{δ w_{\parallel}}{δu δv} $$
+  - $$ -\frac{δ w_{\shortparallel}}{δu δv} $$
     的负号是非常重要的, 所以要提醒读者注意它的起源和几何意义.
   - $$ \{ [\nabla_u, \nabla_v] - \nabla_{[u, v]} \} w $$
     说的是, 当我们走过闭合回路时, (任意) 基准向量场
     $$ w $$
     (相对于
-    $$ w_{\parallel} $$)
+    $$ w_{\shortparallel} $$)
     的净变化.
   - 但是, 我们要求的几何量是向量和乐性
-    $$ δ w_{\parallel} $$,
+    $$ δ w_{\shortparallel} $$,
     它是`相反的`, 是
-    $$ w_{\parallel} $$
+    $$ w_{\shortparallel} $$
     相对于
     $$ w $$
     的变化.
@@ -401,10 +401,10 @@ date: 2024-01-24
     $$ e_1 $$
     上的投影. 于是
   - $$
-      \mathcal{P} [δ w_{\parallel}] =
+      \mathcal{P} [δ w_{\shortparallel}] =
       \begin{bmatrix}
-        δ w_{\parallel}^1 \\
-        δ w_{\parallel}^2
+        δ w_{\shortparallel}^1 \\
+        δ w_{\shortparallel}^2
       \end{bmatrix}
       \asymp
       \begin{bmatrix}
@@ -422,7 +422,7 @@ date: 2024-01-24
     $$ Π $$
     内旋转一个直角.
 - 因此, `投影`
-  $$ \mathcal{P} [w_{\parallel}] $$
+  $$ \mathcal{P} [w_{\shortparallel}] $$
   绕面积为
   $$ δ \mathcal{A} $$
   的回路平行移动后被旋转的角度
