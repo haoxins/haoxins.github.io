@@ -561,7 +561,7 @@ date: 2025-04-24
   - 作为等式
     $$ P = \bar{\mathfrak{R}} $$
     的一个结果, 对于酉空间而言
-    $$ \tilde{A}^{*} = \tilde{A} $$
+    $$ \widetilde{A}^{*} = \widetilde{A} $$
     是
     $$ \mathfrak{S} $$
     到
@@ -569,11 +569,11 @@ date: 2025-04-24
     的一个对应, 我们称之为
     $$ A $$
     的`厄米共轭`.
-  - $$ \tilde{A} A $$
+  - $$ \widetilde{A} A $$
     是
     $$ \mathfrak{R} $$
     到其自身的一个对应,
-    $$ A \tilde{A} $$
+    $$ A \widetilde{A} $$
     是
     $$ \mathfrak{S} $$
     到其自身的一个对应.
@@ -687,11 +687,11 @@ date: 2025-04-24
   的乘积
   $$ BA $$,
   但是这个乘积一般而言不是厄米的, 因为
-  - $$ \tilde{BA} = \tilde{A} \tilde{B} = AB $$.
+  - $$ \widetilde{BA} = \widetilde{A} \widetilde{B} = AB $$.
   - 厄米形式或对应
     $$ A $$
     的迹是实数. 正定表达式
-    $$ tr(A \tilde{A}) = \sum_{i, k} | a_{ik} |^2 $$
+    $$ tr(A \widetilde{A}) = \sum_{i, k} | a_{ik} |^2 $$
     具有特别的重要性.
   - 当
     $$ \mathfrak{R} $$
@@ -712,9 +712,9 @@ date: 2025-04-24
     到
     $$ \mathfrak{R}_α $$
     的一个对应, 而
-    $$ \tilde{A}_{βα} $$,
+    $$ \widetilde{A}_{βα} $$,
     即
-    $$ \tilde{A} $$
+    $$ \widetilde{A} $$
     的
     $$ βα $$
     部分, 是
@@ -726,8 +726,8 @@ date: 2025-04-24
     $$ \mathfrak{R} $$
     的这一分解时, 我们有
   - $$
-      tr(A_{αβ} \tilde{A}_{βα}) =
-      tr(\tilde{A}_{βα} A_{αβ}) =
+      tr(A_{αβ} \widetilde{A}_{βα}) =
+      tr(\widetilde{A}_{βα} A_{αβ}) =
       \sum | a_{ik} |^2
     $$,
   - 在其中的求和过程中,
@@ -796,7 +796,7 @@ date: 2025-04-24
   那么,
   $$ H $$
   满足方程
-  $$ \tilde{H} = H $$,
+  $$ \widetilde{H} = H $$,
   因此
   $$ C $$
   就是
