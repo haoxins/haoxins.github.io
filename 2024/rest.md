@@ -4,6 +4,8 @@ description: 少年不识愁滋味, 爱上层楼, 爱上层楼, 为赋新词强�
 date: 2023-07-17
 ---
 
+- [疯狂动物城 2](https://movie.douban.com/subject/26817136/)
+
 - [全职猎人](https://movie.douban.com/subject/6748086/)
 
 - [灵笼 第二季](https://movie.douban.com/subject/36467256/)

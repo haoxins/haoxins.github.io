@@ -32,6 +32,7 @@ date: 2024-11-17
 - [深度学习入门 5](https://book.douban.com/subject/37383541/)
 
 - [大模型技术 30 讲](https://book.douban.com/subject/37258887/)
+  - 本书一般, 信息量较低
 - [从零构建大模型](https://book.douban.com/subject/37305124/)
 
 ## 白洞
