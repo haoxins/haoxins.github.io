@@ -3271,6 +3271,36 @@ d 的方向, 这个方向的拉伸系数, 垂直方向的拉伸系数, 以及扭
     $$ \mathcal{R} (△) $$
     的真实值.
 
+- 对曲面
+  $$ \mathcal{S} $$
+  做多边形剖分, 其中每个多边形
+  $$ P_l $$
+  至多只包含
+  $$ F $$
+  的一个奇点
+  $$ s_i $$.
+  通过将
+  $$ \angle F \mathbf{w}_{\shortparallel} $$
+  沿 (所有多边形
+  $$ P_l $$
+  的) 所有边
+  $$ K_j $$
+  的变化
+  $$ Φ(K_j) $$
+  相加, 就可求得差
+  $$
+    \mathcal{K} (\mathcal{S}_g) -
+    2π \sum_i \mathcal{J}_F (s_i)
+  $$.
+  - 但是, 每一条边
+    $$ K_j $$
+    都毗连相邻多边形的一条方向相反的边, 于是,
+    在所有这些边上的旋转角之和为零. 所以,
+    $$
+      \mathcal{K} (\mathcal{S}_g) =
+      2π \sum_i \mathcal{J}_F (s_i)
+    $$.
+
 ## 度量曲率公式的几何证明
 
 - 本章的唯一目的是借助平行移动, (终于可以了!)
@@ -3325,11 +3355,23 @@ d 的方向, 这个方向的拉伸系数, 垂直方向的拉伸系数, 以及扭
   - $$ d \hat{s}^2 = A^2 d u^2 + B^2 d v^2 $$.
 
 - 设
-  $$ V = \binom{P(u, v)}{Q(u, v)} $$
+  $$
+    V =
+    \begin{bmatrix}
+      P(u, v) \\
+      Q(u, v)
+    \end{bmatrix}
+  $$
   是
   $$ (u, v) $$
   平面上的向量场,
-  $$ \mathbf{r} = \binom{u}{v} $$
+  $$
+    \mathbf{r} =
+    \begin{bmatrix}
+      u \\
+      v
+    \end{bmatrix}
+  $$
   是 (逆时针方向) 简单闭回路
   $$ L $$
   上点的位置向量. 我们定义
@@ -3369,7 +3411,12 @@ d 的方向, 这个方向的拉伸系数, 垂直方向的拉伸系数, 以及扭
   $$ V $$
   的`旋度`为单位面积的局部环流量:
   - $$
-      \mbox{curl} \binom{P}{Q} \asymp
+      \mbox{curl}
+      \begin{bmatrix}
+        P \\
+        Q
+      \end{bmatrix}
+      \asymp
       \frac{C_L (V)}{δ \mathcal{A}} \asymp
       \partial_u Q - \partial_v P
     $$.
@@ -3400,7 +3447,13 @@ d 的方向, 这个方向的拉伸系数, 垂直方向的拉伸系数, 以及扭
   地图平面上的简单闭回路
   $$ L $$
   表示. 如果我们在地图平面上定义向量场
-  - $$ V ≡ \binom{(\partial_v A) / B}{- (\partial_u B) / A} $$,
+  - $$
+      V ≡
+      \begin{bmatrix}
+        (∂_v A) / B \\
+        -(∂_u B) / A
+      \end{bmatrix}
+    $$,
   - 则
     $$ \mathcal{S} $$
     上
@@ -3410,6 +3463,52 @@ d 的方向, 这个方向的拉伸系数, 垂直方向的拉伸系数, 以及扭
     围绕
     $$ L $$
     的环流量
-    $$ \mathcal{R} (\hat{L}) = C_L (V) $$.
+    $$ \mathcal{R} (\hat{L}) = \mathcal{C}_L (V) $$.
+
+- 现在让我们来求当包围面积为
+  $$ δ \hat{\mathcal{A}} $$
+  的回路
+  $$ \hat{L} $$
+  收缩到点
+  $$ \hat{p} $$
+  时的极限. 因为曲率
+  $$ \mathcal{K} (\hat{p}) $$
+  最终等于单位面积的和乐性, 所以可得
+  - $$
+      \mathcal{K} (\hat{p}) = \lim_{\hat{L} \to \hat{p}}
+      \frac{\mathcal{R} (\hat{L})}{δ \hat{\mathcal{A}}}
+      \asymp \frac{1}{AB}
+      [\frac{\mathcal{C}_L (V)}{δ \mathcal{A}}]
+    $$.
+  - 但是, 这个式子右端方括号里的项 (即单位面积的局部环流量) 就是
+    $$ V $$
+    的`旋度`.
+- 这就使得我们可以完成度量曲率公式的几何证明,
+  而这个公式是高斯 1827 年绝妙定理最优雅, 最明确的一个表现:
+  - $$
+      \begin{align}
+        \mathcal{K} (\hat{p})
+        & = \frac{1}{AB} \{
+          \mbox{curl}
+          \begin{bmatrix}
+            (∂_v A) / B \\
+            -(∂_u B) / A
+          \end{bmatrix}
+        \} \\
+        & = \frac{1}{AB} \{
+          ∂_u [-\frac{∂_u B}{A}] -
+          ∂_v [\frac{∂_v A}{B}]
+        \} \\
+        & = -\frac{1}{AB} (
+          ∂_v [\frac{∂_v A}{B}] +
+          ∂_u [\frac{∂_u B}{A}]
+        ) \\
+      \end{align}
+    $$.
+  - 在证明这个公式的过程中, 我们还证明了一个重要的特殊情况,
+    即共形地图, 其中
+    $$ A = B = Λ $$.
+    在这个情况下, 这个公式就简化成了更为优雅的式:
+  - $$ \mathcal{A} = \frac{\nabla^2 \ln Λ}{Λ^2} $$
 
 > 结: 2025 年 3 月
