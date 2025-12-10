@@ -3344,8 +3344,8 @@ d 的方向, 这个方向的拉伸系数, 垂直方向的拉伸系数, 以及扭
     曲线) 最终成比例的移动
     $$ δ Y \asymp B δ v $$
     ($$
-      δ Y \asymp B δ v B \Longleftrightarrow
-      \mbox{ 是局部竖直扩张系数}
+      δ Y \asymp B δ v \Longleftrightarrow
+      B \mbox{ 是局部竖直扩张系数}
     $$).
   - 然后利用度量公式就可以用在地图上看到的距离来表示曲面上的真实距离
     $$ d \hat{s} $$.
@@ -3417,7 +3417,7 @@ d 的方向, 这个方向的拉伸系数, 垂直方向的拉伸系数, 以及扭
         Q
       \end{bmatrix}
       \asymp
-      \frac{C_L (V)}{δ \mathcal{A}} \asymp
+      \frac{\mathcal{C}_L (V)}{δ \mathcal{A}} \asymp
       \partial_u Q - \partial_v P
     $$.
 
