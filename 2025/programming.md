@@ -5,6 +5,11 @@ date: 2025-02-02
 ---
 
 ### Posts, Events
+
+- 2025-12-12, Rust is now an official language in the Linux Kernel
+  - https://github.com/torvalds/linux
+  - 2025-12-12: C `98.0%`, Rust `0.3%`
+
 - 做个短暂的观察, Go vs Java (Kotlin),
   选择一些新项目, 同时有 Go and Java (Kotlin) 的版本
   - [Agent Development Kit (ADK) for Go](https://github.com/google/adk-go)
@@ -12,6 +17,49 @@ date: 2025-02-02
   - [MCP Go SDK](https://github.com/modelcontextprotocol/go-sdk)
   - [MCP Java SDK](https://github.com/modelcontextprotocol/java-sdk)
   - [MCP Kotlin SDK](https://github.com/modelcontextprotocol/kotlin-sdk)
+
+- [From BI to AI: A Modern Lakehouse Stack with Lance and Iceberg](https://lancedb.com/blog/from-bi-to-ai-lance-and-iceberg/)
+
+```
+Iceberg operates at two of the layers in the stack:
+the table format and the catalog spec.
+It typically uses Parquet as the underlying file format.
+
+Lance spans three layers of the stack, because it's
+simultaneously a file format, table format and a catalog spec.
+```
+
+```
+Lance's file format makes it more convenient to maintain
+multimodal data natively as blobs inside the columns,
+with no external lookups (the multimodal data is co-located
+with metadata and embeddings), thus simplifying governance
+and management of data that's multimodal in nature.
+
+It's also significantly more performant, because at the
+table level, Lance can pack multiple smaller rows together
+while storing very large rows (e.g., image or audio blobs)
+in a dedicated file thanks to its fragment-based design,
+thus balancing performance with storage size.
+```
+
+```
+In Iceberg, data evolution comes with a non-trivial cost:
+adding data to a new column requires a full table rewrite
+since Parquet stores entire row groups together.
+This means that for very large tables, it's common to see
+multiple new feature columns being added in parallel by
+multiple teams in an organization, which would require a
+table lock as new columns are being added, bottlenecking
+the feature engineering process.
+
+In Lance, adding a new column is essentially a
+zero-copy operation. Lance's fragment design allows
+independent column files per fragment
+(though multiple columns can share a data file),
+meaning that adding or updating a column simply appends
+new column files without touching existing data.
+```
 
 - [Arroyo is joining Cloudflare](https://www.arroyo.dev/blog/arroyo-is-joining-cloudflare/)
 

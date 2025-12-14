@@ -235,7 +235,7 @@ date: 2024-01-24
   $$ \mathbf{v}(p) $$
   和
   $$ \mathbf{w}(p) $$
-  的线性组合的所有测地线组成的"平面".
+  的线性组合的所有`测地线`组成的"平面".
   - 当然, 该"平面"事实上是一个弯曲的
     $$ 2 $$
     曲面. 注意, 因为
@@ -304,7 +304,7 @@ date: 2024-01-24
   $$ n $$
   流形内, 可以想象在切空间
   $$ \mathbb{R}^n $$
-  内非常短的向量是位于流形内的.
+  内非常短的向量是位于流形`内`的.
   - 如果要平行移动一个在点
     $$ p $$
     处的长切向量, 因为平行移动 (由定义决定)
@@ -314,7 +314,7 @@ date: 2024-01-24
     $$ \mathbb{R}^n $$
     内用某个大因子
     $$ N $$
-    将它收缩, 就可以想象收缩后它是在流形内的,
+    将它收缩, 就可以想象收缩后它是在流形`内`的,
   - 然后再将它平行移动, 最后在终点的切空间
     $$ \mathbb{R}^n $$
     内再用同样的大因子
@@ -332,7 +332,8 @@ date: 2024-01-24
     $$ \mathbf{w}(p) $$
     的端点和
     $$ q $$,
-    并标记其中点为m.
+    并标记其`中点`为
+    $$ m $$.
   - (b) 用另一条测地线连接点
     $$ p $$
     和
@@ -405,9 +406,6 @@ date: 2024-01-24
         \mathbf{w}(p)
       }{ϵ}
     $$
-
-> 注: 原书使用
-  $$ \mathbf{\nabla} $$
 
 - 在接下来的讨论中, 我们将证明, 用实际的变化本身,
   而不是变化率来考虑内蕴导数会更有用:
@@ -700,13 +698,14 @@ w 初始方向的选择会影响它绕闭合回路的向量和乐性.)
   用`黎曼曲率`表示的`向量和乐性`:
   - $$
       -\frac{δ \mathbf{w}_{\shortparallel}}{δu δv}
-      \asymp \mathcal{R} (u, v) \mathbf{w} =
+      \asymp
+      \mathcal{R} (\mathbf{u}, \mathbf{v}) \mathbf{w} =
       \{ [\nabla_u, \nabla_v] - \nabla_{[u, v]} \}
       \mathbf{w}
     $$.
 - 现在我们就知道了, `黎曼曲率算子`事实上是
   $$
-    \mathcal{R} (u, v) =
+    \mathcal{R} (\mathbf{u}, \mathbf{v}) =
     [\nabla_u, \nabla_v] - \nabla_{[u, v]}
   $$.
   - $$ -\frac{δ \mathbf{w}_{\shortparallel}}{δu δv} $$
@@ -731,88 +730,134 @@ w 初始方向的选择会影响它绕闭合回路的向量和乐性.)
   $$ \mathcal{R} $$
   是`反对称`的:
   - $$
-      \mathcal{R}(u, v) = - \mathcal{R}(v, u)
-      \Longrightarrow \mathcal{R}(u, u) = 0
+      \mathcal{R}(\mathbf{u}, \mathbf{v}) = -
+      \mathcal{R}(\mathbf{v}, \mathbf{u})
+      \Longrightarrow
+      \mathcal{R}(\mathbf{u}, \mathbf{u}) = 0
     $$.
   - 第一个等式在几何上是显然的, 因为它就是说,
     如果我们用相反的方向走过平行四边形,
     则向量和乐性也被反转方向了.
   - 同样, 可以认为第二个等式是说, 沿着任意向量
-    $$ u $$
+    $$ \mathbf{u} $$
     的一小段, 来回平行移动任意一个向量, 则它会回到原样.
 - 现在只需要稍微改变一下符号, 就能最终得到著名的`黎曼曲率张量`
   $$ R $$
   的标准定义, 它是一个输入三个向量, 输出一个向量值的映射
-  $$ R(u, v; w) $$:
+  $$ R(\mathbf{u}, \mathbf{v}; \mathbf{w}) $$:
   - $$
-      R(u, v; w) ≡ \mathcal{R} (u, v) \mathbf{w} =
+      R(\mathbf{u}, \mathbf{v}; \mathbf{w}) ≡
+      \mathcal{R} (\mathbf{u}, \mathbf{v}) \mathbf{w} =
       \{ [\nabla_u, \nabla_v] - \nabla_{[u, v]} \}
       \mathbf{w}
     $$.
   - 当三个输入向量中的任意两个保持不变时,
-    $$ R(u, v; w) $$
+    $$ R(\mathbf{u}, \mathbf{v}; \mathbf{w}) $$
     是第三个输入向量的线性函数.
+
+```
+```
 
 - 为了给出几何对象的数值描述, 我们对
   $$ n $$
   流形的每个点的切空间
   $$ \mathbb{R}^n $$
   引入一组`标准正交基`向量
-  $$ \{ e_i \} $$.
+  $$ \{ \mathbf{e}_i \} $$.
   - 于是, 几何向量
-    $$ u $$
+    $$ \mathbf{u} $$
     可由其数值分量
     $$ \{ u^i \} $$
     表示, 其中
-    $$ u = \sum_{i} u^i e_i $$.
+    $$ \mathbf{u} = \sum_{i} u^i \mathbf{e}_i $$.
 
-- 通过这个约定, 可以省略求和号,
+```
+对于更复杂的几何对象, 例如黎曼张量,
+就要求多重不同的指标来表示它的分量, 从而会导致多重求和.
+我们总是可以把求和指标中的一个安排成上标, 一个安排成下标.
+因此, 爱因斯坦引人了一个不易混淆的简单约定, 称为爱因斯坦求和约定.
+```
+
+```
+还有一个爱因斯坦指标约定 (或称爱因斯坦第一约定):
+用作下标或上标的拉丁字母取遍从 1 到空间维数 (例如 n) 的正整数值.
+本书已经采用了这个约定. 指标约定和求和约定统称为爱因斯坦约定.
+
+译者注
+```
+
+- 通过爱因斯坦求和约定, 可以省略求和号,
   将成对出现的上标和下标理解为求和. 例如
   - $$
-      u = \sum_{i = 1}^{n} u^i e_i
+      \mathbf{u} = \sum_{i = 1}^{n} u^i \mathbf{e}_i
       \Longleftrightarrow
     $$
     爱因斯坦求和约定:
-    $$ u = u^i e_i $$.
+    $$ \mathbf{u} = u^i \mathbf{e}_i $$.
   - 为了求出黎曼张量的分量, 我们将其三个输入向量分解成分量形式:
-  - $$ u = u^i e_i $$,
-    $$ v = v^j e_j $$,
-    $$ w = w^k e_k $$.
+  - $$ \mathbf{u} = u^i \mathbf{e}_i $$,
+    $$ \mathbf{v} = v^j \mathbf{e}_j $$,
+    $$ \mathbf{w} = w^k \mathbf{e}_k $$.
   - 于是,
     $$
-      R(u, v; w) = R(u^i e_i, v^j e_j; w^k e_k) =
-      R(e_i, e_j; e_k) u^i v^j w^k
+      R(\mathbf{u}, \mathbf{v}; \mathbf{w}) =
+      R(u^i \mathbf{e}_i, v^j \mathbf{e}_j; w^k \mathbf{e}_k) =
+      R(\mathbf{e}_i, \mathbf{e}_j; \mathbf{e}_k) u^i v^j w^k
     $$.
 - 我们现在可以定义`黎曼张量`的`分量`
   $$ R_{ijk}^{l} $$
   为当黎曼张量作用于三个基向量时得到的相应系数:
-  $$ R(e_i, e_j; e_k) ≡ R_{ijk}^{l} e_l $$.
+  $$
+    R(\mathbf{e}_i, \mathbf{e}_j; \mathbf{e}_k) ≡
+    R_{ijk}^{l} \mathbf{e}_l
+  $$.
   - 这样,
     $$ R $$
     对于一般向量的作用就可以方便地用这些系数表示为:
-    $$ R(u, v; w) = [R_{ijk}^{l} u^i v^j w^k] e_l $$.
+    $$
+      R(\mathbf{u}, \mathbf{v}; \mathbf{w}) =
+      [R_{ijk}^{l} u^i v^j w^k] \mathbf{e}_l
+    $$.
   - 为了后面的应用, 我们还定义,
-    $$ R_{ijkm} ≡ R(e_i, e_j; e_k) \cdot e_m $$.
+    $$
+      R_{ijkm} ≡
+      R(\mathbf{e}_i, \mathbf{e}_j; \mathbf{e}_k)
+      \cdot \mathbf{e}_m
+    $$.
   - 因为我们选择正交基, 若
     $$ l ≠ m $$
     则
-    $$ e_l \cdot e_m = 0 $$,
+    $$ \mathbf{e}_l \cdot \mathbf{e}_m = 0 $$,
     若
     $$ l = m $$
     则
-    $$ e_l \cdot e_m = 1 $$,
+    $$ \mathbf{e}_l \cdot \mathbf{e}_m = 1 $$,
     所以
     $$ R_{ijkm} = R_{ijk}^{m} $$.
 
-- 所以我们定义,
-  $$ Π(u, v) ≡ $$
+- 在
+  $$ 2 $$
+  曲面内, 一个小回路
+  $$ L $$
+  的和乐性
+  $$ \mathcal{R}(L) \asymp \mathcal{K} δ \mathcal{A} $$
+  只依赖于
+  $$ L $$
+  的面积
+  $$ δ \mathcal{A} $$,
+  与其形状无关. 而在
+  $$ n $$
+  流形内,
+  $$ L $$
+  所在的平面有很多相互独立的选择. 所以我们定义,
+  $$ Π(\mathbf{u}, \mathbf{v}) ≡ $$
   由
-  $$ u $$
+  $$ \mathbf{u} $$
   和
-  $$ v $$
+  $$ \mathbf{v} $$
   张成的平面.
   - 对
-    $$ Π(u, v) $$
+    $$ Π(\mathbf{u}, \mathbf{v}) $$
     的选择当然会影响向量和乐性. 对于给定的
     $$ \mathbf{w}_o $$,
     向量和乐性`仅`依赖于
@@ -828,7 +873,7 @@ w 初始方向的选择会影响它绕闭合回路的向量和乐性.)
     $$ δ \mathcal{A} $$,
     且`独立于`其形状.
 
-- $$ R(u, v; w) $$
+- $$ R(\mathbf{u}, \mathbf{v}; \mathbf{w}) $$
   关于括号中的前两项是反对称的, 这就意味着
   - $$ R_{jikm} = -R_{ijkm} $$.
   - 现在我们证明了另一种不那么明显的对称性, 即

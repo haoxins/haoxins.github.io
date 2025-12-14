@@ -8,9 +8,9 @@ date: 2023-12-21
 
 - [LaTeX mathematical symbols](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols)
   - $$ \mathbf{R} $$
-  - $$ \mathcal{R}$$
-  - $$ \mathbb{R} $$
-  - $$ \mathfrak{R} $$,
+    $$ \mathcal{R}$$
+    $$ \mathbb{R} $$
+    $$ \mathfrak{R} $$,
     $$ \mathfrak{x} $$,
     $$ \mathfrak{y} $$
 
