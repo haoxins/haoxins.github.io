@@ -29,6 +29,20 @@ base model and employ GRPO as the RL framework to
 improve model performance in reasoning.
 ```
 
+```
+We directly apply RL to the base model without relying
+on supervised fine-tuning (SFT) as a preliminary step.
+
+Notably, it is the first open research to validate that
+reasoning capabilities of LLMs can be incentivized
+purely through RL, without the need for SFT.
+
+In this study, we demonstrate that reasoning capabilities
+can be significantly improved through large-scale
+reinforcement learning (RL), even without using
+supervised fine-tuning (SFT) as a cold start.
+```
+
 ### DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models
 
 - [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)

@@ -2356,43 +2356,54 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 
 - 给更多的时间和空间会增强计算能力吗? 对每种情形答案都是肯定的.
   - 严格来说, `时间层次定理`表明
-    $$ TIME(f(n)) $$
+    $$ \mbox{TIME} (f(n)) $$
     是
-    $$ TIME(f(n) \log^2 (f(n))) $$
+    $$ \mbox{TIME} (f(n) \log^2 (f(n))) $$
     的真子集.
   - 类似的, `空间层次定理`表明
-    $$ SPACE(f(n)) $$
+    $$ \mbox{SPACE} (f(n)) $$
     是
-    $$ SPACE(f(n) \log(f(n))) $$
+    $$ \mbox{SPACE} (f(n) \log(f(n))) $$
     的真子集.
   - 这里
-    $$ SPACE(f(n)) $$
+    $$ \mbox{SPACE} (f(n)) $$
     是指包含所有可以用
     $$ O(f(n)) $$
     空间来判定的语言的复杂性类.
   - 层次定理在复杂性类的等价性类方面有很多有趣的应用.
 - 我们知道
-  $$ L \subseteq P \subseteq NP \subseteq PSPACE \subseteq EXP $$
+  $$
+    L \subseteq P \subseteq NP \subseteq
+    \mbox{PSPACE} \subseteq \mbox{EXP}
+  $$
   - 不幸的是, 尽管每个包含关系都被相信是严格的, 但没有一个能被证明.
-  - 不过, `时间层次定理`指出 `P` 是 `EXP` 的严格真子集,
-    `空间层次定理`指出 `L` 被 `PSPACE` 严格包含!
+  - 不过, `时间层次定理`指出
+    $$ P $$
+    是
+    $$ \mbox{EXP} $$
+    的严格真子集,
+    `空间层次定理`指出
+    $$ L $$
+    被
+    $$ \mbox{PSPACE} $$
+    严格包含!
   - 故我们可以得出结论, 式中至少存在一个严格包含关系, 虽然我们不知道是哪一个.
 
 - [时间层次定理](https://en.wikipedia.org/wiki/Time_hierarchy_theorem)
 - [空间层次定理](https://en.wikipedia.org/wiki/Space_hierarchy_theorem)
 
----
-
-- 兰道尔原理 (__第一种形式__): 假设一台计算机擦除了 `1` 比特的信息,
-  那么耗散到整个环境中的能量至少是
+- 兰道尔原理 (__第一种形式__): 假设一台计算机擦除了
+  $$ 1 $$
+  比特的信息, 那么耗散到整个环境中的能量至少是
   $$ k_B T \ln 2 $$,
   其中
   $$ k_B $$
   是玻尔兹曼常数,
   $$ T $$
   是电脑工作环境的温度.
-- 兰道尔原理 (__第二种形式__): 假设一台计算机擦除了 `1` 比特的信息,
-  那么整个环境的熵至少增加了
+- 兰道尔原理 (__第二种形式__): 假设一台计算机擦除了
+  $$ 1 $$
+  比特的信息, 那么整个环境的熵至少增加了
   $$ k_B \ln 2 $$,
   其中
   $$ k_B $$
@@ -2420,8 +2431,6 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 
 - [Fredkin gate](https://en.wikipedia.org/wiki/Fredkin_gate)
 - [Toffoli gate](https://en.wikipedia.org/wiki/Toffoli_gate)
-
----
 
 - 我们可以从可逆计算的研究中得出什么结论?
   有三个关键的想法.

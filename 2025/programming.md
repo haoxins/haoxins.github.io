@@ -12,8 +12,9 @@ date: 2025-02-02
 
 - 做个短暂的观察, Go vs Java (Kotlin),
   选择一些新项目, 同时有 Go and Java (Kotlin) 的版本
-  - [Agent Development Kit (ADK) for Go](https://github.com/google/adk-go)
-  - [Agent Development Kit (ADK) for Java](https://github.com/google/adk-java)
+  - [Agent Development Kit for Go](https://github.com/google/adk-go)
+  - [Agent Development Kit for TypeScript](https://github.com/google/adk-js)
+  - [Agent Development Kit for Java](https://github.com/google/adk-java)
   - [MCP Go SDK](https://github.com/modelcontextprotocol/go-sdk)
   - [MCP Java SDK](https://github.com/modelcontextprotocol/java-sdk)
   - [MCP Kotlin SDK](https://github.com/modelcontextprotocol/kotlin-sdk)
@@ -147,6 +148,13 @@ let closure = async || {
     并且过去并没有再次系统的看过群论的书籍资料, 仅仅偶尔接触到.
 
 ### 视频
+
+- [But how do AI videos actually work? | Guest video](https://www.youtube.com/watch?v=iv-5mZ_9CPY)
+  - 动画很棒~
+  - CLIP (2021)
+    (C: contrastive, L: language, I: image, P: pre-training);
+  - DDPM (2020)
+    (D: denoising, D: diffusion, P: probabilistic M: models);
 
 - [Terence Tao on how we measure the cosmos (part 1)](https://www.youtube.com/watch?v=YdOXS_9_P4U)
   - Part 1, 访谈的形式不错, 但是内容一般~
