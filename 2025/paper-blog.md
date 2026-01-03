@@ -43,6 +43,42 @@ reinforcement learning (RL), even without using
 supervised fine-tuning (SFT) as a cold start.
 ```
 
+```
+In order to save the training costs of RL,
+we adopt Group Relative Policy Optimization (GRPO),
+which foregoes the critic model that is typically
+the same size as the policy model, and estimates
+the baseline from group scores instead.
+
+The reward is the source of the training signal,
+which decides the optimization direction of RL.
+To train DeepSeek-R1-Zero, we adopt a rule-based reward
+system that mainly consists of two types of rewards:
+
+Accuracy rewards: The accuracy reward model evaluates
+whether the response is correct. For example,
+in the case of math problems with deterministic results,
+the model is required to provide the final answer in a
+specified format (e.g., within a box), enabling reliable
+rule-based verification of correctness. Similarly,
+for LeetCode problems, a compiler can be used to generate
+feedback based on predefined test cases.
+
+Format rewards: In addition to the accuracy reward model,
+we employ a format reward model that enforces the model
+to put its thinking process between
+'<think>' and '</think>' tags.
+```
+
+```
+To train DeepSeek-R1-Zero, we begin by designing a
+straightforward template that guides the base model
+to adhere to our specified instructions.
+This template requires DeepSeek-R1-Zero to first produce
+a reasoning process, followed by the final answer.
+We intentionally limit our constraints to this
+structural format, avoiding any content-specific biases,
+```
 ### DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models
 
 - [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)
