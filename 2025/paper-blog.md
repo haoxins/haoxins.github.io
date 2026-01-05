@@ -78,6 +78,9 @@ This template requires DeepSeek-R1-Zero to first produce
 a reasoning process, followed by the final answer.
 We intentionally limit our constraints to this
 structural format, avoiding any content-specific biases,
+such as mandating reflective reasoning or promoting particular
+problem-solving strategies, to ensure that we can accurately
+observe the model's natural progression during the RL process.
 ```
 ### DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models
 

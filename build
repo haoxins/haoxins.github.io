@@ -2,7 +2,6 @@
 
 from os import path, walk
 import subprocess
-from typing import List
 
 root_dir = path.dirname(path.realpath(__file__))
 
@@ -44,7 +43,7 @@ def fmt_md(file: str):
         f.truncate()
 
 
-def get_files_from_git() -> List[str]:
+def get_files_from_git() -> list[str]:
     subprocess.run(["git", "add", "--all"])
     output = subprocess.run(["git", "status", "-s"], capture_output=True)
 
