@@ -642,6 +642,59 @@ date: 2022-10-31
     $$ i $$)
     却不是厄米算符, 但它们互为伴随算符.
 
+- 很容易算出
+  $$ a $$
+  与
+  $$ a^{\dagger} $$
+  的对易子:
+  - $$
+      \begin{align}
+        [a, a^{\dagger}]
+          & = \frac{1}{2}
+              [\hat{X} + i \hat{P}, \hat{X} - i \hat{P}] \\
+          & = \frac{i}{2} [\hat{P}, \hat{X}] -
+              \frac{i}{2} [\hat{X}, \hat{P}] \\
+      \end{align}
+    $$
+  - 这就是说
+    $$ [a, a^{\dagger}] = 1 $$
+  - 这个关系式完全等价于正则对易关系式.
+
+- 最后, 我们推导几个在本章后面要用的简单公式. 首先计算
+  $$ a^{\dagger} a $$:
+  - $$
+      \begin{align}
+        [a^{\dagger}, a]
+          & = \frac{1}{2}
+              (\hat{X} - i \hat{P})
+              (\hat{X} + i \hat{P}) \\
+          & = \frac{1}{2}
+              (\hat{X}^2 +
+              \hat{P}^2 +
+              i \hat{X} \hat{P} -
+              i \hat{P}\hat{X}) \\
+          & = \frac{1}{2} (\hat{X}^2 + \hat{P}^2 - 1) \\
+      \end{align}
+    $$
+  - 我们看出:
+  - $$
+      \hat{H} = a^{\dagger} a + \frac{1}{2} =
+      \frac{1}{2}
+      (\hat{X} - i \hat{P})
+      (\hat{X} + i \hat{P}) +
+      \frac{1}{2}
+    $$
+  - 与经典情况不一样, 我们不可能将
+    $$ \hat{H} $$
+    写成线性项的乘积. 在上式的右端出现
+    $$ 1/2 $$
+    这一项, 其原因就在于
+    $$ \hat{X} $$
+    和
+    $$ \hat{P} $$
+    的不可对易性. 同样可以证明
+  - $$ \hat{H} = a a^{\dagger} - \frac{1}{2} $$
+
 ### 谱的确定
 
 - 引理 I
