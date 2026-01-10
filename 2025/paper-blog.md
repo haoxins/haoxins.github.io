@@ -15,73 +15,52 @@ date: 2024-01-28
 - [Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer](https://arxiv.org/abs/quant-ph/9508027)
 
 ### Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention
+
+- [Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention](https://arxiv.org/abs/2502.11089)
+
+```
+```
+
 ### DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
 
 - [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
 
 ```
-Our goal is to explore the potential of LLMs
-to develop reasoning capabilities without any
-supervised data, focusing on their self-evolution
-through a pure RL process.
-Specifically, we use DeepSeek-V3-Base as the
-base model and employ GRPO as the RL framework to
-improve model performance in reasoning.
+Here we show that the reasoning abilities of LLMs can be
+incentivized through pure reinforcement learning (RL),
+obviating the need for human-labeled reasoning trajectories.
 ```
 
 ```
-We directly apply RL to the base model without relying
-on supervised fine-tuning (SFT) as a preliminary step.
-
-Notably, it is the first open research to validate that
-reasoning capabilities of LLMs can be incentivized
-purely through RL, without the need for SFT.
-
-In this study, we demonstrate that reasoning capabilities
-can be significantly improved through large-scale
-reinforcement learning (RL), even without using
-supervised fine-tuning (SFT) as a cold start.
+However, achieving such capabilities in pre-training
+typically demands substantial computational resources.
+In parallel, a complementary line of research has
+demonstrated that large language models can be effectively
+augmented through chain-of-thought (CoT) prompting.
+This technique, which involves either providing carefully
+designed few-shot examples or using minimalistic prompts
+such as "Let's think step by step", enables models to
+produce intermediate reasoning steps, thereby substantially
+enhancing their performance on complex tasks.
 ```
 
 ```
-In order to save the training costs of RL,
-we adopt Group Relative Policy Optimization (GRPO),
-which foregoes the critic model that is typically
-the same size as the policy model, and estimates
-the baseline from group scores instead.
-
-The reward is the source of the training signal,
-which decides the optimization direction of RL.
-To train DeepSeek-R1-Zero, we adopt a rule-based reward
-system that mainly consists of two types of rewards:
-
-Accuracy rewards: The accuracy reward model evaluates
-whether the response is correct. For example,
-in the case of math problems with deterministic results,
-the model is required to provide the final answer in a
-specified format (e.g., within a box), enabling reliable
-rule-based verification of correctness. Similarly,
-for LeetCode problems, a compiler can be used to generate
-feedback based on predefined test cases.
-
-Format rewards: In addition to the accuracy reward model,
-we employ a format reward model that enforces the model
-to put its thinking process between
-'<think>' and '</think>' tags.
+Specifically, we build upon DeepSeek-V3-Base (DeepSeek-AI)
+and employ Group Relative Policy Optimization (GRPO)
+as our RL framework. The reward signal is solely based
+on the correctness of final predictions against
+ground-truth answers, without imposing constraints on the
+reasoning process itself.
+Notably, we bypass the conventional supervised fine-tuning
+(SFT) phase before RL training. This design choice stems
+from our hypothesis that human-defined reasoning patterns
+may limit model exploration, whereas unrestricted RL
+training can better incentivize the emergence of
+novel reasoning capabilities in LLMs.
 ```
 
-```
-To train DeepSeek-R1-Zero, we begin by designing a
-straightforward template that guides the base model
-to adhere to our specified instructions.
-This template requires DeepSeek-R1-Zero to first produce
-a reasoning process, followed by the final answer.
-We intentionally limit our constraints to this
-structural format, avoiding any content-specific biases,
-such as mandating reflective reasoning or promoting particular
-problem-solving strategies, to ensure that we can accurately
-observe the model's natural progression during the RL process.
-```
+#### DeepSeek-R1-Zero
+
 ### DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models
 
 - [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)

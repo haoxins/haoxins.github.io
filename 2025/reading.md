@@ -35,6 +35,8 @@ date: 2024-11-17
   - 本书一般, 信息量较低
 - [从零构建大模型](https://book.douban.com/subject/37305124/)
 
+
+- [数学巨人传](https://book.douban.com/subject/37830709/)
 ## 白洞
 
 - [白洞](https://book.douban.com/subject/36815024/)
