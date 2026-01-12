@@ -32,8 +32,6 @@ obviating the need for human-labeled reasoning trajectories.
 ```
 
 ```
-However, achieving such capabilities in pre-training
-typically demands substantial computational resources.
 In parallel, a complementary line of research has
 demonstrated that large language models can be effectively
 augmented through chain-of-thought (CoT) prompting.
@@ -49,14 +47,14 @@ Specifically, we build upon DeepSeek-V3-Base (DeepSeek-AI)
 and employ Group Relative Policy Optimization (GRPO)
 as our RL framework. The reward signal is solely based
 on the correctness of final predictions against
-ground-truth answers, without imposing constraints on the
-reasoning process itself.
+ground-truth answers, without imposing constraints on
+the reasoning process itself.
 Notably, we bypass the conventional supervised fine-tuning
 (SFT) phase before RL training. This design choice stems
 from our hypothesis that human-defined reasoning patterns
-may limit model exploration, whereas unrestricted RL
-training can better incentivize the emergence of
-novel reasoning capabilities in LLMs.
+may limit model exploration, whereas unrestricted
+RL training can better incentivize the emergence
+of novel reasoning capabilities in LLMs.
 ```
 
 #### DeepSeek-R1-Zero

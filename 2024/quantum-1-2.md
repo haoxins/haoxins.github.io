@@ -664,7 +664,7 @@ date: 2022-10-31
   $$ a^{\dagger} a $$:
   - $$
       \begin{align}
-        [a^{\dagger}, a]
+        a^{\dagger} a
           & = \frac{1}{2}
               (\hat{X} - i \hat{P})
               (\hat{X} + i \hat{P}) \\
@@ -703,8 +703,7 @@ date: 2022-10-31
     $$
       N^{\dagger} =
       a^{\dagger} (a^{\dagger})^{\dagger} =
-      a^{\dagger} a =
-      N
+      a^{\dagger} a = N
     $$
   - 此外:
     $$ \hat{H} = N + \frac{1}{2} $$
