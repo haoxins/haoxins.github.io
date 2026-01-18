@@ -2049,7 +2049,7 @@ r 阶楔积的分量可由各矢量分量的反对称积表示. 因此,
   $$ r \cdots t $$
   是
   $$ p $$
-  个数的集合, 记为
+  个数) 的集合, 记为
   - $$
       \mathbf{α} = \sum α_{r \cdots t}
       d x^r \land \cdots \land d x^t

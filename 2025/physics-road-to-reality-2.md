@@ -1,7 +1,7 @@
 ---
 title: 再读 通向实在之路 彭罗斯 (中)
 description: 青山横北郭, 白水绕东城. 此地一为别, 孤蓬万里征.
-date: 2025-06-09
+date: 2024-11-03
 ---
 
 - [通向实在之路](https://book.douban.com/subject/25823056/)
