@@ -33,10 +33,22 @@ date: 2024-11-17
 
 - [大模型技术 30 讲](https://book.douban.com/subject/37258887/)
   - 本书一般, 信息量较低
+- [图解大模型](https://book.douban.com/subject/37339504/)
 - [从零构建大模型](https://book.douban.com/subject/37305124/)
 
 
 - [数学巨人传](https://book.douban.com/subject/37830709/)
+  - 不赞同作者选择数学家的方式: 权衡性别, 地理, 时代~
+  - 全书故事性大于数学性, 不值得一读~
+
+```
+拉格朗日
+  傅里叶
+    狄利克雷
+      黎曼
+        戴德金
+```
+
 ## 白洞
 
 - [白洞](https://book.douban.com/subject/36815024/)

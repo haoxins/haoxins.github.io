@@ -83,7 +83,7 @@ def gen_index_contents(sub_path):
             index_contents.append(content)
 
 
-year = "2025"
+year = "2026"
 
 
 def write_index_file():
