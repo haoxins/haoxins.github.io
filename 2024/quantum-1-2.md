@@ -909,6 +909,83 @@ date: 2022-10-31
   $$ \mathcal{E}_x $$
   空间中的一个 CSCO.
 
+- 与
+  $$ n = 0 $$
+  相联系的矢量
+  $$ \mid φ_0 \rangle $$
+  是空间中的矢量, 它满足关系
+  - $$ a \mid φ_0 \rangle = 0 $$
+  - 除倍乘因子以外, 这个矢量是确定的, 我们假设
+    $$ \mid φ_0 \rangle $$
+    已归一化, 则它的不确定性只限于一个形如
+    $$ e^{iθ} $$
+    的全局相位因子, 这里的
+    $$ θ $$
+    是实数.
+  - (全局相位因子是指
+    $$ θ $$
+    与空间坐标
+    $$ x $$
+    无关的情形, 当
+    $$ θ = θ(x) $$
+    时, 则不同空间位置的相位可以不同, 这时的相位称为局域相位.)
+  - 根据先前的引理, 对应于
+    $$ n = 1 $$
+    的矢量
+    $$ \mid φ_1 \rangle $$
+    与矢量
+    $$ a^{\dagger} \mid φ_0 \rangle $$
+    成比例:
+  - $$
+      \mid φ_1 \rangle = c_1
+      a^{\dagger} \mid φ_0 \rangle
+    $$
+  - 为了确定
+    $$ c_1 $$,
+    我们规定
+    $$ \mid φ_1 \rangle $$
+    已归一化, 并选择
+    $$ \mid φ_1 \rangle $$
+    (相对于
+    $$ \mid φ_0 \rangle $$)
+    的相位使得
+    $$ c_1 $$
+    为正实数. 根据
+    $$
+      \mid φ_1 \rangle = c_1
+      a^{\dagger} \mid φ_0 \rangle
+    $$
+    式,
+    $$ \mid φ_1 \rangle $$
+    的模的平方为:
+  - $$
+      \begin{align}
+        \langle φ_1 \mid φ_1 \rangle =
+          & = \mid c_1 \mid^2
+              \langle φ_0 \mid
+              a a^{\dagger}
+              \mid φ_0 \rangle \\
+          & = \mid c_1 \mid^2
+              \langle φ_0 \mid
+              (a^{\dagger} a + 1)
+              \mid φ_0 \rangle \\
+      \end{align}
+    $$
+  - 在这里, 我们应用了式
+    $$ [a, a^{\dagger}] = 1 $$. 由于
+    $$ \mid φ_0 \rangle $$
+    是
+    $$ N = a^{\dagger} a $$
+    的属于本征值零的已归一化的本征矢, 故得:
+  - $$
+      \langle φ_1 \mid φ_1 \rangle =
+      \mid c_1 \mid^2 = 1
+    $$
+  - 按照上面我们对相位的规定, 应取
+    $$ c_1 = 1 $$,
+    因而
+  - $$ \mid φ_1 \rangle = a^{\dagger} \mid φ_0 \rangle $$
+
 
 - $$ H $$
   既然是厄米算符, 那么, 与不同的

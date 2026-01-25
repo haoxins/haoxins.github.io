@@ -4,14 +4,15 @@ description: 少年不识愁滋味, 爱上层楼, 爱上层楼, 为赋新词强�
 date: 2023-07-17
 ---
 
+- [全职猎人](https://movie.douban.com/subject/6748086/)
+  - 缠, 绝, 练, 发
+
 - [寻秦记](https://movie.douban.com/subject/26389539/)
 
 - [阿凡达: 火与烬](https://movie.douban.com/subject/5348089/)
   - 好些年没有提前预约购票了~ 也好些年没看 iMax 了~
 
 - [疯狂动物城 2](https://movie.douban.com/subject/26817136/)
-
-- [全职猎人](https://movie.douban.com/subject/6748086/)
 
 - [灵笼 第二季](https://movie.douban.com/subject/36467256/)
   - 精彩!

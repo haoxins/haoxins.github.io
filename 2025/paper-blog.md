@@ -59,6 +59,24 @@ of novel reasoning capabilities in LLMs.
 
 #### DeepSeek-R1-Zero
 
+```
+Template for DeepSeek-R1-Zero.
+prompt will be replaced with the specific
+reasoning question during training.
+
+A conversation between User and Assistant.
+The user asks a question, and the Assistant solves it.
+The assistant first thinks about the reasoning process
+in the mind and then provides the user with the answer.
+The reasoning process and answer are enclosed within
+<think> ... </think> and <answer> ... </answer> tags,
+respectively, i.e.,
+<think> reasoning process here </think>
+<answer> answer here </answer>.
+User: prompt.
+Assistant:
+```
+
 ### DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models
 
 - [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)
