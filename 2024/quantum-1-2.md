@@ -972,7 +972,8 @@ date: 2022-10-31
       \end{align}
     $$
   - 在这里, 我们应用了式
-    $$ [a, a^{\dagger}] = 1 $$. 由于
+    $$ [a, a^{\dagger}] = 1 $$.
+    由于
     $$ \mid φ_0 \rangle $$
     是
     $$ N = a^{\dagger} a $$
@@ -986,6 +987,39 @@ date: 2022-10-31
     因而
   - $$ \mid φ_1 \rangle = a^{\dagger} \mid φ_0 \rangle $$
 
+- 这种做法很容易推广. 如果我们知道了归一化的
+  $$ \mid φ_{n - 1} \rangle $$,
+  那么, 已归一化的矢量
+  $$ \mid φ_n \rangle $$
+  就可以写作:
+  - $$
+      \mid φ_n \rangle =
+      c_n a^{\dagger}
+      \mid φ_{n - 1} \rangle
+    $$
+  - 由于
+    $$
+      \begin{align}
+        \langle φ_n \mid φ_n \rangle
+        & = \mid φ_n \mid^2
+        \langle φ_{n - 1} \mid
+        a a^{\dagger}
+        \mid φ_{n - 1} \rangle \\
+        & = n \mid c_n \mid^2 = 1 \\
+      \end{align}
+    $$
+  - 按上面我们对相位的规定, 应该取
+    $$ c_n = \frac{1}{\sqrt{n}} $$
+  - 相继地选择相位, 我们便可从
+    $$ \mid φ_0 \rangle $$
+    出发得到所有的
+    $$ \mid φ_n \rangle $$:
+  - $$
+      \mid φ_n \rangle =
+      \frac{1}{\sqrt{n!}}
+      (a^{\dagger})^n
+      \mid φ_0 \rangle
+    $$
 
 - $$ H $$
   既然是厄米算符, 那么, 与不同的
@@ -1005,6 +1039,82 @@ date: 2022-10-31
     空间中的一个基, 这一点由封闭性关系式
     $$ \sum_{n} \mid φ_n \rangle \langle φ_n \mid = 1 $$
     来表示.
+
+- 观察算符
+  $$ X $$
+  和
+  $$ P $$
+  都是算符
+  $$ a $$
+  和
+  $$ a^{\dagger} $$
+  的线性组合. 因而所有的物理量都可以表为
+  $$ a $$
+  和
+  $$ a^{\dagger} $$
+  的函数. 但是我们知道 (关于这一点, 下面还要详细说明),
+  $$ a $$
+  与
+  $$ a^{\dagger} $$
+  对于矢量
+  $$ \mid φ_n \rangle $$
+  的作用是特别简单的.
+  - 因而, 在大多数情况下,
+    为了计算各个可观察量的矩阵元和平均值,
+    我们总是宁肯使用
+    $$ \{ \mid φ_n \rangle \} $$
+    这种表象.
+- 沿用先前关于相位的规定, 算符
+  $$ a $$
+  与
+  $$ a^{\dagger} $$
+  对于表象
+  $$ \{ \mid φ_n \rangle \} $$
+  中各基矢量的作用应由下列公式表示:
+  - $$
+      a^{\dagger} \mid φ_n \rangle =
+      \sqrt{n + 1} \mid φ_{n + 1} \rangle
+    $$
+  - $$
+      a \mid φ_n \rangle =
+      \sqrt{n} \mid φ_{n - 1} \rangle
+    $$
+  - 上式的伴式为:
+  - $$
+      \langle φ_n \mid a =
+      \sqrt{n + 1} \langle φ_{n + 1} \mid
+    $$
+  - $$
+      \langle φ_n \mid a^{\dagger} =
+      \sqrt{n} \langle φ_{n - 1} \mid
+    $$
+  - 要注意, 算符
+    $$ a $$
+    的作用是使
+    $$ n $$
+    减小
+    $$ 1 $$
+    还是使
+    $$ n $$
+    增加
+    $$ 1 $$,
+    这要看它是作用在右矢
+    $$ \mid φ_n \rangle $$
+    上还是作用在左矢
+    $$ \langle φ_n \mid $$
+    上; 与此类似, 算符
+    $$ a^{\dagger} $$
+    使
+    $$ n $$
+    增加
+    $$ 1 $$
+    或减少
+    $$ 1 $$,
+    这要看它是作用在右矢
+    $$ \mid φ_n \rangle $$
+    上还是作用在左矢
+    $$ \langle φ_n \mid $$
+    上.
 
 ### 与定态相联系的波函数
 
