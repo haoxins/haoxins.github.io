@@ -1138,9 +1138,11 @@ date: 2022-10-31
         P \mid φ_n \rangle
         & = \sqrt{m \hbar ω}
             \frac{i}{\sqrt{2}}
-        \\
+            (a^{\dagger} - a)
+            \mid φ_n \rangle \\
         & = \sqrt{\frac{m \hbar ω}{2}}
-        \\
+            [ \sqrt{n + 1} \mid φ_{n + 1} \rangle -
+            \sqrt{n} \mid φ_{n - 1} \rangle ]\\
       \end{align}
     $$
   - 从而, 算符
@@ -1180,9 +1182,9 @@ date: 2022-10-31
   的矩阵确实互为厄米共轭矩阵, 因为它具有下列形式:
   - $$
       a = \begin{pmatrix}
-        0 & \sqrt{1} & 0 & 0 \\
-        0 & 0 & \sqrt{2} & 0 \\
-        0 & 0 & 0 & \sqrt{3} \\
+        0 & \sqrt{1} & 0 & 0 & \cdots \\
+        0 & 0 & \sqrt{2} & 0 & \cdots \\
+        0 & 0 & 0 & \sqrt{3} & \cdots \\
         \vdots & \vdots & \vdots & \vdots \\
         0 & 0 & 0 & 0 & 0 & \sqrt{n} & \cdots \\
         \vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
@@ -1190,10 +1192,10 @@ date: 2022-10-31
     $$
   - $$
       a^{\dagger} = \begin{pmatrix}
-        0 & 0 & 0 \\
-        \sqrt{1} & 0 & 0 \\
-        0 & \sqrt{2} & 0 \\
-        0 & 0 & \sqrt{3} \\
+        0 & 0 & 0 & \cdots \\
+        \sqrt{1} & 0 & 0 & \cdots \\
+        0 & \sqrt{2} & 0 & \cdots \\
+        0 & 0 & \sqrt{3} & \cdots \\
         \vdots & \vdots & \vdots \\
         0 & 0 & 0 & 0 & \sqrt{n + 1} & 0 & \cdots \\
         \vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
