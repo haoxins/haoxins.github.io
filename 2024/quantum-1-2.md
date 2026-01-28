@@ -1116,6 +1116,103 @@ date: 2022-10-31
     $$ \langle φ_n \mid $$
     上.
 
+- 从上式出发, 利用先前的公式, 我们立即可以求得右矢
+  $$ X \mid φ_n \rangle $$
+  及右矢
+  $$ P \mid φ_n \rangle $$
+  的表示式:
+  - $$
+      \begin{align}
+        X \mid φ_n \rangle
+        & = \sqrt{\frac{\hbar}{mω}}
+            \frac{1}{\sqrt{2}}
+            (a^{\dagger} + a)
+            \mid φ_n \rangle \\
+        & = \sqrt{\frac{\hbar}{2mω}}
+            [ \sqrt{n + 1} \mid φ_{n + 1} \rangle +
+            \sqrt{n} \mid φ_{n - 1} \rangle ] \\
+      \end{align}
+    $$
+  - $$
+      \begin{align}
+        P \mid φ_n \rangle
+        & = \sqrt{m \hbar ω}
+            \frac{i}{\sqrt{2}}
+        \\
+        & = \sqrt{\frac{m \hbar ω}{2}}
+        \\
+      \end{align}
+    $$
+  - 从而, 算符
+    $$ a $$,
+    $$ a^{\dagger} $$,
+    $$ X $$
+    及
+    $$ P $$
+    在表象
+    $$ \{ \mid φ_n \rangle \} $$
+    中的矩阵元分别为:
+  - $$
+      \langle φ_{n'} \mid a \mid φ_n \rangle =
+      \sqrt{n} δ_{n', n - 1}
+    $$
+  - $$
+      \langle φ_{n'} \mid a^{\dagger} \mid φ_n \rangle =
+      \sqrt{n + 1} δ_{n', n + 1}
+    $$
+  - $$
+      \langle φ_{n'} \mid X \mid φ_n \rangle =
+      \sqrt{\frac{\hbar}{2mω}}
+      [ \sqrt{n + 1} δ_{n', n + 1} +
+      \sqrt{n} δ_{n', n - 1} ]
+    $$
+  - $$
+      \langle φ_{n'} \mid P \mid φ_n \rangle =
+      i \sqrt{\frac{m \hbar ω}{2}}
+      [ \sqrt{n + 1} δ_{n', n + 1} -
+      \sqrt{n} δ_{n', n - 1} ]
+    $$
+
+- 表示
+  $$ a $$
+  与
+  $$ a^{\dagger} $$
+  的矩阵确实互为厄米共轭矩阵, 因为它具有下列形式:
+  - $$
+      a = \begin{pmatrix}
+        0 & \sqrt{1} & 0 & 0 \\
+        0 & 0 & \sqrt{2} & 0 \\
+        0 & 0 & 0 & \sqrt{3} \\
+        \vdots & \vdots & \vdots & \vdots \\
+        0 & 0 & 0 & 0 & 0 & \sqrt{n} & \cdots \\
+        \vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
+      \end{pmatrix}
+    $$
+  - $$
+      a^{\dagger} = \begin{pmatrix}
+        0 & 0 & 0 \\
+        \sqrt{1} & 0 & 0 \\
+        0 & \sqrt{2} & 0 \\
+        0 & 0 & \sqrt{3} \\
+        \vdots & \vdots & \vdots \\
+        0 & 0 & 0 & 0 & \sqrt{n + 1} & 0 & \cdots \\
+        \vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
+      \end{pmatrix}
+    $$
+  - 至于表示
+    $$ X $$
+    与
+    $$ P $$
+    的矩阵则都是厄米矩阵; 表示
+    $$ X $$
+    的矩阵, 除一个倍乘因子以外, 就是上列两个矩阵之和; 表示
+    $$ P $$
+    的矩阵则正比于上列两个矩阵之差, 上文
+    $$ P \mid φ_n \rangle $$
+    右侧中的因子
+    $$ i $$
+    保证了它的厄米性.
+
 ### 与定态相联系的波函数
 
 ## 讨论
