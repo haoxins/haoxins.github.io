@@ -913,7 +913,9 @@ date: 2022-10-31
   $$ n = 0 $$
   相联系的矢量
   $$ \mid φ_0 \rangle $$
-  是空间中的矢量, 它满足关系
+  是
+  $$ \mathcal{E}_x $$
+  空间中的矢量, 它满足关系
   - $$ a \mid φ_0 \rangle = 0 $$
   - 除倍乘因子以外, 这个矢量是确定的, 我们假设
     $$ \mid φ_0 \rangle $$
@@ -1142,7 +1144,7 @@ date: 2022-10-31
             \mid φ_n \rangle \\
         & = \sqrt{\frac{m \hbar ω}{2}}
             [ \sqrt{n + 1} \mid φ_{n + 1} \rangle -
-            \sqrt{n} \mid φ_{n - 1} \rangle ]\\
+            \sqrt{n} \mid φ_{n - 1} \rangle ] \\
       \end{align}
     $$
   - 从而, 算符

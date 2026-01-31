@@ -129,6 +129,7 @@ date: 2022-02-11
 而这里, 一个函数变成了更大的空间中的点.
 ```
 
+- [Lp 空间](https://en.wikipedia.org/wiki/Lp_space)
 - [赫尔德不等式](https://en.wikipedia.org/wiki/Hölder's_inequality)
   - [共轭指数](https://en.wikipedia.org/wiki/Conjugate_index)
 - [柯西-施瓦茨不等式](https://en.wikipedia.org/wiki/Cauchy-Schwarz_inequality)
@@ -151,9 +152,9 @@ date: 2022-02-11
   的`内部`, 可以记为
   $$ M^0 $$
   或
-  $$ Int(M) $$,
+  $$ \mbox{Int} (M) $$,
   没有公认的记法.
-  - $$ Int(M) $$
+  - $$ \mbox{Int} (M) $$
     是开集, 并且是包含在
     $$ M $$
     中的最大开集.
