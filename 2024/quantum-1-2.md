@@ -962,7 +962,7 @@ date: 2022-10-31
     的模的平方为:
   - $$
       \begin{align}
-        \langle φ_1 \mid φ_1 \rangle =
+        \langle φ_1 \mid φ_1 \rangle
           & = \mid c_1 \mid^2
               \langle φ_0 \mid
               a a^{\dagger}

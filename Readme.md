@@ -37,7 +37,7 @@
 - [量子力学 科恩 第一卷 (下)](2024/quantum-1-2.md)
 - [量子力学 科恩 第一卷 (补充材料 上)](2024/quantum-1-3.md)
 - [量子力学 科恩 第一卷 (补充材料 下)](2024/quantum-1-4.md)
-- [量子计算与量子信息 - 量子](2024/quantum-computation-1.md)
+- [量子计算与量子信息 - 基础](2024/quantum-computation-1.md)
 - [量子计算与量子信息 - 计算](2024/quantum-computation-2.md)
 - [量子计算与量子信息 - 信息](2024/quantum-computation-3.md)
 - [量子力学概论 格里菲斯](2024/quantum-introduction.md)

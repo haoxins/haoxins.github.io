@@ -156,6 +156,15 @@ let closure = async || {
   - DDPM (2020)
     (D: denoising, D: diffusion, P: probabilistic M: models);
 
+- [But what is quantum computing? (Grover's Algorithm)](https://www.youtube.com/watch?v=RQWpF2Gb-gU)
+  - 关于量子计算: 内容是极简的, 避开了量子的基本理论, 只做简单的数学表述.
+  - 关于 Grover's Algorithm, 其实主要是形象比喻~
+  - BTW, 依稀记得微信的信息流看到过一篇文章标题:
+    为什么 3blue1brown 给了你在学习数学的错觉?
+    (大概是类似的标题, 但是我没点击阅读那篇文章~)
+  - [Where my explanation of Grover's algorithm failed](https://www.youtube.com/watch?v=Dlsa9EBKDGI)
+  - 补充视频稍微细致了一点~
+
 - [Terence Tao on how we measure the cosmos (part 1)](https://www.youtube.com/watch?v=YdOXS_9_P4U)
   - Part 1, 访谈的形式不错, 但是内容一般~
     亮点部分是开普勒如何根据大量数据得出开普勒定律!
