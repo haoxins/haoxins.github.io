@@ -43,6 +43,7 @@ date: 2023-12-21
 
 ### 一些好的微信文章
 
+- [物理学家所理解的熵: 从热力学, 统计物理, 到生成模型](https://mp.weixin.qq.com/s/DS-vV8Szd3Gb9XuuekB8zw)
 - [当物理学家一层一层一层地拨开奇点, 时空的尽头有什么?](https://mp.weixin.qq.com/s/p_x8y5TGd53H2lveESRi1Q)
 - ["积分"变身的解密"简史"](https://mp.weixin.qq.com/s/4dAKsydUip2qUda90Q_N9Q)
 - [矩阵力学与波力学的等价性问题 (上)](https://mp.weixin.qq.com/s/bblSmTzdYmyKr_0C022isQ)

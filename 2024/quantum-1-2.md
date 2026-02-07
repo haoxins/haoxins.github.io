@@ -1000,10 +1000,10 @@ date: 2022-10-31
       \mid φ_{n - 1} \rangle
     $$
   - 由于
-    $$
+  - $$
       \begin{align}
         \langle φ_n \mid φ_n \rangle
-        & = \mid φ_n \mid^2
+        & = \mid c_n \mid^2
         \langle φ_{n - 1} \mid
         a a^{\dagger}
         \mid φ_{n - 1} \rangle \\
@@ -1142,7 +1142,7 @@ date: 2022-10-31
             \frac{i}{\sqrt{2}}
             (a^{\dagger} - a)
             \mid φ_n \rangle \\
-        & = \sqrt{\frac{m \hbar ω}{2}}
+        & = i \sqrt{\frac{m \hbar ω}{2}}
             [ \sqrt{n + 1} \mid φ_{n + 1} \rangle -
             \sqrt{n} \mid φ_{n - 1} \rangle ] \\
       \end{align}
@@ -1183,7 +1183,7 @@ date: 2022-10-31
   $$ a^{\dagger} $$
   的矩阵确实互为厄米共轭矩阵, 因为它具有下列形式:
   - $$
-      a = \begin{pmatrix}
+      (a) = \begin{pmatrix}
         0 & \sqrt{1} & 0 & 0 & \cdots \\
         0 & 0 & \sqrt{2} & 0 & \cdots \\
         0 & 0 & 0 & \sqrt{3} & \cdots \\
@@ -1193,7 +1193,7 @@ date: 2022-10-31
       \end{pmatrix}
     $$
   - $$
-      a^{\dagger} = \begin{pmatrix}
+      (a^{\dagger}) = \begin{pmatrix}
         0 & 0 & 0 & \cdots \\
         \sqrt{1} & 0 & 0 & \cdots \\
         0 & \sqrt{2} & 0 & \cdots \\
@@ -1217,13 +1217,35 @@ date: 2022-10-31
     $$ i $$
     保证了它的厄米性.
 
-### 与定态相联系的波函数
-
 ## 讨论
+
+> 再一次, 可以在谐振子的背景下计算出: 位置, 动量的不确定关系式~
+
+- 定态
+  $$ \mid φ_n \rangle $$
+  没有任何经典类比; 这是因为, 定态的能量并不为零, 而平均值
+  $$ \langle X \rangle $$
+  和
+  $$ \langle P \rangle $$
+  却都等于零.
 
 ### 基态的性质
 
-### 平均值随时间变化
+- 在经典力学中, 当谐振子静止在坐标原点时,
+  便可求得其最低能量 (动量, 动能及势能都等于零).
+  在量子力学中, 情况完全不是这样: 最低能态是
+  $$ \mid φ_0 \rangle $$,
+  __对应的能量并不等于零__,
+  与此相联系的波函数具有一定的`空间展延范围`,
+  这个范围可以用方均根偏差
+  $$ Δ X = \sqrt{\hbar / 2mω} $$
+  作标志.
+
+```
+我们认为量子力学结果和经典结果之间的这种本质差异的根源在于不确定度关系式,
+因为不确定度关系式不容许动能与势能同时减小;
+基态对应于这两种能量的总和达到最小可能值的折中情况.
+```
 
 # 量子力学中角动量的普遍性质
 

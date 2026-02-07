@@ -53,7 +53,6 @@ Reidemeister 移动实现相互转化.
 
 ## 大模型
 
-- [图解大模型](https://book.douban.com/subject/37339504/)
 - [从零构建大模型](https://book.douban.com/subject/37305124/)
 
 ## 数学巨人传
@@ -273,5 +272,8 @@ Reidemeister 移动实现相互转化.
 
 ## 不值一提
 
+- [图解大模型](https://book.douban.com/subject/37339504/)
+  - 看这书, 还不如和 AI 对话~
+
 - [大模型技术 30 讲](https://book.douban.com/subject/37258887/)
-  - 本书一般, 信息量较低; 像 AI 写的, 还是不带 thinking 的 AI~
+  - 本书没啥信息量; 像 AI 写的, 还是不带 thinking 的 AI~
