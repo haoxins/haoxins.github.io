@@ -4,6 +4,7 @@ description: 小径红稀, 芳郊绿遍. 高台树色阴阴见. 春风不解禁�
 date: 2024-11-17
 ---
 
+## 量子多体中的呐喊与彷徨
 
 
 - [深度学习入门 4](https://book.douban.com/subject/36991430/)
@@ -51,9 +52,15 @@ Reidemeister 移动实现相互转化.
 
 ### 点集拓扑 ABC
 
+## 深度学习
+
 ## 大模型
 
 - [从零构建大模型](https://book.douban.com/subject/37305124/)
+
+- [实战 AI 大模型](https://book.douban.com/subject/37937745/)
+  - 比起`图解大模型`和`大模型技术 30 讲`这两本滥竽充数的书籍,
+    本书至少让人感觉到了写书应该有的认真态度~
 
 ## 数学巨人传
 
@@ -272,8 +279,8 @@ Reidemeister 移动实现相互转化.
 
 ## 不值一提
 
-- [图解大模型](https://book.douban.com/subject/37339504/)
-  - 看这书, 还不如和 AI 对话~
-
 - [大模型技术 30 讲](https://book.douban.com/subject/37258887/)
-  - 本书没啥信息量; 像 AI 写的, 还是不带 thinking 的 AI~
+  - 本书没啥信息量; 像是 AI 写的, 还是不带 thinking 的 AI~
+
+- [图解大模型](https://book.douban.com/subject/37339504/)
+  - 滥竽充数
