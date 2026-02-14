@@ -1,4 +1,3 @@
-## Xin Hao's Blog
 
 ### 2025
 

@@ -6,6 +6,18 @@ date: 2025-02-02
 
 ## 2026
 
+- [Go 1.26 is released](https://go.dev/doc/go1.26)
+  - 其实, 最受益的改进是: `go fix`
+
+```go
+x := int64(300)
+ptr := &x
+
+// Can be simplified to:
+
+ptr := new(int64(300))
+```
+
 ## 2025
 
 ### Posts, Events
