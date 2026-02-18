@@ -6,6 +6,9 @@ date: 2025-02-02
 
 ## 2026
 
+
+#### Go 1.26 is released
+
 - [Go 1.26 is released](https://go.dev/doc/go1.26)
   - 其实, 最受益的改进是: `go fix`
 
@@ -28,12 +31,15 @@ ptr := new(int64(300))
 
 - 做个短暂的观察, Go vs Java (Kotlin),
   选择一些新项目, 同时有 Go and Java (Kotlin) 的版本
+  - __ADK__
   - [Agent Development Kit for Go](https://github.com/google/adk-go)
   - [Agent Development Kit for TypeScript](https://github.com/google/adk-js)
   - [Agent Development Kit for Java](https://github.com/google/adk-java)
+  - __MCP__
   - [MCP Go SDK](https://github.com/modelcontextprotocol/go-sdk)
   - [MCP Java SDK](https://github.com/modelcontextprotocol/java-sdk)
   - [MCP Kotlin SDK](https://github.com/modelcontextprotocol/kotlin-sdk)
+  - PS: 貌似最终都在不温不火中慢慢消亡~
 
 - [From BI to AI: A Modern Lakehouse Stack with Lance and Iceberg](https://lancedb.com/blog/from-bi-to-ai-lance-and-iceberg/)
 
