@@ -177,6 +177,8 @@ let closure = async || {
     (C: contrastive, L: language, I: image, P: pre-training);
   - DDPM (2020)
     (D: denoising, D: diffusion, P: probabilistic M: models);
+  - diffusion: flow-based models; pixel, point; image, points;
+    add noise means points random walk.
 
 - [But what is quantum computing? (Grover's Algorithm)](https://www.youtube.com/watch?v=RQWpF2Gb-gU)
   - 关于量子计算: 内容是极简的, 避开了量子的基本理论, 只做简单的数学表述.
