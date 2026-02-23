@@ -171,6 +171,30 @@ let closure = async || {
 
 ### 视频
 
+- [But what is a Laplace Transform?](https://www.youtube.com/watch?v=j0wJBEZdwLs)
+  - 可视化只是调味剂, 形式化理解才是内核~
+    所以, 止步于可视化是数学学习的幻觉,
+    但是可视化可以起到关键的作用,
+    无论是初学还是更进一步的思考.
+    好比调味剂也是很关键的!
+  - Why Exp (复数域)? 微分不变性 (大体上);
+  - $$ t \to f(t) $$
+    Laplace
+    $$ s \to F(s) $$,
+    $$ s $$
+    是复数,
+    $$
+      F(s) = \int_{0}^{\infty}
+      f(t) e^{-st} dt
+    $$;
+  - 从最简单的函数开始 (常值函数), 逐步可视化;
+    最终的结尾比较仓促, 受限于视频时长吧~
+  - [Why Laplace transforms are so useful](https://www.youtube.com/watch?v=FE-hM1kRK4Y)
+  - 这个视频其实做成图文更好; 不过内容还是不错的~
+  - 和预期不一样的地方在于: 以为会从物理视角多列举几个示例.
+  - 结尾预告下一个视频包含: Laplace vs Fourier;
+    等了一阵子也没看见, 算了, 到此为止~
+
 - [But how do AI videos actually work? | Guest video](https://www.youtube.com/watch?v=iv-5mZ_9CPY)
   - 动画很棒~
   - CLIP (2021)
