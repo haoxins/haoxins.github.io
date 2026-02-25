@@ -331,6 +331,8 @@ https://github.com/apache/hudi-rs
 
 > 后续就算更新也不会再阅读了~ 差评!
 
+> Update: 2025-07, 又开始更新了~
+
 ---
 
 > Move 生态, 半死不活~
