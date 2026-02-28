@@ -4,7 +4,7 @@
 ### 2025
 
 - [泛函分析导论及应用 - (上)](2025/math-functional-analysis-1.md)
-- [数学及其历史 第三版 & 数学史 第三版](2025/math-history.md)
+- [数学及其历史 & 数学史](2025/math-history.md)
 - [阅读 Paper & Blog](2025/paper-blog.md)
 - [再读 通向实在之路 彭罗斯 (上)](2025/physics-road-to-reality-1.md)
 - [再读 通向实在之路 彭罗斯 (中)](2025/physics-road-to-reality-2.md)

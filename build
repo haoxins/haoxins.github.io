@@ -68,7 +68,7 @@ def gen_index_contents(sub_path):
     article_dir = path.join(root_dir, sub_path)
     for _, _, filenames in walk(article_dir):
         for filename in filenames:
-            if filename.startswith("quantum-0"):
+            if not filename.endswith(".md"):
                 continue
             p = path.join(article_dir, filename)
             file_infos.append({"path": p, "name": filename})
@@ -83,10 +83,7 @@ def gen_index_contents(sub_path):
             index_contents.append(content)
 
 
-year = "2026"
-
-
-def write_index_file():
+def write_index_file(year: str = "2026"):
     index_contents.append(f"### {year}\n")
     gen_index_contents(year)
     index_contents.append("")
@@ -94,4 +91,4 @@ def write_index_file():
         f.write("\n".join(index_contents))
 
 
-# write_index_file()
+# write_index_file("2026")
