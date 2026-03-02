@@ -1264,16 +1264,16 @@ w 初始方向的选择会影响它绕闭合回路的向量和乐性.)
     是沿测地线的内蕴导数, 回顾
     $$ v $$
     满足测地线方程
-    $$ nabla_v v = 0 $$,
+    $$ \nabla_v v = 0 $$,
     所以我们得到
   - $$
       \begin{align}
-        nabla_v nabla_v ξ
-        & = nabla_v nabla_ξ v \\
-        & = [nabla_v, nabla_ξ] v +
-            nabla_ξ (nabla_v v) \\
+        \nabla_v \nabla_v ξ
+        & = \nabla_v \nabla_ξ v \\
+        & = [\nabla_v, \nabla_ξ] v +
+            \nabla_ξ (\nabla_v v) \\
         & = \mathcal{R} (v, ξ) v +
-            nabla_ξ (0) \\
+            \nabla_ξ (0) \\
       \end{align}
     $$.
 
