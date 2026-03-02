@@ -84,7 +84,7 @@ def gen_index_contents(sub_path):
 
 
 def write_index_file(year: str = "2026"):
-    index_contents.append(f"### {year}\n")
+    index_contents.append(f"\n### {year}\n")
     gen_index_contents(year)
     index_contents.append("")
     with open(path.join(root_dir, "index.md"), "a") as f:
