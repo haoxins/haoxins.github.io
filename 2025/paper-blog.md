@@ -67,6 +67,21 @@ User: prompt.
 Assistant:
 ```
 
+```
+For DeepSeek-R1-Zero: our rule-based reward system
+mainly consists of two types of rewards:
+accuracy rewards and format rewards.
+```
+
+```
+In the initial stage, we collect thousands of
+cold-start data that exhibits a conversational,
+human-aligned thinking process.
+RL training is then applied to improve the model
+performance with the conversational thinking
+process and language consistency.
+```
+
 ### DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models
 
 - [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://arxiv.org/abs/2402.03300)
