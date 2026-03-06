@@ -9,7 +9,56 @@ date: 2024-01-28
 - [Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention](https://arxiv.org/abs/2502.11089)
 
 ```
+Our approach advances sparse attention
+design with two key innovations:
+(1) We achieve substantial speedups through
+arithmetic intensity-balanced algorithm design,
+with implementation optimizations for modern hardware.
+(2) We enable end-to-end training, reducing pretraining
+computation without sacrificing model performance.
 ```
+
+```
+A natural approach to efficient long-context modeling
+is to take advantage of the inherent sparsity of
+softmax attention, where selectively computing
+critical query-key pairs can significantly reduce
+computational overhead while preserving performance.
+
+Recent advances demonstrate this potential
+through diverse strategies:
+KV-cache eviction methods,
+blockwise KV-cache selection methods,
+and sampling, clustering or
+hashing-based selection methods.
+```
+
+```
+To achieve more effective and efficient sparse attention,
+we present NSA, a Natively trainable Sparse Attention
+architecture that integrates hierarchical token modeling.
+
+NSA reduces per-query computation by organizing
+keys and values into temporal blocks and processing them
+through three attention paths:
+compressed coarse-grained tokens,
+selectively retained fine-grained tokens, and
+sliding windows for local contextual information.
+```
+
+```
+NSA introduces two core innovations corresponding
+to the key requirements above:
+(1) Hardware-aligned system:
+Optimize blockwise sparse attention for
+Tensor Core utilization and memory access,
+ensuring balanced arithmetic intensity.
+(2) Training-aware design:
+Enable stable end-to-end training through
+efficient algorithms and backward operators.
+```
+
+> 1. compressed, 2. selected, 3. aligned
 
 ### DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
 
@@ -80,6 +129,35 @@ human-aligned thinking process.
 RL training is then applied to improve the model
 performance with the conversational thinking
 process and language consistency.
+```
+
+```
+Even if DeepSeek-R1 achieves frontier results on
+reasoning benchmarks, it still faces several
+capability limitations, as outlined below:
+1. Structure Output and Tool Use;
+2. Token efficiency;
+3. Language Mixing;
+4. Prompting Engineering;
+5. Software Engineering Tasks.
+
+Beyond specific capability limitations,
+the pure RL methodology itself also
+presents inherent challenges:
+1. Reward Hacking.
+
+In this work, for tasks that cannot obtain a reliable signal,
+DeepSeek-R1 uses human annotation to create supervised data,
+and only conduct RL for hundreds of steps.
+We hope in the future, a robust reward model
+can be obtained to address such issues.
+```
+
+```
+With the advent of pure RL methods like DeepSeek-R1,
+the future holds immense potential for solving any task
+that can be effectively evaluated by a verifier,
+regardless of its complexity for humans.
 ```
 
 ### DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models
