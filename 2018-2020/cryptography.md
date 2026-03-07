@@ -45,7 +45,27 @@ date: 2019-06-30
     * Then the following `G: K -> {0, 1}nt` is a secure PRG:
     * `G(k) = F(k, 0) || F(k, 1) || ⋯ || F(k, t-1)`
 
-* [Why do stream ciphers use a nonce ?](https://crypto.stackexchange.com/questions/30818/why-do-stream-ciphers-use-a-nonce)
+* Why do stream ciphers use a nonce?
+
+```
+By the modern definition of a cipher, it must be possible
+to encipher several messages with the same secret key.
+That's also a practical necessity, due to the difficulty
+of securely establishing a shared secret key.
+
+That issue is solved with the nonce, which is not secret
+and can be transferred as part of the ciphertext
+(typically, at the beginning).
+Without a nonce, or if the nonce repeats, the keystream
+would repeat, and that would allow breaking the cipher,
+e.g., with a single known plaintext.
+
+Because the nonce is not secret, communicating the nonce
+is simpler than securely communicating the key.
+Altering the nonce would alter the deciphered message,
+but a generic stream cipher is not supposed to allow
+detection of alterations anyway.
+```
 
 ### Block ciphers
 
