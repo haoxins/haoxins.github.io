@@ -60,6 +60,28 @@ efficient algorithms and backward operators.
 
 > 1. compressed, 2. selected, 3. aligned
 
+```
+While some sparse attention methods reduce computation,
+their scattered memory access pattern conflicts with
+efficient memory access design from advanced architectures.
+
+These limitations arise because many existing sparse
+attention methods focus on KV-cache reduction or
+theoretical computation reduction, but struggle to
+achieve significant latency reduction in
+advanced frameworks or backends.
+This motivates us to develop algorithms that combine
+both advanced architectural and hardware-efficient
+implementation to fully leverage sparsity for
+improving model efficiency.
+```
+
+```
+We propose NSA, a natively sparse attention framework
+that addresses both computational efficiency
+and training requirements.
+```
+
 ### DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
 
 - [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
