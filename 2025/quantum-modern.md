@@ -948,8 +948,8 @@ MDR 观点的解释提出异议, 结果也不唯一.
         E(\hat{Ω}_A \otimes \hat{Ω}_B) ≡ tr_{AB}
         (ρ_{AB} \hat{Ω}_A \otimes \hat{Ω}_B) \\
         E(\hat{Ω}_A \otimes \hat{Ω}_B | C) =
-        E(\hat{Ω}_A \otimes | C) \cdot
-        E(\otimes \hat{Ω}_B | C)
+        E(\hat{Ω}_A | C) \cdot
+        E(\hat{Ω}_B | C)
       \end{cases}
     $$
   - 简言之, __条件概率的独立性意味着关联测量的空间定域性__
