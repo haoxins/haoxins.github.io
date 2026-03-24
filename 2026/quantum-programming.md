@@ -7,7 +7,3 @@ date: 2025-02-05
 ### 参考
 
 - [Apache Mahout](https://github.com/apache/mahout)
-- [hugr](https://github.com/Quantinuum/hugr)
-  - The Hierarchical Unified Graph Representation (HUGR)
-    is the common representation of quantum circuits
-    and operations in the Quantinuum ecosystem.

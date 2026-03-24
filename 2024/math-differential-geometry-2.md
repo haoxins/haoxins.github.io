@@ -1543,10 +1543,13 @@ w 初始方向的选择会影响它绕闭合回路的向量和乐性.)
     $$
   - 于是
     $$
-      d s^2 = \mathbf{g} (\mathbf{ϵ}, \mathbf{ϵ}) =
-      \mathbf{g} (d x^i \mathbf{e}_i, d x^j \mathbf{e}_j) =
-      \mathbf{g} (\mathbf{e}_i, \mathbf{e}_j) d x^i d x^j =
-      g_{ij} d x^i d x^j
+      \begin{align}
+        d s^2
+        & = \mathbf{g} (\mathbf{ϵ}, \mathbf{ϵ}) \\
+        & = \mathbf{g} (d x^i \mathbf{e}_i, d x^j \mathbf{e}_j) \\
+        & = \mathbf{g} (\mathbf{e}_i, \mathbf{e}_j) d x^i d x^j \\
+        & = g_{ij} d x^i d x^j
+      \end{align}
     $$.
   - 例如, 在闵可夫斯基时空中,
     $$ g_{00} = +1 $$
@@ -1607,14 +1610,16 @@ w 初始方向的选择会影响它绕闭合回路的向量和乐性.)
     $$ Π_3 ≡ Π(e_0, e_3) $$.
   - 因此
     $$
-      \mathcal{K}_{mean} =
-      \frac{
-        \mathcal{K} (Π_1) +
-        \mathcal{K} (Π_2) +
-        \mathcal{K} (Π_3)
-      }{3} =
-      \frac{1}{3} \mbox{Ricci} (e_0, e_0) =
-      \frac{1}{3} R_{00}
+      \begin{align}
+        \mathcal{K}_{mean}
+        & = \frac{
+          \mathcal{K} (Π_1) +
+          \mathcal{K} (Π_2) +
+          \mathcal{K} (Π_3)
+        }{3} \\
+        & = \frac{1}{3} \mbox{Ricci} (e_0, e_0) \\
+        & = \frac{1}{3} R_{00} \\
+      \end{align}
     $$.
   - 值得关注的是, 从几何角度来看,
     从牛顿的平方反比潮汐力发展到爱因斯坦的弯曲时空的过程是非常顺畅的!
@@ -1628,16 +1633,21 @@ w 初始方向的选择会影响它绕闭合回路的向量和乐性.)
     $$.
   - 更明确地,
     $$
-      R_{00} =
-      \mathcal{K} (Π_1) +
-      \mathcal{K} (Π_2) +
-      \mathcal{K} (Π_3) =
-      \mathcal{K}_{+} +
-      \mathcal{K}_{+} +
-      \mathcal{K}_{-} =
-      \frac{GM}{r^3} +
-      \frac{GM}{r^3} -
-      \frac{2GM}{r^3}
+      \begin{align}
+        R_{00}
+        & =
+          \mathcal{K} (Π_1) +
+          \mathcal{K} (Π_2) +
+          \mathcal{K} (Π_3) \\
+        & =
+          \mathcal{K}_{+} +
+          \mathcal{K}_{+} +
+          \mathcal{K}_{-} \\
+        & =
+          \frac{GM}{r^3} +
+          \frac{GM}{r^3} -
+          \frac{2GM}{r^3} \\
+      \end{align}
     $$,
   - 所以
     $$ R_{00} = 0 $$.

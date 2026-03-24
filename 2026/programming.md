@@ -6,6 +6,8 @@ date: 2026-02-25
 
 #### IBM completed its acquisition of Confluent
 
+> 2026 年 3 月, 官宣
+
 - 看来, 下面两个终于可以只留一个了
   - [IBM/sarama](https://github.com/IBM/sarama)
   - [confluentinc/confluent-kafka-go](https://github.com/confluentinc/confluent-kafka-go)
