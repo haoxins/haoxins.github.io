@@ -1542,7 +1542,7 @@ w 初始方向的选择会影响它绕闭合回路的向量和乐性.)
       \mathbf{g} (\mathbf{e}_j, \mathbf{e}_i) = g_{ji}
     $$
   - 于是
-    $$
+  - $$
       \begin{align}
         d s^2
         & = \mathbf{g} (\mathbf{ϵ}, \mathbf{ϵ}) \\
@@ -1609,7 +1609,7 @@ w 初始方向的选择会影响它绕闭合回路的向量和乐性.)
     $$ Π_2 ≡ Π(e_0, e_2) $$,
     $$ Π_3 ≡ Π(e_0, e_3) $$.
   - 因此
-    $$
+  - $$
       \begin{align}
         \mathcal{K}_{mean}
         & = \frac{
@@ -1632,19 +1632,16 @@ w 初始方向的选择会影响它绕闭合回路的向量和乐性.)
       δ \mathcal{V} = - \ddot{δ \mathcal{V}} = 0
     $$.
   - 更明确地,
-    $$
+  - $$
       \begin{align}
         R_{00}
-        & =
-          \mathcal{K} (Π_1) +
+        & = \mathcal{K} (Π_1) +
           \mathcal{K} (Π_2) +
           \mathcal{K} (Π_3) \\
-        & =
-          \mathcal{K}_{+} +
+        & = \mathcal{K}_{+} +
           \mathcal{K}_{+} +
           \mathcal{K}_{-} \\
-        & =
-          \frac{GM}{r^3} +
+        & = \frac{GM}{r^3} +
           \frac{GM}{r^3} -
           \frac{2GM}{r^3} \\
       \end{align}
