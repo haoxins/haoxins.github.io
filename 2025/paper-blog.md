@@ -82,6 +82,22 @@ that addresses both computational efficiency
 and training requirements.
 ```
 
+```
+Specifically for causal self-attention mechanism,
+during training and prefilling phases,
+batched matrix multiplications and attention
+computations exhibit high arithmetic intensity,
+making these stages compute-bound on modern accelerators.
+In contrast, auto-regressive decoding becomes memory-bandwidth
+constrained because it generates one token per forward
+pass while requiring loading the entire key-value cache,
+resulting in low arithmetic intensity.
+
+This leads to different optimization goals:
+reducing computation cost during training and prefilling,
+while reducing memory access during decoding.
+```
+
 ### DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
 
 - [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
