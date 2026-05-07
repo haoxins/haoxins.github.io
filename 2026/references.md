@@ -43,12 +43,14 @@ date: 2023-12-21
 
 ### 一些好的微信文章
 
+- [矢量, 张量以及微分几何](https://mp.weixin.qq.com/s/aBA5iVNiA8Yb6rT86JbRLg)
+- [现代微分几何学的发展](https://mp.weixin.qq.com/s/Jy1lX-jzoX2l-AoteZc6BA)
+- ["积分"变身的解密"简史"](https://mp.weixin.qq.com/s/4dAKsydUip2qUda90Q_N9Q)
+
 - [物理学家所理解的熵: 从热力学, 统计物理, 到生成模型](https://mp.weixin.qq.com/s/DS-vV8Szd3Gb9XuuekB8zw)
 - [当物理学家一层一层一层地拨开奇点, 时空的尽头有什么?](https://mp.weixin.qq.com/s/p_x8y5TGd53H2lveESRi1Q)
-- ["积分"变身的解密"简史"](https://mp.weixin.qq.com/s/4dAKsydUip2qUda90Q_N9Q)
 - [矩阵力学与波力学的等价性问题 (上)](https://mp.weixin.qq.com/s/bblSmTzdYmyKr_0C022isQ)
 - [矩阵力学与波力学的等价性问题 (下)](https://mp.weixin.qq.com/s/Ul_Em-YmQcVzDVWO2etP4g)
-- [现代微分几何学的发展](https://mp.weixin.qq.com/s/Jy1lX-jzoX2l-AoteZc6BA)
 - [在量子世界, 崂山道士的 "穿墙术" 能成真吗?](https://mp.weixin.qq.com/s/2Lkq3D9fX1KIoRQowjaayA)
   - 那个动画很好!
 - [自举思想在共形场论中的应用](https://mp.weixin.qq.com/s/08e3NaJIVJxmiBdtreA6IA)
