@@ -8,7 +8,7 @@ date: 2023-01-17
 
 ## 量子电路
 
-- [量子计数](https://en.wikipedia.org/wiki/Quantum_counting_algorithm)
+> [量子计数](https://en.wikipedia.org/wiki/Quantum_counting_algorithm)
 
 ### 单量子比特操作
 
