@@ -5,6 +5,16 @@ date: 2026-02-25
 ---
 
 
+#### Daft and Lance
+
+- [Daft](https://github.com/eventual-inc/daft)
+  - [Lance](https://github.com/lance-format/lance)
+  - [Ray](https://github.com/ray-project/ray)
+
+> 何时可以不再依赖 Ray?
+
+> 2026 年初, 开始使用 Databricks, 体验不好!
+
 #### 温州 苍南 168 黄金海岸线
 
 - 五一假期之后, 高铁到温州南站, 办好租车手续, 已经是下午两点多;
