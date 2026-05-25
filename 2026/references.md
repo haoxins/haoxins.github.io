@@ -47,7 +47,7 @@ date: 2023-12-21
 - [现代微分几何学的发展](https://mp.weixin.qq.com/s/Jy1lX-jzoX2l-AoteZc6BA)
 - ["积分"变身的解密"简史"](https://mp.weixin.qq.com/s/4dAKsydUip2qUda90Q_N9Q)
 
-- [什么是进动? 这样看才直观!](https://mp.weixin.qq.com/s/ssSQ8kmU1jBkqTA8wZ59rw)
+- [什么是进动? 这样看才直观!](https://mp.weixin.qq.com/s/4bZJtifwS7ew5x6zQzgadw)
   - 让转轴绕一个新的轴转动
 - [到底什么是赝矢量? 如何彻底理解角速度?](https://mp.weixin.qq.com/s/8M412961B5uQNGUCXR80dQ)
 
