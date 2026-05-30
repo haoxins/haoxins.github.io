@@ -98,6 +98,12 @@ reducing computation cost during training and prefilling,
 while reducing memory access during decoding.
 ```
 
+```
+By aggregating sequential blocks of keys or values into
+block-level representations, we obtain compressed keys and
+values that capture the information of the entire block.
+```
+
 ### DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
 
 - [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
