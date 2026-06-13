@@ -89,6 +89,12 @@ Reidemeister 移动实现相互转化.
 
 > GMM
 
+```
+EM 算法中的 EM 是 Expectation-Maximization 的缩写.
+EM 算法对拥有潜变量的模型重复交替应用 Expectation
+步骤和 Maximization 步骤, 并更新模型的参数.
+```
+
 ## 数学巨人传
 
 - [数学巨人传](https://book.douban.com/subject/37830709/)
