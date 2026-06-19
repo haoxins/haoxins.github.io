@@ -448,7 +448,7 @@ date: 2024-10-29
 ```
 
 > 参见
-  [可视化微分几何和形式 尼达姆](math-differential-geometry-2.md#2-形式)
+  [可视化微分几何和形式 尼达姆](math-differential-geometry-2.md)
 
 - __缩并__: 如果
   $$ a_i^k $$
@@ -552,7 +552,7 @@ date: 2024-10-29
 ```
 
 > 参见
-  [可视化微分几何和形式 尼达姆](math-differential-geometry-2.md#3-形式)
+  [可视化微分几何和形式 尼达姆](math-differential-geometry-2.md)
 
 - 三重对称线性形式的系数
   $$ a_{ikl} $$
