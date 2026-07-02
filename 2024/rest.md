@@ -7,6 +7,7 @@ date: 2023-07-17
 - [四渡](https://movie.douban.com/subject/37191746/)
 
 - [抓特务](https://movie.douban.com/subject/36812879/)
+  - 冲着演员去的, 导演退休吧.
 
 - [寒战 1994](https://movie.douban.com/subject/36857924/)
 

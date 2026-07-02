@@ -104,6 +104,20 @@ block-level representations, we obtain compressed keys and
 values that capture the information of the entire block.
 ```
 
+```
+Blockwise Selection.
+Our selection strategy processes key and value sequences
+in spacial continuous blocks, motivated by two key factors:
+hardware efficiency considerations and inherent
+distribution patterns of attention scores.
+
+Blockwise selection follows the inherent distribution
+patterns of attention scores. Prior works have shown
+that attention scores often exhibit spatial continuity,
+suggesting that neighboring keys tend to
+share similar importance levels.
+```
+
 ### DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
 
 - [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
