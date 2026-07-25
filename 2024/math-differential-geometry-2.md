@@ -3942,7 +3942,7 @@ p 形式的存在一般要求至少有 p 个维度. 我们也可以反过来思�
       \hat{n} δ \mathcal{A}
     $$.
   - 然后, 我们有
-    $$
+  - $$
       \begin{align}
         \oint_{Π(ϵ \mathbf{u}, ϵ \mathbf{v})} φ
         & =

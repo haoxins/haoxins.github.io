@@ -105,7 +105,7 @@ values that capture the information of the entire block.
 ```
 
 ```
-Blockwise Selection.
+2.1 Blockwise Selection.
 Our selection strategy processes key and value sequences
 in spacial continuous blocks, motivated by two key factors:
 hardware efficiency considerations and inherent
@@ -117,6 +117,22 @@ that attention scores often exhibit spatial continuity,
 suggesting that neighboring keys tend to
 share similar importance levels.
 ```
+
+```
+2.2 Importance Score Computation.
+2.3 Top-n Block Selection.
+```
+
+```
+We introduce a dedicated sliding window branch that
+explicitly handles local context, allowing other branches
+(compression and selection) to focus on learning their
+respective features without being shortcutted by local patterns.
+```
+
+> sliding window branch handles local context,
+  compression and selection branches without
+  being shortcutted by local patterns.
 
 ### DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
 
