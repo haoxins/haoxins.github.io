@@ -69,7 +69,7 @@ date: 2023-12-11
 
 ### 归一化
 
-> `平凡`居然翻译为`平庸`, 无语~
+> `平凡`; 好过翻译为`平庸`~
 
 - 但是, 假定在
   $$ t = 0 $$
@@ -182,10 +182,10 @@ date: 2023-12-11
 (使 Ψ 为一个很长的正弦波); 但这样的话, 位置的测量结果是非常弥散的.
 ```
 
-- [波包](https://en.wikipedia.org/wiki/Wave_packet)
+> [波包](https://en.wikipedia.org/wiki/Wave_packet)
 
-> `波包`确实不如`科恩`讲述地详细, 弱化了公式的推导.
-  或者说, 放在了习题里面.
+> 波包: 不如`科恩`讲述地详细, 弱化了公式的推导.
+  (或者说, 放在了习题里面.)
 
 ## 定态薛定谔方程
 
@@ -309,7 +309,7 @@ linear combination of stationary states.
 
 > __波包__
 
-- [普朗克尔定理](https://en.wikipedia.org/wiki/Plancherel_theorem)
+> [普朗克尔定理](https://en.wikipedia.org/wiki/Plancherel_theorem)
 
 ```
 波函数中对应的粒子速度不是某一个波纹的速度 (即所谓的相速度),
@@ -811,7 +811,7 @@ in that case, the spectrum is said to be degenerate.
     态的几率".
   - 但是这是完全不同的论述.
 
-> 参见: 科恩, 卷一, `波函数; 薛定谔方程`
+> 参见: 科恩, 卷一, 波函数; 薛定谔方程
 
 - Similarly, the expectation value of
   $$ Q $$
@@ -992,7 +992,7 @@ in that case, the spectrum is said to be degenerate.
   它可以被误用而不会导致严重的错误结果,
   因而很多物理学家习惯于草率地应用它.
 
-> 哈哈, 想起`曹则贤`在`黑体辐射`中的类似说法:
+> 哈哈, 想起曹则贤在`黑体辐射`中的类似说法:
   物理学其实容错性很强, 所以容易混淆视听.
 
 ### 矢量和算符
@@ -1285,7 +1285,7 @@ in that case, the spectrum is said to be degenerate.
     $$ L_y $$
     do not.
 
-> a particle simply __cannot__ have a determinate angular
+- A particle simply __cannot__ have a determinate angular
   momentum vector, any more than it can simultaneously
   have a determinate position and momentum.
 
@@ -1637,7 +1637,7 @@ in that case, the spectrum is said to be degenerate.
 ```
 
 > 类似此段的描述其实随处可见, 但有一个词, 使得此处表述优于它处.
-  __因果__~ (比`信息`二字, 我个人觉得好一点.)
+  __因果__ (比`信息`二字, 我个人觉得好一点.)
 
 > `无法通过单独测量其中一个数据列表所检测到`;
   摘录
