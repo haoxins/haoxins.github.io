@@ -22,8 +22,10 @@ date: 2023-07-17
 - [消失的人](https://movie.douban.com/subject/36965301/)
 
 - [大侦探波洛 第二季](https://movie.douban.com/subject/24522597/)
+  - 看度假, 看火车, 看喝茶, 看斗嘴
 
 - [大侦探波洛 第一季](https://movie.douban.com/subject/2030879/)
+  - 感谢腾讯视频, 出了修复版, 清晰度还不错.
 
 - [飞驰人生 3](https://movie.douban.com/subject/37311135/)
   - 2026, 春节档
