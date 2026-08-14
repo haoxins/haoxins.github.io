@@ -11,6 +11,7 @@
 ### 2025
 
 - [泛函分析导论及应用 - (上)](2025/math-functional-analysis-1.md)
+- [泛函分析导论及应用 - (下)](2025/math-functional-analysis-2.md)
 - [数学及其历史 & 数学史](2025/math-history.md)
 - [阅读 Paper & Blog](2025/paper-blog.md)
 - [广义相对论的原理 温伯格](2025/physics-gravitation-cosmology.md)
@@ -19,6 +20,7 @@
 - [码农碎碎念](2025/programming.md)
 - [群论与量子力学 外尔](2025/quantum-group.md)
 - [量子信息物理原理 (上)](2025/quantum-information-1.md)
+- [量子信息物理原理 (下)](2025/quantum-information-2.md)
 - [量子菜根谭 & 拓扑与物理](2025/quantum-modern.md)
 - [阅读的闲书](2025/reading.md)
 
