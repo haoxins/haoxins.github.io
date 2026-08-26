@@ -3952,9 +3952,9 @@ r 阶楔积的分量可由各矢量分量的反对称积表示. 因此,
   $$ * $$
   是正定的, 我们称
   $$ T $$
-  是酉矩阵; 其他情形下, 则称
+  是`酉`矩阵; 其他情形下, 则称
   $$ T $$
-  是`伪`首矩阵.
+  是`伪`酉矩阵.
   - $$ T $$
     是 "酉矩阵" 是指当
     $$ * $$
@@ -4950,6 +4950,109 @@ r 阶楔积的分量可由各矢量分量的反对称积表示. 因此,
     的"积分曲线", 即是说, 沿其切矢量是
     $$ ξ $$
     矢量的曲线.
+
+- 那么什么是李导数的定义? 首先, 我们简单地将李括号重写为
+  $$ \underset{ξ}{\mathcal{L}} $$
+  (取决于
+  $$ ξ $$),
+  它作用于矢量场
+  $$ η $$:
+  - $$ \underset{ξ}{\mathcal{L}} η = [ξ, η] $$.
+  - 这就是
+    $$
+      \begin{bmatrix}
+        1 \\
+        0
+      \end{bmatrix}
+    $$
+    价张量
+    $$ η $$
+    (关于
+    $$ ξ $$)
+    的李导数
+    $$ \underset{ξ}{\mathcal{L}} $$.
+    我们希望把它写成某种给定的无挠联络
+    $$ \nabla $$
+    的形式. 所要求的表达式
+  - $$
+      \underset{ξ}{\mathcal{L}} η =
+      \underset{ξ}{\nabla} η -
+      \underset{η}{\nabla} ξ
+    $$,
+    即
+    $$
+      (\underset{ξ}{\mathcal{L}} η)^a =
+      ξ^a \nabla_a η^b -
+      η^a \nabla_a ξ^b
+    $$,
+  - 可直接由
+    $$ ξ(Φ) = ξ^a \nabla_a Φ $$
+    等获得. 为了获得一般张量的李导数, 我们采用这么一种规则,
+    $$ \underset{ξ}{\mathcal{L}} $$
+    满足类似于联络
+    $$ \underset{ξ}{\nabla} $$
+    所满足的规则 (除非
+    $$ ξ $$
+    不存在线性性): 对标量
+    $$ Φ $$,
+    $$ \underset{ξ}{\mathcal{L}} Φ = ξ(Φ) $$;
+    对同价的张量
+    $$ T $$
+    和
+    $$ U $$,
+    $$
+      \underset{ξ}{\mathcal{L}} (T + U) =
+      \underset{ξ}{\mathcal{L}} T +
+      \underset{ξ}{\mathcal{L}} U
+    $$;
+    缩并的顺序排列在各项中不变
+    $$
+      \underset{ξ}{\mathcal{L}} (T \cdot U) =
+      (\underset{ξ}{\mathcal{L}} T) \cdot U +
+      T \cdot (\underset{ξ}{\mathcal{L}} U)
+    $$.
+    从这些关系式和
+    $$ \underset{ξ}{\mathcal{L}} η = [ξ, η] $$
+    知,
+    $$ \underset{ξ}{\mathcal{L}} $$
+    对任一张量的作用具有唯一性. 特别是, 对余矢量
+    $$ α $$
+    (价
+    $$
+      \begin{bmatrix}
+        0 \\
+        1
+      \end{bmatrix}
+    $$),
+  - $$
+      \underset{ξ}{\mathcal{L}} α =
+      \underset{ξ}{\nabla} α +
+      α \cdot (\nabla ξ)
+    $$,
+    即
+    $$
+      (\underset{ξ}{\mathcal{L}} α)_a =
+      ξ^b \nabla_b α_a +
+      α_b \nabla_a ξ^b
+    $$
+  - ($$ \nabla $$
+    是无挠的). 例如对价
+    $$
+      \begin{bmatrix}
+        1 \\
+        2
+      \end{bmatrix}
+    $$
+    的张量
+    $$ Q $$,
+    我们有
+  - $$
+      \underset{ξ}{\mathcal{L}} Q_{ab}^c =
+      ξ^u \nabla_u Q_{ab}^c +
+      Q_{ub}^c \nabla_a ξ^u +
+      Q_{au}^c \nabla_b ξ^u -
+      Q_{ab}^u \nabla_u ξ^c
+    $$
 
 
 #### 度规
