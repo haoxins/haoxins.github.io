@@ -43,6 +43,14 @@ date: 2023-12-21
 
 ### 一些好的微信文章
 
+- [在量子世界, 崂山道士的 "穿墙术" 能成真吗?](https://mp.weixin.qq.com/s/2Lkq3D9fX1KIoRQowjaayA)
+  - 那个动画很好!
+- [矩阵力学与波力学的等价性问题 (上)](https://mp.weixin.qq.com/s/bblSmTzdYmyKr_0C022isQ)
+- [矩阵力学与波力学的等价性问题 (下)](https://mp.weixin.qq.com/s/Ul_Em-YmQcVzDVWO2etP4g)
+- [不确定性原理到底在说什么?](https://mp.weixin.qq.com/s/QcjZDSJj-3kfxGNl1E5lZg)
+
+> 看到的一个量子比特的比喻: 旋转的硬币 vs 落定的硬币
+
 - [矢量, 张量以及微分几何](https://mp.weixin.qq.com/s/aBA5iVNiA8Yb6rT86JbRLg)
 - [现代微分几何学的发展](https://mp.weixin.qq.com/s/Jy1lX-jzoX2l-AoteZc6BA)
 - ["积分"变身的解密"简史"](https://mp.weixin.qq.com/s/4dAKsydUip2qUda90Q_N9Q)
@@ -52,20 +60,17 @@ date: 2023-12-21
 - [到底什么是赝矢量? 如何彻底理解角速度?](https://mp.weixin.qq.com/s/8M412961B5uQNGUCXR80dQ)
 
 - [物理学家所理解的熵: 从热力学, 统计物理, 到生成模型](https://mp.weixin.qq.com/s/DS-vV8Szd3Gb9XuuekB8zw)
+- [热力学与量子力学在 21 世纪重新相遇](https://mp.weixin.qq.com/s/7VcuucFkqeNPvfsutOoDog)
 - [当物理学家一层一层一层地拨开奇点, 时空的尽头有什么?](https://mp.weixin.qq.com/s/p_x8y5TGd53H2lveESRi1Q)
-- [矩阵力学与波力学的等价性问题 (上)](https://mp.weixin.qq.com/s/bblSmTzdYmyKr_0C022isQ)
-- [矩阵力学与波力学的等价性问题 (下)](https://mp.weixin.qq.com/s/Ul_Em-YmQcVzDVWO2etP4g)
-- [在量子世界, 崂山道士的 "穿墙术" 能成真吗?](https://mp.weixin.qq.com/s/2Lkq3D9fX1KIoRQowjaayA)
-  - 那个动画很好!
+
 - [自举思想在共形场论中的应用](https://mp.weixin.qq.com/s/08e3NaJIVJxmiBdtreA6IA)
+
 - [化繁为简的局域化方法](https://mp.weixin.qq.com/s/aAKSxAefnLIW2ZaR14LeZQ)
 - [从广义相对论到规范理论 (上)](https://mp.weixin.qq.com/s/rZjondEYljjGVdNjc3pDwA)
 - [从广义相对论到规范理论 (中)](https://mp.weixin.qq.com/s/7AAHhWEEWEBQZ2nCKhS04w)
 - [从广义相对论到规范理论 (下) ](https://mp.weixin.qq.com/s/-8bHacwggE9C6tcQFTniCA)
-- [不确定性原理到底在说什么?](https://mp.weixin.qq.com/s/QcjZDSJj-3kfxGNl1E5lZg)
 - [你也能懂的质能方程 E = mc^2](https://mp.weixin.qq.com/s/Eg_gDd6uV_PukcQQDw60gA)
 - [美丽的莫比乌斯反演, 解决了一类物理问题](https://mp.weixin.qq.com/s/7HL2HeOKhVVaajSd2raQiw)
-- [热力学与量子力学在 21 世纪重新相遇](https://mp.weixin.qq.com/s/7VcuucFkqeNPvfsutOoDog)
 - [几何在物理学中的妙用](https://mp.weixin.qq.com/s/uQt7P-1QzLlr-qmkscPiqg)
 - [事件, 洛伦兹变换, 狭义相对论!](https://mp.weixin.qq.com/s/l0vfZsxH3sJeTH6rZCyGFA)
 - [弹性波可以有自旋吗?](https://mp.weixin.qq.com/s/YeZsY-xcSnLM3_Qced1jQA)
