@@ -11,6 +11,7 @@
 - [泛函分析导论及应用 - (上)](2025/math-functional-analysis-1.md)
 - [泛函分析导论及应用 - (下)](2025/math-functional-analysis-2.md)
 - [数学及其历史 & 数学史](2025/math-history.md)
+- [流形上的微积分 & 伊藤清概率论](2025/math-modern.md)
 - [阅读 Paper & Blog](2025/paper-blog.md)
 - [广义相对论的原理 温伯格](2025/physics-gravitation-cosmology.md)
 - [再读 通向实在之路 彭罗斯 (上)](2025/physics-road-to-reality-1.md)

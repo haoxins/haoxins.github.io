@@ -49,7 +49,7 @@ date: 2023-12-21
 - [矩阵力学与波力学的等价性问题 (下)](https://mp.weixin.qq.com/s/Ul_Em-YmQcVzDVWO2etP4g)
 - [不确定性原理到底在说什么?](https://mp.weixin.qq.com/s/QcjZDSJj-3kfxGNl1E5lZg)
 
-> 看到的一个量子比特的比喻: 旋转的硬币 vs 落定的硬币
+> 一个量子比特的好的比喻: 旋转的硬币 vs 落定的硬币
 
 - [矢量, 张量以及微分几何](https://mp.weixin.qq.com/s/aBA5iVNiA8Yb6rT86JbRLg)
 - [现代微分几何学的发展](https://mp.weixin.qq.com/s/Jy1lX-jzoX2l-AoteZc6BA)
