@@ -4,16 +4,6 @@ description: 楚塞三湘接, 荆门九派通. 江流天地外, 山色有无中.
 date: 2023-12-21
 ---
 
-- [LaTeX Symbol Tables](https://wikieducator.org/Help:LaTeX_Symbol_Tables_-_Mathematics)
-
-- [LaTeX mathematical symbols](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols)
-  - $$ \mathbf{R} $$
-    $$ \mathcal{R}$$
-    $$ \mathbb{R} $$
-    $$ \mathfrak{R} $$,
-    $$ \mathfrak{x} $$,
-    $$ \mathfrak{y} $$
-
 ### Quantum computing
 
 - [Quantum logic gate](https://en.wikipedia.org/wiki/Quantum_logic_gate)
@@ -77,3 +67,15 @@ date: 2023-12-21
 - [电子粒子观的蜕变](https://mp.weixin.qq.com/s/Z_vnPUVWaPTe5BgflC7D-w)
 - [物质的态与相](https://mp.weixin.qq.com/s/Pz2j4zxWfsogQ3WP1aZdXw)
 - [纽结理论和琼斯多项式](https://mp.weixin.qq.com/s/0oaAgaHVSzYfPwm8F5AwqA)
+
+### LaTeX
+
+- [LaTeX Symbol Tables](https://wikieducator.org/Help:LaTeX_Symbol_Tables_-_Mathematics)
+
+- [LaTeX mathematical symbols](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols)
+  - $$ \mathbf{R} $$
+    $$ \mathcal{R}$$
+    $$ \mathbb{R} $$
+    $$ \mathfrak{R} $$,
+    $$ \mathfrak{x} $$,
+    $$ \mathfrak{y} $$
