@@ -4,6 +4,9 @@ description: 少年不识愁滋味, 爱上层楼, 爱上层楼, 为赋新词强�
 date: 2023-07-17
 ---
 
+- [大侦探波洛 第三季](https://movie.douban.com/subject/24522854/)
+  - 2026 年 9 月, 二刷; 大学的时候初看; 1991 年的剧.
+
 - [空枪](https://movie.douban.com/subject/37508847/)
 
 - [欢迎来龙餐馆](https://movie.douban.com/subject/35811064/)
