@@ -223,7 +223,7 @@ date: 2023-01-17
     \mid c \rangle U^c \mid t \rangle
   $$.
 
-- [Toffoli gate](https://en.wikipedia.org/wiki/Toffoli_gate)
+> [Toffoli gate](https://en.wikipedia.org/wiki/Toffoli_gate)
 
 - 熟知的 Toffoli 门是
   $$ C^2(U) $$
@@ -735,28 +735,6 @@ date: 2023-01-17
   $$ e^{-iHt} $$
   的演化, 逼近
   $$ \mid ψ(t) \rangle = e^{-iHt} \mid ψ_0 \rangle $$.
-
-## 量子傅里叶变换及其应用
-
-### 相位估计
-
-### 应用: 求阶与因子分解问题
-
-### 量子傅里叶变换的一般应用
-
-## 量子搜索算法
-
-### 作为量子模拟的量子搜索
-
-### 量子计数
-
-### NP 完全问题解的加速
-
-### 无结构数据库的量子搜索
-
-### 搜索算法的最优性
-
-### 黑盒算法的极限
 
 ## 量子纠错
 
@@ -1333,11 +1311,33 @@ CSS编码是更广泛的稳定子编码的一类重要子集.
   并且满足某些物理上合理的假设, 则可以可靠地实现任意长的量子计算,
   并且为了确保可靠性, 多出的代价跟电路的规模比起来很小.
 
+## 量子傅里叶变换及其应用
+
+### 相位估计
+
+### 应用: 求阶与因子分解问题
+
+### 量子傅里叶变换的一般应用
+
+## 量子搜索算法
+
+### 作为量子模拟的量子搜索
+
+### 量子计数
+
+### NP 完全问题解的加速
+
+### 无结构数据库的量子搜索
+
+### 搜索算法的最优性
+
+### 黑盒算法的极限
+
 ## 附录
 
 ### 群论
 
-- [隐藏子群问题](https://en.wikipedia.org/wiki/Hidden_subgroup_problem)
+> [隐藏子群问题](https://en.wikipedia.org/wiki/Hidden_subgroup_problem)
 
 - 元素
   $$ g \in G $$
@@ -1399,7 +1399,7 @@ CSS编码是更广泛的稳定子编码的一类重要子集.
     定义为
     $$ G_x ≡ \{ g^{-1} x g \mbox{ } | \mbox{ } g \in G \} $$.
 
-- [生成元](https://en.wikipedia.org/wiki/Generating_set_of_a_group)
+> [生成元](https://en.wikipedia.org/wiki/Generating_set_of_a_group)
 
 - 循环群
   $$ G $$
@@ -1664,7 +1664,7 @@ CSS编码是更广泛的稳定子编码的一类重要子集.
     $$ n $$
     的比特长度.
 
-- [中国剩余定理](https://en.wikipedia.org/wiki/Chinese_remainder_theorem)
+> [中国剩余定理](https://en.wikipedia.org/wiki/Chinese_remainder_theorem)
 
 - 引理 假设
   $$ p $$
@@ -1691,7 +1691,7 @@ CSS编码是更广泛的稳定子编码的一类重要子集.
   $$ a^{p - 1} = 1 $$
   $$ (mod \mbox{ } p) $$.
 
-- [欧拉定理 (欧拉-费马小定理)](https://en.wikipedia.org/wiki/Euler's_theorem)
+> [欧拉定理 (欧拉-费马小定理)](https://en.wikipedia.org/wiki/Euler's_theorem)
 
 > 因数分解 -> 求阶问题
 
@@ -1777,7 +1777,7 @@ CSS编码是更广泛的稳定子编码的一类重要子集.
     $$ O(L^3) $$
     次操作内被计算出来.
 
-- [连分数](https://en.wikipedia.org/wiki/Continued_fraction)
+> [连分数](https://en.wikipedia.org/wiki/Continued_fraction)
 
 - 定理 假设
   $$ x $$
@@ -1823,5 +1823,5 @@ CSS编码是更广泛的稳定子编码的一类重要子集.
 
 ### Solovay-Kitaev 定理
 
-- [Solovay-Kitaev 定理](https://en.wikipedia.org/wiki/Solovay-Kitaev_theorem)
+> [Solovay-Kitaev 定理](https://en.wikipedia.org/wiki/Solovay-Kitaev_theorem)
 

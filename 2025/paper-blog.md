@@ -134,6 +134,12 @@ respective features without being shortcutted by local patterns.
   compression and selection branches without
   being shortcutted by local patterns.
 
+```
+The pretraining loss curve of our NSA and Full Attention
+baseline demonstrates stable and smooth decline, with
+NSA consistently outperforming the Full Attention model.
+```
+
 ### DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
 
 - [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
