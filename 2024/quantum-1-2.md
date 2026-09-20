@@ -3108,6 +3108,15 @@ date: 2022-10-31
   及
   $$ H_r $$
   的共同本征矢构成的一个基; 因此, 我们希望解出下面的方程组:
+  - $$ H_G \mid φ \rangle = E_G \mid φ \rangle $$
+  - $$ H_r \mid φ \rangle = E_r \mid φ \rangle $$
+  - 根据式
+    $$ H = H_G + H_r $$,
+    由此立即可以推出:
+  - $$ H \mid φ \rangle = E \mid φ \rangle $$
+  - 式中
+    $$ E = E_G + E_r $$
+
 
 - 两个实际粒子的体系的总角动量为:
   - $$ J = L_1 + L_2 $$
