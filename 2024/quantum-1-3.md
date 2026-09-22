@@ -20,7 +20,7 @@ date: 2024-06-22
   是一个观察算符, 我们就可以在由
   $$ A $$
   的本征矢构成的基中去计算
-  $$ Tr \mbox{ } A $$.
+  $$ \mbox{Tr } A $$.
   这时矩阵的对角元素就是
   $$ A $$
   的诸本征值
@@ -28,11 +28,11 @@ date: 2024-06-22
   (它的简并度是
   $$ g_n $$),
   因而算符的迹可以写作:
-  - $$ Tr \mbox{ } A = \sum_{n} g_n a_n $$
+  - $$ \mbox{Tr } A = \sum_{n} g_n a_n $$
 
 - 重要性质
-  - $$ Tr \mbox{ } AB = Tr \mbox{ } BA $$
-  - $$ Tr \mbox{ } ABC = Tr \mbox{ } BCA = Tr \mbox{ } CAB $$
+  - $$ \mbox{Tr } AB = \mbox{Tr } BA $$
+  - $$ \mbox{Tr } ABC = \mbox{Tr } BCA = \mbox{Tr } CAB $$
   - 一般地说, 对于若干算符的各种循环排列,
     这些算符之积的迹是不变的.
 
