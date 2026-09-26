@@ -4,6 +4,9 @@ description: 又闻子规啼夜月, 愁空山. 蜀道之难, 难于上青天! �
 date: 2026-02-25
 ---
 
+
+#### Platform-independent SIMD in Go
+
 #### Topcoat: a Rust framework for building full-stack web apps
 
 - [Announcing Topcoat: a framework for building full-stack reactive web apps with Rust](https://tokio.rs/blog/2026-07-22-announcing-topcoat)
