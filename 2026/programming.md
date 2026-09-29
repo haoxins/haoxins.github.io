@@ -7,6 +7,50 @@ date: 2026-02-25
 
 #### Platform-independent SIMD in Go
 
+- [Platform-independent SIMD in Go](https://go.dev/blog/simd-experiment)
+
+```go
+func innerProduct(x, y []float32) float32 {
+  var a simd.Float32s
+  var i int
+  for i = 0; i < len(x)-a.Len()+1; i += a.Len() {
+    u := simd.LoadFloat32s(x[i : i+a.Len()])
+    v := simd.LoadFloat32s(y[i : i+a.Len()])
+    a = u.MulAdd(v, a)
+  }
+  if i < len(x) {
+    u, _ := simd.LoadFloat32sPart(x[i:])
+    v, _ := simd.LoadFloat32sPart(y[i:])
+    a = u.MulAdd(v, a)
+  }
+  return sum(a)
+}
+```
+
+```go
+func sum(x simd.Float32s) float32 {
+  s := make([]float32, x.Len())
+  x.Store(s)
+  var r float32
+  for _, e := range s {
+    r += e
+  }
+  return r
+}
+```
+
+- This example also shows one of the limitations
+  of the first experimental release of this package;
+  because there's no common way to sum across all the
+  elements of a vector, it's not supported by simd in
+  Go 1.27, though `ReduceSum` will appear in the next
+  release so sum can be replaced with just `simd.ReduceSum`.
+
+- SIMD comparisons produce mask values, which are specific
+  to the corresponding vector element width, so that
+  comparisons of `Int8s` produce `Mask8s`, etc.,
+  and mask values can be used to select and filter vectors.
+
 #### Topcoat: a Rust framework for building full-stack web apps
 
 - [Announcing Topcoat: a framework for building full-stack reactive web apps with Rust](https://tokio.rs/blog/2026-07-22-announcing-topcoat)
