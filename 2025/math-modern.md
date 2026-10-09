@@ -824,10 +824,10 @@ date: 2024-02-20
   $$ S \in \mathcal{L}^k (V) $$,
   $$ T \in \mathcal{L}^l (V) $$
   且
-  $$ \mbox(Alt) (S) = 0 $$,
+  $$ \mbox{Alt} (S) = 0 $$,
   则
   - $$
-      \mbox(Alt) (S \otimes T) =
+      \mbox{Alt} (S \otimes T) =
       \mbox{Alt} (T \otimes S) = 0
     $$.
   - (2)
@@ -866,11 +866,11 @@ date: 2024-02-20
 - 定理
   $$ Ω^k (V) $$
   的一组基是全体
-  - $$ φ_{i_1} \land ... \land φ_{i_k} $$,
-    $$ 1 ≤ i_1 < ... < i_k ≤ n $$
-  - 的集合, 所以
-    $$ Ω^k (V) $$
-    的维数是
+  $$ φ_{i_1} \land ... \land φ_{i_k} $$,
+  $$ 1 ≤ i_1 < ... < i_k ≤ n $$
+  的集合, 所以
+  $$ Ω^k (V) $$
+  的维数是
   - $$
       \binom{n}{k} =
       \frac{n!}{k! (n - k)!}
