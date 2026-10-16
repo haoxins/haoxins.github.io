@@ -5,6 +5,55 @@ date: 2026-02-25
 ---
 
 
+#### Go 1.27 Generic Methods
+
+- 自己的一个案例, Nebula 数据库的 Query 执行和结果映射.
+
+```go
+func (p *SessionPool) ExecuteAndScan(query string, rowsPtr any) error {
+  // 原本的 reflect 重灾区
+  if rowsPtr == nil {
+    return errors.New("ExecuteAndScan scans to nil")
+  }
+
+  rows := reflect.ValueOf(rowsPtr)
+  if rows.Kind() != reflect.Pointer {
+    return fmt.Errorf("ExecuteAndScan scans non-pointer %s", rows.Type())
+  }
+  if rows.IsNil() {
+    return errors.New("ExecuteAndScan scan to nil")
+  }
+
+  rows = reflect.Indirect(rows)
+  if k := rows.Kind(); k != reflect.Slice {
+    return fmt.Errorf("ExecuteAndScan scans invalid type %s. expected slice as an argument", k)
+  }
+
+  rowType := reflect.TypeOf(rowsPtr).Elem().Elem()
+
+  // ...
+}
+
+// 调用的地方
+var accs []*Account
+err := nebuladb.SessionPool.ExecuteAndScan(q, &accs)
+```
+
+- 新版本
+
+```go
+func (p *SessionPool) ExecuteAndScan[T any](query string) ([]T, error) {
+  // 删除了 reflect 重灾区
+  rowType := reflect.TypeFor[T]()
+  // ...
+}
+
+// 调用的地方
+accs, err := nebuladb.SessionPool.ExecuteAndScan[*Account](q)
+```
+
+- 当然, 底层每一行的 scan, 还是需要 reflect 的.
+
 #### Platform-independent SIMD in Go
 
 - [Platform-independent SIMD in Go](https://go.dev/blog/simd-experiment)
@@ -72,6 +121,8 @@ func sum(x simd.Float32s) float32 {
 > 话说回来, 感觉
   [Deno](https://github.com/denoland/deno)
   会先凉凉了~
+
+- [Deno is joining Cloudflare](https://blog.cloudflare.com/deno-joins-cloudflare/), 然后 Deno 不再维护.
 
 #### Daft and Lance
 

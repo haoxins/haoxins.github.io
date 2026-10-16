@@ -744,17 +744,17 @@ date: 2024-02-20
   - 回忆一下, 一个排列
     $$ σ $$
     的符号
-    $$ \mbox{sgn} σ $$
+    $$ \mbox{sgn } σ $$
     的定义如下: 当
     $$ σ $$
     为偶时
-    $$ \mbox{sgn} σ $$
+    $$ \mbox{sgn } σ $$
     为
     $$ +1 $$,
     当
     $$ σ $$
     为奇时
-    $$ \mbox{sgn} σ $$
+    $$ \mbox{sgn } σ $$
     为
     $$ -1 $$.
     若
@@ -765,7 +765,7 @@ date: 2024-02-20
   - $$
       \mbox{Alt} (T) (v_1, ..., v_k) =
       \frac{1}{k!} \sum_{σ \in S_k}
-      \mbox{sgn} σ \cdot T(v_{σ(1)}, ..., v_{σ(k)})
+      \mbox{sgn } σ \cdot T(v_{σ(1)}, ..., v_{σ(k)})
     $$,
   - 其中
     $$ S_k $$
@@ -835,7 +835,7 @@ date: 2024-02-20
       \mbox{Alt} (\mbox{Alt} (ω \otimes η) \otimes θ) =
       \mbox{Alt} (ω \otimes η \otimes θ) =
       \mbox{Alt} (ω \otimes \mbox{Alt} (η \otimes θ))
-    $$
+    $$.
   - (3) 若
     $$ ω \in Ω^k (V) $$,
     $$ η \in Ω^l (V) $$
