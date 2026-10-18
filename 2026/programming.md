@@ -122,7 +122,8 @@ func sum(x simd.Float32s) float32 {
   [Deno](https://github.com/denoland/deno)
   会先凉凉了~
 
-- [Deno is joining Cloudflare](https://blog.cloudflare.com/deno-joins-cloudflare/), 然后 Deno 不再维护.
+- [Deno is joining Cloudflare](https://blog.cloudflare.com/deno-joins-cloudflare/),
+  然后 Deno 不再维护.
 
 #### Daft and Lance
 
