@@ -1207,9 +1207,8 @@ date: 2023-01-30
   这个基本思路来自对错误概率分布的讨论. 我们已经指出, 错误概率
   $$ p(X ≠ Y) $$
   的直接对应, 并不能在量子过程中定义,
-  因为不同时刻的概率分布在量子世界并无直接对应.
-  相应地, 一个距离的动态度量可以如下定义:
-  - 先制备一个随机变量
+  __因为不同时刻的概率分布在量子世界并无直接对应__.
+  - 相应地, 一个距离的动态度量可以如下定义: 先制备一个随机变量
     $$ X $$
     的拷贝
     $$ \widetilde{X} $$,
@@ -1263,7 +1262,8 @@ date: 2023-01-30
         F(ρ, ε)
         & ≡ F(RQ, R'Q')^2 \\
         & = \langle RQ \mid
-            [(\mathcal{I}_R \otimes ε) (\mid RQ \rangle \langle RQ \mid)]
+            [(\mathcal{I}_R \otimes ε)
+            (\mid RQ \rangle \langle RQ \mid)]
             \mid RQ \rangle \\
       \end{align}
     $$
@@ -1360,8 +1360,9 @@ date: 2023-01-30
     $$ η > 0 $$,
     使得
     $$
-      \langle ψ \mid ε(\mid ψ \rangle \langle ψ \mid) \mid ψ \rangle
-      ≥ 1 - η
+      \langle ψ \mid
+      ε(\mid ψ \rangle \langle ψ \mid)
+      \mid ψ \rangle ≥ 1 - η
     $$
     对
     $$ ρ $$
@@ -1447,9 +1448,11 @@ date: 2023-01-30
   $$ q(x) $$
   的相对熵为
   - $$
-      H(p(x) \| q(x)) ≡
-      \sum_{x} p(x) \log \frac{p(x)}{q(x)} ≡
-      -H(X) - \sum_{x} p(x) \log q(x)
+      \begin{align}
+        H(p(x) \| q(x))
+          & ≡ \sum_{x} p(x) \log \frac{p(x)}{q(x)} \\
+          & ≡ - H(X) - \sum_{x} p(x) \log q(x) \\
+      \end{align}
     $$
   - 我们定义
     $$ -0 \log 0 ≡ 0 $$,
@@ -1496,9 +1499,12 @@ date: 2023-01-30
   $$ q(x) = 1/d $$
   是在这些输出上的均匀概率分布, 那么有
   - $$
-      H(p(x) \| q(x)) = H(p(x) \| 1 / d) =
-      -H(X) - \sum_{x} p(x) \log (1 / d) =
-      \log d - H(X)
+      \begin{align}
+        H(p(x) \| q(x))
+        & = H(p(x) \| 1 / d) \\
+        & = - H(X) - \sum_{x} p(x) \log (1 / d) \\
+        & = \log d - H(X) \\
+      \end{align}
     $$
 
 - 从相对熵的非负性, 我们可以知道
