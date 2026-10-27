@@ -2803,11 +2803,11 @@ CSS 编码是更广泛的稳定子编码的一类重要子集.
   我们定义的表示也称为矩阵表示, 还有更一般的表示,
   但是对我们来说矩阵表示足够用了.
 
-- [矩阵群](https://en.wikipedia.org/wiki/Linear_group)
-  - [表示](https://en.wikipedia.org/wiki/Group_representation)
-  - [特征](https://en.wikipedia.org/wiki/Character_theory)
+> [矩阵群](https://en.wikipedia.org/wiki/Linear_group),
+  [表示](https://en.wikipedia.org/wiki/Group_representation),
+  [特征](https://en.wikipedia.org/wiki/Character_theory)
 
-- [有限群上的傅立叶变换](https://en.wikipedia.org/wiki/Fourier_transform_on_finite_groups)
+> [有限群上的傅立叶变换](https://en.wikipedia.org/wiki/Fourier_transform_on_finite_groups)
 
 > 最后 4 页的信息量蛮大~
 
