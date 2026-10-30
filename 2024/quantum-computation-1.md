@@ -1875,9 +1875,7 @@ RSA 的加密信息仍需要比当前量子计算机的规模扩大五个数量�
 公设 4 告诉我们如何把不同量子系统的状态空间相结合来描述复合系统.
 ```
 
-### 应用: 超密编码
-
-- [超密编码](https://en.wikipedia.org/wiki/Superdense_coding)
+> [超密编码](https://en.wikipedia.org/wiki/Superdense_coding)
 
 ### 密度算子
 
