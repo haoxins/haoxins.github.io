@@ -140,6 +140,33 @@ baseline demonstrates stable and smooth decline, with
 NSA consistently outperforming the Full Attention model.
 ```
 
+```
+This sparse attention pretraining mechanism forces
+model to focus on the most important information,
+potentially enhancing performance by filtering out
+noise from irrelevant attention pathways.
+```
+
+```
+This performance stems from our hierarchical sparse
+attention design, which combines compression tokens
+for efficient global context scanning, and selection
+tokens for precise local information retrieval.
+The coarse-grained compression identifies relevant
+context blocks at low computational cost, while the
+token-level attention on selected tokens ensures the
+preservation of critical fine-grained information.
+```
+
+```
+(1) The pretrained sparse attention patterns enable
+efficient capture of long-range logical dependencies
+critical for complex mathematical derivations;
+(2) Our architecture's hardware-aligned design maintains
+sufficient context density to support growing reasoning
+depth without catastrophic forgetting.
+```
+
 ### DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
 
 - [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)
