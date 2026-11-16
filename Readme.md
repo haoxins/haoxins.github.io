@@ -6,6 +6,7 @@
 ### 2026
 
 - [码农碎碎念](2026/programming.md)
+- [量子力学 巨匠与脚手架 曹则贤](2026/quantum-giants.md)
 - [阅读的闲书](2026/reading.md)
 
 ### 2025

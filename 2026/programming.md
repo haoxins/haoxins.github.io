@@ -4,6 +4,19 @@ description: 又闻子规啼夜月, 愁空山. 蜀道之难, 难于上青天! �
 date: 2026-02-25
 ---
 
+#### Kitesurf
+
+> Cloudflare 2026-11 正式开源
+
+- [Kitesurf](https://github.com/cloudflare/kitesurf)
+  - [Servo/Stylo](https://github.com/servo/stylo)
+  - CSS engine, 其实我个人一直不认为 Servo 可以成功,
+    不过如果可以以 Component 的形式留下一些成果,
+    还是可喜可贺的.
+  - [Boa: Javascript engine](https://github.com/boa-dev/boa)
+  - [Blitz: HTML/CSS engine](https://github.com/dioxuslabs/blitz)
+  - [Linebender](https://github.com/linebender)
+  - [krilla](https://github.com/LaurenzV/krilla)
 
 #### Go 1.27 Generic Methods
 
